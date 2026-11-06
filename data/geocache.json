@@ -245,5 +245,15 @@
  "mr fox live house|bangkok": null,
  "phuket surf house patong beach|phuket": null,
  "ข้อมูลอีเว้นท์|": null,
- "ปางแฟน rock n river|": null
+ "ปางแฟน rock n river|": null,
+ "the standard bangkok mahanakhon|bangkok": {
+  "lat": 13.76862,
+  "lng": 100.50045,
+  "state": "Bangkok"
+ },
+ "สมาคมธรรมศาสตร์ ในพระบรมราชูปถัมภ์|": {
+  "lat": 13.71947,
+  "lng": 100.5438,
+  "state": "Bangkok"
+ }
 }

@@ -14,6 +14,8 @@
     newsCat: "all",
     pos: null
   };
+  // จังหวัดที่จำไว้ไม่ถูกต้อง (เช่น ค่าว่าง) → กลับไปทุกจังหวัด
+  if (state.filters.province !== "all" && !PROV[state.filters.province]) state.filters.province = "all";
 
   // ---------- helpers ----------
   function readLS(key, fallback) {
@@ -32,10 +34,14 @@
 
   // ---------- เปิดลิงก์ภายนอก ----------
   const UA = navigator.userAgent;
+  // เปิดอยู่ในแอพมือถือ (Capacitor: Android/iOS) ไม่ใช่เว็บ
+  const NATIVE = !!window.Capacitor?.isNativePlatform?.();
+  // ลิงก์ที่แชร์ให้คนอื่นต้องเป็นลิงก์เว็บจริง (ในแอพ location.href เป็น https://localhost)
+  const publicUrl = () => NATIVE ? C.webUrl + location.hash : location.href;
   const PLATFORM = /Android/i.test(UA) ? "android"
     : (/iPhone|iPad|iPod/i.test(UA) || (/Macintosh/.test(UA) && navigator.maxTouchPoints > 1)) ? "ios" : "desktop";
   // ติดตั้งเป็นแอพแล้ว (เปิดจากไอคอนหน้าจอหลัก)
-  const isStandalone = () => matchMedia("(display-mode: standalone)").matches || navigator.standalone === true;
+  const isStandalone = () => NATIVE || matchMedia("(display-mode: standalone)").matches || navigator.standalone === true;
   // ข่าว / เว็บผู้จัด / ขายบัตร: ถ้าติดตั้งแอพแล้ว เปิดในหน้าต่างเดิม → มือถือจะเปิดเป็นเบราว์เซอร์ในแอพ
   // (Android: Chrome Custom Tab, iPhone: Safari View) กด ✕ / เสร็จสิ้น แล้วกลับมาที่แอพ
   // ถ้ายังไม่ได้ติดตั้ง เปิดแท็บใหม่เพื่อไม่ให้หน้าแอพหายไป
@@ -133,6 +139,13 @@
 
   // ---------- data ----------
   async function getJSON(path, fallback) {
+    // แอพมือถือ: โหลดข้อมูลล่าสุดจากเว็บก่อน ถ้าออฟไลน์ใช้ชุดที่ติดมากับแอพ
+    if (NATIVE) {
+      try {
+        const r = await fetch(C.webUrl + path, { cache: "no-cache", signal: AbortSignal.timeout(8000) });
+        if (r.ok) return await r.json();
+      } catch {}
+    }
     try {
       const r = await fetch(path, { cache: "no-cache" });
       return r.ok ? await r.json() : fallback;
@@ -158,7 +171,8 @@
   let adsenseLoaded = false;
   function adSlot(placement) {
     const A = C.ads;
-    if (A.adsenseClient && A.slots[placement]) {
+    // AdSense ห้ามใช้ในแอพ (ต้องใช้ AdMob) → ในแอพแสดงโฆษณาตรงจาก data/ads.json แทน
+    if (!NATIVE && A.adsenseClient && A.slots[placement]) {
       if (!adsenseLoaded) {
         const s = document.createElement("script");
         s.async = true; s.crossOrigin = "anonymous";
@@ -236,6 +250,8 @@
   }
 
   // ---------- views ----------
+  // งานกลางคืน/ผับบาร์ หรือที่ AI ระบุว่ามีแอลกอฮอล์ → แสดงป้าย 20+
+  const isAdult = ev => !!(ev.age20 || CAT[ev.category]?.adult);
   function card(ev) {
     const st = status(ev), pr = priceLabel(ev.price), v = venueOf(ev), cat = CAT[ev.category];
     const saved = state.saved.has(ev.id);
@@ -252,6 +268,8 @@
               ${ev.featured ? `<span class="badge hot">${t("featured")}</span>` : ""}
               ${reg?.soon ? `<span class="badge hot">${t("registerSoon")}</span>` : ""}
               ${cat ? `<span class="badge">${esc(catName(cat))}</span>` : ""}
+              ${isAdult(ev) ? `<span class="badge adult">🔞 ${t("age20")}</span>` : ""}
+              ${ev.sponsor ? `<span class="badge sponsor">🎁 ${t("sponsor")}</span>` : ""}
             </div>
           </div>
           <div class="card-body">
@@ -413,6 +431,8 @@
   // ลิงก์ที่เปิดแอพ Google Maps โดยตรง ถ้าไม่มีแอพจะเปิดเว็บ Google Maps แทน
   function mapsLink(v, mode) {
     const web = mapsWeb(v, mode);
+    // ในแอพ: ลิงก์เว็บ Google Maps ธรรมดา → ระบบเปิดแอพ Google Maps ให้เอง (ดูตัวดักคลิกด้านล่าง)
+    if (NATIVE) return `href="${esc(web)}" data-native-maps`;
     if (PLATFORM === "android") {
       const intent = `intent://${web.replace(/^https:\/\//, "")}#Intent;scheme=https;package=com.google.android.apps.maps;S.browser_fallback_url=${encodeURIComponent(web)};end`;
       return `href="${esc(intent)}"`;
@@ -434,6 +454,16 @@
     const onHide = () => { left = true; };
     document.addEventListener("visibilitychange", onHide, { once: true });
     setTimeout(() => { document.removeEventListener("visibilitychange", onHide); if (!left && !document.hidden) location.href = web; }, 1500);
+  });
+  // แอพมือถือ: แผนที่ → เปิดแอพ Google Maps, ลิงก์เว็บอื่น → เบราว์เซอร์ในแอพ (กดปิดแล้วกลับมาที่แอพ)
+  if (NATIVE) document.addEventListener("click", e => {
+    const a = e.target.closest("a[href^='http']");
+    if (!a || a.download) return;
+    e.preventDefault();
+    const { Browser, AppLauncher } = window.Capacitor?.Plugins || {};
+    if (a.hasAttribute("data-native-maps") && AppLauncher) AppLauncher.openUrl({ url: a.href }).catch(() => Browser?.open({ url: a.href }));
+    else if (Browser) Browser.open({ url: a.href, presentationStyle: "popover" });
+    else location.href = a.href;
   });
   // ข้อความเดินทาง: คำแปลเก็บเป็น array ตามลำดับเดียวกับ transit ต้นฉบับ
   const transitText = (owner, key, i, tip) => owner?.i18n?.[state.lang]?.[key]?.[i] ?? tip.text;
@@ -480,7 +510,7 @@
   // ---------- calendar ----------
   function gcalLink(ev, v) {
     const s = parseDate(ev.startDate), e = new Date(+parseDate(ev.endDate || ev.startDate) + DAY);
-    const p = new URLSearchParams({ action: "TEMPLATE", text: tr(ev, "title"), dates: `${ymd(s)}/${ymd(e)}`, location: venueName(v), details: `${tr(ev, "summary") || ""}\n${location.href}` });
+    const p = new URLSearchParams({ action: "TEMPLATE", text: tr(ev, "title"), dates: `${ymd(s)}/${ymd(e)}`, location: venueName(v), details: `${tr(ev, "summary") || ""}\n${publicUrl()}` });
     return `https://calendar.google.com/calendar/render?${p}`;
   }
   function downloadIcs(ev, v) {
@@ -521,7 +551,11 @@
           ${cat ? `<span class="tag">${cat.icon} ${esc(catName(cat))}</span>` : ""}
           <span class="price ${pr.cls}">${pr.text}</span>
           <span class="status ${st.key}">${st.text}</span>
+          ${isAdult(ev) ? `<span class="tag adult">🔞 ${t("age20")}</span>` : ""}
+          ${ev.sponsor ? `<span class="tag sponsor">🎁 ${esc(t("sponsorBy", { name: ev.sponsor }))}</span>` : ""}
+          ${ev.aiChecked ? `<span class="tag ai">🤖 ${t("aiChecked")}</span>` : ""}
         </div>
+        ${isAdult(ev) ? `<p class="adult-note">🔞 ${t("age20Note")}</p>` : ""}
         <div class="actions">
           ${ev.ticketUrl ? `<a class="btn primary" ${inAppLink(withAffiliate(ev.ticketUrl))}>${ev.sourceName ? t("buyAt", { site: esc(ev.sourceName) }) : isFree(ev) ? t("register") : t("buyTicket")}</a>` : ""}
           <button class="btn" id="saveBtn">${saved ? t("saved") : t("save")}</button>
@@ -574,9 +608,11 @@
     const ics = document.getElementById("icsBtn");
     if (ics) ics.onclick = () => downloadIcs(ev, v);
     document.getElementById("shareBtn").onclick = async () => {
-      const data = { title, text: `${title} · ${dateRange(ev)}`, url: location.href };
-      if (navigator.share) { try { await navigator.share(data); } catch {} }
-      else { try { await navigator.clipboard.writeText(location.href); alert(t("copied")); } catch {} }
+      const data = { title, text: `${title} · ${dateRange(ev)}`, url: publicUrl() };
+      const Share = window.Capacitor?.Plugins?.Share;
+      if (NATIVE && Share) { try { await Share.share({ ...data, dialogTitle: title }); } catch {} }
+      else if (navigator.share) { try { await navigator.share(data); } catch {} }
+      else { try { await navigator.clipboard.writeText(data.url); alert(t("copied")); } catch {} }
     };
     const loc = document.getElementById("locBtn");
     if (loc) loc.onclick = () => locate(() => { document.getElementById("rec").innerHTML = recommendation(v) || ""; });
@@ -648,10 +684,12 @@
         <p>${t("adsDesc")}</p>
         <div class="actions">${contact || `<span class="tag">${t("contactSetup")}</span>`}</div>
       </section>
-      <section class="panel prose">
+      ${NATIVE ? "" : `<section class="panel prose">
         <h2>${t("installTitle")}</h2>
         <p>${t("installDesc")}</p>
-      </section></div>`;
+        ${C.apkUrl && PLATFORM !== "ios" ? `<div class="actions"><a class="btn primary" href="${safeUrl(C.apkUrl)}" download>📲 ${t("getApp")}</a></div><p class="disclosure">${t("getAppDesc")}</p>` : ""}
+      </section>`}
+      <p class="disclosure"><a href="privacy.html" ${NATIVE ? "" : `target="_blank" rel="noopener"`}>${t("privacy")}</a></p></div>`;
   }
 
   // ---------- ตัวเลือกภาษา + ข้อความคงที่ใน index.html ----------
@@ -688,7 +726,8 @@
   window.addEventListener("hashchange", route);
   load().then(route);
 
-  if ("serviceWorker" in navigator && location.protocol !== "file:") {
+  // แอพมือถือมีไฟล์ติดเครื่องอยู่แล้ว ไม่ต้องใช้ service worker
+  if (!NATIVE && "serviceWorker" in navigator && location.protocol !== "file:") {
     navigator.serviceWorker.register("sw.js").catch(() => {});
   }
 })();

@@ -24,6 +24,11 @@ jobs:
       - name: ดึงงานจริงจากเว็บขายบัตร (Eventpop, Zipevent) + กรองอัตโนมัติ
         run: node scripts/fetch-events.mjs
         continue-on-error: true   # เว็บต้นทางล่ม/เปลี่ยนหน้าตา ข่าวยังอัปเดตได้ตามปกติ
+      - name: ให้ AI ตรวจงาน คัดงานไม่เหมาะ แก้หมวด หาสปอนเซอร์ แปล 3 ภาษา (ทำงานเมื่อมี GEMINI_API_KEY)
+        run: node scripts/ai-review.mjs
+        continue-on-error: true
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
       - name: ตรวจข้อมูล
         run: node scripts/check-data.mjs
       - name: แปลงานใหม่เป็นอังกฤษ/จีน (ทำงานเมื่อมี GEMINI_API_KEY)
@@ -35,4 +40,5 @@ jobs:
           git config user.name "news-bot"
           git config user.email "news-bot@users.noreply.github.com"
           git add data/news.json data/events.json data/venues.json data/auto-events.json data/geocache.json
+          git add data/ai-cache.json 2>/dev/null || true
           git diff --cached --quiet || (git commit -m "อัปเดตข่าวอีเว้นท์อัตโนมัติ" && git pull --rebase && git push)

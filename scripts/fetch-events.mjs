@@ -100,7 +100,7 @@ const SOURCES = {
     name: "Eventpop",
     lang: "en", // หน้าภาษาอังกฤษมีรูปแบบวันที่แน่นอน ("06 Dec 2026 at 16:00")
     async list() {
-      const cats = ["concert", "music-festival", "run", "book", "food-and-drink", "education", "business", "art-and-design", "health", "experience",
+      const cats = ["nightlife", "party", "concert", "music-festival", "run", "book", "food-and-drink", "education", "business", "art-and-design", "health", "experience",
         "kids-and-family", "performing-arts", "fan-meeting", "games", "e-sport", "hobbies-and-special-interests", "charity", "comedy"];
       const urls = new Set();
       for (const c of cats) {
@@ -186,9 +186,21 @@ const CATEGORY_RULES = [
   ["food", /\bfood|drink|beer|wine|whisky|cocktail|gastro|dining|festival of taste|อาหาร|เครื่องดื่ม|เบียร์|ไวน์/i],
   ["sale", /\bsale\b|flash ?sale|ลดราคา|ลดกระหน่ำ|เซล|outlet/i],
   ["learning", /\b(education|business|seminar|summit|conference|forum|workshop|course|class|training|bootcamp|symposium|talk|webinar|meetup)\b|สัมมนา|อบรม|เวิร์กช็อป|เวิร์คช็อป|คอร์ส|เรียน|ประชุม|ฟอรั่ม/i],
-  ["concert", /\b(concert|music|festival|live|fan ?meeting|fan ?con|showcase|tour|dj|party|nightlife|comedy|performing|musical|theatre|theater|stand ?up)\b|คอนเสิร์ต|เทศกาลดนตรี|แฟนมีต|ละครเวที|ดนตรี/i],
+  ["nightlife", /\b(nightlife|night ?club|club night|clubbing|bar|pub|party|parties|dj|rave|after ?party|happy hour|ladies night)\b|ผับ|บาร์|ปาร์ตี้|ไนท์คลับ|ไนท์ไลฟ์|ดีเจ|แดนซ์ฮอลล์/i],
+  ["concert", /\b(concert|music|festival|live|fan ?meeting|fan ?con|showcase|tour|comedy|performing|musical|theatre|theater|stand ?up)\b|คอนเสิร์ต|เทศกาลดนตรี|แฟนมีต|ละครเวที|ดนตรี/i],
   ["expo", /\b(expo|exhibition|fair|art|design|museum|gallery|gaming|games|e-?sport|cartoon|anime|experience|kids|family|hobbies)\b|นิทรรศการ|งานแสดง|มหกรรม|พิพิธภัณฑ์|ศิลปะ/i]
 ];
+const NIGHT_RULE = CATEGORY_RULES.find(([id]) => id === "nightlife")[1];
+const NIGHT_VENUE =/\b(bar|pub|club|lounge|rooftop|speakeasy|taproom|brewery)\b|ผับ|บาร์|คลับ|รูฟท็อป/i;
+// ผู้สนับสนุน: "Singha Corporation presents ..." หรือ "สนับสนุนโดย ..." ในชื่อ/คำอธิบาย
+function sponsorOf(title, summary) {
+  const clean = s => s.replace(/^[\s|:,-]+|[\s|:,.-]+$/g, "").trim();
+  const t = String(title || "").match(/(?:^|\|\s*)([^|]{2,40}?)\s+(?:proudly\s+)?presents?\b/i);
+  const s = !t && String(summary || "").match(/(?:สนับสนุนโดย|ผู้สนับสนุนหลัก|sponsored by|powered by|presented by)\s*:?\s*([^\n,.|!]{2,40})/i);
+  // คำอธิบายมักต่อข้อความติดกัน ("AssociationHosted at: ...") → ตัดที่คำถัดไป
+  const name = t ? clean(t[1]) : s && clean(s[1].split(/(?<=[a-z])(?=[A-Z])/)[0].split(/\b(?:hosted|held|venue|date)\b|\s(?:at|in|on)\s|:/i)[0]);
+  return name && !/^(we|eventpop|zipevent|the|and)$/i.test(name) ? name : undefined;
+}
 const categorize = (title, catText) => {
   for (const text of [catText, title]) for (const [id, re] of CATEGORY_RULES) if (re.test(text || "")) return id;
   return "expo";
@@ -280,6 +292,10 @@ async function build(src, ref, p) {
     ticketUrl: ref.url, sourceUrl: ref.url, sourceName: src.name,
     fetchedAt: new Date().toISOString()
   };
+  // คอนเสิร์ตที่จัดในผับ/บาร์/คลับ → หมวดไนท์ไลฟ์
+  if (ev.category === "concert" && NIGHT_VENUE.test(p.venueText || "")) ev.category = "nightlife";
+  const sponsor = sponsorOf(p.title, p.summary);
+  if (sponsor) ev.sponsor = sponsor;
   // งานยาวเกิน 4 เดือน (พิพิธภัณฑ์/นิทรรศการถาวร) → แสดงแบบเปิดประจำ
   if ((new Date(end) - new Date(start)) / 864e5 > 120) { ev.ongoing = true; delete ev.endDate; ev.startDate = start; }
 
@@ -348,6 +364,11 @@ for (const [key, src] of Object.entries(SOURCES)) {
 // งานที่หายจากหน้ารวมแต่ยังไม่จบ: เก็บไว้ต่อ (เว็บต้นทางอาจแค่เลื่อนหน้า)
 for (const e of prev.events || []) if (!out.find(x => x.id === e.id) && ((e.endDate || e.startDate) >= today || e.ongoing)) out.push(e);
 
+// ใช้กฎใหม่กับงานเดิมที่ยังไม่ถึงรอบเปิดหน้าใหม่ด้วย (สปอนเซอร์ / คอนเสิร์ตในผับบาร์)
+for (const e of out) {
+  if (!e.sponsor) { const s = sponsorOf(e.title, e.summary); if (s) e.sponsor = s; }
+  if (e.category === "concert" && (NIGHT_VENUE.test(e.venue?.name || "") || NIGHT_RULE.test(e.title))) e.category = "nightlife";
+}
 // กรองซ้ำข้ามแหล่ง: ชื่อ + วันเริ่มเหมือนกัน
 const seen = new Set(), events = [];
 for (const e of out) { const k = norm(e.title).replace(/\s/g, "").slice(0, 40) + e.startDate; if (seen.has(k)) { reject("ซ้ำกับแหล่งอื่น", e); continue; } seen.add(k); events.push(e); }

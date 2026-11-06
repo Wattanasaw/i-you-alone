@@ -6,3 +6,9 @@ node_modules/
 Thumbs.db
 
 *.tmp
+
+# แอพมือถือ: ไฟล์ที่สร้างใหม่ได้
+www/
+android/app/release/
+*.keystore
+*.jks

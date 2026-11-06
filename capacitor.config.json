@@ -1,0 +1,14 @@
+{
+  "appId": "io.github.wattanasaw.iyoualone",
+  "appName": "I You Alone",
+  "webDir": "www",
+  "backgroundColor": "#0f0a1e",
+  "android": {
+    "allowMixedContent": false
+  },
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  }
+}

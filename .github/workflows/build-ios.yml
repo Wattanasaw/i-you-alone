@@ -1,0 +1,25 @@
+name: ตรวจว่าแอพ iPhone สร้างได้
+
+# ทดลองคอมไพล์แอพ iOS บนเครื่อง Mac ของ GitHub (ฟรีสำหรับ repo สาธารณะ) โดยยังไม่เซ็นชื่อ
+# ใช้เช็กว่าโปรเจกต์พร้อม — การติดตั้งลง iPhone/ขึ้น App Store ต้องมีบัญชี Apple Developer ($99/ปี)
+on:
+  workflow_dispatch: {}
+
+jobs:
+  ios:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          cache: npm
+      - name: เตรียมไฟล์แอพ
+        run: |
+          npm ci
+          node scripts/build-app.mjs
+          npx cap sync ios
+      - name: คอมไพล์ (ไม่เซ็นชื่อ)
+        run: |
+          cd ios/App
+          xcodebuild -project App.xcodeproj -scheme App -configuration Release -sdk iphonesimulator -destination "generic/platform=iOS Simulator" CODE_SIGNING_ALLOWED=NO build | tail -n 20

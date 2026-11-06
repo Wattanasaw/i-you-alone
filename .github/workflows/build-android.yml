@@ -1,0 +1,82 @@
+name: สร้างแอพ Android
+
+# สร้างไฟล์ APK ทดลองใช้ทุกครั้งที่หน้าตา/โค้ดแอพเปลี่ยน แล้ววางไว้ที่หน้า Releases (ลิงก์โหลดเดิมตลอด)
+# ถ้าใส่คีย์ Play Store ใน Secrets แล้ว จะสร้างไฟล์ .aab สำหรับอัปโหลดขึ้น Play Store ให้ด้วย
+on:
+  push:
+    branches: [main]
+    paths:
+      - "index.html"
+      - "privacy.html"
+      - "css/**"
+      - "js/**"
+      - "icons/**"
+      - "android/**"
+      - "capacitor.config.json"
+      - "package.json"
+      - "package-lock.json"
+      - "scripts/build-app.mjs"
+      - ".github/workflows/build-android.yml"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-android
+  cancel-in-progress: true
+
+jobs:
+  android:
+    runs-on: ubuntu-latest
+    env:
+      APP_VERSION_CODE: ${{ github.run_number }}
+      APP_VERSION_NAME: 1.0.${{ github.run_number }}
+      HAS_STORE_KEY: ${{ secrets.ANDROID_KEYSTORE_BASE64 != '' }}
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          cache: npm
+      - uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: 21
+      - name: เตรียมไฟล์แอพ
+        run: |
+          npm ci
+          node scripts/build-app.mjs
+          npx cap sync android
+      - name: สร้าง APK ทดลองใช้
+        run: |
+          chmod +x android/gradlew
+          cd android && ./gradlew assembleRelease --no-daemon --stacktrace
+          cp app/build/outputs/apk/release/app-release.apk ../i-you-alone.apk
+        env:
+          ANDROID_KEYSTORE_FILE: ""
+      - name: วาง APK ที่หน้า Releases
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release view android-latest >/dev/null 2>&1 || \
+            gh release create android-latest --prerelease --title "แอพ Android ทดลองใช้" --notes "ไฟล์ทดลองใช้ อัปเดตอัตโนมัติ"
+          gh release upload android-latest i-you-alone.apk --clobber
+          gh release edit android-latest --notes "เวอร์ชัน ${APP_VERSION_NAME} · สร้างเมื่อ $(date -u +'%Y-%m-%d %H:%M') UTC · ดาวน์โหลด i-you-alone.apk แล้วเปิดติดตั้งบนมือถือ Android (อนุญาตติดตั้งจากแหล่งที่ไม่รู้จัก)"
+      - name: สร้างไฟล์ขึ้น Play Store (.aab) — ทำเมื่อใส่คีย์ใน Secrets แล้ว
+        if: env.HAS_STORE_KEY == 'true'
+        env:
+          ANDROID_KEYSTORE_BASE64: ${{ secrets.ANDROID_KEYSTORE_BASE64 }}
+          ANDROID_KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
+          ANDROID_KEY_ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
+          ANDROID_KEY_PASSWORD: ${{ secrets.ANDROID_KEY_PASSWORD }}
+        run: |
+          echo "$ANDROID_KEYSTORE_BASE64" | base64 -d > "$RUNNER_TEMP/upload.jks"
+          export ANDROID_KEYSTORE_FILE="$RUNNER_TEMP/upload.jks"
+          cd android && ./gradlew bundleRelease --no-daemon
+      - uses: actions/upload-artifact@v4
+        if: env.HAS_STORE_KEY == 'true'
+        with:
+          name: play-store-aab
+          path: android/app/build/outputs/bundle/release/app-release.aab
+          retention-days: 30

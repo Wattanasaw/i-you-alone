@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-11-06T15:58:23.860Z",
+  "updatedAt": "2026-11-06T16:20:10.846Z",
   "stats": {
     "Eventpop": {
-      "found": 171,
-      "kept": 128,
-      "opened": 40
+      "found": 188,
+      "kept": 142,
+      "opened": 43
     },
     "Zipevent": {
       "found": 162,
-      "kept": 24,
+      "kept": 23,
       "opened": 0
     }
   },
@@ -382,6 +382,29 @@
       }
     },
     {
+      "id": "ep-181282",
+      "auto": true,
+      "title": "🌈🕺🕺 Gay Speed Dating by OMG Matchmaking: OMG! MBTI MATCH 2.0",
+      "category": "nightlife",
+      "startDate": "2026-11-04",
+      "endDate": "2026-11-29",
+      "price": {
+        "type": "unknown"
+      },
+      "summary": "HEAD VS. HEART 🧠💘OMG Matchmaking x The Standard, Bangkok MahanakhonAfter the success of our last s",
+      "image": "https://p-u.popcdn.net/event_details/posters/000/181/282/large/8f33a6da036acd3c22c9c9cf51264729f0aa3743.png?1793861592",
+      "ticketUrl": "https://www.eventpop.me/e/181282/omg-mbtimatch2-gay",
+      "sourceUrl": "https://www.eventpop.me/e/181282/omg-mbtimatch2-gay",
+      "sourceName": "Eventpop",
+      "fetchedAt": "2026-11-06T16:13:38.420Z",
+      "venue": {
+        "name": "The Standard, Bangkok Mahanakhon",
+        "province": "bangkok",
+        "lat": 13.76862,
+        "lng": 100.50045
+      }
+    },
+    {
       "id": "ep-180088",
       "auto": true,
       "title": "Bangkok riddim syndicate 6 nov",
@@ -398,6 +421,28 @@
       "sourceUrl": "https://www.eventpop.me/e/180088/bangkokriddimsyndicate6nov",
       "sourceName": "Eventpop",
       "fetchedAt": "2026-11-06T15:20:51.530Z",
+      "venue": {
+        "name": "Bangkok Island",
+        "province": "bangkok"
+      }
+    },
+    {
+      "id": "ep-179855",
+      "auto": true,
+      "title": "Sounds of underground 6 Nov",
+      "category": "nightlife",
+      "startDate": "2026-11-06",
+      "endDate": "2026-11-06",
+      "time": "17:00",
+      "price": {
+        "type": "unknown"
+      },
+      "summary": "SOUNDS OF THE UNDERGROUNDBangkok Island invites you to a special night on the river.Bangkok’s underground is full of artists building something of their own, an",
+      "image": "https://p-u.popcdn.net/event_details/posters/000/179/855/large/952ad636ad4c00e1f6b07db95d54ff15b606365f.jpeg?1793097646",
+      "ticketUrl": "https://www.eventpop.me/e/179855",
+      "sourceUrl": "https://www.eventpop.me/e/179855",
+      "sourceName": "Eventpop",
+      "fetchedAt": "2026-11-06T16:13:49.472Z",
       "venue": {
         "name": "Bangkok Island",
         "province": "bangkok"
@@ -492,7 +537,8 @@
         "province": "bangkok",
         "lat": 13.73152,
         "lng": 100.56428
-      }
+      },
+      "sponsor": "Sales100Million"
     },
     {
       "id": "ep-175705",
@@ -514,6 +560,30 @@
       "venue": {
         "name": "Heavyweight brunch n bars",
         "province": "phuket"
+      }
+    },
+    {
+      "id": "ep-175043",
+      "auto": true,
+      "title": "The Story Continues: 10 years with PEAK",
+      "category": "nightlife",
+      "startDate": "2026-11-07",
+      "endDate": "2026-11-07",
+      "time": "12:00",
+      "price": {
+        "type": "unknown"
+      },
+      "summary": "Decade One CelebrationThis year is more special than ever: it's the 10th birthday event.That's 10 whole years of celebrat",
+      "image": "https://p-u.popcdn.net/event_details/covers/000/175/043/og_cover/c31ece51aedaae8579c7d10f7acaa1b1598faedc.png?1790917204",
+      "ticketUrl": "https://www.eventpop.me/e/175043/10years_with_peak",
+      "sourceUrl": "https://www.eventpop.me/e/175043/10years_with_peak",
+      "sourceName": "Eventpop",
+      "fetchedAt": "2026-11-06T16:14:00.400Z",
+      "venue": {
+        "name": "สมาคมธรรมศาสตร์ ในพระบรมราชูปถัมภ์",
+        "province": "bangkok",
+        "lat": 13.71947,
+        "lng": 100.5438
       }
     },
     {
@@ -655,6 +725,29 @@
         "province": "bangkok",
         "lat": 13.75135,
         "lng": 100.57096
+      },
+      "sponsor": "Singha Corporation"
+    },
+    {
+      "id": "ep-173907",
+      "auto": true,
+      "title": "JOEL DAVID & HIS BAND",
+      "category": "nightlife",
+      "startDate": "2026-11-08",
+      "endDate": "2026-11-08",
+      "time": "17:00",
+      "price": {
+        "type": "unknown"
+      },
+      "summary": "All aboard Bangkok Island for a sunset gathering where live music, art and fashion meet on the river. 🎶🎨For one special evening, Joél Davíd and his live band ta",
+      "image": "https://p-u.popcdn.net/event_details/posters/000/173/907/large/362b7e0fb795afbd5caeea93b53c59c333d38723.png?1790057421",
+      "ticketUrl": "https://www.eventpop.me/e/173907",
+      "sourceUrl": "https://www.eventpop.me/e/173907",
+      "sourceName": "Eventpop",
+      "fetchedAt": "2026-11-06T16:14:06.430Z",
+      "venue": {
+        "name": "Bangkok Island",
+        "province": "bangkok"
       }
     },
     {
@@ -804,7 +897,8 @@
       "venue": {
         "name": "Industrious Gaysorn Tower",
         "province": "bangkok"
-      }
+      },
+      "sponsor": "Bangkok Startup Association"
     },
     {
       "id": "zip-alphaskillssummit2026",
@@ -825,6 +919,28 @@
       "sourceName": "Zipevent",
       "fetchedAt": "2026-11-06T15:22:23.784Z",
       "venueId": "online"
+    },
+    {
+      "id": "ep-180121",
+      "auto": true,
+      "title": "Queer On Deck",
+      "category": "nightlife",
+      "startDate": "2026-11-13",
+      "endDate": "2026-11-13",
+      "time": "17:00",
+      "price": {
+        "type": "free"
+      },
+      "summary": "🪩Bangkok Island has always been an open-minded space, with plenty of Pride Cruises over the years. This time, we’re keeping it simple: a night cel",
+      "image": "https://p-u.popcdn.net/event_details/covers/000/180/121/og_cover/29d209d656b23e15b268af8dd278286c33acf25a.png?1793286294",
+      "ticketUrl": "https://www.eventpop.me/e/180121",
+      "sourceUrl": "https://www.eventpop.me/e/180121",
+      "sourceName": "Eventpop",
+      "fetchedAt": "2026-11-06T16:13:47.738Z",
+      "venue": {
+        "name": "Bangkok Island",
+        "province": "bangkok"
+      }
     },
     {
       "id": "ep-181216",
@@ -1208,7 +1324,7 @@
       "id": "ep-172813",
       "auto": true,
       "title": "Halfmoon Festival : 17th November 2026",
-      "category": "concert",
+      "category": "nightlife",
       "startDate": "2026-11-17",
       "endDate": "2026-11-18",
       "price": {
@@ -1355,6 +1471,28 @@
       }
     },
     {
+      "id": "ep-181150",
+      "auto": true,
+      "title": "Pool Party at Hotel Clover Patong Phuket 20 Nov, 2026",
+      "category": "nightlife",
+      "startDate": "2026-11-20",
+      "endDate": "2026-11-20",
+      "time": "17:00",
+      "price": {
+        "type": "unknown"
+      },
+      "summary": "🌴💦 POOL PARTY IS BACK 🍹🎧Ready to dive into the ultimate Friday night party? Join us for an unforgettable evening of tropical vibes, refreshing drinks, delicious",
+      "image": "https://p-u.popcdn.net/event_details/covers/000/181/150/og_cover/baac30891a130c18db128deec6f670a3f6eacd96.jpg?1793779510",
+      "ticketUrl": "https://www.eventpop.me/e/181150",
+      "sourceUrl": "https://www.eventpop.me/e/181150",
+      "sourceName": "Eventpop",
+      "fetchedAt": "2026-11-06T16:13:44.106Z",
+      "venue": {
+        "name": "Hotel Clover Patong Phuket",
+        "province": "phuket"
+      }
+    },
+    {
       "id": "ep-179956",
       "auto": true,
       "title": "TALKS ON TAP X White Cloud Ari",
@@ -1420,6 +1558,25 @@
       }
     },
     {
+      "id": "ep-179525",
+      "auto": true,
+      "title": "Bangkok Rooftops Loy Krathong Pool Party at Centara Grand",
+      "category": "nightlife",
+      "startDate": "2026-11-21",
+      "endDate": "2026-11-21",
+      "time": "15:00",
+      "price": {
+        "type": "unknown"
+      },
+      "summary": "Bangkok Rooftops takes over the open-air Pool Deck on the 26th floor of Centara Grand at CentralWorld for the Loy Krathong edition of its rooftop pool party. Ba",
+      "image": "https://p-u.popcdn.net/event_details/covers/000/179/525/og_cover/25fe761a016517663d66757a27ef644b97b7714e.jpg?1793007729",
+      "ticketUrl": "https://www.eventpop.me/e/179525",
+      "sourceUrl": "https://www.eventpop.me/e/179525",
+      "sourceName": "Eventpop",
+      "fetchedAt": "2026-11-06T16:13:56.789Z",
+      "venueId": "centralworld"
+    },
+    {
       "id": "ep-178599",
       "auto": true,
       "title": "JMNK : SHEเสิร์ฟ CONCERT",
@@ -1482,7 +1639,8 @@
       "venue": {
         "name": "Scarlette Café",
         "province": "bangkok"
-      }
+      },
+      "sponsor": "Singha Corporation"
     },
     {
       "id": "ep-167139",
@@ -1833,6 +1991,30 @@
       }
     },
     {
+      "id": "ep-181117",
+      "auto": true,
+      "title": "💃🕺 M/F Speed Dating by OMG Matchmaking: OMG! MBTI MATCH 2.0:",
+      "category": "nightlife",
+      "startDate": "2026-11-28",
+      "endDate": "2026-11-28",
+      "time": "18:00",
+      "price": {
+        "type": "unknown"
+      },
+      "summary": "HEAD VS. HEART 🧠💘OMG Matchmaking x The Standard, Bangkok MahanakhonAfter the success of our last so",
+      "image": "https://p-u.popcdn.net/event_details/posters/000/181/117/large/88d511682abe83c000b3550639add86612fcf76e.png?1793861557",
+      "ticketUrl": "https://www.eventpop.me/e/181117/omg-mbtimatch2",
+      "sourceUrl": "https://www.eventpop.me/e/181117/omg-mbtimatch2",
+      "sourceName": "Eventpop",
+      "fetchedAt": "2026-11-06T16:13:45.955Z",
+      "venue": {
+        "name": "The Standard, Bangkok Mahanakhon",
+        "province": "bangkok",
+        "lat": 13.76862,
+        "lng": 100.50045
+      }
+    },
+    {
       "id": "ep-180220",
       "auto": true,
       "title": "Bangkok Online Speed Dating | Same or Different? — SparkDating",
@@ -1855,7 +2037,7 @@
       "id": "ep-178199",
       "auto": true,
       "title": "Sat 28th Nov Over the Rainbow Rooftop T-Dance Party SS2 @ Mi",
-      "category": "concert",
+      "category": "nightlife",
       "startDate": "2026-11-28",
       "endDate": "2026-11-28",
       "time": "17:00",
@@ -1897,7 +2079,8 @@
         "province": "bangkok",
         "lat": 13.74537,
         "lng": 100.53236
-      }
+      },
+      "sponsor": "Singha Corporation"
     },
     {
       "id": "ep-177704",
@@ -1970,6 +2153,29 @@
         "province": "bangkok",
         "lat": 13.74537,
         "lng": 100.53236
+      },
+      "sponsor": "Singha Corporation"
+    },
+    {
+      "id": "ep-179823",
+      "auto": true,
+      "title": "THAI ROOTS ON THE RIVER",
+      "category": "nightlife",
+      "startDate": "2026-11-29",
+      "endDate": "2026-11-29",
+      "time": "18:00",
+      "price": {
+        "type": "free"
+      },
+      "summary": "THAI MUSIC FUSIONMusic is a bit like a tree. It has its roots, the sounds and rhythms that started it all. But it never stops growing, br",
+      "image": "https://p-u.popcdn.net/event_details/covers/000/179/823/og_cover/552836980303daeb5de6a7e88ec0f8a59934e4df.png?1793092988",
+      "ticketUrl": "https://www.eventpop.me/e/179823/thai_roots",
+      "sourceUrl": "https://www.eventpop.me/e/179823/thai_roots",
+      "sourceName": "Eventpop",
+      "fetchedAt": "2026-11-06T16:13:51.210Z",
+      "venue": {
+        "name": "Bangkok Island",
+        "province": "bangkok"
       }
     },
     {
@@ -2447,6 +2653,25 @@
       }
     },
     {
+      "id": "ep-179526",
+      "auto": true,
+      "title": "Bangkok Rooftops Christmas Pool Party at Centara Grand",
+      "category": "nightlife",
+      "startDate": "2026-12-12",
+      "endDate": "2026-12-12",
+      "time": "15:00",
+      "price": {
+        "type": "unknown"
+      },
+      "summary": "Bangkok Rooftops takes over the open-air Pool Deck on the 26th floor of Centara Grand at CentralWorld for the Christmas edition of its rooftop pool party. Bangk",
+      "image": "https://p-u.popcdn.net/event_details/covers/000/179/526/og_cover/8f578dde1ab8c0b7e5d60f8851ef40621c2dd49e.jpg?1793007818",
+      "ticketUrl": "https://www.eventpop.me/e/179526",
+      "sourceUrl": "https://www.eventpop.me/e/179526",
+      "sourceName": "Eventpop",
+      "fetchedAt": "2026-11-06T16:13:54.935Z",
+      "venueId": "centralworld"
+    },
+    {
       "id": "ep-175142",
       "auto": true,
       "title": "High Season 420 Fest 12-13 Dec",
@@ -2823,7 +3048,8 @@
       "venue": {
         "name": "UOB LIVE",
         "province": "bangkok"
-      }
+      },
+      "sponsor": "มาม่า"
     },
     {
       "id": "ep-176642",
@@ -2889,6 +3115,30 @@
       "venue": {
         "name": "Waterfall Festival",
         "province": "surat-thani"
+      }
+    },
+    {
+      "id": "ep-178401",
+      "auto": true,
+      "title": "Sat 26th Dec 🎅✨ Over the Rainbow Rooftop T-Dance SS2 X-mas s",
+      "category": "nightlife",
+      "startDate": "2026-12-26",
+      "endDate": "2026-12-26",
+      "time": "17:00",
+      "price": {
+        "type": "unknown"
+      },
+      "summary": "Let’s close out the year with a bang! Join us this Christmas Special as G-Spot Entertainment brings you a festive rooftop celebration high in the sky with Sexy",
+      "image": "https://p-u.popcdn.net/event_details/covers/000/178/401/og_cover/8c933ed92f76113920d4700baccb9f0b049a0d12.jpg?1792447147",
+      "ticketUrl": "https://www.eventpop.me/e/178401/https-www-facebook-com-events-946442954825599",
+      "sourceUrl": "https://www.eventpop.me/e/178401/https-www-facebook-com-events-946442954825599",
+      "sourceName": "Eventpop",
+      "fetchedAt": "2026-11-06T16:13:58.541Z",
+      "venue": {
+        "name": "Mimi's Bangkok",
+        "province": "bangkok",
+        "lat": 13.72911,
+        "lng": 100.56522
       }
     },
     {
@@ -3007,7 +3257,7 @@
       "id": "ep-159292",
       "auto": true,
       "title": "WHITE PARTY BANGKOK",
-      "category": "concert",
+      "category": "nightlife",
       "startDate": "2026-12-29",
       "endDate": "2027-01-03",
       "price": {
@@ -3110,6 +3360,29 @@
       }
     },
     {
+      "id": "ep-152872",
+      "auto": true,
+      "title": "NYE Boat Party",
+      "category": "nightlife",
+      "startDate": "2026-12-31",
+      "endDate": "2027-01-01",
+      "price": {
+        "type": "paid",
+        "min": 3000,
+        "max": 40000
+      },
+      "summary": "BANGKOK ISLAND NYE 2027Celebrate New Year’s Eve on the Chao Phraya River with music, city lights, fireworks, and the best countdown vibe in Bangkok.Cruise into",
+      "image": "https://p-u.popcdn.net/event_details/covers/000/152/872/og_cover/77a1f0e808497ffb46789e039173ec5c14e36269.jpeg?1779788584",
+      "ticketUrl": "https://www.eventpop.me/e/152872",
+      "sourceUrl": "https://www.eventpop.me/e/152872",
+      "sourceName": "Eventpop",
+      "fetchedAt": "2026-11-06T16:14:15.558Z",
+      "venue": {
+        "name": "Bangkok Island",
+        "province": "bangkok"
+      }
+    },
+    {
       "id": "ep-177471",
       "auto": true,
       "title": "МУМИЙ ТРОЛЛЬ на Пхукете | 4 ЯНВАРЯ",
@@ -3131,6 +3404,47 @@
         "lat": 7.98482,
         "lng": 98.31007
       }
+    },
+    {
+      "id": "ep-173641",
+      "auto": true,
+      "title": "CHANT DOWN BABY",
+      "category": "nightlife",
+      "startDate": "2027-01-08",
+      "endDate": "2027-01-08",
+      "time": "18:00",
+      "price": {
+        "type": "unknown"
+      },
+      "summary": "LONBangkok Island invites you to a special night on the river.Bangkok runs loud, fast, and full pressure—but tonight, we’re taking that energy st",
+      "image": "https://p-u.popcdn.net/event_details/covers/000/173/641/og_cover/94d423cb9f0f5aef246ecb457d3b145b24c82cd5.jpeg?1791030850",
+      "ticketUrl": "https://www.eventpop.me/e/173641",
+      "sourceUrl": "https://www.eventpop.me/e/173641",
+      "sourceName": "Eventpop",
+      "fetchedAt": "2026-11-06T16:14:08.238Z",
+      "venue": {
+        "name": "Bangkok Island",
+        "province": "bangkok"
+      }
+    },
+    {
+      "id": "ep-179591",
+      "auto": true,
+      "title": "Bangkok Rooftops January Pool Party at Centara Grand",
+      "category": "nightlife",
+      "startDate": "2027-01-09",
+      "endDate": "2027-01-09",
+      "time": "15:00",
+      "price": {
+        "type": "unknown"
+      },
+      "summary": "Bangkok Rooftops takes over the open-air Pool Deck on the 26th floor of Centara Grand at CentralWorld to open 2027 with its rooftop pool party. Bangkok Rooftops",
+      "image": "https://p-u.popcdn.net/event_details/covers/000/179/591/og_cover/1bb13c12d4f17eeace9138a8871250a8ac6a52c0.jpg?1793010768",
+      "ticketUrl": "https://www.eventpop.me/e/179591",
+      "sourceUrl": "https://www.eventpop.me/e/179591",
+      "sourceName": "Eventpop",
+      "fetchedAt": "2026-11-06T16:13:53.078Z",
+      "venueId": "centralworld"
     },
     {
       "id": "ep-177504",
@@ -3274,7 +3588,8 @@
         "province": "ratchaburi",
         "lat": 13.54669,
         "lng": 99.29113
-      }
+      },
+      "sponsor": "Chang Cold Brew Cool Club"
     },
     {
       "id": "ep-180187",

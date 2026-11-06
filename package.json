@@ -1,0 +1,23 @@
+{
+  "name": "i-you-alone",
+  "version": "1.0.0",
+  "private": true,
+  "description": "แอพรวมงานอีเว้นท์ทั่วไทย (เว็บ + Android/iOS ด้วย Capacitor)",
+  "scripts": {
+    "app:build": "node scripts/build-app.mjs",
+    "app:sync": "node scripts/build-app.mjs && npx cap sync",
+    "check": "node scripts/check-data.mjs"
+  },
+  "dependencies": {
+    "@capacitor/android": "^8.6.0",
+    "@capacitor/app-launcher": "^8.0.1",
+    "@capacitor/browser": "^8.0.5",
+    "@capacitor/core": "^8.6.0",
+    "@capacitor/ios": "^8.6.0",
+    "@capacitor/share": "^8.0.3"
+  },
+  "devDependencies": {
+    "@capacitor/assets": "^4.0.0",
+    "@capacitor/cli": "^8.6.0"
+  }
+}

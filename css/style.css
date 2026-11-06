@@ -227,6 +227,8 @@ button, input, select { font: inherit; color: inherit; }
   background: rgba(255, 255, 255, .22); color: #fff; backdrop-filter: blur(8px); border: 1px solid rgba(255, 255, 255, .3);
 }
 .badge.hot { background: #ffd36e; color: #5a3200; border-color: transparent; }
+.badge.adult { background: #1f1235; color: #fff; border-color: transparent; }
+.badge.sponsor { background: #fde68a; color: #713f12; border-color: transparent; }
 .card-body { padding: 14px 16px 16px; display: flex; flex-direction: column; gap: 4px; flex: 1; }
 .card h3 { margin: 0 0 4px; font-size: 1.08rem; line-height: 1.4; font-weight: 600; }
 .meta { color: var(--muted); font-size: .86rem; display: flex; gap: 6px; align-items: flex-start; }
@@ -240,6 +242,10 @@ button, input, select { font: inherit; color: inherit; }
 .reg.soon { color: var(--accent); font-weight: 600; }
 .reg.closed { color: var(--muted); text-decoration: line-through; }
 .tag.race { background: color-mix(in srgb, #16a34a 14%, var(--surface)); color: var(--free); font-weight: 600; }
+.tag.adult { background: #1f1235; color: #fff; font-weight: 600; }
+.tag.sponsor { background: color-mix(in srgb, #f59e0b 18%, var(--surface)); font-weight: 600; }
+.tag.ai { background: color-mix(in srgb, #2f7cf6 14%, var(--surface)); }
+.adult-note { margin: 10px 0 0; padding: 10px 12px; border-radius: 12px; font-size: .85rem; background: color-mix(in srgb, #4c1d95 12%, var(--surface)); border: 1px solid color-mix(in srgb, #4c1d95 30%, transparent); }
 .status.live::before { content: ""; display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: var(--accent); margin-right: 6px; animation: pulse 1.6s infinite; vertical-align: 1px; }
 @keyframes pulse { 0% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--accent) 60%, transparent); } 100% { box-shadow: 0 0 0 8px transparent; } }
 .save-btn {

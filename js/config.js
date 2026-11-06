@@ -11,6 +11,8 @@ window.APP_CONFIG = {
   categories: [
     // color / color2 = สีไล่เฉดของปกการ์ด
     { id: "concert", icon: "🎤", color: "#ff2d78", color2: "#7b2ff7", name: { th: "คอนเสิร์ต/บันเทิง", en: "Concerts & shows", zh: "演唱会/娱乐" } },
+    // ศิลปินเล่นตามผับบาร์ ปาร์ตี้ ดีเจ (แสดงป้าย 20+ อัตโนมัติ)
+    { id: "nightlife", icon: "🌙", color: "#4c1d95", color2: "#db2777", adult: true, name: { th: "ไนท์ไลฟ์/ผับบาร์", en: "Nightlife & bars", zh: "夜生活/酒吧" } },
     { id: "learning", icon: "🎓", color: "#2f7cf6", color2: "#00c2c7", name: { th: "สัมมนา/เรียนรู้", en: "Seminars & learning", zh: "讲座/学习" } },
     { id: "book", icon: "📚", color: "#8b5cf6", color2: "#ec4899", name: { th: "งานหนังสือ", en: "Book fairs", zh: "书展" } },
     { id: "motor", icon: "🏎️", color: "#0ea47a", color2: "#1e3a8a", name: { th: "มอเตอร์โชว์", en: "Motor shows", zh: "车展" } },
@@ -35,6 +37,11 @@ window.APP_CONFIG = {
   // ถ้าสมัครเป็นพันธมิตรกับเว็บขายบัตรแล้ว ใส่พารามิเตอร์ที่ได้ เช่น "aff=รหัสของคุณ"
   // แอพจะต่อเข้ากับปุ่ม "ซื้อบัตร" ของงานที่ดึงมาจากเว็บนั้นให้อัตโนมัติ
   ticketAffiliate: { "eventpop.me": "", "zipeventapp.com": "" },
+
+  // ===== แอพมือถือ (Android/iOS) =====
+  // แอพมีข้อมูลชุดหนึ่งติดเครื่องไว้ใช้ตอนออฟไลน์ แต่จะโหลดข้อมูลล่าสุดจากเว็บนี้ทุกครั้งที่เปิด
+  webUrl: "https://wattanasaw.github.io/i-you-alone/",
+  apkUrl: "https://github.com/Wattanasaw/i-you-alone/releases/download/android-latest/i-you-alone.apk",
 
   affiliateDisclosure: {
     th: "ลิงก์บางส่วนเป็นลิงก์พันธมิตร (Affiliate) เราอาจได้รับค่าคอมมิชชันเมื่อคุณซื้อผ่านลิงก์ โดยคุณไม่ต้องจ่ายเพิ่ม",

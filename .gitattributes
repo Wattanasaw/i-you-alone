@@ -1,2 +1,3 @@
 # เก็บไฟล์เป็นแบบ LF เหมือนกันทุกเครื่อง (บอทดึงข่าวบน GitHub ใช้ Linux)
 * text=auto eol=lf
+*.bat text eol=crlf

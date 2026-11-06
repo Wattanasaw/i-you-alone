@@ -25,6 +25,9 @@ if ($LASTEXITCODE -ne 0) { Log "pull ไม่สำเร็จ (ยังไ�
 $out = & $node scripts/fetch-events.mjs 2>&1
 $fetchOk = $LASTEXITCODE -eq 0
 $out | Where-Object { "$_" -match "ตอบ|เก็บ|เสีย" } | Select-Object -First 5 | ForEach-Object { Log "$_" }
+# ใส่ผลตรวจ AI ที่ GitHub จำไว้ให้งานที่เพิ่งดึง (เครื่องนี้ไม่ถาม AI เอง ไม่เปลืองโควต้า)
+$env:GEMINI_API_KEY = ""
+& $node scripts/ai-review.mjs 2>&1 | Out-Null
 $out = & $node scripts/check-data.mjs 2>&1
 $checkOk = $LASTEXITCODE -eq 0
 $out | Select-Object -Last 1 | ForEach-Object { Log "$_" }
