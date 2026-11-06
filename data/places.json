@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-06T18:42:13.671Z",
+ "updatedAt": "2026-11-06T19:23:39.124Z",
  "places": [
   {
    "id": "wd-Q3576017",
@@ -29,124 +29,7 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:Khao_Khiao_Open_Zoo_relief_and_writing_outside_2009.jpg",
    "imageCredit": "Dean Croshere from Jomtien, Thailand · CC BY 2.0",
    "fetchedAt": "2026-11-06T18:16:05.424Z",
-   "trend": 5,
-   "trendNews": [
-    {
-     "title": "สวนสัตว์เปิดเขาเขียว จัดกิจ “วันปิยมหาราช” 23 ต.ค. นี้ เด็กและผู้สูงอายุเข้าชมฟรี!",
-     "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFA0eWwzaEE2SkhocDU3YmVVaWVXR1pfSlg5RnVpb1VMb0dXcERGbHA0UTczY0NSRFYzTkJxVl85Z08yZTM3YTNYN3AyM0lVdVFVUnktN1dvZlJ2QkRrNk50REpiTnE1Zw?oc=5",
-     "source": "ข่าวสด",
-     "date": "2026-10-22"
-    },
-    {
-     "title": "สวนสัตว์เปิดเขาเขียว ต้อนรับลูกฮิปโปแคระตัวใหม่ “หลานของหมูเด้ง” น่ารักน่าเอ็นดู ตัวชมพูตะมุตะมิ",
-     "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBnMjRVR05rd2RyaEp5N1cwWFFUdk9sNWRxbFZpbF9pVTNWSHFKM2FUWWFUMTdQMnJ4WUJVc1RFNGxZQ2V0VmthcW1lczFVdzlqWmNYMEFtM0h1WG9hdUE?oc=5",
-     "source": "ผู้จัดการออนไลน์",
-     "date": "2026-11-06"
-    },
-    {
-     "title": "สวนสัตว์เขาเขียวต้อนรับสมาชิกใหม่ “หมูเด้ง” เป็นคุณอาแล้ว",
-     "link": "https://news.google.com/rss/articles/CBMilgJBVV95cUxOeFFTRC1TbkNQQng4MjZnNTRhNDlMRGpaYUlWMVpoZnNyMEhsWlZmYTR1UThhUGgtZ1RJcWFnazdJdENmSUh4al94ZXJFeURaVVFjSmhMMkVJWGEyV3dqVlVLQTE2QVRyNF83UDc4OEJ6ZExZdm43cFBXVk5Kd2x1bnhrNC1GanctNXUzU0p0N1dRTkJsbzlyMG5oV3g5OEhJOXMwYXBLV0NjYmRyZmpIemlucS1XUnV2NF8zaS1WUTZWN1hvQTJKaEZhQVBleHV1bjVrU0RRYkhCSnF4OGd4NEdudERVVXBtOXpwQnpqeTAzS1NaYTRlZ0xjUEFWNThCYlY3X3kzNkpta0sxRW9zSEZxdG5Udw?oc=5",
-     "source": "อมรินทร์ทีวี ช่อง 34",
-     "date": "2026-11-06"
-    }
-   ]
-  },
-  {
-   "id": "wd-Q3039270",
-   "wikidata": "Q3039270",
-   "kind": "themepark",
-   "fame": 9,
-   "name": {
-    "th": "ดรีมเวิลด์",
-    "en": "Dream World",
-    "zh": "夢幻樂園"
-   },
-   "lat": 13.9875,
-   "lng": 100.675,
-   "province": "pathum-thani",
-   "website": "http://www.dreamworld-th.com/",
-   "wiki": {
-    "th": "https://th.wikipedia.org/wiki/%E0%B8%94%E0%B8%A3%E0%B8%B5%E0%B8%A1%E0%B9%80%E0%B8%A7%E0%B8%B4%E0%B8%A5%E0%B8%94%E0%B9%8C",
-    "en": "https://en.wikipedia.org/wiki/Dream_World_(Thailand)",
-    "zh": "https://zh.wikipedia.org/wiki/%E5%A4%A2%E5%B9%BB%E6%A8%82%E5%9C%92_(%E5%B7%B4%E5%90%9E%E4%BB%96%E5%B0%BC)"
-   },
-   "hours": "Mo-Fr 10:00-17:00; Sa-Su 10:00-18:00",
-   "phone": "66 (2) 2 577-8666",
-   "address": "Thanyaburi",
-   "summary": {
-    "th": "ดรีมเวิลด์ เป็นสวนสนุกกลางแจ้งขนาดใหญ่ในประเทศไทย ตั้งอยู่กิโลเมตรที่ 7 ของทางหลวงแผ่นดินหมายเลข 305 (รังสิต-นครนายก) ในตำบลบึงยี่โถ อำเภอธัญบุรี จังหวัดปทุมธานี และสวนสนุกแห่งนี้มีเนื้อที่กว่า 160 ไร่",
-    "en": "Dream World is an amusement park in Thanyaburi district, Pathum Thani province, Thailand. The park includes three roller coasters and multiple other rides and attractions.",
-    "zh": "夢幻樂園， 位於泰國巴吞他尼府蘭實坤西育路（泰國第三公路）的第七公里處，為一個設有多種機動遊戲設施的主題公園。\n"
-   },
-   "image": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Dream_World%2C_Thailand.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Dream_World,_Thailand.jpg",
-   "imageCredit": "No machine-readable author provided. Manop assumed (based on · CC BY-SA 3.0",
-   "fetchedAt": "2026-11-06T18:16:32.380Z",
-   "trend": 3,
-   "trendNews": [
-    {
-     "title": "ดรีมเวิลด์ จัดโปร พ.ย. 680 บาท เล่นไม่อั้น 25 รายการ พร้อมเครื่องเล่นใหม่ 'อันเดอร์เดอะซี'",
-     "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBSZEFaMUwzNzBhQXlYY0lTVTFsS2hhd1BzS1BnNjdyNXdzai1JSTg0SjJXQ2dTTG1LQkZmWnV6eXRmWGVtb2xjTVEwUW1LenlqdDZTT0VRQ1NzRG5NbzQxb2RtNGplZw?oc=5",
-     "source": "ข่าวสด",
-     "date": "2026-11-05"
-    },
-    {
-     "title": "ดรีมเวิลด์เปิดโปรโมชันราคาพิเศษ 680 บาท เล่นไม่จำกัดรอบตลอดเดือนพ.ย. พร้อมเครื่องเล่นใหม่ Under the Sea",
-     "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9udTZKbUw4Nlh4dF94RUNOaS1qOEVyUjQxS20tbDZxZkdoZG5hNUw0QUdpVVVPaGxCbjN3eTJUYXVfMDZrQmpGRFNBNmNUbmMzT0IzM2lubE11RzFUS0R6SEY5SmRXYnpINVJnWmhn?oc=5",
-     "source": "Head Topics",
-     "date": "2026-11-05"
-    },
-    {
-     "title": "ชวนเที่ยวดรีมเวิลด์ สนุกจุใจ เล่นแบบไม่จำกัดรอบ 9 - 30 พ.ย.นี้",
-     "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5ENWxTWHpsdGlkcGZ2dTNSOVR3RkYxS2twbEY3ZjM3WjZscTU1VG5CQ0swOEdjSEVaU0I2TXEyeHl6WERDbWdaZ0N1QmVBbjdObFAzeFFRcktBX0lC?oc=5",
-     "source": "banmuang.co.th",
-     "date": "2026-11-04"
-    }
-   ]
-  },
-  {
-   "id": "wd-Q1819232",
-   "wikidata": "Q1819232",
-   "kind": "park",
-   "fame": 36,
-   "name": {
-    "th": "อุทยานแห่งชาติแก่งกระจาน",
-    "en": "Kaeng Krachan National Park",
-    "zh": "岗卡章国家公园"
-   },
-   "lat": 12.79889,
-   "lng": 99.45333,
-   "province": "phetchaburi",
-   "website": "https://www.thainationalparks.com/kaeng-krachan-national-park",
-   "wiki": {
-    "th": "https://th.wikipedia.org/wiki/%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B9%81%E0%B8%81%E0%B9%88%E0%B8%87%E0%B8%81%E0%B8%A3%E0%B8%B0%E0%B8%88%E0%B8%B2%E0%B8%99",
-    "en": "https://en.wikipedia.org/wiki/Kaeng_Krachan_National_Park",
-    "zh": "https://zh.wikipedia.org/wiki/%E5%B2%97%E5%8D%A1%E7%AB%A0%E5%9B%BD%E5%AE%B6%E5%85%AC%E5%9B%AD"
-   },
-   "summary": {
-    "th": "อุทยานแห่งชาติแก่งกระจาน เป็นอุทยานแห่งชาติที่มีพื้นที่ขนาดใหญ่ที่สุดของประเทศไทย ตั้งอยู่ในจังหวัดเพชรบุรีและจังหวัดประจวบคีรีขันธ์ นอกจากนี้ยังเป็นส่วนหนึ่งของกลุ่มป่าแก่งกระจานซึ่งได้รับการขึ้นทะเบียนเป็นแหล่งมรดกโลกจากยูเนสโกเมื่อวันที่ 26 กรกฎาคม พ.ศ. 2564 อีกด้วย",
-    "en": "Kaeng Krachan National Park is the largest national park of Thailand. It is on the border with Burma, contiguous with the Tanintharyi Nature Reserve. It is a popular park owing to its proximity to the tourist town of Hua Hin. It was named a UNESCO World Heritage Site on 26 July 2021, despite concerns from the OHCHR around the human rights violations of the indigenous people that live in the park.",
-    "zh": "岗卡章国家公园 為泰国最大的國家公園。該國家公園與缅甸的德林達依自然保護區成邊界。由於位置鄰近渡假勝地华欣而成為熱門的國家公園。\n"
-   },
-   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Kaeng_Krachan.jpg/960px-Kaeng_Krachan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Kaeng_Krachan.jpg",
-   "imageCredit": "JJ Harrison (https://www.jjharrison.com.au/) · CC BY-SA 3.0",
-   "fetchedAt": "2026-11-06T18:18:14.574Z",
-   "trend": 2,
-   "trendNews": [
-    {
-     "title": "เปิดเส้นทางศึกษาธรรมชาติ “ทุ่งหญ้าห้วยคมกฤต” ดันท่องเที่ยวเชิงอนุรักษ์ป่าแก่งกระจาน",
-     "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1oQXc5QUhqZTc4UTRnUXY2NGlFb2pBYnhGNzZyWDY4MzJVRTBrRExCVENqSk9SaC1lUWhZSXlZYUVGVDk0Q290OG9tMjFsTG1CbzlBX2RPM0t4eUFYdHc?oc=5",
-     "source": "ผู้จัดการออนไลน์",
-     "date": "2026-11-06"
-    },
-    {
-     "title": "อุทยานแห่งชาติแก่งกระจานเปิดโครงการท่องเที่ยวชมสัตว์ป่าทุ่งหญ้าห้วยคมกฤต เริ่ม 1 พ.ย. 2569",
-     "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5zVTcwV1laZUZBS182NmoxcUhCR29uX1N6TjYzOC16alliSnZneUtTazR3VF9oNklnZk9TS3VJWDZrUjRzZTRFdTk0aEY2NWNieTJaUGI2ZngtNWpwUFNUdkRGMkRHUU50VmJhc2xB?oc=5",
-     "source": "Head Topics",
-     "date": "2026-11-06"
-    }
-   ]
+   "trend": 2
   },
   {
    "id": "wd-Q3034913",
@@ -176,15 +59,7 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:Rhino_CMZ.jpg",
    "imageCredit": "This user loves Krittaya. · Public domain",
    "fetchedAt": "2026-11-06T18:15:57.744Z",
-   "trend": 1,
-   "trendNews": [
-    {
-     "title": "สวนสัตว์เชียงใหม่ เปิดตัว 'Zoo Junior แก๊งจิ๋วหัวใจฟู' ชวนสัมผัสความน่ารักสมาชิกใหม่",
-     "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFB0NGV0TjBYOFZ4RnctR1g0TTZ6ZkJYMlNuUkRTUmlzamVxT3Qxc0NMYWpmUkxuNVF4NUhNdDJxSGVEdlBQaEJvN3VxcnBBU2s2UEkwNkZERlZQVFV6WlotSWJTRkkzQQ?oc=5",
-     "source": "ข่าวสด",
-     "date": "2026-10-22"
-    }
-   ]
+   "trend": 2
   },
   {
    "id": "wd-Q1642767",
@@ -214,49 +89,62 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:Chiang_Mai_National_Museum.jpg",
    "imageCredit": "Zhou Guanhuai · CC0",
    "fetchedAt": "2026-11-06T18:41:38.777Z",
-   "trend": 1,
-   "trendNews": [
-    {
-     "title": "สวนสัตว์เชียงใหม่ เปิดตัว 'Zoo Junior แก๊งจิ๋วหัวใจฟู' ชวนสัมผัสความน่ารักสมาชิกใหม่",
-     "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFB0NGV0TjBYOFZ4RnctR1g0TTZ6ZkJYMlNuUkRTUmlzamVxT3Qxc0NMYWpmUkxuNVF4NUhNdDJxSGVEdlBQaEJvN3VxcnBBU2s2UEkwNkZERlZQVFV6WlotSWJTRkkzQQ?oc=5",
-     "source": "ข่าวสด",
-     "date": "2026-10-22"
-    }
-   ]
+   "trend": 2
   },
   {
-   "id": "wd-Q3576027",
-   "wikidata": "Q3576027",
-   "kind": "zoo",
-   "fame": 3,
+   "id": "wd-Q386420",
+   "wikidata": "Q386420",
+   "kind": "park",
+   "fame": 43,
    "name": {
-    "th": "สวนสัตว์สงขลา",
-    "en": "Songkhla Zoo"
+    "th": "อุทยานแห่งชาติเขาใหญ่",
+    "en": "Khao Yai National Park",
+    "zh": "考艾國家公園"
    },
-   "lat": 7.14292,
-   "lng": 100.60433,
-   "province": "songkhla",
-   "website": "http://www.songkhla.zoothailand.org/",
+   "lat": 14.35,
+   "lng": 101.44,
+   "province": "nakhon-nayok",
+   "website": "http://www.dnp.go.th/parkreserve/asp/style1/default.asp?npid=9&lg=2",
    "wiki": {
-    "th": "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%A7%E0%B8%99%E0%B8%AA%E0%B8%B1%E0%B8%95%E0%B8%A7%E0%B9%8C%E0%B8%AA%E0%B8%87%E0%B8%82%E0%B8%A5%E0%B8%B2"
+    "th": "https://th.wikipedia.org/wiki/%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B9%80%E0%B8%82%E0%B8%B2%E0%B9%83%E0%B8%AB%E0%B8%8D%E0%B9%88",
+    "en": "https://en.wikipedia.org/wiki/Khao_Yai_National_Park",
+    "zh": "https://zh.wikipedia.org/wiki/%E8%80%83%E8%89%BE%E5%9B%BD%E5%AE%B6%E5%85%AC%E5%9B%AD"
    },
-   "address": "เมืองสงขลา",
    "summary": {
-    "th": "สวนสัตว์สงขลา เป็นสวนสัตว์แห่งแรกของภาคใต้ มีพื้นที่ 878 ไร่ จัดตั้งขึ้นเพื่ออนุรักษ์ ขยายพันธุ์ รวบรวมสัตว์ป่าของไทย และเพื่อเป็นสถานที่ท่องเที่ยวพักผ่อนหย่อนใจของประชาชน ตั้งอยู่ที่ตำบลเขารูปช้าง อำเภอเมืองสงขลา จังหวัดสงขลา สวนสัตว์สงขลาเป็นสวนสัตว์ภายใต้พระบรมราชูปถัมภ์ สิ่งที่น่าสนใจ เช่น สวนน้ำ รีสอร์ท สัตว์ป่าที่จัดแสดงเช่น กวาง เสือโคร่ง หมี ยีราฟ เสือโคร่งขาว ม้าลาย ช้าง ลิง ลิงอุรังอุตัง"
+    "th": "อุทยานแห่งชาติเขาใหญ่ เป็นหนึ่งในอุทยานที่ตั้งอยู่ในเขตพื้นที่ 11 อำเภอ ใน 4 จังหวัด ได้แก่อำเภอปากช่อง อำเภอวังน้ำเขียว จังหวัดนครราชสีมา\nอำเภอนาดี อำเภอกบินทร์บุรี อำเภอประจันตคาม อำเภอเมืองปราจีนบุรี จังหวัดปราจีนบุรี\nอำเภอปากพลี อำเภอบ้านนา อำเภอเมืองนครนายก จังหวัดนครนายก\nอำเภอแก่งคอย อำเภอมวกเหล็ก จังหวัดสระบุรี",
+    "en": "Khao Yai National Park is a national park in Thailand. Established in 1962 as Thailand's first national park, it is the third largest national park in Thailand.",
+    "zh": "考艾國家公園，或稱大山國家公園，位於泰国巴真府、那空那育府、呵叻府、北標府交界處，成立於1962年9月18日，為泰國第一個國家公園。公園面積2,168平方公里，名列為泰國第三位。考艾國家公園的標誌為已絕滅物種熊氏鹿的頭像，公園以此標誌紀念這個美麗的物種，並激發人們對野生動物的保護意識。\n"
    },
-   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Khao_Rup_Chang%2C_Mueang_Songkhla_District%2C_Songkhla_90000%2C_Thailand_-_panoramio.jpg/960px-Khao_Rup_Chang%2C_Mueang_Songkhla_District%2C_Songkhla_90000%2C_Thailand_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Khao_Rup_Chang,_Mueang_Songkhla_District,_Songkhla_90000,_Thailand_-_panoramio.jpg",
-   "imageCredit": "nunt · CC BY 3.0",
-   "fetchedAt": "2026-11-06T18:16:25.897Z",
-   "trend": 1,
-   "trendNews": [
-    {
-     "title": "สงขลา | สวนสัตว์สงขลาจับมือปศุสัตว์เตรียมพื้นที่รองรับช้าง 4 เชือก หลังเจ้าของขอความอนุเคราะห์ใช้เป็นสถานที่พักพิงชั่วคราว 6 เดือน",
-     "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE4tc3FDTU1DWXg5S3dSNGN2cW5GVk5pWnV3NVB6THNveURIeUhmTTlSUXYzbkxrQ3JNa0I1aGZrLW4ydzUtZnI5RHJJTXFsWUUyNVJfY011TzFIdw?oc=5",
-     "source": "HATYAI FOCUS",
-     "date": "2026-11-05"
-    }
-   ]
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/KHAOYAI.JPG/960px-KHAOYAI.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:KHAOYAI.JPG",
+   "imageCredit": "Jtri at Dutch Wikipedia · CC BY-SA 3.0",
+   "fetchedAt": "2026-11-06T18:18:11.823Z",
+   "trend": 1
+  },
+  {
+   "id": "wd-Q13022377",
+   "wikidata": "Q13022377",
+   "kind": "zoo",
+   "fame": 7,
+   "name": {
+    "th": "สวนสัตว์พาต้า",
+    "en": "Pata Zoo"
+   },
+   "lat": 13.77131,
+   "lng": 100.48403,
+   "province": "bangkok",
+   "wiki": {
+    "th": "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%A7%E0%B8%99%E0%B8%AA%E0%B8%B1%E0%B8%95%E0%B8%A7%E0%B9%8C%E0%B8%9E%E0%B8%B2%E0%B8%95%E0%B9%89%E0%B8%B2",
+    "en": "https://en.wikipedia.org/wiki/Pata_Zoo"
+   },
+   "summary": {
+    "th": "สวนสัตว์พาต้า เป็นสวนสัตว์ขนาดเล็ก ตั้งอยู่ที่ชั้น 6–7 ของห้างสรรพสินค้าพาต้า สาขาปิ่นเกล้า ในเขตบางพลัด ฝั่งธนบุรี กรุงเทพมหานคร บริเวณแยกบรมราชชนนี ด้านมุ่งหน้าไปทางสะพานสมเด็จพระปิ่นเกล้า เปิดดำเนินกิจการเมื่อต้นปี พ.ศ. 2526 โดยเริ่มแรกเปิดให้เข้าฟรี ต่อมาจึงเริ่มเก็บค่าเข้าชม ในอัตราเด็ก 5 บาท ผู้ใหญ่ 10 บาท ปัจจุบันอยู่ที่ ผู้ใหญ่ 120 บาท เด็ก 80 บาท เปิดตั้งแต่ 10.00-17.00 น.",
+    "en": "Pata Zoo is a private zoo on the 6th and 7th floors of Pata Pinklao Department Store, Bang Yi Khan Subdistrict, Bang Phlat District, Bangkok between Borommaratchachonnani and Arun Amarin Intersections close to Phra Pinklao Bridge. Pata Zoo has operated since 1983, along with the department store."
+   },
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Pata_Zoo_-_panoramio.jpg/960px-Pata_Zoo_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Pata_Zoo_-_panoramio.jpg",
+   "imageCredit": "mohigan · CC BY-SA 3.0",
+   "fetchedAt": "2026-11-06T18:16:09.904Z"
   },
   {
    "id": "wd-Q873769",
@@ -290,33 +178,33 @@
    "fetchedAt": "2026-11-06T18:41:17.418Z"
   },
   {
-   "id": "wd-Q386420",
-   "wikidata": "Q386420",
+   "id": "wd-Q1819232",
+   "wikidata": "Q1819232",
    "kind": "park",
-   "fame": 43,
+   "fame": 36,
    "name": {
-    "th": "อุทยานแห่งชาติเขาใหญ่",
-    "en": "Khao Yai National Park",
-    "zh": "考艾國家公園"
+    "th": "อุทยานแห่งชาติแก่งกระจาน",
+    "en": "Kaeng Krachan National Park",
+    "zh": "岗卡章国家公园"
    },
-   "lat": 14.35,
-   "lng": 101.44,
-   "province": "saraburi",
-   "website": "http://www.dnp.go.th/parkreserve/asp/style1/default.asp?npid=9&lg=2",
+   "lat": 12.79889,
+   "lng": 99.45333,
+   "province": "phetchaburi",
+   "website": "https://www.thainationalparks.com/kaeng-krachan-national-park",
    "wiki": {
-    "th": "https://th.wikipedia.org/wiki/%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B9%80%E0%B8%82%E0%B8%B2%E0%B9%83%E0%B8%AB%E0%B8%8D%E0%B9%88",
-    "en": "https://en.wikipedia.org/wiki/Khao_Yai_National_Park",
-    "zh": "https://zh.wikipedia.org/wiki/%E8%80%83%E8%89%BE%E5%9B%BD%E5%AE%B6%E5%85%AC%E5%9B%AD"
+    "th": "https://th.wikipedia.org/wiki/%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B9%81%E0%B8%81%E0%B9%88%E0%B8%87%E0%B8%81%E0%B8%A3%E0%B8%B0%E0%B8%88%E0%B8%B2%E0%B8%99",
+    "en": "https://en.wikipedia.org/wiki/Kaeng_Krachan_National_Park",
+    "zh": "https://zh.wikipedia.org/wiki/%E5%B2%97%E5%8D%A1%E7%AB%A0%E5%9B%BD%E5%AE%B6%E5%85%AC%E5%9B%AD"
    },
    "summary": {
-    "th": "อุทยานแห่งชาติเขาใหญ่ เป็นหนึ่งในอุทยานที่ตั้งอยู่ในเขตพื้นที่ 11 อำเภอ ใน 4 จังหวัด ได้แก่อำเภอปากช่อง อำเภอวังน้ำเขียว จังหวัดนครราชสีมา\nอำเภอนาดี อำเภอกบินทร์บุรี อำเภอประจันตคาม อำเภอเมืองปราจีนบุรี จังหวัดปราจีนบุรี\nอำเภอปากพลี อำเภอบ้านนา อำเภอเมืองนครนายก จังหวัดนครนายก\nอำเภอแก่งคอย อำเภอมวกเหล็ก จังหวัดสระบุรี",
-    "en": "Khao Yai National Park is a national park in Thailand. Established in 1962 as Thailand's first national park, it is the third largest national park in Thailand.",
-    "zh": "考艾國家公園，或稱大山國家公園，位於泰国巴真府、那空那育府、呵叻府、北標府交界處，成立於1962年9月18日，為泰國第一個國家公園。公園面積2,168平方公里，名列為泰國第三位。考艾國家公園的標誌為已絕滅物種熊氏鹿的頭像，公園以此標誌紀念這個美麗的物種，並激發人們對野生動物的保護意識。\n"
+    "th": "อุทยานแห่งชาติแก่งกระจาน เป็นอุทยานแห่งชาติที่มีพื้นที่ขนาดใหญ่ที่สุดของประเทศไทย ตั้งอยู่ในจังหวัดเพชรบุรีและจังหวัดประจวบคีรีขันธ์ นอกจากนี้ยังเป็นส่วนหนึ่งของกลุ่มป่าแก่งกระจานซึ่งได้รับการขึ้นทะเบียนเป็นแหล่งมรดกโลกจากยูเนสโกเมื่อวันที่ 26 กรกฎาคม พ.ศ. 2564 อีกด้วย",
+    "en": "Kaeng Krachan National Park is the largest national park of Thailand. It is on the border with Burma, contiguous with the Tanintharyi Nature Reserve. It is a popular park owing to its proximity to the tourist town of Hua Hin. It was named a UNESCO World Heritage Site on 26 July 2021, despite concerns from the OHCHR around the human rights violations of the indigenous people that live in the park.",
+    "zh": "岗卡章国家公园 為泰国最大的國家公園。該國家公園與缅甸的德林達依自然保護區成邊界。由於位置鄰近渡假勝地华欣而成為熱門的國家公園。\n"
    },
-   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/KHAOYAI.JPG/960px-KHAOYAI.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:KHAOYAI.JPG",
-   "imageCredit": "Jtri at Dutch Wikipedia · CC BY-SA 3.0",
-   "fetchedAt": "2026-11-06T18:18:11.823Z"
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Kaeng_Krachan.jpg/960px-Kaeng_Krachan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Kaeng_Krachan.jpg",
+   "imageCredit": "JJ Harrison (https://www.jjharrison.com.au/) · CC BY-SA 3.0",
+   "fetchedAt": "2026-11-06T18:18:14.574Z"
   },
   {
    "id": "wd-Q1760508",
@@ -635,7 +523,7 @@
    },
    "lat": 14.44507,
    "lng": 104.73292,
-   "province": "ubon-ratchathani",
+   "province": "sisaket",
    "wiki": {
     "th": "https://th.wikipedia.org/wiki/%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B9%80%E0%B8%82%E0%B8%B2%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3",
     "en": "https://en.wikipedia.org/wiki/Khao_Phra_Wihan_National_Park"
@@ -1348,6 +1236,38 @@
    "fetchedAt": "2026-11-06T18:16:04.345Z"
   },
   {
+   "id": "wd-Q3039270",
+   "wikidata": "Q3039270",
+   "kind": "themepark",
+   "fame": 9,
+   "name": {
+    "th": "ดรีมเวิลด์",
+    "en": "Dream World",
+    "zh": "夢幻樂園"
+   },
+   "lat": 13.9875,
+   "lng": 100.675,
+   "province": "pathum-thani",
+   "website": "http://www.dreamworld-th.com/",
+   "wiki": {
+    "th": "https://th.wikipedia.org/wiki/%E0%B8%94%E0%B8%A3%E0%B8%B5%E0%B8%A1%E0%B9%80%E0%B8%A7%E0%B8%B4%E0%B8%A5%E0%B8%94%E0%B9%8C",
+    "en": "https://en.wikipedia.org/wiki/Dream_World_(Thailand)",
+    "zh": "https://zh.wikipedia.org/wiki/%E5%A4%A2%E5%B9%BB%E6%A8%82%E5%9C%92_(%E5%B7%B4%E5%90%9E%E4%BB%96%E5%B0%BC)"
+   },
+   "hours": "Mo-Fr 10:00-17:00; Sa-Su 10:00-18:00",
+   "phone": "66 (2) 2 577-8666",
+   "address": "Thanyaburi",
+   "summary": {
+    "th": "ดรีมเวิลด์ เป็นสวนสนุกกลางแจ้งขนาดใหญ่ในประเทศไทย ตั้งอยู่กิโลเมตรที่ 7 ของทางหลวงแผ่นดินหมายเลข 305 (รังสิต-นครนายก) ในตำบลบึงยี่โถ อำเภอธัญบุรี จังหวัดปทุมธานี และสวนสนุกแห่งนี้มีเนื้อที่กว่า 160 ไร่",
+    "en": "Dream World is an amusement park in Thanyaburi district, Pathum Thani province, Thailand. The park includes three roller coasters and multiple other rides and attractions.",
+    "zh": "夢幻樂園， 位於泰國巴吞他尼府蘭實坤西育路（泰國第三公路）的第七公里處，為一個設有多種機動遊戲設施的主題公園。\n"
+   },
+   "image": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Dream_World%2C_Thailand.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Dream_World,_Thailand.jpg",
+   "imageCredit": "No machine-readable author provided. Manop assumed (based on · CC BY-SA 3.0",
+   "fetchedAt": "2026-11-06T18:16:32.380Z"
+  },
+  {
    "id": "wd-Q25894317",
    "wikidata": "Q25894317",
    "kind": "themepark",
@@ -1438,31 +1358,6 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:%E0%B8%AA%E0%B8%96%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%9E%E0%B8%B1%E0%B8%99%E0%B8%98%E0%B8%B8%E0%B9%8C%E0%B8%AA%E0%B8%B1%E0%B8%95%E0%B8%A7%E0%B9%8C%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E.jpg",
    "imageCredit": "ยุทธนาสาระขันธ์ · CC BY-SA 4.0",
    "fetchedAt": "2026-11-06T18:16:07.982Z"
-  },
-  {
-   "id": "wd-Q13022377",
-   "wikidata": "Q13022377",
-   "kind": "zoo",
-   "fame": 7,
-   "name": {
-    "th": "สวนสัตว์พาต้า",
-    "en": "Pata Zoo"
-   },
-   "lat": 13.77131,
-   "lng": 100.48403,
-   "province": "bangkok",
-   "wiki": {
-    "th": "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%A7%E0%B8%99%E0%B8%AA%E0%B8%B1%E0%B8%95%E0%B8%A7%E0%B9%8C%E0%B8%9E%E0%B8%B2%E0%B8%95%E0%B9%89%E0%B8%B2",
-    "en": "https://en.wikipedia.org/wiki/Pata_Zoo"
-   },
-   "summary": {
-    "th": "สวนสัตว์พาต้า เป็นสวนสัตว์ขนาดเล็ก ตั้งอยู่ที่ชั้น 6–7 ของห้างสรรพสินค้าพาต้า สาขาปิ่นเกล้า ในเขตบางพลัด ฝั่งธนบุรี กรุงเทพมหานคร บริเวณแยกบรมราชชนนี ด้านมุ่งหน้าไปทางสะพานสมเด็จพระปิ่นเกล้า เปิดดำเนินกิจการเมื่อต้นปี พ.ศ. 2526 โดยเริ่มแรกเปิดให้เข้าฟรี ต่อมาจึงเริ่มเก็บค่าเข้าชม ในอัตราเด็ก 5 บาท ผู้ใหญ่ 10 บาท ปัจจุบันอยู่ที่ ผู้ใหญ่ 120 บาท เด็ก 80 บาท เปิดตั้งแต่ 10.00-17.00 น.",
-    "en": "Pata Zoo is a private zoo on the 6th and 7th floors of Pata Pinklao Department Store, Bang Yi Khan Subdistrict, Bang Phlat District, Bangkok between Borommaratchachonnani and Arun Amarin Intersections close to Phra Pinklao Bridge. Pata Zoo has operated since 1983, along with the department store."
-   },
-   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Pata_Zoo_-_panoramio.jpg/960px-Pata_Zoo_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Pata_Zoo_-_panoramio.jpg",
-   "imageCredit": "mohigan · CC BY-SA 3.0",
-   "fetchedAt": "2026-11-06T18:16:09.904Z"
   },
   {
    "id": "wd-Q1016030",
@@ -2150,6 +2045,23 @@
    "fetchedAt": "2026-11-06T18:16:22.702Z"
   },
   {
+   "id": "osm-n6198781187",
+   "kind": "animalcafe",
+   "fame": 4,
+   "name": {
+    "th": "Dr. Cat Cafe",
+    "en": "Dr. Cat Cafe"
+   },
+   "lat": 8.03253,
+   "lng": 98.8241,
+   "website": "https://www.facebook.com/Drcat-cafe/1623591711304140/",
+   "hours": "14:00-01:00",
+   "phone": "+66 89 594 0095",
+   "province": "krabi",
+   "summary": {},
+   "fetchedAt": "2026-11-06T19:22:11.679Z"
+  },
+  {
    "id": "wd-Q2530020",
    "wikidata": "Q2530020",
    "kind": "zoo",
@@ -2168,6 +2080,31 @@
     "en": "Chai Nat Bird Park or Chai Nat Zoo is a large bird sanctuary and provincial park in Chai Nat Province, Thailand. It contains over 100 bird species living in simulated surroundings which match their natural habitats and additionally 60 cages of birds. The two highlights of the park are the vast bird cage, which is the largest aviary in Asia, and a freshwater fish aquarium."
    },
    "fetchedAt": "2026-11-06T18:16:25.262Z"
+  },
+  {
+   "id": "wd-Q3576027",
+   "wikidata": "Q3576027",
+   "kind": "zoo",
+   "fame": 3,
+   "name": {
+    "th": "สวนสัตว์สงขลา",
+    "en": "Songkhla Zoo"
+   },
+   "lat": 7.14292,
+   "lng": 100.60433,
+   "province": "songkhla",
+   "website": "http://www.songkhla.zoothailand.org/",
+   "wiki": {
+    "th": "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%A7%E0%B8%99%E0%B8%AA%E0%B8%B1%E0%B8%95%E0%B8%A7%E0%B9%8C%E0%B8%AA%E0%B8%87%E0%B8%82%E0%B8%A5%E0%B8%B2"
+   },
+   "address": "เมืองสงขลา",
+   "summary": {
+    "th": "สวนสัตว์สงขลา เป็นสวนสัตว์แห่งแรกของภาคใต้ มีพื้นที่ 878 ไร่ จัดตั้งขึ้นเพื่ออนุรักษ์ ขยายพันธุ์ รวบรวมสัตว์ป่าของไทย และเพื่อเป็นสถานที่ท่องเที่ยวพักผ่อนหย่อนใจของประชาชน ตั้งอยู่ที่ตำบลเขารูปช้าง อำเภอเมืองสงขลา จังหวัดสงขลา สวนสัตว์สงขลาเป็นสวนสัตว์ภายใต้พระบรมราชูปถัมภ์ สิ่งที่น่าสนใจ เช่น สวนน้ำ รีสอร์ท สัตว์ป่าที่จัดแสดงเช่น กวาง เสือโคร่ง หมี ยีราฟ เสือโคร่งขาว ม้าลาย ช้าง ลิง ลิงอุรังอุตัง"
+   },
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Khao_Rup_Chang%2C_Mueang_Songkhla_District%2C_Songkhla_90000%2C_Thailand_-_panoramio.jpg/960px-Khao_Rup_Chang%2C_Mueang_Songkhla_District%2C_Songkhla_90000%2C_Thailand_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Khao_Rup_Chang,_Mueang_Songkhla_District,_Songkhla_90000,_Thailand_-_panoramio.jpg",
+   "imageCredit": "nunt · CC BY 3.0",
+   "fetchedAt": "2026-11-06T18:16:25.897Z"
   },
   {
    "id": "wd-Q48797664",
@@ -2244,6 +2181,40 @@
    "fetchedAt": "2026-11-06T18:16:49.271Z"
   },
   {
+   "id": "osm-n13789070621",
+   "kind": "animalcafe",
+   "fame": 3,
+   "name": {
+    "th": "Mali Cat Cafe",
+    "en": "Mali Cat Cafe"
+   },
+   "lat": 13.28633,
+   "lng": 100.92504,
+   "website": "https://m.facebook.com/p/Mali-Cat-Cafe-Bangsaen-Chonburi-61553286531868/",
+   "hours": "Mo-Su 10:00-20:00",
+   "phone": "088 919 7962",
+   "address": "318 Long Had Bangsaen Rd",
+   "province": "chonburi",
+   "summary": {},
+   "fetchedAt": "2026-11-06T19:22:13.402Z"
+  },
+  {
+   "id": "osm-w475819081",
+   "kind": "animalcafe",
+   "fame": 3,
+   "name": {
+    "th": "Dog Cafe: Hug me",
+    "en": "Dog Cafe: Hug me"
+   },
+   "lat": 7.88623,
+   "lng": 98.39256,
+   "website": "hugmeinphuket",
+   "hours": "Mo-Su 10:30-19:30",
+   "province": "phuket",
+   "summary": {},
+   "fetchedAt": "2026-11-06T19:22:15.153Z"
+  },
+  {
    "id": "wd-Q136798507",
    "wikidata": "Q136798507",
    "kind": "cafe",
@@ -2299,6 +2270,101 @@
     "th": "สวนสัตว์ลพบุรี หรือชื่อเดิมว่า สวนสัตว์สระแก้ว ตั้งอยู่ด้านหลังของโรงภาพยนตร์ทหารบก หรืออยู่จากอนุสาวรีย์จอมพล ป.พิบูลสงคราม ประมาณ 100 เมตร สวนสัตว์นี้สร้างขึ้นเมื่อปี พ.ศ. 2483 สมัยจอมพล ป.พิบูลสงคราม สัตว์ดาวเด่นขวัญใจคือลิงอุรังอุตัง"
    },
    "fetchedAt": "2026-11-06T18:16:28.626Z"
+  },
+  {
+   "id": "osm-n3819711686",
+   "kind": "animalcafe",
+   "fame": 2,
+   "name": {
+    "th": "แคทโมสเฟียร์ แคท คาเฟ่",
+    "en": "Catmosphere Cat Café"
+   },
+   "lat": 18.80635,
+   "lng": 98.95791,
+   "hours": "Mo-Su 10:00-20:00",
+   "address": "233/5 ถนนห้วยแก้ว",
+   "province": "chiang-mai",
+   "summary": {},
+   "fetchedAt": "2026-11-06T19:22:16.857Z"
+  },
+  {
+   "id": "osm-n4353673933",
+   "kind": "animalcafe",
+   "fame": 2,
+   "name": {
+    "th": "แมวมอธ แคทคาเฟ่",
+    "en": "Maewmoth Cat Cafe"
+   },
+   "lat": 18.78982,
+   "lng": 98.95594,
+   "hours": "11:00-20:00",
+   "province": "chiang-mai",
+   "summary": {},
+   "fetchedAt": "2026-11-06T19:22:18.187Z"
+  },
+  {
+   "id": "osm-n7889643385",
+   "kind": "animalcafe",
+   "fame": 2,
+   "name": {
+    "th": "Rabbit Cafe",
+    "en": "Rabbit Cafe"
+   },
+   "lat": 18.45064,
+   "lng": 98.71128,
+   "hours": "Mo-Su 07:00-20:00",
+   "phone": "+66882464165",
+   "province": "chiang-mai",
+   "summary": {},
+   "fetchedAt": "2026-11-06T19:22:19.904Z"
+  },
+  {
+   "id": "osm-n10669024306",
+   "kind": "animalcafe",
+   "fame": 2,
+   "name": {
+    "th": "B Cat Café",
+    "en": "B Cat Café"
+   },
+   "lat": 7.88546,
+   "lng": 98.39076,
+   "hours": "Mo,Tu,Th,Fr 11:00-19:30; Sa,Su 11:00-20:30",
+   "phone": "+66894717776",
+   "address": "34 Thep Krasattri Rd, Tambon Talat Yai, Muang Phuket",
+   "province": "phuket",
+   "summary": {},
+   "fetchedAt": "2026-11-06T19:22:21.597Z"
+  },
+  {
+   "id": "osm-n10925986706",
+   "kind": "animalcafe",
+   "fame": 2,
+   "name": {
+    "th": "Chill Cat Cafe",
+    "en": "Chill Cat Cafe"
+   },
+   "lat": 13.70596,
+   "lng": 100.34586,
+   "website": "chillcatcafe",
+   "hours": "Mo-Su 11:00-20:00",
+   "province": "bangkok",
+   "summary": {},
+   "fetchedAt": "2026-11-06T19:22:23.302Z"
+  },
+  {
+   "id": "osm-n13649027201",
+   "kind": "animalcafe",
+   "fame": 2,
+   "name": {
+    "th": "คาเฟ่แมว",
+    "en": "Kitten Café"
+   },
+   "lat": 12.91111,
+   "lng": 100.0183,
+   "hours": "Mo-Su 09:00-18:00",
+   "province": "phetchaburi",
+   "summary": {},
+   "fetchedAt": "2026-11-06T19:22:24.656Z"
   },
   {
    "id": "wd-Q16304402",
@@ -2363,6 +2429,97 @@
     "en": "Columbia Pictures Aquaverse is a theme park created by Sony Pictures Entertainment’s Columbia Pictures. It is located at 888 Moo 8, Na Jomtien, Sattahip, Chonburi, Thailand, which is approximately 18.2 kilometers from Pattaya. It is opened on October 12, 2022, and operated by Amazon Falls Co., Ltd, which was designed and constructed under the supervision of Sony Pictures Entertainment."
    },
    "fetchedAt": "2026-11-06T18:16:51.639Z"
+  },
+  {
+   "id": "osm-n5157438000",
+   "kind": "animalcafe",
+   "fame": 1,
+   "name": {
+    "th": "Kitty Cat Café",
+    "en": "Kitty Cat Café"
+   },
+   "lat": 13.76019,
+   "lng": 100.50285,
+   "hours": "PH, Tu-Su 11:00-21:00",
+   "phone": "+66 89 422 6635",
+   "province": "bangkok",
+   "summary": {},
+   "fetchedAt": "2026-11-06T19:22:26.381Z"
+  },
+  {
+   "id": "osm-n7650164992",
+   "kind": "animalcafe",
+   "fame": 1,
+   "name": {
+    "th": "Doo Cat Cafe",
+    "en": "Doo Cat Cafe"
+   },
+   "lat": 7.78438,
+   "lng": 98.31738,
+   "hours": "Mo-Su 12:00-20:00",
+   "address": "90/9 Ban Rawai-Ban Naihan Road",
+   "province": "phuket",
+   "summary": {},
+   "fetchedAt": "2026-11-06T19:22:28.112Z"
+  },
+  {
+   "id": "osm-n12404335207",
+   "kind": "animalcafe",
+   "fame": 1,
+   "name": {
+    "th": "Blue Owl Café",
+    "en": "Blue Owl Café"
+   },
+   "lat": 13.76306,
+   "lng": 100.44533,
+   "province": "bangkok",
+   "summary": {},
+   "fetchedAt": "2026-11-06T19:22:29.827Z"
+  },
+  {
+   "id": "osm-n12683798696",
+   "kind": "animalcafe",
+   "fame": 1,
+   "name": {
+    "th": "Thunder Rabbit Coffee",
+    "en": "Thunder Rabbit Coffee"
+   },
+   "lat": 19.95466,
+   "lng": 99.85096,
+   "hours": "Mo-su 08:00-18:00",
+   "province": "chiang-rai",
+   "summary": {},
+   "fetchedAt": "2026-11-06T19:22:31.171Z"
+  },
+  {
+   "id": "osm-w1211927458",
+   "kind": "animalcafe",
+   "fame": 1,
+   "name": {
+    "th": "โมฮุ โมฮุ คาเฟ่แมว",
+    "en": "Mohu Mohu Cat Cafe"
+   },
+   "lat": 13.72831,
+   "lng": 100.52434,
+   "address": "105/5 ถนนนเรศ สี่พระยา บางรัก",
+   "province": "bangkok",
+   "summary": {},
+   "fetchedAt": "2026-11-06T19:22:34.614Z"
+  },
+  {
+   "id": "osm-w1444829394",
+   "kind": "animalcafe",
+   "fame": 1,
+   "name": {
+    "th": "Capybara Coffee Phangan",
+    "en": "Capybara Coffee Phangan"
+   },
+   "lat": 9.73826,
+   "lng": 100.00119,
+   "website": "https://capybaracoffeethailand.com/",
+   "province": "surat-thani",
+   "summary": {},
+   "fetchedAt": "2026-11-06T19:22:36.352Z"
   },
   {
    "id": "wd-Q136481769",
@@ -2522,155 +2679,311 @@
    "address": "288",
    "summary": {},
    "fetchedAt": "2026-11-06T18:16:51.639Z"
+  },
+  {
+   "id": "osm-n1038806303",
+   "kind": "animalcafe",
+   "fame": 0,
+   "name": {
+    "th": "The Rabbit Café",
+    "en": "The Rabbit Café"
+   },
+   "lat": 14.03931,
+   "lng": 99.51273,
+   "province": "kanchanaburi",
+   "summary": {},
+   "fetchedAt": "2026-11-06T19:22:37.753Z"
+  },
+  {
+   "id": "osm-n2951156678",
+   "kind": "animalcafe",
+   "fame": 0,
+   "name": {
+    "th": "Cat Cafe",
+    "en": "Cat Cafe"
+   },
+   "lat": 20.07288,
+   "lng": 99.86805,
+   "province": "chiang-rai",
+   "summary": {},
+   "fetchedAt": "2026-11-06T19:22:39.502Z"
+  },
+  {
+   "id": "osm-n3526055441",
+   "kind": "animalcafe",
+   "fame": 0,
+   "name": {
+    "th": "Fat Cat Cafe",
+    "en": "Fat Cat Cafe"
+   },
+   "lat": 12.8872,
+   "lng": 100.8801,
+   "province": "chonburi",
+   "summary": {},
+   "fetchedAt": "2026-11-06T19:22:41.270Z"
+  },
+  {
+   "id": "osm-n5344068322",
+   "kind": "animalcafe",
+   "fame": 0,
+   "name": {
+    "th": "Harinezumi Hedgehog Cafe",
+    "en": "Harinezumi Hedgehog Cafe"
+   },
+   "lat": 18.78112,
+   "lng": 98.9962,
+   "province": "chiang-mai",
+   "summary": {},
+   "fetchedAt": "2026-11-06T19:22:43.051Z"
+  },
+  {
+   "id": "osm-n5515883029",
+   "kind": "animalcafe",
+   "fame": 0,
+   "name": {
+    "th": "Owl Coffee",
+    "en": "Owl Coffee"
+   },
+   "lat": 8.06359,
+   "lng": 98.9171,
+   "province": "krabi",
+   "summary": {},
+   "fetchedAt": "2026-11-06T19:22:44.772Z"
+  },
+  {
+   "id": "osm-n5999760576",
+   "kind": "animalcafe",
+   "fame": 0,
+   "name": {
+    "th": "The Running Dog Café",
+    "en": "The Running Dog Café"
+   },
+   "lat": 13.72318,
+   "lng": 100.52748,
+   "province": "bangkok",
+   "summary": {},
+   "fetchedAt": "2026-11-06T19:22:46.121Z"
+  },
+  {
+   "id": "osm-n9824686417",
+   "kind": "animalcafe",
+   "fame": 0,
+   "name": {
+    "th": "black Cat cafe",
+    "en": "black Cat cafe"
+   },
+   "lat": 18.7402,
+   "lng": 99.21745,
+   "province": "chiang-mai",
+   "summary": {},
+   "fetchedAt": "2026-11-06T19:22:47.874Z"
+  },
+  {
+   "id": "osm-n10048602896",
+   "kind": "animalcafe",
+   "fame": 0,
+   "name": {
+    "th": "Liltle cat Cafe and Bistro",
+    "en": "Liltle cat Cafe and Bistro"
+   },
+   "lat": 13.96258,
+   "lng": 100.58544,
+   "province": "pathum-thani",
+   "summary": {},
+   "fetchedAt": "2026-11-06T19:22:49.246Z"
+  },
+  {
+   "id": "osm-n10705772012",
+   "kind": "animalcafe",
+   "fame": 0,
+   "name": {
+    "th": "Owl Coffee",
+    "en": "Owl Coffee"
+   },
+   "lat": 8.03947,
+   "lng": 98.81547,
+   "province": "krabi",
+   "summary": {},
+   "fetchedAt": "2026-11-06T19:22:51.050Z"
+  },
+  {
+   "id": "osm-n12324830024",
+   "kind": "animalcafe",
+   "fame": 0,
+   "name": {
+    "th": "Smokey Cat Coffee Roaster",
+    "en": "Smokey Cat Coffee Roaster"
+   },
+   "lat": 13.72165,
+   "lng": 100.53743,
+   "province": "bangkok",
+   "summary": {},
+   "fetchedAt": "2026-11-06T19:22:54.218Z"
+  },
+  {
+   "id": "osm-n12443981401",
+   "kind": "animalcafe",
+   "fame": 0,
+   "name": {
+    "th": "Cat cafe",
+    "en": "Cat cafe"
+   },
+   "lat": 13.72892,
+   "lng": 100.47256,
+   "province": "bangkok",
+   "summary": {},
+   "fetchedAt": "2026-11-06T19:22:55.968Z"
+  },
+  {
+   "id": "osm-n12581979067",
+   "kind": "animalcafe",
+   "fame": 0,
+   "name": {
+    "th": "Hachiko Bubble Tea Dog Cafe",
+    "en": "Hachiko Bubble Tea Dog Cafe"
+   },
+   "lat": 13.8193,
+   "lng": 100.59215,
+   "province": "bangkok",
+   "summary": {},
+   "fetchedAt": "2026-11-06T19:22:57.702Z"
+  },
+  {
+   "id": "osm-n13275811733",
+   "kind": "animalcafe",
+   "fame": 0,
+   "name": {
+    "th": "Ama Cat Cafe and Hotel",
+    "en": "Ama Cat Cafe and Hotel"
+   },
+   "lat": 16.11743,
+   "lng": 102.25504,
+   "province": "chaiyaphum",
+   "summary": {},
+   "fetchedAt": "2026-11-06T19:22:59.422Z"
+  },
+  {
+   "id": "osm-n13404186981",
+   "kind": "animalcafe",
+   "fame": 0,
+   "name": {
+    "th": "CB Rabbit cafe",
+    "en": "CB Rabbit cafe"
+   },
+   "lat": 9.00058,
+   "lng": 98.42181,
+   "province": "phang-nga",
+   "summary": {},
+   "fetchedAt": "2026-11-06T19:23:01.158Z"
+  },
+  {
+   "id": "osm-n13437571901",
+   "kind": "animalcafe",
+   "fame": 0,
+   "name": {
+    "th": "Capybara Cafe",
+    "en": "Capybara Cafe"
+   },
+   "lat": 7.88099,
+   "lng": 98.37104,
+   "province": "phuket",
+   "summary": {},
+   "fetchedAt": "2026-11-06T19:23:02.887Z"
+  },
+  {
+   "id": "osm-n13631448177",
+   "kind": "animalcafe",
+   "fame": 0,
+   "name": {
+    "th": "Capybara Coffee Pattaya",
+    "en": "Capybara Coffee Pattaya"
+   },
+   "lat": 12.93625,
+   "lng": 100.88897,
+   "province": "chonburi",
+   "summary": {},
+   "fetchedAt": "2026-11-06T19:23:04.641Z"
+  },
+  {
+   "id": "osm-w961802247",
+   "kind": "animalcafe",
+   "fame": 0,
+   "name": {
+    "th": "What Cat Cafe",
+    "en": "What Cat Cafe"
+   },
+   "lat": 19.90852,
+   "lng": 99.83058,
+   "province": "chiang-rai",
+   "summary": {},
+   "fetchedAt": "2026-11-06T19:23:06.423Z"
+  },
+  {
+   "id": "osm-w1252641348",
+   "kind": "animalcafe",
+   "fame": 0,
+   "name": {
+    "th": "Seven Rabbit Coffee and Tea",
+    "en": "Seven Rabbit Coffee and Tea"
+   },
+   "lat": 13.73545,
+   "lng": 100.65073,
+   "province": "bangkok",
+   "summary": {},
+   "fetchedAt": "2026-11-06T19:23:08.161Z"
   }
  ],
  "trends": {
   "cafe": [
    {
-    "title": "Dulce No Dulce คาเฟ่เปิดใหม่ในอารีย์ 4 ที่มีแซนด์วิชซาวโดวจ์หน้าเปิด",
-    "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBIdjNCU3picWFUbDJsSG9jdkRKRl83cDZVeUhsb3J4a19DdGtiN0ZYbmVpZFFhWTh3MDdLR2hkYS1WdjQ5R0FTNnlwZ0NMTkY3dkNIaVBCSUl5b09DamJRQVpR?oc=5",
-    "source": "thestandard.co",
-    "date": "2026-11-06"
-   },
-   {
-    "title": "ตะลอนทั่วกรุง ตามล่าหา คาเฟ่เปิดใหม่ ประจำเดือนพฤศจิกายน 2026",
-    "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5ONFQ1MU16c0psYW8zcGpRcXRUWjJjUHhkV21XQ0xZdUczTXAxY3lHTHJVZTRtZV9PTExXNHdkUEd2R2ZBbmxvSTczdW03c2Z3QlF4ZHVDMlhCdWF1SXplN0NLNWVUcm9ISzNuTTlwUHZ0cXpM0gF6QVVfeXFMUEh5Qmh6RTZTTklKbUM3SUJ3RmlIOS1KVXJKNFJNQy12VWFtR0VKUllqQnpsSUdjX243RkFyZm1pUWlJOUxHNjFEOUwtSmxELUJZRVBYTjQwMkZYNENINnRfaEVxVV94U2V4NmhDYWE5OEJZMFdxekFFRHc?oc=5",
-    "source": "Lifestyle Asia Hong Kong",
-    "date": "2026-11-06"
-   },
-   {
-    "title": "สภากาแฟยุคใหม่ Common Space Cafe คาเฟ่ซอยเจริญกรุง 1 ที่เชื่อมชุมชนด้วยกาแฟ",
-    "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1telMzM2FoQ193T1FoT2FoMmpjQzRET2M1WWhER2ZhSVlXd3puVm5Nd05tN0FpMGxKY2xoU0hzTGhHWUd0dFFkbUFYWFNxX2s0ODhQcnZoRjlBenJwOUNJNGhOZndZMnBzdEFYOA?oc=5",
-    "source": "thestandard.co",
-    "date": "2026-11-06"
-   },
-   {
-    "title": "Café Amazon แจกความสดใส แบบ Gen Z พรีเซนเตอร์ใหม่ BUS because of you i shine",
-    "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE92NDNRck9FNEJ1LUVxd21vMHlwRXczNnp0eGtfOHRkNjQ3Qmd6Y0VoQ0Y2WjhUNEtLVGxZVHpBNXliTUJPd295R3lJTm5kOHhiQWFJdEdLS20?oc=5",
-    "source": "thestandard.co",
-    "date": "2026-11-06"
-   },
-   {
-    "title": "บาร์เปิดใหม่ น่าไปลอง 2026 ประจำเดือนพฤศจิกายน",
-    "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOcldpaF9DQlh2dnlsUHRyZWp6ZzAybC1PY29TQkRqQ3I3Q1dNR1ZWTWw2M2JRRmJFMGVvRzRwY3llWEI2T011cjB5NU1YbzRscXZuQ3JaelVNVi1ZelozdFBmSW9IWThQeFFRMWdZSXhUSUFjVUVCM2JoY09NUE9QUDBsMjVRZXhtbmtqbUhVd1l6dFFUbmVRczZWaWh2QzZka3l5aDJ6QkFtUlc0NGw1ZW1QeHVBa19r0gG4AUFVX3lxTE5yV2loX0NCWHZ2eWxQdHJlanpnMDJsLU9jb1NCRGpDcjdDV01HVlZNbDYzYlFGYkUwZW9HNHBjeWVYQjZPTXVyMHk1TVhvNGxxdm5Dclp6VU1WLVl6WjN0UGZJb0hZOFB4UVExZ1lJeFRJQWNVRUIzYmhjT01QT1BQMGwyNVFleG1ua2ptSFV3WXp0UVRuZVFzNlZpaHZDNmRreXloMnpCQW1SVzQ0bDVlbVB4dUFrX2s?oc=5",
-    "source": "Lifestyle Asia Hong Kong",
-    "date": "2026-11-06"
-   },
-   {
-    "title": "คาเฟ่สัตว์ ดองกี้ ฟาร์ม สระบุรี ชวนพักใจใกล้ชิดสัตว์น่ารัก",
-    "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1WT1pCZjhoZGIzWHJqRmtFUWRieXBvSmNhM3Y5dXhVdHIybElHbmNVYTNUR3Zlcm1VNjkwcnpueUYwWFM4Z3d3d1gtQnBmS2d4UG1MWVBaMUY?oc=5",
-    "source": "TrueID",
-    "date": "2026-11-06"
-   },
-   {
-    "title": "รวมคาเฟ่และร้านเครื่องดื่มเปิดใหม่ในสยามพารากอนฉบับอัปเดต!",
-    "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1ocDA5N3dGNC14Uk1CNmt2Y1ZsMkVjZGNIQWhxNjlHQ1pvOWJ6NkQ1SDBtQVpnR1pHc3dEU2pFWWhKOXg0SmpjUU9Ra1NtLWl1UTlNbHI3WE1sTm1jTGY1ZkRHTk1EUVFPUUkwckNCLU5pVWVLOW1mdHhHalJDUdIBgwFBVV95cUxOb3hxYWVqN1FaN0tzd1ZsdWpmalNkOW9aN2x2T1QySEVHVm5iUFZVTHk1czhNR0o0S0IwMUtsUGhZNjRFaHFmNTRlcl9pUWJvNE9FeWpyTUdXUmZsT2VGUkFISU9BUHFBcWs4cDhBZ2dKNm5YdXJtZnZSWjJvNXlCUGViQQ?oc=5",
-    "source": "Lifestyle Asia Hong Kong",
-    "date": "2026-11-05"
-   },
-   {
-    "title": "Torien Rooftop and Bar นิยามใหม่ของอิซากายะบนรูฟท็อป ชมพระอาทิตย์ตกเหนือหาดจอมเทียน",
-    "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5BdFpHMzN1VFkyeXV5M0VDRE5EclRabHU1akZfdmRScW5fY0tsU1hoSzlBOVhreDRSM0VWN0dQMFJ0WjBOMXllcEVMazhfOWMzaGxVMVN0ejZFRU1JT0NRRVlUQjY4UnRDUXhEV0FHQjRKSzJi0gF6QVVfeXFMTmh6N1UxNnRlalMxZ2FhMXozZFRkdTRqQUZZTG8xTVdHSXB6UHg1dGdHdUxsMDJvQkJKQk9XYmlRdk1LaFVLd2c2UkI4amd4cmM3UG1jU2tXbERPcUlnbXBfeDZCNlRYNDQ0OHhzNW1YUFUzUWRJYkNzLXc?oc=5",
-    "source": "Lifestyle Asia Hong Kong",
-    "date": "2026-11-05"
-   },
-   {
-    "title": "ร้านคาเฟ่กรุงเทพฯ 2024 ฉบับอัปเดต เอาใจสายฮอปปิ้งไปชิล รูปที่ 13",
-    "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5aT3FkeEx4Z2V2U2RuT0I0SHp4cV9faWZ6aWFJSDdKbEl1dnBKRjh5dE9CUXY0OGNMcWlyYTFlQW9xdnVCaHI1bzlWTG5sdE9OX3hjRFVFTXJqQjA?oc=5",
-    "source": "kapook.com",
-    "date": "2026-11-04"
-   },
-   {
-    "title": "ตะลอนทั่วกรุง ตามล่าหา คาเฟ่เปิดใหม่ ประจำเดือนมิถุนายน 2026",
-    "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5LWkxoQTJRenNFUlN5ZU9QVmVoUjNHLXNhZEZLMElvNkRVWWRVLUw4LVd1WTBJYngwV2pER1VOT1MtMDVBTFJyYVFkam15OWtvNjRhTXRvR2w0SjlmZzE2NzNqa3U4a0F6cHpkdWF4VWJyM3VyWHfSAXtBVV95cUxQQmFXdWFPNXNOYWY5c3pONkItOWtndk1KZEM1QWlmMjVMaU9vX2tMMFpaX2xOeVRXLWN4TzRWZkRFaWtpN2UtSlB2NXdHbG43RmRWeDYxNmhnekdiTGQ4OHhWOHhyWjNmbUI3b1BiVGYtN0hWSmwwTHJvNE0?oc=5",
+    "title": "นี่คือเหตุผลที่ “London Cake” กลายเป็นเค้กไวรัลชิ้นใหม่ของไทย",
+    "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFA3dXNnUGx4b1k5STBBRUstTG9sdG9Mb0xxNzlaelNNc0ZNMDVyVlFEM2U0d0pQRl9UWHJHdUQtMEtaWXlTSHBQZ0JyS285N244RE11dVFYUHp1QTl2N3h4Ymhyd2pVekpSOW1sddIBckFVX3lxTE42S0ZOLUdMWVlzQnNmRVdtblBmVExXME1FblkwZE1mbGNXV3VvQUpJZnlhdmhmZmtMYjFWQ3VHa3Q2dUNFaWZrZU1maTQxYWdxVDZmdjZwdDNTZ0hGWmhpM2ZtSWJlYXlMMHREaGNlRkwxZw?oc=5",
     "source": "Lifestyle Asia Hong Kong",
     "date": "2026-11-04"
    },
    {
-    "title": "ร้านอาหารใหม่ น่าแวะไปเช็กอิน ประจำเดือนสิงหาคม 2026",
-    "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPb2RvcUFCNUR0OGJPZG1tU2lQazJXYnZKM19LYXdtN2dsdzJVa0hLVTdXenUwVmlLeFM0Q3VQbnRsYUpFUU1qZEhlSHBmc1N3R3FCWW0tSXk5azVEMFBUVFkzWjRaQm40V3pfM3F0WEpmWUlNSUhIY0FDenZ0Z3NmRFB30gGHAUFVX3lxTE5pc1dLd19vWWxMQy1RM0pnbjgxeVYyakhQanFRMTJ6NXFxdmpONWI0LVBNRjlESGZWaF9nUGJCRjM5cVIyOTIzRnIxcFZVME03YlMwYnJzUElYZXFCTFl0SEVsMUFlcDlxYURPcEU3akhsN0VsUlRMX3UtOWRyQm9aNmJ4N2x3RQ?oc=5",
-    "source": "Lifestyle Asia Hong Kong",
-    "date": "2026-11-04"
+    "title": "คาเฟ่แห่งนี้สว่างไสวไปด้วยแสงไฟ LED และประดับประดาด้วยลูกอมรูปไม้เท้าขนาดยักษ์เกือบ 200 ชิ้น เพื่อเฉลิมฉลองคริสต์มาสล่วงหน้า",
+    "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPaGVPdlRXUkNCMVc1UzBzNUdIQlo3LW9HWkkwYl9UdVh2Q1RLQWZCaGt5Y2tnNUFSdGVzNngwY2hHWUdtRlBKdWJTOUZmUnl5SHB6UDdxQTBUOUl6aUpMY0RvRWFLZW1iNkJZV3AycGI2cS1Jd3BGV0s1WVM0WERFMWFRZW9sZFY4R2h5alVBanpERFRPSXE4RWtLdXdFcEU2LXIxOGdB?oc=5",
+    "source": "Vietnam.vn",
+    "date": "2026-11-02"
    },
    {
-    "title": "5 ร้านอาหารสเปน กรุงเทพฯ ต้อนรับแชมป์บอลโลก สาย Tapas & Paella ห้ามพลาด!",
-    "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOX2xQbnBVbXlOYi1ZZTRoUHpmZm81QlFvdjh4UGtrTXF0SXBHM19kdVViV2hPc1RsVGdCRzBDVzNHT2xQMm9kMXk4MGZQeWNXQklpZjFyM2RUODljb1d3ZXFfYUJYWWR0Mm54TnhQaVE1SjlNQ3RhUW01MUlEMUU2bVJfaEdfcWg00gGOAUFVX3lxTE13bVhjX2lFUVNSOVBRQkZDOS1kM25aaFJrNWd1QlJNQnlwZTQ0RFNfSWdPcEJzQkgtMGZkMkJIX0FJWGkzdUhhQXJBM0RSS1pBYndRUXFxWWpxWjR2Q3FaaTVvdE5ocGVVRUhRU2dlZkdLWGRlSEVvSzBDQTVQcEdjXzFfNmxYc0VLeFJ4N0E?oc=5",
-    "source": "Lifestyle Asia Hong Kong",
-    "date": "2026-11-04"
+    "title": "SODO Donut คาเฟ่ลับย่านบางรัก เสน่ห์บ้านไม้ไทยโบราณที่ผสมผสานความร่วมสมัยได้อย่างลงตัว",
+    "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9ScjN5eHc3elNJTy1ZSVZWRC1mVXdPVnpzSDF2Z2RobXVkYThET2F6b1pwVlZ2WElNODlERXotLU5FVDlsejB6cnQzTzQ2YTdvczlDYV82RFNTT21p?oc=5",
+    "source": "atime",
+    "date": "2026-10-30"
+   },
+   {
+    "title": "เปิดใหม่‼️ ฮักแกะ Cafe & Farm แม่ออน เชียงใหม่ ที่ท่องเที่ยวบรรยากาศธรรมชาติ มีฟาร์มแกะ และสวนดอกไม้ในที่เดียวกัน",
+    "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBjeTdTYml1dzFPWkNwUGtFTm5oNVBUaUltU1hkcVdkcmh5Tm1rMlRJUXIwRUk1ejFZVWJMSldOcnh5RnFtU293Uw?oc=5",
+    "source": "www.cm108.com",
+    "date": "2026-10-24"
+   },
+   {
+    "title": "เปลี่ยนบ้านเป็นโฮมคาเฟ่ ‘นักเลงบาร์’ สเปซแห่งความสุขในวันวุ่นวาย กาแฟ ขนม และแผ่นเสียง รีชาร์จพลังชีวิตให้ผู้มาเยือน - เส้นทางเศรษฐี",
+    "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5INU1mb2lYaXA3SXJ1X01rVWt3ZGR0U1lOcmxCN2JyMkJZcE8wVTV6T1Y1aXlvalVGQmZQbFF1RnhHaHZBM3RJMG1MVV9HOERmVUJ3Y0l1TnZEdkJsa3lxbG15Ymt5SDZTNWNaOURCOWs?oc=5",
+    "source": "ข่าวสด",
+    "date": "2026-10-22"
+   },
+   {
+    "title": "Cosmos Cafe Bangkok คาเฟ่ลับย่านอโศก ใกล้ตึกแกรมมี่ มู้ดดี อาหารอร่อย",
+    "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBzVGlXUE1HeGYzd0t3NEtaclVvR19aOTRJVWxKSWd4N21taDNEN1ZDb08tN1NFeTlXcWl3RFNPaTFtZ0NBbG1NQzc0OFQ4d1lXbmtxeFcyTFM4TElj?oc=5",
+    "source": "atime",
+    "date": "2026-10-15"
+   },
+   {
+    "title": "13 คาเฟ่ภูเก็ต 2569 อัปเดตใหม่ ย่านเมืองเก่า ริมทะเล ถ่ายรูปปัง",
+    "link": "https://news.google.com/rss/articles/CBMipgJBVV95cUxOaEV6Q3N1aG5NNXE0d0stM184R1kyZEpwSGdZRWoxaG9CZDZ2Q0daNE9RVktjb245NVM4ZVpPdGFSbW4zaTFnelFydGt3WVVjN0NfQjhCWGZSYnF3MVA5M3cwNjBDcWEtVTlUTTRwSEtDaFlSUktUeFBJaVU2aWtTYjhzQl85S2ZzeG1PVDJyQWhIMTRwVFZmdzlsMWhWellPZ05fTUVuRG5SVUNuVE9JYWsyLWV6d3VkTjZteDA3QV9CMnMzeFg4VWJyM2VobzZSY2pETGtaay1aVjhGd182OEZVV3BRcFlwQWVGSUdwODJmbTVZRDY1WE5RVDgtUU54TjZUWkVEY1N2WWUxQkYteXJrTWpZb0pyeXVvWFRPSWJ2ci16Y2c?oc=5",
+    "source": "Grab",
+    "date": "2026-10-14"
    }
   ],
   "animalcafe": [
    {
-    "title": "Dulce No Dulce คาเฟ่เปิดใหม่ในอารีย์ 4 ที่มีแซนด์วิชซาวโดวจ์หน้าเปิด",
-    "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBIdjNCU3picWFUbDJsSG9jdkRKRl83cDZVeUhsb3J4a19DdGtiN0ZYbmVpZFFhWTh3MDdLR2hkYS1WdjQ5R0FTNnlwZ0NMTkY3dkNIaVBCSUl5b09DamJRQVpR?oc=5",
-    "source": "thestandard.co",
-    "date": "2026-11-06"
-   },
-   {
     "title": "คาเฟ่สัตว์ ดองกี้ ฟาร์ม สระบุรี ชวนพักใจใกล้ชิดสัตว์น่ารัก",
     "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1WT1pCZjhoZGIzWHJqRmtFUWRieXBvSmNhM3Y5dXhVdHIybElHbmNVYTNUR3Zlcm1VNjkwcnpueUYwWFM4Z3d3d1gtQnBmS2d4UG1MWVBaMUY?oc=5",
     "source": "TrueID",
     "date": "2026-11-06"
-   },
-   {
-    "title": "Nyan Nyan Ji ศาลเจ้าแมว ณ เกียวโต ประเทศญี่ปุ่น รูปที่ 14",
-    "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1zbzZFc0hOQ2ctNDM5OUM1S180TklJM3pVbW5nYzJOc21nVXYyaG50c0hBTU5BYzhWZ0RjTzZMLWtYd1EwYlhIZE0tTXdHeXlyRE9Lb2MxSmlFODg?oc=5",
-    "source": "kapook.com",
-    "date": "2026-11-05"
-   },
-   {
-    "title": "รีโนเวทบ้านเองยามว่าง ปรับลุคใหม่ให้เหมือนนั่งทำงานในคาเฟ่ ตามสไตล์พ่อแมว รูปที่ 10",
-    "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBaWjliU01ZTExMdVVtNHlmb1F4OXdiclVFY1ppZmRnMVA4cjY3Q0VyeS14N01MbXk2bGRPUWc4U2lUUm9vei1oUndTczNyUEl2dFVGYmVHT2g?oc=5",
-    "source": "kapook.com",
-    "date": "2026-11-05"
-   },
-   {
-    "title": "ตามรอย ทามะ นายสถานีแมวแห่งญี่ปุ่น สถานีคิชิ วากายามะ คนรักแมวต้องไปสักครั้ง",
-    "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1ucnNfUkpRT3F0bW1XbDVDTlVyVV9wQ0dJdkpycVkxN09va2c1OXREbnFDcThxc01MQlNQbTZYVUxQTUhEOEp3aVcxcDdJMEl2dEhYVlEwTWE?oc=5",
-    "source": "TrueID",
-    "date": "2026-11-04"
-   },
-   {
-    "title": "Loftia Early Access: วันที่วางจำหน่ายและเวลาเริ่มอย่างเป็นทางการ",
-    "link": "https://news.google.com/rss/articles/CBMi-wJBVV95cUxNNUQwR2ZVbl9GVjlWTi1TV2E4N1J5OEdyczlIdlpFYzFLd0pMZ2NhSmFiMFpJRlhkN2Y1T3EtZ3JlZlRMSXNrSTVFRlBySU1paUI4VWQyVV9EUm9iVVY5dml2cHlMNWJidE83SGRHeWxuYUIwV1FRMjVFSWN4Y281UGtETGZCMXBaMXE0ZWRnVGF6Z09NVW5Na1l4WUEtcVU0Ui1XaDlfQWhyd1hUS2RTYVk0cmlFRjdmUlg3cjh5TmFSaWY4ay1BdFRuR1V6bTdqYUMzWk5OaGV2X1NVanF0OXhjLUMtOUozeEpJT3dsLWNoU2tLTEhMTlh3S1BfQklxaW5jWTlQbEFKNXUzS2JkWVJVUjhVWWdkNWgzalIyd21sWUF5aEFRRjBoX0pNbC1pN1B6Z05LVlMzTy1pTEF4MmlKb0NHSXV2WUM4RElvSWtmLVlEeEZMaHhwVEFSQ2Rpb00xWWtlc2RHdU5iU0VOVGZIUnpISWNkeEdV?oc=5",
-    "source": "games.gg",
-    "date": "2026-11-03"
-   },
-   {
-    "title": "10 คาเฟ่แมว กรุงเทพฯ น่ารักมุ้งมิ้งเอาใจทาสแมว รูปที่ 13",
-    "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1LNnFGVTd1bFBlcE9NWjNWSF8yY1g0bjI2elpkRXpBeEhkcGJsaGNVcHNPUDN3SWlPU0FvbkVYZmItcFpvVk9JdUI3Y2NISmxjWkpvd1dFelpZQkE?oc=5",
-    "source": "kapook.com",
-    "date": "2026-11-01"
-   },
-   {
-    "title": "PMCU ดึง 16 ศิลปินสตรีทอาร์ต ปลุกชีวิตตรอกเก่าสามย่าน ผ่านโปรเจกต์ \"สามย่านซอยแมว Powered by HYPE DISTRICT\"",
-    "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9WeUM5ZXBPQk1Uc0JBNDRPR2FMSC1BMHZsMnZTbG1UNFBvd2VpemJEWnVnUnlpYWNGLVZtU1kwZ1dnb3UzalVxTDgwMW5kLVNXWktSTzlEbEF2V2VPUm1FWEFpX200eGNfMGNv?oc=5",
-    "source": "newswit",
-    "date": "2026-10-30"
-   },
-   {
-    "title": "Kid Rangers ปฏิบัติการเด็กช่างคิด - แมลงแห่งอัญมณี",
-    "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE8ybVhJc2hQMDM2dXNyd0ZQM2QyYmd0ZTVNY3c3NnBFQ2YtZzgzVW9aS1dWR1RYMXg2blZucEFzbzRnSjFhdjJqUFd6VnpMa1E3dU04VFhNX21OZjE0SE5Fdi1udFAxYXYtV0F4eQ?oc=5",
-    "source": "Thai PBS",
-    "date": "2026-10-30"
-   },
-   {
-    "title": "สวนสัตว์เชียงใหม่ เปิดตัว 'Zoo Junior แก๊งจิ๋วหัวใจฟู' ชวนสัมผัสความน่ารักสมาชิกใหม่",
-    "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFB0NGV0TjBYOFZ4RnctR1g0TTZ6ZkJYMlNuUkRTUmlzamVxT3Qxc0NMYWpmUkxuNVF4NUhNdDJxSGVEdlBQaEJvN3VxcnBBU2s2UEkwNkZERlZQVFV6WlotSWJTRkkzQQ?oc=5",
-    "source": "ข่าวสด",
-    "date": "2026-10-22"
-   },
-   {
-    "title": "สวนสัตว์เปิดเขาเขียว จัดกิจ “วันปิยมหาราช” 23 ต.ค. นี้ เด็กและผู้สูงอายุเข้าชมฟรี!",
-    "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFA0eWwzaEE2SkhocDU3YmVVaWVXR1pfSlg5RnVpb1VMb0dXcERGbHA0UTczY0NSRFYzTkJxVl85Z08yZTM3YTNYN3AyM0lVdVFVUnktN1dvZlJ2QkRrNk50REpiTnE1Zw?oc=5",
-    "source": "ข่าวสด",
-    "date": "2026-10-22"
-   },
-   {
-    "title": "เดอะมอลล์ไลฟ์สโตร์ จัด Jungle Walk 2026 EP.4 ขนสัตว์แปลกหาชมยาก กระตุ้นทราฟฟิกครอบครัวช่วงปิดเทอม",
-    "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE96cDBjZXFlQ1dYdVhLYmk3X0lRYVJYZDBzZXFKaVZxWXZreXY2M29pVERnQ051eFJLSHl6RVpzUnI4U2xvV3JtWGpQTHF6RU1BajdULTZaMGhRUQ?oc=5",
-    "source": "Thaipost.net",
-    "date": "2026-10-16"
    }
   ],
   "zoo": [
@@ -2687,286 +3000,50 @@
     "date": "2026-11-06"
    },
    {
-    "title": "สวนสัตว์เขาเขียวต้อนรับสมาชิกใหม่ “หมูเด้ง” เป็นคุณอาแล้ว",
-    "link": "https://news.google.com/rss/articles/CBMilgJBVV95cUxOeFFTRC1TbkNQQng4MjZnNTRhNDlMRGpaYUlWMVpoZnNyMEhsWlZmYTR1UThhUGgtZ1RJcWFnazdJdENmSUh4al94ZXJFeURaVVFjSmhMMkVJWGEyV3dqVlVLQTE2QVRyNF83UDc4OEJ6ZExZdm43cFBXVk5Kd2x1bnhrNC1GanctNXUzU0p0N1dRTkJsbzlyMG5oV3g5OEhJOXMwYXBLV0NjYmRyZmpIemlucS1XUnV2NF8zaS1WUTZWN1hvQTJKaEZhQVBleHV1bjVrU0RRYkhCSnF4OGd4NEdudERVVXBtOXpwQnpqeTAzS1NaYTRlZ0xjUEFWNThCYlY3X3kzNkpta0sxRW9zSEZxdG5Udw?oc=5",
-    "source": "อมรินทร์ทีวี ช่อง 34",
-    "date": "2026-11-06"
-   },
-   {
     "title": "ใจละลาย ส่องความน่ารัก ลูกฮิปโปแคระ น้องจิ๋วแก้มสีชมพู น้าหมูเด้งมีหลานตัวน้อยแล้ว",
     "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBkU0FmcVVkVFNJRjV2bmdTd3Z4OHF5b1p0anZYMDNrWXIwY0tRa0x6Z1F0a2stLUVZM045S3YyR2hOeW83emJCdDhiWW9kYlU?oc=5",
     "source": "kapook.com",
     "date": "2026-11-06"
    },
    {
-    "title": "เศร้า! “นากบุญทิ้ง” ตายหลังถูกย้ายเพียง 17 วัน ปมคลิปร้องเรียนกลายเป็นดราม่าสนั่นโซเชียล จากความหวังดีที่อยากให้สัตว์มีชีวิตดีขึ้น กลับกลายเป็นเรื่องเศร้าที่ไม่มีใครคาดคิด หลัง “เจ้าบุญทิ้ง” นากแสนรู้ขวัญใจสวนสัตว์สนามจันทร์ จ.นครปฐม เสียชีวิตหลังถูกย้ายไปอยู่ศูนย์ช่วยเหลือสัตว์ป่าเพีย",
-    "link": "https://news.google.com/rss/articles/CBMi5wdBVV95cUxQejRmTHdGcTdHY2pyNnZUQjlxaklFSmdweDd3OGdtU2pfel9JWEZGdUlfekotaDlUOWJUd3pCYzE4T3hvR2dXMUlmbEdkYnA3WG4xSzhidFpudUF4S1R3eFN3RU9hYjVpUTYxZnJjYXFDZGJZVEY0RXk4NEI2TEJEeTRfd0ZjenllNEtEV2pvSW50VlRuSkRXUWp3WWV3VmFKSmI3YlFjYm56aHdsR2FfRUxuSG1WaUlLTDRxS1VHbUV4S2VyYUZPRW1wbEV6SU4wc19YSnNOeGNxNHc2MERHRVFRTEY5b3dTcnVMUHlPZ0p1M290dDR6SUJ1NzRiOVViU2VGZWFLaTNYWDc5QWJ0RU9IZEZiN1pqbUx0MWhiODJ1NUd4OHlJR00zN2xEcEpwN3JJbEYyRGRHM1lKQXlfMF9YM3NqMFlRVG1Sb09nUndFVmJuNl81MDhyM0E5MUtGdFlER2lkY1lka2FqZ0VqaWU2S3l1bkxoNzAyVG1LbkZVaFZPd0M4WmpSemdSOXVFU29xUG11cXlpQWZIdDBfOFRBa2gxbHJEeVgxSEJuQnhacEIyZE5KZ2x6SkJyaklQd3BsTEdwZ0s4RjdaeVZwWm0wcjAtY0tJcko4S3FwbWprSElLXzBPUWJCT193WnpCTVd6QktBV0NlTGgzN0ZVc1pEYnVZbld5enJSNnRueGJ2R25oUU9sZUFSZDNTSldWZlNzTHFuTkUzbzQyaWtqaHFGeHhvQnpFZnlIUDVTaW42NVY4TF9QMWxHakFkSm1EVlprNjNrWnFnb0ZGcnNmR2h4SnhaT3pNcXdLWlplZGF5NG13ZUVMT25hN3NLQ2p5UDNObWN4Y2k2VzluYlJzSjU1UGhGWXJPMUQ3QlNjRWlrUUVnZ1pMS2lzbW9TQm1maVFSTDZkVXZfOUFxdG5kMkEtT25IU1NIUXh2N1lnb3dndUlDeUFmc1Iwci1WX2NUUUxvR0M0Y1VueW9ZZmZ1Skxsb0w0bmxseTFqUU16V0F4RzhtUzFUNDNqVzJuX21uTENaalZXRWxJMGl0YWlUcGw4ZlZiZHU2TVVUS0lCWmZXSTcydkxDb2RtQzZ4aXFfcGNidENnWVFyX3pTX21udTRCVmdBYm0wT3VZaUpmeUtIbGZpWEl6b0hGd1FQWmNRTVNKVlNPS3huWXNpWWRfNlJVeDdFa01QbU1WSlIwc3JpV0tEOGxUaThITGU1LXllb2JLX0h0a2tBSXd3dGhWQUxTSmFveHFMNGdqTGZNaUxRQnFuU3JjSXFKcHNDeHVkV1RvRUdTWFZsd3JFbXlKYVFaWGRvcVE?oc=5",
-    "source": "Facebook",
-    "date": "2026-11-05"
-   },
-   {
-    "title": "สงขลา | สวนสัตว์สงขลาจับมือปศุสัตว์เตรียมพื้นที่รองรับช้าง 4 เชือก หลังเจ้าของขอความอนุเคราะห์ใช้เป็นสถานที่พักพิงชั่วคราว 6 เดือน",
-    "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE4tc3FDTU1DWXg5S3dSNGN2cW5GVk5pWnV3NVB6THNveURIeUhmTTlSUXYzbkxrQ3JNa0I1aGZrLW4ydzUtZnI5RHJJTXFsWUUyNVJfY011TzFIdw?oc=5",
-    "source": "HATYAI FOCUS",
-    "date": "2026-11-05"
-   },
-   {
-    "title": "“หมูเด้ง” มีหลานแล้ว! สวนสัตว์เปิดเขาเขียวต้อนรับสมาชิกใหม่ ลูกพ่อหมูตุ๋น-แม่หมูมะนาว",
-    "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPZ0lqcDZQQ0lUTGJqMU1ELVhLX1VQd2lCeUNaTko5VkFyT0hzTXU2cDVrcUdRSUx4NGJBLXNWZldvNDRvRnduR2ZOWVR4Y0ljVnZmMGY0MG5SaGI1Qjl3X1BoWEFic0M0dlZPcS03MGhIU1dfS0huenlnZmxOdmx6THA5dDdFQjd3ZHc?oc=5",
-    "source": "pptvhd36.com",
-    "date": "2026-11-05"
-   },
-   {
-    "title": "หมาเฝ้าบ้านก็ต้องการโอเวอร์ไทม์",
-    "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBjMl9VLWxjWU5OVUNDblU1dnYyN3Rsc1E4V0FDQ1U0eUdMM0xPb0dlN1pVOWtPcHZvNlE3NlozZGViWGlhZEJHNlE3NmtIc1lmT1BZTGY4MXB6Y2JRV1BB?oc=5",
-    "source": "ผู้จัดการออนไลน์",
-    "date": "2026-11-05"
-   },
-   {
-    "title": "\"หมูเด้ง\" มีหลานแล้ว ต้อนรับลูกฮิปโปแคระสมาชิกใหม่ ทายาท \"หมูตุ๋น-หมูมะนาว\"",
-    "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBmZTR3QUVHcjNyME1fWWpOYWtCSWJuNEZ2bkxJY2xYejhJZFdUQ2NWTnViVmo0NGVVOXI3eURfZFJ2QWJSQl9hMVZUM3Y0c2plUGVIX3FkR0Z5UFE?oc=5",
-    "source": "thairath.co.th",
-    "date": "2026-11-05"
-   },
-   {
-    "title": "\"ทราย สมุทร\" เคลื่อนไหว ปมนากบุญทิ้ง ระบุ เข้าใจความโกรธ",
-    "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9aMkJtZEVLTjl6bFFKZENoZklPQzl6S0IzdzNnM0ZBaUtVSUwxNlVsbkhmaVdfS2pOaTliQS14THhoemcySmxUM1lSaW9ieEF4dFNYVS1aNEZuUQ?oc=5",
-    "source": "komchadluek",
-    "date": "2026-11-05"
-   },
-   {
-    "title": "ทราย สมุทร แจงหลังทัวร์ลง ปมนากบุญทิ้ง ยินดีโดนถล่ม ก่อนเปิดประเด็นถึงสวนสัตว์",
-    "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9RWk14QjRjV256alVXWjV1NzFwUnBvYVBRZ0w5U3NuTEt0TV9SWUREQndtd3NydENSU2hORURybWpYTU4zMEJDVVRhOXJzaTg?oc=5",
-    "source": "kapook.com",
-    "date": "2026-11-05"
-   },
-   {
-    "title": "ภาพสุดท้าย ‘นากบุญทิ้ง’ วันส่งมอบ แววตาเศร้ามาก ตายหลังย้าย 17 วัน",
-    "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9WTkJQOTFGN3hGVzNqRHdTRXFOdFZMNHFITzFWUE1rblJpeG45b1hBSFF4LTBTd3o4WjBRVk10dTNiQ2g4ZWt5UHVTX0Q4MVRI?oc=5",
-    "source": "Thaiger",
-    "date": "2026-11-05"
-   }
-  ],
-  "themepark": [
-   {
-    "title": "คิดถึงสวนสยามไหม? สวนสนุกในความทรงจำเตรียมกลับมาเปิดอีกครั้ง ที่เก่าเวลาเดิม 19 พ.ย. นี้",
-    "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1wSnA3TnN5YXRZb1RGd0NNa2NKR21aU0lNeTllY3hfZi1TaldZQTltNklrQVFGZFpBaXNTUnhIUS16S1RadjhZYTBzYXAyOTRjYmx2ZlNJVzBsR2U4NjR6WWRTdHVnT0NiczduNWdBTGxxUWhEUFVxMnY3aUU?oc=5",
-    "source": "Time Out Worldwide",
-    "date": "2026-11-06"
-   },
-   {
-    "title": "สวนสัตว์เปิดเขาเขียว ต้อนรับลูกฮิปโปแคระตัวใหม่ “หลานของหมูเด้ง” น่ารักน่าเอ็นดู ตัวชมพูตะมุตะมิ",
-    "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE85MGltQ3hjYS04b0x3enNERzdGOXVEeVZ5ZkJWVmZpa010WE5mdkRhNWxsSEZ4V2M4RVZjczRRbkNRR25fTUR2cDhLWW5fYXdIdnN0Ug?oc=5",
-    "source": "News1Live",
-    "date": "2026-11-06"
-   },
-   {
-    "title": "รวมภาพเทศกาลฮาร์บิน Harbin สวนสนุกน้ำแข็ง-หิมะ งดงามตระการตาและเย็นยะเยือก รูปที่ 8",
-    "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE82YS03M05HaE1kRjZOY1Y1VXFUZW9yLVRDUk1BQXJYTEpjUlI4TUJwVnR6ODRiSVluN3hRR0x6ZmhwRTRkaGw1cWZvUGNwd19SNm8wdlhad3NtQlBa?oc=5",
-    "source": "kapook.com",
-    "date": "2026-11-05"
-   },
-   {
-    "title": "ดรีมเวิลด์ จัดโปร พ.ย. 680 บาท เล่นไม่อั้น 25 รายการ พร้อมเครื่องเล่นใหม่ 'อันเดอร์เดอะซี'",
-    "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBSZEFaMUwzNzBhQXlYY0lTVTFsS2hhd1BzS1BnNjdyNXdzai1JSTg0SjJXQ2dTTG1LQkZmWnV6eXRmWGVtb2xjTVEwUW1LenlqdDZTT0VRQ1NzRG5NbzQxb2RtNGplZw?oc=5",
-    "source": "ข่าวสด",
-    "date": "2026-11-05"
-   },
-   {
-    "title": "ดรีมเวิลด์เปิดโปรโมชันราคาพิเศษ 680 บาท เล่นไม่จำกัดรอบตลอดเดือนพ.ย. พร้อมเครื่องเล่นใหม่ Under the Sea",
-    "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9udTZKbUw4Nlh4dF94RUNOaS1qOEVyUjQxS20tbDZxZkdoZG5hNUw0QUdpVVVPaGxCbjN3eTJUYXVfMDZrQmpGRFNBNmNUbmMzT0IzM2lubE11RzFUS0R6SEY5SmRXYnpINVJnWmhn?oc=5",
-    "source": "Head Topics",
-    "date": "2026-11-05"
-   },
-   {
-    "title": "‘สวนสยาม' ไม่ขอเป็นเพียงความทรงจำ เมื่อความผูกพันยังมีค่ามากกว่าการบอกลา",
-    "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFA3aXJOT1Z5UGtfcTdFZV9ld3U0dk1za2VKcTNXNHY1WVgtRUNPTmZrOG1hVnp3ZnV5bENYWHRrM2I0cDBPeHphSWJ2dkZ0TUlTUkIybjNvdnJYTF9aMzZZMjlvVDdQOS1YZkE?oc=5",
-    "source": "spacebar.th",
-    "date": "2026-11-05"
-   },
-   {
-    "title": "Disney เตรียมปลดพนักงานหลายพันคน เอาเงินไปลงทุนหนัง ซีรีส์ และสวนสนุก",
-    "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOY3A4elhaTEdSVkM5cVNjR2V5Q1NNbElfSUdzdFQ2eWp5YzlqdDBqLUxkV1kwMkh2NlF6SFhlenF0QWFMWDYzc0NUNDRmc2xIWEVQUHlGZVVPY2FxVHRvLXRiLVZodVh0ZE5KZnctWllyMVAyckIwMFIySlBabkVrQjBuQ24yRlFCc3VhNG9OVEVjdw?oc=5",
-    "source": "Brand Inside",
-    "date": "2026-11-04"
-   },
-   {
-    "title": "ชวนเที่ยวดรีมเวิลด์ สนุกจุใจ เล่นแบบไม่จำกัดรอบ 9 - 30 พ.ย.นี้",
-    "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5ENWxTWHpsdGlkcGZ2dTNSOVR3RkYxS2twbEY3ZjM3WjZscTU1VG5CQ0swOEdjSEVaU0I2TXEyeHl6WERDbWdaZ0N1QmVBbjdObFAzeFFRcktBX0lC?oc=5",
+    "title": "สวนสัตว์เชียงใหม่ เปิดตัว \"Zoo Junior แก๊งจิ๋วหัวใจฟู\" ชวนสัมผัสความน่ารักสมาชิกสัตว์ใหม่ 5 ชนิด พร้อมกิจกรรมท่องเที่ยวสุดพิเศษรับวันหยุด 23–26 ตุลาคมนี้",
+    "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFAyVkdrMGttZ3ZLal9nSHJzdVd0MTBCVGV5enkwRE1mSFdIQ1Q1eHFwWkVKcXFiVkV0dU9LTUZlN2lpd3NTX3R3ZS1mZE9lRjhyc05kOGM0dHQ?oc=5",
     "source": "banmuang.co.th",
-    "date": "2026-11-04"
+    "date": "2026-10-22"
    },
    {
-    "title": "โซเชียลอาลัย \"เจ้าบุญทิ้ง\" นากแสนรู้ อยู่สวนสัตว์สนามจันทร์ 6 ปี ถูกย้ายคอกไม่ถึงเดือนตาย",
-    "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFBza0VseEVjWFk5aE1IdXhlWGR2Q3dvTENXSjgzQUszT0ZlckFtMEFPYVlkN3BsZXJJU2pITFNVQVFiazNPU3ZmNEgyeDk?oc=5",
-    "source": "Sanook",
-    "date": "2026-11-04"
+    "title": "ชาวเน็ตเอ็นดูสุด ๆ ! เขาเขียวชวนตั้งชื่อลูกแรดขาว คนแห่เชียร์เพียบ ลุ้นรับเงิน 2,000 บาท . สวนสัตว์เปิดเขาเขียวชวนแฟน ๆ มาร่วมโหวตตั้งชื่อสมาชิกใหม่ \"ลูกแรดขาว\" เพศผู้ เปิดตัวเลือกมาให้ 4 ชื่อ ได้แก่ \"รถไถ\" \"แทรกเตอร์\" \"เทรลเลอร์\" และ \"แบคโฮ\" งานนี้คนเอ็นดูน้องกันเพียบ แห่เข้ามาคอมเ",
+    "link": "https://news.google.com/rss/articles/CBMi2wdBVV95cUxONllEWUdRTlgxVF82TkVaT0toSDBUT2xqd0lRY0tNZEdXZmVXRkw3dHgwQUdMSmljbXBIbGt1QUNMb0tUUHFUSHlRZFppS3ZzMGI5SDhfelN1dXRwbHlVaUJVekcwT2MwQm5JWGxfSjhlRVA1eFJQYUJOYnBnV0hXdmZjUHFRbmlzd292R3lrbE8zUHg5NEUybk80SU15dEFEZVprbWlseU9zaXRMZEZNZEZhLVVHTW10a29pV3Q0WVZIOWs5U0tQXy1WUWpCdVcwcERlVlZGUTVzY2tFQVBscUZGTlV1aU5KOHl4WVp4QjUwTkdVOFMzYkthc0YwWmZBVkVELThTSkJFdDJvQ2l1STB5d0ViRHJ2T2RLTWt2bWdSSGYtMWllWWxJcTdhcVRYMmkzT0xha1d1Y1R3ZlhkTkVkS1ZiNDRSWVNiNThiOU83LWI4RmlGR09HVXZKTG9TamlvQ2JwUS1wQlhZMktxaVp4YWR3UzNYRmMyWFVMTjZkdHJwaHhSNUFKeTREVUM5RFdPNFd6cDI5ZjZYNjhJUlRPVERXTVJLQVNqOWdGZ1JETHBpVy1PQmlHcUJqblNXX3BaczV0TmVkOGE5UDhhR3lLZmNjMUllekZFNlhjMy1Qd0N6dzJfbF9aOS1UWWFOLTFmd0VjN3pSakVjcmhEZ3lIWHZIdi1uYUhpNTk4VEJxS3FOZnFNVmN1WUNqWmY5UHR3c1NyVGh2WVptaG5WcWFDZlZTOVdjZUYyd29OR2pfTHZ3Q3RiT3g4bWFmQkItcmtuYzAydGVvYjFvWDl1ZGRXOGptaXd5NzF2NGpicll4SXVSWldUeEwxYlNIVHdMRGhnaFo0TkI2aEFfWEZqOGdBWVdFckY0SVFURHI1dDNCcWlPdzBtbjlrTkg1VzF0bHM1TlFrckRNaWxhdGpyV0FvNWFJY2tpMmtBVkVzXzd4M2VZYkpDbS01WjhMS19ZWW5uZkR3QTA1dUM4eWFtS3ZCRGlXNW5GZmxuc3dPMjhIcFdER2diQUhfTlhybEszT3ROeW5pTWxZT04zNkZmVG5ZakdmVS16X3p4MVFHeWZKeUtWTXVpUXZtRFJPcW1SZTYxUEhYakxCMXpDOTlwSGJTUWc1OWk5WjFOazZwTG1JWXUyVEJKNTNLd1hBa01RSXlrMng0c082ZTBkOEZfbUpGYVZaZmdGQVJ4anNyTmNTOEVXY0k0X0dlbThOSFlCUnYxcm1Rdy1TYlZjNkVPSmRUbGRGUjN6TXg1Q0JvOGltNjFiRjdCVHJ4anNGQkRxaXNRUlYxa21lNVE?oc=5",
+    "source": "Facebook",
+    "date": "2026-10-21"
    },
    {
-    "title": "ขอแนะนำจุดชมวิวอีมุ | สวนสัตว์อุเอโนะ",
-    "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9KZnNPZi1Gd1JuV1FhaUsxNjE1eEhXUlBJWE9SaFhjQXVFRzZLU0tDSndRdS1vUTRCU2VzcFNEQ3k2cUI4d0RaTVlHRWk1RVp2LUdiUUN6dWFmUUZzV1RuSjVtWUREdw?oc=5",
-    "source": "東京ズーネット",
-    "date": "2026-11-04"
+    "title": "Ch7HD. . พาไปเที่ยว “สวนสัตว์เพื่อนเดรัจฉาน” พิกัด รามอินทรา ซ.5 ที่รวบรวมสัตว์แปลก สัตว์เลื้อยคลาน งูพิษ และนกนานาชนิด ติดตามใน กรีนรีพอร์ตกับ #บีกมลาสน์ . ติดตามความเข้มข้นในรายการ “7สีช่วยชาวบ้าน” ทุกวันจันทร์–อังคาร เวลา 13.15–13.25 น. ทาง ช่อง 7HD #7สีช่วยชาวบ้าน",
+    "link": "https://news.google.com/rss/articles/CBMi3AdBVV95cUxQeFl6UkZDQTcwNnZ6eXpSVTV4M1ljaHVqcTJ0UUJob050V2tYMmdYcWctcXB6S240N2FKUmpOQzJ2YlNjamNnS2h5d3NDMVp2eTFVMUxfemg5U1pNVUJVR1RVMU9ZeVJEcG43WVBwQ2EtUkwtQUFtUEcwWlZWWUliekJLSzdObkl3YXFDOUtwVU9Dc2tLdFA2Y2ZEZW9tWTQ3YTNzVVpESFpSM3RTV085Zms3UXg3VGtHNmNQTnQ1RURNaGJ0c1FwenB6WFNLV2tTNTExM3Q2cEVrcGpkOGdGUUxDZ2JMSkVUT0E4RDVtUUpuZTN6Qnh1R2x3N1RoNGRWRFhhZFc2Q2ktVmhtVnJYUm9zOV9LU3R1ZTJmVmx6TWZPdGs5YUlIU1ZTMjBSQ3ZvSUVzZlVuemQtdmM0c2NQaFZrajBDZ2Z0dmtuME5QTXI3RTdIRjB6b2hFdnBZbUlsZ3ZQMzVOMThCV3J4Tkx0RmF4S1YxSFlIZ3BvQ3VwSFIzMG5rX1ZSSnNyVGRZTDhRQldjRlpJQ3g5bUxYVlFvWkRpLU5ZT3pXYmpnMUdNUVVKNl9EbzVUdDdVMVI5T3AyNGlOUXEtNUNNck1ZMnlNSUQ4T3BJNUdDaWxvS29JN0s3aWJmaW1qQl9IamRfZ2xSNjFTY3dCYk03bFB2RW1qWVplQ0NmR0lYSUliMWRFTTAzWHN2UlBrd3IycUtqLVpTM0pKLU80Q21KRUJIemt3Tl8yTF9JZnI5VnpqTjFScVhXaWg2aWxjS2xMX2cwSDh2SDZ6REJndTBBOWRBQ0xqbDg4SjY0SGVWQ29vTkNSbUJoZVpFWW9uc1FFZURseWNUekhaNncxenRzRjJHXy1jZXowWjkzYVh0N2xBN2RIUTVKajlCcHhrQzYzOFp3MzNaenU3U19xbk5HRlVwb3pwNFlwMllPZXhSeTFtNEluQVVMRF9qUmtpaC1iTWIycDU3Vmo2YXV0UVRlRE9vMGVaZ24wMzJjVGg0czNYbjhTV0dUbnFCQWdjYTYtNHFCaVZKTEVQQjRPYmxZN0pFZHBaMHVodTlNUlJmUW5KOHJoMVY4djAyWkExcTVvR3MteHN6THN0QnhBQkxRcWx3SlZzelFYdHk5NjRWdFA0OEJjQzBTdzFCSXVEZDBMZmdJTElfX0hOYXJUYUpGR2Rvb3p5STBQTWRobmlEejhhRUcxUlpJdDlWRFg0dVE0MVRob2xxX0dxdDhNU29EX1ducHJqUjY0anhRR3NnYVR4TzZZdmxpdGMxQzlOQkViTDlGMzlHeGl6TDU1bUp0V1Yy?oc=5",
+    "source": "Facebook",
+    "date": "2026-10-18"
    },
    {
-    "title": "แอสเซทไวส์ รุกตลาดแนวราบ เปิด 'Blessini–Wise House' เสริมมิกซ์ยูส Wise Park รังสิต",
-    "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE00MFc3b0Z4QlZqcURIcHlVUGlMalJjQTZramRQcTRlRjlHTHBWRXdSZUx5SXVUS1pQMGI2YWVuY2VDWTBQZHk4Yl9JYmNEdkx5aEs0eTBUb0p6azlPQmxOOWdENjBZY2lrdUE?oc=5",
-    "source": "bangkokbiznews",
-    "date": "2026-11-04"
+    "title": "รู้จัก “น้องพลอย-ฮิปโปขี้งอน” สุดไวรัล อีกหนึ่งตัวตึงแห่งฟาร์มจระเข้ฯ สมุทรปราการ",
+    "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1wVWFqekk5ZHI3aTNyNUhwOTl2blNyMnVBMU1XZGNzNzhycm9xNnNtbFRKdU94cl9qQi1VcDhOM0dUV20yNkxnem9aNl9maVN3azVEcFhNaU5iVG9QSEE?oc=5",
+    "source": "ผู้จัดการออนไลน์",
+    "date": "2026-10-14"
    },
    {
-    "title": "ย้อนเส้นทาง “สวนสยาม” เสียหาย 500 ล้าน เปิดทางขายกิจการ 1 หมื่นล้าน ก่อนประกาศเปิดอีกครั้ง 19 พ.ย.นี้",
-    "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBqMGctOGZiVUd3QUpDOF9xZ1BCM1htdlhjcEk0LWdsS0xRMDR5Qm5jMnliRnNXT0ZLWXRGejg5NXliR2taeEtRWTNWYVNHLWs5bVR3QWhn?oc=5",
-    "source": "THE BETTER",
-    "date": "2026-11-03"
+    "title": "น้องฮิปโป ถึงกับท้อ สวนสัตว์แนะเทคนิคให้อาหาร ไวรัลคลิปโยนไม่เข้าปาก",
+    "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9RUGtOWjRzUlhoWFcwTkFyNTZWQ0ZYcTM5QnFMUTBYTWIxckQ4a3JHY3NyVlhmRmJab3pJbUs2dWRWUUZuc2R0cDczWlI5ZTJOVnRSYkZyX3JEME5BX254b3JB?oc=5",
+    "source": "thairath.co.th",
+    "date": "2026-10-14"
    }
   ],
-  "museum": [
-   {
-    "title": "‘คิระ’ นากทะเลที่พิพิธภัณฑ์สัตว์น้ำโทบะ ตายแล้ว ทำให้ญี่ปุ่นเหลือนากทะเลตัวเดียวที่อยู่ภายใต้การดูแล",
-    "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBzMjJVUHh5U1AtcTlQT2plS0t4ZUpPckZEQnIwSzBCOUN6aVp6eHY0Q0Q5NWRqUVU5dk14YjMxOHJ2UnRfQ1pfODdBWjN3Z3h0SUFTdUZkZXhPbGs?oc=5",
-    "source": "Matichon Online",
-    "date": "2026-11-06"
-   },
-   {
-    "title": "สถานที่ทางวัฒนธรรมริมแม่น้ำหอมเป็นที่นิยมของนักท่องเที่ยวจากทั่วโลก",
-    "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQNGI0ZWQwR0tPTy1RNUQzR0pINGJrXzlGMUtOU3Y4T05NRXdMU3ZubGZ2NElnU3NSbnhKd0w5dmp4alpfeEdxSHVqbGtkYk1UeWVqNW96aUNWekc5am5nUG1OY2E0Smx6MkR1ZzBjUnNjLWhnT0J1b1dCaWpjM2JpWXdzRnlOdDYya2NLMmpvWmxRZkFRZ0E?oc=5",
-    "source": "Vietnam.vn",
-    "date": "2026-11-06"
-   },
-   {
-    "title": "สถาบันจาโคเมตตี: นิทรรศการ Sortir du bois เปิดให้เข้าชมฟรีในวันหยุดราชการ 11 พฤศจิกายนนี้",
-    "link": "https://news.google.com/rss/articles/CBMilwJBVV95cUxNWDBjSFV2MXdHNzMtRE5wdU9BNGtKYmlLQTM1UW1LQ01LTVdpSW1tZ0FVYU9MZFVfblJFQWhKbV91ckZDZkJsNnhTRl9PWDNjVFdoMDVrejZPQ0JReEk1cm9tZnpJMVpCbjkxclYxUE14eGFpNVRicm8yalNwMnMxbEUyVTRvcEpyaWFyOUI5ZHB5NEVDS3dJaFVCa2hLM0lnTk96dW5kWGtpSnlfS3NpZElnY0JnRXpxZ3YzNElWc1l3UjV3S3c4bzdFeUVhZ3A5TkZDZW1HMnRhSk9OU0FaUW9IWFRqT3BWaVBoZ0hvRkppaTJwYXpnalpocFZQZ21EdXpCUGdzTHJlNG1ZQzhiSDhDVVprRFE?oc=5",
-    "source": "Sortir à Paris",
-    "date": "2026-11-06"
-   },
-   {
-    "title": "\"สีเคลือบเงาของเรา\" - การรวบรวมงานศิลปะเคลือบเงาอันเป็นเอกลักษณ์",
-    "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPYkZXb3FZbFM4X0hWRHc4Ml8zRnBjNE16UWU4MjJ4MHdaMVpfaks4bGtTclZYWlF1dWFKQ2thSENRa2lFTnZDTmxyVjhxcFJMd0ZXQWRSSGRKYlJOR2RvRUZ2Qkd5Rjk0RXg3ZFR6LWpuQ0FKVHZXSjU1YzZJYS1HVjJYeGhfRVU?oc=5",
-    "source": "Vietnam.vn",
-    "date": "2026-11-06"
-   },
-   {
-    "title": "Met Gala 2027 เปลี่ยนธีมนิทรรศการเป็น ‘ExtraOrdinary: Fashion and the Poetics of the Everyday’",
-    "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5CY1hqeV9USi01YUVEcVdZbXQzM3BIQURLSHBVWWhFU1FobmFuZXBNNnlyZFpqMTZNWHYxVmgyQlFlaktJbTNqRTQ2S3hpSm9pS3ZtMDBuMkRvZklXQTBFSDA2SnUwZFRnVnhFVw?oc=5",
-    "source": "Head Topics",
-    "date": "2026-11-06"
-   },
-   {
-    "title": "RM วง BTS ช่วยให้พิพิธภัณฑ์ SFMOMA ขายตั๋วเพิ่ม 66,000 ใบ หลังไปเป็นภัณฑารักษ์นิทรรศการ",
-    "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE16b0RKTWtCNHlkNnYzVTdBQXdiSHNYT0JabnlzT1E3el84LXNPLVlsblZfcWdidXNwMUFMN2F2TTB0ako4SENaTXJKWU9CU05tX0w3UlRrbVpCdnRxRE9F?oc=5",
-    "source": "thestandard.co",
-    "date": "2026-11-05"
-   },
-   {
-    "title": "‘ซาบีดา’ จับมือ ‘ประเสริฐ’ ดันชุดไทยเข้าหลักสูตร เล็งเปิดพิพิธภัณฑ์ให้เด็กเข้าฟรี",
-    "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE0wS3NiWlpEalh3eEtieGhkWUJlSVRibUFNdE0yS21paVlTMmZWb0x0aEdZbkpOaGFEeDJmcFY2MXVSYVYxWWV6TUw0R2hBT2RtYXgzUDQwSWlJdw?oc=5",
-    "source": "Thaipost.net",
-    "date": "2026-11-05"
-   },
-   {
-    "title": "ศธ.–วธ. หารือใช้พิพิธภัณฑ์และชุมชนเป็นห้องเรียน ขยายความร่วมมือ 5 ด้าน",
-    "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1sLWNRS3piSUdqRXRTY0pHay1rbk10cjYwUkVEUEt6QUxzRkNmNHVGcnZUNjVaWXF2QXBwRWxvSE4wU0ZEU2JVUjdudGhCaGNKZDU4WnBtemZjcG4zcmNlNg?oc=5",
-    "source": "www.thereporters.co",
-    "date": "2026-11-05"
-   },
-   {
-    "title": "นัดหยุดงาน 5 พ.ย.: หอไอเฟลปิด พิพิธภัณฑ์ลูฟวร์และพระราชวังแวร์ซายได้รับผลกระทบ",
-    "link": "https://news.google.com/rss/articles/CBMigwJBVV95cUxOckRLSzdNRnhEMVdyREk2Uk9qQnp1NUxIbkcyS3ZjWlNEb3hiNHVXaG9UTEptTXplbGhjcVB3RWlZR2haYXZVcVhtMnZJYnBIT3ZuQUtYVHNKRmJJWGhPcHg3SDFRQTlSekFlamltNHRuZ0NFSVlkcVptNDZCaUJRU290QVdoRy1MWml4ZmJfanhUU1hhcng4ZVZ0UXR1RHN2OEFfSGpQOUthemdXaUlBQjlzblZaTFVRYTBSdFIxTE5CTDlRT055bWNUcExDdm9ZWFVVSk0wOFpfZHZ5SUJaLTlhVU5EY3c5VldaSjR0WVRfOFlVT3p6MUhhY0R5SUczeW5N?oc=5",
-    "source": "Sortir à Paris",
-    "date": "2026-11-05"
-   },
-   {
-    "title": "ใช้เวลาสุดสัปดาห์กับครอบครัวที่พิพิธภัณฑ์ Carnavalet พร้อมกิจกรรมฟรีสำหรับเด็ก",
-    "link": "https://news.google.com/rss/articles/CBMikwJBVV95cUxOTTVqdm1HM1A3Qlk4OE5kLWRHRjhuZ3p5U211Ml9SVFRHblpuOGh2WDhIYVRVVG0ybnVUMnVDUFM5ZU5Sd19XeWRZbnlBMnVqS1pnRHF2WGRONVJNQTk1Vy1oVkhDS1NjY01BdURYRDIyTkNFVXV2Tm80YXptSk5OczZ3dER0Z1dEN292VmtvSkQxUzhnSVcxR1c4MVAyMUZsUlVxOUFyVmdWbGVpTk9JX2lKakJ1ekQ4d1Raa3hqcHZyc3hsazJnazFrbkpWSFlWeEl1RktMaFpJZk9fcXJpVk5mVTBaYVAwZFU2M0phRkQwcFRBa2NGMHFPYmE1MDdydHY1Y0szUEtYQjM1SExkVV9CWQ?oc=5",
-    "source": "Sortir à Paris",
-    "date": "2026-11-05"
-   },
-   {
-    "title": "ปักหมุด 8 นิทรรศการศิลปะในกรุงเทพฯ พฤศจิกายน 2569 ชวนพักใจไปเดินดูงานศิลป์",
-    "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQNDZHOTJERmZYZHU4eFV4SmZ1V3JDQl9VaTR2cVMwMjRTa2Jjd1lUR3hPU3RPZG5oTC1wc2RQOHo5emtkUkFVQnZmWXo0YjcydjFDNVA2Y3BjNVVXMFR6R2ZrdWU0YW5NVmtFRjBiSDRvNU5scmRZOUI2Y0JHNTZsQg?oc=5",
-    "source": "Inzpy",
-    "date": "2026-11-05"
-   },
-   {
-    "title": "สังคมโลก : ภัยพิพิธภัณฑ์",
-    "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1JRVQ4dWtLRHVsd0QyOWpfRkUxT2lXczhkMXNRVl9JMzhsZ253NDhna0RTMmRmZW1qTEdidy1Xdm00bVBrb2xjM1ZwZldQeFZSTzFqaHZuUzA?oc=5",
-    "source": "เดลินิวส์",
-    "date": "2026-11-04"
-   }
-  ],
+  "themepark": [],
+  "museum": [],
   "park": [
    {
-    "title": "UPDATE: ‘สุชาติ’ ชื่นชมเจ้าหน้าที่ชุดเคลื่อนที่เร็ว เร่งช่วยชีวิตลูกช้างป่าติดอวนกลางน้ำคลองพวาใหญ่ จันทบุรี ก่อนพากลับคืนสู่อ้อมอกแม่และฝูงอย่างปลอดภัย วันนี้ (6 พ.ย. 69) นายสุชาติ ชมกลิ่น รัฐมนตรีว่าการกระทรวงทรัพยากรธรรมชาติและสิ่งแวดล้อม เปิดเผยว่าได้รับรายงานจากนายยงยุ",
-    "link": "https://news.google.com/rss/articles/CBMi0gdBVV95cUxOQThDWnloWjN5M29uUkx6MjgxX3lxQ0lPWFIyT2Rscmk5RHZVT3U0YVBJS1NvOWVPSDhKVnBSOVVEMVNyeS1pWmc1LW82YTEwbkN6UV84SWxqeGM1Y3V5OVg0eW5SY1l4cDlsY1l6RnRRYW9ISjNHdVlLRi1sN0lDREx5d0QzdVV3Z045Nk5IbnRXY0dQM2x3TEdoLWo4OXR5LTB1Um5MbHFNa1NTVjNnanloSUJ5SWJqUE5vZmNEQWc5RE9ySVdVdHVrdmNGQzJ5Q21sSy1fLTFTbzNaTkhraWdsOWY0dVpYM3NpNmlhM29CRExFMTlsMUxTQlZNbDdOUEtFUkFwclZFNkE2MldtU0huZTRTVmZJZHFLNVVGZkZnX0JEYjFISHlPSFFPUFc0OXFvdUQ3b1d6Tk5ZVUJscV9zaGRXRkZoNFhlY1BXbWp6dGVhWjVmWGNrMWpiZWU4c1JYTzFqTUtCZXBVZWU3NUJrZ0lVUGd0OXZxRVU3WnNDcXBJYm1ZVUpNMFVaU05DX05ycWV3Y1hVODctRlFjdTVpcmw3eloxR0N3cHZaTGcwTjVDem5sVE1LWmRxenozYUp4ODNZVnBEV3gtNm0wUllmcnczN1VpT3V5LVdmd05jQmxkNG9uTElxNUFlaTVIWXhOS0xSNUZLTi1zS2pwNzlfeFF5ZzFDTWVfdXhBTGdjeW5aem4yU1d4YWlzY20tRmFhdTJQWm44YUtyWUFxWjZ0bTlkTG14b0RaX0xHVXdrTWRtbms1b2tGaHljTHNWTEN0ZV94VVJvanlTNmxUMENZX2F6X0kzUXU4M0pMU1g1WmV2RVZLVWh5Sm1oQVdqdnBsOUxFdUNmdXRvSjdiYU5DS1g0aVZBbzJubjRrOUhCdWh0UHpVTDI4a3Y3d2VPcU00Q1djRENfbDBNUktCTlZBUjY0TWdxMkNJaGE4MWdxdXd2UHpQM3JlendCWmo2Q0lMRlNxWGFxdFFSSVdjaWlHWXFjSVRnYngyTUFkdzN0ZUNnLUpxOHZmUTNCbnByX09sOU9XQ0lGQ1JXa2UyTno1R1ZrS2pzb0x3eEJiRTVIZFc2ZGZmb0M2MFlUZENQOWFCTFhRMnJ3NmtJR2MxWXdYYzNvMEl2MTg2SnVmWlowblV3VnpQVFUzeUNheWhRSks0ODhzRGM4VnBVZWRueDBnemx3eWZHZXlPbDVUendEcVF4V3lQc3BPeTd4RkN6bGNtMDVtRTc2amI2SkJYSlc4LWVpdDktZk01Ri1Edm44M0xfeG9EMWtBSmZPY2VVTGc?oc=5",
-    "source": "Facebook",
-    "date": "2026-11-06"
-   },
-   {
-    "title": "นิทรรศการภาพถ่ายเกี่ยวกับอุทยานแห่งชาติแคทเทียน",
-    "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBsMDJtOXdxSGJmY1F3RDctWVdLT2ZxbkREYUtPR0VFRDhwX1RSYTExWFA1bXd3RHpTbVlLdUJVa29xdG9wRVNmLU1GTl9iUkROT3NNaU05VENBRlBmSXRzbTNVYWVSb28zYWVIMDRUWHAyM3c?oc=5",
-    "source": "Vietnam.vn",
-    "date": "2026-11-06"
-   },
-   {
-    "title": "การพัฒนาอุทยานแห่งชาติแคทเทียนให้เป็นแหล่งมรดกทางธรรมชาติของโลก",
-    "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQbUM4OGUycjh5MFhydGVBTDJEVXV4OTQ1YW83aWhITU9ta05KNE9DeDN4RXZlclhpUEpCdFJnM2RkRS1Nc1prVXVmbG5wRnJtcVQ1Zm1KaGJUUkJMbGpNeGNJT3JiUU1vWXdxdjJTMnJsaTFHTDhkbnNZdUt2YzNlbERJQ3l5dTBvYXBKY0ZOQVFXQTZCbW05Qkt4cw?oc=5",
-    "source": "Vietnam.vn",
-    "date": "2026-11-06"
-   },
-   {
-    "title": "GISTDA ผนึกกำลัง ศรชล. และอุทยานแห่งชาติหาดนพรัตน์ธารา–หมู่เกาะพีพี ตรวจสอบวัตถุต้องสงสัยคล้ายชิ้นส่วนอวกาศ บริเวณเกาะไม้ไผ่ จ.กระบี่",
-    "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5mWUt3SmlrZmFHbEV3TkFoVVJTY1Z0VHR6YnhOMGlIdW5HYjByUC13MV9EeG1vX2pVVm5rZGZyLXpGUFcwTjlhdGU0RUVxd2R6VjVB?oc=5",
-    "source": "banmuang.co.th",
-    "date": "2026-11-06"
-   },
-   {
-    "title": "ประกาศมติของนายกรัฐมนตรีเรื่องการโอนอุทยานแห่งชาติแคทเทียนให้แก่คณะกรรมการประชาชนเมืองด่งนาย",
-    "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNR3hzUm1UX0h1ZHBsd0JWT1l1UVFLbmRYQllDZVZYNlg3X2RQT3E5bThvVVBUMGhSRFI1Yk0tNGZGdTNJZ1NOU08yVWx6c3NRWXpOR1JXNFkzd2dJM3BJSGtub0tkcEtfcjAtX2lXY282RlVDMmswOC04cGdjYnQ4MkNIVVlZV25SZU5peXlnXzNqV3dIRHZZd1BMRk83UVEwR3RLb19MVGRpZ1k3WTJGclVjbkVLMDdiM0F1eGtNc1pSSVphV09KeWVB?oc=5",
-    "source": "Vietnam.vn",
-    "date": "2026-11-06"
-   },
-   {
-    "title": "จังหวัดด่งนายเข้ารับช่วงดูแลอุทยานแห่งชาติแคทเทียน และเตรียมเอกสารเพื่อยื่นต่อองค์การยูเนสโก",
-    "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNWlc2bkNhRy1MdFhLMWI5WjZmbzM4eG9GUk5NVlRJZm1Ya2lvbUJQYWliZ3lRVmxOcW9HTFc5anRTNmdNQUtNV3l2TFA3YmdXNWFqRXVHNmVCU2lDcFNOZmtNRTFDRk93aXlNLURLR01ZSlVtUkNJNkhJWXVHdmF5YTFoLWgwVWNfOUt4allFd1JFdmNCMmdWS3hBQQ?oc=5",
-    "source": "Vietnam.vn",
-    "date": "2026-11-06"
-   },
-   {
-    "title": "เปิดเส้นทางศึกษาธรรมชาติ “ทุ่งหญ้าห้วยคมกฤต” ดันท่องเที่ยวเชิงอนุรักษ์ป่าแก่งกระจาน",
-    "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1oQXc5QUhqZTc4UTRnUXY2NGlFb2pBYnhGNzZyWDY4MzJVRTBrRExCVENqSk9SaC1lUWhZSXlZYUVGVDk0Q290OG9tMjFsTG1CbzlBX2RPM0t4eUFYdHc?oc=5",
-    "source": "ผู้จัดการออนไลน์",
-    "date": "2026-11-06"
-   },
-   {
-    "title": "จังหวัดลำดงร่วมมือกับจังหวัดด่งนายในการบริหารจัดการอุทยานแห่งชาติแคทเทียน",
-    "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQMlI0ZmFwN04tbVloT0N1TmVTQUVhUGhvdzFsSl85VF9TemVoYXJWT1o0SWhhaWt0YTVTT1RxR0hSZzhLa2kzdDlfMkNYSTVNSjFoYmdXRTR1Y0x4YmY3NGIxd3NKUjBvcElOTzlKaVlaZlhrSnlOMy1VRFRPNkxibEw5MjBvWmROeXRIMElsSFQ?oc=5",
-    "source": "Vietnam.vn",
-    "date": "2026-11-06"
-   },
-   {
-    "title": "อุทยานแห่งชาติแก่งกระจานเปิดโครงการท่องเที่ยวชมสัตว์ป่าทุ่งหญ้าห้วยคมกฤต เริ่ม 1 พ.ย. 2569",
-    "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5zVTcwV1laZUZBS182NmoxcUhCR29uX1N6TjYzOC16alliSnZneUtTazR3VF9oNklnZk9TS3VJWDZrUjRzZTRFdTk0aEY2NWNieTJaUGI2ZngtNWpwUFNUdkRGMkRHUU50VmJhc2xB?oc=5",
-    "source": "Head Topics",
-    "date": "2026-11-06"
-   },
-   {
-    "title": "คาดว่าปฏิบัติการส่งตัวกลับประเทศระยะที่สองจะแล้วเสร็จในเดือนพฤศจิกายน ณ อุทยานแห่งชาติเลธิเรียง",
-    "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNWS1pdUFIcFhsNFlUZlRjeTdHTUhEc0QwVExSWHlLc2M0LVByb2NmaEtmZWZTUGVpYXBPb1ZNSXBwMktLZTNiMndUVWpvSEpqdG14UjZxZXZmaG5KdTRHX2dOWHk4ZlYtczJpcGZkdU0teU9nYUJhb3FpZ012eWVYR1c0ZERiSVNwdFBpN1F1ejFkdTNoelRSV3l5ck5uZmxnWFE?oc=5",
-    "source": "Vietnam.vn",
-    "date": "2026-11-06"
-   },
-   {
-    "title": "จังหวัดด่งนายจะเสนอให้องค์การยูเนสโกรับรองอุทยานแห่งชาติแคทเทียนเป็นมรดกทางธรรมชาติของโลก",
-    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNQXVHcjk3VFRPX3p0SGNKOU9uMk81Q3RwODNCdFNjcXVEaWVCTTJFTDhQbXlqNEg2Y3ZtODV2M1dkU0dPZ3VDamUxSEZaYzFUbmNCcmxnN0d1RmZSaG5sTzk5UlFiVXpQSHIwWm5FczdtcVdPU0hSaUtBcXM5akFrUDY5VFBCTlRoVVMwS2FmOGRWR2hMU1FhTGJqWFpOS1pVVFd5Vm1mOGoySUdpNktwYVhrVEdVbFE?oc=5",
-    "source": "Vietnam.vn",
-    "date": "2026-11-06"
-   },
-   {
-    "title": "ลาวไคประกาศจัดตั้งคณะกรรมการบริหารอุทยานแห่งชาติบัตซัต",
-    "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQdWRrNktpVlBYSWNJaU9FQzVVcThUMEpmc3Jmd2o2S0JwUlRyMnJjUUJOQVRMelBwV1MzcWdlRGduZ0RRbU5LWXBSZEJEOVJpenE1UGVJYlJxVXo2b1BRbVJJU3dDRVVjcjdBS2ZiZXhUbFVVbzVEb09uTDg2bEpMZVBoeUR6UVA5cWVBWFNR?oc=5",
-    "source": "Vietnam.vn",
-    "date": "2026-11-06"
+    "title": "เขาใหญ่ ปากช่อง 3 วัน 2 คืน เก็บครบจุดเช็คอิน กิน เที่ยว ช่วงพีคซีซั่น Perfect Trip",
+    "link": "https://news.google.com/rss/articles/CBMi2ANBVV95cUxPN1RlRmJlRjF5ejM3ZlRBOVFaMTVGX1M3LVhIY2ZGMUZFMWZkRmV3MXN5bGxhVXpoaGZrQzF6WTNOSmRiNWhlWW5UYk5qXzZYV1RuMEhhNnJncGtjWkNTUmZ1R2hZOUJtUEs3LW1SR0VNYkh2SXg4TmlDajlXN3hUa3loeExveWMyMTJkNTlnTnctTlhxcTlYS2dldnFCOFNwck9BU3lBRU9JMWtoNy1QV05VT1BrZnUzOU95RHRKa0pIa0xYcDZRc0Eya20ybmNqdVFIa3AzT2NhVkJ2Wlp6bkM1V0ZPa3ZVN3Jkb3ZQdmJQS3NPMnJtUFhtbzh0dlo2a2xNZk5lM3ZUMm94cDBaYWpuVE9ZZ3hTaWZ6Xy1INlRhZWNURnNiQTBIdVk0S1ZDc0F4bEZsU1owQWRMUE44QnFnLThwTVJQRmhEVVhuU0drR1ZtUnBXRFhYa0MzelQ2Zm1WdV82YUdudlRWN2VHTmlrR2JmbjBjeEk3eHNGVHRSQ2d3ZmEtb0tGcmo4VThhbzdhbHZTdmNoV3R4ODlpLU1wbm9WUmc3amdZeThfbDNZdEJiSkw4aUJNMnpiVGE5dk1uc2cwS2hqTm9GWnNIVW9WWVJ4MFF6?oc=5",
+    "source": "tripgether.com",
+    "date": "2026-10-19"
    }
   ]
  }

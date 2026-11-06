@@ -309,6 +309,12 @@
     </select>`;
   }
 
+  // เลื่อนแถบหมวด (แนวนอน) ให้หมวดที่เลือกอยู่ตรงกลาง โดยไม่เลื่อนหน้า
+  function centerActiveChip() {
+    const bar = app.querySelector(".chips"), a = bar?.querySelector(".active");
+    if (a) bar.scrollLeft = a.offsetLeft - bar.offsetLeft - (bar.clientWidth - a.clientWidth) / 2;
+  }
+
   function renderHome() {
     const f = state.filters;
     const opt = (val, label, cur) => `<option value="${val}" ${cur === val ? "selected" : ""}>${label}</option>`;
@@ -320,8 +326,8 @@
     // ยังไม่มีงานปักหมุด: แสดงงานมีรูปที่ใกล้ถึงภายใน 30 วันแทน
     if (!featured.length) featured = upcoming.filter(e => e.image && !e.ongoing && (parseDate(e.startDate) - today()) / DAY <= 30)
       .sort((a, b) => a.startDate.localeCompare(b.startDate)).slice(0, 10);
-    const catTile = (id, icon, name, c1, c2) =>
-      `<button class="cat ${f.cat === id ? "active" : ""}" data-cat="${id}" style="--c1:${c1};--c2:${c2}"><i>${icon}</i>${esc(name)}</button>`;
+    const catChip = (id, icon, name, c1) =>
+      `<button class="chip ${f.cat === id ? "active" : ""}" data-cat="${id}" style="--c1:${c1}" aria-pressed="${f.cat === id}"><i>${icon}</i>${esc(name)}</button>`;
     app.innerHTML = `
       <section class="hero">
         <div class="blob"></div>
@@ -338,17 +344,18 @@
           <button class="stat" data-quick="weekend"><b>${upcoming.filter(e => matchesWhen(e, "weekend")).length}</b>${t("statWeekend")}</button>
         </div>
       </section>
-      <!-- หมวดหมู่อยู่ใต้ช่องค้นหา เห็นครบทุกหมวดโดยไม่ต้องเลื่อน -->
-      <div class="cats compact" role="group" aria-label="${t("categories")}">
-        ${catTile("all", "🌈", t("catAll"), "#ff7a45", "#7b2ff7")}
-        ${C.categories.map(c => catTile(c.id, c.icon, catName(c), c.color, c.color2 || c.color)).join("")}
-      </div>
       ${hasSample ? `<p class="notice">${t("sampleNotice")}</p>` : ""}
       ${featured.length && f.cat === "all" ? `
         <div class="section-head"><h2>${t("mustSee")}</h2><small>${t("swipe")}</small></div>
         <div class="rail" id="rail">${featured.map(card).join("")}</div>` : ""}
       ${adSlot("home_top")}
       <div class="section-head" id="resultsHead"><h2>${f.cat !== "all" && CAT[f.cat] ? `${CAT[f.cat].icon} ${esc(catName(CAT[f.cat]))}` : t("allEvents")}${f.province !== "all" ? ` · ${esc(provName(f.province))}` : ""}</h2></div>
+      <!-- หมวดหมู่ + ตัวกรอง อยู่ด้วยกัน และติดด้านบนจอตอนเลื่อนดูรายการ -->
+      <div class="filter-bar" id="filterBar">
+      <div class="chips" role="group" aria-label="${t("categories")}">
+        ${catChip("all", "🌈", t("catAll"), "#ff7a45")}
+        ${C.categories.map(c => catChip(c.id, c.icon, catName(c), c.color)).join("")}
+      </div>
       <div class="filters">
         <select id="when" aria-label="${t("whenAll")}">
           ${opt("all", t("whenAll"), f.when)}${opt("today", t("whenToday"), f.when)}${opt("weekend", t("whenWeekend"), f.when)}${opt("week", t("whenWeek"), f.when)}${opt("month", t("whenMonth"), f.when)}
@@ -361,7 +368,9 @@
         </select>
         <label class="toggle"><input type="checkbox" id="ended" ${f.showEnded ? "checked" : ""}> ${t("showEnded")}</label>
       </div>
+      </div>
       <div id="results"></div>`;
+    centerActiveChip();
     renderResults();
     const rail = document.getElementById("rail");
     if (rail) bindSave(rail, renderHome);
@@ -381,7 +390,7 @@
 
     const q = document.getElementById("q");
     q.addEventListener("input", () => { f.q = q.value; renderResults(); });
-    // กดหมวด → แสดงเฉพาะหมวดนั้น แล้วเลื่อนไปที่รายการงานให้เลย
+    // กดหมวด → แสดงเฉพาะหมวดนั้น แล้วเลื่อนให้รายการงานเริ่มใต้แถบตัวกรองพอดี
     app.querySelectorAll("[data-cat]").forEach(b => b.addEventListener("click", () => {
       f.cat = f.cat === b.dataset.cat && f.cat !== "all" ? "all" : b.dataset.cat;
       const y = window.scrollY;
@@ -700,15 +709,18 @@
     const board = cat === "all"
       ? Object.entries(state.trends).flatMap(([k, items]) => items.slice(0, 3).map(n => ({ ...n, kind: k }))).sort((a, b) => b.date.localeCompare(a.date)).slice(0, 8)
       : (state.trends[cat] || []).slice(0, 8).map(n => ({ ...n, kind: cat }));
-    const tile = (id, icon, name, c1, c2, n) =>
-      `<button class="cat ${cat === id ? "active" : ""}" data-pcat="${id}" style="--c1:${c1};--c2:${c2}"><i>${icon}</i>${esc(name)}${n != null ? ` <small>${n}</small>` : ""}</button>`;
+    const chip = (id, icon, name, c1, n) =>
+      `<button class="chip ${cat === id ? "active" : ""}" data-pcat="${id}" style="--c1:${c1}" aria-pressed="${cat === id}"><i>${icon}</i>${esc(name)}${n != null ? ` <small>${n}</small>` : ""}</button>`;
     app.innerHTML = `<div class="page">
       <h1>🗺️ ${t("placesTitle")}</h1>
       <p class="result-count">${t("placesSub")}</p>
-      <div class="hero-row places-row">${provinceSelect(state.places.reduce((m, p) => (m[p.province] = (m[p.province] || 0) + 1, m), {}))}</div>
-      <div class="cats compact places-cats" role="group" aria-label="${t("categories")}">
-        ${tile("all", "🌈", t("catAll"), "#ff7a45", "#7b2ff7")}
-        ${C.placeCategories.map(c => tile(c.id, c.icon, pick(c.name), c.color, c.color2, counts[c.id] || 0)).join("")}
+      <!-- จังหวัด + หมวด อยู่ด้วยกันในแถบตัวกรอง ติดด้านบนตอนเลื่อน -->
+      <div class="filter-bar">
+        <div class="chips" role="group" aria-label="${t("categories")}">
+          ${chip("all", "🌈", t("catAll"), "#ff7a45")}
+          ${C.placeCategories.map(c => chip(c.id, c.icon, pick(c.name), c.color, counts[c.id] || 0)).join("")}
+        </div>
+        <div class="filters places-row">${provinceSelect(state.places.reduce((m, p) => (m[p.province] = (m[p.province] || 0) + 1, m), {}))}</div>
       </div>
       ${board.length ? `<section class="panel trend-board">
         <h2>${t("trendBoard")}</h2><p class="result-count">${t("trendBoardSub")}</p>
@@ -721,6 +733,7 @@
       <div class="section-head" id="placesHead"><h2>${cat !== "all" && PCAT[cat] ? `${PCAT[cat].icon} ${esc(pick(PCAT[cat].name))}` : t("placesTitle")}</h2><small>${t("placesFound", { n: list.length })}</small></div>
       ${list.length ? `<div class="grid">${list.map(placeCard).join("")}</div>` : `<p class="empty">${t("noPlaces")}</p>`}
       <p class="disclosure">${t("placeNote")}</p></div>`;
+    centerActiveChip();
     app.querySelectorAll("[data-pcat]").forEach(b => b.addEventListener("click", () => {
       state.placeCat = state.placeCat === b.dataset.pcat && b.dataset.pcat !== "all" ? "all" : b.dataset.pcat;
       const y = window.scrollY;
@@ -750,7 +763,7 @@
         <h1>${esc(name)}</h1>
         <div class="tags">
           ${c ? `<span class="tag">${c.icon} ${esc(pick(c.name))}</span>` : ""}
-          ${p.trend ? `<span class="tag sponsor">🔥 ${t("inNews", { n: p.trend })}</span>` : ""}
+          ${p.trend ? `<span class="tag sponsor">🔥 ${t("trending")}</span>` : ""}
           ${p.name?.en && p.name.en !== name ? `<span class="tag">${esc(p.name.en)}</span>` : ""}
         </div>
         <div class="actions">
@@ -775,10 +788,6 @@
               ${summary ? `<p>${esc(summary)}</p>` : ""}
               ${wiki ? `<p><a ${inAppLink(wiki)}>📖 ${t("wikipedia")}</a></p>` : ""}
               ${p.imagePage ? `<p class="disclosure">${t("photo")}: <a ${inAppLink(p.imagePage)}>${esc(p.imageCredit || "Wikimedia Commons")}</a></p>` : ""}
-            </section>` : ""}
-            ${p.trendNews?.length ? `<section class="panel">
-              <h2>📰 ${t("relatedNews")}</h2>
-              <div class="news-list">${p.trendNews.map(n => `<a class="news-item" ${inAppLink(n.link)}><h3>${esc(n.title)}</h3><div class="meta">${esc(n.source || "")} · ${new Date(n.date).toLocaleDateString(locale())}</div></a>`).join("")}</div>
             </section>` : ""}
             <p class="disclosure">${t("placeNote")}</p>
           </div>

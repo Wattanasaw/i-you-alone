@@ -187,6 +187,27 @@ button, input, select { font: inherit; color: inherit; }
 .cats.compact .cat i { width: 34px; height: 34px; font-size: 1.1rem; border-radius: 11px; }
 .cats.compact .cat:hover { transform: none; }
 .section-head { scroll-margin-top: 76px; }
+/* แถบหมวดหมู่ + ตัวกรอง: ติดใต้หัวเว็บตอนเลื่อน กดเปลี่ยนหมวดได้ตลอด */
+.filter-bar {
+  position: sticky; top: 58px; z-index: 20; margin: 0 -16px; padding: 8px 16px 6px;
+  background: color-mix(in srgb, var(--bg) 92%, transparent);
+  backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--border);
+}
+.chips { display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none; padding: 2px 0 6px; scroll-behavior: smooth; }
+.chips::-webkit-scrollbar { display: none; }
+.chip {
+  flex: none; display: inline-flex; align-items: center; gap: 5px; cursor: pointer;
+  padding: 6px 12px 6px 8px; border-radius: 99px; font: inherit; font-size: .8rem; white-space: nowrap;
+  border: 1px solid var(--border); background: var(--surface); color: var(--text); transition: .15s;
+}
+.chip i { font-style: normal; font-size: .95rem; }
+.chip small { opacity: .6; font-size: .7rem; }
+.chip.active { background: var(--c1, var(--accent)); border-color: transparent; color: #fff; font-weight: 600; box-shadow: 0 4px 12px color-mix(in srgb, var(--c1, var(--accent)) 40%, transparent); }
+.filter-bar .filters { padding: 0; flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; }
+.filter-bar .filters::-webkit-scrollbar { display: none; }
+.filter-bar .filters > * { flex: none; }
+.filter-bar .filters select, .filter-bar .toggle { font-size: .8rem; }
 .cats.compact .cat small { display: block; opacity: .6; font-size: .65rem; }
 /* หน้าที่เที่ยว */
 .places-row .province-select { color: var(--text); background-color: var(--surface); border-color: var(--border); }
