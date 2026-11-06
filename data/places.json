@@ -1,0 +1,2973 @@
+{
+ "updatedAt": "2026-11-06T18:42:13.671Z",
+ "places": [
+  {
+   "id": "wd-Q3576017",
+   "wikidata": "Q3576017",
+   "kind": "zoo",
+   "fame": 8,
+   "name": {
+    "th": "สวนสัตว์เปิดเขาเขียว",
+    "en": "Khao Kheow Open Zoo"
+   },
+   "lat": 13.21646,
+   "lng": 101.05638,
+   "province": "chonburi",
+   "website": "http://www.kkopenzoo.com/",
+   "wiki": {
+    "th": "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%A7%E0%B8%99%E0%B8%AA%E0%B8%B1%E0%B8%95%E0%B8%A7%E0%B9%8C%E0%B9%80%E0%B8%9B%E0%B8%B4%E0%B8%94%E0%B9%80%E0%B8%82%E0%B8%B2%E0%B9%80%E0%B8%82%E0%B8%B5%E0%B8%A2%E0%B8%A7",
+    "en": "https://en.wikipedia.org/wiki/Khao_Kheow_Open_Zoo"
+   },
+   "hours": "Mo-Su 09:00-18:00",
+   "phone": "+66038318444",
+   "address": "235 Si Racha",
+   "summary": {
+    "th": "สวนสัตว์เปิดเขาเขียว ตั้งอยู่ที่ ตำบลบางพระ อำเภอศรีราชา จังหวัดชลบุรี เป็นสวนสัตว์เปิดขนาดใหญ่ในจังหวัดชลบุรีสวนสัตว์เป็นบริการสาธารณะ ซึ่งรัฐได้ดำเนินการเพื่อให้บริการแก่สังคมและประชาชนด้านต่าง ๆ เป็นสวนสัตว์ที่มีนักท่องเที่ยวชมมากที่สุด",
+    "en": "Khao Kheow Open Zoo is a large zoo in Si Racha, Chonburi, Thailand. It covers an area of about 1,976 acres (800 ha) and contains more than 8,000 animals from more than 300 species. It is the second largest zoo in Asia."
+   },
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/Khao_Khiao_Open_Zoo_relief_and_writing_outside_2009.jpg/960px-Khao_Khiao_Open_Zoo_relief_and_writing_outside_2009.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Khao_Khiao_Open_Zoo_relief_and_writing_outside_2009.jpg",
+   "imageCredit": "Dean Croshere from Jomtien, Thailand · CC BY 2.0",
+   "fetchedAt": "2026-11-06T18:16:05.424Z",
+   "trend": 5,
+   "trendNews": [
+    {
+     "title": "สวนสัตว์เปิดเขาเขียว จัดกิจ “วันปิยมหาราช” 23 ต.ค. นี้ เด็กและผู้สูงอายุเข้าชมฟรี!",
+     "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFA0eWwzaEE2SkhocDU3YmVVaWVXR1pfSlg5RnVpb1VMb0dXcERGbHA0UTczY0NSRFYzTkJxVl85Z08yZTM3YTNYN3AyM0lVdVFVUnktN1dvZlJ2QkRrNk50REpiTnE1Zw?oc=5",
+     "source": "ข่าวสด",
+     "date": "2026-10-22"
+    },
+    {
+     "title": "สวนสัตว์เปิดเขาเขียว ต้อนรับลูกฮิปโปแคระตัวใหม่ “หลานของหมูเด้ง” น่ารักน่าเอ็นดู ตัวชมพูตะมุตะมิ",
+     "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBnMjRVR05rd2RyaEp5N1cwWFFUdk9sNWRxbFZpbF9pVTNWSHFKM2FUWWFUMTdQMnJ4WUJVc1RFNGxZQ2V0VmthcW1lczFVdzlqWmNYMEFtM0h1WG9hdUE?oc=5",
+     "source": "ผู้จัดการออนไลน์",
+     "date": "2026-11-06"
+    },
+    {
+     "title": "สวนสัตว์เขาเขียวต้อนรับสมาชิกใหม่ “หมูเด้ง” เป็นคุณอาแล้ว",
+     "link": "https://news.google.com/rss/articles/CBMilgJBVV95cUxOeFFTRC1TbkNQQng4MjZnNTRhNDlMRGpaYUlWMVpoZnNyMEhsWlZmYTR1UThhUGgtZ1RJcWFnazdJdENmSUh4al94ZXJFeURaVVFjSmhMMkVJWGEyV3dqVlVLQTE2QVRyNF83UDc4OEJ6ZExZdm43cFBXVk5Kd2x1bnhrNC1GanctNXUzU0p0N1dRTkJsbzlyMG5oV3g5OEhJOXMwYXBLV0NjYmRyZmpIemlucS1XUnV2NF8zaS1WUTZWN1hvQTJKaEZhQVBleHV1bjVrU0RRYkhCSnF4OGd4NEdudERVVXBtOXpwQnpqeTAzS1NaYTRlZ0xjUEFWNThCYlY3X3kzNkpta0sxRW9zSEZxdG5Udw?oc=5",
+     "source": "อมรินทร์ทีวี ช่อง 34",
+     "date": "2026-11-06"
+    }
+   ]
+  },
+  {
+   "id": "wd-Q3039270",
+   "wikidata": "Q3039270",
+   "kind": "themepark",
+   "fame": 9,
+   "name": {
+    "th": "ดรีมเวิลด์",
+    "en": "Dream World",
+    "zh": "夢幻樂園"
+   },
+   "lat": 13.9875,
+   "lng": 100.675,
+   "province": "pathum-thani",
+   "website": "http://www.dreamworld-th.com/",
+   "wiki": {
+    "th": "https://th.wikipedia.org/wiki/%E0%B8%94%E0%B8%A3%E0%B8%B5%E0%B8%A1%E0%B9%80%E0%B8%A7%E0%B8%B4%E0%B8%A5%E0%B8%94%E0%B9%8C",
+    "en": "https://en.wikipedia.org/wiki/Dream_World_(Thailand)",
+    "zh": "https://zh.wikipedia.org/wiki/%E5%A4%A2%E5%B9%BB%E6%A8%82%E5%9C%92_(%E5%B7%B4%E5%90%9E%E4%BB%96%E5%B0%BC)"
+   },
+   "hours": "Mo-Fr 10:00-17:00; Sa-Su 10:00-18:00",
+   "phone": "66 (2) 2 577-8666",
+   "address": "Thanyaburi",
+   "summary": {
+    "th": "ดรีมเวิลด์ เป็นสวนสนุกกลางแจ้งขนาดใหญ่ในประเทศไทย ตั้งอยู่กิโลเมตรที่ 7 ของทางหลวงแผ่นดินหมายเลข 305 (รังสิต-นครนายก) ในตำบลบึงยี่โถ อำเภอธัญบุรี จังหวัดปทุมธานี และสวนสนุกแห่งนี้มีเนื้อที่กว่า 160 ไร่",
+    "en": "Dream World is an amusement park in Thanyaburi district, Pathum Thani province, Thailand. The park includes three roller coasters and multiple other rides and attractions.",
+    "zh": "夢幻樂園， 位於泰國巴吞他尼府蘭實坤西育路（泰國第三公路）的第七公里處，為一個設有多種機動遊戲設施的主題公園。\n"
+   },
+   "image": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Dream_World%2C_Thailand.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Dream_World,_Thailand.jpg",
+   "imageCredit": "No machine-readable author provided. Manop assumed (based on · CC BY-SA 3.0",
+   "fetchedAt": "2026-11-06T18:16:32.380Z",
+   "trend": 3,
+   "trendNews": [
+    {
+     "title": "ดรีมเวิลด์ จัดโปร พ.ย. 680 บาท เล่นไม่อั้น 25 รายการ พร้อมเครื่องเล่นใหม่ 'อันเดอร์เดอะซี'",
+     "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBSZEFaMUwzNzBhQXlYY0lTVTFsS2hhd1BzS1BnNjdyNXdzai1JSTg0SjJXQ2dTTG1LQkZmWnV6eXRmWGVtb2xjTVEwUW1LenlqdDZTT0VRQ1NzRG5NbzQxb2RtNGplZw?oc=5",
+     "source": "ข่าวสด",
+     "date": "2026-11-05"
+    },
+    {
+     "title": "ดรีมเวิลด์เปิดโปรโมชันราคาพิเศษ 680 บาท เล่นไม่จำกัดรอบตลอดเดือนพ.ย. พร้อมเครื่องเล่นใหม่ Under the Sea",
+     "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9udTZKbUw4Nlh4dF94RUNOaS1qOEVyUjQxS20tbDZxZkdoZG5hNUw0QUdpVVVPaGxCbjN3eTJUYXVfMDZrQmpGRFNBNmNUbmMzT0IzM2lubE11RzFUS0R6SEY5SmRXYnpINVJnWmhn?oc=5",
+     "source": "Head Topics",
+     "date": "2026-11-05"
+    },
+    {
+     "title": "ชวนเที่ยวดรีมเวิลด์ สนุกจุใจ เล่นแบบไม่จำกัดรอบ 9 - 30 พ.ย.นี้",
+     "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5ENWxTWHpsdGlkcGZ2dTNSOVR3RkYxS2twbEY3ZjM3WjZscTU1VG5CQ0swOEdjSEVaU0I2TXEyeHl6WERDbWdaZ0N1QmVBbjdObFAzeFFRcktBX0lC?oc=5",
+     "source": "banmuang.co.th",
+     "date": "2026-11-04"
+    }
+   ]
+  },
+  {
+   "id": "wd-Q1819232",
+   "wikidata": "Q1819232",
+   "kind": "park",
+   "fame": 36,
+   "name": {
+    "th": "อุทยานแห่งชาติแก่งกระจาน",
+    "en": "Kaeng Krachan National Park",
+    "zh": "岗卡章国家公园"
+   },
+   "lat": 12.79889,
+   "lng": 99.45333,
+   "province": "phetchaburi",
+   "website": "https://www.thainationalparks.com/kaeng-krachan-national-park",
+   "wiki": {
+    "th": "https://th.wikipedia.org/wiki/%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B9%81%E0%B8%81%E0%B9%88%E0%B8%87%E0%B8%81%E0%B8%A3%E0%B8%B0%E0%B8%88%E0%B8%B2%E0%B8%99",
+    "en": "https://en.wikipedia.org/wiki/Kaeng_Krachan_National_Park",
+    "zh": "https://zh.wikipedia.org/wiki/%E5%B2%97%E5%8D%A1%E7%AB%A0%E5%9B%BD%E5%AE%B6%E5%85%AC%E5%9B%AD"
+   },
+   "summary": {
+    "th": "อุทยานแห่งชาติแก่งกระจาน เป็นอุทยานแห่งชาติที่มีพื้นที่ขนาดใหญ่ที่สุดของประเทศไทย ตั้งอยู่ในจังหวัดเพชรบุรีและจังหวัดประจวบคีรีขันธ์ นอกจากนี้ยังเป็นส่วนหนึ่งของกลุ่มป่าแก่งกระจานซึ่งได้รับการขึ้นทะเบียนเป็นแหล่งมรดกโลกจากยูเนสโกเมื่อวันที่ 26 กรกฎาคม พ.ศ. 2564 อีกด้วย",
+    "en": "Kaeng Krachan National Park is the largest national park of Thailand. It is on the border with Burma, contiguous with the Tanintharyi Nature Reserve. It is a popular park owing to its proximity to the tourist town of Hua Hin. It was named a UNESCO World Heritage Site on 26 July 2021, despite concerns from the OHCHR around the human rights violations of the indigenous people that live in the park.",
+    "zh": "岗卡章国家公园 為泰国最大的國家公園。該國家公園與缅甸的德林達依自然保護區成邊界。由於位置鄰近渡假勝地华欣而成為熱門的國家公園。\n"
+   },
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Kaeng_Krachan.jpg/960px-Kaeng_Krachan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Kaeng_Krachan.jpg",
+   "imageCredit": "JJ Harrison (https://www.jjharrison.com.au/) · CC BY-SA 3.0",
+   "fetchedAt": "2026-11-06T18:18:14.574Z",
+   "trend": 2,
+   "trendNews": [
+    {
+     "title": "เปิดเส้นทางศึกษาธรรมชาติ “ทุ่งหญ้าห้วยคมกฤต” ดันท่องเที่ยวเชิงอนุรักษ์ป่าแก่งกระจาน",
+     "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1oQXc5QUhqZTc4UTRnUXY2NGlFb2pBYnhGNzZyWDY4MzJVRTBrRExCVENqSk9SaC1lUWhZSXlZYUVGVDk0Q290OG9tMjFsTG1CbzlBX2RPM0t4eUFYdHc?oc=5",
+     "source": "ผู้จัดการออนไลน์",
+     "date": "2026-11-06"
+    },
+    {
+     "title": "อุทยานแห่งชาติแก่งกระจานเปิดโครงการท่องเที่ยวชมสัตว์ป่าทุ่งหญ้าห้วยคมกฤต เริ่ม 1 พ.ย. 2569",
+     "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5zVTcwV1laZUZBS182NmoxcUhCR29uX1N6TjYzOC16alliSnZneUtTazR3VF9oNklnZk9TS3VJWDZrUjRzZTRFdTk0aEY2NWNieTJaUGI2ZngtNWpwUFNUdkRGMkRHUU50VmJhc2xB?oc=5",
+     "source": "Head Topics",
+     "date": "2026-11-06"
+    }
+   ]
+  },
+  {
+   "id": "wd-Q3034913",
+   "wikidata": "Q3034913",
+   "kind": "zoo",
+   "fame": 13,
+   "name": {
+    "th": "สวนสัตว์เชียงใหม่",
+    "en": "Chiang Mai Zoo",
+    "zh": "清邁動物園"
+   },
+   "lat": 18.809,
+   "lng": 98.947,
+   "province": "chiang-mai",
+   "website": "http://www.chiangmaizoo.com/",
+   "wiki": {
+    "th": "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%A7%E0%B8%99%E0%B8%AA%E0%B8%B1%E0%B8%95%E0%B8%A7%E0%B9%8C%E0%B9%80%E0%B8%8A%E0%B8%B5%E0%B8%A2%E0%B8%87%E0%B9%83%E0%B8%AB%E0%B8%A1%E0%B9%88",
+    "en": "https://en.wikipedia.org/wiki/Chiang_Mai_Zoo",
+    "zh": "https://zh.wikipedia.org/wiki/%E6%B8%85%E9%82%81%E5%8B%95%E7%89%A9%E5%9C%92"
+   },
+   "summary": {
+    "th": "สวนสัตว์เชียงใหม่ เป็นสวนสัตว์ในความดูแลขององค์การสวนสัตว์แห่งประเทศไทย ในพระบรมราชูปถัมภ์ ตั้งอยู่บริเวณทางขึ้นดอยสุเทพ บนถนนห้วยแก้ว ตำบลสุเทพ อำเภอเมืองเชียงใหม่ จังหวัดเชียงใหม่ เปิดให้บริการทุกวัน ตั้งแต่ 8.00 น. - 17.00 น.",
+    "en": "Chiang Mai Zoo and Aquarium is a 200-acre (81 ha) zoo on Huay Kaew Road in Chiang Mai Province, Thailand, just west of Chiang Mai University. It is the first commercial zoo in northern Thailand, established on 16 June 1977.",
+    "zh": "清邁動物園 是一個位於泰國北部清邁的動物園。清邁動物園成立於1974年，开始是是一間私營動物園，1977年6月16日成为官方动物园。園內設置有單軌電車和133米長的水族館。\n"
+   },
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Rhino_CMZ.jpg/960px-Rhino_CMZ.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Rhino_CMZ.jpg",
+   "imageCredit": "This user loves Krittaya. · Public domain",
+   "fetchedAt": "2026-11-06T18:15:57.744Z",
+   "trend": 1,
+   "trendNews": [
+    {
+     "title": "สวนสัตว์เชียงใหม่ เปิดตัว 'Zoo Junior แก๊งจิ๋วหัวใจฟู' ชวนสัมผัสความน่ารักสมาชิกใหม่",
+     "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFB0NGV0TjBYOFZ4RnctR1g0TTZ6ZkJYMlNuUkRTUmlzamVxT3Qxc0NMYWpmUkxuNVF4NUhNdDJxSGVEdlBQaEJvN3VxcnBBU2s2UEkwNkZERlZQVFV6WlotSWJTRkkzQQ?oc=5",
+     "source": "ข่าวสด",
+     "date": "2026-10-22"
+    }
+   ]
+  },
+  {
+   "id": "wd-Q1642767",
+   "wikidata": "Q1642767",
+   "kind": "museum",
+   "fame": 6,
+   "name": {
+    "th": "พิพิธภัณฑสถานแห่งชาติ เชียงใหม่",
+    "en": "Chiang Mai National Museum"
+   },
+   "lat": 18.81153,
+   "lng": 98.97625,
+   "province": "chiang-mai",
+   "website": "http://www.virtualmuseum.finearts.go.th/chiangmai/index.php",
+   "wiki": {
+    "th": "https://th.wikipedia.org/wiki/%E0%B8%9E%E0%B8%B4%E0%B8%9E%E0%B8%B4%E0%B8%98%E0%B8%A0%E0%B8%B1%E0%B8%93%E0%B8%91%E0%B8%AA%E0%B8%96%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4_%E0%B9%80%E0%B8%8A%E0%B8%B5%E0%B8%A2%E0%B8%87%E0%B9%83%E0%B8%AB%E0%B8%A1%E0%B9%88",
+    "en": "https://en.wikipedia.org/wiki/Chiang_Mai_National_Museum"
+   },
+   "hours": "We-Su 09:00-16:00",
+   "phone": "+66 53-221308",
+   "address": "Mueang Chiang Mai",
+   "summary": {
+    "th": "พิพิธภัณฑสถานแห่งชาติ เชียงใหม่ เป็นพิพิธภัณฑ์ที่ตั้งอยู่บนถนนซุปเปอร์ไฮเวย์เชียงใหม่-ลำปาง ตำบลช้างเผือก อำเภอเมืองเชียงใหม่ จังหวัดเชียงใหม่ พิพิธภัณฑ์ตั้งอยู่ใกล้เคียงกับวัดเจ็ดยอดทางตะวันตกเฉียงเหนือของเทศบาลนครเชียงใหม่ จัดแสดงเกี่ยวกับประวัติศาสตร์ของอาณาจักรล้านนา",
+    "en": "The Chiang Mai National Museum is a national museum located in Chiang Mai, northern Thailand. It highlights the history of the Kingdom of Lanna with descriptions in both Thai and English. The museum is located in the vicinity of Wat Chet Yot, in the north-western part of Chiang Mai. It is run by the Fine Arts Department of Thailand."
+   },
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Chiang_Mai_National_Museum.jpg/960px-Chiang_Mai_National_Museum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Chiang_Mai_National_Museum.jpg",
+   "imageCredit": "Zhou Guanhuai · CC0",
+   "fetchedAt": "2026-11-06T18:41:38.777Z",
+   "trend": 1,
+   "trendNews": [
+    {
+     "title": "สวนสัตว์เชียงใหม่ เปิดตัว 'Zoo Junior แก๊งจิ๋วหัวใจฟู' ชวนสัมผัสความน่ารักสมาชิกใหม่",
+     "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFB0NGV0TjBYOFZ4RnctR1g0TTZ6ZkJYMlNuUkRTUmlzamVxT3Qxc0NMYWpmUkxuNVF4NUhNdDJxSGVEdlBQaEJvN3VxcnBBU2s2UEkwNkZERlZQVFV6WlotSWJTRkkzQQ?oc=5",
+     "source": "ข่าวสด",
+     "date": "2026-10-22"
+    }
+   ]
+  },
+  {
+   "id": "wd-Q3576027",
+   "wikidata": "Q3576027",
+   "kind": "zoo",
+   "fame": 3,
+   "name": {
+    "th": "สวนสัตว์สงขลา",
+    "en": "Songkhla Zoo"
+   },
+   "lat": 7.14292,
+   "lng": 100.60433,
+   "province": "songkhla",
+   "website": "http://www.songkhla.zoothailand.org/",
+   "wiki": {
+    "th": "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%A7%E0%B8%99%E0%B8%AA%E0%B8%B1%E0%B8%95%E0%B8%A7%E0%B9%8C%E0%B8%AA%E0%B8%87%E0%B8%82%E0%B8%A5%E0%B8%B2"
+   },
+   "address": "เมืองสงขลา",
+   "summary": {
+    "th": "สวนสัตว์สงขลา เป็นสวนสัตว์แห่งแรกของภาคใต้ มีพื้นที่ 878 ไร่ จัดตั้งขึ้นเพื่ออนุรักษ์ ขยายพันธุ์ รวบรวมสัตว์ป่าของไทย และเพื่อเป็นสถานที่ท่องเที่ยวพักผ่อนหย่อนใจของประชาชน ตั้งอยู่ที่ตำบลเขารูปช้าง อำเภอเมืองสงขลา จังหวัดสงขลา สวนสัตว์สงขลาเป็นสวนสัตว์ภายใต้พระบรมราชูปถัมภ์ สิ่งที่น่าสนใจ เช่น สวนน้ำ รีสอร์ท สัตว์ป่าที่จัดแสดงเช่น กวาง เสือโคร่ง หมี ยีราฟ เสือโคร่งขาว ม้าลาย ช้าง ลิง ลิงอุรังอุตัง"
+   },
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Khao_Rup_Chang%2C_Mueang_Songkhla_District%2C_Songkhla_90000%2C_Thailand_-_panoramio.jpg/960px-Khao_Rup_Chang%2C_Mueang_Songkhla_District%2C_Songkhla_90000%2C_Thailand_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Khao_Rup_Chang,_Mueang_Songkhla_District,_Songkhla_90000,_Thailand_-_panoramio.jpg",
+   "imageCredit": "nunt · CC BY 3.0",
+   "fetchedAt": "2026-11-06T18:16:25.897Z",
+   "trend": 1,
+   "trendNews": [
+    {
+     "title": "สงขลา | สวนสัตว์สงขลาจับมือปศุสัตว์เตรียมพื้นที่รองรับช้าง 4 เชือก หลังเจ้าของขอความอนุเคราะห์ใช้เป็นสถานที่พักพิงชั่วคราว 6 เดือน",
+     "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE4tc3FDTU1DWXg5S3dSNGN2cW5GVk5pWnV3NVB6THNveURIeUhmTTlSUXYzbkxrQ3JNa0I1aGZrLW4ydzUtZnI5RHJJTXFsWUUyNVJfY011TzFIdw?oc=5",
+     "source": "HATYAI FOCUS",
+     "date": "2026-11-05"
+    }
+   ]
+  },
+  {
+   "id": "wd-Q873769",
+   "wikidata": "Q873769",
+   "kind": "museum",
+   "fame": 48,
+   "name": {
+    "th": "พระบรมมหาราชวัง",
+    "en": "Grand Palace",
+    "zh": "曼谷大皇宫"
+   },
+   "lat": 13.75014,
+   "lng": 100.49203,
+   "province": "bangkok",
+   "website": "https://www.royalgrandpalace.th/en/home",
+   "wiki": {
+    "th": "https://th.wikipedia.org/wiki/%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%A3%E0%B8%A1%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%A7%E0%B8%B1%E0%B8%87",
+    "en": "https://en.wikipedia.org/wiki/Grand_Palace",
+    "zh": "https://zh.wikipedia.org/wiki/%E6%9B%BC%E8%B0%B7%E5%A4%A7%E7%9A%87%E5%AE%AB"
+   },
+   "hours": "Mo-Su 08:30-15:30",
+   "fee": "yes",
+   "summary": {
+    "th": "พระบรมมหาราชวัง เป็นพระราชวังและศูนย์กลางการปกครองของประเทศไทย ตั้งอยู่ริมฝั่งตะวันออกของแม่น้ำเจ้าพระยา ในพื้นที่เกาะรัตนโกสินทร์ชั้นใน แขวงพระบรมมหาราชวัง เขตพระนคร กรุงเทพมหานคร สร้างขึ้นเมื่อปี พ.ศ.",
+    "en": "The Grand Palace is a complex of buildings at the heart of Bangkok, Thailand. The palace has been the official residence of the Kings of Siam since 1782. The king, his court, and his royal government were based on the grounds of the palace until 1925.",
+    "zh": "大皇宫 是泰国扎克里王朝最早建成的王宫，位于曼谷拍那空县，自1782年以来，一直是泰国（暹罗）王室的公定居住地点。在1925年以前，是暹罗王室和朝廷的所在地。如今，大皇宫是泰国王室举行重大典礼及接见国宾的场所，亦是曼谷的地标和重要旅游目的地。\n"
+   },
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Grand_Palace_Bangkok%2C_Thailand.jpg/960px-Grand_Palace_Bangkok%2C_Thailand.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Grand_Palace_Bangkok,_Thailand.jpg",
+   "imageCredit": "Andy Marchand · CC BY-SA 3.0",
+   "fetchedAt": "2026-11-06T18:41:17.418Z"
+  },
+  {
+   "id": "wd-Q386420",
+   "wikidata": "Q386420",
+   "kind": "park",
+   "fame": 43,
+   "name": {
+    "th": "อุทยานแห่งชาติเขาใหญ่",
+    "en": "Khao Yai National Park",
+    "zh": "考艾國家公園"
+   },
+   "lat": 14.35,
+   "lng": 101.44,
+   "province": "saraburi",
+   "website": "http://www.dnp.go.th/parkreserve/asp/style1/default.asp?npid=9&lg=2",
+   "wiki": {
+    "th": "https://th.wikipedia.org/wiki/%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B9%80%E0%B8%82%E0%B8%B2%E0%B9%83%E0%B8%AB%E0%B8%8D%E0%B9%88",
+    "en": "https://en.wikipedia.org/wiki/Khao_Yai_National_Park",
+    "zh": "https://zh.wikipedia.org/wiki/%E8%80%83%E8%89%BE%E5%9B%BD%E5%AE%B6%E5%85%AC%E5%9B%AD"
+   },
+   "summary": {
+    "th": "อุทยานแห่งชาติเขาใหญ่ เป็นหนึ่งในอุทยานที่ตั้งอยู่ในเขตพื้นที่ 11 อำเภอ ใน 4 จังหวัด ได้แก่อำเภอปากช่อง อำเภอวังน้ำเขียว จังหวัดนครราชสีมา\nอำเภอนาดี อำเภอกบินทร์บุรี อำเภอประจันตคาม อำเภอเมืองปราจีนบุรี จังหวัดปราจีนบุรี\nอำเภอปากพลี อำเภอบ้านนา อำเภอเมืองนครนายก จังหวัดนครนายก\nอำเภอแก่งคอย อำเภอมวกเหล็ก จังหวัดสระบุรี",
+    "en": "Khao Yai National Park is a national park in Thailand. Established in 1962 as Thailand's first national park, it is the third largest national park in Thailand.",
+    "zh": "考艾國家公園，或稱大山國家公園，位於泰国巴真府、那空那育府、呵叻府、北標府交界處，成立於1962年9月18日，為泰國第一個國家公園。公園面積2,168平方公里，名列為泰國第三位。考艾國家公園的標誌為已絕滅物種熊氏鹿的頭像，公園以此標誌紀念這個美麗的物種，並激發人們對野生動物的保護意識。\n"
+   },
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/KHAOYAI.JPG/960px-KHAOYAI.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:KHAOYAI.JPG",
+   "imageCredit": "Jtri at Dutch Wikipedia · CC BY-SA 3.0",
+   "fetchedAt": "2026-11-06T18:18:11.823Z"
+  },
+  {
+   "id": "wd-Q1760508",
+   "wikidata": "Q1760508",
+   "kind": "park",
+   "fame": 25,
+   "name": {
+    "th": "อุทยานแห่งชาติเขาสามร้อยยอด",
+    "en": "Khao Sam Roi Yot National Park",
+    "zh": "三百峰国家公园"
+   },
+   "lat": 12.1825,
+   "lng": 99.94833,
+   "province": "prachuap-khiri-khan",
+   "wiki": {
+    "th": "https://th.wikipedia.org/wiki/%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B9%80%E0%B8%82%E0%B8%B2%E0%B8%AA%E0%B8%B2%E0%B8%A1%E0%B8%A3%E0%B9%89%E0%B8%AD%E0%B8%A2%E0%B8%A2%E0%B8%AD%E0%B8%94",
+    "en": "https://en.wikipedia.org/wiki/Khao_Sam_Roi_Yot_National_Park",
+    "zh": "https://zh.wikipedia.org/wiki/%E4%B8%89%E7%99%BE%E5%B3%B0%E5%9B%BD%E5%AE%B6%E5%85%AC%E5%9B%AD"
+   },
+   "summary": {
+    "th": "อุทยานแห่งชาติเขาสามร้อยยอด เป็นอุทยานแห่งชาติที่ตั้งอยู่ในภาคตะวันตก หรือด้านเหนือสุดของภาคใต้ชายฝั่งทะเลด้านตะวันตกของอ่าวไทย ในท้องที่อำเภอสามร้อยยอดและอำเภอกุยบุรี จังหวัดประจวบคีรีขันธ์",
+    "en": "Khao Sam Roi Yot National Park is a marine national park in Kui Buri District, Prachuap Khiri Khan Province, Thailand. It covers 61,300 rai ~ 98 square kilometres (38 sq mi) of which 13,050 rai ~ 21 square kilometres (8.1 sq mi) are marine areas. The park was established in 1966, and was the first coastal national park of Thailand. The park includes Thailand's largest freshwater marsh.",
+    "zh": "三百峰国家公园 是一座位于泰国班武里府的国家海洋公园。公园总面积为98.08km2，其中20.88km2为海域。该公园成立于1966年，还拥有泰国最大的淡水沼泽，也是泰国的第一座国家海洋公园。\n"
+   },
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Village_Bang_Pu%2C_Khao_Sam_Roi_Yod_national_park.jpg/960px-Village_Bang_Pu%2C_Khao_Sam_Roi_Yod_national_park.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Village_Bang_Pu,_Khao_Sam_Roi_Yod_national_park.jpg",
+   "imageCredit": "Jérémy Toma · CC BY-SA 4.0",
+   "fetchedAt": "2026-11-06T18:18:18.183Z"
+  },
+  {
+   "id": "wd-Q1760520",
+   "wikidata": "Q1760520",
+   "kind": "park",
+   "fame": 25,
+   "name": {
+    "th": "อุทยานแห่งชาติเขาสก",
+    "en": "Khao Sok",
+    "zh": "考索國家公園"
+   },
+   "lat": 8.93667,
+   "lng": 98.53028,
+   "province": "surat-thani",
+   "wiki": {
+    "th": "https://th.wikipedia.org/wiki/%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B9%80%E0%B8%82%E0%B8%B2%E0%B8%AA%E0%B8%81",
+    "en": "https://en.wikipedia.org/wiki/Khao_Sok_National_Park",
+    "zh": "https://zh.wikipedia.org/wiki/%E8%80%83%E7%B4%A2%E5%9C%8B%E5%AE%B6%E5%85%AC%E5%9C%92"
+   },
+   "summary": {
+    "th": "อุทยานแห่งชาติเขาสก มีพื้นที่อยู่ในท้องที่อำเภอพนมและอำเภอบ้านตาขุน จังหวัดสุราษฎร์ธานี มีสภาพพื้นที่เป็นธรรมชาติอันกว้างใหญ่ปกคลุมไปด้วยป่าดิบชื้น ครอบคลุมพื้นที่เกือบทั้งหมดของเขตอุทยานแห่งชาติ ส่วนใหญ่เป็นภูเขาสูงต่ำสลับซับซ้อน พื้นที่ราบมีน้อย พื้นที่ส่วนหนึ่งด้านทิศเหนือบริเวณคลองพระแสงเป็นแหล่งน้ำขนาดใหญ่ เกิดขึ้นเนื่องจากการก่อสร้างเขื่อนรัชชประภา (เชี่ยวหลาน) ประกอบไปด้วยพรรณไม้และสัตว์ป่านานาชนิด อุทยานแห่งช…",
+    "en": "Khao Sok National Park is in Surat Thani Province, Thailand. Its area is 461,712 rai ~ 739 square kilometres (285 sq mi), and it includes the 165 km2 (64 sq mi) Cheow Lan Lake contained by the Ratchaprapha Dam. The park is the largest area of virgin forest in southern Thailand and is a remnant of rain forest which is older and more diverse than the Amazon rainforest.",
+    "zh": "考索國家公園 是泰國的一座國家公園，位於南部的素叻他尼府。1980年成立，總面積739平方公里。\n"
+   },
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Karst_formations_on_Cheow_Lan_Lake%2C_Thailand.jpg/960px-Karst_formations_on_Cheow_Lan_Lake%2C_Thailand.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Karst_formations_on_Cheow_Lan_Lake,_Thailand.jpg",
+   "imageCredit": "Vyacheslav Argenberg · CC BY 4.0",
+   "fetchedAt": "2026-11-06T18:18:20.756Z"
+  },
+  {
+   "id": "wd-Q1255815",
+   "wikidata": "Q1255815",
+   "kind": "museum",
+   "fame": 24,
+   "name": {
+    "th": "พิพิธภัณฑสถานแห่งชาติ พระนคร",
+    "en": "Bangkok National Museum",
+    "zh": "曼谷國立博物館"
+   },
+   "lat": 13.75783,
+   "lng": 100.49231,
+   "province": "bangkok",
+   "website": "https://www.tourismthailand.org/Attraction/national-museum",
+   "wiki": {
+    "th": "https://th.wikipedia.org/wiki/%E0%B8%9E%E0%B8%B4%E0%B8%9E%E0%B8%B4%E0%B8%98%E0%B8%A0%E0%B8%B1%E0%B8%93%E0%B8%91%E0%B8%AA%E0%B8%96%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4_%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%99%E0%B8%84%E0%B8%A3",
+    "en": "https://en.wikipedia.org/wiki/Bangkok_National_Museum",
+    "zh": "https://zh.wikipedia.org/wiki/%E6%9B%BC%E8%B0%B7%E5%9C%8B%E7%AB%8B%E5%8D%9A%E7%89%A9%E9%A4%A8"
+   },
+   "hours": "We-Su 09:00-16:00; PH off",
+   "summary": {
+    "th": "พิพิธภัณฑสถานแห่งชาติ พระนคร เป็นพิพิธภัณฑสถานแห่งแรกของประเทศไทย ตั้งอยู่บนถนนหน้าพระธาตุ แขวงพระบรมมหาราชวัง เขตพระนคร กรุงเทพมหานคร ซึ่งเป็นส่วนหนึ่งของพระราชวังบวรสถานมงคล ที่เคยเป็นที่ประทับของกรมพระราชวังบวรสถานมงคลในอดีต ครอบคลุมพื้นที่ตั้งแต่บริเวณมหาวิทยาลัยศิลปากร, มหาวิทยาลัยธรรมศาสตร์, ท้องสนามหลวงตอนเหนือฝั่งตะวันตก, อนุสาวรีย์ทหารอาสาสงครามโลกครั้งที่หนึ่ง และโรงละครแห่งชาติในปัจจุบัน",
+    "en": "The Bangkok National Museum is the main branch museum of the National museums in Thailand and also one of the largest museums in Southeast Asia. It features exhibits of Thai art and history. It occupies the former palace of the vice king, set between Thammasat University and the National Theater, facing Sanam Luang.",
+    "zh": "曼谷國立博物館 是泰國博物館群的其中之一，也是東南亞地區最大的博博物館。其館藏特色是展出泰國藝術以及歷史。博物館地址在泰國10200曼谷Na Phra That路4號，先前原是給泰國皇宮二王的前宮，在田廣場西北邊的廣場角落。\n"
+   },
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Bangkok_National_Museum.jpg/960px-Bangkok_National_Museum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Bangkok_National_Museum.jpg",
+   "imageCredit": "This Photo was taken by Supanut Arunoprayote. Feel free to u · CC BY 4.0",
+   "fetchedAt": "2026-11-06T18:41:18.437Z"
+  },
+  {
+   "id": "wd-Q990128",
+   "wikidata": "Q990128",
+   "kind": "park",
+   "fame": 24,
+   "name": {
+    "th": "อุทยานแห่งชาติเอราวัณ",
+    "en": "Erawan National Park",
+    "zh": "伊拉旺國家公園"
+   },
+   "lat": 14.38333,
+   "lng": 99.11667,
+   "province": "kanchanaburi",
+   "wiki": {
+    "th": "https://th.wikipedia.org/wiki/%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B9%80%E0%B8%AD%E0%B8%A3%E0%B8%B2%E0%B8%A7%E0%B8%B1%E0%B8%93",
+    "en": "https://en.wikipedia.org/wiki/Erawan_National_Park",
+    "zh": "https://zh.wikipedia.org/wiki/%E4%BC%8A%E6%8B%89%E6%97%BA%E5%9C%8B%E5%AE%B6%E5%85%AC%E5%9C%92"
+   },
+   "summary": {
+    "th": "อุทยานแห่งชาติเอราวัณ เป็นอุทยานแห่งชาติที่ตั้งอยู่ในเขต อำเภอศรีสวัสดิ์ จังหวัดกาญจนบุรี",
+    "en": "Erawan National Park is a protected area in Western Thailand, in the Tenasserim Hills of Kanchanaburi Province. Founded in 1975, it was the 12th national park of Thailand.",
+    "zh": "伊拉旺國家公園，又譯愛侶灣國家公園，是泰國的一座國家公園，位於西部的北碧府，面積550平方公里，於1975年成立。\n"
+   },
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Erawan_National_Park_%2849797936858%29.jpg/960px-Erawan_National_Park_%2849797936858%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Erawan_National_Park_(49797936858).jpg",
+   "imageCredit": "Nina R from Africa · CC BY 2.0",
+   "fetchedAt": "2026-11-06T18:18:23.021Z"
+  },
+  {
+   "id": "wd-Q1255783",
+   "wikidata": "Q1255783",
+   "kind": "park",
+   "fame": 19,
+   "name": {
+    "th": "อุทยานแห่งชาติหมู่เกาะอ่างทอง",
+    "en": "Mu Ko Ang Thong National Park",
+    "zh": "紅統群島"
+   },
+   "lat": 9.62278,
+   "lng": 99.675,
+   "province": "surat-thani",
+   "wiki": {
+    "th": "https://th.wikipedia.org/wiki/%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B8%AB%E0%B8%A1%E0%B8%B9%E0%B9%88%E0%B9%80%E0%B8%81%E0%B8%B2%E0%B8%B0%E0%B8%AD%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B8%97%E0%B8%AD%E0%B8%87",
+    "en": "https://en.wikipedia.org/wiki/Mu_Ko_Ang_Thong_National_Park",
+    "zh": "https://zh.wikipedia.org/wiki/%E5%AE%89%E9%80%9A%E5%9C%8B%E5%AE%B6%E5%85%AC%E5%9C%92"
+   },
+   "summary": {
+    "th": "อุทยานแห่งชาติหมู่เกาะอ่างทอง เป็นอุทยานแห่งชาติทางทะเลที่มีลักษณะเป็นหมู่เกาะในอ่าวไทยประกอบด้วยเกาะต่าง ๆ 42 เกาะ ได้แก่ เกาะพะลวย เกาะวัวตาหลับ เกาะแม่เกาะ เกาะสามเส้า เกาะหินดับ เกาะนายพุด และเกาะไผ่ลวก เป็นต้น ตั้งอยู่ในท้องที่ตำบลอ่างทอง อำเภอเกาะสมุย จังหวัดสุราษฎร์ธานี ครอบคลุมพื้นที่ 102 ตารางกิโลเมตร เป็นพื้นน้ำประมาณ 84 ตารางกิโลเมตร หรือประมาณ 82 เปอร์เซ็นต์ของพื้นที่ทั้งหมด ได้รับการประกาศจัดตั้งเป็นอุทย…",
+    "en": "Mu Ko Ang Thong is a marine national park in the Gulf of Thailand in Surat Thani Province. It covers 42 islands in a total area of 63,750 rai ~ 102 square kilometres (39 sq mi), of which about 50 square kilometres (19 sq mi) are land and the rest is water. The park was established on 12 November 1980. The northern tip of Ko Phaluai is also part of the marine park.",
+    "zh": "安通國家公園，在泰國灣內，屬於泰王國素叻他尼府。整個群島共計有42個小島，海域方圓為102平方公里，陸地方圓為18平方公里。\n"
+   },
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Mu_Ko_Ang_Thong%2C_Islands_in_the_sea_2%2C_Thailand.jpg/960px-Mu_Ko_Ang_Thong%2C_Islands_in_the_sea_2%2C_Thailand.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mu_Ko_Ang_Thong,_Islands_in_the_sea_2,_Thailand.jpg",
+   "imageCredit": "Vyacheslav Argenberg · CC BY 4.0",
+   "fetchedAt": "2026-11-06T18:18:26.465Z"
+  },
+  {
+   "id": "wd-Q1817242",
+   "wikidata": "Q1817242",
+   "kind": "park",
+   "fame": 19,
+   "name": {
+    "th": "อุทยานแห่งชาติอ่าวพังงา",
+    "en": "Ao Phang Nga National Park",
+    "zh": "攀牙灣國家公園"
+   },
+   "lat": 8.26194,
+   "lng": 98.49847,
+   "province": "phang-nga",
+   "website": "https://www.thainationalparks.com/ao-phang-nga-national-park",
+   "wiki": {
+    "th": "https://th.wikipedia.org/wiki/%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B8%AD%E0%B9%88%E0%B8%B2%E0%B8%A7%E0%B8%9E%E0%B8%B1%E0%B8%87%E0%B8%87%E0%B8%B2",
+    "en": "https://en.wikipedia.org/wiki/Ao_Phang_Nga_National_Park"
+   },
+   "summary": {
+    "th": "อุทยานแห่งชาติอ่าวพังงา เป็นอุทยานแห่งชาติที่ตั้งอยู่ในจังหวัดพังงา มีเนื้อที่ทั้งหมดประมาณ 250,000 ไร่ หรือ 400 ตารางกิโลเมตร ครอบคลุมพื้นที่ป่าชายเลนผืนใหญ่ที่อุดมสมบูรณ์คงสภาพธรรมชาติดั้งเดิมอยู่มาก เป็นป่าชายเลนกว้างใหญ่ที่สุดของประเทศไทยในปัจจุบัน โดยมีเนื้อที่ป่าโดยรวมทั้งจังหวัด 190,265 ไร่ คิดเป็นร้อยละ 18.",
+    "en": "Ao Phang Nga National Park, located in the Phang Nga Province of the Southern Thailand, encompasses parts of Mueang Phang Nga District and Takua Thung District. The park is predominantly maritime, featuring a section of the Strait of Malacca dotted with numerous limestone tower karst islands."
+   },
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Isla_Tapu%2C_Phuket%2C_Tailandia%2C_2013-08-20%2C_DD_36.JPG/960px-Isla_Tapu%2C_Phuket%2C_Tailandia%2C_2013-08-20%2C_DD_36.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Isla_Tapu,_Phuket,_Tailandia,_2013-08-20,_DD_36.JPG",
+   "imageCredit": "Diego Delso · CC BY-SA 3.0",
+   "fetchedAt": "2026-11-06T18:18:27.636Z"
+  },
+  {
+   "id": "wd-Q541725",
+   "wikidata": "Q541725",
+   "kind": "park",
+   "fame": 15,
+   "name": {
+    "th": "อุทยานแห่งชาติตะรุเตา",
+    "en": "Tarutao National Park",
+    "zh": "达鲁国家海洋公园"
+   },
+   "lat": 6.59528,
+   "lng": 99.64472,
+   "province": "satun",
+   "wiki": {
+    "th": "https://th.wikipedia.org/wiki/%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B8%95%E0%B8%B0%E0%B8%A3%E0%B8%B8%E0%B9%80%E0%B8%95%E0%B8%B2",
+    "en": "https://en.wikipedia.org/wiki/Tarutao_National_Park",
+    "zh": "https://zh.wikipedia.org/wiki/%E8%BE%BE%E9%B2%81%E5%9B%BD%E5%AE%B6%E6%B5%B7%E6%B4%8B%E5%85%AC%E5%9B%AD"
+   },
+   "summary": {
+    "th": "อุทยานแห่งชาติตะรุเตา เป็นอุทยานแห่งชาติที่อยู่ในช่องแคบมะละกาในเขตจังหวัดสตูล อุทยานประกอบไปด้วยเกาะจำนวน 51 เกาะ มีพื้นที่ประมาณ 931,250 ไร่ หรือ 1,490 ตารางกิโลเมตร มีชื่อเสียงที่โด่งดังทางด้านธรรมชาติ สภาพพื้นที่ส่วนใหญ่เป็นภูเขาที่มีสภาพเป็นป่าดิบชื้นซึ่งยังมีพรรณไม และสัตว์ป่าที่น่าสนใจจำนวนไม่น้อย และมีพื้นที่ส่วนหนึ่งเป็นป่าชายเลน นอกจากนี้ยังมีอ่าวน้อยใหญ่ที่มีชายหาดสวยงามอยู่หลายแห่ง และในท้องทะเลของเกาะตะร…",
+    "en": "Tarutao National Park consists of 51 islands in the Strait of Malacca, off the coast of Satun Province of southern Thailand. The Tarutao National Park consists of two island groups: Tarutao and Adang-Rawi, which are scattered 20 to 70 km off the coast.",
+    "zh": "达鲁国家海洋公园 位于泰国沙敦府安达曼海。其由51座岛屿组成。达鲁国家海洋公园分为两个岛群：达鲁群岛（หมู่เกาะตะรุเตา）和阿当-拉维群岛（หมู่เกาะอาดัง-ราวี），其分别距离泰国大陆20公里和70公里。公园面积1490平方公里，其中海域1260平方公里，岛域230平方公里。公园最南端与马来西亚接壤。达鲁国家海洋公园建立于1974年4月19日，为泰国第二个国家海洋公园。\n"
+   },
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Koh_Tarutao%2C_Thailand%2C_Rocky_beach.jpg/960px-Koh_Tarutao%2C_Thailand%2C_Rocky_beach.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Koh_Tarutao,_Thailand,_Rocky_beach.jpg",
+   "imageCredit": "Vyacheslav Argenberg · CC BY 4.0",
+   "fetchedAt": "2026-11-06T18:18:29.447Z"
+  },
+  {
+   "id": "wd-Q656576",
+   "wikidata": "Q656576",
+   "kind": "park",
+   "fame": 15,
+   "name": {
+    "th": "อุทยานแห่งชาติดอยอินทนนท์",
+    "en": "Doi Inthanon National Park"
+   },
+   "lat": 18.5,
+   "lng": 98.6,
+   "province": "chiang-mai",
+   "website": "http://nps.dnp.go.th/parksdetail.php?id=121&name=DoiInthanonNationalPark",
+   "wiki": {
+    "th": "https://th.wikipedia.org/wiki/%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B8%94%E0%B8%AD%E0%B8%A2%E0%B8%AD%E0%B8%B4%E0%B8%99%E0%B8%97%E0%B8%99%E0%B8%99%E0%B8%97%E0%B9%8C",
+    "en": "https://en.wikipedia.org/wiki/Doi_Inthanon_National_Park"
+   },
+   "summary": {
+    "th": "อุทยานแห่งชาติดอยอินทนนท์ เป็นอุทยานแห่งชาติที่ได้รับการเรียกชื่อเล่นว่า \"หลังคาของประเทศไทย\" เนื่องจากมีดอยอินทนนท์ซึ่งเป็นภูเขาที่สูงที่สุดในประเทศไทย โดยมีพื้นที่ครอบคลุมอยู่ในท้องที่อำเภอจอมทอง อำเภอแม่แจ่ม อำเภอแม่วาง และ อำเภอดอยหล่อ จังหวัดเชียงใหม่ มีเนื้อที่ประมาณ 482.",
+    "en": "Doi Inthanon National Park, nicknamed \"the roof of Thailand\", is a national park in the Thanon Thong Chai Range, Chom Thong District, Chiang Mai Province, northern Thailand. It includes Doi Inthanon, the country's highest mountain culminating at 2,565 m and also the Doi Hua Mot Luang at 2,330 m. It contains an area of 301,184 rai ~ 482 square kilometres (186 sq mi) in size."
+   },
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Doi_Inthanon%2C_View_of_the_mountains%2C_Thailand.jpg/960px-Doi_Inthanon%2C_View_of_the_mountains%2C_Thailand.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Doi_Inthanon,_View_of_the_mountains,_Thailand.jpg",
+   "imageCredit": "Vyacheslav Argenberg · CC BY 4.0",
+   "fetchedAt": "2026-11-06T18:18:30.574Z"
+  },
+  {
+   "id": "wd-Q4925853",
+   "wikidata": "Q4925853",
+   "kind": "park",
+   "fame": 15,
+   "name": {
+    "th": "อุทยานแห่งชาติกุยบุรี",
+    "en": "Kui Buri National Park",
+    "zh": "奎武里国家公园"
+   },
+   "lat": 12.05167,
+   "lng": 99.55722,
+   "province": "prachuap-khiri-khan",
+   "wiki": {
+    "th": "https://th.wikipedia.org/wiki/%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B8%81%E0%B8%B8%E0%B8%A2%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5",
+    "en": "https://en.wikipedia.org/wiki/Kui_Buri_National_Park"
+   },
+   "summary": {
+    "th": "อุทยานแห่งชาติกุยบุรี หรือ ผืนป่ากุยบุรี เป็นแหล่งต้นน้ำสำคัญของแม่น้ำกุยบุรีและแม่น้ำปราณบุรี หล่อเลี้ยงชีวิตของผู้คนในจังหวัดประจวบคีรีขันธ์ ได้รับการประกาศให้เป็นอุทยานแห่งชาติ มีวัตถุประสงค์หลักเพื่อคุ้มครองทรัพยากรธรรมชาติที่ปรากฏในพื้นที่ เพื่อเป็นแหล่งหาความรู้ศึกษาวิจัย และการประกอบกิจกรรมนันทนาการของประชาชน โดยได้รับประกาศให้เป็นอุทยานแห่งชาติในราชกิจจานุเบกษา เล่มที่ 116 ตอนที่ 20ก วันที่ 25 มีนาคม พ.ศ.",
+    "en": "Kui Buri National Park is a national park of Thailand in the Tenasserim Hills in Prachuap Khiri Khan Province. It was established as the 90th national park in March 1999."
+   },
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/%E0%B9%81%E0%B8%9C%E0%B8%99%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B8%81%E0%B8%B8%E0%B8%A2%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5_1.jpg/960px-%E0%B9%81%E0%B8%9C%E0%B8%99%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B8%81%E0%B8%B8%E0%B8%A2%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:%E0%B9%81%E0%B8%9C%E0%B8%99%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B8%81%E0%B8%B8%E0%B8%A2%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5_1.jpg",
+   "imageCredit": "Mingkipkee · CC BY-SA 4.0",
+   "fetchedAt": "2026-11-06T18:18:33.830Z"
+  },
+  {
+   "id": "wd-Q2522114",
+   "wikidata": "Q2522114",
+   "kind": "museum",
+   "fame": 14,
+   "name": {
+    "th": "พระราชวังบางปะอิน",
+    "en": "Bang Pa-In Royal Palace",
+    "zh": "邦芭茵夏宫"
+   },
+   "lat": 14.2325,
+   "lng": 100.57917,
+   "province": "ayutthaya",
+   "wiki": {
+    "th": "https://th.wikipedia.org/wiki/%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%A7%E0%B8%B1%E0%B8%87%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%9B%E0%B8%B0%E0%B8%AD%E0%B8%B4%E0%B8%99",
+    "en": "https://en.wikipedia.org/wiki/Bang_Pa-In_Royal_Palace",
+    "zh": "https://zh.wikipedia.org/wiki/%E9%82%A6%E8%8A%AD%E8%8C%B5%E5%A4%8F%E5%AE%AB"
+   },
+   "address": "อำเภอบางปะอิน",
+   "summary": {
+    "th": "พระราชวังบางปะอิน ตั้งอยู่ในตำบลบ้านเลน อำเภอบางปะอิน จังหวัดพระนครศรีอยุธยา อยู่ห่างจากเกาะเมืองลงมาทางทิศใต้ประมาณ 18 กิโลเมตร เป็นพระราชวังโบราณตั้งแต่สมัยกรุงศรีอยุธยา สร้างขึ้นโดยสมเด็จพระเจ้าปราสาททอง เนื่องจากเป็นที่ประสูติของพระองค์ ใช้เป็นสถานที่ที่ทรงใช้ประทับแรม ของพระมหากษัตริย์แห่งกรุงศรีอยุธยา ด้วยเป็นพระราชวังใกล้พระนครนั่นเอง",
+    "en": "Bang Pa-In Royal Palace, also known as the Summer Palace, is a palace complex formerly used by the Thai kings. It lies beside the Chao Phraya River in tambon Ban Len, Bang Pa-in District, Phra Nakhon Si Ayutthaya Province in Thailand.",
+    "zh": "邦芭茵夏宫，又译挽巴茵宫，位于泰国大城府邦芭茵县昭披耶河畔。为泰国国王的夏季行宫。\n"
+   },
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Bang_Pa-in_-_Ishavaraya_Divya_Asna_Hall_%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%99%E0%B8%B1%E0%B9%88%E0%B8%87%E0%B9%84%E0%B8%AD%E0%B8%A8%E0%B8%A7%E0%B8%A3%E0%B8%A3%E0%B8%A2%E0%B9%8C%E0%B8%97%E0%B8%B4%E0%B8%9E%E0%B8%A2%E0%B8%AD%E0%B8%B2%E0%B8%AA%E0%B8%99%E0%B9%8C_%282025%29_-_img_02.jpg/960px-Bang_Pa-in_-_Ishavaraya_Divya_Asna_Hall_%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%99%E0%B8%B1%E0%B9%88%E0%B8%87%E0%B9%84%E0%B8%AD%E0%B8%A8%E0%B8%A7%E0%B8%A3%E0%B8%A3%E0%B8%A2%E0%B9%8C%E0%B8%97%E0%B8%B4%E0%B8%9E%E0%B8%A2%E0%B8%AD%E0%B8%B2%E0%B8%AA%E0%B8%99%E0%B9%8C_%282025%29_-_img_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Bang_Pa-in_-_Ishavaraya_Divya_Asna_Hall_%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%99%E0%B8%B1%E0%B9%88%E0%B8%87%E0%B9%84%E0%B8%AD%E0%B8%A8%E0%B8%A7%E0%B8%A3%E0%B8%A3%E0%B8%A2%E0%B9%8C%E0%B8%97%E0%B8%B4%E0%B8%9E%E0%B8%A2%E0%B8%AD%E0%B8%B2%E0%B8%AA%E0%B8%99%E0%B9%8C_(2025)_-_img_02.jpg",
+   "imageCredit": "Chainwit. · CC BY 4.0",
+   "fetchedAt": "2026-11-06T18:41:20.614Z"
+  },
+  {
+   "id": "wd-Q1322853",
+   "wikidata": "Q1322853",
+   "kind": "park",
+   "fame": 14,
+   "name": {
+    "th": "อุทยานแห่งชาติตาพระยา",
+    "en": "Ta Phraya National Park",
+    "zh": "達帕雅國家公園"
+   },
+   "lat": 14.12,
+   "lng": 102.66,
+   "province": "sa-kaeo",
+   "wiki": {
+    "th": "https://th.wikipedia.org/wiki/%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B8%95%E0%B8%B2%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%A2%E0%B8%B2",
+    "en": "https://en.wikipedia.org/wiki/Ta_Phraya_National_Park",
+    "zh": "https://zh.wikipedia.org/wiki/%E9%81%94%E5%B8%95%E9%9B%85%E5%9C%8B%E5%AE%B6%E5%85%AC%E5%9C%92"
+   },
+   "summary": {
+    "th": "อุทยานแห่งชาติตาพระยา ตั้งอยู่ในท้องที่อำเภอโนนดินแดง อำเภอบ้านกรวด อำเภอละหานทราย จังหวัดบุรีรัมย์ และอำเภอตาพระยา จังหวัดสระแก้ว เป็นอุทยานแห่งชาติลำดับที่ 82 ของประเทศไทย และเป็นส่วนหนึ่งของกลุ่มป่าดงพญาเย็น-เขาใหญ่ซึ่งได้รับการขึ้นทะเบียนเป็นแหล่งมรดกโลกทางธรรมชาติ",
+    "en": "Ta Phraya National Park is a protected area at the eastern end of the Sankamphaeng Range in the area where these mountains meet the Dangrek Range, near the Thai-Cambodian border. It is largely in Ta Phraya District, Sa Kaeo Province, district after which it is named, although the park also includes sectors of Ban Kruat, Non Din Daeng, and Lahan Sai Districts of Buriram Province.",
+    "zh": "達帕雅國家公園 位於泰国沙繳府、武里南府，在泰國與柬埔寨邊界附近，面積594平方公里，成立於1996年11月，為泰國第82個國家公園。達帕雅國家公園與考艾国家公园、他蘭國家公園、龐斯達國家公園以及東艾野生生物保護區組成東巴耶延山－考愛山森林保護區，2005年獲聯合國教科文化組織通過成為世界遗产。\n"
+   },
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Prasat_Khao_Lon-004.jpg/960px-Prasat_Khao_Lon-004.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Prasat_Khao_Lon-004.jpg",
+   "imageCredit": "Ddalbiez · CC BY-SA 3.0",
+   "fetchedAt": "2026-11-06T18:18:39.799Z"
+  },
+  {
+   "id": "wd-Q1536858",
+   "wikidata": "Q1536858",
+   "kind": "park",
+   "fame": 14,
+   "name": {
+    "th": "อุทยานแห่งชาติเขาพระวิหาร",
+    "en": "Khao Phra Wihan National Park"
+   },
+   "lat": 14.44507,
+   "lng": 104.73292,
+   "province": "ubon-ratchathani",
+   "wiki": {
+    "th": "https://th.wikipedia.org/wiki/%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B9%80%E0%B8%82%E0%B8%B2%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3",
+    "en": "https://en.wikipedia.org/wiki/Khao_Phra_Wihan_National_Park"
+   },
+   "summary": {
+    "th": "อุทยานแห่งชาติเขาพระวิหาร อยู่ในพื้นที่อำเภอกันทรลักษ์ จังหวัดศรีสะเกษ และอำเภอน้ำขุ่น อำเภอน้ำยืน จังหวัดอุบลราชธานี มีเนื้อที่ 85,388.97 ไร่ อาณาเขตด้านใต้ติดต่อกับประเทศกัมพูชา มีถนนและบันไดทางขึ้นสู่ปราสาทเขาพระวิหารบริเวณผามออีแดงในตำบลเสาธงชัย อำเภอกันทรลักษ์ เป็นอุทยานแห่งชาติตามพระราชบัญญัติอุทยานแห่งชาติ พ.ศ.",
+    "en": "Khao Phra Wihan National Park is a protected area in Kantharalak district, Sisaket province, Thailand, that contains numerous ruins of the 11th century Khmer Empire. The park lies 98 km (61 mi) south of the town of Sisaket, at the end of Thai highway 221."
+   },
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Mo_view_from_Pha_Mo_I_Daeng_Stairway.JPG/960px-Mo_view_from_Pha_Mo_I_Daeng_Stairway.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mo_view_from_Pha_Mo_I_Daeng_Stairway.JPG",
+   "imageCredit": "Pawyilee · CC BY-SA 3.0",
+   "fetchedAt": "2026-11-06T18:18:41.026Z"
+  },
+  {
+   "id": "wd-Q1130188",
+   "wikidata": "Q1130188",
+   "kind": "museum",
+   "fame": 13,
+   "name": {
+    "th": "หอศิลปวัฒนธรรมแห่งกรุงเทพมหานคร",
+    "en": "Bangkok Art and Culture Centre",
+    "zh": "曼谷艺术文化中心"
+   },
+   "lat": 13.7467,
+   "lng": 100.53022,
+   "province": "bangkok",
+   "website": "http://www.bacc.or.th/",
+   "wiki": {
+    "th": "https://th.wikipedia.org/wiki/%E0%B8%AB%E0%B8%AD%E0%B8%A8%E0%B8%B4%E0%B8%A5%E0%B8%9B%E0%B8%A7%E0%B8%B1%E0%B8%92%E0%B8%99%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3",
+    "en": "https://en.wikipedia.org/wiki/Bangkok_Art_and_Culture_Centre",
+    "zh": "https://zh.wikipedia.org/wiki/%E6%9B%BC%E8%B0%B7%E8%97%9D%E8%A1%93%E6%96%87%E5%8C%96%E4%B8%AD%E5%BF%83"
+   },
+   "hours": "Tu-Su 10:00-20:00",
+   "phone": "+66 2 214 6630;+66 2 214 6631;+66 2 214 6632;+66 2 214 6633;+66 2 214 6634;+66 2 214 6635;+66 2 214 6636;+66 2 214 6637;+66 2 214 6638",
+   "fee": "no",
+   "address": "939 ถนนพระราม 1 ปทุมวัน",
+   "summary": {
+    "th": "หอศิลปวัฒนธรรมแห่งกรุงเทพมหานคร หรือ หอศิลป์กรุงเทพฯ เป็นหอศิลปะร่วมสมัย ตั้งอยู่ที่หัวมุมตะวันตกเฉียงเหนือของสี่แยกปทุมวัน ในย่านสยาม แขวงวังใหม่ เขตปทุมวัน กรุงเทพมหานคร หอศิลป์แห่งนี้ได้เริ่มขึ้นเมื่อพิจิตต รัตตกุล ผู้ว่าราชการกรุงเทพมหานครในขณะนั้นมีมติร่วมกับคณะกรรมการโครงการเฉลิมพระเกียรติฯ ศิลปะแห่งรัชกาลที่ 9 เมื่อ พ.ศ.",
+    "en": "Bangkok Art and Culture Centre is a contemporary arts centre in Siam area, Bangkok, Thailand. Art, music, theatre, film, design and cultural/educational events take place in its exhibition and performance spaces. The centre includes cafes, commercial art galleries, bookshops, craft shops, and an art library.",
+    "zh": "曼谷藝術文化中心 是泰國曼谷的一座現代藝術中心，開業於2008年7月29日。曼谷藝術文化中心在每週二至週日開放，免費參觀。\n"
+   },
+   "image": "https://upload.wikimedia.org/wikipedia/commons/7/76/Bangkok_Art_and_Culture_Centre_building.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Bangkok_Art_and_Culture_Centre_building.jpg",
+   "imageCredit": "Cush2k · CC BY-SA 3.0",
+   "fetchedAt": "2026-11-06T18:41:22.718Z"
+  },
+  {
+   "id": "wd-Q1322807",
+   "wikidata": "Q1322807",
+   "kind": "park",
+   "fame": 13,
+   "name": {
+    "th": "อุทยานแห่งชาติดอยขุนตาล",
+    "en": "Doi Khun Tan National Park"
+   },
+   "lat": 18.49052,
+   "lng": 99.27882,
+   "province": "lamphun",
+   "wiki": {
+    "th": "https://th.wikipedia.org/wiki/%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B8%94%E0%B8%AD%E0%B8%A2%E0%B8%82%E0%B8%B8%E0%B8%99%E0%B8%95%E0%B8%B2%E0%B8%A5",
+    "en": "https://en.wikipedia.org/wiki/Doi_Khun_Tan_National_Park"
+   },
+   "summary": {
+    "th": "อุทยานแห่งชาติดอยขุนตาล เป็นอุทยานแห่งชาติที่ตั้งอยู่ในอำเภอแม่ทา จังหวัดลำพูนและอำเภอห้างฉัตร อำเภอเมืองลำปาง จังหวัดลำปาง สภาพพื้นที่เป็นป่าอุดมสมบูรณ์ เป็นแหล่งต้นน้ำ สามารถเดินทางโดยรถไฟมาลงที่สถานีรถไฟขุนตาน ซึ่งเป็นที่ตั้งอุโมงค์ขุนตาน อุโมงค์รถไฟที่ยาวที่สุดในประเทศไทย สร้างโดยชาวเยอรมัน",
+    "en": "Doi Khun Tan National Park straddles the mountainous area of the Khun Tan Range in Lamphun and Lampang Provinces, northern Thailand."
+   },
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Khun_Tan_%28%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B8%82%E0%B8%B8%E0%B8%99%E0%B8%95%E0%B8%B2%E0%B8%99%29.jpg/960px-Khun_Tan_%28%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B8%82%E0%B8%B8%E0%B8%99%E0%B8%95%E0%B8%B2%E0%B8%99%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Khun_Tan_(%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B8%82%E0%B8%B8%E0%B8%99%E0%B8%95%E0%B8%B2%E0%B8%99).jpg",
+   "imageCredit": "Chit130512 · CC BY-SA 3.0",
+   "fetchedAt": "2026-11-06T18:18:42.433Z"
+  },
+  {
+   "id": "wd-Q1691460",
+   "wikidata": "Q1691460",
+   "kind": "park",
+   "fame": 13,
+   "name": {
+    "th": "อุทยานแห่งชาติออบหลวง",
+    "en": "Op Luang National Park"
+   },
+   "lat": 18.2231,
+   "lng": 98.4811,
+   "province": "chiang-mai",
+   "wiki": {
+    "th": "https://th.wikipedia.org/wiki/%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B8%AD%E0%B8%AD%E0%B8%9A%E0%B8%AB%E0%B8%A5%E0%B8%A7%E0%B8%87",
+    "en": "https://en.wikipedia.org/wiki/Op_Luang_National_Park"
+   },
+   "summary": {
+    "th": "อุทยานแห่งชาติออบหลวง เป็นอุทยานแห่งชาติแห่งหนึ่งในพื้นที่อำเภอจอมทอง อำเภอฮอด และอำเภอแม่แจ่ม จังหวัดเชียงใหม่ ตั้งอยู่ห่างจากตัวจังหวัดเชียงใหม่ไปทางทิศตะวันตกเฉียงใต้ราว 100 กิโลเมตร ครอบคลุมพื้นที่ 553 ตารางกิโลเมตร พื้นที่ส่วนใหญ่ของอุทยานเป็นภูเขาสลับซับซ้อนและสูงชัน มีอาณาเขตติดต่อกับอุทยานแห่งชาติดอยอินทนนท์ แหล่งน้ำหลักคือลำน้ำแม่แจ่ม ซึ่งมีลักษณะเป็นเกาะแก่งเมื่อไหลผ่านหุบเขา ในอุทยานมีป่าไม้อุดมสมบูรณ์ จำแ…",
+    "en": "Op Luang National Park is a national park in Chiang Mai Province, Thailand. It is home to a scenic river canyon, waterfalls, and caves."
+   },
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Obluang_national_park%2C_Chiangmai_province%2C_Thailand.jpg/960px-Obluang_national_park%2C_Chiangmai_province%2C_Thailand.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Obluang_national_park,_Chiangmai_province,_Thailand.jpg",
+   "imageCredit": "Ditsakul · CC BY-SA 3.0",
+   "fetchedAt": "2026-11-06T18:18:45.471Z"
+  },
+  {
+   "id": "wd-Q1968775",
+   "wikidata": "Q1968775",
+   "kind": "park",
+   "fame": 13,
+   "name": {
+    "th": "อุทยานแห่งชาติเฉลิมรัตนโกสินทร์",
+    "en": "Chaloem Rattanakosin National Park"
+   },
+   "lat": 14.66667,
+   "lng": 99.3,
+   "province": "kanchanaburi",
+   "wiki": {
+    "th": "https://th.wikipedia.org/wiki/%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B9%80%E0%B8%89%E0%B8%A5%E0%B8%B4%E0%B8%A1%E0%B8%A3%E0%B8%B1%E0%B8%95%E0%B8%99%E0%B9%82%E0%B8%81%E0%B8%AA%E0%B8%B4%E0%B8%99%E0%B8%97%E0%B8%A3%E0%B9%8C",
+    "en": "https://en.wikipedia.org/wiki/Chaloem_Rattanakosin_National_Park"
+   },
+   "summary": {
+    "th": "อุทยานแห่งชาติเฉลิมรัตนโกสินทร์ หรือที่เรียกว่า อุทยานแห่งชาติถ้ำธารลอด เป็นอุทยานแห่งชาติที่ตั้งอยู่ในที่ หมู่ที่ 4 บ้านท่าลำใย ตำบลเขาโจด อำเภอศรีสวัสดิ์ จังหวัดกาญจนบุรี เขตพื้นที่อุทยานแห่งชาติมีไม่มาก แต่มีสภาพป่าอุดมสมบูรณ์ มีจุดเด่นและธรรมชาติที่สวยงาม เช่น น้ำตก หน้าผา และถ้ำธารลอด ที่นับว่าเป็นสิ่งมหัศจรรย์ที่เกิดจากการยุบตัวของหินปูน ประกอบกับการกัดเซาะของน้ำทำให้เขาหินปูนกลายเป็นสะพานธรรมชาติขนาดมหึมา และม…",
+    "en": "Chaloem Rattanakosin National Park, also known as Tham Than Lot National Park (อุทยานแห่งชาติถ้ำธารลอด), is a national park in Kanchanaburi Province, Thailand. The park, featuring mountains, caves and waterfalls, is part of the Western Forest Complex protected area."
+   },
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Tarn_Lod_Noi_Cave%2C_Ratanakosin_National_Par%2C_Kanchanaburi%2C_Thailand.jpg/960px-Tarn_Lod_Noi_Cave%2C_Ratanakosin_National_Par%2C_Kanchanaburi%2C_Thailand.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Tarn_Lod_Noi_Cave,_Ratanakosin_National_Par,_Kanchanaburi,_Thailand.jpg",
+   "imageCredit": "Apijate Rungwijitsin · CC BY-SA 4.0",
+   "fetchedAt": "2026-11-06T18:18:48.889Z"
+  },
+  {
+   "id": "wd-Q1969004",
+   "wikidata": "Q1969004",
+   "kind": "park",
+   "fame": 13,
+   "name": {
+    "th": "อุทยานแห่งชาติไทรโยค",
+    "en": "Sai Yok National Park"
+   },
+   "lat": 14.41778,
+   "lng": 98.74722,
+   "province": "kanchanaburi",
+   "wiki": {
+    "th": "https://th.wikipedia.org/wiki/%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B9%84%E0%B8%97%E0%B8%A3%E0%B9%82%E0%B8%A2%E0%B8%84",
+    "en": "https://en.wikipedia.org/wiki/Sai_Yok_National_Park"
+   },
+   "summary": {
+    "th": "อุทยานแห่งชาติไทรโยค เป็นอุทยานแห่งชาติที่ตั้งอยู่ในเขต อำเภอไทรโยค จังหวัดกาญจนบุรี",
+    "en": "Sai Yok National Park is a national park in Sai Yok district, Kanchanaburi Province, Thailand, near the town Nam Tok Sai Yok Noi. The park, home to mountains, waterfalls and caves, is part of the Western Forest Complex protected area. In 1978, the Russian roulette scenes of the film The Deer Hunter were filmed in the park."
+   },
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/River_Khwae_View_-_Sai_Yok_National_Park.jpg/960px-River_Khwae_View_-_Sai_Yok_National_Park.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:River_Khwae_View_-_Sai_Yok_National_Park.jpg",
+   "imageCredit": "Ananda · Public domain",
+   "fetchedAt": "2026-11-06T18:18:51.353Z"
+  },
+  {
+   "id": "wd-Q4919631",
+   "wikidata": "Q4919631",
+   "kind": "park",
+   "fame": 13,
+   "name": {
+    "th": "อุทยานแห่งชาติทับลาน",
+    "en": "Thap Lan National Park",
+    "zh": "他蘭國家公園"
+   },
+   "lat": 14.2,
+   "lng": 101.917,
+   "province": "prachinburi",
+   "wiki": {
+    "th": "https://th.wikipedia.org/wiki/%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B8%97%E0%B8%B1%E0%B8%9A%E0%B8%A5%E0%B8%B2%E0%B8%99",
+    "en": "https://en.wikipedia.org/wiki/Thap_Lan_National_Park",
+    "zh": "https://zh.wikipedia.org/wiki/%E4%BB%96%E8%98%AD%E5%9C%8B%E5%AE%B6%E5%85%AC%E5%9C%92"
+   },
+   "summary": {
+    "th": "อุทยานแห่งชาติทับลาน เป็นอุทยานแห่งชาติในภาคอีสานและภาคตะวันออก มีพื้นที่ครอบคลุมท้องที่อำเภอปักธงชัย อำเภอวังน้ำเขียว อำเภอครบุรี อำเภอเสิงสาง จังหวัดนครราชสีมา และอำเภอนาดี จังหวัดปราจีนบุรี สภาพป่ามีความอุดมสมบูรณ์และมีป่าลานซึ่งหาดูได้ยากที่มีเฉพาะบางท้องที่เท่านั้น มีต้นลานขึ้นตามธรรมชาติ เป็นแหล่งกำเนิดของแม่น้ำลำธารต่าง ๆ และมีธรรมชาติที่สวยงาม เช่น หุบผา หน้าผา น้ำตก นับว่าเป็นอุทยานแห่งชาติที่มีพื้นที่มากเป็…",
+    "en": "Thap Lan National Park is in the Sankamphaeng Range in Prachinburi, Nakhon Ratchasima Provinces, Thailand. Established as a national park on 23 December 1981, it was the country's 40th national park. It is part of the Dong Phayayen–Khao Yai Forest Complex UNESCO World Heritage Site.",
+    "zh": "他蘭國家公園 位於泰国呵叻府、巴真府與武里南府境內的山甘烹山脈，面積2,236平方公里，於1981年12月23日成立，為泰國第40個國家公園。他蘭國家公園與考艾国家公园、龐斯達國家公園、達帕雅國家公園，以及東艾野生生物保護區組成東巴耶延山－考愛山森林保護區，2005年獲聯合國教科文化組織通過成為世界遗产。\n"
+   },
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Tublarn01.jpg/960px-Tublarn01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Tublarn01.jpg",
+   "imageCredit": "Kawpodmd · CC BY-SA 4.0",
+   "fetchedAt": "2026-11-06T18:18:55.085Z"
+  },
+  {
+   "id": "wd-Q4925892",
+   "wikidata": "Q4925892",
+   "kind": "park",
+   "fame": 13,
+   "name": {
+    "th": "อุทยานแห่งชาติปางสีดา",
+    "en": "Pang Sida National Park",
+    "zh": "龐斯達國家公園"
+   },
+   "lat": 14.08,
+   "lng": 102.26,
+   "province": "sa-kaeo",
+   "wiki": {
+    "th": "https://th.wikipedia.org/wiki/%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B8%9B%E0%B8%B2%E0%B8%87%E0%B8%AA%E0%B8%B5%E0%B8%94%E0%B8%B2",
+    "en": "https://en.wikipedia.org/wiki/Pang_Sida_National_Park",
+    "zh": "https://zh.wikipedia.org/wiki/%E9%BE%90%E6%96%AF%E9%81%94%E5%9C%8B%E5%AE%B6%E5%85%AC%E5%9C%92"
+   },
+   "summary": {
+    "th": "อุทยานแห่งชาติปางสีดา ได้รับการจัดตั้งเป็นอุทยานแห่งชาติเมื่อวันที่ 22 กุมภาพันธ์ พ.ศ. 2525 นับเป็นอุทยานแห่งชาติลำดับที่ 41 ของประเทศไทย ตั้งอยู่ในท้องที่อำเภอวัฒนานคร อำเภอเมืองสระแก้ว จังหวัดสระแก้ว และอำเภอนาดี จังหวัดปราจีนบุรี รวมครอบคลุมเนื้อที่ 529,375.",
+    "en": "Pang Sida National Park is a national park in the Sankamphaeng Range, covering 527,500 rai ~ 844 square kilometres (326 sq mi) in the eastern Thai province of Sa Kaeo. It is 28 kilometres north of Sa Kaeo City, the capital of the province.",
+    "zh": "龐斯達國家公園 位於泰国沙繳府，面積844平方公里，於1982年2月22日成立，為泰國第41個國家公園。龐斯達國家公園與考艾国家公园、他蘭國家公園、達帕雅國家公園，以及東艾野生生物保護區組成東巴耶延山－考愛山森林保護區，2005年獲聯合國教科文化組織通過成為世界遗产。\n"
+   },
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Pang_Sida_National_Park_Sa_Kaew_Thailand.jpg/960px-Pang_Sida_National_Park_Sa_Kaew_Thailand.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Pang_Sida_National_Park_Sa_Kaew_Thailand.jpg",
+   "imageCredit": "KOSIN SUKHUM · CC BY-SA 4.0",
+   "fetchedAt": "2026-11-06T18:19:01.662Z"
+  },
+  {
+   "id": "wd-Q1968373",
+   "wikidata": "Q1968373",
+   "kind": "museum",
+   "fame": 12,
+   "name": {
+    "th": "พิพิธภัณฑสถานแห่งชาติ หอศิลป์",
+    "en": "National Art Gallery",
+    "zh": "国家美术馆"
+   },
+   "lat": 13.75895,
+   "lng": 100.49384,
+   "province": "bangkok",
+   "wiki": {
+    "th": "https://th.wikipedia.org/wiki/%E0%B8%9E%E0%B8%B4%E0%B8%9E%E0%B8%B4%E0%B8%98%E0%B8%A0%E0%B8%B1%E0%B8%93%E0%B8%91%E0%B8%AA%E0%B8%96%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4_%E0%B8%AB%E0%B8%AD%E0%B8%A8%E0%B8%B4%E0%B8%A5%E0%B8%9B",
+    "en": "https://en.wikipedia.org/wiki/National_Gallery_(Thailand)",
+    "zh": "https://zh.wikipedia.org/wiki/%E5%9C%8B%E5%AE%B6%E7%BE%8E%E8%A1%93%E9%A4%A8_(%E6%B3%B0%E5%9C%8B)"
+   },
+   "address": "พระนคร",
+   "summary": {
+    "th": "พิพิธภัณฑสถานแห่งชาติ หอศิลป หรือ หอศิลป์เจ้าฟ้า เป็นหอศิลป์และเป็นหนึ่งในพิพิธภัณฑสถานแห่งชาติของประเทศไทย ตั้งอยู่ข้างสะพานพระปิ่นเกล้า ถนนเจ้าฟ้า เขตพระนคร กรุงเทพมหานคร ในอาคารที่เดิมเคยเป็นโรงกษาปณ์ ออกแบบโดยนายคาร์โล อัลเลกรี สถาปนิกชาวอิตาลี วัตถุประสงค์หลักเพื่อเป็นสถานที่เก็บรวบรวม และจัดแสดงผลงานศิลปะประเภททัศนศิลป์ ตลอดจนเป็นศูนย์ศึกษาวิจัยและเผยแพร่ความรู้เกี่ยวกับเกี่ยวกับศิลปะไทยประเพณีและร่วมสมัย",
+    "en": "The National Gallery officially recognized as “The National Gallery ,” stands as the premier state-owned art museum and the primary guardian of the nation’s visual artistic treasures.Under the direct jurisdiction of the Fine Arts Department of the Ministry of Culture, the gallery acts as the central national repository for Thailand’s vast artistic heritage.",
+    "zh": "國家美術館 是泰國的國家博物館之一，位於拍那空縣。美術館利用舊泰國皇家造幣局建築作為展館。\n"
+   },
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Bangkok_NationalGallery1.jpg/960px-Bangkok_NationalGallery1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Bangkok_NationalGallery1.jpg",
+   "imageCredit": "Mr.Sayompoo Setabhrahmana · CC BY-SA 4.0",
+   "fetchedAt": "2026-11-06T18:41:23.986Z"
+  },
+  {
+   "id": "wd-Q840904",
+   "wikidata": "Q840904",
+   "kind": "park",
+   "fame": 12,
+   "name": {
+    "th": "อุทยานแห่งชาติภูหินร่องกล้า",
+    "en": "Phu Hin Rong Kla National Park"
+   },
+   "lat": 16.97667,
+   "lng": 101.04,
+   "province": "phitsanulok",
+   "wiki": {
+    "th": "https://th.wikipedia.org/wiki/%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B8%A0%E0%B8%B9%E0%B8%AB%E0%B8%B4%E0%B8%99%E0%B8%A3%E0%B9%88%E0%B8%AD%E0%B8%87%E0%B8%81%E0%B8%A5%E0%B9%89%E0%B8%B2",
+    "en": "https://en.wikipedia.org/wiki/Phu_Hin_Rong_Kla_National_Park"
+   },
+   "summary": {
+    "th": "อุทยานแห่งชาติภูหินร่องกล้า เป็นอุทยานแห่งชาติแห่งที่ 48 ของประเทศ และนับเป็นแห่งที่14 ของภาคเหนือ ซึ่งมีเนื้อที่ประมาณ 307 ตารางกิโลเมตร หรือ 191,875 ไร่ ประกาศเป็นอุทยานแห่งชาติ เมื่อปี พ.ศ.",
+    "en": "Phu Hin Rong Kla National Park is a national park located in the Loei and Phitsanulok Provinces of Thailand. The protected area is located in the forested mountains of the Luang Prabang Range close to the border with Laos and is part of the Luang Prabang montane rain forests ecoregion. The park was the base of operations of the long fight of Thai combatant in communist war of Thailand."
+   },
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Landform.jpg/960px-Landform.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Landform.jpg",
+   "imageCredit": "CC BY-SA 3.0",
+   "fetchedAt": "2026-11-06T18:19:05.985Z"
+  },
+  {
+   "id": "wd-Q843034",
+   "wikidata": "Q843034",
+   "kind": "park",
+   "fame": 12,
+   "name": {
+    "th": "อุทยานแห่งชาติดอยสุเทพ-ปุย",
+    "en": "Doi Suthep-Pui National Park"
+   },
+   "lat": 18.80944,
+   "lng": 98.91597,
+   "province": "chiang-mai",
+   "wiki": {
+    "th": "https://th.wikipedia.org/wiki/%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B8%94%E0%B8%AD%E0%B8%A2%E0%B8%AA%E0%B8%B8%E0%B9%80%E0%B8%97%E0%B8%9E-%E0%B8%9B%E0%B8%B8%E0%B8%A2",
+    "en": "https://en.wikipedia.org/wiki/Doi_Suthep%E2%80%93Pui_National_Park"
+   },
+   "summary": {
+    "th": "อุทยานแห่งชาติดอยสุเทพ-ปุย เป็นอุทยานแห่งชาติที่ตั้งอยู่ในเขตอำเภอเมืองเชียงใหม่ อำเภอแม่ริม และอำเภอหางดง ของจังหวัดเชียงใหม่ มีพื้นที่ทั้งหมด 163,162.",
+    "en": "Doi Suthep–Pui National Park is a national park in Chiang Mai Province in Thailand. It includes Wat Phra That Doi Suthep, a Buddhist temple, and Bhubing Palace, the winter residence of the Thai royal family. The park is a protected area for flora, fauna, and habitat."
+   },
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Doi_Pui_mountains%2C_Chiang_Mai%2C_Thailand.jpg/960px-Doi_Pui_mountains%2C_Chiang_Mai%2C_Thailand.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Doi_Pui_mountains,_Chiang_Mai,_Thailand.jpg",
+   "imageCredit": "Vyacheslav Argenberg · CC BY 4.0",
+   "fetchedAt": "2026-11-06T18:19:07.224Z"
+  },
+  {
+   "id": "wd-Q2916351",
+   "wikidata": "Q2916351",
+   "kind": "museum",
+   "fame": 11,
+   "name": {
+    "th": "พิพิธภัณฑ์บ้านจิม ทอมป์สัน",
+    "en": "Jim Thompson House",
+    "zh": "湯普生博物館"
+   },
+   "lat": 13.74917,
+   "lng": 100.52833,
+   "province": "bangkok",
+   "website": "http://www.jimthompsonhouse.com/",
+   "wiki": {
+    "th": "https://th.wikipedia.org/wiki/%E0%B8%9E%E0%B8%B4%E0%B8%9E%E0%B8%B4%E0%B8%98%E0%B8%A0%E0%B8%B1%E0%B8%93%E0%B8%91%E0%B9%8C%E0%B8%9A%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%88%E0%B8%B4%E0%B8%A1_%E0%B8%97%E0%B8%AD%E0%B8%A1%E0%B8%9B%E0%B9%8C%E0%B8%AA%E0%B8%B1%E0%B8%99",
+    "en": "https://en.wikipedia.org/wiki/Jim_Thompson_House",
+    "zh": "https://zh.wikipedia.org/wiki/%E6%B9%AF%E6%99%AE%E7%94%9F%E5%8D%9A%E7%89%A9%E9%A4%A8"
+   },
+   "hours": "Mo-Su 09:00-18:00",
+   "phone": "+66 2 216 7368",
+   "fee": "yes",
+   "address": "6 Soi Kasemsan 2, Rama 1 Road",
+   "summary": {
+    "th": "พิพิธภัณฑ์บ้านจิม ทอมป์สัน เป็นพิพิธภัณฑ์ที่ ตั้งอยู่ที่บ้านเรือนไทยของจิม ทอมป์สัน ริมคลองแสนแสบ ฝั่งตรงข้ามคลองกับชุมชนบ้านครัว ซึ่งเป็นชุมชนมุสลิม เป็นชุมชนทอผ้าแห่งหนึ่งที่ยังหลงเหลืออยู่ในพระนคร จิม ทอมป์สันย้ายมาอาศัยอยู่ที่นี่ตั้งแต่ พ.ศ. 2490 จนกระทั่งหายสาบสูญเมื่อ พ.ศ. 2510",
+    "en": "The Jim Thompson House is a museum in central Bangkok, Thailand, housing the art collection of American businessman and architect James Harrison Wilson Thompson or simply Jim Thompson, the museum designer and former owner. Built in 1959, the museum spans one rectangular rai of land.",
+    "zh": "湯普生博物館 是一家位於泰國的首都曼谷巴吞旺縣的拍喃一路的橫街「卡森山二街」 的博物館。這是一群泰國舊式建築，居留泰國的美國商人詹姆斯·汤普森先生以它來珍藏在50年代至60年代從各地收集的古董及藝術品。他除了是絲綢莊老闆，亦是一位東南亞藝術品的收藏家，他收集佛教藝術品，還經常前往鄰近的緬甸、柬埔寨及老撾旅行購物。\n"
+   },
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Jim_Thompson_House_spirit_house.JPG/960px-Jim_Thompson_House_spirit_house.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Jim_Thompson_House_spirit_house.JPG",
+   "imageCredit": "BrokenSphere · CC BY 3.0",
+   "fetchedAt": "2026-11-06T18:41:25.459Z"
+  },
+  {
+   "id": "wd-Q257554",
+   "wikidata": "Q257554",
+   "kind": "museum",
+   "fame": 11,
+   "name": {
+    "th": "เมืองโบราณ",
+    "en": "Ancient Siam",
+    "zh": "北欖古城"
+   },
+   "lat": 13.54583,
+   "lng": 100.62806,
+   "province": "samut-prakan",
+   "website": "http://ancientcitygroup.net/ancientsiam/",
+   "wiki": {
+    "th": "https://th.wikipedia.org/wiki/%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93",
+    "en": "https://en.wikipedia.org/wiki/Ancient_Siam",
+    "zh": "https://zh.wikipedia.org/wiki/%E6%9A%B9%E7%BE%85%E5%8F%A4%E5%9F%8E"
+   },
+   "summary": {
+    "th": "เมืองโบราณ สมุทรปราการ เป็นพิพิธภัณฑ์เอกชนกลางแจ้งที่มีพื้นที่กว่า 800 ไร่ ตั้งอยู่ติดถนนสุขุมวิท ตำบลบางปูใหม่ อำเภอเมืองสมุทรปราการ จังหวัดสมุทรปราการ เริ่มก่อสร้างเมื่อปี พ.ศ. 2506 โดยคุณเล็ก และคุณประไพ วิริยะพันธุ์ นักธุรกิจเจ้าของบริษัทวิริยะประกันภัยและเครือธนบุรี ประกอบรถยนต์",
+    "en": "Ancient Siam is a museum park featuring replicas of famous Siamese sites. It was constructed by Lek Viriyaphan and occupies over 200 acres (0.81 km2) in the shape of Thailand.",
+    "zh": "暹羅古城 是一个泰國的博物馆公园，靠近北榄府鳄鱼湖动物园。它被誉为世界上最大的露天博物馆，拥有116座纪念碑和建筑景点。暹羅古城的土地与泰王国的形状大致相对应，纪念碑在地理位置上也位于正确的位置。\n"
+   },
+   "image": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Ancient-City-1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Ancient-City-1.jpg",
+   "imageCredit": "taxifortour · CC BY-SA 4.0",
+   "fetchedAt": "2026-11-06T18:41:26.749Z"
+  },
+  {
+   "id": "wd-Q739851",
+   "wikidata": "Q739851",
+   "kind": "park",
+   "fame": 11,
+   "name": {
+    "th": "อุทยานแห่งชาติแม่วงก์",
+    "en": "Mae Wong National Park",
+    "zh": "嵋翁國家公園"
+   },
+   "lat": 16.03972,
+   "lng": 99.23444,
+   "province": "kamphaeng-phet",
+   "wiki": {
+    "th": "https://th.wikipedia.org/wiki/%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B8%A7%E0%B8%87%E0%B8%81%E0%B9%8C",
+    "en": "https://en.wikipedia.org/wiki/Mae_Wong_National_Park"
+   },
+   "summary": {
+    "th": "อุทยานแห่งชาติแม่วงก์ มีพื้นที่ครอบคลุมท้องที่อำเภอปางศิลาทอง จังหวัดกำแพงเพชร และอำเภอแม่วงก์ และอำเภอแม่เปิน จังหวัดนครสวรรค์ พื้นที่ส่วนใหญ่เป็นแหล่งกำเนิดต้นน้ำลำธาร ตามเทือกเขาสูงชันก่อกำเนิดเป็นน้ำตกที่สวยงาม 4-5 แห่ง ทั้งเป็นต้นกำเนิดของแม่น้ำแม่วงก์อันเป็นต้นน้ำของแม่น้ำสะแกกรัง นอกจากนี้ยังมีแก่งหินทำให้เกิดน้ำตกเล็กๆ ตามแก่งหินนี้ ตลอดจนมีหน้าผาที่สวยงามตามธรรมชาติ อุทยานมีเนื้อที่ประมาณ 558,750 ไร่ หรือ 89…",
+    "en": "Mae Wong National Park is a national park in Thailand. This park lies in Mae Wong and Mae Poen Districts of Nakhon Sawan Province and Pang Sila Thong District of Kamphaeng Phet Province, in the west of Thailand. It was declared a national park on 14 September 1987 as the 54th national park of Thailand, with an area of 558,750 rai ~ 894 square kilometres (345 sq mi)."
+   },
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Khong_Klung_creek_in_Mae_Wong_Netional_park.JPG/960px-Khong_Klung_creek_in_Mae_Wong_Netional_park.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Khong_Klung_creek_in_Mae_Wong_Netional_park.JPG",
+   "imageCredit": "Teeradondon · CC BY-SA 3.0",
+   "fetchedAt": "2026-11-06T18:19:08.339Z"
+  },
+  {
+   "id": "wd-Q1322875",
+   "wikidata": "Q1322875",
+   "kind": "park",
+   "fame": 11,
+   "name": {
+    "th": "อุทยานแห่งชาติดอยหลวง",
+    "en": "Doi Luang National Park"
+   },
+   "lat": 19.45225,
+   "lng": 99.75705,
+   "province": "chiang-rai",
+   "wiki": {
+    "th": "https://th.wikipedia.org/wiki/%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B8%94%E0%B8%AD%E0%B8%A2%E0%B8%AB%E0%B8%A5%E0%B8%A7%E0%B8%87",
+    "en": "https://en.wikipedia.org/wiki/Doi_Luang_National_Park"
+   },
+   "summary": {
+    "th": "อุทยานแห่งชาติดอยหลวง มีอาณาเขตครอบคลุมพื้นที่รอยต่อของ 3 จังหวัด คือ จังหวัดเชียงราย จังหวัดลำปาง และ จังหวัดพะเยา เป็นอุทยานแห่งชาติที่ได้ยกฐานะมาจาก(วนอุทยานน้ำตกปูแกง, วนอุทยานน้ำตกผาเกล็ดนาค, แกงวนอุทยานน้ำตกจำปาทอง, และวนอุทยานน้ำตกวังแก้ว) รวม 4 แห่ง ที่มีพื้นที่ติดต่อเป็นผืนเดียวกัน มีสภาพธรรมชาติและจุดเด่นเป็นแหล่งท่องเที่ยวที่มีความสวยงามมากแห่งหนึ่งของภาคเหนือ มีเนื้อที่ทั้งหมดประมาณ 731,250 ไร่ หรือ 1,170…",
+    "en": "Doi Luang National Park is one of the biggest national parks in Northern Thailand."
+   },
+   "fetchedAt": "2026-11-06T18:19:11.241Z"
+  },
+  {
+   "id": "wd-Q1435698",
+   "wikidata": "Q1435698",
+   "kind": "park",
+   "fame": 11,
+   "name": {
+    "th": "อุทยานแห่งชาติภูกระดึง",
+    "en": "Phu Kradueng National Park",
+    "zh": "浦卡东國家公園"
+   },
+   "lat": 16.86917,
+   "lng": 101.83639,
+   "province": "loei",
+   "wiki": {
+    "th": "https://th.wikipedia.org/wiki/%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B8%A0%E0%B8%B9%E0%B8%81%E0%B8%A3%E0%B8%B0%E0%B8%94%E0%B8%B6%E0%B8%87",
+    "en": "https://en.wikipedia.org/wiki/Phu_Kradueng_National_Park"
+   },
+   "summary": {
+    "th": "อุทยานแห่งชาติภูกระดึง ตั้งอยู่ที่อำเภอภูกระดึงในจังหวัดเลย เป็นหนึ่งในแหล่งท่องเที่ยวที่มีชื่อเสียงมากที่สุดของประเทศไทย เนื่องจากมีธรรมชาติที่สวยงาม ในแต่ละปีจึงมีคนมาเที่ยวเฉลี่ยหลายหมื่นคน โดยเฉพาะในช่วงวันหยุดยาวมักมีนักท่องเที่ยวขึ้นไปพักผ่อนบนภูกระดึงจำนวนมาก ภูกระดึงได้รับการจัดตั้งเป็นป่าสงวนแห่งชาติในปี พ.ศ. 2486 และเป็นอุทยานแห่งชาติเมื่อวันที่ 7 ตุลาคม พ.ศ.",
+    "en": "Phu Kradueng National Park, in the Si Than sub-district of Amphoe Phu Kradueng, Loei Province, is a national park in Thailand. It has a high point of 1,316 m (4318 ft) elevation at Khok Moei. It was proclaimed a national park on 23 November 1962, making it the second national park of Thailand after Khao Yai National Park."
+   },
+   "image": "https://upload.wikimedia.org/wikipedia/commons/7/71/Pha_Lom_Sak.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Pha_Lom_Sak.jpg",
+   "imageCredit": "Original uploader was Billybobmac at en.wikipedia · Public domain",
+   "fetchedAt": "2026-11-06T18:19:12.378Z"
+  },
+  {
+   "id": "wd-Q1968824",
+   "wikidata": "Q1968824",
+   "kind": "park",
+   "fame": 11,
+   "name": {
+    "th": "อุทยานแห่งชาติเขาคิชฌกูฏ",
+    "en": "Khao Khitchakut National Park"
+   },
+   "lat": 12.84556,
+   "lng": 102.15972,
+   "province": "chanthaburi",
+   "wiki": {
+    "th": "https://th.wikipedia.org/wiki/%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B9%80%E0%B8%82%E0%B8%B2%E0%B8%84%E0%B8%B4%E0%B8%8A%E0%B8%8C%E0%B8%81%E0%B8%B9%E0%B8%8F",
+    "en": "https://en.wikipedia.org/wiki/Khao_Khitchakut_National_Park"
+   },
+   "summary": {
+    "th": "อุทยานแห่งชาติเขาคิชฌกูฏ อยู่ในบริเวณพื้นที่ป่าเขาคิชฌกูฏหรือเขาพระบาท ท้องที่อำเภอมะขาม และอำเภอเขาคิชฌกูฏ จังหวัดจันทบุรี ประกอบด้วยภูเขา ทิวทัศน์ที่งดงาม มียอดเขาสูงสุดอยู่ในระดับความสูง 1,000 เมตร มีสภาพธรรมชาติที่สวยงาม เช่น น้ำตกกระทิง และปรากฏการณ์ทางธรณีวิทยาที่เกี่ยวเนื่องกับตำนานทางพุทธศาสนา โดยเฉพาะในด้านความเชื่อถือทางศาสนาเกี่ยวกับรอยพระพุทธบาทบนยอดเขาคิชฌกูฏ มีเนื้อที่ประมาณ 58.",
+    "en": "Khao Khitchakut National Park is a national park in Chanthaburi Province, Thailand. The park is located in the Soi Dao Mountains, the Thai part of the much larger Cardamom Mountains, and is home to waterfalls and forests. The venerated Buddha footprint is also within the park premises. On 4 May 1977, Khao Khitchakut was designated Thailand's 14th National Park."
+   },
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Thailand_1401.jpg/960px-Thailand_1401.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Thailand_1401.jpg",
+   "imageCredit": "Martin Püschel · CC BY-SA 3.0",
+   "fetchedAt": "2026-11-06T18:19:16.388Z"
+  },
+  {
+   "id": "wd-Q1968833",
+   "wikidata": "Q1968833",
+   "kind": "park",
+   "fame": 11,
+   "name": {
+    "th": "อุทยานแห่งชาติคลองลาน",
+    "en": "Khlong Lan National Park",
+    "zh": "孔兰国家公园"
+   },
+   "lat": 16.159,
+   "lng": 99.19,
+   "province": "kamphaeng-phet",
+   "wiki": {
+    "th": "https://th.wikipedia.org/wiki/%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B8%84%E0%B8%A5%E0%B8%AD%E0%B8%87%E0%B8%A5%E0%B8%B2%E0%B8%99",
+    "en": "https://en.wikipedia.org/wiki/Khlong_Lan_National_Park"
+   },
+   "summary": {
+    "th": "อุทยานแห่งชาติคลองลาน เป็นอุทยานแห่งชาติในจังหวัดกำแพงเพชร มีพื้นที่มากกว่า 260,000 ไร่ หรือ มีพื้นที่ครอบคลุมถึง 4 ตำบลได้แก่ ตำบลคลองลานพัฒนา ตำบลคลองน้ำไหล ตำบลโป่งน้ำร้อน และตำบลสักงาม อำเภอคลองลาน ได้รับการจัดตั้งให้เป็นอุทยานแห่งชาติอย่างเป็นทางการในวันที่ 25 ธันวาคม พ.ศ. 2525 ภายในเขตอุทยานมีสถานที่ท่องเที่ยวที่น่าสนใจ อาทิ น้ำตกคลองลาน น้ำตกคลองน้ำไหล แก่งร้อยเกาะ เป็นต้น",
+    "en": "Khlong Lan National Park is a 300 km2 (120 mi2) national park in Thailand."
+   },
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Klonglan_waterfall_08.jpg/960px-Klonglan_waterfall_08.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Klonglan_waterfall_08.jpg",
+   "imageCredit": "Khunkay · CC BY-SA 3.0",
+   "fetchedAt": "2026-11-06T18:19:20.158Z"
+  },
+  {
+   "id": "wd-Q4922606",
+   "wikidata": "Q4922606",
+   "kind": "park",
+   "fame": 11,
+   "name": {
+    "th": "อุทยานแห่งชาติหมู่เกาะลันตา",
+    "en": "Mu Ko Lanta National Park"
+   },
+   "lat": 7.484,
+   "lng": 99.099,
+   "province": "krabi",
+   "wiki": {
+    "th": "https://th.wikipedia.org/wiki/%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B8%AB%E0%B8%A1%E0%B8%B9%E0%B9%88%E0%B9%80%E0%B8%81%E0%B8%B2%E0%B8%B0%E0%B8%A5%E0%B8%B1%E0%B8%99%E0%B8%95%E0%B8%B2",
+    "en": "https://en.wikipedia.org/wiki/Mu_Ko_Lanta_National_Park"
+   },
+   "summary": {
+    "th": "อุทยานแห่งชาติหมู่เกาะลันตา มีพื้นที่ครอบคลุมอยู่ในท้องที่อำเภอเกาะลันตา จังหวัดกระบี่ เป็นอุทยานแห่งชาติทางทะเล ตั้งอยู่ในช่องแคบมะละกา ประกอบด้วยเกาะใหญ่น้อยที่สวยงามจำนวนมาก อุดมไปด้วยทรัพยากรธรรมชาติ ป่าชายหาด ป่าชายเลน แนวเขตปะการังที่สมบูรณ์ และหาดทรายรอบเกาะต่างๆ",
+    "en": "Mu Ko Lanta National Park is a national park in the southern part of Krabi Province, Thailand, consisting of several islands. The two largest islands are Ko Lanta Noi and Ko Lanta Yai. Although both are inhabited, Ko Lanta Yai is the primary tourist destination. The park was established on 15 August 1990"
+   },
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/%E0%B8%96%E0%B9%89%E0%B8%B3%E0%B9%83%E0%B8%95%E0%B9%89%E0%B8%97%E0%B8%B0%E0%B9%80%E0%B8%A5%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%AB%E0%B8%A1%E0%B8%B9%E0%B9%88%E0%B9%80%E0%B8%81%E0%B8%B2%E0%B8%B0%E0%B8%AB%E0%B9%89%E0%B8%B2.jpg/960px-%E0%B8%96%E0%B9%89%E0%B8%B3%E0%B9%83%E0%B8%95%E0%B9%89%E0%B8%97%E0%B8%B0%E0%B9%80%E0%B8%A5%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%AB%E0%B8%A1%E0%B8%B9%E0%B9%88%E0%B9%80%E0%B8%81%E0%B8%B2%E0%B8%B0%E0%B8%AB%E0%B9%89%E0%B8%B2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:%E0%B8%96%E0%B9%89%E0%B8%B3%E0%B9%83%E0%B8%95%E0%B9%89%E0%B8%97%E0%B8%B0%E0%B9%80%E0%B8%A5%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%AB%E0%B8%A1%E0%B8%B9%E0%B9%88%E0%B9%80%E0%B8%81%E0%B8%B2%E0%B8%B0%E0%B8%AB%E0%B9%89%E0%B8%B2.jpg",
+   "imageCredit": "Varakorn Kuldilok · CC BY-SA 3.0",
+   "fetchedAt": "2026-11-06T18:19:23.458Z"
+  },
+  {
+   "id": "wd-Q4925863",
+   "wikidata": "Q4925863",
+   "kind": "park",
+   "fame": 11,
+   "name": {
+    "th": "อุทยานแห่งชาติภูซาง",
+    "en": "Phu Sang National Park"
+   },
+   "lat": 19.58509,
+   "lng": 100.41952,
+   "province": "phayao",
+   "wiki": {
+    "th": "https://th.wikipedia.org/wiki/%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B8%A0%E0%B8%B9%E0%B8%8B%E0%B8%B2%E0%B8%87",
+    "en": "https://en.wikipedia.org/wiki/Phu_Sang_National_Park"
+   },
+   "summary": {
+    "th": "อุทยานแห่งชาติภูซาง อยู่ในเขตอำเภอภูซาง จังหวัดพะเยา และอำเภอเทิง จังหวัดเชียงรายเป็นอุทยานแห่งชาติที่มีอาณาเขตติดต่อประเทศลาว และเป็นพื้นที่มีความอุดมสมบูรณ์ของทรัพยากรป่าไม้และสัตว์ป่า",
+    "en": "Phu Sang National Park is a national park in Northern Thailand."
+   },
+   "image": "https://upload.wikimedia.org/wikipedia/commons/9/90/Phayao_phu_sang_waterfall.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Phayao_phu_sang_waterfall.jpg",
+   "imageCredit": "Takeaway (talk) · CC BY-SA 3.0",
+   "fetchedAt": "2026-11-06T18:19:26.203Z"
+  },
+  {
+   "id": "wd-Q2033070",
+   "wikidata": "Q2033070",
+   "kind": "zoo",
+   "fame": 10,
+   "name": {
+    "th": "ซาฟารีเวิลด์",
+    "en": "Safari World",
+    "zh": "沙法里野生動物園"
+   },
+   "lat": 13.865,
+   "lng": 100.70278,
+   "province": "bangkok",
+   "website": "http://www.safariworld.com/",
+   "wiki": {
+    "th": "https://th.wikipedia.org/wiki/%E0%B8%8B%E0%B8%B2%E0%B8%9F%E0%B8%B2%E0%B8%A3%E0%B8%B5%E0%B9%80%E0%B8%A7%E0%B8%B4%E0%B8%A5%E0%B8%94%E0%B9%8C",
+    "en": "https://en.wikipedia.org/wiki/Safari_World",
+    "zh": "https://zh.wikipedia.org/wiki/%E6%B2%99%E6%B3%95%E9%87%8C%E9%87%8E%E7%94%9F%E5%8B%95%E7%89%A9%E5%9C%92"
+   },
+   "fee": "yes",
+   "address": "99 ถนน ปัญญาอินทรา",
+   "summary": {
+    "th": "ซาฟารีเวิลด์ สถานที่ท่องเที่ยวประเภทสวนสัตว์และการแสดงโชว์ ตั้งอยู่เลขที่ 99 ถนนปัญญาอินทรา แขวงสามวาตะวันตก เขตคลองสามวา กรุงเทพมหานคร มีเนื้อที่ประมาณ 430 ไร่ เปิดดำเนินการมาตั้งแต่ปี พ.ศ. 2531 ปัจจุบัน นาย ณรงค์ จุลชาต เป็น ประธานกรรมการ นาย ผิน คิ้วคชา เป็น รองประธานกรรมการและประธานกรรมการบริหาร นาง อาภา คิ้วคชา เป็น กรรมการผู้จัดการใหญ่",
+    "en": "Safari World is a tourist attraction in Bangkok, Thailand that consists of two parks named Marine Park and Safari Park, operated by Safari World Public Limited. The park was opened in 1988 with a total area of 480 acres (190 ha) for its open zoo and 180 acres (73 ha) for its bird park.",
+    "zh": "沙法里野生動物園 位於泰國的首都曼谷之民武里縣的 99號，它是一個在1988年開幕，佔地約480多公畝的大型動物園；其中180多公畝屬開放式動物園。\n"
+   },
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Safari_World.jpg/960px-Safari_World.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Safari_World.jpg",
+   "imageCredit": "Lerdsuwa · CC BY-SA 3.0",
+   "fetchedAt": "2026-11-06T18:16:00.957Z"
+  },
+  {
+   "id": "wd-Q493505",
+   "wikidata": "Q493505",
+   "kind": "museum",
+   "fame": 10,
+   "name": {
+    "th": "วังสวนผักกาด",
+    "en": "Suan Pakkad Palace",
+    "zh": "蘇安·帕卡德宮殿博物院"
+   },
+   "lat": 13.75684,
+   "lng": 100.53712,
+   "province": "bangkok",
+   "website": "http://www.suanpakkad.com",
+   "wiki": {
+    "th": "https://th.wikipedia.org/wiki/%E0%B8%A7%E0%B8%B1%E0%B8%87%E0%B8%AA%E0%B8%A7%E0%B8%99%E0%B8%9C%E0%B8%B1%E0%B8%81%E0%B8%81%E0%B8%B2%E0%B8%94",
+    "en": "https://en.wikipedia.org/wiki/Suan_Pakkad_Palace"
+   },
+   "hours": "Mo-Su 09:00-16:00",
+   "summary": {
+    "th": "วังสวนผักกาด เดิมเป็นสวนผักกาดของชาวจีน เป็นวังที่ประทับของพระเจ้าวรวงศ์เธอ กรมหมื่นนครสวรรค์ศักดิพินิต และหม่อมราชวงศ์พันธุ์ทิพย์ บริพัตร ชายา มีพื้นที่ 6 ไร่ ตั้งอยู่บนถนนศรีอยุธยา เขตราชเทวี กรุงเทพมหานคร โดยสร้างเพื่อประทับในช่วงสุดสัปดาห์ และได้เปิดให้บุคคลภายนอกเข้าชมโบราณวัตถุ ศิลปวัตถุ โดยที่เสด็จในกรมและคุณท่านยังใช้เป็นที่พำนักอยู่ ตั้งแต่ พ.ศ. 2495 เป็นต้นมา",
+    "en": "Suan Pakkad Palace or Suan Pakkard Palace is a museum in Bangkok, Thailand. It is located on Si Ayutthaya Road, south of the Victory Monument. The museum has Thai antiques on display, including Ban Chiang pottery which is over 4,000 years old. Originally the home of Prince Chumbhotbongs Paribatra (1904–1959) and his wife, they converted it into a museum which opened in 1952."
+   },
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Bkkwangsuanpakkardlp03.jpg/960px-Bkkwangsuanpakkardlp03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Bkkwangsuanpakkardlp03.jpg",
+   "imageCredit": "Heinrich Damm (User:Hdamm, Hdamm at de.wikipedia.org) · CC BY 2.0",
+   "fetchedAt": "2026-11-06T18:41:27.446Z"
+  },
+  {
+   "id": "wd-Q660598",
+   "wikidata": "Q660598",
+   "kind": "museum",
+   "fame": 10,
+   "name": {
+    "th": "พิพิธภัณฑ์ช้างเอราวัณ",
+    "en": "Erawan Museum",
+    "zh": "三頭象神博物館"
+   },
+   "lat": 13.62833,
+   "lng": 100.58889,
+   "province": "samut-prakan",
+   "website": "https://erawanmuseum.com/",
+   "wiki": {
+    "th": "https://th.wikipedia.org/wiki/%E0%B8%9E%E0%B8%B4%E0%B8%9E%E0%B8%B4%E0%B8%98%E0%B8%A0%E0%B8%B1%E0%B8%93%E0%B8%91%E0%B9%8C%E0%B8%8A%E0%B9%89%E0%B8%B2%E0%B8%87%E0%B9%80%E0%B8%AD%E0%B8%A3%E0%B8%B2%E0%B8%A7%E0%B8%B1%E0%B8%93",
+    "en": "https://en.wikipedia.org/wiki/Erawan_Museum"
+   },
+   "hours": "Mo-Su 09:00-18:00",
+   "address": "99/9 ถนนสุขุมวิท เมืองสมุทรปราการ",
+   "summary": {
+    "th": "พิพิธภัณฑ์ช้างเอราวัณ เป็นประติมากรรมลอยตัวรูปช้าง 3 เศียร ซึ่งในทางวรรณคดีไทยเอราวัณซึ่งมีเศียรทั้งหมด 33 เศียร แต่เนื่องจากปัญหาขนาดและโครงสร้างที่ซับซ้อนจึงลดมาเหลือเพียง 3 เศียร พิพิธภัณฑ์ช้างเอราวัณ เป็นแหล่งท่องเที่ยวที่สำคัญและโดดเด่นแห่งหนึ่งของจังหวัดสมุทรปราการ ตั้งอยู่บนถนนสุขุมวิท บริเวณที่ตัดกับถนนกาญจนาภิเษก ตำบลบางเมืองใหม่ อำเภอเมืองสมุทรปราการ",
+    "en": "The Erawan Museum is a museum in Samut Prakan province, Thailand. The museum was built in 2003. It is well known for its giant three-headed elephant art display."
+   },
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Erawan_museum-001.jpg/960px-Erawan_museum-001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Erawan_museum-001.jpg",
+   "imageCredit": "Ddalbiez · CC BY-SA 3.0",
+   "fetchedAt": "2026-11-06T18:41:28.374Z"
+  },
+  {
+   "id": "wd-Q238906",
+   "wikidata": "Q238906",
+   "kind": "park",
+   "fame": 10,
+   "name": {
+    "th": "อุทยานแห่งชาติหมู่เกาะช้าง",
+    "en": "Mu Ko Chang National Park"
+   },
+   "lat": 11.979,
+   "lng": 102.368,
+   "province": "trat",
+   "wiki": {
+    "th": "https://th.wikipedia.org/wiki/%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B8%AB%E0%B8%A1%E0%B8%B9%E0%B9%88%E0%B9%80%E0%B8%81%E0%B8%B2%E0%B8%B0%E0%B8%8A%E0%B9%89%E0%B8%B2%E0%B8%87",
+    "en": "https://en.wikipedia.org/wiki/Mu_Ko_Chang_National_Park"
+   },
+   "summary": {
+    "th": "อุทยานแห่งชาติหมู่เกาะช้าง อุทยานแห่งชาติหมู่เกาะช้าง มีเนื้อที่ทั้งสิ้น 650 ตารางกิโลเมตร หรือ 406,250 ไร่ ประกอบด้วยเกาะต่าง ๆ ที่มากถึง 52 เกาะ เรียงตัวกัน ตั้งอยู่ในเขตอำเภอเกาะช้าง และบางส่วนของ อำเภอเกาะกูด เกาะที่สำคัญที่สุด คือ เกาะช้าง นอกจากนี้ยังมีเกาะอื่น ๆ ที่ยังคงสภาพความสวยงามตามธรรมชาติ ได้แก่ เกาะคลุ้ม เกาะเหลายาใน เกาะไม้ซี้ใหญ่ เกาะหวาย เกาะง่าม บางแห่งมีปะการังใต้น้ำที่คงความสมบูรณ์ตามธรรมชาติ เช่…",
+    "en": "Mu Ko Chang National Park is in Trat Province, eastern Thailand. It spans several provincial districts. It is a marine national park with an area of 406,250 rai ~ 650 square kilometres (250 sq mi), including 52 islands. The most notable island within the archipelago is Ko Chang."
+   },
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Moo_Koh_Chang5.JPG/960px-Moo_Koh_Chang5.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Moo_Koh_Chang5.JPG",
+   "imageCredit": "Toey19863 · CC BY-SA 3.0",
+   "fetchedAt": "2026-11-06T18:19:29.020Z"
+  },
+  {
+   "id": "wd-Q1322836",
+   "wikidata": "Q1322836",
+   "kind": "park",
+   "fame": 10,
+   "name": {
+    "th": "อุทยานแห่งชาติดอยภูคา",
+    "en": "Doi Phu Kha National Park"
+   },
+   "lat": 19.21306,
+   "lng": 100.98139,
+   "province": "nan",
+   "website": "http://nps.dnp.go.th/parksdetail.php?id=96",
+   "wiki": {
+    "th": "https://th.wikipedia.org/wiki/%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B8%94%E0%B8%AD%E0%B8%A2%E0%B8%A0%E0%B8%B9%E0%B8%84%E0%B8%B2",
+    "en": "https://en.wikipedia.org/wiki/Doi_Phu_Kha_National_Park"
+   },
+   "summary": {
+    "th": "อุทยานแห่งชาติดอยภูคา ได้รับการประกาศเป็นอุทยานแห่งชาติลำดับที่ 94 เมื่อวันที่ 17 มิถุนายน พ.ศ.",
+    "en": "Doi Phu Kha National Park covers parts of 8 districts in the Luang Prabang Range, Nan Province, Northern Thailand and has rich natural resources. It is Northern Thailand's largest National park and rivers such as Nan River and Pua River, have their sources within the area of the range under the protection of the park limits. Khun Nan National Park is located north of the park area."
+   },
+   "image": "https://upload.wikimedia.org/wikipedia/commons/e/e7/2006_1004_nan_doi_phuka_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2006_1004_nan_doi_phuka_03.jpg",
+   "imageCredit": "Takeaway · CC BY-SA 3.0",
+   "fetchedAt": "2026-11-06T18:19:30.159Z"
+  },
+  {
+   "id": "wd-Q1476495",
+   "wikidata": "Q1476495",
+   "kind": "park",
+   "fame": 10,
+   "name": {
+    "th": "อุทยานแห่งชาติห้วยน้ำดัง",
+    "en": "Huai Nam Dang National Park"
+   },
+   "lat": 19.3008,
+   "lng": 98.60178,
+   "province": "chiang-mai",
+   "wiki": {
+    "th": "https://th.wikipedia.org/wiki/%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B8%AB%E0%B9%89%E0%B8%A7%E0%B8%A2%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%94%E0%B8%B1%E0%B8%87",
+    "en": "https://en.wikipedia.org/wiki/Huai_Nam_Dang_National_Park"
+   },
+   "summary": {
+    "th": "อุทยานแห่งชาติห้วยน้ำดัง เป็นอุทยานแห่งชาติที่ตั้งอยู่ในจังหวัดเชียงใหม่และแม่ฮ่องสอนของประเทศไทย โดยในเขตอุทยาน มีภูมิทัศน์ต่าง ๆ ได้แก่ จุดชมวิวภูเขา น้ำตก และบ่อน้ำร้อน",
+    "en": "Huai Nam Dang National Park is a national park in Thailand's Mae Hong Son and Chiang Mai Provinces. This mountainous park features scenic mountain viewpoints, waterfalls, and hot springs."
+   },
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/HuayNamDang02.jpg/960px-HuayNamDang02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:HuayNamDang02.jpg",
+   "imageCredit": "Khunkay · CC BY-SA 3.0",
+   "fetchedAt": "2026-11-06T18:19:32.931Z"
+  },
+  {
+   "id": "wd-Q5359345",
+   "wikidata": "Q5359345",
+   "kind": "zoo",
+   "fame": 9,
+   "name": {
+    "th": "เอลลิแฟนท์เนเจอร์ปาร์ค",
+    "en": "Elephant Nature Park"
+   },
+   "lat": 19.2141,
+   "lng": 98.8584,
+   "province": "chiang-mai",
+   "website": "http://www.elephantnaturepark.org",
+   "wiki": {
+    "th": "https://th.wikipedia.org/wiki/%E0%B9%80%E0%B8%AD%E0%B8%A5%E0%B8%A5%E0%B8%B4%E0%B9%81%E0%B8%9F%E0%B8%99%E0%B8%97%E0%B9%8C%E0%B9%80%E0%B8%99%E0%B9%80%E0%B8%88%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%9B%E0%B8%B2%E0%B8%A3%E0%B9%8C%E0%B8%84",
+    "en": "https://en.wikipedia.org/wiki/Elephant_Nature_Park"
+   },
+   "hours": "Mo-Su 07:00-17:00",
+   "phone": "+6653272855",
+   "address": "1 Ratmakka Road",
+   "summary": {
+    "th": "เอลลิแฟนท์เนเจอร์ปาร์ค หรือ เอเลเฟ่น เนเจอร์ พาร์ค เป็นที่สำหรับสัตว์อาศัยและศูนย์ช่วยเหลือช้างในอำเภอแม่แตง จังหวัดเชียงใหม่ ภาคเหนือของประเทศไทย ซึ่งห่างจากตัวเมืองเชียงใหม่ประมาณ 60 กิโลเมตร (37 mi) ที่ก่อตั้งโดยแสงเดือน ชัยเลิศ ส่วนใน พ.ศ. 2556 เอราวัณ เอลลิเฟนท์ รีไทร์เม้นท์ ปาร์ค ได้เปิดทางภาคตะวันตกของประเทศไทยในฐานะสาขา กระทั่งภายใน พ.ศ.",
+    "en": "Elephant Nature Park is a sanctuary and rescue centre for elephants in Mae Taeng District, Chiang Mai province, northern Thailand, approximately 60 kilometres (37 mi) from Chiang Mai city, co-founded by Sangduen \"Lek\" Chailert. In 2013, Erawan Elephant Retirement Park opened in western Thailand as an offshoot."
+   },
+   "image": "https://upload.wikimedia.org/wikipedia/commons/a/ab/The_elephant_herd_of_Elephant_Nature_Park.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:The_elephant_herd_of_Elephant_Nature_Park.jpg",
+   "imageCredit": "Elemanxx · CC BY-SA 3.0",
+   "fetchedAt": "2026-11-06T18:16:04.345Z"
+  },
+  {
+   "id": "wd-Q25894317",
+   "wikidata": "Q25894317",
+   "kind": "themepark",
+   "fame": 8,
+   "name": {
+    "th": "สวนน้ำรามายณะ",
+    "en": "Ramayana Water Park",
+    "zh": "罗摩衍那水上乐园"
+   },
+   "lat": 12.75127,
+   "lng": 100.96268,
+   "province": "chonburi",
+   "website": "http://www.ramayanawaterpark.com/",
+   "wiki": {
+    "th": "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%A7%E0%B8%99%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%A3%E0%B8%B2%E0%B8%A1%E0%B8%B2%E0%B8%A2%E0%B8%93%E0%B8%B0",
+    "en": "https://en.wikipedia.org/wiki/Ramayana_Water_Park",
+    "zh": "https://zh.wikipedia.org/wiki/%E7%BD%97%E6%91%A9%E8%A1%8D%E9%82%A3%E6%B0%B4%E4%B8%8A%E4%B9%90%E5%9B%AD"
+   },
+   "hours": "Mo-Tu,Th-Su 11:00-18:00",
+   "phone": "+66 (0) 3300 5929",
+   "address": "9",
+   "summary": {
+    "th": "สวนน้ำรามายณะ เป็นสวนน้ำที่ตั้งอยู่ในตำบลนาจอมเทียน อำเภอสัตหีบ จังหวัดชลบุรี",
+    "en": "Ramayana Water Park is a water park in Pattaya, which is a 2-hour drive from Bangkok and 15 kilometers south of Pattaya City. It is one of the biggest water theme parks in Southeast Asia.",
+    "zh": "罗摩衍那水上乐园 (泰語：สวนน้ำรามายณะ) 是一座位于泰国春武里府的水上乐园，距离曼谷1个半小时车程，位于芭提雅市向南15公里。是东南亚最大的主题水上乐园。\n"
+   },
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/RWP-Overview.jpg/960px-RWP-Overview.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:RWP-Overview.jpg",
+   "imageCredit": "Ramayana Water Park · CC BY-SA 3.0",
+   "fetchedAt": "2026-11-06T18:16:36.143Z"
+  },
+  {
+   "id": "wd-Q6584164",
+   "wikidata": "Q6584164",
+   "kind": "museum",
+   "fame": 8,
+   "name": {
+    "th": "มิวเซียมสยาม",
+    "en": "The Museum of Siam",
+    "zh": "暹罗博物馆"
+   },
+   "lat": 13.74414,
+   "lng": 100.49412,
+   "province": "bangkok",
+   "website": "http://www.museumsiam.org",
+   "wiki": {
+    "th": "https://th.wikipedia.org/wiki/%E0%B8%A1%E0%B8%B4%E0%B8%A7%E0%B9%80%E0%B8%8B%E0%B8%B5%E0%B8%A2%E0%B8%A1%E0%B8%AA%E0%B8%A2%E0%B8%B2%E0%B8%A1",
+    "en": "https://en.wikipedia.org/wiki/Museum_Siam",
+    "zh": "https://zh.wikipedia.org/wiki/%E6%9A%B9%E7%BD%97%E5%8D%9A%E7%89%A9%E9%A6%86"
+   },
+   "hours": "Tu-Su 10:00-18:00",
+   "phone": "+66(0)-2225-2777",
+   "summary": {
+    "th": "มิวเซียมสยาม พิพิธภัณฑ์การเรียนรู้ ภายใต้สถาบันพิพิธภัณฑ์การเรียนรู้แห่งชาติ เป็นพิพิธภัณฑ์ตั้งอยู่บนถนนสนามไชย แขวงพระบรมมหาราชวัง เขตพระนคร กรุงเทพมหานคร เปิดให้บริการเมื่อวันที่ 2 เมษายน พ.ศ. 2551",
+    "en": "Museum Siam is a discovery museum that is located at Sanam Chai road in Bangkok, Thailand. The museum was established in 2007 in the former building of the Ministry of Commerce. It was created to teach the national identity and history of the people of Thailand, and their relationships with neighboring cultures.",
+    "zh": "暹罗博物馆 是位于泰国曼谷沙南猜路的探索博物馆。该博物馆于2007年在原商务部大楼内成立。 它的创建是为了教授泰国人民的民族认同和历史，以及他们与邻近文化的关系。博物馆的座右铭是“玩耍+学习=เพลิน（泰语中『快乐』的意思）”，通过一系列的互动展品展示了泰国从过去到现在的发展历程。\n"
+   },
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/%E0%B8%A1%E0%B8%B4%E0%B8%A7%E0%B9%80%E0%B8%8B%E0%B8%B5%E0%B8%A2%E0%B8%A1%E0%B8%AA%E0%B8%A2%E0%B8%B2%E0%B8%A1_%E0%B8%9E%E0%B8%B4%E0%B8%9E%E0%B8%B4%E0%B8%98%E0%B8%A0%E0%B8%B1%E0%B8%93%E0%B8%91%E0%B9%8C%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%99%E0%B8%A3%E0%B8%B9%E0%B9%89_3.jpg/960px-%E0%B8%A1%E0%B8%B4%E0%B8%A7%E0%B9%80%E0%B8%8B%E0%B8%B5%E0%B8%A2%E0%B8%A1%E0%B8%AA%E0%B8%A2%E0%B8%B2%E0%B8%A1_%E0%B8%9E%E0%B8%B4%E0%B8%9E%E0%B8%B4%E0%B8%98%E0%B8%A0%E0%B8%B1%E0%B8%93%E0%B8%91%E0%B9%8C%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%99%E0%B8%A3%E0%B8%B9%E0%B9%89_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:%E0%B8%A1%E0%B8%B4%E0%B8%A7%E0%B9%80%E0%B8%8B%E0%B8%B5%E0%B8%A2%E0%B8%A1%E0%B8%AA%E0%B8%A2%E0%B8%B2%E0%B8%A1_%E0%B8%9E%E0%B8%B4%E0%B8%9E%E0%B8%B4%E0%B8%98%E0%B8%A0%E0%B8%B1%E0%B8%93%E0%B8%91%E0%B9%8C%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%99%E0%B8%A3%E0%B8%B9%E0%B9%89_3.jpg",
+   "imageCredit": "Yakuzakorat · CC BY-SA 3.0",
+   "fetchedAt": "2026-11-06T18:41:30.969Z"
+  },
+  {
+   "id": "wd-Q546844",
+   "wikidata": "Q546844",
+   "kind": "zoo",
+   "fame": 7,
+   "name": {
+    "th": "สถานแสดงพันธุ์สัตว์น้ำจืดกรุงเทพมหานคร",
+    "en": "Bangkok Aquarium",
+    "zh": "曼谷水族館"
+   },
+   "lat": 13.84259,
+   "lng": 100.57559,
+   "province": "bangkok",
+   "website": "http://www.fisheries.go.th/fisheries/aq/webplace1.php?hidAQCode=00000001",
+   "wiki": {
+    "th": "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%96%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%9E%E0%B8%B1%E0%B8%99%E0%B8%98%E0%B8%B8%E0%B9%8C%E0%B8%AA%E0%B8%B1%E0%B8%95%E0%B8%A7%E0%B9%8C%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%88%E0%B8%B7%E0%B8%94%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3",
+    "en": "https://en.wikipedia.org/wiki/Bangkok_Aquarium",
+    "zh": "https://zh.wikipedia.org/wiki/%E6%9B%BC%E8%B0%B7%E6%B0%B4%E6%97%8F%E9%A4%A8"
+   },
+   "summary": {
+    "th": "สถานแสดงพันธุ์สัตว์น้ำกรุงเทพมหานคร ก่อตั้งครั้งแรกเมื่อ พ.ศ. 2483 บริเวณแผนกทดลองเพาะเลี้ยง เกษตรกลาง บางเขน เป็นเรือนไม้ชั้นเดียวรูปโดมมีปีกสองข้าง ในระยะแรกมีตู้กระจกเลี้ยงปลาขนาดประมาณ 1 ลูกบาศก์เมตร จำนวน 20 ตู้ โดยปลาที่นำมาแสดงเป็นปลาน้ำจืดที่นิยมเลี้ยงและมีความสำคัญทางเศรษฐกิจ ต่อมาเกิดการชำรุดทรุดโทรมและคับแคบลง กรมประมงจึงดำริที่จะสร้างสถานแสดงพันธุ์ปลาขึ้นใหม่ โดยใน พ.ศ.",
+    "en": "The Bangkok Aquarium, founded in 1940, is the oldest aquarium in Thailand. Located at the Kasetsart University main campus in Bangkok, the aquarium is home to about 560 species of freshwater fish native to Thailand as well as about 100 species of aquarium plants. The showcase species include Chao Phraya giant catfish, Siamese giant carp, and Siamese tigerfish.",
+    "zh": "曼谷水族館 位於泰國的首都曼谷之農業大學 的主校區裡。\n"
+   },
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/%E0%B8%AA%E0%B8%96%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%9E%E0%B8%B1%E0%B8%99%E0%B8%98%E0%B8%B8%E0%B9%8C%E0%B8%AA%E0%B8%B1%E0%B8%95%E0%B8%A7%E0%B9%8C%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E.jpg/960px-%E0%B8%AA%E0%B8%96%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%9E%E0%B8%B1%E0%B8%99%E0%B8%98%E0%B8%B8%E0%B9%8C%E0%B8%AA%E0%B8%B1%E0%B8%95%E0%B8%A7%E0%B9%8C%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:%E0%B8%AA%E0%B8%96%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%9E%E0%B8%B1%E0%B8%99%E0%B8%98%E0%B8%B8%E0%B9%8C%E0%B8%AA%E0%B8%B1%E0%B8%95%E0%B8%A7%E0%B9%8C%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E.jpg",
+   "imageCredit": "ยุทธนาสาระขันธ์ · CC BY-SA 4.0",
+   "fetchedAt": "2026-11-06T18:16:07.982Z"
+  },
+  {
+   "id": "wd-Q13022377",
+   "wikidata": "Q13022377",
+   "kind": "zoo",
+   "fame": 7,
+   "name": {
+    "th": "สวนสัตว์พาต้า",
+    "en": "Pata Zoo"
+   },
+   "lat": 13.77131,
+   "lng": 100.48403,
+   "province": "bangkok",
+   "wiki": {
+    "th": "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%A7%E0%B8%99%E0%B8%AA%E0%B8%B1%E0%B8%95%E0%B8%A7%E0%B9%8C%E0%B8%9E%E0%B8%B2%E0%B8%95%E0%B9%89%E0%B8%B2",
+    "en": "https://en.wikipedia.org/wiki/Pata_Zoo"
+   },
+   "summary": {
+    "th": "สวนสัตว์พาต้า เป็นสวนสัตว์ขนาดเล็ก ตั้งอยู่ที่ชั้น 6–7 ของห้างสรรพสินค้าพาต้า สาขาปิ่นเกล้า ในเขตบางพลัด ฝั่งธนบุรี กรุงเทพมหานคร บริเวณแยกบรมราชชนนี ด้านมุ่งหน้าไปทางสะพานสมเด็จพระปิ่นเกล้า เปิดดำเนินกิจการเมื่อต้นปี พ.ศ. 2526 โดยเริ่มแรกเปิดให้เข้าฟรี ต่อมาจึงเริ่มเก็บค่าเข้าชม ในอัตราเด็ก 5 บาท ผู้ใหญ่ 10 บาท ปัจจุบันอยู่ที่ ผู้ใหญ่ 120 บาท เด็ก 80 บาท เปิดตั้งแต่ 10.00-17.00 น.",
+    "en": "Pata Zoo is a private zoo on the 6th and 7th floors of Pata Pinklao Department Store, Bang Yi Khan Subdistrict, Bang Phlat District, Bangkok between Borommaratchachonnani and Arun Amarin Intersections close to Phra Pinklao Bridge. Pata Zoo has operated since 1983, along with the department store."
+   },
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Pata_Zoo_-_panoramio.jpg/960px-Pata_Zoo_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Pata_Zoo_-_panoramio.jpg",
+   "imageCredit": "mohigan · CC BY-SA 3.0",
+   "fetchedAt": "2026-11-06T18:16:09.904Z"
+  },
+  {
+   "id": "wd-Q1016030",
+   "wikidata": "Q1016030",
+   "kind": "themepark",
+   "fame": 7,
+   "name": {
+    "th": "สยามอะเมซิ่งพาร์ค",
+    "en": "Siam Park City",
+    "zh": "萱沙炎公園"
+   },
+   "lat": 13.80524,
+   "lng": 100.69723,
+   "province": "bangkok",
+   "website": "http://www.siamparkcity.com/",
+   "wiki": {
+    "th": "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%A2%E0%B8%B2%E0%B8%A1%E0%B8%AD%E0%B8%B0%E0%B9%80%E0%B8%A1%E0%B8%8B%E0%B8%B4%E0%B9%88%E0%B8%87%E0%B8%9E%E0%B8%B2%E0%B8%A3%E0%B9%8C%E0%B8%84",
+    "en": "https://en.wikipedia.org/wiki/Siam_Amazing_Park",
+    "zh": "https://zh.wikipedia.org/wiki/%E8%90%B1%E6%B2%99%E7%82%8E%E5%85%AC%E5%9C%92"
+   },
+   "address": "203 ถนนสวนสยาม",
+   "summary": {
+    "th": "สยามอะเมซิ่งพาร์ค หรือชื่อเดิม สวนสยาม เป็นพิพิธภัณฑ์ ศูนย์การค้า สวนสนุก และสวนน้ำ ตั้งอยู่ที่ถนนสวนสยาม แขวงคันนายาว เขตคันนายาว กรุงเทพมหานคร บนเนื้อที่ 300 ไร่ มีจุดเด่นที่ภายในโครงการมีทะเลเทียมขนาดใหญ่ อันเป็นที่มาของฉายาว่า \"ทะเลกรุงเทพ\" โดยทะเลเทียมแห่งนี้เป็นทะเลเทียมที่ใหญ่ที่สุดในโลกโดยการรับรองของบันทึกสถิติโลกกินเนสส์",
+    "en": "Siam Amazing Park, more commonly known as Siam Park City or Suansiam, is an amusement and water park located in the Khan Na Yao district of Bangkok, Thailand. It was founded in November 1980 and remains the oldest amusement and water park complex in Southeast Asia.",
+    "zh": "萱沙炎公園 或称暹罗公园，位於泰國曼谷漢那堯縣社里泰路 99號，為於1980年11月開幕的大型綜合性遊園地。\n"
+   },
+   "image": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Original_siam3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Original_siam3.jpg",
+   "imageCredit": "Apichyy min · CC BY-SA 3.0",
+   "fetchedAt": "2026-11-06T18:16:37.764Z"
+  },
+  {
+   "id": "wd-Q4922129",
+   "wikidata": "Q4922129",
+   "kind": "museum",
+   "fame": 7,
+   "name": {
+    "th": "พิพิธภัณฑ์ของกองทัพอากาศ",
+    "en": "Royal Thai Air Force Museum",
+    "zh": "泰國皇家空軍博物館"
+   },
+   "lat": 13.91983,
+   "lng": 100.62226,
+   "province": "bangkok",
+   "website": "https://www.museum.rtaf.mi.th/",
+   "wiki": {
+    "th": "https://th.wikipedia.org/wiki/%E0%B8%9E%E0%B8%B4%E0%B8%9E%E0%B8%B4%E0%B8%98%E0%B8%A0%E0%B8%B1%E0%B8%93%E0%B8%91%E0%B9%8C%E0%B8%81%E0%B8%AD%E0%B8%87%E0%B8%97%E0%B8%B1%E0%B8%9E%E0%B8%AD%E0%B8%B2%E0%B8%81%E0%B8%B2%E0%B8%A8%E0%B9%81%E0%B8%A5%E0%B8%B0%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%9A%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4",
+    "en": "https://en.wikipedia.org/wiki/Royal_Thai_Air_Force_Museum",
+    "zh": "https://zh.wikipedia.org/wiki/%E6%B3%B0%E5%9C%8B%E7%9A%87%E5%AE%B6%E7%A9%BA%E8%BB%8D%E5%8D%9A%E7%89%A9%E9%A4%A8"
+   },
+   "hours": "Mo-Su 09:00-15:30",
+   "phone": "+66 2 534 1764",
+   "summary": {
+    "th": "พิพิธภัณฑ์กองทัพอากาศและการบินแห่งชาติ เริ่มมีการจัดตั้งเป็นพิพิธภัณฑ์ครั้งแรก เมื่อ พ.ศ.",
+    "en": "The National Aviation Museum of the Royal Thai Air Force is located in Don Muang Royal Thai Air Force Base in Don Mueang district, Bangkok, Thailand. It is located on the Phahonyothin Road just to the south of Wing 6 of the domestic terminal of the Don Mueang Airport. It has been served by the Royal Thai Air Force Museum BTS station since 16 December 2020.",
+    "zh": "皇家泰國空軍博物館 位於泰國首都曼谷廊曼縣拍鳳裕庭路171號、廊曼机场国内航站楼6区（wing）南侧。該館於1952年成立，目的為保存自暹羅發展航空工業已來的各種航空設備，以及泰國皇家空軍使用过的軍用飛機及物件。\n"
+   },
+   "image": "https://upload.wikimedia.org/wikipedia/commons/9/91/Grumman_F8F-1_Bearcat_at_the_Royal_Thai_Air_Force_Museum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Grumman_F8F-1_Bearcat_at_the_Royal_Thai_Air_Force_Museum.jpg",
+   "imageCredit": "Mztourist · CC BY-SA 3.0",
+   "fetchedAt": "2026-11-06T18:41:32.009Z"
+  },
+  {
+   "id": "wd-Q806441",
+   "wikidata": "Q806441",
+   "kind": "museum",
+   "fame": 7,
+   "name": {
+    "th": "พิพิธภัณฑ์ท้องถิ่นกรุงเทพมหานคร เขตบางขุนเทียน",
+    "en": "Bang Khun Thian Museum",
+    "zh": "挽昆天博物馆"
+   },
+   "lat": 13.52775,
+   "lng": 100.42051,
+   "province": "bangkok",
+   "wiki": {
+    "th": "https://th.wikipedia.org/wiki/%E0%B8%9E%E0%B8%B4%E0%B8%9E%E0%B8%B4%E0%B8%98%E0%B8%A0%E0%B8%B1%E0%B8%93%E0%B8%91%E0%B9%8C%E0%B8%97%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%96%E0%B8%B4%E0%B9%88%E0%B8%99%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%82%E0%B8%B8%E0%B8%99%E0%B9%80%E0%B8%97%E0%B8%B5%E0%B8%A2%E0%B8%99",
+    "en": "https://en.wikipedia.org/wiki/Bang_Khun_Thien_Museum",
+    "zh": "https://zh.wikipedia.org/wiki/%E6%8C%BD%E6%98%86%E5%A4%A9%E5%8D%9A%E7%89%A9%E9%A6%86"
+   },
+   "summary": {
+    "th": "พิพิธภัณฑ์ท้องถิ่นกรุงเทพมหานคร เขตบางขุนเทียน เป็นพิพิธภัณฑ์ท้องถิ่นที่ตั้งอยู่ในโรงเรียนคลองพิทยาลงกรณ์ แขวงท่าข้าม เขตบางขุนเทียน กรุงเทพมหานคร",
+    "en": "Bang Khun Thien Museum is a museum in Bangkok, Thailand. It is a community museum in Bang Khun Thian District on the Thonburi bank of the Chao Phraya River in southern Bangkok. The museum offers an insight into the history and culture of the locals over many centuries and is under the control of the Bangkok Metropolitan Authority.",
+    "zh": "挽昆天博物馆 位于泰国曼谷挽昆天区，是一个社区级博物馆，挽昆天区位于湄南河的吞武里河岸的南曼谷地区。本博物馆为本地区的多个世纪的历史和文化提供了一个视角，目前博物馆由曼谷市政当局管理。\n"
+   },
+   "fetchedAt": "2026-11-06T18:41:33.507Z"
+  },
+  {
+   "id": "wd-Q353944",
+   "wikidata": "Q353944",
+   "kind": "museum",
+   "fame": 7,
+   "name": {
+    "th": "ศาลาแก้วกู่",
+    "en": "Sala Keoku"
+   },
+   "lat": 17.8869,
+   "lng": 102.78227,
+   "province": "nong-khai",
+   "wiki": {
+    "th": "https://th.wikipedia.org/wiki/%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B8%B2%E0%B9%81%E0%B8%81%E0%B9%89%E0%B8%A7%E0%B8%81%E0%B8%B9%E0%B9%88",
+    "en": "https://en.wikipedia.org/wiki/Sala_Keoku"
+   },
+   "address": "Mueang Nong Khai",
+   "summary": {
+    "th": "ศาลาแก้วกู่ เป็นอุทยานขนาด 42 ไร่ของศูนย์วิปัสสนาแก้วกู่ และสถานที่ท่องเที่ยวสำคัญในชุมชนสามัคคี อำเภอเมือง จังหวัดหนองคาย ที่ประดิษฐานรูปปั้นคอนกรีตเสริมเหล็กขนาดใหญ่จำนวนรวมกว่า 200 องค์ โดยประกอบด้วยพระพุทธรูป พระรูปของพระโพธิสัตว์ เทพเจ้าฮินดู บุคคลในคริสต์ศาสนา ความเชื่อพื้นบ้าน และตัวละครจากรามเกียรติ์ อุทยานแห่งนี้ถูกสร้างขึ้นโดยปู่บุญเหลือ สุรีรัตน์ ภายใต้แนวคิดว่า \"ทุกศาสนาสามารถอยู่รวมกันได้\" และให้เป็น \"สถ…",
+    "en": "Sala Keoku is a park featuring giant fantastic concrete sculptures inspired by Buddhism and Hinduism. It is located near Nong Khai, Thailand in immediate proximity of the Thai-Lao border and the Mekong river. The park has been built by and reflects the vision of Luang Pu Bunleua Sulilat and his followers. The construction started in 1978."
+   },
+   "image": "https://upload.wikimedia.org/wikipedia/commons/4/4d/SalaKeoKou_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:SalaKeoKou_3.jpg",
+   "imageCredit": "Der aus Uebersee kommt · CC BY-SA 3.0",
+   "fetchedAt": "2026-11-06T18:41:34.199Z"
+  },
+  {
+   "id": "wd-Q1130183",
+   "wikidata": "Q1130183",
+   "kind": "museum",
+   "fame": 7,
+   "name": {
+    "th": "พิพิธภัณฑ์วิทยาศาสตร์แห่งชาติ",
+    "en": "National Science Museum"
+   },
+   "lat": 14.04861,
+   "lng": 100.71722,
+   "province": "pathum-thani",
+   "website": "https://www.nsm.or.th/",
+   "wiki": {
+    "th": "https://th.wikipedia.org/wiki/%E0%B8%AD%E0%B8%87%E0%B8%84%E0%B9%8C%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%9E%E0%B8%B4%E0%B8%9E%E0%B8%B4%E0%B8%98%E0%B8%A0%E0%B8%B1%E0%B8%93%E0%B8%91%E0%B9%8C%E0%B8%A7%E0%B8%B4%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%A8%E0%B8%B2%E0%B8%AA%E0%B8%95%E0%B8%A3%E0%B9%8C%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4",
+    "en": "https://en.wikipedia.org/wiki/National_Science_Museum_(Thailand)"
+   },
+   "hours": "Mo off; Tu-Fr 09:30-15:00; Sa-Su 09:30-17:00",
+   "fee": "yes",
+   "summary": {
+    "th": "องค์การพิพิธภัณฑ์วิทยาศาสตร์แห่งชาติ หรือ อพวช. มีฐานะเป็นรัฐวิสาหกิจในสังกัด กระทรวงการอุดมศึกษา วิทยาศาสตร์ วิจัยและนวัตกรรม จัดตั้งตามพระราชกฤษฎีกาจัดตั้งองค์การพิพิธภัณฑ์วิทยาศาสตร์แห่งชาติ เมื่อวันที่ 30 มกราคม พ.ศ.",
+    "en": "The National Science Museum Organisation Of Thailand (NSM) is a state enterprise established on 30 January 1995 under the Ministry of Higher Education, Science, Research and Innovation. NSM develops and currently operates 4 museums and 2 learning centers to raise public awareness of science for Thai society. The museums are the Science Museum, Natural History Museum, Information Technology Museum and RAMA 9 Museum."
+   },
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/20181228_Inside_ITMuseum.jpg/960px-20181228_Inside_ITMuseum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:20181228_Inside_ITMuseum.jpg",
+   "imageCredit": "ยุทธนาสาระขันธ์ · CC BY-SA 4.0",
+   "fetchedAt": "2026-11-06T18:41:34.891Z"
+  },
+  {
+   "id": "wd-Q1226701",
+   "wikidata": "Q1226701",
+   "kind": "museum",
+   "fame": 7,
+   "name": {
+    "th": "พิพิธภัณฑ์ไดโนเสาร์ภูเวียง",
+    "en": "Phu Wiang Dinosaur Museum",
+    "zh": "普淵恐龍博物館"
+   },
+   "lat": 16.67792,
+   "lng": 102.26745,
+   "province": "khon-kaen",
+   "website": "https://www.facebook.com/pwdino.museum/",
+   "wiki": {
+    "th": "https://th.wikipedia.org/wiki/%E0%B8%9E%E0%B8%B4%E0%B8%9E%E0%B8%B4%E0%B8%98%E0%B8%A0%E0%B8%B1%E0%B8%93%E0%B8%91%E0%B9%8C%E0%B9%84%E0%B8%94%E0%B9%82%E0%B8%99%E0%B9%80%E0%B8%AA%E0%B8%B2%E0%B8%A3%E0%B9%8C%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%A7%E0%B8%B5%E0%B8%A2%E0%B8%87",
+    "en": "https://en.wikipedia.org/wiki/Phu_Wiang_Dinosaur_Museum"
+   },
+   "hours": "Tu-Su 09:30-16:30",
+   "phone": "+66 81 846 2760",
+   "address": "Wiang Kao",
+   "summary": {
+    "th": "ศูนย์ศึกษาวิจัยและพิพิธภัณฑ์ไดโนเสาร์ ชื่อเดิม พิพิธภัณฑ์ไดโนเสาร์ภูเวียง เป็นพิพิธภัณฑ์ธรณีวิทยาแห่งหนึ่ง โดยเน้นที่การจัดแสดงเรื่องราวของซากดึกดำบรรพ์ สังกัดกรมทรัพยากรธรณี กระทรวงทรัพยากรธรรมชาติและสิ่งแวดล้อม ตั้งอยู่บนพื้นที่สาธารณประโยชน์โคกสนามบินเนื้อที่ 100 ไร่ ในเขตพื้นที่ตำบลในเมือง อำเภอเวียงเก่า จังหวัดขอนแก่น ก่อสร้างด้วยเงินงบประมาณจากการท่องเที่ยวแห่งประเทศไทย และอยู่ในความกำกับดูแลของกรมทรัพยากรธรณี …",
+    "en": "Phu Wiang Dinosaur Museum is a geological museum mainly exhibiting fossils. It is under the administration of the Department of Mineral Resources, Ministry of Natural Resources and Environment, of the Royal Thai Government, and situated in the Khok Sanambin public area in Tambon Nai Muang, Wiang Kao district, Khon Kaen province in the northeastern region of Thailand."
+   },
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Museum_Dinosaur_KK.jpg/960px-Museum_Dinosaur_KK.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Museum_Dinosaur_KK.jpg",
+   "imageCredit": "Wickanet · CC BY 3.0",
+   "fetchedAt": "2026-11-06T18:41:35.836Z"
+  },
+  {
+   "id": "wd-Q4919774",
+   "wikidata": "Q4919774",
+   "kind": "museum",
+   "fame": 7,
+   "name": {
+    "th": "ช่องเขาขาด",
+    "en": "Hellfire Pass"
+   },
+   "lat": 14.35528,
+   "lng": 98.9525,
+   "province": "kanchanaburi",
+   "wiki": {
+    "th": "https://th.wikipedia.org/wiki/%E0%B8%8A%E0%B9%88%E0%B8%AD%E0%B8%87%E0%B9%80%E0%B8%82%E0%B8%B2%E0%B8%82%E0%B8%B2%E0%B8%94",
+    "en": "https://en.wikipedia.org/wiki/Hellfire_Pass"
+   },
+   "hours": "Mo-Su 09:00-16:00",
+   "fee": "no",
+   "summary": {
+    "th": "ช่องเขาขาด หรือ ช่องไฟนรก เป็นส่วนหนึ่งของเส้นทางรถไฟสายไทย-พม่า (ทางรถไฟสายมรณะ) ตลอดเส้นทางรถไฟสายไทย-พม่า มีหลายจุดที่มีเนินหิน ภูเขา หน้าผา หรือหุบเหว ขวางอยู่จึงต้องขุดให้เป็นช่องเพื่อที่รถไฟสามารถวิ่งผ่านไปได้ ซึ่งที่ช่องเขาขาด หรือ ช่องไฟนรก เป็นจุดที่ใหญ่ที่สุดบนเส้นทางนี้",
+    "en": "Hellfire Pass, known locally as Chong Khao Kard and in Japanese as Konyu Cutting, is the name of a railway cutting on the former Burma Railway in Thailand, which was built with forced labour during World War II. More than 250,000 Southeast Asian civilians and 12,000 Allied soldiers built the railway line, including Hellfire Pass."
+   },
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Hellfire_Pass_-_June_2004.jpg/960px-Hellfire_Pass_-_June_2004.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Hellfire_Pass_-_June_2004.jpg",
+   "imageCredit": "Diliff · CC BY-SA 2.5",
+   "fetchedAt": "2026-11-06T18:41:36.544Z"
+  },
+  {
+   "id": "wd-Q6636970",
+   "wikidata": "Q6636970",
+   "kind": "zoo",
+   "fame": 6,
+   "name": {
+    "th": "บางกอก ซี ไลฟ์ โอเชียนเวิลด์",
+    "en": "Sea Life Bangkok Ocean World",
+    "zh": "暹羅海洋世界"
+   },
+   "lat": 13.7458,
+   "lng": 100.5353,
+   "province": "bangkok",
+   "website": "http://www.siamoceanworld.co.th",
+   "wiki": {
+    "th": "https://th.wikipedia.org/wiki/%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%81%E0%B8%AD%E0%B8%81_%E0%B8%8B%E0%B8%B5_%E0%B9%84%E0%B8%A5%E0%B8%9F%E0%B9%8C_%E0%B9%82%E0%B8%AD%E0%B9%80%E0%B8%8A%E0%B8%B5%E0%B8%A2%E0%B8%99%E0%B9%80%E0%B8%A7%E0%B8%B4%E0%B8%A5%E0%B8%94%E0%B9%8C",
+    "en": "https://en.wikipedia.org/wiki/Sea_Life_Bangkok_Ocean_World"
+   },
+   "summary": {
+    "th": "สยามพารากอน เป็นหนึ่งในศูนย์การค้าสำคัญใจกลางกรุงเทพมหานคร ประเทศไทย ตั้งอยู่ทางทิศตะวันออกเฉียงเหนือของย่านสยาม บนถนนพระรามที่ 1 ในเขตแขวงปทุมวัน เขตปทุมวัน ดำเนินการโดยสยามพิวรรธน์ ร่วมทุนกับกลุ่มเดอะมอลล์ ในนามสยามพารากอน ดีเวลลอปเม้นท์ และสยามพารากอน รีเทล",
+    "en": "Sea Life Bangkok Ocean World is an aquarium in Bangkok, Thailand and is the largest in South East Asia. It covers approximately 10,000 square meters (110,000 sq ft) with hundreds of different species on display in exhibits totaling about 5,000,000 liters (1,300,000 U.S. gal)."
+   },
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Siam_Ocean_World.JPG/960px-Siam_Ocean_World.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Siam_Ocean_World.JPG",
+   "imageCredit": "Terence Ong · CC BY 2.5",
+   "fetchedAt": "2026-11-06T18:16:12.455Z"
+  },
+  {
+   "id": "wd-Q4036104",
+   "wikidata": "Q4036104",
+   "kind": "zoo",
+   "fame": 6,
+   "name": {
+    "th": "เชียงใหม่ไนท์ซาฟารี",
+    "en": "Chiang Mai Night Safari",
+    "zh": "清邁夜間動物園"
+   },
+   "lat": 18.74222,
+   "lng": 98.91722,
+   "province": "chiang-mai",
+   "website": "http://www.chiangmainightsafari.com",
+   "wiki": {
+    "th": "https://th.wikipedia.org/wiki/%E0%B9%80%E0%B8%8A%E0%B8%B5%E0%B8%A2%E0%B8%87%E0%B9%83%E0%B8%AB%E0%B8%A1%E0%B9%88%E0%B9%84%E0%B8%99%E0%B8%97%E0%B9%8C%E0%B8%8B%E0%B8%B2%E0%B8%9F%E0%B8%B2%E0%B8%A3%E0%B8%B5",
+    "en": "https://en.wikipedia.org/wiki/Chiang_Mai_Night_Safari"
+   },
+   "fee": "yes",
+   "summary": {
+    "th": "เชียงใหม่ไนท์ซาฟารี เป็นสวนสัตว์เปิดที่ตั้งอยู่ในตำบลแม่เหียะ อำเภอเมืองเชียงใหม่ และ ตำบลหนองควาย อำเภอหางดง จังหวัดเชียงใหม่ บริเวณด้านหลังทางทิศตะวันตกของอุทยานหลวงราชพฤกษ์ เปิดให้เข้าชมเป็นครั้งแรกเมื่อ 18 พฤศจิกายน พ.ศ. 2548 และเปิดบริการอย่างเป็นทางการเมื่อวันที่ 6 กุมภาพันธ์ พ.ศ.",
+    "en": "Chiang Mai Night Safari is located in the sub-district of Mae Hia in Chiang Mai, and the district Nong Khwai, and the district Hang Dong in Thailand. It is a zoo that is located to the west of Royal Flora Ratchaphruek 2006. Chiang Mai Night Safari is a government property under the Zoological Park Organization. The park was opened for the first time on 18 November 2005 and opened officially on the 6 February 2006."
+   },
+   "fetchedAt": "2026-11-06T18:16:15.988Z"
+  },
+  {
+   "id": "wd-Q4923810",
+   "wikidata": "Q4923810",
+   "kind": "zoo",
+   "fame": 6,
+   "name": {
+    "th": "สวนเสือศรีราชา",
+    "en": "Sriracha Tiger Zoo",
+    "zh": "是拉差龍虎園"
+   },
+   "lat": 13.14917,
+   "lng": 101.0125,
+   "province": "chonburi",
+   "website": "http://www.tigerzoo.com/",
+   "wiki": {
+    "th": "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%A7%E0%B8%99%E0%B9%80%E0%B8%AA%E0%B8%B7%E0%B8%AD%E0%B8%A8%E0%B8%A3%E0%B8%B5%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%B2",
+    "en": "https://en.wikipedia.org/wiki/Sriracha_Tiger_Zoo",
+    "zh": "https://zh.wikipedia.org/wiki/%E6%98%AF%E6%8B%89%E5%B7%AE%E9%BE%8D%E8%99%8E%E5%9C%92"
+   },
+   "summary": {
+    "th": "สวนเสือศรีราชา เป็นอดีตสวนสัตว์เอกชน อยู่ที่อำเภอศรีราชา จังหวัดชลบุรี โดยมีเสือเป็นหลักและมีฟาร์มจระเข้เป็นส่วนเสริม",
+    "en": "The Sriracha Tiger Zoo was a zoo in Sri Racha, a city on the outskirts of Pattaya, a seaside city in Chonburi Province, Thailand. It was about 110 km (68 mi) from Bangkok. The zoo claimed a large population of tigers and crocodiles.",
+    "zh": "是拉差龍虎園 位於泰國的春武里府之是拉差村。它在1997年4月23日週三開幕，是亞洲最大的虎公園，佔地約100多公頃，飼養由200多隻孟加拉虎及超過100,000尾鱷。也有其它類的動物，例如：馬、象、駱駝、羊、蛇、猴等。\n"
+   },
+   "fetchedAt": "2026-11-06T18:16:19.166Z"
+  },
+  {
+   "id": "wd-Q1062477",
+   "wikidata": "Q1062477",
+   "kind": "museum",
+   "fame": 6,
+   "name": {
+    "th": "พิพิธภัณฑสถานแห่งชาติ เจ้าสามพระยา",
+    "en": "Chao Sam Phraya National Museum"
+   },
+   "lat": 14.35104,
+   "lng": 100.56178,
+   "province": "ayutthaya",
+   "wiki": {
+    "th": "https://th.wikipedia.org/wiki/%E0%B8%9E%E0%B8%B4%E0%B8%9E%E0%B8%B4%E0%B8%98%E0%B8%A0%E0%B8%B1%E0%B8%93%E0%B8%91%E0%B8%AA%E0%B8%96%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4_%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%AA%E0%B8%B2%E0%B8%A1%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%A2%E0%B8%B2",
+    "en": "https://en.wikipedia.org/wiki/Chao_Sam_Phraya_National_Museum"
+   },
+   "address": "108",
+   "summary": {
+    "th": "พิพิธภัณฑสถานแห่งชาติ เจ้าสามพระยา เป็นพิพิธภัณฑสถานแห่งชาติ ในจังหวัดพระนครศรีอยุธยา ตั้งอยู่ที่ตำบลประตูชัย ถนนปรีดีพนมยงค์ ตรงข้ามกับมหาวิทยาลัยราชภัฏพระนครศรีอยุธยา",
+    "en": "Chao Sam Phraya National Museum is a national museum in Phra Nakhon Si Ayutthaya, Thailand. It opened in 1961 and was created to house treasures discovered in the crypts of Wat Ratchaburana and Wat Mahathat, including Buddhist relics, jewellery, gold objects, and votive tablets, alongside a broader collection of sculpture and other artworks from historic sites in Ayutthaya."
+   },
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Chao_Sam_Phraya_Museum_-_2017-02-13_%28033%29.jpg/960px-Chao_Sam_Phraya_Museum_-_2017-02-13_%28033%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Chao_Sam_Phraya_Museum_-_2017-02-13_(033).jpg",
+   "imageCredit": "Iudexvivorum · CC0",
+   "fetchedAt": "2026-11-06T18:41:37.819Z"
+  },
+  {
+   "id": "wd-Q4856189",
+   "wikidata": "Q4856189",
+   "kind": "museum",
+   "fame": 6,
+   "name": {
+    "th": "พิพิธภัณฑ์ธนาคารแห่งประเทศไทย",
+    "en": "Bank of Thailand Museum",
+    "zh": "泰国银行博物馆"
+   },
+   "lat": 13.76833,
+   "lng": 100.49944,
+   "province": "bangkok",
+   "website": "https://www.botlc.or.th/museum",
+   "wiki": {
+    "th": "https://th.wikipedia.org/wiki/%E0%B8%9E%E0%B8%B4%E0%B8%9E%E0%B8%B4%E0%B8%98%E0%B8%A0%E0%B8%B1%E0%B8%93%E0%B8%91%E0%B9%8C%E0%B8%98%E0%B8%99%E0%B8%B2%E0%B8%84%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%97%E0%B8%A8%E0%B9%84%E0%B8%97%E0%B8%A2",
+    "en": "https://en.wikipedia.org/wiki/Bank_of_Thailand_Museum",
+    "zh": "https://zh.wikipedia.org/wiki/%E6%B3%B0%E5%9B%BD%E9%93%B6%E8%A1%8C%E5%8D%9A%E7%89%A9%E9%A6%86"
+   },
+   "hours": "Sat-Sun 09:30-16:30",
+   "summary": {
+    "th": "พิพิธภัณฑ์ธนาคารแห่งประเทศไทย เป็นพิพิธภัณฑ์ในกรุงเทพมหานคร ตั้งอยู่ในวังบางขุนพรหมซึ่งเป็นที่ประทับเดิมของสมเด็จพระเจ้าบรมวงศ์เธอ เจ้าฟ้าบริพัตรสุขุมพันธุ์ กรมพระนครสวรรค์วรพินิต เป็นพระราชโอรสคนที่ 33 ในพระบาทสมเด็จพระจุลจอมเกล้าเจ้าอยู่หัว พระมหากษัตริย์รัชกาลที่ 5 แห่งกรุงรัตนโกสินทร์ นอกจากนี้พิพิธภัณฑ์ยังมีสาขาย่อยที่จังหวัดเชียงใหม่ด้วย",
+    "en": "Bank of Thailand Museum is a museum in Bangkok. The museum is housed in the Bang Khun Phrom Palace, the former residence of Prince Paribatra Sukhumbandhu, who was the 33rd son of King Chulalongkorn. The Bank of Thailand, Northern Region also has a museum in Chiang Mai. In June 2017, the museum was reopened.",
+    "zh": "泰国银行博物馆 是一座位于泰国曼谷的博物馆。\n"
+   },
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/%E0%B8%9E%E0%B8%B4%E0%B8%9E%E0%B8%B4%E0%B8%98%E0%B8%A0%E0%B8%B1%E0%B8%93%E0%B8%97%E0%B9%8C%E0%B9%80%E0%B8%AB%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%8D.jpg/960px-%E0%B8%9E%E0%B8%B4%E0%B8%9E%E0%B8%B4%E0%B8%98%E0%B8%A0%E0%B8%B1%E0%B8%93%E0%B8%97%E0%B9%8C%E0%B9%80%E0%B8%AB%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%8D.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:%E0%B8%9E%E0%B8%B4%E0%B8%9E%E0%B8%B4%E0%B8%98%E0%B8%A0%E0%B8%B1%E0%B8%93%E0%B8%97%E0%B9%8C%E0%B9%80%E0%B8%AB%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%8D.jpg",
+   "imageCredit": "Bntofficial · CC BY-SA 4.0",
+   "fetchedAt": "2026-11-06T18:41:40.258Z"
+  },
+  {
+   "id": "wd-Q65100079",
+   "wikidata": "Q65100079",
+   "kind": "museum",
+   "fame": 6,
+   "name": {
+    "th": "พิพิธภัณฑ์ศิลปะไทยร่วมสมัย",
+    "en": "Museum of Contemporary Art"
+   },
+   "lat": 13.85194,
+   "lng": 100.5625,
+   "province": "bangkok",
+   "website": "https://mocabangkok.com/",
+   "wiki": {
+    "th": "https://th.wikipedia.org/wiki/%E0%B8%9E%E0%B8%B4%E0%B8%9E%E0%B8%B4%E0%B8%98%E0%B8%A0%E0%B8%B1%E0%B8%93%E0%B8%91%E0%B9%8C%E0%B8%A8%E0%B8%B4%E0%B8%A5%E0%B8%9B%E0%B8%B0%E0%B9%84%E0%B8%97%E0%B8%A2%E0%B8%A3%E0%B9%88%E0%B8%A7%E0%B8%A1%E0%B8%AA%E0%B8%A1%E0%B8%B1%E0%B8%A2",
+    "en": "https://en.wikipedia.org/wiki/Museum_of_Contemporary_Art_(Bangkok)"
+   },
+   "address": "ถนนกำแพงเพชร 6",
+   "summary": {
+    "th": "พิพิธภัณฑ์ศิลปะไทยร่วมสมัย เป็นพิพิธภัณฑ์ศิลปะในกรุงเทพมหานคร เป็นพิพิธภัณฑ์เอกชนที่ก่อตั้งโดยบุญชัย เบญจรงคกุล เปิดดำเนินการในปี พ.ศ. 2555 เป็นพิพิธภัณฑ์ศิลปะร่วมสมัยที่ใหญ่ที่สุดแห่งหนึ่งในทวีปเอเชีย จัดแสดงผลงานจำนวนมากจากศิลปินไทยที่มีชื่อเสียงหลายคน เช่น ถวัลย์ ดัชนี, เหม เวชกร, เฉลิมชัย โฆษิตพิพัฒน์ และประทีป คชบัว",
+    "en": "The Museum of Contemporary Art (MOCA) is an art museum in Bangkok, Thailand. It is privately owned by business executive Boonchai Bencharongkul and was opened in 2012. The museum, one of the largest contemporary art venues in Asia, features an extensive collection of works by Thai artists, including Thawan Duchanee, Hem Vejakorn, Chalermchai Kositpipat, and Prateep Kochabua."
+   },
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Museum_of_Contemporary_Art_%28MOCA%29%2C_Bangkok%2C_Thailand_-_20161201-05.jpg/960px-Museum_of_Contemporary_Art_%28MOCA%29%2C_Bangkok%2C_Thailand_-_20161201-05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Museum_of_Contemporary_Art_(MOCA),_Bangkok,_Thailand_-_20161201-05.jpg",
+   "imageCredit": "Smuconlaw · CC BY-SA 4.0",
+   "fetchedAt": "2026-11-06T18:41:41.896Z"
+  },
+  {
+   "id": "wd-Q4921882",
+   "wikidata": "Q4921882",
+   "kind": "museum",
+   "fame": 5,
+   "name": {
+    "th": "หอศิลป์สมเด็จพระนางเจ้าสิริกิติ์ พระบรมราชินีนาถ",
+    "en": "Queen Sirikit Gallery"
+   },
+   "lat": 13.75674,
+   "lng": 100.50505,
+   "province": "bangkok",
+   "wiki": {
+    "th": "https://th.wikipedia.org/wiki/%E0%B8%AB%E0%B8%AD%E0%B8%A8%E0%B8%B4%E0%B8%A5%E0%B8%9B%E0%B9%8C%E0%B8%AA%E0%B8%A1%E0%B9%80%E0%B8%94%E0%B9%87%E0%B8%88%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%99%E0%B8%B2%E0%B8%87%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%AA%E0%B8%B4%E0%B8%A3%E0%B8%B4%E0%B8%81%E0%B8%B4%E0%B8%95%E0%B8%B4%E0%B9%8C_%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%A3%E0%B8%A1%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%B4%E0%B8%99%E0%B8%B5%E0%B8%99%E0%B8%B2%E0%B8%96",
+    "en": "https://en.wikipedia.org/wiki/Queen_Sirikit_Gallery"
+   },
+   "address": "101 พระนคร",
+   "summary": {
+    "th": "หอศิลป์สมเด็จพระนางเจ้าสิริกิติ์ พระบรมราชินีนาถ เป็นหอศิลป์จัดแสดงนิทรรศการของศิลปินไทย โดยเฉพาะศิลปินรุ่นใหม่ที่มีผลงานดีเด่นแต่ยังไม่เป็นที่รู้จักแพร่หลาย ตลอดจนศิลปินอาวุโสที่ได้รับการยกย่อง สลับสับเปลี่ยนจัดแสดงนิทรรศการหมุนเวียนตลอดปี ตั้งอยู่ที่ถนนราชดำเนินกลาง แขวงวัดบวรนิเวศ เขตพระนคร กรุงเทพมหานคร ก่อตั้งขึ้นตามพระราชดำริในสมเด็จพระนางเจ้าสิริกิติ์ พระบรมราชินีนาถ พระบรมราชชนนีพันปีหลวง โดยพระองค์เสด็จฯ มาท…",
+    "en": "Queen Sirikit Gallery or Queens Gallery is an art museum in Bangkok, Thailand."
+   },
+   "fetchedAt": "2026-11-06T18:41:42.568Z"
+  },
+  {
+   "id": "wd-Q13018177",
+   "wikidata": "Q13018177",
+   "kind": "museum",
+   "fame": 5,
+   "name": {
+    "th": "พิพิธภัณฑสถานธรรมชาติวิทยาแห่งจุฬาลงกรณ์มหาวิทยาลัย",
+    "en": "Chulalongkorn University Museum of Natural History",
+    "zh": "朱拉隆功大学自然历史博物馆"
+   },
+   "lat": 13.7375,
+   "lng": 100.53,
+   "province": "bangkok",
+   "website": "http://www.cu100.chula.ac.th/story-en/museum-natural-history/",
+   "wiki": {
+    "th": "https://th.wikipedia.org/wiki/%E0%B8%9E%E0%B8%B4%E0%B8%9E%E0%B8%B4%E0%B8%98%E0%B8%A0%E0%B8%B1%E0%B8%93%E0%B8%91%E0%B8%AA%E0%B8%96%E0%B8%B2%E0%B8%99%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B8%A7%E0%B8%B4%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%88%E0%B8%B8%E0%B8%AC%E0%B8%B2%E0%B8%A5%E0%B8%87%E0%B8%81%E0%B8%A3%E0%B8%93%E0%B9%8C%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%A7%E0%B8%B4%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%A5%E0%B8%B1%E0%B8%A2",
+    "en": "https://en.wikipedia.org/wiki/Chulalongkorn_University_Museum_of_Natural_History"
+   },
+   "summary": {
+    "th": "พิพิธภัณฑสถานธรรมชาติวิทยาแห่งจุฬาลงกรณ์มหาวิทยาลัย เป็นพิพิธภัณฑ์ที่จัดแสดงตัวอย่างสิ่งมีชีวิต และทรัพยากรธรรมชาติ อาทิเช่น โครงกระดูกของสิ่งมีชีวิตต่าง ๆ, ตัวอย่างเปลือกหอยต่าง ๆ ของไทย, ซากดึกดำบรรพ์ที่พบในประเทศไทย, ชีววิทยาของผึ้ง ตัวอย่างปลาในวรรณคดี, ตัวอย่างตะพาบม่านลาย ซึ่งพบในประเทศไทยแห่งเดียวในโลก, นกเจ้าฟ้าหญิงสิรินธร และปูเจ้าฟ้า โดยพิพิธภัณฑ์แห่งนี้อยู่ภายใต้การดูแลของภาควิชาชีววิทยา คณะวิทยาศาสตร์ จุฬ…",
+    "en": "The Chulalongkorn University Museum of Natural History, founded in 1954, is operated by the Chulalongkorn University's Faculty of Science in the Biology Building at the university's main campus in Bangkok, Thailand. The museum features exhibits of various organisms, including mounts of the endangered white-eyed river martin."
+   },
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Chulalongkorn_University_Museum_of_Natural_History_main_room.JPG/960px-Chulalongkorn_University_Museum_of_Natural_History_main_room.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Chulalongkorn_University_Museum_of_Natural_History_main_room.JPG",
+   "imageCredit": "Paul_012 · CC BY-SA 3.0",
+   "fetchedAt": "2026-11-06T18:41:43.724Z"
+  },
+  {
+   "id": "wd-Q4924562",
+   "wikidata": "Q4924562",
+   "kind": "museum",
+   "fame": 5,
+   "name": {
+    "th": "พิพิธภัณฑสถานแห่งชาติ เรือพระราชพิธี",
+    "en": "National Museum of Royal Barges"
+   },
+   "lat": 13.76167,
+   "lng": 100.48442,
+   "province": "bangkok",
+   "website": "http://www.thailandmuseum.com/thaimuseum_eng/royalbarges/history.html",
+   "wiki": {
+    "th": "https://th.wikipedia.org/wiki/%E0%B8%9E%E0%B8%B4%E0%B8%9E%E0%B8%B4%E0%B8%98%E0%B8%A0%E0%B8%B1%E0%B8%93%E0%B8%91%E0%B8%AA%E0%B8%96%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4_%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B8%AD%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%9E%E0%B8%B4%E0%B8%98%E0%B8%B5",
+    "en": "https://en.wikipedia.org/wiki/National_Museum_of_Royal_Barges"
+   },
+   "summary": {
+    "th": "พิพิธภัณฑสถานแห่งชาติ เรือพระราชพิธี เป็นพิพิธภัณฑ์ที่ตั้งอยู่บริเวณปากคลองบางกอกน้อย เขตบางกอกน้อย ภายในพิพิธภัณฑ์ฯ จัดแสดงเรือพระราชพิธีสำคัญ 8 ลำ ได้แก่ เรือพระที่นั่งสุพรรณหงส์ เรือพระที่นั่งอนันตนาคราช เรือพระที่นั่งอเนกชาติภุชงค์ เรือพระที่นั่งนารายณ์ทรงสุบรรณ รัชกาลที่ 9 เรือครุฑเหินเห็จ เรือกระบี่ปราบเมืองมาร เรืออสุรวายุภักษ์ และเรือเอกไชยเหินหาว",
+    "en": "The National Museum of Royal Barges is a museum in Bangkok, Thailand. It is on the northern rim of Bangkok Noi canal in the Bangkok Noi District."
+   },
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Bangkok_National_Museum_of_Royal_Barges_2018-12-26_%2801%29.jpg/960px-Bangkok_National_Museum_of_Royal_Barges_2018-12-26_%2801%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Bangkok_National_Museum_of_Royal_Barges_2018-12-26_(01).jpg",
+   "imageCredit": "Index Librorum Permissorum · CC0",
+   "fetchedAt": "2026-11-06T18:41:44.446Z"
+  },
+  {
+   "id": "wd-Q2510561",
+   "wikidata": "Q2510561",
+   "kind": "museum",
+   "fame": 5,
+   "name": {
+    "th": "วังวรดิศ",
+    "en": "Varadis Palace"
+   },
+   "lat": 13.75556,
+   "lng": 100.51327,
+   "province": "bangkok",
+   "wiki": {
+    "th": "https://th.wikipedia.org/wiki/%E0%B8%A7%E0%B8%B1%E0%B8%87%E0%B8%A7%E0%B8%A3%E0%B8%94%E0%B8%B4%E0%B8%A8",
+    "en": "https://en.wikipedia.org/wiki/Varadis_Palace"
+   },
+   "summary": {
+    "th": "วังวรดิศ เป็นวังที่ประทับของสมเด็จพระเจ้าบรมวงศ์เธอ กรมพระยาดำรงราชานุภาพ ตั้งอยู่บนถนนหลานหลวง และถนนดำรงรักษ์ ใกล้ตลาดสะพานจตุรภักตร์รังสฤษดิ์ ปัจจุบันใช้จัดแสดงเป็นพิพิธภัณฑ์และหอสมุด สมเด็จพระเจ้าบรมวงศ์เธอ กรมพระยาดำรงราชานุภาพ",
+    "en": "Varadis Palace is the former residence of Prince Tisavarakumarn, the Prince Damrong Rajanubhab on Lan Luang Road in Bangkok, Thailand. The palace was built in 1911 by German architect Karl Döhring during the reign of King Rama V to the reign of King Rama VI."
+   },
+   "fetchedAt": "2026-11-06T18:41:45.126Z"
+  },
+  {
+   "id": "wd-Q677379",
+   "wikidata": "Q677379",
+   "kind": "museum",
+   "fame": 5,
+   "name": {
+    "th": "พิพิธภัณฑ์อักษะเชลยศึก",
+    "en": "JEATH War Museum",
+    "zh": "JEATH戰爭博物館"
+   },
+   "lat": 14.0414,
+   "lng": 99.50529,
+   "province": "kanchanaburi",
+   "wiki": {
+    "th": "https://th.wikipedia.org/wiki/%E0%B8%9E%E0%B8%B4%E0%B8%9E%E0%B8%B4%E0%B8%98%E0%B8%A0%E0%B8%B1%E0%B8%93%E0%B8%91%E0%B9%8C%E0%B8%AD%E0%B8%B1%E0%B8%81%E0%B8%A9%E0%B8%B0%E0%B9%80%E0%B8%8A%E0%B8%A5%E0%B8%A2%E0%B8%A8%E0%B8%B6%E0%B8%81",
+    "en": "https://en.wikipedia.org/wiki/JEATH_War_Museum"
+   },
+   "summary": {
+    "th": "พิพิธภัณฑ์อักษะเชลยศึกหรือพิพิธภัณฑ์สงครามวัดใต้ สร้างขึ้นเมื่อวันที่ 24 กรกฎาคม พ.ศ.",
+    "en": "The JEATH War Museum are two war museums in Kanchanaburi, Thailand about the Death Railway, which was built from 1942 to 1943 by Allied POWs under the direction of the Japanese as part of the Thai-Burma railways. The older JEATH museum is located in the CBD area of Kanchanaburi, while the other is located near the Bridge over the River Kwai."
+   },
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/JEATH_War_Museum.JPG/960px-JEATH_War_Museum.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:JEATH_War_Museum.JPG",
+   "imageCredit": "Horiuchi · Public domain",
+   "fetchedAt": "2026-11-06T18:41:45.829Z"
+  },
+  {
+   "id": "wd-Q1968675",
+   "wikidata": "Q1968675",
+   "kind": "museum",
+   "fame": 5,
+   "name": {
+    "th": "พิพิธภัณฑสถานแห่งชาติ นครศรีธรรมราช",
+    "en": "Nakhon Si Thammarat National Museum"
+   },
+   "lat": 8.40038,
+   "lng": 99.97018,
+   "province": "nakhon-si-thammarat",
+   "website": "http://www.virtualmuseum.finearts.go.th/nakhonsithammarat/index.php/en/",
+   "wiki": {
+    "th": "https://th.wikipedia.org/wiki/%E0%B8%9E%E0%B8%B4%E0%B8%9E%E0%B8%B4%E0%B8%98%E0%B8%A0%E0%B8%B1%E0%B8%93%E0%B8%91%E0%B8%AA%E0%B8%96%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4_%E0%B8%99%E0%B8%84%E0%B8%A3%E0%B8%A8%E0%B8%A3%E0%B8%B5%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%A3%E0%B8%B2%E0%B8%8A",
+    "en": "https://en.wikipedia.org/wiki/Nakhon_Si_Thammarat_National_Museum"
+   },
+   "summary": {
+    "th": "พิพิธภัณฑสถานแห่งชาติ นครศรีธรรมราช เป็นพิพิธภัณฑ์ ที่ตั้งอยู่บนถนนราชดำเนิน ในพื้นที่ตำบลในเมือง อำเภอเมือง จังหวัดนครศรีธรรมราช โดยพระบาทสมเด็จพระมหาภูมิพลอดุลยเดชมหาราช บรมนาถบพิตร และสมเด็จพระนางเจ้าสิริกิติ์ พระบรมราชินีนาถ พระบรมราชชนนีพันปีหลวง เสด็จพระราชดำเนินพร้อมด้วย สมเด็จพระกนิษฐาธิราชเจ้า กรมสมเด็จพระเทพรัตนราชสุดาฯ สยามบรมราชกุมารี และสมเด็จเจ้าฟ้าฯ กรมพระศรีสวางควัฒน วรขัตติยราชนารี ทรงเปิดพิพิธภัณฑ์เ…",
+    "en": "Nakhon Si Thammarat National Museum is a museum located on Rachadamnoen Road in the town of Nakhon Si Thammarat, Nakhon Si Thammarat Province in southern Thailand. At the centre of the museum is the 9th century statue of Vishnu in the Pala style of southern India. It was found in the base of a tree in Kapong district near Takua Pa in Phang Nga Province, then a major transit point for Indians colonizing the south."
+   },
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Nationalmuseum_Nakhon_Si_Thammarat1.jpg/960px-Nationalmuseum_Nakhon_Si_Thammarat1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Nationalmuseum_Nakhon_Si_Thammarat1.jpg",
+   "imageCredit": "Media lib · CC BY-SA 3.0",
+   "fetchedAt": "2026-11-06T18:41:46.781Z"
+  },
+  {
+   "id": "wd-Q5098070",
+   "wikidata": "Q5098070",
+   "kind": "museum",
+   "fame": 5,
+   "name": {
+    "th": "พิพิธภัณฑ์เด็กกรุงเทพมหานคร แห่งที่ 1 (จตุจักร)",
+    "en": "Children's Discovery Museum"
+   },
+   "lat": 13.80316,
+   "lng": 100.55136,
+   "province": "bangkok",
+   "wiki": {
+    "th": "https://th.wikipedia.org/wiki/%E0%B8%9E%E0%B8%B4%E0%B8%9E%E0%B8%B4%E0%B8%98%E0%B8%A0%E0%B8%B1%E0%B8%93%E0%B8%91%E0%B9%8C%E0%B9%80%E0%B8%94%E0%B9%87%E0%B8%81%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%97%E0%B8%B5%E0%B9%88_1_(%E0%B8%88%E0%B8%95%E0%B8%B8%E0%B8%88%E0%B8%B1%E0%B8%81%E0%B8%A3)",
+    "en": "https://en.wikipedia.org/wiki/Children%27s_Discovery_Museum_Bangkok_1"
+   },
+   "summary": {
+    "th": "พิพิธภัณฑ์เด็กกรุงเทพมหานคร แห่งที่ 1 (จตุจักร) เป็นพิพิธภัณฑ์เด็กในสังกัดสำนักวัฒนธรรม กีฬา และการท่องเที่ยว กรุงเทพมหานคร ตั้งอยู่บนถนนกำแพงเพชร แขวงจตุจักร เขตจตุจักร กรุงเทพมหานคร ทางใต้ของสวนสมเด็จพระนางเจ้าสิริกิติ์ฯ ตรงข้ามกับตลาดซันเดย์ (ตลาดปลาสวยงามซึ่งเป็นส่วนหนึ่งของตลาดนัดจตุจักร) ถือเป็นพิพิธภัณฑ์และศูนย์การเรียนรู้สำหรับเด็กแห่งแรกในประเทศไทยและเอเชียตะวันออกเฉียงใต้",
+    "en": "Children's Discovery Museum Bangkok 1, or formerly known as Bangkok Children's Discovery Museum, is a museum in Bangkok, Thailand, considered as the first museum and learning centre for children in Thailand and Southeast Asia. It is situated on the southern edge of Queen Sirikit Park, opposite Sunday Market."
+   },
+   "fetchedAt": "2026-11-06T18:41:47.735Z"
+  },
+  {
+   "id": "wd-Q6583114",
+   "wikidata": "Q6583114",
+   "kind": "museum",
+   "fame": 5,
+   "name": {
+    "th": "พิพิธภัณฑสถานธรรมชาติวิทยา ๕๐ พรรษา สยามบรมราชกุมารี",
+    "en": "Princess Maha Chakri Sirindhorn Natural History Museum"
+   },
+   "lat": 7.00773,
+   "lng": 100.49704,
+   "province": "songkhla",
+   "website": "http://www.nhm.psu.ac.th",
+   "wiki": {
+    "th": "https://th.wikipedia.org/wiki/%E0%B8%9E%E0%B8%B4%E0%B8%9E%E0%B8%B4%E0%B8%98%E0%B8%A0%E0%B8%B1%E0%B8%93%E0%B8%91%E0%B8%AA%E0%B8%96%E0%B8%B2%E0%B8%99%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B8%A7%E0%B8%B4%E0%B8%97%E0%B8%A2%E0%B8%B2_%E0%B9%95%E0%B9%90_%E0%B8%9E%E0%B8%A3%E0%B8%A3%E0%B8%A9%E0%B8%B2_%E0%B8%AA%E0%B8%A2%E0%B8%B2%E0%B8%A1%E0%B8%9A%E0%B8%A3%E0%B8%A1%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%81%E0%B8%B8%E0%B8%A1%E0%B8%B2%E0%B8%A3%E0%B8%B5",
+    "en": "https://en.wikipedia.org/wiki/Princess_Maha_Chakri_Sirindhorn_Natural_History_Museum"
+   },
+   "hours": "Tu-Sa 09:00-16:00",
+   "summary": {
+    "th": "พิพิธภัณฑสถานธรรมชาติวิทยา ๕๐ พรรษา สยามบรมราชกุมารี เป็นพิพิธภัณฑ์ธรรมชาติวิทยาในมหาวิทยาลัยสงขลานครินทร์ ทางภาคใต้ของประเทศไทย เดิมชื่อ พิพิธภัณฑสถานธรรมชาติวิทยาแห่งมหาวิทยาลัยสงขลานครินทร์  ภายหลังจากการปรับปรุงใหม่ จึงได้เปลี่ยนชื่อเป็นชื่อปัจจุบัน และสมเด็จพระเทพรัตนราชสุดาฯ สยามบรมราชกุมารี (พระนามในขณะนั้น) เสด็จพระราชดำเนินมาทรงประกอบพิธีเปิดอีกครั้งเมื่อวันที่ 14 มกราคม พ.ศ.",
+    "en": "The Princess Maha Chakri Sirindhorn Natural History Museum is a natural history museum in the Prince of Songkla University in southern Thailand. It was originally known as the Natural History Museum of Prince of Songkla University (PSU Museum). After a renovation, it was renamed and re-opened on 14 January 2008 by HRH Princess Maha Chakri Sirindhorn."
+   },
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Psumuseum_front.jpg/960px-Psumuseum_front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Psumuseum_front.jpg",
+   "imageCredit": "Dpstviva · Public domain",
+   "fetchedAt": "2026-11-06T18:41:48.683Z"
+  },
+  {
+   "id": "wd-Q7530338",
+   "wikidata": "Q7530338",
+   "kind": "museum",
+   "fame": 5,
+   "name": {
+    "th": "พิพิธภัณฑ์การแพทย์ศิริราช",
+    "en": "Siriraj Medical Museum",
+    "zh": "死亡博物館"
+   },
+   "lat": 13.75793,
+   "lng": 100.48585,
+   "province": "bangkok",
+   "wiki": {
+    "th": "https://th.wikipedia.org/wiki/%E0%B8%9E%E0%B8%B4%E0%B8%9E%E0%B8%B4%E0%B8%98%E0%B8%A0%E0%B8%B1%E0%B8%93%E0%B8%91%E0%B9%8C%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%9E%E0%B8%97%E0%B8%A2%E0%B9%8C%E0%B8%A8%E0%B8%B4%E0%B8%A3%E0%B8%B4%E0%B8%A3%E0%B8%B2%E0%B8%8A",
+    "en": "https://en.wikipedia.org/wiki/Siriraj_Medical_Museum",
+    "zh": "https://zh.wikipedia.org/wiki/%E8%A9%A9%E9%87%8C%E6%8B%89%E5%90%89%E9%86%AB%E5%AD%B8%E5%8D%9A%E7%89%A9%E9%A4%A8"
+   },
+   "summary": {
+    "th": "พิพิธภัณฑ์การแพทย์ศิริราช เป็นพิพิธภัณฑ์การแพทย์ของคณะแพทยศาสตร์ศิริราชพยาบาล มหาวิทยาลัยมหิดล ตั้งอยู่ ณ แขวงศิริราช เขตบางกอกน้อย กรุงเทพมหานคร พิพิธภัณฑ์นี้เปิดให้ประชาชนบุคคลทั่วไปเข้าชมได้ ทำให้เป็นพิพิธภัณฑ์ที่เป็นแหล่งข้อมูลสำคัญแก่นักศึกษาและผู้ที่มีความสนใจทางการแพทย์ ประกอบไปด้วยพิพิธภัณฑ์การแพทย์ขนาดเล็ก 6 แห่ง ได้แก่พิพิธภัณฑ์พยาธิวิทยาเอลลิส\nพิพิธภัณฑ์ปรสิตวิทยา\nพิพิธภัณฑ์นิติเวชศาสตร์ สงกรานต์ นิยมเสน\nพ…",
+    "en": "The Siriraj Medical Museum, nicknamed the Museum of Death, is a medical museum in Bangkok, Thailand. Siriraj Medical Museum is open to the public and is a valuable resource for medical professionals and students.",
+    "zh": "死亡博物館，正式名稱诗里拉吉醫學博物館（พิพิธภัณฑ์การแพทย์ศิริราช），又稱死體博物館，是泰國曼谷诗里拉吉醫院附設的博物館，向公众开放。博物館分為新舊兩棟大樓，以及六個展示館。其中有四館在新樓，二館在舊樓。\n"
+   },
+   "image": "https://upload.wikimedia.org/wikipedia/commons/0/0a/The_Forensic_Science_Museum_in_Bangkok.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:The_Forensic_Science_Museum_in_Bangkok.jpg",
+   "imageCredit": "Bobby from London, L'Angleterre · CC BY 2.0",
+   "fetchedAt": "2026-11-06T18:41:50.315Z"
+  },
+  {
+   "id": "wd-Q110517188",
+   "wikidata": "Q110517188",
+   "kind": "museum",
+   "fame": 5,
+   "name": {
+    "th": "พิพิธภัณฑ์ผ้าในสมเด็จพระนางเจ้าสิริกิติ์ พระบรมราชินีนาถ",
+    "en": "Queen Sirikit Museum of Textiles"
+   },
+   "lat": 13.75196,
+   "lng": 100.49073,
+   "province": "bangkok",
+   "website": "https://www.qsmtthailand.org/",
+   "wiki": {
+    "th": "https://th.wikipedia.org/wiki/%E0%B8%9E%E0%B8%B4%E0%B8%9E%E0%B8%B4%E0%B8%98%E0%B8%A0%E0%B8%B1%E0%B8%93%E0%B8%91%E0%B9%8C%E0%B8%9C%E0%B9%89%E0%B8%B2%E0%B9%83%E0%B8%99%E0%B8%AA%E0%B8%A1%E0%B9%80%E0%B8%94%E0%B9%87%E0%B8%88%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%99%E0%B8%B2%E0%B8%87%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%AA%E0%B8%B4%E0%B8%A3%E0%B8%B4%E0%B8%81%E0%B8%B4%E0%B8%95%E0%B8%B4%E0%B9%8C_%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%A3%E0%B8%A1%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%B4%E0%B8%99%E0%B8%B5%E0%B8%99%E0%B8%B2%E0%B8%96",
+    "en": "https://en.wikipedia.org/wiki/Queen_Sirikit_Museum_of_Textiles"
+   },
+   "hours": "Mo-Su 09:00-16:30",
+   "address": "พระนคร",
+   "summary": {
+    "th": "พิพิธภัณฑ์ผ้าในสมเด็จพระนางเจ้าสิริกิติ์ พระบรมราชินีนาถ ตั้งอยู่ในพระบรมมหาราชวัง โดยการบูรณะหอรัษฎากรพิพัฒน์ กระทรวงการคลัง ที่สร้างในปี พ.ศ. 2416 ตามพระราชดำริของสมเด็จพระนางเจ้าสิริกิติ์ พระบรมราชินีนาถ พระบรมราชชนนีพันปีหลวง เมื่อปี พ.ศ. 2546",
+    "en": "The Queen Sirikit Museum of Textiles is a museum located in the Grand Palace in Bangkok, Thailand. The museum replaced the 1873 Ratsadakorn-bhibhathana Building of the Royal Treasury Ministry by a request of Queen Sirikit in 2003. The building was the original organization of the current Crown Property Bureau."
+   },
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Queen_Sirikit_Museum_of_Textiles_2.jpg/960px-Queen_Sirikit_Museum_of_Textiles_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Queen_Sirikit_Museum_of_Textiles_2.jpg",
+   "imageCredit": "Vano111ru · CC BY-SA 4.0",
+   "fetchedAt": "2026-11-06T18:41:51.282Z"
+  },
+  {
+   "id": "wd-Q56759840",
+   "wikidata": "Q56759840",
+   "kind": "cafe",
+   "fame": 4,
+   "name": {
+    "th": "กาแฟชายทุ่ง",
+    "en": "Chai Thung Coffee",
+    "zh": "田边咖啡馆"
+   },
+   "lat": 14.00339,
+   "lng": 100.69439,
+   "province": "pathum-thani",
+   "wiki": {
+    "zh": "https://zh.wikipedia.org/wiki/%E7%94%B0%E8%BE%B9%E5%92%96%E5%95%A1%E9%A6%86"
+   },
+   "summary": {
+    "zh": "田边咖啡馆 是一家位于泰国巴吞他尼府探耶武里县以诗琳通公主为主题的咖啡馆，由诗琳通公主本人所开设和亲自命名。田边咖啡馆为单层别墅式建筑，店内装潢有诗琳通公主的画像及照片，周围有绿树和池塘环绕，装修风格简单。\n"
+   },
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Chai_Thung_Coffee_by_Tris_T7.jpg/960px-Chai_Thung_Coffee_by_Tris_T7.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Chai_Thung_Coffee_by_Tris_T7.jpg",
+   "imageCredit": "Tris T7 · CC BY-SA 4.0",
+   "fetchedAt": "2026-11-06T18:15:52.945Z"
+  },
+  {
+   "id": "wd-Q1132057",
+   "wikidata": "Q1132057",
+   "kind": "zoo",
+   "fame": 4,
+   "name": {
+    "th": "สถานแสดงพันธุ์สัตว์น้ำระยอง",
+    "en": "Rayong Aquarium"
+   },
+   "lat": 12.60942,
+   "lng": 101.42296,
+   "province": "rayong",
+   "website": "http://www.fisheries.go.th/fisheries/aq/webplace1.php?hidAQCode=00000012",
+   "wiki": {
+    "en": "https://en.wikipedia.org/wiki/Rayong_Aquarium"
+   },
+   "hours": "We-Fr 10:00-16:00; Sa-Su 10:00-17:00",
+   "summary": {
+    "en": "The Rayong Aquarium is a public aquarium in the town of Rayong, Rayong Province, Thailand. It is located by the bay of Ban Phe."
+   },
+   "fetchedAt": "2026-11-06T18:16:21.661Z"
+  },
+  {
+   "id": "wd-Q14469669",
+   "wikidata": "Q14469669",
+   "kind": "zoo",
+   "fame": 4,
+   "name": {
+    "th": "สวนสัตว์นครราชสีมา",
+    "en": "Nakhon Ratchasima Zoo"
+   },
+   "lat": 14.8504,
+   "lng": 102.075,
+   "province": "nakhon-ratchasima",
+   "website": "http://www.korat.zoothailand.org/",
+   "wiki": {
+    "th": "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%A7%E0%B8%99%E0%B8%AA%E0%B8%B1%E0%B8%95%E0%B8%A7%E0%B9%8C%E0%B8%99%E0%B8%84%E0%B8%A3%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%AA%E0%B8%B5%E0%B8%A1%E0%B8%B2"
+   },
+   "fee": "yes",
+   "address": "111 Mueang Nakhon Ratchasima",
+   "summary": {
+    "th": "สวนสัตว์นครราชสีมา หรือ สวนสัตว์โคราช สังกัดองค์การสวนสัตว์แห่งประเทศไทย เป็นสวนสัตว์ที่จัดตั้งขึ้นในองค์การสวนสัตว์ในพระบรมราชูปถัมภ์ ในปัจจุบันสวนสัตว์นครราชสีมาอยู่ในการดูแลของกระทรวงทรัพยากรธรรมชาติและสิ่งแวดล้อม"
+   },
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Korat_Zoo%2CNakorn_Ratchasima%2CThailand_%2850%29.jpg/960px-Korat_Zoo%2CNakorn_Ratchasima%2CThailand_%2850%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Korat_Zoo,Nakorn_Ratchasima,Thailand_(50).jpg",
+   "imageCredit": "กสิณธร ราชโอรส · CC BY-SA 4.0",
+   "fetchedAt": "2026-11-06T18:16:22.702Z"
+  },
+  {
+   "id": "wd-Q2530020",
+   "wikidata": "Q2530020",
+   "kind": "zoo",
+   "fame": 3,
+   "name": {
+    "th": "Chai Nat Bird Park",
+    "en": "Chai Nat Bird Park"
+   },
+   "lat": 15.20728,
+   "lng": 100.15225,
+   "province": "chai-nat",
+   "wiki": {
+    "en": "https://en.wikipedia.org/wiki/Chai_Nat_Bird_Park"
+   },
+   "summary": {
+    "en": "Chai Nat Bird Park or Chai Nat Zoo is a large bird sanctuary and provincial park in Chai Nat Province, Thailand. It contains over 100 bird species living in simulated surroundings which match their natural habitats and additionally 60 cages of birds. The two highlights of the park are the vast bird cage, which is the largest aviary in Asia, and a freshwater fish aquarium."
+   },
+   "fetchedAt": "2026-11-06T18:16:25.262Z"
+  },
+  {
+   "id": "wd-Q48797664",
+   "wikidata": "Q48797664",
+   "kind": "zoo",
+   "fame": 3,
+   "name": {
+    "th": "ลานแสดงช้างและฟาร์มจระเข้สามพราน",
+    "en": "Samphran Elephant Ground & Zoo"
+   },
+   "lat": 13.72148,
+   "lng": 100.25522,
+   "province": "nakhon-pathom",
+   "website": "http://www.elephantshow.com/home.htm",
+   "wiki": {
+    "th": "https://th.wikipedia.org/wiki/%E0%B8%A5%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%8A%E0%B9%89%E0%B8%B2%E0%B8%87%E0%B9%81%E0%B8%A5%E0%B8%B0%E0%B8%9F%E0%B8%B2%E0%B8%A3%E0%B9%8C%E0%B8%A1%E0%B8%88%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%82%E0%B9%89%E0%B8%AA%E0%B8%B2%E0%B8%A1%E0%B8%9E%E0%B8%A3%E0%B8%B2%E0%B8%99",
+    "en": "https://en.wikipedia.org/wiki/Samphran_Elephant_Ground_%26_Zoo"
+   },
+   "summary": {
+    "th": "ลานแสดงช้างและฟาร์มจระเข้สามพราน หรือที่เรียกสั้น ๆ ว่า ฟาร์มจระเข้สามพราน เป็นสวนสัตว์ ขนาดพื้นที่ 130 ไร่ ตั้งอยู่ริมถนนเพชรเกษมกิโลเมตรที่ 30 ตำบลท่าข้าม อำเภอสามพราน จังหวัดนครปฐม",
+    "en": "Samphran Elephant Ground & Zoo is a famous tourist place located in Tha Kham, Sam Phran, Nakhon Pathom Province, central Thailand."
+   },
+   "fetchedAt": "2026-11-06T18:16:27.414Z"
+  },
+  {
+   "id": "wd-Q6583260",
+   "wikidata": "Q6583260",
+   "kind": "themepark",
+   "fame": 3,
+   "name": {
+    "th": "ฟาร์มโชคชัย",
+    "en": "Farm Chokchai",
+    "zh": "促猜農場"
+   },
+   "lat": 14.65295,
+   "lng": 101.3503,
+   "province": "nakhon-ratchasima",
+   "website": "http://www.farmchokchai.com/",
+   "wiki": {
+    "th": "https://th.wikipedia.org/wiki/%E0%B8%9F%E0%B8%B2%E0%B8%A3%E0%B9%8C%E0%B8%A1%E0%B9%82%E0%B8%8A%E0%B8%84%E0%B8%8A%E0%B8%B1%E0%B8%A2",
+    "en": "https://en.wikipedia.org/wiki/Farm_Chokchai",
+    "zh": "https://zh.wikipedia.org/wiki/%E4%BF%83%E7%8C%9C%E8%BE%B2%E5%A0%B4"
+   },
+   "summary": {
+    "th": "ฟาร์มโชคชัย เป็นฟาร์มเอกชนขนาดใหญ่ที่ก่อตั้งในปี พ.ศ. 2500 โดยโชคชัย บูลกุล ตั้งอยู่ที่ริมถนนมิตรภาพ อำเภอปากช่อง จังหวัดนครราชสีมา ห่างจากกรุงเทพมหานคร ประมาณ 159 กิโลเมตร ดำเนินการเปิดเป็นสถานที่ท่องเที่ยวแบบฟาร์มลานกว้าง นักท่องเที่ยวสามารถชมการแสดงความสามารถของคาวบอย อาทิ คาวบอยขี่ม้า การต้อนสัตว์ ด้านหน้าทางเข้าเป็นร้านอาหารเสต็กโชคชัย มีพิพิธภัณฑ์ซึ่งจัดให้นักท่องเที่ยวชมประวัติของผู้ก่อตั้ง",
+    "en": "Farm Chokchai is dairy farm in Thailand, and the largest in Asia. It was founded in 1957 by Chokchai Bulakul and is situated on over 8,000 acres of land in Pak Chong, Nakhon Ratchasima province.",
+    "zh": "促猜農場 位於泰國東北部呵叻府北沖縣的友誼路（泰國二號公路）159-160號，是一座大型農場主題公園，距離首都曼谷約159公里。遊客可以感受農場生活，例如：擠牛奶、以鮮奶制造冰淇淋，看美國西部牛仔表演、用狗捕羊，餵養動物及吃牛排等活動。\n"
+   },
+   "fetchedAt": "2026-11-06T18:16:44.592Z"
+  },
+  {
+   "id": "wd-Q6669568",
+   "wikidata": "Q6669568",
+   "kind": "themepark",
+   "fame": 3,
+   "name": {
+    "th": "แดนเนรมิต",
+    "en": "Dan Neramit",
+    "zh": "曼谷兒童樂園"
+   },
+   "lat": 13.82028,
+   "lng": 100.56472,
+   "province": "bangkok",
+   "wiki": {
+    "th": "https://th.wikipedia.org/wiki/%E0%B9%81%E0%B8%94%E0%B8%99%E0%B9%80%E0%B8%99%E0%B8%A3%E0%B8%A1%E0%B8%B4%E0%B8%95",
+    "en": "https://en.wikipedia.org/wiki/Dan_Neramit",
+    "zh": "https://zh.wikipedia.org/wiki/%E6%9B%BC%E8%B0%B7%E5%85%92%E7%AB%A5%E6%A8%82%E5%9C%92"
+   },
+   "summary": {
+    "th": "แดนเนรมิต เป็นชื่อของสวนสนุกกลางแจ้งในอดีตแห่งที่สองของไทย ตั้งอยู่ที่ริมถนนพหลโยธิน แขวงจอมพล เขตจตุจักร กรุงเทพมหานคร เยื้องกับศูนย์การค้าเซ็นทรัล ลาดพร้าว โดยเปิดให้บริการระหว่างปี พ.ศ. 2519 ถึงปี พ.ศ. 2543",
+    "en": "Dan Neramit, sometimes translated as Magic Land, was the first amusement park in Thailand. It occupied 33 rai of land on Phahonyothin Road in Bangkok's Chatuchak District, and was in operation from 1976 to 2000, when its lease expired and owner Pannin Kitiparaporn moved operations to her new main property Dream World in the northern suburb of Pathum Thani Province.",
+    "zh": "曼谷兒童樂園 位於泰國首都曼谷，乍都節縣，拍鳳裕庭路72號的已關閉民營遊樂場。佔地52,800平方公呎。1976年1月29日開幕；2000年12月31日關閉。目前場地被用作高卡車場。\n"
+   },
+   "fetchedAt": "2026-11-06T18:16:49.271Z"
+  },
+  {
+   "id": "wd-Q136798507",
+   "wikidata": "Q136798507",
+   "kind": "cafe",
+   "fame": 2,
+   "name": {
+    "th": "อ่าวลึกโอเชียนวิว",
+    "en": "Ao Luek Ocean View"
+   },
+   "lat": 8.35722,
+   "lng": 98.63925,
+   "province": "krabi",
+   "wiki": {},
+   "summary": {},
+   "fetchedAt": "2026-11-06T18:15:52.946Z"
+  },
+  {
+   "id": "wd-Q13014565",
+   "wikidata": "Q13014565",
+   "kind": "zoo",
+   "fame": 2,
+   "name": {
+    "th": "ซาฟารีปาร์ค",
+    "en": "Safari Park Open Zoo"
+   },
+   "lat": 14.25221,
+   "lng": 99.50025,
+   "province": "kanchanaburi",
+   "website": "http://www.safaripark-kan.com/",
+   "wiki": {
+    "th": "https://th.wikipedia.org/wiki/%E0%B8%8B%E0%B8%B2%E0%B8%9F%E0%B8%B2%E0%B8%A3%E0%B8%B5%E0%B8%9B%E0%B8%B2%E0%B8%A3%E0%B9%8C%E0%B8%84"
+   },
+   "summary": {
+    "th": "สวนสัตว์เปิดซาฟารีปาร์ค เป็นสวนสัตว์เปิดแห่งแรกในกาญจนบุรี ตั้งอยู่ที่อำเภอบ่อพลอย ห่างจากตัวเมืองกาญจนบุรีไป 40 กิโลเมตร โดยเป็นสวนสัตว์เปิดที่มีลักษณะเหมือนกับซาฟารีเวิลด์ที่กรุงเทพมหานคร โดยแบ่งส่วนต่าง ๆ ออกเป็น 8 โซน"
+   },
+   "fetchedAt": "2026-11-06T18:16:28.022Z"
+  },
+  {
+   "id": "wd-Q13022372",
+   "wikidata": "Q13022372",
+   "kind": "zoo",
+   "fame": 2,
+   "name": {
+    "th": "สวนสัตว์ลพบุรี",
+    "en": "Lopburi Zoo"
+   },
+   "lat": 14.80159,
+   "lng": 100.63609,
+   "province": "lopburi",
+   "wiki": {
+    "th": "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%A7%E0%B8%99%E0%B8%AA%E0%B8%B1%E0%B8%95%E0%B8%A7%E0%B9%8C%E0%B8%A5%E0%B8%9E%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5"
+   },
+   "summary": {
+    "th": "สวนสัตว์ลพบุรี หรือชื่อเดิมว่า สวนสัตว์สระแก้ว ตั้งอยู่ด้านหลังของโรงภาพยนตร์ทหารบก หรืออยู่จากอนุสาวรีย์จอมพล ป.พิบูลสงคราม ประมาณ 100 เมตร สวนสัตว์นี้สร้างขึ้นเมื่อปี พ.ศ. 2483 สมัยจอมพล ป.พิบูลสงคราม สัตว์ดาวเด่นขวัญใจคือลิงอุรังอุตัง"
+   },
+   "fetchedAt": "2026-11-06T18:16:28.626Z"
+  },
+  {
+   "id": "wd-Q16304402",
+   "wikidata": "Q16304402",
+   "kind": "zoo",
+   "fame": 1,
+   "name": {
+    "th": "สวนสัตว์เทศบาลนครนครปฐม",
+    "en": "Nakhon Pathom Municipality Zoo"
+   },
+   "lat": 13.82029,
+   "lng": 100.04989,
+   "province": "nakhon-pathom",
+   "wiki": {
+    "th": "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%A7%E0%B8%99%E0%B8%AA%E0%B8%B1%E0%B8%95%E0%B8%A7%E0%B9%8C%E0%B9%80%E0%B8%97%E0%B8%A8%E0%B8%9A%E0%B8%B2%E0%B8%A5%E0%B8%99%E0%B8%84%E0%B8%A3%E0%B8%99%E0%B8%84%E0%B8%A3%E0%B8%9B%E0%B8%90%E0%B8%A1"
+   },
+   "hours": "Mo-Su 10:00-18:00",
+   "address": "6 ราชมรรคา",
+   "summary": {
+    "th": "สวนสัตว์เทศบาลนครนครปฐม เป็นสวนสัตว์ขนาดเล็กที่เข้าชมฟรี ในความรับผิดชอบของเทศบาลนครนครปฐม ตั้งอยู่ใกล้กับสนามกีฬาจังหวัดนครปฐมอยู่ในบริเวณพระราชวังสนามจันทร์ มีสัตว์ป่าสัตว์ปีก มี อย่าง เช่น เสือปลา ลิง จระเข้ กวางป่า กวาง หมี กวางดาว ไก่ นกเงือกกรามช้าง เป็นต้น \n\n\n"
+   },
+   "fetchedAt": "2026-11-06T18:16:29.216Z"
+  },
+  {
+   "id": "wd-Q123662912",
+   "wikidata": "Q123662912",
+   "kind": "zoo",
+   "fame": 1,
+   "name": {
+    "th": "สถานแสดงพันธุ์สัตว์น้ำเฉลิมพระเกียรติ 6 รอบ พระชนมพรรษา",
+    "en": "The Sixth Cycle Birthday Anniversary Celebration Aquarium"
+   },
+   "lat": 12.57286,
+   "lng": 101.89485,
+   "province": "chanthaburi",
+   "wiki": {
+    "th": "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%96%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%9E%E0%B8%B1%E0%B8%99%E0%B8%98%E0%B8%B8%E0%B9%8C%E0%B8%AA%E0%B8%B1%E0%B8%95%E0%B8%A7%E0%B9%8C%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B9%80%E0%B8%89%E0%B8%A5%E0%B8%B4%E0%B8%A1%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%81%E0%B8%B5%E0%B8%A2%E0%B8%A3%E0%B8%95%E0%B8%B4_6_%E0%B8%A3%E0%B8%AD%E0%B8%9A_%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%8A%E0%B8%99%E0%B8%A1%E0%B8%9E%E0%B8%A3%E0%B8%A3%E0%B8%A9%E0%B8%B2"
+   },
+   "summary": {
+    "th": "สถานแสดงพันธุ์สัตว์น้ำเฉลิมพระเกียรติ 6 รอบ พระชนมพรรษา เป็นพิพิธภัณฑ์สัตว์น้ำในศูนย์ศึกษาการพัฒนาอ่าวคุ้งกระเบน อันเนื่องมาจากพระราชดำริ อยู่ในความดูแลของกรมประมง กระทรวงเกษตรและสหกรณ์"
+   },
+   "fetchedAt": "2026-11-06T18:16:29.901Z"
+  },
+  {
+   "id": "wd-Q22813237",
+   "wikidata": "Q22813237",
+   "kind": "themepark",
+   "fame": 1,
+   "name": {
+    "th": "การ์ตูนเน็ตเวิร์ค อเมโซน",
+    "en": "Cartoon Network Amazone Waterpark"
+   },
+   "lat": 12.7851,
+   "lng": 100.9143,
+   "province": "chonburi",
+   "website": "http://www.cartoonnetworkamazone.com/",
+   "wiki": {
+    "en": "https://en.wikipedia.org/wiki/Cartoon_Network_Amazone"
+   },
+   "address": "888 ซอยนาจอมเทียน 50",
+   "summary": {
+    "en": "Columbia Pictures Aquaverse is a theme park created by Sony Pictures Entertainment’s Columbia Pictures. It is located at 888 Moo 8, Na Jomtien, Sattahip, Chonburi, Thailand, which is approximately 18.2 kilometers from Pattaya. It is opened on October 12, 2022, and operated by Amazon Falls Co., Ltd, which was designed and constructed under the supervision of Sony Pictures Entertainment."
+   },
+   "fetchedAt": "2026-11-06T18:16:51.639Z"
+  },
+  {
+   "id": "wd-Q136481769",
+   "wikidata": "Q136481769",
+   "kind": "cafe",
+   "fame": 0,
+   "name": {
+    "th": "Thaan Aoan",
+    "en": "Thaan Aoan"
+   },
+   "lat": 18.78578,
+   "lng": 98.98842,
+   "province": "chiang-mai",
+   "website": "https://www.cafedethaanaoan.com/",
+   "wiki": {},
+   "summary": {},
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Thaan_Aoan_Image.jpg/960px-Thaan_Aoan_Image.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Thaan_Aoan_Image.jpg",
+   "imageCredit": "AunTaraseina · CC0",
+   "fetchedAt": "2026-11-06T18:15:52.946Z"
+  },
+  {
+   "id": "wd-Q136565078",
+   "wikidata": "Q136565078",
+   "kind": "cafe",
+   "fame": 0,
+   "name": {
+    "th": "ดินแดงดอย",
+    "en": "Din Daeng Doi"
+   },
+   "lat": 8.11027,
+   "lng": 98.78448,
+   "province": "krabi",
+   "wiki": {},
+   "hours": "Mo-Su 05:30-19:00",
+   "phone": "+66 920709538",
+   "summary": {},
+   "fetchedAt": "2026-11-06T18:15:52.946Z"
+  },
+  {
+   "id": "wd-Q137829045",
+   "wikidata": "Q137829045",
+   "kind": "cafe",
+   "fame": 0,
+   "name": {
+    "th": "Golden Hours Café and Bar",
+    "en": "Golden Hours Café and Bar"
+   },
+   "lat": 8.05703,
+   "lng": 98.74943,
+   "province": "krabi",
+   "wiki": {},
+   "summary": {},
+   "fetchedAt": "2026-11-06T18:15:52.946Z"
+  },
+  {
+   "id": "wd-Q138640317",
+   "wikidata": "Q138640317",
+   "kind": "cafe",
+   "fame": 0,
+   "name": {
+    "th": "ร้านแหลมสักพาโนรามาคาเฟ่",
+    "en": "Laem Sak Panorama Café"
+   },
+   "lat": 8.27704,
+   "lng": 98.65228,
+   "province": "krabi",
+   "wiki": {},
+   "summary": {},
+   "fetchedAt": "2026-11-06T18:15:52.946Z"
+  },
+  {
+   "id": "wd-Q141128659",
+   "wikidata": "Q141128659",
+   "kind": "cafe",
+   "fame": 0,
+   "name": {
+    "th": "Izzy's Specialty Coffee",
+    "en": "Izzy's Specialty Coffee"
+   },
+   "lat": 9.56146,
+   "lng": 100.02114,
+   "province": "surat-thani",
+   "website": "https://izzyscoffeesamui.com",
+   "wiki": {},
+   "summary": {},
+   "fetchedAt": "2026-11-06T18:15:52.946Z"
+  },
+  {
+   "id": "wd-Q123002567",
+   "wikidata": "Q123002567",
+   "kind": "zoo",
+   "fame": 0,
+   "name": {
+    "th": "Phuket Aquarium",
+    "en": "Phuket Aquarium"
+   },
+   "lat": 7.80355,
+   "lng": 98.40789,
+   "province": "phuket",
+   "wiki": {},
+   "summary": {},
+   "image": "https://upload.wikimedia.org/wikipedia/commons/1/1c/%D0%92%D0%B8%D0%B4_%D0%BD%D0%B0_%D0%BC%D0%BE%D1%80%D0%B5_%D0%B2%D0%BE%D0%B7%D0%BB%D0%B5_Phuket_Aquarium_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:%D0%92%D0%B8%D0%B4_%D0%BD%D0%B0_%D0%BC%D0%BE%D1%80%D0%B5_%D0%B2%D0%BE%D0%B7%D0%BB%D0%B5_Phuket_Aquarium_-_panoramio.jpg",
+   "imageCredit": "Rom870 · CC BY 3.0",
+   "fetchedAt": "2026-11-06T18:16:29.901Z"
+  },
+  {
+   "id": "wd-Q123162540",
+   "wikidata": "Q123162540",
+   "kind": "zoo",
+   "fame": 0,
+   "name": {
+    "th": "Tiger Kingdom Phuket",
+    "en": "Tiger Kingdom Phuket"
+   },
+   "lat": 7.90708,
+   "lng": 98.33006,
+   "province": "phuket",
+   "wiki": {},
+   "summary": {},
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Tha%C3%AFlande_-_Phuket_-_Tiger_Kingdom_%2813306449394%29.jpg/960px-Tha%C3%AFlande_-_Phuket_-_Tiger_Kingdom_%2813306449394%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Tha%C3%AFlande_-_Phuket_-_Tiger_Kingdom_(13306449394).jpg",
+   "imageCredit": "Nicolas Vollmer from Munich [Allemagne] · CC BY 2.0",
+   "fetchedAt": "2026-11-06T18:16:29.901Z"
+  },
+  {
+   "id": "wd-Q55429944",
+   "wikidata": "Q55429944",
+   "kind": "themepark",
+   "fame": 0,
+   "name": {
+    "th": "Lanta Haven Waterpark",
+    "en": "Lanta Haven Waterpark"
+   },
+   "lat": 7.5422,
+   "lng": 99.08258,
+   "province": "krabi",
+   "wiki": {},
+   "summary": {},
+   "fetchedAt": "2026-11-06T18:16:51.639Z"
+  },
+  {
+   "id": "wd-Q55739036",
+   "wikidata": "Q55739036",
+   "kind": "themepark",
+   "fame": 0,
+   "name": {
+    "th": "รัตนา รีสอร์ท",
+    "en": "Rattana Resort & Waterpark"
+   },
+   "lat": 7.67108,
+   "lng": 99.04572,
+   "province": "krabi",
+   "wiki": {},
+   "phone": "+66 87 046 5744",
+   "address": "288",
+   "summary": {},
+   "fetchedAt": "2026-11-06T18:16:51.639Z"
+  }
+ ],
+ "trends": {
+  "cafe": [
+   {
+    "title": "Dulce No Dulce คาเฟ่เปิดใหม่ในอารีย์ 4 ที่มีแซนด์วิชซาวโดวจ์หน้าเปิด",
+    "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBIdjNCU3picWFUbDJsSG9jdkRKRl83cDZVeUhsb3J4a19DdGtiN0ZYbmVpZFFhWTh3MDdLR2hkYS1WdjQ5R0FTNnlwZ0NMTkY3dkNIaVBCSUl5b09DamJRQVpR?oc=5",
+    "source": "thestandard.co",
+    "date": "2026-11-06"
+   },
+   {
+    "title": "ตะลอนทั่วกรุง ตามล่าหา คาเฟ่เปิดใหม่ ประจำเดือนพฤศจิกายน 2026",
+    "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5ONFQ1MU16c0psYW8zcGpRcXRUWjJjUHhkV21XQ0xZdUczTXAxY3lHTHJVZTRtZV9PTExXNHdkUEd2R2ZBbmxvSTczdW03c2Z3QlF4ZHVDMlhCdWF1SXplN0NLNWVUcm9ISzNuTTlwUHZ0cXpM0gF6QVVfeXFMUEh5Qmh6RTZTTklKbUM3SUJ3RmlIOS1KVXJKNFJNQy12VWFtR0VKUllqQnpsSUdjX243RkFyZm1pUWlJOUxHNjFEOUwtSmxELUJZRVBYTjQwMkZYNENINnRfaEVxVV94U2V4NmhDYWE5OEJZMFdxekFFRHc?oc=5",
+    "source": "Lifestyle Asia Hong Kong",
+    "date": "2026-11-06"
+   },
+   {
+    "title": "สภากาแฟยุคใหม่ Common Space Cafe คาเฟ่ซอยเจริญกรุง 1 ที่เชื่อมชุมชนด้วยกาแฟ",
+    "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1telMzM2FoQ193T1FoT2FoMmpjQzRET2M1WWhER2ZhSVlXd3puVm5Nd05tN0FpMGxKY2xoU0hzTGhHWUd0dFFkbUFYWFNxX2s0ODhQcnZoRjlBenJwOUNJNGhOZndZMnBzdEFYOA?oc=5",
+    "source": "thestandard.co",
+    "date": "2026-11-06"
+   },
+   {
+    "title": "Café Amazon แจกความสดใส แบบ Gen Z พรีเซนเตอร์ใหม่ BUS because of you i shine",
+    "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE92NDNRck9FNEJ1LUVxd21vMHlwRXczNnp0eGtfOHRkNjQ3Qmd6Y0VoQ0Y2WjhUNEtLVGxZVHpBNXliTUJPd295R3lJTm5kOHhiQWFJdEdLS20?oc=5",
+    "source": "thestandard.co",
+    "date": "2026-11-06"
+   },
+   {
+    "title": "บาร์เปิดใหม่ น่าไปลอง 2026 ประจำเดือนพฤศจิกายน",
+    "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOcldpaF9DQlh2dnlsUHRyZWp6ZzAybC1PY29TQkRqQ3I3Q1dNR1ZWTWw2M2JRRmJFMGVvRzRwY3llWEI2T011cjB5NU1YbzRscXZuQ3JaelVNVi1ZelozdFBmSW9IWThQeFFRMWdZSXhUSUFjVUVCM2JoY09NUE9QUDBsMjVRZXhtbmtqbUhVd1l6dFFUbmVRczZWaWh2QzZka3l5aDJ6QkFtUlc0NGw1ZW1QeHVBa19r0gG4AUFVX3lxTE5yV2loX0NCWHZ2eWxQdHJlanpnMDJsLU9jb1NCRGpDcjdDV01HVlZNbDYzYlFGYkUwZW9HNHBjeWVYQjZPTXVyMHk1TVhvNGxxdm5Dclp6VU1WLVl6WjN0UGZJb0hZOFB4UVExZ1lJeFRJQWNVRUIzYmhjT01QT1BQMGwyNVFleG1ua2ptSFV3WXp0UVRuZVFzNlZpaHZDNmRreXloMnpCQW1SVzQ0bDVlbVB4dUFrX2s?oc=5",
+    "source": "Lifestyle Asia Hong Kong",
+    "date": "2026-11-06"
+   },
+   {
+    "title": "คาเฟ่สัตว์ ดองกี้ ฟาร์ม สระบุรี ชวนพักใจใกล้ชิดสัตว์น่ารัก",
+    "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1WT1pCZjhoZGIzWHJqRmtFUWRieXBvSmNhM3Y5dXhVdHIybElHbmNVYTNUR3Zlcm1VNjkwcnpueUYwWFM4Z3d3d1gtQnBmS2d4UG1MWVBaMUY?oc=5",
+    "source": "TrueID",
+    "date": "2026-11-06"
+   },
+   {
+    "title": "รวมคาเฟ่และร้านเครื่องดื่มเปิดใหม่ในสยามพารากอนฉบับอัปเดต!",
+    "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1ocDA5N3dGNC14Uk1CNmt2Y1ZsMkVjZGNIQWhxNjlHQ1pvOWJ6NkQ1SDBtQVpnR1pHc3dEU2pFWWhKOXg0SmpjUU9Ra1NtLWl1UTlNbHI3WE1sTm1jTGY1ZkRHTk1EUVFPUUkwckNCLU5pVWVLOW1mdHhHalJDUdIBgwFBVV95cUxOb3hxYWVqN1FaN0tzd1ZsdWpmalNkOW9aN2x2T1QySEVHVm5iUFZVTHk1czhNR0o0S0IwMUtsUGhZNjRFaHFmNTRlcl9pUWJvNE9FeWpyTUdXUmZsT2VGUkFISU9BUHFBcWs4cDhBZ2dKNm5YdXJtZnZSWjJvNXlCUGViQQ?oc=5",
+    "source": "Lifestyle Asia Hong Kong",
+    "date": "2026-11-05"
+   },
+   {
+    "title": "Torien Rooftop and Bar นิยามใหม่ของอิซากายะบนรูฟท็อป ชมพระอาทิตย์ตกเหนือหาดจอมเทียน",
+    "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5BdFpHMzN1VFkyeXV5M0VDRE5EclRabHU1akZfdmRScW5fY0tsU1hoSzlBOVhreDRSM0VWN0dQMFJ0WjBOMXllcEVMazhfOWMzaGxVMVN0ejZFRU1JT0NRRVlUQjY4UnRDUXhEV0FHQjRKSzJi0gF6QVVfeXFMTmh6N1UxNnRlalMxZ2FhMXozZFRkdTRqQUZZTG8xTVdHSXB6UHg1dGdHdUxsMDJvQkJKQk9XYmlRdk1LaFVLd2c2UkI4amd4cmM3UG1jU2tXbERPcUlnbXBfeDZCNlRYNDQ0OHhzNW1YUFUzUWRJYkNzLXc?oc=5",
+    "source": "Lifestyle Asia Hong Kong",
+    "date": "2026-11-05"
+   },
+   {
+    "title": "ร้านคาเฟ่กรุงเทพฯ 2024 ฉบับอัปเดต เอาใจสายฮอปปิ้งไปชิล รูปที่ 13",
+    "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5aT3FkeEx4Z2V2U2RuT0I0SHp4cV9faWZ6aWFJSDdKbEl1dnBKRjh5dE9CUXY0OGNMcWlyYTFlQW9xdnVCaHI1bzlWTG5sdE9OX3hjRFVFTXJqQjA?oc=5",
+    "source": "kapook.com",
+    "date": "2026-11-04"
+   },
+   {
+    "title": "ตะลอนทั่วกรุง ตามล่าหา คาเฟ่เปิดใหม่ ประจำเดือนมิถุนายน 2026",
+    "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5LWkxoQTJRenNFUlN5ZU9QVmVoUjNHLXNhZEZLMElvNkRVWWRVLUw4LVd1WTBJYngwV2pER1VOT1MtMDVBTFJyYVFkam15OWtvNjRhTXRvR2w0SjlmZzE2NzNqa3U4a0F6cHpkdWF4VWJyM3VyWHfSAXtBVV95cUxQQmFXdWFPNXNOYWY5c3pONkItOWtndk1KZEM1QWlmMjVMaU9vX2tMMFpaX2xOeVRXLWN4TzRWZkRFaWtpN2UtSlB2NXdHbG43RmRWeDYxNmhnekdiTGQ4OHhWOHhyWjNmbUI3b1BiVGYtN0hWSmwwTHJvNE0?oc=5",
+    "source": "Lifestyle Asia Hong Kong",
+    "date": "2026-11-04"
+   },
+   {
+    "title": "ร้านอาหารใหม่ น่าแวะไปเช็กอิน ประจำเดือนสิงหาคม 2026",
+    "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPb2RvcUFCNUR0OGJPZG1tU2lQazJXYnZKM19LYXdtN2dsdzJVa0hLVTdXenUwVmlLeFM0Q3VQbnRsYUpFUU1qZEhlSHBmc1N3R3FCWW0tSXk5azVEMFBUVFkzWjRaQm40V3pfM3F0WEpmWUlNSUhIY0FDenZ0Z3NmRFB30gGHAUFVX3lxTE5pc1dLd19vWWxMQy1RM0pnbjgxeVYyakhQanFRMTJ6NXFxdmpONWI0LVBNRjlESGZWaF9nUGJCRjM5cVIyOTIzRnIxcFZVME03YlMwYnJzUElYZXFCTFl0SEVsMUFlcDlxYURPcEU3akhsN0VsUlRMX3UtOWRyQm9aNmJ4N2x3RQ?oc=5",
+    "source": "Lifestyle Asia Hong Kong",
+    "date": "2026-11-04"
+   },
+   {
+    "title": "5 ร้านอาหารสเปน กรุงเทพฯ ต้อนรับแชมป์บอลโลก สาย Tapas & Paella ห้ามพลาด!",
+    "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOX2xQbnBVbXlOYi1ZZTRoUHpmZm81QlFvdjh4UGtrTXF0SXBHM19kdVViV2hPc1RsVGdCRzBDVzNHT2xQMm9kMXk4MGZQeWNXQklpZjFyM2RUODljb1d3ZXFfYUJYWWR0Mm54TnhQaVE1SjlNQ3RhUW01MUlEMUU2bVJfaEdfcWg00gGOAUFVX3lxTE13bVhjX2lFUVNSOVBRQkZDOS1kM25aaFJrNWd1QlJNQnlwZTQ0RFNfSWdPcEJzQkgtMGZkMkJIX0FJWGkzdUhhQXJBM0RSS1pBYndRUXFxWWpxWjR2Q3FaaTVvdE5ocGVVRUhRU2dlZkdLWGRlSEVvSzBDQTVQcEdjXzFfNmxYc0VLeFJ4N0E?oc=5",
+    "source": "Lifestyle Asia Hong Kong",
+    "date": "2026-11-04"
+   }
+  ],
+  "animalcafe": [
+   {
+    "title": "Dulce No Dulce คาเฟ่เปิดใหม่ในอารีย์ 4 ที่มีแซนด์วิชซาวโดวจ์หน้าเปิด",
+    "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBIdjNCU3picWFUbDJsSG9jdkRKRl83cDZVeUhsb3J4a19DdGtiN0ZYbmVpZFFhWTh3MDdLR2hkYS1WdjQ5R0FTNnlwZ0NMTkY3dkNIaVBCSUl5b09DamJRQVpR?oc=5",
+    "source": "thestandard.co",
+    "date": "2026-11-06"
+   },
+   {
+    "title": "คาเฟ่สัตว์ ดองกี้ ฟาร์ม สระบุรี ชวนพักใจใกล้ชิดสัตว์น่ารัก",
+    "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1WT1pCZjhoZGIzWHJqRmtFUWRieXBvSmNhM3Y5dXhVdHIybElHbmNVYTNUR3Zlcm1VNjkwcnpueUYwWFM4Z3d3d1gtQnBmS2d4UG1MWVBaMUY?oc=5",
+    "source": "TrueID",
+    "date": "2026-11-06"
+   },
+   {
+    "title": "Nyan Nyan Ji ศาลเจ้าแมว ณ เกียวโต ประเทศญี่ปุ่น รูปที่ 14",
+    "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1zbzZFc0hOQ2ctNDM5OUM1S180TklJM3pVbW5nYzJOc21nVXYyaG50c0hBTU5BYzhWZ0RjTzZMLWtYd1EwYlhIZE0tTXdHeXlyRE9Lb2MxSmlFODg?oc=5",
+    "source": "kapook.com",
+    "date": "2026-11-05"
+   },
+   {
+    "title": "รีโนเวทบ้านเองยามว่าง ปรับลุคใหม่ให้เหมือนนั่งทำงานในคาเฟ่ ตามสไตล์พ่อแมว รูปที่ 10",
+    "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBaWjliU01ZTExMdVVtNHlmb1F4OXdiclVFY1ppZmRnMVA4cjY3Q0VyeS14N01MbXk2bGRPUWc4U2lUUm9vei1oUndTczNyUEl2dFVGYmVHT2g?oc=5",
+    "source": "kapook.com",
+    "date": "2026-11-05"
+   },
+   {
+    "title": "ตามรอย ทามะ นายสถานีแมวแห่งญี่ปุ่น สถานีคิชิ วากายามะ คนรักแมวต้องไปสักครั้ง",
+    "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1ucnNfUkpRT3F0bW1XbDVDTlVyVV9wQ0dJdkpycVkxN09va2c1OXREbnFDcThxc01MQlNQbTZYVUxQTUhEOEp3aVcxcDdJMEl2dEhYVlEwTWE?oc=5",
+    "source": "TrueID",
+    "date": "2026-11-04"
+   },
+   {
+    "title": "Loftia Early Access: วันที่วางจำหน่ายและเวลาเริ่มอย่างเป็นทางการ",
+    "link": "https://news.google.com/rss/articles/CBMi-wJBVV95cUxNNUQwR2ZVbl9GVjlWTi1TV2E4N1J5OEdyczlIdlpFYzFLd0pMZ2NhSmFiMFpJRlhkN2Y1T3EtZ3JlZlRMSXNrSTVFRlBySU1paUI4VWQyVV9EUm9iVVY5dml2cHlMNWJidE83SGRHeWxuYUIwV1FRMjVFSWN4Y281UGtETGZCMXBaMXE0ZWRnVGF6Z09NVW5Na1l4WUEtcVU0Ui1XaDlfQWhyd1hUS2RTYVk0cmlFRjdmUlg3cjh5TmFSaWY4ay1BdFRuR1V6bTdqYUMzWk5OaGV2X1NVanF0OXhjLUMtOUozeEpJT3dsLWNoU2tLTEhMTlh3S1BfQklxaW5jWTlQbEFKNXUzS2JkWVJVUjhVWWdkNWgzalIyd21sWUF5aEFRRjBoX0pNbC1pN1B6Z05LVlMzTy1pTEF4MmlKb0NHSXV2WUM4RElvSWtmLVlEeEZMaHhwVEFSQ2Rpb00xWWtlc2RHdU5iU0VOVGZIUnpISWNkeEdV?oc=5",
+    "source": "games.gg",
+    "date": "2026-11-03"
+   },
+   {
+    "title": "10 คาเฟ่แมว กรุงเทพฯ น่ารักมุ้งมิ้งเอาใจทาสแมว รูปที่ 13",
+    "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1LNnFGVTd1bFBlcE9NWjNWSF8yY1g0bjI2elpkRXpBeEhkcGJsaGNVcHNPUDN3SWlPU0FvbkVYZmItcFpvVk9JdUI3Y2NISmxjWkpvd1dFelpZQkE?oc=5",
+    "source": "kapook.com",
+    "date": "2026-11-01"
+   },
+   {
+    "title": "PMCU ดึง 16 ศิลปินสตรีทอาร์ต ปลุกชีวิตตรอกเก่าสามย่าน ผ่านโปรเจกต์ \"สามย่านซอยแมว Powered by HYPE DISTRICT\"",
+    "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9WeUM5ZXBPQk1Uc0JBNDRPR2FMSC1BMHZsMnZTbG1UNFBvd2VpemJEWnVnUnlpYWNGLVZtU1kwZ1dnb3UzalVxTDgwMW5kLVNXWktSTzlEbEF2V2VPUm1FWEFpX200eGNfMGNv?oc=5",
+    "source": "newswit",
+    "date": "2026-10-30"
+   },
+   {
+    "title": "Kid Rangers ปฏิบัติการเด็กช่างคิด - แมลงแห่งอัญมณี",
+    "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE8ybVhJc2hQMDM2dXNyd0ZQM2QyYmd0ZTVNY3c3NnBFQ2YtZzgzVW9aS1dWR1RYMXg2blZucEFzbzRnSjFhdjJqUFd6VnpMa1E3dU04VFhNX21OZjE0SE5Fdi1udFAxYXYtV0F4eQ?oc=5",
+    "source": "Thai PBS",
+    "date": "2026-10-30"
+   },
+   {
+    "title": "สวนสัตว์เชียงใหม่ เปิดตัว 'Zoo Junior แก๊งจิ๋วหัวใจฟู' ชวนสัมผัสความน่ารักสมาชิกใหม่",
+    "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFB0NGV0TjBYOFZ4RnctR1g0TTZ6ZkJYMlNuUkRTUmlzamVxT3Qxc0NMYWpmUkxuNVF4NUhNdDJxSGVEdlBQaEJvN3VxcnBBU2s2UEkwNkZERlZQVFV6WlotSWJTRkkzQQ?oc=5",
+    "source": "ข่าวสด",
+    "date": "2026-10-22"
+   },
+   {
+    "title": "สวนสัตว์เปิดเขาเขียว จัดกิจ “วันปิยมหาราช” 23 ต.ค. นี้ เด็กและผู้สูงอายุเข้าชมฟรี!",
+    "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFA0eWwzaEE2SkhocDU3YmVVaWVXR1pfSlg5RnVpb1VMb0dXcERGbHA0UTczY0NSRFYzTkJxVl85Z08yZTM3YTNYN3AyM0lVdVFVUnktN1dvZlJ2QkRrNk50REpiTnE1Zw?oc=5",
+    "source": "ข่าวสด",
+    "date": "2026-10-22"
+   },
+   {
+    "title": "เดอะมอลล์ไลฟ์สโตร์ จัด Jungle Walk 2026 EP.4 ขนสัตว์แปลกหาชมยาก กระตุ้นทราฟฟิกครอบครัวช่วงปิดเทอม",
+    "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE96cDBjZXFlQ1dYdVhLYmk3X0lRYVJYZDBzZXFKaVZxWXZreXY2M29pVERnQ051eFJLSHl6RVpzUnI4U2xvV3JtWGpQTHF6RU1BajdULTZaMGhRUQ?oc=5",
+    "source": "Thaipost.net",
+    "date": "2026-10-16"
+   }
+  ],
+  "zoo": [
+   {
+    "title": "สวนสัตว์เปิดเขาเขียว ต้อนรับลูกฮิปโปแคระตัวใหม่ “หลานของหมูเด้ง” น่ารักน่าเอ็นดู ตัวชมพูตะมุตะมิ",
+    "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBnMjRVR05rd2RyaEp5N1cwWFFUdk9sNWRxbFZpbF9pVTNWSHFKM2FUWWFUMTdQMnJ4WUJVc1RFNGxZQ2V0VmthcW1lczFVdzlqWmNYMEFtM0h1WG9hdUE?oc=5",
+    "source": "ผู้จัดการออนไลน์",
+    "date": "2026-11-06"
+   },
+   {
+    "title": "คาเฟ่สัตว์ ดองกี้ ฟาร์ม สระบุรี ชวนพักใจใกล้ชิดสัตว์น่ารัก",
+    "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1WT1pCZjhoZGIzWHJqRmtFUWRieXBvSmNhM3Y5dXhVdHIybElHbmNVYTNUR3Zlcm1VNjkwcnpueUYwWFM4Z3d3d1gtQnBmS2d4UG1MWVBaMUY?oc=5",
+    "source": "TrueID",
+    "date": "2026-11-06"
+   },
+   {
+    "title": "สวนสัตว์เขาเขียวต้อนรับสมาชิกใหม่ “หมูเด้ง” เป็นคุณอาแล้ว",
+    "link": "https://news.google.com/rss/articles/CBMilgJBVV95cUxOeFFTRC1TbkNQQng4MjZnNTRhNDlMRGpaYUlWMVpoZnNyMEhsWlZmYTR1UThhUGgtZ1RJcWFnazdJdENmSUh4al94ZXJFeURaVVFjSmhMMkVJWGEyV3dqVlVLQTE2QVRyNF83UDc4OEJ6ZExZdm43cFBXVk5Kd2x1bnhrNC1GanctNXUzU0p0N1dRTkJsbzlyMG5oV3g5OEhJOXMwYXBLV0NjYmRyZmpIemlucS1XUnV2NF8zaS1WUTZWN1hvQTJKaEZhQVBleHV1bjVrU0RRYkhCSnF4OGd4NEdudERVVXBtOXpwQnpqeTAzS1NaYTRlZ0xjUEFWNThCYlY3X3kzNkpta0sxRW9zSEZxdG5Udw?oc=5",
+    "source": "อมรินทร์ทีวี ช่อง 34",
+    "date": "2026-11-06"
+   },
+   {
+    "title": "ใจละลาย ส่องความน่ารัก ลูกฮิปโปแคระ น้องจิ๋วแก้มสีชมพู น้าหมูเด้งมีหลานตัวน้อยแล้ว",
+    "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBkU0FmcVVkVFNJRjV2bmdTd3Z4OHF5b1p0anZYMDNrWXIwY0tRa0x6Z1F0a2stLUVZM045S3YyR2hOeW83emJCdDhiWW9kYlU?oc=5",
+    "source": "kapook.com",
+    "date": "2026-11-06"
+   },
+   {
+    "title": "เศร้า! “นากบุญทิ้ง” ตายหลังถูกย้ายเพียง 17 วัน ปมคลิปร้องเรียนกลายเป็นดราม่าสนั่นโซเชียล จากความหวังดีที่อยากให้สัตว์มีชีวิตดีขึ้น กลับกลายเป็นเรื่องเศร้าที่ไม่มีใครคาดคิด หลัง “เจ้าบุญทิ้ง” นากแสนรู้ขวัญใจสวนสัตว์สนามจันทร์ จ.นครปฐม เสียชีวิตหลังถูกย้ายไปอยู่ศูนย์ช่วยเหลือสัตว์ป่าเพีย",
+    "link": "https://news.google.com/rss/articles/CBMi5wdBVV95cUxQejRmTHdGcTdHY2pyNnZUQjlxaklFSmdweDd3OGdtU2pfel9JWEZGdUlfekotaDlUOWJUd3pCYzE4T3hvR2dXMUlmbEdkYnA3WG4xSzhidFpudUF4S1R3eFN3RU9hYjVpUTYxZnJjYXFDZGJZVEY0RXk4NEI2TEJEeTRfd0ZjenllNEtEV2pvSW50VlRuSkRXUWp3WWV3VmFKSmI3YlFjYm56aHdsR2FfRUxuSG1WaUlLTDRxS1VHbUV4S2VyYUZPRW1wbEV6SU4wc19YSnNOeGNxNHc2MERHRVFRTEY5b3dTcnVMUHlPZ0p1M290dDR6SUJ1NzRiOVViU2VGZWFLaTNYWDc5QWJ0RU9IZEZiN1pqbUx0MWhiODJ1NUd4OHlJR00zN2xEcEpwN3JJbEYyRGRHM1lKQXlfMF9YM3NqMFlRVG1Sb09nUndFVmJuNl81MDhyM0E5MUtGdFlER2lkY1lka2FqZ0VqaWU2S3l1bkxoNzAyVG1LbkZVaFZPd0M4WmpSemdSOXVFU29xUG11cXlpQWZIdDBfOFRBa2gxbHJEeVgxSEJuQnhacEIyZE5KZ2x6SkJyaklQd3BsTEdwZ0s4RjdaeVZwWm0wcjAtY0tJcko4S3FwbWprSElLXzBPUWJCT193WnpCTVd6QktBV0NlTGgzN0ZVc1pEYnVZbld5enJSNnRueGJ2R25oUU9sZUFSZDNTSldWZlNzTHFuTkUzbzQyaWtqaHFGeHhvQnpFZnlIUDVTaW42NVY4TF9QMWxHakFkSm1EVlprNjNrWnFnb0ZGcnNmR2h4SnhaT3pNcXdLWlplZGF5NG13ZUVMT25hN3NLQ2p5UDNObWN4Y2k2VzluYlJzSjU1UGhGWXJPMUQ3QlNjRWlrUUVnZ1pMS2lzbW9TQm1maVFSTDZkVXZfOUFxdG5kMkEtT25IU1NIUXh2N1lnb3dndUlDeUFmc1Iwci1WX2NUUUxvR0M0Y1VueW9ZZmZ1Skxsb0w0bmxseTFqUU16V0F4RzhtUzFUNDNqVzJuX21uTENaalZXRWxJMGl0YWlUcGw4ZlZiZHU2TVVUS0lCWmZXSTcydkxDb2RtQzZ4aXFfcGNidENnWVFyX3pTX21udTRCVmdBYm0wT3VZaUpmeUtIbGZpWEl6b0hGd1FQWmNRTVNKVlNPS3huWXNpWWRfNlJVeDdFa01QbU1WSlIwc3JpV0tEOGxUaThITGU1LXllb2JLX0h0a2tBSXd3dGhWQUxTSmFveHFMNGdqTGZNaUxRQnFuU3JjSXFKcHNDeHVkV1RvRUdTWFZsd3JFbXlKYVFaWGRvcVE?oc=5",
+    "source": "Facebook",
+    "date": "2026-11-05"
+   },
+   {
+    "title": "สงขลา | สวนสัตว์สงขลาจับมือปศุสัตว์เตรียมพื้นที่รองรับช้าง 4 เชือก หลังเจ้าของขอความอนุเคราะห์ใช้เป็นสถานที่พักพิงชั่วคราว 6 เดือน",
+    "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE4tc3FDTU1DWXg5S3dSNGN2cW5GVk5pWnV3NVB6THNveURIeUhmTTlSUXYzbkxrQ3JNa0I1aGZrLW4ydzUtZnI5RHJJTXFsWUUyNVJfY011TzFIdw?oc=5",
+    "source": "HATYAI FOCUS",
+    "date": "2026-11-05"
+   },
+   {
+    "title": "“หมูเด้ง” มีหลานแล้ว! สวนสัตว์เปิดเขาเขียวต้อนรับสมาชิกใหม่ ลูกพ่อหมูตุ๋น-แม่หมูมะนาว",
+    "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPZ0lqcDZQQ0lUTGJqMU1ELVhLX1VQd2lCeUNaTko5VkFyT0hzTXU2cDVrcUdRSUx4NGJBLXNWZldvNDRvRnduR2ZOWVR4Y0ljVnZmMGY0MG5SaGI1Qjl3X1BoWEFic0M0dlZPcS03MGhIU1dfS0huenlnZmxOdmx6THA5dDdFQjd3ZHc?oc=5",
+    "source": "pptvhd36.com",
+    "date": "2026-11-05"
+   },
+   {
+    "title": "หมาเฝ้าบ้านก็ต้องการโอเวอร์ไทม์",
+    "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBjMl9VLWxjWU5OVUNDblU1dnYyN3Rsc1E4V0FDQ1U0eUdMM0xPb0dlN1pVOWtPcHZvNlE3NlozZGViWGlhZEJHNlE3NmtIc1lmT1BZTGY4MXB6Y2JRV1BB?oc=5",
+    "source": "ผู้จัดการออนไลน์",
+    "date": "2026-11-05"
+   },
+   {
+    "title": "\"หมูเด้ง\" มีหลานแล้ว ต้อนรับลูกฮิปโปแคระสมาชิกใหม่ ทายาท \"หมูตุ๋น-หมูมะนาว\"",
+    "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBmZTR3QUVHcjNyME1fWWpOYWtCSWJuNEZ2bkxJY2xYejhJZFdUQ2NWTnViVmo0NGVVOXI3eURfZFJ2QWJSQl9hMVZUM3Y0c2plUGVIX3FkR0Z5UFE?oc=5",
+    "source": "thairath.co.th",
+    "date": "2026-11-05"
+   },
+   {
+    "title": "\"ทราย สมุทร\" เคลื่อนไหว ปมนากบุญทิ้ง ระบุ เข้าใจความโกรธ",
+    "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9aMkJtZEVLTjl6bFFKZENoZklPQzl6S0IzdzNnM0ZBaUtVSUwxNlVsbkhmaVdfS2pOaTliQS14THhoemcySmxUM1lSaW9ieEF4dFNYVS1aNEZuUQ?oc=5",
+    "source": "komchadluek",
+    "date": "2026-11-05"
+   },
+   {
+    "title": "ทราย สมุทร แจงหลังทัวร์ลง ปมนากบุญทิ้ง ยินดีโดนถล่ม ก่อนเปิดประเด็นถึงสวนสัตว์",
+    "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9RWk14QjRjV256alVXWjV1NzFwUnBvYVBRZ0w5U3NuTEt0TV9SWUREQndtd3NydENSU2hORURybWpYTU4zMEJDVVRhOXJzaTg?oc=5",
+    "source": "kapook.com",
+    "date": "2026-11-05"
+   },
+   {
+    "title": "ภาพสุดท้าย ‘นากบุญทิ้ง’ วันส่งมอบ แววตาเศร้ามาก ตายหลังย้าย 17 วัน",
+    "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9WTkJQOTFGN3hGVzNqRHdTRXFOdFZMNHFITzFWUE1rblJpeG45b1hBSFF4LTBTd3o4WjBRVk10dTNiQ2g4ZWt5UHVTX0Q4MVRI?oc=5",
+    "source": "Thaiger",
+    "date": "2026-11-05"
+   }
+  ],
+  "themepark": [
+   {
+    "title": "คิดถึงสวนสยามไหม? สวนสนุกในความทรงจำเตรียมกลับมาเปิดอีกครั้ง ที่เก่าเวลาเดิม 19 พ.ย. นี้",
+    "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1wSnA3TnN5YXRZb1RGd0NNa2NKR21aU0lNeTllY3hfZi1TaldZQTltNklrQVFGZFpBaXNTUnhIUS16S1RadjhZYTBzYXAyOTRjYmx2ZlNJVzBsR2U4NjR6WWRTdHVnT0NiczduNWdBTGxxUWhEUFVxMnY3aUU?oc=5",
+    "source": "Time Out Worldwide",
+    "date": "2026-11-06"
+   },
+   {
+    "title": "สวนสัตว์เปิดเขาเขียว ต้อนรับลูกฮิปโปแคระตัวใหม่ “หลานของหมูเด้ง” น่ารักน่าเอ็นดู ตัวชมพูตะมุตะมิ",
+    "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE85MGltQ3hjYS04b0x3enNERzdGOXVEeVZ5ZkJWVmZpa010WE5mdkRhNWxsSEZ4V2M4RVZjczRRbkNRR25fTUR2cDhLWW5fYXdIdnN0Ug?oc=5",
+    "source": "News1Live",
+    "date": "2026-11-06"
+   },
+   {
+    "title": "รวมภาพเทศกาลฮาร์บิน Harbin สวนสนุกน้ำแข็ง-หิมะ งดงามตระการตาและเย็นยะเยือก รูปที่ 8",
+    "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE82YS03M05HaE1kRjZOY1Y1VXFUZW9yLVRDUk1BQXJYTEpjUlI4TUJwVnR6ODRiSVluN3hRR0x6ZmhwRTRkaGw1cWZvUGNwd19SNm8wdlhad3NtQlBa?oc=5",
+    "source": "kapook.com",
+    "date": "2026-11-05"
+   },
+   {
+    "title": "ดรีมเวิลด์ จัดโปร พ.ย. 680 บาท เล่นไม่อั้น 25 รายการ พร้อมเครื่องเล่นใหม่ 'อันเดอร์เดอะซี'",
+    "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBSZEFaMUwzNzBhQXlYY0lTVTFsS2hhd1BzS1BnNjdyNXdzai1JSTg0SjJXQ2dTTG1LQkZmWnV6eXRmWGVtb2xjTVEwUW1LenlqdDZTT0VRQ1NzRG5NbzQxb2RtNGplZw?oc=5",
+    "source": "ข่าวสด",
+    "date": "2026-11-05"
+   },
+   {
+    "title": "ดรีมเวิลด์เปิดโปรโมชันราคาพิเศษ 680 บาท เล่นไม่จำกัดรอบตลอดเดือนพ.ย. พร้อมเครื่องเล่นใหม่ Under the Sea",
+    "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9udTZKbUw4Nlh4dF94RUNOaS1qOEVyUjQxS20tbDZxZkdoZG5hNUw0QUdpVVVPaGxCbjN3eTJUYXVfMDZrQmpGRFNBNmNUbmMzT0IzM2lubE11RzFUS0R6SEY5SmRXYnpINVJnWmhn?oc=5",
+    "source": "Head Topics",
+    "date": "2026-11-05"
+   },
+   {
+    "title": "‘สวนสยาม' ไม่ขอเป็นเพียงความทรงจำ เมื่อความผูกพันยังมีค่ามากกว่าการบอกลา",
+    "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFA3aXJOT1Z5UGtfcTdFZV9ld3U0dk1za2VKcTNXNHY1WVgtRUNPTmZrOG1hVnp3ZnV5bENYWHRrM2I0cDBPeHphSWJ2dkZ0TUlTUkIybjNvdnJYTF9aMzZZMjlvVDdQOS1YZkE?oc=5",
+    "source": "spacebar.th",
+    "date": "2026-11-05"
+   },
+   {
+    "title": "Disney เตรียมปลดพนักงานหลายพันคน เอาเงินไปลงทุนหนัง ซีรีส์ และสวนสนุก",
+    "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOY3A4elhaTEdSVkM5cVNjR2V5Q1NNbElfSUdzdFQ2eWp5YzlqdDBqLUxkV1kwMkh2NlF6SFhlenF0QWFMWDYzc0NUNDRmc2xIWEVQUHlGZVVPY2FxVHRvLXRiLVZodVh0ZE5KZnctWllyMVAyckIwMFIySlBabkVrQjBuQ24yRlFCc3VhNG9OVEVjdw?oc=5",
+    "source": "Brand Inside",
+    "date": "2026-11-04"
+   },
+   {
+    "title": "ชวนเที่ยวดรีมเวิลด์ สนุกจุใจ เล่นแบบไม่จำกัดรอบ 9 - 30 พ.ย.นี้",
+    "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5ENWxTWHpsdGlkcGZ2dTNSOVR3RkYxS2twbEY3ZjM3WjZscTU1VG5CQ0swOEdjSEVaU0I2TXEyeHl6WERDbWdaZ0N1QmVBbjdObFAzeFFRcktBX0lC?oc=5",
+    "source": "banmuang.co.th",
+    "date": "2026-11-04"
+   },
+   {
+    "title": "โซเชียลอาลัย \"เจ้าบุญทิ้ง\" นากแสนรู้ อยู่สวนสัตว์สนามจันทร์ 6 ปี ถูกย้ายคอกไม่ถึงเดือนตาย",
+    "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFBza0VseEVjWFk5aE1IdXhlWGR2Q3dvTENXSjgzQUszT0ZlckFtMEFPYVlkN3BsZXJJU2pITFNVQVFiazNPU3ZmNEgyeDk?oc=5",
+    "source": "Sanook",
+    "date": "2026-11-04"
+   },
+   {
+    "title": "ขอแนะนำจุดชมวิวอีมุ | สวนสัตว์อุเอโนะ",
+    "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9KZnNPZi1Gd1JuV1FhaUsxNjE1eEhXUlBJWE9SaFhjQXVFRzZLU0tDSndRdS1vUTRCU2VzcFNEQ3k2cUI4d0RaTVlHRWk1RVp2LUdiUUN6dWFmUUZzV1RuSjVtWUREdw?oc=5",
+    "source": "東京ズーネット",
+    "date": "2026-11-04"
+   },
+   {
+    "title": "แอสเซทไวส์ รุกตลาดแนวราบ เปิด 'Blessini–Wise House' เสริมมิกซ์ยูส Wise Park รังสิต",
+    "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE00MFc3b0Z4QlZqcURIcHlVUGlMalJjQTZramRQcTRlRjlHTHBWRXdSZUx5SXVUS1pQMGI2YWVuY2VDWTBQZHk4Yl9JYmNEdkx5aEs0eTBUb0p6azlPQmxOOWdENjBZY2lrdUE?oc=5",
+    "source": "bangkokbiznews",
+    "date": "2026-11-04"
+   },
+   {
+    "title": "ย้อนเส้นทาง “สวนสยาม” เสียหาย 500 ล้าน เปิดทางขายกิจการ 1 หมื่นล้าน ก่อนประกาศเปิดอีกครั้ง 19 พ.ย.นี้",
+    "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBqMGctOGZiVUd3QUpDOF9xZ1BCM1htdlhjcEk0LWdsS0xRMDR5Qm5jMnliRnNXT0ZLWXRGejg5NXliR2taeEtRWTNWYVNHLWs5bVR3QWhn?oc=5",
+    "source": "THE BETTER",
+    "date": "2026-11-03"
+   }
+  ],
+  "museum": [
+   {
+    "title": "‘คิระ’ นากทะเลที่พิพิธภัณฑ์สัตว์น้ำโทบะ ตายแล้ว ทำให้ญี่ปุ่นเหลือนากทะเลตัวเดียวที่อยู่ภายใต้การดูแล",
+    "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBzMjJVUHh5U1AtcTlQT2plS0t4ZUpPckZEQnIwSzBCOUN6aVp6eHY0Q0Q5NWRqUVU5dk14YjMxOHJ2UnRfQ1pfODdBWjN3Z3h0SUFTdUZkZXhPbGs?oc=5",
+    "source": "Matichon Online",
+    "date": "2026-11-06"
+   },
+   {
+    "title": "สถานที่ทางวัฒนธรรมริมแม่น้ำหอมเป็นที่นิยมของนักท่องเที่ยวจากทั่วโลก",
+    "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQNGI0ZWQwR0tPTy1RNUQzR0pINGJrXzlGMUtOU3Y4T05NRXdMU3ZubGZ2NElnU3NSbnhKd0w5dmp4alpfeEdxSHVqbGtkYk1UeWVqNW96aUNWekc5am5nUG1OY2E0Smx6MkR1ZzBjUnNjLWhnT0J1b1dCaWpjM2JpWXdzRnlOdDYya2NLMmpvWmxRZkFRZ0E?oc=5",
+    "source": "Vietnam.vn",
+    "date": "2026-11-06"
+   },
+   {
+    "title": "สถาบันจาโคเมตตี: นิทรรศการ Sortir du bois เปิดให้เข้าชมฟรีในวันหยุดราชการ 11 พฤศจิกายนนี้",
+    "link": "https://news.google.com/rss/articles/CBMilwJBVV95cUxNWDBjSFV2MXdHNzMtRE5wdU9BNGtKYmlLQTM1UW1LQ01LTVdpSW1tZ0FVYU9MZFVfblJFQWhKbV91ckZDZkJsNnhTRl9PWDNjVFdoMDVrejZPQ0JReEk1cm9tZnpJMVpCbjkxclYxUE14eGFpNVRicm8yalNwMnMxbEUyVTRvcEpyaWFyOUI5ZHB5NEVDS3dJaFVCa2hLM0lnTk96dW5kWGtpSnlfS3NpZElnY0JnRXpxZ3YzNElWc1l3UjV3S3c4bzdFeUVhZ3A5TkZDZW1HMnRhSk9OU0FaUW9IWFRqT3BWaVBoZ0hvRkppaTJwYXpnalpocFZQZ21EdXpCUGdzTHJlNG1ZQzhiSDhDVVprRFE?oc=5",
+    "source": "Sortir à Paris",
+    "date": "2026-11-06"
+   },
+   {
+    "title": "\"สีเคลือบเงาของเรา\" - การรวบรวมงานศิลปะเคลือบเงาอันเป็นเอกลักษณ์",
+    "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPYkZXb3FZbFM4X0hWRHc4Ml8zRnBjNE16UWU4MjJ4MHdaMVpfaks4bGtTclZYWlF1dWFKQ2thSENRa2lFTnZDTmxyVjhxcFJMd0ZXQWRSSGRKYlJOR2RvRUZ2Qkd5Rjk0RXg3ZFR6LWpuQ0FKVHZXSjU1YzZJYS1HVjJYeGhfRVU?oc=5",
+    "source": "Vietnam.vn",
+    "date": "2026-11-06"
+   },
+   {
+    "title": "Met Gala 2027 เปลี่ยนธีมนิทรรศการเป็น ‘ExtraOrdinary: Fashion and the Poetics of the Everyday’",
+    "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5CY1hqeV9USi01YUVEcVdZbXQzM3BIQURLSHBVWWhFU1FobmFuZXBNNnlyZFpqMTZNWHYxVmgyQlFlaktJbTNqRTQ2S3hpSm9pS3ZtMDBuMkRvZklXQTBFSDA2SnUwZFRnVnhFVw?oc=5",
+    "source": "Head Topics",
+    "date": "2026-11-06"
+   },
+   {
+    "title": "RM วง BTS ช่วยให้พิพิธภัณฑ์ SFMOMA ขายตั๋วเพิ่ม 66,000 ใบ หลังไปเป็นภัณฑารักษ์นิทรรศการ",
+    "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE16b0RKTWtCNHlkNnYzVTdBQXdiSHNYT0JabnlzT1E3el84LXNPLVlsblZfcWdidXNwMUFMN2F2TTB0ako4SENaTXJKWU9CU05tX0w3UlRrbVpCdnRxRE9F?oc=5",
+    "source": "thestandard.co",
+    "date": "2026-11-05"
+   },
+   {
+    "title": "‘ซาบีดา’ จับมือ ‘ประเสริฐ’ ดันชุดไทยเข้าหลักสูตร เล็งเปิดพิพิธภัณฑ์ให้เด็กเข้าฟรี",
+    "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE0wS3NiWlpEalh3eEtieGhkWUJlSVRibUFNdE0yS21paVlTMmZWb0x0aEdZbkpOaGFEeDJmcFY2MXVSYVYxWWV6TUw0R2hBT2RtYXgzUDQwSWlJdw?oc=5",
+    "source": "Thaipost.net",
+    "date": "2026-11-05"
+   },
+   {
+    "title": "ศธ.–วธ. หารือใช้พิพิธภัณฑ์และชุมชนเป็นห้องเรียน ขยายความร่วมมือ 5 ด้าน",
+    "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1sLWNRS3piSUdqRXRTY0pHay1rbk10cjYwUkVEUEt6QUxzRkNmNHVGcnZUNjVaWXF2QXBwRWxvSE4wU0ZEU2JVUjdudGhCaGNKZDU4WnBtemZjcG4zcmNlNg?oc=5",
+    "source": "www.thereporters.co",
+    "date": "2026-11-05"
+   },
+   {
+    "title": "นัดหยุดงาน 5 พ.ย.: หอไอเฟลปิด พิพิธภัณฑ์ลูฟวร์และพระราชวังแวร์ซายได้รับผลกระทบ",
+    "link": "https://news.google.com/rss/articles/CBMigwJBVV95cUxOckRLSzdNRnhEMVdyREk2Uk9qQnp1NUxIbkcyS3ZjWlNEb3hiNHVXaG9UTEptTXplbGhjcVB3RWlZR2haYXZVcVhtMnZJYnBIT3ZuQUtYVHNKRmJJWGhPcHg3SDFRQTlSekFlamltNHRuZ0NFSVlkcVptNDZCaUJRU290QVdoRy1MWml4ZmJfanhUU1hhcng4ZVZ0UXR1RHN2OEFfSGpQOUthemdXaUlBQjlzblZaTFVRYTBSdFIxTE5CTDlRT055bWNUcExDdm9ZWFVVSk0wOFpfZHZ5SUJaLTlhVU5EY3c5VldaSjR0WVRfOFlVT3p6MUhhY0R5SUczeW5N?oc=5",
+    "source": "Sortir à Paris",
+    "date": "2026-11-05"
+   },
+   {
+    "title": "ใช้เวลาสุดสัปดาห์กับครอบครัวที่พิพิธภัณฑ์ Carnavalet พร้อมกิจกรรมฟรีสำหรับเด็ก",
+    "link": "https://news.google.com/rss/articles/CBMikwJBVV95cUxOTTVqdm1HM1A3Qlk4OE5kLWRHRjhuZ3p5U211Ml9SVFRHblpuOGh2WDhIYVRVVG0ybnVUMnVDUFM5ZU5Sd19XeWRZbnlBMnVqS1pnRHF2WGRONVJNQTk1Vy1oVkhDS1NjY01BdURYRDIyTkNFVXV2Tm80YXptSk5OczZ3dER0Z1dEN292VmtvSkQxUzhnSVcxR1c4MVAyMUZsUlVxOUFyVmdWbGVpTk9JX2lKakJ1ekQ4d1Raa3hqcHZyc3hsazJnazFrbkpWSFlWeEl1RktMaFpJZk9fcXJpVk5mVTBaYVAwZFU2M0phRkQwcFRBa2NGMHFPYmE1MDdydHY1Y0szUEtYQjM1SExkVV9CWQ?oc=5",
+    "source": "Sortir à Paris",
+    "date": "2026-11-05"
+   },
+   {
+    "title": "ปักหมุด 8 นิทรรศการศิลปะในกรุงเทพฯ พฤศจิกายน 2569 ชวนพักใจไปเดินดูงานศิลป์",
+    "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQNDZHOTJERmZYZHU4eFV4SmZ1V3JDQl9VaTR2cVMwMjRTa2Jjd1lUR3hPU3RPZG5oTC1wc2RQOHo5emtkUkFVQnZmWXo0YjcydjFDNVA2Y3BjNVVXMFR6R2ZrdWU0YW5NVmtFRjBiSDRvNU5scmRZOUI2Y0JHNTZsQg?oc=5",
+    "source": "Inzpy",
+    "date": "2026-11-05"
+   },
+   {
+    "title": "สังคมโลก : ภัยพิพิธภัณฑ์",
+    "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1JRVQ4dWtLRHVsd0QyOWpfRkUxT2lXczhkMXNRVl9JMzhsZ253NDhna0RTMmRmZW1qTEdidy1Xdm00bVBrb2xjM1ZwZldQeFZSTzFqaHZuUzA?oc=5",
+    "source": "เดลินิวส์",
+    "date": "2026-11-04"
+   }
+  ],
+  "park": [
+   {
+    "title": "UPDATE: ‘สุชาติ’ ชื่นชมเจ้าหน้าที่ชุดเคลื่อนที่เร็ว เร่งช่วยชีวิตลูกช้างป่าติดอวนกลางน้ำคลองพวาใหญ่ จันทบุรี ก่อนพากลับคืนสู่อ้อมอกแม่และฝูงอย่างปลอดภัย วันนี้ (6 พ.ย. 69) นายสุชาติ ชมกลิ่น รัฐมนตรีว่าการกระทรวงทรัพยากรธรรมชาติและสิ่งแวดล้อม เปิดเผยว่าได้รับรายงานจากนายยงยุ",
+    "link": "https://news.google.com/rss/articles/CBMi0gdBVV95cUxOQThDWnloWjN5M29uUkx6MjgxX3lxQ0lPWFIyT2Rscmk5RHZVT3U0YVBJS1NvOWVPSDhKVnBSOVVEMVNyeS1pWmc1LW82YTEwbkN6UV84SWxqeGM1Y3V5OVg0eW5SY1l4cDlsY1l6RnRRYW9ISjNHdVlLRi1sN0lDREx5d0QzdVV3Z045Nk5IbnRXY0dQM2x3TEdoLWo4OXR5LTB1Um5MbHFNa1NTVjNnanloSUJ5SWJqUE5vZmNEQWc5RE9ySVdVdHVrdmNGQzJ5Q21sSy1fLTFTbzNaTkhraWdsOWY0dVpYM3NpNmlhM29CRExFMTlsMUxTQlZNbDdOUEtFUkFwclZFNkE2MldtU0huZTRTVmZJZHFLNVVGZkZnX0JEYjFISHlPSFFPUFc0OXFvdUQ3b1d6Tk5ZVUJscV9zaGRXRkZoNFhlY1BXbWp6dGVhWjVmWGNrMWpiZWU4c1JYTzFqTUtCZXBVZWU3NUJrZ0lVUGd0OXZxRVU3WnNDcXBJYm1ZVUpNMFVaU05DX05ycWV3Y1hVODctRlFjdTVpcmw3eloxR0N3cHZaTGcwTjVDem5sVE1LWmRxenozYUp4ODNZVnBEV3gtNm0wUllmcnczN1VpT3V5LVdmd05jQmxkNG9uTElxNUFlaTVIWXhOS0xSNUZLTi1zS2pwNzlfeFF5ZzFDTWVfdXhBTGdjeW5aem4yU1d4YWlzY20tRmFhdTJQWm44YUtyWUFxWjZ0bTlkTG14b0RaX0xHVXdrTWRtbms1b2tGaHljTHNWTEN0ZV94VVJvanlTNmxUMENZX2F6X0kzUXU4M0pMU1g1WmV2RVZLVWh5Sm1oQVdqdnBsOUxFdUNmdXRvSjdiYU5DS1g0aVZBbzJubjRrOUhCdWh0UHpVTDI4a3Y3d2VPcU00Q1djRENfbDBNUktCTlZBUjY0TWdxMkNJaGE4MWdxdXd2UHpQM3JlendCWmo2Q0lMRlNxWGFxdFFSSVdjaWlHWXFjSVRnYngyTUFkdzN0ZUNnLUpxOHZmUTNCbnByX09sOU9XQ0lGQ1JXa2UyTno1R1ZrS2pzb0x3eEJiRTVIZFc2ZGZmb0M2MFlUZENQOWFCTFhRMnJ3NmtJR2MxWXdYYzNvMEl2MTg2SnVmWlowblV3VnpQVFUzeUNheWhRSks0ODhzRGM4VnBVZWRueDBnemx3eWZHZXlPbDVUendEcVF4V3lQc3BPeTd4RkN6bGNtMDVtRTc2amI2SkJYSlc4LWVpdDktZk01Ri1Edm44M0xfeG9EMWtBSmZPY2VVTGc?oc=5",
+    "source": "Facebook",
+    "date": "2026-11-06"
+   },
+   {
+    "title": "นิทรรศการภาพถ่ายเกี่ยวกับอุทยานแห่งชาติแคทเทียน",
+    "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBsMDJtOXdxSGJmY1F3RDctWVdLT2ZxbkREYUtPR0VFRDhwX1RSYTExWFA1bXd3RHpTbVlLdUJVa29xdG9wRVNmLU1GTl9iUkROT3NNaU05VENBRlBmSXRzbTNVYWVSb28zYWVIMDRUWHAyM3c?oc=5",
+    "source": "Vietnam.vn",
+    "date": "2026-11-06"
+   },
+   {
+    "title": "การพัฒนาอุทยานแห่งชาติแคทเทียนให้เป็นแหล่งมรดกทางธรรมชาติของโลก",
+    "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQbUM4OGUycjh5MFhydGVBTDJEVXV4OTQ1YW83aWhITU9ta05KNE9DeDN4RXZlclhpUEpCdFJnM2RkRS1Nc1prVXVmbG5wRnJtcVQ1Zm1KaGJUUkJMbGpNeGNJT3JiUU1vWXdxdjJTMnJsaTFHTDhkbnNZdUt2YzNlbERJQ3l5dTBvYXBKY0ZOQVFXQTZCbW05Qkt4cw?oc=5",
+    "source": "Vietnam.vn",
+    "date": "2026-11-06"
+   },
+   {
+    "title": "GISTDA ผนึกกำลัง ศรชล. และอุทยานแห่งชาติหาดนพรัตน์ธารา–หมู่เกาะพีพี ตรวจสอบวัตถุต้องสงสัยคล้ายชิ้นส่วนอวกาศ บริเวณเกาะไม้ไผ่ จ.กระบี่",
+    "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5mWUt3SmlrZmFHbEV3TkFoVVJTY1Z0VHR6YnhOMGlIdW5HYjByUC13MV9EeG1vX2pVVm5rZGZyLXpGUFcwTjlhdGU0RUVxd2R6VjVB?oc=5",
+    "source": "banmuang.co.th",
+    "date": "2026-11-06"
+   },
+   {
+    "title": "ประกาศมติของนายกรัฐมนตรีเรื่องการโอนอุทยานแห่งชาติแคทเทียนให้แก่คณะกรรมการประชาชนเมืองด่งนาย",
+    "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNR3hzUm1UX0h1ZHBsd0JWT1l1UVFLbmRYQllDZVZYNlg3X2RQT3E5bThvVVBUMGhSRFI1Yk0tNGZGdTNJZ1NOU08yVWx6c3NRWXpOR1JXNFkzd2dJM3BJSGtub0tkcEtfcjAtX2lXY282RlVDMmswOC04cGdjYnQ4MkNIVVlZV25SZU5peXlnXzNqV3dIRHZZd1BMRk83UVEwR3RLb19MVGRpZ1k3WTJGclVjbkVLMDdiM0F1eGtNc1pSSVphV09KeWVB?oc=5",
+    "source": "Vietnam.vn",
+    "date": "2026-11-06"
+   },
+   {
+    "title": "จังหวัดด่งนายเข้ารับช่วงดูแลอุทยานแห่งชาติแคทเทียน และเตรียมเอกสารเพื่อยื่นต่อองค์การยูเนสโก",
+    "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNWlc2bkNhRy1MdFhLMWI5WjZmbzM4eG9GUk5NVlRJZm1Ya2lvbUJQYWliZ3lRVmxOcW9HTFc5anRTNmdNQUtNV3l2TFA3YmdXNWFqRXVHNmVCU2lDcFNOZmtNRTFDRk93aXlNLURLR01ZSlVtUkNJNkhJWXVHdmF5YTFoLWgwVWNfOUt4allFd1JFdmNCMmdWS3hBQQ?oc=5",
+    "source": "Vietnam.vn",
+    "date": "2026-11-06"
+   },
+   {
+    "title": "เปิดเส้นทางศึกษาธรรมชาติ “ทุ่งหญ้าห้วยคมกฤต” ดันท่องเที่ยวเชิงอนุรักษ์ป่าแก่งกระจาน",
+    "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1oQXc5QUhqZTc4UTRnUXY2NGlFb2pBYnhGNzZyWDY4MzJVRTBrRExCVENqSk9SaC1lUWhZSXlZYUVGVDk0Q290OG9tMjFsTG1CbzlBX2RPM0t4eUFYdHc?oc=5",
+    "source": "ผู้จัดการออนไลน์",
+    "date": "2026-11-06"
+   },
+   {
+    "title": "จังหวัดลำดงร่วมมือกับจังหวัดด่งนายในการบริหารจัดการอุทยานแห่งชาติแคทเทียน",
+    "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQMlI0ZmFwN04tbVloT0N1TmVTQUVhUGhvdzFsSl85VF9TemVoYXJWT1o0SWhhaWt0YTVTT1RxR0hSZzhLa2kzdDlfMkNYSTVNSjFoYmdXRTR1Y0x4YmY3NGIxd3NKUjBvcElOTzlKaVlaZlhrSnlOMy1VRFRPNkxibEw5MjBvWmROeXRIMElsSFQ?oc=5",
+    "source": "Vietnam.vn",
+    "date": "2026-11-06"
+   },
+   {
+    "title": "อุทยานแห่งชาติแก่งกระจานเปิดโครงการท่องเที่ยวชมสัตว์ป่าทุ่งหญ้าห้วยคมกฤต เริ่ม 1 พ.ย. 2569",
+    "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5zVTcwV1laZUZBS182NmoxcUhCR29uX1N6TjYzOC16alliSnZneUtTazR3VF9oNklnZk9TS3VJWDZrUjRzZTRFdTk0aEY2NWNieTJaUGI2ZngtNWpwUFNUdkRGMkRHUU50VmJhc2xB?oc=5",
+    "source": "Head Topics",
+    "date": "2026-11-06"
+   },
+   {
+    "title": "คาดว่าปฏิบัติการส่งตัวกลับประเทศระยะที่สองจะแล้วเสร็จในเดือนพฤศจิกายน ณ อุทยานแห่งชาติเลธิเรียง",
+    "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNWS1pdUFIcFhsNFlUZlRjeTdHTUhEc0QwVExSWHlLc2M0LVByb2NmaEtmZWZTUGVpYXBPb1ZNSXBwMktLZTNiMndUVWpvSEpqdG14UjZxZXZmaG5KdTRHX2dOWHk4ZlYtczJpcGZkdU0teU9nYUJhb3FpZ012eWVYR1c0ZERiSVNwdFBpN1F1ejFkdTNoelRSV3l5ck5uZmxnWFE?oc=5",
+    "source": "Vietnam.vn",
+    "date": "2026-11-06"
+   },
+   {
+    "title": "จังหวัดด่งนายจะเสนอให้องค์การยูเนสโกรับรองอุทยานแห่งชาติแคทเทียนเป็นมรดกทางธรรมชาติของโลก",
+    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNQXVHcjk3VFRPX3p0SGNKOU9uMk81Q3RwODNCdFNjcXVEaWVCTTJFTDhQbXlqNEg2Y3ZtODV2M1dkU0dPZ3VDamUxSEZaYzFUbmNCcmxnN0d1RmZSaG5sTzk5UlFiVXpQSHIwWm5FczdtcVdPU0hSaUtBcXM5akFrUDY5VFBCTlRoVVMwS2FmOGRWR2hMU1FhTGJqWFpOS1pVVFd5Vm1mOGoySUdpNktwYVhrVEdVbFE?oc=5",
+    "source": "Vietnam.vn",
+    "date": "2026-11-06"
+   },
+   {
+    "title": "ลาวไคประกาศจัดตั้งคณะกรรมการบริหารอุทยานแห่งชาติบัตซัต",
+    "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQdWRrNktpVlBYSWNJaU9FQzVVcThUMEpmc3Jmd2o2S0JwUlRyMnJjUUJOQVRMelBwV1MzcWdlRGduZ0RRbU5LWXBSZEJEOVJpenE1UGVJYlJxVXo2b1BRbVJJU3dDRVVjcjdBS2ZiZXhUbFVVbzVEb09uTDg2bEpMZVBoeUR6UVA5cWVBWFNR?oc=5",
+    "source": "Vietnam.vn",
+    "date": "2026-11-06"
+   }
+  ]
+ }
+}

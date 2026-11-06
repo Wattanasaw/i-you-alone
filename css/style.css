@@ -83,7 +83,7 @@ button, input, select { font: inherit; color: inherit; }
 
 .bottomnav {
   position: fixed; bottom: 12px; left: 12px; right: 12px; z-index: 30;
-  display: grid; grid-template-columns: repeat(4, 1fr);
+  display: grid; grid-template-columns: repeat(5, 1fr);
   background: color-mix(in srgb, var(--surface) 85%, transparent);
   backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
   border: 1px solid var(--border); border-radius: 24px; box-shadow: var(--shadow);
@@ -170,6 +170,36 @@ button, input, select { font: inherit; color: inherit; }
 }
 .cat:hover { transform: translateY(-3px); box-shadow: var(--shadow); }
 .cat.active { border-color: transparent; background: var(--text); color: var(--bg); box-shadow: var(--shadow); }
+/* หมวดแบบกะทัดรัด: ตารางเห็นครบทุกหมวด ไม่ต้องปัด/เลื่อน */
+.cats.compact { grid-auto-flow: row; grid-template-columns: repeat(4, 1fr); overflow: visible; gap: 8px; margin: 14px 0 4px; padding: 0; }
+@media (min-width: 640px) { .cats.compact { grid-template-columns: repeat(6, 1fr); } }
+@media (min-width: 1000px) { .cats.compact { grid-template-columns: repeat(11, 1fr); } }
+.cats.compact .cat { padding: 8px 3px 7px; border-radius: 14px; gap: 4px; font-size: .68rem; min-height: 68px; word-break: break-word; }
+/* มือถือ: หัวเว็บกะทัดรัด หมวดหมู่จะขึ้นมาเห็นได้เลยโดยไม่ต้องเลื่อน */
+@media (max-width: 640px) {
+  .hero { padding: 18px 16px 16px; margin-top: 10px; border-radius: 22px; }
+  .hero .eyebrow, .hero p { display: none; }
+  .hero h1 { font-size: 1.45rem; margin-bottom: 12px; }
+  .hero-row { margin-top: 8px; }
+  .stats { margin-top: 10px; gap: 6px; }
+  .stat { padding: 6px 10px; font-size: .78rem; }
+}
+.cats.compact .cat i { width: 34px; height: 34px; font-size: 1.1rem; border-radius: 11px; }
+.cats.compact .cat:hover { transform: none; }
+.section-head { scroll-margin-top: 76px; }
+.cats.compact .cat small { display: block; opacity: .6; font-size: .65rem; }
+/* หน้าที่เที่ยว */
+.places-row .province-select { color: var(--text); background-color: var(--surface); border-color: var(--border); }
+.places-cats { grid-template-columns: repeat(4, 1fr); }
+@media (min-width: 640px) { .places-cats { grid-template-columns: repeat(7, 1fr); } }
+.trend-board { margin: 14px 0; }
+.trend-board h2 { margin-bottom: 0; }
+/* บอร์ดเทรนด์: การ์ดข่าวเล็กแบบปัดซ้าย-ขวา หัวข่าวยาวตัดที่ 3 บรรทัด */
+.trend-board .news-list { margin-top: 8px; display: grid; grid-auto-flow: column; grid-auto-columns: min(78%, 300px); gap: 10px; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; padding-bottom: 4px; }
+.trend-board .news-list::-webkit-scrollbar { display: none; }
+.trend-board .news-item { scroll-snap-align: start; margin: 0; }
+.trend-board .news-item h3 { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; font-size: .9rem; }
+.place-sum { margin: 6px 0 0; font-size: .85rem; color: var(--muted); line-height: 1.5; }
 
 /* ---------- filters ---------- */
 .filters { display: flex; flex-wrap: wrap; gap: 8px; padding: 4px 0; align-items: center; }

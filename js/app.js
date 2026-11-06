@@ -12,6 +12,7 @@
     saved: new Set(readLS("saved", [])),
     lang: pickLang(),
     newsCat: "all",
+    places: [], trends: {}, placeCat: "all",
     pos: null
   };
   // จังหวัดที่จำไว้ไม่ถูกต้อง (เช่น ค่าว่าง) → กลับไปทุกจังหวัด
@@ -152,13 +153,16 @@
     } catch { return fallback; }
   }
   async function load() {
-    const [events, venues, ads, news, auto] = await Promise.all([
+    const [events, venues, ads, news, auto, places] = await Promise.all([
       getJSON("data/events.json", []),
       getJSON("data/venues.json", []),
       getJSON("data/ads.json", []),
       getJSON("data/news.json", { items: [] }),
-      getJSON("data/auto-events.json", { events: [] })
+      getJSON("data/auto-events.json", { events: [] }),
+      getJSON("data/places.json", { places: [], trends: {} })
     ]);
+    state.places = places.places || [];
+    state.trends = places.trends || {};
     // งานที่ดึงอัตโนมัติ + งานที่ใส่เอง: งานใส่เองที่ id ตรงกันจะทับงานอัตโนมัติ, hidden: true = ซ่อน
     const manualIds = new Set(events.map(e => e.id));
     state.events = [...events.filter(e => !e.hidden), ...(auto.events || []).filter(e => !manualIds.has(e.id))];
@@ -287,10 +291,13 @@
       </article>`;
   }
 
-  function provinceSelect() {
+  // counts = { จังหวัด: จำนวน } · ไม่ส่งมา = นับงานที่ยังไม่จบ
+  function provinceSelect(counts) {
     const f = state.filters;
-    const counts = {};
-    state.events.forEach(ev => { const p = provinceOf(ev); if (p && status(ev).key !== "ended") counts[p] = (counts[p] || 0) + 1; });
+    if (!counts) {
+      counts = {};
+      state.events.forEach(ev => { const p = provinceOf(ev); if (p && status(ev).key !== "ended") counts[p] = (counts[p] || 0) + 1; });
+    }
     const byName = (a, b) => provName(a.id).localeCompare(provName(b.id), locale());
     const withEvents = window.PROVINCES.filter(p => counts[p.id]).sort(byName);
     const others = window.PROVINCES.filter(p => !counts[p.id]).sort(byName);
@@ -331,17 +338,17 @@
           <button class="stat" data-quick="weekend"><b>${upcoming.filter(e => matchesWhen(e, "weekend")).length}</b>${t("statWeekend")}</button>
         </div>
       </section>
-      ${hasSample ? `<p class="notice">${t("sampleNotice")}</p>` : ""}
-      ${featured.length ? `
-        <div class="section-head"><h2>${t("mustSee")}</h2><small>${t("swipe")}</small></div>
-        <div class="rail" id="rail">${featured.map(card).join("")}</div>` : ""}
-      ${adSlot("home_top")}
-      <div class="section-head"><h2>${t("categories")}</h2></div>
-      <div class="cats">
+      <!-- หมวดหมู่อยู่ใต้ช่องค้นหา เห็นครบทุกหมวดโดยไม่ต้องเลื่อน -->
+      <div class="cats compact" role="group" aria-label="${t("categories")}">
         ${catTile("all", "🌈", t("catAll"), "#ff7a45", "#7b2ff7")}
         ${C.categories.map(c => catTile(c.id, c.icon, catName(c), c.color, c.color2 || c.color)).join("")}
       </div>
-      <div class="section-head"><h2>${t("allEvents")}${f.province !== "all" ? ` · ${esc(provName(f.province))}` : ""}</h2></div>
+      ${hasSample ? `<p class="notice">${t("sampleNotice")}</p>` : ""}
+      ${featured.length && f.cat === "all" ? `
+        <div class="section-head"><h2>${t("mustSee")}</h2><small>${t("swipe")}</small></div>
+        <div class="rail" id="rail">${featured.map(card).join("")}</div>` : ""}
+      ${adSlot("home_top")}
+      <div class="section-head" id="resultsHead"><h2>${f.cat !== "all" && CAT[f.cat] ? `${CAT[f.cat].icon} ${esc(catName(CAT[f.cat]))}` : t("allEvents")}${f.province !== "all" ? ` · ${esc(provName(f.province))}` : ""}</h2></div>
       <div class="filters">
         <select id="when" aria-label="${t("whenAll")}">
           ${opt("all", t("whenAll"), f.when)}${opt("today", t("whenToday"), f.when)}${opt("weekend", t("whenWeekend"), f.when)}${opt("week", t("whenWeek"), f.when)}${opt("month", t("whenMonth"), f.when)}
@@ -374,10 +381,13 @@
 
     const q = document.getElementById("q");
     q.addEventListener("input", () => { f.q = q.value; renderResults(); });
+    // กดหมวด → แสดงเฉพาะหมวดนั้น แล้วเลื่อนไปที่รายการงานให้เลย
     app.querySelectorAll("[data-cat]").forEach(b => b.addEventListener("click", () => {
-      f.cat = b.dataset.cat;
-      app.querySelectorAll("[data-cat]").forEach(x => x.classList.toggle("active", x === b));
-      renderResults();
+      f.cat = f.cat === b.dataset.cat && f.cat !== "all" ? "all" : b.dataset.cat;
+      const y = window.scrollY;
+      renderHome();
+      window.scrollTo(0, y);
+      document.getElementById("resultsHead").scrollIntoView({ behavior: "smooth", block: "start" });
     }));
     ["when", "price"].forEach(id => document.getElementById(id).addEventListener("change", e => { f[id] = e.target.value; renderResults(); }));
     document.getElementById("ended").addEventListener("change", e => { f.showEnded = e.target.checked; renderResults(); });
@@ -621,9 +631,179 @@
 
   function renderSaved() {
     const list = state.events.filter(e => state.saved.has(e.id)).sort((a, b) => a.startDate.localeCompare(b.startDate));
+    const places = state.places.filter(p => state.saved.has(placeKey(p)));
     app.innerHTML = `<div class="page"><h1>${t("savedTitle")}</h1>
-      ${list.length ? `<div class="grid">${list.map(card).join("")}</div>` : `<p class="empty">${t("savedEmpty")}</p>`}</div>`;
+      ${list.length ? `<div class="grid">${list.map(card).join("")}</div>` : places.length ? "" : `<p class="empty">${t("savedEmpty")}</p>`}
+      ${places.length ? `<div class="section-head"><h2>🗺️ ${t("savedPlaces")}</h2></div><div class="grid">${places.map(placeCard).join("")}</div>` : ""}</div>`;
     bindSave(app, renderSaved);
+  }
+
+  // ---------- ที่เที่ยว ----------
+  const PCAT = Object.fromEntries((C.placeCategories || []).map(c => [c.id, c]));
+  const placeKey = p => "place:" + p.id;
+  const placeName = p => p.name?.[state.lang] || p.name?.th || p.name?.en || "";
+  // คำอธิบาย: ภาษาที่เลือก → ไทย → อังกฤษ
+  const placeSummary = p => p.summary?.[state.lang] || p.summary?.th || p.summary?.en || "";
+  const placeVenue = p => ({ name: placeName(p), address: p.address, province: p.province, lat: p.lat, lng: p.lng });
+  // เวลาเปิดแบบ OpenStreetMap ("Mo-Su 09:00-18:00") → อ่านง่ายขึ้น
+  const DAYS = { th: { Mo: "จ.", Tu: "อ.", We: "พ.", Th: "พฤ.", Fr: "ศ.", Sa: "ส.", Su: "อา.", PH: "วันหยุดนักขัตฤกษ์", off: "ปิด" },
+    en: { Mo: "Mon", Tu: "Tue", We: "Wed", Th: "Thu", Fr: "Fri", Sa: "Sat", Su: "Sun", PH: "public holidays", off: "closed" },
+    zh: { Mo: "周一", Tu: "周二", We: "周三", Th: "周四", Fr: "周五", Sa: "周六", Su: "周日", PH: "公共假日", off: "休息" } };
+  const fmtHours = h => {
+    if (!h) return "";
+    if (h.trim() === "24/7") return "24/7";
+    const d = DAYS[state.lang] || DAYS.th;
+    return h.replace(/\b(Mo|Tu|We|Th|Fr|Sa|Su|PH)\b/g, m => d[m]).replace(/\boff\b/g, d.off).replace(/;\s*/g, " · ");
+  };
+  const feeText = p => p.fee === "no" ? t("feeNo") : p.fee === "yes" || p.charge ? `${t("feeYes")}${p.charge ? ` (${p.charge})` : ""}` : t("feeUnknown");
+  const inPlaceProvince = p => state.filters.province === "all" || p.province === state.filters.province;
+
+  function placeCover(p, cls = "cover") {
+    const c = PCAT[p.kind] || { icon: "📍", color: "#888" };
+    const img = /^https:\/\//.test(p.image || "")
+      ? `<img class="cover-img" src="${esc(p.image)}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var c=this.nextElementSibling;if(c&&c.classList.contains('credit'))c.remove();this.remove()"><span class="credit">📷 ${esc(p.imageCredit || "Wikimedia Commons")}</span>`
+      : "";
+    return `<div class="${cls}" style="background:linear-gradient(135deg, ${c.color}, ${c.color2 || c.color})"><span class="emoji">${c.icon}</span>${img}`;
+  }
+  function placeCard(p) {
+    const c = PCAT[p.kind], saved = state.saved.has(placeKey(p));
+    let place = provName(p.province);
+    if (state.pos && p.lat) place += ` · ${distanceKm(state.pos, p).toFixed(1)} ${t("km")}`;
+    const summary = placeSummary(p);
+    return `
+      <article class="card place-card">
+        <button class="save-btn" data-save="${esc(placeKey(p))}" aria-label="${saved ? t("unsaveAria") : t("saveAria")}">${saved ? "❤️" : "🤍"}</button>
+        <a href="#/place/${encodeURIComponent(p.id)}">
+          ${placeCover(p)}
+            <div class="badges">
+              ${p.trend ? `<span class="badge hot">🔥 ${t("trending")}</span>` : ""}
+              ${c ? `<span class="badge">${c.icon} ${esc(pick(c.name))}</span>` : ""}
+            </div>
+          </div>
+          <div class="card-body">
+            <h3>${esc(placeName(p))}</h3>
+            <div class="meta">📍 <span>${esc(place)}</span></div>
+            ${p.hours ? `<div class="meta">🕒 <span>${esc(fmtHours(p.hours))}</span></div>` : ""}
+            ${summary ? `<p class="place-sum">${esc(summary.slice(0, 110))}${summary.length > 110 ? "…" : ""}</p>` : ""}
+          </div>
+        </a>
+      </article>`;
+  }
+
+  function renderPlaces() {
+    const cat = state.placeCat;
+    const counts = {};
+    state.places.filter(inPlaceProvince).forEach(p => { counts[p.kind] = (counts[p.kind] || 0) + 1; });
+    let list = state.places.filter(p => inPlaceProvince(p) && (cat === "all" || p.kind === cat));
+    if (state.pos) list = [...list].sort((a, b) => (b.trend || 0) - (a.trend || 0) || distanceKm(state.pos, a) - distanceKm(state.pos, b));
+    // บอร์ดเทรนด์: หมวดที่เลือก หรือข่าวใหม่สุดของทุกหมวด
+    const board = cat === "all"
+      ? Object.entries(state.trends).flatMap(([k, items]) => items.slice(0, 3).map(n => ({ ...n, kind: k }))).sort((a, b) => b.date.localeCompare(a.date)).slice(0, 8)
+      : (state.trends[cat] || []).slice(0, 8).map(n => ({ ...n, kind: cat }));
+    const tile = (id, icon, name, c1, c2, n) =>
+      `<button class="cat ${cat === id ? "active" : ""}" data-pcat="${id}" style="--c1:${c1};--c2:${c2}"><i>${icon}</i>${esc(name)}${n != null ? ` <small>${n}</small>` : ""}</button>`;
+    app.innerHTML = `<div class="page">
+      <h1>🗺️ ${t("placesTitle")}</h1>
+      <p class="result-count">${t("placesSub")}</p>
+      <div class="hero-row places-row">${provinceSelect(state.places.reduce((m, p) => (m[p.province] = (m[p.province] || 0) + 1, m), {}))}</div>
+      <div class="cats compact places-cats" role="group" aria-label="${t("categories")}">
+        ${tile("all", "🌈", t("catAll"), "#ff7a45", "#7b2ff7")}
+        ${C.placeCategories.map(c => tile(c.id, c.icon, pick(c.name), c.color, c.color2, counts[c.id] || 0)).join("")}
+      </div>
+      ${board.length ? `<section class="panel trend-board">
+        <h2>${t("trendBoard")}</h2><p class="result-count">${t("trendBoardSub")}</p>
+        <div class="news-list">${board.map(n => `
+          <a class="news-item" ${inAppLink(n.link)} style="--c1:${PCAT[n.kind]?.color || "var(--accent)"}">
+            <h3>${esc(n.title)}</h3>
+            <div class="meta">${PCAT[n.kind]?.icon || ""} ${esc(n.source || "")} · ${new Date(n.date).toLocaleDateString(locale())}</div>
+          </a>`).join("")}</div></section>` : ""}
+      ${adSlot("list_inline")}
+      <div class="section-head" id="placesHead"><h2>${cat !== "all" && PCAT[cat] ? `${PCAT[cat].icon} ${esc(pick(PCAT[cat].name))}` : t("placesTitle")}</h2><small>${t("placesFound", { n: list.length })}</small></div>
+      ${list.length ? `<div class="grid">${list.map(placeCard).join("")}</div>` : `<p class="empty">${t("noPlaces")}</p>`}
+      <p class="disclosure">${t("placeNote")}</p></div>`;
+    app.querySelectorAll("[data-pcat]").forEach(b => b.addEventListener("click", () => {
+      state.placeCat = state.placeCat === b.dataset.pcat && b.dataset.pcat !== "all" ? "all" : b.dataset.pcat;
+      const y = window.scrollY;
+      renderPlaces();
+      window.scrollTo(0, y);
+    }));
+    document.getElementById("province").addEventListener("change", e => {
+      state.filters.province = e.target.value;
+      writeLS("province", state.filters.province);
+      renderPlaces();
+    });
+    bindSave(app, renderPlaces);
+    activateAdsense();
+  }
+
+  function renderPlace(id) {
+    const p = state.places.find(x => x.id === id);
+    if (!p) { app.innerHTML = `<a class="back" href="#/places">${t("back")}</a><p class="empty">${t("notFound")}</p>`; return; }
+    const c = PCAT[p.kind], v = placeVenue(p), saved = state.saved.has(placeKey(p));
+    const name = placeName(p), summary = placeSummary(p);
+    const wiki = p.wiki?.[state.lang] || p.wiki?.th || p.wiki?.en;
+    document.title = `${name} — ${C.siteName}`;
+    app.innerHTML = `
+      <a class="back" href="#/places">${t("backList")}</a>
+      <div class="detail">
+        ${placeCover(p, "cover detail-cover")}</div>
+        <h1>${esc(name)}</h1>
+        <div class="tags">
+          ${c ? `<span class="tag">${c.icon} ${esc(pick(c.name))}</span>` : ""}
+          ${p.trend ? `<span class="tag sponsor">🔥 ${t("inNews", { n: p.trend })}</span>` : ""}
+          ${p.name?.en && p.name.en !== name ? `<span class="tag">${esc(p.name.en)}</span>` : ""}
+        </div>
+        <div class="actions">
+          ${p.website ? `<a class="btn primary" ${inAppLink(p.website)}>🌐 ${t("website")}</a>` : ""}
+          <a class="btn" ${mapsLink(v, null)}>${t("openMaps")}</a>
+          <button class="btn" id="saveBtn">${saved ? t("saved") : t("save")}</button>
+          <button class="btn" id="shareBtn">${t("share")}</button>
+        </div>
+        <div class="detail-layout" style="margin-top:18px">
+          <div>
+            <section class="panel">
+              <h2>${t("placeInfo")}</h2>
+              <dl class="facts">
+                <div><dt>📍</dt><dd>${esc(name)}<small>${esc([p.address, provName(p.province)].filter(Boolean).join(" · "))}</small></dd></div>
+                <div><dt>🕒</dt><dd>${t("hours")}<small>${esc(fmtHours(p.hours) || t("hoursUnknown"))}</small></dd></div>
+                <div><dt>💰</dt><dd>${t("fee")}<small>${esc(feeText(p))}</small></dd></div>
+                ${p.phone ? `<div><dt>☎️</dt><dd>${t("phone")}<small><a href="tel:${esc(p.phone.replace(/[^\d+]/g, ""))}">${esc(p.phone)}</a></small></dd></div>` : ""}
+              </dl>
+            </section>
+            ${summary || wiki ? `<section class="panel prose">
+              <h2>${t("details")}</h2>
+              ${summary ? `<p>${esc(summary)}</p>` : ""}
+              ${wiki ? `<p><a ${inAppLink(wiki)}>📖 ${t("wikipedia")}</a></p>` : ""}
+              ${p.imagePage ? `<p class="disclosure">${t("photo")}: <a ${inAppLink(p.imagePage)}>${esc(p.imageCredit || "Wikimedia Commons")}</a></p>` : ""}
+            </section>` : ""}
+            ${p.trendNews?.length ? `<section class="panel">
+              <h2>📰 ${t("relatedNews")}</h2>
+              <div class="news-list">${p.trendNews.map(n => `<a class="news-item" ${inAppLink(n.link)}><h3>${esc(n.title)}</h3><div class="meta">${esc(n.source || "")} · ${new Date(n.date).toLocaleDateString(locale())}</div></a>`).join("")}</div>
+            </section>` : ""}
+            <p class="disclosure">${t("placeNote")}</p>
+          </div>
+          <div>
+            ${travelPanel({}, v)}
+            ${adSlot("detail")}
+          </div>
+        </div>
+      </div>`;
+    document.getElementById("saveBtn").addEventListener("click", () => {
+      const k = placeKey(p);
+      state.saved.has(k) ? state.saved.delete(k) : state.saved.add(k);
+      writeLS("saved", [...state.saved]);
+      renderPlace(id);
+    });
+    document.getElementById("shareBtn").addEventListener("click", async () => {
+      const data = { title: name, text: name, url: publicUrl() };
+      const Share = window.Capacitor?.Plugins?.Share;
+      if (NATIVE && Share) { try { await Share.share({ ...data, dialogTitle: name }); } catch {} }
+      else if (navigator.share) { try { await navigator.share(data); } catch {} }
+      else { try { await navigator.clipboard.writeText(data.url); alert(t("copied")); } catch {} }
+    });
+    const lb = document.getElementById("locBtn");
+    if (lb) lb.addEventListener("click", () => locate(() => renderPlace(id)));
+    activateAdsense();
   }
 
   // บนมือถือที่ยังไม่ได้ติดตั้งแอพ: ชวนติดตั้ง เพื่อให้ลิงก์เปิดในแอพ
@@ -712,9 +892,11 @@
     const h = location.hash.replace(/^#/, "") || "/";
     const [, page, arg] = h.split("/");
     document.title = `${C.siteName} — ${t("siteTitle")}`;
-    const nav = page === "event" ? "" : (page || "home");
+    const nav = page === "event" ? "" : page === "place" ? "places" : (page || "home");
     document.querySelectorAll("[data-nav]").forEach(a => a.classList.toggle("active", a.dataset.nav === nav));
     if (page === "event") renderDetail(decodeURIComponent(arg || ""));
+    else if (page === "place") renderPlace(decodeURIComponent(arg || ""));
+    else if (page === "places") renderPlaces();
     else if (page === "saved") renderSaved();
     else if (page === "news") renderNews();
     else if (page === "about") renderAbout();
