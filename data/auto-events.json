@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-11-06T15:39:55.765Z",
+  "updatedAt": "2026-11-06T15:58:23.860Z",
   "stats": {
     "Eventpop": {
-      "found": 0,
-      "kept": 0,
-      "opened": 0
+      "found": 171,
+      "kept": 128,
+      "opened": 40
     },
     "Zipevent": {
       "found": 162,
-      "kept": 25,
+      "kept": 24,
       "opened": 0
     }
   },
@@ -382,26 +382,6 @@
       }
     },
     {
-      "id": "zip-roman-cng-monolougue-vivavida",
-      "auto": true,
-      "title": "Romanc/ng Monolougue Vivavida",
-      "category": "concert",
-      "startDate": "2026-11-06",
-      "endDate": "2026-11-06",
-      "price": {
-        "type": "unknown"
-      },
-      "image": "https://cdnali.zipeventapp.com/images/events/B986D4EC-A599-47FA-8A4A-BFBE16B15D87/B5F74946-2B9E-499E-B2B7-383B4BB533E8.jpg",
-      "ticketUrl": "https://www.zipeventapp.com/e/roman-cng-monolougue-vivavida",
-      "sourceUrl": "https://www.zipeventapp.com/e/roman-cng-monolougue-vivavida",
-      "sourceName": "Zipevent",
-      "fetchedAt": "2026-11-06T15:33:45.991Z",
-      "venue": {
-        "name": "ข้อมูลอีเว้นท์",
-        "province": "bangkok"
-      }
-    },
-    {
       "id": "ep-180088",
       "auto": true,
       "title": "Bangkok riddim syndicate 6 nov",
@@ -466,6 +446,26 @@
       "fetchedAt": "2026-11-06T15:27:30.101Z",
       "venue": {
         "name": "DONKI Mall Thonglor",
+        "province": "bangkok"
+      }
+    },
+    {
+      "id": "zip-roman-cng-monolougue-vivavida",
+      "auto": true,
+      "title": "Romanc/ng Monolougue Vivavida",
+      "category": "concert",
+      "startDate": "2026-11-06",
+      "endDate": "2026-11-06",
+      "price": {
+        "type": "unknown"
+      },
+      "image": "https://cdnali.zipeventapp.com/images/events/B986D4EC-A599-47FA-8A4A-BFBE16B15D87/B5F74946-2B9E-499E-B2B7-383B4BB533E8.jpg",
+      "ticketUrl": "https://www.zipeventapp.com/e/roman-cng-monolougue-vivavida",
+      "sourceUrl": "https://www.zipeventapp.com/e/roman-cng-monolougue-vivavida",
+      "sourceName": "Zipevent",
+      "fetchedAt": "2026-11-06T15:33:45.991Z",
+      "venue": {
+        "name": "ข้อมูลอีเว้นท์",
         "province": "bangkok"
       }
     },
@@ -584,26 +584,6 @@
       }
     },
     {
-      "id": "zip-the-black-kings-nephew-nov",
-      "auto": true,
-      "title": "ศรีเสาวภาคย์",
-      "category": "concert",
-      "startDate": "2026-11-08",
-      "endDate": "2026-11-08",
-      "price": {
-        "type": "unknown"
-      },
-      "image": "https://cdnali.zipeventapp.com/images/events/92D8C34E-FC24-43A8-8D07-6D6F2E2EBEBD/E101F89C-D67A-428A-812E-BA56F93651BD.jpg",
-      "ticketUrl": "https://www.zipeventapp.com/e/the-black-kings-nephew-nov",
-      "sourceUrl": "https://www.zipeventapp.com/e/the-black-kings-nephew-nov",
-      "sourceName": "Zipevent",
-      "fetchedAt": "2026-11-06T15:33:33.719Z",
-      "venue": {
-        "name": "ข้อมูลอีเว้นท์",
-        "province": "bangkok"
-      }
-    },
-    {
       "id": "ep-176807",
       "auto": true,
       "title": "ค่ายจิตวิทยา 3 สาขา season 4 By ONCEs Thailand 🌻",
@@ -678,6 +658,26 @@
       }
     },
     {
+      "id": "zip-the-black-kings-nephew-nov",
+      "auto": true,
+      "title": "ศรีเสาวภาคย์",
+      "category": "concert",
+      "startDate": "2026-11-08",
+      "endDate": "2026-11-08",
+      "price": {
+        "type": "unknown"
+      },
+      "image": "https://cdnali.zipeventapp.com/images/events/92D8C34E-FC24-43A8-8D07-6D6F2E2EBEBD/E101F89C-D67A-428A-812E-BA56F93651BD.jpg",
+      "ticketUrl": "https://www.zipeventapp.com/e/the-black-kings-nephew-nov",
+      "sourceUrl": "https://www.zipeventapp.com/e/the-black-kings-nephew-nov",
+      "sourceName": "Zipevent",
+      "fetchedAt": "2026-11-06T15:33:33.719Z",
+      "venue": {
+        "name": "ข้อมูลอีเว้นท์",
+        "province": "bangkok"
+      }
+    },
+    {
       "id": "ep-180616",
       "auto": true,
       "title": "Agentic AI Theory and Practice for Developer",
@@ -740,26 +740,6 @@
         "name": "SiamPic Hall",
         "province": "bangkok"
       }
-    },
-    {
-      "id": "zip-alphaskillssummit2026",
-      "auto": true,
-      "title": "Alpha Skills Summit & Expo 2026",
-      "category": "learning",
-      "startDate": "2026-11-12",
-      "endDate": "2026-11-12",
-      "time": "10:00–23:59",
-      "price": {
-        "type": "paid",
-        "min": 490,
-        "max": 490
-      },
-      "image": "https://cdnali.zipeventapp.com/images/events/BDCF9CBE-28F8-4010-9CF3-262ED516A2F0/298FC8DB-3F06-41E9-8EA0-FE7015303E56.jpg",
-      "ticketUrl": "https://www.zipeventapp.com/e/alphaskillssummit2026",
-      "sourceUrl": "https://www.zipeventapp.com/e/alphaskillssummit2026",
-      "sourceName": "Zipevent",
-      "fetchedAt": "2026-11-06T15:22:23.784Z",
-      "venueId": "online"
     },
     {
       "id": "ep-181082",
@@ -827,25 +807,24 @@
       }
     },
     {
-      "id": "ep-118637",
+      "id": "zip-alphaskillssummit2026",
       "auto": true,
-      "title": "BangkokBeasts 2026 : Furbidden Vault",
-      "category": "concert",
-      "startDate": "2026-11-14",
-      "endDate": "2026-11-15",
+      "title": "Alpha Skills Summit & Expo 2026",
+      "category": "learning",
+      "startDate": "2026-11-12",
+      "endDate": "2026-11-12",
+      "time": "10:00–23:59",
       "price": {
-        "type": "unknown"
+        "type": "paid",
+        "min": 490,
+        "max": 490
       },
-      "summary": "Tier \"The Camper\" Ticket The Ticket is valid for Day 1 only. They cannot be used to enter on Day 2.**Ticket Transfer Policy**(Card transf",
-      "image": "https://p-u.popcdn.net/event_details/posters/000/118/637/large/e09e2fa34d379b30fbda44101a7cf36ddcc0e745.jpeg?1773746360",
-      "ticketUrl": "https://www.eventpop.me/e/118637/bangkokbeasts2026",
-      "sourceUrl": "https://www.eventpop.me/e/118637/bangkokbeasts2026",
-      "sourceName": "Eventpop",
-      "fetchedAt": "2026-11-06T15:31:48.895Z",
-      "venue": {
-        "name": "Mr.FOX Live House",
-        "province": "bangkok"
-      }
+      "image": "https://cdnali.zipeventapp.com/images/events/BDCF9CBE-28F8-4010-9CF3-262ED516A2F0/298FC8DB-3F06-41E9-8EA0-FE7015303E56.jpg",
+      "ticketUrl": "https://www.zipeventapp.com/e/alphaskillssummit2026",
+      "sourceUrl": "https://www.zipeventapp.com/e/alphaskillssummit2026",
+      "sourceName": "Zipevent",
+      "fetchedAt": "2026-11-06T15:22:23.784Z",
+      "venueId": "online"
     },
     {
       "id": "ep-181216",
@@ -1088,6 +1067,27 @@
       }
     },
     {
+      "id": "ep-118637",
+      "auto": true,
+      "title": "BangkokBeasts 2026 : Furbidden Vault",
+      "category": "concert",
+      "startDate": "2026-11-14",
+      "endDate": "2026-11-15",
+      "price": {
+        "type": "unknown"
+      },
+      "summary": "Tier \"The Camper\" Ticket The Ticket is valid for Day 1 only. They cannot be used to enter on Day 2.**Ticket Transfer Policy**(Card transf",
+      "image": "https://p-u.popcdn.net/event_details/posters/000/118/637/large/e09e2fa34d379b30fbda44101a7cf36ddcc0e745.jpeg?1773746360",
+      "ticketUrl": "https://www.eventpop.me/e/118637/bangkokbeasts2026",
+      "sourceUrl": "https://www.eventpop.me/e/118637/bangkokbeasts2026",
+      "sourceName": "Eventpop",
+      "fetchedAt": "2026-11-06T15:31:48.895Z",
+      "venue": {
+        "name": "Mr.FOX Live House",
+        "province": "bangkok"
+      }
+    },
+    {
       "id": "ep-179426",
       "auto": true,
       "title": "Shining Stars Grand Gala Showcase 2026",
@@ -1312,27 +1312,6 @@
       "venueId": "samyan"
     },
     {
-      "id": "ep-174544",
-      "auto": true,
-      "title": "NOVEMBER 19TH, 2026 Hii Festival Koh Tao",
-      "category": "concert",
-      "startDate": "2026-11-19",
-      "endDate": "2026-11-20",
-      "price": {
-        "type": "unknown"
-      },
-      "summary": "🌴🔥 THURSDAY, NOVEMBER 19TH, 2026 – HII FESTIVAL KOH TAO 🌊✨",
-      "image": "https://p-u.popcdn.net/event_details/posters/000/174/544/large/15b4eef6362111d16bc646f41ff36f0863d71740.jpeg?1790502409",
-      "ticketUrl": "https://www.eventpop.me/e/174544",
-      "sourceUrl": "https://www.eventpop.me/e/174544",
-      "sourceName": "Eventpop",
-      "fetchedAt": "2026-11-06T15:31:26.734Z",
-      "venue": {
-        "name": "Hii Festival Koh Tao",
-        "province": "surat-thani"
-      }
-    },
-    {
       "id": "ep-180847",
       "auto": true,
       "title": "From Invisible to In Demand: The Entrepreneur’s High-Impact",
@@ -1352,6 +1331,27 @@
       "venue": {
         "name": "Liberty Plaza",
         "province": "bangkok"
+      }
+    },
+    {
+      "id": "ep-174544",
+      "auto": true,
+      "title": "NOVEMBER 19TH, 2026 Hii Festival Koh Tao",
+      "category": "concert",
+      "startDate": "2026-11-19",
+      "endDate": "2026-11-20",
+      "price": {
+        "type": "unknown"
+      },
+      "summary": "🌴🔥 THURSDAY, NOVEMBER 19TH, 2026 – HII FESTIVAL KOH TAO 🌊✨",
+      "image": "https://p-u.popcdn.net/event_details/posters/000/174/544/large/15b4eef6362111d16bc646f41ff36f0863d71740.jpeg?1790502409",
+      "ticketUrl": "https://www.eventpop.me/e/174544",
+      "sourceUrl": "https://www.eventpop.me/e/174544",
+      "sourceName": "Eventpop",
+      "fetchedAt": "2026-11-06T15:31:26.734Z",
+      "venue": {
+        "name": "Hii Festival Koh Tao",
+        "province": "surat-thani"
       }
     },
     {
@@ -1711,27 +1711,6 @@
       }
     },
     {
-      "id": "zip-generative-ai-for-everyday-work-documents-data-content",
-      "auto": true,
-      "title": "Generative AI for Everyday Work: Documents, Data & Content",
-      "category": "learning",
-      "startDate": "2026-11-25",
-      "endDate": "2026-11-25",
-      "time": "09:30–16:30",
-      "price": {
-        "type": "unknown"
-      },
-      "image": "https://cdnali.zipeventapp.com/images/events/DF9508D0-92A4-481A-9319-F52EE364F5EB/EEB02498-22F5-462F-AFFF-F6D3F5101BDC.jpg",
-      "ticketUrl": "https://www.zipeventapp.com/e/generative-ai-for-everyday-work-documents-data-content",
-      "sourceUrl": "https://www.zipeventapp.com/e/generative-ai-for-everyday-work-documents-data-content",
-      "sourceName": "Zipevent",
-      "fetchedAt": "2026-11-06T15:23:01.680Z",
-      "venue": {
-        "name": "Udomsuk Hub",
-        "province": "bangkok"
-      }
-    },
-    {
       "id": "ep-180781",
       "auto": true,
       "title": "Advanced RAG for LLMs Application",
@@ -1749,6 +1728,27 @@
       "fetchedAt": "2026-11-06T15:20:39.828Z",
       "venue": {
         "name": "IMC Institute",
+        "province": "bangkok"
+      }
+    },
+    {
+      "id": "zip-generative-ai-for-everyday-work-documents-data-content",
+      "auto": true,
+      "title": "Generative AI for Everyday Work: Documents, Data & Content",
+      "category": "learning",
+      "startDate": "2026-11-25",
+      "endDate": "2026-11-25",
+      "time": "09:30–16:30",
+      "price": {
+        "type": "unknown"
+      },
+      "image": "https://cdnali.zipeventapp.com/images/events/DF9508D0-92A4-481A-9319-F52EE364F5EB/EEB02498-22F5-462F-AFFF-F6D3F5101BDC.jpg",
+      "ticketUrl": "https://www.zipeventapp.com/e/generative-ai-for-everyday-work-documents-data-content",
+      "sourceUrl": "https://www.zipeventapp.com/e/generative-ai-for-everyday-work-documents-data-content",
+      "sourceName": "Zipevent",
+      "fetchedAt": "2026-11-06T15:23:01.680Z",
+      "venue": {
+        "name": "Udomsuk Hub",
         "province": "bangkok"
       }
     },
@@ -1949,27 +1949,6 @@
       }
     },
     {
-      "id": "ep-174577",
-      "auto": true,
-      "title": "NOVEMBER 29TH, 2026 Hii Festival Koh Tao",
-      "category": "concert",
-      "startDate": "2026-11-29",
-      "endDate": "2026-11-30",
-      "price": {
-        "type": "unknown"
-      },
-      "summary": "🌴🔥 SUNDAY, NOVEMBER 29TH, 2026 – HII FESTIVAL KOH TAO 🌊✨",
-      "image": "https://p-u.popcdn.net/event_details/posters/000/174/577/large/11edfe08fcc1d2d688ed61b376fef82b0b9bb0a4.jpeg?1790504383",
-      "ticketUrl": "https://www.eventpop.me/e/174577",
-      "sourceUrl": "https://www.eventpop.me/e/174577",
-      "sourceName": "Eventpop",
-      "fetchedAt": "2026-11-06T15:31:25.237Z",
-      "venue": {
-        "name": "Hii Festival Koh Tao",
-        "province": "surat-thani"
-      }
-    },
-    {
       "id": "ep-179922",
       "auto": true,
       "title": "29 NOV | Singha Corporation presents CORNBOI 'I Grow My Corn",
@@ -1991,6 +1970,27 @@
         "province": "bangkok",
         "lat": 13.74537,
         "lng": 100.53236
+      }
+    },
+    {
+      "id": "ep-174577",
+      "auto": true,
+      "title": "NOVEMBER 29TH, 2026 Hii Festival Koh Tao",
+      "category": "concert",
+      "startDate": "2026-11-29",
+      "endDate": "2026-11-30",
+      "price": {
+        "type": "unknown"
+      },
+      "summary": "🌴🔥 SUNDAY, NOVEMBER 29TH, 2026 – HII FESTIVAL KOH TAO 🌊✨",
+      "image": "https://p-u.popcdn.net/event_details/posters/000/174/577/large/11edfe08fcc1d2d688ed61b376fef82b0b9bb0a4.jpeg?1790504383",
+      "ticketUrl": "https://www.eventpop.me/e/174577",
+      "sourceUrl": "https://www.eventpop.me/e/174577",
+      "sourceName": "Eventpop",
+      "fetchedAt": "2026-11-06T15:31:25.237Z",
+      "venue": {
+        "name": "Hii Festival Koh Tao",
+        "province": "surat-thani"
       }
     },
     {
@@ -2061,27 +2061,6 @@
       }
     },
     {
-      "id": "zip-sala-saneha-9-temples-to-heaven",
-      "auto": true,
-      "title": "9 temples to heaven",
-      "category": "expo",
-      "startDate": "2026-11-30",
-      "endDate": "2026-11-30",
-      "time": "00:00–23:59",
-      "price": {
-        "type": "unknown"
-      },
-      "image": "https://cdnali.zipeventapp.com/images/events/2CB681C0-0A1D-40E6-B778-2BCAD4078343/D768DC4E-F4E9-4756-9945-39AF1F3504A9.jpg",
-      "ticketUrl": "https://www.zipeventapp.com/e/sala-saneha-9-temples-to-heaven",
-      "sourceUrl": "https://www.zipeventapp.com/e/sala-saneha-9-temples-to-heaven",
-      "sourceName": "Zipevent",
-      "fetchedAt": "2026-11-06T15:30:16.549Z",
-      "venue": {
-        "name": "Sala Saneha",
-        "province": "bangkok"
-      }
-    },
-    {
       "id": "ep-180814",
       "auto": true,
       "title": "Data Platform & AI Fundamentals for Business Leaders",
@@ -2100,6 +2079,27 @@
       "fetchedAt": "2026-11-06T15:20:36.412Z",
       "venue": {
         "name": "IMC Institute",
+        "province": "bangkok"
+      }
+    },
+    {
+      "id": "zip-sala-saneha-9-temples-to-heaven",
+      "auto": true,
+      "title": "9 temples to heaven",
+      "category": "expo",
+      "startDate": "2026-11-30",
+      "endDate": "2026-11-30",
+      "time": "00:00–23:59",
+      "price": {
+        "type": "unknown"
+      },
+      "image": "https://cdnali.zipeventapp.com/images/events/2CB681C0-0A1D-40E6-B778-2BCAD4078343/D768DC4E-F4E9-4756-9945-39AF1F3504A9.jpg",
+      "ticketUrl": "https://www.zipeventapp.com/e/sala-saneha-9-temples-to-heaven",
+      "sourceUrl": "https://www.zipeventapp.com/e/sala-saneha-9-temples-to-heaven",
+      "sourceName": "Zipevent",
+      "fetchedAt": "2026-11-06T15:30:16.549Z",
+      "venue": {
+        "name": "Sala Saneha",
         "province": "bangkok"
       }
     },
@@ -2128,6 +2128,29 @@
       }
     },
     {
+      "id": "ep-173574",
+      "auto": true,
+      "title": "Halfmoon Festival : 2nd & 3rd December 2026",
+      "category": "concert",
+      "startDate": "2026-12-02",
+      "endDate": "2026-12-04",
+      "price": {
+        "type": "unknown"
+      },
+      "summary": "⚠️ IMPORTANT INFORMATIONDay 1 : 2nd December 2026 – Harmony Beach Club from 15:00 till Midnight (Pre-Halfmoon)Day 2 : 3rd December 2026 – Halfmoon Magic Forest",
+      "image": "https://p-u.popcdn.net/event_details/posters/000/173/574/large/9dbc7bb5fe8e00473b787f276bad67e278ba644a.jpg?1789836201",
+      "ticketUrl": "https://www.eventpop.me/e/173574",
+      "sourceUrl": "https://www.eventpop.me/e/173574",
+      "sourceName": "Eventpop",
+      "fetchedAt": "2026-11-06T15:26:09.365Z",
+      "venue": {
+        "name": "Halfmoon Festival, Bantai, Koh Phangan",
+        "province": "surat-thani",
+        "lat": 9.73495,
+        "lng": 100.03057
+      }
+    },
+    {
       "id": "zip-film-connection-12",
       "auto": true,
       "title": "Asia Pillars - Film Connection #12",
@@ -2150,29 +2173,6 @@
         "province": "bangkok",
         "lat": 13.80383,
         "lng": 100.63005
-      }
-    },
-    {
-      "id": "ep-173574",
-      "auto": true,
-      "title": "Halfmoon Festival : 2nd & 3rd December 2026",
-      "category": "concert",
-      "startDate": "2026-12-02",
-      "endDate": "2026-12-04",
-      "price": {
-        "type": "unknown"
-      },
-      "summary": "⚠️ IMPORTANT INFORMATIONDay 1 : 2nd December 2026 – Harmony Beach Club from 15:00 till Midnight (Pre-Halfmoon)Day 2 : 3rd December 2026 – Halfmoon Magic Forest",
-      "image": "https://p-u.popcdn.net/event_details/posters/000/173/574/large/9dbc7bb5fe8e00473b787f276bad67e278ba644a.jpg?1789836201",
-      "ticketUrl": "https://www.eventpop.me/e/173574",
-      "sourceUrl": "https://www.eventpop.me/e/173574",
-      "sourceName": "Eventpop",
-      "fetchedAt": "2026-11-06T15:26:09.365Z",
-      "venue": {
-        "name": "Halfmoon Festival, Bantai, Koh Phangan",
-        "province": "surat-thani",
-        "lat": 9.73495,
-        "lng": 100.03057
       }
     },
     {
@@ -2245,29 +2245,6 @@
       }
     },
     {
-      "id": "zip-gaolaewngai2",
-      "auto": true,
-      "title": "เก่าแล้วงัย มิตติ้ง มิวสิค แคมป์ ปี2",
-      "category": "concert",
-      "startDate": "2026-12-05",
-      "endDate": "2026-12-05",
-      "time": "00:00–00:00",
-      "price": {
-        "type": "paid",
-        "min": 250,
-        "max": 250
-      },
-      "image": "https://cdnali.zipeventapp.com/images/events/6662F884-24C7-4DD9-8F6A-DB36ED40AD47/F62F6847-59B7-4495-B74D-AAD729A0EF73.jpg",
-      "ticketUrl": "https://www.zipeventapp.com/e/gaolaewngai2",
-      "sourceUrl": "https://www.zipeventapp.com/e/gaolaewngai2",
-      "sourceName": "Zipevent",
-      "fetchedAt": "2026-11-06T15:22:47.945Z",
-      "venue": {
-        "name": "ไร่คาเซ Kaze Camp & Coffee บ่อวิน จ.ชลบุรี",
-        "province": "chonburi"
-      }
-    },
-    {
       "id": "ep-175474",
       "auto": true,
       "title": "ค่ายสานฝันนักการทูต DIPLOMAT CAMP Season 32  ✈️🌍",
@@ -2292,26 +2269,26 @@
       }
     },
     {
-      "id": "zip-a-safe-journey-with-her-2026",
+      "id": "zip-gaolaewngai2",
       "auto": true,
-      "title": "A Safe Journey With Her",
-      "category": "expo",
-      "startDate": "2026-12-06",
-      "endDate": "2026-12-06",
-      "time": "08:00–12:00",
+      "title": "เก่าแล้วงัย มิตติ้ง มิวสิค แคมป์ ปี2",
+      "category": "concert",
+      "startDate": "2026-12-05",
+      "endDate": "2026-12-05",
+      "time": "00:00–00:00",
       "price": {
-        "type": "unknown"
+        "type": "paid",
+        "min": 250,
+        "max": 250
       },
-      "image": "https://cdnali.zipeventapp.com/images/events/CBA25CDD-B481-482E-9A73-13E3BCF103F5/E72CCDE5-E38F-4DA2-A654-17CC97FAD567.jpg",
-      "ticketUrl": "https://www.zipeventapp.com/e/a-safe-journey-with-her-2026",
-      "sourceUrl": "https://www.zipeventapp.com/e/a-safe-journey-with-her-2026",
+      "image": "https://cdnali.zipeventapp.com/images/events/6662F884-24C7-4DD9-8F6A-DB36ED40AD47/F62F6847-59B7-4495-B74D-AAD729A0EF73.jpg",
+      "ticketUrl": "https://www.zipeventapp.com/e/gaolaewngai2",
+      "sourceUrl": "https://www.zipeventapp.com/e/gaolaewngai2",
       "sourceName": "Zipevent",
-      "fetchedAt": "2026-11-06T15:22:41.162Z",
+      "fetchedAt": "2026-11-06T15:22:47.945Z",
       "venue": {
-        "name": "สวนวชิรเบญจทัศ (สวนรถไฟ)",
-        "province": "bangkok",
-        "lat": 13.81182,
-        "lng": 100.55367
+        "name": "ไร่คาเซ Kaze Camp & Coffee บ่อวิน จ.ชลบุรี",
+        "province": "chonburi"
       }
     },
     {
@@ -2361,6 +2338,29 @@
       }
     },
     {
+      "id": "zip-a-safe-journey-with-her-2026",
+      "auto": true,
+      "title": "A Safe Journey With Her",
+      "category": "expo",
+      "startDate": "2026-12-06",
+      "endDate": "2026-12-06",
+      "time": "08:00–12:00",
+      "price": {
+        "type": "unknown"
+      },
+      "image": "https://cdnali.zipeventapp.com/images/events/CBA25CDD-B481-482E-9A73-13E3BCF103F5/E72CCDE5-E38F-4DA2-A654-17CC97FAD567.jpg",
+      "ticketUrl": "https://www.zipeventapp.com/e/a-safe-journey-with-her-2026",
+      "sourceUrl": "https://www.zipeventapp.com/e/a-safe-journey-with-her-2026",
+      "sourceName": "Zipevent",
+      "fetchedAt": "2026-11-06T15:22:41.162Z",
+      "venue": {
+        "name": "สวนวชิรเบญจทัศ (สวนรถไฟ)",
+        "province": "bangkok",
+        "lat": 13.81182,
+        "lng": 100.55367
+      }
+    },
+    {
       "id": "zip-mission-to-the-moon-forum-2026",
       "auto": true,
       "title": "Mission To The Moon Forum 2026 : Work-Life Evolution เมื่อโลกวิวัฒนาการ ชีวิตและการทำงานต้องเติบโตไปด้วยกัน",
@@ -2379,29 +2379,6 @@
       "sourceName": "Zipevent",
       "fetchedAt": "2026-11-06T15:22:25.891Z",
       "venueId": "online"
-    },
-    {
-      "id": "zip-jamboxxmusicconnection-10",
-      "auto": true,
-      "title": "JAMBOX x Asia Pillars Music Connection #10",
-      "category": "concert",
-      "startDate": "2026-12-09",
-      "endDate": "2026-12-09",
-      "time": "19:00–23:00",
-      "price": {
-        "type": "paid",
-        "min": 300,
-        "max": 300
-      },
-      "image": "https://cdnali.zipeventapp.com/images/events/1AD56BDB-1F8F-4BB1-A7F5-FF20D331E097/C8AF1CC0-AB93-4507-B8E5-B8691C821F9A.jpg",
-      "ticketUrl": "https://www.zipeventapp.com/e/jamboxxmusicconnection-10",
-      "sourceUrl": "https://www.zipeventapp.com/e/jamboxxmusicconnection-10",
-      "sourceName": "Zipevent",
-      "fetchedAt": "2026-11-06T15:22:37.967Z",
-      "venue": {
-        "name": "Speakerbox Livehouse",
-        "province": "bangkok"
-      }
     },
     {
       "id": "ep-181549",
@@ -2443,6 +2420,29 @@
       "fetchedAt": "2026-11-06T15:25:29.606Z",
       "venue": {
         "name": "SiamPic Hall",
+        "province": "bangkok"
+      }
+    },
+    {
+      "id": "zip-jamboxxmusicconnection-10",
+      "auto": true,
+      "title": "JAMBOX x Asia Pillars Music Connection #10",
+      "category": "concert",
+      "startDate": "2026-12-09",
+      "endDate": "2026-12-09",
+      "time": "19:00–23:00",
+      "price": {
+        "type": "paid",
+        "min": 300,
+        "max": 300
+      },
+      "image": "https://cdnali.zipeventapp.com/images/events/1AD56BDB-1F8F-4BB1-A7F5-FF20D331E097/C8AF1CC0-AB93-4507-B8E5-B8691C821F9A.jpg",
+      "ticketUrl": "https://www.zipeventapp.com/e/jamboxxmusicconnection-10",
+      "sourceUrl": "https://www.zipeventapp.com/e/jamboxxmusicconnection-10",
+      "sourceName": "Zipevent",
+      "fetchedAt": "2026-11-06T15:22:37.967Z",
+      "venue": {
+        "name": "Speakerbox Livehouse",
         "province": "bangkok"
       }
     },
@@ -2623,27 +2623,6 @@
       }
     },
     {
-      "id": "ep-174578",
-      "auto": true,
-      "title": "DECEMBER 19TH, 2026 Hii Festival Koh Tao",
-      "category": "concert",
-      "startDate": "2026-12-19",
-      "endDate": "2026-12-20",
-      "price": {
-        "type": "unknown"
-      },
-      "summary": "🌴🔥 SATURDAY, DECEMBER 19TH, 2026 – HII FESTIVAL KOH TAO 🌊✨",
-      "image": "https://p-u.popcdn.net/event_details/posters/000/174/578/large/c316bb87992e8bc0418ae8f14bb0e7c703f391fd.jpeg?1790505094",
-      "ticketUrl": "https://www.eventpop.me/e/174578",
-      "sourceUrl": "https://www.eventpop.me/e/174578",
-      "sourceName": "Eventpop",
-      "fetchedAt": "2026-11-06T15:31:23.787Z",
-      "venue": {
-        "name": "Hii Festival Koh Tao",
-        "province": "surat-thani"
-      }
-    },
-    {
       "id": "ep-179393",
       "auto": true,
       "title": "YOHAN KIM PIANO SOLO CONCERT",
@@ -2694,46 +2673,24 @@
       }
     },
     {
-      "id": "zip-ctc2026",
+      "id": "ep-174578",
       "auto": true,
-      "title": "CREATIVE TALK CONFERENCE 2026 The Festival of Futuristic Minds",
-      "category": "expo",
-      "startDate": "2026-12-20",
-      "endDate": "2026-12-20",
-      "time": "08:30–19:00",
-      "price": {
-        "type": "paid",
-        "min": 990,
-        "max": 990
-      },
-      "image": "https://cdnali.zipeventapp.com/images/events/14B40A10-90E7-4CE4-B7D9-D1E8FB51CA31/BC2C3A57-7BA5-4E2C-86DD-8A5958EFF336.jpg",
-      "ticketUrl": "https://www.zipeventapp.com/e/ctc2026",
-      "sourceUrl": "https://www.zipeventapp.com/e/ctc2026",
-      "sourceName": "Zipevent",
-      "fetchedAt": "2026-11-06T15:22:27.296Z",
-      "venueId": "online"
-    },
-    {
-      "id": "zip-the-bells-rang-again-the-new-musical",
-      "auto": true,
-      "title": "The Bells Rang Again - The New Musical",
+      "title": "DECEMBER 19TH, 2026 Hii Festival Koh Tao",
       "category": "concert",
-      "startDate": "2026-12-20",
+      "startDate": "2026-12-19",
       "endDate": "2026-12-20",
-      "time": "19:30–21:00",
       "price": {
         "type": "unknown"
       },
-      "image": "https://cdnali.zipeventapp.com/images/events/83D20827-2721-435E-8066-4CF08C806296/2D7878B8-17CC-437E-85A2-1A64588197E0.jpg",
-      "ticketUrl": "https://www.zipeventapp.com/e/the-bells-rang-again-the-new-musical",
-      "sourceUrl": "https://www.zipeventapp.com/e/the-bells-rang-again-the-new-musical",
-      "sourceName": "Zipevent",
-      "fetchedAt": "2026-11-06T15:22:35.189Z",
+      "summary": "🌴🔥 SATURDAY, DECEMBER 19TH, 2026 – HII FESTIVAL KOH TAO 🌊✨",
+      "image": "https://p-u.popcdn.net/event_details/posters/000/174/578/large/c316bb87992e8bc0418ae8f14bb0e7c703f391fd.jpeg?1790505094",
+      "ticketUrl": "https://www.eventpop.me/e/174578",
+      "sourceUrl": "https://www.eventpop.me/e/174578",
+      "sourceName": "Eventpop",
+      "fetchedAt": "2026-11-06T15:31:23.787Z",
       "venue": {
-        "name": "POEMS DIMENSION (Town in Town)",
-        "province": "bangkok",
-        "lat": 13.77293,
-        "lng": 100.61022
+        "name": "Hii Festival Koh Tao",
+        "province": "surat-thani"
       }
     },
     {
@@ -2778,6 +2735,49 @@
       "venue": {
         "name": "อาคารเคเอกซ์",
         "province": "bangkok"
+      }
+    },
+    {
+      "id": "zip-ctc2026",
+      "auto": true,
+      "title": "CREATIVE TALK CONFERENCE 2026 The Festival of Futuristic Minds",
+      "category": "expo",
+      "startDate": "2026-12-20",
+      "endDate": "2026-12-20",
+      "time": "08:30–19:00",
+      "price": {
+        "type": "paid",
+        "min": 990,
+        "max": 990
+      },
+      "image": "https://cdnali.zipeventapp.com/images/events/14B40A10-90E7-4CE4-B7D9-D1E8FB51CA31/BC2C3A57-7BA5-4E2C-86DD-8A5958EFF336.jpg",
+      "ticketUrl": "https://www.zipeventapp.com/e/ctc2026",
+      "sourceUrl": "https://www.zipeventapp.com/e/ctc2026",
+      "sourceName": "Zipevent",
+      "fetchedAt": "2026-11-06T15:22:27.296Z",
+      "venueId": "online"
+    },
+    {
+      "id": "zip-the-bells-rang-again-the-new-musical",
+      "auto": true,
+      "title": "The Bells Rang Again - The New Musical",
+      "category": "concert",
+      "startDate": "2026-12-20",
+      "endDate": "2026-12-20",
+      "time": "19:30–21:00",
+      "price": {
+        "type": "unknown"
+      },
+      "image": "https://cdnali.zipeventapp.com/images/events/83D20827-2721-435E-8066-4CF08C806296/2D7878B8-17CC-437E-85A2-1A64588197E0.jpg",
+      "ticketUrl": "https://www.zipeventapp.com/e/the-bells-rang-again-the-new-musical",
+      "sourceUrl": "https://www.zipeventapp.com/e/the-bells-rang-again-the-new-musical",
+      "sourceName": "Zipevent",
+      "fetchedAt": "2026-11-06T15:22:35.189Z",
+      "venue": {
+        "name": "POEMS DIMENSION (Town in Town)",
+        "province": "bangkok",
+        "lat": 13.77293,
+        "lng": 100.61022
       }
     },
     {
@@ -2940,27 +2940,6 @@
       }
     },
     {
-      "id": "ep-174611",
-      "auto": true,
-      "title": "DECEMBER 27TH, 2026 Hii Festival Koh Tao",
-      "category": "concert",
-      "startDate": "2026-12-27",
-      "endDate": "2026-12-28",
-      "price": {
-        "type": "unknown"
-      },
-      "summary": "🌴🔥 SUNDAY, DECEMBER 27TH, 2026 – HII FESTIVAL KOH TAO 🌊✨",
-      "image": "https://p-u.popcdn.net/event_details/posters/000/174/611/large/0b4a04666d7977c261563cb1c78daa48545240ae.jpeg?1790506304",
-      "ticketUrl": "https://www.eventpop.me/e/174611",
-      "sourceUrl": "https://www.eventpop.me/e/174611",
-      "sourceName": "Eventpop",
-      "fetchedAt": "2026-11-06T15:31:20.831Z",
-      "venue": {
-        "name": "Hii Festival Koh Tao",
-        "province": "surat-thani"
-      }
-    },
-    {
       "id": "ep-177073",
       "auto": true,
       "title": "BOSSNOEUL CROSSOVER CONCERT [ THE FINAL CHAPTER ]",
@@ -2980,6 +2959,27 @@
       "venue": {
         "name": "ICONSIAM HALL",
         "province": "bangkok"
+      }
+    },
+    {
+      "id": "ep-174611",
+      "auto": true,
+      "title": "DECEMBER 27TH, 2026 Hii Festival Koh Tao",
+      "category": "concert",
+      "startDate": "2026-12-27",
+      "endDate": "2026-12-28",
+      "price": {
+        "type": "unknown"
+      },
+      "summary": "🌴🔥 SUNDAY, DECEMBER 27TH, 2026 – HII FESTIVAL KOH TAO 🌊✨",
+      "image": "https://p-u.popcdn.net/event_details/posters/000/174/611/large/0b4a04666d7977c261563cb1c78daa48545240ae.jpeg?1790506304",
+      "ticketUrl": "https://www.eventpop.me/e/174611",
+      "sourceUrl": "https://www.eventpop.me/e/174611",
+      "sourceName": "Eventpop",
+      "fetchedAt": "2026-11-06T15:31:20.831Z",
+      "venue": {
+        "name": "Hii Festival Koh Tao",
+        "province": "surat-thani"
       }
     },
     {
@@ -3157,29 +3157,6 @@
       }
     },
     {
-      "id": "zip-the-great-fundraising-masterclass-in-bangkok-2027-internatio",
-      "auto": true,
-      "title": "The Great Fundraising Masterclass in Bangkok 2027 [International Applicants]",
-      "category": "learning",
-      "startDate": "2027-01-22",
-      "endDate": "2027-01-22",
-      "time": "09:00–16:00",
-      "price": {
-        "type": "paid",
-        "min": 15000,
-        "max": 15000
-      },
-      "image": "https://cdnali.zipeventapp.com/images/events/A14B2D15-9639-45B9-8768-A0201D8990D8/1E7C45D3-020D-4745-9C2D-FD39B9A7E643.jpg",
-      "ticketUrl": "https://www.zipeventapp.com/e/the-great-fundraising-masterclass-in-bangkok-2027-international-applicants",
-      "sourceUrl": "https://www.zipeventapp.com/e/the-great-fundraising-masterclass-in-bangkok-2027-international-applicants",
-      "sourceName": "Zipevent",
-      "fetchedAt": "2026-11-06T15:28:30.398Z",
-      "venue": {
-        "name": "Goethe-Institute Thailand",
-        "province": "bangkok"
-      }
-    },
-    {
       "id": "ep-178268",
       "auto": true,
       "title": "NieR : Orchestra Concert",
@@ -3203,6 +3180,29 @@
         "province": "nakhon-pathom",
         "lat": 13.79465,
         "lng": 100.32186
+      }
+    },
+    {
+      "id": "zip-the-great-fundraising-masterclass-in-bangkok-2027-internatio",
+      "auto": true,
+      "title": "The Great Fundraising Masterclass in Bangkok 2027 [International Applicants]",
+      "category": "learning",
+      "startDate": "2027-01-22",
+      "endDate": "2027-01-22",
+      "time": "09:00–16:00",
+      "price": {
+        "type": "paid",
+        "min": 15000,
+        "max": 15000
+      },
+      "image": "https://cdnali.zipeventapp.com/images/events/A14B2D15-9639-45B9-8768-A0201D8990D8/1E7C45D3-020D-4745-9C2D-FD39B9A7E643.jpg",
+      "ticketUrl": "https://www.zipeventapp.com/e/the-great-fundraising-masterclass-in-bangkok-2027-international-applicants",
+      "sourceUrl": "https://www.zipeventapp.com/e/the-great-fundraising-masterclass-in-bangkok-2027-international-applicants",
+      "sourceName": "Zipevent",
+      "fetchedAt": "2026-11-06T15:28:30.398Z",
+      "venue": {
+        "name": "Goethe-Institute Thailand",
+        "province": "bangkok"
       }
     },
     {
