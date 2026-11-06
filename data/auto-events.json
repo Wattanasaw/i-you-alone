@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-11-06T16:20:10.846Z",
+  "updatedAt": "2026-11-06T16:41:36.174Z",
   "stats": {
     "Eventpop": {
-      "found": 188,
-      "kept": 142,
+      "found": 186,
+      "kept": 140,
       "opened": 43
     },
     "Zipevent": {
@@ -405,50 +405,6 @@
       }
     },
     {
-      "id": "ep-180088",
-      "auto": true,
-      "title": "Bangkok riddim syndicate 6 nov",
-      "category": "concert",
-      "startDate": "2026-11-06",
-      "endDate": "2026-11-06",
-      "time": "18:00",
-      "price": {
-        "type": "free"
-      },
-      "summary": "Bangkok riddim Syndicate Vol 1‌Born to push forward the art of freestyle MCing in Bangkok : BRS is a cross over project between Hip Hop and Reggae, Dancehall an",
-      "image": "https://p-u.popcdn.net/event_details/posters/000/180/088/large/a952d71d50c5b6eda1651b8183a68ee65934eeb0.jpeg?1793265721",
-      "ticketUrl": "https://www.eventpop.me/e/180088/bangkokriddimsyndicate6nov",
-      "sourceUrl": "https://www.eventpop.me/e/180088/bangkokriddimsyndicate6nov",
-      "sourceName": "Eventpop",
-      "fetchedAt": "2026-11-06T15:20:51.530Z",
-      "venue": {
-        "name": "Bangkok Island",
-        "province": "bangkok"
-      }
-    },
-    {
-      "id": "ep-179855",
-      "auto": true,
-      "title": "Sounds of underground 6 Nov",
-      "category": "nightlife",
-      "startDate": "2026-11-06",
-      "endDate": "2026-11-06",
-      "time": "17:00",
-      "price": {
-        "type": "unknown"
-      },
-      "summary": "SOUNDS OF THE UNDERGROUNDBangkok Island invites you to a special night on the river.Bangkok’s underground is full of artists building something of their own, an",
-      "image": "https://p-u.popcdn.net/event_details/posters/000/179/855/large/952ad636ad4c00e1f6b07db95d54ff15b606365f.jpeg?1793097646",
-      "ticketUrl": "https://www.eventpop.me/e/179855",
-      "sourceUrl": "https://www.eventpop.me/e/179855",
-      "sourceName": "Eventpop",
-      "fetchedAt": "2026-11-06T16:13:49.472Z",
-      "venue": {
-        "name": "Bangkok Island",
-        "province": "bangkok"
-      }
-    },
-    {
       "id": "ep-161857",
       "auto": true,
       "title": "สิงห์ คอร์เปอเรชั่น ภูมิใจนำเสนอ “ลูกทุ่งลุยไฟ ใหญ่มาก ว่าแ",
@@ -491,6 +447,50 @@
       "fetchedAt": "2026-11-06T15:27:30.101Z",
       "venue": {
         "name": "DONKI Mall Thonglor",
+        "province": "bangkok"
+      }
+    },
+    {
+      "id": "ep-180088",
+      "auto": true,
+      "title": "Bangkok riddim syndicate 6 nov",
+      "category": "concert",
+      "startDate": "2026-11-06",
+      "endDate": "2026-11-06",
+      "time": "18:00",
+      "price": {
+        "type": "free"
+      },
+      "summary": "Bangkok riddim Syndicate Vol 1‌Born to push forward the art of freestyle MCing in Bangkok : BRS is a cross over project between Hip Hop and Reggae, Dancehall an",
+      "image": "https://p-u.popcdn.net/event_details/posters/000/180/088/large/a952d71d50c5b6eda1651b8183a68ee65934eeb0.jpeg?1793265721",
+      "ticketUrl": "https://www.eventpop.me/e/180088/bangkokriddimsyndicate6nov",
+      "sourceUrl": "https://www.eventpop.me/e/180088/bangkokriddimsyndicate6nov",
+      "sourceName": "Eventpop",
+      "fetchedAt": "2026-11-06T15:20:51.530Z",
+      "venue": {
+        "name": "Bangkok Island",
+        "province": "bangkok"
+      }
+    },
+    {
+      "id": "ep-179855",
+      "auto": true,
+      "title": "Sounds of underground 6 Nov",
+      "category": "nightlife",
+      "startDate": "2026-11-06",
+      "endDate": "2026-11-06",
+      "time": "17:00",
+      "price": {
+        "type": "unknown"
+      },
+      "summary": "SOUNDS OF THE UNDERGROUNDBangkok Island invites you to a special night on the river.Bangkok’s underground is full of artists building something of their own, an",
+      "image": "https://p-u.popcdn.net/event_details/posters/000/179/855/large/952ad636ad4c00e1f6b07db95d54ff15b606365f.jpeg?1793097646",
+      "ticketUrl": "https://www.eventpop.me/e/179855",
+      "sourceUrl": "https://www.eventpop.me/e/179855",
+      "sourceName": "Eventpop",
+      "fetchedAt": "2026-11-06T16:13:49.472Z",
+      "venue": {
+        "name": "Bangkok Island",
         "province": "bangkok"
       }
     },
