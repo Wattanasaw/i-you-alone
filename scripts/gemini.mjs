@@ -50,7 +50,10 @@ export async function geminiJSON(key, prompt, temperature = 0) {
         const data = await res.json();
         return JSON.parse(data.candidates?.[0]?.content?.parts?.[0]?.text || "null");
       }
-      lastErr = Object.assign(new Error(`Gemini ${res.status} (${model})`), { status: res.status });
+      // แนบข้อความจาก Google สั้นๆ ไว้ดูสาเหตุ (เช่น โควต้าแบบไหนหมด)
+      let why = "";
+      try { why = ((await res.json()).error?.message || "").replace(/\s+/g, " ").slice(0, 220); } catch {}
+      lastErr = Object.assign(new Error(`Gemini ${res.status} (${model})${why ? ": " + why : ""}`), { status: res.status });
       // 429 = โควต้าฟรีหมด → หยุด (เปลี่ยนรุ่นก็ไม่ช่วยมาก รอรอบหน้า)
       if (res.status === 429) throw lastErr;
       if (res.status === 503 && attempt === 1) { await sleep(6000); continue; }
