@@ -33,11 +33,19 @@ export async function geminiJSON(key, prompt, temperature = 0) {
   while (current < list.length) {
     const model = list[current];
     for (let attempt = 1; attempt <= 2; attempt++) {
-      const res = await fetch(`${API}/models/${model}:generateContent`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json", "x-goog-api-key": key },
-        body: JSON.stringify({ contents: [{ parts: [{ text: prompt }] }], generationConfig: { responseMimeType: "application/json", temperature } })
-      });
+      let res;
+      try {
+        res = await fetch(`${API}/models/${model}:generateContent`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json", "x-goog-api-key": key },
+          body: JSON.stringify({ contents: [{ parts: [{ text: prompt }] }], generationConfig: { responseMimeType: "application/json", temperature } }),
+          signal: AbortSignal.timeout(90000)
+        });
+      } catch (e) {
+        // เน็ตหลุด/เซิร์ฟเวอร์ไม่ตอบ → ถือว่าไม่ว่างชั่วคราว (503)
+        res = { ok: false, status: 503 };
+        console.warn(`Gemini ไม่ตอบ (${model}): ${e.message}`);
+      }
       if (res.ok) {
         const data = await res.json();
         return JSON.parse(data.candidates?.[0]?.content?.parts?.[0]?.text || "null");
