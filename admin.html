@@ -40,8 +40,9 @@
     </section>
 
     <section class="panel">
-      <h2>✏️ แก้ไขงานเดิม</h2>
+      <h2>✏️ แก้ไขงานเดิม / งานที่ดึงอัตโนมัติ</h2>
       <select id="existing"><option value="">— งานใหม่ —</option></select>
+      <p class="disclosure">งานที่ดึงอัตโนมัติ (🤖) แก้แล้วกดดาวน์โหลด events.json — ข้อมูลที่แก้จะทับข้อมูลอัตโนมัติตลอดไป ติ๊ก "ซ่อน" เพื่อเอางานที่ไม่ต้องการออกจากแอพ</p>
     </section>
 
     <section class="panel">
@@ -72,7 +73,7 @@
         </div>
         <div class="row">
           <label>ค่าใช้จ่าย
-            <select name="priceType"><option value="free">ฟรี</option><option value="paid">เสียเงิน</option><option value="mixed">เข้าฟรี/บางส่วนเสียเงิน</option></select>
+            <select name="priceType"><option value="free">ฟรี</option><option value="paid">เสียเงิน</option><option value="mixed">เข้าฟรี/บางส่วนเสียเงิน</option><option value="unknown">ไม่ทราบ (ดูราคาที่หน้าขายบัตร)</option></select>
           </label>
           <label>หมายเหตุราคา <input name="priceNote" placeholder="บัตร Early Bird ..."></label>
         </div>
@@ -114,6 +115,7 @@
           <label>ลิงก์แหล่งข่าว <input type="url" name="sourceUrl"></label>
           <label>ชื่อแหล่งข่าว <input name="sourceName"></label>
         </div>
+        <label style="flex-direction:row;display:flex;gap:8px;align-items:center"><input type="checkbox" name="hidden" style="width:auto"> 🚫 ซ่อนงานนี้จากแอพ (เช่น งานอัตโนมัติที่ไม่เหมาะสม หรือยกเลิกแล้ว)</label>
         <label style="flex-direction:row;display:flex;gap:8px;align-items:center"><input type="checkbox" name="featured" style="width:auto"> ปักหมุด "แนะนำ" (เช่น งานที่จ่ายค่าโปรโมท)</label>
 
         <h3 style="margin:8px 0 0">🔗 ลิงก์ Affiliate</h3>

@@ -1,4 +1,4 @@
-name: อัปเดตข่าวอีเว้นท์อัตโนมัติ
+name: อัปเดตข่าวและงานอีเว้นท์อัตโนมัติ
 
 on:
   schedule:
@@ -21,6 +21,11 @@ jobs:
         run: node scripts/update-news.mjs
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      - name: ดึงงานจริงจากเว็บขายบัตร (Eventpop, Zipevent) + กรองอัตโนมัติ
+        run: node scripts/fetch-events.mjs
+        continue-on-error: true   # เว็บต้นทางล่ม/เปลี่ยนหน้าตา ข่าวยังอัปเดตได้ตามปกติ
+      - name: ตรวจข้อมูล
+        run: node scripts/check-data.mjs
       - name: แปลงานใหม่เป็นอังกฤษ/จีน (ทำงานเมื่อมี GEMINI_API_KEY)
         run: node scripts/translate.mjs
         env:
@@ -29,5 +34,5 @@ jobs:
         run: |
           git config user.name "news-bot"
           git config user.email "news-bot@users.noreply.github.com"
-          git add data/news.json data/events.json data/venues.json
+          git add data/news.json data/events.json data/venues.json data/auto-events.json data/geocache.json
           git diff --cached --quiet || (git commit -m "อัปเดตข่าวอีเว้นท์อัตโนมัติ" && git pull --rebase && git push)

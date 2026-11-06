@@ -4,7 +4,9 @@
   const $ = id => document.getElementById(id);
   const form = $("f");
   const get = async p => { try { const r = await fetch(p, { cache: "no-cache" }); return r.ok ? r.json() : null; } catch { return null; } };
-  const [events = [], venues = [], news] = await Promise.all([get("data/events.json"), get("data/venues.json"), get("data/news.json")]).then(r => [r[0] || [], r[1] || [], r[2]]);
+  const [events = [], venues = [], news, auto] = await Promise.all([get("data/events.json"), get("data/venues.json"), get("data/news.json"), get("data/auto-events.json")]).then(r => [r[0] || [], r[1] || [], r[2], r[3]]);
+  // งานที่ระบบดึงมาเอง: แก้ไขได้ (บันทึกเป็นงานใส่เองที่ id เดียวกัน จะทับข้อมูลอัตโนมัติ) หรือติ๊กซ่อน
+  const autoEvents = (auto?.events || []).filter(a => !events.some(e => e.id === a.id));
   const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 
   $("cat").innerHTML = C.categories.map(c => `<option value="${c.id}">${c.icon} ${esc(c.name.th || c.name)}</option>`).join("");
@@ -12,7 +14,8 @@
   ["อา", "จ", "อ", "พ", "พฤ", "ศ", "ส"].forEach((d, i) => $("weekdays").insertAdjacentHTML("beforeend",
     `<label style="display:flex;gap:4px;align-items:center"><input type="checkbox" name="wd" value="${i}" style="width:auto">${d}</label>`));
   $("venue").innerHTML = `<option value="">— ใช้สถานที่ที่บันทึกไว้ในงานนี้ —</option>` + venues.map(v => `<option value="${esc(v.id)}">${esc(v.name)}</option>`).join("");
-  $("existing").innerHTML += events.map(e => `<option value="${esc(e.id)}">${esc(e.title)} (${e.startDate})</option>`).join("");
+  $("existing").innerHTML += `<optgroup label="งานที่ใส่เอง">${events.map(e => `<option value="${esc(e.id)}">${e.hidden ? "🚫 " : ""}${esc(e.title)} (${e.startDate})</option>`).join("")}</optgroup>`
+    + `<optgroup label="🤖 งานที่ดึงอัตโนมัติ (${autoEvents.length})">${autoEvents.map(e => `<option value="${esc(e.id)}">${esc(e.title)} (${e.startDate})</option>`).join("")}</optgroup>`;
 
   function addAff(a = {}) {
     const row = document.createElement("div");
@@ -39,13 +42,14 @@
     form.querySelectorAll('[name="wd"]').forEach(c => { c.checked = (ev.weekdays || []).includes(Number(c.value)); });
     form.elements.featured.checked = !!ev.featured;
     form.elements.ongoing.checked = !!ev.ongoing;
+    form.elements.hidden.checked = !!ev.hidden;
     for (const l of LANGS) for (const f of TR_FIELDS) {
       const val = ev.i18n?.[l]?.[f];
       set(`${f}_${l}`, Array.isArray(val) ? val.join("\n") : val);
     }
     (ev.affiliateLinks || []).forEach(addAff);
   }
-  $("existing").onchange = e => { const ev = events.find(x => x.id === e.target.value); fill(ev || {}); };
+  $("existing").onchange = e => { const ev = events.find(x => x.id === e.target.value) || autoEvents.find(x => x.id === e.target.value); fill(ev || {}); };
 
   const items = news?.items || [];
   if (items.length) {
@@ -68,7 +72,8 @@
     const num = k => v(k) ? Number(v(k)) : undefined;
     const ongoing = form.elements.ongoing.checked;
     const ev = {
-      ...current, sample: undefined, // แก้ผ่านหน้านี้แล้วถือเป็นข้อมูลจริง
+      ...current, sample: undefined, auto: undefined, fetchedAt: undefined, // แก้ผ่านหน้านี้แล้วถือเป็นงานใส่เอง
+      hidden: form.elements.hidden.checked || undefined,
       id: v("id"), title: v("title"), category: v("category"),
       startDate: v("startDate"), endDate: ongoing ? undefined : (v("endDate") || v("startDate")),
       ongoing: ongoing || undefined, openDays: ongoing && v("openDays") ? v("openDays") : undefined,

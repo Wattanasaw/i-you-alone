@@ -30,9 +30,14 @@ const checkTransitI18n = (where, v) => {
 };
 const untranslated = { en: 0, zh: 0 };
 
-const [events, venues, ads, news] = await Promise.all(
+const [manual, venues, ads, news] = await Promise.all(
   ["data/events.json", "data/venues.json", "data/ads.json", "data/news.json"].map(load)
 );
+// งานที่ดึงอัตโนมัติ (ไม่บังคับมีไฟล์) — งานใส่เองที่ id ตรงกันจะทับ จึงตรวจเฉพาะที่ไม่ถูกทับ
+let auto = { events: [] };
+try { auto = JSON.parse(await readFile(new URL("data/auto-events.json", root), "utf8")); } catch {}
+const manualIds = new Set((manual || []).map(e => e.id));
+const events = [...(manual || []).filter(e => !e.hidden), ...(auto.events || []).filter(e => !manualIds.has(e.id))];
 
 const isDate = s => /^\d{4}-\d{2}-\d{2}$/.test(s) && !isNaN(new Date(s + "T00:00:00"));
 const isUrl = s => /^https?:\/\/\S+$/.test(s);
@@ -77,7 +82,7 @@ for (const ev of events || []) {
   if (ev.races && !(Array.isArray(ev.races) && ev.races.every(r => typeof r === "string"))) errors.push(`${where}: races ต้องเป็นรายการข้อความ เช่น ["5K", "10K"]`);
   for (const [l, x] of Object.entries(ev.i18n || {})) if (x.races && x.races.length !== (ev.races || []).length) errors.push(`${where}: คำแปล races (${l}) จำนวนไม่ตรงกับต้นฉบับ`);
   if (ev.ongoing && ev.endDate) warns.push(`${where}: เป็นร้านเปิดประจำ (ongoing) แต่มี endDate — endDate จะถูกละไว้`);
-  if (!["free", "paid", "mixed"].includes(ev.price?.type)) errors.push(`${where}: price.type ต้องเป็น free / paid / mixed`);
+  if (!ev.hidden && !["free", "paid", "mixed", "unknown"].includes(ev.price?.type)) errors.push(`${where}: price.type ต้องเป็น free / paid / mixed / unknown`);
   if (ev.price?.min && ev.price?.max && ev.price.min > ev.price.max) errors.push(`${where}: ราคาต่ำสุดมากกว่าราคาสูงสุด`);
   for (const k of ["ticketUrl", "image", "sourceUrl"]) if (ev[k] && !isUrl(ev[k])) errors.push(`${where}: ${k} ไม่ใช่ลิงก์ http(s)`);
   for (const a of ev.affiliateLinks || []) {
@@ -87,6 +92,7 @@ for (const ev of events || []) {
   if (/example\.com/.test(ev.ticketUrl || "")) warns.push(`${where}: ticketUrl ยังเป็นลิงก์ตัวอย่าง`);
   if (!ev.summary) warns.push(`${where}: ไม่มีสรุปสั้น (summary)`);
 }
+if (auto.updatedAt) console.log(`งานอัตโนมัติ: ${auto.events.length} งาน (อัปเดต ${auto.updatedAt.slice(0, 16)})`);
 const samples = (events || []).filter(e => e.sample).length;
 if (samples) warns.push(`ยังมีข้อมูลตัวอย่าง ${samples} งาน (sample: true) — ลบออกก่อนเปิดใช้จริง`);
 

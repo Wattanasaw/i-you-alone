@@ -5,6 +5,7 @@
   {
     "id": "impact",
     "name": "อิมแพ็ค เมืองทองธานี",
+    "aliases": ["impact arena", "impact exhibition", "impact challenger", "impact forum", "impact muang thong", "อิมแพ็ค", "เมืองทองธานี", "muang thong thani"],
     "province": "nonthaburi",
     "address": "ถ.แจ้งวัฒนะ-ปากเกร็ด 39 อ.ปากเกร็ด จ.นนทบุรี",
     "lat": 13.9128, "lng": 100.5482,
@@ -40,6 +41,7 @@
   {
     "id": "thunderdome",
     "name": "ธันเดอร์โดม เมืองทองธานี",
+    "aliases": ["thunder dome", "thunderdome", "ธันเดอร์โดม"],
     "province": "nonthaburi",
     "address": "เมืองทองธานี อ.ปากเกร็ด จ.นนทบุรี",
     "lat": 13.9105, "lng": 100.5470,
@@ -72,6 +74,7 @@
   {
     "id": "qsncc",
     "name": "ศูนย์การประชุมแห่งชาติสิริกิติ์ (QSNCC)",
+    "aliases": ["qsncc", "queen sirikit", "สิริกิติ์"],
     "province": "bangkok",
     "address": "ถ.รัชดาภิเษก แขวงคลองเตย เขตคลองเตย กรุงเทพฯ",
     "lat": 13.7232, "lng": 100.5598,
@@ -107,6 +110,7 @@
   {
     "id": "bitec",
     "name": "ไบเทค บางนา (BITEC)",
+    "aliases": ["bitec", "ไบเทค"],
     "province": "bangkok",
     "address": "ถ.บางนา-ตราด แขวงบางนา เขตบางนา กรุงเทพฯ",
     "lat": 13.6696, "lng": 100.6105,
@@ -133,6 +137,7 @@
   {
     "id": "rajamangala",
     "name": "ราชมังคลากีฬาสถาน",
+    "aliases": ["rajamangala", "ราชมังคลา"],
     "province": "bangkok",
     "address": "ถ.รามคำแหง แขวงหัวหมาก เขตบางกะปิ กรุงเทพฯ",
     "lat": 13.7553, "lng": 100.6223,
@@ -168,6 +173,7 @@
   {
     "id": "samyan",
     "name": "สามย่านมิตรทาวน์ ฮอลล์",
+    "aliases": ["samyan mitrtown", "สามย่านมิตรทาวน์"],
     "province": "bangkok",
     "address": "ถ.พระราม 4 แขวงวังใหม่ เขตปทุมวัน กรุงเทพฯ",
     "lat": 13.7334, "lng": 100.5286,
@@ -194,6 +200,7 @@
   {
     "id": "centralworld",
     "name": "เซ็นทรัลเวิลด์",
+    "aliases": ["centralworld", "central world", "เซ็นทรัลเวิลด์"],
     "province": "bangkok",
     "address": "ถ.ราชดำริ แขวงปทุมวัน เขตปทุมวัน กรุงเทพฯ",
     "lat": 13.7466, "lng": 100.5393,
@@ -220,6 +227,7 @@
   {
     "id": "lumpini",
     "name": "สวนลุมพินี",
+    "aliases": ["lumpini park", "lumphini park", "สวนลุม"],
     "province": "bangkok",
     "address": "ถ.พระราม 4 แขวงลุมพินี เขตปทุมวัน กรุงเทพฯ",
     "lat": 13.7314, "lng": 100.5414,
@@ -246,6 +254,7 @@
   {
     "id": "paragonhall",
     "name": "รอยัล พารากอน ฮอลล์",
+    "aliases": ["paragon hall", "royal paragon", "พารากอน ฮอลล์"],
     "province": "bangkok",
     "address": "สยามพารากอน ชั้น 5 ถ.พระราม 1 เขตปทุมวัน กรุงเทพฯ",
     "lat": 13.7462, "lng": 100.5347,

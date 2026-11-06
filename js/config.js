@@ -31,6 +31,11 @@ window.APP_CONFIG = {
     inlineEvery: 6 // แทรกโฆษณาทุกๆ กี่การ์ดในหน้ารายการ
   },
 
+  // ===== Affiliate ของเว็บขายบัตร =====
+  // ถ้าสมัครเป็นพันธมิตรกับเว็บขายบัตรแล้ว ใส่พารามิเตอร์ที่ได้ เช่น "aff=รหัสของคุณ"
+  // แอพจะต่อเข้ากับปุ่ม "ซื้อบัตร" ของงานที่ดึงมาจากเว็บนั้นให้อัตโนมัติ
+  ticketAffiliate: { "eventpop.me": "", "zipeventapp.com": "" },
+
   affiliateDisclosure: {
     th: "ลิงก์บางส่วนเป็นลิงก์พันธมิตร (Affiliate) เราอาจได้รับค่าคอมมิชชันเมื่อคุณซื้อผ่านลิงก์ โดยคุณไม่ต้องจ่ายเพิ่ม",
     en: "Some links are affiliate links. We may earn a commission when you buy through them, at no extra cost to you.",

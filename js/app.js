@@ -83,6 +83,7 @@
     if (p.type === "free") return { cls: "free", text: t("free") };
     const fmt = n => Number(n).toLocaleString(locale());
     if (p.type === "mixed") return { cls: "free", text: t("mixed") };
+    if (p.type === "unknown") return { cls: "paid", text: t("priceUnknown") };
     if (p.min && p.max && p.min !== p.max) return { cls: "paid", text: `${t("currency")}${fmt(p.min)}–${fmt(p.max)}` };
     if (p.min) return { cls: "paid", text: `${t("currency")}${fmt(p.min)}` };
     return { cls: "paid", text: t("paid") };
@@ -109,14 +110,25 @@
   }
   function cover(ev, cls = "cover") {
     const cat = CAT[ev.category] || { icon: "📅", color: "#888" };
-    const bg = ev.image
-      ? `background-image:url('${safeUrl(ev.image)}')`
-      : `background:linear-gradient(135deg, ${cat.color}, ${cat.color2 || cat.color})`;
+    const bg = `background:linear-gradient(135deg, ${cat.color}, ${cat.color2 || cat.color})`;
     const s = parseDate(ev.startDate);
     const chip = ev.ongoing && s <= today()
       ? `<div class="datechip"><b>${t("chipOpen")}</b><span>${t("chipDaily")}</span></div>`
       : `<div class="datechip"><b>${s.getDate()}</b><span>${fmtDate(s, { month: "short" })}</span></div>`;
-    return `<div class="${cls}" style="${bg}">${chip}${ev.image ? "" : `<span class="emoji">${cat.icon}</span>`}`;
+    // รูปจริงจากต้นทาง ถ้าโหลดไม่ได้จะเหลือพื้นสีไล่เฉด + ไอคอนหมวดแทน
+    const img = /^https:\/\//.test(ev.image || "")
+      ? `<img class="cover-img" src="${esc(ev.image)}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var c=this.nextElementSibling;if(c&&c.classList.contains('credit'))c.remove();this.remove()">${ev.sourceName ? `<span class="credit">📷 ${esc(ev.sourceName)}</span>` : ""}`
+      : "";
+    return `<div class="${cls}" style="${bg}"><span class="emoji">${cat.icon}</span>${img}${chip}`;
+  }
+  // ต่อพารามิเตอร์ Affiliate ของเว็บขายบัตร (ตั้งใน config.js) เข้ากับลิงก์ซื้อบัตร
+  function withAffiliate(url) {
+    try {
+      const u = new URL(url);
+      const param = Object.entries(C.ticketAffiliate || {}).find(([host, p]) => p && u.hostname.endsWith(host))?.[1];
+      if (param) new URLSearchParams(param).forEach((v, k) => u.searchParams.set(k, v));
+      return u.href;
+    } catch { return url; }
   }
 
   // ---------- data ----------
@@ -127,13 +139,16 @@
     } catch { return fallback; }
   }
   async function load() {
-    const [events, venues, ads, news] = await Promise.all([
+    const [events, venues, ads, news, auto] = await Promise.all([
       getJSON("data/events.json", []),
       getJSON("data/venues.json", []),
       getJSON("data/ads.json", []),
-      getJSON("data/news.json", { items: [] })
+      getJSON("data/news.json", { items: [] }),
+      getJSON("data/auto-events.json", { events: [] })
     ]);
-    state.events = events;
+    // งานที่ดึงอัตโนมัติ + งานที่ใส่เอง: งานใส่เองที่ id ตรงกันจะทับงานอัตโนมัติ, hidden: true = ซ่อน
+    const manualIds = new Set(events.map(e => e.id));
+    state.events = [...events.filter(e => !e.hidden), ...(auto.events || []).filter(e => !manualIds.has(e.id))];
     state.venues = Object.fromEntries(venues.map(v => [v.id, v]));
     state.ads = ads.filter(a => a.active !== false);
     state.news = news;
@@ -276,7 +291,10 @@
     const upcoming = state.events.filter(e => status(e).key !== "ended" && inProvince(e));
     const live = upcoming.filter(e => status(e).key === "live").length;
     const free = upcoming.filter(isFree).length;
-    const featured = upcoming.filter(e => e.featured).sort((a, b) => a.startDate.localeCompare(b.startDate));
+    let featured = upcoming.filter(e => e.featured).sort((a, b) => a.startDate.localeCompare(b.startDate));
+    // ยังไม่มีงานปักหมุด: แสดงงานมีรูปที่ใกล้ถึงภายใน 30 วันแทน
+    if (!featured.length) featured = upcoming.filter(e => e.image && !e.ongoing && (parseDate(e.startDate) - today()) / DAY <= 30)
+      .sort((a, b) => a.startDate.localeCompare(b.startDate)).slice(0, 10);
     const catTile = (id, icon, name, c1, c2) =>
       `<button class="cat ${f.cat === id ? "active" : ""}" data-cat="${id}" style="--c1:${c1};--c2:${c2}"><i>${icon}</i>${esc(name)}</button>`;
     app.innerHTML = `
@@ -505,7 +523,7 @@
           <span class="status ${st.key}">${st.text}</span>
         </div>
         <div class="actions">
-          ${ev.ticketUrl ? `<a class="btn primary" ${inAppLink(ev.ticketUrl)}>${isFree(ev) ? t("register") : t("buyTicket")}</a>` : ""}
+          ${ev.ticketUrl ? `<a class="btn primary" ${inAppLink(withAffiliate(ev.ticketUrl))}>${ev.sourceName ? t("buyAt", { site: esc(ev.sourceName) }) : isFree(ev) ? t("register") : t("buyTicket")}</a>` : ""}
           <button class="btn" id="saveBtn">${saved ? t("saved") : t("save")}</button>
           ${ev.ongoing ? "" : `<a class="btn" href="${gcalLink(ev, v)}" target="_blank" rel="noopener">${t("gcal")}</a>
           <button class="btn" id="icsBtn">${t("ics")}</button>`}
