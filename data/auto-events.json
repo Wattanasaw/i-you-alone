@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-06T15:37:54.684Z",
+  "updatedAt": "2026-11-06T15:39:55.765Z",
   "stats": {
     "Eventpop": {
       "found": 0,
@@ -9,7 +9,7 @@
     "Zipevent": {
       "found": 162,
       "kept": 25,
-      "opened": 1
+      "opened": 0
     }
   },
   "events": [
