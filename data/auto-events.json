@@ -1,15 +1,15 @@
 {
-  "updatedAt": "2026-11-06T15:55:26.468Z",
+  "updatedAt": "2026-11-06T15:39:55.765Z",
   "stats": {
     "Eventpop": {
-      "found": 171,
-      "kept": 70,
-      "opened": 70
+      "found": 0,
+      "kept": 0,
+      "opened": 0
     },
     "Zipevent": {
       "found": 162,
-      "kept": 19,
-      "opened": 70
+      "kept": 25,
+      "opened": 0
     }
   },
   "events": [
@@ -27,11 +27,74 @@
       "ticketUrl": "https://www.zipeventapp.com/e/Kunawong-House-Museum",
       "sourceUrl": "https://www.zipeventapp.com/e/Kunawong-House-Museum",
       "sourceName": "Zipevent",
-      "fetchedAt": "2026-11-06T15:53:05.044Z",
+      "fetchedAt": "2026-11-06T15:22:12.621Z",
       "ongoing": true,
       "venue": {
         "name": "Kunawong House Museum",
         "province": "bangkok"
+      }
+    },
+    {
+      "id": "ep-73915",
+      "auto": true,
+      "title": "Day Pass Package at Hotel Clover Patong Phuket",
+      "category": "food",
+      "startDate": "2025-01-21",
+      "price": {
+        "type": "unknown"
+      },
+      "summary": "🌴🌊 𝗗𝗔𝗬 𝗣𝗔𝗦𝗦 𝗔𝗧 𝗛𝗢𝗧𝗘𝗟 𝗖𝗟𝗢𝗩𝗘𝗥 𝗣𝗔𝗧𝗢𝗡𝗚 𝗣𝗛𝗨𝗞𝗘𝗧 🌞🍹 Enjoy the Clover Day Pass Experience at Hotel Clover Patong Phuket — swim, sip, surf, and relax all…",
+      "image": "https://p-u.popcdn.net/event_details/covers/000/073/915/og_cover/51faefcf70442f41b3c65fa66678ef99da80cdaf.jpg?1766381404",
+      "ticketUrl": "https://www.eventpop.me/e/73915",
+      "sourceUrl": "https://www.eventpop.me/e/73915",
+      "sourceName": "Eventpop",
+      "fetchedAt": "2026-11-06T15:32:08.925Z",
+      "ongoing": true,
+      "venue": {
+        "name": "Hotel Clover Patong Phuket",
+        "province": "phuket"
+      }
+    },
+    {
+      "id": "ep-77479",
+      "auto": true,
+      "title": "Floating Brunch at Hotel Clover Patong Phuket",
+      "category": "food",
+      "startDate": "2025-02-13",
+      "price": {
+        "type": "unknown"
+      },
+      "summary": "🍹 𝐅𝐥𝐨𝐚𝐭𝐢𝐧𝐠 𝐁𝐫𝐮𝐧𝐜𝐡 𝐚𝐭 𝐇𝐨𝐭𝐞𝐥 𝐂𝐥𝐨𝐯𝐞𝐫 𝐏𝐚𝐭𝐨𝐧𝐠 🌊 Enjoy a unique dining experience in the pool 🥗 Delicious dishes, refreshing drinks, and tropical vibe…",
+      "image": "https://p-u.popcdn.net/event_details/covers/000/077/479/og_cover/f389ca1e87495ef51e7ca7554b34a75e6f324f77.jpg?1766378530",
+      "ticketUrl": "https://www.eventpop.me/e/77479",
+      "sourceUrl": "https://www.eventpop.me/e/77479",
+      "sourceName": "Eventpop",
+      "fetchedAt": "2026-11-06T15:32:04.530Z",
+      "ongoing": true,
+      "venue": {
+        "name": "Hotel Clover Patong Phuket",
+        "province": "phuket"
+      }
+    },
+    {
+      "id": "ep-77413",
+      "auto": true,
+      "title": "𝐓𝐡𝐚𝐢 𝐂𝐨𝐨𝐤𝐢𝐧𝐠 𝐂𝐥𝐚𝐬𝐬 𝐚𝐭 𝐇𝐨𝐭𝐞𝐥 𝐂𝐥𝐨𝐯𝐞𝐫 𝐏𝐚𝐭𝐨𝐧𝐠",
+      "category": "food",
+      "startDate": "2025-02-13",
+      "price": {
+        "type": "unknown"
+      },
+      "summary": "\udc27𝐠 🇹🇭 🌶️ Fresh ingredients 🍤 Signature recipes ✨ Unforgettable experience ⏰ 𝐃𝐚𝐢𝐥𝐲: 𝟏:𝟎𝟎 𝐏𝐌 - 𝟑:𝟎𝟎 𝐏𝐌 💰 𝐓𝐇𝐁 𝟐,𝟓𝟎𝟎",
+      "image": "https://p-u.popcdn.net/event_details/posters/000/077/413/large/2092bbad7cc815e8d80ee9a10f7a3459870046dd.jpg?1738830222",
+      "ticketUrl": "https://www.eventpop.me/e/77413",
+      "sourceUrl": "https://www.eventpop.me/e/77413",
+      "sourceName": "Eventpop",
+      "fetchedAt": "2026-11-06T15:32:06.007Z",
+      "ongoing": true,
+      "venue": {
+        "name": "Hotel Clover Patong Phuket",
+        "province": "phuket"
       }
     },
     {
@@ -50,7 +113,7 @@
       "ticketUrl": "https://www.zipeventapp.com/e/Space-Time-Cube",
       "sourceUrl": "https://www.zipeventapp.com/e/Space-Time-Cube",
       "sourceName": "Zipevent",
-      "fetchedAt": "2026-11-06T15:53:06.751Z",
+      "fetchedAt": "2026-11-06T15:22:14.026Z",
       "ongoing": true,
       "venue": {
         "name": "Seacon Bangkae",
@@ -73,7 +136,7 @@
       "ticketUrl": "https://www.zipeventapp.com/e/Fahlanna-Art-Museum",
       "sourceUrl": "https://www.zipeventapp.com/e/Fahlanna-Art-Museum",
       "sourceName": "Zipevent",
-      "fetchedAt": "2026-11-06T15:53:08.814Z",
+      "fetchedAt": "2026-11-06T15:22:17.537Z",
       "ongoing": true,
       "venue": {
         "name": "FAM Fahlanna Art Museum",
@@ -96,13 +159,34 @@
       "ticketUrl": "https://www.zipeventapp.com/e/Space-Time-Cube-Pattaya",
       "sourceUrl": "https://www.zipeventapp.com/e/Space-Time-Cube-Pattaya",
       "sourceName": "Zipevent",
-      "fetchedAt": "2026-11-06T15:53:10.498Z",
+      "fetchedAt": "2026-11-06T15:22:18.902Z",
       "ongoing": true,
       "venue": {
         "name": "Central Pattaya",
         "province": "chonburi",
         "lat": 12.93469,
         "lng": 100.88348
+      }
+    },
+    {
+      "id": "ep-78371",
+      "auto": true,
+      "title": "Phuket Surf House",
+      "category": "food",
+      "startDate": "2025-12-23",
+      "price": {
+        "type": "unknown"
+      },
+      "summary": "is the perfect place to feel the thrill of surfing in a fun, safe, and welcoming environment. Whether you come on your own, with friends, or a",
+      "image": "https://p-u.popcdn.net/event_details/covers/000/078/371/og_cover/a0f1305d0752840be040ad44ca99b0741a9f3833.jpg?1739434014",
+      "ticketUrl": "https://www.eventpop.me/e/78371/https-phuketsurfhouse-com",
+      "sourceUrl": "https://www.eventpop.me/e/78371/https-phuketsurfhouse-com",
+      "sourceName": "Eventpop",
+      "fetchedAt": "2026-11-06T15:31:59.515Z",
+      "ongoing": true,
+      "venue": {
+        "name": "Phuket Surf House - Patong Beach",
+        "province": "phuket"
       }
     },
     {
@@ -121,13 +205,38 @@
       "ticketUrl": "https://www.zipeventapp.com/e/Cave-Fantasy",
       "sourceUrl": "https://www.zipeventapp.com/e/Cave-Fantasy",
       "sourceName": "Zipevent",
-      "fetchedAt": "2026-11-06T15:53:15.260Z",
+      "fetchedAt": "2026-11-06T15:22:22.420Z",
       "ongoing": true,
       "venue": {
         "name": "MBK CENTER",
         "province": "bangkok",
         "lat": 13.74472,
         "lng": 100.52992
+      }
+    },
+    {
+      "id": "ep-118703",
+      "auto": true,
+      "title": "เรียน AZ-104,คอร์สเรียนAZ-104,MicrosoftAzureAdministrator,",
+      "category": "learning",
+      "startDate": "2026-02-16",
+      "price": {
+        "type": "paid",
+        "min": 5500,
+        "max": 9500
+      },
+      "summary": "MicrosoftAzureAdministrator, เรียน AZ-104,คอร์สAZ-104",
+      "image": "https://p-u.popcdn.net/event_details/covers/000/118/703/og_cover/9b6ccf8290580e70678c96469dac9cb2ee005aa9.png?1771231930",
+      "ticketUrl": "https://www.eventpop.me/e/118703",
+      "sourceUrl": "https://www.eventpop.me/e/118703",
+      "sourceName": "Eventpop",
+      "fetchedAt": "2026-11-06T15:31:44.815Z",
+      "ongoing": true,
+      "venue": {
+        "name": "Education • Technology",
+        "province": "bangkok",
+        "lat": 13.82067,
+        "lng": 100.51438
       }
     },
     {
@@ -144,7 +253,7 @@
       "ticketUrl": "https://www.zipeventapp.com/e/Das-Malspiel-Play-of-Painting-74F040FD",
       "sourceUrl": "https://www.zipeventapp.com/e/Das-Malspiel-Play-of-Painting-74F040FD",
       "sourceName": "Zipevent",
-      "fetchedAt": "2026-11-06T15:53:22.935Z",
+      "fetchedAt": "2026-11-06T15:22:28.644Z",
       "ongoing": true,
       "venue": {
         "name": "MAIIAM Contemporary Art Museum",
@@ -167,9 +276,30 @@
       "ticketUrl": "https://www.zipeventapp.com/e/The-Secret-Sauce-Business-Weekend-Isan-2026",
       "sourceUrl": "https://www.zipeventapp.com/e/The-Secret-Sauce-Business-Weekend-Isan-2026",
       "sourceName": "Zipevent",
-      "fetchedAt": "2026-11-06T15:53:24.699Z",
+      "fetchedAt": "2026-11-06T15:22:31.489Z",
       "ongoing": true,
       "venueId": "online"
+    },
+    {
+      "id": "ep-158063",
+      "auto": true,
+      "title": "คอร์สเตรียมสอบ สอวน. ชีววิทยา สอนโดย อ.นภัทร ปราบมีชัย | สถา",
+      "category": "learning",
+      "startDate": "2026-08-14",
+      "price": {
+        "type": "unknown"
+      },
+      "summary": "คอร์สติวสอบ สอวน. สุดเข้มข้น🎯 ไม่ใช่แค่เรียนจบคอร์สแต่ดูแลจนกว่าจะสอบติดสิทธิ์เรียนซ้ำฟรี จนกว่าจะสอบผ่าน‼️คอร์สเตรียมสอบ สอวน.ชีววิทยา✅ ครบทุกเนื้อหาสำคัญ✅ ตะล",
+      "image": "https://p-u.popcdn.net/event_details/posters/000/158/063/large/0a6d5917864e0da21f2400619155a756bb0a581f.jpeg?1782289243",
+      "ticketUrl": "https://www.eventpop.me/e/158063/https-m-facebook-com-story-php-story_fbid-pfbid02jear8uuyjkwvqvggubkfb6frkuu423axy18pk5jvx64ljw5mplpcmeegizxpnrqal-id-61575058184591",
+      "sourceUrl": "https://www.eventpop.me/e/158063/https-m-facebook-com-story-php-story_fbid-pfbid02jear8uuyjkwvqvggubkfb6frkuu423axy18pk5jvx64ljw5mplpcmeegizxpnrqal-id-61575058184591",
+      "sourceName": "Eventpop",
+      "fetchedAt": "2026-11-06T15:27:49.333Z",
+      "ongoing": true,
+      "venue": {
+        "name": "สถาบัน Triam วิทย์-คณิต MBK ชั้น 6 โซน D สถาบันติวสอบเข้า ม.1 และ ม.4",
+        "province": "bangkok"
+      }
     },
     {
       "id": "zip-the-secret-sauce-summit-2026-the-age-of-builders",
@@ -187,9 +317,89 @@
       "ticketUrl": "https://www.zipeventapp.com/e/THE-SECRET-SAUCE-SUMMIT-2026-THE-AGE-OF-BUILDERS",
       "sourceUrl": "https://www.zipeventapp.com/e/THE-SECRET-SAUCE-SUMMIT-2026-THE-AGE-OF-BUILDERS",
       "sourceName": "Zipevent",
-      "fetchedAt": "2026-11-06T15:53:26.396Z",
+      "fetchedAt": "2026-11-06T15:22:33.844Z",
       "ongoing": true,
       "venueId": "online"
+    },
+    {
+      "id": "ep-159559",
+      "auto": true,
+      "title": "ตะลุยโจทย์เตรียมความพร้อม พิชิตข้อสอบ ม.1 (UPSKILL) | สถาบัน",
+      "category": "learning",
+      "startDate": "2026-10-18",
+      "endDate": "2026-12-27",
+      "price": {
+        "type": "unknown"
+      },
+      "summary": "ตะลุยโจทย์เตรียมความพร้อม พิชิตข้อสอบ ม.1 (UPSKILL) 🎯หลักสูตรเข้มข้นสำหรับนักเรียนชั้น ป.5 - ป.6 เพื่อเตรียมตัวสอบเข้าโรงเรียนชั้นนำของประเทศ (สาธิตปทุมวัน, สวน",
+      "image": "https://p-u.popcdn.net/event_details/posters/000/159/559/large/4aa59336fe5ef3101fa422c45cfd235f6ac3f918.jpeg?1783049228",
+      "ticketUrl": "https://www.eventpop.me/e/159559",
+      "sourceUrl": "https://www.eventpop.me/e/159559",
+      "sourceName": "Eventpop",
+      "fetchedAt": "2026-11-06T15:27:37.931Z",
+      "venue": {
+        "name": "สถาบัน Triam วิทย์-คณิต MBK ชั้น 6 โซน D สถาบันติวสอบเข้า ม.1 และ ม.4",
+        "province": "bangkok"
+      }
+    },
+    {
+      "id": "ep-162785",
+      "auto": true,
+      "title": "ลงทะเบียนวิชา Concentration ภาคเรียนที่ 2 ปีการศึกษา 2569",
+      "category": "learning",
+      "startDate": "2026-10-26",
+      "price": {
+        "type": "unknown"
+      },
+      "summary": "เทสระบบการลงทะเบียน",
+      "image": "https://p-u.popcdn.net/event_details/covers/000/162/785/og_cover/a17d49cfaf29e632670b4a139160301e537bd950.jpg?1784618359",
+      "ticketUrl": "https://www.eventpop.me/e/162785/tssreg2",
+      "sourceUrl": "https://www.eventpop.me/e/162785/tssreg2",
+      "sourceName": "Eventpop",
+      "fetchedAt": "2026-11-06T15:27:16.604Z",
+      "ongoing": true,
+      "venueId": "online"
+    },
+    {
+      "id": "ep-171021",
+      "auto": true,
+      "title": "Mental Matters Fest 2026",
+      "category": "concert",
+      "startDate": "2026-10-31",
+      "endDate": "2026-11-08",
+      "price": {
+        "type": "unknown"
+      },
+      "summary": "เรื่องราวที่เลี้ยวออกนอกกรอบความคุ้นเคยคาดหวัง สู่การยอมรับ และอิสรภาพ.SOULSMITH ขอชวนคุณมางาน \"Mental Matters Fest 2026: Unspoken Stories\"เฟสติวัลที่จะชวนประสบ",
+      "image": "https://p-u.popcdn.net/event_details/covers/000/171/021/og_cover/8e7c9281998e5fbfb66a4d9193590f3aa3399a42.png?1790770502",
+      "ticketUrl": "https://www.eventpop.me/e/171021",
+      "sourceUrl": "https://www.eventpop.me/e/171021",
+      "sourceName": "Eventpop",
+      "fetchedAt": "2026-11-06T15:26:43.951Z",
+      "venue": {
+        "name": "SOULSMITH By Empathy Sauce",
+        "province": "bangkok"
+      }
+    },
+    {
+      "id": "zip-roman-cng-monolougue-vivavida",
+      "auto": true,
+      "title": "Romanc/ng Monolougue Vivavida",
+      "category": "concert",
+      "startDate": "2026-11-06",
+      "endDate": "2026-11-06",
+      "price": {
+        "type": "unknown"
+      },
+      "image": "https://cdnali.zipeventapp.com/images/events/B986D4EC-A599-47FA-8A4A-BFBE16B15D87/B5F74946-2B9E-499E-B2B7-383B4BB533E8.jpg",
+      "ticketUrl": "https://www.zipeventapp.com/e/roman-cng-monolougue-vivavida",
+      "sourceUrl": "https://www.zipeventapp.com/e/roman-cng-monolougue-vivavida",
+      "sourceName": "Zipevent",
+      "fetchedAt": "2026-11-06T15:33:45.991Z",
+      "venue": {
+        "name": "ข้อมูลอีเว้นท์",
+        "province": "bangkok"
+      }
     },
     {
       "id": "ep-180088",
@@ -207,9 +417,55 @@
       "ticketUrl": "https://www.eventpop.me/e/180088/bangkokriddimsyndicate6nov",
       "sourceUrl": "https://www.eventpop.me/e/180088/bangkokriddimsyndicate6nov",
       "sourceName": "Eventpop",
-      "fetchedAt": "2026-11-06T15:51:09.997Z",
+      "fetchedAt": "2026-11-06T15:20:51.530Z",
       "venue": {
         "name": "Bangkok Island",
+        "province": "bangkok"
+      }
+    },
+    {
+      "id": "ep-161857",
+      "auto": true,
+      "title": "สิงห์ คอร์เปอเรชั่น ภูมิใจนำเสนอ “ลูกทุ่งลุยไฟ ใหญ่มาก ว่าแ",
+      "category": "concert",
+      "startDate": "2026-11-06",
+      "endDate": "2026-11-07",
+      "price": {
+        "type": "paid",
+        "min": 179,
+        "max": 400
+      },
+      "summary": "🔥เฟสติวัลลูกทุ่งหมอลำที่แซ่บที่สุดสำหรับทุก GEN กลับมาแล้ว 🔥 📣เตรียมมาม่วนนำกันในงาน สิงห์ คอร์เปอเรชั่น ภูมิใจนำเสนอ 🎤 “ลูกทุ่งลุยไฟ ใหญ่มาก ว่าแซ่บ”มหกรรม",
+      "image": "https://p-u.popcdn.net/event_details/covers/000/161/857/og_cover/73ae59ab42b4c7af029d752abbccf185dd9f75b8.png?1785914937",
+      "ticketUrl": "https://www.eventpop.me/e/161857/lukthungonfire2026",
+      "sourceUrl": "https://www.eventpop.me/e/161857/lukthungonfire2026",
+      "sourceName": "Eventpop",
+      "fetchedAt": "2026-11-06T15:27:22.559Z",
+      "venue": {
+        "name": "LEO PARK",
+        "province": "khon-kaen"
+      }
+    },
+    {
+      "id": "ep-160395",
+      "auto": true,
+      "title": "MAD MEETUP 2026",
+      "category": "learning",
+      "startDate": "2026-11-06",
+      "endDate": "2026-11-07",
+      "price": {
+        "type": "paid",
+        "min": 1500,
+        "max": 15000
+      },
+      "summary": "กลับมาอีกครั้งกับปาร์ตี้สุด BAD !MAD Meetup 2026“Villain Unmasked”เผยร่างวายร้าย ผู้ท้าทายเกมธุรกิจนี่คือ “MAD Meetup 2026” อิเวนต์ที่รวมตัวผู้บริหารสายการตลาด",
+      "image": "https://p-u.popcdn.net/event_details/covers/000/160/395/og_cover/439746e116bdd26c198614965839d4e5df59926d.jpg?1793775443",
+      "ticketUrl": "https://www.eventpop.me/e/160395/mad-meetup-2026",
+      "sourceUrl": "https://www.eventpop.me/e/160395/mad-meetup-2026",
+      "sourceName": "Eventpop",
+      "fetchedAt": "2026-11-06T15:27:30.101Z",
+      "venue": {
+        "name": "DONKI Mall Thonglor",
         "province": "bangkok"
       }
     },
@@ -230,7 +486,7 @@
       "ticketUrl": "https://www.eventpop.me/e/177671/sales-director-94th",
       "sourceUrl": "https://www.eventpop.me/e/177671/sales-director-94th",
       "sourceName": "Eventpop",
-      "fetchedAt": "2026-11-06T15:52:03.208Z",
+      "fetchedAt": "2026-11-06T15:21:28.986Z",
       "venue": {
         "name": "Novotel Bangkok Sukhumvit 20",
         "province": "bangkok",
@@ -254,10 +510,97 @@
       "ticketUrl": "https://www.eventpop.me/e/175705/bbloombar",
       "sourceUrl": "https://www.eventpop.me/e/175705/bbloombar",
       "sourceName": "Eventpop",
-      "fetchedAt": "2026-11-06T15:52:48.149Z",
+      "fetchedAt": "2026-11-06T15:21:59.941Z",
       "venue": {
         "name": "Heavyweight brunch n bars",
         "province": "phuket"
+      }
+    },
+    {
+      "id": "ep-174009",
+      "auto": true,
+      "title": "ค่ายสานฝันนักการทูต DIPLOMAT CAMP Season 31 🩵💫",
+      "category": "learning",
+      "startDate": "2026-11-07",
+      "endDate": "2026-11-07",
+      "time": "10:00",
+      "price": {
+        "type": "unknown"
+      },
+      "summary": "🌍 อยากเป็นตัวแทนประเทศไทยบนเวทีโลกไหม?เปิดรอบเพิ่ม! ค่ายนักการทูต ครั้งที่ 31 ค่ายที่จะพาน้อง ๆ ไปลองเป็น “นักการทูตตัวจริง”ทั้งการคิด วิเคราะห์ เจรจา และสื่อสา",
+      "image": "https://p-u.popcdn.net/event_details/covers/000/174/009/og_cover/ed49538b5b0ca6bf7ebb52b394aee72faa04f53d.png?1790064877",
+      "ticketUrl": "https://www.eventpop.me/e/174009/https-forms-gle-jjpkgrl5xsv5zs4v8",
+      "sourceUrl": "https://www.eventpop.me/e/174009/https-forms-gle-jjpkgrl5xsv5zs4v8",
+      "sourceName": "Eventpop",
+      "fetchedAt": "2026-11-06T15:25:58.089Z",
+      "venue": {
+        "name": "โรงแรมอวานี รัชดา กรุงเทพ",
+        "province": "bangkok",
+        "lat": 13.75693,
+        "lng": 100.56469
+      }
+    },
+    {
+      "id": "ep-172847",
+      "auto": true,
+      "title": "Full-Stack Web Development for the AI Era",
+      "category": "learning",
+      "startDate": "2026-11-07",
+      "endDate": "2027-02-28",
+      "price": {
+        "type": "unknown"
+      },
+      "summary": "WEB DEVELOPMENT · HANDS-ON · AIFull-Stack Web Developmentfor the AI EraBuild Production-Ready Applications with Next.js, Supabase &amp; Vibe Coding26 ครั้ง /",
+      "image": "https://p-u.popcdn.net/event_details/covers/000/172/847/og_cover/e8b34ee88525ebf32c96115cf02ae089719e5efd.png?1789529181",
+      "ticketUrl": "https://www.eventpop.me/e/172847/fullstack-nextjs-2026",
+      "sourceUrl": "https://www.eventpop.me/e/172847/fullstack-nextjs-2026",
+      "sourceName": "Eventpop",
+      "fetchedAt": "2026-11-06T15:26:20.708Z",
+      "venue": {
+        "name": "KMITL Lifelong Learning Center",
+        "province": "bangkok"
+      }
+    },
+    {
+      "id": "ep-172345",
+      "auto": true,
+      "title": "Cosmetic Sci Lab : Fragrance & Lip  ครั้งที่ 3 (ห้องเรียนจำล",
+      "category": "learning",
+      "startDate": "2026-11-07",
+      "endDate": "2026-11-07",
+      "time": "10:00",
+      "price": {
+        "type": "unknown"
+      },
+      "summary": "\"Cosmetic Sci Lab : Fragrance &amp; Lip (ห้องเรียนจำลองวิทย์เครื่องสำอาง : กลิ่น และลิป)\" ครั้งที่ 3ค่ายเต็มวันที่จะทำให้น้อง ๆ ได้เรียนรู้เกี่ยวกับการเรียน การ",
+      "image": "https://p-u.popcdn.net/event_details/covers/000/172/345/og_cover/2f245d9f66db15de81edf5818157b63fc64af5d7.png?1789202161",
+      "ticketUrl": "https://www.eventpop.me/e/172345/https-forms-gle-dhkr1xp1pwtcpfdf8",
+      "sourceUrl": "https://www.eventpop.me/e/172345/https-forms-gle-dhkr1xp1pwtcpfdf8",
+      "sourceName": "Eventpop",
+      "fetchedAt": "2026-11-06T15:26:35.989Z",
+      "venue": {
+        "name": "อาคารเคเอกซ์",
+        "province": "bangkok"
+      }
+    },
+    {
+      "id": "zip-the-black-kings-nephew-nov",
+      "auto": true,
+      "title": "ศรีเสาวภาคย์",
+      "category": "concert",
+      "startDate": "2026-11-08",
+      "endDate": "2026-11-08",
+      "price": {
+        "type": "unknown"
+      },
+      "image": "https://cdnali.zipeventapp.com/images/events/92D8C34E-FC24-43A8-8D07-6D6F2E2EBEBD/E101F89C-D67A-428A-812E-BA56F93651BD.jpg",
+      "ticketUrl": "https://www.zipeventapp.com/e/the-black-kings-nephew-nov",
+      "sourceUrl": "https://www.zipeventapp.com/e/the-black-kings-nephew-nov",
+      "sourceName": "Zipevent",
+      "fetchedAt": "2026-11-06T15:33:33.719Z",
+      "venue": {
+        "name": "ข้อมูลอีเว้นท์",
+        "province": "bangkok"
       }
     },
     {
@@ -276,7 +619,7 @@
       "ticketUrl": "https://www.eventpop.me/e/176807/https-forms-gle-ugfireix48fqgudf6",
       "sourceUrl": "https://www.eventpop.me/e/176807/https-forms-gle-ugfireix48fqgudf6",
       "sourceName": "Eventpop",
-      "fetchedAt": "2026-11-06T15:52:21.748Z",
+      "fetchedAt": "2026-11-06T15:25:26.493Z",
       "venue": {
         "name": "โรงแรมอวานี รัชดา กรุงเทพ",
         "province": "bangkok",
@@ -300,7 +643,7 @@
       "ticketUrl": "https://www.eventpop.me/e/176609",
       "sourceUrl": "https://www.eventpop.me/e/176609",
       "sourceName": "Eventpop",
-      "fetchedAt": "2026-11-06T15:52:27.061Z",
+      "fetchedAt": "2026-11-06T15:21:47.956Z",
       "venue": {
         "name": "Mövenpick Myth Hotel Patong Phuket",
         "province": "phuket",
@@ -326,7 +669,7 @@
       "ticketUrl": "https://www.eventpop.me/e/176069/hugo-eternal-night-cruise-trilogy-concert",
       "sourceUrl": "https://www.eventpop.me/e/176069/hugo-eternal-night-cruise-trilogy-concert",
       "sourceName": "Eventpop",
-      "fetchedAt": "2026-11-06T15:52:34.634Z",
+      "fetchedAt": "2026-11-06T15:25:31.309Z",
       "venue": {
         "name": "MGI Hall 2, Bravo BKK",
         "province": "bangkok",
@@ -349,7 +692,7 @@
       "ticketUrl": "https://www.eventpop.me/e/180616/imc-agentic-ai-theory-and-practice-for-developer-nov2026",
       "sourceUrl": "https://www.eventpop.me/e/180616/imc-agentic-ai-theory-and-practice-for-developer-nov2026",
       "sourceName": "Eventpop",
-      "fetchedAt": "2026-11-06T15:51:04.555Z",
+      "fetchedAt": "2026-11-06T15:20:47.029Z",
       "venue": {
         "name": "IMC Institute",
         "province": "bangkok"
@@ -370,11 +713,53 @@
       "ticketUrl": "https://www.eventpop.me/e/179095",
       "sourceUrl": "https://www.eventpop.me/e/179095",
       "sourceName": "Eventpop",
-      "fetchedAt": "2026-11-06T15:51:31.677Z",
+      "fetchedAt": "2026-11-06T15:21:10.730Z",
       "venue": {
         "name": "Waterfall Festival",
         "province": "surat-thani"
       }
+    },
+    {
+      "id": "ep-174376",
+      "auto": true,
+      "title": "Wednesday Song Vol.28 : Pause & Scrubb",
+      "category": "concert",
+      "startDate": "2026-11-11",
+      "endDate": "2026-11-11",
+      "time": "19:30",
+      "price": {
+        "type": "unknown"
+      },
+      "summary": "ค่ำคืนวันพุธ ที่บทเพลงและความรู้สึกจะกลับมาอยู่ในค่ำคืนเดียวกันWEDNESDAY SONG VOL.28 PAUSE &amp; SCRUBBพบกับสองวงดนตรีที่มีบทเพลงอยู่ในความทรงจำของใครหลายคนPAUS",
+      "image": "https://p-u.popcdn.net/event_details/covers/000/174/376/og_cover/a7a6b5354885585b51b58500a8697e213ba63942.jpg?1790321162",
+      "ticketUrl": "https://www.eventpop.me/e/174376/wednesdaysong28",
+      "sourceUrl": "https://www.eventpop.me/e/174376/wednesdaysong28",
+      "sourceName": "Eventpop",
+      "fetchedAt": "2026-11-06T15:25:49.048Z",
+      "venue": {
+        "name": "SiamPic Hall",
+        "province": "bangkok"
+      }
+    },
+    {
+      "id": "zip-alphaskillssummit2026",
+      "auto": true,
+      "title": "Alpha Skills Summit & Expo 2026",
+      "category": "learning",
+      "startDate": "2026-11-12",
+      "endDate": "2026-11-12",
+      "time": "10:00–23:59",
+      "price": {
+        "type": "paid",
+        "min": 490,
+        "max": 490
+      },
+      "image": "https://cdnali.zipeventapp.com/images/events/BDCF9CBE-28F8-4010-9CF3-262ED516A2F0/298FC8DB-3F06-41E9-8EA0-FE7015303E56.jpg",
+      "ticketUrl": "https://www.zipeventapp.com/e/alphaskillssummit2026",
+      "sourceUrl": "https://www.zipeventapp.com/e/alphaskillssummit2026",
+      "sourceName": "Zipevent",
+      "fetchedAt": "2026-11-06T15:22:23.784Z",
+      "venueId": "online"
     },
     {
       "id": "ep-181082",
@@ -392,7 +777,7 @@
       "ticketUrl": "https://www.eventpop.me/e/181082",
       "sourceUrl": "https://www.eventpop.me/e/181082",
       "sourceName": "Eventpop",
-      "fetchedAt": "2026-11-06T15:50:48.146Z",
+      "fetchedAt": "2026-11-06T15:20:31.945Z",
       "venue": {
         "name": "CU Auditorium",
         "province": "bangkok"
@@ -413,7 +798,7 @@
       "ticketUrl": "https://www.eventpop.me/e/180649/imc-foundation-of-software-testing-unlocking-the-secrets-nov2026",
       "sourceUrl": "https://www.eventpop.me/e/180649/imc-foundation-of-software-testing-unlocking-the-secrets-nov2026",
       "sourceName": "Eventpop",
-      "fetchedAt": "2026-11-06T15:51:02.782Z",
+      "fetchedAt": "2026-11-06T15:20:45.601Z",
       "venue": {
         "name": "IMC Institute",
         "province": "bangkok"
@@ -435,31 +820,32 @@
       "ticketUrl": "https://www.eventpop.me/e/177172/dontthaitome",
       "sourceUrl": "https://www.eventpop.me/e/177172/dontthaitome",
       "sourceName": "Eventpop",
-      "fetchedAt": "2026-11-06T15:52:17.954Z",
+      "fetchedAt": "2026-11-06T15:21:40.749Z",
       "venue": {
         "name": "Industrious Gaysorn Tower",
         "province": "bangkok"
       }
     },
     {
-      "id": "zip-alphaskillssummit2026",
+      "id": "ep-118637",
       "auto": true,
-      "title": "Alpha Skills Summit & Expo 2026",
-      "category": "learning",
-      "startDate": "2026-11-12",
-      "endDate": "2026-11-12",
-      "time": "10:00–23:59",
+      "title": "BangkokBeasts 2026 : Furbidden Vault",
+      "category": "concert",
+      "startDate": "2026-11-14",
+      "endDate": "2026-11-15",
       "price": {
-        "type": "paid",
-        "min": 490,
-        "max": 490
+        "type": "unknown"
       },
-      "image": "https://cdnali.zipeventapp.com/images/events/BDCF9CBE-28F8-4010-9CF3-262ED516A2F0/298FC8DB-3F06-41E9-8EA0-FE7015303E56.jpg",
-      "ticketUrl": "https://www.zipeventapp.com/e/alphaskillssummit2026",
-      "sourceUrl": "https://www.zipeventapp.com/e/alphaskillssummit2026",
-      "sourceName": "Zipevent",
-      "fetchedAt": "2026-11-06T15:53:17.886Z",
-      "venueId": "online"
+      "summary": "Tier \"The Camper\" Ticket The Ticket is valid for Day 1 only. They cannot be used to enter on Day 2.**Ticket Transfer Policy**(Card transf",
+      "image": "https://p-u.popcdn.net/event_details/posters/000/118/637/large/e09e2fa34d379b30fbda44101a7cf36ddcc0e745.jpeg?1773746360",
+      "ticketUrl": "https://www.eventpop.me/e/118637/bangkokbeasts2026",
+      "sourceUrl": "https://www.eventpop.me/e/118637/bangkokbeasts2026",
+      "sourceName": "Eventpop",
+      "fetchedAt": "2026-11-06T15:31:48.895Z",
+      "venue": {
+        "name": "Mr.FOX Live House",
+        "province": "bangkok"
+      }
     },
     {
       "id": "ep-181216",
@@ -476,7 +862,7 @@
       "ticketUrl": "https://www.eventpop.me/e/181216",
       "sourceUrl": "https://www.eventpop.me/e/181216",
       "sourceName": "Eventpop",
-      "fetchedAt": "2026-11-06T15:50:42.783Z",
+      "fetchedAt": "2026-11-06T15:20:27.419Z",
       "venue": {
         "name": "Music Festival",
         "province": "nakhon-si-thammarat",
@@ -500,7 +886,7 @@
       "ticketUrl": "https://www.eventpop.me/e/179690/miniclass01",
       "sourceUrl": "https://www.eventpop.me/e/179690/miniclass01",
       "sourceName": "Eventpop",
-      "fetchedAt": "2026-11-06T15:51:19.129Z",
+      "fetchedAt": "2026-11-06T15:20:58.947Z",
       "venue": {
         "name": "TK Park, Thailand Knowledge Park",
         "province": "bangkok",
@@ -523,7 +909,7 @@
       "ticketUrl": "https://www.eventpop.me/e/177803/unsuck",
       "sourceUrl": "https://www.eventpop.me/e/177803/unsuck",
       "sourceName": "Eventpop",
-      "fetchedAt": "2026-11-06T15:51:51.370Z",
+      "fetchedAt": "2026-11-06T15:21:26.169Z",
       "venue": {
         "name": "Chulalongkorn University",
         "province": "bangkok",
@@ -546,7 +932,7 @@
       "ticketUrl": "https://www.eventpop.me/e/177438",
       "sourceUrl": "https://www.eventpop.me/e/177438",
       "sourceName": "Eventpop",
-      "fetchedAt": "2026-11-06T15:52:14.372Z",
+      "fetchedAt": "2026-11-06T15:21:37.824Z",
       "venue": {
         "name": "Green Lake Resort Chiangmai",
         "province": "chiang-mai"
@@ -568,12 +954,137 @@
       "ticketUrl": "https://www.eventpop.me/e/175408/https-forms-gle-nb3dznm8an6va7a79",
       "sourceUrl": "https://www.eventpop.me/e/175408/https-forms-gle-nb3dznm8an6va7a79",
       "sourceName": "Eventpop",
-      "fetchedAt": "2026-11-06T15:52:51.698Z",
+      "fetchedAt": "2026-11-06T15:25:32.899Z",
       "venue": {
         "name": "โรงแรมอวานี รัชดา กรุงเทพ",
         "province": "bangkok",
         "lat": 13.75693,
         "lng": 100.56469
+      }
+    },
+    {
+      "id": "ep-174077",
+      "auto": true,
+      "title": "BNK48 & CGM48 Senbatsu General Election 2026: Final Results",
+      "category": "concert",
+      "startDate": "2026-11-14",
+      "endDate": "2026-11-14",
+      "time": "18:00",
+      "price": {
+        "type": "paid",
+        "min": 1116,
+        "max": 1666
+      },
+      "summary": "BNK48 &amp; CGM48 Senbatsu General Election 2026: Final Results Announcement ศึกแห่งความฝันกำลังจะเริ่มต้นขึ้นอีกครั้ง เมื่อเหล่าเมมเบอร์จาก BNK48 และ CGM4",
+      "image": "https://p-u.popcdn.net/event_details/covers/000/174/077/og_cover/90d408af9d00459403a95651f02cb30b72bdbc81.png?1790846314",
+      "ticketUrl": "https://www.eventpop.me/e/174077/ge2026",
+      "sourceUrl": "https://www.eventpop.me/e/174077/ge2026",
+      "sourceName": "Eventpop",
+      "fetchedAt": "2026-11-06T15:25:50.608Z",
+      "venue": {
+        "name": "MCC Hall, The Mall Lifestore Bangkapi",
+        "province": "bangkok",
+        "lat": 13.76579,
+        "lng": 100.64267
+      }
+    },
+    {
+      "id": "ep-173975",
+      "auto": true,
+      "title": "BNK48 & CGM48 Concert 2026: JOURNEY OF DREAMS (夢の旅)",
+      "category": "concert",
+      "startDate": "2026-11-14",
+      "endDate": "2026-11-14",
+      "time": "13:00",
+      "price": {
+        "type": "paid",
+        "min": 3549,
+        "max": 4999
+      },
+      "summary": "BNK48 &amp; CGM48 Concert 2026: JOURNEY of DREAMS (夢の旅)9 ปีแห่งความฝัน ทุกความทรงจำมีเธอร่วมทางเมื่อสองเส้นทางมาบรรจบ รถไฟแห่งความฝันจึงพร้อมออกเดินทางอีกครั้ง",
+      "image": "https://p-u.popcdn.net/event_details/covers/000/173/975/og_cover/b1846cd6ea828cc1cc067f899b5b58fd2b9497f8.png?1790846224",
+      "ticketUrl": "https://www.eventpop.me/e/173975/journeyofdreams",
+      "sourceUrl": "https://www.eventpop.me/e/173975/journeyofdreams",
+      "sourceName": "Eventpop",
+      "fetchedAt": "2026-11-06T15:26:01.120Z",
+      "venue": {
+        "name": "MCC Hall, The Mall Lifestore Bangkapi",
+        "province": "bangkok",
+        "lat": 13.76579,
+        "lng": 100.64267
+      }
+    },
+    {
+      "id": "ep-173942",
+      "auto": true,
+      "title": "[2 Concerts Ticket Bundle] BNK48 & CGM48 Senbatsu General El",
+      "category": "concert",
+      "startDate": "2026-11-14",
+      "endDate": "2026-11-14",
+      "price": {
+        "type": "unknown"
+      },
+      "summary": "เปิดรอบสำหรับนำ Ticket Reference Code มาเลือกที่นั่งวันที่ 13 ตุลาคม 2026 เวลา 10:00 น. - 14 ตุลาคม 2026 เวลา 23:59 น. เท่านั้นเลือกที่นั่งสำหรับงาน BNK48 &amp;",
+      "image": "https://p-u.popcdn.net/event_details/covers/000/173/942/og_cover/8ce0a1347a41c0718dcda3d0b925c9f4b0b470c3.png?1790222305",
+      "ticketUrl": "https://www.eventpop.me/e/173942/ge2026_bundle",
+      "sourceUrl": "https://www.eventpop.me/e/173942/ge2026_bundle",
+      "sourceName": "Eventpop",
+      "fetchedAt": "2026-11-06T15:26:02.547Z",
+      "venue": {
+        "name": "MCC Hall, The Mall Lifestore Bangkapi",
+        "province": "bangkok",
+        "lat": 13.76579,
+        "lng": 100.64267
+      }
+    },
+    {
+      "id": "ep-172510",
+      "auto": true,
+      "title": "TEDxChiangMai Future of Learning",
+      "category": "learning",
+      "startDate": "2026-11-14",
+      "endDate": "2026-11-14",
+      "time": "09:00",
+      "price": {
+        "type": "unknown"
+      },
+      "summary": "TEDxChiangMai 2026: The Future of LearningHow is learning changing—and what should it become? Early bird prices till 3 NovemberTEDxChiangMai 2026: The Future of",
+      "image": "https://p-u.popcdn.net/event_details/covers/000/172/510/og_cover/9377302be8168989764a7f1e9a367c9ff0a1fbc8.png?1789963798",
+      "ticketUrl": "https://www.eventpop.me/e/172510/tedxchiangmaifutureoflearning",
+      "sourceUrl": "https://www.eventpop.me/e/172510/tedxchiangmaifutureoflearning",
+      "sourceName": "Eventpop",
+      "fetchedAt": "2026-11-06T15:26:31.223Z",
+      "venue": {
+        "name": "Faculty of Economics, Chiang Mai University",
+        "province": "chiang-mai",
+        "lat": 18.80093,
+        "lng": 98.95216
+      }
+    },
+    {
+      "id": "ep-170487",
+      "auto": true,
+      "title": "Community Builder Blueprint รุ่น 2",
+      "category": "learning",
+      "startDate": "2026-11-14",
+      "endDate": "2026-11-14",
+      "time": "09:30",
+      "price": {
+        "type": "paid",
+        "min": 6999,
+        "max": 9999
+      },
+      "summary": "คอร์ส 1 วันเต็ม ที่จะพาคุณลงมือออกแบบ Community ตั้งแต่เริ่มต้น จนเห็นภาพว่าจะทำให้ Community เติบโตและตอบโจทย์ธุรกิจได้อย่างไรตลอด 8 ปีที่ผ่านมา แจนได้มีโอกาสส",
+      "image": "https://p-u.popcdn.net/event_details/covers/000/170/487/og_cover/e77d301dd1879e558066e404a5c0e2cda3fe8642.jpg?1793766193",
+      "ticketUrl": "https://www.eventpop.me/e/170487/community-builder-blueprint-2",
+      "sourceUrl": "https://www.eventpop.me/e/170487/community-builder-blueprint-2",
+      "sourceName": "Eventpop",
+      "fetchedAt": "2026-11-06T15:26:54.177Z",
+      "venue": {
+        "name": "Data First Co.,Ltd.",
+        "province": "bangkok",
+        "lat": 7.96764,
+        "lng": 98.39125
       }
     },
     {
@@ -591,7 +1102,7 @@
       "ticketUrl": "https://www.eventpop.me/e/179426",
       "sourceUrl": "https://www.eventpop.me/e/179426",
       "sourceName": "Eventpop",
-      "fetchedAt": "2026-11-06T15:51:24.384Z",
+      "fetchedAt": "2026-11-06T15:21:03.288Z",
       "venue": {
         "name": "King's College International School Bangkok",
         "province": "bangkok",
@@ -617,7 +1128,7 @@
       "ticketUrl": "https://www.eventpop.me/e/178234/tedxthammasatu2026-theunwrittenlegcy",
       "sourceUrl": "https://www.eventpop.me/e/178234/tedxthammasatu2026-theunwrittenlegcy",
       "sourceName": "Eventpop",
-      "fetchedAt": "2026-11-06T15:51:44.075Z",
+      "fetchedAt": "2026-11-06T15:21:20.397Z",
       "venue": {
         "name": "อาคารเรียนและปฏิบัติการรวม(อาคารปิยชาติ 2)",
         "province": "pathum-thani"
@@ -639,10 +1150,104 @@
       "ticketUrl": "https://www.eventpop.me/e/176202",
       "sourceUrl": "https://www.eventpop.me/e/176202",
       "sourceName": "Eventpop",
-      "fetchedAt": "2026-11-06T15:52:29.202Z",
+      "fetchedAt": "2026-11-06T15:21:49.427Z",
       "venue": {
         "name": "Sasin School of Management",
         "province": "bangkok"
+      }
+    },
+    {
+      "id": "ep-170922",
+      "auto": true,
+      "title": "Essential Game Design for Learning Workshop - เวิร์กชอปออกแบบเกมการเรียนรู้ สร้างบทเรียนที่เล่นได้จริงใน 1 วัน",
+      "category": "learning",
+      "startDate": "2026-11-15",
+      "endDate": "2026-11-15",
+      "time": "09:00",
+      "price": {
+        "type": "paid",
+        "min": 3900,
+        "max": 4500
+      },
+      "summary": "🎲 กลับมาอีกครั้งกับ Essential Game Design for Learning Workshop [BATCH 2] - เวิร์กชอปออกแบบเกมการเรียนรู้ สร้างบทเรียนที่เล่นได้จริงใน 1 วัน เพื่อนักออกแบบการเร",
+      "image": "https://p-u.popcdn.net/event_details/covers/000/170/922/og_cover/f91ec8bc6168d811408140baee2cf78086b7b365.jpg?1788585643",
+      "ticketUrl": "https://www.eventpop.me/e/170922",
+      "sourceUrl": "https://www.eventpop.me/e/170922",
+      "sourceName": "Eventpop",
+      "fetchedAt": "2026-11-06T15:26:47.173Z",
+      "venue": {
+        "name": "Knowledge Exchange Center (KX)",
+        "province": "bangkok",
+        "lat": 13.72038,
+        "lng": 100.4983
+      }
+    },
+    {
+      "id": "ep-166139",
+      "auto": true,
+      "title": "ค่ายจิตวิทยาอินเตอร์ (Psychology) Season 9🧖‍♀️🔱 (JIPP) by ON",
+      "category": "learning",
+      "startDate": "2026-11-15",
+      "endDate": "2026-11-15",
+      "time": "10:00",
+      "price": {
+        "type": "unknown"
+      },
+      "summary": "ค่าย จิตวิทยาอินเตอร์ รุ่นที่ 9 (JIPP) by ONCEs Thailandพบกับ!! ค่ายที่จะทำให้น้อง ๆ ได้ทำความรู้จักกับคณะและสาขาเกี่ยวกับจิตวิทยาอินเตอร์ (JIPP CU)ค่ายที่จะพาน",
+      "image": "https://p-u.popcdn.net/event_details/covers/000/166/139/og_cover/2c80712014f1fae66d1ea5ad43be5404a074dea2.png?1786518508",
+      "ticketUrl": "https://www.eventpop.me/e/166139/https-forms-gle-77avzwexp3tv8zwb9",
+      "sourceUrl": "https://www.eventpop.me/e/166139/https-forms-gle-77avzwexp3tv8zwb9",
+      "sourceName": "Eventpop",
+      "fetchedAt": "2026-11-06T15:27:12.374Z",
+      "venue": {
+        "name": "True Space Asoke",
+        "province": "bangkok"
+      }
+    },
+    {
+      "id": "ep-172813",
+      "auto": true,
+      "title": "Halfmoon Festival : 17th November 2026",
+      "category": "concert",
+      "startDate": "2026-11-17",
+      "endDate": "2026-11-18",
+      "price": {
+        "type": "unknown"
+      },
+      "summary": "⚠️ IMPORTANT – ENTRY INFORMATIONPlease read the following information before attending Halfmoon Festival.✅ Check-in Requirements• Please present your ticket and",
+      "image": "https://p-u.popcdn.net/event_details/covers/000/172/813/og_cover/ac1c14dee12270051aa814c855d6e23cf2b7c0ee.jpg?1793937072",
+      "ticketUrl": "https://www.eventpop.me/e/172813",
+      "sourceUrl": "https://www.eventpop.me/e/172813",
+      "sourceName": "Eventpop",
+      "fetchedAt": "2026-11-06T15:26:27.048Z",
+      "venue": {
+        "name": "Harmony Beach Club, Bantai, Koh Phangan",
+        "province": "surat-thani",
+        "lat": 9.73495,
+        "lng": 100.03057
+      }
+    },
+    {
+      "id": "ep-167931",
+      "auto": true,
+      "title": "WTS2026",
+      "category": "learning",
+      "startDate": "2026-11-17",
+      "endDate": "2026-11-19",
+      "price": {
+        "type": "unknown"
+      },
+      "summary": "World Toilet Summit 2026. Join 500+ global leaders, innovators, and decision-makers as we tackle the world's most urgent sanitation challenges.",
+      "image": "https://p-u.popcdn.net/event_details/covers/000/167/931/og_cover/4a0c204bc3cba0e90a8a32d1672edeb9ae67cae5.png?1787637348",
+      "ticketUrl": "https://www.eventpop.me/e/167931/wts2026",
+      "sourceUrl": "https://www.eventpop.me/e/167931/wts2026",
+      "sourceName": "Eventpop",
+      "fetchedAt": "2026-11-06T15:27:00.628Z",
+      "venue": {
+        "name": "Asian Institute of Technology (AIT)",
+        "province": "pathum-thani",
+        "lat": 14.08033,
+        "lng": 100.61143
       }
     },
     {
@@ -660,7 +1265,7 @@
       "ticketUrl": "https://www.eventpop.me/e/180715/imc-project-management-essentials-nov2026",
       "sourceUrl": "https://www.eventpop.me/e/180715/imc-project-management-essentials-nov2026",
       "sourceName": "Eventpop",
-      "fetchedAt": "2026-11-06T15:50:59.276Z",
+      "fetchedAt": "2026-11-06T15:20:42.721Z",
       "venue": {
         "name": "IMC Institute",
         "province": "bangkok"
@@ -680,10 +1285,51 @@
       "ticketUrl": "https://www.eventpop.me/e/180682",
       "sourceUrl": "https://www.eventpop.me/e/180682",
       "sourceName": "Eventpop",
-      "fetchedAt": "2026-11-06T15:51:00.989Z",
+      "fetchedAt": "2026-11-06T15:20:44.131Z",
       "venue": {
         "name": "IMC Institute",
         "province": "bangkok"
+      }
+    },
+    {
+      "id": "ep-159192",
+      "auto": true,
+      "title": "Adman Awards & Symposium 2026",
+      "category": "learning",
+      "startDate": "2026-11-18",
+      "endDate": "2026-11-19",
+      "price": {
+        "type": "paid",
+        "min": 500,
+        "max": 3500
+      },
+      "summary": "In a world where everything can be created, the real question is, what is actually worth creating?Meet Adman Awards &amp; Symposium 2026 under the theme “WORTH",
+      "image": "https://p-u.popcdn.net/event_details/covers/000/159/192/og_cover/5bac118796c22171eb7499d2f7ce1cab98139437.jpg?1793510557",
+      "ticketUrl": "https://www.eventpop.me/e/159192/admansymposium2026",
+      "sourceUrl": "https://www.eventpop.me/e/159192/admansymposium2026",
+      "sourceName": "Eventpop",
+      "fetchedAt": "2026-11-06T15:27:47.937Z",
+      "venueId": "samyan"
+    },
+    {
+      "id": "ep-174544",
+      "auto": true,
+      "title": "NOVEMBER 19TH, 2026 Hii Festival Koh Tao",
+      "category": "concert",
+      "startDate": "2026-11-19",
+      "endDate": "2026-11-20",
+      "price": {
+        "type": "unknown"
+      },
+      "summary": "🌴🔥 THURSDAY, NOVEMBER 19TH, 2026 – HII FESTIVAL KOH TAO 🌊✨",
+      "image": "https://p-u.popcdn.net/event_details/posters/000/174/544/large/15b4eef6362111d16bc646f41ff36f0863d71740.jpeg?1790502409",
+      "ticketUrl": "https://www.eventpop.me/e/174544",
+      "sourceUrl": "https://www.eventpop.me/e/174544",
+      "sourceName": "Eventpop",
+      "fetchedAt": "2026-11-06T15:31:26.734Z",
+      "venue": {
+        "name": "Hii Festival Koh Tao",
+        "province": "surat-thani"
       }
     },
     {
@@ -702,7 +1348,7 @@
       "ticketUrl": "https://www.eventpop.me/e/180847",
       "sourceUrl": "https://www.eventpop.me/e/180847",
       "sourceName": "Eventpop",
-      "fetchedAt": "2026-11-06T15:50:51.937Z",
+      "fetchedAt": "2026-11-06T15:20:34.922Z",
       "venue": {
         "name": "Liberty Plaza",
         "province": "bangkok"
@@ -724,7 +1370,7 @@
       "ticketUrl": "https://www.eventpop.me/e/179956",
       "sourceUrl": "https://www.eventpop.me/e/179956",
       "sourceName": "Eventpop",
-      "fetchedAt": "2026-11-06T15:51:15.586Z",
+      "fetchedAt": "2026-11-06T15:20:56.054Z",
       "venue": {
         "name": "White Cloud Ari",
         "province": "bangkok"
@@ -745,9 +1391,31 @@
       "ticketUrl": "https://www.eventpop.me/e/179459",
       "sourceUrl": "https://www.eventpop.me/e/179459",
       "sourceName": "Eventpop",
-      "fetchedAt": "2026-11-06T15:51:22.610Z",
+      "fetchedAt": "2026-11-06T15:21:01.846Z",
       "venue": {
         "name": "Bangkok Island",
+        "province": "bangkok"
+      }
+    },
+    {
+      "id": "ep-160560",
+      "auto": true,
+      "title": "EmpowerHER Asia: The Frontier Era of HR & Finance",
+      "category": "learning",
+      "startDate": "2026-11-20",
+      "endDate": "2026-11-20",
+      "time": "18:00",
+      "price": {
+        "type": "unknown"
+      },
+      "summary": "EmpowerHER Asia — The Leading Force: HR &amp; FinanceAI investment continues to rise across organizations — yet measurable ROI remains a persistent challenge.Ho",
+      "image": "https://p-u.popcdn.net/event_details/covers/000/160/560/og_cover/1389b02b08fa322949973dfc0fdf3252db179b06.png?1784000787",
+      "ticketUrl": "https://www.eventpop.me/e/160560/empowerher-asia-the-frontier-era-of-hr-finance",
+      "sourceUrl": "https://www.eventpop.me/e/160560/empowerher-asia-the-frontier-era-of-hr-finance",
+      "sourceName": "Eventpop",
+      "fetchedAt": "2026-11-06T15:27:26.959Z",
+      "venue": {
+        "name": "SCBX NEXT TECH",
         "province": "bangkok"
       }
     },
@@ -769,7 +1437,7 @@
       "ticketUrl": "https://www.eventpop.me/e/178599/jmnkconcert",
       "sourceUrl": "https://www.eventpop.me/e/178599/jmnkconcert",
       "sourceName": "Eventpop",
-      "fetchedAt": "2026-11-06T15:51:37.347Z",
+      "fetchedAt": "2026-11-06T15:21:15.326Z",
       "venueId": "centralworld"
     },
     {
@@ -788,10 +1456,82 @@
       "ticketUrl": "https://www.eventpop.me/e/176101/https-forms-gle-erjuzf3hyrbar8tj6",
       "sourceUrl": "https://www.eventpop.me/e/176101/https-forms-gle-erjuzf3hyrbar8tj6",
       "sourceName": "Eventpop",
-      "fetchedAt": "2026-11-06T15:52:32.807Z",
+      "fetchedAt": "2026-11-06T15:21:52.243Z",
       "venue": {
         "name": "ซี อาเซียน สามย่าน โค-ออป",
         "province": "bangkok"
+      }
+    },
+    {
+      "id": "ep-171584",
+      "auto": true,
+      "title": "Singha Corporation presents ซีเรียสเบคอน ลอย กะ เธอ คอนเสิร์",
+      "category": "concert",
+      "startDate": "2026-11-21",
+      "endDate": "2026-11-21",
+      "time": "18:00",
+      "price": {
+        "type": "unknown"
+      },
+      "summary": "November full moon shines on Loy Krathong night,All of us, boys and girls, miss you so on \"Loy Ka Thoe\"🎶 (Please read with a tune) 🎶🎇 Meet SERIOUS BACON with a",
+      "image": "https://p-u.popcdn.net/event_details/covers/000/171/584/og_cover/7cc8994e14f4724d7473371e099f62bc019b5724.jpg?1788858175",
+      "ticketUrl": "https://www.eventpop.me/e/171584/seriousbacon-loykathoeconcert",
+      "sourceUrl": "https://www.eventpop.me/e/171584/seriousbacon-loykathoeconcert",
+      "sourceName": "Eventpop",
+      "fetchedAt": "2026-11-06T15:26:37.463Z",
+      "venue": {
+        "name": "Scarlette Café",
+        "province": "bangkok"
+      }
+    },
+    {
+      "id": "ep-167139",
+      "auto": true,
+      "title": "ค่ายสานฝันนักจิตวิทยา (คลินิก) (PSYCHOLOGIST CAMP) รุ่นที่ 3",
+      "category": "learning",
+      "startDate": "2026-11-21",
+      "endDate": "2026-11-21",
+      "time": "10:00",
+      "price": {
+        "type": "unknown"
+      },
+      "summary": "💗 ชอบฟังคนอื่น…แต่ไม่แน่ใจว่าควรเรียน “จิตวิทยา” ไหม?เปิดรอบเพิ่ม! ค่ายสานฝันนักจิตวิทยา (คลินิก) รุ่น 35 🧠 ค่ายสานฝันนักจิตวิทยา (คลินิก) (PSYCHOLOGIST CAMP",
+      "image": "https://p-u.popcdn.net/event_details/covers/000/167/139/og_cover/49e5318e86bf9cbcf968f6e0dce39aee220a6b18.png?1787113104",
+      "ticketUrl": "https://www.eventpop.me/e/167139/https-forms-gle-m7taqfngbirgzkr87",
+      "sourceUrl": "https://www.eventpop.me/e/167139/https-forms-gle-m7taqfngbirgzkr87",
+      "sourceName": "Eventpop",
+      "fetchedAt": "2026-11-06T15:27:06.080Z",
+      "venue": {
+        "name": "Education",
+        "province": "bangkok",
+        "lat": 13.76343,
+        "lng": 100.52825
+      }
+    },
+    {
+      "id": "ep-162189",
+      "auto": true,
+      "title": "Harry Potter and The Goblet of Fire™ in Concert",
+      "category": "concert",
+      "startDate": "2026-11-21",
+      "endDate": "2026-11-21",
+      "time": "19:00",
+      "price": {
+        "type": "paid",
+        "min": 1500,
+        "max": 4500
+      },
+      "summary": "Part of the Harry Potter™ FILM CONCERT SERIES • All characters and elements © &amp; ™ Warner Bros. Entertainment Inc. Publishing Rights © JKR. Audio: EnglishSu",
+      "image": "https://p-u.popcdn.net/event_details/covers/000/162/189/og_cover/7a1a24d1680d28e8e6af1949e64723ed3e37f8d9.jpg?1786009107",
+      "ticketUrl": "https://www.eventpop.me/e/162189/harry-potter-goblet-of-fire",
+      "sourceUrl": "https://www.eventpop.me/e/162189/harry-potter-goblet-of-fire",
+      "sourceName": "Eventpop",
+      "fetchedAt": "2026-11-06T15:27:18.309Z",
+      "venue": {
+        "name": "UOB LIVE, Emsphere",
+        "province": "bangkok",
+        "lat": 13.73251,
+        "lng": 100.56608
       }
     },
     {
@@ -809,7 +1549,7 @@
       "ticketUrl": "https://www.eventpop.me/e/179128",
       "sourceUrl": "https://www.eventpop.me/e/179128",
       "sourceName": "Eventpop",
-      "fetchedAt": "2026-11-06T15:51:29.903Z",
+      "fetchedAt": "2026-11-06T15:21:09.267Z",
       "venue": {
         "name": "Waterfall Festival",
         "province": "surat-thani"
@@ -831,7 +1571,7 @@
       "ticketUrl": "https://www.eventpop.me/e/177570/bridgestone-bdxp-2026",
       "sourceUrl": "https://www.eventpop.me/e/177570/bridgestone-bdxp-2026",
       "sourceName": "Eventpop",
-      "fetchedAt": "2026-11-06T15:52:07.084Z",
+      "fetchedAt": "2026-11-06T15:21:31.875Z",
       "venue": {
         "name": "สนามแข่งรถปทุมธานี สปีดเวย์",
         "province": "pathum-thani"
@@ -853,7 +1593,7 @@
       "ticketUrl": "https://www.eventpop.me/e/177405/https-dime-co-th-en-articles-fin-scholar-2026",
       "sourceUrl": "https://www.eventpop.me/e/177405/https-dime-co-th-en-articles-fin-scholar-2026",
       "sourceName": "Eventpop",
-      "fetchedAt": "2026-11-06T15:52:16.149Z",
+      "fetchedAt": "2026-11-06T15:25:24.903Z",
       "venue": {
         "name": "มหาวิทยาลัยเกษตรศาสตร์",
         "province": "bangkok",
@@ -877,9 +1617,52 @@
       "ticketUrl": "https://www.eventpop.me/e/176035/https-forms-gle-mav3smps2ygphvqu8",
       "sourceUrl": "https://www.eventpop.me/e/176035/https-forms-gle-mav3smps2ygphvqu8",
       "sourceName": "Eventpop",
-      "fetchedAt": "2026-11-06T15:52:36.421Z",
+      "fetchedAt": "2026-11-06T15:21:55.068Z",
       "venue": {
         "name": "True Space Asoke",
+        "province": "bangkok"
+      }
+    },
+    {
+      "id": "ep-171120",
+      "auto": true,
+      "title": "Adeenaloop Concert2",
+      "category": "concert",
+      "startDate": "2026-11-22",
+      "endDate": "2026-11-22",
+      "time": "15:00",
+      "price": {
+        "type": "unknown"
+      },
+      "summary": "เตรียมพบกับ 5 ศิลปินที่จะพาเราเดินทางผ่านเสียงดนตรีและเรื่องราวของชีวิตNOI PRU | Greasy Cafe | เขียนไขและวานิช | เรืองฤทธิ์ บุญรอด | HUNTER เพราะทุกเม็ดทรายคือเ",
+      "image": "https://p-u.popcdn.net/event_details/covers/000/171/120/og_cover/bceb144cbcd1fa32932f453616fc8eaf1299142c.png?1793189888",
+      "ticketUrl": "https://www.eventpop.me/e/171120/adeenaloopconcert2",
+      "sourceUrl": "https://www.eventpop.me/e/171120/adeenaloopconcert2",
+      "sourceName": "Eventpop",
+      "fetchedAt": "2026-11-06T15:26:40.740Z",
+      "venue": {
+        "name": "Ambience space",
+        "province": "bangkok"
+      }
+    },
+    {
+      "id": "ep-159791",
+      "auto": true,
+      "title": "STEP 3 CONQUEROR: คอร์สพิชิตพระเกี้ยวน้อย สำหรับ ม.3 ที่ต้อง",
+      "category": "learning",
+      "startDate": "2026-11-22",
+      "endDate": "2027-02-21",
+      "price": {
+        "type": "unknown"
+      },
+      "summary": "การพิชิต TU'90 | สถาบัน Triam วิทย์-คณิต",
+      "image": "https://p-u.popcdn.net/event_details/posters/000/159/791/large/7d98d247d0886e39832a4a96a0d7b304c8453803.jpeg?1783054483",
+      "ticketUrl": "https://www.eventpop.me/e/159791",
+      "sourceUrl": "https://www.eventpop.me/e/159791",
+      "sourceName": "Eventpop",
+      "fetchedAt": "2026-11-06T15:27:33.043Z",
+      "venue": {
+        "name": "สถาบัน Triam วิทย์-คณิต MBK ชั้น 6 โซน D สถาบันติวสอบเข้า ม.1 และ ม.4",
         "province": "bangkok"
       }
     },
@@ -898,9 +1681,53 @@
       "ticketUrl": "https://www.eventpop.me/e/180748/imc-claude-cowork-auto-workflows-nov2026",
       "sourceUrl": "https://www.eventpop.me/e/180748/imc-claude-cowork-auto-workflows-nov2026",
       "sourceName": "Eventpop",
-      "fetchedAt": "2026-11-06T15:50:57.527Z",
+      "fetchedAt": "2026-11-06T15:20:41.283Z",
       "venue": {
         "name": "IMC Institute",
+        "province": "bangkok"
+      }
+    },
+    {
+      "id": "zip-chiangmai-heritage-sky-lanterns-festival",
+      "auto": true,
+      "title": "Chiangmai Heritage Sky Lanterns Festival",
+      "category": "concert",
+      "startDate": "2026-11-24",
+      "endDate": "2026-11-24",
+      "time": "16:00–22:00",
+      "price": {
+        "type": "paid",
+        "min": 4900,
+        "max": 6900
+      },
+      "image": "https://cdnali.zipeventapp.com/images/events/BE176E0D-61F0-455A-9774-001F39867983/B93FB626-DA4E-4B27-BDA1-287442E16E59.jpg",
+      "ticketUrl": "https://www.zipeventapp.com/e/chiangmai-heritage-sky-lanterns-festival",
+      "sourceUrl": "https://www.zipeventapp.com/e/chiangmai-heritage-sky-lanterns-festival",
+      "sourceName": "Zipevent",
+      "fetchedAt": "2026-11-06T15:33:38.538Z",
+      "venue": {
+        "name": "ปางแฟน Rock'n River",
+        "province": "chiang-mai"
+      }
+    },
+    {
+      "id": "zip-generative-ai-for-everyday-work-documents-data-content",
+      "auto": true,
+      "title": "Generative AI for Everyday Work: Documents, Data & Content",
+      "category": "learning",
+      "startDate": "2026-11-25",
+      "endDate": "2026-11-25",
+      "time": "09:30–16:30",
+      "price": {
+        "type": "unknown"
+      },
+      "image": "https://cdnali.zipeventapp.com/images/events/DF9508D0-92A4-481A-9319-F52EE364F5EB/EEB02498-22F5-462F-AFFF-F6D3F5101BDC.jpg",
+      "ticketUrl": "https://www.zipeventapp.com/e/generative-ai-for-everyday-work-documents-data-content",
+      "sourceUrl": "https://www.zipeventapp.com/e/generative-ai-for-everyday-work-documents-data-content",
+      "sourceName": "Zipevent",
+      "fetchedAt": "2026-11-06T15:23:01.680Z",
+      "venue": {
+        "name": "Udomsuk Hub",
         "province": "bangkok"
       }
     },
@@ -919,30 +1746,9 @@
       "ticketUrl": "https://www.eventpop.me/e/180781/imc-advanced-rag-for-llms-application-nov2026",
       "sourceUrl": "https://www.eventpop.me/e/180781/imc-advanced-rag-for-llms-application-nov2026",
       "sourceName": "Eventpop",
-      "fetchedAt": "2026-11-06T15:50:55.732Z",
+      "fetchedAt": "2026-11-06T15:20:39.828Z",
       "venue": {
         "name": "IMC Institute",
-        "province": "bangkok"
-      }
-    },
-    {
-      "id": "zip-generative-ai-for-everyday-work-documents-data-content",
-      "auto": true,
-      "title": "Generative AI for Everyday Work: Documents, Data & Content",
-      "category": "learning",
-      "startDate": "2026-11-25",
-      "endDate": "2026-11-25",
-      "time": "09:30–16:30",
-      "price": {
-        "type": "unknown"
-      },
-      "image": "https://cdnali.zipeventapp.com/images/events/DF9508D0-92A4-481A-9319-F52EE364F5EB/EEB02498-22F5-462F-AFFF-F6D3F5101BDC.jpg",
-      "ticketUrl": "https://www.zipeventapp.com/e/generative-ai-for-everyday-work-documents-data-content",
-      "sourceUrl": "https://www.zipeventapp.com/e/generative-ai-for-everyday-work-documents-data-content",
-      "sourceName": "Zipevent",
-      "fetchedAt": "2026-11-06T15:53:56.795Z",
-      "venue": {
-        "name": "Udomsuk Hub",
         "province": "bangkok"
       }
     },
@@ -961,7 +1767,7 @@
       "ticketUrl": "https://www.eventpop.me/e/179161",
       "sourceUrl": "https://www.eventpop.me/e/179161",
       "sourceName": "Eventpop",
-      "fetchedAt": "2026-11-06T15:51:28.070Z",
+      "fetchedAt": "2026-11-06T15:21:07.736Z",
       "venue": {
         "name": "Waterfall Festival",
         "province": "surat-thani"
@@ -983,8 +1789,26 @@
       "ticketUrl": "https://www.eventpop.me/e/176002/training-thaionline4",
       "sourceUrl": "https://www.eventpop.me/e/176002/training-thaionline4",
       "sourceName": "Eventpop",
-      "fetchedAt": "2026-11-06T15:52:38.186Z",
+      "fetchedAt": "2026-11-06T15:21:58.479Z",
       "venueId": "online"
+    },
+    {
+      "id": "ep-169325",
+      "auto": true,
+      "title": "Life Expo 2025: มหกรรมสุขภาพและความเป็นอยู่ที่ดี โดย WoodyWorld Life Dot",
+      "category": "expo",
+      "startDate": "2026-11-27",
+      "endDate": "2026-11-29",
+      "price": {
+        "type": "unknown"
+      },
+      "summary": "เตรียมพบกับ Life Expo 2025 มหกรรมสุขภาพและความเป็นอยู่ที่ดีที่สุดแห่งปี ค้นพบนวัตกรรม, เวิร์กช็อป, และผู้เชี่ยวชาญมากมาย วันที่ 15-16 พ.ย. 2568 ที่ UOB LIVE",
+      "image": "https://p-u.popcdn.net/event_details/covers/000/169/325/og_cover/5d59b744549f91f6215d46f2ca9b90c9d2cfa86b.jpg?1793615765",
+      "ticketUrl": "https://www.eventpop.me/e/169325/lifeexpo2026",
+      "sourceUrl": "https://www.eventpop.me/e/169325/lifeexpo2026",
+      "sourceName": "Eventpop",
+      "fetchedAt": "2026-11-06T15:26:59.080Z",
+      "venueId": "paragonhall"
     },
     {
       "id": "ep-181315",
@@ -1002,7 +1826,7 @@
       "ticketUrl": "https://www.eventpop.me/e/181315/pyongrehab-inside-the-brain-penthouse",
       "sourceUrl": "https://www.eventpop.me/e/181315/pyongrehab-inside-the-brain-penthouse",
       "sourceName": "Eventpop",
-      "fetchedAt": "2026-11-06T15:50:41.001Z",
+      "fetchedAt": "2026-11-06T15:20:26.021Z",
       "venue": {
         "name": "PYONG Rehabilitation Center Ratchaprasong | เปียง ศูนย์เวชศาสตร์ฟื้นฟู",
         "province": "bangkok"
@@ -1024,7 +1848,7 @@
       "ticketUrl": "https://www.eventpop.me/e/180220/sparkdating-same-or-different-bangkok-online",
       "sourceUrl": "https://www.eventpop.me/e/180220/sparkdating-same-or-different-bangkok-online",
       "sourceName": "Eventpop",
-      "fetchedAt": "2026-11-06T15:51:06.286Z",
+      "fetchedAt": "2026-11-06T15:20:48.480Z",
       "venueId": "online"
     },
     {
@@ -1043,7 +1867,7 @@
       "ticketUrl": "https://www.eventpop.me/e/178199/https-www-facebook-com-events-966800959852736-966800996519399-active_tab-about",
       "sourceUrl": "https://www.eventpop.me/e/178199/https-www-facebook-com-events-966800959852736-966800996519399-active_tab-about",
       "sourceName": "Eventpop",
-      "fetchedAt": "2026-11-06T15:51:46.020Z",
+      "fetchedAt": "2026-11-06T15:21:21.840Z",
       "venue": {
         "name": "Mimi's Bangkok",
         "province": "bangkok",
@@ -1067,7 +1891,7 @@
       "ticketUrl": "https://www.eventpop.me/e/177935/igrowmycorneveryday-concert",
       "sourceUrl": "https://www.eventpop.me/e/177935/igrowmycorneveryday-concert",
       "sourceName": "Eventpop",
-      "fetchedAt": "2026-11-06T15:51:47.757Z",
+      "fetchedAt": "2026-11-06T15:25:18.884Z",
       "venue": {
         "name": "Lido Connect",
         "province": "bangkok",
@@ -1090,12 +1914,59 @@
       "ticketUrl": "https://www.eventpop.me/e/177704/sales-mastery-106th",
       "sourceUrl": "https://www.eventpop.me/e/177704/sales-mastery-106th",
       "sourceName": "Eventpop",
-      "fetchedAt": "2026-11-06T15:51:53.157Z",
+      "fetchedAt": "2026-11-06T15:25:20.342Z",
       "venue": {
         "name": "Novotel Bangkok Sukhumvit 20",
         "province": "bangkok",
         "lat": 13.73152,
         "lng": 100.56428
+      }
+    },
+    {
+      "id": "ep-152837",
+      "auto": true,
+      "title": "Metaphor Orchestra Concert",
+      "category": "concert",
+      "startDate": "2026-11-28",
+      "endDate": "2026-11-28",
+      "time": "15:00",
+      "price": {
+        "type": "paid",
+        "min": 1200,
+        "max": 3000
+      },
+      "summary": "Experience the magnificent orchestral concert of ATLUS’s globally acclaimed RPG, Metaphor: ReFantazio, held outside of Japan for the very first time!Following t",
+      "image": "https://p-u.popcdn.net/event_details/covers/000/152/837/og_cover/dc852c3e9e90cb1b3d5990d4e58a1ad3102a8009.jpeg?1780560406",
+      "ticketUrl": "https://www.eventpop.me/e/152837/metaphorconcert",
+      "sourceUrl": "https://www.eventpop.me/e/152837/metaphorconcert",
+      "sourceName": "Eventpop",
+      "fetchedAt": "2026-11-06T15:27:55.777Z",
+      "venue": {
+        "name": "Prince Mahidol Hall, Mahidol University / หอประชุมมหิดลสิทธาคาร มหาวิทยาลัยมหิดล ศาลายา",
+        "province": "nakhon-pathom",
+        "lat": 13.79465,
+        "lng": 100.32186
+      }
+    },
+    {
+      "id": "ep-174577",
+      "auto": true,
+      "title": "NOVEMBER 29TH, 2026 Hii Festival Koh Tao",
+      "category": "concert",
+      "startDate": "2026-11-29",
+      "endDate": "2026-11-30",
+      "price": {
+        "type": "unknown"
+      },
+      "summary": "🌴🔥 SUNDAY, NOVEMBER 29TH, 2026 – HII FESTIVAL KOH TAO 🌊✨",
+      "image": "https://p-u.popcdn.net/event_details/posters/000/174/577/large/11edfe08fcc1d2d688ed61b376fef82b0b9bb0a4.jpeg?1790504383",
+      "ticketUrl": "https://www.eventpop.me/e/174577",
+      "sourceUrl": "https://www.eventpop.me/e/174577",
+      "sourceName": "Eventpop",
+      "fetchedAt": "2026-11-06T15:31:25.237Z",
+      "venue": {
+        "name": "Hii Festival Koh Tao",
+        "province": "surat-thani"
       }
     },
     {
@@ -1114,12 +1985,100 @@
       "ticketUrl": "https://www.eventpop.me/e/179922/igrowmycorneveryday-concert-29nov",
       "sourceUrl": "https://www.eventpop.me/e/179922/igrowmycorneveryday-concert-29nov",
       "sourceName": "Eventpop",
-      "fetchedAt": "2026-11-06T15:51:17.338Z",
+      "fetchedAt": "2026-11-06T15:20:57.510Z",
       "venue": {
         "name": "Lido Connect",
         "province": "bangkok",
         "lat": 13.74537,
         "lng": 100.53236
+      }
+    },
+    {
+      "id": "ep-173408",
+      "auto": true,
+      "title": "FORTREASURE BEYOND THE HORIZON CONCERT",
+      "category": "concert",
+      "startDate": "2026-11-29",
+      "endDate": "2026-11-29",
+      "price": {
+        "type": "paid",
+        "min": 1290,
+        "max": 9900
+      },
+      "summary": "27 - 29 November 2026, MCC HALL The Mall Lifestore Bangkae #FORTREASURE #FortFTS #ComeFortZon #Babyfeat They say… Be",
+      "image": "https://p-u.popcdn.net/event_details/covers/000/173/408/og_cover/f884119c78e06b1c64ee525554f3952b995204b3.png?1789796084",
+      "ticketUrl": "https://www.eventpop.me/e/173408/fortreasure-beyond-the-horizon-concert",
+      "sourceUrl": "https://www.eventpop.me/e/173408/fortreasure-beyond-the-horizon-concert",
+      "sourceName": "Eventpop",
+      "fetchedAt": "2026-11-06T15:26:12.520Z",
+      "venue": {
+        "name": "MCC HALL The Mall Lifestore Bangkae",
+        "province": "bangkok"
+      }
+    },
+    {
+      "id": "ep-172814",
+      "auto": true,
+      "title": "ห้องเรียนจำลองนิติวิทยาศาสตร์ Forensic Science ครั้งที่ 7 👮🏻",
+      "category": "learning",
+      "startDate": "2026-11-29",
+      "endDate": "2026-11-29",
+      "time": "10:00",
+      "price": {
+        "type": "unknown"
+      },
+      "summary": "เปิดรอบเพิ่ม !\"ห้องเรียนจำลองนิติวิทยาศาสตร์ (Forensic Science) ครั้งที่ 7\" 🔎 รับสมัครน้องๆ 13 - 19 ปี !!* เหมาะสำหรับน้อง ๆ ที่สนใจด้านสืบสวนสอบสวน หาร่อง",
+      "image": "https://p-u.popcdn.net/event_details/covers/000/172/814/og_cover/f461ea5315c400ff54b14914cb40411304d18337.png?1789527641",
+      "ticketUrl": "https://www.eventpop.me/e/172814/https-forms-gle-6nnvcxbt8mec7fpna",
+      "sourceUrl": "https://www.eventpop.me/e/172814/https-forms-gle-6nnvcxbt8mec7fpna",
+      "sourceName": "Eventpop",
+      "fetchedAt": "2026-11-06T15:26:24.107Z",
+      "venue": {
+        "name": "อาคารเคเอกซ์",
+        "province": "bangkok"
+      }
+    },
+    {
+      "id": "ep-167073",
+      "auto": true,
+      "title": "RUNAWAY CONCERT",
+      "category": "concert",
+      "startDate": "2026-11-29",
+      "endDate": "2026-11-29",
+      "time": "17:30",
+      "price": {
+        "type": "unknown"
+      },
+      "summary": "🛎 Event Date : 29 November 2026 📍 Venue : ICONSIAM HALL Inviting all Becky's Angels To experience every moment together Through every song, re",
+      "image": "https://p-u.popcdn.net/event_details/covers/000/167/073/og_cover/3456ababfd377748b3b7b0b5eeeab8a17d9e8475.png?1787637197",
+      "ticketUrl": "https://www.eventpop.me/e/167073/runawayconcert",
+      "sourceUrl": "https://www.eventpop.me/e/167073/runawayconcert",
+      "sourceName": "Eventpop",
+      "fetchedAt": "2026-11-06T15:27:07.642Z",
+      "venue": {
+        "name": "ICONSIAM HALL",
+        "province": "bangkok"
+      }
+    },
+    {
+      "id": "zip-sala-saneha-9-temples-to-heaven",
+      "auto": true,
+      "title": "9 temples to heaven",
+      "category": "expo",
+      "startDate": "2026-11-30",
+      "endDate": "2026-11-30",
+      "time": "00:00–23:59",
+      "price": {
+        "type": "unknown"
+      },
+      "image": "https://cdnali.zipeventapp.com/images/events/2CB681C0-0A1D-40E6-B778-2BCAD4078343/D768DC4E-F4E9-4756-9945-39AF1F3504A9.jpg",
+      "ticketUrl": "https://www.zipeventapp.com/e/sala-saneha-9-temples-to-heaven",
+      "sourceUrl": "https://www.zipeventapp.com/e/sala-saneha-9-temples-to-heaven",
+      "sourceName": "Zipevent",
+      "fetchedAt": "2026-11-06T15:30:16.549Z",
+      "venue": {
+        "name": "Sala Saneha",
+        "province": "bangkok"
       }
     },
     {
@@ -1138,7 +2097,7 @@
       "ticketUrl": "https://www.eventpop.me/e/180814/imc-data-platform-ai-nov2026",
       "sourceUrl": "https://www.eventpop.me/e/180814/imc-data-platform-ai-nov2026",
       "sourceName": "Eventpop",
-      "fetchedAt": "2026-11-06T15:50:53.981Z",
+      "fetchedAt": "2026-11-06T15:20:36.412Z",
       "venue": {
         "name": "IMC Institute",
         "province": "bangkok"
@@ -1160,7 +2119,7 @@
       "ticketUrl": "https://www.eventpop.me/e/179989/futurist-thailand",
       "sourceUrl": "https://www.eventpop.me/e/179989/futurist-thailand",
       "sourceName": "Eventpop",
-      "fetchedAt": "2026-11-06T15:51:13.802Z",
+      "fetchedAt": "2026-11-06T15:20:54.558Z",
       "venue": {
         "name": "True Digital Park West",
         "province": "bangkok",
@@ -1185,12 +2144,35 @@
       "ticketUrl": "https://www.zipeventapp.com/e/film-connection-12",
       "sourceUrl": "https://www.zipeventapp.com/e/film-connection-12",
       "sourceName": "Zipevent",
-      "fetchedAt": "2026-11-06T15:54:07.065Z",
+      "fetchedAt": "2026-11-06T15:23:10.572Z",
       "venue": {
         "name": "DOP House (Yothinpattana)",
         "province": "bangkok",
         "lat": 13.80383,
         "lng": 100.63005
+      }
+    },
+    {
+      "id": "ep-173574",
+      "auto": true,
+      "title": "Halfmoon Festival : 2nd & 3rd December 2026",
+      "category": "concert",
+      "startDate": "2026-12-02",
+      "endDate": "2026-12-04",
+      "price": {
+        "type": "unknown"
+      },
+      "summary": "⚠️ IMPORTANT INFORMATIONDay 1 : 2nd December 2026 – Harmony Beach Club from 15:00 till Midnight (Pre-Halfmoon)Day 2 : 3rd December 2026 – Halfmoon Magic Forest",
+      "image": "https://p-u.popcdn.net/event_details/posters/000/173/574/large/9dbc7bb5fe8e00473b787f276bad67e278ba644a.jpg?1789836201",
+      "ticketUrl": "https://www.eventpop.me/e/173574",
+      "sourceUrl": "https://www.eventpop.me/e/173574",
+      "sourceName": "Eventpop",
+      "fetchedAt": "2026-11-06T15:26:09.365Z",
+      "venue": {
+        "name": "Halfmoon Festival, Bantai, Koh Phangan",
+        "province": "surat-thani",
+        "lat": 9.73495,
+        "lng": 100.03057
       }
     },
     {
@@ -1209,7 +2191,7 @@
       "ticketUrl": "https://www.eventpop.me/e/178830/jewels",
       "sourceUrl": "https://www.eventpop.me/e/178830/jewels",
       "sourceName": "Eventpop",
-      "fetchedAt": "2026-11-06T15:51:33.491Z",
+      "fetchedAt": "2026-11-06T15:21:12.177Z",
       "venue": {
         "name": "Bangkok Marriott Hotel Sukhumvit",
         "province": "bangkok",
@@ -1233,7 +2215,7 @@
       "ticketUrl": "https://www.eventpop.me/e/181080/tvca-nyp2026",
       "sourceUrl": "https://www.eventpop.me/e/181080/tvca-nyp2026",
       "sourceName": "Eventpop",
-      "fetchedAt": "2026-11-06T15:50:49.898Z",
+      "fetchedAt": "2026-11-06T15:20:33.460Z",
       "venue": {
         "name": "Dose Social Canteen",
         "province": "bangkok"
@@ -1254,36 +2236,12 @@
       "ticketUrl": "https://www.eventpop.me/e/177537/paradox-film-live-concert",
       "sourceUrl": "https://www.eventpop.me/e/177537/paradox-film-live-concert",
       "sourceName": "Eventpop",
-      "fetchedAt": "2026-11-06T15:52:09.041Z",
+      "fetchedAt": "2026-11-06T15:21:33.429Z",
       "venue": {
         "name": "Cloud 11",
         "province": "bangkok",
         "lat": 13.68342,
         "lng": 100.60829
-      }
-    },
-    {
-      "id": "ep-175474",
-      "auto": true,
-      "title": "ค่ายสานฝันนักการทูต DIPLOMAT CAMP Season 32  ✈️🌍",
-      "category": "learning",
-      "startDate": "2026-12-05",
-      "endDate": "2026-12-05",
-      "time": "10:00",
-      "price": {
-        "type": "unknown"
-      },
-      "summary": "🌍 อยากเป็นตัวแทนประเทศไทยบนเวทีโลกไหม?เปิดรอบเพิ่ม! ค่ายนักการทูต ครั้งที่ 32 DIPLOMAT CAMPค่ายที่จะพาน้อง ๆ ไปลองเป็น “นักการทูตตัวจริง”ทั้งการคิด วิเคราะห์ เจ",
-      "image": "https://p-u.popcdn.net/event_details/covers/000/175/474/og_cover/a679d8e6a09fdb84a847d771b9381d85ed794b8d.png?1790828829",
-      "ticketUrl": "https://www.eventpop.me/e/175474/https-forms-gle-hwhlxtfrjqtjtrf68",
-      "sourceUrl": "https://www.eventpop.me/e/175474/https-forms-gle-hwhlxtfrjqtjtrf68",
-      "sourceName": "Eventpop",
-      "fetchedAt": "2026-11-06T15:52:49.926Z",
-      "venue": {
-        "name": "โรงแรมอวานี รัชดา กรุงเทพ",
-        "province": "bangkok",
-        "lat": 13.75693,
-        "lng": 100.56469
       }
     },
     {
@@ -1303,10 +2261,57 @@
       "ticketUrl": "https://www.zipeventapp.com/e/gaolaewngai2",
       "sourceUrl": "https://www.zipeventapp.com/e/gaolaewngai2",
       "sourceName": "Zipevent",
-      "fetchedAt": "2026-11-06T15:53:39.916Z",
+      "fetchedAt": "2026-11-06T15:22:47.945Z",
       "venue": {
         "name": "ไร่คาเซ Kaze Camp & Coffee บ่อวิน จ.ชลบุรี",
         "province": "chonburi"
+      }
+    },
+    {
+      "id": "ep-175474",
+      "auto": true,
+      "title": "ค่ายสานฝันนักการทูต DIPLOMAT CAMP Season 32  ✈️🌍",
+      "category": "learning",
+      "startDate": "2026-12-05",
+      "endDate": "2026-12-05",
+      "time": "10:00",
+      "price": {
+        "type": "unknown"
+      },
+      "summary": "🌍 อยากเป็นตัวแทนประเทศไทยบนเวทีโลกไหม?เปิดรอบเพิ่ม! ค่ายนักการทูต ครั้งที่ 32 DIPLOMAT CAMPค่ายที่จะพาน้อง ๆ ไปลองเป็น “นักการทูตตัวจริง”ทั้งการคิด วิเคราะห์ เจ",
+      "image": "https://p-u.popcdn.net/event_details/covers/000/175/474/og_cover/a679d8e6a09fdb84a847d771b9381d85ed794b8d.png?1790828829",
+      "ticketUrl": "https://www.eventpop.me/e/175474/https-forms-gle-hwhlxtfrjqtjtrf68",
+      "sourceUrl": "https://www.eventpop.me/e/175474/https-forms-gle-hwhlxtfrjqtjtrf68",
+      "sourceName": "Eventpop",
+      "fetchedAt": "2026-11-06T15:22:01.405Z",
+      "venue": {
+        "name": "โรงแรมอวานี รัชดา กรุงเทพ",
+        "province": "bangkok",
+        "lat": 13.75693,
+        "lng": 100.56469
+      }
+    },
+    {
+      "id": "zip-a-safe-journey-with-her-2026",
+      "auto": true,
+      "title": "A Safe Journey With Her",
+      "category": "expo",
+      "startDate": "2026-12-06",
+      "endDate": "2026-12-06",
+      "time": "08:00–12:00",
+      "price": {
+        "type": "unknown"
+      },
+      "image": "https://cdnali.zipeventapp.com/images/events/CBA25CDD-B481-482E-9A73-13E3BCF103F5/E72CCDE5-E38F-4DA2-A654-17CC97FAD567.jpg",
+      "ticketUrl": "https://www.zipeventapp.com/e/a-safe-journey-with-her-2026",
+      "sourceUrl": "https://www.zipeventapp.com/e/a-safe-journey-with-her-2026",
+      "sourceName": "Zipevent",
+      "fetchedAt": "2026-11-06T15:22:41.162Z",
+      "venue": {
+        "name": "สวนวชิรเบญจทัศ (สวนรถไฟ)",
+        "province": "bangkok",
+        "lat": 13.81182,
+        "lng": 100.55367
       }
     },
     {
@@ -1325,33 +2330,34 @@
       "ticketUrl": "https://www.eventpop.me/e/175241/https-forms-gle-i4sn9scegaf6aezq8",
       "sourceUrl": "https://www.eventpop.me/e/175241/https-forms-gle-i4sn9scegaf6aezq8",
       "sourceName": "Eventpop",
-      "fetchedAt": "2026-11-06T15:52:55.228Z",
+      "fetchedAt": "2026-11-06T15:22:05.802Z",
       "venue": {
         "name": "ซี อาเซียน สามย่าน โค-ออป",
         "province": "bangkok"
       }
     },
     {
-      "id": "zip-a-safe-journey-with-her-2026",
+      "id": "ep-159526",
       "auto": true,
-      "title": "A Safe Journey With Her",
-      "category": "expo",
+      "title": "Overcoat Music Festival",
+      "category": "concert",
       "startDate": "2026-12-06",
       "endDate": "2026-12-06",
-      "time": "08:00–12:00",
+      "time": "16:00",
       "price": {
-        "type": "unknown"
+        "type": "paid",
+        "min": 1250,
+        "max": 1250
       },
-      "image": "https://cdnali.zipeventapp.com/images/events/CBA25CDD-B481-482E-9A73-13E3BCF103F5/E72CCDE5-E38F-4DA2-A654-17CC97FAD567.jpg",
-      "ticketUrl": "https://www.zipeventapp.com/e/a-safe-journey-with-her-2026",
-      "sourceUrl": "https://www.zipeventapp.com/e/a-safe-journey-with-her-2026",
-      "sourceName": "Zipevent",
-      "fetchedAt": "2026-11-06T15:53:33.736Z",
+      "summary": "2026 เทศกาลดนตรีรับลมหนาวที่เขาค้อ พบกับศิลปินชั้นนำ บรรยากาศสุดพิเศษ",
+      "image": "https://p-u.popcdn.net/event_details/covers/000/159/526/og_cover/14b19df51175701904877ef5dd8edb6bc9ad67c2.jpeg?1785517396",
+      "ticketUrl": "https://www.eventpop.me/e/159526/overcoatmusicfestival16",
+      "sourceUrl": "https://www.eventpop.me/e/159526/overcoatmusicfestival16",
+      "sourceName": "Eventpop",
+      "fetchedAt": "2026-11-06T15:27:39.375Z",
       "venue": {
-        "name": "สวนวชิรเบญจทัศ (สวนรถไฟ)",
-        "province": "bangkok",
-        "lat": 13.81182,
-        "lng": 100.55367
+        "name": "Jolly Land Starlight Amphitheater Khaokho Phetchabun",
+        "province": "phetchabun"
       }
     },
     {
@@ -1371,8 +2377,31 @@
       "ticketUrl": "https://www.zipeventapp.com/e/Mission-to-the-Moon-Forum-2026",
       "sourceUrl": "https://www.zipeventapp.com/e/Mission-to-the-Moon-Forum-2026",
       "sourceName": "Zipevent",
-      "fetchedAt": "2026-11-06T15:53:19.606Z",
+      "fetchedAt": "2026-11-06T15:22:25.891Z",
       "venueId": "online"
+    },
+    {
+      "id": "zip-jamboxxmusicconnection-10",
+      "auto": true,
+      "title": "JAMBOX x Asia Pillars Music Connection #10",
+      "category": "concert",
+      "startDate": "2026-12-09",
+      "endDate": "2026-12-09",
+      "time": "19:00–23:00",
+      "price": {
+        "type": "paid",
+        "min": 300,
+        "max": 300
+      },
+      "image": "https://cdnali.zipeventapp.com/images/events/1AD56BDB-1F8F-4BB1-A7F5-FF20D331E097/C8AF1CC0-AB93-4507-B8E5-B8691C821F9A.jpg",
+      "ticketUrl": "https://www.zipeventapp.com/e/jamboxxmusicconnection-10",
+      "sourceUrl": "https://www.zipeventapp.com/e/jamboxxmusicconnection-10",
+      "sourceName": "Zipevent",
+      "fetchedAt": "2026-11-06T15:22:37.967Z",
+      "venue": {
+        "name": "Speakerbox Livehouse",
+        "province": "bangkok"
+      }
     },
     {
       "id": "ep-181549",
@@ -1389,7 +2418,7 @@
       "ticketUrl": "https://www.eventpop.me/e/181549",
       "sourceUrl": "https://www.eventpop.me/e/181549",
       "sourceName": "Eventpop",
-      "fetchedAt": "2026-11-06T15:50:39.090Z",
+      "fetchedAt": "2026-11-06T15:20:24.520Z",
       "venue": {
         "name": "Waterfall Festival",
         "province": "surat-thani"
@@ -1411,32 +2440,9 @@
       "ticketUrl": "https://www.eventpop.me/e/176102/wednesdaysong29",
       "sourceUrl": "https://www.eventpop.me/e/176102/wednesdaysong29",
       "sourceName": "Eventpop",
-      "fetchedAt": "2026-11-06T15:52:31.027Z",
+      "fetchedAt": "2026-11-06T15:25:29.606Z",
       "venue": {
         "name": "SiamPic Hall",
-        "province": "bangkok"
-      }
-    },
-    {
-      "id": "zip-jamboxxmusicconnection-10",
-      "auto": true,
-      "title": "JAMBOX x Asia Pillars Music Connection #10",
-      "category": "concert",
-      "startDate": "2026-12-09",
-      "endDate": "2026-12-09",
-      "time": "19:00–23:00",
-      "price": {
-        "type": "paid",
-        "min": 300,
-        "max": 300
-      },
-      "image": "https://cdnali.zipeventapp.com/images/events/1AD56BDB-1F8F-4BB1-A7F5-FF20D331E097/C8AF1CC0-AB93-4507-B8E5-B8691C821F9A.jpg",
-      "ticketUrl": "https://www.zipeventapp.com/e/jamboxxmusicconnection-10",
-      "sourceUrl": "https://www.zipeventapp.com/e/jamboxxmusicconnection-10",
-      "sourceName": "Zipevent",
-      "fetchedAt": "2026-11-06T15:53:31.472Z",
-      "venue": {
-        "name": "Speakerbox Livehouse",
         "province": "bangkok"
       }
     },
@@ -1455,10 +2461,77 @@
       "ticketUrl": "https://www.eventpop.me/e/175142",
       "sourceUrl": "https://www.eventpop.me/e/175142",
       "sourceName": "Eventpop",
-      "fetchedAt": "2026-11-06T15:52:57.031Z",
+      "fetchedAt": "2026-11-06T15:22:07.313Z",
       "venue": {
         "name": "Bangkok Island",
         "province": "bangkok"
+      }
+    },
+    {
+      "id": "ep-174744",
+      "auto": true,
+      "title": "INTER LAW Junior Camp (ค่ายห้องเรียนนิติศาสตร์ ภาคอินเตอร์ )",
+      "category": "learning",
+      "startDate": "2026-12-12",
+      "endDate": "2026-12-12",
+      "time": "10:00",
+      "price": {
+        "type": "unknown"
+      },
+      "summary": "⚖️ เปิดรับสมัคร! INTER LAW JUNIOR CAMP (ค่ายห้องเรียนนิติศาสตร์ ภาคอินเตอร์) 🏛️✨ค่ายที่จะพาน้อง ๆ ไปสัมผัสการเรียนและเส้นทางอาชีพสายกฎหมายอินเตอร์ตัวจริง!วิเค",
+      "image": "https://p-u.popcdn.net/event_details/covers/000/174/744/og_cover/c657dec07d3ea9c33d061bcb0bc0315cc03d6e66.png?1790588285",
+      "ticketUrl": "https://www.eventpop.me/e/174744/https-forms-gle-yglxkwpefnsfr7pv9",
+      "sourceUrl": "https://www.eventpop.me/e/174744/https-forms-gle-yglxkwpefnsfr7pv9",
+      "sourceName": "Eventpop",
+      "fetchedAt": "2026-11-06T15:25:39.382Z",
+      "venue": {
+        "name": "ซี อาเซียน สามย่าน โค-ออป",
+        "province": "bangkok"
+      }
+    },
+    {
+      "id": "ep-172880",
+      "auto": true,
+      "title": "Finance Simulation Camp Season 4 (ค่ายห้องเรียนจำลองการเงิน",
+      "category": "learning",
+      "startDate": "2026-12-12",
+      "endDate": "2026-12-12",
+      "time": "10:00",
+      "price": {
+        "type": "unknown"
+      },
+      "summary": "เปิดรอบเพิ่ม !!! 💸Finance Simulation Camp 2026 รุ่น 4 “ห้องเรียนจำลองสาขาการเงิน” 🙌ค่ายที่จะพาน้อง ๆ มาลองเป็น “เด็กการเงิน” ตัวจริงผ่านกิจกรรม Workshop และ Sim",
+      "image": "https://p-u.popcdn.net/event_details/covers/000/172/880/og_cover/b22195f89aa8b52f3d176336c5755b2957664930.png?1789531434",
+      "ticketUrl": "https://www.eventpop.me/e/172880/https-forms-gle-ngoqpb91c93k2zyg8",
+      "sourceUrl": "https://www.eventpop.me/e/172880/https-forms-gle-ngoqpb91c93k2zyg8",
+      "sourceName": "Eventpop",
+      "fetchedAt": "2026-11-06T15:26:19.194Z",
+      "venue": {
+        "name": "โรงแรมอวานี รัชดา กรุงเทพ",
+        "province": "bangkok",
+        "lat": 13.75693,
+        "lng": 100.56469
+      }
+    },
+    {
+      "id": "ep-164250",
+      "auto": true,
+      "title": "ถวิลหา",
+      "category": "concert",
+      "startDate": "2026-12-12",
+      "endDate": "2026-12-12",
+      "price": {
+        "type": "unknown"
+      },
+      "summary": "Music &amp; Lifestyle Festival\"เพราะบางเพลง...พาเรากลับไปหาความทรงจำ\"\"ถวิลหา\" ไม่ใช่แค่เทศกาลดนตรี แต่เป็นพื้นที่ที่ชวนทุกคนกลับมาใช้เวลาดี ๆ ด้วยกัน ผ่า",
+      "image": "https://p-u.popcdn.net/event_details/posters/000/164/250/large/991b189172edfb8b45bf874646e0688ebb538e49.jpg?1785764792",
+      "ticketUrl": "https://www.eventpop.me/e/164250/thawinha",
+      "sourceUrl": "https://www.eventpop.me/e/164250/thawinha",
+      "sourceName": "Eventpop",
+      "fetchedAt": "2026-11-06T15:27:13.779Z",
+      "venue": {
+        "name": "ถวิลหา",
+        "province": "sukhothai"
       }
     },
     {
@@ -1477,10 +2550,97 @@
       "ticketUrl": "https://www.eventpop.me/e/175342/https-forms-gle-h25cflg6csqrsnks8",
       "sourceUrl": "https://www.eventpop.me/e/175342/https-forms-gle-h25cflg6csqrsnks8",
       "sourceName": "Eventpop",
-      "fetchedAt": "2026-11-06T15:52:53.440Z",
+      "fetchedAt": "2026-11-06T15:22:04.347Z",
       "venue": {
         "name": "ซี อาเซียน สามย่าน โค-ออป",
         "province": "bangkok"
+      }
+    },
+    {
+      "id": "ep-173441",
+      "auto": true,
+      "title": "ค่ายจิตวิทยาอินเตอร์ SS.10🧖‍♀️🔱 (JIPP)  by ONCEs Thailand",
+      "category": "learning",
+      "startDate": "2026-12-13",
+      "endDate": "2026-12-13",
+      "time": "10:00",
+      "price": {
+        "type": "unknown"
+      },
+      "summary": "เพิ่มรอบ !!ค่าย จิตวิทยาอินเตอร์ รุ่นที่ 10 (JIPP) by ONCEs Thailandพบกับ!! ค่ายที่จะทำให้น้อง ๆ ได้ทำความรู้จักกับคณะและสาขาเกี่ยวกับจิตวิทยาอินเตอร์ (JIPP CU)",
+      "image": "https://p-u.popcdn.net/event_details/covers/000/173/441/og_cover/a060917e68bc5f87a38161d5e049ff93ccfbb3f8.png?1789724542",
+      "ticketUrl": "https://www.eventpop.me/e/173441/https-forms-gle-kvmvhbimyitmncuaa",
+      "sourceUrl": "https://www.eventpop.me/e/173441/https-forms-gle-kvmvhbimyitmncuaa",
+      "sourceName": "Eventpop",
+      "fetchedAt": "2026-11-06T15:26:10.814Z",
+      "venue": {
+        "name": "True Space Asoke",
+        "province": "bangkok"
+      }
+    },
+    {
+      "id": "ep-173607",
+      "auto": true,
+      "title": "Halfmoon Festival : 16th & 17th December 2026",
+      "category": "concert",
+      "startDate": "2026-12-16",
+      "endDate": "2026-12-18",
+      "price": {
+        "type": "unknown"
+      },
+      "summary": "⚠️ IMPORTANT INFORMATIONDay 1 : 16th December 2026 – Harmony Beach Club from 15:00 till Midnight (Pre-Halfmoon)Day 2 : 17th December 2026 – Halfmoon Magic Fores",
+      "image": "https://p-u.popcdn.net/event_details/posters/000/173/607/large/b7ae5b82af116450d76589a2234bbde73074bac9.jpg?1789846576",
+      "ticketUrl": "https://www.eventpop.me/e/173607",
+      "sourceUrl": "https://www.eventpop.me/e/173607",
+      "sourceName": "Eventpop",
+      "fetchedAt": "2026-11-06T15:26:04.252Z",
+      "venue": {
+        "name": "Halfmoon Festival, Bantai, Koh Phangan",
+        "province": "surat-thani",
+        "lat": 9.73495,
+        "lng": 100.03057
+      }
+    },
+    {
+      "id": "ep-132318",
+      "auto": true,
+      "title": "EDC Thailand 2026",
+      "category": "concert",
+      "startDate": "2026-12-18",
+      "endDate": "2026-12-20",
+      "price": {
+        "type": "unknown"
+      },
+      "summary": "EDC,EDC2026,EDC Thailand,edc,dec2026,Electric Daisy Carnival (EDC) Thailand 2026,returns to paradise on December 18+19+20, 2026for our 3rd edition",
+      "image": "https://p-u.popcdn.net/event_details/covers/000/132/318/og_cover/fac730f99ef6d6399ea925feaeacf122e9fd2112.png?1773034410",
+      "ticketUrl": "https://www.eventpop.me/e/132318/edc-thailand-dec-2026",
+      "sourceUrl": "https://www.eventpop.me/e/132318/edc-thailand-dec-2026",
+      "sourceName": "Eventpop",
+      "fetchedAt": "2026-11-06T15:31:41.496Z",
+      "venue": {
+        "name": "17 Dec 2026 15:00 - 18 Dec 2026 00:00",
+        "province": "phuket"
+      }
+    },
+    {
+      "id": "ep-174578",
+      "auto": true,
+      "title": "DECEMBER 19TH, 2026 Hii Festival Koh Tao",
+      "category": "concert",
+      "startDate": "2026-12-19",
+      "endDate": "2026-12-20",
+      "price": {
+        "type": "unknown"
+      },
+      "summary": "🌴🔥 SATURDAY, DECEMBER 19TH, 2026 – HII FESTIVAL KOH TAO 🌊✨",
+      "image": "https://p-u.popcdn.net/event_details/posters/000/174/578/large/c316bb87992e8bc0418ae8f14bb0e7c703f391fd.jpeg?1790505094",
+      "ticketUrl": "https://www.eventpop.me/e/174578",
+      "sourceUrl": "https://www.eventpop.me/e/174578",
+      "sourceName": "Eventpop",
+      "fetchedAt": "2026-11-06T15:31:23.787Z",
+      "venue": {
+        "name": "Hii Festival Koh Tao",
+        "province": "surat-thani"
       }
     },
     {
@@ -1501,12 +2661,36 @@
       "ticketUrl": "https://www.eventpop.me/e/179393/yohan-kim-piano-solo-concert-thailand",
       "sourceUrl": "https://www.eventpop.me/e/179393/yohan-kim-piano-solo-concert-thailand",
       "sourceName": "Eventpop",
-      "fetchedAt": "2026-11-06T15:51:26.239Z",
+      "fetchedAt": "2026-11-06T15:21:04.767Z",
       "venue": {
         "name": "Siam Pathumwan House",
         "province": "bangkok",
         "lat": 13.74745,
         "lng": 100.53021
+      }
+    },
+    {
+      "id": "ep-175077",
+      "auto": true,
+      "title": "ค่ายสานฝันนักจิตวิทยา (คลินิก) SS.36❤️‍🩹🦋 By ONCEs Thailand",
+      "category": "learning",
+      "startDate": "2026-12-19",
+      "endDate": "2026-12-19",
+      "time": "10:00",
+      "price": {
+        "type": "unknown"
+      },
+      "summary": "💗 ชอบฟังคนอื่น…แต่ไม่แน่ใจว่าควรเรียน “จิตวิทยา” ไหม?เปิดรอบเพิ่ม! ค่ายสานฝันนักจิตวิทยา (คลินิก) รุ่น 36 🧠 ค่ายสานฝันนักจิตวิทยา (คลินิก) (PSYCHOLOGIST CAMP)",
+      "image": "https://p-u.popcdn.net/event_details/covers/000/175/077/og_cover/ec4f51d7d5961b79fe18be5cee0c5fa3babf260e.png?1790657399",
+      "ticketUrl": "https://www.eventpop.me/e/175077/https-forms-gle-gp3ff2s5m94sxppk9",
+      "sourceUrl": "https://www.eventpop.me/e/175077/https-forms-gle-gp3ff2s5m94sxppk9",
+      "sourceName": "Eventpop",
+      "fetchedAt": "2026-11-06T15:25:35.904Z",
+      "venue": {
+        "name": "Education",
+        "province": "bangkok",
+        "lat": 13.76343,
+        "lng": 100.52825
       }
     },
     {
@@ -1526,7 +2710,7 @@
       "ticketUrl": "https://www.zipeventapp.com/e/ctc2026",
       "sourceUrl": "https://www.zipeventapp.com/e/ctc2026",
       "sourceName": "Zipevent",
-      "fetchedAt": "2026-11-06T15:53:21.295Z",
+      "fetchedAt": "2026-11-06T15:22:27.296Z",
       "venueId": "online"
     },
     {
@@ -1544,12 +2728,56 @@
       "ticketUrl": "https://www.zipeventapp.com/e/the-bells-rang-again-the-new-musical",
       "sourceUrl": "https://www.zipeventapp.com/e/the-bells-rang-again-the-new-musical",
       "sourceName": "Zipevent",
-      "fetchedAt": "2026-11-06T15:53:28.069Z",
+      "fetchedAt": "2026-11-06T15:22:35.189Z",
       "venue": {
         "name": "POEMS DIMENSION (Town in Town)",
         "province": "bangkok",
         "lat": 13.77293,
         "lng": 100.61022
+      }
+    },
+    {
+      "id": "ep-175109",
+      "auto": true,
+      "title": "ค่ายสานฝัน จิตแพทย์ season 9 (Psychiatrist)🧑🏻‍⚕️💓",
+      "category": "learning",
+      "startDate": "2026-12-20",
+      "endDate": "2026-12-20",
+      "time": "10:00",
+      "price": {
+        "type": "unknown"
+      },
+      "summary": "เปิดรับสมัครแล้ว !🌱 ค่ายสานฝันจิตแพทย์ Psychiatrist Camp รุ่นที่ 9ค่ายที่จะพาน้อง ๆ ไปเปิดโลก อาชีพจิตแพทย์และจิตเวชศาสตร์ผ่านการเรียนรู้จาก จิตแพทย์ตัวจริง พ",
+      "image": "https://p-u.popcdn.net/event_details/covers/000/175/109/og_cover/f1c1800eb73826c8913f5d8f7862989a4b0eea79.png?1790672236",
+      "ticketUrl": "https://www.eventpop.me/e/175109",
+      "sourceUrl": "https://www.eventpop.me/e/175109",
+      "sourceName": "Eventpop",
+      "fetchedAt": "2026-11-06T15:25:34.366Z",
+      "venue": {
+        "name": "ซี อาเซียน สามย่าน โค-ออป",
+        "province": "bangkok"
+      }
+    },
+    {
+      "id": "ep-173276",
+      "auto": true,
+      "title": "ค่ายเภสัชกรรุ่นเยาว์ (Pharmacist Junior) season 16 💊 🔬",
+      "category": "learning",
+      "startDate": "2026-12-20",
+      "endDate": "2026-12-20",
+      "time": "10:00",
+      "price": {
+        "type": "unknown"
+      },
+      "summary": "เปิดรับสมัครอีกครั้ง ! ค่ายสานฝันเภสัชกรรุ่นเยาว์ (Pharmacist Junior) รุ่น 16 “ลองเป็นเภสัชกรจริง” ก่อนตัดสินใจ! รับสมัครน้องๆ 13-19 ปี !พบกับอาชีพที่น้อง ๆ",
+      "image": "https://p-u.popcdn.net/event_details/covers/000/173/276/og_cover/a3bd3513dc8f1c3e223c6c9ae9cf5f781e9feb96.png?1789700707",
+      "ticketUrl": "https://www.eventpop.me/e/173276",
+      "sourceUrl": "https://www.eventpop.me/e/173276",
+      "sourceName": "Eventpop",
+      "fetchedAt": "2026-11-06T15:26:15.905Z",
+      "venue": {
+        "name": "อาคารเคเอกซ์",
+        "province": "bangkok"
       }
     },
     {
@@ -1567,7 +2795,7 @@
       "ticketUrl": "https://www.eventpop.me/e/181582",
       "sourceUrl": "https://www.eventpop.me/e/181582",
       "sourceName": "Eventpop",
-      "fetchedAt": "2026-11-06T15:50:37.296Z",
+      "fetchedAt": "2026-11-06T15:20:23.019Z",
       "venue": {
         "name": "Waterfall Festival",
         "province": "surat-thani"
@@ -1591,7 +2819,7 @@
       "ticketUrl": "https://www.eventpop.me/e/178566/ink-synthphony-restage",
       "sourceUrl": "https://www.eventpop.me/e/178566/ink-synthphony-restage",
       "sourceName": "Eventpop",
-      "fetchedAt": "2026-11-06T15:51:39.429Z",
+      "fetchedAt": "2026-11-06T15:21:17.126Z",
       "venue": {
         "name": "UOB LIVE",
         "province": "bangkok"
@@ -1613,7 +2841,7 @@
       "ticketUrl": "https://www.eventpop.me/e/176642",
       "sourceUrl": "https://www.eventpop.me/e/176642",
       "sourceName": "Eventpop",
-      "fetchedAt": "2026-11-06T15:52:25.270Z",
+      "fetchedAt": "2026-11-06T15:25:27.939Z",
       "venue": {
         "name": "Mövenpick Myth Hotel Patong Phuket",
         "province": "phuket",
@@ -1636,7 +2864,7 @@
       "ticketUrl": "https://www.eventpop.me/e/181115/crazygringosxmas2026",
       "sourceUrl": "https://www.eventpop.me/e/181115/crazygringosxmas2026",
       "sourceName": "Eventpop",
-      "fetchedAt": "2026-11-06T15:50:46.420Z",
+      "fetchedAt": "2026-11-06T15:20:30.490Z",
       "venue": {
         "name": "Crazy Gringo’s Tex Mex FUN-Diner",
         "province": "krabi"
@@ -1657,7 +2885,7 @@
       "ticketUrl": "https://www.eventpop.me/e/181615",
       "sourceUrl": "https://www.eventpop.me/e/181615",
       "sourceName": "Eventpop",
-      "fetchedAt": "2026-11-06T15:50:35.399Z",
+      "fetchedAt": "2026-11-06T15:20:21.458Z",
       "venue": {
         "name": "Waterfall Festival",
         "province": "surat-thani"
@@ -1679,12 +2907,57 @@
       "ticketUrl": "https://www.eventpop.me/e/177902/the-1st-fansign-baby-butterbear-s-first-christmas",
       "sourceUrl": "https://www.eventpop.me/e/177902/the-1st-fansign-baby-butterbear-s-first-christmas",
       "sourceName": "Eventpop",
-      "fetchedAt": "2026-11-06T15:51:49.671Z",
+      "fetchedAt": "2026-11-06T15:21:24.732Z",
       "venue": {
         "name": "EMSPHERE",
         "province": "bangkok",
         "lat": 13.73251,
         "lng": 100.56608
+      }
+    },
+    {
+      "id": "ep-174010",
+      "auto": true,
+      "title": "Boss & Noeul 2nd Fansign : Our Golden Moment",
+      "category": "concert",
+      "startDate": "2026-12-26",
+      "endDate": "2026-12-26",
+      "time": "10:00",
+      "price": {
+        "type": "paid",
+        "min": 3990,
+        "max": 13990
+      },
+      "summary": "BOSS &amp; NOEUL 2ND FANSIGN : OUR GOLDEN MOMENT 26 December 2026 | Meeting Room 1-5, ICONSIAM Hall, 7th Floor Seating Plan, Ticket Prices &amp; Benefits T",
+      "image": "https://p-u.popcdn.net/event_details/covers/000/174/010/og_cover/82acebd00df4a0ab4d9939fe1ec9cc8e2d91bfbd.jpg?1790068320",
+      "ticketUrl": "https://www.eventpop.me/e/174010/boss-noeul-2nd-fansign",
+      "sourceUrl": "https://www.eventpop.me/e/174010/boss-noeul-2nd-fansign",
+      "sourceName": "Eventpop",
+      "fetchedAt": "2026-11-06T15:25:55.209Z",
+      "venue": {
+        "name": "ICONSIAM HALL 7 floor",
+        "province": "bangkok"
+      }
+    },
+    {
+      "id": "ep-174611",
+      "auto": true,
+      "title": "DECEMBER 27TH, 2026 Hii Festival Koh Tao",
+      "category": "concert",
+      "startDate": "2026-12-27",
+      "endDate": "2026-12-28",
+      "price": {
+        "type": "unknown"
+      },
+      "summary": "🌴🔥 SUNDAY, DECEMBER 27TH, 2026 – HII FESTIVAL KOH TAO 🌊✨",
+      "image": "https://p-u.popcdn.net/event_details/posters/000/174/611/large/0b4a04666d7977c261563cb1c78daa48545240ae.jpeg?1790506304",
+      "ticketUrl": "https://www.eventpop.me/e/174611",
+      "sourceUrl": "https://www.eventpop.me/e/174611",
+      "sourceName": "Eventpop",
+      "fetchedAt": "2026-11-06T15:31:20.831Z",
+      "venue": {
+        "name": "Hii Festival Koh Tao",
+        "province": "surat-thani"
       }
     },
     {
@@ -1703,7 +2976,7 @@
       "ticketUrl": "https://www.eventpop.me/e/177073/bossnoeul-crossover-concert",
       "sourceUrl": "https://www.eventpop.me/e/177073/bossnoeul-crossover-concert",
       "sourceName": "Eventpop",
-      "fetchedAt": "2026-11-06T15:52:19.967Z",
+      "fetchedAt": "2026-11-06T15:21:42.339Z",
       "venue": {
         "name": "ICONSIAM HALL",
         "province": "bangkok"
@@ -1724,11 +2997,29 @@
       "ticketUrl": "https://www.eventpop.me/e/181648",
       "sourceUrl": "https://www.eventpop.me/e/181648",
       "sourceName": "Eventpop",
-      "fetchedAt": "2026-11-06T15:50:33.617Z",
+      "fetchedAt": "2026-11-06T15:20:19.918Z",
       "venue": {
         "name": "Waterfall Festival",
         "province": "surat-thani"
       }
+    },
+    {
+      "id": "ep-159292",
+      "auto": true,
+      "title": "WHITE PARTY BANGKOK",
+      "category": "concert",
+      "startDate": "2026-12-29",
+      "endDate": "2027-01-03",
+      "price": {
+        "type": "unknown"
+      },
+      "summary": "Thailand's largest gay dance festival returns with 6 massive parties from Dec 27-31, 2025.",
+      "image": "https://p-u.popcdn.net/event_details/covers/000/159/292/og_cover/8cafd08c439466da967a2f08f8440ffce4e6c1e6.jpg?1786449480",
+      "ticketUrl": "https://www.eventpop.me/e/159292/wpbkk2027amaxon",
+      "sourceUrl": "https://www.eventpop.me/e/159292/wpbkk2027amaxon",
+      "sourceName": "Eventpop",
+      "fetchedAt": "2026-11-06T15:27:46.452Z",
+      "venueId": "paragonhall"
     },
     {
       "id": "zip-material-submission-showcase-from-local-to-global-2473dd17",
@@ -1745,7 +3036,7 @@
       "ticketUrl": "https://www.zipeventapp.com/e/Material-Submission-Showcase-FROM-LOCAL-TO-GLOBAL-2473DD17",
       "sourceUrl": "https://www.zipeventapp.com/e/Material-Submission-Showcase-FROM-LOCAL-TO-GLOBAL-2473DD17",
       "sourceName": "Zipevent",
-      "fetchedAt": "2026-11-06T15:53:12.225Z",
+      "fetchedAt": "2026-11-06T15:22:20.932Z",
       "venue": {
         "name": "TCDC Bangkok",
         "province": "bangkok",
@@ -1768,7 +3059,7 @@
       "ticketUrl": "https://www.eventpop.me/e/181116/crazynye2026",
       "sourceUrl": "https://www.eventpop.me/e/181116/crazynye2026",
       "sourceName": "Eventpop",
-      "fetchedAt": "2026-11-06T15:50:44.609Z",
+      "fetchedAt": "2026-11-06T15:20:28.955Z",
       "venue": {
         "name": "Crazy Gringo's Tex Mex FUN-Dining",
         "province": "krabi"
@@ -1789,7 +3080,7 @@
       "ticketUrl": "https://www.eventpop.me/e/179492/hotelcloverpatongphuketnewyeargaladinner2027",
       "sourceUrl": "https://www.eventpop.me/e/179492/hotelcloverpatongphuketnewyeargaladinner2027",
       "sourceName": "Eventpop",
-      "fetchedAt": "2026-11-06T15:51:20.859Z",
+      "fetchedAt": "2026-11-06T15:21:00.399Z",
       "venue": {
         "name": "Hotel Clover Patong Phuket",
         "province": "phuket"
@@ -1810,7 +3101,7 @@
       "ticketUrl": "https://www.eventpop.me/e/176675",
       "sourceUrl": "https://www.eventpop.me/e/176675",
       "sourceName": "Eventpop",
-      "fetchedAt": "2026-11-06T15:52:23.528Z",
+      "fetchedAt": "2026-11-06T15:21:45.130Z",
       "venue": {
         "name": "Mövenpick Myth Hotel Patong Phuket",
         "province": "phuket",
@@ -1833,7 +3124,7 @@
       "ticketUrl": "https://www.eventpop.me/e/177471",
       "sourceUrl": "https://www.eventpop.me/e/177471",
       "sourceName": "Eventpop",
-      "fetchedAt": "2026-11-06T15:52:12.605Z",
+      "fetchedAt": "2026-11-06T15:21:36.327Z",
       "venue": {
         "name": "Lotus Arena",
         "province": "phuket",
@@ -1857,12 +3148,35 @@
       "ticketUrl": "https://www.eventpop.me/e/177504",
       "sourceUrl": "https://www.eventpop.me/e/177504",
       "sourceName": "Eventpop",
-      "fetchedAt": "2026-11-06T15:52:10.794Z",
+      "fetchedAt": "2026-11-06T15:25:23.392Z",
       "venue": {
         "name": "Lotus Arena",
         "province": "phuket",
         "lat": 7.98482,
         "lng": 98.31007
+      }
+    },
+    {
+      "id": "zip-the-great-fundraising-masterclass-in-bangkok-2027-internatio",
+      "auto": true,
+      "title": "The Great Fundraising Masterclass in Bangkok 2027 [International Applicants]",
+      "category": "learning",
+      "startDate": "2027-01-22",
+      "endDate": "2027-01-22",
+      "time": "09:00–16:00",
+      "price": {
+        "type": "paid",
+        "min": 15000,
+        "max": 15000
+      },
+      "image": "https://cdnali.zipeventapp.com/images/events/A14B2D15-9639-45B9-8768-A0201D8990D8/1E7C45D3-020D-4745-9C2D-FD39B9A7E643.jpg",
+      "ticketUrl": "https://www.zipeventapp.com/e/the-great-fundraising-masterclass-in-bangkok-2027-international-applicants",
+      "sourceUrl": "https://www.zipeventapp.com/e/the-great-fundraising-masterclass-in-bangkok-2027-international-applicants",
+      "sourceName": "Zipevent",
+      "fetchedAt": "2026-11-06T15:28:30.398Z",
+      "venue": {
+        "name": "Goethe-Institute Thailand",
+        "province": "bangkok"
       }
     },
     {
@@ -1883,12 +3197,33 @@
       "ticketUrl": "https://www.eventpop.me/e/178268/nier-orchestraconcert-2027",
       "sourceUrl": "https://www.eventpop.me/e/178268/nier-orchestraconcert-2027",
       "sourceName": "Eventpop",
-      "fetchedAt": "2026-11-06T15:51:42.136Z",
+      "fetchedAt": "2026-11-06T15:21:18.923Z",
       "venue": {
         "name": "Prince Mahidol Hall, Mahidol University / หอประชุมมหิดลสิทธาคาร มหาวิทยาลัยมหิดล ศาลายา",
         "province": "nakhon-pathom",
         "lat": 13.79465,
         "lng": 100.32186
+      }
+    },
+    {
+      "id": "ep-140579",
+      "auto": true,
+      "title": "ออนซอนเด้อ คอนเสิร์ต#2 (On-son the concert#2)",
+      "category": "concert",
+      "startDate": "2027-01-23",
+      "endDate": "2027-01-24",
+      "price": {
+        "type": "unknown"
+      },
+      "summary": "อัน-ยอง-ฮา-เซ-โย ✨🇰🇷กลับมาแล้วกับงานคอนเสิร์ตสุดอลังการแห่งปี!เตรียมพับกบ เอ้ย! พบกับ \"ออนซอนเด้อคอนเสิร์ต\" ซีซั่น 2 ตอนโคเรีย 🎉🏮ขอเชิญชวนมาร่วมสัมผัสความม่วนแบ",
+      "image": "https://p-u.popcdn.net/event_details/covers/000/140/579/og_cover/1de0b7a42e5aafb66ba8b0bb73c7b8461dfc1523.jpg?1772883286",
+      "ticketUrl": "https://www.eventpop.me/e/140579/onsontheconcert2",
+      "sourceUrl": "https://www.eventpop.me/e/140579/onsontheconcert2",
+      "sourceName": "Eventpop",
+      "fetchedAt": "2026-11-06T15:28:06.735Z",
+      "venue": {
+        "name": "สะบายดี​รีสอร์ท​บ้านนา อ.กันทรลักษ์",
+        "province": "sisaket"
       }
     },
     {
@@ -1909,7 +3244,7 @@
       "ticketUrl": "https://www.eventpop.me/e/177637/yujawang-piano-recital2027",
       "sourceUrl": "https://www.eventpop.me/e/177637/yujawang-piano-recital2027",
       "sourceName": "Eventpop",
-      "fetchedAt": "2026-11-06T15:52:05.256Z",
+      "fetchedAt": "2026-11-06T15:25:21.965Z",
       "venue": {
         "name": "Prince Mahidol Hall, Mahidol University / หอประชุมมหิดลสิทธาคาร มหาวิทยาลัยมหิดล ศาลายา",
         "province": "nakhon-pathom",
@@ -1933,7 +3268,7 @@
       "ticketUrl": "https://www.eventpop.me/e/178698/starlight-music-festival",
       "sourceUrl": "https://www.eventpop.me/e/178698/starlight-music-festival",
       "sourceName": "Eventpop",
-      "fetchedAt": "2026-11-06T15:51:35.432Z",
+      "fetchedAt": "2026-11-06T15:21:13.760Z",
       "venue": {
         "name": "เวเนโต้ สวนผึ้ง ราชบุรี",
         "province": "ratchaburi",
@@ -1959,7 +3294,7 @@
       "ticketUrl": "https://www.eventpop.me/e/180187/nobuo-uematsu-con-tiki-show2027",
       "sourceUrl": "https://www.eventpop.me/e/180187/nobuo-uematsu-con-tiki-show2027",
       "sourceName": "Eventpop",
-      "fetchedAt": "2026-11-06T15:51:08.225Z",
+      "fetchedAt": "2026-11-06T15:20:50.090Z",
       "venue": {
         "name": "SiamPic Hall",
         "province": "bangkok"
@@ -1983,8 +3318,29 @@
       "ticketUrl": "https://www.eventpop.me/e/180022/asia-pop-girl-fest-2027",
       "sourceUrl": "https://www.eventpop.me/e/180022/asia-pop-girl-fest-2027",
       "sourceName": "Eventpop",
-      "fetchedAt": "2026-11-06T15:51:12.078Z",
+      "fetchedAt": "2026-11-06T15:20:53.122Z",
       "venueId": "bitec"
+    },
+    {
+      "id": "ep-166444",
+      "auto": true,
+      "title": "CRESTFIOW EVRY SOUI ON FIRE Live in Mute Studio",
+      "category": "concert",
+      "startDate": "2027-02-14",
+      "endDate": "2027-02-14",
+      "time": "17:40",
+      "price": {
+        "type": "unknown"
+      },
+      "image": "https://p-u.popcdn.net/event_details/covers/000/166/444/og_cover/0c043a557b2cc20eea1a8402950e03be35d7a0a3.png?1788181004",
+      "ticketUrl": "https://www.eventpop.me/e/166444",
+      "sourceUrl": "https://www.eventpop.me/e/166444",
+      "sourceName": "Eventpop",
+      "fetchedAt": "2026-11-06T15:27:09.057Z",
+      "venue": {
+        "name": "ห้องซ้อมดนตรี Mute Studio",
+        "province": "phetchabun"
+      }
     },
     {
       "id": "zip-chulalongkorn-university-veterinary-conference-2027",
@@ -2003,21 +3359,81 @@
       "ticketUrl": "https://www.zipeventapp.com/e/chulalongkorn-university-veterinary-conference-2027",
       "sourceUrl": "https://www.zipeventapp.com/e/chulalongkorn-university-veterinary-conference-2027",
       "sourceName": "Zipevent",
-      "fetchedAt": "2026-11-06T15:53:29.741Z",
+      "fetchedAt": "2026-11-06T15:22:36.586Z",
       "venue": {
         "name": "The Berkeley Hotel Pratunam (เดอะ เบอรเ์คลีย์โฮเทล ประตูน้ำ)",
         "province": "bangkok",
         "lat": 13.75003,
         "lng": 100.54297
       }
+    },
+    {
+      "id": "zip-aseanhvacexpo",
+      "auto": true,
+      "title": "ARHC - ASEAN RHVAC & Cleanroom Industry Expo",
+      "category": "learning",
+      "startDate": "2027-03-19",
+      "endDate": "2027-03-19",
+      "time": "10:00–18:00",
+      "price": {
+        "type": "unknown"
+      },
+      "image": "https://cdnali.zipeventapp.com/images/events/8DBCEC22-D82F-4307-9F98-0640B1DC39CC/28437D9B-545B-475F-89B4-45D0D57926E2.jpg",
+      "ticketUrl": "https://www.zipeventapp.com/e/aseanhvacexpo",
+      "sourceUrl": "https://www.zipeventapp.com/e/aseanhvacexpo",
+      "sourceName": "Zipevent",
+      "fetchedAt": "2026-11-06T15:30:23.793Z",
+      "venueId": "impact"
+    },
+    {
+      "id": "ep-157228",
+      "auto": true,
+      "title": "ASIA FEMINIST LBQ CONFERENCE 2027",
+      "category": "learning",
+      "startDate": "2027-03-23",
+      "endDate": "2027-03-26",
+      "price": {
+        "type": "unknown"
+      },
+      "summary": "The Future is Queer Feminist--------------------------------------------------ABOUT THE CONFERENCE Since March 1986, when Asian",
+      "image": "https://p-u.popcdn.net/event_details/covers/000/157/228/og_cover/76ed2dfde7ee52a536c7a354f291b12585b298b5.png?1784772441",
+      "ticketUrl": "https://www.eventpop.me/e/157228/aflc2027-general-registration",
+      "sourceUrl": "https://www.eventpop.me/e/157228/aflc2027-general-registration",
+      "sourceName": "Eventpop",
+      "fetchedAt": "2026-11-06T15:27:51.192Z",
+      "venue": {
+        "name": "To Be Announced",
+        "province": "bangkok"
+      }
+    },
+    {
+      "id": "ep-144065",
+      "auto": true,
+      "title": "ASIA FEMINIST LBQ CONFERENCE 2027 (Session Proposal)",
+      "category": "learning",
+      "startDate": "2027-03-23",
+      "endDate": "2027-03-26",
+      "price": {
+        "type": "unknown"
+      },
+      "summary": "Open Call for Session ProposalAsia Feminist LBQ Conference 2027The Future is Queer Feminist--------------------------------------------------ABOUT THE CONFERENC",
+      "image": "https://p-u.popcdn.net/event_details/posters/000/144/065/large/b74d5ad2ccca6c1471d040e9a69cdac03c1fb52a.png?1775115785",
+      "ticketUrl": "https://www.eventpop.me/e/144065/asia-feminist-lbq-conference2027",
+      "sourceUrl": "https://www.eventpop.me/e/144065/asia-feminist-lbq-conference2027",
+      "sourceName": "Eventpop",
+      "fetchedAt": "2026-11-06T15:28:03.024Z",
+      "venue": {
+        "name": "To be announced",
+        "province": "bangkok"
+      }
     }
   ],
   "skip": [
+    "zip-sunday-playland-d6460433",
     "zip-vipa-international-film-festival-2026-6f08751e",
     "zip-chef-on-tour-robinson-phetchaburi-74c8b884",
     "zip-northern-mice-expo-2026-0a12b98c",
     "zip-food-fun-fest-e868bb20",
-    "zip-sunday-playland-d6460433",
     "zip-spatial-pulse-0844a896",
     "zip-the-superlative-artistry-of-japan-c102e24a",
     "zip-pacific-premiere-dek-d-fair-2026",
@@ -2037,8 +3453,8 @@
     "zip-anapanasati-fb242649",
     "zip-kaset-lamphun-dee-hariphunchai-0a8bf7d6",
     "zip-lot-and-found-1d0e8713",
-    "zip-i-am-fine-sanjon-burapha-episode-1cd77b52",
     "zip-the-new-narrative-moving-image-showcase-bfcdcd48",
+    "zip-i-am-fine-sanjon-burapha-episode-1cd77b52",
     "zip-amazing-pet-fun-fest-6f9a1e89",
     "zip-phung-kang-sane-thai-food-fair-24ac6bca",
     "zip-bangkok-climate-action-week-2026-6040a98d",
@@ -2063,6 +3479,97 @@
     "zip-383122453434",
     "zip-beyond-the-simple",
     "zip-once-upon-a-time",
-    "zip-psyche-and-flesh-e33bc7da"
+    "zip-psyche-and-flesh-e33bc7da",
+    "zip-fun-in-differences-b5290f1b",
+    "zip-y-book-fair-11-43c888c7",
+    "zip-boy-toys-playground-890dc899",
+    "zip-thailand-space-expo-2026",
+    "zip-phuyingtummahakin",
+    "zip-morality",
+    "zip-home-living-expo-4afbd365",
+    "zip-activity-series-cross-culture-intergeneration-2025",
+    "zip-3-8",
+    "zip-mens-fashion-sale-430504eb",
+    "zip-nocturnal-tour-e56589b0",
+    "zip-muk-street-art-and-exhibition",
+    "zip-glimpse-of-light-in-summer",
+    "zip-24-29",
+    "zip-fresh-farm-a307d835",
+    "zip-29-3",
+    "zip-sweet-wonderland-ab66c24a",
+    "zip-black-to-be-me",
+    "zip-behind-my-eyes-539504c7",
+    "zip-shito-shito",
+    "zip-napha-x-chefnoom",
+    "zip-thai-dialogue-foreign-quote-a-temporary-exhibition-2026-ba8a",
+    "zip-26-1",
+    "zip-music-culture-fest-045b6b76",
+    "zip-home-and-living-in-style-central-pinklao-47f1a20f",
+    "zip-same-same",
+    "zip-horeca-expo-phuket-87ebe3a7",
+    "zip-10-15",
+    "zip-krung-thon-pa-plearn-the-mall-bangkae",
+    "zip-shared-sensibilities-4ab804b8",
+    "zip-tasty-the-town-f0d83d59",
+    "zip-feel-all-the-feelings-7a9b287b",
+    "zip-international-fair-2026-a59bad26",
+    "zip-from-here-to-here",
+    "zip-chill-camping-food-fest-40789017",
+    "zip-public-garden-8a662a4c",
+    "zip-re-no-way-tion",
+    "zip-illust-fusion",
+    "zip-diversity",
+    "zip-471",
+    "zip-29-3-2566",
+    "zip-deep-in-my-mind-2",
+    "zip-home-and-living-in-style-central-eastville-982a8761",
+    "zip-art-speaks-one-language-54b5192e",
+    "zip-unlock-the-future-in-australia",
+    "zip-gift-for-your-lifestyle",
+    "zip-bangkok-inclusive-art-festival-646b0916",
+    "zip-naiinthestreet",
+    "zip-vijit-roi-et-illumination-d4b658d2",
+    "zip-jing-jai-maha-nakorn-13-653278a1",
+    "zip-brandname-festival-cbca68ae",
+    "zip-25-30",
+    "zip-disney-toy-expo-thailand-2025-1161333a",
+    "zip-ba-bor-project-b5261331",
+    "zip-loving-much-and-more-market",
+    "zip-hechyeomoyeo-5",
+    "zip-wipvip",
+    "zip-jongpreang",
+    "zip-taste-to-tag-90e74162",
+    "zip-beyond-food-expo-2026-0d22d446",
+    "zip-songkhla-medical-and-wellness-tourism-2b2392e6",
+    "zip-jurassic-mania-97c3a412",
+    "zip-beyond-the-sea-fff9a54161a4",
+    "zip-sce-na-rio-0ba8fc87",
+    "zip-relaylost-in-oursphere",
+    "zip-white-road-city-f9e61c69",
+    "zip-brandname-festival-f6894581",
+    "ep-103244",
+    "ep-102882",
+    "ep-102518",
+    "zip-unusual",
+    "zip-the-flowers-of-a-prayer-14f2aa98",
+    "zip-reframing-tomorrow-cities-festivalscontent-41d590ac",
+    "zip-the-melody-of-freedom-and-peace",
+    "zip-gradient-bacc",
+    "zip-mun-keu-sin-la-pa-2312b5e0",
+    "zip-maxnifier-iv",
+    "zip-taladfarmsuk",
+    "zip-jabchai",
+    "zip-cheeva-lavender-2",
+    "zip-talakkia-friendly-market-86th-af407e40",
+    "zip-truth-suppose",
+    "zip-19-24",
+    "zip-love-to-love-lisa-ono-live-in-bangkok-c8dfbc3c",
+    "zip-a-bit-of-thai-tunes",
+    "zip-cold-chain-exhibition-2024",
+    "zip-fine-dining-exhibition-of-fine-art",
+    "zip-only-me-another-me",
+    "zip-mahakumbarndee",
+    "zip-lab-asia-2023",
+    "zip-souzou-each-day-here-is-beloved"
   ]
 }

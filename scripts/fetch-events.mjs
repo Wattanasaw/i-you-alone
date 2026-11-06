@@ -2,7 +2,8 @@
 // ฟรี ไม่ต้องใช้ API key  รัน: node scripts/fetch-events.mjs   (ทดลองไม่บันทึก: --dry)
 // - เคารพ robots.txt, หน่วงเวลาระหว่างคำขอ, ใส่ชื่อบอทพร้อมลิงก์เว็บเรา
 // - เก็บแค่ข้อเท็จจริง (ชื่อ วันที่ สถานที่ ราคา) + รูปปกจากต้นทาง พร้อมลิงก์กลับไปซื้อบัตรที่ต้นทาง
-import { readFile, writeFile } from "node:fs/promises";
+import { readFile, writeFile, rename } from "node:fs/promises";
+import { existsSync } from "node:fs";
 
 const DRY = process.argv.includes("--dry");
 const UA = "Mozilla/5.0 (compatible; IYouAloneBot/1.0; +https://wattanasaw.github.io/i-you-alone/)";
@@ -310,7 +311,10 @@ if (testIdx > 0) {
 }
 
 // ---------- ทำงาน ----------
-const prev =await readJSON("data/auto-events.json", { events: [] });
+let prev = await readJSON("data/auto-events.json", null);
+// ไฟล์มีอยู่แต่อ่านไม่ได้ (เช่นโดนตัดกลางทาง) → หยุด ไม่เริ่มจากศูนย์ทับงานเดิม
+if (!prev && existsSync(new URL("data/auto-events.json", root))) { console.error("data/auto-events.json เสีย — กู้จาก git ก่อน"); process.exit(1); }
+prev ??= { events: [] };
 const prevById = Object.fromEntries((prev.events || []).map(e => [e.id, e]));
 // งานที่เคยตรวจแล้วว่าจบแล้ว/นอกไทย/ไม่ผ่านตัวกรองถาวร → ไม่ต้องเปิดซ้ำ
 const skip = new Set(prev.skip || []);
@@ -353,5 +357,7 @@ const byCat = events.reduce((m, e) => (m[e.category] = (m[e.category] || 0) + 1,
 console.log(`คำขอทั้งหมด ${requests} · เก็บ ${events.length} งาน`, JSON.stringify(stats), "\nหมวด:", JSON.stringify(byCat));
 for (const [why, list] of Object.entries(rejects)) console.log(`กรองออก (${why}): ${list.length}`, list.slice(0, 4).join(" | "));
 if (DRY) { console.log(JSON.stringify(events.slice(0, 6), null, 1)); process.exit(0); }
-await writeFile(new URL("data/auto-events.json", root), JSON.stringify({ updatedAt: new Date().toISOString(), stats, events, skip: [...skip].slice(-3000) }, null, 2) + "\n");
-await writeFile(new URL("data/geocache.json", root), JSON.stringify(geocache, null, 1) + "\n");
+// เขียนไฟล์ชั่วคราวก่อนแล้วค่อยสลับ → ถ้าโดนหยุดกลางทาง ไฟล์เดิมยังอยู่ครบ
+const save = async (p, text) => { const u = new URL(p, root), tmp = new URL(p + ".tmp", root); await writeFile(tmp, text); await rename(tmp, u); };
+await save("data/auto-events.json", JSON.stringify({ updatedAt: new Date().toISOString(), stats, events, skip: [...skip].slice(-3000) }, null, 2) + "\n");
+await save("data/geocache.json", JSON.stringify(geocache, null, 1) + "\n");

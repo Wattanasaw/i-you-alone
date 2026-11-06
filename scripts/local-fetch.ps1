@@ -21,9 +21,14 @@ Log "เริ่มดึงงาน"
 & $git pull -q --rebase 2>&1 | ForEach-Object { Log "git: $_" }
 if ($LASTEXITCODE -ne 0) { Log "pull ไม่สำเร็จ (ยังไม่ต่อเน็ต?) — ข้ามรอบนี้"; exit 1 }
 
-& $node scripts/fetch-events.mjs 2>&1 | Select-Object -First 3 | ForEach-Object { Log "$_" }
-& $node scripts/check-data.mjs 2>&1 | Select-Object -Last 1 | ForEach-Object { Log "$_" }
-if ($LASTEXITCODE -ne 0) { Log "ข้อมูลไม่ผ่านการตรวจ — ไม่ขึ้นเว็บ"; & $git checkout -- data/auto-events.json data/geocache.json; exit 1 }
+# เก็บผลทั้งหมดก่อนแล้วค่อยตัด (ห้ามใช้ Select-Object -First กับ node ตรงๆ เพราะจะหยุด node กลางทาง)
+$out = & $node scripts/fetch-events.mjs 2>&1
+$fetchOk = $LASTEXITCODE -eq 0
+$out | Where-Object { "$_" -match "ตอบ|เก็บ|เสีย" } | Select-Object -First 5 | ForEach-Object { Log "$_" }
+$out = & $node scripts/check-data.mjs 2>&1
+$checkOk = $LASTEXITCODE -eq 0
+$out | Select-Object -Last 1 | ForEach-Object { Log "$_" }
+if (-not ($fetchOk -and $checkOk)) { Log "ข้อมูลไม่ผ่านการตรวจ — ไม่ขึ้นเว็บ"; & $git checkout -- data/auto-events.json data/geocache.json; exit 1 }
 
 & $git add data/auto-events.json data/geocache.json
 & $git diff --cached --quiet
