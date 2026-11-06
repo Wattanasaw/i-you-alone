@@ -100,7 +100,7 @@ const SOURCES = {
     lang: "en", // หน้าภาษาอังกฤษมีรูปแบบวันที่แน่นอน ("06 Dec 2026 at 16:00")
     async list() {
       const cats = ["concert", "music-festival", "run", "book", "food-and-drink", "education", "business", "art-and-design", "health", "experience",
-        "kids-and-family", "performing-arts", "fan-meeting", "games", "e-sport", "hobbies-and-special-interests", "charity", "comedy", "sport"];
+        "kids-and-family", "performing-arts", "fan-meeting", "games", "e-sport", "hobbies-and-special-interests", "charity", "comedy"];
       const urls = new Set();
       for (const c of cats) {
         for (let page = 1; page <= 3; page++) {

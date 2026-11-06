@@ -2,6 +2,8 @@
 # ใช้เพราะ Eventpop บล็อกเซิร์ฟเวอร์ของ GitHub (ตอบ 403) แต่เปิดจากเน็ตบ้านได้ปกติ
 # ตั้งเวลาด้วย scripts/install-local-fetch.ps1 · ดูผลย้อนหลังที่ %LOCALAPPDATA%\IYouAlone\fetch.log
 $ErrorActionPreference = "Continue"
+# ให้อ่านข้อความภาษาไทยจาก node ถูก
+[Console]::OutputEncoding = [Text.Encoding]::UTF8
 $repo = Split-Path $PSScriptRoot -Parent
 $logDir = Join-Path $env:LOCALAPPDATA "IYouAlone"
 New-Item -ItemType Directory -Force $logDir | Out-Null
