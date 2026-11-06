@@ -1,0 +1,6 @@
+# ไฟล์ตั้งค่าของเครื่องมือในเครื่อง ไม่ต้องขึ้นเว็บ
+.claude/
+node_modules/
+*.log
+.DS_Store
+Thumbs.db

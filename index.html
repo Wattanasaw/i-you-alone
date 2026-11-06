@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>I You Alone — รวมงานอีเว้นท์ทั่วไทย</title>
+  <meta name="description" content="I You Alone รวมงานอีเว้นท์ในไทย คอนเสิร์ต สัมมนา งานหนังสือ มอเตอร์โชว์ แฟลชเซล พร้อมวันเวลา สถานที่ ค่าเข้า และวิธีเดินทาง">
+  <meta name="theme-color" content="#ff2d78">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icons/icon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@500;600;700;800&family=IBM+Plex+Sans+Thai:wght@400;500;600&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a href="#/" class="brand" aria-label="I You Alone หน้าแรก">
+      <img src="icons/icon.svg" alt="" width="34" height="34">
+      <span class="wordmark" id="siteName">I <em>You</em> Alone</span>
+    </a>
+    <div class="top-right">
+      <nav class="topnav">
+        <a href="#/" data-nav="home" data-i18n="navExplore">สำรวจ</a>
+        <a href="#/news" data-nav="news" data-i18n="navNews">ข่าวล่าสุด</a>
+        <a href="#/saved" data-nav="saved" data-i18n="navSaved">ที่บันทึกไว้</a>
+        <a href="#/about" data-nav="about" data-i18n="navAds">ลงโฆษณา</a>
+      </nav>
+      <label class="lang-switch" title="Language / ภาษา / 语言">🌐<select id="langSel" aria-label="Language"></select></label>
+    </div>
+  </header>
+
+  <main id="app" class="container" aria-live="polite">
+    <p class="loading">กำลังโหลด…</p>
+  </main>
+
+  <nav class="bottomnav">
+    <a href="#/" data-nav="home"><span>✨</span><i data-i18n="navExplore">สำรวจ</i></a>
+    <a href="#/news" data-nav="news"><span>📰</span><i data-i18n="navNewsShort">ข่าว</i></a>
+    <a href="#/saved" data-nav="saved"><span>❤️</span><i data-i18n="navSavedShort">บันทึก</i></a>
+    <a href="#/about" data-nav="about"><span>📣</span><i data-i18n="navAbout">เกี่ยวกับ</i></a>
+  </nav>
+
+  <footer class="footer container">
+    <img src="icons/logo-full.svg" alt="I You Alone" class="footer-logo">
+    <p id="footerText"></p>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

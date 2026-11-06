@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>เพิ่มงานอีเว้นท์ — หลังบ้าน</title>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body { padding-bottom: 40px; }
+    form { display: grid; gap: 12px; }
+    .row { display: grid; gap: 12px; grid-template-columns: 1fr; }
+    @media (min-width: 700px) { .row { grid-template-columns: 1fr 1fr; } }
+    label { display: grid; gap: 4px; font-size: .9rem; color: var(--muted); }
+    input, select, textarea { padding: 9px 11px; border-radius: 10px; border: 1px solid var(--border); background: var(--surface); width: 100%; }
+    textarea { min-height: 90px; font: inherit; }
+    pre { background: var(--surface-2); padding: 12px; border-radius: 10px; overflow: auto; max-height: 360px; font-size: .8rem; }
+    .aff-row { display: grid; grid-template-columns: 1fr 120px 1.4fr 40px; gap: 6px; }
+    .news-pick { display: grid; gap: 6px; max-height: 280px; overflow: auto; }
+    .news-pick button { text-align: left; }
+  </style>
+</head>
+<body>
+  <header class="topbar"><a class="brand" href="index.html"><img src="icons/icon.svg" width="28" height="28" alt="">หลังบ้าน: เพิ่ม/แก้ไขงาน</a></header>
+  <main class="container">
+    <section class="panel" style="margin-top:16px">
+      <h2>วิธีใช้</h2>
+      <ol class="prose" style="margin:0;padding-left:20px">
+        <li>เลือกข่าวจากกล่องข่าว (ถ้ามี) หรือเลือกงานเดิมเพื่อแก้ไข หรือกรอกใหม่</li>
+        <li>กด <b>สร้าง JSON</b> แล้วกด <b>คัดลอก</b></li>
+        <li>ไปที่ GitHub → ไฟล์ <code>data/events.json</code> → ✏️ Edit → วางเป็นรายการใหม่ในวงเล็บ [ ] (คั่นด้วยจุลภาค) → Commit</li>
+        <li>หรือกด <b>ดาวน์โหลด events.json ทั้งไฟล์</b> แล้วอัปโหลดทับไฟล์เดิม (ง่ายที่สุด)</li>
+      </ol>
+    </section>
+
+    <section class="panel">
+      <h2>📥 กล่องข่าว (ดึงอัตโนมัติ)</h2>
+      <div class="news-pick" id="newsPick"><p class="empty">ยังไม่มีข่าว</p></div>
+    </section>
+
+    <section class="panel">
+      <h2>✏️ แก้ไขงานเดิม</h2>
+      <select id="existing"><option value="">— งานใหม่ —</option></select>
+    </section>
+
+    <section class="panel">
+      <form id="f">
+        <div class="row">
+          <label>รหัสงาน (ภาษาอังกฤษ ไม่เว้นวรรค) <input name="id" required placeholder="motorexpo-2026"></label>
+          <label>ชื่องาน <input name="title" required></label>
+        </div>
+        <div class="row">
+          <label>หมวดหมู่ <select name="category" id="cat"></select></label>
+          <label>สถานที่ <select name="venueId" id="venue"></select></label>
+        </div>
+        <div class="row">
+          <label>วันเริ่ม <input type="date" name="startDate" required></label>
+          <label>วันสิ้นสุด <input type="date" name="endDate"></label>
+        </div>
+        <label style="flex-direction:row;display:flex;gap:8px;align-items:center"><input type="checkbox" name="ongoing" style="width:auto"> ☕ เปิดประจำ ไม่มีวันจบ (เช่น คาเฟ่ ร้านอาหาร คลาสโยคะประจำ) — ใส่วันเริ่มเป็นวันที่เปิด</label>
+        <div id="weekdays" style="display:flex;flex-wrap:wrap;gap:10px;font-size:.9rem;color:var(--muted)">
+          <span>มีเฉพาะวัน (ไม่ติ๊ก = ทุกวัน):</span>
+        </div>
+        <div class="row">
+          <label>🏁 ระยะ / ประเภท (คั่นด้วยจุลภาค) <input name="races" placeholder="5K, 10K, 21K หรือ เดี่ยว, คู่, ทีม"></label>
+          <label>📝 วันปิดรับสมัคร <input type="date" name="registerBy"></label>
+        </div>
+        <div class="row">
+          <label>เวลา / เวลาเปิด-ปิด <input name="time" placeholder="10:00–21:00 น."></label>
+          <label>วันเปิด (เฉพาะร้านเปิดประจำ) <input name="openDays" placeholder="เปิดทุกวัน (ปิดวันพุธ)"></label>
+        </div>
+        <div class="row">
+          <label>ค่าใช้จ่าย
+            <select name="priceType"><option value="free">ฟรี</option><option value="paid">เสียเงิน</option><option value="mixed">เข้าฟรี/บางส่วนเสียเงิน</option></select>
+          </label>
+          <label>หมายเหตุราคา <input name="priceNote" placeholder="บัตร Early Bird ..."></label>
+        </div>
+        <div class="row">
+          <label>ราคาต่ำสุด (บาท) <input type="number" name="priceMin" min="0"></label>
+          <label>ราคาสูงสุด (บาท) <input type="number" name="priceMax" min="0"></label>
+        </div>
+        <label>สรุปสั้น (แสดงในการ์ด) <input name="summary"></label>
+        <label>รายละเอียดงาน (ขึ้นบรรทัดใหม่ = ย่อหน้าใหม่) <textarea name="details"></textarea></label>
+        <label>ไฮไลต์ (บรรทัดละ 1 ข้อ) <textarea name="highlights" style="min-height:60px"></textarea></label>
+        <details class="panel" style="box-shadow:none">
+          <summary style="cursor:pointer;font-weight:600">🌐 คำแปล อังกฤษ / จีน (ไม่บังคับ — เว้นว่างได้ แอพจะแสดงภาษาไทยแทน หรือใช้ scripts/translate.mjs แปลอัตโนมัติ)</summary>
+          <div class="row" style="margin-top:12px">
+            <div style="display:grid;gap:10px">
+              <b>English</b>
+              <label>Title <input name="title_en"></label>
+              <label>Summary <input name="summary_en"></label>
+              <label>Details <textarea name="details_en"></textarea></label>
+              <label>Highlights (one per line) <textarea name="highlights_en" style="min-height:60px"></textarea></label>
+            </div>
+            <div style="display:grid;gap:10px">
+              <b>中文</b>
+              <label>标题 <input name="title_zh"></label>
+              <label>简介 <input name="summary_zh"></label>
+              <label>详情 <textarea name="details_zh"></textarea></label>
+              <label>亮点（每行一条） <textarea name="highlights_zh" style="min-height:60px"></textarea></label>
+            </div>
+          </div>
+        </details>
+        <div class="row">
+          <label>แท็ก (คั่นด้วยจุลภาค) <input name="tags" placeholder="ฟรี, คอนเสิร์ต"></label>
+          <label>ผู้จัด <input name="organizer"></label>
+        </div>
+        <div class="row">
+          <label>ลิงก์ซื้อบัตร/ลงทะเบียน <input type="url" name="ticketUrl"></label>
+          <label>ลิงก์รูปปก (ไม่ใส่ก็ได้) <input type="url" name="image"></label>
+        </div>
+        <div class="row">
+          <label>ลิงก์แหล่งข่าว <input type="url" name="sourceUrl"></label>
+          <label>ชื่อแหล่งข่าว <input name="sourceName"></label>
+        </div>
+        <label style="flex-direction:row;display:flex;gap:8px;align-items:center"><input type="checkbox" name="featured" style="width:auto"> ปักหมุด "แนะนำ" (เช่น งานที่จ่ายค่าโปรโมท)</label>
+
+        <h3 style="margin:8px 0 0">🔗 ลิงก์ Affiliate</h3>
+        <div id="affRows" style="display:grid;gap:6px"></div>
+        <button type="button" class="btn" id="addAff">+ เพิ่มลิงก์ Affiliate</button>
+
+        <div class="actions">
+          <button class="btn primary" type="submit">สร้าง JSON</button>
+          <button class="btn" type="button" id="copy">📋 คัดลอก</button>
+          <button class="btn" type="button" id="dl">⬇️ ดาวน์โหลด events.json ทั้งไฟล์</button>
+        </div>
+      </form>
+      <pre id="out">—</pre>
+    </section>
+  </main>
+  <script src="js/config.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>

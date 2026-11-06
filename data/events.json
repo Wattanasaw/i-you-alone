@@ -1,0 +1,1235 @@
+[
+  {
+    "id": "yoga-lumpini-weekly",
+    "sample": true,
+    "ongoing": true,
+    "title": "โยคะฟรีในสวน ทุกเช้าวันเสาร์",
+    "category": "outdoor",
+    "startDate": "2026-09-05",
+    "weekdays": [
+      6
+    ],
+    "openDays": "ทุกวันเสาร์",
+    "time": "07:00–08:00 น.",
+    "venueId": "lumpini",
+    "price": {
+      "type": "free",
+      "note": "ฟรี ไม่ต้องลงทะเบียน นำเสื่อโยคะมาเอง"
+    },
+    "summary": "คลาสโยคะกลางแจ้งฟรี เหมาะกับทุกระดับ",
+    "details": "คลาสโยคะกลางแจ้งยามเช้า สอนโดยครูอาสา เหมาะกับมือใหม่\nงดคลาสวันฝนตก ติดตามประกาศในเพจผู้จัด",
+    "highlights": [
+      "ฟรี ไม่ต้องจอง",
+      "เหมาะกับมือใหม่",
+      "อากาศดียามเช้า"
+    ],
+    "tags": [
+      "โยคะ",
+      "ฟรี",
+      "สวนลุม",
+      "ออกกำลังกาย"
+    ],
+    "i18n": {
+      "en": {
+        "title": "Free Saturday Morning Yoga in the Park",
+        "summary": "Free outdoor yoga class for all levels",
+        "openDays": "Every Saturday",
+        "time": "7:00–8:00",
+        "priceNote": "Free, no registration — bring your own mat",
+        "details": "A morning outdoor yoga class led by volunteer teachers, great for beginners.\nCancelled when it rains — follow the organizer's page for updates.",
+        "highlights": [
+          "Free, no booking",
+          "Beginner friendly",
+          "Fresh morning air"
+        ]
+      },
+      "zh": {
+        "title": "每周六清晨公园免费瑜伽",
+        "summary": "适合各水平的免费户外瑜伽课",
+        "openDays": "每周六",
+        "time": "7:00–8:00",
+        "priceNote": "免费，无需报名，请自带瑜伽垫",
+        "details": "由志愿老师带领的清晨户外瑜伽课，适合新手。\n下雨天取消，请关注主办方页面公告。",
+        "highlights": [
+          "免费无需预约",
+          "适合新手",
+          "清晨空气好"
+        ]
+      }
+    }
+  },
+  {
+    "id": "trail-doisuthep-2027",
+    "sample": true,
+    "title": "เทรลรันดอยสุเทพ",
+    "category": "outdoor",
+    "startDate": "2027-01-10",
+    "endDate": "2027-01-10",
+    "registerBy": "2026-12-20",
+    "time": "04:00 น. (50K) / 05:30 น. (30K) / 06:30 น. (15K)",
+    "races": [
+      "15K",
+      "30K",
+      "50K"
+    ],
+    "venue": {
+      "name": "เชิงดอยสุเทพ (จุดปล่อยตัวตัวอย่าง)",
+      "province": "chiang-mai",
+      "address": "อ.เมือง จ.เชียงใหม่",
+      "lat": 18.803,
+      "lng": 98.953,
+      "transit": [
+        {
+          "type": "SHUTTLE",
+          "text": "ผู้จัดมีรถรับส่งจากตัวเมืองเชียงใหม่ (ตรวจสอบเวลากับผู้จัด)"
+        },
+        {
+          "type": "TAXI",
+          "text": "เรียกรถผ่านแอพ หรือรถแดงจากมหาวิทยาลัยเชียงใหม่"
+        }
+      ],
+      "parking": "ที่จอดรถจำกัดบริเวณจุดปล่อยตัว แนะนำใช้รถรับส่ง",
+      "i18n": {
+        "en": {
+          "name": "Foot of Doi Suthep (sample start area)",
+          "address": "Mueang, Chiang Mai",
+          "transit": [
+            "Organizer shuttles from Chiang Mai city (check times with the organizer)",
+            "Ride-hailing app or a red songthaew from Chiang Mai University"
+          ],
+          "parking": "Limited parking at the start — the shuttle is recommended"
+        },
+        "zh": {
+          "name": "素贴山山脚（示例起点）",
+          "address": "清迈府 直辖县",
+          "transit": [
+            "主办方提供清迈市区接驳车（请向主办方确认时间）",
+            "使用打车软件，或从清迈大学乘红色双条车"
+          ],
+          "parking": "起点停车位有限，建议乘接驳车"
+        }
+      }
+    },
+    "price": {
+      "type": "paid",
+      "min": 1200,
+      "max": 2500,
+      "note": "15K 1,200 บาท / 30K 1,800 บาท / 50K 2,500 บาท"
+    },
+    "ticketUrl": "https://example.com/register",
+    "summary": "วิ่งเทรลในป่าดอยสุเทพ วิวเมืองเชียงใหม่ อากาศเย็นต้นปี",
+    "details": "เส้นทางเทรลผ่านป่าและน้ำตกบนดอยสุเทพ ปลายทางเห็นวิวเมืองเชียงใหม่\nระยะ 50K ต้องมีอุปกรณ์บังคับ (ไฟฉายคาดหัว ถุงน้ำ นกหวีด)",
+    "highlights": [
+      "วิวเมืองเชียงใหม่",
+      "เส้นทางป่าและน้ำตก",
+      "อากาศเย็นช่วงต้นปี"
+    ],
+    "tags": [
+      "เทรลรัน",
+      "เชียงใหม่",
+      "ดอยสุเทพ",
+      "วิ่งภูเขา"
+    ],
+    "affiliateLinks": [
+      {
+        "label": "อุปกรณ์วิ่งเทรล ไฟฉายคาดหัว เป้น้ำ",
+        "platform": "Shopee",
+        "url": "https://example.com/your-trail-gear-affiliate-link"
+      }
+    ],
+    "i18n": {
+      "en": {
+        "title": "Doi Suthep Trail Run",
+        "summary": "Trail running through Doi Suthep forest with views over Chiang Mai in the cool season",
+        "time": "4:00 (50K) / 5:30 (30K) / 6:30 (15K)",
+        "priceNote": "15K ฿1,200 / 30K ฿1,800 / 50K ฿2,500",
+        "details": "Trails through forest and waterfalls on Doi Suthep, finishing with views over Chiang Mai.\nThe 50K requires mandatory gear (headlamp, water bladder, whistle).",
+        "highlights": [
+          "Views over Chiang Mai",
+          "Forest and waterfall trails",
+          "Cool early-year weather"
+        ],
+        "affiliateLabels": [
+          "Trail gear: headlamps, hydration packs"
+        ]
+      },
+      "zh": {
+        "title": "素贴山越野跑",
+        "summary": "穿越素贴山森林的越野跑，俯瞰清迈城，年初天气凉爽",
+        "time": "4:00（50K）/ 5:30（30K）/ 6:30（15K）",
+        "priceNote": "15K ฿1,200 / 30K ฿1,800 / 50K ฿2,500",
+        "details": "赛道穿越素贴山的森林和瀑布，终点可俯瞰清迈城。\n50K 组别须携带强制装备（头灯、水袋、哨子）。",
+        "highlights": [
+          "俯瞰清迈城",
+          "森林与瀑布赛道",
+          "年初天气凉爽"
+        ],
+        "affiliateLabels": [
+          "越野跑装备：头灯、水袋背包"
+        ]
+      }
+    }
+  },
+  {
+    "id": "fitness-race-bitec-2026",
+    "sample": true,
+    "featured": true,
+    "title": "ฟิตเนสเรซ: วิ่งสลับสถานีออกกำลังกาย (สไตล์ HYROX)",
+    "category": "outdoor",
+    "startDate": "2026-12-19",
+    "endDate": "2026-12-20",
+    "registerBy": "2026-12-05",
+    "time": "07:00–19:00 น. (เวลาปล่อยตัวตามรอบที่สมัคร)",
+    "races": [
+      "เดี่ยว",
+      "คู่",
+      "ทีมรีเลย์ 4 คน"
+    ],
+    "venueId": "bitec",
+    "price": {
+      "type": "paid",
+      "min": 2900,
+      "max": 3900,
+      "note": "ค่าสมัครต่อคน 2,900–3,900 บาท ผู้ชมเข้าฟรี"
+    },
+    "ticketUrl": "https://example.com/register",
+    "summary": "วิ่ง 8 × 1 กม. สลับ 8 สถานีฟิตเนส ในร่ม มีรุ่นมือใหม่",
+    "details": "การแข่งขันฟิตเนสในร่ม วิ่ง 1 กม. สลับกับสถานีออกกำลังกาย 8 สถานี เช่น ดันเลื่อน ลากเลื่อน กระโดดเบอร์พี และเวทแลนจ์\nมีรุ่นมือใหม่ (น้ำหนักเบา) และรุ่นโปร ผู้ชมเข้าเชียร์ได้ฟรี",
+    "highlights": [
+      "วิ่ง 8 × 1 กม. + 8 สถานี",
+      "รุ่นมือใหม่ / รุ่นโปร",
+      "ผู้ชมเข้าฟรี"
+    ],
+    "tags": [
+      "HYROX",
+      "ฟิตเนส",
+      "ไฮรอก",
+      "แข่งขัน"
+    ],
+    "i18n": {
+      "en": {
+        "title": "Fitness Race: Running + Workout Stations (HYROX-style)",
+        "summary": "8 × 1 km runs between 8 indoor workout stations, with a beginner division",
+        "time": "7:00–19:00 (start times by heat)",
+        "priceNote": "฿2,900–3,900 per athlete · spectators free",
+        "details": "An indoor fitness race: run 1 km, then complete a workout station — 8 times, including sled push, sled pull, burpee broad jumps and weighted lunges.\nBeginner (lighter weights) and Pro divisions. Spectators get in free.",
+        "highlights": [
+          "8 × 1 km runs + 8 stations",
+          "Beginner / Pro divisions",
+          "Free for spectators"
+        ],
+        "races": [
+          "Singles",
+          "Doubles",
+          "4-person relay"
+        ]
+      },
+      "zh": {
+        "title": "健身竞速赛：跑步 + 训练站（HYROX 风格）",
+        "summary": "室内 8 × 1 公里跑步穿插 8 个健身站，设新手组",
+        "time": "7:00–19:00（按报名场次出发）",
+        "priceNote": "每人报名费 ฿2,900–3,900 · 观众免费",
+        "details": "室内健身竞速赛：每跑 1 公里完成一个训练站，共 8 轮，包括推雪橇、拉雪橇、波比跳远和负重弓步。\n设新手组（较轻重量）和专业组，观众免费入场。",
+        "highlights": [
+          "8 × 1 公里跑 + 8 个训练站",
+          "新手组 / 专业组",
+          "观众免费"
+        ],
+        "races": [
+          "个人",
+          "双人",
+          "4人接力"
+        ]
+      }
+    }
+  },
+  {
+    "id": "charity-run-lumpini-2026",
+    "sample": true,
+    "featured": true,
+    "title": "งานวิ่งการกุศลรอบสวนลุม",
+    "category": "outdoor",
+    "startDate": "2026-11-29",
+    "endDate": "2026-11-29",
+    "registerBy": "2026-11-12",
+    "time": "04:30 น. (ปล่อยตัว 10K 05:00 น. / 5K 05:15 น.)",
+    "races": [
+      "5K",
+      "10K"
+    ],
+    "venueId": "lumpini",
+    "price": {
+      "type": "paid",
+      "min": 450,
+      "max": 650,
+      "note": "ค่าสมัคร 5K 450 บาท / 10K 650 บาท รวมเสื้อและเหรียญ"
+    },
+    "ticketUrl": "https://example.com/register",
+    "summary": "วิ่งเช้ารอบสวนลุม ระยะ 5K และ 10K รายได้สมทบทุนการกุศล",
+    "details": "งานวิ่งการกุศลยามเช้าในสวนลุมพินี เส้นทางเรียบ เหมาะกับมือใหม่และสายทำเวลา\nรับเสื้อและเบอร์วิ่งล่วงหน้า 1–2 วันก่อนงาน",
+    "highlights": [
+      "เหรียญ Finisher ทุกระยะ",
+      "จุดให้น้ำทุก 2 กม.",
+      "อาหารเช้าหลังเข้าเส้นชัย"
+    ],
+    "tags": [
+      "งานวิ่ง",
+      "วิ่งการกุศล",
+      "สวนลุม",
+      "มือใหม่"
+    ],
+    "travelTips": [
+      {
+        "type": "TAXI",
+        "text": "รถไฟฟ้าเปิดราว 05:30–06:00 น. อาจไม่ทันเวลาปล่อยตัว แนะนำแท็กซี่ หรือขับรถมาจอดก่อน 04:30 น."
+      }
+    ],
+    "i18n": {
+      "en": {
+        "title": "Charity Run around Lumphini Park",
+        "summary": "Morning 5K and 10K around Lumphini Park, raising money for charity",
+        "time": "4:30 (10K start 5:00 / 5K start 5:15)",
+        "priceNote": "5K ฿450 / 10K ฿650, incl. shirt and medal",
+        "details": "An early-morning charity run in Lumphini Park on a flat course, great for beginners and PB hunters.\nCollect your shirt and bib 1–2 days before the race.",
+        "highlights": [
+          "Finisher medal for every distance",
+          "Water station every 2 km",
+          "Breakfast after the finish"
+        ],
+        "travelTips": [
+          "Trains start around 5:30–6:00, which may be too late for the start — take a taxi or drive and park before 4:30"
+        ]
+      },
+      "zh": {
+        "title": "伦披尼公园慈善跑",
+        "summary": "清晨环伦披尼公园 5K 和 10K，善款用于公益",
+        "time": "4:30（10K 5:00 起跑 / 5K 5:15 起跑）",
+        "priceNote": "5K ฿450 / 10K ฿650，含赛衫和奖牌",
+        "details": "伦披尼公园清晨慈善跑，赛道平坦，适合新手和冲成绩的跑者。\n赛前 1–2 天领取赛衫和号码布。",
+        "highlights": [
+          "各组别完赛奖牌",
+          "每 2 公里设补给站",
+          "完赛后提供早餐"
+        ],
+        "travelTips": [
+          "轨道交通约 5:30–6:00 才开通，可能赶不上起跑 — 建议打车，或在 4:30 前开车到场停车"
+        ]
+      }
+    }
+  },
+  {
+    "id": "cafe-ari-garden",
+    "sample": true,
+    "ongoing": true,
+    "title": "คาเฟ่สวนลับ ย่านอารีย์",
+    "category": "cafe",
+    "startDate": "2026-10-25",
+    "openDays": "เปิดทุกวัน (ปิดวันพุธ)",
+    "time": "08:00–18:00 น.",
+    "venue": {
+      "name": "ซอยอารีย์ 1 (ร้านตัวอย่าง)",
+      "address": "แขวงสามเสนใน เขตพญาไท กรุงเทพฯ",
+      "lat": 13.7797,
+      "lng": 100.5446,
+      "transit": [
+        {
+          "type": "BTS",
+          "text": "สายสุขุมวิท สถานีอารีย์ ทางออก 1 เดินประมาณ 5 นาที"
+        },
+        {
+          "type": "WALK",
+          "text": "ซอยร่มรื่น เดินเล่นต่อคาเฟ่อื่นในย่านได้"
+        }
+      ],
+      "parking": "ที่จอดหน้าร้าน 4 คัน แนะนำมา BTS",
+      "province": "bangkok",
+      "i18n": {
+        "en": {
+          "name": "Ari Soi 1 (sample café)",
+          "address": "Samsen Nai, Phaya Thai, Bangkok",
+          "transit": [
+            "BTS Sukhumvit Line, Ari station exit 1 — about 5 min walk",
+            "Leafy lanes — easy to hop to other cafés nearby"
+          ],
+          "parking": "4 spaces in front — the BTS is recommended"
+        },
+        "zh": {
+          "name": "阿黎 1 巷（示例咖啡馆）",
+          "address": "曼谷 帕亚泰区 三森奈",
+          "transit": [
+            "乘 BTS 素坤逸线至 Ari 站 1 号出口，步行约 5 分钟",
+            "巷子绿树成荫，可顺路逛附近其他咖啡馆"
+          ],
+          "parking": "门口有 4 个车位，建议乘 BTS"
+        }
+      }
+    },
+    "price": {
+      "type": "paid",
+      "min": 75,
+      "max": 220,
+      "note": "ไม่มีค่าเข้า เครื่องดื่ม 75–220 บาท"
+    },
+    "featured": true,
+    "summary": "คาเฟ่ในบ้านไม้กลางสวน เปิดใหม่ มุมถ่ายรูปเยอะ",
+    "details": "คาเฟ่บรรยากาศสวนในบ้านไม้เก่า มีกาแฟ specialty และขนมโฮมเมด\nแนะนำมาช่วงเช้าแสงสวย คนน้อย",
+    "highlights": [
+      "เมนูซิกเนเจอร์: กาแฟมะพร้าวเย็น",
+      "มุมถ่ายรูปในสวน",
+      "สัตว์เลี้ยงเข้าได้"
+    ],
+    "tags": [
+      "คาเฟ่",
+      "อารีย์",
+      "คาเฟ่เปิดใหม่",
+      "Pet friendly"
+    ],
+    "i18n": {
+      "en": {
+        "title": "Secret Garden Café, Ari",
+        "summary": "Newly opened café in a wooden house surrounded by a garden, with lots of photo spots",
+        "openDays": "Open daily (closed Wednesdays)",
+        "time": "8:00–18:00",
+        "priceNote": "No entry fee · drinks ฿75–220",
+        "details": "A garden café in an old wooden house serving specialty coffee and homemade desserts.\nCome in the morning for the best light and fewer people.",
+        "highlights": [
+          "Signature: iced coconut coffee",
+          "Garden photo corners",
+          "Pet friendly"
+        ]
+      },
+      "zh": {
+        "title": "阿黎秘密花园咖啡馆",
+        "summary": "新开业的花园木屋咖啡馆，拍照角落很多",
+        "openDays": "每天营业（周三休息）",
+        "time": "8:00–18:00",
+        "priceNote": "无入场费 · 饮品 ฿75–220",
+        "details": "坐落在老木屋花园里的咖啡馆，提供精品咖啡和自制甜点。\n建议早上来，光线好、人少。",
+        "highlights": [
+          "招牌：冰椰子咖啡",
+          "花园拍照角落",
+          "可携带宠物"
+        ]
+      }
+    },
+    "weekdays": [
+      0,
+      1,
+      2,
+      4,
+      5,
+      6
+    ]
+  },
+  {
+    "id": "cafe-riverside-charoenkrung",
+    "sample": true,
+    "ongoing": true,
+    "title": "คาเฟ่ริมเจ้าพระยา เจริญกรุง",
+    "category": "cafe",
+    "startDate": "2025-06-01",
+    "time": "10:00–20:00 น.",
+    "venue": {
+      "name": "ย่านเจริญกรุง-ตลาดน้อย (ร้านตัวอย่าง)",
+      "address": "แขวงตลาดน้อย เขตสัมพันธวงศ์ กรุงเทพฯ",
+      "lat": 13.731,
+      "lng": 100.5135,
+      "transit": [
+        {
+          "type": "MRT",
+          "text": "สายสีน้ำเงิน สถานีหัวลำโพง เดินประมาณ 10–15 นาที"
+        },
+        {
+          "type": "BOAT",
+          "text": "เรือด่วนเจ้าพระยา ท่าสี่พระยา เดินประมาณ 5 นาที"
+        }
+      ],
+      "parking": "ที่จอดรถน้อย ซอยแคบ แนะนำ MRT หรือเรือ",
+      "province": "bangkok",
+      "i18n": {
+        "en": {
+          "name": "Charoen Krung – Talat Noi (sample café)",
+          "address": "Talat Noi, Samphanthawong, Bangkok",
+          "transit": [
+            "MRT Blue Line, Hua Lamphong station — 10–15 min walk",
+            "Chao Phraya Express Boat to Si Phraya pier — about 5 min walk"
+          ],
+          "parking": "Very little parking on narrow lanes — take the MRT or a boat"
+        },
+        "zh": {
+          "name": "石龙军路 – 塔拉诺伊（示例咖啡馆）",
+          "address": "曼谷 三攀他旺区 塔拉诺伊",
+          "transit": [
+            "乘 MRT 蓝线至 Hua Lamphong 站，步行 10–15 分钟",
+            "乘湄南河快船至 Si Phraya 码头，步行约 5 分钟"
+          ],
+          "parking": "巷子窄、车位少，建议乘 MRT 或坐船"
+        }
+      }
+    },
+    "price": {
+      "type": "paid",
+      "min": 90,
+      "max": 250,
+      "note": "ไม่มีค่าเข้า"
+    },
+    "summary": "นั่งชิลริมแม่น้ำ วิวพระอาทิตย์ตก",
+    "details": "คาเฟ่ในตึกเก่าริมแม่น้ำเจ้าพระยา ชั้นดาดฟ้าเห็นวิวพระอาทิตย์ตก",
+    "tags": [
+      "คาเฟ่",
+      "ริมน้ำ",
+      "เจริญกรุง"
+    ],
+    "i18n": {
+      "en": {
+        "title": "Riverside Café, Charoen Krung",
+        "summary": "Chill by the Chao Phraya with sunset views",
+        "time": "10:00–20:00",
+        "priceNote": "No entry fee",
+        "details": "A café in an old shophouse on the Chao Phraya River. The rooftop has sunset views."
+      },
+      "zh": {
+        "title": "石龙军路河畔咖啡馆",
+        "summary": "湄南河畔放松，欣赏日落",
+        "time": "10:00–20:00",
+        "priceNote": "无入场费",
+        "details": "位于湄南河边老建筑里的咖啡馆，天台可看日落。"
+      }
+    }
+  },
+  {
+    "id": "cafe-popup-centralworld-2026",
+    "sample": true,
+    "title": "ป๊อปอัพคาเฟ่คอลแลบ การ์ตูนน่ารัก",
+    "category": "cafe",
+    "startDate": "2026-11-13",
+    "endDate": "2026-12-13",
+    "time": "10:00–22:00 น.",
+    "venueId": "centralworld",
+    "price": {
+      "type": "mixed",
+      "note": "เข้าชมฟรี เมนูพิเศษเริ่ม 129 บาท รับของที่ระลึกเมื่อซื้อครบ 300 บาท"
+    },
+    "featured": true,
+    "summary": "คาเฟ่ธีมการ์ตูนเฉพาะกิจ 1 เดือน เมนูและของที่ระลึกลิมิเต็ด",
+    "details": "ป๊อปอัพคาเฟ่ธีมการ์ตูน เปิดเพียง 1 เดือน มีเมนูพิเศษและของที่ระลึกจำนวนจำกัด\nวันหยุดคิวยาว แนะนำมาวันธรรมดา",
+    "highlights": [
+      "เมนูลิมิเต็ด",
+      "โซนถ่ายรูป",
+      "ของที่ระลึกจำนวนจำกัด"
+    ],
+    "tags": [
+      "คาเฟ่",
+      "ป๊อปอัพ",
+      "คอลแลบ"
+    ],
+    "affiliateLinks": [
+      {
+        "label": "สั่งของที่ระลึกออนไลน์",
+        "platform": "Shopee",
+        "url": "https://example.com/your-shopee-affiliate-link"
+      }
+    ],
+    "i18n": {
+      "en": {
+        "title": "Cartoon Collab Pop-up Café",
+        "summary": "A one-month themed café with limited-edition menu and souvenirs",
+        "time": "10:00–22:00",
+        "priceNote": "Free to enter · special menu from ฿129 · souvenir with ฿300 spend",
+        "details": "A cartoon-themed pop-up café open for just one month, with a special menu and limited souvenirs.\nLong queues at weekends — weekdays are best.",
+        "highlights": [
+          "Limited menu",
+          "Photo zone",
+          "Limited souvenirs"
+        ],
+        "affiliateLabels": [
+          "Order souvenirs online"
+        ]
+      },
+      "zh": {
+        "title": "卡通联名快闪咖啡馆",
+        "summary": "限时一个月的主题咖啡馆，限定菜单和周边",
+        "time": "10:00–22:00",
+        "priceNote": "免费入场 · 特别菜单 ฿129 起 · 消费满 ฿300 送纪念品",
+        "details": "卡通主题快闪咖啡馆，仅开一个月，有特别菜单和限量周边。\n周末排队很长，建议工作日前往。",
+        "highlights": [
+          "限定菜单",
+          "拍照区",
+          "限量周边"
+        ],
+        "affiliateLabels": [
+          "网上购买周边"
+        ]
+      }
+    }
+  },
+  {
+    "id": "coffeefest-nimman-2026",
+    "sample": true,
+    "title": "เทศกาลกาแฟเชียงใหม่",
+    "category": "cafe",
+    "startDate": "2026-11-20",
+    "endDate": "2026-11-22",
+    "time": "09:00–21:00 น.",
+    "venue": {
+      "name": "ย่านนิมมานเหมินท์ เชียงใหม่",
+      "address": "ถ.นิมมานเหมินท์ อ.เมือง จ.เชียงใหม่",
+      "lat": 18.799,
+      "lng": 98.968,
+      "transit": [
+        {
+          "type": "TAXI",
+          "text": "เรียกรถผ่านแอพ หรือรถแดง (สองแถว) จากตัวเมือง"
+        },
+        {
+          "type": "WALK",
+          "text": "เดินต่อจาก One Nimman / MAYA ได้"
+        }
+      ],
+      "parking": "ที่จอดรถในห้างสรรพสินค้าใกล้เคียง",
+      "province": "chiang-mai",
+      "i18n": {
+        "en": {
+          "name": "Nimmanhaemin, Chiang Mai",
+          "address": "Nimmanhaemin Rd, Mueang, Chiang Mai",
+          "transit": [
+            "Ride-hailing app or a red songthaew from the old city",
+            "Walkable from One Nimman / MAYA"
+          ],
+          "parking": "Parking at nearby malls"
+        },
+        "zh": {
+          "name": "清迈宁曼路一带",
+          "address": "清迈府 直辖县 宁曼路",
+          "transit": [
+            "使用打车软件，或从古城坐红色双条车",
+            "可从 One Nimman / MAYA 步行前往"
+          ],
+          "parking": "可停附近商场"
+        }
+      }
+    },
+    "price": {
+      "type": "free",
+      "note": "เข้างานฟรี ชิมกาแฟบางบูธมีค่าใช้จ่าย"
+    },
+    "summary": "รวมโรงคั่วและคาเฟ่ดังภาคเหนือกว่า 80 ร้าน",
+    "details": "เทศกาลกาแฟ รวมโรงคั่ว ฟาร์มกาแฟ และคาเฟ่ภาคเหนือ มีเวิร์กช็อปดริปกาแฟและเสวนา",
+    "highlights": [
+      "ชิมกาแฟจากฟาร์มดอย",
+      "เวิร์กช็อปดริปกาแฟ",
+      "ตลาดเมล็ดกาแฟ"
+    ],
+    "tags": [
+      "กาแฟ",
+      "เชียงใหม่",
+      "เทศกาล"
+    ],
+    "affiliateLinks": [
+      {
+        "label": "สั่งเมล็ดกาแฟดอยออนไลน์",
+        "platform": "Lazada",
+        "url": "https://example.com/your-coffee-affiliate-link"
+      }
+    ],
+    "i18n": {
+      "en": {
+        "title": "Chiang Mai Coffee Festival",
+        "summary": "Over 80 northern roasters and cafés in one place",
+        "time": "9:00–21:00",
+        "priceNote": "Free entry · some tasting booths are paid",
+        "details": "A coffee festival bringing together roasters, coffee farms and cafés from northern Thailand, with pour-over workshops and talks.",
+        "highlights": [
+          "Taste coffee from mountain farms",
+          "Pour-over workshops",
+          "Coffee bean market"
+        ],
+        "affiliateLabels": [
+          "Buy northern Thai coffee beans online"
+        ]
+      },
+      "zh": {
+        "title": "清迈咖啡节",
+        "summary": "汇集 80 多家泰北烘焙商和咖啡馆",
+        "time": "9:00–21:00",
+        "priceNote": "免费入场 · 部分品鉴摊位收费",
+        "details": "汇集泰北烘焙商、咖啡农场和咖啡馆的咖啡节，设有手冲工作坊和讲座。",
+        "highlights": [
+          "品尝山区农场咖啡",
+          "手冲咖啡工作坊",
+          "咖啡豆市集"
+        ],
+        "affiliateLabels": [
+          "网上购买泰北咖啡豆"
+        ]
+      }
+    }
+  },
+  {
+    "id": "sale-1111-2026",
+    "sample": true,
+    "title": "แฟลชเซล 11.11 ลดกระหน่ำกลางปลายปี",
+    "category": "sale",
+    "startDate": "2026-11-11",
+    "endDate": "2026-11-11",
+    "time": "00:00–23:59 น. (ดีลเด็ดทุกต้นชั่วโมง)",
+    "venueId": "online",
+    "price": {
+      "type": "free",
+      "note": "เข้าร่วมฟรี ซื้อสินค้าตามราคาโปร"
+    },
+    "featured": true,
+    "summary": "มหกรรมลดราคา 11.11 บนแพลตฟอร์มช้อปปิ้งออนไลน์ โค้ดส่วนลด ส่งฟรี และแฟลชเซลทุกชั่วโมง",
+    "details": "วันที่ 11 พฤศจิกายน แพลตฟอร์มช้อปปิ้งออนไลน์หลายเจ้าจัดโปรใหญ่ประจำปี มีโค้ดลดเพิ่ม คูปองส่งฟรี และแฟลชเซลราคาพิเศษ\nแนะนำให้เก็บโค้ดล่วงหน้าและใส่สินค้าลงตะกร้าก่อนเที่ยงคืน",
+    "highlights": [
+      "โค้ดลดเพิ่มตอนเที่ยงคืน",
+      "แฟลชเซลทุกต้นชั่วโมง",
+      "คูปองส่งฟรีทั้งวัน"
+    ],
+    "tags": [
+      "1111",
+      "ลดราคา",
+      "ช้อปออนไลน์"
+    ],
+    "affiliateLinks": [
+      {
+        "label": "เก็บโค้ดส่วนลด 11.11",
+        "platform": "Shopee",
+        "url": "https://example.com/your-shopee-affiliate-link"
+      },
+      {
+        "label": "ดีลแฟลชเซลวันนี้",
+        "platform": "Lazada",
+        "url": "https://example.com/your-lazada-affiliate-link"
+      }
+    ],
+    "i18n": {
+      "en": {
+        "title": "11.11 Mega Flash Sale",
+        "summary": "11.11 sale on online shopping platforms — discount codes, free shipping and hourly flash deals",
+        "time": "All day (deals every hour)",
+        "priceNote": "Free to join — buy at sale prices",
+        "details": "On 11 November many online shopping platforms run their biggest yearly sale, with extra codes, free-shipping coupons and flash deals.\nCollect codes early and fill your cart before midnight.",
+        "highlights": [
+          "Extra codes at midnight",
+          "Flash sales every hour",
+          "Free-shipping coupons all day"
+        ],
+        "affiliateLabels": [
+          "Get 11.11 discount codes",
+          "Today's flash deals"
+        ]
+      },
+      "zh": {
+        "title": "11.11 狂欢限时特卖",
+        "summary": "各大网购平台 11.11 大促 — 优惠码、包邮、每小时限时抢购",
+        "time": "全天（每小时整点特价）",
+        "priceNote": "免费参与，按优惠价购买",
+        "details": "11 月 11 日多家网购平台举行年度大促，有额外优惠码、包邮券和限时抢购。\n建议提前领券，午夜前把商品加入购物车。",
+        "highlights": [
+          "午夜额外优惠码",
+          "每小时限时抢购",
+          "全天包邮券"
+        ],
+        "affiliateLabels": [
+          "领取 11.11 优惠码",
+          "今日限时特价"
+        ]
+      }
+    }
+  },
+  {
+    "id": "foodfest-lumpini-2026",
+    "sample": true,
+    "title": "เทศกาลอาหารริมสวน สุดสัปดาห์",
+    "category": "food",
+    "startDate": "2026-11-07",
+    "endDate": "2026-11-08",
+    "time": "16:00–22:00 น.",
+    "venueId": "lumpini",
+    "price": {
+      "type": "free",
+      "note": "เข้างานฟรี"
+    },
+    "summary": "ตลาดอาหารและดนตรีสดริมสวน ร้านดังกว่า 100 ร้าน",
+    "details": "รวมร้านอาหารสตรีทฟู้ดและของหวานกว่า 100 ร้าน พร้อมดนตรีสดทุกค่ำ\nแนะนำพกถุงผ้าและขวดน้ำส่วนตัว",
+    "tags": [
+      "อาหาร",
+      "ฟรี",
+      "สุดสัปดาห์"
+    ],
+    "i18n": {
+      "en": {
+        "title": "Weekend Park-side Food Festival",
+        "summary": "Food market and live music by the park, 100+ popular stalls",
+        "time": "16:00–22:00",
+        "priceNote": "Free entry",
+        "details": "Over 100 street-food and dessert stalls, with live music every evening.\nBring a tote bag and your own water bottle."
+      },
+      "zh": {
+        "title": "周末公园美食节",
+        "summary": "公园旁的美食市集和现场音乐，100 多家人气摊位",
+        "time": "16:00–22:00",
+        "priceNote": "免费入场",
+        "details": "汇集 100 多家街头小吃和甜品摊位，每晚有现场音乐。\n建议自带购物袋和水瓶。"
+      }
+    }
+  },
+  {
+    "id": "workshop-centralworld-2026",
+    "sample": true,
+    "title": "เวิร์กช็อปฟรี: ถ่ายรูปสินค้าด้วยมือถือ",
+    "category": "learning",
+    "startDate": "2026-11-08",
+    "endDate": "2026-11-08",
+    "time": "13:00–16:00 น.",
+    "venueId": "centralworld",
+    "price": {
+      "type": "free",
+      "note": "ฟรี ต้องลงทะเบียนล่วงหน้า รับจำนวนจำกัด"
+    },
+    "ticketUrl": "https://example.com/register",
+    "summary": "เรียนรู้เทคนิคถ่ายรูปสินค้าขายออนไลน์ด้วยมือถือ",
+    "details": "เวิร์กช็อปสำหรับแม่ค้าออนไลน์และผู้เริ่มต้น สอนจัดแสง มุมกล้อง และแต่งภาพด้วยแอพฟรี",
+    "highlights": [
+      "ลงมือทำจริง",
+      "ได้ใบประกาศ"
+    ],
+    "tags": [
+      "เวิร์กช็อป",
+      "ฟรี",
+      "ขายของออนไลน์"
+    ],
+    "i18n": {
+      "en": {
+        "title": "Free Workshop: Product Photos with Your Phone",
+        "summary": "Learn to shoot product photos for online selling with just a phone",
+        "time": "13:00–16:00",
+        "priceNote": "Free — registration required, limited seats",
+        "details": "A workshop for online sellers and beginners covering lighting, camera angles and editing with free apps.",
+        "highlights": [
+          "Hands-on practice",
+          "Certificate"
+        ]
+      },
+      "zh": {
+        "title": "免费工作坊：用手机拍商品照",
+        "summary": "学习用手机拍摄网店商品照片",
+        "time": "13:00–16:00",
+        "priceNote": "免费，需提前报名，名额有限",
+        "details": "面向网店卖家和新手的工作坊，讲解布光、拍摄角度和免费修图软件。",
+        "highlights": [
+          "动手实操",
+          "颁发证书"
+        ]
+      }
+    }
+  },
+  {
+    "id": "bookfair-qsncc-2026",
+    "sample": true,
+    "title": "มหกรรมหนังสือปลายปี",
+    "category": "book",
+    "startDate": "2026-11-05",
+    "endDate": "2026-11-15",
+    "time": "10:00–21:00 น.",
+    "venueId": "qsncc",
+    "price": {
+      "type": "free",
+      "note": "เข้างานฟรี"
+    },
+    "featured": true,
+    "summary": "รวมสำนักพิมพ์กว่า 300 บูธ หนังสือลดราคา กิจกรรมพบนักเขียน",
+    "details": "งานหนังสือใหญ่ส่งท้ายปี มีหนังสือใหม่ หนังสือลดราคา และกิจกรรมเสวนาพบนักเขียนตลอดงาน\nช่วงเสาร์-อาทิตย์คนเยอะมาก แนะนำเดินทางด้วย MRT",
+    "highlights": [
+      "ส่วนลดสูงสุด 50%",
+      "เสวนาพบนักเขียนทุกวัน",
+      "โซนหนังสือเด็ก"
+    ],
+    "tags": [
+      "งานหนังสือ",
+      "ฟรี",
+      "QSNCC"
+    ],
+    "affiliateLinks": [
+      {
+        "label": "สั่งหนังสือออนไลน์ราคางานหนังสือ",
+        "platform": "Lazada",
+        "url": "https://example.com/your-book-affiliate-link"
+      }
+    ],
+    "i18n": {
+      "en": {
+        "title": "Year-end Book Fair",
+        "summary": "300+ publisher booths, discounted books and author meet-ups",
+        "time": "10:00–21:00",
+        "priceNote": "Free entry",
+        "details": "The big year-end book fair with new releases, discounted books and author talks every day.\nWeekends are very crowded — take the MRT.",
+        "highlights": [
+          "Up to 50% off",
+          "Author talks daily",
+          "Children's book zone"
+        ],
+        "affiliateLabels": [
+          "Order books online at fair prices"
+        ]
+      },
+      "zh": {
+        "title": "年终书展",
+        "summary": "300 多个出版社展位，图书打折，作家见面会",
+        "time": "10:00–21:00",
+        "priceNote": "免费入场",
+        "details": "年终大型书展，有新书、折扣书和每天的作家讲座。\n周末人非常多，建议乘 MRT。",
+        "highlights": [
+          "最高 5 折",
+          "每天作家讲座",
+          "儿童图书区"
+        ],
+        "affiliateLabels": [
+          "网上以书展价购书"
+        ]
+      }
+    }
+  },
+  {
+    "id": "itsale-bitec-2026",
+    "sample": true,
+    "title": "งานมหกรรมสินค้าไอทีลดราคา",
+    "category": "sale",
+    "startDate": "2026-11-12",
+    "endDate": "2026-11-15",
+    "time": "11:00–20:00 น.",
+    "venueId": "bitec",
+    "price": {
+      "type": "free",
+      "note": "เข้างานฟรี"
+    },
+    "summary": "คอมพิวเตอร์ มือถือ อุปกรณ์เกมมิ่ง ลดราคาพิเศษเฉพาะในงาน",
+    "details": "รวมแบรนด์ไอทีชั้นนำ ลดราคาพิเศษ ผ่อน 0% และของแถมเฉพาะในงาน",
+    "highlights": [
+      "ผ่อน 0% นานสูงสุด 10 เดือน",
+      "ของแถมจำนวนจำกัด"
+    ],
+    "tags": [
+      "ไอที",
+      "ลดราคา",
+      "บางนา"
+    ],
+    "affiliateLinks": [
+      {
+        "label": "ดูราคาโปรออนไลน์เทียบก่อนไปงาน",
+        "platform": "Shopee",
+        "url": "https://example.com/your-it-affiliate-link"
+      }
+    ],
+    "i18n": {
+      "en": {
+        "title": "IT Mega Sale",
+        "summary": "Computers, phones and gaming gear at special in-show prices",
+        "time": "11:00–20:00",
+        "priceNote": "Free entry",
+        "details": "Leading IT brands with special discounts, 0% instalments and in-show gifts.",
+        "highlights": [
+          "0% instalments up to 10 months",
+          "Limited free gifts"
+        ],
+        "affiliateLabels": [
+          "Compare online prices before you go"
+        ]
+      },
+      "zh": {
+        "title": "IT 数码大促展",
+        "summary": "电脑、手机、游戏装备展会特价",
+        "time": "11:00–20:00",
+        "priceNote": "免费入场",
+        "details": "汇集知名数码品牌，展会特价、0% 分期和现场赠品。",
+        "highlights": [
+          "最长 10 期 0% 分期",
+          "限量赠品"
+        ],
+        "affiliateLabels": [
+          "去之前先比较网上价格"
+        ]
+      }
+    }
+  },
+  {
+    "id": "seminar-samyan-2026",
+    "sample": true,
+    "title": "สัมมนา: การตลาดออนไลน์ 2027",
+    "category": "learning",
+    "startDate": "2026-11-14",
+    "endDate": "2026-11-14",
+    "time": "09:00–17:00 น.",
+    "venueId": "samyan",
+    "price": {
+      "type": "paid",
+      "min": 1500,
+      "max": 3500,
+      "note": "บัตร Early Bird 1,500 บาท / VIP 3,500 บาท"
+    },
+    "ticketUrl": "https://example.com/tickets",
+    "organizer": "ผู้จัดตัวอย่าง",
+    "summary": "อัปเดตเทรนด์การตลาดออนไลน์ปีหน้า จากวิทยากรในวงการ",
+    "details": "สัมมนาเต็มวัน ครอบคลุมโฆษณาออนไลน์ คอนเทนต์วิดีโอสั้น และการใช้ AI ในการตลาด",
+    "highlights": [
+      "อาหารกลางวันและเบรก",
+      "เอกสารประกอบ",
+      "Networking"
+    ],
+    "tags": [
+      "สัมมนา",
+      "การตลาด"
+    ],
+    "i18n": {
+      "en": {
+        "title": "Seminar: Online Marketing 2027",
+        "summary": "Next year's online marketing trends from industry speakers",
+        "time": "9:00–17:00",
+        "priceNote": "Early Bird ฿1,500 / VIP ฿3,500",
+        "details": "A full-day seminar on online ads, short-form video content and using AI in marketing.",
+        "highlights": [
+          "Lunch and coffee breaks",
+          "Handouts",
+          "Networking"
+        ],
+        "organizer": "Sample Organizer"
+      },
+      "zh": {
+        "title": "讲座：2027 网络营销",
+        "summary": "业内讲师解读明年网络营销趋势",
+        "time": "9:00–17:00",
+        "priceNote": "早鸟票 ฿1,500 / VIP ฿3,500",
+        "details": "全天讲座，涵盖网络广告、短视频内容和 AI 营销应用。",
+        "highlights": [
+          "含午餐和茶歇",
+          "讲义资料",
+          "人脉交流"
+        ],
+        "organizer": "示例主办方"
+      }
+    }
+  },
+  {
+    "id": "musicfest-rajamangala-2026",
+    "sample": true,
+    "title": "เทศกาลดนตรีกลางแจ้งปลายฝนต้นหนาว",
+    "category": "concert",
+    "startDate": "2026-11-21",
+    "endDate": "2026-11-22",
+    "time": "15:00–24:00 น.",
+    "venueId": "rajamangala",
+    "price": {
+      "type": "paid",
+      "min": 1990,
+      "max": 5990,
+      "note": "บัตร 1 วัน / 2 วัน / VIP"
+    },
+    "ticketUrl": "https://example.com/tickets",
+    "featured": true,
+    "summary": "ศิลปินกว่า 30 วง 2 เวที 2 วันเต็ม",
+    "details": "เทศกาลดนตรีกลางแจ้ง ศิลปินไทยและต่างประเทศ โซนอาหารและเครื่องดื่ม\nห้ามนำอาหารและเครื่องดื่มจากภายนอกเข้างาน",
+    "tags": [
+      "คอนเสิร์ต",
+      "เฟสติวัล"
+    ],
+    "i18n": {
+      "en": {
+        "title": "Late-Rainy-Season Outdoor Music Festival",
+        "summary": "30+ artists, 2 stages, 2 full days",
+        "time": "15:00–24:00",
+        "priceNote": "1-day / 2-day / VIP tickets",
+        "details": "An outdoor festival with Thai and international artists plus a food and drinks zone.\nOutside food and drinks are not allowed."
+      },
+      "zh": {
+        "title": "雨季尾声户外音乐节",
+        "summary": "30 多组艺人，2 个舞台，整整 2 天",
+        "time": "15:00–24:00",
+        "priceNote": "单日 / 双日 / VIP 票",
+        "details": "泰国及国际艺人户外音乐节，设有餐饮区。\n禁止携带外食和饮料入场。"
+      }
+    }
+  },
+  {
+    "id": "motorexpo-impact-2026",
+    "sample": true,
+    "title": "งานแสดงรถยนต์และจักรยานยนต์ปลายปี",
+    "category": "motor",
+    "startDate": "2026-11-27",
+    "endDate": "2026-12-08",
+    "time": "12:00–22:00 น. (เสาร์-อาทิตย์ 11:00–22:00 น.)",
+    "venueId": "impact",
+    "price": {
+      "type": "paid",
+      "min": 100,
+      "note": "บัตรเข้างาน 100 บาท เด็กสูงไม่เกิน 120 ซม. เข้าฟรี"
+    },
+    "featured": true,
+    "summary": "รถยนต์ใหม่ รถไฟฟ้า บิ๊กไบค์ พร้อมโปรโมชั่นจองรถในงาน",
+    "details": "รวมค่ายรถยนต์และจักรยานยนต์ เปิดตัวรุ่นใหม่ โปรดอกเบี้ยพิเศษ และทดลองขับ\nแนะนำมาวันธรรมดาเพื่อเลี่ยงคนเยอะและที่จอดเต็ม",
+    "highlights": [
+      "เปิดตัวรถรุ่นใหม่",
+      "โซนรถไฟฟ้า EV",
+      "ทดลองขับ"
+    ],
+    "tags": [
+      "มอเตอร์โชว์",
+      "รถยนต์",
+      "EV"
+    ],
+    "travelTips": [
+      {
+        "type": "SHUTTLE",
+        "text": "ตรวจสอบรถรับส่งฟรีจากสถานีรถไฟฟ้าในเพจผู้จัด"
+      }
+    ],
+    "i18n": {
+      "en": {
+        "title": "Year-end Motor & Motorcycle Show",
+        "summary": "New cars, EVs and big bikes, with in-show booking deals",
+        "time": "12:00–22:00 (Sat–Sun 11:00–22:00)",
+        "priceNote": "Entry ฿100 · children under 120 cm free",
+        "details": "Car and motorcycle brands launch new models, with special finance deals and test drives.\nWeekdays are less crowded and parking is easier.",
+        "highlights": [
+          "New model launches",
+          "EV zone",
+          "Test drives"
+        ],
+        "travelTips": [
+          "Check the organizer's page for free shuttles from rail stations"
+        ]
+      },
+      "zh": {
+        "title": "年终汽车摩托车展",
+        "summary": "新车、电动车、大排量摩托，现场订车优惠",
+        "time": "12:00–22:00（周六日 11:00–22:00）",
+        "priceNote": "门票 ฿100 · 身高 120 厘米以下儿童免费",
+        "details": "各大汽车和摩托品牌发布新车，提供特别贷款优惠和试驾。\n建议工作日前往，人少好停车。",
+        "highlights": [
+          "新车发布",
+          "电动车专区",
+          "试驾"
+        ],
+        "travelTips": [
+          "请在主办方页面查看从轨道站出发的免费接驳车"
+        ]
+      }
+    }
+  },
+  {
+    "id": "concert-thunderdome-2026",
+    "sample": true,
+    "title": "คอนเสิร์ตรวมศิลปินยุค 2000",
+    "category": "concert",
+    "startDate": "2026-12-05",
+    "endDate": "2026-12-05",
+    "time": "19:00 น. (ประตูเปิด 17:00 น.)",
+    "venueId": "thunderdome",
+    "price": {
+      "type": "paid",
+      "min": 1800,
+      "max": 4500
+    },
+    "ticketUrl": "https://example.com/tickets",
+    "summary": "ย้อนวันวานกับเพลงฮิตยุค 2000 ตลอด 3 ชั่วโมง",
+    "details": "คอนเสิร์ตรวมศิลปินเพลงฮิตยุค 2000 พร้อมแขกรับเชิญพิเศษ",
+    "tags": [
+      "คอนเสิร์ต",
+      "เมืองทอง"
+    ],
+    "i18n": {
+      "en": {
+        "title": "2000s Hits All-Star Concert",
+        "summary": "Three hours of 2000s hits",
+        "time": "19:00 (doors 17:00)",
+        "details": "An all-star concert of 2000s hit songs with special guests."
+      },
+      "zh": {
+        "title": "2000 年代金曲群星演唱会",
+        "summary": "三小时重温 2000 年代金曲",
+        "time": "19:00（17:00 开放入场）",
+        "details": "2000 年代热门金曲群星演唱会，另有特别嘉宾。"
+      }
+    }
+  },
+  {
+    "id": "sale-1212-2026",
+    "sample": true,
+    "title": "แฟลชเซล 12.12 ส่งท้ายปี",
+    "category": "sale",
+    "startDate": "2026-12-12",
+    "endDate": "2026-12-12",
+    "time": "ทั้งวัน",
+    "venueId": "online",
+    "price": {
+      "type": "free"
+    },
+    "summary": "โปรส่งท้ายปี โค้ดลดเพิ่ม ส่งฟรี แฟลชเซลราคาพิเศษ",
+    "details": "มหกรรมช้อปส่งท้ายปีบนแพลตฟอร์มออนไลน์ เตรียมเก็บโค้ดล่วงหน้า",
+    "tags": [
+      "1212",
+      "ลดราคา"
+    ],
+    "affiliateLinks": [
+      {
+        "label": "เก็บโค้ด 12.12",
+        "platform": "Shopee",
+        "url": "https://example.com/your-shopee-affiliate-link"
+      }
+    ],
+    "i18n": {
+      "en": {
+        "title": "12.12 Year-end Flash Sale",
+        "summary": "Year-end deals — extra codes, free shipping and flash prices",
+        "time": "All day",
+        "details": "The year-end shopping festival on online platforms. Collect your codes in advance.",
+        "affiliateLabels": [
+          "Get 12.12 codes"
+        ]
+      },
+      "zh": {
+        "title": "12.12 年终限时特卖",
+        "summary": "年终大促 — 额外优惠码、包邮、限时特价",
+        "time": "全天",
+        "details": "网购平台年终购物节，请提前领取优惠码。",
+        "affiliateLabels": [
+          "领取 12.12 优惠码"
+        ]
+      }
+    }
+  },
+  {
+    "id": "artexpo-paragon-2026",
+    "sample": true,
+    "title": "นิทรรศการศิลปะร่วมสมัย",
+    "category": "expo",
+    "startDate": "2026-10-20",
+    "endDate": "2026-11-01",
+    "time": "10:00–20:00 น.",
+    "venueId": "paragonhall",
+    "price": {
+      "type": "paid",
+      "min": 250
+    },
+    "summary": "ผลงานศิลปินรุ่นใหม่กว่า 50 คน",
+    "details": "นิทรรศการศิลปะร่วมสมัย (งานนี้จบแล้ว ใช้แสดงตัวอย่างสถานะ 'จบแล้ว')",
+    "tags": [
+      "ศิลปะ",
+      "นิทรรศการ"
+    ],
+    "i18n": {
+      "en": {
+        "title": "Contemporary Art Exhibition",
+        "summary": "Works by 50+ emerging artists",
+        "time": "10:00–20:00",
+        "details": "A contemporary art exhibition (this event has ended — shown as an example of the 'Ended' status)."
+      },
+      "zh": {
+        "title": "当代艺术展",
+        "summary": "50 多位新锐艺术家作品",
+        "time": "10:00–20:00",
+        "details": "当代艺术展（本活动已结束，用于展示“已结束”状态）。"
+      }
+    }
+  }
+]

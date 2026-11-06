@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 300">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ff7a45"/>
+      <stop offset=".5" stop-color="#ff2d78"/>
+      <stop offset="1" stop-color="#7b2ff7"/>
+    </linearGradient>
+    <linearGradient id="t" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ff7a45"/>
+      <stop offset=".5" stop-color="#ff2d78"/>
+      <stop offset="1" stop-color="#7b2ff7"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(22 22) scale(.5)">
+    <rect width="512" height="512" rx="120" fill="url(#g)"/>
+    <path d="M256 92C178 92 118 152 118 230c0 98 138 196 138 196s138-98 138-196c0-78-60-138-138-138z" fill="#fff"/>
+    <path d="M256 160q9 59 68 68q-59 9-68 68q-9-59-68-68q59-9 68-68z" fill="url(#g)"/>
+    <path d="M392 92q4 22 26 26q-22 4-26 26q-4-22-26-26q22-4 26-26z" fill="#fff" opacity=".9"/>
+  </g>
+  <text x="318" y="170" font-family="Prompt, 'Segoe UI', Arial, sans-serif" font-size="128" font-weight="700" fill="#1a1530">I <tspan fill="url(#t)">You</tspan> Alone</text>
+  <text x="322" y="240" font-family="Prompt, 'Segoe UI', Arial, sans-serif" font-size="44" font-weight="500" fill="#7a7490" letter-spacing="2">ไปงานไหนดี · รวมอีเว้นท์ทั่วไทย</text>
+</svg>

@@ -1,0 +1,14 @@
+{
+  "name": "I You Alone — รวมงานอีเว้นท์ทั่วไทย",
+  "short_name": "I You Alone",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#fbf8ff",
+  "theme_color": "#ff2d78",
+  "lang": "th",
+  "icons": [
+    { "src": "icons/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "icons/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "maskable" }
+  ]
+}

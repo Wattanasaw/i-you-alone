@@ -1,0 +1,14 @@
+[
+  {
+    "id": "house-ad-1",
+    "active": true,
+    "title": "📣 ลงโฆษณากับเรา — โปรโมทงานอีเว้นท์ของคุณ ติดต่อหน้า 'เกี่ยวกับ'",
+    "i18n": {
+      "en": { "title": "📣 Advertise with us — promote your event. See the 'About' page." },
+      "zh": { "title": "📣 广告合作 — 推广你的活动，详见“关于”页面" }
+    },
+    "image": "",
+    "url": "#/about",
+    "placements": ["home_top", "list_inline", "detail", "news"]
+  }
+]
