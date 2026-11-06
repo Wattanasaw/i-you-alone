@@ -2,6 +2,7 @@
 // ถ้าตั้งค่า GEMINI_API_KEY (ฟรีจาก Google AI Studio) จะให้ AI สกัดวันที่/สถานที่/ราคาเป็นร่างข้อมูลให้ด้วย
 // รัน: node scripts/update-news.mjs
 import { readFile, writeFile } from "node:fs/promises";
+import { geminiJSON } from "./gemini.mjs";
 
 const OUT = new URL("../data/news.json", import.meta.url);
 const MAX_ITEMS = 120;     // เก็บข่าวล่าสุดกี่ข่าว
@@ -46,19 +47,11 @@ async function fetchFeed(q) {
 async function aiDraft(item, category) {
   const key = process.env.GEMINI_API_KEY;
   if (!key) return null;
-  const model = process.env.GEMINI_MODEL || "gemini-2.5-flash";
   const prompt = `จากหัวข้อข่าวภาษาไทยนี้ สกัดข้อมูลงานอีเว้นท์เป็น JSON เท่านั้น ถ้าไม่รู้ให้ใส่ null ห้ามเดา
 หัวข้อ: "${item.title}" (แหล่ง: ${item.source}, วันที่ข่าว: ${item.pubDate.slice(0, 10)})
 รูปแบบ: {"isEvent": boolean, "title": string, "category": one of ${JSON.stringify(Object.keys(QUERIES))}, "startDate": "YYYY-MM-DD"|null, "endDate": "YYYY-MM-DD"|null, "venueName": string|null, "price": {"type": "free"|"paid"|"mixed"|null, "min": number|null}, "summary": string}`;
   try {
-    const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`, {
-      method: "POST",
-      headers: { "Content-Type": "application/json", "x-goog-api-key": key },
-      body: JSON.stringify({ contents: [{ parts: [{ text: prompt }] }], generationConfig: { responseMimeType: "application/json", temperature: 0 } })
-    });
-    if (!res.ok) { console.warn("AI error", res.status); return null; }
-    const data = await res.json();
-    const d = JSON.parse(data.candidates?.[0]?.content?.parts?.[0]?.text || "null");
+    const d = await geminiJSON(key, prompt);
     if (!d?.isEvent) return { isEvent: false };
     return {
       title: d.title, category: d.category || category, startDate: d.startDate, endDate: d.endDate,

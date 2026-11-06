@@ -8,8 +8,9 @@
 import { readFile, writeFile, rename } from "node:fs/promises";
 import { createHash } from "node:crypto";
 
+import { geminiJSON } from "./gemini.mjs";
+
 const key = process.env.GEMINI_API_KEY;
-const model = process.env.GEMINI_MODEL || "gemini-2.5-flash";
 const BATCH = 8;        // งานต่อคำขอ
 const MAX_BATCHES = 10; // คำขอสูงสุดต่อรอบ (≤ 80 งาน อยู่ในโควต้าฟรีรายวัน)
 const DRY = process.argv.includes("--dry");
@@ -45,14 +46,8 @@ async function ask(batch) {
 Return JSON: {"results": [{"id", "ok", "reason", "category", "sponsor", "age20", "th", "en", "zh"}]} with one result per item.
 Items:
 ${JSON.stringify(items)}`;
-  const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`, {
-    method: "POST",
-    headers: { "Content-Type": "application/json", "x-goog-api-key": key },
-    body: JSON.stringify({ contents: [{ parts: [{ text: prompt }] }], generationConfig: { responseMimeType: "application/json", temperature: 0 } })
-  });
-  if (!res.ok) throw Object.assign(new Error(`Gemini ${res.status}`), { status: res.status });
-  const out = JSON.parse((await res.json()).candidates?.[0]?.content?.parts?.[0]?.text || "{}");
-  return Array.isArray(out.results) ? out.results : [];
+  const out = await geminiJSON(key, prompt);
+  return Array.isArray(out?.results) ? out.results : [];
 }
 
 // ใส่ผลตรวจลงงาน — คืนค่า false = ตัดงานนี้ออก
