@@ -1,18 +1,39 @@
 [
   {
-    "id": "online", "name": "ออนไลน์", "online": true
+    "id": "online",
+    "name": "ออนไลน์",
+    "online": true
   },
   {
     "id": "impact",
     "name": "อิมแพ็ค เมืองทองธานี",
-    "aliases": ["impact arena", "impact exhibition", "impact challenger", "impact forum", "impact muang thong", "อิมแพ็ค", "เมืองทองธานี", "muang thong thani"],
+    "aliases": [
+      "impact arena",
+      "impact exhibition",
+      "impact challenger",
+      "impact forum",
+      "impact muang thong",
+      "อิมแพ็ค",
+      "เมืองทองธานี",
+      "muang thong thani"
+    ],
     "province": "nonthaburi",
     "address": "ถ.แจ้งวัฒนะ-ปากเกร็ด 39 อ.ปากเกร็ด จ.นนทบุรี",
-    "lat": 13.9128, "lng": 100.5482,
+    "lat": 13.9128,
+    "lng": 100.5482,
     "transit": [
-      { "type": "MRT", "text": "สายสีชมพู ลงสถานีย่านเมืองทองธานี แล้วต่อรถสาธารณะ/แท็กซี่เข้าอิมแพ็ค (ตรวจสอบสถานีและรถรับส่งล่าสุดกับผู้จัด)" },
-      { "type": "SHUTTLE", "text": "งานใหญ่มักมีรถรับส่งจากสถานีรถไฟฟ้า ดูประกาศของผู้จัด" },
-      { "type": "TAXI", "text": "เรียกรถผ่านแอพ — ช่วงเลิกงานรถติดมาก เผื่อเวลาออกเดินทาง" }
+      {
+        "type": "MRT",
+        "text": "สายสีชมพู ลงสถานีย่านเมืองทองธานี แล้วต่อรถสาธารณะ/แท็กซี่เข้าอิมแพ็ค (ตรวจสอบสถานีและรถรับส่งล่าสุดกับผู้จัด)"
+      },
+      {
+        "type": "SHUTTLE",
+        "text": "งานใหญ่มักมีรถรับส่งจากสถานีรถไฟฟ้า ดูประกาศของผู้จัด"
+      },
+      {
+        "type": "TAXI",
+        "text": "เรียกรถผ่านแอพ — ช่วงเลิกงานรถติดมาก เผื่อเวลาออกเดินทาง"
+      }
     ],
     "parking": "มีลานจอดรถและอาคารจอดรถขนาดใหญ่ (มีค่าบริการ) ช่วงงานใหญ่ที่จอดเต็มเร็ว",
     "i18n": {
@@ -41,13 +62,24 @@
   {
     "id": "thunderdome",
     "name": "ธันเดอร์โดม เมืองทองธานี",
-    "aliases": ["thunder dome", "thunderdome", "ธันเดอร์โดม"],
+    "aliases": [
+      "thunder dome",
+      "thunderdome",
+      "ธันเดอร์โดม"
+    ],
     "province": "nonthaburi",
     "address": "เมืองทองธานี อ.ปากเกร็ด จ.นนทบุรี",
-    "lat": 13.9105, "lng": 100.5470,
+    "lat": 13.9105,
+    "lng": 100.547,
     "transit": [
-      { "type": "MRT", "text": "สายสีชมพู ลงสถานีย่านเมืองทองธานี แล้วต่อแท็กซี่/รถสาธารณะ" },
-      { "type": "TAXI", "text": "เรียกรถผ่านแอพ แนะนำนัดจุดรับหน้าอิมแพ็ค อารีน่า" }
+      {
+        "type": "MRT",
+        "text": "สายสีชมพู ลงสถานีย่านเมืองทองธานี แล้วต่อแท็กซี่/รถสาธารณะ"
+      },
+      {
+        "type": "TAXI",
+        "text": "เรียกรถผ่านแอพ แนะนำนัดจุดรับหน้าอิมแพ็ค อารีน่า"
+      }
     ],
     "parking": "ใช้ที่จอดรถของอิมแพ็ค เมืองทองธานี",
     "i18n": {
@@ -74,14 +106,28 @@
   {
     "id": "qsncc",
     "name": "ศูนย์การประชุมแห่งชาติสิริกิติ์ (QSNCC)",
-    "aliases": ["qsncc", "queen sirikit", "สิริกิติ์"],
+    "aliases": [
+      "qsncc",
+      "queen sirikit",
+      "สิริกิติ์"
+    ],
     "province": "bangkok",
     "address": "ถ.รัชดาภิเษก แขวงคลองเตย เขตคลองเตย กรุงเทพฯ",
-    "lat": 13.7232, "lng": 100.5598,
+    "lat": 13.7232,
+    "lng": 100.5598,
     "transit": [
-      { "type": "MRT", "text": "สายสีน้ำเงิน สถานีศูนย์การประชุมแห่งชาติสิริกิติ์ ทางออกเชื่อมเข้าศูนย์ฯ" },
-      { "type": "BTS", "text": "สายสุขุมวิท สถานีอโศก ต่อ MRT สุขุมวิท 1 สถานี หรือเดินจากสถานีอโศก" },
-      { "type": "BUS", "text": "หลายสายผ่าน ถ.รัชดาภิเษก และ ถ.พระราม 4" }
+      {
+        "type": "MRT",
+        "text": "สายสีน้ำเงิน สถานีศูนย์การประชุมแห่งชาติสิริกิติ์ ทางออกเชื่อมเข้าศูนย์ฯ"
+      },
+      {
+        "type": "BTS",
+        "text": "สายสุขุมวิท สถานีอโศก ต่อ MRT สุขุมวิท 1 สถานี หรือเดินจากสถานีอโศก"
+      },
+      {
+        "type": "BUS",
+        "text": "หลายสายผ่าน ถ.รัชดาภิเษก และ ถ.พระราม 4"
+      }
     ],
     "parking": "มีที่จอดรถใต้ดิน (มีค่าบริการ) วันหยุดช่วงงานใหญ่แนะนำใช้รถไฟฟ้า",
     "i18n": {
@@ -110,26 +156,42 @@
   {
     "id": "bitec",
     "name": "ไบเทค บางนา (BITEC)",
-    "aliases": ["bitec", "ไบเทค"],
+    "aliases": [
+      "bitec",
+      "ไบเทค"
+    ],
     "province": "bangkok",
     "address": "ถ.บางนา-ตราด แขวงบางนา เขตบางนา กรุงเทพฯ",
-    "lat": 13.6696, "lng": 100.6105,
+    "lat": 13.6696,
+    "lng": 100.6105,
     "transit": [
-      { "type": "BTS", "text": "สายสุขุมวิท สถานีบางนา มีสกายวอล์กเดินเข้าไบเทค" },
-      { "type": "BUS", "text": "รถเมล์สาย ถ.บางนา-ตราด" }
+      {
+        "type": "BTS",
+        "text": "สายสุขุมวิท สถานีบางนา มีสกายวอล์กเดินเข้าไบเทค"
+      },
+      {
+        "type": "BUS",
+        "text": "รถเมล์สาย ถ.บางนา-ตราด"
+      }
     ],
     "parking": "มีที่จอดรถในอาคารและลานจอด",
     "i18n": {
       "en": {
         "name": "BITEC Bangna",
         "address": "Bangna-Trat Rd, Bang Na, Bangkok",
-        "transit": ["BTS Sukhumvit Line, Bang Na station — skywalk straight into BITEC", "Buses along Bangna-Trat Rd"],
+        "transit": [
+          "BTS Sukhumvit Line, Bang Na station — skywalk straight into BITEC",
+          "Buses along Bangna-Trat Rd"
+        ],
         "parking": "Indoor and outdoor parking available"
       },
       "zh": {
         "name": "曼谷国际贸易展览中心 (BITEC)",
         "address": "曼谷 挽那区 挽那-达叻路",
-        "transit": ["乘 BTS 素坤逸线至 Bang Na 站，有天桥直通 BITEC", "挽那-达叻路沿线公交"],
+        "transit": [
+          "乘 BTS 素坤逸线至 Bang Na 站，有天桥直通 BITEC",
+          "挽那-达叻路沿线公交"
+        ],
         "parking": "设有室内及露天停车场"
       }
     }
@@ -137,14 +199,27 @@
   {
     "id": "rajamangala",
     "name": "ราชมังคลากีฬาสถาน",
-    "aliases": ["rajamangala", "ราชมังคลา"],
+    "aliases": [
+      "rajamangala",
+      "ราชมังคลา"
+    ],
     "province": "bangkok",
     "address": "ถ.รามคำแหง แขวงหัวหมาก เขตบางกะปิ กรุงเทพฯ",
-    "lat": 13.7553, "lng": 100.6223,
+    "lat": 13.7553,
+    "lng": 100.6223,
     "transit": [
-      { "type": "ARL", "text": "แอร์พอร์ต เรล ลิงก์ สถานีรามคำแหง แล้วต่อแท็กซี่/วินมอเตอร์ไซค์ หรือเดินประมาณ 20 นาที" },
-      { "type": "BUS", "text": "หลายสายผ่าน ถ.รามคำแหง" },
-      { "type": "SHUTTLE", "text": "คอนเสิร์ตใหญ่มักมีรถรับส่ง ตรวจสอบกับผู้จัด" }
+      {
+        "type": "ARL",
+        "text": "แอร์พอร์ต เรล ลิงก์ สถานีรามคำแหง แล้วต่อแท็กซี่/วินมอเตอร์ไซค์ หรือเดินประมาณ 20 นาที"
+      },
+      {
+        "type": "BUS",
+        "text": "หลายสายผ่าน ถ.รามคำแหง"
+      },
+      {
+        "type": "SHUTTLE",
+        "text": "คอนเสิร์ตใหญ่มักมีรถรับส่ง ตรวจสอบกับผู้จัด"
+      }
     ],
     "parking": "มีลานจอดรอบสนาม แต่จำกัดในวันคอนเสิร์ต แนะนำมาก่อนเวลา",
     "i18n": {
@@ -173,26 +248,42 @@
   {
     "id": "samyan",
     "name": "สามย่านมิตรทาวน์ ฮอลล์",
-    "aliases": ["samyan mitrtown", "สามย่านมิตรทาวน์"],
+    "aliases": [
+      "samyan mitrtown",
+      "สามย่านมิตรทาวน์"
+    ],
     "province": "bangkok",
     "address": "ถ.พระราม 4 แขวงวังใหม่ เขตปทุมวัน กรุงเทพฯ",
-    "lat": 13.7334, "lng": 100.5286,
+    "lat": 13.7334,
+    "lng": 100.5286,
     "transit": [
-      { "type": "MRT", "text": "สายสีน้ำเงิน สถานีสามย่าน มีทางเชื่อมใต้ดินเข้าอาคาร" },
-      { "type": "BUS", "text": "หลายสายผ่าน ถ.พระราม 4" }
+      {
+        "type": "MRT",
+        "text": "สายสีน้ำเงิน สถานีสามย่าน มีทางเชื่อมใต้ดินเข้าอาคาร"
+      },
+      {
+        "type": "BUS",
+        "text": "หลายสายผ่าน ถ.พระราม 4"
+      }
     ],
     "parking": "มีอาคารจอดรถของศูนย์การค้า",
     "i18n": {
       "en": {
         "name": "Samyan Mitrtown Hall",
         "address": "Rama IV Rd, Wang Mai, Pathum Wan, Bangkok",
-        "transit": ["MRT Blue Line, Sam Yan station — underground link into the building", "Many bus routes along Rama IV Rd"],
+        "transit": [
+          "MRT Blue Line, Sam Yan station — underground link into the building",
+          "Many bus routes along Rama IV Rd"
+        ],
         "parking": "Mall parking building"
       },
       "zh": {
         "name": "Samyan Mitrtown 礼堂",
         "address": "曼谷 巴吞旺区 拉玛四世路",
-        "transit": ["乘 MRT 蓝线至 Sam Yan 站，有地下通道直通大楼", "多条公交线路途经拉玛四世路"],
+        "transit": [
+          "乘 MRT 蓝线至 Sam Yan 站，有地下通道直通大楼",
+          "多条公交线路途经拉玛四世路"
+        ],
         "parking": "商场停车楼"
       }
     }
@@ -200,26 +291,43 @@
   {
     "id": "centralworld",
     "name": "เซ็นทรัลเวิลด์",
-    "aliases": ["centralworld", "central world", "เซ็นทรัลเวิลด์"],
+    "aliases": [
+      "centralworld",
+      "central world",
+      "เซ็นทรัลเวิลด์"
+    ],
     "province": "bangkok",
     "address": "ถ.ราชดำริ แขวงปทุมวัน เขตปทุมวัน กรุงเทพฯ",
-    "lat": 13.7466, "lng": 100.5393,
+    "lat": 13.7466,
+    "lng": 100.5393,
     "transit": [
-      { "type": "BTS", "text": "สถานีชิดลม หรือสถานีสยาม เดินตามสกายวอล์ก" },
-      { "type": "BOAT", "text": "เรือคลองแสนแสบ ท่าประตูน้ำ เดินประมาณ 5–10 นาที" }
+      {
+        "type": "BTS",
+        "text": "สถานีชิดลม หรือสถานีสยาม เดินตามสกายวอล์ก"
+      },
+      {
+        "type": "BOAT",
+        "text": "เรือคลองแสนแสบ ท่าประตูน้ำ เดินประมาณ 5–10 นาที"
+      }
     ],
     "parking": "มีอาคารจอดรถ ช่วงวันหยุดคนเยอะ",
     "i18n": {
       "en": {
         "name": "CentralWorld",
         "address": "Ratchadamri Rd, Pathum Wan, Bangkok",
-        "transit": ["BTS Chit Lom or Siam station, then follow the skywalk", "Khlong Saen Saep boat to Pratunam pier, 5–10 min walk"],
+        "transit": [
+          "BTS Chit Lom or Siam station, then follow the skywalk",
+          "Khlong Saen Saep boat to Pratunam pier, 5–10 min walk"
+        ],
         "parking": "Parking building available — busy on weekends"
       },
       "zh": {
         "name": "尚泰世界购物中心 (CentralWorld)",
         "address": "曼谷 巴吞旺区 拉差当梅路",
-        "transit": ["乘 BTS 至 Chit Lom 站或 Siam 站，沿空中走廊步行", "乘 Saen Saep 运河船至水门码头，步行 5–10 分钟"],
+        "transit": [
+          "乘 BTS 至 Chit Lom 站或 Siam 站，沿空中走廊步行",
+          "乘 Saen Saep 运河船至水门码头，步行 5–10 分钟"
+        ],
         "parking": "设有停车楼，周末人多"
       }
     }
@@ -227,26 +335,43 @@
   {
     "id": "lumpini",
     "name": "สวนลุมพินี",
-    "aliases": ["lumpini park", "lumphini park", "สวนลุม"],
+    "aliases": [
+      "lumpini park",
+      "lumphini park",
+      "สวนลุม"
+    ],
     "province": "bangkok",
     "address": "ถ.พระราม 4 แขวงลุมพินี เขตปทุมวัน กรุงเทพฯ",
-    "lat": 13.7314, "lng": 100.5414,
+    "lat": 13.7314,
+    "lng": 100.5414,
     "transit": [
-      { "type": "MRT", "text": "สถานีลุมพินี หรือสถานีสีลม" },
-      { "type": "BTS", "text": "สายสีลม สถานีศาลาแดง เดินประมาณ 5 นาที" }
+      {
+        "type": "MRT",
+        "text": "สถานีลุมพินี หรือสถานีสีลม"
+      },
+      {
+        "type": "BTS",
+        "text": "สายสีลม สถานีศาลาแดง เดินประมาณ 5 นาที"
+      }
     ],
     "parking": "ที่จอดรถจำกัด แนะนำใช้รถไฟฟ้า",
     "i18n": {
       "en": {
         "name": "Lumphini Park",
         "address": "Rama IV Rd, Lumphini, Pathum Wan, Bangkok",
-        "transit": ["MRT Lumphini or Si Lom station", "BTS Silom Line, Sala Daeng station — about 5 min walk"],
+        "transit": [
+          "MRT Lumphini or Si Lom station",
+          "BTS Silom Line, Sala Daeng station — about 5 min walk"
+        ],
         "parking": "Limited parking — the train is recommended"
       },
       "zh": {
         "name": "伦披尼公园",
         "address": "曼谷 巴吞旺区 伦披尼 拉玛四世路",
-        "transit": ["乘 MRT 至 Lumphini 站或 Si Lom 站", "乘 BTS 是隆线至 Sala Daeng 站，步行约 5 分钟"],
+        "transit": [
+          "乘 MRT 至 Lumphini 站或 Si Lom 站",
+          "乘 BTS 是隆线至 Sala Daeng 站，步行约 5 分钟"
+        ],
         "parking": "停车位有限，建议乘轨道交通"
       }
     }
@@ -254,25 +379,37 @@
   {
     "id": "paragonhall",
     "name": "รอยัล พารากอน ฮอลล์",
-    "aliases": ["paragon hall", "royal paragon", "พารากอน ฮอลล์"],
+    "aliases": [
+      "paragon hall",
+      "royal paragon",
+      "พารากอน ฮอลล์"
+    ],
     "province": "bangkok",
     "address": "สยามพารากอน ชั้น 5 ถ.พระราม 1 เขตปทุมวัน กรุงเทพฯ",
-    "lat": 13.7462, "lng": 100.5347,
+    "lat": 13.7462,
+    "lng": 100.5347,
     "transit": [
-      { "type": "BTS", "text": "สถานีสยาม มีทางเชื่อมเข้าสยามพารากอน" }
+      {
+        "type": "BTS",
+        "text": "สถานีสยาม มีทางเชื่อมเข้าสยามพารากอน"
+      }
     ],
     "parking": "มีอาคารจอดรถของศูนย์การค้า",
     "i18n": {
       "en": {
         "name": "Royal Paragon Hall",
         "address": "Siam Paragon, 5th floor, Rama I Rd, Pathum Wan, Bangkok",
-        "transit": ["BTS Siam station — direct link into Siam Paragon"],
+        "transit": [
+          "BTS Siam station — direct link into Siam Paragon"
+        ],
         "parking": "Mall parking building"
       },
       "zh": {
         "name": "暹罗百丽宫 Royal Paragon Hall",
         "address": "曼谷 巴吞旺区 拉玛一世路 暹罗百丽宫 5 楼",
-        "transit": ["乘 BTS 至 Siam 站，有通道直通暹罗百丽宫"],
+        "transit": [
+          "乘 BTS 至 Siam 站，有通道直通暹罗百丽宫"
+        ],
         "parking": "商场停车楼"
       }
     }
