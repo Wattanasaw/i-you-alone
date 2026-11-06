@@ -63,8 +63,8 @@ async function getHtml(url, lang = "th,en;q=0.8") {
     try {
       const r = await fetch(url, { headers: { "User-Agent": UA, "Accept-Language": lang }, signal: AbortSignal.timeout(20000) });
       if (r.ok) return await r.text();
-      if (r.status !== 429 && r.status < 500) return null;
       console.warn(`ตอบ ${r.status}:`, url);
+      if (r.status !== 429 && r.status < 500) return null;
     } catch (e) { console.warn("โหลดไม่ได้:", url, e.message); }
   }
   return null;
