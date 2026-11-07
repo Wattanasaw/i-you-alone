@@ -13,7 +13,7 @@ import { aiJSON, aiAvailable, aiName } from "./gemini.mjs";
 
 const UA = "IYouAloneBot/1.0 (+https://wattanasaw.github.io/i-you-alone/)";
 const arg = (n, d) => { const i = process.argv.indexOf(n); return i > 0 ? +process.argv[i + 1] : d; };
-const POSTS_MAX = arg("--posts", 160), AI_MAX = arg("--ai", 8), KEEP_DAYS = 200;
+const POSTS_MAX = arg("--posts", 320), AI_MAX = arg("--ai", 8), KEEP_DAYS = 200;
 const KINDS = ["cafe", "animalcafe", "restaurant", "themepark", "zoo", "nature", "landmark", "museum", "park"];
 const root = new URL("../", import.meta.url);
 const sleep = ms => new Promise(r => setTimeout(r, ms));
@@ -76,7 +76,7 @@ const todo = pool.filter(x => !(x.link in cache.posts)).slice(0, POSTS_MAX);
 console.log(`โพสต์ยอดนิยมที่ยังไม่ตรงสถานที่ ${pool.length} · เปิดดูหมุดรอบนี้ ${todo.length}`);
 let pinned = 0;
 for (const x of todo) {
-  await sleep(1500);
+  await sleep(1100);
   try {
     const loc = find(await l8Data(x.link), "locationInfo");
     cache.posts[x.link] = loc?.poiId ? { at: today, poi: String(loc.poiId), name: loc.poiName } : { at: today };
@@ -101,6 +101,7 @@ for (const id of poiIds) {
 }
 
 // 3) หมวด: AI (ถ้ามี) หรือเดาจากคำ · skip = ที่พัก ห้าง ร้านขายของ ฯลฯ
+const ANIMAL = /ซามอย|หมา|สุนัข|น้องหมา|แมว|น้องแมว|คาปิบาร่า|capybara|อัลปาก้า|alpaca|แรคคูน|เม่นแคระ|กระต่าย|นกฮูก|แกะ|นาก|samoyed|corgi|คอร์กี้|ชิบะ|shiba|ไซบีเรียน|husky|โกลเด้น|golden|dog|cat|puppy|kitten/i;
 const guessKind = s => /แมว|หมา|สุนัข|cat|dog|นก|กระต่าย|อัลปาก้า|capybara|คาปิบาร่า|animal|สัตว์/i.test(s) && /คาเฟ่|cafe|café/i.test(s) ? "animalcafe"
   : /คาเฟ่|cafe|café|coffee|กาแฟ|bakery|เบเกอรี่|มัทฉะ|matcha|ขนม|dessert/i.test(s) ? "cafe"
   : /ร้านอาหาร|restaurant|หมูกระทะ|ชาบู|ก๋วยเตี๋ยว|ปิ้งย่าง|ซีฟู้ด|bistro|bar\b|ครัว|kitchen/i.test(s) ? "restaurant"
@@ -116,9 +117,9 @@ for (let i = 0; i < needKind.length && aiAvailable() && asked < AI_MAX; i += 30)
   const group = needKind.slice(i, i + 30);
   try {
     const out = await aiJSON(`Classify each place in Thailand (from Lemon8 location tags) into one kind: ${KINDS.join("|")}, or "skip" if it is a hotel/resort/accommodation, shopping mall, shop/store, hospital, office, transport station, or not a place people visit for leisure.
-animal cafés (cat/dog/capybara...) = animalcafe; beaches, waterfalls, mountains, viewpoints, islands, camping = nature; temples, markets, old towns, landmarks = landmark.
+animal cafés (cat/dog/samoyed/capybara/alpaca... — also when the name sounds like a normal café but the posts are about playing with animals there) = animalcafe; beaches, waterfalls, mountains, viewpoints, islands, camping = nature; temples, markets, old towns, landmarks = landmark.
 Return JSON {"results":[{"id","kind"}]}
-Places: ${JSON.stringify(group.map(([id, p]) => ({ id, name: p.name, address: p.address.slice(0, 80), posts: (p.posts || []).slice(0, 2).map(x => x.title) })))}`);
+Places: ${JSON.stringify(group.map(([id, p]) => ({ id, name: p.name, address: p.address.slice(0, 80), posts: (p.posts || []).slice(0, 4).map(x => x.title) })))}`);
     asked++;
     for (const r of out?.results || []) if (cache.pois[r.id] && (KINDS.includes(r.kind) || r.kind === "skip")) cache.pois[r.id].kind = r.kind;
     await sleep(4000);
@@ -141,6 +142,8 @@ async function locate(id, p, prov) {
     // ชื่อสถานที่ในจังหวัดเดียวกัน = พิกัดจริง
     for (const q of [...new Set([p.name, p.name.replace(GENERIC_W, " ").replace(/\s+/g, " ").trim()])].filter(q => q.length >= 3)) {
       const r = (await nominatim(q)).find(r => OK_CLASS.test(r.category || r.class || "") && provOfNom(r) === prov && [r.name, r.namedetails?.name, r.namedetails?.["name:th"], r.namedetails?.["name:en"]].some(n => n && sameName(n, p.name)));
+      // ชื่อตรงกับย่าน/ตำบล/อำเภอ (เช่น "อารีย์") = หมุดพื้นที่ ไม่ใช่ร้าน/สถานที่
+      if (r && (/^(place|boundary)$/.test(r.category || r.class) || /^(suburb|quarter|neighbourhood|village|hamlet|town|city|district|administrative)$/.test(r.type))) { hit = { area: true }; break; }
       if (r) { hit = { osm: `${r.osm_type[0]}${r.osm_id}`, lat: +(+r.lat).toFixed(6), lng: +(+r.lon).toFixed(6) }; break; }
     }
     // ไม่เจอ → ที่อยู่ระดับตำบล/อำเภอ (ประมาณ)
@@ -174,7 +177,12 @@ for (const id of poiIds) {
   if (!p?.name) continue;
   const prov = provinceOf(p.address);
   const byName = guessKind(p.name);
-  const kind = p.kind || (byName !== "landmark" ? byName : guessKind(`${p.name} ${(p.posts || []).map(x => x.title + " " + x.text).join(" ").slice(0, 600)}`));
+  // คาเฟ่ที่โพสต์ส่วนใหญ่พูดถึงสัตว์ (เช่น "Baan Biome Wellness Cafe" = คาเฟ่ซามอย) → คาเฟ่สัตว์ แม้ชื่อร้านไม่บอก
+  const animalPosts = (p.posts || []).filter(x => ANIMAL.test(`${x.title} ${x.text || ""}`)).length;
+  const animalHeavy = animalPosts >= Math.max(1, (p.posts || []).length / 3);
+  let kind = p.kind || (byName === "cafe" && animalHeavy ? "animalcafe"
+    : byName !== "landmark" ? byName : guessKind(`${p.name} ${(p.posts || []).map(x => x.title + " " + x.text).join(" ").slice(0, 600)}`));
+  if (kind === "cafe" && animalHeavy) kind = "animalcafe";
   // หมุดระดับจังหวัด/อำเภอ ("ฉะเชิงเทรา", "จังหวัดพระนครศรีอยุธยา", "ตำบล นครนายก") ไม่ใช่สถานที่
   const admin = /^(จังหวัด|อำเภอ|ตำบล|แขวง|เขต|amphoe|tambon|changwat)/i.test(p.name.trim()) || PROV_CORE.has(core(p.name)) || !/\d/.test(p.address);
   if (!prov || admin || kind === "skip" || SKIP.test(p.name)) { skipped++; continue; }
@@ -185,6 +193,7 @@ for (const id of poiIds) {
   if (!posts.length) continue;
   const hot = +posts.reduce((s, x) => s + 1 + Math.log10(1 + x.likes), 0).toFixed(1);
   const hit = await locate(id, p, prov);
+  if (hit?.area) { skipped++; continue; }
   const old = (hit?.osm && byOsm.get(hit.osm))
     || data.places.find(q => q.province === prov && [q.name?.th, q.name?.en].some(n => n && sameName(n, p.name)))
     || (hit && !hit.approx && data.places.find(q => q.lat && km(q, hit) <= 0.15));
@@ -197,7 +206,9 @@ for (const id of poiIds) {
   }
   if (!hit) { noGeo++; continue; }
   const th = /[฀-๿]/.test(p.name);
-  out.set(`l8-${id}`, {
+  const dupKey = `${core(p.name)}|${prov}`, dup = [...out.values()].find(q => q._k === dupKey);
+  if (dup) { dup.posts = [...new Map([...dup.posts, ...posts].map(x => [x.link, x])).values()].sort((a, b) => b.likes - a.likes).slice(0, 6); dup.hot = Math.max(dup.hot, hot); dup.trend += posts.length; continue; }
+  out.set(`l8-${id}`, { _k: dupKey,
     id: `l8-${id}`, kind, fromTrend: true, l8poi: id,
     name: th ? { th: p.name } : { th: p.name, en: p.name },
     lat: hit.lat, lng: hit.lng, ...(hit.approx ? { approx: true } : { osm: hit.osm }),
@@ -205,7 +216,7 @@ for (const id of poiIds) {
     hot, trend: posts.length, posts: posts.slice(0, 6), fetchedAt: new Date().toISOString()
   });
 }
-const list = [...out.values()].sort((a, b) => b.hot - a.hot);
+const list = [...out.values()].map(({ _k, ...p }) => p).sort((a, b) => b.hot - a.hot);
 
 for (const [k, v] of Object.entries(cache.posts)) if (days(v.at) > KEEP_DAYS) delete cache.posts[k];
 for (const [k, v] of Object.entries(cache.geo)) if (days(v.at) > 120) delete cache.geo[k];
