@@ -17,7 +17,8 @@
    "trend": 11,
    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Wat_Mai_Suwannaphumaham_2009a.jpg/960px-Wat_Mai_Suwannaphumaham_2009a.jpg",
    "imagePage": "https://commons.wikimedia.org/wiki/File:Wat_Mai_Suwannaphumaham_2009a.jpg",
-   "imageCredit": "Allie Caulfield · CC BY 2.0"
+   "imageCredit": "Allie Caulfield · CC BY 2.0",
+   "imageAi": true
   },
   {
    "id": "wd-Q3034913",
@@ -43,12 +44,13 @@
     "en": "Chiang Mai Zoo and Aquarium is a 200-acre (81 ha) zoo on Huay Kaew Road in Chiang Mai Province, Thailand, just west of Chiang Mai University. It is the first commercial zoo in northern Thailand, established on 16 June 1977.",
     "zh": "清邁動物園 是一個位於泰國北部清邁的動物園。清邁動物園成立於1974年，开始是是一間私營動物園，1977年6月16日成为官方动物园。園內設置有單軌電車和133米長的水族館。\n"
    },
-   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Rhino_CMZ.jpg/960px-Rhino_CMZ.jpg",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Rhino_CMZ.jpg",
-   "imageCredit": "This user loves Krittaya. · Public domain",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/43188-Chiang-Mai_%2827184441293%29.jpg/960px-43188-Chiang-Mai_%2827184441293%29.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:43188-Chiang-Mai_(27184441293).jpg",
+   "imageCredit": "xiquinhosilva · CC BY 2.0",
    "fetchedAt": "2026-11-06T18:15:57.744Z",
    "views": 4,
-   "trend": 3
+   "trend": 3,
+   "imageAi": true
   },
   {
    "id": "wd-Q1642767",
@@ -74,12 +76,13 @@
     "th": "พิพิธภัณฑสถานแห่งชาติ เชียงใหม่ เป็นพิพิธภัณฑ์ที่ตั้งอยู่บนถนนซุปเปอร์ไฮเวย์เชียงใหม่-ลำปาง ตำบลช้างเผือก อำเภอเมืองเชียงใหม่ จังหวัดเชียงใหม่ พิพิธภัณฑ์ตั้งอยู่ใกล้เคียงกับวัดเจ็ดยอดทางตะวันตกเฉียงเหนือของเทศบาลนครเชียงใหม่ จัดแสดงเกี่ยวกับประวัติศาสตร์ของอาณาจักรล้านนา",
     "en": "The Chiang Mai National Museum is a national museum located in Chiang Mai, northern Thailand. It highlights the history of the Kingdom of Lanna with descriptions in both Thai and English. The museum is located in the vicinity of Wat Chet Yot, in the north-western part of Chiang Mai. It is run by the Fine Arts Department of Thailand."
    },
-   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Chiang_Mai_National_Museum.jpg/960px-Chiang_Mai_National_Museum.jpg",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Chiang_Mai_National_Museum.jpg",
-   "imageCredit": "Zhou Guanhuai · CC0",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Phra_saen_sae_2.jpg/960px-Phra_saen_sae_2.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Phra_saen_sae_2.jpg",
+   "imageCredit": "Disthan · CC BY-SA 4.0",
    "fetchedAt": "2026-11-06T18:41:38.777Z",
    "views": 2,
-   "trend": 3
+   "trend": 3,
+   "imageAi": true
   },
   {
    "id": "wd-Q3039270",
@@ -113,7 +116,8 @@
    "imageCredit": "No machine-readable author provided. Manop assumed (based on · CC BY-SA 3.0",
    "fetchedAt": "2026-11-06T18:16:32.380Z",
    "views": 13,
-   "trend": 2
+   "trend": 2,
+   "imageAi": true
   },
   {
    "id": "wd-Q3576017",
@@ -144,7 +148,8 @@
    "imageCredit": "Yellow man · CC BY 3.0",
    "fetchedAt": "2026-11-06T18:16:05.424Z",
    "views": 12,
-   "trend": 2
+   "trend": 2,
+   "imageAi": true
   },
   {
    "id": "osm-w378173843",
@@ -162,7 +167,8 @@
    "trend": 2,
    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Wat_klang_bang_kaew_01.jpg/960px-Wat_klang_bang_kaew_01.jpg",
    "imagePage": "https://commons.wikimedia.org/wiki/File:Wat_klang_bang_kaew_01.jpg",
-   "imageCredit": "Athichitra · CC BY-SA 4.0"
+   "imageCredit": "Athichitra · CC BY-SA 4.0",
+   "imageAi": true
   },
   {
    "id": "osm-w378274467",
@@ -180,7 +186,8 @@
    "trend": 2,
    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Ayutthaya_Wat_Yai_Chai_Mongkhon_2.jpg/960px-Ayutthaya_Wat_Yai_Chai_Mongkhon_2.jpg",
    "imagePage": "https://commons.wikimedia.org/wiki/File:Ayutthaya_Wat_Yai_Chai_Mongkhon_2.jpg",
-   "imageCredit": "Mr.Peerapong Prasutr · CC BY-SA 4.0"
+   "imageCredit": "Mr.Peerapong Prasutr · CC BY-SA 4.0",
+   "imageAi": true
   },
   {
    "id": "osm-w493766361",
@@ -195,10 +202,7 @@
    "province": "chiang-mai",
    "summary": {},
    "fetchedAt": "2026-11-06T20:11:21.829Z",
-   "trend": 2,
-   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Chiang_Mai_Thailand_Chiang-Mai-University_College-of-Arts-Media-and-Technology-02.jpg/960px-Chiang_Mai_Thailand_Chiang-Mai-University_College-of-Arts-Media-and-Technology-02.jpg",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Chiang_Mai_Thailand_Chiang-Mai-University_College-of-Arts-Media-and-Technology-02.jpg",
-   "imageCredit": "CEphoto, Uwe Aranas · CC BY-SA 4.0"
+   "trend": 2
   },
   {
    "id": "wd-Q806451",
@@ -226,7 +230,8 @@
    "imageCredit": "atreyu · CC BY-SA 3.0",
    "fetchedAt": "2026-11-07T01:20:24.545Z",
    "views": 28,
-   "trend": 1
+   "trend": 1,
+   "imageAi": true
   },
   {
    "id": "wd-Q1255815",
@@ -253,12 +258,13 @@
     "en": "The Bangkok National Museum is the main branch museum of the National museums in Thailand and also one of the largest museums in Southeast Asia. It features exhibits of Thai art and history. It occupies the former palace of the vice king, set between Thammasat University and the National Theater, facing Sanam Luang.",
     "zh": "曼谷國立博物館 是泰國博物館群的其中之一，也是東南亞地區最大的博博物館。其館藏特色是展出泰國藝術以及歷史。博物館地址在泰國10200曼谷Na Phra That路4號，先前原是給泰國皇宮二王的前宮，在田廣場西北邊的廣場角落。\n"
    },
-   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Bangkok_National_Museum.jpg/960px-Bangkok_National_Museum.jpg",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Bangkok_National_Museum.jpg",
-   "imageCredit": "This Photo was taken by Supanut Arunoprayote. Feel free to u · CC BY 4.0",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Buddaisawan_Chapel%2C_Bangkok_National_Museum.jpg/960px-Buddaisawan_Chapel%2C_Bangkok_National_Museum.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Buddaisawan_Chapel,_Bangkok_National_Museum.jpg",
+   "imageCredit": "Thanapas.som · CC BY-SA 4.0",
    "fetchedAt": "2026-11-06T18:41:18.437Z",
    "views": 27,
-   "trend": 1
+   "trend": 1,
+   "imageAi": true
   },
   {
    "id": "wd-Q1760520",
@@ -288,7 +294,8 @@
    "imageCredit": "Vyacheslav Argenberg · CC BY 4.0",
    "fetchedAt": "2026-11-06T18:18:20.756Z",
    "views": 17,
-   "trend": 1
+   "trend": 1,
+   "imageAi": true
   },
   {
    "id": "wd-Q10825651",
@@ -313,7 +320,8 @@
    "imageCredit": "The original uploader was Drimascus at German Wikipedia. · CC BY-SA 3.0",
    "fetchedAt": "2026-11-07T01:20:26.469Z",
    "views": 9,
-   "trend": 1
+   "trend": 1,
+   "imageAi": true
   },
   {
    "id": "wd-Q14469669",
@@ -336,12 +344,13 @@
    "summary": {
     "th": "สวนสัตว์นครราชสีมา หรือ สวนสัตว์โคราช สังกัดองค์การสวนสัตว์แห่งประเทศไทย เป็นสวนสัตว์ที่จัดตั้งขึ้นในองค์การสวนสัตว์ในพระบรมราชูปถัมภ์ ในปัจจุบันสวนสัตว์นครราชสีมาอยู่ในการดูแลของกระทรวงทรัพยากรธรรมชาติและสิ่งแวดล้อม"
    },
-   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Korat_Zoo%2CNakorn_Ratchasima%2CThailand_%2850%29.jpg/960px-Korat_Zoo%2CNakorn_Ratchasima%2CThailand_%2850%29.jpg",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Korat_Zoo,Nakorn_Ratchasima,Thailand_(50).jpg",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Korat_Zoo%2CNakorn_Ratchasima%2CThailand_%28320%29.jpg/960px-Korat_Zoo%2CNakorn_Ratchasima%2CThailand_%28320%29.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Korat_Zoo,Nakorn_Ratchasima,Thailand_(320).jpg",
    "imageCredit": "กสิณธร ราชโอรส · CC BY-SA 4.0",
    "fetchedAt": "2026-11-06T18:16:22.702Z",
    "views": 5,
-   "trend": 1
+   "trend": 1,
+   "imageAi": true
   },
   {
    "id": "wd-Q990128",
@@ -371,7 +380,8 @@
    "imageCredit": "Nina R from Africa · CC BY 2.0",
    "fetchedAt": "2026-11-06T18:18:23.021Z",
    "views": 4,
-   "trend": 1
+   "trend": 1,
+   "imageAi": true
   },
   {
    "id": "wd-Q4925853",
@@ -394,12 +404,13 @@
     "th": "อุทยานแห่งชาติกุยบุรี หรือ ผืนป่ากุยบุรี เป็นแหล่งต้นน้ำสำคัญของแม่น้ำกุยบุรีและแม่น้ำปราณบุรี หล่อเลี้ยงชีวิตของผู้คนในจังหวัดประจวบคีรีขันธ์ ได้รับการประกาศให้เป็นอุทยานแห่งชาติ มีวัตถุประสงค์หลักเพื่อคุ้มครองทรัพยากรธรรมชาติที่ปรากฏในพื้นที่ เพื่อเป็นแหล่งหาความรู้ศึกษาวิจัย และการประกอบกิจกรรมนันทนาการของประชาชน โดยได้รับประกาศให้เป็นอุทยานแห่งชาติในราชกิจจานุเบกษา เล่มที่ 116 ตอนที่ 20ก วันที่ 25 มีนาคม พ.ศ.",
     "en": "Kui Buri National Park is a national park of Thailand in the Tenasserim Hills in Prachuap Khiri Khan Province. It was established as the 90th national park in March 1999."
    },
-   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Rhacophorus_kio_-_mating.jpg/960px-Rhacophorus_kio_-_mating.jpg",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Rhacophorus_kio_-_mating.jpg",
-   "imageCredit": "Rushenb · CC BY-SA 4.0",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Wild_Elephants_in_Kui_Buri_National_Park.jpg/960px-Wild_Elephants_in_Kui_Buri_National_Park.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Wild_Elephants_in_Kui_Buri_National_Park.jpg",
+   "imageCredit": "Khajonrat.K · CC BY-SA 4.0",
    "fetchedAt": "2026-11-06T18:18:33.830Z",
    "views": 3,
-   "trend": 1
+   "trend": 1,
+   "imageAi": true
   },
   {
    "id": "wd-Q4921882",
@@ -427,7 +438,8 @@
    "trend": 1,
    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/The_Queen%27s_Gallery%2C_BKK.jpg/960px-The_Queen%27s_Gallery%2C_BKK.jpg",
    "imagePage": "https://commons.wikimedia.org/wiki/File:The_Queen%27s_Gallery,_BKK.jpg",
-   "imageCredit": "This Photo was taken by Supanut Arunoprayote. Feel free to u · CC BY 4.0"
+   "imageCredit": "This Photo was taken by Supanut Arunoprayote. Feel free to u · CC BY 4.0",
+   "imageAi": true
   },
   {
    "id": "wd-Q110517188",
@@ -457,7 +469,8 @@
    "imageCredit": "Vano111ru · CC BY-SA 4.0",
    "fetchedAt": "2026-11-06T18:41:51.282Z",
    "views": 2,
-   "trend": 1
+   "trend": 1,
+   "imageAi": true
   },
   {
    "id": "wd-Q1132057",
@@ -499,7 +512,8 @@
    "trend": 1,
    "image": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Dhammakaya_cetiya_night.jpg",
    "imagePage": "https://commons.wikimedia.org/wiki/File:Dhammakaya_cetiya_night.jpg",
-   "imageCredit": "Horsemilk · CC BY-SA 3.0"
+   "imageCredit": "Horsemilk · CC BY-SA 3.0",
+   "imageAi": true
   },
   {
    "id": "osm-w137648101",
@@ -517,10 +531,7 @@
    "province": "chiang-rai",
    "summary": {},
    "fetchedAt": "2026-11-07T01:22:27.029Z",
-   "trend": 1,
-   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/HallOfOpium_Valley.JPG/960px-HallOfOpium_Valley.JPG",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:HallOfOpium_Valley.JPG",
-   "imageCredit": "Jpatokal · CC BY-SA 4.0"
+   "trend": 1
   },
   {
    "id": "osm-n2315561244",
@@ -538,7 +549,8 @@
    "trend": 1,
    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/An_elephant_at_the_Thai_Elepahnt_Conservation_Center.JPG/960px-An_elephant_at_the_Thai_Elepahnt_Conservation_Center.JPG",
    "imagePage": "https://commons.wikimedia.org/wiki/File:An_elephant_at_the_Thai_Elepahnt_Conservation_Center.JPG",
-   "imageCredit": "Supercarwaar · CC BY-SA 3.0"
+   "imageCredit": "Supercarwaar · CC BY-SA 3.0",
+   "imageAi": true
   },
   {
    "id": "osm-w399882800",
@@ -554,9 +566,10 @@
    "summary": {},
    "fetchedAt": "2026-11-06T20:15:54.761Z",
    "trend": 1,
-   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B8%AD_Phu_Ruea_National_Park_-_panoramio_%283%29.jpg/960px-%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B8%AD_Phu_Ruea_National_Park_-_panoramio_%283%29.jpg",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B8%AD_Phu_Ruea_National_Park_-_panoramio_(3).jpg",
-   "imageCredit": "Thaweesak Churasri · CC BY 3.0"
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B8%AD_Phu_Ruea_National_Park_-_panoramio_%286%29.jpg/960px-%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B8%AD_Phu_Ruea_National_Park_-_panoramio_%286%29.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B8%AD_Phu_Ruea_National_Park_-_panoramio_(6).jpg",
+   "imageCredit": "Thaweesak Churasri · CC BY 3.0",
+   "imageAi": true
   },
   {
    "id": "wd-Q4924562",
@@ -675,7 +688,8 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:Grand_Palace_Bangkok,_Thailand.jpg",
    "imageCredit": "Andy Marchand · CC BY-SA 3.0",
    "fetchedAt": "2026-11-06T18:41:17.418Z",
-   "views": 64
+   "views": 64,
+   "imageAi": true
   },
   {
    "id": "wd-Q1725518",
@@ -968,7 +982,8 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:Koh_Samui_Lipa_Noi2.jpg",
    "imageCredit": "Manfred Werner · CC BY-SA 3.0",
    "fetchedAt": "2026-11-07T01:19:39.551Z",
-   "views": 32
+   "views": 32,
+   "imageAi": true
   },
   {
    "id": "wd-Q1777774",
