@@ -164,7 +164,8 @@
       getJSON("data/places.json", { places: [], trends: {} }),
       getJSON("data/business-places.json", [])   // ร้านที่สมาชิกธุรกิจเพิ่ม (AI ตรวจผ่านแล้ว)
     ]);
-    state.places = [...(places.places || []), ...(Array.isArray(biz) ? biz : [])];
+    const bizList = Array.isArray(biz) ? biz : [], replaced = new Set(bizList.map(b => b.replaces).filter(Boolean));
+    state.places = [...(places.places || []).filter(p => !replaced.has(p.id)), ...bizList];
     state.trends = places.trends || {};
     // งานที่ดึงอัตโนมัติ + งานที่ใส่เอง: งานใส่เองที่ id ตรงกันจะทับงานอัตโนมัติ, hidden: true = ซ่อน
     const manualIds = new Set(events.map(e => e.id));
@@ -906,7 +907,9 @@
   // ตัวกรองหน้าที่เที่ยว (จำค่าไว้ในเครื่อง)
   const PF_DEFAULT = { sort: "rec", dist: 0, open: false, free: false, hot: false, photo: false };
   state.pf = { ...PF_DEFAULT, ...readLS("placeFilters", {}) };
-  const placeRank = p => (p.hot ? 100 + Math.min(p.hot, 60) * 3 : 0) + (p.rising ? 40 : 0) + (p.image ? 20 + (p.imageScore || 6) * 2 : 0) + Math.min(p.fame || 0, 15);
+  // คาเฟ่ + สถานที่บันเทิง (สวนสนุก สวนสัตว์ คาเฟ่สัตว์) ที่มีรูป ดันขึ้นก่อนในมุมมอง "แนะนำ"
+  const FUN_BOOST = { cafe: 70, animalcafe: 70, themepark: 60, restaurant: 50, zoo: 45 };
+  const placeRank = p => (p.image ? FUN_BOOST[p.kind] || 0 : 0) + (p.business ? 30 : 0) + (p.hot ? 100 + Math.min(p.hot, 60) * 3 : 0) + (p.rising ? 40 : 0) + (p.image ? 20 + (p.imageScore || 6) * 2 : 0) + Math.min(p.fame || 0, 15);
   function trendThumb(n) {
     const title = String(n.title || "").toLowerCase();
     // รูปปกของโพสต์ (พรีวิวจาก Lemon8 มีลายน้ำผู้โพสต์) → ไม่มีใช้รูปสถานที่ที่ชื่ออยู่ในโพสต์ → ไอคอนหมวด
@@ -1052,6 +1055,7 @@
           <button class="btn" id="saveBtn">${saved ? t("saved") : t("save")}</button>
           <button class="btn" id="shareBtn">${t("share")}</button>
         </div>
+        ${!p.business ? `<a class="claim-link" href="#/account/new-shop?ref=${encodeURIComponent(p.id)}">🏪 ${t(p.image ? "claimPlace" : "claimPlaceNoPhoto")}</a>` : ""}
         <div class="detail-layout" style="margin-top:18px">
           <div>
             <section class="panel">

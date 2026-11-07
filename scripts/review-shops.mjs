@@ -19,6 +19,7 @@ if (!URL_ || !KEY) { console.log("ยังไม่ได้ตั้งค่�
 
 const win = {}; new Function("window", await readFile(new URL("js/i18n.js", root), "utf8"))(win);
 const PROVINCES = win.PROVINCES;
+const PLACES = JSON.parse(await readFile(new URL("data/places.json", root), "utf8")).places || [];
 function provinceId(state) {
   const th = String(state || "").replace(/^จังหวัด|^จ\.\s*/, "").trim();
   if (/กรุงเทพ|bangkok/i.test(th)) return "bangkok";
@@ -78,7 +79,10 @@ async function review(s) {
   const inThailand = !rev || rev.address?.country_code === "th";
   const province = provinceId(rev?.address?.state || rev?.address?.province || (rev?.address?.city === "กรุงเทพมหานคร" ? "กรุงเทพ" : ""));
   const near = await nearbyNames(s);
-  const match = near?.find(x => x.names.some(n => sameName(n, s.name)));
+  // เจ้าของร้านเพิ่มข้อมูลให้สถานที่ที่มีในแอพอยู่แล้ว: หมุดต้องอยู่ใกล้ตำแหน่งเดิม (≤ 200 ม.)
+  const refPlace = s.ref_place && PLACES.find(p => p.id === s.ref_place);
+  const refD = refPlace ? Math.round(km(s, refPlace) * 1000) : null;
+  const match = (refPlace && refD <= 200 ? { names: [refPlace.name?.th || refPlace.name?.en], d: refD } : null) || near?.find(x => x.names.some(n => sameName(n, s.name)));
   const images = (await Promise.all(s.photos.slice(0, 5).map(photo))).filter(Boolean);
   if (!images.length) return { status: "needs_fix", reasons: ["โหลดรูปไม่ได้ กรุณาอัปโหลดรูปใหม่"], province };
 
@@ -138,7 +142,8 @@ for (const s of pending) {
 // ร้านที่อนุมัติแล้วทั้งหมด → ไฟล์ข้อมูลของแอพ
 const approved = await rest("submissions?status=eq.approved&select=*&order=reviewed_at.desc&limit=2000");
 const places = approved.map(s => ({
-  id: "biz-" + s.id, kind: s.kind === "attraction" ? "landmark" : s.kind, business: true, fame: 6,
+  id: "biz-" + s.id, kind: s.kind === "attraction" ? (PLACES.find(p => p.id === s.ref_place)?.kind || "landmark") : s.kind, business: true, fame: 6,
+  replaces: s.ref_place || undefined,
   name: { th: s.name }, lat: s.lat, lng: s.lng, province: s.province || s.ai_result?.province || null,
   address: s.address || undefined, hours: s.hours || undefined, phone: s.phone || undefined, website: s.website || undefined,
   image: photoUrl(s.photos[s.ai_result?.cover || 0] || s.photos[0]), imageCredit: "รูปจากร้าน",

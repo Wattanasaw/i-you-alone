@@ -73,12 +73,18 @@
   M.homeProvince = () => M.profile?.home_province || null;
 
   // ---------- หน้า "บัญชี" ----------
-  M.render = async (app, arg) => {
+  M.render = async (app, arg = "") => {
+    // ลิงก์ "เป็นเจ้าของที่นี่?" → new-shop?ref=<id สถานที่> (จำไว้เผื่อต้องเข้าระบบก่อน)
+    const ref = (arg.match(/[?&]ref=([^&]+)/) || [])[1];
+    if (ref) sessionStorage.setItem("iya-claim", decodeURIComponent(ref));
+    arg = arg.split("?")[0];
     if (!M.enabled()) return renderSoon(app);
     if (!M.ready) { app.innerHTML = `<p class="loading">${t("loading")}</p>`; await waitReady(); }
     if (!M.user) return renderLogin(app);
     if (!M.profile || arg === "edit") return renderProfileForm(app);
-    if (arg === "new-shop" && M.profile.account_type === "business") return renderShopForm(app);
+    const claim = sessionStorage.getItem("iya-claim");
+    if ((arg === "new-shop" || claim) && M.profile.account_type === "business") return renderShopForm(app, claim);
+    if (claim && M.profile.account_type !== "business") return renderDashboard(app, t("claimNeedBusiness"));
     return renderDashboard(app);
   };
   const waitReady = () => new Promise(r => { const h = setInterval(() => { if (M.ready) { clearInterval(h); r(); } }, 100); });
@@ -174,9 +180,10 @@
   }
 
   const STATUS = { pending: ["⏳", "statusPending"], approved: ["✅", "statusApproved"], rejected: ["⛔", "statusRejected"], needs_fix: ["✏️", "statusNeedsFix"] };
-  async function renderDashboard(app) {
+  async function renderDashboard(app, notice) {
     const p = M.profile, biz = p.account_type === "business";
     app.innerHTML = `<div class="page narrow">
+      ${notice ? `<p class="notice">${esc(notice)}</p>` : ""}
       <h1 class="page-title">👋 ${esc(p.display_name || M.user.email)}</h1>
       <p class="muted">${biz ? "🏪 " + t("memberBusiness") : "🙋 " + t("memberPersonal")} · ${esc(M.user.email)}</p>
       <div class="actions">
@@ -212,10 +219,13 @@
   const publicUrl = path => `${cfg().supabaseUrl}/storage/v1/object/public/${BUCKET}/${path}`;
 
   // ---------- ฟอร์มเพิ่มร้าน: รูปจริง + ปักหมุดบนแผนที่ OpenStreetMap ----------
-  async function renderShopForm(app) {
+  const KIND_OF = { cafe: "cafe", animalcafe: "animalcafe", restaurant: "restaurant" };
+  async function renderShopForm(app, refId) {
+    const ref = refId && X.state.places.find(x => x.id === refId);
     app.innerHTML = `<div class="page narrow">
       <a class="back" href="#/account">${t("back")}</a>
-      <h1 class="page-title">🏪 ${t("addShop")}</h1>
+      <h1 class="page-title">🏪 ${t(ref ? "claimTitle" : "addShop")}</h1>
+      ${ref ? `<p class="notice">${t("claimDesc", { name: esc(ref.name?.th || ref.name?.en || "") })}</p>` : ""}
       <section class="panel member-form">
         <label>${t("shopName")} *<input id="sname" maxlength="80" required></label>
         <label>${t("shopKind")} *<select id="skind">${["restaurant", "cafe", "animalcafe", "attraction"].map(k => `<option value="${k}">${t("kind_" + k)}</option>`).join("")}</select></label>
@@ -245,8 +255,16 @@
     // แผนที่ (Leaflet + แผนที่ OpenStreetMap ฟรี) — ลากหมุดให้ตรงหน้าร้าน
     loadCss(LEAFLET + ".css");
     await loadScript(LEAFLET + ".js");
-    const start = X.state.pos || { lat: 13.7563, lng: 100.5018 };
-    const map = L.map("map").setView([start.lat, start.lng], X.state.pos ? 17 : 12);
+    if (ref) {
+      document.getElementById("sname").value = ref.name?.th || ref.name?.en || "";
+      document.getElementById("skind").value = KIND_OF[ref.kind] || "attraction";
+      if (ref.hours) document.getElementById("shours").value = ref.hours;
+      if (ref.phone) document.getElementById("sphone").value = ref.phone;
+      if (/^https?:/.test(ref.website || "")) document.getElementById("sweb").value = ref.website;
+      if (ref.address) document.getElementById("saddr").value = ref.address;
+    }
+    const start = ref || X.state.pos || { lat: 13.7563, lng: 100.5018 };
+    const map = L.map("map").setView([start.lat, start.lng], ref || X.state.pos ? 17 : 12);
     L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", { maxZoom: 19, attribution: "© OpenStreetMap" }).addTo(map);
     let pin = null;
     const where = async ll => {
@@ -260,6 +278,7 @@
     };
     const place = ll => { if (pin) pin.setLatLng(ll); else { pin = L.marker(ll, { draggable: true }).addTo(map); pin.on("dragend", () => where(pin.getLatLng())); } where(ll); };
     map.on("click", e => place(e.latlng));
+    if (ref) place(L.latLng(ref.lat, ref.lng));
     document.getElementById("here").onclick = () => X.locate(() => { if (X.state.pos) { map.setView([X.state.pos.lat, X.state.pos.lng], 18); place(X.state.pos); } });
     // ย่อรูปก่อนอัปโหลด (ด้านยาวไม่เกิน 1600px, JPEG) ประหยัดพื้นที่ฟรี
     let files = [];
@@ -292,9 +311,11 @@
           lat: +ll.lat.toFixed(6), lng: +ll.lng.toFixed(6), address: document.getElementById("saddr").value.trim() || null,
           hours: document.getElementById("shours").value.trim() || null, phone: document.getElementById("sphone").value.trim() || null,
           website: /^https?:\/\//.test(web) ? web : null, photos: paths,
-          price_min: num("pmin"), price_max: num("pmax"), entry_fee: num("pentry")
+          price_min: num("pmin"), price_max: num("pmax"), entry_fee: num("pentry"),
+          ...(ref ? { ref_place: ref.id } : {})
         });
         if (error) throw error;
+        sessionStorage.removeItem("iya-claim");
         location.hash = "#/account";
       } catch (e) { msg(`${t("errorTry")} (${e.message})`); btn.disabled = false; }
     };

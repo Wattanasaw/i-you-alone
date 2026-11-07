@@ -87,3 +87,4 @@ create policy "delete own photos" on storage.objects for delete to authenticated
 alter table public.submissions add column if not exists price_min int check (price_min between 0 and 100000);
 alter table public.submissions add column if not exists price_max int check (price_max between 0 and 100000);
 alter table public.submissions add column if not exists entry_fee int check (entry_fee between 0 and 100000);
+alter table public.submissions add column if not exists ref_place text check (char_length(ref_place) <= 80); -- เจ้าของร้านเพิ่มรูป/ข้อมูลให้สถานที่ที่มีในแอพอยู่แล้ว

@@ -6,6 +6,7 @@
 // ผลจำไว้ใน data/place-images.json (ไม่ถามซ้ำ ประหยัดโควต้า) · รูปทั้งหมดมีสัญญาอนุญาตเสรี พร้อมเครดิตผู้ถ่าย
 // รัน: node scripts/place-images.mjs [--limit 300] [--recheck]
 import { readFile, writeFile, rename } from "node:fs/promises";
+import { readFileSync } from "node:fs";
 import { aiJSON, aiAvailable, aiName } from "./gemini.mjs";
 
 const UA = "IYouAloneBot/1.0 (+https://wattanasaw.github.io/i-you-alone/)";
@@ -15,7 +16,7 @@ const AI_MAX = arg("--ai", 45);          // คำขอ AI สูงสุด�
 const PER_ASK = 4;                       // สถานที่ต่อคำขอ AI
 const RECHECK = process.argv.includes("--recheck");
 const RETRY_DAYS = 30;
-const SOURCES_VERSION = 2;               // 2 = เพิ่มโพสต์ Lemon8 + รูปเว็บไซต์ร้าน                   // ที่ที่ยังไม่มีรูปดี ลองหาใหม่ทุก 30 วัน (มีคนอัปรูปใหม่)
+const SOURCES_VERSION = 3;               // 2 = โพสต์ Lemon8 + เว็บไซต์ร้าน · 3 = คลัง Lemon8 รายจังหวัด + Openverse                   // ที่ที่ยังไม่มีรูปดี ลองหาใหม่ทุก 30 วัน (มีคนอัปรูปใหม่)
 const root = new URL("../", import.meta.url);
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 const readJSON = async (p, fb) => { try { return JSON.parse(await readFile(new URL(p, root), "utf8")); } catch { return fb; } };
@@ -99,9 +100,43 @@ async function candidates(p) {
   // ร้านเล็ก/คาเฟ่มักไม่มีรูปใน Commons → เสริมจากโพสต์ Lemon8 ที่พูดถึงร้านนี้ และรูปหน้าเว็บของร้านเอง
   if (out.length < 3) out.push(...await lemon8Cands(p));
   if (out.length < 3) { const w = await websiteCand(p); if (w) out.push(w); }
+  if (out.length < 2) out.push(...await openverseCands(p));
   const seen = new Set();
   return out.filter(c => !seen.has(c.file) && seen.add(c.file)).sort((a, b) => b.score - a.score).slice(0, 4);
 }
+
+// คลังโพสต์ Lemon8: หน้า "คาเฟ่/ที่เที่ยว + จังหวัด" ทั้ง 77 จังหวัด + หัวข้อยอดนิยม (สร้างครั้งเดียวต่อรอบ)
+const PROVINCES_TH = (() => { const w = {}; new Function("window", readFileSync(new URL("js/i18n.js", root), "utf8"))(w); return w.PROVINCES.map(p => p.th.replace(/^กรุงเทพมหานคร$/, "กรุงเทพ")); })();
+const POOL_TOPICS = ["คาเฟ่เปิดใหม่", "คาเฟ่ลับ", "คาเฟ่สวย", "คาเฟ่มินิมอล", "คาเฟ่ริมทะเล", "คาเฟ่ริมน้ำ", "คาเฟ่ในสวน", "คาเฟ่วิวภูเขา", "คาเฟ่แมว", "คาเฟ่หมา", "คาเฟ่สัตว์", "ร้านกาแฟ", "ร้านเบเกอรี่", "ร้านอาหาร", "สวนสนุก", "สวนน้ำ", "สวนสัตว์", "ฟาร์มสัตว์"];
+let poolPromise = null;
+const pool = () => poolPromise ||= (async () => {
+  const posts = new Map();
+  const kws = [...POOL_TOPICS, ...PROVINCES_TH.flatMap(p => [`คาเฟ่${p}`, `ที่เที่ยว${p}`])];
+  for (const kw of kws) {
+    await sleep(2200);
+    try {
+      const html = await (await fetch(`https://www.lemon8-app.com/experience/${encodeURIComponent(kw)}?region=th`, { headers: { "User-Agent": UA, "Accept-Language": "th" }, signal: AbortSignal.timeout(20000) })).text();
+      const big = [...html.matchAll(/<script[^>]*>([\s\S]*?)<\/script>/g)].map(m => m[1]).sort((a, b) => b.length - a.length)[0] || "";
+      (function walk(o) {
+        if (!o || typeof o !== "object") return;
+        if (o.groupId && typeof o.title === "string" && !posts.has(o.groupId)) posts.set(o.groupId, o);
+        for (const v of Object.values(o)) if (v && typeof v === "object") walk(v);
+      })(JSON.parse(decodeURIComponent(big)));
+    } catch {}
+  }
+  console.log(`คลังโพสต์ Lemon8: ${posts.size} โพสต์ จาก ${kws.length} หน้า`);
+  return [...posts.values()];
+})();
+function postCand(o) {
+  const image = [o.largeImage?.url, o.imageList?.[0]?.url].find(u => /^https:\/\/www\.lemon8-app\.com\/seo\/image\?/.test(u || ""));
+  const author = [o, ...Object.values(o)].find(v => v && typeof v === "object" && v.linkName) || {};
+  return image && {
+    file: "lemon8:" + o.groupId, image, small: image, via: "lemon8", hit: 1, title: o.title,
+    page: `https://www.lemon8-app.com/${author.linkName ? "@" + author.linkName + "/" : ""}${o.groupId}?region=th`,
+    credit: `Lemon8${author.nickName ? " · " + author.nickName : ""}`, score: +(2 + Math.log10(1 + (+o.articleLikes || 0))).toFixed(2)
+  };
+}
+const POOL_KINDS = new Set(["cafe", "animalcafe", "restaurant", "themepark", "zoo"]);
 
 // โพสต์ Lemon8 ที่ชื่อโพสต์มีชื่อร้าน → รูปปกพรีวิวของโพสต์ (ลิงก์ของ Lemon8 เอง มีลายน้ำผู้โพสต์ กดแล้วไปโพสต์ต้นฉบับ)
 const coreName = s => String(s || "").replace(/^(ร้าน|คาเฟ่|cafe|café|the)\s*/i, "").trim();
@@ -109,6 +144,11 @@ async function lemon8Cands(p) {
   const names = [p.name.th, p.name.en].map(coreName).filter(n => n && n.length >= 4);
   if (!names.length) return [];
   const low = names.map(n => n.toLowerCase());
+  // เจอในคลังรายจังหวัดแล้ว ไม่ต้องค้นทีละร้าน
+  if (POOL_KINDS.has(p.kind)) {
+    const hit = (await pool()).filter(o => low.some(n => o.title.toLowerCase().includes(n))).map(postCand).filter(Boolean);
+    if (hit.length) return hit.sort((a, b) => b.score - a.score).slice(0, 2);
+  }
   const posts = new Map();
   // ค้นทั้งชื่อไทยและชื่ออังกฤษ (หยุดเมื่อเจอโพสต์ที่พูดถึงร้าน)
   for (const q of [...new Set([p.name.th, p.name.en].filter(Boolean))].slice(0, 2)) {
@@ -127,15 +167,27 @@ async function lemon8Cands(p) {
   }
   return [...posts.values()]
     .filter(o => low.some(n => o.title.toLowerCase().includes(n)))
-    .map(o => {
-      const image = [o.largeImage?.url, o.imageList?.[0]?.url].find(u => /^https:\/\/www\.lemon8-app\.com\/seo\/image\?/.test(u || ""));
-      const author = [o, ...Object.values(o)].find(v => v && typeof v === "object" && v.linkName) || {};
-      return image && {
-        file: "lemon8:" + o.groupId, image, small: image, via: "lemon8", hit: 1, title: o.title,
-        page: `https://www.lemon8-app.com/${author.linkName ? "@" + author.linkName + "/" : ""}${o.groupId}?region=th`,
-        credit: `Lemon8${author.nickName ? " · " + author.nickName : ""}`, score: +(2 + Math.log10(1 + (+o.articleLikes || 0))).toFixed(2)
-      };
-    }).filter(Boolean).sort((a, b) => b.score - a.score).slice(0, 2);
+    .map(postCand).filter(Boolean).sort((a, b) => b.score - a.score).slice(0, 2);
+}
+let ovLeft = 70; // ต่อรอบ (โควต้าฟรีไม่ใช้คีย์ 200/วัน, 20/นาที)
+async function openverseCands(p) {
+  const q = (p.name.en || "").length >= 6 ? p.name.en : p.name.th;
+  const need = tokens(q);
+  if (!q || !need.length || ovLeft <= 0) return [];
+  ovLeft--;
+  await sleep(3200);
+  try {
+    const r = await fetch(`https://api.openverse.org/v1/images/?q=${encodeURIComponent(q)}&page_size=8&mature=false`, { headers: { "User-Agent": UA }, signal: AbortSignal.timeout(20000) });
+    if (r.status === 429) { ovLeft = 0; return []; }
+    if (!r.ok) return [];
+    return ((await r.json()).results || [])
+      .filter(x => x.url && /^https:\/\//.test(x.url) && (x.width || 1000) >= 640 && !BAD.test(x.title || ""))
+      .filter(x => need.filter(w => (x.title || "").toLowerCase().includes(w)).length >= Math.min(2, need.length))
+      .slice(0, 2).map(x => ({
+        file: "ov:" + x.id, image: x.url, small: x.thumbnail || x.url, via: "openverse", hit: 1, title: x.title, page: x.foreign_landing_url,
+        credit: [String(x.creator || "").slice(0, 40), `${String(x.license || "").toUpperCase()} ${x.license_version || ""}`.trim()].filter(Boolean).join(" · "), score: 2.2
+      }));
+  } catch { return []; }
 }
 // รูปหน้าเว็บไซต์ของร้าน (og:image ที่ร้านตั้งไว้สำหรับแชร์) — ข้ามเฟซบุ๊ก/ไอจี/ติ๊กต็อก (ไม่อนุญาตให้บอทอ่าน)
 async function websiteCand(p) {
@@ -202,7 +254,7 @@ Places: ${JSON.stringify(lines)}`;
 
 // ---------- ทำงาน ----------
 const now = Date.now(), days = t => (now - new Date(t || 0)) / 864e5;
-const byFame = [...data.places].sort((a, b) => (a.image ? 1 : 0) - (b.image ? 1 : 0) || (b.trend ? 50 : 0) + (b.fame || 0) - (a.trend ? 50 : 0) - (a.fame || 0));
+const byFame = [...data.places].sort((a, b) => (a.image ? 1 : 0) - (b.image ? 1 : 0) || (POOL_KINDS.has(b.kind) ? 1 : 0) - (POOL_KINDS.has(a.kind) ? 1 : 0) || (b.trend ? 50 : 0) + (b.fame || 0) - (a.trend ? 50 : 0) - (a.fame || 0));
 const KIND_ONLY = process.argv.includes("--kind") ? process.argv[process.argv.indexOf("--kind") + 1].split(",") : null;
 const todo = byFame.filter(p => !KIND_ONLY || KIND_ONLY.includes(p.kind)).filter(p => {
   const c = cache[p.id];
@@ -238,7 +290,7 @@ for (let i = 0; i < withCands.length; i += PER_ASK) {
     let pick = null, by = "rule";
     if (r) { by = "ai"; pick = r.chosen; }
     // ไม่มี AI: ใช้เฉพาะรูปที่มั่นใจ (รูปทางการ หรือชื่อตรง+อยู่ใกล้)
-    else { const top = cands.find(x => x.via !== "lemon8" && x.via !== "web"); if (top && (top.via === "official" || (top.hit >= 1 && top.score >= 3))) pick = top; }
+    else { const top = cands.find(x => !["lemon8", "web", "openverse"].includes(x.via)); if (top && (top.via === "official" || (top.hit >= 1 && top.score >= 3))) pick = top; }
     cache[p.id] = pick
       ? { image: pick.image, page: pick.page, credit: pick.credit, by, appeal: r?.appeal, why: r?.why, at: new Date().toISOString(), v: SOURCES_VERSION }
       : { image: null, by, why: r?.why, at: new Date().toISOString(), v: SOURCES_VERSION };

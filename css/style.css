@@ -547,3 +547,6 @@ html.theme-anim, html.theme-anim * { transition: background-color .35s, color .3
 .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
 .price-line { gap: 4px; flex-wrap: wrap; }
 .price-line span + span::before { content: ""; }
+
+.claim-link { display: inline-block; margin-top: 10px; font-size: .85rem; color: var(--accent); text-decoration: none; border-bottom: 1px dashed currentColor; }
+

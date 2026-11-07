@@ -25,16 +25,16 @@ window.APP_CONFIG = {
 
   // หมวดสถานที่เที่ยว (หน้า "ที่เที่ยว") — ข้อมูลจาก data/places.json (scripts/fetch-places.mjs)
   placeCategories: [
+    // เรียง: คาเฟ่และสถานที่บันเทิงก่อน · restaurant = ร้านที่เจ้าของร้านเพิ่มเอง (ผ่าน AI ตรวจ)
     { id: "cafe", icon: "☕", color: "#b45309", color2: "#f9a8d4", name: { th: "คาเฟ่", en: "Cafés", zh: "咖啡馆" } },
     { id: "animalcafe", icon: "🐱", color: "#f97316", color2: "#facc15", name: { th: "คาเฟ่สัตว์", en: "Animal cafés", zh: "动物咖啡馆" } },
-    { id: "zoo", icon: "🦒", color: "#65a30d", color2: "#0d9488", name: { th: "สวนสัตว์", en: "Zoos & aquariums", zh: "动物园/水族馆" } },
+    { id: "restaurant", icon: "🍽️", color: "#dc2626", color2: "#f59e0b", name: { th: "ร้านอาหาร", en: "Restaurants", zh: "餐厅" } },
     { id: "themepark", icon: "🎢", color: "#e11d48", color2: "#8b5cf6", name: { th: "สวนสนุก/สวนน้ำ", en: "Theme & water parks", zh: "游乐园/水上乐园" } },
-    { id: "museum", icon: "🏛️", color: "#475569", color2: "#a16207", name: { th: "พิพิธภัณฑ์", en: "Museums", zh: "博物馆" } },
-    { id: "park", icon: "🏞️", color: "#15803d", color2: "#0369a1", name: { th: "อุทยาน", en: "National parks", zh: "国家公园" } },
+    { id: "zoo", icon: "🦒", color: "#65a30d", color2: "#0d9488", name: { th: "สวนสัตว์", en: "Zoos & aquariums", zh: "动物园/水族馆" } },
     { id: "nature", icon: "🏖️", color: "#0891b2", color2: "#22c55e", name: { th: "ทะเล/น้ำตก/จุดชมวิว", en: "Beaches, waterfalls & viewpoints", zh: "海滩/瀑布/观景台" } },
     { id: "landmark", icon: "🛕", color: "#d97706", color2: "#7c3aed", name: { th: "วัด/แลนด์มาร์ก", en: "Temples & landmarks", zh: "寺庙/地标" } },
-    // ร้านอาหารที่เจ้าของร้านเพิ่มเอง (สมาชิกธุรกิจ ผ่านการตรวจของ AI แล้ว)
-    { id: "restaurant", icon: "🍽️", color: "#dc2626", color2: "#f59e0b", name: { th: "ร้านอาหาร", en: "Restaurants", zh: "餐厅" } }
+    { id: "museum", icon: "🏛️", color: "#475569", color2: "#a16207", name: { th: "พิพิธภัณฑ์", en: "Museums", zh: "博物馆" } },
+    { id: "park", icon: "🏞️", color: "#15803d", color2: "#0369a1", name: { th: "อุทยาน", en: "National parks", zh: "国家公园" } }
   ],
 
   // ===== ระบบสมาชิก (Supabase แพ็กเกจฟรี) =====
