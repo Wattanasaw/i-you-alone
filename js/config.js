@@ -30,7 +30,9 @@ window.APP_CONFIG = {
     { id: "zoo", icon: "🦒", color: "#65a30d", color2: "#0d9488", name: { th: "สวนสัตว์", en: "Zoos & aquariums", zh: "动物园/水族馆" } },
     { id: "themepark", icon: "🎢", color: "#e11d48", color2: "#8b5cf6", name: { th: "สวนสนุก/สวนน้ำ", en: "Theme & water parks", zh: "游乐园/水上乐园" } },
     { id: "museum", icon: "🏛️", color: "#475569", color2: "#a16207", name: { th: "พิพิธภัณฑ์", en: "Museums", zh: "博物馆" } },
-    { id: "park", icon: "🏞️", color: "#15803d", color2: "#0369a1", name: { th: "อุทยาน", en: "National parks", zh: "国家公园" } }
+    { id: "park", icon: "🏞️", color: "#15803d", color2: "#0369a1", name: { th: "อุทยาน", en: "National parks", zh: "国家公园" } },
+    { id: "nature", icon: "🏖️", color: "#0891b2", color2: "#22c55e", name: { th: "ทะเล/น้ำตก/จุดชมวิว", en: "Beaches, waterfalls & viewpoints", zh: "海滩/瀑布/观景台" } },
+    { id: "landmark", icon: "🛕", color: "#d97706", color2: "#7c3aed", name: { th: "วัด/แลนด์มาร์ก", en: "Temples & landmarks", zh: "寺庙/地标" } }
   ],
 
   // ===== โฆษณา =====

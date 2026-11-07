@@ -8,7 +8,7 @@ import { existsSync } from "node:fs";
 const DRY = process.argv.includes("--dry");
 const UA = "Mozilla/5.0 (compatible; IYouAloneBot/1.0; +https://wattanasaw.github.io/i-you-alone/)";
 const DELAY_MS = 1500;          // หน่วงระหว่างคำขอ (สุภาพกับเว็บต้นทาง)
-const MAX_PAGES_PER_RUN = 140;  // จำนวนหน้างานสูงสุดที่เปิดต่อรอบ
+const MAX_PAGES_PER_RUN = 220;  // จำนวนหน้างานสูงสุดที่เปิดต่อรอบ (รวมทุกแหล่ง)
 const REFRESH_DAYS = 3;         // ข้อมูลเก่ากว่านี้ให้เปิดหน้าใหม่เพื่ออัปเดต
 const MAX_DAYS_AHEAD = 365;     // ไม่เก็บงานที่ไกลเกิน 1 ปี
 // ตัวกรองคำ: งานที่ชื่อมีคำเหล่านี้จะไม่ถูกเก็บ (แก้เพิ่มได้)
@@ -92,7 +92,61 @@ function datesIn(text) {
     return mon ? `${y}-${String(mon).padStart(2, "0")}-${String(+m[1]).padStart(2, "0")}` : null;
   }).filter(Boolean);
 }
+// ช่วงวันที่แบบย่อ: "02-13 ธันวาคม 2569", "23 October – 25 October 2026", "30 Nov - 2 Dec 2026"
+const MON_RE = DATE_RE.source.match(/\\s\+\((.+)\)\\s\+/)[1];
+const RANGE_RE = new RegExp(`(?<!\\d)(\\d{1,2})(?:\\s+(${MON_RE}))?\\s*[-–—]\\s*(\\d{1,2})\\s+(${MON_RE})\\s+(\\d{4})`, "gi");
+function rangeDates(text) {
+  const full = datesIn(String(text || ""));
+  if (full.length >= 2) return full.slice(0, 2);
+  for (const m of String(text || "").matchAll(RANGE_RE)) {
+    const [end] = datesIn(`${m[3]} ${m[4]} ${m[5]}`);
+    if (!end) continue;
+    let [start] = datesIn(`${m[1]} ${m[2] || m[4]} ${m[5]}`);
+    if (start > end) start = (+start.slice(0, 4) - 1) + start.slice(4); // ข้ามปี (ธ.ค. → ม.ค.)
+    return [start, end];
+  }
+  return datesIn(text).slice(0, 2);
+}
+// งานแสดงสินค้าเฉพาะนักธุรกิจ (B2B) — คนทั่วไปเข้าไม่ได้/ไม่ได้ประโยชน์
+const TRADE = /\b(trade (show|fair|exhibition)|b2b|conference|summit|congress|symposium|forum|convention of|business matching|for professionals?)\b|เฉพาะผู้ประกอบการ|ผู้ประกอบการธุรกิจ|เครือข่ายทางธุรกิจ|สร้างเครือข่าย|นักธุรกิจ|ผู้เชี่ยวชาญด้าน|เจรจาธุรกิจ|ประชุมวิชาการ/i;
+const SALE_PROMO = /\bsale\b|weekend|mega|grand|fair|festival|market|ลดราคา|ลดกระหน่ำ|มหกรรม|แฟร์|เทศกาล/i;
 const prices = arr => [...new Set(arr.map(s => Number(String(s).replace(/,/g, ""))).filter(n => n >= 20 && n <= 100000))].sort((a, b) => a - b);
+
+// ---------- ตัวอ่านข้อมูลงานมาตรฐาน schema.org (JSON-LD) ใช้ร่วมกันหลายเว็บ ----------
+const zw = s => String(s || "").replace(/[\u200b-\u200f\u2060-\u2064\ufeff]/g, "").replace(/\s+/g, " ").trim();
+function ldEvents(html) {
+  const out = [];
+  const walk = x => {
+    if (!x || typeof x !== "object") return;
+    if (Array.isArray(x)) return x.forEach(walk);
+    const types = [].concat(x["@type"] || []);
+    if (types.some(t => /Event$|Festival/.test(t)) && x.name && x.startDate) out.push(x);
+    ["@graph", "itemListElement", "item", "subEvent"].forEach(k => x[k] && walk(x[k]));
+  };
+  for (const m of html.matchAll(/<script[^>]+application\/ld\+json[^>]*>([\s\S]*?)<\/script>/gi)) { try { walk(JSON.parse(m[1])); } catch {} }
+  return out;
+}
+// งาน schema.org → รูปแบบเดียวกับตัวอ่านเว็บอื่น (build() ใช้ต่อ)
+function fromLd(ev, catHint = "") {
+  const loc = [].concat(ev.location || [])[0] || {}, addr = typeof loc.address === "string" ? { streetAddress: loc.address } : loc.address || {};
+  const offers = [].concat(ev.offers || []).flatMap(o => [o.price, o.lowPrice, o.highPrice]).filter(v => v != null && v !== "");
+  const d = s => String(s || "").slice(0, 10);
+  const online = /Online/i.test(ev.eventAttendanceMode || "") || /VirtualLocation/.test(loc["@type"] || "");
+  const country = zw(addr.addressCountry?.name || addr.addressCountry);
+  const types = [].concat(ev["@type"]).join(" ");
+  return {
+    title: zw(decode(ev.name)), image: [].concat(ev.image || [])[0]?.url || [].concat(ev.image || [])[0],
+    summary: zw(decode(ev.description)), dates: [d(ev.startDate), d(ev.endDate || ev.startDate)].filter(x => /^\d{4}-\d\d-\d\d$/.test(x)),
+    time: (String(ev.startDate).match(/T(\d\d:\d\d)/) || [])[1]?.replace(/^00:00$/, "") || undefined,
+    venueText: online ? "Online" : zw(loc.name || addr.streetAddress), provinceText: zw(addr.addressRegion || addr.addressLocality),
+    outsideThailand: !!country && !/^(TH|THA|Thailand|ไทย|ประเทศไทย)$/i.test(country),
+    catText: `${catHint} ${/Sports/.test(types) ? "run sport" : ""} ${/Music/.test(types) ? "concert" : ""} ${/Festival/.test(types) ? "festival" : ""}`,
+    prices: prices(offers), free: offers.length > 0 && offers.every(v => +v === 0) || ev.isAccessibleForFree === true,
+    bodyText: zw(`${addr.streetAddress || ""} ${addr.addressLocality || ""} ${ev.description || ""}`).slice(0, 600)
+  };
+}
+// งาน Eventbrite ส่วนมากเป็นมีตติ้ง/ทัวร์/เปิดบ้านมหาลัย → ตัดออก เหลืองานอีเว้นท์จริง
+const EB_SKIP = /hangout|meet ?up|networking|language exchange|open day|info session|webinar|walking tour|city tour|day tour|cooking class|yoga class|free consultation|seminar on|study abroad|university|speed dating|business|investor|real estate|visa/i;
 
 // ---------- ตัวอ่านของแต่ละแหล่ง ----------
 const SOURCES = {
@@ -144,7 +198,7 @@ const SOURCES = {
     }
   },
   zipevent: {
-    name: "Zipevent",
+    name: "Zipevent", quota: 40,
     async list() {
       const urls = new Set();
       const html = await getHtml("https://www.zipeventapp.com/event/allevent");
@@ -174,6 +228,143 @@ const SOURCES = {
         bodyText: L.slice(venueIdx, venueIdx + 120).join(" ")
       };
     }
+  },
+  // คอนเสิร์ตใหญ่/การแสดง/กีฬา — หน้ารายละเอียดมีข้อมูล schema.org
+  thaiticketmajor: {
+    name: "ThaiTicketMajor", quota: 40,
+    async list() {
+      const urls = new Set();
+      for (const c of ["concert", "performance", "sport", "exhibition"]) {
+        const html = await getHtml(`https://www.thaiticketmajor.com/${c}/`);
+        [...(html || "").matchAll(/href="(?:https:\/\/www\.thaiticketmajor\.com)?\/(concert|performance|sport|exhibition)\/([a-z0-9-]+)\.html/g)]
+          .forEach(m => urls.add(`https://www.thaiticketmajor.com/${m[1]}/${m[2]}.html`));
+      }
+      return [...urls].map(url => ({ id: "ttm-" + url.split("/").pop().replace(/\.html$/, "").slice(0, 60), url }));
+    },
+    parse(html, url) {
+      // หน้ามีงานแนะนำอื่นปนมาด้วย → เลือกงานที่ชื่อตรงกับหัวหน้าเว็บ
+      const og = norm(meta(html, "og:title").replace(/^Official Ticket\s*\|\s*/i, ""));
+      const all = ldEvents(html);
+      const ev = all.find(e => norm(decode(e.name)) === og) || all.find(e => og.includes(norm(decode(e.name)).slice(0, 20)));
+      if (!ev) return null;
+      const p = fromLd(ev, /\/sport\//.test(url) ? "sport" : /\/exhibition\//.test(url) ? "exhibition" : "concert");
+      p.title = p.title.replace(/^Official Ticket\s*\|\s*/i, "");
+      if (!p.image) p.image = meta(html, "og:image");
+      // ราคาบัตรในหน้า (เช่น "ราคาบัตร 2,500 / 3,500 บาท")
+      if (!p.prices.length) p.prices = prices([...lines(html).join(" ").matchAll(/([\d,]{3,})\s*(?:บาท|THB|฿)/g)].map(m => m[1]));
+      return p;
+    }
+  },
+  // งานวิ่ง/ปั่น/ไตรกีฬา ทั่วประเทศ
+  runlah: {
+    name: "RunLah", quota: 40,
+    async list() {
+      const sm = await getHtml("https://www.runlah.com/sitemap.xml");
+      const locs = [...(sm || "").matchAll(/<loc>(https:\/\/www\.runlah\.com\/([A-Za-z]{8}))<\/loc>/g)];
+      return locs.map(m => ({ id: "run-" + m[2], url: m[1] }));
+    },
+    parse(html) {
+      const ev = ldEvents(html)[0];
+      return ev ? fromLd(ev, "run") : null;
+    }
+  },
+  // งานในเมืองท่องเที่ยว — หน้ารวมมีข้อมูลครบ ไม่ต้องเปิดทีละงาน
+  eventbrite: {
+    name: "Eventbrite", lang: "en",
+    async list() {
+      const refs = [];
+      for (const city of ["bangkok", "chiang-mai", "phuket", "pattaya", "krabi", "hua-hin"]) {
+        for (const page of [1, 2]) {
+          const html = await getHtml(`https://www.eventbrite.com/d/thailand--${city}/events/${page > 1 ? `?page=${page}` : ""}`, "en");
+          if (!html) break;
+          for (const ev of ldEvents(html)) {
+            const id = (String(ev.url).match(/-(\d{9,})(?:\?|$)/) || [])[1];
+            if (!id || EB_SKIP.test(ev.name)) continue;
+            refs.push({ id: "eb-" + id, url: String(ev.url).split("?")[0], parsed: fromLd(ev) });
+          }
+        }
+      }
+      return [...new Map(refs.map(r => [r.id, r])).values()];
+    }
+  },
+  // ---------- ศูนย์แสดงสินค้า: มหกรรม/มอเตอร์โชว์/งานแฟร์เข้าฟรี ที่ไม่ได้ขายบัตรผ่านเว็บขายตั๋ว ----------
+  // อิมแพ็ค เมืองทองธานี (มอเตอร์ เอ็กซ์โป, งานเฟอร์นิเจอร์, คอนเสิร์ต) — หน้างานมีข้อมูล schema.org ครบ
+  impact: {
+    name: "IMPACT", quota: 40,
+    async list() {
+      const sm = await getHtml("https://www.impact.co.th/sitemap.th-TH.4seo.1.xml");
+      // ไม่เอางานแสดงสินค้าเฉพาะธุรกิจ/ประชุม/สัมมนา
+      return [...(sm || "").matchAll(/<loc>(https:\/\/www\.impact\.co\.th\/th\/visitors\/event-calendar\/(exhibition-public|concert|special-event|family-show)\/([^<]+))<\/loc>/g)]
+        .map(m => ({ id: "imp-" + m[3].toLowerCase().replace(/[^a-z0-9]+/g, "-").slice(0, 60), url: m[1] }))
+        .reverse(); // sitemap เรียงเก่า→ใหม่ → เปิดงานใหม่ก่อน
+    },
+    parse(html) {
+      const ev = ldEvents(html)[0];
+      if (!ev) return null;
+      const p = fromLd(ev, `${decode(ev.name)} ${decode(ev.description || "")}`);
+      // ที่อยู่ในหน้าเป็นลิงก์แผนที่ → ใช้ชื่อฮอลล์ + อิมแพ็ค
+      p.venueText = /อิมแพ็ค|impact/i.test(p.venueText) ? p.venueText : `${p.venueText} อิมแพ็ค เมืองทองธานี`.trim();
+      p.provinceText = "นนทบุรี";
+      if (!p.image) p.image = meta(html, "og:image");
+      // ราคา "100 บาท" ในข้อเสนอ หรือ "เข้าชมฟรี" ในคำอธิบาย
+      if (/เข้าชมฟรี|เข้างานฟรี|free admission|free entry/i.test(ev.description || "")) { p.free = true; p.prices = []; }
+      return p;
+    }
+  },
+  // ศูนย์ฯ สิริกิติ์ (งานหนังสือ, Cat Expo, งานอาหาร) — วันที่อยู่ในบรรทัดใต้ชื่องาน
+  qsncc: {
+    name: "QSNCC", quota: 40,
+    async list() {
+      const sm = await getHtml("https://qsncc.com/sitemap.xml");
+      const y = new Date().getFullYear();
+      const urls = [...new Set([...(sm || "").matchAll(/<loc>(https:\/\/qsncc\.com\/th\/whats-on\/event-calendar\/([^<]+?)\/?)<\/loc>/g)].map(m => m[1]))];
+      // ชื่อที่มีปีเก่า = งานจบแล้ว ข้าม · ปีนี้/ปีหน้าเปิดก่อน
+      const yr = u => +((u.match(/(20\d\d)/g) || []).pop() || 0);
+      return urls.filter(u => !yr(u) || yr(u) >= y).sort((a, b) => yr(b) - yr(a))
+        .map(url => ({ id: "qs-" + decodeURIComponent(url).split("/").filter(Boolean).pop().toLowerCase().replace(/[^a-z0-9฀-๿]+/g, "-").slice(0, 60), url }));
+    },
+    parse(html) {
+      const L = lines(html);
+      const i = L.findIndex(l => /^(Upcoming|Ongoing|On-going|กำลังจะมาถึง|กำลังจัดงาน)$/i.test(l));
+      if (i < 1) return null;
+      const title = decode(L[i - 1]);
+      const timeM = (L[i + 3] || "").match(/(\d{1,2}:\d{2}\s*[AP]M)\s*-\s*(\d{1,2}:\d{2}\s*[AP]M)/i);
+      const hall = L[timeM ? i + 4 : i + 3] || "";
+      const endIdx = L.findIndex((l, k) => k > i && /^(Share|แชร์)$/i.test(l));
+      const body = L.slice(i + 5, endIdx > i ? endIdx : i + 25).join(" ");
+      return {
+        title, image: meta(html, "og:image").split("?")[0], summary: L.slice(i + 4, i + 12).filter(l => !/^https?:|is interested$|^Exhibition Hall|^ห้อง|^\d{1,2}:\d{2}/i.test(l)).slice(0, 3).join(" "),
+        dates: rangeDates(L[i + 1]), time: timeM ? `${timeM[1]}–${timeM[2]}` : undefined,
+        venueText: `ศูนย์การประชุมแห่งชาติสิริกิติ์ (QSNCC) ${/hall|ห้อง|ชั้น/i.test(hall) ? hall : ""}`.trim(), provinceText: "กรุงเทพ",
+        catText: `${title} ${body}`, prices: [], free: /เข้าชมฟรี|เข้างานฟรี|ฟรีค่าเข้า|free admission|free entry/i.test(body),
+        trade: TRADE.test(`${title} ${body}`), bodyText: body
+      };
+    }
+  },
+  // ห้าง: อีเว้นท์/แฟร์ และมหกรรมลดราคาทั้งห้าง (สยามพารากอน)
+  siamparagon: {
+    name: "Siam Paragon", quota: 25, lang: "en",
+    async list() {
+      const sm = await getHtml("https://www.siamparagon.co.th/sitemap.xml");
+      const locs = [...(sm || "").matchAll(/<loc>(https:\/\/www\.siamparagon\.co\.th\/(events|promotions)\/([^<]+))<\/loc>/g)];
+      // โปรโมชั่นมีส่วนลดบัตรเครดิต/ร้านอาหารเยอะ → เอาเฉพาะงานลดราคาทั้งห้าง/แฟร์
+      return locs.filter(m => m[2] === "events" || SALE_PROMO.test(m[3].replace(/-/g, " ")))
+        .map(m => ({ id: "spg-" + m[3].toLowerCase().replace(/[^a-z0-9]+/g, "-").slice(0, 60), url: m[1], promo: m[2] === "promotions" }));
+    },
+    parse(html, url) {
+      const L = lines(html);
+      const title = decode(meta(html, "og:title")).replace(/\s*[|-]\s*Siam Paragon.*$/i, "");
+      const di = L.findIndex((l, k) => k > 5 && l.length < 90 && rangeDates(l).length);
+      if (!title || di < 0) return null;
+      const promo = /\/promotions\//.test(url);
+      return {
+        title, image: meta(html, "og:image"), summary: meta(html, "og:description") || meta(html, "description"),
+        dates: rangeDates(L[di]), time: (L[di].match(/(\d{1,2}[:.]\d{2})/) || [])[1],
+        venueText: "Siam Paragon", provinceText: "กรุงเทพ",
+        catText: `${promo ? "sale ลดราคา" : ""} ${title} ${meta(html, "og:description")}`,
+        prices: [], free: true, bodyText: L.slice(di, di + 30).join(" ")
+      };
+    }
   }
 };
 
@@ -181,10 +372,10 @@ const SOURCES = {
 const CATEGORY_RULES = [
   ["outdoor", /\b(run|running|marathon|trail|hyrox|triathlon|fun ?run|cycling|bike|yoga|fitness|sport|workout|crossfit)\b|วิ่ง|มาราธอน|ปั่นจักรยาน|ไตรกีฬา|โยคะ|ฟิตเนส|กีฬา/i],
   ["book", /\bbook|หนังสือ/i],
-  ["motor", /\bmotor|car show|auto ?salon|รถยนต์|มอเตอร์|บิ๊กไบค์/i],
+  ["motor", /\bmotor|car show|auto ?salon|รถยนต์|ยานยนต์|มอเตอร์|บิ๊กไบค์|รถจักรยานยนต์/i],
   ["cafe", /\bcoffee|caf[eé]|กาแฟ|คาเฟ่/i],
   ["food", /\bfood|drink|beer|wine|whisky|cocktail|gastro|dining|festival of taste|อาหาร|เครื่องดื่ม|เบียร์|ไวน์/i],
-  ["sale", /\bsale\b|flash ?sale|ลดราคา|ลดกระหน่ำ|เซล|outlet/i],
+  ["sale", /\bsale\b|flash ?sale|super weekend|ลดราคา|ลดกระหน่ำ|เซล|outlet|มหกรรมลด/i],
   ["learning", /\b(education|business|seminar|summit|conference|forum|workshop|course|class|training|bootcamp|symposium|talk|webinar|meetup)\b|สัมมนา|อบรม|เวิร์กช็อป|เวิร์คช็อป|คอร์ส|เรียน|ประชุม|ฟอรั่ม/i],
   ["nightlife", /\b(nightlife|night ?club|club night|clubbing|bar|pub|party|parties|dj|rave|after ?party|happy hour|ladies night)\b|ผับ|บาร์|ปาร์ตี้|ไนท์คลับ|ไนท์ไลฟ์|ดีเจ|แดนซ์ฮอลล์/i],
   ["concert", /\b(concert|music|festival|live|fan ?meeting|fan ?con|showcase|tour|comedy|performing|musical|theatre|theater|stand ?up)\b|คอนเสิร์ต|เทศกาลดนตรี|แฟนมีต|ละครเวที|ดนตรี/i],
@@ -282,13 +473,14 @@ async function build(src, ref, p) {
   if (end < today) return reject("จบแล้ว", item);
   if (start > maxDate) return reject("ไกลเกิน 1 ปี", item);
   if (p.outsideThailand) return reject("อยู่นอกประเทศไทย", item);
+  if (p.trade) return reject("งานเฉพาะธุรกิจ (B2B)", item);
 
   const ev = {
     id: ref.id, auto: true, title: p.title.slice(0, 160), category: categorize(p.title, p.catText),
     startDate: start, endDate: end, time: p.time,
     price: p.free ? { type: "free" } : p.prices.length ? { type: "paid", min: p.prices[0], max: p.prices[p.prices.length - 1] } : { type: "unknown" },
     summary: cleanSummary(p.summary, p.title),
-    image: /^https:\/\//.test(p.image || "") ? p.image : undefined,
+    image: /^https:\/\//.test(p.image || "") ? p.image.trim().replace(/ /g, "%20") : undefined,
     ticketUrl: ref.url, sourceUrl: ref.url, sourceName: src.name,
     fetchedAt: new Date().toISOString()
   };
@@ -297,9 +489,10 @@ async function build(src, ref, p) {
   const sponsor = sponsorOf(p.title, p.summary);
   if (sponsor) ev.sponsor = sponsor;
   // งานยาวเกิน 4 เดือน (พิพิธภัณฑ์/นิทรรศการถาวร) → แสดงแบบเปิดประจำ
-  if ((new Date(end) - new Date(start)) / 864e5 > 120) { ev.ongoing = true; delete ev.endDate; ev.startDate = start; }
-
-  if (isOnline(p.venueText)) { ev.venueId = "online"; return ev; }
+  // เปิดยาวเกิน 4 เดือน (พิพิธภัณฑ์/นิทรรศการถาวร/ร้าน) = สถานที่เปิดประจำ ไม่ใช่งานอีเว้นท์
+  if ((new Date(end) - new Date(start)) / 864e5 > 120) return reject("เปิดประจำ ไม่ใช่อีเว้นท์", item);
+  // งานออนไลน์ไม่เก็บ (แอพเน้นงานที่ไปร่วมได้จริง)
+  if (isOnline(p.venueText)) return reject("งานออนไลน์", item);
   const known = matchVenue(`${p.venueText} ${p.provinceText}`);
   if (known) { ev.venueId = known.id; return ev; }
   if (!p.venueText) return reject("ไม่มีสถานที่", item);
@@ -317,7 +510,7 @@ async function build(src, ref, p) {
 const testIdx = process.argv.indexOf("--url");
 if (testIdx > 0) {
   for (const url of process.argv.slice(testIdx + 1)) {
-    const src = url.includes("eventpop") ? SOURCES.eventpop : SOURCES.zipevent;
+    const src = Object.values(SOURCES).find(s => url.toLowerCase().includes(s.name.toLowerCase().replace(/\s/g, ""))) || SOURCES.zipevent;
     const html = await getHtml(url, src.lang);
     const p = html && src.parse(html, url);
     const ev = await build(src, { id: "test", url }, p);
@@ -334,7 +527,7 @@ prev ??= { events: [] };
 const prevById = Object.fromEntries((prev.events || []).map(e => [e.id, e]));
 // งานที่เคยตรวจแล้วว่าจบแล้ว/นอกไทย/ไม่ผ่านตัวกรองถาวร → ไม่ต้องเปิดซ้ำ
 const skip = new Set(prev.skip || []);
-const PERMANENT = new Set(["จบแล้ว", "อยู่นอกประเทศไทย", "คำต้องห้าม"]);
+const PERMANENT = new Set(["งานเฉพาะธุรกิจ (B2B)", "จบแล้ว", "อยู่นอกประเทศไทย", "คำต้องห้าม", "เปิดประจำ ไม่ใช่อีเว้นท์", "งานออนไลน์"]);
 const out = [], stats = {};
 let opened = 0;
 for (const [key, src] of Object.entries(SOURCES)) {
@@ -344,14 +537,19 @@ for (const [key, src] of Object.entries(SOURCES)) {
   refs = refs.filter(r => !skip.has(r.id));
   // ใหม่ก่อน แล้วค่อยอันที่ข้อมูลเก่า (sort แบบคงลำดับเดิม)
   refs.sort((a, b) => (prevById[a.id] ? 1 : 0) - (prevById[b.id] ? 1 : 0));
-  // แบ่งโควต้าเปิดหน้าให้ทุกแหล่ง
-  const quota = Math.ceil(MAX_PAGES_PER_RUN / Object.keys(SOURCES).length);
+  // โควต้าเปิดหน้าต่อแหล่ง (กำหนดเองได้ที่ quota ของแหล่งนั้น)
+  const quota = src.quota || 70;
   let openedHere = 0;
   for (const ref of refs) {
     const old = prevById[ref.id];
     const fresh = old && (Date.now() - new Date(old.fetchedAt)) / 864e5 < REFRESH_DAYS;
     let ev = null;
-    if (fresh) ev = old;
+    // แหล่งที่หน้ารวมมีข้อมูลครบแล้ว (Eventbrite) ไม่ต้องเปิดหน้างาน
+    if (ref.parsed) {
+      lastReject = null;
+      ev = await build(src, ref, ref.parsed);
+      if (!ev && PERMANENT.has(lastReject)) skip.add(ref.id);
+    } else if (fresh) ev = old;
     else if (openedHere < quota && opened < MAX_PAGES_PER_RUN) {
       const html = await getHtml(ref.url, src.lang); opened++; openedHere++; stats[src.name].opened++;
       lastReject = null;
@@ -363,6 +561,8 @@ for (const [key, src] of Object.entries(SOURCES)) {
 }
 // งานที่หายจากหน้ารวมแต่ยังไม่จบ: เก็บไว้ต่อ (เว็บต้นทางอาจแค่เลื่อนหน้า)
 for (const e of prev.events || []) if (!out.find(x => x.id === e.id) && ((e.endDate || e.startDate) >= today || e.ongoing)) out.push(e);
+// งานเดิมที่เป็นแบบเปิดประจำ/ออนไลน์ (เก็บไว้ก่อนเปลี่ยนกฎ) → เอาออก และไม่เปิดหน้าซ้ำอีก
+for (let i = out.length - 1; i >= 0; i--) if (out[i].ongoing || out[i].venueId === "online") { skip.add(out[i].id); out.splice(i, 1); }
 
 // ใช้กฎใหม่กับงานเดิมที่ยังไม่ถึงรอบเปิดหน้าใหม่ด้วย (สปอนเซอร์ / คอนเสิร์ตในผับบาร์)
 for (const e of out) {
@@ -371,7 +571,20 @@ for (const e of out) {
 }
 // กรองซ้ำข้ามแหล่ง: ชื่อ + วันเริ่มเหมือนกัน
 const seen = new Set(), events = [];
-for (const e of out) { const k = norm(e.title).replace(/\s/g, "").slice(0, 40) + e.startDate; if (seen.has(k)) { reject("ซ้ำกับแหล่งอื่น", e); continue; } seen.add(k); events.push(e); }
+// + สถานที่และวันเดียวกัน ชื่อมีคำหลักร่วมกันเกินครึ่ง (เช่น "BABYMONSTER WORLD TOUR [CHOOM]" กับ "WORLD TOUR [춤 (CHOOM)]")
+const STOP = new Set(["world", "tour", "bangkok", "thailand", "concert", "live", "the", "and", "in", "presents", "official", "2026", "2027", "2028"]);
+const words = t => new Set(norm(t).split(" ").filter(w => w.length >= 3 && !STOP.has(w) && !/^\d+$/.test(w)));
+const placeKey = e => e.venueId || norm(e.venue?.name);
+const similar = (a, b) => {
+  if (a.startDate !== b.startDate || placeKey(a) !== placeKey(b)) return false;
+  const A = words(a.title), B = words(b.title), common = [...A].filter(w => B.has(w)).length;
+  return common > 0 && common >= Math.min(A.size, B.size) / 2;
+};
+for (const e of out) {
+  const k = norm(e.title).replace(/\s/g, "").slice(0, 40) + e.startDate;
+  if (seen.has(k) || events.some(x => similar(x, e))) { reject("ซ้ำกับแหล่งอื่น", e); continue; }
+  seen.add(k); events.push(e);
+}
 events.sort((a, b) => a.startDate.localeCompare(b.startDate));
 
 const byCat = events.reduce((m, e) => (m[e.category] = (m[e.category] || 0) + 1, m), {});

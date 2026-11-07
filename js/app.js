@@ -12,7 +12,7 @@
     saved: new Set(readLS("saved", [])),
     lang: pickLang(),
     newsCat: "all",
-    places: [], trends: {}, placeCat: "all",
+    places: [], trends: {}, placeCat: "all", placeQ: "", placeShow: 30,
     pos: null
   };
   // จังหวัดที่จำไว้ไม่ถูกต้อง (เช่น ค่าว่าง) → กลับไปทุกจังหวัด
@@ -165,7 +165,9 @@
     state.trends = places.trends || {};
     // งานที่ดึงอัตโนมัติ + งานที่ใส่เอง: งานใส่เองที่ id ตรงกันจะทับงานอัตโนมัติ, hidden: true = ซ่อน
     const manualIds = new Set(events.map(e => e.id));
-    state.events = [...events.filter(e => !e.hidden), ...(auto.events || []).filter(e => !manualIds.has(e.id))];
+    // ร้าน/สถานที่ที่เปิดประจำทุกวัน และงานออนไลน์ ไม่นับเป็นงานอีเว้นท์ (คาเฟ่/ที่เที่ยวอยู่หน้า "ที่เที่ยว")
+    const isEvent = e => !e.hidden && !e.ongoing && e.venueId !== "online";
+    state.events = [...events.filter(isEvent), ...(auto.events || []).filter(e => !manualIds.has(e.id) && isEvent(e))];
     state.venues = Object.fromEntries(venues.map(v => [v.id, v]));
     state.ads = ads.filter(a => a.active !== false);
     state.news = news;
@@ -315,17 +317,44 @@
     if (a) bar.scrollLeft = a.offsetLeft - bar.offsetLeft - (bar.clientWidth - a.clientWidth) / 2;
   }
 
+  // คะแนน "งานใหญ่": สายบันเทิง + สถานที่จัดใหญ่ + คำว่ามหกรรม/เฟสติวัล + หลายวัน + เข้าฟรี + มีสปอนเซอร์
+  const BIG_CAT = { concert: 3, motor: 3, food: 2, expo: 2, book: 2, sale: 2, outdoor: 1, nightlife: 0, learning: -3, cafe: -3 };
+  const BIG_VENUE = /impact|thunder ?dome|arena|stadium|สนามกีฬา|ราชมังคลา|rajamangala|bitec|ไบเทค|qsncc|ศูนย์การประชุม|ศูนย์ประชุม|convention|exhibition|เมืองทอง|central ?world|เซ็นทรัลเวิลด์|paragon|พารากอน|iconsiam|ไอคอนสยาม|lumpini|ลุมพินี|เบญจกิติ|ท้องสนามหลวง|beach|ชายหาด/i;
+  const BIG_WORD = /festival|fest\b|เฟส|เทศกาล|มหกรรม|expo|เอ็กซ์โป|fair|แฟร์|world tour|tour\b|in bangkok|countdown|เคาท์ดาวน์|ลอยกระทง|สงกรานต์|carnival|คาร์นิวัล|motor show|มอเตอร์|งานหนังสือ|book fair|concert|คอนเสิร์ต|marathon|มาราธอน|music|ดนตรี/i;
+  function bigScore(ev) {
+    const v = venueOf(ev), text = `${ev.title} ${tr(ev, "title")}`;
+    let s = BIG_CAT[ev.category] ?? 0;
+    if (ev.venueId && ev.venueId !== "online" || BIG_VENUE.test(v?.name || "")) s += 3;
+    if (BIG_WORD.test(text)) s += 2;
+    if (ev.endDate && ev.endDate !== ev.startDate) s += 1;
+    if (isFree(ev)) s += 1;
+    if (ev.sponsor) s += 1;
+    if (ev.age20 || CAT[ev.category]?.adult) s -= 1;
+    return s;
+  }
+
   function renderHome() {
     const f = state.filters;
     const opt = (val, label, cur) => `<option value="${val}" ${cur === val ? "selected" : ""}>${label}</option>`;
     const hasSample = state.events.some(e => e.sample);
     const upcoming = state.events.filter(e => status(e).key !== "ended" && inProvince(e));
-    const live = upcoming.filter(e => status(e).key === "live").length;
-    const free = upcoming.filter(isFree).length;
-    let featured = upcoming.filter(e => e.featured).sort((a, b) => a.startDate.localeCompare(b.startDate));
-    // ยังไม่มีงานปักหมุด: แสดงงานมีรูปที่ใกล้ถึงภายใน 30 วันแทน
-    if (!featured.length) featured = upcoming.filter(e => e.image && !e.ongoing && (parseDate(e.startDate) - today()) / DAY <= 30)
-      .sort((a, b) => a.startDate.localeCompare(b.startDate)).slice(0, 10);
+    // ห้ามพลาด: งานที่ปักหมุดเอง + งานใหญ่สายบันเทิงที่คนส่วนใหญ่ไปได้ (คะแนนสูงสุด 10 งาน ภายใน 60 วัน)
+    const pinned = upcoming.filter(e => e.featured);
+    // งานซีรีส์เดียวกันที่จัดหลายรอบ (ชื่อต่างกันแค่วันที่) เอาแค่รอบที่ใกล้สุด
+    const series = e => e.title.toLowerCase().replace(/\b(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]*\b|\d+(st|nd|rd|th)?|[^a-z฀-๿]+/g, "").slice(0, 24);
+    const seen = new Set();
+    const big = upcoming.filter(e => !e.featured && e.image && (parseDate(e.startDate) - today()) / DAY <= 60)
+      .map(e => [e, bigScore(e)]).filter(([, s]) => s >= 4)
+      .sort((a, b) => b[1] - a[1] || a[0].startDate.localeCompare(b[0].startDate))
+      .filter(([e]) => {
+        // สถานที่เล็ก/ปาร์ตี้ที่จัดซ้ำทุกเดือน: 1 งานต่อสถานที่ · ฮอลล์ใหญ่จัดหลายงานต่างกันได้
+        const vn = venueName(venueOf(e)) || "", keys = [series(e), BIG_VENUE.test(vn) || e.venueId ? "" : "v:" + vn.toLowerCase()].filter(Boolean);
+        if (keys.some(k => seen.has(k))) return false;
+        keys.forEach(k => seen.add(k));
+        return true;
+      })
+      .slice(0, 10 - pinned.length).map(([e]) => e);
+    const featured = [...pinned, ...big].sort((a, b) => a.startDate.localeCompare(b.startDate));
     const catChip = (id, icon, name, c1) =>
       `<button class="chip ${f.cat === id ? "active" : ""}" data-cat="${id}" style="--c1:${c1}" aria-pressed="${f.cat === id}"><i>${icon}</i>${esc(name)}</button>`;
     app.innerHTML = `
@@ -335,14 +364,6 @@
         <h1>${esc(pick(C.tagline))}<br><span>${t("heroSub")}</span></h1>
         <p>${t("heroDesc")}</p>
         <div class="searchbox"><input class="search" id="q" type="search" placeholder="${esc(t("searchPh"))}" value="${esc(f.q)}"></div>
-        <div class="hero-row">
-          ${provinceSelect()}
-        </div>
-        <div class="stats">
-          <button class="stat" data-quick="live"><b>${live}</b>${t("statLive")}</button>
-          <button class="stat" data-quick="free"><b>${free}</b>${t("statFree")}</button>
-          <button class="stat" data-quick="weekend"><b>${upcoming.filter(e => matchesWhen(e, "weekend")).length}</b>${t("statWeekend")}</button>
-        </div>
       </section>
       ${hasSample ? `<p class="notice">${t("sampleNotice")}</p>` : ""}
       ${featured.length && f.cat === "all" ? `
@@ -354,9 +375,10 @@
       <div class="filter-bar" id="filterBar">
       <div class="chips" role="group" aria-label="${t("categories")}">
         ${catChip("all", "🌈", t("catAll"), "#ff7a45")}
-        ${C.categories.map(c => catChip(c.id, c.icon, catName(c), c.color)).join("")}
+        ${C.categories.filter(c => f.cat === c.id || state.events.some(e => e.category === c.id && status(e).key !== "ended")).map(c => catChip(c.id, c.icon, catName(c), c.color)).join("")}
       </div>
       <div class="filters">
+        ${provinceSelect()}
         <select id="when" aria-label="${t("whenAll")}">
           ${opt("all", t("whenAll"), f.when)}${opt("today", t("whenToday"), f.when)}${opt("weekend", t("whenWeekend"), f.when)}${opt("week", t("whenWeek"), f.when)}${opt("month", t("whenMonth"), f.when)}
         </select>
@@ -374,18 +396,12 @@
     renderResults();
     const rail = document.getElementById("rail");
     if (rail) bindSave(rail, renderHome);
-    app.querySelectorAll("[data-quick]").forEach(b => b.addEventListener("click", () => {
-      const k = b.dataset.quick;
-      if (k === "free") { f.price = "free"; f.when = "all"; }
-      else if (k === "weekend") { f.when = "weekend"; f.price = "all"; }
-      else { f.when = "today"; f.price = "all"; }
-      renderHome();
-      document.getElementById("results").scrollIntoView({ behavior: "smooth", block: "start" });
-    }));
     document.getElementById("province").addEventListener("change", e => {
       f.province = e.target.value;
       writeLS("province", f.province);
+      const y = window.scrollY;
       renderHome();
+      window.scrollTo(0, y);
     });
 
     const q = document.getElementById("q");
@@ -497,7 +513,55 @@
     else text = `${t("recCar", { km: k })} ${v.parking ? t("recParking") : ""}`;
     return `<p class="recommend">💡 ${esc(text)}</p>`;
   }
-  const TRANSIT_ICON = { BTS: "🚈", MRT: "🚇", ARL: "🚄", SRT: "🚆", BUS: "🚌", BOAT: "⛴️", WALK: "🚶", TAXI: "🚕", SHUTTLE: "🚐" };
+  const TRANSIT_ICON = { BTS: "🚈", MRT: "🚇", ARL: "🚄", SRT: "🚆", BUS: "🚌", BOAT: "⛴️", WALK: "🚶", TAXI: "🚕", SHUTTLE: "🚐", AIR: "✈️", CAR: "🚗", PARK: "🅿️" };
+
+  // ---------- เส้นทางแนะนำจากจุดเดินทางจริงรอบสถานที่ (data/transit.json จาก OpenStreetMap) ----------
+  const BKK_CENTER = { lat: 13.7563, lng: 100.5018 };
+  const fmtKm = d => d < 1 ? `${Math.round(d * 1000 / 10) * 10} ${t("meter")}` : `${d.toFixed(1)} ${t("km")}`;
+  const fmtDuration = min => min < 60 ? t("minutes", { n: Math.max(1, Math.round(min)) }) : t("hourMin", { h: Math.floor(min / 60), m: Math.round(min % 60) });
+  const tName = x => (state.lang === "th" ? x.n.th : x.n.en) || x.n.th || x.n.en;
+  let transitLoad;
+  function nearest(list, v, maxKm, n = 1) {
+    const seen = new Set();
+    return (list || []).map(x => [x, distanceKm(v, x)]).filter(([, d]) => d <= maxKm).sort((a, b) => a[1] - b[1])
+      .filter(([x]) => { const k = x.t + tName(x); return !seen.has(k) && seen.add(k); }).slice(0, n);
+  }
+  // ระยะทางเดินเท้า ~75 ม./นาที · เกิน 1.2 กม. แนะนำต่อวิน/แท็กซี่ (~3 นาที/กม. ในเมือง)
+  const lastMile = d => d <= 1.2 ? `🚶 ${t("walkMin", { n: Math.max(1, Math.round(d * 13.3)) })}` : `🛵 ${t("rideMin", { n: Math.max(3, Math.round(d * 3 + 2)) })}`;
+  function guideItems(v, tr_) {
+    const items = [];
+    const rails = nearest(tr_.rail, v, 2.5, 2);
+    const sep = state.lang === "th" ? "" : " "; // ไทย: "สถานีสยาม" / อังกฤษ: "BTS Siam"
+    rails.forEach(([x, d]) => items.push([x.t, `${t("line_" + x.t)}${sep}${tName(x)} · ${fmtKm(d)} · ${lastMile(d)}`]));
+    // ชื่อท่าเรือส่วนใหญ่ขึ้นต้นด้วย "ท่า" อยู่แล้ว
+    const pierName = x => state.lang === "th" && !/^ท่า/.test(tName(x)) ? "ท่า" + tName(x) : tName(x);
+    nearest(tr_.pier, v, 1.2).forEach(([x, d]) => items.push(["BOAT", `${t("pierNear", { name: pierName(x) })} · ${fmtKm(d)} · ${lastMile(d)}`]));
+    if (!rails.length) {
+      nearest(tr_.train, v, 40).forEach(([x, d]) => items.push(["SRT", `${t("trainNear", { name: tName(x) })} · ${fmtKm(d)}${d > 1.2 ? ` · ${t("thenLocal")}` : ""}`]));
+      nearest(tr_.bus, v, 40).forEach(([x, d]) => items.push(["BUS", `${t("busNear", { name: tName(x) })} · ${fmtKm(d)}${d > 1.2 ? ` · ${t("thenLocal")}` : ""}`]));
+    }
+    // ไกลจากกรุงเทพฯ: แนะนำสนามบินใกล้สุด + ระยะขับรถ (ถนนจริงยาวกว่าเส้นตรง ~25%, เฉลี่ย 75 กม./ชม.)
+    const fromBkk = distanceKm(BKK_CENTER, v);
+    if (fromBkk > 40) {
+      const road = fromBkk * 1.25;
+      items.push(["CAR", t("fromBkk", { km: Math.round(road / 5) * 5, time: fmtDuration(road / 75 * 60 + 15) })]);
+    }
+    if (fromBkk > 250) nearest(tr_.air, v, 150).forEach(([x, d]) => items.push(["AIR", t("flyTo", { name: tName(x), iata: x.iata, km: Math.round(d) })]));
+    return items;
+  }
+  // เติม "เส้นทางแนะนำ" หลังหน้าแสดงแล้ว (โหลดข้อมูลจุดเดินทางเฉพาะตอนเปิดหน้ารายละเอียด)
+  async function hydrateGuides() {
+    const box = document.getElementById("guide");
+    if (!box) return;
+    transitLoad ||= getJSON("data/transit.json", {});
+    const tr_ = await transitLoad;
+    if (!document.body.contains(box)) return;
+    const v = { lat: +box.dataset.lat, lng: +box.dataset.lng };
+    const items = guideItems(v, tr_);
+    box.innerHTML = items.length
+      ? items.map(([type, text]) => `<li><span>${TRANSIT_ICON[type] || "➡️"}</span><span>${esc(text)}</span></li>`).join("")
+      : `<li><span>ℹ️</span><span>${t("noGuide")}</span></li>`;
+  }
   function travelPanel(ev, v) {
     if (!v || v.online) return `<section class="panel"><h2>${t("onlineTitle")}</h2><p>${t("onlineDesc")}</p></section>`;
     const tips = [
@@ -515,13 +579,15 @@
           <a class="btn" ${mapsLink(v, "walking")}>${t("walk")}</a>
           <a class="btn" ${mapsLink(v, "bicycling")}>${t("bike")}</a>
         </div>
-        <h3 class="subhead">${t("noCar")}</h3>
+        ${v.lat ? `<h3 class="subhead">🧭 ${t("bestWay")}</h3>
+        <ul class="travel-list" id="guide" data-lat="${v.lat}" data-lng="${v.lng}"><li><span>⏳</span><span>${t("loading")}</span></li></ul>` : ""}
+        ${tips.length ? `<h3 class="subhead">${t("noCar")}</h3>
         <ul class="travel-list">
-          ${tips.length ? tips.map(x => `<li><span>${TRANSIT_ICON[x.type] || "➡️"}</span><span><b>${esc(label(x.type))}</b> ${esc(x.text)}</span></li>`).join("") : `<li><span>ℹ️</span><span>${t("noTransit")}</span></li>`}
-        </ul>
+          ${tips.map(x => `<li><span>${TRANSIT_ICON[x.type] || "➡️"}</span><span><b>${esc(label(x.type))}</b> ${esc(x.text)}</span></li>`).join("")}
+        </ul>` : v.lat ? "" : `<h3 class="subhead">${t("noCar")}</h3><ul class="travel-list"><li><span>ℹ️</span><span>${t("noTransit")}</span></li></ul>`}
         <h3 class="subhead">${t("byCar")}</h3>
         <ul class="travel-list">
-          <li><span>🅿️</span><span>${esc(tr(v, "parking") || t("noParking"))}</span></li>
+          <li><span>🅿️</span><span>${esc(tr(v, "parking") || t("noParking"))}${v.lat ? ` <a class="maps-link" href="${esc(`https://www.google.com/maps/search/parking/@${v.lat},${v.lng},16z`)}" ${NATIVE ? "data-native-maps" : `target="_blank" rel="noopener"`}>${t("findParking")}</a>` : ""}</span></li>
         </ul>
       </section>`;
   }
@@ -685,7 +751,7 @@
         <a href="#/place/${encodeURIComponent(p.id)}">
           ${placeCover(p)}
             <div class="badges">
-              ${p.trend ? `<span class="badge hot">🔥 ${t("trending")}</span>` : ""}
+              ${p.trend ? `<span class="badge hot">🔥 ${t("trending")}</span>` : p.rising ? `<span class="badge hot">📈 ${t("searchRising")}</span>` : ""}
               ${c ? `<span class="badge">${c.icon} ${esc(pick(c.name))}</span>` : ""}
             </div>
           </div>
@@ -703,11 +769,16 @@
     const cat = state.placeCat;
     const counts = {};
     state.places.filter(inPlaceProvince).forEach(p => { counts[p.kind] = (counts[p.kind] || 0) + 1; });
-    let list = state.places.filter(p => inPlaceProvince(p) && (cat === "all" || p.kind === cat));
+    // ค้นหาจากชื่อ (ไทย/อังกฤษ/จีน) ที่อยู่ และชื่อจังหวัด
+    const q = state.placeQ.trim().toLowerCase();
+    const match = p => !q || [p.name?.th, p.name?.en, p.name?.zh, p.address, provName(p.province), PROV[p.province]?.th].some(s => String(s || "").toLowerCase().includes(q));
+    let list = state.places.filter(p => inPlaceProvince(p) && (cat === "all" || p.kind === cat) && match(p));
     if (state.pos) list = [...list].sort((a, b) => (b.trend || 0) - (a.trend || 0) || distanceKm(state.pos, a) - distanceKm(state.pos, b));
+    // แสดงทีละ 30 แห่ง กด "ดูเพิ่ม" ได้ (หลายร้อยแห่งพร้อมกันทำให้แอพหน่วง)
+    const shown = list.slice(0, state.placeShow);
     // บอร์ดเทรนด์: หมวดที่เลือก หรือข่าวใหม่สุดของทุกหมวด
     const board = cat === "all"
-      ? Object.entries(state.trends).flatMap(([k, items]) => items.slice(0, 3).map(n => ({ ...n, kind: k }))).sort((a, b) => b.date.localeCompare(a.date)).slice(0, 8)
+      ? Object.entries(state.trends).flatMap(([k, items]) => items.slice(0, 2).map(n => ({ ...n, kind: k }))).slice(0, 12)
       : (state.trends[cat] || []).slice(0, 8).map(n => ({ ...n, kind: cat }));
     const chip = (id, icon, name, c1, n) =>
       `<button class="chip ${cat === id ? "active" : ""}" data-pcat="${id}" style="--c1:${c1}" aria-pressed="${cat === id}"><i>${icon}</i>${esc(name)}${n != null ? ` <small>${n}</small>` : ""}</button>`;
@@ -715,6 +786,7 @@
       <h1>🗺️ ${t("placesTitle")}</h1>
       <p class="result-count">${t("placesSub")}</p>
       <!-- จังหวัด + หมวด อยู่ด้วยกันในแถบตัวกรอง ติดด้านบนตอนเลื่อน -->
+      <div class="searchbox place-search"><input class="search" id="pq" type="search" placeholder="${esc(t("placesSearch"))}" value="${esc(state.placeQ)}"></div>
       <div class="filter-bar">
         <div class="chips" role="group" aria-label="${t("categories")}">
           ${chip("all", "🌈", t("catAll"), "#ff7a45")}
@@ -727,14 +799,29 @@
         <div class="news-list">${board.map(n => `
           <a class="news-item" ${inAppLink(n.link)} style="--c1:${PCAT[n.kind]?.color || "var(--accent)"}">
             <h3>${esc(n.title)}</h3>
-            <div class="meta">${PCAT[n.kind]?.icon || ""} ${esc(n.source || "")} · ${new Date(n.date).toLocaleDateString(locale())}</div>
+            <div class="meta">${PCAT[n.kind]?.icon || ""} ${n.likes ? `❤️ ${n.likes >= 1000 ? (n.likes / 1000).toFixed(1) + "K" : n.likes} · ` : ""}${esc(n.source || "")} · ${new Date(n.date).toLocaleDateString(locale(), { day: "numeric", month: "short" })}</div>
           </a>`).join("")}</div></section>` : ""}
       ${adSlot("list_inline")}
       <div class="section-head" id="placesHead"><h2>${cat !== "all" && PCAT[cat] ? `${PCAT[cat].icon} ${esc(pick(PCAT[cat].name))}` : t("placesTitle")}</h2><small>${t("placesFound", { n: list.length })}</small></div>
-      ${list.length ? `<div class="grid">${list.map(placeCard).join("")}</div>` : `<p class="empty">${t("noPlaces")}</p>`}
+      ${list.length ? `<div class="grid">${shown.map(placeCard).join("")}</div>` : `<p class="empty">${t("noPlaces")}</p>`}
+      ${list.length > shown.length ? `<div class="actions" style="justify-content:center"><button class="btn primary" id="moreBtn">${t("showMore", { n: list.length - shown.length })}</button></div>` : ""}
       <p class="disclosure">${t("placeNote")}</p></div>`;
     centerActiveChip();
+    const keep = fn => () => { const y = window.scrollY; fn(); window.scrollTo(0, y); };
+    document.getElementById("moreBtn")?.addEventListener("click", keep(() => { state.placeShow += 30; renderPlaces(); }));
+    const pq = document.getElementById("pq");
+    let timer;
+    pq.addEventListener("input", () => {
+      clearTimeout(timer);
+      timer = setTimeout(() => {
+        state.placeQ = pq.value; state.placeShow = 30;
+        const pos = pq.selectionStart;
+        keep(renderPlaces)();
+        const again = document.getElementById("pq"); again.focus(); again.setSelectionRange(pos, pos);
+      }, 250);
+    });
     app.querySelectorAll("[data-pcat]").forEach(b => b.addEventListener("click", () => {
+      state.placeShow = 30;
       state.placeCat = state.placeCat === b.dataset.pcat && b.dataset.pcat !== "all" ? "all" : b.dataset.pcat;
       const y = window.scrollY;
       renderPlaces();
@@ -743,9 +830,10 @@
     document.getElementById("province").addEventListener("change", e => {
       state.filters.province = e.target.value;
       writeLS("province", state.filters.province);
-      renderPlaces();
+      state.placeShow = 30;
+      keep(renderPlaces)();
     });
-    bindSave(app, renderPlaces);
+    bindSave(app, keep(renderPlaces));
     activateAdsense();
   }
 
@@ -764,6 +852,8 @@
         <div class="tags">
           ${c ? `<span class="tag">${c.icon} ${esc(pick(c.name))}</span>` : ""}
           ${p.trend ? `<span class="tag sponsor">🔥 ${t("trending")}</span>` : ""}
+          ${p.rising ? `<span class="tag sponsor">📈 ${t("searchUp", { n: p.rising })}</span>` : ""}
+          ${p.views ? `<span class="tag">🔎 ${t("searchViews", { n: p.views.toLocaleString(locale()) })}</span>` : ""}
           ${p.name?.en && p.name.en !== name ? `<span class="tag">${esc(p.name.en)}</span>` : ""}
         </div>
         <div class="actions">
@@ -811,7 +901,7 @@
       else { try { await navigator.clipboard.writeText(data.url); alert(t("copied")); } catch {} }
     });
     const lb = document.getElementById("locBtn");
-    if (lb) lb.addEventListener("click", () => locate(() => renderPlace(id)));
+    if (lb) lb.addEventListener("click", () => locate(() => { renderPlace(id); hydrateGuides(); }));
     activateAdsense();
   }
 
@@ -888,7 +978,29 @@
     document.getElementById("footerText").textContent = `© ${new Date().getFullYear()} ${C.siteName} · ${t("footer")}`;
     const sel = document.getElementById("langSel");
     sel.innerHTML = (C.languages || ["th"]).map(l => `<option value="${l}" ${l === state.lang ? "selected" : ""}>${window.I18N[l].langName}</option>`).join("");
+    paintThemeBtn();
   }
+  // ---------- โหมดกลางคืน (night light): สลับธีมมืด/สว่าง จำค่าไว้ในเครื่อง ----------
+  const darkMQ = window.matchMedia("(prefers-color-scheme: dark)");
+  const isDark = () => (document.documentElement.dataset.theme || (darkMQ.matches ? "dark" : "light")) === "dark";
+  function paintThemeBtn() {
+    const b = document.getElementById("themeBtn"), dark = isDark();
+    b.textContent = dark ? "☀️" : "🌙";
+    b.title = b.ariaLabel = t(dark ? "themeLight" : "themeDark");
+    b.setAttribute("aria-pressed", dark);
+    document.querySelector('meta[name="theme-color"]').content = dark ? "#0f0c1a" : "#ff2d78";
+  }
+  document.getElementById("themeBtn").addEventListener("click", () => {
+    const next = isDark() ? "light" : "dark";
+    const root = document.documentElement;
+    root.classList.add("theme-anim");
+    root.dataset.theme = next;
+    writeLS("theme", next);
+    paintThemeBtn();
+    setTimeout(() => root.classList.remove("theme-anim"), 400);
+  });
+  darkMQ.addEventListener?.("change", paintThemeBtn);
+
   document.getElementById("langSel").addEventListener("change", e => {
     state.lang = e.target.value;
     writeLS("lang", state.lang);
@@ -911,6 +1023,7 @@
     else if (page === "about") renderAbout();
     else renderHome();
     window.scrollTo(0, 0);
+    hydrateGuides();
   }
 
   applyStaticText();

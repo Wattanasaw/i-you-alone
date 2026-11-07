@@ -2,13 +2,17 @@
 // - สวนสัตว์/สวนสนุก/พิพิธภัณฑ์/อุทยาน/คาเฟ่: Wikidata (เรียงตามความดัง = จำนวนภาษาที่มีบทความ Wikipedia)
 //   รูปจาก Wikimedia Commons (พร้อมชื่อช่างภาพ/สัญญาอนุญาต), คำอธิบายจาก Wikipedia, เวลาเปิด/เว็บไซต์จาก OpenStreetMap
 // - คาเฟ่สัตว์: OpenStreetMap (ชื่อร้านที่บอกชัดว่าเป็นคาเฟ่สัตว์)
-// - บอร์ดเทรนด์: ข่าวล่าสุดของแต่ละหมวดจาก Google News · สถานที่ที่อยู่ในข่าวจะขึ้นป้าย 🔥 และขึ้นก่อน
+// - บอร์ดเทรนด์: โพสต์รีวิวยอดฮิตช่วง 4 เดือนจาก Lemon8 (เสริมด้วยหัวข้อไวรัลจาก Google News)
+// - ความถี่การค้นหา: ยอดเปิดอ่าน Wikipedia รายวัน + คำค้นมาแรงของ Google Trends
+//   สถานที่ที่เป็นกระแส/คนค้นหาเพิ่มขึ้น ขึ้นป้ายและขึ้นก่อน (Instagram ห้ามดึงข้อมูลอัตโนมัติ จึงไม่ใช้)
 // รัน: node scripts/fetch-places.mjs [--dry]
 import { readFile, writeFile, rename } from "node:fs/promises";
 
 const DRY = process.argv.includes("--dry");
 const UA = "IYouAloneBot/1.0 (+https://wattanasaw.github.io/i-you-alone/)";
-const PER_KIND = 30;        // จำนวนสถานที่ดังสูงสุดต่อหมวด
+const PER_KIND = 60;        // จำนวนสถานที่ดังจาก Wikidata สูงสุดต่อหมวด
+// จำนวนสูงสุดจาก OpenStreetMap ต่อหมวด (เรียงจากข้อมูลครบที่สุด)
+const OSM_LIMIT = { cafe: 250, animalcafe: 80, zoo: 150, themepark: 150, museum: 250, park: 180, nature: 300, landmark: 300 };
 // สถานที่ที่ปิดไปแล้วแต่ Wikidata ยังไม่อัปเดต (ใส่ชื่อภาษาอังกฤษ) — เพิ่มได้เมื่อเจอ
 const CLOSED = [/^Dusit Zoo$/i];
 const REFRESH_DAYS = 14;    // คำอธิบาย/เครดิตรูปเก่ากว่านี้ค่อยโหลดใหม่
@@ -24,7 +28,7 @@ const PROVINCES = win.PROVINCES;
 async function get(url, opt = {}, tries = 2) {
   for (let i = 1; i <= tries; i++) {
     try {
-      const r = await fetch(url, { ...opt, headers: { "User-Agent": UA, ...(opt.headers || {}) }, signal: AbortSignal.timeout(90000) });
+      const r = await fetch(url, { ...opt, headers: { "User-Agent": UA, ...(opt.headers || {}) }, signal: AbortSignal.timeout(opt.timeout || 90000) });
       if (r.ok) return r;
       console.warn(`ตอบ ${r.status}:`, url.slice(0, 100));
       if (r.status !== 429 && r.status < 500) return null;
@@ -37,6 +41,11 @@ async function get(url, opt = {}, tries = 2) {
 // ชื่อจังหวัดภาษาอังกฤษจาก Wikidata/OSM ("Chiang Mai Province") → id จังหวัดของแอพ
 const normEn = s => String(s || "").toLowerCase().replace(/province|changwat|city|metropolis|special administrative area/g, "").replace(/[^a-z]/g, "");
 function provinceByEn(name) {
+  // ชื่อจังหวัดภาษาไทยใน addr:province ("จังหวัดเชียงใหม่", "กรุงเทพมหานคร")
+  const th = String(name || "").replace(/^จังหวัด|^จ\.\s*/, "").trim();
+  if (/กรุงเทพ/.test(th)) return "bangkok";
+  const byTh = th && PROVINCES.find(p => p.th === th);
+  if (byTh) return byTh.id;
   const n = normEn(name);
   if (!n) return null;
   if (n.includes("bangkok")) return "bangkok";
@@ -52,7 +61,11 @@ const KINDS = {
   zoo:        { topic: /สวนสัตว์|ซาฟารี|zoo|ฮิปโป|หมูเด้ง|ยีราฟ|เพนกวิน|แพนด้า|อควาเรียม|aquarium|โอเชียนเวิลด์|ฟาร์ม/i, classes: ["Q43501", "Q2281788", "Q1415221"], news: ["สวนสัตว์ ไวรัล", "สัตว์ น่ารัก แห่ดู สวนสัตว์", "สวนสัตว์ TikTok"] },
   themepark:  { topic: /สวนสนุก|สวนน้ำ|theme ?park|water ?park|ดรีมเวิลด์|dream ?world|สยามอะเมซิ่ง|แฮปปี้แลนด์|รามายณะ|เครื่องเล่น|รถไฟเหาะ|ลานสเก็ต|เพลย์กราวด์|playground|บ้านผีสิง/i, classes: ["Q194195", "Q2416723", "Q740326"], news: ["สวนสนุก วัยรุ่น", "สวนน้ำ ไวรัล", "สวนสนุก เปิดใหม่ เช็คอิน"] },
   museum:     { topic: /มิวเซียม|museum|พิพิธภัณฑ์|นิทรรศการ|exhibition|อาร์ตสเปซ|art ?space|แกลเลอรี|gallery|หอศิลป์|อาร์ตทอย|art ?toy|immersive/i, classes: ["Q33506", "Q207694"], news: ["มิวเซียม จุดถ่ายรูป", "นิทรรศการ ไวรัล เช็คอิน", "อาร์ตสเปซ วัยรุ่น", "นิทรรศการ เปิดใหม่ ห้ามพลาด", "immersive นิทรรศการ"] },
-  park:       { topic: /อุทยาน|ดอย|ภู[ก-ฮ]|ทะเลหมอก|น้ำตก|แคมป์|camping|จุดชมวิว|เดินป่า|national park|เขาใหญ่|ป่า|ทุ่ง/i, classes: ["Q46169"], news: ["ที่เที่ยวธรรมชาติ ไวรัล", "จุดชมวิว ทะเลหมอก วัยรุ่น", "แคมป์ปิ้ง ฮิต เช็คอิน"] }
+  park:       { topic: /อุทยาน|ดอย|ภู[ก-ฮ]|ทะเลหมอก|น้ำตก|แคมป์|camping|จุดชมวิว|เดินป่า|national park|เขาใหญ่|ป่า|ทุ่ง/i, classes: ["Q46169"], news: ["ที่เที่ยวธรรมชาติ ไวรัล", "จุดชมวิว ทะเลหมอก วัยรุ่น", "แคมป์ปิ้ง ฮิต เช็คอิน"] },
+  // น้ำตก ชายหาด เกาะ
+  nature:     { topic: /ทะเล|ชายหาด|หาด|เกาะ|น้ำตก|จุดชมวิว|วิว|ทะเลหมอก|beach|island|waterfall|viewpoint/i, classes: ["Q34038", "Q40080", "Q23442"], news: ["ทะเล ไวรัล วัยรุ่น", "น้ำตก เช็คอิน", "จุดชมวิว ไวรัล"] },
+  // วัดพุทธ โบราณสถาน
+  landmark:   { topic: /วัด|แลนด์มาร์ก|landmark|โบราณสถาน|อุทยานประวัติศาสตร์|พระธาตุ|เจดีย์|ถนนคนเดิน|ตลาดน้ำ|ตลาด/i, classes: ["Q5393308", "Q839954"], news: ["วัดสวย ไวรัล", "แลนด์มาร์กใหม่ เช็คอิน", "ตลาด ไวรัล วัยรุ่น"] }
 };
 // เทรนด์ต้องมีคำแนวกระแส/วัยรุ่น และไม่ใช่ข่าวทั่วไป (ราชการ อุบัติเหตุ อาชญากรรม การเมือง ประกาศปิด)
 const TREND_WORDS = /ไวรัล|viral|tiktok|ติ๊กต็อก|ติ๊กต๊อก|กระแส|ฮิต|แห่|เช็คอิน|เช็กอิน|check.?in|ถ่ายรูป|วัยรุ่น|มาแรง|ปัง|ฟิน|ห้ามพลาด|น่ารัก|คาเฟ่ลับ|ร้านลับ|ที่เที่ยวลับ|เปิดใหม่|instagram|ไอจี|\big\b|โซเชียล|ชาวเน็ต|จุดชมวิว|วิวสวย|มินิมอล|คิวยาว|ต้องไป|พิกัด/i;
@@ -100,7 +113,7 @@ async function wikidata(kind, classes) {
 const OVERPASS = ["https://overpass-api.de/api/interpreter", "https://overpass.kumi.systems/api/interpreter", "https://overpass.private.coffee/api/interpreter", "https://maps.mail.ru/osm/tools/overpass/api/interpreter"];
 async function overpass(q) {
   for (const url of OVERPASS) {
-    const r = await get(url, { method: "POST", body: "data=" + encodeURIComponent(q), headers: { "Content-Type": "application/x-www-form-urlencoded" } }, 1);
+    const r = await get(url, { method: "POST", timeout: 200000, body: "data=" + encodeURIComponent(q), headers: { "Content-Type": "application/x-www-form-urlencoded" } }, 1);
     if (!r) continue;
     try {
       const j = await r.json();
@@ -130,6 +143,44 @@ async function osmAnimalCafes() {
   }));
 }
 
+// สถานที่จาก OpenStreetMap ตามประเภท (เสริม Wikidata ซึ่งมีแต่ที่ดังมากๆ)
+const OSM_QUERY = {
+  zoo: `nwr["tourism"="zoo"]["name"](${BBOX});nwr["tourism"="aquarium"]["name"](${BBOX});`,
+  themepark: `nwr["tourism"="theme_park"]["name"](${BBOX});nwr["leisure"="water_park"]["name"](${BBOX});`,
+  museum: `nwr["tourism"="museum"]["name"](${BBOX});`,
+  park: `nwr["boundary"="national_park"]["name"](${BBOX});nwr["boundary"="protected_area"]["protect_class"="2"]["name"](${BBOX});`,
+  nature: `nwr["natural"="beach"]["name"](${BBOX});nwr["waterway"="waterfall"]["name"](${BBOX});nwr["tourism"="viewpoint"]["name"](${BBOX});`,
+  // แลนด์มาร์ก: จุดท่องเที่ยว/โบราณสถาน/วัดที่เป็นแหล่งท่องเที่ยว (มีข้อมูลอ้างอิง)
+  landmark: `nwr["tourism"="attraction"]["name"](${BBOX});nwr["historic"~"^(archaeological_site|ruins|monument|castle)$"]["name"](${BBOX});nwr["amenity"="place_of_worship"]["religion"="buddhist"]["wikidata"](${BBOX});`,
+  // คาเฟ่ทั่วไปมีเป็นหมื่น → เอาเฉพาะร้านที่ข้อมูลครบ (เวลาเปิด + เว็บ/เพจ)
+  cafe: `nwr["amenity"="cafe"]["name"]["opening_hours"]["website"](${BBOX});nwr["amenity"="cafe"]["name"]["opening_hours"]["contact:facebook"](${BBOX});nwr["amenity"="cafe"]["name"]["opening_hours"]["contact:instagram"](${BBOX});nwr["amenity"="cafe"]["name"]["tourism"="attraction"](${BBOX});`
+};
+// ร้านเครือข่าย/แฟรนไชส์ ไม่ใช่ "คาเฟ่ที่ไปเที่ยว"
+const CHAIN = /amazon|อเมซอน|starbucks|สตาร์บัค|inthanin|อินทนิล|punthai|พันธุ์ไทย|true coffee|ทรู คอฟฟี่|black canyon|แบล็คแคนยอน|doi chaang|ดอยช้าง|coffee world|chao doi|ชาวดอย|kudsan|กาแฟพันธุ์|all cafe|7-?eleven|เซเว่น|ptt|tim hortons|%|mezzo|cafe de norasingh|wawee|วาวี|dunkin|mister donut|after you|swensen|s&p|bake a wish|kamu|ชาตรามือ|cha tra mue|bearhouse|tiger sugar/i;
+const osmTagsFame = t => ["website", "contact:website", "opening_hours", "phone", "contact:phone", "contact:facebook", "contact:instagram", "name:en", "image", "wikimedia_commons", "description"].filter(k => t[k]).length + (t.wikidata ? 3 : 0) + (t.wikipedia ? 2 : 0);
+async function osmKind(kind) {
+  const q = `[out:json][timeout:150];(${OSM_QUERY[kind]});out center tags;`;
+  const els = await overpass(q);
+  if (!els) return null;
+  return els.filter(e => e.tags?.name && (e.lat || e.center) && !(kind === "cafe" && (CHAIN.test(e.tags.name) || e.tags.brand)))
+    .map(e => {
+      const t = e.tags;
+      const file = (t.wikimedia_commons || "").replace(/^File:/i, "") || (/commons\.wikimedia\.org\/wiki\/File:(.+)$/.exec(t.image || "") || [])[1];
+      return {
+        id: `osm-${e.type[0]}${e.id}`, kind, fame: osmTagsFame(t), osmWikidata: t.wikidata,
+        name: { th: t["name:th"] || t.name, en: t["name:en"] || (/^[\x00-\x7F]+$/.test(t.name) ? t.name : undefined), zh: t["name:zh"] },
+        lat: +(e.lat ?? e.center.lat).toFixed(5), lng: +(e.lon ?? e.center.lon).toFixed(5),
+        website: t.website || t["contact:website"] || t["contact:facebook"] || t["contact:instagram"],
+        hours: t.opening_hours, phone: t.phone || t["contact:phone"], fee: t.fee, charge: t.charge,
+        address: [t["addr:housenumber"], t["addr:street"], t["addr:subdistrict"], t["addr:district"]].filter(Boolean).join(" ") || undefined,
+        provinceHint: t["addr:province"] || t["is_in:province"],
+        osmDescription: t["description:th"] || t.description,
+        imageFile: file ? decodeURIComponent(file).replace(/ /g, "_") : undefined
+      };
+    })
+    .sort((a, b) => b.fame - a.fame).slice(0, OSM_LIMIT[kind]);
+}
+
 // เวลาเปิด/เว็บไซต์/ค่าเข้า/เบอร์โทร จาก OpenStreetMap ของสถานที่ที่ผูกกับ Wikidata
 async function osmByWikidata(qids) {
   if (!qids.length) return {};
@@ -146,6 +197,7 @@ async function osmByWikidata(qids) {
 
 // จังหวัดจากพิกัด (Nominatim, 1 คำขอ/วินาที, จำไว้ใน geocache)
 const geocache = await readJSON("data/geocache.json", {});
+let lookups = 0;
 async function provinceAt(lat, lng) {
   const k = `rev|${lat.toFixed(3)},${lng.toFixed(3)}`;
   if (k in geocache) return geocache[k];
@@ -153,7 +205,10 @@ async function provinceAt(lat, lng) {
   const r = await get(`https://nominatim.openstreetmap.org/reverse?format=jsonv2&zoom=8&accept-language=en&lat=${lat}&lon=${lng}`, {}, 1);
   const a = r ? (await r.json()).address || {} : null;
   if (!a) return null;
-  return (geocache[k] = provinceByEn(a.state || a.province || a.city));
+  geocache[k] = provinceByEn(a.state || a.province || a.city);
+  // รอบแรกต้องค้นหลายร้อยแห่ง → บันทึกแคชเป็นระยะ ถ้าโดนหยุดกลางทางรอบหน้าจะไม่ต้องค้นซ้ำ
+  if (++lookups % 25 === 0 && !DRY) await save("data/geocache.json", JSON.stringify(geocache, null, 1) + "\n");
+  return geocache[k];
 }
 
 // คำอธิบายจาก Wikipedia (ตัดให้สั้น)
@@ -203,8 +258,60 @@ async function news(q) {
     return { title, link: tag(it, "link"), source, date: new Date(tag(it, "pubDate")).toISOString().slice(0, 10) };
   });
 }
+// ---------- เทรนด์วัยรุ่นจาก Lemon8 (โพสต์รีวิวสาธารณะ, robots.txt อนุญาต) ----------
+// ดึงหน้า "ค้นพบ" ของคำค้น → โพสต์ (ชื่อ, ยอดไลก์, ผู้โพสต์) · วันที่โพสต์ถอดจากเลขโพสต์ · ไม่เก็บรูปของผู้โพสต์
+const LEMON8 = {
+  cafe: ["คาเฟ่เปิดใหม่", "คาเฟ่"], animalcafe: ["คาเฟ่แมว", "คาเฟ่สัตว์", "คาเฟ่หมา"], zoo: ["สวนสัตว์", "ฟาร์มสัตว์"],
+  themepark: ["สวนสนุก", "สวนน้ำ"], museum: ["นิทรรศการ", "พิพิธภัณฑ์"], park: ["อุทยานแห่งชาติ", "กางเต็นท์", "ทะเลหมอก"],
+  nature: ["น้ำตก", "ทะเล", "จุดชมวิว"], landmark: ["วัดสวย", "ที่เที่ยว", "ตลาดน้ำ"]
+};
+const LEMON8_DAYS = 120; // เอาเฉพาะโพสต์ช่วง 4 เดือนล่าสุด = เทรนด์ช่วงนี้
+async function lemon8(keyword) {
+  await sleep(2500);
+  const r = await get(`https://www.lemon8-app.com/experience/${encodeURIComponent(keyword)}?region=th`, { headers: { "Accept-Language": "th" } }, 1);
+  if (!r) return [];
+  const html = await r.text();
+  const big = [...html.matchAll(/<script[^>]*>([\s\S]*?)<\/script>/g)].map(m => m[1]).sort((a, b) => b.length - a.length)[0] || "";
+  let data; try { data = JSON.parse(decodeURIComponent(big)); } catch { return []; }
+  const found = new Map();
+  (function walk(o) {
+    if (!o || typeof o !== "object") return;
+    if (o.groupId && typeof o.title === "string" && !found.has(o.groupId)) found.set(o.groupId, o);
+    for (const v of Object.values(o)) if (v && typeof v === "object") walk(v);
+  })(data);
+  return [...found.values()].map(o => {
+    const author = [o, ...Object.values(o)].find(v => v && typeof v === "object" && v.linkName) || {};
+    const date = new Date(Number(BigInt(o.groupId) >> 32n) * 1000);
+    return {
+      title: o.title.replace(/\s+/g, " ").trim(), likes: +o.articleLikes || 0, date: date.toISOString().slice(0, 10),
+      link: `https://www.lemon8-app.com/${author.linkName ? "@" + author.linkName + "/" : ""}${o.groupId}?region=th`,
+      source: `Lemon8${author.nickName ? " · " + author.nickName : ""}`, from: "lemon8"
+    };
+  }).filter(p => p.title.length >= 8 && (Date.now() - new Date(p.date)) / 864e5 <= LEMON8_DAYS);
+}
+
+// ---------- ความถี่การค้นหา ----------
+// ยอดคนเปิดอ่านหน้า Wikipedia ของสถานที่ (รายวัน, ฟรีจาก Wikimedia) = ตัวแทนว่ามีคนค้นหาที่นี่บ่อยแค่ไหน
+async function pageviews(url) {
+  const m = url?.match(/^https:\/\/(\w+)\.wikipedia\.org\/wiki\/(.+)$/);
+  if (!m) return null;
+  const ymd = d => d.toISOString().slice(0, 10).replace(/-/g, "");
+  await sleep(150);
+  const r = await get(`https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/${m[1]}.wikipedia/all-access/user/${m[2]}/daily/${ymd(new Date(Date.now() - 76 * 864e5))}/${ymd(new Date(Date.now() - 864e5))}`, {}, 1);
+  const items = r ? (await r.json()).items || [] : [];
+  if (items.length < 20) return null;
+  const avg = a => a.reduce((s, x) => s + x.views, 0) / Math.max(1, a.length);
+  return { recent: avg(items.slice(-14)), before: avg(items.slice(0, -14)) };
+}
+// คำค้นมาแรงในไทยรายวันจาก Google Trends (RSS ทางการ) — สะสมไว้ 14 วัน
+async function googleTrends() {
+  const r = await get("https://trends.google.com/trending/rss?geo=TH", {}, 1);
+  const xml = r ? await r.text() : "";
+  return [...xml.matchAll(/<item>([\s\S]*?)<\/item>/g)].map(m => ({ term: tag(m[1], "title"), traffic: tag(m[1], "ht:approx_traffic"), date: new Date().toISOString().slice(0, 10) })).filter(x => x.term);
+}
+
 // ชื่อหลักของสถานที่สำหรับจับคู่กับหัวข่าว ("อุทยานแห่งชาติเขาใหญ่" → "เขาใหญ่")
-const GENERIC = /^(อุทยานแห่งชาติ|สวนสัตว์เปิด|สวนสัตว์|พิพิธภัณฑสถานแห่งชาติ|พิพิธภัณฑ์|สวนน้ำ|สวนสนุก|หอศิลป์|สถานแสดงพันธุ์สัตว์น้ำ|คาเฟ่)\s*/;
+const GENERIC = /^(อุทยานแห่งชาติ|สวนสัตว์เปิด|สวนสัตว์|พิพิธภัณฑสถานแห่งชาติ|พิพิธภัณฑ์|สวนน้ำ|สวนสนุก|หอศิลป์|สถานแสดงพันธุ์สัตว์น้ำ|คาเฟ่|วัด|น้ำตก)\s*/;
 const coreNames = p => [...new Set([p.name.th?.replace(GENERIC, ""), p.name.th, p.name.en].filter(n => n && n.length >= 4))];
 
 // ---------- ทำงาน ----------
@@ -224,7 +331,23 @@ let animal = await osmAnimalCafes();
 // OSM ล่มทุกเซิร์ฟเวอร์ → ใช้รายการเดิมไปก่อน
 if (!animal) { animal = (prev.places || []).filter(p => p.kind === "animalcafe"); console.warn("OSM ไม่ตอบ ใช้คาเฟ่สัตว์ชุดเดิม", animal.length); }
 console.log(`animalcafe: OSM ${animal.length}`);
-places.push(...animal.sort((a, b) => b.fame - a.fame).slice(0, PER_KIND * 2));
+places.push(...animal.sort((a, b) => b.fame - a.fame).slice(0, OSM_LIMIT.animalcafe));
+
+// เสริมจาก OpenStreetMap ทุกหมวด · ที่ซ้ำกับ Wikidata (ผูก wikidata เดียวกัน หรือชื่อ/ตำแหน่งเดียวกัน) ข้าม
+const km = (a, b) => { const r = x => x * Math.PI / 180, h = Math.sin(r(b.lat - a.lat) / 2) ** 2 + Math.cos(r(a.lat)) * Math.cos(r(b.lat)) * Math.sin(r(b.lng - a.lng) / 2) ** 2; return 12742 * Math.asin(Math.sqrt(h)); };
+const nm = s => String(s || "").toLowerCase().replace(/[^a-z0-9฀-๿]/g, "");
+for (const kind of Object.keys(OSM_QUERY)) {
+  await sleep(2000);
+  let found = await osmKind(kind);
+  // เซิร์ฟเวอร์ยุ่ง → พักแล้วลองใหม่อีกรอบ
+  if (!found) { await sleep(30000); found = await osmKind(kind); }
+  if (!found) { found = (prev.places || []).filter(p => p.kind === kind && p.id.startsWith("osm-")); console.warn(`${kind}: OSM ไม่ตอบ ใช้ชุดเดิม ${found.length}`); }
+  const qids = new Set(places.map(p => p.wikidata).filter(Boolean));
+  const added = found.filter(o => !(o.osmWikidata && qids.has(o.osmWikidata))
+    && !places.some(p => km(p, o) < 0.15 || (km(p, o) < 1.5 && (nm(p.name.th) === nm(o.name.th) || nm(p.name.en) && nm(p.name.en) === nm(o.name.en)))));
+  console.log(`${kind}: OSM ${found.length} → เพิ่มใหม่ ${added.length}`);
+  places.push(...added);
+}
 
 // สถานที่เดียวกันอาจอยู่หลายหมวด (เช่น สวนสัตว์ที่เป็นพิพิธภัณฑ์ด้วย) → เก็บหมวดแรก
 const seen = new Set();
@@ -247,39 +370,69 @@ for (const p of places) {
   } else {
     p.summary = {};
     for (const l of ["th", "en", "zh"]) { const s = await wikiSummary(p.wiki?.[l]); if (s) p.summary[l] = s; }
+    // สถานที่จาก OSM ไม่มีบทความ Wikipedia → ใช้คำอธิบายใน OSM (ถ้ามี)
+    if (!Object.keys(p.summary).length && p.osmDescription) p.summary.th = p.osmDescription.slice(0, 300);
     const im = p.imageFile && imgs[p.imageFile.replace(/ /g, "_")];
     if (im) { p.image = im.image; p.imagePage = im.imagePage; p.imageCredit = im.credit; }
     p.fetchedAt = new Date().toISOString();
   }
-  delete p.imageFile;
+  delete p.imageFile; delete p.osmDescription; delete p.osmWikidata;
 }
 places = places.filter(p => p.province);
 
-// บอร์ดเทรนด์: ข่าวของแต่ละหมวด + นับว่าสถานที่ไหนอยู่ในข่าว
+// บอร์ดเทรนด์: โพสต์ Lemon8 ยอดไลก์สูงช่วง 4 เดือนล่าสุด + หัวข้อไวรัลจากข่าว (เสริมเมื่อโพสต์น้อย)
 const trends = {};
+const clean = n => !NOT_TREND.test(n.title) && !ABROAD.test(n.title);
 for (const [kind, k] of Object.entries(KINDS)) {
-  const items = [];
-  for (const q of k.news) { items.push(...await news(q)); await sleep(1200); }
-  // ตัดคำท้ายหัวข้อแบบอัลบั้มรูป (" รูปที่ 7")
-  items.forEach(n => { n.title = n.title.replace(/\s*รูปที่\s*\d+\s*$/, "").trim(); });
-  const uniq = [...new Map(items.map(n => [n.title, n])).values()]
-    .filter(n => n.title.length >= 25 && !/^tiktok\s*·/i.test(n.title))
-    .filter(n => TREND_WORDS.test(n.title) && k.topic.test(n.title) && !NOT_TREND.test(n.title) && !ABROAD.test(n.title))
-    .sort((a, b) => b.date.localeCompare(a.date));
-  trends[kind] = uniq.slice(0, 12);
+  const posts = [];
+  for (const kw of LEMON8[kind] || []) posts.push(...await lemon8(kw));
+  const lemon = [...new Map(posts.map(p => [p.link, p])).values()].filter(clean).sort((a, b) => b.likes - a.likes).slice(0, 10);
+  let items = lemon;
+  if (lemon.length < 6) {
+    const raw = [];
+    for (const q of k.news) { raw.push(...await news(q)); await sleep(1200); }
+    // ตัดคำท้ายหัวข้อแบบอัลบั้มรูป (" รูปที่ 7")
+    raw.forEach(n => { n.title = n.title.replace(/\s*รูปที่\s*\d+\s*$/, "").trim(); });
+    const viral = [...new Map(raw.map(n => [n.title, n])).values()]
+      .filter(n => n.title.length >= 25 && !/^tiktok\s*·/i.test(n.title))
+      .filter(n => TREND_WORDS.test(n.title) && k.topic.test(n.title) && clean(n))
+      .sort((a, b) => b.date.localeCompare(a.date));
+    items = [...lemon, ...viral].slice(0, 10);
+  }
+  trends[kind] = items;
+  console.log(`เทรนด์ ${kind}: Lemon8 ${lemon.length} + ข่าวไวรัล ${items.length - lemon.length}`);
 }
-const allNews = Object.values(trends).flat();
+
+// คำค้นมาแรงจาก Google: สะสม 14 วัน
+const searchTrends = [...await googleTrends(), ...(prev.searchTrends || [])]
+  .filter((x, i, a) => a.findIndex(y => y.term === x.term) === i && (Date.now() - new Date(x.date)) / 864e5 <= 14).slice(0, 400);
+
+// ความถี่การค้นหาจาก Wikipedia: ทุกสถานที่ที่มีบทความ (ไทยก่อน ไม่มีใช้อังกฤษ)
+let pvOk = 0;
 for (const p of places) {
-  const names = coreNames(p);
-  const hits = allNews.filter(n => names.some(nm => n.title.toLowerCase().includes(nm.toLowerCase())));
-  p.trend = hits.length || undefined;
+  const pv = await pageviews(p.wiki?.th) || await pageviews(p.wiki?.en);
+  if (!pv) { p.views = prevById[p.id]?.views; p.rising = prevById[p.id]?.rising; continue; }
+  pvOk++;
+  p.views = Math.round(pv.recent);
+  // ค้นหาเพิ่มขึ้นชัดเจน: 2 สัปดาห์ล่าสุดมากกว่าช่วงก่อนหน้า 40% ขึ้นไป และมีคนค้นพอสมควร
+  p.rising = pv.before > 0 && pv.recent >= 15 && pv.recent / pv.before >= 1.4 ? Math.round((pv.recent / pv.before - 1) * 100) : undefined;
 }
-// เรียง: กำลังเป็นข่าวก่อน แล้วตามความดัง
-places.sort((a, b) => (b.trend || 0) - (a.trend || 0) || b.fame - a.fame);
+console.log(`ยอดค้นหา Wikipedia: ${pvOk} แห่ง · ค้นหาเพิ่มขึ้น ${places.filter(p => p.rising).length} · คำค้นมาแรง Google สะสม ${searchTrends.length}`);
+
+// กำลังเป็นกระแส = ถูกพูดถึงในโพสต์/หัวข้อเทรนด์ หรืออยู่ในคำค้นมาแรงของ Google
+const allTrend = Object.values(trends).flat();
+for (const p of places) {
+  const names = coreNames(p).map(n => n.toLowerCase());
+  const hits = allTrend.filter(n => names.some(nm => n.title.toLowerCase().includes(nm))).length
+    + searchTrends.filter(x => names.some(nm => x.term.toLowerCase().includes(nm) || nm.includes(x.term.toLowerCase()) && x.term.length >= 4)).length;
+  p.trend = hits || undefined;
+}
+// เรียง: กำลังเป็นกระแส → คนค้นหาเพิ่มขึ้น → คนค้นหาเยอะ → ความดัง
+places.sort((a, b) => (b.trend || 0) - (a.trend || 0) || (b.rising ? 1 : 0) - (a.rising ? 1 : 0) || (b.views || 0) - (a.views || 0) || b.fame - a.fame);
 
 const byKind = places.reduce((m, p) => (m[p.kind] = (m[p.kind] || 0) + 1, m), {});
 console.log("สถานที่:", places.length, JSON.stringify(byKind), "· มีรูป", places.filter(p => p.image).length, "· อยู่ในข่าว", places.filter(p => p.trend).length);
-console.log("ข่าวเทรนด์:", Object.entries(trends).map(([k, v]) => `${k} ${v.length}`).join(", "));
+console.log("เทรนด์:", Object.entries(trends).map(([k, v]) => `${k} ${v.length}`).join(", "));
 if (DRY) { console.log(JSON.stringify(places.slice(0, 3), null, 1)); process.exit(0); }
-await save("data/places.json", JSON.stringify({ updatedAt: new Date().toISOString(), places, trends }, null, 1) + "\n");
+await save("data/places.json", JSON.stringify({ updatedAt: new Date().toISOString(), places, trends, searchTrends }, null, 1) + "\n");
 await save("data/geocache.json", JSON.stringify(geocache, null, 1) + "\n");

@@ -19,8 +19,26 @@
   --radius: 20px;
   --head: "Prompt", "IBM Plex Sans Thai", system-ui, sans-serif;
 }
+/* โหมดกลางคืน: ตามระบบเครื่อง หรือเลือกเองด้วยปุ่ม 🌙/☀️ (data-theme บน <html>) */
+:root { color-scheme: light; }
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #0f0c1a;
+  --surface: #1a1628;
+  --surface-2: #252036;
+  --text: #f4f0ff;
+  --muted: #a59cbf;
+  --border: #2e2843;
+  --free: #4ee0a0;
+  --free-bg: #12392a;
+  --paid: #ffb36b;
+  --paid-bg: #3d2614;
+  --shadow: 0 2px 8px rgba(0, 0, 0, .4);
+  --shadow-hover: 0 10px 40px rgba(255, 45, 120, .25);
+}
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
     --bg: #0f0c1a;
     --surface: #1a1628;
     --surface-2: #252036;
@@ -75,6 +93,13 @@ button, input, select { font: inherit; color: inherit; }
 .lang-switch select:focus { outline: none; }
 .lang-switch:focus-within { outline: 3px solid color-mix(in srgb, var(--accent) 60%, transparent); }
 .bottomnav a i { font-style: normal; }
+.theme-btn {
+  width: 38px; height: 38px; border-radius: 99px; border: 1px solid var(--border); background: var(--surface);
+  font-size: 1.1rem; line-height: 1; cursor: pointer; display: grid; place-items: center; transition: transform .25s;
+}
+.theme-btn:hover { transform: rotate(-18deg) scale(1.06); }
+.theme-btn:focus-visible { outline: 3px solid color-mix(in srgb, var(--accent) 60%, transparent); }
+html.theme-anim, html.theme-anim * { transition: background-color .35s, color .35s, border-color .35s !important; }
 :lang(zh) body, :lang(zh) h1, :lang(zh) h2, :lang(zh) h3 { font-family: "Noto Sans SC", "Prompt", system-ui, sans-serif; }
 .topnav { display: none; gap: 4px; }
 .topnav a { text-decoration: none; color: var(--muted); padding: 8px 16px; border-radius: 99px; font-weight: 500; transition: .2s; }
@@ -83,7 +108,7 @@ button, input, select { font: inherit; color: inherit; }
 
 .bottomnav {
   position: fixed; bottom: 12px; left: 12px; right: 12px; z-index: 30;
-  display: grid; grid-template-columns: repeat(5, 1fr);
+  display: grid; grid-template-columns: repeat(4, 1fr);
   background: color-mix(in srgb, var(--surface) 85%, transparent);
   backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
   border: 1px solid var(--border); border-radius: 24px; box-shadow: var(--shadow);
@@ -213,6 +238,8 @@ button, input, select { font: inherit; color: inherit; }
 .places-row .province-select { color: var(--text); background-color: var(--surface); border-color: var(--border); }
 .places-cats { grid-template-columns: repeat(4, 1fr); }
 @media (min-width: 640px) { .places-cats { grid-template-columns: repeat(7, 1fr); } }
+.place-search { margin: 4px 0 10px; max-width: none; }
+.place-search .search { border: 1px solid var(--border); }
 .trend-board { margin: 14px 0; }
 .trend-board h2 { margin-bottom: 0; }
 /* บอร์ดเทรนด์: การ์ดข่าวเล็กแบบปัดซ้าย-ขวา หัวข่าวยาวตัดที่ 3 บรรทัด */
@@ -398,5 +425,6 @@ button, input, select { font: inherit; color: inherit; }
 .loading { text-align: center; color: var(--muted); padding: 60px 0; }
 .footer { color: var(--muted); font-size: .82rem; padding-top: 20px; padding-bottom: 30px; text-align: center; }
 .footer-logo { height: 46px; margin: 0 auto 6px; }
-@media (prefers-color-scheme: dark) { .footer-logo { filter: invert(1) hue-rotate(180deg); } }
+[data-theme="dark"] .footer-logo { filter: invert(1) hue-rotate(180deg); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .footer-logo { filter: invert(1) hue-rotate(180deg); } }
 .page h1 { font-size: 1.7rem; margin: 22px 0 10px; font-weight: 700; }
