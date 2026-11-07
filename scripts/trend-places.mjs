@@ -24,7 +24,9 @@ const today = new Date().toISOString().slice(0, 10);
 
 const data = await readJSON("data/places.json", null);
 if (!data?.places) { console.error("ไม่มี data/places.json"); process.exit(1); }
-const pool = await readJSON(".cache/l8-pool.json", []);
+// โพสต์บนบอร์ด "เทรนด์วัยรุ่นมาแรง" (คนเห็นจริงในแอพ) มาก่อน → ทุกการ์ดเทรนด์ควรกดไปหน้าสถานที่ได้ (เช่น Baan Biome)
+const boardPosts = Object.values(data.trends || {}).flat().filter(x => /lemon8-app\.com/.test(x.link || ""));
+const pool = [...new Map([...boardPosts, ...await readJSON(".cache/l8-pool.json", [])].map(x => [x.link, x])).values()];
 const cache = await readJSON("data/trend-extract.json", {});
 cache.posts ||= {}; cache.pois ||= {}; cache.geo ||= {};
 const win = {}; new Function("window", await readFile(new URL("js/i18n.js", root), "utf8"))(win);

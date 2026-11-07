@@ -687,3 +687,9 @@ label.check input[type=checkbox] { width: 22px; height: 22px; flex: none; margin
 .place-row > a { padding: 12px 52px 12px 16px; }
 .place-row .pr-tags .cat { background: color-mix(in srgb, var(--c1) 22%, transparent); color: var(--text); font-weight: 600; }
 .place-row .place-sum { -webkit-line-clamp: 3; }
+
+/* ระบุตำแหน่งไม่ได้ → เลือกพื้นที่เอง */
+.geo-pick { margin: 10px 0 4px; padding: 12px 14px; border-radius: 14px; background: color-mix(in srgb, var(--accent) 10%, var(--surface)); border: 1px solid color-mix(in srgb, var(--accent) 30%, transparent); }
+.geo-pick p { margin: 0 0 8px; font-size: .85rem; }
+.geo-pick-row { display: flex; gap: 8px; flex-wrap: wrap; }
+.geo-pick select { flex: 1; min-width: 160px; min-height: 44px; }

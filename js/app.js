@@ -504,11 +504,12 @@
     }));
   }
 
-  function locate(done) {
-    if (!navigator.geolocation) { alert(t("geoUnsupported")); return; }
+  // quiet = ไม่ขึ้น alert (หน้าที่เที่ยวจะแสดงตัวเลือก "เลือกจุดเอง" แทน)
+  function locate(done, quiet) {
+    if (!navigator.geolocation) { state.geoFail = true; if (!quiet) alert(t("geoUnsupported")); done(); return; }
     navigator.geolocation.getCurrentPosition(
-      p => { state.pos = { lat: p.coords.latitude, lng: p.coords.longitude }; done(); },
-      () => { alert(t("geoFailed")); done(); },
+      p => { state.pos = { lat: p.coords.latitude, lng: p.coords.longitude }; state.geoFail = false; done(); },
+      () => { state.geoFail = true; if (!quiet) alert(t("geoFailed")); done(); },
       { enableHighAccuracy: false, timeout: 10000, maximumAge: 300000 }
     );
   }
@@ -1013,6 +1014,24 @@
     return `<span class="trend-thumb" style="background:linear-gradient(135deg, ${pc.color}, ${pc.color2 || pc.color})">${pc.icon}${src ? `<img src="${esc(src)}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">` : ""}${n.likes ? `<b class="trend-likes">❤️ ${n.likes >= 1000 ? (n.likes / 1000).toFixed(1) + "K" : n.likes}</b>` : ""}</span>`;
   }
 
+  // ตัวเลือกจุดเอง เมื่อเบราว์เซอร์/เครื่องไม่ให้ตำแหน่ง
+  function nearPicker() {
+    const prov = state.filters.province;
+    let opts;
+    if (prov === "all") {
+      const counts = state.places.reduce((m, p) => (m[p.province] = (m[p.province] || 0) + 1, m), {});
+      opts = window.PROVINCES.filter(p => counts[p.id]).sort((a, b) => provName(a.id).localeCompare(provName(b.id), locale())).map(p => `<option value="prov:${p.id}">${esc(provName(p.id))}</option>`).join("");
+    } else {
+      const ds = [...new Set(state.places.filter(p => p.province === prov && p.district).map(p => p.district))].sort((a, b) => a.localeCompare(b, "th"));
+      opts = `<option value="prov:${prov}">${esc(t("provCenter", { prov: provName(prov) }))}</option>` + ds.map(d => `<option value="dist:${esc(d)}">${esc(d)}</option>`).join("");
+    }
+    return `<div class="geo-pick" role="group" aria-label="${t("nearPickLabel")}">
+      <p>📍 ${t("geoPickNote")}</p>
+      <div class="geo-pick-row"><select id="nearPick" aria-label="${t("nearPickLabel")}"><option value="">${t(prov === "all" ? "pickProvince" : "pickArea")}</option>${opts}</select>
+      <button type="button" class="pill-btn" id="nearRetry">🔄 ${t("geoRetry")}</button></div>
+    </div>`;
+  }
+
   function renderPlaces() {
     const cat = state.placeCat;
     const counts = {};
@@ -1067,7 +1086,7 @@
           ${C.placeCategories.map(c => chip(c.id, c.icon, pick(c.name), c.color, counts[c.id] || 0)).join("")}
         </div>
         <div class="filters places-row">
-          <button type="button" class="pill-btn ${pf.sort === "near" ? "on" : ""}" id="pfNear" aria-pressed="${pf.sort === "near"}">📍 ${t("nearMe")}</button>
+          <button type="button" class="pill-btn ${pf.sort === "near" ? "on" : ""}" id="pfNear" aria-pressed="${pf.sort === "near"}">📍 ${near && state.pos?.label ? esc(t("nearPlace", { place: state.pos.label })) : t("nearMe")}</button>
           ${near ? `<select id="pfDist" aria-label="${t("distance")}">${[0, 2, 5, 10, 20, 50, 100].map(d => `<option value="${d}" ${pf.dist === d ? "selected" : ""}>${d ? t("withinKm", { n: d }) : t("anyDistance")}</option>`).join("")}</select>` : provinceSelect(state.places.reduce((m, p) => (m[p.province] = (m[p.province] || 0) + 1, m), {}))}
           ${distOn && districts.length ? `<select id="pfDistrict" aria-label="${t("districtLabel")}"><option value="">🏘️ ${t(prov === "bangkok" ? "allDistrictsBkk" : "allDistricts")}</option>${districts.map(([d, n]) => `<option value="${esc(d)}" ${pf.district === d ? "selected" : ""}>${esc(d)} (${n})</option>`).join("")}</select>` : ""}
           <select id="pfSort" aria-label="${t("sortBy")}">
@@ -1077,6 +1096,7 @@
           ${activeCount ? `<button type="button" class="pill-btn clear" id="pfClear">✕ ${t("clearFilters")}</button>` : ""}
         </div>
       </div>
+      ${state.geoFail && (!near || state.pos?.manual) ? nearPicker() : ""}
       ${board.length ? `<section class="trend-board">
         <div class="section-head"><h2>${t("trendBoard")}</h2><small>${t("swipe")}</small></div>
         <div class="news-list">${board.map(trendCard).join("")}</div></section>` : ""}
@@ -1117,14 +1137,26 @@
     const setPf = patch => { Object.assign(state.pf, patch); writeLS("placeFilters", state.pf); state.placeShow = 30; keep(renderPlaces)(); };
     document.getElementById("pfNear").addEventListener("click", () => {
       if (state.pf.sort === "near") return setPf({ sort: "rec", dist: 0 });
-      locate(() => { if (state.pos) setPf({ sort: "near", dist: state.pf.dist || 20 }); else setPf({ sort: "rec" }); });
+      locate(() => { if (state.pos) setPf({ sort: "near", dist: state.pf.dist || 20 }); else setPf({ sort: "rec" }); }, true);
     });
+    // ระบุตำแหน่งไม่ได้ → เลือกจุดเอง (จังหวัด → เขต/อำเภอ) ใช้จุดกึ่งกลางของสถานที่ในพื้นที่นั้นเป็น "ตำแหน่งของฉัน"
+    document.getElementById("nearPick")?.addEventListener("change", e => {
+      const [type, val] = e.target.value.split(":");
+      if (!val) return;
+      if (type === "prov" && state.filters.province === "all") { state.filters.province = val; writeLS("province", val); keep(renderPlaces)(); return; }
+      const inArea = state.places.filter(p => p.lat && p.province === state.filters.province && (type !== "dist" || p.district === val));
+      if (!inArea.length) return;
+      const lat = inArea.reduce((s, p) => s + +p.lat, 0) / inArea.length, lng = inArea.reduce((s, p) => s + +p.lng, 0) / inArea.length;
+      state.pos = { lat, lng, label: type === "dist" ? val : provName(state.filters.province), manual: true };
+      setPf({ sort: "near", dist: state.pf.dist || 10 });
+    });
+    document.getElementById("nearRetry")?.addEventListener("click", () => locate(() => { if (state.pos) setPf({ sort: "near", dist: state.pf.dist || 20 }); else keep(renderPlaces)(); }, true));
     document.getElementById("pfDist")?.addEventListener("change", e => setPf({ dist: +e.target.value }));
     document.getElementById("pfSort").addEventListener("change", e => setPf({ sort: e.target.value }));
     document.getElementById("pfDistrict")?.addEventListener("change", e => setPf({ district: e.target.value, districtOf: e.target.value ? state.filters.province : "" }));
     app.querySelectorAll("[data-pf]").forEach(b => b.addEventListener("click", () => setPf({ [b.dataset.pf]: !state.pf[b.dataset.pf] })));
     // เคยเลือก "ใกล้ฉัน" ไว้ แต่เพิ่งเปิดแอพ (ยังไม่มีตำแหน่ง) → ขอตำแหน่งให้อีกครั้ง (ครั้งเดียวต่อการเปิด)
-    if (state.pf.sort === "near" && !state.pos && !state.nearTried) { state.nearTried = true; locate(() => { if (!state.pos) state.pf.sort = "rec"; keep(renderPlaces)(); }); }
+    if (state.pf.sort === "near" && !state.pos && !state.nearTried) { state.nearTried = true; locate(() => { if (!state.pos) state.pf.sort = "rec"; keep(renderPlaces)(); }, true); }
     document.getElementById("pfClear")?.addEventListener("click", () => setPf({ open: false, free: false, hot: false, district: "", districtOf: "", dist: state.pf.sort === "near" ? 0 : state.pf.dist }));
     bindSave(app, keep(renderPlaces));
     activateAdsense();
