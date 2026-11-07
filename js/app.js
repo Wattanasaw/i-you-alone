@@ -793,6 +793,7 @@
             <section class="panel prose">
               <h2>${t("details")}</h2>
               ${original ? `<p class="disclosure" style="margin:0 0 10px">${t("originalThai")}</p>` : ""}
+              ${paragraphs ? `<p class="disclosure" style="margin:0 0 8px">${ev.aiDetails ? t("detailsAI") : t("detailsSrc")}</p>` : ""}
               ${paragraphs}
               ${highlights?.length ? `<h3 style="font-size:.95rem">${t("highlights")}</h3><ul>${highlights.map(x => `<li>${esc(x)}</li>`).join("")}</ul>` : ""}
               ${tags?.length ? `<div class="tags">${tags.map(x => `<span class="tag">#${esc(x)}</span>`).join("")}</div>` : ""}

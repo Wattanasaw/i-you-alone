@@ -10,7 +10,7 @@ import { aiJSON, aiAvailable, aiName } from "./gemini.mjs";
 
 const UA = "Mozilla/5.0 (compatible; IYouAloneBot/1.0; +https://wattanasaw.github.io/i-you-alone/)";
 const arg = (n, d) => { const i = process.argv.indexOf(n); return i > 0 ? +process.argv[i + 1] : d; };
-const LIMIT = arg("--limit", 50), AI_MAX = arg("--ai", 12), PER_ASK = 4;
+const LIMIT = arg("--limit", 120), AI_MAX = arg("--ai", 20), PER_ASK = 6;
 const root = new URL("../", import.meta.url);
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 const readJSON = async (p, fb) => { try { return JSON.parse(await readFile(new URL(p, root), "utf8")); } catch { return fb; } };
@@ -48,20 +48,6 @@ async function pageText(url) {
   return `${meta("og:title")}\n${meta("og:description")}\n${decode(ld).slice(0, 2500)}\n${uniq.join("\n")}`.replace(/\n{2,}/g, "\n").slice(0, 4500);
 }
 
-// ---------- แยกหมวดแบบไม่ใช้ AI (อีเว้นท์ที่ AI ยังไม่ได้อ่าน) ----------
-const SEMINAR = /\b(seminar|summit|conference|forum|symposium|talk|talks|webinar|keynote|panel|lecture|ted ?x)\b|สัมมนา|ประชุม|ฟอรั่ม|ทอล์ก|บรรยาย|เสวนา|ปาฐกถา/i;
-const EXHIBITION = /\b(exhibition|exhibit|art|arts|museum|gallery|immersive|installation|biennale|photography|art ?toy)\b|นิทรรศการ|พิพิธภัณฑ์|ศิลปะ|แกลเลอรี|อาร์ต|ภาพถ่าย/i;
-const SOCIAL = /\b(speed ?dating|singles?|dating|matchmaking|blind ?date|cupid|new friends|make friends|meet new people|social club|book club|reading club|language exchange|board ?game night|no strangers|introverts?)\b|คนโสด|หาคู่|หาแฟน|จับคู่|หาเพื่อนใหม่|เพื่อนใหม่|ชมรมหนังสือ|ชมรมอ่าน|บอร์ดเกม/i;
-function split(ev) {
-  const text = `${ev.title} ${ev.summary || ""}`;
-  // หาคู่/หาเพื่อนใหม่ ชนะหมวดอื่น (AI มักจัด speed dating ในบาร์เป็น ปาร์ตี้/ผับ)
-  if (ev.category !== "social" && SOCIAL.test(ev.title || "")) return "social";
-  // หมวดเดิม "สัมมนา/เรียนรู้": ไม่ใช่เวิร์กช็อป/คอร์ส/คลาส (ลงมือทำ) = สัมมนา/ทอล์ก/ประชุม/มีตอัพ
-  if (ev.category === "learning" && !/workshop|course|class|training|bootcamp|masterclass|hands-?on|diy|เวิร์กช็อป|เวิร์คช็อป|เวิร์คชอป|คลาส|คอร์ส|อบรม|ติว|ตะลุยโจทย์|เรียนทำ|ฝึก/i.test(text)) return "seminar";
-  if (ev.category === "expo" && EXHIBITION.test(text) && !/\bexpo\b|งานแสดงสินค้า|มหกรรม|แฟร์|\bfair\b/i.test(text)) return "exhibition";
-  return null;
-}
-
 // ---------- ถาม AI ----------
 const todo = data.events.filter(ev => (ev.ticketUrl || ev.sourceUrl) && cache[ev.id]?.sig !== sig(ev) && (ev.endDate || ev.startDate) >= today)
   .sort((a, b) => String(a.startDate).localeCompare(String(b.startDate))).slice(0, aiAvailable() ? LIMIT : 0);
@@ -78,11 +64,11 @@ let asked = 0, fails = 0, done = 0;
 const L = (v, n, max) => [].concat(v || []).filter(s => typeof s === "string" && s.trim()).map(s => s.trim().slice(0, max)).slice(0, n);
 for (let i = 0; i < withText.length && asked < AI_MAX && fails < 3; i += PER_ASK) {
   const group = withText.slice(i, i + PER_ASK);
-  const prompt = `You write event details for a Thai event app (users: Thai teens and young adults). Use ONLY the page text given for each event. Never invent people, dates, prices or activities.
+  const prompt = `You write event details for a Thai event app (users: Thai teens and young adults). Read the page text given for each event, understand it, then SUMMARIZE IT IN YOUR OWN WORDS — like a friend explaining the event. Do NOT copy or translate sentences from the page word for word, do not paste marketing slogans, hashtags, emoji lists, ticket rules or long schedules. Use ONLY facts from the page text. Never invent people, dates, prices or activities.
 For each event return:
-- "about": {"th": 2–4 short sentences in natural Thai: what this event is, what happens / what you can do or see, who it is for. "en": same in English}
+- "about": {"th": a 3–5 sentence summary in casual, natural Thai written by you (not copied): 1) what kind of event this is and its theme, 2) what actually happens / what you can do, see, eat, learn or win, 3) who it suits (e.g. families, students, fans of X, beginners), 4) anything notable (big names, first time in Thailand, free, limited seats). "en": same in English}
 - "people": performers and key people explicitly named in the text — artists, singers, bands, actors/actresses, celebrities, influencers, DJs, speakers, hosts, special guests, chefs, athletes. [{"name": as written (keep original spelling), "role": {"th": short role e.g. "ศิลปิน", "นักร้อง", "นักแสดง", "ดีเจ", "วิทยากร", "พิธีกร", "แขกรับเชิญ", "เชฟ", "en": ...}}] max 12, [] if none. Do not list organizers/companies/sponsors as people.
-- "highlights": {"th": [≤ 5 short points: what's included / special activities / why go], "en": [...]}
+- "highlights": {"th": [≤ 5 short points in your own words: what's included / special activities / why go — no copied slogans], "en": [...]}
 - "category": one of ${JSON.stringify(CATS)} — "festival" = traditional/seasonal festivals (Loy Krathong, Songkran, temple fairs, countdown), "social" = speed dating/singles/matchmaking/meet-new-friends clubs, "seminar" = talks/seminars/conferences (people listen), "learning" = workshops/courses/classes (hands-on), "expo" = trade/consumer fairs & expos, "exhibition" = art/museum/photo/immersive exhibitions, "concert" = concerts/shows/fan meetings, "nightlife" = DJ/bar/club/party.
 Return JSON {"results":[{"id","about","people","highlights","category"}]}
 Events: ${JSON.stringify(group.map(({ ev, text }) => ({ id: ev.id, title: ev.title, category_now: ev.category, page: text })))}`;
@@ -94,7 +80,7 @@ Events: ${JSON.stringify(group.map(({ ev, text }) => ({ id: ev.id, title: ev.tit
       if (!r) continue;
       cache[ev.id] = {
         sig: sig(ev), at: today,
-        about: { th: String(r.about?.th || "").trim().slice(0, 600), en: String(r.about?.en || "").trim().slice(0, 700) },
+        about: { th: String(r.about?.th || "").trim().slice(0, 900), en: String(r.about?.en || "").trim().slice(0, 1000) },
         people: [].concat(r.people || []).filter(p => typeof p?.name === "string" && p.name.trim().length >= 2).slice(0, 12)
           .map(p => ({ name: p.name.trim().slice(0, 60), role: { th: String(p.role?.th || "").slice(0, 30), en: String(p.role?.en || "").slice(0, 30) } })),
         highlights: { th: L(r.highlights?.th, 5, 90), en: L(r.highlights?.en, 5, 110) },
@@ -111,7 +97,7 @@ let applied = 0, splitN = 0;
 for (const ev of [...data.events, ...manual]) {
   const c = cache[ev.id];
   if (c && c.sig === sig(ev) && !c.none) {
-    if (c.about?.th) { ev.details = c.about.th; ev.i18n = ev.i18n || {}; if (c.about.en) ev.i18n.en = { ...(ev.i18n.en || {}), details: c.about.en }; }
+    if (c.about?.th) { ev.details = c.about.th; ev.aiDetails = true; ev.i18n = ev.i18n || {}; if (c.about.en) ev.i18n.en = { ...(ev.i18n.en || {}), details: c.about.en }; }
     if (c.highlights?.th?.length) { ev.highlights = c.highlights.th; if (c.highlights.en?.length) { ev.i18n = ev.i18n || {}; ev.i18n.en = { ...(ev.i18n.en || {}), highlights: c.highlights.en }; } }
     if (c.people?.length) ev.people = c.people;
     if (c.category) ev.category = c.category;
