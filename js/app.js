@@ -155,6 +155,8 @@
       return r.ok ? await r.json() : fallback;
     } catch { return fallback; }
   }
+  // หาคู่/หาเพื่อนใหม่ (speed dating ในบาร์ ฯลฯ) แยกออกจาก ปาร์ตี้/ผับ อาหาร สัมมนา
+  const SOCIAL = /\b(speed ?dating|singles?|dating|matchmaking|blind ?date|cupid|new friends|make friends|meet new people|social club|book club|reading club|language exchange|board ?game night|no strangers|introverts?)\b|คนโสด|หาคู่|หาแฟน|จับคู่|หาเพื่อนใหม่|เพื่อนใหม่|ชมรมหนังสือ|ชมรมอ่าน|บอร์ดเกม/i;
   const FESTIVAL = /ลอยกระทง|สงกรานต์|งานวัด|งานประจำปี|ประเพณี|ยี่เป็ง|เคาท์ดาวน์|เคานต์ดาวน์|countdown|loy ?krathong|songkran|yi ?peng|lantern festival|เทศกาลโคม|พลุ|fireworks|ตรุษจีน|chinese new year|กินเจ|vegetarian festival|ฮาโลวีน|halloween|คริสต์มาส|christmas|ปีใหม่|new year/i;
   async function load() {
     const [events, venues, ads, news, auto, places, biz, trendPl, reviews, aiInfo] = await Promise.all([
@@ -197,6 +199,7 @@
     const isEvent = e => !e.hidden && !e.ongoing && e.venueId !== "online";
     state.events = [...events.filter(isEvent), ...(auto.events || []).filter(e => !manualIds.has(e.id) && isEvent(e))];
     // งานประเพณี/เทศกาล แยกออกจาก อาหาร/คอนเสิร์ต/งานแฟร์ (ข้อมูลเก่าที่ยังไม่ได้จัดหมวดใหม่)
+    for (const e of state.events) if (["nightlife", "food", "concert", "seminar", "learning", "expo"].includes(e.category) && SOCIAL.test(e.title || "")) e.category = "social";
     for (const e of state.events) if (["food", "concert", "expo"].includes(e.category) && FESTIVAL.test(e.title || "") && !/concert|คอนเสิร์ต|fansign|fan ?meet|showcase|dinner|ดินเนอร์|buffet|บุฟเฟ่ต์/i.test(e.title || "")) e.category = "festival";
     state.venues = Object.fromEntries(venues.map(v => [v.id, v]));
     state.ads = ads.filter(a => a.active !== false);

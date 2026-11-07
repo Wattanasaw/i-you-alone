@@ -49,8 +49,11 @@ async function pageText(url) {
 // ---------- แยกหมวดแบบไม่ใช้ AI (อีเว้นท์ที่ AI ยังไม่ได้อ่าน) ----------
 const SEMINAR = /\b(seminar|summit|conference|forum|symposium|talk|talks|webinar|keynote|panel|lecture|ted ?x)\b|สัมมนา|ประชุม|ฟอรั่ม|ทอล์ก|บรรยาย|เสวนา|ปาฐกถา/i;
 const EXHIBITION = /\b(exhibition|exhibit|art|arts|museum|gallery|immersive|installation|biennale|photography|art ?toy)\b|นิทรรศการ|พิพิธภัณฑ์|ศิลปะ|แกลเลอรี|อาร์ต|ภาพถ่าย/i;
+const SOCIAL = /\b(speed ?dating|singles?|dating|matchmaking|blind ?date|cupid|new friends|make friends|meet new people|social club|book club|reading club|language exchange|board ?game night|no strangers|introverts?)\b|คนโสด|หาคู่|หาแฟน|จับคู่|หาเพื่อนใหม่|เพื่อนใหม่|ชมรมหนังสือ|ชมรมอ่าน|บอร์ดเกม/i;
 function split(ev) {
   const text = `${ev.title} ${ev.summary || ""}`;
+  // หาคู่/หาเพื่อนใหม่ ชนะหมวดอื่น (AI มักจัด speed dating ในบาร์เป็น ปาร์ตี้/ผับ)
+  if (ev.category !== "social" && SOCIAL.test(ev.title || "")) return "social";
   // หมวดเดิม "สัมมนา/เรียนรู้": ไม่ใช่เวิร์กช็อป/คอร์ส/คลาส (ลงมือทำ) = สัมมนา/ทอล์ก/ประชุม/มีตอัพ
   if (ev.category === "learning" && !/workshop|course|class|training|bootcamp|masterclass|hands-?on|diy|เวิร์กช็อป|เวิร์คช็อป|เวิร์คชอป|คลาส|คอร์ส|อบรม|ติว|ตะลุยโจทย์|เรียนทำ|ฝึก/i.test(text)) return "seminar";
   if (ev.category === "expo" && EXHIBITION.test(text) && !/\bexpo\b|งานแสดงสินค้า|มหกรรม|แฟร์|\bfair\b/i.test(text)) return "exhibition";
