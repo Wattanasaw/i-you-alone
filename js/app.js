@@ -342,7 +342,7 @@
   }
 
   // คะแนน "งานใหญ่": สายบันเทิง + สถานที่จัดใหญ่ + คำว่ามหกรรม/เฟสติวัล + หลายวัน + เข้าฟรี + มีสปอนเซอร์
-  const BIG_CAT = { concert: 3, motor: 3, food: 2, expo: 2, book: 2, sale: 2, outdoor: 1, nightlife: 0, learning: -3, seminar: -3, exhibition: 1, cafe: -3 };
+  const BIG_CAT = { concert: 3, motor: 3, food: 2, expo: 2, book: 2, sale: 2, outdoor: 1, nightlife: 0, learning: -3, seminar: -3, social: 0, exhibition: 1, cafe: -3 };
   const BIG_VENUE = /impact|thunder ?dome|arena|stadium|สนามกีฬา|ราชมังคลา|rajamangala|bitec|ไบเทค|qsncc|ศูนย์การประชุม|ศูนย์ประชุม|convention|exhibition|เมืองทอง|central ?world|เซ็นทรัลเวิลด์|paragon|พารากอน|iconsiam|ไอคอนสยาม|lumpini|ลุมพินี|เบญจกิติ|ท้องสนามหลวง|beach|ชายหาด/i;
   const BIG_WORD = /festival|fest\b|เฟส|เทศกาล|มหกรรม|expo|เอ็กซ์โป|fair|แฟร์|world tour|tour\b|in bangkok|countdown|เคาท์ดาวน์|ลอยกระทง|สงกรานต์|carnival|คาร์นิวัล|motor show|มอเตอร์|งานหนังสือ|book fair|concert|คอนเสิร์ต|marathon|มาราธอน|music|ดนตรี/i;
   function bigScore(ev) {

@@ -13,6 +13,8 @@ window.APP_CONFIG = {
     { id: "concert", icon: "🎤", color: "#ff2d78", color2: "#7b2ff7", name: { th: "คอนเสิร์ต/บันเทิง", en: "Concerts & shows", zh: "演唱会/娱乐" } },
     // ศิลปินเล่นตามผับบาร์ ปาร์ตี้ ดีเจ (แสดงป้าย 20+ อัตโนมัติ)
     { id: "nightlife", icon: "🌙", color: "#4c1d95", color2: "#db2777", adult: true, name: { th: "ไนท์ไลฟ์/ผับบาร์", en: "Nightlife & bars", zh: "夜生活/酒吧" } },
+    // คนโสด/หาคู่/หาเพื่อนใหม่: speed dating, ปาร์ตี้คนโสด, ชมรม/มีตอัพหาเพื่อน
+    { id: "social", icon: "💘", color: "#e11d48", color2: "#fb7185", name: { th: "คนโสด/หาเพื่อนใหม่", en: "Singles & new friends", zh: "单身/交友" } },
     { id: "seminar", icon: "🗣️", color: "#1d4ed8", color2: "#7c3aed", name: { th: "สัมมนา/ทอล์ก", en: "Seminars & talks", zh: "讲座/研讨会" } },
     { id: "learning", icon: "🎓", color: "#2f7cf6", color2: "#00c2c7", name: { th: "เวิร์กช็อป/เรียนรู้", en: "Workshops & classes", zh: "工作坊/课程" } },
     { id: "book", icon: "📚", color: "#8b5cf6", color2: "#ec4899", name: { th: "งานหนังสือ", en: "Book fairs", zh: "书展" } },

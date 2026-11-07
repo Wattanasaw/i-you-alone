@@ -155,7 +155,8 @@ function fromLd(ev, catHint = "") {
   };
 }
 // งาน Eventbrite ส่วนมากเป็นมีตติ้ง/ทัวร์/เปิดบ้านมหาลัย → ตัดออก เหลืองานอีเว้นท์จริง
-const EB_SKIP = /hangout|meet ?up|networking|language exchange|open day|info session|webinar|walking tour|city tour|day tour|cooking class|yoga class|free consultation|seminar on|study abroad|university|speed dating|business|investor|real estate|visa/i;
+// (speed dating / งานคนโสด / หาเพื่อนใหม่ เก็บไว้ → หมวด "คนโสด/หาเพื่อนใหม่")
+const EB_SKIP = /networking|open day|info session|webinar|walking tour|city tour|day tour|cooking class|yoga class|free consultation|seminar on|study abroad|university|business|investor|real estate|visa/i;
 
 // ---------- ตัวอ่านของแต่ละแหล่ง ----------
 const SOURCES = {
@@ -285,10 +286,15 @@ const SOURCES = {
     name: "Eventbrite", lang: "en",
     async list() {
       const refs = [];
-      for (const city of ["bangkok", "chiang-mai", "phuket", "pattaya", "krabi", "hua-hin"]) {
-        for (const page of [1, 2]) {
-          const html = await getHtml(`https://www.eventbrite.com/d/thailand--${city}/events/${page > 1 ? `?page=${page}` : ""}`, "en");
-          if (!html) break;
+      // หน้ารวมทั่วไป + หน้า "คนโสด/speed dating" (กรุงเทพ เชียงใหม่ พัทยา)
+      const pages = [
+        ...["bangkok", "chiang-mai", "phuket", "pattaya", "krabi", "hua-hin"].flatMap(city => [1, 2].map(page => `https://www.eventbrite.com/d/thailand--${city}/events/${page > 1 ? `?page=${page}` : ""}`)),
+        ...["bangkok", "chiang-mai", "pattaya"].flatMap(city => ["singles", "speed-dating"].map(q => `https://www.eventbrite.com/d/thailand--${city}/${q}/`))
+      ];
+      for (const pageUrl of pages) {
+        {
+          const html = await getHtml(pageUrl, "en");
+          if (!html) continue;
           for (const ev of ldEvents(html)) {
             const id = (String(ev.url).match(/-(\d{9,})(?:\?|$)/) || [])[1];
             if (!id || EB_SKIP.test(ev.name)) continue;
@@ -303,6 +309,33 @@ const SOURCES = {
     parse(html) {
       const ev = ldEvents(html)[0];
       return ev ? fromLd(ev) : null;
+    }
+  },
+  // ---------- Luma: อีเว้นท์คอมมูนิตี้วัยรุ่น (ชมรมวิ่ง ชมรมหนังสือ มีตอัพ dating show ปาร์ตี้หาเพื่อน) ----------
+  // หน้าเมือง (luma.com/bangkok) มีรายการอีเว้นท์สาธารณะ · หน้าอีเว้นท์มีข้อมูล schema.org (รายละเอียด ราคา พิกัด)
+  luma: {
+    name: "Luma", quota: 50,
+    async list() {
+      const refs = [];
+      for (const city of ["bangkok", "chiang-mai", "pattaya"]) {
+        const html = await getHtml(`https://luma.com/${city}`);
+        const m = html && html.match(/<script id="__NEXT_DATA__"[^>]*>([\s\S]*?)<\/script>/);
+        if (!m) continue;
+        const walk = o => {
+          if (!o || typeof o !== "object") return;
+          if (o.event?.url && o.event?.start_at) { if (o.event.visibility === "public" && o.event.location_type !== "online") refs.push({ id: "luma-" + o.event.url, url: `https://luma.com/${o.event.url}` }); return; }
+          Object.values(o).forEach(walk);
+        };
+        try { walk(JSON.parse(m[1])); } catch {}
+      }
+      return [...new Map(refs.map(r => [r.id, r])).values()];
+    },
+    parse(html) {
+      const ev = ldEvents(html)[0];
+      if (!ev) return null;
+      const p = fromLd(ev, `${decode(ev.name)} ${decode(ev.description || "").slice(0, 300)}`);
+      if (/Krung Thep|Bangkok/i.test(p.provinceText)) p.provinceText = "กรุงเทพมหานคร";
+      return p;
     }
   },
   // ---------- ศูนย์แสดงสินค้า: มหกรรม/มอเตอร์โชว์/งานแฟร์เข้าฟรี ที่ไม่ได้ขายบัตรผ่านเว็บขายตั๋ว ----------
@@ -388,6 +421,8 @@ const SOURCES = {
 
 // ---------- จัดหมวด / สถานที่ / จังหวัด ----------
 const CATEGORY_RULES = [
+  // คนโสด/หาคู่/หาเพื่อนใหม่ (ก่อนหมวดอื่น: "Singles Night at bar" = หาคู่ ไม่ใช่ไนท์ไลฟ์)
+  ["social", /\b(speed ?dating|singles?|dating|matchmaking|blind ?date|cupid|new friends|make friends|meet new people|social club|book club|reading club|language exchange|board ?game night|no strangers|introverts?)\b|คนโสด|หาคู่|หาแฟน|จับคู่|เดท|หาเพื่อนใหม่|เพื่อนใหม่|ชมรมหนังสือ|ชมรมอ่าน|บอร์ดเกม/i],
   ["outdoor", /\b(run|running|marathon|trail|hyrox|triathlon|fun ?run|cycling|bike|yoga|fitness|sport|workout|crossfit)\b|วิ่ง|มาราธอน|ปั่นจักรยาน|ไตรกีฬา|โยคะ|ฟิตเนส|กีฬา/i],
   ["book", /\bbook|หนังสือ/i],
   ["motor", /\bmotor|car show|auto ?salon|รถยนต์|ยานยนต์|มอเตอร์|บิ๊กไบค์|รถจักรยานยนต์/i],
