@@ -22,6 +22,9 @@ jobs:
       - uses: actions/setup-node@v5
         with:
           node-version: 22
+      - name: ติดตั้งตัวย่อรูป (sharp) ไว้ย่อรูปก่อนส่งให้ AI
+        run: mkdir -p .tools && cd .tools && npm init -y >/dev/null && npm install --no-audit --no-fund sharp@0.33.5 >/dev/null
+        continue-on-error: true
       - name: ดึงข่าว
         run: node scripts/update-news.mjs
         env:

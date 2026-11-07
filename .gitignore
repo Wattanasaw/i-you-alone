@@ -12,3 +12,4 @@ www/
 android/app/release/
 *.keystore
 *.jks
+.tools/
