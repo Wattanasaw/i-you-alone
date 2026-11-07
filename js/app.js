@@ -12,6 +12,8 @@
     saved: new Set(readLS("saved", [])),
     lang: pickLang(),
     newsCat: "all",
+    // มือถือเริ่มที่รายการย่อ (เห็นหลายงานต่อจอ) จอใหญ่เริ่มที่การ์ดรูปใหญ่
+    view: readLS("view", window.innerWidth < 760 ? "list" : "grid"),
     places: [], trends: {}, placeCat: "all", placeQ: "", placeShow: 30,
     pos: null
   };
@@ -330,6 +332,8 @@
     if (isFree(ev)) s += 1;
     if (ev.sponsor) s += 1;
     if (ev.age20 || CAT[ev.category]?.adult) s -= 1;
+    // AI ให้คะแนนรูปปก: สวยน่ากด → ดันขึ้น, ตาราง/ตัวหนังสือล้วน → กดลง
+    if (ev.imageScore) s += (ev.imageScore - 6) / 2;
     return s;
   }
 
@@ -343,7 +347,7 @@
     // งานซีรีส์เดียวกันที่จัดหลายรอบ (ชื่อต่างกันแค่วันที่) เอาแค่รอบที่ใกล้สุด
     const series = e => e.title.toLowerCase().replace(/\b(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]*\b|\d+(st|nd|rd|th)?|[^a-z฀-๿]+/g, "").slice(0, 24);
     const seen = new Set();
-    const big = upcoming.filter(e => !e.featured && e.image && (parseDate(e.startDate) - today()) / DAY <= 60)
+    const big = upcoming.filter(e => !e.featured && e.image && !(e.imageScore <= 3) && (parseDate(e.startDate) - today()) / DAY <= 60)
       .map(e => [e, bigScore(e)]).filter(([, s]) => s >= 4)
       .sort((a, b) => b[1] - a[1] || a[0].startDate.localeCompare(b[0].startDate))
       .filter(([e]) => {
@@ -365,12 +369,6 @@
         <p>${t("heroDesc")}</p>
         <div class="searchbox"><input class="search" id="q" type="search" placeholder="${esc(t("searchPh"))}" value="${esc(f.q)}"></div>
       </section>
-      ${hasSample ? `<p class="notice">${t("sampleNotice")}</p>` : ""}
-      ${featured.length && f.cat === "all" ? `
-        <div class="section-head"><h2>${t("mustSee")}</h2><small>${t("swipe")}</small></div>
-        <div class="rail" id="rail">${featured.map(card).join("")}</div>` : ""}
-      ${adSlot("home_top")}
-      <div class="section-head" id="resultsHead"><h2>${f.cat !== "all" && CAT[f.cat] ? `${CAT[f.cat].icon} ${esc(catName(CAT[f.cat]))}` : t("allEvents")}${f.province !== "all" ? ` · ${esc(provName(f.province))}` : ""}</h2></div>
       <!-- หมวดหมู่ + ตัวกรอง อยู่ด้วยกัน และติดด้านบนจอตอนเลื่อนดูรายการ -->
       <div class="filter-bar" id="filterBar">
       <div class="chips" role="group" aria-label="${t("categories")}">
@@ -391,8 +389,15 @@
         <label class="toggle"><input type="checkbox" id="ended" ${f.showEnded ? "checked" : ""}> ${t("showEnded")}</label>
       </div>
       </div>
+      ${hasSample ? `<p class="notice">${t("sampleNotice")}</p>` : ""}
+      ${featured.length && f.cat === "all" ? `
+        <div class="section-head"><h2>${t("mustSee")}</h2><small>${t("swipe")}</small></div>
+        <div class="rail" id="rail">${featured.map(card).join("")}</div>` : ""}
+      ${adSlot("home_top")}
+      <div class="section-head" id="resultsHead"><h2>${f.cat !== "all" && CAT[f.cat] ? `${CAT[f.cat].icon} ${esc(catName(CAT[f.cat]))}` : t("allEvents")}${f.province !== "all" ? ` · ${esc(provName(f.province))}` : ""}</h2>${viewToggle()}</div>
       <div id="results"></div>`;
     centerActiveChip();
+    bindView(renderResults);
     renderResults();
     const rail = document.getElementById("rail");
     if (rail) bindSave(rail, renderHome);
@@ -423,6 +428,20 @@
     activateAdsense();
   }
 
+  // มุมมองรายการ: "list" = แถวย่อ เห็นหลายงานต่อจอ · "grid" = การ์ดรูปใหญ่
+  function viewToggle() {
+    const b = (v, icon, label) => `<button type="button" class="view-btn ${state.view === v ? "active" : ""}" data-view="${v}" aria-pressed="${state.view === v}" title="${label}" aria-label="${label}">${icon}</button>`;
+    return `<div class="view-toggle" role="group">${b("list", "☰", t("viewList"))}${b("grid", "▦", t("viewGrid"))}</div>`;
+  }
+  function bindView(rerender) {
+    app.querySelectorAll("[data-view]").forEach(btn => btn.addEventListener("click", () => {
+      state.view = btn.dataset.view;
+      writeLS("view", state.view);
+      app.querySelectorAll("[data-view]").forEach(x => { x.classList.toggle("active", x.dataset.view === state.view); x.setAttribute("aria-pressed", x.dataset.view === state.view); });
+      rerender();
+    }));
+  }
+
   function renderResults() {
     const list = filtered(), every = C.ads.inlineEvery || 6;
     const el = document.getElementById("results");
@@ -433,7 +452,7 @@
       parts.push(card(ev));
       if ((i + 1) % every === 0 && i < list.length - 1) parts.push(adSlot("list_inline"));
     });
-    el.innerHTML = `<p class="result-count">${t("found", { n: list.length })}</p><div class="grid">${parts.join("")}</div>`;
+    el.innerHTML = `<p class="result-count">${t("found", { n: list.length })}</p><div class="grid ${state.view}">${parts.join("")}</div>`;
     bindSave(el, renderResults);
     activateAdsense();
   }
@@ -765,6 +784,14 @@
       </article>`;
   }
 
+  const placeRank = p => (p.trend ? 100 : 0) + (p.rising ? 40 : 0) + (p.image ? 20 + (p.imageScore || 6) * 2 : 0) + Math.min(p.fame || 0, 15);
+  function trendThumb(n) {
+    const title = String(n.title || "").toLowerCase();
+    const p = state.places.find(x => x.image && [x.name?.th, x.name?.en].some(s => s && s.length >= 4 && title.includes(s.toLowerCase())));
+    const pc = PCAT[n.kind] || { icon: "🔥", color: "#ff7a45" };
+    return `<span class="trend-thumb" style="background:linear-gradient(135deg, ${pc.color}, ${pc.color2 || pc.color})">${pc.icon}${p ? `<img src="${esc(p.image)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">` : ""}</span>`;
+  }
+
   function renderPlaces() {
     const cat = state.placeCat;
     const counts = {};
@@ -774,6 +801,8 @@
     const match = p => !q || [p.name?.th, p.name?.en, p.name?.zh, p.address, provName(p.province), PROV[p.province]?.th].some(s => String(s || "").toLowerCase().includes(q));
     let list = state.places.filter(p => inPlaceProvince(p) && (cat === "all" || p.kind === cat) && match(p));
     if (state.pos) list = [...list].sort((a, b) => (b.trend || 0) - (a.trend || 0) || distanceKm(state.pos, a) - distanceKm(state.pos, b));
+    // ไม่รู้ตำแหน่ง: กำลังเป็นกระแส → คนค้นหาเพิ่ม → มีรูปที่ AI ให้คะแนนความน่าดูสูง → ดัง
+    else list = [...list].sort((a, b) => placeRank(b) - placeRank(a));
     // แสดงทีละ 30 แห่ง กด "ดูเพิ่ม" ได้ (หลายร้อยแห่งพร้อมกันทำให้แอพหน่วง)
     const shown = list.slice(0, state.placeShow);
     // บอร์ดเทรนด์: หมวดที่เลือก หรือข่าวใหม่สุดของทุกหมวด
@@ -783,8 +812,7 @@
     const chip = (id, icon, name, c1, n) =>
       `<button class="chip ${cat === id ? "active" : ""}" data-pcat="${id}" style="--c1:${c1}" aria-pressed="${cat === id}"><i>${icon}</i>${esc(name)}${n != null ? ` <small>${n}</small>` : ""}</button>`;
     app.innerHTML = `<div class="page">
-      <h1>🗺️ ${t("placesTitle")}</h1>
-      <p class="result-count">${t("placesSub")}</p>
+      <h1 class="page-title">🗺️ ${t("placesTitle")}</h1>
       <!-- จังหวัด + หมวด อยู่ด้วยกันในแถบตัวกรอง ติดด้านบนตอนเลื่อน -->
       <div class="searchbox place-search"><input class="search" id="pq" type="search" placeholder="${esc(t("placesSearch"))}" value="${esc(state.placeQ)}"></div>
       <div class="filter-bar">
@@ -794,16 +822,19 @@
         </div>
         <div class="filters places-row">${provinceSelect(state.places.reduce((m, p) => (m[p.province] = (m[p.province] || 0) + 1, m), {}))}</div>
       </div>
-      ${board.length ? `<section class="panel trend-board">
-        <h2>${t("trendBoard")}</h2><p class="result-count">${t("trendBoardSub")}</p>
+      <div class="section-head" id="placesHead"><h2>${cat !== "all" && PCAT[cat] ? `${PCAT[cat].icon} ${esc(pick(PCAT[cat].name))}` : t("placesAll")} <small>${t("placesFound", { n: list.length })}</small></h2>${viewToggle()}</div>
+      ${list.length ? `<div class="grid ${state.view}">${shown.slice(0, 6).map(placeCard).join("")}</div>` : ""}
+      ${board.length ? `<section class="trend-board">
+        <div class="section-head"><h2>${t("trendBoard")}</h2><small>${t("swipe")}</small></div>
         <div class="news-list">${board.map(n => `
-          <a class="news-item" ${inAppLink(n.link)} style="--c1:${PCAT[n.kind]?.color || "var(--accent)"}">
+          <a class="news-item trend-item" ${inAppLink(n.link)} style="--c1:${PCAT[n.kind]?.color || "var(--accent)"}">
+            ${trendThumb(n)}
             <h3>${esc(n.title)}</h3>
             <div class="meta">${PCAT[n.kind]?.icon || ""} ${n.likes ? `❤️ ${n.likes >= 1000 ? (n.likes / 1000).toFixed(1) + "K" : n.likes} · ` : ""}${esc(n.source || "")} · ${new Date(n.date).toLocaleDateString(locale(), { day: "numeric", month: "short" })}</div>
           </a>`).join("")}</div></section>` : ""}
+      ${list.length > 6 ? `<div class="grid ${state.view}">${shown.slice(6).map(placeCard).join("")}</div>` : ""}
       ${adSlot("list_inline")}
-      <div class="section-head" id="placesHead"><h2>${cat !== "all" && PCAT[cat] ? `${PCAT[cat].icon} ${esc(pick(PCAT[cat].name))}` : t("placesTitle")}</h2><small>${t("placesFound", { n: list.length })}</small></div>
-      ${list.length ? `<div class="grid">${shown.map(placeCard).join("")}</div>` : `<p class="empty">${t("noPlaces")}</p>`}
+      ${list.length ? "" : `<p class="empty">${t("noPlaces")}</p>`}
       ${list.length > shown.length ? `<div class="actions" style="justify-content:center"><button class="btn primary" id="moreBtn">${t("showMore", { n: list.length - shown.length })}</button></div>` : ""}
       <p class="disclosure">${t("placeNote")}</p></div>`;
     centerActiveChip();
@@ -834,6 +865,7 @@
       keep(renderPlaces)();
     });
     bindSave(app, keep(renderPlaces));
+    bindView(keep(renderPlaces));
     activateAdsense();
   }
 
@@ -1007,6 +1039,18 @@
     applyStaticText();
     route();
   });
+
+  // ---------- แถบตัวกรองยุบตอนเลื่อนลง (เหลือแถวหมวดหมู่) ให้เห็นรายการมากขึ้น ----------
+  let lastY = window.scrollY;
+  window.addEventListener("scroll", () => {
+    const y = window.scrollY, bar = app.querySelector(".filter-bar");
+    if (bar) {
+      const stuck = bar.getBoundingClientRect().top <= parseFloat(getComputedStyle(bar).top) + 1;
+      if (y > lastY + 8 && stuck) bar.classList.add("slim");
+      else if (y < lastY - 8 || !stuck) bar.classList.remove("slim");
+    }
+    if (Math.abs(y - lastY) > 8) lastY = y;
+  }, { passive: true });
 
   // ---------- router ----------
   function route() {

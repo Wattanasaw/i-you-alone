@@ -186,8 +186,8 @@ for (const { p, cands } of found) if (!cands.length) cache[p.id] = { image: null
 let withImg = 0;
 for (const p of data.places) {
   const c = cache[p.id];
-  if (c?.image) { p.image = c.image; p.imagePage = c.page; p.imageCredit = c.credit; if (c.by === "ai") p.imageAi = true; else delete p.imageAi; }
-  else if (c && c.by === "ai") { delete p.image; delete p.imagePage; delete p.imageCredit; delete p.imageAi; } // AI บอกว่ารูปเดิมไม่ตรง/ไม่น่าดู
+  if (c?.image) { p.image = c.image; p.imagePage = c.page; p.imageCredit = c.credit; if (c.by === "ai") { p.imageAi = true; p.imageScore = c.appeal; } else { delete p.imageAi; delete p.imageScore; } }
+  else if (c && c.by === "ai") { delete p.image; delete p.imagePage; delete p.imageCredit; delete p.imageAi; delete p.imageScore; } // AI บอกว่ารูปเดิมไม่ตรง/ไม่น่าดู
   if (p.image) withImg++;
 }
 const live = new Set(data.places.map(p => p.id));

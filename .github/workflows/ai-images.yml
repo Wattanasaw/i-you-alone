@@ -1,4 +1,4 @@
-name: คัดรูปปกที่เที่ยวด้วย AI
+name: คัดรูปปกที่เที่ยว + ให้คะแนนรูปงานด้วย AI
 
 # กดรันเองได้จากแท็บ Actions เมื่ออยากให้ AI คัดรูปเพิ่ม (รอบรายวันก็คัดให้อยู่แล้ว)
 on:
@@ -32,11 +32,17 @@ jobs:
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: ให้ AI ให้คะแนนรูปปกงาน
+        run: node scripts/event-images.mjs
+        continue-on-error: true
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: ตรวจข้อมูล
         run: node scripts/check-data.mjs
       - name: บันทึก
         run: |
           git config user.name "news-bot"
           git config user.email "news-bot@users.noreply.github.com"
-          git add data/places.json data/place-images.json
+          git add data/places.json data/place-images.json data/auto-events.json data/event-images.json
           git diff --cached --quiet || (git commit -m "AI คัดรูปปกที่เที่ยว" && git pull --rebase -X theirs && git push)

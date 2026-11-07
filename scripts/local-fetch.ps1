@@ -28,12 +28,13 @@ $out | Where-Object { "$_" -match "ตอบ|เก็บ|เสีย" } | Sele
 # ใส่ผลตรวจ AI ที่ GitHub จำไว้ให้งานที่เพิ่งดึง (เครื่องนี้ไม่ถาม AI เอง ไม่เปลืองโควต้า)
 $env:GEMINI_API_KEY = ""
 & $node scripts/ai-review.mjs 2>&1 | Out-Null
+& $node scripts/event-images.mjs 2>&1 | Out-Null  # ไม่มี AI ในเครื่อง = ใส่คะแนนรูปที่จำไว้
 $out = & $node scripts/check-data.mjs 2>&1
 $checkOk = $LASTEXITCODE -eq 0
 $out | Select-Object -Last 1 | ForEach-Object { Log "$_" }
 if (-not ($fetchOk -and $checkOk)) { Log "ข้อมูลไม่ผ่านการตรวจ — ไม่ขึ้นเว็บ"; & $git checkout -- data/auto-events.json data/geocache.json; exit 1 }
 
-& $git add data/auto-events.json data/geocache.json
+& $git add data/auto-events.json data/geocache.json data/event-images.json
 & $git diff --cached --quiet
 if ($LASTEXITCODE -eq 0) { Log "ไม่มีงานเปลี่ยน"; exit 0 }
 & $git commit -q -m "อัปเดตงานอีเว้นท์จากเครื่อง (รวม Eventpop)"
