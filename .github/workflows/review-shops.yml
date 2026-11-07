@@ -11,7 +11,7 @@ permissions:
   models: read
 
 concurrency:
-  group: data-update
+  group: review-shops   # แยกคิว: งานนี้รันทุก 2 ชม. ถ้าอยู่คิวเดียวกันจะไปยกเลิกรอบอัปเดตข้อมูลที่รอคิวอยู่
   cancel-in-progress: false
 
 jobs:
