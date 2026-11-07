@@ -12,5 +12,5 @@ for (const f of ["index.html", "privacy.html", "manifest.webmanifest"]) await cp
 for (const d of ["css", "icons"]) await cp(new URL(d + "/", root), new URL(d + "/", out), { recursive: true });
 await cp(new URL("js/", root), new URL("js/", out), { recursive: true, filter: src => !src.endsWith("admin.js") });
 // ข้อมูลชุดล่าสุด ติดแอพไว้ใช้ตอนออฟไลน์ (เปิดแอพแล้วมีเน็ตจะโหลดชุดใหม่จากเว็บเอง)
-for (const f of ["events", "venues", "ads", "news", "auto-events", "places", "transit", "business-places"]) await cp(new URL(`data/${f}.json`, root), new URL(`data/${f}.json`, out));
+for (const f of ["events", "venues", "ads", "news", "auto-events", "places", "transit", "business-places", "trend-places", "place-reviews"]) await cp(new URL(`data/${f}.json`, root), new URL(`data/${f}.json`, out));
 console.log("สร้าง www/ สำหรับแอพแล้ว");
