@@ -1,1 +1,1682 @@
-{}
+{
+ "run-sqFuMxCJ": {
+  "sig": "3d036d333563",
+  "at": "2026-11-07",
+  "ok": true,
+  "reason": null,
+  "category": "outdoor",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "ปกป้องโลก - รักษาดวงวิญญาณ",
+   "summary": "งานวิ่งที่หัวหิน จ.ประจวบคีรีขันธ์ วันที่ 1 ต.ค. - 30 พ.ย. 2569 ดูรายละเอียดระยะทางและค่าสมัครได้ที่ RUNLAH"
+  },
+  "en": {
+   "title": "Protect the World - Save the Soul",
+   "summary": "Running event in Hua Hin, Prachuap Khiri Khan from Oct 1 - Nov 30, 2026. Check distance and registration details on RUNLAH."
+  },
+  "zh": {
+   "title": "保护世界 - 拯救灵魂",
+   "summary": "长跑活动于2026年10月1日至11月30日在班武里府华欣举行，详情请查看RUNLAH网站。"
+  }
+ },
+ "ep-159559": {
+  "sig": "ea917ca2aeaf",
+  "at": "2026-11-07",
+  "ok": true,
+  "reason": null,
+  "category": "learning",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "ตะลุยโจทย์เตรียมความพร้อม พิชิตข้อสอบ ม.1 (UPSKILL)",
+   "summary": "หลักสูตรติวเข้มข้นสำหรับนักเรียน ป.5-ป.6 เตรียมสอบเข้า ม.1 ที่สถาบัน Triam วิทย์-คณิต MBK เริ่ม 18 ต.ค. - 27 ธ.ค. 2569"
+  },
+  "en": {
+   "title": "M.1 Exam Preparation Upskill Course",
+   "summary": "Intensive course for Prathom 5-6 students preparing for M.1 entrance exams at Triam Science-Math MBK, Oct 18 - Dec 27, 2026."
+  },
+  "zh": {
+   "title": "初中入学考试备考强化课程 (UPSKILL)",
+   "summary": "针对小学五至六年级学生的集训课程，为考入泰国顶尖中学做准备，举办时间为2026年10月18日至12月27日。"
+  }
+ },
+ "spg-siam-paragon-weekend-alert-oct-nov-26-407": {
+  "sig": "fe3b4e84582b",
+  "at": "2026-11-07",
+  "ok": true,
+  "reason": null,
+  "category": "sale",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "สยามพารากอน วีคเอ็น อะเลิร์ท (ต.ค. - พ.ย. 2569)",
+   "summary": "ทุกวันหยุดสุดสัปดาห์วันศุกร์ถึงวันอาทิตย์ ให้ทุกวันของคุณเป็นวันที่คุ้มค่ากับการช้อปปิ้ง ณ สยามพารากอน"
+  },
+  "en": {
+   "title": "SIAM PARAGON WEEKEND ALERT (OCT - NOV 2026)",
+   "summary": "Make every weekend from Friday to Sunday a rewarding shopping day at Siam Paragon."
+  },
+  "zh": {
+   "title": "暹罗百丽宫周末促销警报 (2026年10月-11月)",
+   "summary": "每周五至周日，让您的每一个周末都成为在暹罗百丽宫收获满满的购物日。"
+  }
+ },
+ "spg-spooky-enchin-enhypen-official-character-pop-up-in-bangkok-1": {
+  "sig": "f5957cd8a594",
+  "at": "2026-11-07",
+  "ok": true,
+  "reason": null,
+  "category": "expo",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "สปุกกี้ เอ็นชิน - เอนไฮเพน ออฟฟิเชียล คาแรคเตอร์ ป๊อปอัพ ในกรุงเทพฯ",
+   "summary": "งานป๊อปอัพคาแรคเตอร์อย่างเป็นทางการจาก ENHYPEN มาในธีมฮาโลวีนสุดน่ารัก จัดขึ้นที่สยามพารากอน"
+  },
+  "en": {
+   "title": "<SPOOKY ENCHIN> ENHYPEN Official Character POP-UP in BANGKOK",
+   "summary": "An official ENHYPEN character pop-up with a Halloween-inspired twist at Siam Paragon."
+  },
+  "zh": {
+   "title": "<SPOOKY ENCHIN> ENHYPEN 官方角色曼谷快闪店",
+   "summary": "ENHYPEN官方角色快闪店登陆曼谷暹罗百丽宫，结合万圣节主题为您带来可爱体验。"
+  }
+ },
+ "ttm-lykn-reflexion-concert": {
+  "sig": "ad60fad9a498",
+  "at": "2026-11-07",
+  "ok": true,
+  "reason": null,
+  "category": "concert",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "ไลแคน รีเฟล็กชัน คอนเสิร์ต",
+   "summary": "คอนเสิร์ตของวง LYKN จัดขึ้นที่อิมแพ็ค ระหว่างวันที่ 24 ตุลาคม - 20 พฤศจิกายน 2569 บัตรราคา 1,200 - 6,900 บาท"
+  },
+  "en": {
+   "title": "LYKN REFLEXION CONCERT",
+   "summary": "Concert by LYKN at Impact from Oct 24 to Nov 20, 2026. Ticket prices range from 1,200 to 6,900 THB."
+  },
+  "zh": {
+   "title": "LYKN REFLEXION 演唱会",
+   "summary": "LYKN演唱会于2026年10月24日至11月20在Impact举办，门票价格为1200至6900泰铢。"
+  }
+ },
+ "spg-nct-127-the-7th-album-blingy-pop-up-neo-lostfound-center-in-": {
+  "sig": "80c66abb7dea",
+  "at": "2026-11-07",
+  "ok": true,
+  "reason": null,
+  "category": "expo",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "เอ็นซีที 127 เดอะ เซเว่นอัลบั้ม บลิงกี้ ป๊อปอัพ (นีโอ ลอสต์แอนด์ฟาวด์ เซ็นเตอร์) ในกรุงเทพฯ",
+   "summary": "ร่วมฉลองครบรอบ 10 ปีของ NCT 127 ในงานป๊อปอัพอย่างเป็นทางการครั้งแรกในประเทศไทย ณ สยามพารากอน"
+  },
+  "en": {
+   "title": "NCT 127 THE 7TH ALBUM [BLINGY] POP-UP [NEO LOST&FOUND CENTER] IN BANGKOK",
+   "summary": "Celebrate NCT 127's 10th anniversary at their first official pop-up in Thailand at Siam Paragon."
+  },
+  "zh": {
+   "title": "NCT 127 第七张专辑 [BLINGY] 曼谷快闪店 [NEO LOST&FOUND CENTER]",
+   "summary": "在暹罗百丽宫庆祝NCT 127出道10周年，开启泰国首场官方快闪店活动。"
+  }
+ },
+ "ep-171021": {
+  "sig": "7e9ff5053d12",
+  "at": "2026-11-07",
+  "ok": true,
+  "reason": null,
+  "category": "concert",
+  "sponsor": "SOULSMITH",
+  "age20": false,
+  "th": {
+   "title": "เมนทัล แมตเทอร์ เฟส 2026",
+   "summary": "เทศกาลดนตรีจาก SOULSMITH โดย Empathy Sauce จัดขึ้นที่ SOULSMITH ระหว่างวันที่ 31 ต.ค. - 8 พ.ย. 2569"
+  },
+  "en": {
+   "title": "Mental Matters Fest 2026",
+   "summary": "A festival presented by SOULSMITH at SOULSMITH By Empathy Sauce from Oct 31 to Nov 8, 2026."
+  },
+  "zh": {
+   "title": "Mental Matters 音乐节 2026",
+   "summary": "由SOULSMITH呈献的音乐节，于2026年10月31日至11月8日在SOULSMITH By Empathy Sauce举行。"
+  }
+ },
+ "ep-181282": {
+  "sig": "72cf51022090",
+  "at": "2026-11-07",
+  "ok": true,
+  "reason": null,
+  "category": "nightlife",
+  "sponsor": "OMG Matchmaking",
+  "age20": false,
+  "th": {
+   "title": "เกย์ สปีด เดตติ้ง โดย โอเอ็มจี แมตช์เมกเกิง: โอเอ็มจี! เอ็มบีทีไอ แมตช์ 2.0",
+   "summary": "กิจกรรมสปีดเดตติ้งจัดโดย OMG Matchmaking ร่วมกับ The Standard, Bangkok Mahanakhon ระหว่างวันที่ 4-29 พ.ย. 2569"
+  },
+  "en": {
+   "title": "Gay Speed Dating by OMG Matchmaking: OMG! MBTI MATCH 2.0",
+   "summary": "Speed dating event by OMG Matchmaking x The Standard, Bangkok Mahanakhon from Nov 4 to Nov 29, 2026."
+  },
+  "zh": {
+   "title": "同性恋快速约会活动：OMG! MBTI MATCH 2.0",
+   "summary": "由OMG Matchmaking与曼谷王权玛哈纳空The Standard酒店联合举办的快速约会活动，时间为2026年11月4日至29日。"
+  }
+ },
+ "ttm-the-golden-show-all-stars-concert-2026": {
+  "sig": "5a5ba7baa23a",
+  "at": "2026-11-07",
+  "ok": true,
+  "reason": null,
+  "category": "concert",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "The Golden Show All Stars Concert 2026",
+   "summary": "คอนเสิร์ต The Golden Show All Stars Concert 2026 จัดขึ้นที่ เมืองไทยรัชดาลัย เธียเตอร์ ระหว่างวันที่ 6-8 พฤศจิกายน 2569"
+  },
+  "en": {
+   "title": "The Golden Show All Stars Concert 2026",
+   "summary": "The Golden Show All Stars Concert 2026 takes place at Muangthai Rachadalai Theatre from November 6-8, 2026."
+  },
+  "zh": {
+   "title": "The Golden Show All Stars Concert 2026",
+   "summary": "The Golden Show All Stars Concert 2026将于2026年11月6日至8日在Muangthai Rachadalai Theatre举行。"
+  }
+ },
+ "spg-november-beats-2026-190": {
+  "sig": "0e351cd1fe18",
+  "at": "2026-11-07",
+  "ok": true,
+  "reason": null,
+  "category": "concert",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "November Beats 2026",
+   "summary": "พบกับการแสดงสดที่น่าตื่นเต้นตลอดเดือนพฤศจิกายน ณ สยามพารากอน"
+  },
+  "en": {
+   "title": "November Beats 2026",
+   "summary": "Mark your calendars for two exciting live-performance destinations throughout November at Siam Paragon."
+  },
+  "zh": {
+   "title": "November Beats 2026",
+   "summary": "11月期间，暹罗百丽宫（Siam Paragon）将为您带来精彩的现场表演。"
+  }
+ },
+ "ep-161857": {
+  "sig": "8825dec35e56",
+  "at": "2026-11-07",
+  "ok": true,
+  "reason": null,
+  "category": "concert",
+  "sponsor": "สิงห์ คอร์เปอเรชั่น",
+  "age20": false,
+  "th": {
+   "title": "ลูกทุ่งลุยไฟ ใหญ่มาก ว่าแซ่บ",
+   "summary": "มหกรรมเฟสติวัลลูกทุ่งหมอลำ จัดขึ้นที่ LEO PARK ขอนแก่น วันที่ 6-7 พฤศจิกายน 2569 สนับสนุนโดย สิงห์ คอร์เปอเรชั่น"
+  },
+  "en": {
+   "title": "Luk Thung Luy Fai Yai Mak Wa Saeb",
+   "summary": "Luk Thung-Mor Lam festival at LEO PARK, Khon Kaen on November 6-7, 2026, presented by Singha Corporation."
+  },
+  "zh": {
+   "title": "Luk Thung Luy Fai Yai Mak Wa Saeb",
+   "summary": "Luk Thung-Mor Lam音乐节将于2026年11月6日至7日在孔敬LEO PARK举行，由Singha Corporation呈献。"
+  }
+ },
+ "ep-160395": {
+  "sig": "76c406b52b06",
+  "at": "2026-11-07",
+  "ok": true,
+  "reason": null,
+  "category": "learning",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "MAD MEETUP 2026",
+   "summary": "งานรวมตัวผู้บริหารสายการตลาดในธีม Villain Unmasked จัดขึ้นที่ DONKI Mall Thonglor วันที่ 6-7 พฤศจิกายน 2569"
+  },
+  "en": {
+   "title": "MAD MEETUP 2026",
+   "summary": "A gathering for marketing executives with the Villain Unmasked theme at DONKI Mall Thonglor on November 6-7, 2026."
+  },
+  "zh": {
+   "title": "MAD MEETUP 2026",
+   "summary": "营销高管聚会活动，以“Villain Unmasked”为主题，于2026年11月6日至7日在DONKI Mall Thonglor举行。"
+  }
+ },
+ "ttm-mr-fanboy-ep11-screening-presented-by-monday-moist": {
+  "sig": "7f4abe4b414f",
+  "at": "2026-11-07",
+  "ok": true,
+  "reason": null,
+  "category": "concert",
+  "sponsor": "Monday Moist",
+  "age20": false,
+  "th": {
+   "title": "MR.FANBOY EP.11 Screening Presented by Monday Moist",
+   "summary": "งานฉายซีรีส์ MR.FANBOY EP.11 จัดขึ้นที่ SF World Cinema โรงที่ 15 วันที่ 7 พฤศจิกายน 2569 นำเสนอโดย Monday Moist"
+  },
+  "en": {
+   "title": "MR.FANBOY EP.11 Screening Presented by Monday Moist",
+   "summary": "Screening of MR.FANBOY EP.11 at SF World Cinema Theater 15 on November 7, 2026, presented by Monday Moist."
+  },
+  "zh": {
+   "title": "MR.FANBOY EP.11 Screening Presented by Monday Moist",
+   "summary": "MR.FANBOY EP.11放映会将于2026年11月7日在SF World Cinema第15影厅举行，由Monday Moist呈献。"
+  }
+ },
+ "ttm-bigbang-2026-2027-world-tour-xx-cosmos-in-bangkok": {
+  "sig": "1c6388e89f50",
+  "at": "2026-11-07",
+  "ok": true,
+  "reason": null,
+  "category": "concert",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "BIGBANG 2026-2027 WORLD TOUR < XX : COSMOS > IN BANGKOK",
+   "summary": "คอนเสิร์ตเวิลด์ทัวร์ของ BIGBANG จัดขึ้นที่ราชมังคลากีฬาสถาน วันที่ 7-8 พฤศจิกายน 2569"
+  },
+  "en": {
+   "title": "BIGBANG 2026-2027 WORLD TOUR < XX : COSMOS > IN BANGKOK",
+   "summary": "BIGBANG world tour concert at Rajamangala National Stadium on November 7-8, 2026."
+  },
+  "zh": {
+   "title": "BIGBANG 2026-2027 WORLD TOUR < XX : COSMOS > IN BANGKOK",
+   "summary": "BIGBANG世界巡回演唱会将于2026年11月7日至8日在拉加曼加拉国家体育场举行。"
+  }
+ },
+ "ttm-2026-27-babymonster-world-tour-choom-in-bangkok": {
+  "sig": "67e0baf77031",
+  "at": "2026-11-07",
+  "ok": true,
+  "reason": null,
+  "category": "concert",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "2026'27 BABYMONSTER WORLD TOUR [CHOOM] IN BANGKOK",
+   "summary": "คอนเสิร์ตเวิลด์ทัวร์ของ BABYMONSTER จัดขึ้นที่ IMPACT วันที่ 7-8 พฤศจิกายน 2569"
+  },
+  "en": {
+   "title": "2026'27 BABYMONSTER WORLD TOUR [CHOOM] IN BANGKOK",
+   "summary": "BABYMONSTER world tour concert at IMPACT on November 7-8, 2026."
+  },
+  "zh": {
+   "title": "2026'27 BABYMONSTER WORLD TOUR [CHOOM] IN BANGKOK",
+   "summary": "BABYMONSTER世界巡回演唱会将于2026年11月7日至8日在IMPACT举行。"
+  }
+ },
+ "ttm-shine-bangkok-fansign-one-last-light": {
+  "sig": "8eb222e091fe",
+  "at": "2026-11-07",
+  "ok": true,
+  "reason": null,
+  "category": "concert",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "Shine Bangkok Fansign | One Last Light",
+   "summary": "งานแฟนไซน์ Shine Bangkok จัดขึ้นที่โรงภาพยนตร์สยามภาวลัย วันที่ 7 พฤศจิกายน 2569"
+  },
+  "en": {
+   "title": "Shine Bangkok Fansign | One Last Light",
+   "summary": "Shine Bangkok fansign event at Siam Pavalai Royal Grand Theatre on November 7, 2026."
+  },
+  "zh": {
+   "title": "Shine Bangkok Fansign | One Last Light",
+   "summary": "Shine Bangkok粉丝签名会将于2026年11月7日在Siam Pavalai Royal Grand Theatre举行。"
+  }
+ },
+ "ttm-dew-tee-secret-area-fancon": {
+  "sig": "acff82216f1a",
+  "at": "2026-11-07",
+  "ok": true,
+  "reason": null,
+  "category": "concert",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "DEW TEE SECRET AREA FANCON",
+   "summary": "งานแฟนคอนเสิร์ต DEW TEE SECRET AREA จัดแสดงผ่านระบบ Live Streaming ทาง TTM LIVE ระหว่างวันที่ 7-27 พฤศจิกายน 2569 บัตรราคา 1,200 ถึง 6,900 บาท"
+  },
+  "en": {
+   "title": "DEW TEE SECRET AREA FANCON",
+   "summary": "DEW TEE SECRET AREA fan concert streamed live via TTM LIVE from November 7-27, 2026. Tickets priced from 1,200 to 6,900 THB."
+  },
+  "zh": {
+   "title": "DEW TEE SECRET AREA FANCON",
+   "summary": "DEW TEE SECRET AREA 粉丝见面会于2026年11月7日至27日通过TTM LIVE直播，票价从1,200至6,900泰铢。"
+  }
+ },
+ "ttm-royal-jazz-for-the-chaipattana-foundation-volume-3": {
+  "sig": "183c509042af",
+  "at": "2026-11-07",
+  "ok": true,
+  "reason": null,
+  "category": "concert",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "Royal Jazz for the Chaipattana Foundation Volume 3",
+   "summary": "คอนเสิร์ต Royal Jazz for the Chaipattana Foundation Volume 3 จัดขึ้นวันที่ 7 พฤศจิกายน 2569 ณ ศูนย์การประชุมแห่งชาติสิริกิติ์ บัตรราคา 1,800 ถึง 3,000 บาท"
+  },
+  "en": {
+   "title": "Royal Jazz for the Chaipattana Foundation Volume 3",
+   "summary": "Royal Jazz for the Chaipattana Foundation Volume 3 concert on November 7, 2026, at QSNCC. Tickets from 1,800 to 3,000 THB."
+  },
+  "zh": {
+   "title": "Royal Jazz for the Chaipattana Foundation Volume 3",
+   "summary": "皇家爵士乐慈善音乐会第三卷于2026年11月7日在诗丽吉王后国家会议中心举行，票价1,800至3,000泰铢。"
+  }
+ },
+ "ttm-mr-fanboy-series-ep11-presented-by-monday-moist": {
+  "sig": "d22e3e93fc1d",
+  "at": "2026-11-07",
+  "ok": true,
+  "reason": null,
+  "category": "concert",
+  "sponsor": "Monday Moist",
+  "age20": false,
+  "th": {
+   "title": "Mr. Fanboy EP. 11 Presented by Monday Moist",
+   "summary": "งาน Mr. Fanboy EP. 11 นำเสนอโดย Monday Moist จัดขึ้นวันที่ 7 พฤศจิกายน 2569 ณ โรงละครสยามภาวลี รอยัล แกรนด์ ไดนามิก บัตรราคา 699 ถึง 999 บาท"
+  },
+  "en": {
+   "title": "Mr. Fanboy EP. 11 Presented by Monday Moist",
+   "summary": "Mr. Fanboy EP. 11 presented by Monday Moist on November 7, 2026, at Siam Pavalai Royal Grand Theatre. Tickets 699 to 999 THB."
+  },
+  "zh": {
+   "title": "Mr. Fanboy EP. 11 Presented by Monday Moist",
+   "summary": "Mr. Fanboy EP. 11 由 Monday Moist 呈现，于2026年11月7日在暹罗帕瓦莱皇家大剧院举行，票价699至999泰铢。"
+  }
+ },
+ "ttm-one-fight-night-49": {
+  "sig": "371001996ffe",
+  "at": "2026-11-07",
+  "ok": true,
+  "reason": null,
+  "category": "outdoor",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "ONE Fight Night 49: Gabriel vs. Rasulov",
+   "summary": "การแข่งขันชกมวย ONE Fight Night 49: Gabriel vs. Rasulov วันที่ 7 พฤศจิกายน 2569 ณ สนามมวยเวทีลุมพินี (ถนนรามอินทรา) บัตรราคา 1,200 ถึง 10,000 บาท"
+  },
+  "en": {
+   "title": "ONE Fight Night 49: Gabriel vs. Rasulov",
+   "summary": "ONE Fight Night 49: Gabriel vs. Rasulov on November 7, 2026, at Lumpinee Boxing Stadium (Ramintra Rd). Tickets 1,200 to 10,000 THB."
+  },
+  "zh": {
+   "title": "ONE Fight Night 49: Gabriel vs. Rasulov",
+   "summary": "ONE冠军赛：仑披尼格斗夜49于2026年11月7日在曼谷仑披尼拳击馆举行，票价1,200至10,000泰铢。"
+  }
+ },
+ "run-BOaQBWtD": {
+  "sig": "1065b337823f",
+  "at": "2026-11-07",
+  "ok": true,
+  "reason": null,
+  "category": "outdoor",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "วิ่งครามสกล",
+   "summary": "งานวิ่งครามสกล จัดขึ้นวันที่ 7 พฤศจิกายน 2569 ณ สวนสาธารณะ 80 พรรษา จังหวัดสกลนคร เข้าร่วมฟรีไม่มีค่าใช้จ่าย"
+  },
+  "en": {
+   "title": "Ving Khram Sakon",
+   "summary": "Ving Khram Sakon running event on November 7, 2026, at 80th Anniversary Public Park, Sakon Nakhon. Free admission."
+  },
+  "zh": {
+   "title": "Ving Khram Sakon",
+   "summary": "Ving Khram Sakon 奔跑活动于2026年11月7日在沙功那空府80周年公共公园举行，免费参加。"
+  }
+ },
+ "run-LaUljSFZ": {
+  "sig": "ccf607728e75",
+  "at": "2026-11-07",
+  "ok": true,
+  "reason": null,
+  "category": "outdoor",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "วิ่งโต้ลมหนาว",
+   "summary": "งานวิ่งโต้ลมหนาว วันที่ 7 พฤศจิกายน 2569 ณ สนามกีฬากลางเทศบาลเมืองเมืองแกนพัฒนา ทางขึ้นเขื่อนแม่งัด จังหวัดเชียงใหม่ ค่าสมัคร 499 บาท"
+  },
+  "en": {
+   "title": "Wing To Lom Nao",
+   "summary": "Wing To Lom Nao running event on November 7, 2026, at Mueang Kaen Phatthana Municipality Stadium, Chiang Mai. Entry fee 499 THB."
+  },
+  "zh": {
+   "title": "Wing To Lom Nao",
+   "summary": "迎寒风奔跑活动于2026年11月7日在清迈府Mueang Kaen Phatthana市政体育场举行，报名费499泰铢。"
+  }
+ },
+ "run-yUucSMDs": {
+  "sig": "8e61130429fe",
+  "at": "2026-11-07",
+  "ok": true,
+  "reason": null,
+  "category": "outdoor",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "FUN RUN 5 KM BY สจ.กอล์ฟ",
+   "summary": "งาน FUN RUN 5 KM จัดขึ้นวันที่ 7 พฤศจิกายน 2569 ณ สะพานรวมใจป่ายาง 2560 อำเภอสามเงา จังหวัดตาก เข้าร่วมฟรี"
+  },
+  "en": {
+   "title": "FUN RUN 5 KM BY สจ.กอล์ฟ",
+   "summary": "FUN RUN 5 KM on November 7, 2026, at Ruam Jai Pai Yang 2560 Bridge, Sam Ngao, Tak. Free entry."
+  },
+  "zh": {
+   "title": "FUN RUN 5 KM BY 哥夫议员",
+   "summary": "5公里趣味跑于2026年11月7日在达府三敖县Ruam Jai Pai Yang 2560桥举行，免费参加。"
+  }
+ },
+ "run-hvlkLXQc": {
+  "sig": "62121f89ad59",
+  "at": "2026-11-07",
+  "ok": true,
+  "reason": null,
+  "category": "outdoor",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "Ruammit Ultra Trail 2026",
+   "summary": "งานวิ่ง Ruammit Ultra Trail 2026 วันที่ 7-8 พฤศจิกายน 2569 ณ โรงเรียนบ้านรวมมิตร จังหวัดเชียงราย ค่าสมัคร 500 ถึง 3,500 บาท"
+  },
+  "en": {
+   "title": "Ruammit Ultra Trail 2026",
+   "summary": "Ruammit Ultra Trail 2026 on November 7-8, 2026, at Ban Ruammit School, Chiang Rai. Entry fee from 500 to 3,500 THB."
+  },
+  "zh": {
+   "title": "Ruammit Ultra Trail 2026",
+   "summary": "Ruammit超级越野赛2026于2026年11月7日至8日在清莱府Ban Ruammit学校举行，报名费500至3,500泰铢。"
+  }
+ },
+ "ep-177671": {
+  "sig": "fe7a60397501",
+  "at": "2026-11-07",
+  "ok": true,
+  "reason": null,
+  "category": "learning",
+  "sponsor": "Sales100Million",
+  "age20": false,
+  "th": {
+   "title": "Sales100Million Presents: Sales Director and Sales Strategy",
+   "summary": "หลักสูตร Sales Director and Sales Strategy (Class 94) เปลี่ยนศิลปะการขายให้เป็นวิทยาศาสตร์ จัดที่โรงแรมโนโวเทล กรุงเทพ สุขุมวิท 20"
+  },
+  "en": {
+   "title": "Sales100Million Presents: Sales Director and Sales Strategy",
+   "summary": "Sales Director and Sales Strategy course (Class 94) to transform sales into science. Held at Novotel Bangkok Sukhumvit 20."
+  },
+  "zh": {
+   "title": "Sales100Million Presents: Sales Director and Sales Strategy",
+   "summary": "销售总监与销售战略课程（第94期），将销售转化为科学。地点在曼谷素坤逸20号诺富特酒店。"
+  }
+ },
+ "ep-175705": {
+  "sig": "56e844306796",
+  "at": "2026-11-07",
+  "ok": true,
+  "reason": null,
+  "category": "learning",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "B BLOOM BAR",
+   "summary": "งานพบปะพูดคุยที่ภูเก็ต จัดขึ้นที่ Heavyweight brunch n bars ในวันที่ 7 พฤศจิกายน 2569"
+  },
+  "en": {
+   "title": "B BLOOM BAR",
+   "summary": "A gathering event in Phuket held at Heavyweight brunch n bars on November 7, 2026."
+  },
+  "zh": {
+   "title": "B BLOOM BAR",
+   "summary": "普吉岛聚会活动，于2026年11月7日在Heavyweight brunch n bars举行。"
+  }
+ },
+ "ep-175043": {
+  "sig": "112df7694a79",
+  "at": "2026-11-07",
+  "ok": true,
+  "reason": null,
+  "category": "nightlife",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "The Story Continues: 10 years with PEAK",
+   "summary": "งานฉลองครบรอบ 10 ปี จัดขึ้นที่สมาคมธรรมศาสตร์ ในพระบรมราชูปถัมภ์ ในวันที่ 7 พฤศจิกายน 2569"
+  },
+  "en": {
+   "title": "The Story Continues: 10 years with PEAK",
+   "summary": "Decade one celebration event for the 10th birthday, held at Thammasat Association under Royal Patronage on November 7, 2026."
+  },
+  "zh": {
+   "title": "The Story Continues: 10 years with PEAK",
+   "summary": "十周年庆典活动，于2026年11月7日在王家赞助下的法政大学协会举行。"
+  }
+ },
+ "ep-174009": {
+  "sig": "ddc54cd44c81",
+  "at": "2026-11-07",
+  "ok": true,
+  "reason": null,
+  "category": "learning",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "ค่ายสานฝันนักการทูต DIPLOMAT CAMP Season 31",
+   "summary": "ค่ายนักการทูตครั้งที่ 31 พาน้องๆ ไปลองเป็นนักการทูตตัวจริง จัดที่โรงแรมอวานี รัชดา กรุงเทพ ในวันที่ 7 พฤศจิกายน 2569"
+  },
+  "en": {
+   "title": "DIPLOMAT CAMP Season 31",
+   "summary": "The 31st diplomat camp to experience being a real diplomat. Held at Avani Ratchada Bangkok Hotel on November 7, 2026."
+  },
+  "zh": {
+   "title": "DIPLOMAT CAMP Season 31",
+   "summary": "第31届外交官训练营，体验真正的外交官工作。2026年11月7日在曼谷拉差达阿瓦尼酒店举行。"
+  }
+ },
+ "ep-172847": {
+  "sig": "419231d8b3a8",
+  "at": "2026-11-07",
+  "ok": true,
+  "reason": null,
+  "category": "learning",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "Full-Stack Web Development for the AI Era",
+   "summary": "หลักสูตรพัฒนาเว็บแอปพลิเคชันด้วย Next.js, Supabase และ Vibe Coding จัดที่ KMITL Lifelong Learning Center"
+  },
+  "en": {
+   "title": "Full-Stack Web Development for the AI Era",
+   "summary": "Build production-ready applications with Next.js, Supabase & Vibe Coding at KMITL Lifelong Learning Center."
+  },
+  "zh": {
+   "title": "Full-Stack Web Development for the AI Era",
+   "summary": "使用 Next.js、Supabase 和 Vibe Coding 构建生产就绪应用程序，地点在 KMITL 终身学习中心。"
+  }
+ },
+ "ep-172345": {
+  "sig": "c6a8f4532995",
+  "at": "2026-11-07",
+  "ok": true,
+  "reason": null,
+  "category": "learning",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "Cosmetic Sci Lab : Fragrance & Lip ครั้งที่ 3",
+   "summary": "ห้องเรียนจำลองวิทยาศาตร์เครื่องสำอางเกี่ยวกับกลิ่นและลิป จัดที่อาคารเคเอกซ์ ในวันที่ 7 พฤศจิกายน 2569"
+  },
+  "en": {
+   "title": "Cosmetic Sci Lab : Fragrance & Lip #3",
+   "summary": "Cosmetic science simulated classroom focusing on fragrance and lip products at KX Building on November 7, 2026."
+  },
+  "zh": {
+   "title": "Cosmetic Sci Lab : Fragrance & Lip 第3期",
+   "summary": "化妆品科学模拟课堂，专注于香水和唇膏，于2026年11月7日在KX大楼举行。"
+  }
+ },
+ "eb-1990074848443": {
+  "sig": "ebf349249107",
+  "at": "2026-11-07",
+  "ok": true,
+  "reason": null,
+  "category": "learning",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "Thailand Festival of Education",
+   "summary": "งานเทศกาลการศึกษา จัดขึ้นที่โรงเรียนนานาชาติดอยลิงตัน กรุงเทพฯ ในวันที่ 7 พฤศจิกายน 2569"
+  },
+  "en": {
+   "title": "Thailand Festival of Education",
+   "summary": "Education festival event held at Wellington College International School Bangkok on November 7, 2026."
+  },
+  "zh": {
+   "title": "Thailand Festival of Education",
+   "summary": "教育节活动，于2026年11月7日在曼谷惠灵顿国际学校举行。"
+  }
+ },
+ "eb-1984931025129": {
+  "sig": "51c842935b9b",
+  "at": "2026-11-07",
+  "ok": true,
+  "reason": null,
+  "category": "food",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "Table 25: Bangkok | Foodies + New Friends",
+   "summary": "งานพบปะสังสรรค์สำหรับคนรักอาหารและเพื่อนใหม่ในกรุงเทพฯ วันที่ 7 พฤศจิกายน 2569"
+  },
+  "en": {
+   "title": "Table 25: Bangkok | Foodies + New Friends",
+   "summary": "A social dining event for foodies and new friends in Bangkok on November 7, 2026."
+  },
+  "zh": {
+   "title": "Table 25: Bangkok | Foodies + New Friends",
+   "summary": "曼谷美食爱好者与新朋友的社交餐饮活动，于2026年11月7日举行。"
+  }
+ },
+ "eb-2003975691238": {
+  "sig": "dc70d77760bf",
+  "at": "2026-11-07",
+  "ok": true,
+  "reason": null,
+  "category": "outdoor",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "SATISFY BANGKOK LSD RUN #6",
+   "summary": "งานวิ่ง SATISFY BANGKOK LSD RUN #6 จัดขึ้นที่ Kepler BKK กรุงเทพฯ วันที่ 7 พฤศจิกายน 2026"
+  },
+  "en": {
+   "title": "SATISFY BANGKOK LSD RUN #6",
+   "summary": "Join SATISFY BANGKOK LSD RUN #6 at Kepler BKK, Bangkok on November 7, 2026."
+  },
+  "zh": {
+   "title": "SATISFY BANGKOK LSD RUN #6",
+   "summary": "SATISFY BANGKOK LSD RUN #6 将于 2026 年 11 月 7 日在曼谷 Kepler BKK 举行。"
+  }
+ },
+ "eb-1997329624674": {
+  "sig": "4e298c885d9e",
+  "at": "2026-11-07",
+  "ok": true,
+  "reason": null,
+  "category": "nightlife",
+  "sponsor": null,
+  "age20": true,
+  "th": {
+   "title": "Radicle Weekly Indie Live Music Nights",
+   "summary": "คืนเพลงอินดี้สดประจำสัปดาห์ ณ Radicle Beer Company กรุงเทพฯ วันที่ 7 พฤศจิกายน 2026"
+  },
+  "en": {
+   "title": "Radicle Weekly Indie Live Music Nights",
+   "summary": "Weekly indie live music night at Radicle Beer Company, Bangkok on November 7, 2026."
+  },
+  "zh": {
+   "title": "Radicle Weekly Indie Live Music Nights",
+   "summary": "每周独立现场音乐之夜于 2026 年 11 月 7 日在曼谷 Radicle Beer Company 举行。"
+  }
+ },
+ "eb-1994143693468": {
+  "sig": "5c9d3fd45222",
+  "at": "2026-11-07",
+  "ok": true,
+  "reason": null,
+  "category": "expo",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "Dialogue Flow. The easiest way to start meaningful conversations.",
+   "summary": "กิจกรรม Dialogue Flow จัดที่ 360Art Center จังหวัดเชียงใหม่ วันที่ 7 พฤศจิกายน 2026"
+  },
+  "en": {
+   "title": "Dialogue Flow. The easiest way to start meaningful conversations.",
+   "summary": "Dialogue Flow event at 360Art Center, Chiang Mai on November 7, 2026."
+  },
+  "zh": {
+   "title": "Dialogue Flow. The easiest way to start meaningful conversations.",
+   "summary": "Dialogue Flow 活动于 2026 年 11 月 7 日在清迈 360Art Center 举行。"
+  }
+ },
+ "run-vRCpDAef": {
+  "sig": "7f9d27e3fc13",
+  "at": "2026-11-07",
+  "ok": true,
+  "reason": null,
+  "category": "outdoor",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "CMU Chiang Mai Marathon ครั้งที่ 10",
+   "summary": "งานวิ่ง CMU Chiang Mai Marathon ครั้งที่ 10 วันที่ 8 พฤศจิกายน 2569 ณ มหาวิทยาลัยเชียงใหม่ จ.เชียงใหม่"
+  },
+  "en": {
+   "title": "CMU Chiang Mai Marathon ครั้งที่ 10",
+   "summary": "The 10th CMU Chiang Mai Marathon on November 8, 2026, at Chiang Mai University."
+  },
+  "zh": {
+   "title": "CMU Chiang Mai Marathon ครั้งที่ 10",
+   "summary": "第10届清迈大学马拉松赛于2026年11月8日在清迈大学举行。"
+  }
+ },
+ "run-iXnqzLSp": {
+  "sig": "b0533431370e",
+  "at": "2026-11-07",
+  "ok": true,
+  "reason": null,
+  "category": "outdoor",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "Run for the Ocean by KUFA #5",
+   "summary": "งานวิ่ง Run for the Ocean by KUFA #5 วันที่ 8 พฤศจิกายน 2569 ณ คณะประมง มหาวิทยาลัยเกษตรศาสตร์ บางเขน"
+  },
+  "en": {
+   "title": "Run for the Ocean by KUFA #5",
+   "summary": "Run for the Ocean by KUFA #5 on November 8, 2026, at Faculty of Fisheries, Kasetsart University."
+  },
+  "zh": {
+   "title": "Run for the Ocean by KUFA #5",
+   "summary": "Run for the Ocean by KUFA #5 于 2026 年 11 月 8 日在农业大学水产学院举行。"
+  }
+ },
+ "run-bGseZzrn": {
+  "sig": "31167ba4ec9d",
+  "at": "2026-11-07",
+  "ok": true,
+  "reason": null,
+  "category": "outdoor",
+  "sponsor": "REV RUNNR",
+  "age20": false,
+  "th": {
+   "title": "REV RUNNR EKIDEN Bangkok 2026",
+   "summary": "งานวิ่ง REV RUNNR EKIDEN Bangkok 2026 วันที่ 8 พฤศจิกายน 2569 ณ สนามฟุตบอล 1 กกท. หัวหมาก กรุงเทพฯ"
+  },
+  "en": {
+   "title": "REV RUNNR EKIDEN Bangkok 2026",
+   "summary": "REV RUNNR EKIDEN Bangkok 2026 on November 8, 2026, at Football Field 1, SAT Huamark, Bangkok."
+  },
+  "zh": {
+   "title": "REV RUNNR EKIDEN Bangkok 2026",
+   "summary": "REV RUNNR EKIDEN Bangkok 2026 于 2026 年 11 月 8 日在曼谷华马克体育场举行。"
+  }
+ },
+ "ep-176807": {
+  "sig": "05f24dff7ec5",
+  "at": "2026-11-07",
+  "ok": true,
+  "reason": null,
+  "category": "learning",
+  "sponsor": "ONCEs Thailand",
+  "age20": false,
+  "th": {
+   "title": "ค่ายจิตวิทยา 3 สาขา season 4 By ONCEs Thailand",
+   "summary": "ค่ายจิตวิทยา 3 สาขา season 4 จัดโดย ONCEs Thailand วันที่ 8 พฤศจิกายน 2569 ณ โรงแรมอวานี รัชดา กรุงเทพฯ"
+  },
+  "en": {
+   "title": "ค่ายจิตวิทยา 3 สาขา season 4 By ONCEs Thailand",
+   "summary": "Psychology 3 Majors Camp Season 4 by ONCEs Thailand on November 8, 2026, at Avani Ratchada Bangkok Hotel."
+  },
+  "zh": {
+   "title": "ค่ายจิตวิทยา 3 สาขา season 4 By ONCEs Thailand",
+   "summary": "由 ONCEs Thailand 主办的心理学3专业营第4季于 2026 年 11 月 8 日在曼谷拉差达阿瓦尼酒店举行。"
+  }
+ },
+ "ep-176609": {
+  "sig": "b0b072132df8",
+  "at": "2026-11-07",
+  "ok": true,
+  "reason": null,
+  "category": "food",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "Sunday Brunch Buffet | Top 3 Brunch in Phuket",
+   "summary": "บุฟเฟต์ซันเดย์บรันช์สุดพิเศษที่ Atrio Restaurant ณ Mövenpick Myth Hotel Patong Phuket วันที่ 8 พฤศจิกายน 2569"
+  },
+  "en": {
+   "title": "Sunday Brunch Buffet | Top 3 Brunch in Phuket",
+   "summary": "Sunday Brunch Buffet at Atrio Restaurant, Mövenpick Myth Hotel Patong Phuket on November 8, 2026."
+  },
+  "zh": {
+   "title": "Sunday Brunch Buffet | Top 3 Brunch in Phuket",
+   "summary": "普吉岛芭东美憬阁神话酒店 Atrio 餐厅于 2026 年 11 月 8 日举办周日早午餐自助餐。"
+  }
+ },
+ "ep-176069": {
+  "sig": "c97fb18040af",
+  "at": "2026-11-07",
+  "ok": true,
+  "reason": null,
+  "category": "concert",
+  "sponsor": "Singha Corporation",
+  "age20": false,
+  "th": {
+   "title": "Singha Corporation presents HUGO เรือสำราญราตรีอมตะ ไตรภาค C",
+   "summary": "สัมผัสบทสรุปไตรภาคคอนเสิร์ตจาก HUGO ที่จะพาทุกคนร่วมเดินทางไปบนเรือสำราญราตรีอมตะอีกครั้ง ณ MGI Hall 2, Bravo BKK วันที่ 8 พฤศจิกายน 2569"
+  },
+  "en": {
+   "title": "Singha Corporation presents HUGO เรือสำราญราตรีอมตะ ไตรภาค C",
+   "summary": "Experience the final chapter of HUGO’s concert trilogy aboard the Eternal Night Cruise at MGI Hall 2, Bravo BKK on November 8, 2026."
+  },
+  "zh": {
+   "title": "Singha Corporation presents HUGO เรือสำราญราตรีอมตะ ไตรภาค C",
+   "summary": "体验HUGO音乐会三部曲的最终章，于2026年11月8日在曼谷Bravo BKK的MGI Hall 2再次开启永恒之夜游轮之旅。"
+  }
+ },
+ "ep-173907": {
+  "sig": "28c13e3cffe5",
+  "at": "2026-11-07",
+  "ok": true,
+  "reason": null,
+  "category": "nightlife",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "JOEL DAVID & HIS BAND",
+   "summary": "ล่องเรือ Bangkok Island ชมพระอาทิตย์ตก พร้อมเพลิดเพลินกับดนตรีสด ศิลปะ และแฟชั่นบนแม่น้ำ ในวันที่ 8 พฤศจิกายน 2569"
+  },
+  "en": {
+   "title": "JOEL DAVID & HIS BAND",
+   "summary": "Join a sunset gathering on Bangkok Island featuring live music, art, and fashion on the river on November 8, 2026."
+  },
+  "zh": {
+   "title": "JOEL DAVID & HIS BAND",
+   "summary": "2026年11月8日，在曼谷岛屿号（Bangkok Island）上享受结合了现场音乐、艺术与时尚的日落河上聚会。"
+  }
+ },
+ "zip-the-black-kings-nephew-nov": {
+  "sig": "ae7007bb5a40",
+  "at": "2026-11-07",
+  "ok": false,
+  "reason": "ข้อมูลไม่เพียงพอ",
+  "category": "concert",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "ศรีเสาวภาคย์",
+   "summary": "ข้อมูลอีเว้นท์ในกรุงเทพฯ วันที่ 8 พฤศจิกายน 2569"
+  },
+  "en": {
+   "title": "ศรีเสาวภาคย์",
+   "summary": "Event information in Bangkok on November 8, 2026."
+  },
+  "zh": {
+   "title": "ศรีเสาวภาคย์",
+   "summary": "2026年11月8日曼谷活动信息。"
+  }
+ },
+ "ep-180616": {
+  "sig": "4c795a93ec84",
+  "at": "2026-11-07",
+  "ok": true,
+  "reason": null,
+  "category": "learning",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "Agentic AI Theory and Practice for Developer",
+   "summary": "ทำความเข้าใจ Agentic AI ตั้งแต่แนวคิดจนถึงการลงมือสร้างระบบจริงร่วมกับทีม Developer ณ IMC Institute วันที่ 9-11 พฤศจิกายน 2569"
+  },
+  "en": {
+   "title": "Agentic AI Theory and Practice for Developer",
+   "summary": "Learn Agentic AI concepts and practical system building for developers at IMC Institute from November 9-11, 2026."
+  },
+  "zh": {
+   "title": "Agentic AI Theory and Practice for Developer",
+   "summary": "于2026年11月9日至11日在IMC研究所学习Agentic AI概念及开发者实战系统构建。"
+  }
+ },
+ "eb-2003451382015": {
+  "sig": "5a50160f3275",
+  "at": "2026-11-07",
+  "ok": false,
+  "reason": "ข้อมูลไม่เพียงพอ",
+  "category": "learning",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "เวิร์กช็อป AI สำหรับมือใหม่",
+   "summary": "เวิร์กช็อปจัดที่ Yaru @ Grande Centre Point Lumphini วันที่ 9 พฤศจิกายน 2569"
+  },
+  "en": {
+   "title": "เวิร์กช็อป AI สำหรับมือใหม่",
+   "summary": "Workshop held at Yaru @ Grande Centre Point Lumphini on November 9, 2026."
+  },
+  "zh": {
+   "title": "เวิร์กช็อป AI สำหรับมือใหม่",
+   "summary": "2026年11月9日在Yaru @ Grande Centre Point Lumphini举办的工作坊。"
+  }
+ },
+ "eb-1985491318983": {
+  "sig": "1230288903ab",
+  "at": "2026-11-07",
+  "ok": false,
+  "reason": "ข้อมูลไม่เพียงพอ",
+  "category": "expo",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "6th World Congress on Global Healthcare and Medicine",
+   "summary": "จัดขึ้นที่โรงแรมแกรนด์ เมอร์เคียว กรุงเทพ อะตริียม วันที่ 9 พฤศจิกายน 2569"
+  },
+  "en": {
+   "title": "6th World Congress on Global Healthcare and Medicine",
+   "summary": "Held at Grand Mercure Bangkok Atrium on November 9, 2026."
+  },
+  "zh": {
+   "title": "6th World Congress on Global Healthcare and Medicine",
+   "summary": "于2026年11月9日在曼谷阿特rium美居大酒店举行。"
+  }
+ },
+ "ttm-lany-soft-world-tour-bangkok": {
+  "sig": "58f673e8e281",
+  "at": "2026-11-07",
+  "ok": true,
+  "reason": null,
+  "category": "concert",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "LANY : soft world tour Bangkok",
+   "summary": "พบกับคอนเสิร์ต LANY ในเวิลด์ทัวร์ ณ ยูโอบี ไลฟ์, เอ็มสเฟียร์ วันที่ 10 พฤศจิกายน 2569"
+  },
+  "en": {
+   "title": "LANY : soft world tour Bangkok",
+   "summary": "Catch LANY on their soft world tour at UOB LIVE, Emsphere on November 10, 2026."
+  },
+  "zh": {
+   "title": "LANY : soft world tour Bangkok",
+   "summary": "2026年11月10日，LANY将携soft世界巡回演唱会登陆曼谷UOB LIVE (Emsphere)。"
+  }
+ },
+ "ep-179095": {
+  "sig": "087b90edf966",
+  "at": "2026-11-07",
+  "ok": true,
+  "reason": null,
+  "category": "concert",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "NOVEMBER 11TH, 2026 Extra Waterfall Festival Koh Phangan (Sp",
+   "summary": "เทศกาลดนตรี Waterfall Festival เกาะพะงัน จ.สุราษฎร์ธานี วันที่ 11-12 พฤศจิกายน 2569"
+  },
+  "en": {
+   "title": "NOVEMBER 11TH, 2026 Extra Waterfall Festival Koh Phangan (Sp",
+   "summary": "Waterfall Festival special edition in Koh Phangan, Surat Thani from November 11-12, 2026."
+  },
+  "zh": {
+   "title": "NOVEMBER 11TH, 2026 Extra Waterfall Festival Koh Phangan (Sp",
+   "summary": "2026年11月11日至12日在素叻他尼府帕岸岛举办的瀑布音乐节特别版。"
+  }
+ },
+ "ep-174376": {
+  "sig": "5491c9428273",
+  "at": "2026-11-07",
+  "ok": true,
+  "reason": null,
+  "category": "concert",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "Wednesday Song Vol.28 : Pause & Scrubb",
+   "summary": "พบกับคอนเสิร์ต Wednesday Song Vol.28 พร้อมด้วยสองวงดนตรี Pause และ Scrubb ณ SiamPic Hall"
+  },
+  "en": {
+   "title": "Wednesday Song Vol.28 : Pause & Scrubb",
+   "summary": "Enjoy Wednesday Song Vol.28 featuring legendary bands Pause and Scrubb at SiamPic Hall."
+  },
+  "zh": {
+   "title": "Wednesday Song Vol.28 : Pause & Scrubb",
+   "summary": "Wednesday Song Vol.28 音乐会邀请到 Pause 和 Scrubb 两支乐队在 SiamPic Hall 演出。"
+  }
+ },
+ "eb-1996646602737": {
+  "sig": "8f6de76fc980",
+  "at": "2026-11-07",
+  "ok": true,
+  "reason": null,
+  "category": "expo",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "Santé, retraite, prévoyance : comment se protéger en Thailande ?",
+   "summary": "งานเสวนาเกี่ยวกับการประกันสุขภาพ การเกษียณ และการเตรียมความพร้อมในประเทศไทย ณ Alliance Française de Bangkok"
+  },
+  "en": {
+   "title": "Santé, retraite, prévoyance : comment se protéger en Thailande ?",
+   "summary": "A seminar on health insurance, retirement, and social security in Thailand held at Alliance Française de Bangkok."
+  },
+  "zh": {
+   "title": "Santé, retraite, prévoyance : comment se protéger en Thailande ?",
+   "summary": "关于在泰国如何进行健康医疗、退休和社保保障的讲座，在曼谷法国文化协会举行。"
+  }
+ },
+ "eb-2004474477120": {
+  "sig": "b832508fbfcd",
+  "at": "2026-11-07",
+  "ok": true,
+  "reason": null,
+  "category": "outdoor",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "Manifestation Lab: Breathwork, Sauna + Ice Bath at WellNest, Chiang Mai",
+   "summary": "กิจกรรมฝึกหายใจ ซาวน่า และแช่น้ำแข็ง ที่ Wellnest Sauna & Ice Bath เชียงใหม่"
+  },
+  "en": {
+   "title": "Manifestation Lab: Breathwork, Sauna + Ice Bath at WellNest, Chiang Mai",
+   "summary": "A wellness session featuring breathwork, sauna, and ice bath at Wellnest Sauna & Ice Bath in Chiang Mai."
+  },
+  "zh": {
+   "title": "Manifestation Lab: Breathwork, Sauna + Ice Bath at WellNest, Chiang Mai",
+   "summary": "在清迈 Wellnest 桑拿和冰浴中心举办的呼吸法、桑拿与冰浴体验活动。"
+  }
+ },
+ "eb-2003331932739": {
+  "sig": "7f8e42290e5c",
+  "at": "2026-11-07",
+  "ok": true,
+  "reason": null,
+  "category": "learning",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "International Conference on Advanced Research in Artificial Intelligence",
+   "summary": "การประชุมวิชาการนานาชาติด้านการวิจัยขั้นสูงในปัญญาประดิษฐ์ จัดที่ Let's Relax Spa - Movenpick Siam Hotel Na Jomtien Pattaya"
+  },
+  "en": {
+   "title": "International Conference on Advanced Research in Artificial Intelligence",
+   "summary": "An international conference on advanced AI research held at Movenpick Siam Hotel Na Jomtien Pattaya."
+  },
+  "zh": {
+   "title": "International Conference on Advanced Research in Artificial Intelligence",
+   "summary": "人工智能高级研究国际会议，在芭堤雅纳中天瑞享酒店举行。"
+  }
+ },
+ "eb-1979838528334": {
+  "sig": "78116513b1e8",
+  "at": "2026-11-07",
+  "ok": true,
+  "reason": null,
+  "category": "learning",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "2nd International Conference on Neuropsychiatry",
+   "summary": "การประชุมวิชาการนานาชาติด้านประสาทจิตเวชศาสตร์ ครั้งที่ 2 ณ โรงแรมแกรนด์ เมอร์เคียว กรุงเทพ อัตรียม"
+  },
+  "en": {
+   "title": "2nd International Conference on Neuropsychiatry",
+   "summary": "The 2nd International Conference on Neuropsychiatry held at Grand Mercure Bangkok Atrium."
+  },
+  "zh": {
+   "title": "2nd International Conference on Neuropsychiatry",
+   "summary": "第二届国际神经精神病学会议，在曼谷中庭美居大酒店举行。"
+  }
+ },
+ "ttm-wave-to-earth-the-pieces-tour": {
+  "sig": "051f80f53d3c",
+  "at": "2026-11-07",
+  "ok": true,
+  "reason": null,
+  "category": "concert",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "wave to earth - the pieces tour",
+   "summary": "คอนเสิร์ต wave to earth - the pieces tour จัดขึ้นที่ ยูโอบี ไลฟ์, เอ็มสเฟียร์"
+  },
+  "en": {
+   "title": "wave to earth - the pieces tour",
+   "summary": "The wave to earth - the pieces tour concert at UOB LIVE, Emsphere."
+  },
+  "zh": {
+   "title": "wave to earth - the pieces tour",
+   "summary": "wave to earth “the pieces tour” 演唱会将在曼谷 UOB LIVE, Emsphere 举行。"
+  }
+ },
+ "ep-181082": {
+  "sig": "5e54c2048390",
+  "at": "2026-11-07",
+  "ok": true,
+  "reason": null,
+  "category": "concert",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "สยามานุสสติ ๒๕๖๙ \"๑๐๑ ปี มหาธีรราชานุสรณ์ สืบสานพระราชปณิธาน",
+   "summary": "งานสยามานุสสติและระลึกถึงพระมหาธีรราชานุสรณ์ จัดโดยจุฬาลงกรณ์มหาวิทยาลัย ณ หอประชุมจุฬาลงกรณ์มหาวิทยาลัย"
+  },
+  "en": {
+   "title": "Sayamahusati 2026",
+   "summary": "An annual tribute event hosted by Chulalongkorn University at the CU Auditorium."
+  },
+  "zh": {
+   "title": "Sayamahusati 2026",
+   "summary": "朱拉隆功大学在朱大礼堂举办的年度纪念活动。"
+  }
+ },
+ "ep-180649": {
+  "sig": "df6b44e6c76f",
+  "at": "2026-11-07",
+  "ok": true,
+  "reason": null,
+  "category": "learning",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "Foundation of Software Testing Unlocking the Secrets",
+   "summary": "หลักสูตรอบรมการทดสอบซอฟต์แวร์เพื่อตรวจจับบั๊กก่อนเกิดปัญหา จัดที่ IMC Institute"
+  },
+  "en": {
+   "title": "Foundation of Software Testing Unlocking the Secrets",
+   "summary": "A software testing training course to detect bugs early, held at IMC Institute."
+  },
+  "zh": {
+   "title": "Foundation of Software Testing Unlocking the Secrets",
+   "summary": "旨在提前发现软件漏洞的测试基础培训课程，在 IMC Institute 举行。"
+  }
+ },
+ "ep-177172": {
+  "sig": "84995b721c6d",
+  "at": "2026-11-07",
+  "ok": true,
+  "reason": null,
+  "category": "learning",
+  "sponsor": "Bangkok Startup Association",
+  "age20": false,
+  "th": {
+   "title": "DON'T THAI TO ME",
+   "summary": "งานเสวนาจัดโดย Bangkok Startup Association ณ Industrious Gaysorn Tower"
+  },
+  "en": {
+   "title": "DON'T THAI TO ME",
+   "summary": "Presented by Bangkok Startup Association and hosted at Industrious Gaysorn Tower."
+  },
+  "zh": {
+   "title": "DON'T THAI TO ME",
+   "summary": "由曼谷创业协会主办，在 Industrious Gaysorn Tower 举行。"
+  }
+ },
+ "eb-1998344763983": {
+  "sig": "61d423b5b075",
+  "at": "2026-11-07",
+  "ok": true,
+  "reason": null,
+  "category": "learning",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "School Middle Leaders: Wellbeing and Psychological Safety | Bangkok",
+   "summary": "งานอบรมสำหรับผู้นำระดับกลางของโรงเรียน จัดขึ้นที่ Bangkok Central"
+  },
+  "en": {
+   "title": "School Middle Leaders: Wellbeing and Psychological Safety | Bangkok",
+   "summary": "A professional event focusing on school middle leaders' wellbeing and psychological safety at Bangkok Central."
+  },
+  "zh": {
+   "title": "School Middle Leaders: Wellbeing and Psychological Safety | Bangkok",
+   "summary": "关于学校中层领导者福祉与心理安全的活动，在曼谷中央举行。"
+  }
+ },
+ "ttm-big-ass-big-concert": {
+  "sig": "4d499b7bc935",
+  "at": "2026-11-07",
+  "ok": true,
+  "reason": null,
+  "category": "concert",
+  "sponsor": "ไทยประกันชีวิต",
+  "age20": false,
+  "th": {
+   "title": "ไทยประกันชีวิต presents BIG ASS คอนเสิร์ตใหญ่ ก่อนตาย",
+   "summary": "คอนเสิร์ตใหญ่จากวง BIG ASS สนับสนุนโดยไทยประกันชีวิต จัดที่ Impact"
+  },
+  "en": {
+   "title": "Thai Life Insurance presents BIG ASS Big Concert",
+   "summary": "A major concert by BIG ASS presented by Thai Life Insurance at Impact."
+  },
+  "zh": {
+   "title": "Thai Life Insurance presents BIG ASS Big Concert",
+   "summary": "由泰国人寿保险呈献的 BIG ASS 大型演唱会，在 Impact 举办。"
+  }
+ },
+ "ttm-one-lumpinee-178": {
+  "sig": "beb3d5de8094",
+  "at": "2026-11-07",
+  "ok": true,
+  "reason": null,
+  "category": "outdoor",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "ONE Lumpinee 178",
+   "summary": "การแข่งขันชกมวย ONE Lumpinee 178 จัดที่สนามมวยเวทีลุมพินี ถนนรามอินทรา"
+  },
+  "en": {
+   "title": "ONE Lumpinee 178",
+   "summary": "ONE Lumpinee 178 Muay Thai event held at Lumpinee Boxing Stadium on Ram Inthra Road."
+  },
+  "zh": {
+   "title": "ONE Lumpinee 178",
+   "summary": "ONE Lumpinee 178 泰拳比赛，在拉因陀罗路的仑披尼拳击馆举行。"
+  }
+ },
+ "ep-180121": {
+  "sig": "6001ec0876af",
+  "at": "2026-11-07",
+  "ok": true,
+  "reason": null,
+  "category": "nightlife",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "Queer On Deck",
+   "summary": "ปาร์ตี้เฉลิมฉลองเปิดกว้าง จัดขึ้นที่ Bangkok Island กรุงเทพฯ"
+  },
+  "en": {
+   "title": "Queer On Deck",
+   "summary": "An open-minded nightlife party hosted on Bangkok Island in Bangkok."
+  },
+  "zh": {
+   "title": "Queer On Deck",
+   "summary": "在曼谷 Bangkok Island 举办的包容性夜生活派对。"
+  }
+ },
+ "eb-1994931622184": {
+  "sig": "90ab9bad55cd",
+  "at": "2026-11-07",
+  "ok": true,
+  "reason": null,
+  "category": "expo",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "Immersive Kirtan at 360 Art Center",
+   "summary": "กิจกรรม Immersive Kirtan จัดที่ 360 Art Center จังหวัดเชียงใหม่"
+  },
+  "en": {
+   "title": "Immersive Kirtan at 360 Art Center",
+   "summary": "An immersive kirtan event held at 360 Art Center in Chiang Mai."
+  },
+  "zh": {
+   "title": "Immersive Kirtan at 360 Art Center",
+   "summary": "在清迈 360 Art Center 举办的沉浸式梵唱活动。"
+  }
+ },
+ "ttm-mr-fanboy-final-episode-welcome-back": {
+  "sig": "f8f689792554",
+  "at": "2026-11-07",
+  "ok": true,
+  "reason": null,
+  "category": "concert",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "MR.FANBOY FINAL EPISODE WELCOME BACK",
+   "summary": "การแสดงคอนเสิร์ต MR.FANBOY FINAL EPISODE WELCOME BACK จัดที่ Impact"
+  },
+  "en": {
+   "title": "MR.FANBOY FINAL EPISODE WELCOME BACK",
+   "summary": "Concert event MR.FANBOY FINAL EPISODE WELCOME BACK held at Impact."
+  },
+  "zh": {
+   "title": "MR.FANBOY FINAL EPISODE WELCOME BACK",
+   "summary": "MR.FANBOY 最终回欢迎回来演唱会，在 Impact 举行。"
+  }
+ },
+ "ttm-be-peerapat-be-and-beyond-concert": {
+  "sig": "3c8674a9525c",
+  "at": "2026-11-07",
+  "ok": true,
+  "reason": null,
+  "category": "concert",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "BE PEERAPAT : BE & BEYOND CONCERT",
+   "summary": "คอนเสิร์ตของ บี พีระพัฒน์ จัดที่ BCC Hall เซ็นทรัล พลาซ่า ลาดพร้าว ชั้น 5"
+  },
+  "en": {
+   "title": "BE PEERAPAT : BE & BEYOND CONCERT",
+   "summary": "A concert by Be Peerapat at BCC Hall, 5th Floor, Central Plaza Ladprao."
+  },
+  "zh": {
+   "title": "BE PEERAPAT : BE & BEYOND CONCERT",
+   "summary": "Be Peerapat 演唱会，在曼谷中央广场拉抛店 5 楼 BCC Hall 举行。"
+  }
+ },
+ "ttm-namtan-film-glamorous-fancon": {
+  "sig": "f87530850b3f",
+  "at": "2026-11-07",
+  "ok": true,
+  "reason": null,
+  "category": "concert",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "NAMTAN FILM GLAMOROUS FANCON",
+   "summary": "งานแฟนคอนเสิร์ต NAMTAN FILM GLAMOROUS FANCON จัดแสดงรูปแบบ Live Streaming ผ่าน TTM LIVE ตั้งแต่วันที่ 14 พฤศจิกายน ถึง 4 ธันวาคม 2569"
+  },
+  "en": {
+   "title": "NAMTAN FILM GLAMOROUS FANCON",
+   "summary": "NAMTAN FILM GLAMOROUS FANCON live streaming via TTM LIVE from November 14 to December 4, 2026."
+  },
+  "zh": {
+   "title": "NAMTAN FILM GLAMOROUS FANCON",
+   "summary": "NAMTAN FILM GLAMOROUS FANCON 粉丝演唱会于 2026 年 11 月 14 日至 12 月 4 日通过 TTM LIVE 进行线上直播。"
+  }
+ },
+ "ttm-qwer-2nd-tour-rockation-rocket-launch-in-bangkok": {
+  "sig": "14ed77990726",
+  "at": "2026-11-07",
+  "ok": true,
+  "reason": null,
+  "category": "concert",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "QWER 2nd TOUR < ROCKATION : ROCKET LAUNCH!! > IN BANGKOK",
+   "summary": "คอนเสิร์ต QWER 2nd TOUR จัดขึ้นในวันที่ 14 พฤศจิกายน 2569 ณ MCC HALL ชั้น 4 เดอะมอลล์ไลฟ์สโตร์ งามวงศ์วาน"
+  },
+  "en": {
+   "title": "QWER 2nd TOUR < ROCKATION : ROCKET LAUNCH!! > IN BANGKOK",
+   "summary": "QWER 2nd TOUR concert held on November 14, 2026, at MCC Hall, 4th Floor, The Mall Lifestore Ngamwongwan."
+  },
+  "zh": {
+   "title": "QWER 2nd TOUR < ROCKATION : ROCKET LAUNCH!! > IN BANGKOK",
+   "summary": "QWER 第二次巡回演唱会于 2026 年 11 月 14 日在曼谷 Ngamwongwan The Mall Lifestore 4楼 MCC HALL 举行。"
+  }
+ },
+ "ttm-2026-k-pop-masterz-special-live-in-bangkok-bambam-mark-jayb": {
+  "sig": "b08d7009f67c",
+  "at": "2026-11-07",
+  "ok": true,
+  "reason": null,
+  "category": "concert",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "2026 K-POP MASTERZ SPECIAL LIVE IN BANGKOK BAMBAM × JAY B × MARK",
+   "summary": "คอนเสิร์ต K-POP MASTERZ SPECIAL LIVE พบกับ BAMBAM, JAY B และ MARK ณ ธันเดอร์โดม วันที่ 14-15 พฤศจิกายน 2569"
+  },
+  "en": {
+   "title": "2026 K-POP MASTERZ SPECIAL LIVE IN BANGKOK BAMBAM × JAY B × MARK",
+   "summary": "K-POP MASTERZ SPECIAL LIVE featuring BAMBAM, JAY B, and MARK at Thunderdome from November 14-15, 2026."
+  },
+  "zh": {
+   "title": "2026 K-POP MASTERZ SPECIAL LIVE IN BANGKOK BAMBAM × JAY B × MARK",
+   "summary": "K-POP MASTERZ 特别演唱会汇聚 BAMBAM、JAY B 和 MARK，于 2026 年 11 月 14 日至 15 日在 Thunderdome 举行。"
+  }
+ },
+ "run-uEHdSmYI": {
+  "sig": "c4ffbefdc37e",
+  "at": "2026-11-07",
+  "ok": true,
+  "reason": null,
+  "category": "outdoor",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "Black Mountain Sunset Splash Run 2026",
+   "summary": "งานวิ่ง Black Mountain Sunset Splash Run 2026 จัดขึ้นวันที่ 14 พฤศจิกายน 2569 ณ Black Mountain Water Park อ.หัวหิน จ.ประจวบคีรีขันธ์"
+  },
+  "en": {
+   "title": "Black Mountain Sunset Splash Run 2026",
+   "summary": "Black Mountain Sunset Splash Run 2026 on November 14, 2026, at Black Mountain Water Park, Hua Hin, Prachuap Khiri Khan."
+  },
+  "zh": {
+   "title": "Black Mountain Sunset Splash Run 2026",
+   "summary": "2026年黑山日落泼水跑于2026年11月14日在班武里府华欣县黑山水上乐园举行。"
+  }
+ },
+ "run-QjgVLNpU": {
+  "sig": "8e68024d806c",
+  "at": "2026-11-07",
+  "ok": true,
+  "reason": null,
+  "category": "outdoor",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "Nordic Walk & Run 2026",
+   "summary": "งาน Nordic Walk & Run 2026 จัดขึ้นวันที่ 14 พฤศจิกายน 2569 ณ สวนวชิรเบญจทัศ (สวนรถไฟ) กรุงเทพมหานคร เข้าร่วมฟรี"
+  },
+  "en": {
+   "title": "Nordic Walk & Run 2026",
+   "summary": "Nordic Walk & Run 2026 takes place on November 14, 2026, at Wachirabenchadat Park (Rot Fai Park), Bangkok. Free admission."
+  },
+  "zh": {
+   "title": "Nordic Walk & Run 2026",
+   "summary": "2026年北欧式健走与跑步活动于2026年11月14日在曼谷瓦栖拉本乍塔公园（火车公园）举行，免费参加。"
+  }
+ },
+ "ep-181216": {
+  "sig": "301c9db681c2",
+  "at": "2026-11-07",
+  "ok": true,
+  "reason": null,
+  "category": "concert",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "🌍🔥 GAIA MAMA 🔥🌍",
+   "summary": "งานเทศกาลดนตรี GAIA MAMA จัดขึ้นในวันที่ 14 พฤศจิกายน 2569 ณ จังหวัดนครศรีธรรมราช"
+  },
+  "en": {
+   "title": "🌍🔥 GAIA MAMA 🔥🌍",
+   "summary": "GAIA MAMA music festival event on November 14, 2026, in Nakhon Si Thammarat."
+  },
+  "zh": {
+   "title": "🌍🔥 GAIA MAMA 🔥🌍",
+   "summary": "GAIA MAMA 音乐节于 2026 年 11 月 14 日在洛坤府举行。"
+  }
+ },
+ "ep-179690": {
+  "sig": "274dc3e0c09b",
+  "at": "2026-11-07",
+  "ok": true,
+  "reason": null,
+  "category": "learning",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "3minuteslab Mini Class",
+   "summary": "มินิคลาสจาก 3minuteslab ในหัวข้อ Essentials Learning design for Museum จัดขึ้นวันที่ 14 พฤศจิกายน 2569 ณ TK Park"
+  },
+  "en": {
+   "title": "3minuteslab Mini Class",
+   "summary": "3minuteslab Mini Class focusing on Essentials Learning design for Museum on November 14, 2026, at TK Park."
+  },
+  "zh": {
+   "title": "3minuteslab Mini Class",
+   "summary": "3minuteslab 迷你课程涵盖博物馆基础学习设计主题，于 2026 年 11 月 14 日在 TK Park 举行。"
+  }
+ },
+ "ep-177803": {
+  "sig": "a400b99c1e52",
+  "at": "2026-11-07",
+  "ok": true,
+  "reason": null,
+  "category": "expo",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "Unsucking AI",
+   "summary": "งานเสวนา Unsucking AI สำรวจแง่มุมต่างๆ ของปัญญาประดิษฐ์ จัดขึ้นวันที่ 14-15 พฤศจิกายน 2569 ณ จุฬาลงกรณ์มหาวิทยาลัย"
+  },
+  "en": {
+   "title": "Unsucking AI",
+   "summary": "Unsucking AI event discussing the impacts and realities of artificial intelligence on November 14-15, 2026, at Chulalongkorn University."
+  },
+  "zh": {
+   "title": "Unsucking AI",
+   "summary": "Unsucking AI 活动探讨人工智能的现实影响，于 2026 年 11 月 14 日至 15 日在朱拉隆功大学举行。"
+  }
+ },
+ "ep-177438": {
+  "sig": "60b5cc303a6a",
+  "at": "2026-11-07",
+  "ok": true,
+  "reason": null,
+  "category": "learning",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "Claude Cowork AI workshop เชียงใหม่",
+   "summary": "เวิร์กช็อป Claude Cowork AI ที่เชียงใหม่ จัดขึ้นที่ Green Lake Resort Chiangmai ในวันที่ 14 พฤศจิกายน 2026"
+  },
+  "en": {
+   "title": "Claude Cowork AI workshop Chiang Mai",
+   "summary": "Claude Cowork AI workshop in Chiang Mai at Green Lake Resort Chiangmai on November 14, 2026."
+  },
+  "zh": {
+   "title": "Claude Cowork AI ワークショップ 清迈",
+   "summary": "Claude Cowork AI workshop in Chiang Mai at Green Lake Resort Chiangmai on November 14, 2026."
+  }
+ },
+ "ep-175408": {
+  "sig": "2173fa2ca804",
+  "at": "2026-11-07",
+  "ok": true,
+  "reason": null,
+  "category": "learning",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "Business Camp ค่ายธุรกิจ พัฒนาความรู้ ทักษะธุรกิจ รุ่น 20",
+   "summary": "ค่ายธุรกิจ 1 วันสำหรับน้องๆ เพื่อลองเรียนรู้โลกบัญชี-บริหาร จัดที่โรงแรมอวานี รัชดา กรุงเทพ ในวันที่ 14 พฤศจิกายน 2026"
+  },
+  "en": {
+   "title": "Business Camp Season 20",
+   "summary": "A 1-day business camp exploring accounting and management at Avani Ratchada Bangkok Hotel on November 14, 2026."
+  },
+  "zh": {
+   "title": "Business Camp 第20季",
+   "summary": "A 1-day business camp exploring accounting and management at Avani Ratchada Bangkok Hotel on November 14, 2026."
+  }
+ },
+ "ep-174077": {
+  "sig": "2428432ac658",
+  "at": "2026-11-07",
+  "ok": true,
+  "reason": null,
+  "category": "concert",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "BNK48 & CGM48 Senbatsu General Election 2026: Final Results",
+   "summary": "งานประกาศผลการเลือกตั้งทั่วไป Senbatsu General Election 2026 ของ BNK48 และ CGM48 ณ MCC Hall เดอะมอลล์ไลฟ์สโตร์ บางกะปิ"
+  },
+  "en": {
+   "title": "BNK48 & CGM48 Senbatsu General Election 2026: Final Results",
+   "summary": "The final results announcement event for the BNK48 & CGM48 Senbatsu General Election 2026 at MCC Hall, The Mall Lifestore Bangkapi."
+  },
+  "zh": {
+   "title": "BNK48 & CGM48 Senbatsu General Election 2026: Final Results",
+   "summary": "The final results announcement event for the BNK48 & CGM48 Senbatsu General Election 2026 at MCC Hall, The Mall Lifestore Bangkapi."
+  }
+ },
+ "ep-172510": {
+  "sig": "9112a20fab9f",
+  "at": "2026-11-07",
+  "ok": true,
+  "reason": null,
+  "category": "learning",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "TEDxChiangMai Future of Learning",
+   "summary": "งาน TEDxChiangMai 2026 ภายใต้หัวข้อ The Future of Learning จัดที่คณะเศรษฐศาสตร์ มหาวิทยาลัยเชียงใหม่ วันที่ 14 พฤศจิกายน 2026"
+  },
+  "en": {
+   "title": "TEDxChiangMai Future of Learning",
+   "summary": "TEDxChiangMai 2026 focusing on the future of learning at the Faculty of Economics, Chiang Mai University on November 14, 2026."
+  },
+  "zh": {
+   "title": "TEDxChiangMai Future of Learning",
+   "summary": "TEDxChiangMai 2026 focusing on the future of learning at the Faculty of Economics, Chiang Mai University on November 14, 2026."
+  }
+ },
+ "ep-170487": {
+  "sig": "83a531598c81",
+  "at": "2026-11-07",
+  "ok": true,
+  "reason": null,
+  "category": "learning",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "Community Builder Blueprint รุ่น 2",
+   "summary": "คอร์ส 1 วันเต็มสำหรับการออกแบบและสร้างการเติบโตให้คอมมูนิตี้ จัดโดย Data First Co.,Ltd. ในวันที่ 14 พฤศจิกายน 2026"
+  },
+  "en": {
+   "title": "Community Builder Blueprint Batch 2",
+   "summary": "A 1-day course on designing and growing communities, organized by Data First Co.,Ltd. on November 14, 2026."
+  },
+  "zh": {
+   "title": "Community Builder Blueprint 第2期",
+   "summary": "A 1-day course on designing and growing communities, organized by Data First Co.,Ltd. on November 14, 2026."
+  }
+ },
+ "ep-118637": {
+  "sig": "80f66e83b6ba",
+  "at": "2026-11-07",
+  "ok": true,
+  "reason": null,
+  "category": "concert",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "BangkokBeasts 2026 : Furbidden Vault",
+   "summary": "งาน BangkokBeasts 2026 จัดขึ้นที่ Mr.FOX Live House กรุงเทพฯ ระหว่างวันที่ 14-15 พฤศจิกายน 2026"
+  },
+  "en": {
+   "title": "BangkokBeasts 2026 : Furbidden Vault",
+   "summary": "BangkokBeasts 2026 event held at Mr.FOX Live House in Bangkok from November 14 to 15, 2026."
+  },
+  "zh": {
+   "title": "BangkokBeasts 2026 : Furbidden Vault",
+   "summary": "BangkokBeasts 2026 event held at Mr.FOX Live House in Bangkok from November 14 to 15, 2026."
+  }
+ },
+ "eb-1996079664008": {
+  "sig": "a6502dbd9355",
+  "at": "2026-11-07",
+  "ok": true,
+  "reason": null,
+  "category": "expo",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "LLM Mastery",
+   "summary": "งาน LLM Mastery จัดที่โรงแรม Meliá Chiang Mai วันที่ 14-15 พฤศจิกายน 2026"
+  },
+  "en": {
+   "title": "LLM Mastery",
+   "summary": "LLM Mastery event at Meliá Chiang Mai Hotel from November 14 to 15, 2026."
+  },
+  "zh": {
+   "title": "LLM Mastery",
+   "summary": "LLM Mastery event at Meliá Chiang Mai Hotel from November 14 to 15, 2026."
+  }
+ },
+ "ttm-milk-love-whimsical-house-fancon": {
+  "sig": "c68f3d5ec0cf",
+  "at": "2026-11-07",
+  "ok": true,
+  "reason": null,
+  "category": "concert",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "MILK LOVE WHIMSICAL HOUSE FANCON",
+   "summary": "งานแฟนคอนเสิร์ต MILK LOVE WHIMSICAL HOUSE รับชมผ่านทาง Live Streaming by TTM LIVE ระหว่างวันที่ 15 พฤศจิกายน ถึง 5 ธันวาคม 2026"
+  },
+  "en": {
+   "title": "MILK LOVE WHIMSICAL HOUSE FANCON",
+   "summary": "MILK LOVE WHIMSICAL HOUSE fan concert via Live Streaming by TTM LIVE from November 15 to December 5, 2026."
+  },
+  "zh": {
+   "title": "MILK LOVE WHIMSICAL HOUSE FANCON",
+   "summary": "MILK LOVE WHIMSICAL HOUSE fan concert via Live Streaming by TTM LIVE from November 15 to December 5, 2026."
+  }
+ }
+}

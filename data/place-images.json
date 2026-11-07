@@ -1734,9 +1734,9 @@
  "wd-Q806441": {
   "image": null,
   "by": "ai",
-  "why": "ภาพไม่สื่อถึงสถานที่และไม่ดึงดูด",
-  "at": "2026-11-07T04:38:25.075Z",
-  "v": 2
+  "why": "ภาพซากหอยและหินดูไม่ค่อยดึงดูดใจนัก",
+  "at": "2026-11-07T17:15:24.959Z",
+  "v": 3
  },
  "osm-w1336674593": {
   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Elephent_Show_Crocodile_Farm_-_panoramio.jpg/960px-Elephent_Show_Crocodile_Farm_-_panoramio.jpg",
@@ -1750,9 +1750,9 @@
  "osm-n2962489061": {
   "image": null,
   "by": "ai",
-  "why": "ไม่มีภาพที่แสดงถึงพิพิธภัณฑ์หรือบรรยากาศภายในอย่างชัดเจน",
-  "at": "2026-11-07T04:38:45.383Z",
-  "v": 2
+  "why": "รูปภาพไม่แสดงตัวพิพิธภัณฑ์แรงงานไทยอย่างชัดเจน",
+  "at": "2026-11-07T17:15:24.959Z",
+  "v": 3
  },
  "osm-n4590299089": {
   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Kamthieng_house_-_panoramio.jpg/960px-Kamthieng_house_-_panoramio.jpg",
@@ -1943,15 +1943,20 @@
  },
  "osm-n4331626405": {
   "image": null,
-  "by": "rule",
-  "at": "2026-11-07T04:56:49.898Z",
-  "v": 2
+  "by": "ai",
+  "why": "ไม่มีรูปภาพสำหรับสถานที่นี้",
+  "at": "2026-11-07T17:15:11.215Z",
+  "v": 3
  },
  "wd-Q902661": {
-  "image": null,
-  "by": "rule",
-  "at": "2026-11-07T04:56:49.898Z",
-  "v": 2
+  "image": "https://www.lemon8-app.com/seo/image?item_id=7564716847321367041&index=0&sign=6c25fae0a5b09fcc3a2b7eb9727f2aad",
+  "page": "https://www.lemon8-app.com/@st.joe365/7564716847321367041?region=th",
+  "credit": "Lemon8 · ศักดิ์สิทธิ์ (โจ้)",
+  "by": "ai",
+  "appeal": 7,
+  "why": "ภาพมุมสูงเกาะโลซินชัดเจนและน่าสนใจ",
+  "at": "2026-11-07T17:15:24.959Z",
+  "v": 3
  },
  "osm-w455319894": {
   "image": null,
@@ -1971,27 +1976,28 @@
  },
  "osm-n2578808292": {
   "image": null,
-  "by": "rule",
-  "at": "2026-11-07T04:56:49.898Z",
-  "v": 2
+  "by": "ai",
+  "why": "ไม่มีรูปภาพสำหรับสถานที่นี้",
+  "at": "2026-11-07T17:15:24.959Z",
+  "v": 3
  },
  "osm-n12387882020": {
   "image": null,
   "by": "rule",
-  "at": "2026-11-07T04:56:49.898Z",
-  "v": 2
+  "at": "2026-11-07T17:26:05.421Z",
+  "v": 3
  },
  "osm-n12645537690": {
   "image": null,
   "by": "rule",
-  "at": "2026-11-07T04:56:49.898Z",
-  "v": 2
+  "at": "2026-11-07T17:26:05.421Z",
+  "v": 3
  },
  "osm-n13713779734": {
   "image": null,
   "by": "rule",
-  "at": "2026-11-07T04:56:49.898Z",
-  "v": 2
+  "at": "2026-11-07T17:26:05.421Z",
+  "v": 3
  },
  "osm-w42345238": {
   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%81%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%AD%E0%B8%812.jpg/960px-%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%81%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%AD%E0%B8%812.jpg",
@@ -3175,49 +3181,50 @@
  "osm-w40277816": {
   "image": null,
   "by": "rule",
-  "at": "2026-11-07T04:56:49.898Z",
-  "v": 2
+  "at": "2026-11-07T17:26:05.421Z",
+  "v": 3
  },
  "osm-w194758858": {
   "image": null,
   "by": "rule",
-  "at": "2026-11-07T04:56:49.898Z",
-  "v": 2
+  "at": "2026-11-07T17:26:05.421Z",
+  "v": 3
  },
  "osm-w318678214": {
   "image": null,
   "by": "rule",
-  "at": "2026-11-07T04:56:49.898Z",
-  "v": 2
+  "at": "2026-11-07T17:26:05.421Z",
+  "v": 3
  },
  "osm-w331795136": {
   "image": null,
   "by": "rule",
-  "at": "2026-11-07T04:56:49.898Z",
-  "v": 2
+  "at": "2026-11-07T17:26:05.421Z",
+  "v": 3
  },
  "osm-w337817897": {
   "image": null,
   "by": "rule",
-  "at": "2026-11-07T04:56:49.898Z",
-  "v": 2
+  "at": "2026-11-07T17:26:05.421Z",
+  "v": 3
  },
  "osm-w375807120": {
   "image": null,
   "by": "rule",
-  "at": "2026-11-07T04:56:49.898Z",
-  "v": 2
+  "at": "2026-11-07T17:26:05.421Z",
+  "v": 3
  },
  "osm-w376311199": {
   "image": null,
   "by": "rule",
-  "at": "2026-11-07T04:56:49.898Z",
-  "v": 2
+  "at": "2026-11-07T17:26:05.421Z",
+  "v": 3
  },
  "osm-w376835531": {
   "image": null,
   "by": "rule",
-  "at": "2026-11-07T03:48:49.893Z"
+  "at": "2026-11-07T17:26:05.421Z",
+  "v": 3
  },
  "wd-Q13022372": {
   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Lopburi_Zoo_-_panoramio.jpg/960px-Lopburi_Zoo_-_panoramio.jpg",
@@ -3500,16 +3507,6 @@
   "at": "2026-11-07T06:04:47.464Z",
   "v": 3
  },
- "osm-n2065920182": {
-  "image": "https://live.staticflickr.com/3772/9407842182_0e91faa335_b.jpg",
-  "page": "https://www.flickr.com/photos/58535380@N02/9407842182",
-  "credit": "Sarit Chaiwangsa · BY 2.0",
-  "by": "ai",
-  "appeal": 6,
-  "why": "ภาพโปสการ์ดและของตกแต่งร้านดูน่ารักอบอุ่นสไตล์คาเฟ่",
-  "at": "2026-11-07T06:04:47.464Z",
-  "v": 3
- },
  "osm-n2080924990": {
   "image": null,
   "by": "ai",
@@ -3538,13 +3535,6 @@
   "image": null,
   "by": "ai",
   "why": "ภาพขาวดำเก่าและไม่เกี่ยวกับร้านเบเกอรี่",
-  "at": "2026-11-07T06:04:59.282Z",
-  "v": 3
- },
- "osm-n4393480890": {
-  "image": null,
-  "by": "ai",
-  "why": "เป็นภาพรถยนต์และตึก ไม่ใช่คาเฟ่",
   "at": "2026-11-07T06:04:59.282Z",
   "v": 3
  },
@@ -4031,12 +4021,6 @@
   "at": "2026-11-07T06:09:07.158Z",
   "v": 3
  },
- "osm-n12304859418": {
-  "image": null,
-  "by": "rule",
-  "at": "2026-11-07T06:09:07.158Z",
-  "v": 3
- },
  "osm-n12622284690": {
   "image": null,
   "by": "rule",
@@ -4098,18 +4082,6 @@
   "v": 3
  },
  "osm-n1310586978": {
-  "image": null,
-  "by": "rule",
-  "at": "2026-11-07T06:09:07.158Z",
-  "v": 3
- },
- "osm-n2065797055": {
-  "image": null,
-  "by": "rule",
-  "at": "2026-11-07T06:09:07.158Z",
-  "v": 3
- },
- "osm-n2066076953": {
   "image": null,
   "by": "rule",
   "at": "2026-11-07T06:09:07.158Z",
@@ -5124,16 +5096,6 @@
   "by": "ai",
   "appeal": 6,
   "why": "ภาพมุมสูงของสายน้ำในอุทยานธรรมชาติสวยงามชัดเจน",
-  "at": "2026-11-07T04:46:39.988Z",
-  "v": 2
- },
- "osm-r21373397": {
-  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Huai_mak_liam_hot_spring.jpg/960px-Huai_mak_liam_hot_spring.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Huai_mak_liam_hot_spring.jpg",
-  "credit": "Chaiyathat · CC BY-SA 4.0",
-  "by": "ai",
-  "appeal": 8,
-  "why": "ภาพบ่อน้ำธรรมชาติมีแสงแดดส่องสวยงามดึงดูดใจ",
   "at": "2026-11-07T04:46:39.988Z",
   "v": 2
  },
@@ -7581,6 +7543,2028 @@
   "image": null,
   "by": "rule",
   "at": "2026-11-07T12:42:44.324Z",
+  "v": 3
+ },
+ "osm-n1483414978": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Khao_lak_-_panoramio.jpg/960px-Khao_lak_-_panoramio.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Khao_lak_-_panoramio.jpg",
+  "credit": "Dirk Enthoven · CC BY 3.0",
+  "by": "ai",
+  "appeal": 6,
+  "why": "ภาพกิ้งก่าชัดเจน สื่อถึงสัตว์ป่าและสวนสัตว์ได้ดี",
+  "at": "2026-11-07T17:11:31.172Z",
+  "v": 3
+ },
+ "osm-n2014767621": {
+  "image": null,
+  "by": "ai",
+  "why": "ภาพทั้งหมดเป็นพื้นที่ตลาดน้ำพัทยา ไม่เกี่ยวข้องกับโชว์งู",
+  "at": "2026-11-07T17:11:31.172Z",
+  "v": 3
+ },
+ "osm-n2022799222": {
+  "image": null,
+  "by": "ai",
+  "why": "ภาพแมลงและผลไม้ ไม่เกี่ยวข้องกับโชว์งู",
+  "at": "2026-11-07T17:11:31.172Z",
+  "v": 3
+ },
+ "osm-n3315834991": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Maerim_Snake_Farm_P1110434.JPG/960px-Maerim_Snake_Farm_P1110434.JPG",
+  "page": "https://commons.wikimedia.org/wiki/File:Maerim_Snake_Farm_P1110434.JPG",
+  "credit": "Deror Avi · CC BY-SA 3.0",
+  "by": "ai",
+  "appeal": 8,
+  "why": "ภาพการแสดงกับงูหลามในน้ำมีความตื่นเต้น ชัดเจน และตรงกับฟาร์มงู",
+  "at": "2026-11-07T17:11:31.172Z",
+  "v": 3
+ },
+ "osm-n4427752860": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Crocodile_Farm_DSC04003.jpg/960px-Crocodile_Farm_DSC04003.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Crocodile_Farm_DSC04003.jpg",
+  "credit": "Per Meistrup · CC BY-SA 3.0",
+  "by": "ai",
+  "appeal": 7,
+  "why": "เห็นการแสดงจระเข้อย่างชัดเจนและน่าตื่นเต้น",
+  "at": "2026-11-07T17:11:53.652Z",
+  "v": 3
+ },
+ "osm-n6062446116": {
+  "image": "https://live.staticflickr.com/65535/40826592623_ba649d1308_b.jpg",
+  "page": "https://www.flickr.com/photos/62727381@N08/40826592623",
+  "credit": "Grain Sand · PDM 1.0",
+  "by": "ai",
+  "appeal": 8,
+  "why": "ภาพการกอดลูกช้างน่ารักและตรงกับชื่อสถานที่",
+  "at": "2026-11-07T17:11:53.652Z",
+  "v": 3
+ },
+ "osm-n9701566317": {
+  "image": null,
+  "by": "ai",
+  "why": "ไม่มีภาพที่แสดงช้างหรือกิจกรรมว่ายน้ำกับช้าง",
+  "at": "2026-11-07T17:11:53.652Z",
+  "v": 3
+ },
+ "osm-n11031718523": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Elephant_feeding.jpg/960px-Elephant_feeding.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Elephant_feeding.jpg",
+  "credit": "Sakthivel E · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 7,
+  "why": "ภาพบรรยากาศปางช้างสดใสและเห็นช้างชัดเจน",
+  "at": "2026-11-07T17:11:53.652Z",
+  "v": 3
+ },
+ "osm-n11173408926": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Purple_water_lillies_%2823096936810%29.jpg/960px-Purple_water_lillies_%2823096936810%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Purple_water_lillies_(23096936810).jpg",
+  "credit": "Thomas Quine · CC BY 2.0",
+  "by": "ai",
+  "appeal": 6,
+  "why": "ภาพบึงบัวสวยงามและคมชัด",
+  "at": "2026-11-07T17:12:09.492Z",
+  "v": 3
+ },
+ "osm-n11218053617": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Phuket_Zoo_%282013_Dec.%29_-_panoramio_%284%29.jpg/960px-Phuket_Zoo_%282013_Dec.%29_-_panoramio_%284%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Phuket_Zoo_(2013_Dec.)_-_panoramio_(4).jpg",
+  "credit": "Roma Neus · CC BY 3.0",
+  "by": "ai",
+  "appeal": 7,
+  "why": "ภาพอาคารสถานที่ท่องเที่ยวชัดเจน",
+  "at": "2026-11-07T17:12:09.492Z",
+  "v": 3
+ },
+ "osm-n11463181600": {
+  "image": "https://live.staticflickr.com/3003/3094642539_147de96912_b.jpg",
+  "page": "https://www.flickr.com/photos/25509772@N00/3094642539",
+  "credit": "Eustaquio Santimano · BY-NC-SA 2.0",
+  "by": "ai",
+  "appeal": 8,
+  "why": "ภาพการขี่ช้างในป่าธรรมชาติชัดเจน",
+  "at": "2026-11-07T17:12:09.492Z",
+  "v": 3
+ },
+ "osm-n12491858102": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Phuket_Zoo_%282013_Dec.%29_-_panoramio_%283%29.jpg/960px-Phuket_Zoo_%282013_Dec.%29_-_panoramio_%283%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Phuket_Zoo_(2013_Dec.)_-_panoramio_(3).jpg",
+  "credit": "Roma Neus · CC BY 3.0",
+  "by": "ai",
+  "appeal": 7,
+  "why": "ภาพน้ำพุและบรรยากาศสวนร่มรื่น",
+  "at": "2026-11-07T17:12:09.492Z",
+  "v": 3
+ },
+ "osm-n12543414801": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Phuket_Zoo_%282013_Dec.%29_-_panoramio_%284%29.jpg/960px-Phuket_Zoo_%282013_Dec.%29_-_panoramio_%284%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Phuket_Zoo_(2013_Dec.)_-_panoramio_(4).jpg",
+  "credit": "Roma Neus · CC BY 3.0",
+  "by": "ai",
+  "appeal": 8,
+  "why": "ภาพอาคารสถานที่สวยงามโดดเด่น",
+  "at": "2026-11-07T17:12:22.901Z",
+  "v": 3
+ },
+ "osm-n13257058669": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Khao_Ra.jpg/960px-Khao_Ra.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Khao_Ra.jpg",
+  "credit": "Christophe95 · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 5,
+  "why": "ภาพวิวธรรมชาติท้องถนนทั่วไป",
+  "at": "2026-11-07T17:12:22.901Z",
+  "v": 3
+ },
+ "osm-n13352536389": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Asian_Elephant_in_Thailand.jpg/960px-Asian_Elephant_in_Thailand.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Asian_Elephant_in_Thailand.jpg",
+  "credit": "James B Cutchin · CC BY 4.0",
+  "by": "ai",
+  "appeal": 9,
+  "why": "ช้างสวยงามชัดเจนบรรยากาศดี",
+  "at": "2026-11-07T17:12:22.901Z",
+  "v": 3
+ },
+ "osm-n13584215001": {
+  "image": "https://www.lemon8-app.com/seo/image?item_id=7074234362040189442&index=0&sign=0440252f3b540d3d098c6af1eb574596",
+  "page": "https://www.lemon8-app.com/@chompunuchfinly/7074234362040189442?region=th",
+  "credit": "Lemon8 · Mindfinlay",
+  "by": "ai",
+  "appeal": 8,
+  "why": "มุมถ่ายรูปหมู่บ้านช้างสวยเด่นชัด",
+  "at": "2026-11-07T17:12:22.901Z",
+  "v": 3
+ },
+ "osm-n14260307329": {
+  "image": null,
+  "by": "ai",
+  "why": "ภาพโคลสอัปเท้าช้าง ไม่น่าสนใจ",
+  "at": "2026-11-07T17:12:34.322Z",
+  "v": 3
+ },
+ "osm-n14351305563": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Monument_of_Yamada_Nagamasa_01.jpg/960px-Monument_of_Yamada_Nagamasa_01.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Monument_of_Yamada_Nagamasa_01.jpg",
+  "credit": "Viola · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 5,
+  "why": "ภาพอนุสาวรีย์ในสวน บรรยากาศใช้ได้",
+  "at": "2026-11-07T17:12:34.322Z",
+  "v": 3
+ },
+ "osm-w179940158": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Samui_2013_May_-_panoramio_%2888%29.jpg/960px-Samui_2013_May_-_panoramio_%2888%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Samui_2013_May_-_panoramio_(88).jpg",
+  "credit": "Roma Neus · CC BY 3.0",
+  "by": "ai",
+  "appeal": 6,
+  "why": "ภาพวิวธรรมชาติภู้องฟ้าใสสวยงาม",
+  "at": "2026-11-07T17:12:34.322Z",
+  "v": 3
+ },
+ "osm-n1440422900": {
+  "image": null,
+  "by": "ai",
+  "why": "ภาพถนนและป้ายโรงเรียน ไม่เกี่ยวกับสวนน้ำ",
+  "at": "2026-11-07T17:12:34.322Z",
+  "v": 3
+ },
+ "osm-n1597373913": {
+  "image": "https://upload.wikimedia.org/wikipedia/commons/6/6c/BLM_Colorado_and_Royal_Gorge_ATV_Clean_Up_Phantom_Canyon_%2815175807519%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:BLM_Colorado_and_Royal_Gorge_ATV_Clean_Up_Phantom_Canyon_(15175807519).jpg",
+  "credit": "Bureau of Land Management · Public domain",
+  "by": "ai",
+  "appeal": 6,
+  "why": "ภาพลานจอดรถและรถ ATV ชัดเจนตรงกับสถานที่",
+  "at": "2026-11-07T17:12:48.437Z",
+  "v": 3
+ },
+ "osm-n2002274610": {
+  "image": null,
+  "by": "ai",
+  "why": "ภาพถนนตอนกลางคืนไม่สื่อถึงบันจี้จัมพ์",
+  "at": "2026-11-07T17:12:48.437Z",
+  "v": 3
+ },
+ "osm-n2467656198": {
+  "image": null,
+  "by": "ai",
+  "why": "ภาพขนมหรือสิ่งของไม่เกี่ยวข้องกับสวนผจญภัย",
+  "at": "2026-11-07T17:12:48.437Z",
+  "v": 3
+ },
+ "osm-n4769745301": {
+  "image": null,
+  "by": "ai",
+  "why": "ภาพกราฟิกดาวเคราะห์และธงชาติไม่เกี่ยวกับสวนน้ำ",
+  "at": "2026-11-07T17:12:48.437Z",
+  "v": 3
+ },
+ "osm-n5072925408": {
+  "image": "https://live.staticflickr.com/4019/4359782598_801eda61c3_b.jpg",
+  "page": "https://www.flickr.com/photos/33363480@N05/4359782598",
+  "credit": "Nick Kenrick.. · BY-NC-SA 2.0",
+  "by": "ai",
+  "appeal": 7,
+  "why": "ภาพสวนสวยงาม บรรยากาศร่มรื่น",
+  "at": "2026-11-07T17:13:03.968Z",
+  "v": 3
+ },
+ "osm-n7758122809": {
+  "image": null,
+  "by": "ai",
+  "why": "ภาพสวนน้ำคนเยอะ ดูไม่ค่อยน่าเที่ยว",
+  "at": "2026-11-07T17:13:03.968Z",
+  "v": 3
+ },
+ "osm-n9958928550": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/%E0%B9%80%E0%B8%8B%E0%B9%87%E0%B8%99%E0%B8%97%E0%B8%A3%E0%B8%B1%E0%B8%A5_%E0%B8%9E%E0%B8%A5%E0%B8%B2%E0%B8%8B%E0%B8%B2_%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%99%E0%B8%B2_Central_Plaza_Bangna_%284%29.jpg/960px-%E0%B9%80%E0%B8%8B%E0%B9%87%E0%B8%99%E0%B8%97%E0%B8%A3%E0%B8%B1%E0%B8%A5_%E0%B8%9E%E0%B8%A5%E0%B8%B2%E0%B8%8B%E0%B8%B2_%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%99%E0%B8%B2_Central_Plaza_Bangna_%284%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:%E0%B9%80%E0%B8%8B%E0%B9%87%E0%B8%99%E0%B8%97%E0%B8%A3%E0%B8%B1%E0%B8%A5_%E0%B8%9E%E0%B8%A5%E0%B8%B2%E0%B8%8B%E0%B8%B2_%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%99%E0%B8%B2_Central_Plaza_Bangna_(4).jpg",
+  "credit": "กสิณธร ราชโอรส · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 7,
+  "why": "ภาพตึกศูนย์การค้าดีไซน์โดดเด่น สวยงาม",
+  "at": "2026-11-07T17:13:03.968Z",
+  "v": 3
+ },
+ "osm-n9958928551": {
+  "image": null,
+  "by": "ai",
+  "why": "ภาพรถสองแถว ไม่สื่อถึงสถานที่",
+  "at": "2026-11-07T17:13:03.968Z",
+  "v": 3
+ },
+ "osm-n13363628701": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Three_shades_of_blue_%2829686694795%29.jpg/960px-Three_shades_of_blue_%2829686694795%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Three_shades_of_blue_(29686694795).jpg",
+  "credit": "cloud.shepherd · CC BY 2.0",
+  "by": "ai",
+  "appeal": 8,
+  "why": "วิวสระว่ายน้ำหรูยามพระอาทิตย์ตก",
+  "at": "2026-11-07T17:13:16.966Z",
+  "v": 3
+ },
+ "osm-w148588339": {
+  "image": null,
+  "by": "ai",
+  "why": "บรรยากาศท่าเรือและเรือนำเที่ยว",
+  "at": "2026-11-07T17:13:16.966Z",
+  "v": 3
+ },
+ "osm-w173152255": {
+  "image": null,
+  "by": "ai",
+  "why": "กิจกรรมขี่ช้างลุยน้ำน่าสนใจ",
+  "at": "2026-11-07T17:13:16.966Z",
+  "v": 3
+ },
+ "osm-w219078040": {
+  "image": "https://live.staticflickr.com/3118/2558712284_506eb445d6_b.jpg",
+  "page": "https://www.flickr.com/photos/12600575@N07/2558712284",
+  "credit": "jenniferlisa · BY-NC-SA 2.0",
+  "by": "ai",
+  "appeal": 7,
+  "why": "ผลไม้เมืองร้อนสดๆ น่าซื้อ",
+  "at": "2026-11-07T17:13:16.966Z",
+  "v": 3
+ },
+ "osm-w318917724": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Botanical_Garden%2C_Moscow.jpg/960px-Botanical_Garden%2C_Moscow.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Botanical_Garden,_Moscow.jpg",
+  "credit": "AlixSaz · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 8,
+  "why": "ภาพสวยงาม คมชัด เห็นวิวสวนและสถาปัตยกรรมโดดเด่น",
+  "at": "2026-11-07T17:13:27.399Z",
+  "v": 3
+ },
+ "osm-w429674907": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Upside_down_house_brighton.jpg/960px-Upside_down_house_brighton.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Upside_down_house_brighton.jpg",
+  "credit": "peter castleton · CC BY 2.0",
+  "by": "ai",
+  "appeal": 8,
+  "why": "ภาพบ้านกลับหัวยามค่ำคืนมีแสงสีสวยงามดึงดูดใจ",
+  "at": "2026-11-07T17:13:27.399Z",
+  "v": 3
+ },
+ "osm-w481698079": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Mangroves_on_Ko_Pha_Ngan%2C_April%2C_2018.jpg/960px-Mangroves_on_Ko_Pha_Ngan%2C_April%2C_2018.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Mangroves_on_Ko_Pha_Ngan,_April,_2018.jpg",
+  "credit": "Alexey Komarov · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 7,
+  "why": "ภาพบรรยากาศพระอาทิตย์ตกดินริมทะเลสวยงามโรแมนติก",
+  "at": "2026-11-07T17:13:27.399Z",
+  "v": 3
+ },
+ "osm-w1008081011": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Austin_Heights_Water_and_Adventure_Park.JPG/960px-Austin_Heights_Water_and_Adventure_Park.JPG",
+  "page": "https://commons.wikimedia.org/wiki/File:Austin_Heights_Water_and_Adventure_Park.JPG",
+  "credit": "Chongkian · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 6,
+  "why": "ภาพป้ายทางเข้าสวนน้ำชัดเจนและมีสีสันสดใส",
+  "at": "2026-11-07T17:13:27.399Z",
+  "v": 3
+ },
+ "osm-w1029210985": {
+  "image": "https://www.lemon8-app.com/seo/image?item_id=7504282847847793160&index=0&sign=e6cc7993b6b6f2cc1928d9d177c2c038",
+  "page": "https://www.lemon8-app.com/@orachatraing/7504282847847793160?region=th",
+  "credit": "Lemon8 · EUA’s journey",
+  "by": "ai",
+  "appeal": 6,
+  "why": "บรรยากาศสวนสนุกและเครื่องเล่นชัดเจน",
+  "at": "2026-11-07T17:13:51.401Z",
+  "v": 3
+ },
+ "osm-w1232939915": {
+  "image": null,
+  "by": "ai",
+  "why": "ภาพดาวเทียมและภาพมืดไม่สื่อถึงสวนน้ำ",
+  "at": "2026-11-07T17:13:51.401Z",
+  "v": 3
+ },
+ "osm-n2156864010": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Madrid_-_Sky_Bar_360%C2%BA_06.jpg/960px-Madrid_-_Sky_Bar_360%C2%BA_06.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Madrid_-_Sky_Bar_360%C2%BA_06.jpg",
+  "credit": "Zarateman · CC0",
+  "by": "ai",
+  "appeal": 8,
+  "why": "วิวรูฟท็อปบาร์และตึกสูงสวยงามน่าเที่ยว",
+  "at": "2026-11-07T17:13:51.401Z",
+  "v": 3
+ },
+ "osm-r12601624": {
+  "image": "https://www.lemon8-app.com/seo/image?item_id=7358455310891254289&index=0&sign=30d2a64a0e005a5fd2be11970c863608",
+  "page": "https://www.lemon8-app.com/@fahtofar/7358455310891254289?region=th",
+  "credit": "Lemon8 · Fah To Far",
+  "by": "ai",
+  "appeal": 8,
+  "why": "วิวธรรมชาติและภูเขาสวยงาม บรรยากาศอุทยาน",
+  "at": "2026-11-07T17:13:51.401Z",
+  "v": 3
+ },
+ "osm-w32743506": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Majestic_-_panoramio_%282%29.jpg/960px-Majestic_-_panoramio_%282%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Majestic_-_panoramio_(2).jpg",
+  "credit": "josef knecht · CC BY 3.0",
+  "by": "ai",
+  "appeal": 7,
+  "why": "มุมมองพระพุทธรูปริมทะเลสวยเด่นชัด",
+  "at": "2026-11-07T17:14:35.148Z",
+  "v": 3
+ },
+ "osm-r14010438": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Phuket_2015_april_-_panoramio_%2829%29.jpg/960px-Phuket_2015_april_-_panoramio_%2829%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Phuket_2015_april_-_panoramio_(29).jpg",
+  "credit": "Roma Neus · CC BY 3.0",
+  "by": "ai",
+  "appeal": 8,
+  "why": "วิวชายหาดและน้ำทะเลใสสวยงาม",
+  "at": "2026-11-07T17:14:35.148Z",
+  "v": 3
+ },
+ "osm-n11962115051": {
+  "image": null,
+  "by": "ai",
+  "why": "รูปภาพไม่เกี่ยวข้องกับบาร์หรือสถานบันเทิง",
+  "at": "2026-11-07T17:14:35.148Z",
+  "v": 3
+ },
+ "osm-n14069575001": {
+  "image": "https://static.wixstatic.com/media/759deb_c637ed7d882d4c9582d7b10e5e77b419%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/759deb_c637ed7d882d4c9582d7b10e5e77b419%7Emv2.jpg",
+  "page": "https://us-bar.com",
+  "credit": "รูปจากเว็บไซต์ร้าน",
+  "by": "ai",
+  "appeal": 8,
+  "why": "บรรยากาศบาร์มืดสไตล์ค็อกเทลดูน่าสนใจ",
+  "at": "2026-11-07T17:14:35.148Z",
+  "v": 3
+ },
+ "osm-w1227028446": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Bangkok_-_Calypso_Cabaret_show.JPG/960px-Bangkok_-_Calypso_Cabaret_show.JPG",
+  "page": "https://commons.wikimedia.org/wiki/File:Bangkok_-_Calypso_Cabaret_show.JPG",
+  "credit": "Azreey · CC BY-SA 3.0",
+  "by": "ai",
+  "appeal": 8,
+  "why": "ภาพโชว์บรรยากาศสถานบันเทิงยามค่ำคืนและการแสดงที่น่าสนใจ",
+  "at": "2026-11-07T17:14:47.884Z",
+  "v": 3
+ },
+ "osm-n6220643585": {
+  "image": null,
+  "by": "ai",
+  "why": "รูปภาพเป็นกราฟิกที่มีข้อความบังและไม่เห็นตัวพิพิธภัณฑ์ชัดเจน",
+  "at": "2026-11-07T17:14:47.884Z",
+  "v": 3
+ },
+ "osm-w1434802191": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Maha_Chetsadabodin_Pavilion_at_Night.jpg/960px-Maha_Chetsadabodin_Pavilion_at_Night.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Maha_Chetsadabodin_Pavilion_at_Night.jpg",
+  "credit": "This Photo was taken by Supanut Arunoprayote. Feel free to u · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 8,
+  "why": "ภาพตึกนิทรรศการรัตนโกสินทร์ยามค่ำคืนสวยงามและโดดเด่น",
+  "at": "2026-11-07T17:14:47.884Z",
+  "v": 3
+ },
+ "osm-w32877657": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Bang_Saen_Beach_at_sunset_2.jpg/960px-Bang_Saen_Beach_at_sunset_2.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Bang_Saen_Beach_at_sunset_2.jpg",
+  "credit": "Slyronit · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 8,
+  "why": "ภาพพระอาทิตย์ตกดินริมหาดบางแสนบรรยากาศโรแมนติกน่าเที่ยว",
+  "at": "2026-11-07T17:14:47.884Z",
+  "v": 3
+ },
+ "wd-Q113638780": {
+  "image": "https://www.lemon8-app.com/seo/image?item_id=7370262417210737169&index=0&sign=da9da982725e0c07b375060995a9f23e",
+  "page": "https://www.lemon8-app.com/@ayutthaya_station/7370262417210737169?region=th",
+  "credit": "Lemon8 · อยุธยาสเตชั่น",
+  "by": "ai",
+  "appeal": 9,
+  "why": "ภาพมุมสูงเห็นเศียรพระในรากไม้ชัดเจนและสวยงาม",
+  "at": "2026-11-07T17:15:11.215Z",
+  "v": 3
+ },
+ "osm-w400477572": {
+  "image": null,
+  "by": "ai",
+  "why": "ไม่มีรูปวิวอุทยานที่เหมาะสม มีแต่รูปดอกไม้และแมลง",
+  "at": "2026-11-07T17:15:11.215Z",
+  "v": 3
+ },
+ "osm-n1978947684": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Sarika_Waterfall_-_Khao_Yai_National_Park.jpg/960px-Sarika_Waterfall_-_Khao_Yai_National_Park.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Sarika_Waterfall_-_Khao_Yai_National_Park.jpg",
+  "credit": "Songpholt · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 9,
+  "why": "ภาพน้ำตกสวยงามคมชัด บรรยากาศธรรมชาติร่มรื่น",
+  "at": "2026-11-07T17:15:11.215Z",
+  "v": 3
+ },
+ "osm-w301157259": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Facade_of_Wat_Mangkon_Kamalawat.jpg/960px-Facade_of_Wat_Mangkon_Kamalawat.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Facade_of_Wat_Mangkon_Kamalawat.jpg",
+  "credit": "Deepak-nsk · CC0",
+  "by": "ai",
+  "appeal": 7,
+  "why": "ภาพมุมกว้างเห็นสถาปัตยกรรมชัดเจนและดูสวยงาม",
+  "at": "2026-11-07T17:15:39.227Z",
+  "v": 3
+ },
+ "osm-w377882070": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Kang-Cow.jpg/960px-Kang-Cow.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Kang-Cow.jpg",
+  "credit": "Archy36 · CC BY-SA 3.0",
+  "by": "ai",
+  "appeal": 6,
+  "why": "เห็นตัววัดและเจดีย์ทรงมอญริมน้ำเด่นชัด",
+  "at": "2026-11-07T17:15:39.227Z",
+  "v": 3
+ },
+ "osm-w377888079": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%B2%E0%B8%81%E0%B8%A3_%28%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3%29_02.jpg/960px-%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%B2%E0%B8%81%E0%B8%A3_%28%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3%29_02.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%B2%E0%B8%81%E0%B8%A3_(%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3)_02.jpg",
+  "credit": "Dharmadana · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 6,
+  "why": "ถ่ายภาพโบสถ์วัดได้ชัดเจน",
+  "at": "2026-11-07T17:15:39.227Z",
+  "v": 3
+ },
+ "osm-w377888080": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%84%E0%B8%A4%E0%B8%AB%E0%B8%9A%E0%B8%94%E0%B8%B5_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%9E%E0%B8%A5%E0%B8%B1%E0%B8%94_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%2812%29.jpg/960px-%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%84%E0%B8%A4%E0%B8%AB%E0%B8%9A%E0%B8%94%E0%B8%B5_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%9E%E0%B8%A5%E0%B8%B1%E0%B8%94_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%2812%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%84%E0%B8%A4%E0%B8%AB%E0%B8%9A%E0%B8%94%E0%B8%B5_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%9E%E0%B8%A5%E0%B8%B1%E0%B8%94_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_(12).jpg",
+  "credit": "กสิณธร ราชโอรส · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 7,
+  "why": "ภาพองค์พระประธานภายในวัดมีความงดงามคมชัด",
+  "at": "2026-11-07T17:15:39.227Z",
+  "v": 3
+ },
+ "osm-w378171108": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/201312161622c_Sukothai%2C_Wat_Son_Khao.jpg/960px-201312161622c_Sukothai%2C_Wat_Son_Khao.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:201312161622c_Sukothai,_Wat_Son_Khao.jpg",
+  "credit": "Hartmann Linge · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 7,
+  "why": "ภาพมุมกว้างเห็นโบราณสถานและเจดีย์ชัดเจน",
+  "at": "2026-11-07T17:15:53.347Z",
+  "v": 3
+ },
+ "osm-w378171189": {
+  "image": "https://live.staticflickr.com/2691/4128575616_9c57bdf44d_b.jpg",
+  "page": "https://www.flickr.com/photos/37510490@N02/4128575616",
+  "credit": "Two Steps Behind · BY-NC 2.0",
+  "by": "ai",
+  "appeal": 7,
+  "why": "ภาพมุมสวยงามของสถาปัตยกรรมวัดโบราณ",
+  "at": "2026-11-07T17:15:53.347Z",
+  "v": 3
+ },
+ "osm-w378173860": {
+  "image": null,
+  "by": "ai",
+  "why": "ไม่มีรูปภาพที่เหมาะสม",
+  "at": "2026-11-07T17:15:53.347Z",
+  "v": 3
+ },
+ "osm-w378530686": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AD%E0%B8%B8%E0%B8%94%E0%B8%A1%E0%B8%A3%E0%B8%B1%E0%B8%87%E0%B8%AA%E0%B8%B5_%282%29.jpg/960px-%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AD%E0%B8%B8%E0%B8%94%E0%B8%A1%E0%B8%A3%E0%B8%B1%E0%B8%87%E0%B8%AA%E0%B8%B5_%282%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AD%E0%B8%B8%E0%B8%94%E0%B8%A1%E0%B8%A3%E0%B8%B1%E0%B8%87%E0%B8%AA%E0%B8%B5_(2).jpg",
+  "credit": "Dharmadana · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 7,
+  "why": "ภาพอุโบสถวัดชัดเจนและสวยงาม",
+  "at": "2026-11-07T17:15:53.347Z",
+  "v": 3
+ },
+ "osm-w379073040": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%AA%E0%B8%B0%E0%B9%81%E0%B8%81%E0%B9%83%E0%B8%99_1.jpg/960px-%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%AA%E0%B8%B0%E0%B9%81%E0%B8%81%E0%B9%83%E0%B8%99_1.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%AA%E0%B8%B0%E0%B9%81%E0%B8%81%E0%B9%83%E0%B8%99_1.jpg",
+  "credit": "Dharmadana · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 7,
+  "why": "ภาพถ่ายพระอุโบสถวัดบางสะแกในชัดเจน สวยงาม แสงดี",
+  "at": "2026-11-07T17:16:09.795Z",
+  "v": 3
+ },
+ "osm-w283722626": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/%E0%B8%AA%E0%B8%96%E0%B8%B2%E0%B8%9A%E0%B8%B1%E0%B8%99%E0%B8%84%E0%B8%B6%E0%B8%81%E0%B8%A4%E0%B8%97%E0%B8%98%E0%B8%B4%E0%B9%8C_Kukrit_Institute_%282026%29_-_IMG_01.jpg/960px-%E0%B8%AA%E0%B8%96%E0%B8%B2%E0%B8%9A%E0%B8%B1%E0%B8%99%E0%B8%84%E0%B8%B6%E0%B8%81%E0%B8%A4%E0%B8%97%E0%B8%98%E0%B8%B4%E0%B9%8C_Kukrit_Institute_%282026%29_-_IMG_01.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:%E0%B8%AA%E0%B8%96%E0%B8%B2%E0%B8%9A%E0%B8%B1%E0%B8%99%E0%B8%84%E0%B8%B6%E0%B8%81%E0%B8%A4%E0%B8%97%E0%B8%98%E0%B8%B4%E0%B9%8C_Kukrit_Institute_(2026)_-_IMG_01.jpg",
+  "credit": "Chainwit. · CC BY 4.0",
+  "by": "ai",
+  "appeal": 5,
+  "why": "แสดงอาคารศูนย์เรียนรู้ชัดเจนที่สุด",
+  "at": "2026-11-07T17:16:09.795Z",
+  "v": 3
+ },
+ "osm-w539017238": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Nai_Lert%27s_boats_04.jpg/960px-Nai_Lert%27s_boats_04.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Nai_Lert%27s_boats_04.jpg",
+  "credit": "Chainwit. · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 8,
+  "why": "ภาพรถโบราณในบ้านนายเลิศ ดูคลาสสิก ชวนดึงดูดใจให้น่ามาเยี่ยมชม",
+  "at": "2026-11-07T17:16:09.795Z",
+  "v": 3
+ },
+ "osm-n3328193420": {
+  "image": "https://live.staticflickr.com/5720/21164094380_c02d8298cc_b.jpg",
+  "page": "https://www.flickr.com/photos/106986626@N08/21164094380",
+  "credit": "philoup_d · BY-SA 2.0",
+  "by": "ai",
+  "appeal": 5,
+  "why": "ป้ายหน้าร้านบาร์ชัดเจน บรรยากาศยามค่ำคืน",
+  "at": "2026-11-07T17:16:09.795Z",
+  "v": 3
+ },
+ "osm-n14061963301": {
+  "image": "https://upload.wikimedia.org/wikipedia/commons/4/42/Vanilla_Sky_Rooftop_Bar_-_Compass_Skyview_Hotel.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Vanilla_Sky_Rooftop_Bar_-_Compass_Skyview_Hotel.jpg",
+  "credit": "Li Minh Cac · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 8,
+  "why": "วิวพระอาทิตย์ตกสวยงามตระการตา",
+  "at": "2026-11-07T17:16:22.279Z",
+  "v": 3
+ },
+ "osm-w40634521": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Interior_of_Somdet_Phra_Narai_National_Museum_-_Lop_Buri_-_Thailand_%2834896726601%29.jpg/960px-Interior_of_Somdet_Phra_Narai_National_Museum_-_Lop_Buri_-_Thailand_%2834896726601%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Interior_of_Somdet_Phra_Narai_National_Museum_-_Lop_Buri_-_Thailand_(34896726601).jpg",
+  "credit": "Adam Jones from Kelowna, BC, Canada · CC BY-SA 2.0",
+  "by": "ai",
+  "appeal": 7,
+  "why": "อาคารพิพิธภัณฑ์สวยงามคลาสสิก",
+  "at": "2026-11-07T17:16:22.279Z",
+  "v": 3
+ },
+ "osm-w992101976": {
+  "image": "https://live.staticflickr.com/8621/30139044142_4ca16d54de_b.jpg",
+  "page": "https://www.flickr.com/photos/8147927@N08/30139044142",
+  "credit": "Thanate Tan · BY 2.0",
+  "by": "ai",
+  "appeal": 7,
+  "why": "ซุ้มทางเข้าสถาปัตยกรรมล้านนาโดดเด่น",
+  "at": "2026-11-07T17:16:22.279Z",
+  "v": 3
+ },
+ "osm-n2769486127": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Ko_Kret%2C_Pak_Kret_District%2C_Nonthaburi_11120%2C_Thailand_-_panoramio_%2810%29.jpg/960px-Ko_Kret%2C_Pak_Kret_District%2C_Nonthaburi_11120%2C_Thailand_-_panoramio_%2810%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Ko_Kret,_Pak_Kret_District,_Nonthaburi_11120,_Thailand_-_panoramio_(10).jpg",
+  "credit": "mohigan · CC BY-SA 3.0",
+  "by": "ai",
+  "appeal": 6,
+  "why": "ร้านอาหารริมน้ำบรรยากาศร่มรื่น",
+  "at": "2026-11-07T17:16:22.279Z",
+  "v": 3
+ },
+ "osm-n3523548840": {
+  "image": null,
+  "by": "ai",
+  "why": "ภาพไม่เกี่ยวกับบาร์และบรรยากาศไม่น่าสนใจ",
+  "at": "2026-11-07T17:16:31.695Z",
+  "v": 3
+ },
+ "osm-n4540948592": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/Long_Beach_-_Had_Phra_Ae_-_panoramio.jpg/960px-Long_Beach_-_Had_Phra_Ae_-_panoramio.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Long_Beach_-_Had_Phra_Ae_-_panoramio.jpg",
+  "credit": "Владимир Е · CC BY-SA 3.0",
+  "by": "ai",
+  "appeal": 7,
+  "why": "วิวทะเลสวยงาม เหมาะกับบาร์ริมหาด",
+  "at": "2026-11-07T17:16:31.695Z",
+  "v": 3
+ },
+ "osm-n4742863324": {
+  "image": null,
+  "by": "ai",
+  "why": "ภาพอาคารสำนักงานและป้ายสถานทูต ไม่สื่อถึงบาร์",
+  "at": "2026-11-07T17:16:31.695Z",
+  "v": 3
+ },
+ "osm-n6163154847": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/Sunset_auf_Ko_Lanta_%2831327953975%29.jpg/960px-Sunset_auf_Ko_Lanta_%2831327953975%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Sunset_auf_Ko_Lanta_(31327953975).jpg",
+  "credit": "Peter Addor from underway; mailnly Switzerland, Italy and Sr · CC BY 2.0",
+  "by": "ai",
+  "appeal": 7,
+  "why": "วิวพระอาทิตย์ตกดินบรรยากาศน่านั่งดื่ม",
+  "at": "2026-11-07T17:16:31.695Z",
+  "v": 3
+ },
+ "osm-n6839690397": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Westfield_Shopping_Centre-The_Champagne_Bar.jpg/960px-Westfield_Shopping_Centre-The_Champagne_Bar.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Westfield_Shopping_Centre-The_Champagne_Bar.jpg",
+  "credit": "morebyless · CC BY 2.0",
+  "by": "ai",
+  "appeal": 7,
+  "why": "บรรยากาศบาร์หรูหราร่วมสมัยสวยงาม",
+  "at": "2026-11-07T17:16:45.709Z",
+  "v": 3
+ },
+ "osm-n6839846710": {
+  "image": null,
+  "by": "ai",
+  "why": "วิวเมืองยามค่ำคืนและสถาปัตยกรรมโดดเด่น",
+  "at": "2026-11-07T17:16:45.709Z",
+  "v": 3
+ },
+ "osm-n12640866389": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/%E0%B8%AA%E0%B8%B0%E0%B8%9E%E0%B8%B2%E0%B8%99%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B8%98%E0%B8%99%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%94%E0%B8%B8%E0%B8%AA%E0%B8%B4%E0%B8%95_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%285%29.jpg/960px-%E0%B8%AA%E0%B8%B0%E0%B8%9E%E0%B8%B2%E0%B8%99%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B8%98%E0%B8%99%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%94%E0%B8%B8%E0%B8%AA%E0%B8%B4%E0%B8%95_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%285%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:%E0%B8%AA%E0%B8%B0%E0%B8%9E%E0%B8%B2%E0%B8%99%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B8%98%E0%B8%99%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%94%E0%B8%B8%E0%B8%AA%E0%B8%B4%E0%B8%95_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_(5).jpg",
+  "credit": "กสิณธร ราชโอรส · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 6,
+  "why": "วิวแม่น้ำเจ้าพระยาเปิดโล่งกว้าง",
+  "at": "2026-11-07T17:16:45.709Z",
+  "v": 3
+ },
+ "osm-w402417158": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Why_not_bar%2C_Ko_Lanta_Yai%2C_April%2C_2018.jpg/960px-Why_not_bar%2C_Ko_Lanta_Yai%2C_April%2C_2018.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Why_not_bar,_Ko_Lanta_Yai,_April,_2018.jpg",
+  "credit": "Alexey Komarov · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 7,
+  "why": "บาร์สไตล์เรกเก้ริมทะเลบรรยากาศชิลๆ",
+  "at": "2026-11-07T17:16:45.709Z",
+  "v": 3
+ },
+ "wd-Q7200579": {
+  "image": null,
+  "by": "ai",
+  "why": "ภาพอาคารและบรรยากาศริมน้ำสวยงาม เหมาะสมกับวังปลายเนิน",
+  "at": "2026-11-07T17:17:00.179Z",
+  "v": 3
+ },
+ "wd-Q4855200": {
+  "image": null,
+  "by": "ai",
+  "why": "ภาพป้ายหรือกราฟิกที่ไม่แสดงตัวพิพิธภัณฑ์ตุ๊กตา",
+  "at": "2026-11-07T17:17:00.179Z",
+  "v": 3
+ },
+ "osm-n1799203298": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Bang_Kachao%2C_Phra_Pradaeng_District%2C_Samut_Prakan%2C_Thailand_-_panoramio_%2810%29.jpg/960px-Bang_Kachao%2C_Phra_Pradaeng_District%2C_Samut_Prakan%2C_Thailand_-_panoramio_%2810%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Bang_Kachao,_Phra_Pradaeng_District,_Samut_Prakan,_Thailand_-_panoramio_(10).jpg",
+  "credit": "mohigan · CC BY-SA 3.0",
+  "by": "ai",
+  "appeal": 7,
+  "why": "แสดงตู้จัดแสดงปลากัดสวยงาม ชัดเจน",
+  "at": "2026-11-07T17:17:00.179Z",
+  "v": 3
+ },
+ "osm-w200670984": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/CUAuditorium_06.23.jpg/960px-CUAuditorium_06.23.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:CUAuditorium_06.23.jpg",
+  "credit": "This Photo was taken by Supanut Arunoprayote. Feel free to u · CC BY 4.0",
+  "by": "ai",
+  "appeal": 8,
+  "why": "ภาพอาคารพิพิธภัณฑ์สถาปัตยกรรมสวยงามโดดเด่น",
+  "at": "2026-11-07T17:17:00.179Z",
+  "v": 3
+ },
+ "osm-r5944547": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Top_of_Doi_Pha_Hom_Pok.jpg/960px-Top_of_Doi_Pha_Hom_Pok.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Top_of_Doi_Pha_Hom_Pok.jpg",
+  "credit": "Eartheart123 · CC BY-SA 3.0",
+  "by": "ai",
+  "appeal": 8,
+  "why": "วิวทิวเขาและนักท่องเที่ยวเดินชมธรรมชาติสวยงามน่าสนใจ",
+  "at": "2026-11-07T17:17:22.312Z",
+  "v": 3
+ },
+ "osm-r5944551": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Pang_Oung_-_Tham_Pla_%E2%80%93_Namtok_Pha_Suea_National_Park.jpg/960px-Pang_Oung_-_Tham_Pla_%E2%80%93_Namtok_Pha_Suea_National_Park.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Pang_Oung_-_Tham_Pla_%E2%80%93_Namtok_Pha_Suea_National_Park.jpg",
+  "credit": "Nutchana · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 9,
+  "why": "ทัศนียภาพอ่างเก็บน้ำล้อมรอบด้วยป่าเขียวขจีสวยงามโรแมนติก",
+  "at": "2026-11-07T17:17:22.312Z",
+  "v": 3
+ },
+ "osm-r6004034": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Mae_Wa_National_Park_3.jpg/960px-Mae_Wa_National_Park_3.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Mae_Wa_National_Park_3.jpg",
+  "credit": "Kimpida · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 7,
+  "why": "ป้ายอุทยานแห่งชาติชัดเจนพร้อมบรรยากาศร่มรื่น",
+  "at": "2026-11-07T17:17:22.312Z",
+  "v": 3
+ },
+ "osm-r6009654": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/%E0%B8%AA%E0%B8%B0%E0%B8%9E%E0%B8%B2%E0%B8%99%E0%B9%84%E0%B8%A1%E0%B9%89%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%9A%E0%B9%88%E0%B8%AD%E0%B9%80%E0%B8%81%E0%B8%A5%E0%B8%B7%E0%B8%AD.JPG/960px-%E0%B8%AA%E0%B8%B0%E0%B8%9E%E0%B8%B2%E0%B8%99%E0%B9%84%E0%B8%A1%E0%B9%89%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%9A%E0%B9%88%E0%B8%AD%E0%B9%80%E0%B8%81%E0%B8%A5%E0%B8%B7%E0%B8%AD.JPG",
+  "page": "https://commons.wikimedia.org/wiki/File:%E0%B8%AA%E0%B8%B0%E0%B8%9E%E0%B8%B2%E0%B8%99%E0%B9%84%E0%B8%A1%E0%B9%89%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%9A%E0%B9%88%E0%B8%AD%E0%B9%80%E0%B8%81%E0%B8%A5%E0%B8%B7%E0%B8%AD.JPG",
+  "credit": "Ranitar charitkul · CC BY-SA 3.0",
+  "by": "ai",
+  "appeal": 7,
+  "why": "สะพานไม้ในป่าเขียวขจีดูธรรมชาติสมบูรณ์",
+  "at": "2026-11-07T17:17:22.312Z",
+  "v": 3
+ },
+ "osm-r6009655": {
+  "image": null,
+  "by": "ai",
+  "why": "ภาพไม่เกี่ยวข้องกับอุทยานแห่งชาติ",
+  "at": "2026-11-07T17:17:34.623Z",
+  "v": 3
+ },
+ "osm-r6009663": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Wiang_Kosai_National_Park1.jpg/960px-Wiang_Kosai_National_Park1.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Wiang_Kosai_National_Park1.jpg",
+  "credit": "LannaPhoto · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 7,
+  "why": "ภาพเสาหินธรรมชาติสวยงามและน่าสนใจ",
+  "at": "2026-11-07T17:17:34.623Z",
+  "v": 3
+ },
+ "osm-r12088749": {
+  "image": null,
+  "by": "ai",
+  "why": "ภาพป้ายสถานีรถไฟไม่ตรงกับสถานที่ธรรมชาติ",
+  "at": "2026-11-07T17:17:34.623Z",
+  "v": 3
+ },
+ "osm-r12088751": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Leptophryne_borbonica%2C_Slender-legged_toad_-_Bang_Lang_National_Park_%2850770102761%29.jpg/960px-Leptophryne_borbonica%2C_Slender-legged_toad_-_Bang_Lang_National_Park_%2850770102761%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Leptophryne_borbonica,_Slender-legged_toad_-_Bang_Lang_National_Park_(50770102761).jpg",
+  "credit": "Rushen · CC BY-SA 2.0",
+  "by": "ai",
+  "appeal": 7,
+  "why": "ภาพกบในธรรมชาติชัดเจนและน่าสนใจ",
+  "at": "2026-11-07T17:17:34.623Z",
+  "v": 3
+ },
+ "osm-r12100307": {
+  "image": null,
+  "by": "ai",
+  "why": "ภาพมีข้อความและกราฟิกบัง",
+  "at": "2026-11-07T17:17:49.849Z",
+  "v": 3
+ },
+ "osm-r12104352": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Avian_and_Blossom_of_Hat_Wanakon.jpg/960px-Avian_and_Blossom_of_Hat_Wanakon.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Avian_and_Blossom_of_Hat_Wanakon.jpg",
+  "credit": "Kriangsak Hongchumpae · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 7,
+  "why": "ภาพนกสีสันสวยงามคมชัด",
+  "at": "2026-11-07T17:17:49.849Z",
+  "v": 3
+ },
+ "osm-r12113343": {
+  "image": null,
+  "by": "ai",
+  "why": "ภาพลำธารแห้งแล้งไม่ดึงดูด",
+  "at": "2026-11-07T17:17:49.849Z",
+  "v": 3
+ },
+ "osm-r12632007": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Sai_Thong_%282%29.jpg/960px-Sai_Thong_%282%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Sai_Thong_(2).jpg",
+  "credit": "Manoonp · CC BY-SA 3.0",
+  "by": "ai",
+  "appeal": 9,
+  "why": "ทุ่งดอกกระเจียวหมอกสวยงามโดดเด่น",
+  "at": "2026-11-07T17:17:49.849Z",
+  "v": 3
+ },
+ "osm-r12656181": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Chet_Sao_Noi_National_Park.jpg/960px-Chet_Sao_Noi_National_Park.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Chet_Sao_Noi_National_Park.jpg",
+  "credit": "Jakkeeman · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 9,
+  "why": "ภาพน้ำตกสวยงามร่มรื่น ดึงดูดใจให้น่าไปเที่ยว",
+  "at": "2026-11-07T17:18:03.302Z",
+  "v": 3
+ },
+ "osm-r12659452": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Secret_bridge_Khao_Chamao.jpg/960px-Secret_bridge_Khao_Chamao.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Secret_bridge_Khao_Chamao.jpg",
+  "credit": "Yoshifumi Iwata · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 8,
+  "why": "ภาพลำธารและฝูงปลาธรรมชาติชัดเจน บรรยากาศดี",
+  "at": "2026-11-07T17:18:03.302Z",
+  "v": 3
+ },
+ "osm-r12659453": {
+  "image": null,
+  "by": "ai",
+  "why": "ภาพแมลงสีเขียวประกายสดใส โดดเด่นและน่าสนใจ",
+  "at": "2026-11-07T17:18:03.302Z",
+  "v": 3
+ },
+ "osm-r12667365": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Klongkae_Waterfall_National_Park_%283%29.jpg/960px-Klongkae_Waterfall_National_Park_%283%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Klongkae_Waterfall_National_Park_(3).jpg",
+  "credit": "Chaiyathat · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 9,
+  "why": "ภาพน้ำตกกลางป่าเขียวขจี สวยงามน่าไปเยือน",
+  "at": "2026-11-07T17:18:03.302Z",
+  "v": 3
+ },
+ "osm-r12695293": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/DPP_0015-2.JPG/960px-DPP_0015-2.JPG",
+  "page": "https://commons.wikimedia.org/wiki/File:DPP_0015-2.JPG",
+  "credit": "Donjiy · CC BY-SA 3.0",
+  "by": "ai",
+  "appeal": 6,
+  "why": "ภาพแก่งหินกว้างขวางชัดเจน",
+  "at": "2026-11-07T17:18:20.513Z",
+  "v": 3
+ },
+ "osm-r12719043": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Morning_at_Tham_Sakoen.jpg/960px-Morning_at_Tham_Sakoen.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Morning_at_Tham_Sakoen.jpg",
+  "credit": "BerryJ · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 8,
+  "why": "วิวทะเลหมอกยามเช้าสวยงามน่าเที่ยว",
+  "at": "2026-11-07T17:18:20.513Z",
+  "v": 3
+ },
+ "osm-r12719044": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Khun_Sathan_National_Park1.jpg/960px-Khun_Sathan_National_Park1.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Khun_Sathan_National_Park1.jpg",
+  "credit": "LannaPhoto · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 8,
+  "why": "บ้านพักท่ามกลางธรรมชาติและดอกพญาเสือโคร่ง",
+  "at": "2026-11-07T17:18:20.513Z",
+  "v": 3
+ },
+ "osm-n261548252": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Chae_Son_Hot_springs_in_Morning.jpg/960px-Chae_Son_Hot_springs_in_Morning.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Chae_Son_Hot_springs_in_Morning.jpg",
+  "credit": "Voranat Rajchatan · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 8,
+  "why": "บรรยากาศบ่อน้ำพุร้อนยามเช้าสวยงามโดดเด่น",
+  "at": "2026-11-07T17:18:20.513Z",
+  "v": 3
+ },
+ "osm-n305442093": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Small_waterfall_at_Ko_Lanta_National_Park_%288184658168%29.jpg/960px-Small_waterfall_at_Ko_Lanta_National_Park_%288184658168%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Small_waterfall_at_Ko_Lanta_National_Park_(8184658168).jpg",
+  "credit": "Rushen · CC BY-SA 2.0",
+  "by": "ai",
+  "appeal": 7,
+  "why": "ภาพน้ำตกสวยงามและมีแสงรุ้ง",
+  "at": "2026-11-07T17:18:37.388Z",
+  "v": 3
+ },
+ "osm-n361391252": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Chiang_Saen%2C_Golden_Triangle%2C_Mekong_River%2C_Thailand.jpg/960px-Chiang_Saen%2C_Golden_Triangle%2C_Mekong_River%2C_Thailand.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Chiang_Saen,_Golden_Triangle,_Mekong_River,_Thailand.jpg",
+  "credit": "Vyacheslav Argenberg · CC BY 4.0",
+  "by": "ai",
+  "appeal": 6,
+  "why": "มุมมองแม่น้ำโขงจุดสามเหลี่ยมทองคำ",
+  "at": "2026-11-07T17:18:37.388Z",
+  "v": 3
+ },
+ "osm-n369735869": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Cha-am_in_2010_%281%29.jpg/960px-Cha-am_in_2010_%281%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Cha-am_in_2010_(1).jpg",
+  "credit": "แอนเดอร์สัน · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 7,
+  "why": "หาดทรายและทะเลบรรยากาศน่าเที่ยว",
+  "at": "2026-11-07T17:18:37.388Z",
+  "v": 3
+ },
+ "osm-n795685862": {
+  "image": "https://www.lemon8-app.com/seo/image?item_id=7259929996351996418&index=0&sign=086aa606397cf1eda86d749e274ad139",
+  "page": "https://www.lemon8-app.com/@atina.rm/7259929996351996418?region=th",
+  "credit": "Lemon8 · ati.ateena รีวิวกับติ๊",
+  "by": "ai",
+  "appeal": 8,
+  "why": "น้ำตกสวยงามกลางป่าร่มรื่น",
+  "at": "2026-11-07T17:18:37.388Z",
+  "v": 3
+ },
+ "osm-n1110671207": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Pang_Sida_Waterfall.jpg/960px-Pang_Sida_Waterfall.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Pang_Sida_Waterfall.jpg",
+  "credit": "HLWikiCom · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 9,
+  "why": "ภาพน้ำตกสวยงามคมชัด บรรยากาศร่มรื่นน่าท่องเที่ยว",
+  "at": "2026-11-07T17:18:53.317Z",
+  "v": 3
+ },
+ "osm-n1195421011": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Haew_Suwat_%28I%29.jpg/960px-Haew_Suwat_%28I%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Haew_Suwat_(I).jpg",
+  "credit": "This Photo was taken by Supanut Arunoprayote. Feel free to u · CC BY 4.0",
+  "by": "ai",
+  "appeal": 9,
+  "why": "ภาพน้ำตกเหวสุวัตมุมกว้าง สวยงามโดดเด่น น่าไปเยือน",
+  "at": "2026-11-07T17:18:53.317Z",
+  "v": 3
+ },
+ "osm-n1200790417": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Khlong_Chao_Waterfall.jpg/960px-Khlong_Chao_Waterfall.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Khlong_Chao_Waterfall.jpg",
+  "credit": "Stéphane Bidouze · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 7,
+  "why": "ภาพมุมสูงป่าเขียวและน้ำตก ดูธรรมชาติสมบูรณ์",
+  "at": "2026-11-07T17:18:53.317Z",
+  "v": 3
+ },
+ "osm-n1587301790": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%95%E0%B8%81%E0%B8%9E%E0%B8%A3%E0%B8%AB%E0%B8%A1%E0%B9%82%E0%B8%A5%E0%B8%81_-_panoramio.jpg/960px-%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%95%E0%B8%81%E0%B8%9E%E0%B8%A3%E0%B8%AB%E0%B8%A1%E0%B9%82%E0%B8%A5%E0%B8%81_-_panoramio.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%95%E0%B8%81%E0%B8%9E%E0%B8%A3%E0%B8%AB%E0%B8%A1%E0%B9%82%E0%B8%A5%E0%B8%81_-_panoramio.jpg",
+  "credit": "::::=UT=:::: · CC BY-SA 3.0",
+  "by": "ai",
+  "appeal": 8,
+  "why": "ภาพน้ำตกพรหมโลกสวยงาม ชัดเจน และน่าเล่นน้ำ",
+  "at": "2026-11-07T17:18:53.317Z",
+  "v": 3
+ },
+ "osm-n1597528224": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Promthep_Cape.jpg/960px-Promthep_Cape.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Promthep_Cape.jpg",
+  "credit": "Christophe95 · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 8,
+  "why": "วิวทะเลสวยงามเห็นแหลมพรหมเทพชัดเจน",
+  "at": "2026-11-07T17:19:09.480Z",
+  "v": 3
+ },
+ "osm-n1641043583": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Surat_Thani%2C_December_2014_-_panoramio_%281%29.jpg/960px-Surat_Thani%2C_December_2014_-_panoramio_%281%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Surat_Thani,_December_2014_-_panoramio_(1).jpg",
+  "credit": "Roma Neus · CC BY 3.0",
+  "by": "ai",
+  "appeal": 7,
+  "why": "วิวภูเขาป่าไม้เขียวขจีธรรมชาติสมบูรณ์",
+  "at": "2026-11-07T17:19:09.480Z",
+  "v": 3
+ },
+ "osm-n1668830908": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Tone_Nga_Chang_Waterfall.jpg/960px-Tone_Nga_Chang_Waterfall.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Tone_Nga_Chang_Waterfall.jpg",
+  "credit": "Ta740iteau · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 8,
+  "why": "น้ำตกสวยงามร่มรื่นน่าท่องเที่ยว",
+  "at": "2026-11-07T17:19:09.480Z",
+  "v": 3
+ },
+ "osm-n1796189110": {
+  "image": "https://www.lemon8-app.com/seo/image?item_id=7215898802421596673&index=0&sign=8111034d8a7accaa5fb2c8c290958846",
+  "page": "https://www.lemon8-app.com/@colddcereal/7215898802421596673?region=th",
+  "credit": "Lemon8 · Colddcereal",
+  "by": "ai",
+  "appeal": 6,
+  "why": "ธารน้ำใสไหลผ่านโขดหินธรรมชาติ",
+  "at": "2026-11-07T17:19:09.480Z",
+  "v": 3
+ },
+ "osm-n1833457740": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Than_Sadet_Waterfall_National_Park%2C_May%2C_2018-6.jpg/960px-Than_Sadet_Waterfall_National_Park%2C_May%2C_2018-6.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Than_Sadet_Waterfall_National_Park,_May,_2018-6.jpg",
+  "credit": "Alexey Komarov · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 5,
+  "why": "เห็นวิวลำธารและโขดหินชัดเจนที่สุด",
+  "at": "2026-11-07T17:19:26.769Z",
+  "v": 3
+ },
+ "osm-n3081236838": {
+  "image": null,
+  "by": "ai",
+  "why": "ภาพไม่ชัดเจนและมีป้ายหรือแมลงที่ไม่สื่อถึงน้ำตก",
+  "at": "2026-11-07T17:19:26.769Z",
+  "v": 3
+ },
+ "osm-n3109360876": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Kroeng_Krawia_Waterfall_-_Khao_Laem_National_Park_03.jpg/960px-Kroeng_Krawia_Waterfall_-_Khao_Laem_National_Park_03.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Kroeng_Krawia_Waterfall_-_Khao_Laem_National_Park_03.jpg",
+  "credit": "Pulperm Phungprachit · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 8,
+  "why": "น้ำตกสวยงาม มุมมองกว้าง บรรยากาศร่มรื่น",
+  "at": "2026-11-07T17:19:26.769Z",
+  "v": 3
+ },
+ "osm-n3837011082": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Ko_Chang%2C_Ko_Chang_District%2C_Trat%2C_Thailand_-_panoramio_%2860%29.jpg/960px-Ko_Chang%2C_Ko_Chang_District%2C_Trat%2C_Thailand_-_panoramio_%2860%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Ko_Chang,_Ko_Chang_District,_Trat,_Thailand_-_panoramio_(60).jpg",
+  "credit": "::::=UT=:::: · CC BY-SA 3.0",
+  "by": "ai",
+  "appeal": 6,
+  "why": "ภาพน้ำตกไหลผ่านโขดหินดูเป็นธรรมชาติ",
+  "at": "2026-11-07T17:19:26.769Z",
+  "v": 3
+ },
+ "osm-n4498203393": {
+  "image": "https://www.lemon8-app.com/seo/image?item_id=7356155571449397776&index=0&sign=00f398e5d661cef895e35ddb2ba5923f",
+  "page": "https://www.lemon8-app.com/@zinzintan/7356155571449397776?region=th",
+  "credit": "Lemon8 · Jakwa🦒",
+  "by": "ai",
+  "appeal": 6,
+  "why": "วิวเขื่อนและแพริมน้ำบรรยากาศดี",
+  "at": "2026-11-07T17:19:49.128Z",
+  "v": 3
+ },
+ "osm-n5314772921": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Maya_Bay_enclosed_limestone_cliffs_and_turquoise_water_Ko_Phi_Phi_Le.jpg/960px-Maya_Bay_enclosed_limestone_cliffs_and_turquoise_water_Ko_Phi_Phi_Le.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Maya_Bay_enclosed_limestone_cliffs_and_turquoise_water_Ko_Phi_Phi_Le.jpg",
+  "credit": "Nnthurber · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 9,
+  "why": "น้ำทะเลใสและภูเขาหินปูนสวยงามโดดเด่น",
+  "at": "2026-11-07T17:19:49.128Z",
+  "v": 3
+ },
+ "osm-n5431746621": {
+  "image": null,
+  "by": "ai",
+  "why": "ภาพป้ายและลำธารธรรมดาไม่ดึงดูด",
+  "at": "2026-11-07T17:19:49.128Z",
+  "v": 3
+ },
+ "osm-n5697435036": {
+  "image": null,
+  "by": "ai",
+  "why": "ภาพสัตว์ป่าไม่ใช่ตัวแทนสถานที่หลัก",
+  "at": "2026-11-07T17:19:49.128Z",
+  "v": 3
+ },
+ "osm-n5821963988": {
+  "image": "https://www.lemon8-app.com/seo/image?item_id=7563089392558948871&index=0&sign=15ab41a10ab2e61a6f31eff10f5ae2df",
+  "page": "https://www.lemon8-app.com/@maitongnatan60/7563089392558948871?region=th",
+  "credit": "Lemon8 · Maitong",
+  "by": "ai",
+  "appeal": 8,
+  "why": "น้ำตกสวยงามธรรมชาติร่มรื่น",
+  "at": "2026-11-07T17:20:06.627Z",
+  "v": 3
+ },
+ "osm-w27813978": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Kan_tiang_beach_panorama.jpg/960px-Kan_tiang_beach_panorama.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Kan_tiang_beach_panorama.jpg",
+  "credit": "Lamacchiacosta · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 8,
+  "why": "วิวชายหาดมุมสูงสวยงาม",
+  "at": "2026-11-07T17:20:06.627Z",
+  "v": 3
+ },
+ "osm-w27813979": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Koh_lanta_yai_-_panoramio.jpg/960px-Koh_lanta_yai_-_panoramio.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Koh_lanta_yai_-_panoramio.jpg",
+  "credit": "Rittigai · CC BY-SA 3.0",
+  "by": "ai",
+  "appeal": 7,
+  "why": "ชายหาดและธรรมชาติป่าเขียว",
+  "at": "2026-11-07T17:20:06.627Z",
+  "v": 3
+ },
+ "osm-w51248133": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Klong_Nin_Beach%2C_Koh_Lanta.jpg/960px-Klong_Nin_Beach%2C_Koh_Lanta.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Klong_Nin_Beach,_Koh_Lanta.jpg",
+  "credit": "Fabio Achilli · CC BY 2.0",
+  "by": "ai",
+  "appeal": 8,
+  "why": "หาดทรายยาวและน้ำทะเลใส",
+  "at": "2026-11-07T17:20:06.627Z",
+  "v": 3
+ },
+ "osm-w51250515": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Lanta_Island_resort_-_panoramio.jpg/960px-Lanta_Island_resort_-_panoramio.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Lanta_Island_resort_-_panoramio.jpg",
+  "credit": "Vaclav Zrno · CC BY 3.0",
+  "by": "ai",
+  "appeal": 7,
+  "why": "ภาพชายหาดกว้างและท้องฟ้าสดใสสวยงาม",
+  "at": "2026-11-07T17:20:55.054Z",
+  "v": 3
+ },
+ "osm-w91115478": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Pattaya_beach_from_view_point.jpg/960px-Pattaya_beach_from_view_point.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Pattaya_beach_from_view_point.jpg",
+  "credit": "Sergey S. Dukachev · CC BY-SA 3.0",
+  "by": "ai",
+  "appeal": 7,
+  "why": "มุมสูงมองเห็นวิวอ่าวพัทยาชัดเจน",
+  "at": "2026-11-07T17:20:55.054Z",
+  "v": 3
+ },
+ "osm-w106843819": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Ta_Yai_Beach_0001.jpg/960px-Ta_Yai_Beach_0001.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Ta_Yai_Beach_0001.jpg",
+  "credit": "Stefan Fussan · CC BY-SA 3.0",
+  "by": "ai",
+  "appeal": 8,
+  "why": "หาดทรายขาวและน้ำทะเลใสสะอาดน่าเที่ยว",
+  "at": "2026-11-07T17:20:55.054Z",
+  "v": 3
+ },
+ "osm-w147841651": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Klong_Muang_Beach_SF0003.jpg/960px-Klong_Muang_Beach_SF0003.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Klong_Muang_Beach_SF0003.jpg",
+  "credit": "Stefan Fussan · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 8,
+  "why": "บรรยากาศยามเย็นริมหาดโรแมนติกกับเครื่องดื่ม",
+  "at": "2026-11-07T17:20:55.054Z",
+  "v": 3
+ },
+ "osm-w150178573": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Karon_View_Point_02.jpg/960px-Karon_View_Point_02.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Karon_View_Point_02.jpg",
+  "credit": "ADwarf · Public domain",
+  "by": "ai",
+  "appeal": 8,
+  "why": "ภาพมุมสูงเห็นหาดและวิวทะเลสวยงามชัดเจน",
+  "at": "2026-11-07T17:23:21.091Z",
+  "v": 3
+ },
+ "osm-w185942618": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Unnamed_Road%2C_Tambon_Ko_Lanta_Yai%2C_Amphoe_Ko_Lanta%2C_Chang_Wat_Krabi_81150%2C_Thailand_-_panoramio_%2814%29.jpg/960px-Unnamed_Road%2C_Tambon_Ko_Lanta_Yai%2C_Amphoe_Ko_Lanta%2C_Chang_Wat_Krabi_81150%2C_Thailand_-_panoramio_%2814%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Unnamed_Road,_Tambon_Ko_Lanta_Yai,_Amphoe_Ko_Lanta,_Chang_Wat_Krabi_81150,_Thailand_-_panoramio_(14).jpg",
+  "credit": "Максим Улитин · CC BY 3.0",
+  "by": "ai",
+  "appeal": 7,
+  "why": "ภาพชายหาดและป่าเขียวขจีธรรมชาติสวยงาม",
+  "at": "2026-11-07T17:23:21.091Z",
+  "v": 3
+ },
+ "osm-w192428839": {
+  "image": "https://www.lemon8-app.com/seo/image?item_id=7435573196583354887&index=0&sign=4ff5f2af4777aeeeaeb25567a6218c64",
+  "page": "https://www.lemon8-app.com/@pr.dnp/7435573196583354887?region=th",
+  "credit": "Lemon8 · DNP Official",
+  "by": "ai",
+  "appeal": 6,
+  "why": "ภาพหาดทรายและทิวเขาบรรยากาศสงบ",
+  "at": "2026-11-07T17:23:21.091Z",
+  "v": 3
+ },
+ "osm-w212246066": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Unnamed_Road%2C_Tambon_Sala_Dan%2C_Amphoe_Ko_Lanta%2C_Chang_Wat_Krabi_81150%2C_Thailand_-_panoramio_%2817%29.jpg/960px-Unnamed_Road%2C_Tambon_Sala_Dan%2C_Amphoe_Ko_Lanta%2C_Chang_Wat_Krabi_81150%2C_Thailand_-_panoramio_%2817%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Unnamed_Road,_Tambon_Sala_Dan,_Amphoe_Ko_Lanta,_Chang_Wat_Krabi_81150,_Thailand_-_panoramio_(17).jpg",
+  "credit": "Максим Улитин · CC BY 3.0",
+  "by": "ai",
+  "appeal": 7,
+  "why": "ภาพพระอาทิตย์ตกดินริมทะเลสวยงามโรแมนติก",
+  "at": "2026-11-07T17:23:21.091Z",
+  "v": 3
+ },
+ "osm-w242648106": {
+  "image": "https://upload.wikimedia.org/wikipedia/commons/5/57/Koh_tao_sk.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Koh_tao_sk.jpg",
+  "credit": "de:Benutzer:Koki · CC BY-SA 3.0",
+  "by": "ai",
+  "appeal": 8,
+  "why": "วิวชายหาดสวยงาม น้ำใส ทัศนียภาพดี",
+  "at": "2026-11-07T17:23:32.273Z",
+  "v": 3
+ },
+ "osm-w246391251": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Chaweng-Noi_Samui_2013_may_-_panoramio_%289%29.jpg/960px-Chaweng-Noi_Samui_2013_may_-_panoramio_%289%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Chaweng-Noi_Samui_2013_may_-_panoramio_(9).jpg",
+  "credit": "Roma Neus · CC BY 3.0",
+  "by": "ai",
+  "appeal": 7,
+  "why": "กิจกรรมทางน้ำและชายหาดที่น่าสนใจ",
+  "at": "2026-11-07T17:23:32.274Z",
+  "v": 3
+ },
+ "osm-w246395838": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Choeng_Mon_Beach%2C_Koh_Samui_%2828034183446%29.jpg/960px-Choeng_Mon_Beach%2C_Koh_Samui_%2828034183446%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Choeng_Mon_Beach,_Koh_Samui_(28034183446).jpg",
+  "credit": "Damian Moore · CC BY-SA 2.0",
+  "by": "ai",
+  "appeal": 7,
+  "why": "หาดทรายขาวและเกาะน้อยในบรรยากาศผ่อนคลาย",
+  "at": "2026-11-07T17:23:32.274Z",
+  "v": 3
+ },
+ "osm-w253816464": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/King_Mongkut_Memorial_Park_of_Science_and_Technology_Waghor_20260306.jpg/960px-King_Mongkut_Memorial_Park_of_Science_and_Technology_Waghor_20260306.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:King_Mongkut_Memorial_Park_of_Science_and_Technology_Waghor_20260306.jpg",
+  "credit": "This Photo was taken by Supanut Arunoprayote. Feel free to u · CC BY 4.0",
+  "by": "ai",
+  "appeal": 8,
+  "why": "สถาปัตยกรรมโดดเด่น ท้องฟ้าใส ร่มรื่น",
+  "at": "2026-11-07T17:23:32.274Z",
+  "v": 3
+ },
+ "osm-w255261810": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Salad_Beach_Phangan.jpg/960px-Salad_Beach_Phangan.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Salad_Beach_Phangan.jpg",
+  "credit": "(WT-en) Shorkye at English Wikivoyage · Public domain",
+  "by": "ai",
+  "appeal": 8,
+  "why": "มุมมองสวยงามจากร้านอาหารริมหาดน้ำใส",
+  "at": "2026-11-07T17:24:01.187Z",
+  "v": 3
+ },
+ "osm-w381444090": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Haad_Yao%2C_Ko_Phangan_in_2023_2.jpg/960px-Haad_Yao%2C_Ko_Phangan_in_2023_2.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Haad_Yao,_Ko_Phangan_in_2023_2.jpg",
+  "credit": "Renek78 · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 8,
+  "why": "วิวหาดทรายสวยงามจากมุมสูงธรรมชาติ",
+  "at": "2026-11-07T17:24:01.187Z",
+  "v": 3
+ },
+ "osm-r14937094": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Hat_Noppharat_Thara_beach_3.jpg/960px-Hat_Noppharat_Thara_beach_3.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Hat_Noppharat_Thara_beach_3.jpg",
+  "credit": "kallerna · CC BY-SA 3.0",
+  "by": "ai",
+  "appeal": 7,
+  "why": "เกาะน้อยและหาดทรายสวยงามน่าไปเที่ยว",
+  "at": "2026-11-07T17:24:01.187Z",
+  "v": 3
+ },
+ "osm-r16031134": {
+  "image": "https://www.lemon8-app.com/seo/image?item_id=7206292625131962882&index=0&sign=a3e1a443be22b8e0c472a32c55cbd8c6",
+  "page": "https://www.lemon8-app.com/@nokpattaya8/7206292625131962882?region=th",
+  "credit": "Lemon8 · nokpattaya🐤🐤",
+  "by": "ai",
+  "appeal": 8,
+  "why": "ภาพถ่ายเครื่องบินแลนดิ้งชัดเจนแลนด์มาร์กหาดไม้ขาว",
+  "at": "2026-11-07T17:24:01.187Z",
+  "v": 3
+ },
+ "osm-r19738774": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Ao_Nang_beach_panorama_3.jpg/960px-Ao_Nang_beach_panorama_3.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Ao_Nang_beach_panorama_3.jpg",
+  "credit": "kallerna · CC BY-SA 3.0",
+  "by": "ai",
+  "appeal": 9,
+  "why": "วิวหาดทรายสวยงามและหน้าผาหินปูนชัดเจน",
+  "at": "2026-11-07T17:24:15.119Z",
+  "v": 3
+ },
+ "osm-r19741820": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/Ton_Sai_Beach_11.jpg/960px-Ton_Sai_Beach_11.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Ton_Sai_Beach_11.jpg",
+  "credit": "Krzysztof Golik · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 9,
+  "why": "เรือหัวโทงกับภูเขาหินเอกลักษณ์อ่าวนาง",
+  "at": "2026-11-07T17:24:15.119Z",
+  "v": 3
+ },
+ "osm-n2066072188": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/%28THA-Bangkok%29_Tuk-tuk_%E0%B8%AA%E0%B8%815099_2024-02-10.jpg/960px-%28THA-Bangkok%29_Tuk-tuk_%E0%B8%AA%E0%B8%815099_2024-02-10.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:(THA-Bangkok)_Tuk-tuk_%E0%B8%AA%E0%B8%815099_2024-02-10.jpg",
+  "credit": "S5A-0043 · CC BY 2.0",
+  "by": "ai",
+  "appeal": 8,
+  "why": "ตุ๊กตุ๊กแต่งไฟสวยงามยามค่ำคืน",
+  "at": "2026-11-07T17:24:15.119Z",
+  "v": 3
+ },
+ "osm-n2110312355": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/201703291151b_P_Chiang_Mai%2C_City_Wall%2C_Chang_Phuak_Gate.jpg/960px-201703291151b_P_Chiang_Mai%2C_City_Wall%2C_Chang_Phuak_Gate.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:201703291151b_P_Chiang_Mai,_City_Wall,_Chang_Phuak_Gate.jpg",
+  "credit": "Hartmann Linge · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 6,
+  "why": "ประตูเมืองโบราณและถนนรอบคูเมืองเชียงใหม่",
+  "at": "2026-11-07T17:24:15.119Z",
+  "v": 3
+ },
+ "osm-n3014367766": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Bang_Tao_Beach_%2853667853591%29.jpg/960px-Bang_Tao_Beach_%2853667853591%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Bang_Tao_Beach_(53667853591).jpg",
+  "credit": "Raita Futo from Tokyo, Japan · CC BY 2.0",
+  "by": "ai",
+  "appeal": 8,
+  "why": "บรรยากาศชายหาดสวยงาม น่าท่องเที่ยว",
+  "at": "2026-11-07T17:24:26.367Z",
+  "v": 3
+ },
+ "osm-n4129606489": {
+  "image": null,
+  "by": "ai",
+  "why": "ภาพวิวทิวทัศน์ธรรมดา",
+  "at": "2026-11-07T17:24:26.367Z",
+  "v": 3
+ },
+ "osm-n4704788689": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Krabi_2015_april_-_panoramio_%2822%29.jpg/960px-Krabi_2015_april_-_panoramio_%2822%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Krabi_2015_april_-_panoramio_(22).jpg",
+  "credit": "Roma Neus · CC BY 3.0",
+  "by": "ai",
+  "appeal": 6,
+  "why": "ภาพถ่ายมัสยิดเด่นชัด",
+  "at": "2026-11-07T17:24:26.367Z",
+  "v": 3
+ },
+ "osm-n4711807589": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Chiang-Mai_Thailand_Travel-Medicine-Clinic-Chiang-Mai-03.jpg/960px-Chiang-Mai_Thailand_Travel-Medicine-Clinic-Chiang-Mai-03.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Chiang-Mai_Thailand_Travel-Medicine-Clinic-Chiang-Mai-03.jpg",
+  "credit": "CEphoto, Uwe Aranas · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 5,
+  "why": "ภาพอาคารสถานที่ทั่วไป",
+  "at": "2026-11-07T17:24:26.367Z",
+  "v": 3
+ },
+ "osm-n6263926889": {
+  "image": null,
+  "by": "ai",
+  "why": "ภาพไม่เกี่ยวกับร้านค้า",
+  "at": "2026-11-07T17:24:49.458Z",
+  "v": 3
+ },
+ "osm-n11807557009": {
+  "image": null,
+  "by": "ai",
+  "why": "ภาพไม่เกี่ยวกับสถานที่",
+  "at": "2026-11-07T17:24:49.458Z",
+  "v": 3
+ },
+ "osm-n12098197068": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/20221027_Phuket_%28Stadt%29_%282%29.jpg/960px-20221027_Phuket_%28Stadt%29_%282%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:20221027_Phuket_(Stadt)_(2).jpg",
+  "credit": "Joachim Lutz · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 6,
+  "why": "อาคารสวยงามโดดเด่น",
+  "at": "2026-11-07T17:24:49.458Z",
+  "v": 3
+ },
+ "osm-n12640894703": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Motien_Hotel%2C_Si_Lom%2C_Bangkok_%282022%29_-_05.jpg/960px-Motien_Hotel%2C_Si_Lom%2C_Bangkok_%282022%29_-_05.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Motien_Hotel,_Si_Lom,_Bangkok_(2022)_-_05.jpg",
+  "credit": "Chainwit. · CC BY 4.0",
+  "by": "ai",
+  "appeal": 6,
+  "why": "อาคารโรงแรมชัดเจน",
+  "at": "2026-11-07T17:24:49.458Z",
+  "v": 3
+ },
+ "osm-n13010769122": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/The_Sirimahannop_at_Asiatique_during_sunset%2C_Bangkok.jpg/960px-The_Sirimahannop_at_Asiatique_during_sunset%2C_Bangkok.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:The_Sirimahannop_at_Asiatique_during_sunset,_Bangkok.jpg",
+  "credit": "Slyronit · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 8,
+  "why": "บรรยากาศพระอาทิตย์ตกริมแม่น้ำสวยงามน่าดึงดูด",
+  "at": "2026-11-07T17:25:04.957Z",
+  "v": 3
+ },
+ "osm-n13157367129": {
+  "image": null,
+  "by": "ai",
+  "why": "ไม่มีภาพที่แสดงตัวสถานที่ชัดเจนหรือน่าสนใจ",
+  "at": "2026-11-07T17:25:04.957Z",
+  "v": 3
+ },
+ "osm-n13440879355": {
+  "image": null,
+  "by": "ai",
+  "why": "ภาพเป็นเหตุการณ์ทางการเมืองไม่เกี่ยวข้องกับร้าน",
+  "at": "2026-11-07T17:25:04.957Z",
+  "v": 3
+ },
+ "osm-n13517068101": {
+  "image": null,
+  "by": "ai",
+  "why": "ภาพไม่เกี่ยวข้องกับบาร์หรือสถานบันเทิง",
+  "at": "2026-11-07T17:25:04.957Z",
+  "v": 3
+ },
+ "osm-n14069601501": {
+  "image": null,
+  "by": "ai",
+  "why": "ภาพอาคารภายนอกดูโดดเด่นสวยงาม",
+  "at": "2026-11-07T17:25:27.811Z",
+  "v": 3
+ },
+ "osm-n14069642101": {
+  "image": null,
+  "by": "ai",
+  "why": "ภาพส่วนใหญ่เป็นคนประชุมหรือสัมมนา ไม่ตรงกับบาร์",
+  "at": "2026-11-07T17:25:27.811Z",
+  "v": 3
+ },
+ "osm-n14069656101": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Alumni_TIES_Indo-Pacific_%E2%80%93_Bangkok_Alumni_TIES_Indo-Pacific_%E2%80%93_Bangkok_community-action-for-the-environment-and-public-health_52134701726_o_%2853874469259%29.png/960px-Alumni_TIES_Indo-Pacific_%E2%80%93_Bangkok_Alumni_TIES_Indo-Pacific_%E2%80%93_Bangkok_community-action-for-the-environment-and-public-health_52134701726_o_%2853874469259%29.png",
+  "page": "https://commons.wikimedia.org/wiki/File:Alumni_TIES_Indo-Pacific_%E2%80%93_Bangkok_Alumni_TIES_Indo-Pacific_%E2%80%93_Bangkok_community-action-for-the-environment-and-public-health_52134701726_o_(53874469259).png",
+  "credit": "Exchanges Photos · CC0",
+  "by": "ai",
+  "appeal": 6,
+  "why": "ภาพบรรยากาศภายในกว้างขวางดูเป็นระเบียบ",
+  "at": "2026-11-07T17:25:27.811Z",
+  "v": 3
+ },
+ "osm-w991388059": {
+  "image": null,
+  "by": "ai",
+  "why": "ภาพสถานที่ทางศาสนาไม่ตรงกับบาร์",
+  "at": "2026-11-07T17:25:27.811Z",
+  "v": 3
+ },
+ "osm-w1292444743": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/%E3%83%8A%E3%83%8A%E3%83%97%E3%83%A9%E3%82%B6-%E4%B8%AD%E5%BA%AD%E3%81%AE%E6%A7%98%E5%AD%90_-_panoramio.jpg/960px-%E3%83%8A%E3%83%8A%E3%83%97%E3%83%A9%E3%82%B6-%E4%B8%AD%E5%BA%AD%E3%81%AE%E6%A7%98%E5%AD%90_-_panoramio.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:%E3%83%8A%E3%83%8A%E3%83%97%E3%83%A9%E3%82%B6-%E4%B8%AD%E5%BA%AD%E3%81%AE%E6%A7%98%E5%AD%90_-_panoramio.jpg",
+  "credit": "hijirin · CC BY 3.0",
+  "by": "ai",
+  "appeal": 7,
+  "why": "ภาพบรรยากาศสถานบันเทิงยามค่ำคืนที่คึกคัก",
+  "at": "2026-11-07T17:25:40.692Z",
+  "v": 3
+ },
+ "osm-w1312364662": {
+  "image": null,
+  "by": "ai",
+  "why": "ภาพมุมสูงและภาพการจูบหินที่ไม่สื่อถึงสถานที่",
+  "at": "2026-11-07T17:25:40.692Z",
+  "v": 3
+ },
+ "wd-Q1740652": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/A_row_of_mortuary_phase_6_graves_at_Khok_Phanom_Di%2C_that_had_been_contained_within_a_wooden_structure.jpg/960px-A_row_of_mortuary_phase_6_graves_at_Khok_Phanom_Di%2C_that_had_been_contained_within_a_wooden_structure.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:A_row_of_mortuary_phase_6_graves_at_Khok_Phanom_Di,_that_had_been_contained_within_a_wooden_structure.jpg",
+  "credit": "Higham, Charles F. W. · CC BY 4.0",
+  "by": "ai",
+  "appeal": 6,
+  "why": "ภาพแหล่งโบราณคดีโครงกระดูกโบราณ",
+  "at": "2026-11-07T17:25:40.692Z",
+  "v": 3
+ },
+ "wd-Q3330693": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Phimai_National_Museum-004.jpg/960px-Phimai_National_Museum-004.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Phimai_National_Museum-004.jpg",
+  "credit": "Ddalbiez · CC BY-SA 3.0",
+  "by": "ai",
+  "appeal": 7,
+  "why": "ภาพประติมากรรมหินแกะสลักโบราณ",
+  "at": "2026-11-07T17:25:40.692Z",
+  "v": 3
+ },
+ "wd-Q6411976": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/%282019%29_%E0%B8%AB%E0%B8%99%E0%B9%88%E0%B8%A7%E0%B8%A2%E0%B8%9A%E0%B8%B1%E0%B8%8D%E0%B8%8A%E0%B8%B2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%A3%E0%B8%B1%E0%B8%81%E0%B8%A9%E0%B8%B2%E0%B8%94%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%94%E0%B8%99_2.jpg/960px-%282019%29_%E0%B8%AB%E0%B8%99%E0%B9%88%E0%B8%A7%E0%B8%A2%E0%B8%9A%E0%B8%B1%E0%B8%8D%E0%B8%8A%E0%B8%B2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%A3%E0%B8%B1%E0%B8%81%E0%B8%A9%E0%B8%B2%E0%B8%94%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%94%E0%B8%99_2.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:(2019)_%E0%B8%AB%E0%B8%99%E0%B9%88%E0%B8%A7%E0%B8%A2%E0%B8%9A%E0%B8%B1%E0%B8%8D%E0%B8%8A%E0%B8%B2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%A3%E0%B8%B1%E0%B8%81%E0%B8%A9%E0%B8%B2%E0%B8%94%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%94%E0%B8%99_2.jpg",
+  "credit": "PEAK99 · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 7,
+  "why": "อาคารพิพิธภัณฑ์สวยงามและถ่ายมุมกว้างได้ชัดเจน",
+  "at": "2026-11-07T17:25:53.497Z",
+  "v": 3
+ },
+ "wd-Q7410108": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/2016_Bangkok%2C_Dystrykt_Samphanthawong%2C_Brama_Chinatown_%2805%29.jpg/960px-2016_Bangkok%2C_Dystrykt_Samphanthawong%2C_Brama_Chinatown_%2805%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:2016_Bangkok,_Dystrykt_Samphanthawong,_Brama_Chinatown_(05).jpg",
+  "credit": "Marcin Konsek · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 7,
+  "why": "ซุ้มประตูจีนโดดเด่นเป็นแลนด์มาร์ก",
+  "at": "2026-11-07T17:25:53.497Z",
+  "v": 3
+ },
+ "wd-Q5530566": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Si_Phraya_in_Khet_Bang_Rak_-_canal_named_Khlong_Chong_Nonsi_IMG_7429.jpg/960px-Si_Phraya_in_Khet_Bang_Rak_-_canal_named_Khlong_Chong_Nonsi_IMG_7429.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Si_Phraya_in_Khet_Bang_Rak_-_canal_named_Khlong_Chong_Nonsi_IMG_7429.jpg",
+  "credit": "Bjoertvedt · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 6,
+  "why": "แสดงตัวอย่างอัญมณีและเครื่องประดับโบราณชัดเจน",
+  "at": "2026-11-07T17:25:53.497Z",
+  "v": 3
+ },
+ "wd-Q28762986": {
+  "image": null,
+  "by": "ai",
+  "why": "ภาพไม่ดึงดูดใจและไม่สื่อถึงสถานที่ท่องเที่ยว",
+  "at": "2026-11-07T17:25:53.497Z",
+  "v": 3
+ },
+ "osm-n1121030565": {
+  "image": "https://upload.wikimedia.org/wikipedia/commons/3/37/Phra_Pathom_Chedi2.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Phra_Pathom_Chedi2.jpg",
+  "credit": "ScorpianPK · CC BY-SA 3.0",
+  "by": "ai",
+  "appeal": 8,
+  "why": "มุมมององค์พระปฐมเจดีย์สวยงามอลังการ",
+  "at": "2026-11-07T17:26:05.420Z",
+  "v": 3
+ },
+ "osm-n2962478192": {
+  "image": null,
+  "by": "ai",
+  "why": "ภาพตัวเมืองและตึกไม่เกี่ยวข้องกับพิพิธภัณฑ์",
+  "at": "2026-11-07T17:26:05.421Z",
+  "v": 3
+ },
+ "osm-n5057927728": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/738_C5647.jpg/960px-738_C5647.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:738_C5647.jpg",
+  "credit": "Tamanon This photo was taken with Canon PowerShot S120 · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 7,
+  "why": "อาคารพิพิธภัณฑ์ทรงโบราณโดดเด่นน่าสนใจ",
+  "at": "2026-11-07T17:26:05.421Z",
+  "v": 3
+ },
+ "osm-n11425813288": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Roi_Et_National_Museum.jpg/960px-Roi_Et_National_Museum.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Roi_Et_National_Museum.jpg",
+  "credit": "No machine-readable author provided. Oatz assumed (based on  · Public domain",
+  "by": "ai",
+  "appeal": 6,
+  "why": "ภาพอาคารพิพิธภัณฑ์ชัดเจนในเวลากลางวัน",
+  "at": "2026-11-07T17:26:05.421Z",
+  "v": 3
+ },
+ "osm-n1561800812": {
+  "image": null,
+  "by": "rule",
+  "at": "2026-11-07T17:26:05.421Z",
+  "v": 3
+ },
+ "osm-n1774336689": {
+  "image": null,
+  "by": "rule",
+  "at": "2026-11-07T17:26:05.421Z",
+  "v": 3
+ },
+ "osm-n2306126715": {
+  "image": null,
+  "by": "rule",
+  "at": "2026-11-07T17:26:05.421Z",
+  "v": 3
+ },
+ "osm-n3465556198": {
+  "image": null,
+  "by": "rule",
+  "at": "2026-11-07T17:26:05.421Z",
+  "v": 3
+ },
+ "osm-n4511496091": {
+  "image": null,
+  "by": "rule",
+  "at": "2026-11-07T17:26:05.421Z",
+  "v": 3
+ },
+ "osm-n4702944614": {
+  "image": null,
+  "by": "rule",
+  "at": "2026-11-07T17:26:05.421Z",
+  "v": 3
+ },
+ "osm-n6062427848": {
+  "image": null,
+  "by": "rule",
+  "at": "2026-11-07T17:26:05.421Z",
+  "v": 3
+ },
+ "osm-n6169742495": {
+  "image": null,
+  "by": "rule",
+  "at": "2026-11-07T17:26:05.421Z",
+  "v": 3
+ },
+ "osm-n10705803092": {
+  "image": null,
+  "by": "rule",
+  "at": "2026-11-07T17:26:05.421Z",
+  "v": 3
+ },
+ "osm-n11116434092": {
+  "image": null,
+  "by": "rule",
+  "at": "2026-11-07T17:26:05.421Z",
+  "v": 3
+ },
+ "osm-n11626331644": {
+  "image": null,
+  "by": "rule",
+  "at": "2026-11-07T17:26:05.421Z",
+  "v": 3
+ },
+ "osm-n13028467001": {
+  "image": null,
+  "by": "rule",
+  "at": "2026-11-07T17:26:05.421Z",
+  "v": 3
+ },
+ "osm-n13059488001": {
+  "image": null,
+  "by": "rule",
+  "at": "2026-11-07T17:26:05.421Z",
+  "v": 3
+ },
+ "osm-n13412810174": {
+  "image": null,
+  "by": "rule",
+  "at": "2026-11-07T17:26:05.421Z",
+  "v": 3
+ },
+ "osm-n1597544745": {
+  "image": null,
+  "by": "rule",
+  "at": "2026-11-07T17:26:05.421Z",
+  "v": 3
+ },
+ "osm-n2133242393": {
+  "image": null,
+  "by": "rule",
+  "at": "2026-11-07T17:26:05.421Z",
+  "v": 3
+ },
+ "osm-n4907822814": {
+  "image": null,
+  "by": "rule",
+  "at": "2026-11-07T17:26:05.421Z",
+  "v": 3
+ },
+ "osm-n5322112243": {
+  "image": null,
+  "by": "rule",
+  "at": "2026-11-07T17:26:05.421Z",
+  "v": 3
+ },
+ "osm-n5419692555": {
+  "image": null,
+  "by": "rule",
+  "at": "2026-11-07T17:26:05.421Z",
+  "v": 3
+ },
+ "osm-n6902943149": {
+  "image": null,
+  "by": "rule",
+  "at": "2026-11-07T17:26:05.421Z",
+  "v": 3
+ },
+ "osm-n12071746793": {
+  "image": null,
+  "by": "rule",
+  "at": "2026-11-07T17:26:05.421Z",
+  "v": 3
+ },
+ "osm-n13254506470": {
+  "image": null,
+  "by": "rule",
+  "at": "2026-11-07T17:26:05.421Z",
+  "v": 3
+ },
+ "osm-w215966394": {
+  "image": null,
+  "by": "rule",
+  "at": "2026-11-07T17:26:05.421Z",
+  "v": 3
+ },
+ "osm-w669456377": {
+  "image": null,
+  "by": "rule",
+  "at": "2026-11-07T17:26:05.421Z",
+  "v": 3
+ },
+ "osm-w733291018": {
+  "image": null,
+  "by": "rule",
+  "at": "2026-11-07T17:26:05.421Z",
+  "v": 3
+ },
+ "osm-w1102386869": {
+  "image": null,
+  "by": "rule",
+  "at": "2026-11-07T17:26:05.421Z",
+  "v": 3
+ },
+ "osm-w1171530342": {
+  "image": null,
+  "by": "rule",
+  "at": "2026-11-07T17:26:05.421Z",
+  "v": 3
+ },
+ "osm-w1446163333": {
+  "image": null,
+  "by": "rule",
+  "at": "2026-11-07T17:26:05.421Z",
+  "v": 3
+ },
+ "osm-w1449401719": {
+  "image": null,
+  "by": "rule",
+  "at": "2026-11-07T17:26:05.421Z",
+  "v": 3
+ },
+ "osm-w1546414391": {
+  "image": null,
+  "by": "rule",
+  "at": "2026-11-07T17:26:05.421Z",
+  "v": 3
+ },
+ "osm-r7235312": {
+  "image": null,
+  "by": "rule",
+  "at": "2026-11-07T17:26:05.421Z",
+  "v": 3
+ },
+ "osm-w377882071": {
+  "image": null,
+  "by": "rule",
+  "at": "2026-11-07T17:26:05.421Z",
+  "v": 3
+ },
+ "osm-w378171112": {
+  "image": null,
+  "by": "rule",
+  "at": "2026-11-07T17:26:05.421Z",
+  "v": 3
+ },
+ "osm-w378277582": {
+  "image": null,
+  "by": "rule",
+  "at": "2026-11-07T17:26:05.421Z",
+  "v": 3
+ },
+ "wd-Q37471": {
+  "image": null,
+  "by": "rule",
+  "at": "2026-11-07T17:26:05.421Z",
+  "v": 3
+ },
+ "wd-Q131324879": {
+  "image": null,
+  "by": "rule",
+  "at": "2026-11-07T17:26:05.421Z",
+  "v": 3
+ },
+ "osm-n5535178219": {
+  "image": null,
+  "by": "rule",
+  "at": "2026-11-07T17:26:05.421Z",
+  "v": 3
+ },
+ "osm-n13271598601": {
+  "image": null,
+  "by": "rule",
+  "at": "2026-11-07T17:26:05.421Z",
+  "v": 3
+ },
+ "osm-n5185051207": {
+  "image": null,
+  "by": "rule",
+  "at": "2026-11-07T17:26:05.421Z",
+  "v": 3
+ },
+ "osm-n6087709730": {
+  "image": null,
+  "by": "rule",
+  "at": "2026-11-07T17:26:05.421Z",
+  "v": 3
+ },
+ "osm-n14209232470": {
+  "image": null,
+  "by": "rule",
+  "at": "2026-11-07T17:26:05.421Z",
+  "v": 3
+ },
+ "wd-Q1314425": {
+  "image": null,
+  "by": "rule",
+  "at": "2026-11-07T17:26:05.421Z",
+  "v": 3
+ },
+ "osm-n6800766485": {
+  "image": null,
+  "by": "rule",
+  "at": "2026-11-07T17:26:05.421Z",
+  "v": 3
+ },
+ "osm-n7079813308": {
+  "image": null,
+  "by": "rule",
+  "at": "2026-11-07T17:26:05.421Z",
+  "v": 3
+ },
+ "osm-n13440409558": {
+  "image": null,
+  "by": "rule",
+  "at": "2026-11-07T17:26:05.421Z",
+  "v": 3
+ },
+ "osm-w1467945373": {
+  "image": null,
+  "by": "rule",
+  "at": "2026-11-07T17:26:05.421Z",
+  "v": 3
+ },
+ "osm-r6011591": {
+  "image": null,
+  "by": "rule",
+  "at": "2026-11-07T17:26:05.421Z",
+  "v": 3
+ },
+ "osm-r6011595": {
+  "image": null,
+  "by": "rule",
+  "at": "2026-11-07T17:26:05.421Z",
+  "v": 3
+ },
+ "osm-n1197806238": {
+  "image": null,
+  "by": "rule",
+  "at": "2026-11-07T17:26:05.421Z",
+  "v": 3
+ },
+ "osm-n1203969733": {
+  "image": null,
+  "by": "rule",
+  "at": "2026-11-07T17:26:05.421Z",
+  "v": 3
+ },
+ "osm-n1587301812": {
+  "image": null,
+  "by": "rule",
+  "at": "2026-11-07T17:26:05.421Z",
+  "v": 3
+ },
+ "osm-n2185190581": {
+  "image": null,
+  "by": "rule",
+  "at": "2026-11-07T17:26:05.421Z",
+  "v": 3
+ },
+ "osm-n2378525628": {
+  "image": null,
+  "by": "rule",
+  "at": "2026-11-07T17:26:05.421Z",
+  "v": 3
+ },
+ "osm-n4780171921": {
+  "image": null,
+  "by": "rule",
+  "at": "2026-11-07T17:26:05.421Z",
+  "v": 3
+ },
+ "osm-n4863065321": {
+  "image": null,
+  "by": "rule",
+  "at": "2026-11-07T17:26:05.421Z",
+  "v": 3
+ },
+ "osm-n6248312385": {
+  "image": null,
+  "by": "rule",
+  "at": "2026-11-07T17:26:05.421Z",
+  "v": 3
+ },
+ "osm-w609896645": {
+  "image": null,
+  "by": "rule",
+  "at": "2026-11-07T17:26:05.421Z",
+  "v": 3
+ },
+ "osm-w1029321479": {
+  "image": null,
+  "by": "rule",
+  "at": "2026-11-07T17:26:05.421Z",
+  "v": 3
+ },
+ "osm-n4919193622": {
+  "image": null,
+  "by": "rule",
+  "at": "2026-11-07T17:26:05.421Z",
+  "v": 3
+ },
+ "osm-n7843595285": {
+  "image": null,
+  "by": "rule",
+  "at": "2026-11-07T17:26:05.421Z",
+  "v": 3
+ },
+ "osm-n9379317921": {
+  "image": null,
+  "by": "rule",
+  "at": "2026-11-07T17:26:05.421Z",
+  "v": 3
+ },
+ "osm-n10618399725": {
+  "image": null,
+  "by": "rule",
+  "at": "2026-11-07T17:26:05.421Z",
+  "v": 3
+ },
+ "osm-n12558655503": {
+  "image": null,
+  "by": "rule",
+  "at": "2026-11-07T17:26:05.421Z",
+  "v": 3
+ },
+ "osm-n12640892188": {
+  "image": null,
+  "by": "rule",
+  "at": "2026-11-07T17:26:05.421Z",
+  "v": 3
+ },
+ "osm-n12658170647": {
+  "image": null,
+  "by": "rule",
+  "at": "2026-11-07T17:26:05.421Z",
+  "v": 3
+ },
+ "osm-n12814593473": {
+  "image": null,
+  "by": "rule",
+  "at": "2026-11-07T17:26:05.421Z",
+  "v": 3
+ },
+ "osm-n14203425318": {
+  "image": null,
+  "by": "rule",
+  "at": "2026-11-07T17:26:05.421Z",
+  "v": 3
+ },
+ "osm-n884205644": {
+  "image": null,
+  "by": "rule",
+  "at": "2026-11-07T17:26:05.421Z",
+  "v": 3
+ },
+ "osm-n1482298381": {
+  "image": null,
+  "by": "rule",
+  "at": "2026-11-07T17:26:05.421Z",
+  "v": 3
+ },
+ "osm-n4164220089": {
+  "image": null,
+  "by": "rule",
+  "at": "2026-11-07T17:26:05.421Z",
+  "v": 3
+ },
+ "osm-n4759661526": {
+  "image": null,
+  "by": "rule",
+  "at": "2026-11-07T17:26:05.421Z",
+  "v": 3
+ },
+ "osm-n6504279185": {
+  "image": null,
+  "by": "rule",
+  "at": "2026-11-07T17:26:05.421Z",
+  "v": 3
+ },
+ "osm-n10806603405": {
+  "image": null,
+  "by": "rule",
+  "at": "2026-11-07T17:26:05.421Z",
   "v": 3
  }
 }
