@@ -588,7 +588,7 @@
     else text = `${t("recCar", { km: k })} ${v.parking ? t("recParking") : ""}`;
     return `<p class="recommend">💡 ${esc(text)}</p>`;
   }
-  const TRANSIT_ICON = { BIKE: "🛵", BTS: "🚈", MRT: "🚇", ARL: "🚄", SRT: "🚆", BUS: "🚌", BOAT: "⛴️", WALK: "🚶", TAXI: "🚕", SHUTTLE: "🚐", AIR: "✈️", CAR: "🚗", PARK: "🅿️", TIP: "💡", SONGTHAEW: "🛻", RENT: "🔑" };
+  const TRANSIT_ICON = { BIKE: "🛵", BTS: "🚈", MRT: "🚇", ARL: "🚄", SRT: "🚆", BUS: "🚌", BOAT: "⛴️", WALK: "🚶", TAXI: "🚕", SHUTTLE: "🚐", AIR: "✈️", CAR: "🚗", PARK: "🅿️", TIP: "💡", SONGTHAEW: "🛻", RENT: "🔑", WIN: "🏍️", APPBIKE: "📱" };
 
   // ---------- เส้นทางแนะนำจากจุดเดินทางจริงรอบสถานที่ (data/transit.json จาก OpenStreetMap) ----------
   const BKK_CENTER = { lat: 13.7563, lng: 100.5018 };
@@ -664,6 +664,10 @@
   // Airport Rail Link 15–45 · รถไฟชานเมืองสายสีแดง 12–42 — ค่าจริงขึ้นกับจำนวนสถานี จึงแสดงเป็นช่วง
   const RAIL_FARE = { BTS: [17, 3.2, 65], MRT: [17, 2.6, 44], ARL: [15, 1.4, 45], SRT: [12, 1.6, 42] };
   const railFare = (type, km) => { const [base, perKm, max] = RAIL_FARE[type] || RAIL_FARE.MRT; return Math.min(max, base + perKm * km); };
+  // มอเตอร์ไซค์รับจ้าง (กฎกระทรวง 2559 · Grab Bike ใช้อัตราเดียวกัน): 2 กม.แรก 25 บาท · กม.2–5 ละ 5 บาท · กม.5–15 ละ 10 บาท · เกิน 15 กม. ตกลงราคา (คิด 10 บาท/กม.)
+  const bikeFare = km => 25 + 5 * Math.min(Math.max(km - 2, 0), 3) + 10 * Math.max(km - 5, 0);
+  // GrabCar/JustGrab กทม.และปริมณฑล (grab.com): 2 กม.แรก 45 บาท · กม.2–6 ละ 8 · กม.6–40 ละ 7 · เกิน 40 กม. ละ 10 บาท
+  const grabCar = km => 45 + 8 * Math.min(Math.max(km - 2, 0), 4) + 7 * Math.min(Math.max(km - 6, 0), 34) + 10 * Math.max(km - 40, 0);
   const baht = n => `${Math.round(n / 5) * 5 < 10 ? Math.round(n) : (Math.round(n / 5) * 5).toLocaleString(locale())}`;
   const range = (a, b) => baht(a) === baht(b) ? `฿${baht(a)}` : `฿${baht(a)}–${baht(b)}`;
   // ระยะทางตามถนนจริง (OSRM บนข้อมูล OpenStreetMap · เซิร์ฟเวอร์สาธารณะของ FOSSGIS ฟรี)
@@ -688,15 +692,19 @@
     const out = [];
     // ใกล้มาก: เดินได้ฟรี · ระยะสั้นในเมือง: วินมอเตอร์ไซค์ (อัตรากรมการขนส่งทางบก: 2 กม.แรกไม่เกิน 25 บาท, กม.ที่ 2–5 ไม่เกิน กม.ละ 5 บาท)
     if (road <= 1.5) out.push(["WALK", t("costWalk", { min: Math.max(1, Math.round(road * 13)) })]);
-    if (road <= 5 && (inMetro(v) || road <= 2)) { const w = 25 + Math.max(0, road - 2) * 5; out.push(["BIKE", t("costWin", { cost: range(Math.max(15, w * 0.6) * x, w * x) })]); }
+    // วินมอเตอร์ไซค์ (ป้ายวิน) ระยะสั้น · มอเตอร์ไซค์ผ่านแอพ (Grab Bike, LINE MAN Bike, Bolt Bike) ถึง ~30 กม.
+    if (road <= 5 && (inMetro(v) || road <= 2)) { const w = bikeFare(road); out.push(["WIN", t("costWin", { cost: range(Math.max(15, w * 0.8) * x, w * x) })]); }
     const fuel = road / k.kmpl * fp.price * x;
     if (road >= 1) out.push(["CAR", t("costCar2", { km: Math.round(road * x), cost: range(fuel, fuel * 1.1), kmpl: k.kmpl, fuel: t("fuel_" + k.fuelType), price: fp.price.toFixed(2) })]);
     if (road >= 1 && road <= 300) { const b = road / k.bikeKmpl * fp.price * x; out.push(["BIKE", t("costBike", { cost: range(b, b * 1.1) })]); }
     if (road <= 80) {
       // รถติด: เวลาเดินทางจริงในกรุงเทพฯ ~1.3–2 เท่าของเวลาวิ่งโล่ง ส่วนที่ช้ากว่า 6 กม./ชม. คิดนาทีละ 3 บาท
       const m = taxiMeter(road), lo = (m + freeMin * 0.25 * 3) * x, hi = (m + freeMin * 0.9 * 3) * x;
-      out.push(["TAXI", t("costTaxi2", { cost: range(lo, hi), app: range(lo * 1.1, hi * 1.6) })]);
+      // แอพเรียกรถยนต์: อัตรา GrabCar กทม. (ช่วงคนเรียกเยอะราคาขึ้นได้ ~1.6 เท่า)
+      const g = grabCar(road) * x;
+      out.push(["TAXI", t("costTaxi2", { cost: range(lo, hi), app: range(g, Math.max(g * 1.6, hi * 1.2)) })]);
     }
+    if (road <= 30) { const w = bikeFare(road); out.push(["APPBIKE", t("costAppBike", { cost: range(w * x, w * 1.5 * x) })]); }
     // รถไฟฟ้า: มีสถานีใกล้ทั้งต้นทางและปลายทาง (กทม. และปริมณฑล)
     if (tr_?.rail && inMetro(from) && inMetro(v) && line > 1.5) {
       const near = (p, max) => (tr_.rail.map(s => [s, distanceKm(p, s)]).filter(([, d]) => d <= max).sort((a, b) => a[1] - b[1])[0]);
