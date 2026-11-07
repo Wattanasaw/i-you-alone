@@ -1,0 +1,125 @@
+// รายละเอียดอีเว้นท์แบบอ่านแล้วรู้เรื่อง: เปิดหน้าอีเว้นท์ต้นทาง → AI สรุปจากข้อความในหน้านั้นเท่านั้น
+//   - อีเว้นท์นี้คืออะไร มีอะไรให้ทำ/ดู เหมาะกับใคร (2–4 ประโยค)
+//   - ใครมาบ้าง: ศิลปิน นักร้อง ดารา นักแสดง ดีเจ วิทยากร แขกรับเชิญ (เฉพาะชื่อที่หน้าเว็บระบุ)
+//   - ไฮไลต์ · หมวดที่ถูกต้อง (แยก สัมมนา/เวิร์กช็อป และ งานแสดงสินค้า/นิทรรศการ)
+// ผลจำไว้ใน data/event-details.json แล้วใส่ให้อีเว้นท์ทุกรอบ (ข้อมูลอีเว้นท์ถูกสร้างใหม่ทุกวัน)
+// รัน หลัง scripts/ai-review.mjs · node scripts/event-details.mjs [--limit 50] [--ai 12]
+import { readFile, writeFile, rename } from "node:fs/promises";
+import { createHash } from "node:crypto";
+import { aiJSON, aiAvailable, aiName } from "./gemini.mjs";
+
+const UA = "Mozilla/5.0 (compatible; IYouAloneBot/1.0; +https://wattanasaw.github.io/i-you-alone/)";
+const arg = (n, d) => { const i = process.argv.indexOf(n); return i > 0 ? +process.argv[i + 1] : d; };
+const LIMIT = arg("--limit", 50), AI_MAX = arg("--ai", 12), PER_ASK = 4;
+const root = new URL("../", import.meta.url);
+const sleep = ms => new Promise(r => setTimeout(r, ms));
+const readJSON = async (p, fb) => { try { return JSON.parse(await readFile(new URL(p, root), "utf8")); } catch { return fb; } };
+const save = async (p, text) => { const tmp = new URL(p + ".tmp", root); await writeFile(tmp, text); await rename(tmp, new URL(p, root)); };
+const win = {}; new Function("window", await readFile(new URL("js/config.js", root), "utf8"))(win);
+const CATS = win.APP_CONFIG.categories.map(c => c.id);
+
+const data = await readJSON("data/auto-events.json", null);
+if (!data?.events) { console.error("อ่าน data/auto-events.json ไม่ได้"); process.exit(1); }
+const manual = await readJSON("data/events.json", []);
+const cache = await readJSON("data/event-details.json", {});
+const sig = ev => createHash("sha1").update([ev.title, ev.startDate].join("|")).digest("hex").slice(0, 10);
+const today = new Date().toISOString().slice(0, 10);
+
+// ---------- ข้อความในหน้าอีเว้นท์ ----------
+const decode = s => String(s || "")
+  .replace(/&#x([0-9a-f]+);/gi, (_, x) => String.fromCodePoint(parseInt(x, 16))).replace(/&#(\d+);/g, (_, d) => String.fromCodePoint(+d))
+  .replace(/&nbsp;/g, " ").replace(/&quot;/g, '"').replace(/&#39;|&rsquo;|&lsquo;/g, "'").replace(/&ldquo;|&rdquo;/g, '"')
+  .replace(/&ndash;|&mdash;/g, "–").replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&amp;/g, "&");
+const JUNK = /^(home|login|sign ?in|sign ?up|menu|search|share|follow|cookie|privacy|terms|copyright|©|all rights|download|app store|google play|เข้าสู่ระบบ|สมัครสมาชิก|ค้นหา|หน้าแรก|แชร์|ติดตาม)/i;
+async function pageText(url) {
+  const res = await fetch(url, { headers: { "User-Agent": UA, "Accept-Language": "th,en;q=0.8" }, signal: AbortSignal.timeout(20000) });
+  if (!res.ok) return "";
+  const html = (await res.text()).slice(0, 900000);
+  const meta = p => decode((html.match(new RegExp(`<meta[^>]+(?:property|name)=["']${p}["'][^>]+content=["']([^"']*)`, "i")) || [])[1] || "");
+  // คำอธิบายใน schema.org (มักเป็นรายละเอียดเต็ม)
+  const ld = [...html.matchAll(/<script[^>]*application\/ld\+json[^>]*>([\s\S]*?)<\/script>/gi)].map(m => { try { return JSON.parse(m[1]); } catch { return null; } })
+    .flat().filter(Boolean).map(x => [].concat(x["@graph"] || x)).flat().map(x => typeof x.description === "string" ? x.description : "").sort((a, b) => b.length - a.length)[0] || "";
+  const body = (html.match(/<(main|article)[\s\S]*<\/\1>/i)?.[0] || html)
+    .replace(/<(script|style|noscript|svg|nav|footer|header)[\s\S]*?<\/\1>/gi, " ").replace(/<br\s*\/?>|<\/(p|div|li|h\d|tr)>/gi, "\n").replace(/<[^>]+>/g, " ");
+  const lines = decode(body).split("\n").map(s => s.replace(/\s+/g, " ").trim()).filter(s => s.length >= 3 && !JUNK.test(s));
+  const uniq = [...new Set(lines)];
+  return `${meta("og:title")}\n${meta("og:description")}\n${decode(ld).slice(0, 2500)}\n${uniq.join("\n")}`.replace(/\n{2,}/g, "\n").slice(0, 4500);
+}
+
+// ---------- แยกหมวดแบบไม่ใช้ AI (อีเว้นท์ที่ AI ยังไม่ได้อ่าน) ----------
+const SEMINAR = /\b(seminar|summit|conference|forum|symposium|talk|talks|webinar|keynote|panel|lecture|ted ?x)\b|สัมมนา|ประชุม|ฟอรั่ม|ทอล์ก|บรรยาย|เสวนา|ปาฐกถา/i;
+const EXHIBITION = /\b(exhibition|exhibit|art|arts|museum|gallery|immersive|installation|biennale|photography|art ?toy)\b|นิทรรศการ|พิพิธภัณฑ์|ศิลปะ|แกลเลอรี|อาร์ต|ภาพถ่าย/i;
+function split(ev) {
+  const text = `${ev.title} ${ev.summary || ""}`;
+  // หมวดเดิม "สัมมนา/เรียนรู้": ไม่ใช่เวิร์กช็อป/คอร์ส/คลาส (ลงมือทำ) = สัมมนา/ทอล์ก/ประชุม/มีตอัพ
+  if (ev.category === "learning" && !/workshop|course|class|training|bootcamp|masterclass|hands-?on|diy|เวิร์กช็อป|เวิร์คช็อป|เวิร์คชอป|คลาส|คอร์ส|อบรม|ติว|ตะลุยโจทย์|เรียนทำ|ฝึก/i.test(text)) return "seminar";
+  if (ev.category === "expo" && EXHIBITION.test(text) && !/\bexpo\b|งานแสดงสินค้า|มหกรรม|แฟร์|\bfair\b/i.test(text)) return "exhibition";
+  return null;
+}
+
+// ---------- ถาม AI ----------
+const todo = data.events.filter(ev => (ev.ticketUrl || ev.sourceUrl) && cache[ev.id]?.sig !== sig(ev) && (ev.endDate || ev.startDate) >= today)
+  .sort((a, b) => String(a.startDate).localeCompare(String(b.startDate))).slice(0, aiAvailable() ? LIMIT : 0);
+console.log(`อีเว้นท์ ${data.events.length} · มีรายละเอียดแล้ว ${Object.keys(cache).length} · รอบนี้ ${todo.length} · AI: ${aiName()}`);
+const withText = [];
+for (const ev of todo) {
+  await sleep(1200);
+  let text = "";
+  try { text = await pageText(ev.ticketUrl || ev.sourceUrl); } catch {}
+  if (text.length >= 200) withText.push({ ev, text });
+  else cache[ev.id] = { sig: sig(ev), at: today, none: true };
+}
+let asked = 0, fails = 0, done = 0;
+const L = (v, n, max) => [].concat(v || []).filter(s => typeof s === "string" && s.trim()).map(s => s.trim().slice(0, max)).slice(0, n);
+for (let i = 0; i < withText.length && asked < AI_MAX && fails < 3; i += PER_ASK) {
+  const group = withText.slice(i, i + PER_ASK);
+  const prompt = `You write event details for a Thai event app (users: Thai teens and young adults). Use ONLY the page text given for each event. Never invent people, dates, prices or activities.
+For each event return:
+- "about": {"th": 2–4 short sentences in natural Thai: what this event is, what happens / what you can do or see, who it is for. "en": same in English}
+- "people": performers and key people explicitly named in the text — artists, singers, bands, actors/actresses, celebrities, influencers, DJs, speakers, hosts, special guests, chefs, athletes. [{"name": as written (keep original spelling), "role": {"th": short role e.g. "ศิลปิน", "นักร้อง", "นักแสดง", "ดีเจ", "วิทยากร", "พิธีกร", "แขกรับเชิญ", "เชฟ", "en": ...}}] max 12, [] if none. Do not list organizers/companies/sponsors as people.
+- "highlights": {"th": [≤ 5 short points: what's included / special activities / why go], "en": [...]}
+- "category": one of ${JSON.stringify(CATS)} — "seminar" = talks/seminars/conferences (people listen), "learning" = workshops/courses/classes (hands-on), "expo" = trade/consumer fairs & expos, "exhibition" = art/museum/photo/immersive exhibitions, "concert" = concerts/shows/fan meetings, "nightlife" = DJ/bar/club/party.
+Return JSON {"results":[{"id","about","people","highlights","category"}]}
+Events: ${JSON.stringify(group.map(({ ev, text }) => ({ id: ev.id, title: ev.title, category_now: ev.category, page: text })))}`;
+  try {
+    const out = await aiJSON(prompt, { temperature: 0.2 });
+    asked++;
+    for (const { ev } of group) {
+      const r = (out?.results || []).find(x => x.id === ev.id);
+      if (!r) continue;
+      cache[ev.id] = {
+        sig: sig(ev), at: today,
+        about: { th: String(r.about?.th || "").trim().slice(0, 600), en: String(r.about?.en || "").trim().slice(0, 700) },
+        people: [].concat(r.people || []).filter(p => typeof p?.name === "string" && p.name.trim().length >= 2).slice(0, 12)
+          .map(p => ({ name: p.name.trim().slice(0, 60), role: { th: String(p.role?.th || "").slice(0, 30), en: String(p.role?.en || "").slice(0, 30) } })),
+        highlights: { th: L(r.highlights?.th, 5, 90), en: L(r.highlights?.en, 5, 110) },
+        category: CATS.includes(r.category) ? r.category : undefined
+      };
+      done++;
+    }
+    await sleep(4000);
+  } catch (e) { fails++; console.warn("AI สรุปอีเว้นท์ไม่ได้:", e.message.slice(0, 160)); }
+}
+
+// ---------- ใส่ผลให้อีเว้นท์ทุกตัว ----------
+let applied = 0, splitN = 0;
+for (const ev of [...data.events, ...manual]) {
+  const c = cache[ev.id];
+  if (c && c.sig === sig(ev) && !c.none) {
+    if (c.about?.th) { ev.details = c.about.th; ev.i18n = ev.i18n || {}; if (c.about.en) ev.i18n.en = { ...(ev.i18n.en || {}), details: c.about.en }; }
+    if (c.highlights?.th?.length) { ev.highlights = c.highlights.th; if (c.highlights.en?.length) { ev.i18n = ev.i18n || {}; ev.i18n.en = { ...(ev.i18n.en || {}), highlights: c.highlights.en }; } }
+    if (c.people?.length) ev.people = c.people;
+    if (c.category) ev.category = c.category;
+    applied++;
+  }
+  const s = split(ev);
+  if (s) { ev.category = s; splitN++; }
+}
+const live = new Set(data.events.map(e => e.id));
+for (const id of Object.keys(cache)) if (!live.has(id)) delete cache[id];
+await save("data/event-details.json", JSON.stringify(cache) + "\n");
+await save("data/auto-events.json", JSON.stringify(data, null, 2) + "\n");
+await save("data/events.json", JSON.stringify(manual, null, 2) + "\n");
+console.log(`ถาม AI ${asked} ครั้ง · สรุปใหม่ ${done} · ใส่รายละเอียด ${applied} อีเว้นท์ · แยกหมวดสัมมนา/นิทรรศการ ${splitN}`);
+const cats = data.events.reduce((m, e) => (m[e.category] = (m[e.category] || 0) + 1, m), {});
+console.log("หมวด:", JSON.stringify(cats));

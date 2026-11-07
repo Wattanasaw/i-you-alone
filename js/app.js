@@ -305,6 +305,7 @@
             <h3>${esc(tr(ev, "title"))}</h3>
             <div class="meta">📅 <span>${esc(dateRange(ev))}${time ? ` · ${esc(time)}` : ""}</span></div>
             <div class="meta">📍 <span>${esc(place)}</span></div>
+            ${ev.people?.length ? `<div class="meta people-line">⭐ <span>${esc(ev.people.slice(0, 3).map(p => p.name).join(", "))}${ev.people.length > 3 ? ` +${ev.people.length - 3}` : ""}</span></div>` : ""}
             ${races?.length ? `<div class="meta">🏁 <span>${races.map(esc).join(" · ")}</span></div>` : ""}
             ${reg ? `<div class="meta reg ${reg.closed ? "closed" : reg.soon ? "soon" : ""}">📝 <span>${esc(reg.closed ? reg.text : `${reg.date} · ${reg.text}`)}</span></div>` : ""}
             <div class="card-foot">
@@ -341,7 +342,7 @@
   }
 
   // คะแนน "งานใหญ่": สายบันเทิง + สถานที่จัดใหญ่ + คำว่ามหกรรม/เฟสติวัล + หลายวัน + เข้าฟรี + มีสปอนเซอร์
-  const BIG_CAT = { concert: 3, motor: 3, food: 2, expo: 2, book: 2, sale: 2, outdoor: 1, nightlife: 0, learning: -3, cafe: -3 };
+  const BIG_CAT = { concert: 3, motor: 3, food: 2, expo: 2, book: 2, sale: 2, outdoor: 1, nightlife: 0, learning: -3, seminar: -3, exhibition: 1, cafe: -3 };
   const BIG_VENUE = /impact|thunder ?dome|arena|stadium|สนามกีฬา|ราชมังคลา|rajamangala|bitec|ไบเทค|qsncc|ศูนย์การประชุม|ศูนย์ประชุม|convention|exhibition|เมืองทอง|central ?world|เซ็นทรัลเวิลด์|paragon|พารากอน|iconsiam|ไอคอนสยาม|lumpini|ลุมพินี|เบญจกิติ|ท้องสนามหลวง|beach|ชายหาด/i;
   const BIG_WORD = /festival|fest\b|เฟส|เทศกาล|มหกรรม|expo|เอ็กซ์โป|fair|แฟร์|world tour|tour\b|in bangkok|countdown|เคาท์ดาวน์|ลอยกระทง|สงกรานต์|carnival|คาร์นิวัล|motor show|มอเตอร์|งานหนังสือ|book fair|concert|คอนเสิร์ต|marathon|มาราธอน|music|ดนตรี/i;
   function bigScore(ev) {
@@ -778,6 +779,10 @@
                 ${ev.organizer ? `<div><dt>🏢</dt><dd>${t("organizer")}: ${esc(tr(ev, "organizer"))}</dd></div>` : ""}
               </dl>
             </section>
+            ${ev.people?.length ? `<section class="panel people">
+              <h2>⭐ ${t("whoComing")}</h2>
+              <ul class="people-list">${ev.people.map(p => `<li><b>${esc(p.name)}</b>${pick(p.role) ? `<small>${esc(pick(p.role))}</small>` : ""}</li>`).join("")}</ul>
+            </section>` : ""}
             <section class="panel prose">
               <h2>${t("details")}</h2>
               ${original ? `<p class="disclosure" style="margin:0 0 10px">${t("originalThai")}</p>` : ""}

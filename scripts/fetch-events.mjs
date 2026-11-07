@@ -394,10 +394,13 @@ const CATEGORY_RULES = [
   ["cafe", /\bcoffee|caf[eé]|กาแฟ|คาเฟ่/i],
   ["food", /\bfood|drink|beer|wine|whisky|cocktail|gastro|dining|festival of taste|อาหาร|เครื่องดื่ม|เบียร์|ไวน์/i],
   ["sale", /\bsale\b|flash ?sale|super weekend|ลดราคา|ลดกระหน่ำ|เซล|outlet|มหกรรมลด/i],
-  ["learning", /\b(education|business|seminar|summit|conference|forum|workshop|course|class|training|bootcamp|symposium|talk|webinar|meetup)\b|สัมมนา|อบรม|เวิร์กช็อป|เวิร์คช็อป|คอร์ส|เรียน|ประชุม|ฟอรั่ม/i],
+  // เรียนลงมือทำ (เวิร์กช็อป คอร์ส คลาส อบรม) ก่อน สัมมนา/ทอล์ก (ฟังบรรยาย)
+  ["learning", /\b(workshop|course|class|classes|training|bootcamp|masterclass|lesson|hands-?on|diy)\b|อบรม|เวิร์กช็อป|เวิร์คช็อป|เวิร์คชอป|คอร์ส|คลาส|เรียนทำ|ฝึกทำ|สอนทำ|ลงมือทำ/i],
+  ["seminar", /\b(education|business|seminar|summit|conference|forum|symposium|talk|talks|webinar|meetup|keynote|panel|lecture|ted ?x)\b|สัมมนา|ประชุม|ฟอรั่ม|ทอล์ก|บรรยาย|เสวนา|ปาฐกถา|เรียน/i],
   ["nightlife", /\b(nightlife|night ?club|club night|clubbing|bar|pub|party|parties|dj|rave|after ?party|happy hour|ladies night)\b|ผับ|บาร์|ปาร์ตี้|ไนท์คลับ|ไนท์ไลฟ์|ดีเจ|แดนซ์ฮอลล์/i],
   ["concert", /\b(concert|music|festival|live|fan ?meeting|fan ?con|showcase|tour|comedy|performing|musical|theatre|theater|stand ?up)\b|คอนเสิร์ต|เทศกาลดนตรี|แฟนมีต|ละครเวที|ดนตรี/i],
-  ["expo", /\b(expo|exhibition|fair|art|design|museum|gallery|gaming|games|e-?sport|cartoon|anime|experience|kids|family|hobbies)\b|นิทรรศการ|งานแสดง|มหกรรม|พิพิธภัณฑ์|ศิลปะ/i]
+  ["exhibition", /\b(exhibition|exhibit|art|arts|museum|gallery|immersive|installation|biennale|photography|pop-?up|art ?toy)\b|นิทรรศการ|พิพิธภัณฑ์|ศิลปะ|แกลเลอรี|อาร์ต|ภาพถ่าย|ป๊อปอัพ/i],
+  ["expo", /\b(expo|fair|trade show|design|gaming|games|e-?sport|cartoon|anime|experience|kids|family|hobbies|convention)\b|งานแสดงสินค้า|งานแสดง|มหกรรม|แฟร์|เอ็กซ์โป/i]
 ];
 const NIGHT_RULE = CATEGORY_RULES.find(([id]) => id === "nightlife")[1];
 const NIGHT_VENUE =/\b(bar|pub|club|lounge|rooftop|speakeasy|taproom|brewery)\b|ผับ|บาร์|คลับ|รูฟท็อป/i;

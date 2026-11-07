@@ -13,14 +13,16 @@ window.APP_CONFIG = {
     { id: "concert", icon: "🎤", color: "#ff2d78", color2: "#7b2ff7", name: { th: "คอนเสิร์ต/บันเทิง", en: "Concerts & shows", zh: "演唱会/娱乐" } },
     // ศิลปินเล่นตามผับบาร์ ปาร์ตี้ ดีเจ (แสดงป้าย 20+ อัตโนมัติ)
     { id: "nightlife", icon: "🌙", color: "#4c1d95", color2: "#db2777", adult: true, name: { th: "ไนท์ไลฟ์/ผับบาร์", en: "Nightlife & bars", zh: "夜生活/酒吧" } },
-    { id: "learning", icon: "🎓", color: "#2f7cf6", color2: "#00c2c7", name: { th: "สัมมนา/เรียนรู้", en: "Seminars & learning", zh: "讲座/学习" } },
+    { id: "seminar", icon: "🗣️", color: "#1d4ed8", color2: "#7c3aed", name: { th: "สัมมนา/ทอล์ก", en: "Seminars & talks", zh: "讲座/研讨会" } },
+    { id: "learning", icon: "🎓", color: "#2f7cf6", color2: "#00c2c7", name: { th: "เวิร์กช็อป/เรียนรู้", en: "Workshops & classes", zh: "工作坊/课程" } },
     { id: "book", icon: "📚", color: "#8b5cf6", color2: "#ec4899", name: { th: "งานหนังสือ", en: "Book fairs", zh: "书展" } },
     { id: "motor", icon: "🏎️", color: "#0ea47a", color2: "#1e3a8a", name: { th: "มอเตอร์โชว์", en: "Motor shows", zh: "车展" } },
     { id: "sale", icon: "🛍️", color: "#ff7a45", color2: "#ff2d55", name: { th: "แฟลชเซล/ลดราคา", en: "Flash sales", zh: "限时特卖" } },
     { id: "food", icon: "🍜", color: "#f59e0b", color2: "#ef4444", name: { th: "อาหาร/เทศกาล", en: "Food & festivals", zh: "美食/节庆" } },
     { id: "outdoor", icon: "🏃", color: "#16a34a", color2: "#06b6d4", name: { th: "เอาท์ดอร์/สายสุขภาพ", en: "Outdoor & fitness", zh: "户外/健身" } },
     { id: "cafe", icon: "☕", color: "#b45309", color2: "#f9a8d4", name: { th: "คาเฟ่", en: "Cafés", zh: "咖啡馆" } },
-    { id: "expo", icon: "🎨", color: "#475569", color2: "#0ea5e9", name: { th: "งานแสดงสินค้า/นิทรรศการ", en: "Expos & exhibitions", zh: "展会/展览" } }
+    { id: "expo", icon: "🏢", color: "#475569", color2: "#0ea5e9", name: { th: "งานแสดงสินค้า/มหกรรม", en: "Expos & fairs", zh: "展会/博览会" } },
+    { id: "exhibition", icon: "🎨", color: "#be185d", color2: "#f59e0b", name: { th: "นิทรรศการ/ศิลปะ", en: "Exhibitions & art", zh: "展览/艺术" } }
   ],
 
   // หมวดสถานที่เที่ยว (หน้า "ที่เที่ยว") — ข้อมูลจาก data/places.json (scripts/fetch-places.mjs)

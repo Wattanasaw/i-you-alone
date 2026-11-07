@@ -724,3 +724,10 @@ label.check input[type=checkbox] { width: 22px; height: 22px; flex: none; margin
 
 /* ที่มาของเวลาเปิด/ราคา */
 .src-note { display: block; font-size: .75rem; color: var(--muted); }
+
+/* อีเว้นท์: ใครมาบ้าง (ศิลปิน/ดารา/วิทยากร) */
+.people-list { list-style: none; margin: 8px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.people-list li { display: flex; flex-direction: column; padding: 8px 12px; border-radius: 12px; background: color-mix(in srgb, var(--accent) 10%, var(--surface)); border: 1px solid color-mix(in srgb, var(--accent) 25%, transparent); min-width: 0; }
+.people-list li b { font-size: .92rem; }
+.people-list li small { font-size: .75rem; color: var(--muted); }
+.card .people-line span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
