@@ -30,7 +30,16 @@ const ANIMAL_CITIES = ["เชียงใหม่", "เชียงราย"
 const NOT_TREND = /เสียชีวิต|อุบัติเหตุ|ไฟไหม้|น้ำท่วม|จับกุม|ดราม่า|ร้องเรียน|ปิดถาวร|ปิดกิจการ/;
 
 const posts = new Map();
-const kws = [...new Set([...TOPICS, ...ANIMAL_CITIES.flatMap(c => [`คาเฟ่หมา${c}`, `คาเฟ่แมว${c}`]), ...PROV.flatMap(p => [`คาเฟ่${p}`, `ที่เที่ยว${p}`, `ร้านอาหาร${p}`])])];
+// ค้นตาม "ย่าน": เขต/อำเภอ + ถนน/ซอยในที่อยู่ ของคาเฟ่/ร้านอาหาร
+// (ร้านเล็กๆ ไม่มีหน้าค้นด้วยชื่อร้านใน Lemon8 แต่โผล่ในหน้า "คาเฟ่ + ย่าน" เช่น Jaree Cafe อยู่ใน "คาเฟ่ลาซาล")
+const districtCache = JSON.parse(await readFile(new URL("data/place-districts.json", root), "utf8").catch(() => "{}"));
+const districtOf = p => p.district || (Number.isFinite(+p.lat) ? districtCache[`${(+p.lat).toFixed(3)},${(+p.lng).toFixed(3)}`] : null);
+const BIG_ROADS = /^(สุขุมวิท|พหลโยธิน|เพชรเกษม|มิตรภาพ|สายเอเชีย|พระราม)/;
+const streetOf = p => [...String(p.address || "").matchAll(/(?:ซอย|ซ\.|ถนน|ถ\.)\s*([ก-๙a-zA-Z]{3,20})/g)].map(m => m[1]).filter(x => !BIG_ROADS.test(x));
+const AREA_KINDS = { cafe: "คาเฟ่", animalcafe: "คาเฟ่", restaurant: "ร้านอาหาร" };
+const areaKws = [...new Set(data.places.filter(p => AREA_KINDS[p.kind]).flatMap(p => [districtOf(p) && `${AREA_KINDS[p.kind]}${districtOf(p)}`, ...streetOf(p).map(st => `${AREA_KINDS[p.kind]}${st}`)]).filter(Boolean))];
+const kws = [...new Set([...TOPICS, ...ANIMAL_CITIES.flatMap(c => [`คาเฟ่หมา${c}`, `คาเฟ่แมว${c}`]), ...PROV.flatMap(p => [`คาเฟ่${p}`, `ที่เที่ยว${p}`, `ร้านอาหาร${p}`]), ...areaKws])];
+console.log(`หน้าค้นหา ${kws.length} (ย่าน/ถนน ${areaKws.length})`);
 for (const kw of kws) {
   await sleep(1500);
   try {
@@ -52,7 +61,8 @@ const list = [...posts.values()].map(o => {
     source: `Lemon8${author.nickName ? " · " + author.nickName : ""}`,
     image: [o.largeImage?.url, o.imageList?.[0]?.url].find(u => /^https:\/\/www\.lemon8-app\.com\/seo\/image\?/.test(u || "")),
     // เนื้อโพสต์ย่อ (ใช้ใน trend-places.mjs ให้ AI หาชื่อร้าน/สถานที่ — ไม่บันทึกลงข้อมูลที่ขึ้นเว็บ)
-    text: `${String(o.shortContent || "").slice(0, 300)} ${[].concat(o.ocrTextArr || []).join(" ").slice(0, 150)}`.replace(/\s+/g, " ").trim()
+    text: `${String(o.shortContent || "").slice(0, 300)} ${[].concat(o.ocrTextArr || []).join(" ").slice(0, 150)}`.replace(/\s+/g, " ").trim(),
+    body: `${o.title} ${o.shortContent || ""} ${[].concat(o.ocrTextArr || []).join(" ")}`.replace(/\s+/g, " ").toLowerCase()
   };
 }).filter(p => p.title.length >= 8 && !NOT_TREND.test(p.title) && (Date.now() - new Date(p.date)) / 864e5 <= DAYS);
 console.log(`คลังโพสต์ ${list.length} โพสต์ (ช่วง ${DAYS} วัน) จาก ${kws.length} หน้า`);
@@ -64,15 +74,20 @@ const PROV_NAMES = new Set(win.PROVINCES.flatMap(p => [p.th, p.en, p.th.replace(
 const names = p => [...new Set([p.name?.th, p.name?.en, p.name?.th?.replace(GENERIC, "")].filter(n => n && n.length >= 6).map(n => n.toLowerCase().trim()))].filter(n => !PROV_NAMES.has(n));
 let matched = 0, newHot = 0;
 const usedLinks = new Set();
-const slim = ({ text, ...x }) => x;
+const slim = ({ text, body, ...x }) => x;
+// ชื่อเต็มของร้าน (≥ 5 ตัวอักษร) อยู่ในเนื้อโพสต์/ข้อความบนรูป = รีวิวร้านนี้ (tag = เชื่อได้แม้หัวโพสต์ไม่มีชื่อ)
+const fullNames = p => [...new Set([p.name?.th, p.name?.en].filter(n => n && n.trim().length >= 5).map(n => n.toLowerCase().trim()))]
+  .filter(n => !PROV_NAMES.has(n) && !/^(คาเฟ่|ร้านกาแฟ|ร้านอาหาร|coffee shop|cafe|café|coffee)$/.test(n));
 for (const p of data.places) {
-  const ns = names(p);
-  if (!ns.length) continue;
-  const m = list.filter(x => ns.some(n => x.title.toLowerCase().includes(n)));
+  const ns = names(p), fns = fullNames(p);
+  if (!ns.length && !fns.length) continue;
+  const inTitle = list.filter(x => ns.some(n => x.title.toLowerCase().includes(n)));
+  const inBody = list.filter(x => !inTitle.includes(x) && fns.some(n => x.body.includes(n))).map(x => ({ ...x, tag: 1 }));
+  const m = [...inTitle, ...inBody];
   if (!m.length) continue;
   matched++;
   m.forEach(x => usedLinks.add(x.link));
-  p.posts = [...new Map([...m.map(slim), ...(p.posts || [])].map(x => [x.link, x])).values()].sort((a, b) => b.likes - a.likes).slice(0, 4);
+  p.posts = [...new Map([...m.map(slim), ...(p.posts || [])].map(x => [x.link, x])).values()].sort((a, b) => b.likes - a.likes).slice(0, 6);
   // ถูกพูดถึงบ่อย/ไลก์เยอะ = กระแส (เพิ่มจากคะแนนเดิม ไม่ลด)
   const score = +m.reduce((s, x) => s + 1 + Math.log10(1 + x.likes), 0).toFixed(1);
   if (score >= 3 && score > (p.hot || 0)) { if (!p.hot) newHot++; p.hot = score; p.trend = Math.max(p.trend || 0, m.length); }
@@ -80,5 +95,5 @@ for (const p of data.places) {
 await save("data/places.json", JSON.stringify(data, null, 1) + "\n");
 // โพสต์ยอดนิยมที่ยังจับคู่กับสถานที่ไม่ได้ → ส่งต่อให้ trend-places.mjs (AI หาชื่อสถานที่ + หาพิกัดบนแผนที่) · ไฟล์ชั่วคราว ไม่ขึ้นเว็บ
 await mkdir(new URL(".cache/", root), { recursive: true });
-await writeFile(new URL(".cache/l8-pool.json", root), JSON.stringify(list.filter(x => !usedLinks.has(x.link) && x.likes >= 20).sort((a, b) => b.likes - a.likes)));
+await writeFile(new URL(".cache/l8-pool.json", root), JSON.stringify(list.filter(x => !usedLinks.has(x.link) && x.likes >= 20).sort((a, b) => b.likes - a.likes).map(({ body, ...x }) => x)));
 console.log(`สถานที่ที่มีโพสต์พูดถึง ${matched} แห่ง · กระแสใหม่ ${newHot} แห่ง · กระแสรวม ${data.places.filter(p => p.hot).length} แห่ง`);

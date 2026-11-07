@@ -38,8 +38,25 @@ async function postText(link) {
     if (!a) return null;
     const body = String(a.content || a.shortContent || "").replace(/<br\s*\/?>|<\/p>/gi, "\n").replace(/<[^>]+>/g, "").replace(/&nbsp;/g, " ").replace(/&amp;/g, "&").replace(/[ \t]+/g, " ").replace(/\n{2,}/g, "\n").trim();
     const ocr = [].concat(Array.isArray(a.ocrText) ? a.ocrText : (() => { try { return JSON.parse(a.ocrText || "[]"); } catch { return [a.ocrText || ""]; } })()).join(" ").replace(/\s+/g, " ").trim();
-    return `${a.title}\n${body.slice(0, 1400)}${ocr ? `\n[ข้อความบนรูป] ${ocr.slice(0, 300)}` : ""}`;
+    const text = `${a.title}\n${body.slice(0, 1400)}${ocr ? `\n[ข้อความบนรูป] ${ocr.slice(0, 300)}` : ""}`;
+    return { text, poi: a.locationInfo?.poiId ? { id: String(a.locationInfo.poiId), name: a.locationInfo.poiName || "" } : null };
   } catch { return null; }
+}
+
+const norm = s => String(s || "").toLowerCase().replace(/คาเฟ่|ร้านกาแฟ|ร้าน|\b(cafe|café|coffee|shop|the)\b/g, "").replace(/[^ก-๙a-z0-9]/g, "");
+const sameName = (a, b) => { const x = norm(a), y = norm(b); return x.length >= 3 && y.length >= 3 && (x.includes(y) || y.includes(x)); };
+// รีวิวที่ปักหมุดสถานที่เดียวกัน (หน้า poi ของ Lemon8)
+async function poiPosts(id) {
+  try {
+    const html = await (await fetch(`https://www.lemon8-app.com/poi/${id}?region=th`, { headers: { "User-Agent": UA, "Accept-Language": "th" }, signal: AbortSignal.timeout(20000) })).text();
+    const big = [...html.matchAll(/<script[^>]*>([\s\S]*?)<\/script>/g)].map(m => m[1]).sort((a, b) => b.length - a.length)[0] || "";
+    const ld = JSON.parse(decodeURIComponent(big))?.state?.loaderData?.["routes/poi.$poi_id"] || {};
+    const items = Object.entries(ld).find(([k]) => k.startsWith("$PoiPost"))?.[1]?.items || [];
+    return items.filter(o => o.groupId && o.title).sort((a, b) => (+b.articleLikes || 0) - (+a.articleLikes || 0)).map(o => {
+      const au = [o, ...Object.values(o)].find(v => v && typeof v === "object" && v.linkName) || {};
+      return { link: `https://www.lemon8-app.com/${au.linkName ? "@" + au.linkName + "/" : ""}${o.groupId}?region=th`, source: `Lemon8${au.nickName ? " · " + au.nickName : ""}`, likes: +o.articleLikes || 0, title: o.title, text: String(o.shortContent || "").slice(0, 600) };
+    });
+  } catch { return []; }
 }
 
 let asked = 0, fails = 0, done = 0;
@@ -48,7 +65,23 @@ for (let i = 0; i < todo.length && aiAvailable() && asked < AI_MAX && fails < 3;
   for (const p of todo.slice(i, i + PER_ASK)) {
     const posts = [...p.posts].sort((a, b) => (b.likes || 0) - (a.likes || 0)).slice(0, POSTS_PER);
     const texts = [];
-    for (const x of posts) { await sleep(1100); const t = await postText(x.link); if (t) texts.push(t); }
+    let poi = null;
+    for (const x of posts) {
+      await sleep(1100);
+      const r = await postText(x.link);
+      if (!r) continue;
+      texts.push(r.text);
+      if (r.poi && !poi && sameName(r.poi.name, p.name?.th || p.name?.en)) poi = r.poi;
+    }
+    // โพสต์ปักหมุดร้านนี้ → หน้าสถานที่ใน Lemon8 มีรีวิวอื่นที่ปักหมุดที่เดียวกันอีก (เพิ่มสูงสุด 4 รีวิว)
+    if (poi || p.l8poi) {
+      await sleep(1100);
+      for (const o of await poiPosts(poi?.id || p.l8poi)) {
+        if (posts.length >= POSTS_PER + 4) break;
+        if (posts.some(x => x.link === o.link)) continue;
+        posts.push(o); texts.push(`${o.title}\n${o.text}`);
+      }
+    }
     if (texts.length) group.push({ p, posts, texts });
     else cache[p.id] = { ...(cache[p.id] || {}), sig: sig(p), at: new Date().toISOString() };
   }

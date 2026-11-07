@@ -658,3 +658,14 @@ html.theme-anim, html.theme-anim * { transition: background-color .35s, color .3
 .place-row .meta { font-size: .82rem; opacity: .85; }
 .place-row .place-sum { margin: 2px 0 0; font-size: .85rem; opacity: .9; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
 .place-row .save-btn { position: absolute; top: 6px; right: 6px; z-index: 2; }
+
+/* หน้ารายละเอียดสถานที่: ส่วนต่างๆ เป็น panel แบบเดียวกับหน้ารายละเอียดงาน */
+.pd-panel > .panel { margin-top: 12px; }
+.rv-box.panel { background: var(--surface); padding: 16px 18px; }
+.rv-head h2, .pd-buzz-head h2 { margin: 0; font-size: 1.1rem; }
+.pd-buzz.panel { background: var(--surface); border: 1px solid var(--border); padding: 16px 18px; }
+.facts small.open-now { color: #2fb36d; font-weight: 600; }
+.facts small.closed-now { color: #e5484d; font-weight: 600; }
+/* ไม่มีรูป: หัวหน้ากะทัดรัด (แถบสีตามหมวด) ไม่ต้องเว้นที่ให้รูป */
+.pd-hero.noimg .pd-cover { aspect-ratio: auto; height: 150px; }
+.pd-hero.noimg .pd-cover .emoji { font-size: 2.4rem; position: absolute; right: 18px; bottom: 16px; left: auto; top: auto; opacity: .9; }

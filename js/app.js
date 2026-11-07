@@ -171,6 +171,12 @@
     const base = [...(places.places || []).filter(p => !replaced.has(p.id)), ...bizList];
     const ids = new Set(base.map(p => p.id.replace(/^(osm|l8)-/, "")));
     state.places = [...base, ...(Array.isArray(trendPl) ? trendPl : []).filter(p => !ids.has(p.id.replace(/^(osm|l8)-/, "")))];
+    // ค่าจาก OpenStreetMap ที่มีหลายค่าคั่นด้วย ";" (เว็บไซต์ 2 ลิงก์, เบอร์ 2 เบอร์, ที่อยู่) → ใช้ค่าแรก / คั่นด้วย ", "
+    for (const p of state.places) {
+      if (typeof p.website === "string" && p.website.includes(";")) p.website = p.website.split(";")[0].trim();
+      if (typeof p.phone === "string" && p.phone.includes(";")) p.phone = p.phone.split(";")[0].trim();
+      if (typeof p.address === "string") p.address = p.address.replace(/\s*;\s*/g, ", ").trim();
+    }
     state.trends = places.trends || {};
     // งานที่ดึงอัตโนมัติ + งานที่ใส่เอง: งานใส่เองที่ id ตรงกันจะทับงานอัตโนมัติ, hidden: true = ซ่อน
     const manualIds = new Set(events.map(e => e.id));
@@ -1104,8 +1110,8 @@
   // "สรุปจากรีวิว": เหมาะกับ · จุดเด่น · ต้องลอง · เคล็ดลับ · ข้อควรรู้ (แต่ละหัวข้อแสดงเมื่อมีข้อมูล) + ลิงก์โพสต์ต้นทาง
   function reviewBlock(rv) {
     const sec = (icon, key, list) => list.length ? `<div class="rv-sec"><b>${icon} ${t(key)}</b><ul>${list.map(x => `<li>${esc(x)}</li>`).join("")}</ul></div>` : "";
-    return `<section class="rv-box" aria-label="${t("rvTitle")}">
-      <div class="rv-head"><b>📝 ${t("rvTitle")}</b><small>${t("rvFrom", { n: rv.n || rv.src?.length || 1 })}</small></div>
+    return `<section class="panel rv-box" aria-label="${t("rvTitle")}">
+      <div class="rv-head"><h2>📝 ${t("rvTitle")}</h2><small>${t("rvFrom", { n: rv.n || rv.src?.length || 1 })}</small></div>
       ${rv.goodFor?.length ? `<div class="good-for">${rv.goodFor.map(g => `<span>${GOOD_ICON[g] || "✨"} ${esc(t("gf_" + g))}</span>`).join("")}</div>` : ""}
       ${sec("✨", "rvHighlights", rvList(rv.highlights))}
       ${sec("😋", "rvMustTry", rvList(rv.mustTry))}
@@ -1132,17 +1138,22 @@
       MENU_KINDS.has(p.kind) && menuText(p) !== "-" ? `<span class="q">🍽️ ${esc(menuText(p))}</span>` : "",
       `<span class="q">📍 ${esc([p.district && `${p.province === "bangkok" ? t("districtBkk") : t("districtShort")}${p.district}`, state.pos && p.lat ? `${distanceKm(state.pos, p).toFixed(1)} ${t("km")}` : provName(p.province)].filter(Boolean).join(" · "))}</span>`
     ].join("");
-    const facts = `<dl class="facts compact">
-        <div><dt>📍</dt><dd>${esc([p.address, provName(p.province)].filter(Boolean).join(" · ") || name)}</dd></div>
-        <div><dt>🕒</dt><dd>${esc(fmtHours(p.hours) || t("hoursUnknown"))}</dd></div>
-        <div><dt>🎟️</dt><dd>${t("fee")}: ${esc(feeText(p))}${p.entry?.src === "Lemon8" ? ` <small>${t("fromReviews")}</small>` : ""}</dd></div>
-        ${MENU_KINDS.has(p.kind) ? `<div><dt>🍽️</dt><dd>${t("menuPrice")}: ${esc(menuText(p))}${p.menuPrice?.src === "Lemon8" ? ` <small>${t("fromReviews")}</small>` : p.menuPrice?.src === "owner" ? ` <small>${t("fromOwner")}</small>` : ""}</dd></div>` : ""}
-        ${p.phone ? `<div><dt>☎️</dt><dd><a href="tel:${esc(p.phone.replace(/[^\d+]/g, ""))}">${esc(p.phone)}</a></dd></div>` : ""}
-      </dl>`;
+    // ข้อมูลสำคัญ: รูปแบบเดียวกับหน้ารายละเอียดงาน (panel + facts + บรรทัดรอง)
+    const area = [p.district && `${p.province === "bangkok" ? t("districtBkk") : t("districtShort")}${p.district}`, provName(p.province)].filter(Boolean).join(" · ");
+    const facts = `<section class="panel">
+        <h2>${t("keyInfo")}</h2>
+        <dl class="facts">
+          <div><dt>📍</dt><dd>${esc(p.address || name)}<small>${esc(area)}</small><a class="maps-link" ${mapsLink(v, null)}>${t("openMaps")}</a></dd></div>
+          <div><dt>🕒</dt><dd>${esc(fmtHours(p.hours) || t("hoursUnknown"))}${open != null ? `<small class="${open ? "open-now" : "closed-now"}">${open ? t("openNowShort") : t("closedNow")}</small>` : ""}</dd></div>
+          ${!MENU_KINDS.has(p.kind) || p.kind === "animalcafe" ? `<div><dt>🎟️</dt><dd>${t("fee")}: ${esc(feeText(p))}${p.entry?.src === "Lemon8" ? `<small>${t("fromReviews")}</small>` : ""}</dd></div>` : ""}
+          ${MENU_KINDS.has(p.kind) ? `<div><dt>🍽️</dt><dd>${t("menuPrice")}: ${esc(menuText(p))}${p.menuPrice?.src === "Lemon8" ? `<small>${t("fromReviews")}</small>` : p.menuPrice?.src === "owner" ? `<small>${t("fromOwner")}</small>` : ""}</dd></div>` : ""}
+          ${p.phone ? `<div><dt>☎️</dt><dd><a href="tel:${esc(p.phone.replace(/[^\d+]/g, ""))}">${esc(p.phone.split(";")[0])}</a></dd></div>` : ""}
+        </dl>
+      </section>`;
     app.innerHTML = `
       <a class="back" href="#/places">${t("backPlaces")}</a>
       <div class="pd">
-        <div class="pd-hero">
+        <div class="pd-hero ${coverOf(p) ? "" : "noimg"}">
           ${placeCover(p, "cover pd-cover")}</div>
           <div class="pd-hero-text">
             <div class="pd-tags">${c ? `<span>${c.icon} ${esc(pick(c.name))}</span>` : ""}${p.business ? `<span>✅ ${t("verifiedShop")}</span>` : ""}${p.trend ? `<span class="hot">🔥 ${t("trending")}</span>` : p.rising ? `<span class="hot">📈 ${t("searchUp", { n: p.rising })}</span>` : ""}</div>
@@ -1162,15 +1173,15 @@
         <div class="pd-tabs" role="tablist">${tabs.map(([k, l]) => `<button role="tab" class="${state.placeTab === k ? "active" : ""}" data-ptab="${k}" aria-selected="${state.placeTab === k}">${l}</button>`).join("")}</div>
         <section class="pd-panel" data-panel="overview" ${state.placeTab === "overview" ? "" : "hidden"}>
           ${summary ? `<p class="pd-summary" id="pdSum">${esc(summary)}</p>${summary.length > 180 ? `<button class="link-btn" id="pdMore">${t("readMore")}</button>` : ""}` : ""}
+          ${facts}
           ${rv ? reviewBlock(rv) : ""}
-          ${posts.length ? `<div class="pd-buzz">
-            <div class="pd-buzz-head"><b>🔥 ${t("placeTrends")}</b>${posts.length > 2 ? `<button class="link-btn" data-ptab="trends">${t("seeAll")} ${posts.length} ›</button>` : ""}</div>
+          ${posts.length ? `<section class="panel pd-buzz">
+            <div class="pd-buzz-head"><h2>🔥 ${t("placeTrends")}</h2>${posts.length > 2 ? `<button class="link-btn" data-ptab="trends">${t("seeAll")} ${posts.length} ›</button>` : ""}</div>
             ${freshPopular(posts).slice(0, 2).map(n => `<a class="buzz-row" ${inAppLink(n.link)}>
               ${n.image ? `<img src="${esc(n.image)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">` : `<span class="buzz-ico">🔥</span>`}
               <span class="buzz-txt"><span class="buzz-title">${esc(n.title)}</span><small>${[n.likes ? `❤️ ${fmtLikes(n.likes)}` : "", n.date ? relDate(n.date) : ""].filter(Boolean).join(" · ")} · ${esc(String(n.source || "Lemon8").replace(/^Lemon8 · /, "@"))}</small></span>
             </a>`).join("")}
-          </div>` : ""}
-          ${facts}
+          </section>` : ""}
           <p class="pd-links">${p.fromTrend ? `<span>🔥 ${t("fromTrendNote")}</span>` : ""}${wiki ? `<a ${inAppLink(wiki)}>📖 ${t("wikipedia")}</a>` : ""}${p.imagePage ? `<span>${t("photo")}: <a ${inAppLink(p.imagePage)}>${esc(p.imageCredit || "Wikimedia Commons")}</a></span>` : ""}</p>
           ${!p.business ? `<a class="claim-link" href="#/account/new-shop?ref=${encodeURIComponent(p.id)}">🏪 ${t(p.image ? "claimPlace" : "claimPlaceNoPhoto")}</a>` : ""}
         </section>
