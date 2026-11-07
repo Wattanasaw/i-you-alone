@@ -110,6 +110,9 @@ function rangeDates(text) {
 // งานแสดงสินค้าเฉพาะนักธุรกิจ (B2B) — คนทั่วไปเข้าไม่ได้/ไม่ได้ประโยชน์
 const TRADE = /\b(trade (show|fair|exhibition)|b2b|conference|summit|congress|symposium|forum|convention of|business matching|for professionals?)\b|เฉพาะผู้ประกอบการ|ผู้ประกอบการธุรกิจ|เครือข่ายทางธุรกิจ|สร้างเครือข่าย|นักธุรกิจ|ผู้เชี่ยวชาญด้าน|เจรจาธุรกิจ|ประชุมวิชาการ/i;
 const SALE_PROMO = /\bsale\b|weekend|mega|grand|fair|festival|market|ลดราคา|ลดกระหน่ำ|มหกรรม|แฟร์|เทศกาล/i;
+// อัตราแลกเปลี่ยน (ฟรี ไม่ต้องใช้คีย์ · open.er-api.com) ใช้แปลงราคาบัตรสกุลอื่นเป็นบาทโดยประมาณ
+const FX = await fetch("https://open.er-api.com/v6/latest/THB", { signal: AbortSignal.timeout(15000) }).then(r => r.json()).then(j => j.result === "success" ? j.rates : {}).catch(() => ({}));
+const toBaht = (v, cur) => !cur || /^THB$/i.test(cur) ? +v : FX[String(cur).toUpperCase()] ? Math.round(+v / FX[String(cur).toUpperCase()]) : null;
 const prices = arr => [...new Set(arr.map(s => Number(String(s).replace(/,/g, ""))).filter(n => n >= 20 && n <= 100000))].sort((a, b) => a - b);
 
 // ---------- ตัวอ่านข้อมูลงานมาตรฐาน schema.org (JSON-LD) ใช้ร่วมกันหลายเว็บ ----------
@@ -129,7 +132,13 @@ function ldEvents(html) {
 // งาน schema.org → รูปแบบเดียวกับตัวอ่านเว็บอื่น (build() ใช้ต่อ)
 function fromLd(ev, catHint = "") {
   const loc = [].concat(ev.location || [])[0] || {}, addr = typeof loc.address === "string" ? { streetAddress: loc.address } : loc.address || {};
-  const offers = [].concat(ev.offers || []).flatMap(o => [o.price, o.lowPrice, o.highPrice]).filter(v => v != null && v !== "");
+  // ราคาสกุลอื่น (เช่น USD ใน Eventbrite) แปลงเป็นบาทโดยประมาณ (fx = true → แอพแสดง ≈)
+  let fx = false;
+  const offers = [].concat(ev.offers || []).flatMap(o => [].concat(o.offers || o)).flatMap(o => {
+    const v = [o.price, o.lowPrice, o.highPrice].filter(v => v != null && v !== "");
+    if (o.priceCurrency && !/^THB$/i.test(o.priceCurrency) && v.some(x => +x > 0)) fx = true;
+    return v.map(x => toBaht(x, o.priceCurrency)).filter(x => x != null);
+  });
   const d = s => String(s || "").slice(0, 10);
   const online = /Online/i.test(ev.eventAttendanceMode || "") || /VirtualLocation/.test(loc["@type"] || "");
   const country = zw(addr.addressCountry?.name || addr.addressCountry);
@@ -141,7 +150,7 @@ function fromLd(ev, catHint = "") {
     venueText: online ? "Online" : zw(loc.name || addr.streetAddress), provinceText: zw(addr.addressRegion || addr.addressLocality),
     outsideThailand: !!country && !/^(TH|THA|Thailand|ไทย|ประเทศไทย)$/i.test(country),
     catText: `${catHint} ${/Sports/.test(types) ? "run sport" : ""} ${/Music/.test(types) ? "concert" : ""} ${/Festival/.test(types) ? "festival" : ""}`,
-    prices: prices(offers), free: offers.length > 0 && offers.every(v => +v === 0) || ev.isAccessibleForFree === true,
+    prices: prices(offers), fx, free: offers.length > 0 && offers.every(v => +v === 0) || ev.isAccessibleForFree === true,
     bodyText: zw(`${addr.streetAddress || ""} ${addr.addressLocality || ""} ${ev.description || ""}`).slice(0, 600)
   };
 }
@@ -186,13 +195,16 @@ const SOURCES = {
       const image = /placeholder/i.test(og) || !/^https:\/\//.test(og) ? poster : og;
       const ticketIdx = L.findIndex(l => /ราคาบัตร|ประเภทบัตร|ticket price|ticket type|ราคา/i.test(l));
       const priceText = ticketIdx >= 0 ? L.slice(ticketIdx, ticketIdx + 30).join(" ") : "";
+      // ช่วงราคาบัตรที่ Eventpop ฝังไว้ในหน้า (หน่วยสตางค์) เช่น "priceRangeSatangs":[1200000,1850000] = 12,000–18,500 บาท
+      const range = html.match(/priceRangeSatangs(?:&quot;|")\s*:\s*\[\s*(\d+)\s*,\s*(\d+)\s*\]/);
+      const rangeBaht = range ? [Math.round(+range[1] / 100), Math.round(+range[2] / 100)] : null;
       return {
         title, image, summary: meta(html, "og:description"),
         dates: datesIn(dateLine), time: (dateLine.match(/at (\d{1,2}:\d{2})/) || [])[1],
         venueText: L[venueIdx], provinceText: provLine.replace(/,\s*(Thailand|ประเทศไทย)$/i, ""), outsideThailand: !provLine && /,\s*(Singapore|Malaysia|Vietnam|Japan|Korea|Indonesia|Philippines|Laos|Cambodia)/i.test(L.slice(venueIdx, venueIdx + 3).join(" ")),
         catText: L.slice(Math.max(0, di - 4), di).join(" "),
-        prices: prices([...priceText.matchAll(/([\d,]{2,})(?:\.\d+)?\s*(?:บาท|THB|฿)|฿\s*([\d,]{2,})/g)].map(m => m[1] || m[2])),
-        free: /เข้าชมฟรี|เข้างานฟรี|เข้าร่วมฟรี|free (?:entry|admission)|ไม่มีค่าใช้จ่าย/i.test(L.slice(0, 80).join(" ")) && !priceText,
+        prices: rangeBaht && rangeBaht[1] > 0 ? prices(rangeBaht) : prices([...priceText.matchAll(/([\d,]{2,})(?:\.\d+)?\s*(?:บาท|THB|฿)|฿\s*([\d,]{2,})/g)].map(m => m[1] || m[2])),
+        free: rangeBaht ? rangeBaht[1] === 0 : /เข้าชมฟรี|เข้างานฟรี|เข้าร่วมฟรี|free (?:entry|admission)|ไม่มีค่าใช้จ่าย/i.test(L.slice(0, 80).join(" ")) && !priceText,
         bodyText: L.slice(venueIdx + 1, venueIdx + 80).join(" ")
       };
     }
@@ -280,11 +292,17 @@ const SOURCES = {
           for (const ev of ldEvents(html)) {
             const id = (String(ev.url).match(/-(\d{9,})(?:\?|$)/) || [])[1];
             if (!id || EB_SKIP.test(ev.name)) continue;
-            refs.push({ id: "eb-" + id, url: String(ev.url).split("?")[0], parsed: fromLd(ev) });
+            // หน้ารวมไม่มีราคา → ไม่มีราคา/ฟรี ให้เปิดหน้างาน (มีราคาบัตรใน schema.org)
+            const parsed = fromLd(ev);
+            refs.push({ id: "eb-" + id, url: String(ev.url).split("?")[0], ...(parsed.prices.length || parsed.free ? { parsed } : {}) });
           }
         }
       }
       return [...new Map(refs.map(r => [r.id, r])).values()];
+    },
+    parse(html) {
+      const ev = ldEvents(html)[0];
+      return ev ? fromLd(ev) : null;
     }
   },
   // ---------- ศูนย์แสดงสินค้า: มหกรรม/มอเตอร์โชว์/งานแฟร์เข้าฟรี ที่ไม่ได้ขายบัตรผ่านเว็บขายตั๋ว ----------
@@ -463,9 +481,15 @@ function cleanSummary(s, title) {
   return x.length > 180 ? x.slice(0, 180) + "…" : x;
 }
 
+// ราคาที่เขียนไว้ในรายละเอียดงาน (หน้าเว็บที่ตารางบัตรโหลดด้วย JavaScript เช่น Zipevent)
+// "ค่าลงทะเบียน: 6,900 บาท", "บัตรราคา 1,500 บาท", "Ticket: ฿990" — ต้องมีคำว่า ราคา/บัตร/ค่า... อยู่ใกล้ตัวเลข
+const PRICE_NEAR = /(?:ราคา|บัตร|ตั๋ว|ค่า(?:ลงทะเบียน|เข้า(?:ชม|งาน|ร่วม)?|สมัคร|เรียน|อบรม|บัตร)|ticket|price|admission|entry fee|registration fee|early ?bird|presale|regular)[^\n]{0,40}?(?:฿\s*([\d,]{2,7})|([\d,]{2,7})(?:\.\d+)?\s*(?:บาท|thb|฿|\.-))/gi;
+const bodyPrices = text => prices([...String(text || "").matchAll(PRICE_NEAR)].map(m => m[1] || m[2]));
+
 async function build(src, ref, p) {
   const item = { title: p?.title, url: ref.url };
   if (!p || !p.title) return reject("อ่านหน้าไม่ได้", item);
+  if (!p.prices?.length && !p.free) p.prices = bodyPrices(`${p.summary || ""}\n${p.bodyText || ""}`);
   if (BLOCK_WORDS.some(re => re.test(p.title))) return reject("คำต้องห้าม", item);
   const [start, ...rest] = [...new Set(p.dates)].sort();
   const end = rest.length ? rest[rest.length - 1] : start;
@@ -478,7 +502,7 @@ async function build(src, ref, p) {
   const ev = {
     id: ref.id, auto: true, title: p.title.slice(0, 160), category: categorize(p.title, p.catText),
     startDate: start, endDate: end, time: p.time,
-    price: p.free ? { type: "free" } : p.prices.length ? { type: "paid", min: p.prices[0], max: p.prices[p.prices.length - 1] } : { type: "unknown" },
+    price: p.free ? { type: "free" } : p.prices.length ? { type: "paid", min: p.prices[0], max: p.prices[p.prices.length - 1], ...(p.fx ? { approx: true } : {}) } : { type: "unknown" },
     summary: cleanSummary(p.summary, p.title),
     image: /^https:\/\//.test(p.image || "") ? p.image.trim().replace(/ /g, "%20") : undefined,
     ticketUrl: ref.url, sourceUrl: ref.url, sourceName: src.name,
@@ -542,7 +566,9 @@ for (const [key, src] of Object.entries(SOURCES)) {
   let openedHere = 0;
   for (const ref of refs) {
     const old = prevById[ref.id];
-    const fresh = old && (Date.now() - new Date(old.fetchedAt)) / 864e5 < REFRESH_DAYS;
+    // งานที่ยังไม่รู้ราคา เปิดหน้าใหม่ทุก 3 วัน (ผู้จัดมักใส่ราคาทีหลัง)
+    const age = old ? (Date.now() - new Date(old.fetchedAt)) / 864e5 : Infinity;
+    const fresh = age < REFRESH_DAYS && (old.price?.type !== "unknown" || age < 3);
     let ev = null;
     // แหล่งที่หน้ารวมมีข้อมูลครบแล้ว (Eventbrite) ไม่ต้องเปิดหน้างาน
     if (ref.parsed) {

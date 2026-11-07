@@ -93,8 +93,9 @@
     const fmt = n => Number(n).toLocaleString(locale());
     if (p.type === "mixed") return { cls: "free", text: t("mixed") };
     if (p.type === "unknown") return { cls: "paid", text: t("priceUnknown") };
-    if (p.min && p.max && p.min !== p.max) return { cls: "paid", text: `${t("currency")}${fmt(p.min)}–${fmt(p.max)}` };
-    if (p.min) return { cls: "paid", text: `${t("currency")}${fmt(p.min)}` };
+    const ap = p.approx ? "≈ " : ""; // แปลงจากสกุลเงินอื่น (เช่น USD)
+    if (p.min && p.max && p.min !== p.max) return { cls: "paid", text: `${ap}${t("currency")}${fmt(p.min)}–${fmt(p.max)}` };
+    if (p.min) return { cls: "paid", text: `${ap}${t("currency")}${fmt(p.min)}` };
     return { cls: "paid", text: t("paid") };
   }
   // วันปิดรับสมัคร (งานวิ่ง/แข่งขัน): null ถ้าไม่มี

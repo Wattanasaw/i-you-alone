@@ -2,7 +2,7 @@
 // ข้อความหน้าจออื่น ๆ ทั้ง 3 ภาษาอยู่ใน js/i18n.js
 window.APP_CONFIG = {
   siteName: "I You Alone",
-  tagline: { th: "วันนี้ไปงานไหนดี?", en: "Where to go today?", zh: "今天去哪儿玩？" },
+  tagline: { th: "วันนี้ไปเที่ยวไหนดี?", en: "Where to go today?", zh: "今天去哪儿玩？" },
   contactEmail: "", // อีเมลสำหรับติดต่อลงโฆษณา เช่น "ads@yourmail.com"
   contactLine: "",  // LINE ID หรือลิงก์ LINE OA เช่น "https://lin.ee/xxxx"
   languages: ["th", "en", "zh"], // ภาษาที่เปิดให้เลือก
