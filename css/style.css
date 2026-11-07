@@ -619,3 +619,14 @@ html.theme-anim, html.theme-anim * { transition: background-color .35s, color .3
 /* หน้าบันทึกว่าง: อยู่กลางจอ + ปุ่มชวนไปค้นหา */
 .empty-state { min-height: 55vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; gap: 6px; color: var(--muted); }
 .empty-ico { font-size: 3rem; }
+
+/* ภาพรวมสถานที่: กระแสที่พูดถึง (ย่อ 2 โพสต์ล่าสุด) */
+.pd-buzz { margin: 12px 0; padding: 10px 12px; border-radius: 14px; background: color-mix(in srgb, #ff7a45 9%, var(--surface)); border: 1px solid color-mix(in srgb, #ff7a45 25%, transparent); }
+.pd-buzz-head { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 6px; font-size: .95rem; }
+.pd-buzz-head .link-btn { min-height: 36px; }
+.buzz-row { display: flex; gap: 10px; align-items: center; padding: 6px 0; color: inherit; text-decoration: none; min-height: 44px; }
+.buzz-row + .buzz-row { border-top: 1px dashed color-mix(in srgb, currentColor 15%, transparent); }
+.buzz-row img, .buzz-ico { width: 56px; height: 56px; flex: none; border-radius: 10px; object-fit: cover; background: color-mix(in srgb, #ff7a45 30%, var(--surface)); display: grid; place-items: center; font-size: 1.4rem; }
+.buzz-txt { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.buzz-title { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; font-size: .9rem; line-height: 1.35; }
+.buzz-txt small { opacity: .75; font-size: .78rem; }

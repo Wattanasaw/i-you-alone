@@ -4,6 +4,7 @@
 // ผลจำไว้ใน data/place-prices.json (ตรวจซ้ำทุก 60 วัน) · ไม่มี AI = ใส่ผลที่จำไว้อย่างเดียว
 // รัน: node scripts/place-prices.mjs [--limit 80] [--ai 20]
 import { readFile, writeFile, rename } from "node:fs/promises";
+import { readFileSync } from "node:fs";
 import { aiJSON, aiAvailable, aiName } from "./gemini.mjs";
 
 const UA = "IYouAloneBot/1.0 (+https://wattanasaw.github.io/i-you-alone/)";
@@ -21,9 +22,11 @@ const cache = await readJSON("data/place-prices.json", {});
 const days = t => (Date.now() - new Date(t || 0)) / 864e5;
 
 // ---------- รีวิวจาก Lemon8 ----------
+// ชื่อที่เหลือแค่ชื่อจังหวัด (เช่น "สวนสัตว์เชียงใหม่" → "เชียงใหม่") ไม่ใช้จับคู่ — จะได้ราคาของที่อื่นในจังหวัด
+const PROV_NAMES = (() => { const w = {}; new Function("window", readFileSync(new URL("js/i18n.js", root), "utf8"))(w); return new Set(w.PROVINCES.flatMap(p => [p.th, p.en]).filter(Boolean).map(s => s.toLowerCase()).concat(["กรุงเทพ", "bangkok"])); })();
 const core = s => String(s || "").replace(/^(ร้าน|คาเฟ่|cafe|café|the|อุทยานแห่งชาติ|สวนสัตว์|พิพิธภัณฑสถานแห่งชาติ|พิพิธภัณฑ์)\s*/i, "").trim();
 async function reviews(p) {
-  const names = [p.name.th, p.name.en].map(core).filter(n => n && n.length >= 4).map(n => n.toLowerCase());
+  const names = [p.name.th, p.name.en].map(core).filter(n => n && n.length >= 4).map(n => n.toLowerCase()).filter(n => !PROV_NAMES.has(n));
   if (!names.length) return [];
   const posts = new Map();
   for (const q of [...new Set([p.name.th, p.name.en].filter(Boolean))].slice(0, 2)) {

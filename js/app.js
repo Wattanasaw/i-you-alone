@@ -833,10 +833,17 @@
   const menuText = p => p.menuPrice ? (p.menuPrice.min === p.menuPrice.max ? `~${fmtBaht(p.menuPrice.min)}` : `${Number(p.menuPrice.min).toLocaleString(locale())}–${fmtBaht(p.menuPrice.max)}`) : "-";
   const inPlaceProvince = p => state.filters.province === "all" || p.province === state.filters.province;
 
+  // รูปปก: รูปที่ AI คัดแล้ว → ไม่มี ใช้รูปปกโพสต์รีวิว Lemon8 ที่พูดถึงที่นี่ (ไลก์มากสุด มีลายน้ำ+เครดิตผู้โพสต์) → ไอคอนหมวด
+  function coverOf(p) {
+    if (/^https:\/\//.test(p.image || "")) return { src: p.image, credit: p.imageCredit || "Wikimedia Commons" };
+    const post = placePosts(p).filter(x => /^https:\/\//.test(x.image || "")).sort((a, b) => (b.likes || 0) - (a.likes || 0))[0];
+    return post ? { src: post.image, credit: post.source || "Lemon8", post: true } : null;
+  }
   function placeCover(p, cls = "cover") {
     const c = PCAT[p.kind] || { icon: "📍", color: "#888" };
-    const img = /^https:\/\//.test(p.image || "")
-      ? `<img class="cover-img" src="${esc(p.image)}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var c=this.nextElementSibling;if(c&&c.classList.contains('credit'))c.remove();this.remove()"><span class="credit">📷 ${esc(p.imageCredit || "Wikimedia Commons")}</span>`
+    const cv = coverOf(p);
+    const img = cv
+      ? `<img class="cover-img" src="${esc(cv.src)}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var c=this.nextElementSibling;if(c&&c.classList.contains('credit'))c.remove();this.remove()"><span class="credit">📷 ${esc(cv.credit)}</span>`
       : "";
     return `<div class="${cls}" style="background:linear-gradient(135deg, ${c.color}, ${c.color2 || c.color})"><span class="emoji">${c.icon}</span>${img}`;
   }
@@ -910,16 +917,32 @@
   state.pf = { ...PF_DEFAULT, ...readLS("placeFilters", {}) };
   // คาเฟ่ + สถานที่บันเทิง (สวนสนุก สวนสัตว์ คาเฟ่สัตว์) ที่มีรูป ดันขึ้นก่อนในมุมมอง "แนะนำ"
   const FUN_BOOST = { cafe: 70, animalcafe: 70, themepark: 60, restaurant: 50, zoo: 45 };
-  const placeRank = p => (p.image ? FUN_BOOST[p.kind] || 0 : 0) + (p.business ? 30 : 0) + (p.hot ? 100 + Math.min(p.hot, 60) * 3 : 0) + (p.rising ? 40 : 0) + (p.image ? 20 + (p.imageScore || 6) * 2 : 0) + Math.min(p.fame || 0, 15);
-  const placeNames = p => [p.name?.th, p.name?.en, p.name?.th?.replace(/^(อุทยานแห่งชาติ|สวนสัตว์|พิพิธภัณฑสถานแห่งชาติ|พิพิธภัณฑ์|คาเฟ่|ร้าน|วัด)\s*/, "")].filter(s => s && s.length >= 6).map(s => s.toLowerCase());
+  // มีรูปปก (รูปที่ AI คัด หรือรูปจากโพสต์รีวิว) = ดันขึ้น; รูปจากโพสต์ได้คะแนนรูปกลางๆ (6)
+  const hasCover = p => !!(p.image || coverOf(p));
+  const placeRank = p => { const cv = hasCover(p); return (cv ? FUN_BOOST[p.kind] || 0 : 0) + (p.business ? 30 : 0) + (p.hot ? 100 + Math.min(p.hot, 60) * 3 : 0) + (p.rising ? 40 : 0) + (cv ? 20 + (p.image ? p.imageScore || 6 : 6) * 2 : 0) + Math.min(p.fame || 0, 15); };
+  // ชื่อที่ใช้จับคู่โพสต์ (ตัดคำนำหน้าทั่วไปออก แต่ถ้าเหลือแค่ชื่อจังหวัด เช่น "สวนสัตว์เชียงใหม่" → "เชียงใหม่" ไม่ใช้ กันจับผิดที่)
+  let provNameSet = null;
+  const placeNames = p => {
+    provNameSet ||= new Set(Object.values(PROV).flatMap(x => [x.th, x.en, x.th?.replace(/^จังหวัด/, "")]).filter(Boolean).map(s => s.toLowerCase()).concat(["กรุงเทพ", "bangkok"]));
+    return [...new Set([p.name?.th, p.name?.en, p.name?.th?.replace(/^(อุทยานแห่งชาติ|สวนสัตว์|พิพิธภัณฑสถานแห่งชาติ|พิพิธภัณฑ์|คาเฟ่|ร้าน|วัด)\s*/, "")]
+      .filter(s => s && s.length >= 6).map(s => s.toLowerCase().trim()))].filter(s => !provNameSet.has(s));
+  };
   // โพสต์ที่พูดถึงสถานที่นี้: จากข้อมูลรายสถานที่ (fetch-places) หรือจับคู่กับบอร์ดเทรนด์
+  // (จำผลไว้ต่อสถานที่ — ถูกเรียกบ่อยตอนเรียงลำดับ/วาดการ์ด)
+  const postCache = new WeakMap();
   function placePosts(p) {
-    if (p.posts?.length) return p.posts.map(x => ({ ...x, kind: p.kind }));
+    if (postCache.has(p)) return postCache.get(p);
+    let out = [];
     const names = placeNames(p);
-    if (!names.length) return [];
-    return Object.entries(state.trends).flatMap(([k, items]) => items.map(n => ({ ...n, kind: k })))
+    // ตรวจซ้ำว่าหัวโพสต์มีชื่อสถานที่จริง (ข้อมูลรอบเก่าอาจจับคู่ด้วยชื่อจังหวัด) — ร้านธุรกิจเชื่อโพสต์ตามที่ให้มา
+    if (p.posts?.length) out = p.posts.filter(x => p.business || names.some(nm => String(x.title || "").toLowerCase().includes(nm))).map(x => ({ ...x, kind: p.kind }));
+    if (!out.length && names.length) out = Object.entries(state.trends).flatMap(([k, items]) => items.map(n => ({ ...n, kind: k })))
       .filter(n => names.some(nm => String(n.title || "").toLowerCase().includes(nm))).sort((x, y) => (y.likes || 0) - (x.likes || 0)).slice(0, 4);
+    postCache.set(p, out);
+    return out;
   }
+  const relDate = d => { const n = Math.round((Date.now() - new Date(d)) / 864e5); return n <= 0 ? t("today") : n < 30 ? t("daysAgo", { n }) : new Date(d).toLocaleDateString(locale(), { day: "numeric", month: "short" }); };
+  const fmtLikes = n => n >= 1000 ? (n / 1000).toFixed(1).replace(/\.0$/, "") + "K" : String(n || 0);
   // สถานที่ที่โพสต์เทรนด์พูดถึง (ใช้บนบอร์ดเทรนด์)
   let trendPlaceCache = null;
   function placeOfPost(n) {
@@ -933,7 +956,7 @@
       <a class="trend-link" ${inAppLink(n.link)}>
         ${trendThumb(n)}
         <h3>${esc(n.title)}</h3>
-        <div class="meta">${PCAT[n.kind]?.icon || ""} ${esc(n.source || "")}${n.date ? ` · ${new Date(n.date).toLocaleDateString(locale(), { day: "numeric", month: "short" })}` : ""}</div>
+        <div class="meta">${PCAT[n.kind]?.icon || ""} ${esc(n.source || "")}${n.date ? ` · ${relDate(n.date)}` : ""}</div>
       </a>
       ${pl ? `<a class="trend-place" href="#/place/${encodeURIComponent(pl.id)}">📍 ${esc(placeName(pl))}</a>` : ""}
     </div>`;
@@ -958,7 +981,7 @@
     // ใกล้ฉัน: ไม่จำกัดจังหวัด (ดูรอบตัวจริงๆ)
     const base = state.places.filter(p => (near || inPlaceProvince(p)) && (cat === "all" || p.kind === cat) && match(p));
     const tests = {
-      open: p => openNow(p.hours) === true, free: p => p.fee === "no", hot: p => !!(p.hot || p.trend), photo: p => !!p.image,
+      open: p => openNow(p.hours) === true, free: p => p.fee === "no", hot: p => !!(p.hot || p.trend), photo: hasCover,
       dist: p => !near || !pf.dist || distanceKm(state.pos, p) <= pf.dist
     };
     const passAll = (p, skip) => Object.entries(tests).every(([k, f]) => k === skip || (k === "dist" ? f(p) : !pf[k] || f(p)));
@@ -969,16 +992,20 @@
       rec: (a, b) => placeRank(b) - placeRank(a),                                    // แนะนำ: กระแส → ค้นหาเพิ่ม → รูปสวย → ดัง
       near: (a, b) => distanceKm(state.pos, a) - distanceKm(state.pos, b),
       popular: (a, b) => (b.views || 0) - (a.views || 0) || (b.fame || 0) - (a.fame || 0),
-      photo: (a, b) => (b.image ? (b.imageScore || 6) : 0) - (a.image ? (a.imageScore || 6) : 0) || placeRank(b) - placeRank(a)
+      photo: (a, b) => (b.image ? (b.imageScore || 6) : hasCover(b) ? 5 : 0) - (a.image ? (a.imageScore || 6) : hasCover(a) ? 5 : 0) || placeRank(b) - placeRank(a)
     };
     list = [...list].sort(SORTS[near ? "near" : pf.sort === "near" ? "rec" : pf.sort] || SORTS.rec);
     const activeCount = ["open", "free", "hot", "photo"].filter(k => pf[k]).length + (near && pf.dist ? 1 : 0);
     // แสดงทีละ 30 แห่ง กด "ดูเพิ่ม" ได้ (หลายร้อยแห่งพร้อมกันทำให้แอพหน่วง)
     const shown = list.slice(0, state.placeShow);
-    // บอร์ดเทรนด์: หมวดที่เลือก หรือข่าวใหม่สุดของทุกหมวด
-    const board = cat === "all"
-      ? Object.entries(state.trends).flatMap(([k, items]) => items.slice(0, 2).map(n => ({ ...n, kind: k }))).slice(0, 12)
-      : (state.trends[cat] || []).slice(0, 8).map(n => ({ ...n, kind: cat }));
+    // บอร์ดเทรนด์: เฉพาะโพสต์ยอดนิยม (ไลก์ ≥ 100 หรือครึ่งบนของหมวด) แล้วเรียงตามวันที่ใหม่สุดก่อน
+    const pool = (cat === "all" ? Object.entries(state.trends) : [[cat, state.trends[cat] || []]])
+      .flatMap(([k, items]) => items.map(n => ({ ...n, kind: k })));
+    const byLikes = [...pool].sort((a, b) => (b.likes || 0) - (a.likes || 0));
+    const minLikes = Math.min(100, byLikes[Math.floor(byLikes.length / 2)]?.likes ?? 0);
+    const board = pool.filter(n => (n.likes || 0) >= minLikes)
+      .sort((a, b) => String(b.date || "").localeCompare(String(a.date || "")) || (b.likes || 0) - (a.likes || 0))
+      .slice(0, cat === "all" ? 14 : 10);
     const chip = (id, icon, name, c1, n) =>
       `<button class="chip ${cat === id ? "active" : ""}" data-pcat="${id}" style="--c1:${c1}" aria-pressed="${cat === id}"><i>${icon}</i>${esc(name)}${n != null ? ` <small>${n}</small>` : ""}</button>`;
     app.innerHTML = `<div class="page">
@@ -1100,6 +1127,13 @@
         <div class="pd-tabs" role="tablist">${tabs.map(([k, l]) => `<button role="tab" class="${state.placeTab === k ? "active" : ""}" data-ptab="${k}" aria-selected="${state.placeTab === k}">${l}</button>`).join("")}</div>
         <section class="pd-panel" data-panel="overview" ${state.placeTab === "overview" ? "" : "hidden"}>
           ${summary ? `<p class="pd-summary" id="pdSum">${esc(summary)}</p>${summary.length > 180 ? `<button class="link-btn" id="pdMore">${t("readMore")}</button>` : ""}` : ""}
+          ${posts.length ? `<div class="pd-buzz">
+            <div class="pd-buzz-head"><b>🔥 ${t("placeTrends")}</b>${posts.length > 2 ? `<button class="link-btn" data-ptab="trends">${t("seeAll")} ${posts.length} ›</button>` : ""}</div>
+            ${[...posts].sort((a, b) => String(b.date || "").localeCompare(String(a.date || ""))).slice(0, 2).map(n => `<a class="buzz-row" ${inAppLink(n.link)}>
+              ${n.image ? `<img src="${esc(n.image)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">` : `<span class="buzz-ico">🔥</span>`}
+              <span class="buzz-txt"><span class="buzz-title">${esc(n.title)}</span><small>${[n.likes ? `❤️ ${fmtLikes(n.likes)}` : "", n.date ? relDate(n.date) : ""].filter(Boolean).join(" · ")} · ${esc(String(n.source || "Lemon8").replace(/^Lemon8 · /, "@"))}</small></span>
+            </a>`).join("")}
+          </div>` : ""}
           ${facts}
           <p class="pd-links">${wiki ? `<a ${inAppLink(wiki)}>📖 ${t("wikipedia")}</a>` : ""}${p.imagePage ? `<span>${t("photo")}: <a ${inAppLink(p.imagePage)}>${esc(p.imageCredit || "Wikimedia Commons")}</a></span>` : ""}</p>
           ${!p.business ? `<a class="claim-link" href="#/account/new-shop?ref=${encodeURIComponent(p.id)}">🏪 ${t(p.image ? "claimPlace" : "claimPlaceNoPhoto")}</a>` : ""}
@@ -1107,7 +1141,7 @@
         <section class="pd-panel" data-panel="travel" ${state.placeTab === "travel" ? "" : "hidden"}>${travelPanel({}, v)}</section>
         ${posts.length ? `<section class="pd-panel trend-board place-trends" data-panel="trends" ${state.placeTab === "trends" ? "" : "hidden"}>
           <p class="muted">${t("placeTrendsSub")}</p>
-          <div class="news-list">${posts.map(n => `<div class="news-item trend-item"><a class="trend-link" ${inAppLink(n.link)}>${trendThumb(n)}<h3>${esc(n.title)}</h3><div class="meta">${esc(n.source || "Lemon8")}${n.date ? ` · ${new Date(n.date).toLocaleDateString(locale(), { day: "numeric", month: "short" })}` : ""}</div></a></div>`).join("")}</div>
+          <div class="news-list">${[...posts].sort((a, b) => String(b.date || "").localeCompare(String(a.date || ""))).map(n => `<div class="news-item trend-item"><a class="trend-link" ${inAppLink(n.link)}>${trendThumb(n)}<h3>${esc(n.title)}</h3><div class="meta">${esc(n.source || "Lemon8")}${n.date ? ` · ${relDate(n.date)}` : ""}</div></a></div>`).join("")}</div>
         </section>` : ""}
         ${adSlot("detail")}
         <p class="disclosure">${t("placeNote")}</p>
@@ -1115,8 +1149,9 @@
     // แท็บ: สลับเนื้อหาโดยไม่ต้องเลื่อน (จำแท็บล่าสุดไว้ระหว่างเปิดสถานที่อื่น)
     app.querySelectorAll("[data-ptab]").forEach(b => b.addEventListener("click", () => {
       state.placeTab = b.dataset.ptab;
-      app.querySelectorAll("[data-ptab]").forEach(x => { x.classList.toggle("active", x === b); x.setAttribute("aria-selected", x === b); });
+      app.querySelectorAll(".pd-tabs [data-ptab]").forEach(x => { const on = x.dataset.ptab === state.placeTab; x.classList.toggle("active", on); x.setAttribute("aria-selected", on); });
       app.querySelectorAll("[data-panel]").forEach(x => { x.hidden = x.dataset.panel !== state.placeTab; });
+      if (!b.closest(".pd-tabs")) app.querySelector(".pd-tabs")?.scrollIntoView({ behavior: "smooth", block: "start" });
     }));
     document.getElementById("pdMore")?.addEventListener("click", e => { document.getElementById("pdSum").classList.add("open"); e.target.remove(); });
     document.getElementById("saveBtn").addEventListener("click", () => {

@@ -46,7 +46,9 @@ console.log(`คลังโพสต์ ${list.length} โพสต์ (ช่�
 
 // จับคู่: ชื่อสถานที่ (ยาว ≥ 6 ตัวอักษร กันคำทั่วไป) อยู่ในหัวโพสต์
 const GENERIC = /^(อุทยานแห่งชาติ|สวนสัตว์เปิด|สวนสัตว์|พิพิธภัณฑสถานแห่งชาติ|พิพิธภัณฑ์|สวนน้ำ|สวนสนุก|หอศิลป์|คาเฟ่|ร้าน|วัด|น้ำตก)\s*/;
-const names = p => [...new Set([p.name?.th, p.name?.en, p.name?.th?.replace(GENERIC, "")].filter(n => n && n.length >= 6).map(n => n.toLowerCase().trim()))];
+// ตัดคำนำหน้าแล้วเหลือแค่ชื่อจังหวัด (เช่น "สวนสัตว์เชียงใหม่" → "เชียงใหม่") ไม่ใช้ — จะจับโพสต์ทุกโพสต์ในจังหวัดผิดๆ
+const PROV_NAMES = new Set(win.PROVINCES.flatMap(p => [p.th, p.en, p.th.replace(/^จังหวัด/, "")]).filter(Boolean).map(s => s.toLowerCase()).concat(["กรุงเทพ", "bangkok"]));
+const names = p => [...new Set([p.name?.th, p.name?.en, p.name?.th?.replace(GENERIC, "")].filter(n => n && n.length >= 6).map(n => n.toLowerCase().trim()))].filter(n => !PROV_NAMES.has(n));
 let matched = 0, newHot = 0;
 for (const p of data.places) {
   const ns = names(p);

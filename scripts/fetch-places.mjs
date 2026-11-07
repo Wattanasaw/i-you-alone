@@ -398,7 +398,10 @@ for (const [kind, k] of Object.entries(KINDS)) {
   const posts = [];
   for (const kw of LEMON8[kind] || []) posts.push(...await lemon8(kw));
   addPool(posts);
-  const lemon = [...new Map(posts.map(p => [p.link, p])).values()].filter(clean).sort((a, b) => b.likes - a.likes).slice(0, 10);
+  // ไลก์สูงสุด 10 โพสต์ + โพสต์ใหม่ล่าสุดที่ยอดนิยม (ไลก์ ≥ 100) อีก 6 → แอพเรียงตามวันที่
+  const all = [...new Map(posts.map(p => [p.link, p])).values()].filter(clean);
+  const fresh = all.filter(p => p.likes >= 100).sort((a, b) => b.date.localeCompare(a.date)).slice(0, 6);
+  const lemon = [...new Map([...[...all].sort((a, b) => b.likes - a.likes).slice(0, 10), ...fresh].map(p => [p.link, p])).values()];
   let items = lemon;
   if (lemon.length < 6) {
     const raw = [];
