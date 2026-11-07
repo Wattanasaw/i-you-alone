@@ -27,7 +27,7 @@ export async function geminiModels(key) {
 }
 
 // ส่งคำสั่ง ได้ผลเป็น JSON กลับมา (โยน error พร้อม status ถ้าไม่สำเร็จ)
-export async function geminiJSON(key, prompt, temperature = 0) {
+export async function geminiJSON(key, prompt, temperature = 0, images = []) {
   const list = await geminiModels(key);
   let lastErr;
   while (current < list.length) {
@@ -38,7 +38,7 @@ export async function geminiJSON(key, prompt, temperature = 0) {
         res = await fetch(`${API}/models/${model}:generateContent`, {
           method: "POST",
           headers: { "Content-Type": "application/json", "x-goog-api-key": key },
-          body: JSON.stringify({ contents: [{ parts: [{ text: prompt }] }], generationConfig: { responseMimeType: "application/json", temperature } }),
+          body: JSON.stringify({ contents: [{ parts: [{ text: prompt }, ...images.map(im => ({ inline_data: { mime_type: im.mime, data: im.b64 } }))] }], generationConfig: { responseMimeType: "application/json", temperature } }),
           signal: AbortSignal.timeout(90000)
         });
       } catch (e) {
@@ -69,4 +69,52 @@ export async function geminiJSON(key, prompt, temperature = 0) {
   }
   current = Math.max(0, list.length - 1); // ทุกรุ่นล้มเหลว: รอบต่อไปลองรุ่นสุดท้ายซ้ำ
   throw lastErr;
+}
+
+// ---------- ตัวเรียก AI กลาง: Gemini ก่อน → โควต้าหมด/ไม่มีคีย์ ใช้ GitHub Models (ฟรีใน GitHub Actions) ----------
+// GitHub Models: ใช้ GITHUB_TOKEN ของ Actions (permissions: models: read) ไม่ต้องสมัครหรือใส่คีย์เพิ่ม
+// images = [{ mime, b64 }] (รูปย่อ) ให้ AI ดูรูปได้ทั้งสองเจ้า
+const GH_API = "https://models.github.ai/inference/chat/completions";
+const GH_MODEL = process.env.GITHUB_MODEL || "openai/gpt-4o-mini";
+let geminiDown = !process.env.GEMINI_API_KEY, ghDown = !process.env.GITHUB_TOKEN;
+export const aiAvailable = () => !geminiDown || !ghDown;
+export const aiName = () => !geminiDown ? "Gemini" : !ghDown ? `GitHub Models (${GH_MODEL})` : "ไม่มี";
+
+async function githubJSON(prompt, temperature, images) {
+  const content = [{ type: "text", text: prompt }, ...images.map(im => ({ type: "image_url", image_url: { url: `data:${im.mime};base64,${im.b64}`, detail: "low" } }))];
+  for (let attempt = 1; attempt <= 3; attempt++) {
+    let res;
+    try {
+      res = await fetch(GH_API, {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Authorization: `Bearer ${process.env.GITHUB_TOKEN}`, Accept: "application/json" },
+        body: JSON.stringify({ model: GH_MODEL, temperature, response_format: { type: "json_object" }, messages: [{ role: "user", content }] }),
+        signal: AbortSignal.timeout(90000)
+      });
+    } catch (e) { res = { ok: false, status: 503, json: async () => ({ error: { message: e.message } }) }; }
+    if (res.ok) {
+      const data = await res.json();
+      return JSON.parse(data.choices?.[0]?.message?.content || "null");
+    }
+    let why = "";
+    try { const j = await res.json(); why = (j.error?.message || j.message || "").replace(/\s+/g, " ").slice(0, 200); } catch {}
+    // จำกัดต่อนาที → รอแล้วลองใหม่ · จำกัดต่อวัน → หยุดรอบนี้
+    if (res.status === 429 && attempt < 3 && !/day|daily|per 86400/i.test(why)) { await sleep(20000 * attempt); continue; }
+    if (res.status >= 500 && attempt < 3) { await sleep(5000); continue; }
+    throw Object.assign(new Error(`GitHub Models ${res.status}${why ? ": " + why : ""}`), { status: res.status });
+  }
+}
+
+export async function aiJSON(prompt, { temperature = 0, images = [] } = {}) {
+  if (!geminiDown) {
+    try { return await geminiJSON(process.env.GEMINI_API_KEY, prompt, temperature, images); }
+    catch (e) {
+      if (e.status !== 429 && e.status !== 403 && e.status !== 400) throw e;
+      geminiDown = true;
+      console.warn(`${e.message.slice(0, 120)} → ${ghDown ? "ไม่มี AI สำรอง" : "สลับไปใช้ GitHub Models"}`);
+    }
+  }
+  if (ghDown) throw Object.assign(new Error("ไม่มี AI ที่ใช้ได้ (Gemini โควต้าหมด และไม่มี GITHUB_TOKEN)"), { status: 429 });
+  try { return await githubJSON(prompt, temperature, images); }
+  catch (e) { if (e.status === 429 || e.status === 401 || e.status === 403) ghDown = true; throw e; }
 }

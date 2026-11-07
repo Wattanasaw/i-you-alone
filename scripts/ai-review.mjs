@@ -8,9 +8,9 @@
 import { readFile, writeFile, rename } from "node:fs/promises";
 import { createHash } from "node:crypto";
 
-import { geminiJSON } from "./gemini.mjs";
+import { aiJSON, aiAvailable, aiName } from "./gemini.mjs";
 
-const key = process.env.GEMINI_API_KEY;
+const key = aiAvailable(); // Gemini หรือ GitHub Models (สำรองเมื่อ Gemini โควต้าหมด)
 const BATCH = 8;        // งานต่อคำขอ
 const MAX_BATCHES = 10; // คำขอสูงสุดต่อรอบ (≤ 80 งาน อยู่ในโควต้าฟรีรายวัน)
 const DRY = process.argv.includes("--dry");
@@ -24,8 +24,8 @@ const CATS = win.APP_CONFIG.categories.map(c => c.id);
 const data = await readJSON("data/auto-events.json", null);
 if (!data) { console.error("อ่าน data/auto-events.json ไม่ได้"); process.exit(1); }
 const cache = await readJSON("data/ai-cache.json", {});
-if (!key && !Object.keys(cache).length) { console.log("ไม่มี GEMINI_API_KEY และยังไม่มีผลตรวจ — ข้าม"); process.exit(0); }
-if (!key) console.log("ไม่มี GEMINI_API_KEY — ใช้เฉพาะผลตรวจที่จำไว้");
+if (!key && !Object.keys(cache).length) { console.log("ไม่มี AI (GEMINI_API_KEY/GITHUB_TOKEN) และยังไม่มีผลตรวจ — ข้าม"); process.exit(0); }
+if (!key) console.log("ไม่มี AI — ใช้เฉพาะผลตรวจที่จำไว้"); else console.log("ใช้ AI:", aiName());
 
 // ลายเซ็นข้อมูลงาน: เปลี่ยนเมื่อชื่อ/วัน/คำอธิบาย/สถานที่เปลี่ยน → ตรวจใหม่
 const sig = ev => createHash("sha1").update([ev.title, ev.startDate, ev.summary, ev.venue?.name || ev.venueId].join("|")).digest("hex").slice(0, 12);
@@ -46,7 +46,7 @@ async function ask(batch) {
 Return JSON: {"results": [{"id", "ok", "reason", "category", "sponsor", "age20", "th", "en", "zh"}]} with one result per item.
 Items:
 ${JSON.stringify(items)}`;
-  const out = await geminiJSON(key, prompt);
+  const out = await aiJSON(prompt);
   return Array.isArray(out?.results) ? out.results : [];
 }
 
