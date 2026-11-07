@@ -17,6 +17,7 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
+    timeout-minutes: 340   # เหลือเวลาให้ขั้นบันทึกก่อนเพดาน 6 ชม. ของ GitHub
     steps:
       - uses: actions/checkout@v5
         with:
@@ -30,92 +31,116 @@ jobs:
         continue-on-error: true
       - name: ดึงข่าว
         run: node scripts/update-news.mjs
+        timeout-minutes: 15   # เพดานเวลา (กันทั้งรอบเกิน 6 ชม. แล้วโดนตัดก่อนบันทึก)
+        continue-on-error: true
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
       - name: ดึงงานจริงจากเว็บขายบัตร (Eventpop, Zipevent) + กรองอัตโนมัติ
         run: node scripts/fetch-events.mjs
+        timeout-minutes: 15   # เพดานเวลา (กันทั้งรอบเกิน 6 ชม. แล้วโดนตัดก่อนบันทึก)
         continue-on-error: true   # เว็บต้นทางล่ม/เปลี่ยนหน้าตา ข่าวยังอัปเดตได้ตามปกติ
       - name: รวบรวมที่เที่ยวดัง + ข่าวเทรนด์ (Wikidata, Wikipedia, OpenStreetMap, Google News)
         run: node scripts/fetch-places.mjs
+        timeout-minutes: 40   # เพดานเวลา (กันทั้งรอบเกิน 6 ชม. แล้วโดนตัดก่อนบันทึก)
         continue-on-error: true
       - name: โพสต์เทรนด์ที่พูดถึงแต่ละสถานที่ (คลัง Lemon8 77 จังหวัด)
         run: node scripts/place-posts.mjs
+        timeout-minutes: 28   # เพดานเวลา (กันทั้งรอบเกิน 6 ชม. แล้วโดนตัดก่อนบันทึก)
         continue-on-error: true
       - name: รวบรวมสถานที่จากโพสต์เทรนด์ (AI หาชื่อ + หาพิกัดจริงบนแผนที่ OSM)
         run: node scripts/trend-places.mjs
+        timeout-minutes: 30   # เพดานเวลา (กันทั้งรอบเกิน 6 ชม. แล้วโดนตัดก่อนบันทึก)
         continue-on-error: true
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: รีวิว Lemon8 ของแต่ละสถานที่ (ค้นด้วยชื่อสถานที่ เก็บสูงสุด 24 โพสต์/แห่ง)
         run: node scripts/place-lemon8.mjs
+        timeout-minutes: 28   # เพดานเวลา (กันทั้งรอบเกิน 6 ชม. แล้วโดนตัดก่อนบันทึก)
         continue-on-error: true
       - name: รูปโพสต์เทรนด์ยอดนิยมของแต่ละสถานที่ (Lemon8 · ต่ออายุลิงก์รูปก่อนหมด)
         run: node scripts/post-images.mjs
+        timeout-minutes: 10   # เพดานเวลา (กันทั้งรอบเกิน 6 ชม. แล้วโดนตัดก่อนบันทึก)
         continue-on-error: true
       - name: เขต/อำเภอของแต่ละสถานที่ (จากพิกัด · OpenStreetMap)
         run: node scripts/place-districts.mjs
+        timeout-minutes: 12   # เพดานเวลา (กันทั้งรอบเกิน 6 ชม. แล้วโดนตัดก่อนบันทึก)
         continue-on-error: true
       - name: AI สรุปรีวิวแต่ละสถานที่จากโพสต์จริง (จุดเด่น ต้องลอง เคล็ดลับ เหมาะกับ)
         run: node scripts/place-reviews.mjs
+        timeout-minutes: 25   # เพดานเวลา (กันทั้งรอบเกิน 6 ชม. แล้วโดนตัดก่อนบันทึก)
         continue-on-error: true
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: นำเข้าข้อมูลสถานที่ที่รวบรวมด้วย Gemini (ไฟล์คำตอบใน gemini/answers/)
         run: node scripts/import-gemini.mjs
+        timeout-minutes: 5   # เพดานเวลา (กันทั้งรอบเกิน 6 ชม. แล้วโดนตัดก่อนบันทึก)
         continue-on-error: true
       - name: เลือกรูปปกที่เที่ยวที่น่าดู (Wikimedia Commons + AI ดูรูปจริง)
         run: node scripts/place-images.mjs
+        timeout-minutes: 25   # เพดานเวลา (กันทั้งรอบเกิน 6 ชม. แล้วโดนตัดก่อนบันทึก)
         continue-on-error: true
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: ค่าเข้า + ราคาเมนู จากรีวิว Lemon8 (AI ดึงเฉพาะราคาที่ระบุชัด)
         run: node scripts/place-prices.mjs
+        timeout-minutes: 20   # เพดานเวลา (กันทั้งรอบเกิน 6 ชม. แล้วโดนตัดก่อนบันทึก)
         continue-on-error: true
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: เวลาเปิด-ปิด + ค่าเข้า + ราคาเมนู ให้ครบ (เว็บไซต์ทางการ · รีวิว · AI · ค่าทั่วไปตามประเภท)
         run: node scripts/place-info.mjs
+        timeout-minutes: 20   # เพดานเวลา (กันทั้งรอบเกิน 6 ชม. แล้วโดนตัดก่อนบันทึก)
         continue-on-error: true
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: ราคาน้ำมันวันนี้ (บางจาก) ใช้คำนวณค่าเดินทาง
         run: node scripts/fuel-price.mjs
+        timeout-minutes: 3   # เพดานเวลา (กันทั้งรอบเกิน 6 ชม. แล้วโดนตัดก่อนบันทึก)
         continue-on-error: true
       - name: ข้อมูลจุดเดินทาง (รถไฟฟ้า ท่าเรือ สถานีรถไฟ บขส. สนามบิน) — อัปเดตสัปดาห์ละครั้ง
         run: node scripts/fetch-transit.mjs
+        timeout-minutes: 10   # เพดานเวลา (กันทั้งรอบเกิน 6 ชม. แล้วโดนตัดก่อนบันทึก)
         continue-on-error: true
       - name: ให้ AI ตรวจงาน คัดงานไม่เหมาะ แก้หมวด หาสปอนเซอร์ แปล 3 ภาษา (Gemini หรือ GitHub Models)
         run: node scripts/ai-review.mjs
+        timeout-minutes: 25   # เพดานเวลา (กันทั้งรอบเกิน 6 ชม. แล้วโดนตัดก่อนบันทึก)
         continue-on-error: true
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: รายละเอียดอีเว้นท์ (AI อ่านหน้าอีเว้นท์ สรุปว่าคืออะไร ใครมาบ้าง ไฮไลต์ + แยกหมวด)
         run: node scripts/event-details.mjs
+        timeout-minutes: 20   # เพดานเวลา (กันทั้งรอบเกิน 6 ชม. แล้วโดนตัดก่อนบันทึก)
         continue-on-error: true
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: ให้ AI ดูรูปปกงาน ให้คะแนนความน่ากด (โปสเตอร์ตัวหนังสือล้วนไม่ขึ้นห้ามพลาด)
         run: node scripts/event-images.mjs
+        timeout-minutes: 15   # เพดานเวลา (กันทั้งรอบเกิน 6 ชม. แล้วโดนตัดก่อนบันทึก)
         continue-on-error: true
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: ตรวจข้อมูล
+        id: check
         run: node scripts/check-data.mjs
+        timeout-minutes: 5   # เพดานเวลา (กันทั้งรอบเกิน 6 ชม. แล้วโดนตัดก่อนบันทึก)
       - name: แปลงานใหม่เป็นอังกฤษ/จีน (Gemini หรือ GitHub Models)
         run: node scripts/translate.mjs
+        timeout-minutes: 15   # เพดานเวลา (กันทั้งรอบเกิน 6 ชม. แล้วโดนตัดก่อนบันทึก)
         continue-on-error: true
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: บันทึกการเปลี่ยนแปลง
+        # บันทึกเสมอ แม้ขั้นก่อนหน้าหมดเวลา/ทั้งรอบเกินเวลา (ยกเว้นตรวจข้อมูลไม่ผ่าน)
+        if: ${{ always() && steps.check.outcome != 'failure' }}
         run: |
           git config user.name "news-bot"
           git config user.email "news-bot@users.noreply.github.com"
