@@ -14,7 +14,10 @@
    "province": "samut-prakan",
    "summary": {},
    "fetchedAt": "2026-11-07T02:07:58.268Z",
-   "trend": 11
+   "trend": 11,
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Wat_Mai_Suwannaphumaham_2009a.jpg/960px-Wat_Mai_Suwannaphumaham_2009a.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Wat_Mai_Suwannaphumaham_2009a.jpg",
+   "imageCredit": "Allie Caulfield · CC BY 2.0"
   },
   {
    "id": "wd-Q3034913",
@@ -40,7 +43,7 @@
     "en": "Chiang Mai Zoo and Aquarium is a 200-acre (81 ha) zoo on Huay Kaew Road in Chiang Mai Province, Thailand, just west of Chiang Mai University. It is the first commercial zoo in northern Thailand, established on 16 June 1977.",
     "zh": "清邁動物園 是一個位於泰國北部清邁的動物園。清邁動物園成立於1974年，开始是是一間私營動物園，1977年6月16日成为官方动物园。園內設置有單軌電車和133米長的水族館。\n"
    },
-   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Rhino_CMZ.jpg/960px-Rhino_CMZ.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Rhino_CMZ.jpg/960px-Rhino_CMZ.jpg",
    "imagePage": "https://commons.wikimedia.org/wiki/File:Rhino_CMZ.jpg",
    "imageCredit": "This user loves Krittaya. · Public domain",
    "fetchedAt": "2026-11-06T18:15:57.744Z",
@@ -71,7 +74,7 @@
     "th": "พิพิธภัณฑสถานแห่งชาติ เชียงใหม่ เป็นพิพิธภัณฑ์ที่ตั้งอยู่บนถนนซุปเปอร์ไฮเวย์เชียงใหม่-ลำปาง ตำบลช้างเผือก อำเภอเมืองเชียงใหม่ จังหวัดเชียงใหม่ พิพิธภัณฑ์ตั้งอยู่ใกล้เคียงกับวัดเจ็ดยอดทางตะวันตกเฉียงเหนือของเทศบาลนครเชียงใหม่ จัดแสดงเกี่ยวกับประวัติศาสตร์ของอาณาจักรล้านนา",
     "en": "The Chiang Mai National Museum is a national museum located in Chiang Mai, northern Thailand. It highlights the history of the Kingdom of Lanna with descriptions in both Thai and English. The museum is located in the vicinity of Wat Chet Yot, in the north-western part of Chiang Mai. It is run by the Fine Arts Department of Thailand."
    },
-   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Chiang_Mai_National_Museum.jpg/960px-Chiang_Mai_National_Museum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Chiang_Mai_National_Museum.jpg/960px-Chiang_Mai_National_Museum.jpg",
    "imagePage": "https://commons.wikimedia.org/wiki/File:Chiang_Mai_National_Museum.jpg",
    "imageCredit": "Zhou Guanhuai · CC0",
    "fetchedAt": "2026-11-06T18:41:38.777Z",
@@ -105,7 +108,7 @@
     "en": "Dream World is an amusement park in Thanyaburi district, Pathum Thani province, Thailand. The park includes three roller coasters and multiple other rides and attractions.",
     "zh": "夢幻樂園， 位於泰國巴吞他尼府蘭實坤西育路（泰國第三公路）的第七公里處，為一個設有多種機動遊戲設施的主題公園。\n"
    },
-   "image": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Dream_World%2C_Thailand.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "image": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Dream_World%2C_Thailand.jpg",
    "imagePage": "https://commons.wikimedia.org/wiki/File:Dream_World,_Thailand.jpg",
    "imageCredit": "No machine-readable author provided. Manop assumed (based on · CC BY-SA 3.0",
    "fetchedAt": "2026-11-06T18:16:32.380Z",
@@ -136,9 +139,9 @@
     "th": "สวนสัตว์เปิดเขาเขียว ตั้งอยู่ที่ ตำบลบางพระ อำเภอศรีราชา จังหวัดชลบุรี เป็นสวนสัตว์เปิดขนาดใหญ่ในจังหวัดชลบุรีสวนสัตว์เป็นบริการสาธารณะ ซึ่งรัฐได้ดำเนินการเพื่อให้บริการแก่สังคมและประชาชนด้านต่าง ๆ เป็นสวนสัตว์ที่มีนักท่องเที่ยวชมมากที่สุด",
     "en": "Khao Kheow Open Zoo is a large zoo in Si Racha, Chonburi, Thailand. It covers an area of about 1,976 acres (800 ha) and contains more than 8,000 animals from more than 300 species. It is the second largest zoo in Asia."
    },
-   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/Khao_Khiao_Open_Zoo_relief_and_writing_outside_2009.jpg/960px-Khao_Khiao_Open_Zoo_relief_and_writing_outside_2009.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Khao_Khiao_Open_Zoo_relief_and_writing_outside_2009.jpg",
-   "imageCredit": "Dean Croshere from Jomtien, Thailand · CC BY 2.0",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Hippo_in_khao_kheow_open_zoo_-_panoramio.jpg/960px-Hippo_in_khao_kheow_open_zoo_-_panoramio.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Hippo_in_khao_kheow_open_zoo_-_panoramio.jpg",
+   "imageCredit": "Yellow man · CC BY 3.0",
    "fetchedAt": "2026-11-06T18:16:05.424Z",
    "views": 12,
    "trend": 2
@@ -156,7 +159,10 @@
    "province": "samut-prakan",
    "summary": {},
    "fetchedAt": "2026-11-07T02:07:49.304Z",
-   "trend": 2
+   "trend": 2,
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Wat_klang_bang_kaew_01.jpg/960px-Wat_klang_bang_kaew_01.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Wat_klang_bang_kaew_01.jpg",
+   "imageCredit": "Athichitra · CC BY-SA 4.0"
   },
   {
    "id": "osm-w378274467",
@@ -171,7 +177,10 @@
    "province": "samut-prakan",
    "summary": {},
    "fetchedAt": "2026-11-07T02:07:56.534Z",
-   "trend": 2
+   "trend": 2,
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Ayutthaya_Wat_Yai_Chai_Mongkhon_2.jpg/960px-Ayutthaya_Wat_Yai_Chai_Mongkhon_2.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Ayutthaya_Wat_Yai_Chai_Mongkhon_2.jpg",
+   "imageCredit": "Mr.Peerapong Prasutr · CC BY-SA 4.0"
   },
   {
    "id": "osm-w493766361",
@@ -186,7 +195,10 @@
    "province": "chiang-mai",
    "summary": {},
    "fetchedAt": "2026-11-06T20:11:21.829Z",
-   "trend": 2
+   "trend": 2,
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Chiang_Mai_Thailand_Chiang-Mai-University_College-of-Arts-Media-and-Technology-02.jpg/960px-Chiang_Mai_Thailand_Chiang-Mai-University_College-of-Arts-Media-and-Technology-02.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Chiang_Mai_Thailand_Chiang-Mai-University_College-of-Arts-Media-and-Technology-02.jpg",
+   "imageCredit": "CEphoto, Uwe Aranas · CC BY-SA 4.0"
   },
   {
    "id": "wd-Q806451",
@@ -209,7 +221,7 @@
     "th": "หาดบางแสน ในทะเลของอ่าวไทยแห่งหนึ่ง ตั้งอยู่ในพื้นที่ตำบลแสนสุข อำเภอเมืองชลบุรี จังหวัดชลบุรี เป็นสถานที่ท่องเที่ยวยอดนิยมของชาวไทยมาช้านาน มีถนนตัดเลียบหาดเคียงคู่ไปกับทิวมะพร้าว ถัดเข้าไปมีร้านอาหาร ร้านขายของที่ระลึก และที่พักเรียงรายอยู่จำนวนมาก นักท่องเที่ยวนิยมไปนั่งพักผ่อนชมทิวทัศน์ทะเลกันบนเก้าอี้ผ้าใบบนชายหาด พร้อมมีบริการห่วงยางให้เช่าว่ายน้ำ มีเรือบานาน่าโบ๊ต จักรยานให้เช่า และห้องอาบน้ำจืด ทุกวันหยุดหาดบ…",
     "en": "Bang Saen Beach simply known as Bang Saen is in Tambon (subdistrict) Saen Suk, Mueang Chonburi district, Chonburi province, eastern Thailand. It is about 108 km south of Bangkok. It is a popular beach due to its proximity to Bangkok and Pattaya."
    },
-   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Bang_Saen_01.JPG/960px-Bang_Saen_01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Bang_Saen_01.JPG/960px-Bang_Saen_01.JPG",
    "imagePage": "https://commons.wikimedia.org/wiki/File:Bang_Saen_01.JPG",
    "imageCredit": "atreyu · CC BY-SA 3.0",
    "fetchedAt": "2026-11-07T01:20:24.545Z",
@@ -241,7 +253,7 @@
     "en": "The Bangkok National Museum is the main branch museum of the National museums in Thailand and also one of the largest museums in Southeast Asia. It features exhibits of Thai art and history. It occupies the former palace of the vice king, set between Thammasat University and the National Theater, facing Sanam Luang.",
     "zh": "曼谷國立博物館 是泰國博物館群的其中之一，也是東南亞地區最大的博博物館。其館藏特色是展出泰國藝術以及歷史。博物館地址在泰國10200曼谷Na Phra That路4號，先前原是給泰國皇宮二王的前宮，在田廣場西北邊的廣場角落。\n"
    },
-   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Bangkok_National_Museum.jpg/960px-Bangkok_National_Museum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Bangkok_National_Museum.jpg/960px-Bangkok_National_Museum.jpg",
    "imagePage": "https://commons.wikimedia.org/wiki/File:Bangkok_National_Museum.jpg",
    "imageCredit": "This Photo was taken by Supanut Arunoprayote. Feel free to u · CC BY 4.0",
    "fetchedAt": "2026-11-06T18:41:18.437Z",
@@ -271,7 +283,7 @@
     "en": "Khao Sok National Park is in Surat Thani Province, Thailand. Its area is 461,712 rai ~ 739 square kilometres (285 sq mi), and it includes the 165 km2 (64 sq mi) Cheow Lan Lake contained by the Ratchaprapha Dam. The park is the largest area of virgin forest in southern Thailand and is a remnant of rain forest which is older and more diverse than the Amazon rainforest.",
     "zh": "考索國家公園 是泰國的一座國家公園，位於南部的素叻他尼府。1980年成立，總面積739平方公里。\n"
    },
-   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Karst_formations_on_Cheow_Lan_Lake%2C_Thailand.jpg/960px-Karst_formations_on_Cheow_Lan_Lake%2C_Thailand.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Karst_formations_on_Cheow_Lan_Lake%2C_Thailand.jpg/960px-Karst_formations_on_Cheow_Lan_Lake%2C_Thailand.jpg",
    "imagePage": "https://commons.wikimedia.org/wiki/File:Karst_formations_on_Cheow_Lan_Lake,_Thailand.jpg",
    "imageCredit": "Vyacheslav Argenberg · CC BY 4.0",
    "fetchedAt": "2026-11-06T18:18:20.756Z",
@@ -296,7 +308,7 @@
    "summary": {
     "th": "น้ำตกเอราวัณ ตั้งอยู่ในเขตอุทยานแห่งชาติเอราวัณ ตำบลท่ากระดาน อำเภอศรีสวัสดิ์ จังหวัดกาญจนบุรี อยู่ห่างจากที่ทำการอุทยานประมาณ 500 เมตร มีความสูงจากระดับน้ำทะเลตั้งแต่ 100 - 400 เมตร แบ่งเป็นชั้นต่างๆ 7 ชั้น มีระยะทางจากชั้นล่างสุดขึ้นไปชั้นบนสุด 1500 เมตร ลำน้ำเมื่อตกลงมาแล้วจะไหลลงแม่น้ำแควใหญ่บริเวณที่ทำการอุทยาน เดิมน้ำตกนี้ชาวบ้านเรียกว่า น้ำตกสะด่องม่องล่าย อันเป็นชื่อลำห้วยม่องลายที่เป็นต้นน้ำ โดยบริเวณน้ำตกจะ…"
    },
-   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Erawan_waterfall.JPG/960px-Erawan_waterfall.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Erawan_waterfall.JPG/960px-Erawan_waterfall.JPG",
    "imagePage": "https://commons.wikimedia.org/wiki/File:Erawan_waterfall.JPG",
    "imageCredit": "The original uploader was Drimascus at German Wikipedia. · CC BY-SA 3.0",
    "fetchedAt": "2026-11-07T01:20:26.469Z",
@@ -324,7 +336,7 @@
    "summary": {
     "th": "สวนสัตว์นครราชสีมา หรือ สวนสัตว์โคราช สังกัดองค์การสวนสัตว์แห่งประเทศไทย เป็นสวนสัตว์ที่จัดตั้งขึ้นในองค์การสวนสัตว์ในพระบรมราชูปถัมภ์ ในปัจจุบันสวนสัตว์นครราชสีมาอยู่ในการดูแลของกระทรวงทรัพยากรธรรมชาติและสิ่งแวดล้อม"
    },
-   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Korat_Zoo%2CNakorn_Ratchasima%2CThailand_%2850%29.jpg/960px-Korat_Zoo%2CNakorn_Ratchasima%2CThailand_%2850%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Korat_Zoo%2CNakorn_Ratchasima%2CThailand_%2850%29.jpg/960px-Korat_Zoo%2CNakorn_Ratchasima%2CThailand_%2850%29.jpg",
    "imagePage": "https://commons.wikimedia.org/wiki/File:Korat_Zoo,Nakorn_Ratchasima,Thailand_(50).jpg",
    "imageCredit": "กสิณธร ราชโอรส · CC BY-SA 4.0",
    "fetchedAt": "2026-11-06T18:16:22.702Z",
@@ -354,7 +366,7 @@
     "en": "Erawan National Park is a protected area in Western Thailand, in the Tenasserim Hills of Kanchanaburi Province. Founded in 1975, it was the 12th national park of Thailand.",
     "zh": "伊拉旺國家公園，又譯愛侶灣國家公園，是泰國的一座國家公園，位於西部的北碧府，面積550平方公里，於1975年成立。\n"
    },
-   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Erawan_National_Park_%2849797936858%29.jpg/960px-Erawan_National_Park_%2849797936858%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Erawan_National_Park_%2849797936858%29.jpg/960px-Erawan_National_Park_%2849797936858%29.jpg",
    "imagePage": "https://commons.wikimedia.org/wiki/File:Erawan_National_Park_(49797936858).jpg",
    "imageCredit": "Nina R from Africa · CC BY 2.0",
    "fetchedAt": "2026-11-06T18:18:23.021Z",
@@ -382,9 +394,9 @@
     "th": "อุทยานแห่งชาติกุยบุรี หรือ ผืนป่ากุยบุรี เป็นแหล่งต้นน้ำสำคัญของแม่น้ำกุยบุรีและแม่น้ำปราณบุรี หล่อเลี้ยงชีวิตของผู้คนในจังหวัดประจวบคีรีขันธ์ ได้รับการประกาศให้เป็นอุทยานแห่งชาติ มีวัตถุประสงค์หลักเพื่อคุ้มครองทรัพยากรธรรมชาติที่ปรากฏในพื้นที่ เพื่อเป็นแหล่งหาความรู้ศึกษาวิจัย และการประกอบกิจกรรมนันทนาการของประชาชน โดยได้รับประกาศให้เป็นอุทยานแห่งชาติในราชกิจจานุเบกษา เล่มที่ 116 ตอนที่ 20ก วันที่ 25 มีนาคม พ.ศ.",
     "en": "Kui Buri National Park is a national park of Thailand in the Tenasserim Hills in Prachuap Khiri Khan Province. It was established as the 90th national park in March 1999."
    },
-   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/%E0%B9%81%E0%B8%9C%E0%B8%99%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B8%81%E0%B8%B8%E0%B8%A2%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5_1.jpg/960px-%E0%B9%81%E0%B8%9C%E0%B8%99%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B8%81%E0%B8%B8%E0%B8%A2%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:%E0%B9%81%E0%B8%9C%E0%B8%99%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B8%81%E0%B8%B8%E0%B8%A2%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5_1.jpg",
-   "imageCredit": "Mingkipkee · CC BY-SA 4.0",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Rhacophorus_kio_-_mating.jpg/960px-Rhacophorus_kio_-_mating.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Rhacophorus_kio_-_mating.jpg",
+   "imageCredit": "Rushenb · CC BY-SA 4.0",
    "fetchedAt": "2026-11-06T18:18:33.830Z",
    "views": 3,
    "trend": 1
@@ -412,7 +424,10 @@
    },
    "fetchedAt": "2026-11-06T18:41:42.568Z",
    "views": 2,
-   "trend": 1
+   "trend": 1,
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/The_Queen%27s_Gallery%2C_BKK.jpg/960px-The_Queen%27s_Gallery%2C_BKK.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:The_Queen%27s_Gallery,_BKK.jpg",
+   "imageCredit": "This Photo was taken by Supanut Arunoprayote. Feel free to u · CC BY 4.0"
   },
   {
    "id": "wd-Q110517188",
@@ -437,7 +452,7 @@
     "th": "พิพิธภัณฑ์ผ้าในสมเด็จพระนางเจ้าสิริกิติ์ พระบรมราชินีนาถ ตั้งอยู่ในพระบรมมหาราชวัง โดยการบูรณะหอรัษฎากรพิพัฒน์ กระทรวงการคลัง ที่สร้างในปี พ.ศ. 2416 ตามพระราชดำริของสมเด็จพระนางเจ้าสิริกิติ์ พระบรมราชินีนาถ พระบรมราชชนนีพันปีหลวง เมื่อปี พ.ศ. 2546",
     "en": "The Queen Sirikit Museum of Textiles is a museum located in the Grand Palace in Bangkok, Thailand. The museum replaced the 1873 Ratsadakorn-bhibhathana Building of the Royal Treasury Ministry by a request of Queen Sirikit in 2003. The building was the original organization of the current Crown Property Bureau."
    },
-   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Queen_Sirikit_Museum_of_Textiles_2.jpg/960px-Queen_Sirikit_Museum_of_Textiles_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Queen_Sirikit_Museum_of_Textiles_2.jpg/960px-Queen_Sirikit_Museum_of_Textiles_2.jpg",
    "imagePage": "https://commons.wikimedia.org/wiki/File:Queen_Sirikit_Museum_of_Textiles_2.jpg",
    "imageCredit": "Vano111ru · CC BY-SA 4.0",
    "fetchedAt": "2026-11-06T18:41:51.282Z",
@@ -481,7 +496,10 @@
    "province": "pathum-thani",
    "summary": {},
    "fetchedAt": "2026-11-07T01:25:27.543Z",
-   "trend": 1
+   "trend": 1,
+   "image": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Dhammakaya_cetiya_night.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Dhammakaya_cetiya_night.jpg",
+   "imageCredit": "Horsemilk · CC BY-SA 3.0"
   },
   {
    "id": "osm-w137648101",
@@ -499,7 +517,10 @@
    "province": "chiang-rai",
    "summary": {},
    "fetchedAt": "2026-11-07T01:22:27.029Z",
-   "trend": 1
+   "trend": 1,
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/HallOfOpium_Valley.JPG/960px-HallOfOpium_Valley.JPG",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:HallOfOpium_Valley.JPG",
+   "imageCredit": "Jpatokal · CC BY-SA 4.0"
   },
   {
    "id": "osm-n2315561244",
@@ -514,7 +535,10 @@
    "province": "lampang",
    "summary": {},
    "fetchedAt": "2026-11-06T20:08:03.067Z",
-   "trend": 1
+   "trend": 1,
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/An_elephant_at_the_Thai_Elepahnt_Conservation_Center.JPG/960px-An_elephant_at_the_Thai_Elepahnt_Conservation_Center.JPG",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:An_elephant_at_the_Thai_Elepahnt_Conservation_Center.JPG",
+   "imageCredit": "Supercarwaar · CC BY-SA 3.0"
   },
   {
    "id": "osm-w399882800",
@@ -529,7 +553,10 @@
    "province": "loei",
    "summary": {},
    "fetchedAt": "2026-11-06T20:15:54.761Z",
-   "trend": 1
+   "trend": 1,
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B8%AD_Phu_Ruea_National_Park_-_panoramio_%283%29.jpg/960px-%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B8%AD_Phu_Ruea_National_Park_-_panoramio_%283%29.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B8%AD_Phu_Ruea_National_Park_-_panoramio_(3).jpg",
+   "imageCredit": "Thaweesak Churasri · CC BY 3.0"
   },
   {
    "id": "wd-Q4924562",
@@ -582,7 +609,7 @@
     "en": "Phanom Rung Historical Park is an archaeological site in Thailand, covering the ruins of Prasat Phanom Rung, a Buddhist-Hindu Khmer Empire temple complex set on the rim of an extinct volcano at 402 metres (1,319 ft) elevation. It is located in Buriram Province in the Isan region of Thailand, and was built at a time when Khmer social-political influences were significant in Srisaket.",
     "zh": "帕儂隆歷史公園，建於10-13世纪，位于武里南府，祝壽县，离武里南直辖县向南方约七十七公里，为全泰国最重要的大乘佛教界石宫之一，也是武里南艺术最精美的古迹。\n"
    },
-   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Place_PhnomrungPrasat.jpg/960px-Place_PhnomrungPrasat.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Place_PhnomrungPrasat.jpg/960px-Place_PhnomrungPrasat.jpg",
    "imagePage": "https://commons.wikimedia.org/wiki/File:Place_PhnomrungPrasat.jpg",
    "imageCredit": "Thanyakij at Thai Wikipedia · Public domain",
    "fetchedAt": "2026-11-07T01:21:07.949Z",
@@ -644,7 +671,7 @@
     "en": "The Grand Palace is a complex of buildings at the heart of Bangkok, Thailand. The palace has been the official residence of the Kings of Siam since 1782. The king, his court, and his royal government were based on the grounds of the palace until 1925.",
     "zh": "大皇宫 是泰国扎克里王朝最早建成的王宫，位于曼谷拍那空县，自1782年以来，一直是泰国（暹罗）王室的公定居住地点。在1925年以前，是暹罗王室和朝廷的所在地。如今，大皇宫是泰国王室举行重大典礼及接见国宾的场所，亦是曼谷的地标和重要旅游目的地。\n"
    },
-   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Grand_Palace_Bangkok%2C_Thailand.jpg/960px-Grand_Palace_Bangkok%2C_Thailand.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Grand_Palace_Bangkok%2C_Thailand.jpg/960px-Grand_Palace_Bangkok%2C_Thailand.jpg",
    "imagePage": "https://commons.wikimedia.org/wiki/File:Grand_Palace_Bangkok,_Thailand.jpg",
    "imageCredit": "Andy Marchand · CC BY-SA 3.0",
    "fetchedAt": "2026-11-06T18:41:17.418Z",
@@ -761,7 +788,7 @@
     "en": "Khao Yai National Park is a national park in Thailand. Established in 1962 as Thailand's first national park, it is the third largest national park in Thailand.",
     "zh": "考艾國家公園，或稱大山國家公園，位於泰国巴真府、那空那育府、呵叻府、北標府交界處，成立於1962年9月18日，為泰國第一個國家公園。公園面積2,168平方公里，名列為泰國第三位。考艾國家公園的標誌為已絕滅物種熊氏鹿的頭像，公園以此標誌紀念這個美麗的物種，並激發人們對野生動物的保護意識。\n"
    },
-   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/KHAOYAI.JPG/960px-KHAOYAI.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/KHAOYAI.JPG/960px-KHAOYAI.JPG",
    "imagePage": "https://commons.wikimedia.org/wiki/File:KHAOYAI.JPG",
    "imageCredit": "Jtri at Dutch Wikipedia · CC BY-SA 3.0",
    "fetchedAt": "2026-11-06T18:18:11.823Z",
@@ -908,9 +935,9 @@
     "en": "Ban Chiang is an archaeological site in Nong Han district, Udon Thani province, Thailand. It has been a UNESCO World Heritage Site since 1992. Discovered in 1966, the site first attracted interest due to its ancient red-painted pottery.",
     "zh": "班清考古遺址 為一處位於泰国東北部烏隆府農漢縣的考古遺址。遺址長1,350米（4,430英尺），寬500米（1,600英尺），面積67.36公頃（166.5英畝），於1966年8月發現。1974－1975年宾夕法尼亚大学博物館與泰國藝術廳合作進行大規模挖掘，泰國政府於1975年成立「班清國家博物館」。班清考古遺址於1992年第16屆世界遺產委員會通過列入《世界遺產名錄》。\n"
    },
-   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Wat_Pho_Si_Nai_-_UNESCO_World_Heritage_Site_plaque.JPG/960px-Wat_Pho_Si_Nai_-_UNESCO_World_Heritage_Site_plaque.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Wat_Pho_Si_Nai_-_UNESCO_World_Heritage_Site_plaque.JPG",
-   "imageCredit": "User:Mattes · Public domain",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Ban_Chiang_excavations.jpg/960px-Ban_Chiang_excavations.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Ban_Chiang_excavations.jpg",
+   "imageCredit": "Steve from Bangkok, Thailand · CC BY-SA 2.0",
    "fetchedAt": "2026-11-07T01:21:05.750Z",
    "views": 35
   },
@@ -937,7 +964,7 @@
     "en": "Ko Samui or Koh Samui, often locally shortened to Samui, is an island off the east coast of Thailand. Geographically in the Chumphon Archipelago, it is part of Surat Thani Province, though as of 2012, Ko Samui was granted municipal status and thus is now locally self-governing. Ko Samui, with an area of 228.7 square kilometres (88.3 sq mi), is Thailand's second largest island after Phuket.",
     "zh": "蘇梅島，一譯沙湄岛、蘇美島、阁沙梅岛，是泰國的一個島嶼，在行政区划上屬於素叻他尼府苏梅岛市。\n"
    },
-   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Koh_Samui_Lipa_Noi2.jpg/960px-Koh_Samui_Lipa_Noi2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Koh_Samui_Lipa_Noi2.jpg/960px-Koh_Samui_Lipa_Noi2.jpg",
    "imagePage": "https://commons.wikimedia.org/wiki/File:Koh_Samui_Lipa_Noi2.jpg",
    "imageCredit": "Manfred Werner · CC BY-SA 3.0",
    "fetchedAt": "2026-11-07T01:19:39.551Z",
@@ -967,7 +994,7 @@
     "en": "Ko Lan is one of the eastern seaboard islands of Thailand. Ko Lan lies 7.5 km from the nearest shore, Pattaya. \"Ko Lan\" is the name of the island in the Royal Thai General System of Transcription. It is also known as \"Koh Larn\" and \"Ko Laan\".",
     "zh": "小珊瑚島 是一個位於暹羅灣附屬海灣曼谷灣中的島嶼。\n"
    },
-   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Ta_Yai_Beach_0001.jpg/960px-Ta_Yai_Beach_0001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Ta_Yai_Beach_0001.jpg/960px-Ta_Yai_Beach_0001.jpg",
    "imagePage": "https://commons.wikimedia.org/wiki/File:Ta_Yai_Beach_0001.jpg",
    "imageCredit": "Stefan Fussan · CC BY-SA 3.0",
    "fetchedAt": "2026-11-07T01:20:00.269Z",
@@ -1050,7 +1077,7 @@
     "en": "Ko Tao is an island in Thailand and is part of the Chumphon Archipelago on the western shore of the Gulf of Thailand. It covers an area of about 21 km2. Administratively it is a subdistrict (tambon) of Ko Pha-ngan District (amphoe) of Surat Thani Province. As of 2006, its official population was 1,382. The main settlement is Ban Mae Haad.",
     "zh": "閣道島，是泰國南部素叻府的一個島，屬於春蓬群島。閣道島是泰國的一個旅遊景點，位於暹羅灣西岸，離海岸約六十公里，全島面積有21 km²。截至2013年，閣道島行政上是素叻府的一個縣（amphoe）。截至2006年，當地正式紀錄的人口是1,382人。主要聚居點位於梅汉码头、赛利海滩、查洛克湾。\n"
    },
-   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Ban_Mae_Haad_Ko_Tao.jpg/960px-Ban_Mae_Haad_Ko_Tao.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Ban_Mae_Haad_Ko_Tao.jpg/960px-Ban_Mae_Haad_Ko_Tao.jpg",
    "imagePage": "https://commons.wikimedia.org/wiki/File:Ban_Mae_Haad_Ko_Tao.jpg",
    "imageCredit": "kallerna · CC BY-SA 4.0",
    "fetchedAt": "2026-11-07T01:19:46.166Z",
@@ -1076,7 +1103,7 @@
     "th": "เกาะหลีเป๊ะ หรือ เกาะลีเป๊ะ เป็นเกาะกลางทะเลอยู่ในเขตตำบลเกาะสาหร่าย อำเภอเมืองสตูล จังหวัดสตูล อยู่ทางตอนใต้ของเกาะอาดัง ห่างจากแผ่นดินของจังหวัดสตูล 85 กิโลเมตร เขตอำนาจการควบคุมของอุทยานแห่งชาติหมู่เกาะตะรุเตาในจังหวัดสตูล เป็นชายหาดบนเกาะที่อุดมไปด้วยท้องทะเลที่สดใสสะอาด สวยงาม เป็นเกาะที่เงียบสงบ และมีน้ำที่ตื้นเขิน จุดเด่นของทางเกาะหลีเป๊ะ คือ ความเป็นธรรมชาติของปะการังรายล้อมรอบเกาะ มีเวิ้งอ่าวที่สวยงาม หาดทรา…",
     "en": "Ko Lipe is a small island in the Adang-Rawi Archipelago of the Strait of Malacca, in Satun Province of southwest Thailand, close to the Malaysian border. Its Thai name, the corrupted form of the original Malay name, Pulau Nipis is also transliterated into English as \"Koh Lipe\", \"Koh Lipeh\", and \"Ko Lipey\"."
    },
-   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Koh_Lipe_island_coast.jpg/960px-Koh_Lipe_island_coast.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Koh_Lipe_island_coast.jpg/960px-Koh_Lipe_island_coast.jpg",
    "imagePage": "https://commons.wikimedia.org/wiki/File:Koh_Lipe_island_coast.jpg",
    "imageCredit": "VascoPlanet World Photography · CC BY 3.0",
    "fetchedAt": "2026-11-07T01:20:01.376Z",
@@ -1105,7 +1132,7 @@
     "en": "Ko Samet is an island in the Gulf of Thailand off the coast of Rayong Province on the eastern seaboard of Thailand, approximately 220 kilometres (140 mi) southeast of Bangkok. It is part of the Phe Subdistrict of Mueang Rayong District, the capital district of Rayong Province. Ko Samet is the largest and westernmost of a cluster of islands lying not far from the coast. The island measures 6.8 kilometres (4.",
     "zh": "沙美島，是位于泰國灣上的一個小島，靠近曼谷東南面大约220公里，行政屬於泰國羅勇府。\n"
    },
-   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Beach_Sea_Breeze_Koh_Samet.jpg/960px-Beach_Sea_Breeze_Koh_Samet.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Beach_Sea_Breeze_Koh_Samet.jpg/960px-Beach_Sea_Breeze_Koh_Samet.jpg",
    "imagePage": "https://commons.wikimedia.org/wiki/File:Beach_Sea_Breeze_Koh_Samet.jpg",
    "imageCredit": "Bjørn Erik Pedersen · CC BY-SA 3.0",
    "fetchedAt": "2026-11-07T01:19:48.489Z",
@@ -1462,9 +1489,9 @@
     "en": "Ko Pha-ngan is an island in the Gulf of Thailand in Surat Thani Province of southern Thailand. Ko Pha-ngan has two sister islands: the larger Ko Samui to the south and the smaller Ko Tao to the north. The main town is Thong Sala.",
     "zh": "帕岸島 是一個位於泰國東南方暹羅灣中的島嶼。在行政區劃上屬於素叻他尼府帕岸島縣。\n"
    },
-   "image": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Koh_Phangan01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Koh_Phangan01.jpg",
-   "imageCredit": "Manfred Werner (User:Tsui · CC BY-SA 3.0",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Rainforest_of_Ko_Pha-ngan.jpg/960px-Rainforest_of_Ko_Pha-ngan.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Rainforest_of_Ko_Pha-ngan.jpg",
+   "imageCredit": "Daniel Nikitin · CC BY 4.0",
    "fetchedAt": "2026-11-07T01:19:41.869Z",
    "views": 14
   },
@@ -1492,7 +1519,7 @@
     "en": "Kaeng Krachan National Park is the largest national park of Thailand. It is on the border with Burma, contiguous with the Tanintharyi Nature Reserve. It is a popular park owing to its proximity to the tourist town of Hua Hin. It was named a UNESCO World Heritage Site on 26 July 2021, despite concerns from the OHCHR around the human rights violations of the indigenous people that live in the park.",
     "zh": "岗卡章国家公园 為泰国最大的國家公園。該國家公園與缅甸的德林達依自然保護區成邊界。由於位置鄰近渡假勝地华欣而成為熱門的國家公園。\n"
    },
-   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Kaeng_Krachan.jpg/960px-Kaeng_Krachan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Kaeng_Krachan.jpg/960px-Kaeng_Krachan.jpg",
    "imagePage": "https://commons.wikimedia.org/wiki/File:Kaeng_Krachan.jpg",
    "imageCredit": "JJ Harrison (https://www.jjharrison.com.au/) · CC BY-SA 3.0",
    "fetchedAt": "2026-11-06T18:18:14.574Z",
@@ -1860,7 +1887,7 @@
     "en": "Rattanakosin Island is a historic area in the Phra Nakhon District in the city of Bangkok, Thailand. It is bordered by the Chao Phraya River to the west and multiple canals to the east that were dug to serve as moats for what was originally the fortified city center.",
     "zh": "拉达那哥欣岛 是泰国曼谷拍那空县一个历史悠久的地区，以昭披耶河与最初作为护城河的运河为界。该岛位于昭披耶河东部凸岸，是曼谷大皇宫和国柱神庙等历史地点的所在地。\n"
    },
-   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Bangkok_GrandPalace_from_River.jpg/960px-Bangkok_GrandPalace_from_River.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Bangkok_GrandPalace_from_River.jpg/960px-Bangkok_GrandPalace_from_River.jpg",
    "imagePage": "https://commons.wikimedia.org/wiki/File:Bangkok_GrandPalace_from_River.jpg",
    "imageCredit": "Mda · Public domain",
    "fetchedAt": "2026-11-07T01:19:52.233Z",
@@ -2366,7 +2393,7 @@
     "en": "Khao Sam Roi Yot National Park is a marine national park in Kui Buri District, Prachuap Khiri Khan Province, Thailand. It covers 61,300 rai ~ 98 square kilometres (38 sq mi) of which 13,050 rai ~ 21 square kilometres (8.1 sq mi) are marine areas. The park was established in 1966, and was the first coastal national park of Thailand. The park includes Thailand's largest freshwater marsh.",
     "zh": "三百峰国家公园 是一座位于泰国班武里府的国家海洋公园。公园总面积为98.08km2，其中20.88km2为海域。该公园成立于1966年，还拥有泰国最大的淡水沼泽，也是泰国的第一座国家海洋公园。\n"
    },
-   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Village_Bang_Pu%2C_Khao_Sam_Roi_Yod_national_park.jpg/960px-Village_Bang_Pu%2C_Khao_Sam_Roi_Yod_national_park.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Village_Bang_Pu%2C_Khao_Sam_Roi_Yod_national_park.jpg/960px-Village_Bang_Pu%2C_Khao_Sam_Roi_Yod_national_park.jpg",
    "imagePage": "https://commons.wikimedia.org/wiki/File:Village_Bang_Pu,_Khao_Sam_Roi_Yod_national_park.jpg",
    "imageCredit": "Jérémy Toma · CC BY-SA 4.0",
    "fetchedAt": "2026-11-06T18:18:18.183Z",
@@ -2646,7 +2673,7 @@
     "en": "Ko Chang is an amphoe (district) in Trat province, Thailand. It is on the Gulf of Thailand's eastern coast, 300 km (190 mi) from Bangkok, near the border with Cambodia.",
     "zh": "象島，拉丁化：Ko Chang，有譯阁昌岛、閣倉島、昌島，是位於泰國東部的達叻府的一個島嶼，行政區劃上自成一縣，名為閣昌縣。該島是泰國第二大島，著名景點。「阁昌」在泰語中意思是「大象之島」，因全島形狀如大象而得名。\n"
    },
-   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Kochang1.jpg/960px-Kochang1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Kochang1.jpg/960px-Kochang1.jpg",
    "imagePage": "https://commons.wikimedia.org/wiki/File:Kochang1.jpg",
    "imageCredit": "Heinz Albers · CC BY 3.0",
    "fetchedAt": "2026-11-07T01:19:43.458Z",
@@ -2675,7 +2702,7 @@
     "en": "Patong refers to the beach and town on Phuket's west coast. It is the main tourist resort on the island of Phuket, and is the centre of Phuket's nightlife and shopping. The beach became popular with Western tourists, especially Europeans, in the late-1980s. It has numerous hotels and the area has expanded into a tourist place. Bangla Road is a popular street in this area with vibrant nightlife.",
     "zh": "芭东区 (Patong หาดป่าตอง) 位于泰王国布吉島的中西部，是當地的一個旅游区。 \n"
    },
-   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Patong_Beach_%281%29.jpg/960px-Patong_Beach_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Patong_Beach_%281%29.jpg/960px-Patong_Beach_%281%29.jpg",
    "imagePage": "https://commons.wikimedia.org/wiki/File:Patong_Beach_(1).jpg",
    "imageCredit": "Wolfgang Holzem · CC BY-SA 4.0",
    "fetchedAt": "2026-11-07T01:19:50.458Z",
@@ -2704,7 +2731,7 @@
     "en": "Mu Ko Ang Thong is a marine national park in the Gulf of Thailand in Surat Thani Province. It covers 42 islands in a total area of 63,750 rai ~ 102 square kilometres (39 sq mi), of which about 50 square kilometres (19 sq mi) are land and the rest is water. The park was established on 12 November 1980. The northern tip of Ko Phaluai is also part of the marine park.",
     "zh": "安通國家公園，在泰國灣內，屬於泰王國素叻他尼府。整個群島共計有42個小島，海域方圓為102平方公里，陸地方圓為18平方公里。\n"
    },
-   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Mu_Ko_Ang_Thong%2C_Islands_in_the_sea_2%2C_Thailand.jpg/960px-Mu_Ko_Ang_Thong%2C_Islands_in_the_sea_2%2C_Thailand.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Mu_Ko_Ang_Thong%2C_Islands_in_the_sea_2%2C_Thailand.jpg/960px-Mu_Ko_Ang_Thong%2C_Islands_in_the_sea_2%2C_Thailand.jpg",
    "imagePage": "https://commons.wikimedia.org/wiki/File:Mu_Ko_Ang_Thong,_Islands_in_the_sea_2,_Thailand.jpg",
    "imageCredit": "Vyacheslav Argenberg · CC BY 4.0",
    "fetchedAt": "2026-11-06T18:18:26.465Z",
@@ -2730,8 +2757,8 @@
     "th": "เกาะหมาก เป็นเกาะในจังหวัดตราด อยู่ระหว่าง เกาะช้างกับเกาะกูด ห่างจากฝั่งประมาณ 38 กิโลเมตร มีพื้นที่ 8,500 ไร่ หรือ 12.398 ตารางกิโลเมตร มีรูปร่างคล้ายดาวสี่แฉก มีความยาวชายหาด 27 กม. มีชายหาด เช่น บริเวณอ่าวตานิด อ่าวไผ่ อ่าวโปร่ง อ่าวผาด อ่าวแดง บริเวณชายฝั่งรอบเกาะและเกาะใกล้เคียงจะพบแนวปะการังที่สมบูรณ์",
     "en": "Ko Mak is a small island of Trat province, in eastern Thailand. It is a subdistrict (tambon) of Ko Kut district. The island is named after the areca nut (หมาก), also known as the \"betel nut\"."
    },
-   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Koh_Mak_%28island%29%2C_Thailand%2C_Sunset_on_the_beach_with_palms.jpg/960px-Koh_Mak_%28island%29%2C_Thailand%2C_Sunset_on_the_beach_with_palms.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Koh_Mak_(island),_Thailand,_Sunset_on_the_beach_with_palms.jpg",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Koh_Mak%2C_Thailand%2C_Sunset_trail.jpg/960px-Koh_Mak%2C_Thailand%2C_Sunset_trail.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Koh_Mak,_Thailand,_Sunset_trail.jpg",
    "imageCredit": "Vyacheslav Argenberg · CC BY 4.0",
    "fetchedAt": "2026-11-07T01:20:04.560Z",
    "views": 5
@@ -3883,7 +3910,7 @@
     "en": "Khao Phing Kan or Ko Khao Phing Kan, commonly known in English as James Bond Island, is an island in Thailand, in Phang Nga Bay northeast of Phuket. About 40 metres (130 ft) from the shores of Khao Phing Kan lies a 20-metre (66 ft) tall islet called Ko Ta Pu or Ko Tapu.",
     "zh": "考平甘島 是位於泰國南部攀牙府攀牙灣國家公園中的兩個島嶼之統稱。距其40米之外豎立著一個高為20米的島嶼——達舖島。詹姆士·龐德系列電影曾在此拍攝，考平甘島因此被稱為007島或詹姆士·龐德島。\n"
    },
-   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Khao_Phing_Kan_%2814974551496%29.jpg/960px-Khao_Phing_Kan_%2814974551496%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Khao_Phing_Kan_%2814974551496%29.jpg/960px-Khao_Phing_Kan_%2814974551496%29.jpg",
    "imagePage": "https://commons.wikimedia.org/wiki/File:Khao_Phing_Kan_(14974551496).jpg",
    "imageCredit": "Robert Haandrikman · CC BY 2.0",
    "fetchedAt": "2026-11-07T01:19:57.679Z",
