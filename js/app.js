@@ -869,21 +869,36 @@
   const GOOD_ICON = { photo: "📸", work: "💻", kids: "👶", pets: "🐾", date: "💑", group: "👯", view: "🌄", nature: "🌿", chill: "☕", budget: "💸", night: "🌙", food: "😋" };
   const reviewOf = p => { const r = state.reviews?.[p.id]; return r && r.summary && !r.skip ? r : null; };
   const rvList = v => { const l = v?.[state.lang]?.length ? v[state.lang] : v?.th || []; return l.filter(Boolean); };
-  // การ์ดที่เที่ยวแบบรายการ (ไม่มีรูป): ไอคอนหมวด · ชื่อ · เขต/อำเภอ จังหวัด ระยะทาง · เวลาเปิด · ราคา · สรุปรีวิว · เหมาะกับ
+  // คำอธิบายของทุกสถานที่ (จากข้อมูลจริงเท่านั้น ไม่แต่งเอง):
+  // AI สรุปรีวิว → คำอธิบายจาก Wikipedia/OSM → โพสต์ Lemon8 ที่พูดถึง → ประโยคพื้นฐานจากหมวด เขต และเวลาเปิด
+  function placeBlurb(p) {
+    const rv = reviewOf(p);
+    if (rv?.summary && pick(rv.summary)) return pick(rv.summary);
+    const own = placeSummary(p);
+    if (own) return own;
+    const posts = placePosts(p);
+    if (posts.length) {
+      const top = [...posts].sort((a, b) => (b.likes || 0) - (a.likes || 0))[0];
+      return t("blurbPosts", { n: posts.length, title: String(top.title || "").replace(/\s+/g, " ").trim().slice(0, 70) });
+    }
+    const c = PCAT[p.kind];
+    const area = [p.district && `${p.province === "bangkok" ? t("districtBkk") : t("districtShort")}${p.district}`, provName(p.province)].filter(Boolean).join(" ");
+    return t("blurbBasic", { kind: c ? pick(c.name) : "", area }) + (p.hours ? ` ${t("blurbHours", { hours: fmtHours(p.hours) })}` : "");
+  }
+  // การ์ดที่เที่ยวแบบรายการ (ไม่มีรูป ไม่มีไอคอน): กรอบสีตามหมวด · ชื่อ · แท็ก · เขต/อำเภอ จังหวัด ระยะทาง · เวลาเปิด · ราคา · คำอธิบาย · เหมาะกับ
   function placeCard(p) {
     const c = PCAT[p.kind] || { icon: "📍", color: "#888" }, saved = state.saved.has(placeKey(p));
     const where = [p.district && `${p.province === "bangkok" ? t("districtBkk") : t("districtShort")}${p.district}`, provName(p.province), state.pos && p.lat ? `${distanceKm(state.pos, p).toFixed(1)} ${t("km")}` : ""].filter(Boolean).join(" · ");
-    const rv = reviewOf(p), summary = rv?.summary ? pick(rv.summary) : placeSummary(p);
+    const rv = reviewOf(p), summary = placeBlurb(p);
     const open = openNow(p.hours);
     const price = [MENU_KINDS.has(p.kind) && menuText(p) !== "-" ? `🍽️ ${esc(menuText(p))}` : "", (!MENU_KINDS.has(p.kind) || p.kind === "animalcafe") && feeText(p) !== "-" ? `🎟️ ${esc(feeText(p))}` : ""].filter(Boolean).join(" · ");
     return `
       <article class="card place-row" style="--c1:${c.color};--c2:${c.color2 || c.color}">
         <button class="save-btn" data-save="${esc(placeKey(p))}" aria-label="${saved ? t("unsaveAria") : t("saveAria")}">${saved ? "❤️" : "🤍"}</button>
         <a href="#/place/${encodeURIComponent(p.id)}">
-          <span class="pr-icon" aria-hidden="true">${c.icon}</span>
           <div class="pr-body">
             <h3>${esc(placeName(p))}</h3>
-            <div class="pr-tags">${c.name ? `<span>${esc(pick(c.name))}</span>` : ""}${p.trend ? `<span class="hot">🔥 ${t("trending")}</span>` : p.rising ? `<span class="hot">📈 ${t("searchRising")}</span>` : ""}${p.business ? `<span class="ok">✅ ${t("verifiedShop")}</span>` : ""}</div>
+            <div class="pr-tags">${c.name ? `<span class="cat">${c.icon} ${esc(pick(c.name))}</span>` : ""}${p.trend ? `<span class="hot">🔥 ${t("trending")}</span>` : p.rising ? `<span class="hot">📈 ${t("searchRising")}</span>` : ""}${p.business ? `<span class="ok">✅ ${t("verifiedShop")}</span>` : ""}</div>
             <div class="meta">📍 <span>${esc(where)}</span></div>
             ${p.hours || price ? `<div class="meta">${p.hours ? `🕒 <span>${open === true ? `<b class="open-now">${t("openNowShort")}</b> · ` : open === false ? `<b class="closed-now">${t("closedNow")}</b> · ` : ""}${esc(fmtHours(p.hours))}</span>` : ""}${p.hours && price ? " · " : ""}${price}</div>` : ""}
             ${summary ? `<p class="place-sum">${esc(summary.slice(0, 120))}${summary.length > 120 ? "…" : ""}</p>` : ""}
@@ -1133,7 +1148,7 @@
     const p = state.places.find(x => x.id === id);
     if (!p) { app.innerHTML = `<a class="back" href="#/places">${t("back")}</a><p class="empty">${t("notFound")}</p>`; return; }
     const c = PCAT[p.kind], v = placeVenue(p), saved = state.saved.has(placeKey(p));
-    const name = placeName(p), rv = reviewOf(p), summary = placeSummary(p) || (rv ? pick(rv.summary) : "");
+    const name = placeName(p), rv = reviewOf(p), summary = placeSummary(p) || placeBlurb(p);
     const wiki = p.wiki?.[state.lang] || p.wiki?.th || p.wiki?.en;
     document.title = `${name} — ${C.siteName}`;
     // หน้ารายละเอียดแบบกะทัดรัด: รูปปก+ชื่อ → ข้อมูลด่วน → ปุ่มนำทาง → แท็บ (ภาพรวม / การเดินทาง / กระแส) ไม่ต้องเลื่อนยาว
