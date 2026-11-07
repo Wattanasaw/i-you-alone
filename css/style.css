@@ -669,3 +669,10 @@ html.theme-anim, html.theme-anim * { transition: background-color .35s, color .3
 /* ไม่มีรูป: หัวหน้ากะทัดรัด (แถบสีตามหมวด) ไม่ต้องเว้นที่ให้รูป */
 .pd-hero.noimg .pd-cover { aspect-ratio: auto; height: 150px; }
 .pd-hero.noimg .pd-cover .emoji { font-size: 2.4rem; position: absolute; right: 18px; bottom: 16px; left: auto; top: auto; opacity: .9; }
+
+/* ผลตรวจ UI: ปุ่มหัวใจเห็นชัดบนรูปทุกแบบ + พื้นที่กด 44px, เว้นที่ใต้เนื้อหาไม่ให้แถบล่างบัง, ช่องยินยอมกดได้ทั้งแถว */
+.save-btn { width: 44px; height: 44px; background: rgba(20, 16, 32, .62); color: #fff; backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); box-shadow: 0 2px 10px rgba(0, 0, 0, .35); font-size: 1.05rem; }
+.place-row .save-btn { background: var(--surface-2); box-shadow: none; }
+@media (max-width: 759px) { body { padding-bottom: calc(110px + env(safe-area-inset-bottom, 0px)); } }
+label.check { display: flex; gap: 10px; align-items: flex-start; min-height: 44px; padding: 8px 0; cursor: pointer; }
+label.check input[type=checkbox] { width: 22px; height: 22px; flex: none; margin-top: 2px; accent-color: var(--accent); }

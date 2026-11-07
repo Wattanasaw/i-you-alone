@@ -32,7 +32,12 @@ await shot("หน้าแรก — เลื่อนลงไปที่ร
 await shot("รายละเอียดงาน", async () => { const h = await page.evaluate(() => document.querySelector('a[href^="#/event/"]')?.getAttribute("href")); await go(h || "#/"); });
 await shot("หน้าที่เที่ยว — จอแรก", () => go("#/places"));
 await shot("หน้าที่เที่ยว — เลื่อนลงไปที่รายการ", async () => { await page.evaluate(() => document.getElementById("placesHead")?.scrollIntoView()); });
-await shot("รายละเอียดสถานที่ — แท็บภาพรวม", async () => { const h = await page.evaluate(() => [...document.querySelectorAll(".place-card")].find(c => c.querySelector("img.cover-img"))?.querySelector("a")?.getAttribute("href")); await go(h || "#/places"); });
+// รายการที่เที่ยวเป็นแถวไม่มีรูป (.place-row) — เปิดที่แรกที่มีสรุปรีวิว/กระแส ไม่งั้นที่แรกในรายการ
+await shot("รายละเอียดสถานที่ — แท็บภาพรวม", async () => {
+  const h = await page.evaluate(() => { const rows = [...document.querySelectorAll(".place-row, .place-card")]; return (rows.find(r => r.querySelector(".good-for, .hot")) || rows[0])?.querySelector("a[href^='#/place/']")?.getAttribute("href"); });
+  if (!h) throw new Error("ไม่พบลิงก์สถานที่ในรายการ");
+  await go(h); await page.evaluate(() => scrollTo(0, 0));
+});
 await shot("รายละเอียดสถานที่ — แท็บการเดินทาง", async () => { await page.click('[data-ptab="travel"]').catch(() => {}); });
 await shot("หน้าบันทึก", () => go("#/saved"));
 await shot("หน้าบัญชีสมาชิก", () => go("#/account"));
@@ -42,6 +47,7 @@ console.log(`ถ่ายภาพ ${shots.length} หน้า · AI: ${aiName(
 const prompt = `คุณเป็นผู้เชี่ยวชาญ UX/UI แอพมือถือ ตรวจแอพ "I You Alone" (รวมงานอีเว้นท์และที่เที่ยวในไทย กลุ่มเป้าหมายวัยรุ่น/วัยทำงานคนไทย ใช้บนมือถือเป็นหลัก)
 แนบภาพหน้าจอมือถือจริง ${shots.length} ภาพตามลำดับ (เลข 0 เป็นต้นไป):
 ${notes.join("\n")}
+ข้อเท็จจริงที่ไม่ใช่ปัญหา (ห้ามรายงาน): ปี พ.ศ. ${new Date().getFullYear() + 543} คือปีปัจจุบัน · รายการที่เที่ยวตั้งใจเป็นแถวข้อมูลไม่มีรูป (เจ้าของแอพเลือกเอง) · แท็บ "เข้าสู่ระบบ" บนแถบล่างเป็นการออกแบบที่ตั้งใจ
 ประเมินความใช้งานง่าย: ลำดับความสำคัญของข้อมูล, ต้องเลื่อนมากไหม, ปุ่มกดง่ายไหม (ขนาด ≥ 44px), ตัวหนังสืออ่านง่ายไหม/คอนทราสต์, ความสม่ำเสมอ, สิ่งที่ชวนสับสน, สิ่งที่ขาด
 ตอบเป็นภาษาไทย ให้เจาะจงพอที่นักพัฒนาแก้ได้ทันที (บอกว่าอยู่ภาพไหน ส่วนไหน ควรแก้เป็นอะไร) ห้ามชมทั่วไป
 ส่งกลับ JSON:

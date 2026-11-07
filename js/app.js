@@ -477,13 +477,19 @@
     const el = document.getElementById("results");
     if (!el) return;
     if (!list.length) { el.innerHTML = `<p class="empty">${t("noResults")}</p>`; return; }
+    // แสดงทีละ 24 งาน (เดิมวาดทุกงานพร้อมกัน หน้ายาว 50,000px ทำให้มือถือหน่วง) · เปลี่ยนตัวกรอง = เริ่มใหม่
+    const fkey = JSON.stringify(state.filters);
+    if (state.evKey !== fkey) { state.evKey = fkey; state.evShow = 24; }
+    const shown = list.slice(0, state.evShow);
     const parts = [];
-    list.forEach((ev, i) => {
+    shown.forEach((ev, i) => {
       parts.push(card(ev));
-      if ((i + 1) % every === 0 && i < list.length - 1) parts.push(adSlot("list_inline"));
+      if ((i + 1) % every === 0 && i < shown.length - 1) parts.push(adSlot("list_inline"));
     });
-    el.innerHTML = `<p class="result-count">${t("found", { n: list.length })}</p><div class="grid ${state.view}">${parts.join("")}</div>`;
-    bindSave(el, renderResults);
+    el.innerHTML = `<p class="result-count">${t("found", { n: list.length })}</p><div class="grid ${state.view}">${parts.join("")}</div>
+      ${list.length > shown.length ? `<div class="actions" style="justify-content:center"><button class="btn primary" id="evMore">${t("showMoreEvents", { n: list.length - shown.length })}</button></div>` : ""}`;
+    document.getElementById("evMore")?.addEventListener("click", () => { const y = window.scrollY; state.evShow += 24; renderResults(); window.scrollTo(0, y); });
+    bindSave(el, () => { const y = window.scrollY; renderResults(); window.scrollTo(0, y); });
     activateAdsense();
   }
 
