@@ -41,8 +41,8 @@ window.APP_CONFIG = {
   // ว่างไว้ = ปิดระบบสมาชิก (หน้า "บัญชี" จะแจ้งว่าเร็วๆ นี้) · วิธีเปิดดู README-TH.md หัวข้อ "ระบบสมาชิก"
   // anon key เป็นคีย์สาธารณะ ใส่ในเว็บได้ (ความปลอดภัยอยู่ที่ Row Level Security ใน supabase/schema.sql)
   members: {
-    supabaseUrl: "",      // เช่น "https://xxxx.supabase.co"
-    supabaseAnonKey: ""   // Project Settings → API → anon public
+    supabaseUrl: "https://sfqnckcnnszrvloybmtf.supabase.co",      // เช่น "https://xxxx.supabase.co"
+    supabaseAnonKey: "sb_publishable_BsM0vVzgy5La0K1_75d9qw_0WR1Tnkk"   // Project Settings → API → anon public
   },
 
   // ===== โฆษณา =====

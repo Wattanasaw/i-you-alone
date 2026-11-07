@@ -27,7 +27,9 @@ function provinceId(state) {
 }
 
 async function rest(path, opt = {}) {
-  const r = await fetch(`${URL_}/rest/v1/${path}`, { ...opt, headers: { apikey: KEY, Authorization: `Bearer ${KEY}`, "Content-Type": "application/json", Prefer: "return=representation", ...(opt.headers || {}) } });
+  // คีย์แบบใหม่ (sb_secret_...) ส่งเฉพาะ apikey · คีย์ service_role แบบเก่า (JWT) ส่งเป็น Bearer ด้วย
+  const auth = KEY.startsWith("sb_") ? {} : { Authorization: `Bearer ${KEY}` };
+  const r = await fetch(`${URL_}/rest/v1/${path}`, { ...opt, headers: { apikey: KEY, ...auth, "Content-Type": "application/json", Prefer: "return=representation", ...(opt.headers || {}) } });
   if (!r.ok) throw new Error(`Supabase ${r.status}: ${(await r.text()).slice(0, 200)}`);
   return r.status === 204 ? null : r.json();
 }
