@@ -423,6 +423,8 @@ const SOURCES = {
 const CATEGORY_RULES = [
   // คนโสด/หาคู่/หาเพื่อนใหม่ (ก่อนหมวดอื่น: "Singles Night at bar" = หาคู่ ไม่ใช่ไนท์ไลฟ์)
   ["social", /\b(speed ?dating|singles?|dating|matchmaking|blind ?date|cupid|new friends|make friends|meet new people|social club|book club|reading club|language exchange|board ?game night|no strangers|introverts?)\b|คนโสด|หาคู่|หาแฟน|จับคู่|เดท|หาเพื่อนใหม่|เพื่อนใหม่|ชมรมหนังสือ|ชมรมอ่าน|บอร์ดเกม/i],
+  // งานประเพณี/เทศกาล (ก่อน อาหาร/คอนเสิร์ต)
+  ["festival", /\b(loy ?krathong|songkran|yi ?peng|lantern festival|countdown|fireworks|chinese new year|vegetarian festival)\b|ลอยกระทง|สงกรานต์|งานวัด|งานประจำปี|ประเพณี|ยี่เป็ง|เคาท์ดาวน์|เคานต์ดาวน์|เทศกาลโคม|พลุ|ตรุษจีน|กินเจ/i],
   ["outdoor", /\b(run|running|marathon|trail|hyrox|triathlon|fun ?run|cycling|bike|yoga|fitness|sport|workout|crossfit)\b|วิ่ง|มาราธอน|ปั่นจักรยาน|ไตรกีฬา|โยคะ|ฟิตเนส|กีฬา/i],
   ["book", /\bbook|หนังสือ/i],
   ["motor", /\bmotor|car show|auto ?salon|รถยนต์|ยานยนต์|มอเตอร์|บิ๊กไบค์|รถจักรยานยนต์/i],

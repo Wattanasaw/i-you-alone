@@ -155,6 +155,7 @@
       return r.ok ? await r.json() : fallback;
     } catch { return fallback; }
   }
+  const FESTIVAL = /ลอยกระทง|สงกรานต์|งานวัด|งานประจำปี|ประเพณี|ยี่เป็ง|เคาท์ดาวน์|เคานต์ดาวน์|countdown|loy ?krathong|songkran|yi ?peng|lantern festival|เทศกาลโคม|พลุ|fireworks|ตรุษจีน|chinese new year|กินเจ|vegetarian festival|ฮาโลวีน|halloween|คริสต์มาส|christmas|ปีใหม่|new year/i;
   async function load() {
     const [events, venues, ads, news, auto, places, biz, trendPl, reviews, aiInfo] = await Promise.all([
       getJSON("data/events.json", []),
@@ -179,6 +180,10 @@
       if (typeof p.website === "string" && p.website.includes(";")) p.website = p.website.split(";")[0].trim();
       if (typeof p.phone === "string" && p.phone.includes(";")) p.phone = p.phone.split(";")[0].trim();
       if (typeof p.address === "string") p.address = p.address.replace(/\s*;\s*/g, ", ").trim();
+      // แยกหมวดย่อยให้เข้าใจง่าย: ทะเล (ออกจาก น้ำตก/วิว) · วัด (ออกจาก แลนด์มาร์ก)
+      const nm = `${p.name?.th || ""} ${p.name?.en || ""}`;
+      if (p.kind === "nature" && /หาด|ชายหาด|beach|เกาะ|island|อ่าว|\bbay\b|ทะเล/i.test(nm)) p.kind = "beach";
+      else if (p.kind === "landmark" && /^\s*(วัด|wat\b)|temple|พระธาตุ|พระมหาธาตุ|เจดีย์/i.test(nm)) p.kind = "temple";
       // ข้อมูลจาก Gemini เติมเฉพาะช่องที่ยังว่าง (OpenStreetMap/รีวิว Lemon8/เจ้าของร้าน มาก่อน)
       const ai = state.ai[p.id];
       if (ai?.hours && !p.hours) { p.hours = ai.hours; p.hoursSrc = "ai"; }
@@ -191,6 +196,8 @@
     // ร้าน/สถานที่ที่เปิดประจำทุกวัน และงานออนไลน์ ไม่นับเป็นงานอีเว้นท์ (คาเฟ่/ที่เที่ยวอยู่หน้า "ที่เที่ยว")
     const isEvent = e => !e.hidden && !e.ongoing && e.venueId !== "online";
     state.events = [...events.filter(isEvent), ...(auto.events || []).filter(e => !manualIds.has(e.id) && isEvent(e))];
+    // งานประเพณี/เทศกาล แยกออกจาก อาหาร/คอนเสิร์ต/งานแฟร์ (ข้อมูลเก่าที่ยังไม่ได้จัดหมวดใหม่)
+    for (const e of state.events) if (["food", "concert", "expo"].includes(e.category) && FESTIVAL.test(e.title || "") && !/concert|คอนเสิร์ต|fansign|fan ?meet|showcase|dinner|ดินเนอร์|buffet|บุฟเฟ่ต์/i.test(e.title || "")) e.category = "festival";
     state.venues = Object.fromEntries(venues.map(v => [v.id, v]));
     state.ads = ads.filter(a => a.active !== false);
     state.news = news;
@@ -342,7 +349,7 @@
   }
 
   // คะแนน "งานใหญ่": สายบันเทิง + สถานที่จัดใหญ่ + คำว่ามหกรรม/เฟสติวัล + หลายวัน + เข้าฟรี + มีสปอนเซอร์
-  const BIG_CAT = { concert: 3, motor: 3, food: 2, expo: 2, book: 2, sale: 2, outdoor: 1, nightlife: 0, learning: -3, seminar: -3, social: 0, exhibition: 1, cafe: -3 };
+  const BIG_CAT = { concert: 3, motor: 3, food: 2, festival: 3, expo: 2, book: 2, sale: 2, outdoor: 1, nightlife: 0, learning: -3, seminar: -3, social: 0, exhibition: 1, cafe: -3 };
   const BIG_VENUE = /impact|thunder ?dome|arena|stadium|สนามกีฬา|ราชมังคลา|rajamangala|bitec|ไบเทค|qsncc|ศูนย์การประชุม|ศูนย์ประชุม|convention|exhibition|เมืองทอง|central ?world|เซ็นทรัลเวิลด์|paragon|พารากอน|iconsiam|ไอคอนสยาม|lumpini|ลุมพินี|เบญจกิติ|ท้องสนามหลวง|beach|ชายหาด/i;
   const BIG_WORD = /festival|fest\b|เฟส|เทศกาล|มหกรรม|expo|เอ็กซ์โป|fair|แฟร์|world tour|tour\b|in bangkok|countdown|เคาท์ดาวน์|ลอยกระทง|สงกรานต์|carnival|คาร์นิวัล|motor show|มอเตอร์|งานหนังสือ|book fair|concert|คอนเสิร์ต|marathon|มาราธอน|music|ดนตรี/i;
   function bigScore(ev) {

@@ -1,5 +1,5 @@
 // Service worker: ให้แอพเปิดได้เร็วและใช้งานออฟไลน์ได้บางส่วน
-const CACHE = "iyoualone-v37";
+const CACHE = "iyoualone-v38";
 const ASSETS = ["./", "index.html", "css/style.css", "js/config.js", "js/i18n.js", "js/app.js", "js/member.js", "js/google-places.js", "icons/icon.svg", "icons/logo-full.svg", "manifest.webmanifest"];
 
 self.addEventListener("install", e => {
