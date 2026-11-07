@@ -5,7 +5,7 @@ import { readFile, writeFile, rename } from "node:fs/promises";
 
 const UA = "IYouAloneBot/1.0 (+https://wattanasaw.github.io/i-you-alone/)";
 const arg = (n, d) => { const i = process.argv.indexOf(n); return i > 0 ? +process.argv[i + 1] : d; };
-const MAX = arg("--max", 1500);
+const MAX = arg("--max", 400); // ~1.2 วินาที/แห่ง (Nominatim) · ที่เหลือรอบหน้า (แคชสะสม)
 const root = new URL("../", import.meta.url);
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 const readJSON = async (p, fb) => { try { return JSON.parse(await readFile(new URL(p, root), "utf8")); } catch { return fb; } };
