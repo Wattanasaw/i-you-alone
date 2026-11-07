@@ -990,9 +990,10 @@
   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%95%E0%B8%81%E0%B8%98%E0%B8%B2%E0%B8%A3%E0%B8%AA%E0%B8%A7%E0%B8%A3%E0%B8%A3%E0%B8%84%E0%B9%8C_Than_Sawan_Waterfall_%28Dec_2021%29_-_img_01.jpg/960px-%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%95%E0%B8%81%E0%B8%98%E0%B8%B2%E0%B8%A3%E0%B8%AA%E0%B8%A7%E0%B8%A3%E0%B8%A3%E0%B8%84%E0%B9%8C_Than_Sawan_Waterfall_%28Dec_2021%29_-_img_01.jpg",
   "page": "https://commons.wikimedia.org/wiki/File:%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%95%E0%B8%81%E0%B8%98%E0%B8%B2%E0%B8%A3%E0%B8%AA%E0%B8%A7%E0%B8%A3%E0%B8%A3%E0%B8%84%E0%B9%8C_Than_Sawan_Waterfall_(Dec_2021)_-_img_01.jpg",
   "credit": "Chainwit. · CC BY-SA 4.0",
-  "by": "rule",
-  "at": "2026-11-07T03:21:38.256Z",
-  "pending": true
+  "by": "ai",
+  "appeal": 9,
+  "why": "น้ำตกสวยงามโดดเด่น บรรยากาศร่มรื่น",
+  "at": "2026-11-07T03:34:04.670Z"
  },
  "wd-Q5768500": {
   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Laem_Son_National_Park.jpg/960px-Laem_Son_National_Park.jpg",
@@ -1811,87 +1812,94 @@
   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/HTMS_Chakri_Naruebet.jpg/960px-HTMS_Chakri_Naruebet.jpg",
   "page": "https://commons.wikimedia.org/wiki/File:HTMS_Chakri_Naruebet.jpg",
   "credit": "PH3 ALEX C. WITTE, USN · Public domain",
-  "by": "rule",
-  "at": "2026-11-07T03:28:50.549Z",
-  "pending": true
+  "by": "ai",
+  "appeal": 9,
+  "why": "ภาพมุมสูงเรือหลวงจักรีนฤเบศรชัดเจน สง่างาม",
+  "at": "2026-11-07T03:34:04.670Z"
  },
  "osm-n1669111106": {
   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AD%E0%B9%82%E0%B8%A8%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1_-_panoramio.jpg/960px-%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AD%E0%B9%82%E0%B8%A8%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1_-_panoramio.jpg",
   "page": "https://commons.wikimedia.org/wiki/File:%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AD%E0%B9%82%E0%B8%A8%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1_-_panoramio.jpg",
   "credit": "Charin ninsu · CC BY 3.0",
-  "by": "rule",
-  "at": "2026-11-07T03:28:50.549Z",
-  "pending": true
+  "by": "ai",
+  "appeal": 9,
+  "why": "เจดีย์สีขาวสถาปัตยกรรมงดงามโดดเด่น",
+  "at": "2026-11-07T03:34:04.670Z"
  },
  "osm-n3201222026": {
   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%A2%E0%B8%B2%E0%B8%AA%E0%B8%B8%E0%B9%80%E0%B8%A3%E0%B8%99%E0%B8%97%E0%B8%A3%E0%B9%8C_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%84%E0%B8%A5%E0%B8%AD%E0%B8%87%E0%B8%AA%E0%B8%B2%E0%B8%A1%E0%B8%A7%E0%B8%B2_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%283%29.jpg/960px-%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%A2%E0%B8%B2%E0%B8%AA%E0%B8%B8%E0%B9%80%E0%B8%A3%E0%B8%99%E0%B8%97%E0%B8%A3%E0%B9%8C_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%84%E0%B8%A5%E0%B8%AD%E0%B8%87%E0%B8%AA%E0%B8%B2%E0%B8%A1%E0%B8%A7%E0%B8%B2_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%283%29.jpg",
   "page": "https://commons.wikimedia.org/wiki/File:%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%A2%E0%B8%B2%E0%B8%AA%E0%B8%B8%E0%B9%80%E0%B8%A3%E0%B8%99%E0%B8%97%E0%B8%A3%E0%B9%8C_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%84%E0%B8%A5%E0%B8%AD%E0%B8%87%E0%B8%AA%E0%B8%B2%E0%B8%A1%E0%B8%A7%E0%B8%B2_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_(3).jpg",
   "credit": "กสิณธร ราชโอรส · CC BY-SA 4.0",
-  "by": "rule",
-  "at": "2026-11-07T03:28:50.549Z",
-  "pending": true
+  "by": "ai",
+  "appeal": 8,
+  "why": "ภาพอาคารวัดทรงกลมแปลกตา ท้องฟ้าสวย",
+  "at": "2026-11-07T03:34:04.670Z"
  },
  "osm-n3452272155": {
-  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Phnom_Wan.jpg/960px-Phnom_Wan.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Phnom_Wan.jpg",
-  "credit": "User:Ahoerstemeier · CC BY-SA 3.0",
-  "by": "rule",
-  "at": "2026-11-07T03:28:50.549Z",
-  "pending": true
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Prasat_Hin_Phanom_Wan.jpg/960px-Prasat_Hin_Phanom_Wan.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Prasat_Hin_Phanom_Wan.jpg",
+  "credit": "Philip Nalangan · CC BY 4.0",
+  "by": "ai",
+  "appeal": 8,
+  "why": "มุมกว้างของโบราณสถาน ท้องฟ้าสวยงาม",
+  "at": "2026-11-07T03:34:16.129Z"
  },
  "osm-n4348414695": {
-  "image": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Wat_Pah_Pong%2C_Thailand.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Wat_Pah_Pong,_Thailand.jpg",
-  "credit": "Editorq35 · CC0",
-  "by": "rule",
-  "at": "2026-11-07T03:28:50.549Z",
-  "pending": true
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AB%E0%B8%99%E0%B8%AD%E0%B8%87%E0%B8%9B%E0%B9%88%E0%B8%B2%E0%B8%9E%E0%B8%87_-_panoramio_%282%29.jpg/960px-%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AB%E0%B8%99%E0%B8%AD%E0%B8%87%E0%B8%9B%E0%B9%88%E0%B8%B2%E0%B8%9E%E0%B8%87_-_panoramio_%282%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AB%E0%B8%99%E0%B8%AD%E0%B8%87%E0%B8%9B%E0%B9%88%E0%B8%B2%E0%B8%9E%E0%B8%87_-_panoramio_(2).jpg",
+  "credit": "Charin ninsu · CC BY 3.0",
+  "by": "ai",
+  "appeal": 7,
+  "why": "ภาพอาคารและพระพุทธรูปชัดเจน",
+  "at": "2026-11-07T03:34:16.129Z"
  },
  "osm-n5318173821": {
   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%81%E0%B8%AD%E0%B8%87%E0%B9%81%E0%B8%81%E0%B9%89%E0%B8%A7_%28%E0%B8%88%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AA%E0%B8%A1%E0%B8%B8%E0%B8%97%E0%B8%A3%E0%B8%9B%E0%B8%A3%E0%B8%B2%E0%B8%81%E0%B8%B2%E0%B8%A3%29.jpg/960px-%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%81%E0%B8%AD%E0%B8%87%E0%B9%81%E0%B8%81%E0%B9%89%E0%B8%A7_%28%E0%B8%88%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AA%E0%B8%A1%E0%B8%B8%E0%B8%97%E0%B8%A3%E0%B8%9B%E0%B8%A3%E0%B8%B2%E0%B8%81%E0%B8%B2%E0%B8%A3%29.jpg",
   "page": "https://commons.wikimedia.org/wiki/File:%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%81%E0%B8%AD%E0%B8%87%E0%B9%81%E0%B8%81%E0%B9%89%E0%B8%A7_(%E0%B8%88%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AA%E0%B8%A1%E0%B8%B8%E0%B8%97%E0%B8%A3%E0%B8%9B%E0%B8%A3%E0%B8%B2%E0%B8%81%E0%B8%B2%E0%B8%A3).jpg",
   "credit": "Dharmadana · CC BY-SA 4.0",
-  "by": "rule",
-  "at": "2026-11-07T03:28:50.549Z",
-  "pending": true
+  "by": "ai",
+  "appeal": 5,
+  "why": "ลานวัดกว้างขวาง เห็นสถาปัตยกรรม",
+  "at": "2026-11-07T03:34:16.129Z"
  },
  "osm-n7922783785": {
-  "image": null,
-  "by": "rule",
-  "at": "2026-11-07T03:28:50.549Z",
-  "pending": true
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%97%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%84%E0%B8%A5%E0%B8%B8%E0%B9%89%E0%B8%87.jpg/960px-%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%97%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%84%E0%B8%A5%E0%B8%B8%E0%B9%89%E0%B8%87.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%97%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%84%E0%B8%A5%E0%B8%B8%E0%B9%89%E0%B8%87.jpg",
+  "credit": "chawapbebe · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 8,
+  "why": "พระพุทธรูปและโบสถ์สวยงามเด่นชัด",
+  "at": "2026-11-07T03:34:16.129Z"
  },
  "osm-n12526550268": {
-  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Bangkok_-_Wat_Dibayavarivihara_%28Wat_Thipphawari_Wihan%29_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%97%E0%B8%B4%E0%B8%9E%E0%B8%A2%E0%B8%A7%E0%B8%B2%E0%B8%A3%E0%B8%B5%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3_%282019%29_-_img_02.jpg/960px-Bangkok_-_Wat_Dibayavarivihara_%28Wat_Thipphawari_Wihan%29_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%97%E0%B8%B4%E0%B8%9E%E0%B8%A2%E0%B8%A7%E0%B8%B2%E0%B8%A3%E0%B8%B5%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3_%282019%29_-_img_02.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Bangkok_-_Wat_Dibayavarivihara_(Wat_Thipphawari_Wihan)_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%97%E0%B8%B4%E0%B8%9E%E0%B8%A2%E0%B8%A7%E0%B8%B2%E0%B8%A3%E0%B8%B5%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3_(2019)_-_img_02.jpg",
-  "credit": "Chainwit. · CC BY 4.0",
-  "by": "rule",
-  "at": "2026-11-07T03:28:50.549Z",
-  "pending": true
+  "image": null,
+  "by": "ai",
+  "why": "ภาพมุมแคบและติดสายไฟเยอะ",
+  "at": "2026-11-07T03:34:27.195Z"
  },
  "osm-n12645537703": {
-  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%A8%E0%B8%A3%E0%B8%B5%E0%B8%A7%E0%B8%B2%E0%B8%A3%E0%B8%B5%E0%B8%99%E0%B9%89%E0%B8%AD%E0%B8%A202.jpg/960px-%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%A8%E0%B8%A3%E0%B8%B5%E0%B8%A7%E0%B8%B2%E0%B8%A3%E0%B8%B5%E0%B8%99%E0%B9%89%E0%B8%AD%E0%B8%A202.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%A8%E0%B8%A3%E0%B8%B5%E0%B8%A7%E0%B8%B2%E0%B8%A3%E0%B8%B5%E0%B8%99%E0%B9%89%E0%B8%AD%E0%B8%A202.jpg",
-  "credit": "Dharmadana · CC BY-SA 4.0",
-  "by": "rule",
-  "at": "2026-11-07T03:28:50.549Z",
-  "pending": true
+  "image": null,
+  "by": "ai",
+  "why": "ภาพมุมไกลและมีทัศนียภาพรก",
+  "at": "2026-11-07T03:34:27.195Z"
  },
  "osm-w23630366": {
-  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Sit_Huntrakun_%284%29.jpg/960px-Sit_Huntrakun_%284%29.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Sit_Huntrakun_(4).jpg",
-  "credit": "Rotary International · Public domain",
-  "by": "rule",
-  "at": "2026-11-07T03:28:50.549Z",
-  "pending": true
+  "image": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Chitralada_Palace.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Chitralada_Palace.jpg",
+  "credit": "Liftold (thảo luận) · CC BY 3.0",
+  "by": "ai",
+  "appeal": 8,
+  "why": "ภาพสถาปัตยกรรมชัดเจนและสวยงาม",
+  "at": "2026-11-07T03:34:27.195Z"
  },
  "osm-w31987148": {
-  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Ananta_Samakhom_Throne_Hall_in_Bangkok_%281%29.jpg/960px-Ananta_Samakhom_Throne_Hall_in_Bangkok_%281%29.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Ananta_Samakhom_Throne_Hall_in_Bangkok_(1).jpg",
-  "credit": "Krzysztof Golik · CC BY-SA 4.0",
-  "by": "rule",
-  "at": "2026-11-07T03:28:50.549Z",
-  "pending": true
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Ananta_Samakhom_Throne_Hall_P1120854.JPG/960px-Ananta_Samakhom_Throne_Hall_P1120854.JPG",
+  "page": "https://commons.wikimedia.org/wiki/File:Ananta_Samakhom_Throne_Hall_P1120854.JPG",
+  "credit": "deror_avi · CC BY-SA 3.0",
+  "by": "ai",
+  "appeal": 8,
+  "why": "มุมมองพระที่นั่งอนันตสมาคมชัดเจนสวยงาม",
+  "at": "2026-11-07T03:34:27.195Z"
  },
  "wd-Q1968847": {
   "image": null,
@@ -1937,5 +1945,1188 @@
   "image": null,
   "by": "rule",
   "at": "2026-11-07T03:28:50.549Z"
+ },
+ "osm-w42345238": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%81%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%AD%E0%B8%812.jpg/960px-%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%81%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%AD%E0%B8%812.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%81%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%AD%E0%B8%812.jpg",
+  "credit": "Dharmadana · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 6,
+  "why": "ภาพอุโบสถวัดชัดเจนสวยงาม",
+  "at": "2026-11-07T03:34:43.782Z"
+ },
+ "osm-w90578759": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9E%E0%B8%B4%E0%B8%8A%E0%B8%A2%E0%B8%8D%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1%E0%B8%A7%E0%B8%A3%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%84%E0%B8%A5%E0%B8%AD%E0%B8%87%E0%B8%AA%E0%B8%B2%E0%B8%99_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%2850%29.jpg/960px-%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9E%E0%B8%B4%E0%B8%8A%E0%B8%A2%E0%B8%8D%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1%E0%B8%A7%E0%B8%A3%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%84%E0%B8%A5%E0%B8%AD%E0%B8%87%E0%B8%AA%E0%B8%B2%E0%B8%99_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%2850%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9E%E0%B8%B4%E0%B8%8A%E0%B8%A2%E0%B8%8D%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1%E0%B8%A7%E0%B8%A3%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%84%E0%B8%A5%E0%B8%AD%E0%B8%87%E0%B8%AA%E0%B8%B2%E0%B8%99_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_(50).jpg",
+  "credit": "กสิณธร ราชโอรส · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 7,
+  "why": "มุมมองพระปรางค์และองค์พระสวยเด่น",
+  "at": "2026-11-07T03:34:43.782Z"
+ },
+ "osm-w113107217": {
+  "image": null,
+  "by": "ai",
+  "why": "ภาพมุมแคบและวิวริมน้ำธรรมดา",
+  "at": "2026-11-07T03:34:43.782Z"
+ },
+ "osm-w118171998": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/%282022%29_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%A1%E0%B8%AB%E0%B8%A3%E0%B8%A3%E0%B8%93%E0%B8%9E%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1%E0%B8%A7%E0%B8%A3%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%99%E0%B8%84%E0%B8%A3_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_Wat_Mahannapharam%2CBangkok_%282%29.jpg/960px-thumbnail.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:(2022)_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%A1%E0%B8%AB%E0%B8%A3%E0%B8%A3%E0%B8%93%E0%B8%9E%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1%E0%B8%A7%E0%B8%A3%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%99%E0%B8%84%E0%B8%A3_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_Wat_Mahannapharam,Bangkok_(2).jpg",
+  "credit": "กสิณธร ราชโอรส · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 7,
+  "why": "ภาพอุโบสถและเจดีย์องค์เล็กคมชัด",
+  "at": "2026-11-07T03:34:43.782Z"
+ },
+ "osm-w146156749": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Pra_sri_mahatat_temple_1.jpg/960px-Pra_sri_mahatat_temple_1.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Pra_sri_mahatat_temple_1.jpg",
+  "credit": "Athichitra · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 8,
+  "why": "ภาพโบสถ์มุมกว้างสวยงาม บรรยากาศร่มรื่นน่าชม",
+  "at": "2026-11-07T03:34:55.925Z"
+ },
+ "osm-w158185227": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Victory_Monument%2C_Bangkok_%288121170240%29_%282%29.jpg/960px-Victory_Monument%2C_Bangkok_%288121170240%29_%282%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Victory_Monument,_Bangkok_(8121170240)_(2).jpg",
+  "credit": "Holiday Point from Melbourne, Australia · CC BY 2.0",
+  "by": "ai",
+  "appeal": 8,
+  "why": "ภาพอนุสาวรีย์ชัยสมรภูมิคมชัด แสงสวยเห็นองค์ประกอบเด่น",
+  "at": "2026-11-07T03:34:55.926Z"
+ },
+ "osm-w176298724": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Buddhist_pray.jpg/960px-Buddhist_pray.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Buddhist_pray.jpg",
+  "credit": "Photo by User:Tevaprapas, 2006 · Public domain",
+  "by": "ai",
+  "appeal": 7,
+  "why": "ภาพมุมสูงเห็นบริเวณวัดและลานจอดรถกว้างขวาง",
+  "at": "2026-11-07T03:34:55.926Z"
+ },
+ "osm-w178329973": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/010-Democracy_Monument.jpg/960px-010-Democracy_Monument.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:010-Democracy_Monument.jpg",
+  "credit": "Nawit science · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 8,
+  "why": "ภาพอนุสาวรีย์ประชาธิปไตยยามเย็น แสงสวยงามโดดเด่น",
+  "at": "2026-11-07T03:34:55.926Z"
+ },
+ "osm-w178329976": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%8A%E0%B8%99%E0%B8%B0%E0%B8%AA%E0%B8%87%E0%B8%84%E0%B8%A3%E0%B8%B2%E0%B8%A1.jpg/960px-%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%8A%E0%B8%99%E0%B8%B0%E0%B8%AA%E0%B8%87%E0%B8%84%E0%B8%A3%E0%B8%B2%E0%B8%A1.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%8A%E0%B8%99%E0%B8%B0%E0%B8%AA%E0%B8%87%E0%B8%84%E0%B8%A3%E0%B8%B2%E0%B8%A1.jpg",
+  "credit": "CKasa · CC BY-SA 3.0",
+  "by": "ai",
+  "appeal": 8,
+  "why": "ภาพภายในวิหารหลวงพ่อพระพุทธชินสีห์งดงามและสว่างสดใส",
+  "at": "2026-11-07T03:35:10.804Z"
+ },
+ "osm-w194876464": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Old_Don_Muang_Railway_Station_-_in_2013_-_panoramio_%282%29.jpg/960px-Old_Don_Muang_Railway_Station_-_in_2013_-_panoramio_%282%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Old_Don_Muang_Railway_Station_-_in_2013_-_panoramio_(2).jpg",
+  "credit": "katsunori.n · CC BY 3.0",
+  "by": "ai",
+  "appeal": 6,
+  "why": "ภาพมุมสูงแสดงบรรยากาศสถานีรถไฟและชานชาลาชัดเจน",
+  "at": "2026-11-07T03:35:10.804Z"
+ },
+ "osm-w202933329": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/%282022%29_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AA%E0%B8%B2%E0%B8%A1%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%A2%E0%B8%B2_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%99%E0%B8%84%E0%B8%A3_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_Wat_Sam_Phraya%2CBangkok_%283%29.jpg/960px-%282022%29_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AA%E0%B8%B2%E0%B8%A1%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%A2%E0%B8%B2_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%99%E0%B8%84%E0%B8%A3_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_Wat_Sam_Phraya%2CBangkok_%283%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:(2022)_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AA%E0%B8%B2%E0%B8%A1%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%A2%E0%B8%B2_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%99%E0%B8%84%E0%B8%A3_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_Wat_Sam_Phraya,Bangkok_(3).jpg",
+  "credit": "กสิณธร ราชโอรส · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 8,
+  "why": "ภาพพระพุทธไสยาสน์องค์ใหญ่ชัดเจนพร้อมดอกไม้บูชาสวยงาม",
+  "at": "2026-11-07T03:35:10.804Z"
+ },
+ "osm-w202933331": {
+  "image": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Bangkok_wat_tri_thotsathep_001.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Bangkok_wat_tri_thotsathep_001.jpg",
+  "credit": "มัทนา · Public domain",
+  "by": "ai",
+  "appeal": 8,
+  "why": "ภาพสถาปัตยกรรมหลังคาโบสถ์และยอดฉัตรสีทองตัดกับท้องฟ้าสดใส",
+  "at": "2026-11-07T03:35:10.804Z"
+ },
+ "osm-w203053775": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/%282022%29_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%A1%E0%B8%81%E0%B8%B8%E0%B8%8F%E0%B8%81%E0%B8%A9%E0%B8%B1%E0%B8%95%E0%B8%A3%E0%B8%B4%E0%B8%A2%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%A7%E0%B8%A3%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%99%E0%B8%84%E0%B8%A3_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%284%29.jpg/960px-thumbnail.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:(2022)_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%A1%E0%B8%81%E0%B8%B8%E0%B8%8F%E0%B8%81%E0%B8%A9%E0%B8%B1%E0%B8%95%E0%B8%A3%E0%B8%B4%E0%B8%A2%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%A7%E0%B8%A3%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%99%E0%B8%84%E0%B8%A3_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_(4).jpg",
+  "credit": "กสิณธร ราชโอรส · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 8,
+  "why": "ภาพถ่ายมุมกว้างของพระอุโบสถวัดมกุฏกษัตริยารามฯ ท้องฟ้าสวยงามและองค์ประกอบเด่นชัด",
+  "at": "2026-11-07T03:35:23.047Z"
+ },
+ "osm-w203906323": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Jim_Thompson_House_Bangkok%2C_Tahiland_%2815044990916%29.jpg/960px-Jim_Thompson_House_Bangkok%2C_Tahiland_%2815044990916%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Jim_Thompson_House_Bangkok,_Tahiland_(15044990916).jpg",
+  "credit": "Clay Gilliland · CC BY-SA 2.0",
+  "by": "ai",
+  "appeal": 7,
+  "why": "แสดงบรรยากาศร่มรื่นของสถาปัตยกรรมเรือนไทยไม้ทรงคุณค่า",
+  "at": "2026-11-07T03:35:23.047Z"
+ },
+ "osm-w228099647": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/%282022%29_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%93%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%A7%E0%B8%A3%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%99%E0%B8%84%E0%B8%A3_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_Wat_Ratchaburana_Ratchaworawiharn%2CBangkok_%283%29.jpg/960px-thumbnail.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:(2022)_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%93%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%A7%E0%B8%A3%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%99%E0%B8%84%E0%B8%A3_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_Wat_Ratchaburana_Ratchaworawiharn,Bangkok_(3).jpg",
+  "credit": "กสิณธร ราชโอรส · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 8,
+  "why": "ภาพพระอุโบสถวัดราชบุรณะฯ คมชัด แสงสวยงามโดดเด่น",
+  "at": "2026-11-07T03:35:23.047Z"
+ },
+ "osm-w231405199": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/%282023%29_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AB%E0%B8%B1%E0%B8%A7%E0%B8%A5%E0%B8%B3%E0%B9%82%E0%B8%9E%E0%B8%87_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%A3%E0%B8%B1%E0%B8%81_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%282%29.jpg/960px-%282023%29_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AB%E0%B8%B1%E0%B8%A7%E0%B8%A5%E0%B8%B3%E0%B9%82%E0%B8%9E%E0%B8%87_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%A3%E0%B8%B1%E0%B8%81_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%282%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:(2023)_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AB%E0%B8%B1%E0%B8%A7%E0%B8%A5%E0%B8%B3%E0%B9%82%E0%B8%9E%E0%B8%87_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%A3%E0%B8%B1%E0%B8%81_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_(2).jpg",
+  "credit": "กสิณธร ราชโอรส · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 8,
+  "why": "ภาพภายในพระอุโบสถวัดหัวลำโพงแสดงความงดงามของจิตรกรรมและองค์พระประธานได้ดี",
+  "at": "2026-11-07T03:35:23.047Z"
+ },
+ "osm-w231405200": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%81%E0%B8%81%E0%B9%89%E0%B8%A7%E0%B9%81%E0%B8%88%E0%B9%88%E0%B8%A1%E0%B8%9F%E0%B9%89%E0%B8%B2_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%A3%E0%B8%B1%E0%B8%81_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%2814%29.jpg/960px-%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%81%E0%B8%81%E0%B9%89%E0%B8%A7%E0%B9%81%E0%B8%88%E0%B9%88%E0%B8%A1%E0%B8%9F%E0%B9%89%E0%B8%B2_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%A3%E0%B8%B1%E0%B8%81_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%2814%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%81%E0%B8%81%E0%B9%89%E0%B8%A7%E0%B9%81%E0%B8%88%E0%B9%88%E0%B8%A1%E0%B8%9F%E0%B9%89%E0%B8%B2_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%A3%E0%B8%B1%E0%B8%81_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_(14).jpg",
+  "credit": "กสิณธร ราชโอรส · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 5,
+  "why": "ภาพถ่ายภายนอกอุโบสถวัดชัดเจน",
+  "at": "2026-11-07T03:35:43.881Z"
+ },
+ "osm-w231405201": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Bangkok_-_Bang_Rak_IMG_7372_Wat_Maha_Pruettharam_Worawihan.jpg/960px-Bangkok_-_Bang_Rak_IMG_7372_Wat_Maha_Pruettharam_Worawihan.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Bangkok_-_Bang_Rak_IMG_7372_Wat_Maha_Pruettharam_Worawihan.jpg",
+  "credit": "Bjoertvedt · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 6,
+  "why": "ภาพพระเจดีย์และสถาปัตยกรรมวัดสวยงาม",
+  "at": "2026-11-07T03:35:43.881Z"
+ },
+ "osm-w231405202": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/%282023%29_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%A1%E0%B9%88%E0%B8%A7%E0%B8%87%E0%B9%81%E0%B8%84_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%A3%E0%B8%B1%E0%B8%81_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%285%29.jpg/960px-%282023%29_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%A1%E0%B9%88%E0%B8%A7%E0%B8%87%E0%B9%81%E0%B8%84_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%A3%E0%B8%B1%E0%B8%81_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%285%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:(2023)_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%A1%E0%B9%88%E0%B8%A7%E0%B8%87%E0%B9%81%E0%B8%84_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%A3%E0%B8%B1%E0%B8%81_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_(5).jpg",
+  "credit": "กสิณธร ราชโอรส · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 6,
+  "why": "ภาพพระประธานภายในอุโบสถสง่างาม",
+  "at": "2026-11-07T03:35:43.881Z"
+ },
+ "osm-w241879483": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/2016_Bangkok%2C_Dystrykt_Samphanthawong%2C_Wat_Traimit_Witthayaram_%2804%29.jpg/960px-2016_Bangkok%2C_Dystrykt_Samphanthawong%2C_Wat_Traimit_Witthayaram_%2804%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:2016_Bangkok,_Dystrykt_Samphanthawong,_Wat_Traimit_Witthayaram_(04).jpg",
+  "credit": "Marcin Konsek · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 8,
+  "why": "ภาพโบสถ์สถาปัตยกรรมไทยสวยงามคมชัด ท้องฟ้าสดใส",
+  "at": "2026-11-07T03:35:43.881Z"
+ },
+ "osm-w241879485": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/%282022%29_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%8A%E0%B8%B1%E0%B8%A2%E0%B8%8A%E0%B8%99%E0%B8%B0%E0%B8%AA%E0%B8%87%E0%B8%84%E0%B8%A3%E0%B8%B2%E0%B8%A1_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%AA%E0%B8%B1%E0%B8%A1%E0%B8%9E%E0%B8%B1%E0%B8%99%E0%B8%98%E0%B8%A7%E0%B8%87%E0%B8%A8%E0%B9%8C_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%282%29.jpg/960px-%282022%29_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%8A%E0%B8%B1%E0%B8%A2%E0%B8%8A%E0%B8%99%E0%B8%B0%E0%B8%AA%E0%B8%87%E0%B8%84%E0%B8%A3%E0%B8%B2%E0%B8%A1_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%AA%E0%B8%B1%E0%B8%A1%E0%B8%9E%E0%B8%B1%E0%B8%99%E0%B8%98%E0%B8%A7%E0%B8%87%E0%B8%A8%E0%B9%8C_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%282%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:(2022)_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%8A%E0%B8%B1%E0%B8%A2%E0%B8%8A%E0%B8%99%E0%B8%B0%E0%B8%AA%E0%B8%87%E0%B8%84%E0%B8%A3%E0%B8%B2%E0%B8%A1_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%AA%E0%B8%B1%E0%B8%A1%E0%B8%9E%E0%B8%B1%E0%B8%99%E0%B8%98%E0%B8%A7%E0%B8%87%E0%B8%A8%E0%B9%8C_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_(2).jpg",
+  "credit": "กสิณธร ราชโอรส · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 7,
+  "why": "เจดีย์ทรงระฆังสีทองตัดกับท้องฟ้าสดใส ดูโดดเด่น",
+  "at": "2026-11-07T03:36:01.015Z"
+ },
+ "osm-w242673271": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Chalong%2C_Mueang_Phuket_District%2C_Phuket%2C_Thailand_-_panoramio_%2866%29.jpg/960px-Chalong%2C_Mueang_Phuket_District%2C_Phuket%2C_Thailand_-_panoramio_%2866%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Chalong,_Mueang_Phuket_District,_Phuket,_Thailand_-_panoramio_(66).jpg",
+  "credit": "Максим Улитин · CC BY 3.0",
+  "by": "ai",
+  "appeal": 8,
+  "why": "ภาพสถาปัตยกรรมวัดโบราณภายใต้ท้องฟ้าสีครามสวยงามชัดเจน",
+  "at": "2026-11-07T03:36:01.015Z"
+ },
+ "osm-w243729155": {
+  "image": null,
+  "by": "ai",
+  "why": "ภาพไม่ชัดเจนและติดสิ่งก่อสร้างไม่น่าดึงดูด",
+  "at": "2026-11-07T03:36:01.015Z"
+ },
+ "osm-w245925196": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/%282023%29_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%A0%E0%B8%84%E0%B8%B4%E0%B8%99%E0%B8%B5%E0%B8%99%E0%B8%B2%E0%B8%96%E0%B8%A7%E0%B8%A3%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%9E%E0%B8%A5%E0%B8%B1%E0%B8%94_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%2816%29.jpg/960px-%282023%29_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%A0%E0%B8%84%E0%B8%B4%E0%B8%99%E0%B8%B5%E0%B8%99%E0%B8%B2%E0%B8%96%E0%B8%A7%E0%B8%A3%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%9E%E0%B8%A5%E0%B8%B1%E0%B8%94_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%2816%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:(2023)_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%A0%E0%B8%84%E0%B8%B4%E0%B8%99%E0%B8%B5%E0%B8%99%E0%B8%B2%E0%B8%96%E0%B8%A7%E0%B8%A3%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%9E%E0%B8%A5%E0%B8%B1%E0%B8%94_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_(16).jpg",
+  "credit": "กสิณธร ราชโอรส · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 8,
+  "why": "ภายในพระอุโบสถกว้างขวาง พระประธานงดงามโดดเด่น",
+  "at": "2026-11-07T03:36:01.015Z"
+ },
+ "osm-w256159188": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9E%E0%B8%B4%E0%B8%81%E0%B8%B8%E0%B8%A5_%28%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3%29_01.jpg/960px-%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9E%E0%B8%B4%E0%B8%81%E0%B8%B8%E0%B8%A5_%28%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3%29_01.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9E%E0%B8%B4%E0%B8%81%E0%B8%B8%E0%B8%A5_(%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3)_01.jpg",
+  "credit": "Dharmadana · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 7,
+  "why": "ภาพถ่ายโบสถ์ชัดเจน สวยงาม ท้องฟ้าสดใส",
+  "at": "2026-11-07T03:36:15.856Z"
+ },
+ "osm-w256159631": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Khlong_Bang_Chueak_Nang.jpg/960px-Khlong_Bang_Chueak_Nang.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Khlong_Bang_Chueak_Nang.jpg",
+  "credit": "Phoebus 28 · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 6,
+  "why": "บรรยากาศริมคลองชุมชนโบราณน่าสนใจ",
+  "at": "2026-11-07T03:36:15.856Z"
+ },
+ "osm-w257267416": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Wat_Chai_Mongkol_IMG_7308.jpg/960px-Wat_Chai_Mongkol_IMG_7308.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Wat_Chai_Mongkol_IMG_7308.jpg",
+  "credit": "Bjoertvedt · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 8,
+  "why": "ภาพพระอุโบสถกับท้องฟ้าสีฟ้าสวยเด่นชัด",
+  "at": "2026-11-07T03:36:15.856Z"
+ },
+ "osm-w260608411": {
+  "image": null,
+  "by": "ai",
+  "why": "ภาพมุมกว้างติดลานจอดรถและรถยนต์ไม่น่าสนใจ",
+  "at": "2026-11-07T03:36:15.856Z"
+ },
+ "osm-w283081376": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Wat_Sai_Thai%2C_Krabi_Province%2C_Thailand_SF0004.jpg/960px-Wat_Sai_Thai%2C_Krabi_Province%2C_Thailand_SF0004.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Wat_Sai_Thai,_Krabi_Province,_Thailand_SF0004.jpg",
+  "credit": "Stefan Fussan · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 7,
+  "why": "เห็นพระนอนองค์ใหญ่ชัดเจน สวยงาม",
+  "at": "2026-11-07T03:36:37.487Z"
+ },
+ "osm-w296528235": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%81%E0%B8%A3%E0%B8%B0%E0%B8%88%E0%B8%B1%E0%B8%9A%E0%B8%9E%E0%B8%B4%E0%B8%99%E0%B8%B4%E0%B8%88_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%98%E0%B8%99%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3.jpg/960px-%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%81%E0%B8%A3%E0%B8%B0%E0%B8%88%E0%B8%B1%E0%B8%9A%E0%B8%9E%E0%B8%B4%E0%B8%99%E0%B8%B4%E0%B8%88_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%98%E0%B8%99%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%81%E0%B8%A3%E0%B8%B0%E0%B8%88%E0%B8%B1%E0%B8%9A%E0%B8%9E%E0%B8%B4%E0%B8%99%E0%B8%B4%E0%B8%88_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%98%E0%B8%99%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3.jpg",
+  "credit": "กสิณธร ราชโอรส · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 7,
+  "why": "ภาพอุโบสถวัดมุมกว้างสวยงาม คมชัด",
+  "at": "2026-11-07T03:36:37.487Z"
+ },
+ "osm-w296528240": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/%282023_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%82%E0%B8%9E%E0%B8%98%E0%B8%B4%E0%B8%99%E0%B8%B4%E0%B8%A1%E0%B8%B4%E0%B8%95%E0%B8%A3%E0%B8%AA%E0%B8%96%E0%B8%B4%E0%B8%95%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%AA%E0%B8%B5%E0%B8%A1%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%98%E0%B8%99%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%285%29.jpg/960px-thumbnail.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:(2023_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%82%E0%B8%9E%E0%B8%98%E0%B8%B4%E0%B8%99%E0%B8%B4%E0%B8%A1%E0%B8%B4%E0%B8%95%E0%B8%A3%E0%B8%AA%E0%B8%96%E0%B8%B4%E0%B8%95%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%AA%E0%B8%B5%E0%B8%A1%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%98%E0%B8%99%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_(5).jpg",
+  "credit": "กสิณธร ราชโอรส · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 6,
+  "why": "อาคารวัดโบราณสถาปัตยกรรมสวยงาม",
+  "at": "2026-11-07T03:36:37.487Z"
+ },
+ "osm-w301157260": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/Wat_Mangkon_Kamalawat.jpg/960px-Wat_Mangkon_Kamalawat.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Wat_Mangkon_Kamalawat.jpg",
+  "credit": "Christophe95 · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 8,
+  "why": "ภาพศาลเจ้าจีนมุมกว้างแสดงบรรยากาศเด่นชัด",
+  "at": "2026-11-07T03:36:37.487Z"
+ },
+ "osm-w304092138": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Khao_Mo_at_Wat_Prayurawongsawat_20240922_%28II%29.jpg/960px-Khao_Mo_at_Wat_Prayurawongsawat_20240922_%28II%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Khao_Mo_at_Wat_Prayurawongsawat_20240922_(II).jpg",
+  "credit": "This Photo was taken by Supanut Arunoprayote. Feel free to u · CC BY 4.0",
+  "by": "ai",
+  "appeal": 8,
+  "why": "ภาพสวนและภูเขาจำลองมีความร่มรื่นสวยงามโดดเด่น",
+  "at": "2026-11-07T03:36:58.469Z"
+ },
+ "osm-w305102104": {
+  "image": null,
+  "by": "ai",
+  "why": "รูปภาพส่วนใหญ่เป็นภาพถนนและตึกทั่วไป ไม่ดึงดูดใจ",
+  "at": "2026-11-07T03:36:58.469Z"
+ },
+ "osm-w313679048": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Wat_Nong_Yai_2.JPG/960px-Wat_Nong_Yai_2.JPG",
+  "page": "https://commons.wikimedia.org/wiki/File:Wat_Nong_Yai_2.JPG",
+  "credit": "Ruslik0 · CC BY-SA 3.0",
+  "by": "ai",
+  "appeal": 7,
+  "why": "ภาพอุโบสถวัดมีความงดงามและสว่างชัดเจน",
+  "at": "2026-11-07T03:36:58.469Z"
+ },
+ "osm-w320617683": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%82%E0%B8%9E%E0%B8%98%E0%B8%B4%E0%B9%8C%E0%B9%81%E0%B8%A1%E0%B8%99%E0%B8%84%E0%B8%B8%E0%B8%93%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1_%E6%99%AE%E9%96%80%E5%A0%B1%E6%81%A9%E5%AF%BA_Wat_Bhoman_Khunaram_in_September_2021_main_Buddha.jpg/960px-%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%82%E0%B8%9E%E0%B8%98%E0%B8%B4%E0%B9%8C%E0%B9%81%E0%B8%A1%E0%B8%99%E0%B8%84%E0%B8%B8%E0%B8%93%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1_%E6%99%AE%E9%96%80%E5%A0%B1%E6%81%A9%E5%AF%BA_Wat_Bhoman_Khunaram_in_September_2021_main_Buddha.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%82%E0%B8%9E%E0%B8%98%E0%B8%B4%E0%B9%8C%E0%B9%81%E0%B8%A1%E0%B8%99%E0%B8%84%E0%B8%B8%E0%B8%93%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1_%E6%99%AE%E9%96%80%E5%A0%B1%E6%81%A9%E5%AF%BA_Wat_Bhoman_Khunaram_in_September_2021_main_Buddha.jpg",
+  "credit": "Chainwit. · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 8,
+  "why": "ภาพสถาปัตยกรรมวัดจีนมีความโดดเด่นและมุมมองกว้างสวยงาม",
+  "at": "2026-11-07T03:36:58.469Z"
+ },
+ "osm-w321528547": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Wat_Lat_Krabang%2C_Bangkok6.jpg/960px-Wat_Lat_Krabang%2C_Bangkok6.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Wat_Lat_Krabang,_Bangkok6.jpg",
+  "credit": "Wolfgang Holzem / https://ehalal.io/ · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 5,
+  "why": "มุมมองริมน้ำของวัด",
+  "at": "2026-11-07T03:37:15.283Z"
+ },
+ "osm-w322604729": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Wat_Suan_Dok_chedi_2.jpg/960px-Wat_Suan_Dok_chedi_2.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Wat_Suan_Dok_chedi_2.jpg",
+  "credit": "Christophe95 · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 7,
+  "why": "เจดีย์ทองและสีขาวเด่นชัดสวยงาม",
+  "at": "2026-11-07T03:37:15.283Z"
+ },
+ "osm-w327812601": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Wat_Pariwat_Ratchasongkram_ubosot_Bangkok_Thailand_by_Don_Ramey_Logan.jpg/960px-Wat_Pariwat_Ratchasongkram_ubosot_Bangkok_Thailand_by_Don_Ramey_Logan.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Wat_Pariwat_Ratchasongkram_ubosot_Bangkok_Thailand_by_Don_Ramey_Logan.jpg",
+  "credit": "Don Ramey Logan · CC BY 4.0",
+  "by": "ai",
+  "appeal": 8,
+  "why": "โบสถ์กระเบื้องเซรามิกสวยงามแปลกตา",
+  "at": "2026-11-07T03:37:15.283Z"
+ },
+ "osm-w332853807": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Wat_Yannawa_-_001_Concrete_Chinese_Junk_%2812130458466%29.jpg/960px-Wat_Yannawa_-_001_Concrete_Chinese_Junk_%2812130458466%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Wat_Yannawa_-_001_Concrete_Chinese_Junk_(12130458466).jpg",
+  "credit": "Photo Dharma from Penang, Malaysia · CC BY 2.0",
+  "by": "ai",
+  "appeal": 8,
+  "why": "ภาพมุมสูงของวัดรูปเรือสำเภาชัดเจนสวยงาม",
+  "at": "2026-11-07T03:37:15.283Z"
+ },
+ "osm-w333177939": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%94%E0%B8%B4%E0%B8%AA%E0%B8%AB%E0%B8%87%E0%B8%A9%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1_%E0%B8%A3%E0%B8%B4%E0%B8%A1%E0%B8%84%E0%B8%A5%E0%B8%AD%E0%B8%87%E0%B9%81%E0%B8%AA%E0%B8%99%E0%B9%81%E0%B8%AA%E0%B8%9A.jpg/960px-%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%94%E0%B8%B4%E0%B8%AA%E0%B8%AB%E0%B8%87%E0%B8%A9%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1_%E0%B8%A3%E0%B8%B4%E0%B8%A1%E0%B8%84%E0%B8%A5%E0%B8%AD%E0%B8%87%E0%B9%81%E0%B8%AA%E0%B8%99%E0%B9%81%E0%B8%AA%E0%B8%9A.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%94%E0%B8%B4%E0%B8%AA%E0%B8%AB%E0%B8%87%E0%B8%A9%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1_%E0%B8%A3%E0%B8%B4%E0%B8%A1%E0%B8%84%E0%B8%A5%E0%B8%AD%E0%B8%87%E0%B9%81%E0%B8%AA%E0%B8%99%E0%B9%81%E0%B8%AA%E0%B8%9A.jpg",
+  "credit": "Dharmadana · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 7,
+  "why": "เห็นตัวโบสถ์ริมน้ำชัดเจน มุมสวย",
+  "at": "2026-11-07T03:37:50.035Z"
+ },
+ "osm-w333223513": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/%282024%29_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%80%E0%B8%97%E0%B8%A7%E0%B8%B5%E0%B8%A7%E0%B8%A3%E0%B8%8D%E0%B8%B2%E0%B8%95%E0%B8%B4_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9B%E0%B9%89%E0%B8%AD%E0%B8%A1%E0%B8%9B%E0%B8%A3%E0%B8%B2%E0%B8%9A%E0%B8%A8%E0%B8%B1%E0%B8%95%E0%B8%A3%E0%B8%B9%E0%B8%9E%E0%B9%88%E0%B8%B2%E0%B8%A2_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%283%29.jpg/960px-%282024%29_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%80%E0%B8%97%E0%B8%A7%E0%B8%B5%E0%B8%A7%E0%B8%A3%E0%B8%8D%E0%B8%B2%E0%B8%95%E0%B8%B4_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9B%E0%B9%89%E0%B8%AD%E0%B8%A1%E0%B8%9B%E0%B8%A3%E0%B8%B2%E0%B8%9A%E0%B8%A8%E0%B8%B1%E0%B8%95%E0%B8%A3%E0%B8%B9%E0%B8%9E%E0%B9%88%E0%B8%B2%E0%B8%A2_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%283%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:(2024)_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%80%E0%B8%97%E0%B8%A7%E0%B8%B5%E0%B8%A7%E0%B8%A3%E0%B8%8D%E0%B8%B2%E0%B8%95%E0%B8%B4_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9B%E0%B9%89%E0%B8%AD%E0%B8%A1%E0%B8%9B%E0%B8%A3%E0%B8%B2%E0%B8%9A%E0%B8%A8%E0%B8%B1%E0%B8%95%E0%B8%A3%E0%B8%B9%E0%B8%9E%E0%B9%88%E0%B8%B2%E0%B8%A2_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_(3).jpg",
+  "credit": "กสิณธร ราชโอรส · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 7,
+  "why": "ถ่ายสถาปัตยกรรมอุโบสถได้คมชัด ท้องฟ้าสวย",
+  "at": "2026-11-07T03:37:50.035Z"
+ },
+ "osm-w333223516": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/%282024%29_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%94%E0%B8%B4%E0%B8%AA%E0%B8%B2%E0%B8%99%E0%B8%B8%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9B%E0%B9%89%E0%B8%AD%E0%B8%A1%E0%B8%9B%E0%B8%A3%E0%B8%B2%E0%B8%9A%E0%B8%A8%E0%B8%B1%E0%B8%95%E0%B8%A3%E0%B8%B9%E0%B8%9E%E0%B9%88%E0%B8%B2%E0%B8%A2_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%285%29.jpg/960px-%282024%29_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%94%E0%B8%B4%E0%B8%AA%E0%B8%B2%E0%B8%99%E0%B8%B8%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9B%E0%B9%89%E0%B8%AD%E0%B8%A1%E0%B8%9B%E0%B8%A3%E0%B8%B2%E0%B8%9A%E0%B8%A8%E0%B8%B1%E0%B8%95%E0%B8%A3%E0%B8%B9%E0%B8%9E%E0%B9%88%E0%B8%B2%E0%B8%A2_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%285%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:(2024)_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%94%E0%B8%B4%E0%B8%AA%E0%B8%B2%E0%B8%99%E0%B8%B8%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9B%E0%B9%89%E0%B8%AD%E0%B8%A1%E0%B8%9B%E0%B8%A3%E0%B8%B2%E0%B8%9A%E0%B8%A8%E0%B8%B1%E0%B8%95%E0%B8%A3%E0%B8%B9%E0%B8%9E%E0%B9%88%E0%B8%B2%E0%B8%A2_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_(5).jpg",
+  "credit": "กสิณธร ราชโอรส · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 7,
+  "why": "ภาพโบสถ์และเจดีย์องค์ขาวสวยงาม ชัดเจน",
+  "at": "2026-11-07T03:37:50.035Z"
+ },
+ "osm-w333223518": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/%282022%29_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9B%E0%B8%A3%E0%B8%B4%E0%B8%99%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%A7%E0%B8%A3%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%99%E0%B8%84%E0%B8%A3_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_Wat_Parinayok_Worawiharn%2CBangkok_%281%29.jpg/960px-thumbnail.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:(2022)_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9B%E0%B8%A3%E0%B8%B4%E0%B8%99%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%A7%E0%B8%A3%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%99%E0%B8%84%E0%B8%A3_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_Wat_Parinayok_Worawiharn,Bangkok_(1).jpg",
+  "credit": "กสิณธร ราชโอรส · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 8,
+  "why": "องค์พระประธานงดงาม ตกแต่งภายในเรียบร้อย",
+  "at": "2026-11-07T03:37:50.035Z"
+ },
+ "osm-w333223519": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/%282022%29_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%82%E0%B8%AA%E0%B8%A1%E0%B8%99%E0%B8%B1%E0%B8%AA%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%A7%E0%B8%A3%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9B%E0%B9%89%E0%B8%AD%E0%B8%A1%E0%B8%9B%E0%B8%A3%E0%B8%B2%E0%B8%9A%E0%B8%A8%E0%B8%B1%E0%B8%95%E0%B8%A3%E0%B8%B9%E0%B8%9E%E0%B9%88%E0%B8%B2%E0%B8%A2_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%2815%29.jpg/960px-thumbnail.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:(2022)_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%82%E0%B8%AA%E0%B8%A1%E0%B8%99%E0%B8%B1%E0%B8%AA%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%A7%E0%B8%A3%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9B%E0%B9%89%E0%B8%AD%E0%B8%A1%E0%B8%9B%E0%B8%A3%E0%B8%B2%E0%B8%9A%E0%B8%A8%E0%B8%B1%E0%B8%95%E0%B8%A3%E0%B8%B9%E0%B8%9E%E0%B9%88%E0%B8%B2%E0%B8%A2_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_(15).jpg",
+  "credit": "กสิณธร ราชโอรส · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 8,
+  "why": "ภาพมุมกว้างเห็นพระอุโบสถและพระเจดีย์ชัดเจน ท้องฟ้าสดใส",
+  "at": "2026-11-07T03:40:34.432Z"
+ },
+ "osm-w333223617": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/%E0%B8%84%E0%B8%A5%E0%B8%AD%E0%B8%87%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%B2%E0%B8%84_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%282%29.jpg/960px-%E0%B8%84%E0%B8%A5%E0%B8%AD%E0%B8%87%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%B2%E0%B8%84_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%282%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:%E0%B8%84%E0%B8%A5%E0%B8%AD%E0%B8%87%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%B2%E0%B8%84_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_(2).jpg",
+  "credit": "กสิณธร ราชโอรส · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 7,
+  "why": "ภาพพระพุทธรูปองค์ใหญ่และสถาปัตยกรรมสวยงาม โดดเด่น",
+  "at": "2026-11-07T03:40:34.432Z"
+ },
+ "osm-w333227699": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/%282022%29_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%8A%E0%B8%B4%E0%B9%82%E0%B8%99%E0%B8%A3%E0%B8%AA%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1%E0%B8%A7%E0%B8%A3%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%81%E0%B8%AD%E0%B8%81%E0%B8%99%E0%B9%89%E0%B8%AD%E0%B8%A2_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%286%29.jpg/960px-%282022%29_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%8A%E0%B8%B4%E0%B9%82%E0%B8%99%E0%B8%A3%E0%B8%AA%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1%E0%B8%A7%E0%B8%A3%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%81%E0%B8%AD%E0%B8%81%E0%B8%99%E0%B9%89%E0%B8%AD%E0%B8%A2_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%286%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:(2022)_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%8A%E0%B8%B4%E0%B9%82%E0%B8%99%E0%B8%A3%E0%B8%AA%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1%E0%B8%A7%E0%B8%A3%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%81%E0%B8%AD%E0%B8%81%E0%B8%99%E0%B9%89%E0%B8%AD%E0%B8%A2_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_(6).jpg",
+  "credit": "กสิณธร ราชโอรส · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 8,
+  "why": "ภาพพระอุโบสถสีขาวสะอาดตา ตัดกับหลังคาสีแดง ท้องฟ้าโปร่ง",
+  "at": "2026-11-07T03:40:34.432Z"
+ },
+ "osm-w333227704": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%A3%E0%B8%B0%E0%B8%86%E0%B8%B1%E0%B8%87%E0%B9%82%E0%B8%86%E0%B8%AA%E0%B8%B4%E0%B8%95%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1%E0%B8%A7%E0%B8%A3%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%81%E0%B8%AD%E0%B8%81%E0%B8%99%E0%B9%89%E0%B8%AD%E0%B8%A2_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%2823%29.jpg/960px-thumbnail.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%A3%E0%B8%B0%E0%B8%86%E0%B8%B1%E0%B8%87%E0%B9%82%E0%B8%86%E0%B8%AA%E0%B8%B4%E0%B8%95%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1%E0%B8%A7%E0%B8%A3%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%81%E0%B8%AD%E0%B8%81%E0%B8%99%E0%B9%89%E0%B8%AD%E0%B8%A2_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_(23).jpg",
+  "credit": "กสิณธร ราชโอรส · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 8,
+  "why": "ภาพถ่ายวัดริมแม่น้ำเจ้าพระยา เห็นทัศนียภาพกว้างและเป็นเอกลักษณ์",
+  "at": "2026-11-07T03:40:34.432Z"
+ },
+ "osm-w333227705": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/%282023%29_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AA%E0%B8%B8%E0%B8%A7%E0%B8%A3%E0%B8%A3%E0%B8%93%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%A7%E0%B8%A3%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%81%E0%B8%AD%E0%B8%81%E0%B8%99%E0%B9%89%E0%B8%AD%E0%B8%A2_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%281%29.jpg/960px-thumbnail.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:(2023)_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AA%E0%B8%B8%E0%B8%A7%E0%B8%A3%E0%B8%A3%E0%B8%93%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%A7%E0%B8%A3%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%81%E0%B8%AD%E0%B8%81%E0%B8%99%E0%B9%89%E0%B8%AD%E0%B8%A2_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_(1).jpg",
+  "credit": "กสิณธร ราชโอรส · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 8,
+  "why": "ภาพอุโบสถชัดเจน ท้องฟ้าสวยงาม",
+  "at": "2026-11-07T03:41:03.967Z"
+ },
+ "osm-w333233933": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/%282023%29_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%AA%E0%B8%B2%E0%B8%97%E0%B8%9A%E0%B8%B8%E0%B8%8D%E0%B8%8D%E0%B8%B2%E0%B8%A7%E0%B8%B2%E0%B8%AA_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%94%E0%B8%B8%E0%B8%AA%E0%B8%B4%E0%B8%95_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%284%29.jpg/960px-%282023%29_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%AA%E0%B8%B2%E0%B8%97%E0%B8%9A%E0%B8%B8%E0%B8%8D%E0%B8%8D%E0%B8%B2%E0%B8%A7%E0%B8%B2%E0%B8%AA_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%94%E0%B8%B8%E0%B8%AA%E0%B8%B4%E0%B8%95_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%284%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:(2023)_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%AA%E0%B8%B2%E0%B8%97%E0%B8%9A%E0%B8%B8%E0%B8%8D%E0%B8%8D%E0%B8%B2%E0%B8%A7%E0%B8%B2%E0%B8%AA_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%94%E0%B8%B8%E0%B8%AA%E0%B8%B4%E0%B8%95_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_(4).jpg",
+  "credit": "กสิณธร ราชโอรส · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 7,
+  "why": "มุมมองวัดชัดเจน แสงดี",
+  "at": "2026-11-07T03:41:03.967Z"
+ },
+ "osm-w333233934": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/%282024%29_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%88%E0%B8%95%E0%B8%B8%E0%B8%A3%E0%B8%A1%E0%B8%B4%E0%B8%95%E0%B8%A3%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%94%E0%B8%B4%E0%B8%A9%E0%B8%90%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%9E%E0%B8%A5%E0%B8%B1%E0%B8%94_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%282%29.jpg/960px-%282024%29_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%88%E0%B8%95%E0%B8%B8%E0%B8%A3%E0%B8%A1%E0%B8%B4%E0%B8%95%E0%B8%A3%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%94%E0%B8%B4%E0%B8%A9%E0%B8%90%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%9E%E0%B8%A5%E0%B8%B1%E0%B8%94_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%282%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:(2024)_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%88%E0%B8%95%E0%B8%B8%E0%B8%A3%E0%B8%A1%E0%B8%B4%E0%B8%95%E0%B8%A3%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%94%E0%B8%B4%E0%B8%A9%E0%B8%90%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%9E%E0%B8%A5%E0%B8%B1%E0%B8%94_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_(2).jpg",
+  "credit": "กสิณธร ราชโอรส · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 6,
+  "why": "บรรยากาศรอบวัดโบราณ",
+  "at": "2026-11-07T03:41:03.967Z"
+ },
+ "osm-w333233935": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/%282024%29_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%A2%E0%B8%B2%E0%B8%A8%E0%B8%B4%E0%B8%A3%E0%B8%B4%E0%B9%84%E0%B8%AD%E0%B8%A2%E0%B8%AA%E0%B8%A7%E0%B8%A3%E0%B8%A3%E0%B8%84%E0%B9%8C_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%9E%E0%B8%A5%E0%B8%B1%E0%B8%94_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%289%29.jpg/960px-%282024%29_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%A2%E0%B8%B2%E0%B8%A8%E0%B8%B4%E0%B8%A3%E0%B8%B4%E0%B9%84%E0%B8%AD%E0%B8%A2%E0%B8%AA%E0%B8%A7%E0%B8%A3%E0%B8%A3%E0%B8%84%E0%B9%8C_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%9E%E0%B8%A5%E0%B8%B1%E0%B8%94_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%289%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:(2024)_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%A2%E0%B8%B2%E0%B8%A8%E0%B8%B4%E0%B8%A3%E0%B8%B4%E0%B9%84%E0%B8%AD%E0%B8%A2%E0%B8%AA%E0%B8%A7%E0%B8%A3%E0%B8%A3%E0%B8%84%E0%B9%8C_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%9E%E0%B8%A5%E0%B8%B1%E0%B8%94_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_(9).jpg",
+  "credit": "กสิณธร ราชโอรส · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 8,
+  "why": "มุมมองอุโบสถสวยงาม ชัดเจน",
+  "at": "2026-11-07T03:41:03.967Z"
+ },
+ "osm-w337817494": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/%282024%29_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AA%E0%B8%B8%E0%B8%97%E0%B8%98%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%84%E0%B8%A5%E0%B8%AD%E0%B8%87%E0%B8%AA%E0%B8%B2%E0%B8%99_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%2814%29.jpg/960px-%282024%29_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AA%E0%B8%B8%E0%B8%97%E0%B8%98%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%84%E0%B8%A5%E0%B8%AD%E0%B8%87%E0%B8%AA%E0%B8%B2%E0%B8%99_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%2814%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:(2024)_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AA%E0%B8%B8%E0%B8%97%E0%B8%98%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%84%E0%B8%A5%E0%B8%AD%E0%B8%87%E0%B8%AA%E0%B8%B2%E0%B8%99_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_(14).jpg",
+  "credit": "กสิณธร ราชโอรส · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 7,
+  "why": "ภาพโบสถ์ประดับไฟยามค่ำคืนสวยงามโดดเด่น",
+  "at": "2026-11-07T03:41:32.564Z"
+ },
+ "osm-w337996235": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%95%E0%B8%B4%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1_1.jpg/960px-%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%95%E0%B8%B4%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1_1.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%95%E0%B8%B4%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1_1.jpg",
+  "credit": "Dharmadana · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 6,
+  "why": "ภาพมุมกว้างภายนอกพระอุโบสถดูสะอาดตา",
+  "at": "2026-11-07T03:41:32.564Z"
+ },
+ "osm-w342343926": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Wat_Intharawihan_1.jpg/960px-Wat_Intharawihan_1.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Wat_Intharawihan_1.jpg",
+  "credit": "Christophe95 · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 6,
+  "why": "ภาพภายในพระอุโบสถเห็นพระประธานชัดเจน",
+  "at": "2026-11-07T03:41:32.564Z"
+ },
+ "osm-w342343927": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/%282022%29_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%99%E0%B8%A3%E0%B8%99%E0%B8%B2%E0%B8%96%E0%B8%AA%E0%B8%B8%E0%B8%99%E0%B8%97%E0%B8%A3%E0%B8%B4%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%99%E0%B8%84%E0%B8%A3_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%285%29.jpg/960px-%282022%29_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%99%E0%B8%A3%E0%B8%99%E0%B8%B2%E0%B8%96%E0%B8%AA%E0%B8%B8%E0%B8%99%E0%B8%97%E0%B8%A3%E0%B8%B4%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%99%E0%B8%84%E0%B8%A3_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%285%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:(2022)_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%99%E0%B8%A3%E0%B8%99%E0%B8%B2%E0%B8%96%E0%B8%AA%E0%B8%B8%E0%B8%99%E0%B8%97%E0%B8%A3%E0%B8%B4%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%99%E0%B8%84%E0%B8%A3_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_(5).jpg",
+  "credit": "กสิณธร ราชโอรส · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 6,
+  "why": "ภาพภายนอกพระอุโบสถสถาปัตยกรรมไทยสวยงาม",
+  "at": "2026-11-07T03:41:32.564Z"
+ },
+ "osm-w342346818": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Wat_Mai_Phiren_gate.jpg/960px-Wat_Mai_Phiren_gate.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Wat_Mai_Phiren_gate.jpg",
+  "credit": "Ahoerstemeier · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 7,
+  "why": "ภาพสถาปัตยกรรมภายนอกโบสถ์วัดสวยงามเด่นชัด",
+  "at": "2026-11-07T03:42:12.487Z"
+ },
+ "osm-w342346819": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Wat_Nak_Klang_Ahoerstemeier_7.jpg/960px-Wat_Nak_Klang_Ahoerstemeier_7.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Wat_Nak_Klang_Ahoerstemeier_7.jpg",
+  "credit": "Ahoerstemeier · CC BY 4.0",
+  "by": "ai",
+  "appeal": 6,
+  "why": "ภาพพระพุทธรูปองค์ใหญ่ภายในวัดดูสง่างาม",
+  "at": "2026-11-07T03:42:12.487Z"
+ },
+ "osm-w342346820": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Wat_Khrueawan_Ahoerstemeier_4.jpg/960px-Wat_Khrueawan_Ahoerstemeier_4.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Wat_Khrueawan_Ahoerstemeier_4.jpg",
+  "credit": "Ahoerstemeier · CC BY 4.0",
+  "by": "ai",
+  "appeal": 6,
+  "why": "ภาพอุโบสถวัดมุมกว้างพร้อมบรรยากาศร่มรื่น",
+  "at": "2026-11-07T03:42:12.487Z"
+ },
+ "osm-w342355805": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Wat_Kanlayanamit_in_Bangkok_%281%29.jpg/960px-Wat_Kanlayanamit_in_Bangkok_%281%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Wat_Kanlayanamit_in_Bangkok_(1).jpg",
+  "credit": "CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 8,
+  "why": "ภาพวิววัดริมแม่น้ำเจ้าพระยาพร้อมเรือแล่นผ่านสวยงามน่าประทับใจ",
+  "at": "2026-11-07T03:42:12.487Z"
+ },
+ "osm-w342368970": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Wat_Anongkharam.jpg/960px-Wat_Anongkharam.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Wat_Anongkharam.jpg",
+  "credit": "This Photo was taken by Supanut Arunoprayote. Feel free to u · CC BY 4.0",
+  "by": "ai",
+  "appeal": 8,
+  "why": "ภาพถ่ายมุมกว้างแสดงสถาปัตยกรรมและเจดีย์วัดชัดเจน สวยงาม",
+  "at": "2026-11-07T03:42:35.238Z"
+ },
+ "osm-w342368971": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Wat_Buppharam_Worawihan_%281%29.jpg/960px-Wat_Buppharam_Worawihan_%281%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Wat_Buppharam_Worawihan_(1).jpg",
+  "credit": "Kriengsak Jirasirirojanakorn · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 8,
+  "why": "ภาพอุโบสถภายนอกแสงสวย มุมมองกว้างโดดเด่น",
+  "at": "2026-11-07T03:42:35.238Z"
+ },
+ "osm-w342384923": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%97%E0%B8%AD%E0%B8%87%E0%B9%80%E0%B8%9E%E0%B8%A5%E0%B8%87_04.jpg/960px-%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%97%E0%B8%AD%E0%B8%87%E0%B9%80%E0%B8%9E%E0%B8%A5%E0%B8%87_04.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%97%E0%B8%AD%E0%B8%87%E0%B9%80%E0%B8%9E%E0%B8%A5%E0%B8%87_04.jpg",
+  "credit": "Dharmadana · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 6,
+  "why": "พระพุทธรูปองค์สำคัญภายในวัดองค์ใหญ่ชัดเจน",
+  "at": "2026-11-07T03:42:35.238Z"
+ },
+ "osm-w342451145": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/%282022%29_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AA%E0%B8%B1%E0%B8%87%E0%B8%82%E0%B9%8C%E0%B8%81%E0%B8%A3%E0%B8%B0%E0%B8%88%E0%B8%B2%E0%B8%A2%E0%B8%A7%E0%B8%A3%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%81%E0%B8%AD%E0%B8%81%E0%B9%83%E0%B8%AB%E0%B8%8D%E0%B9%88_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%284%29.jpg/960px-%282022%29_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AA%E0%B8%B1%E0%B8%87%E0%B8%82%E0%B9%8C%E0%B8%81%E0%B8%A3%E0%B8%B0%E0%B8%88%E0%B8%B2%E0%B8%A2%E0%B8%A7%E0%B8%A3%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%81%E0%B8%AD%E0%B8%81%E0%B9%83%E0%B8%AB%E0%B8%8D%E0%B9%88_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%284%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:(2022)_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AA%E0%B8%B1%E0%B8%87%E0%B8%82%E0%B9%8C%E0%B8%81%E0%B8%A3%E0%B8%B0%E0%B8%88%E0%B8%B2%E0%B8%A2%E0%B8%A7%E0%B8%A3%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%81%E0%B8%AD%E0%B8%81%E0%B9%83%E0%B8%AB%E0%B8%8D%E0%B9%88_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_(4).jpg",
+  "credit": "กสิณธร ราชโอรส · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 6,
+  "why": "ภาพภายในวิหารแสดงพระพุทธรูปหลายองค์และองค์พระสังกัจจายน์",
+  "at": "2026-11-07T03:42:35.238Z"
+ },
+ "osm-w342451146": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/%282022%29_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%AA%E0%B8%B4%E0%B8%97%E0%B8%98%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%A7%E0%B8%A3%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%81%E0%B8%AD%E0%B8%81%E0%B9%83%E0%B8%AB%E0%B8%8D%E0%B9%88_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%281%29.jpg/960px-thumbnail.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:(2022)_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%AA%E0%B8%B4%E0%B8%97%E0%B8%98%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%A7%E0%B8%A3%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%81%E0%B8%AD%E0%B8%81%E0%B9%83%E0%B8%AB%E0%B8%8D%E0%B9%88_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_(1).jpg",
+  "credit": "กสิณธร ราชโอรส · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 8,
+  "why": "ภาพมุมกว้างแสดงสถาปัตยกรรมพระอุโบสถและเจดีย์งดงามชัดเจน",
+  "at": "2026-11-07T03:43:17.286Z"
+ },
+ "osm-w342451147": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/%282023%29_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%A1%E0%B8%B9%E0%B8%A5_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%81%E0%B8%AD%E0%B8%81%E0%B9%83%E0%B8%AB%E0%B8%8D%E0%B9%88_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%2831%29.jpg/960px-%282023%29_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%A1%E0%B8%B9%E0%B8%A5_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%81%E0%B8%AD%E0%B8%81%E0%B9%83%E0%B8%AB%E0%B8%8D%E0%B9%88_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%2831%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:(2023)_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%A1%E0%B8%B9%E0%B8%A5_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%81%E0%B8%AD%E0%B8%81%E0%B9%83%E0%B8%AB%E0%B8%8D%E0%B9%88_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_(31).jpg",
+  "credit": "กสิณธร ราชโอรส · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 8,
+  "why": "ภาพพระประธานในโบสถ์สวยงามมีความโดดเด่นและสมบูรณ์",
+  "at": "2026-11-07T03:43:17.286Z"
+ },
+ "osm-w342451148": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B9%81%E0%B8%A7%E0%B8%81_02.jpg/960px-%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B9%81%E0%B8%A7%E0%B8%81_02.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B9%81%E0%B8%A7%E0%B8%81_02.jpg",
+  "credit": "Dharmadana · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 6,
+  "why": "ภาพสถาปัตยกรรมโบสถ์วัดมุมมองภายนอกชัดเจน",
+  "at": "2026-11-07T03:43:17.286Z"
+ },
+ "osm-w342451149": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%A7%E0%B8%B4%E0%B8%88%E0%B8%B4%E0%B8%95%E0%B8%A3%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%99%E0%B8%B4%E0%B8%A1%E0%B8%B4%E0%B8%95%E0%B8%A3_05.jpg/960px-%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%A7%E0%B8%B4%E0%B8%88%E0%B8%B4%E0%B8%95%E0%B8%A3%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%99%E0%B8%B4%E0%B8%A1%E0%B8%B4%E0%B8%95%E0%B8%A3_05.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%A7%E0%B8%B4%E0%B8%88%E0%B8%B4%E0%B8%95%E0%B8%A3%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%99%E0%B8%B4%E0%B8%A1%E0%B8%B4%E0%B8%95%E0%B8%A3_05.jpg",
+  "credit": "Dharmadana · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 7,
+  "why": "ภาพมุมมองสถาปัตยกรรมวัดที่ร่มรื่นและสวยงาม",
+  "at": "2026-11-07T03:43:17.286Z"
+ },
+ "osm-w342451150": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Bangkok_-_Wat_Tha_Phra_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%97%E0%B9%88%E0%B8%B2%E0%B8%9E%E0%B8%A3%E0%B8%B0_%E0%B8%AB%E0%B8%A5%E0%B8%A7%E0%B8%87%E0%B8%9E%E0%B9%88%E0%B8%AD%E0%B9%80%E0%B8%81%E0%B8%A9%E0%B8%A3_%28Feb_2024%29_img_09.jpg/960px-Bangkok_-_Wat_Tha_Phra_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%97%E0%B9%88%E0%B8%B2%E0%B8%9E%E0%B8%A3%E0%B8%B0_%E0%B8%AB%E0%B8%A5%E0%B8%A7%E0%B8%87%E0%B8%9E%E0%B9%88%E0%B8%AD%E0%B9%80%E0%B8%81%E0%B8%A9%E0%B8%A3_%28Feb_2024%29_img_09.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Bangkok_-_Wat_Tha_Phra_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%97%E0%B9%88%E0%B8%B2%E0%B8%9E%E0%B8%A3%E0%B8%B0_%E0%B8%AB%E0%B8%A5%E0%B8%A7%E0%B8%87%E0%B8%9E%E0%B9%88%E0%B8%AD%E0%B9%80%E0%B8%81%E0%B8%A9%E0%B8%A3_(Feb_2024)_img_09.jpg",
+  "credit": "Chainwit. · CC BY 4.0",
+  "by": "ai",
+  "appeal": 7,
+  "why": "ภาพพระพุทธรูปสวยงามคมชัด",
+  "at": "2026-11-07T03:43:38.270Z"
+ },
+ "osm-w342451151": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%99%E0%B8%81_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%A0%E0%B8%B2%E0%B8%A9%E0%B8%B5%E0%B9%80%E0%B8%88%E0%B8%A3%E0%B8%B4%E0%B8%8D_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%2819%29.jpg/960px-%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%99%E0%B8%81_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%A0%E0%B8%B2%E0%B8%A9%E0%B8%B5%E0%B9%80%E0%B8%88%E0%B8%A3%E0%B8%B4%E0%B8%8D_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%2819%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%99%E0%B8%81_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%A0%E0%B8%B2%E0%B8%A9%E0%B8%B5%E0%B9%80%E0%B8%88%E0%B8%A3%E0%B8%B4%E0%B8%8D_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_(19).jpg",
+  "credit": "กสิณธร ราชโอรส · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 7,
+  "why": "ภาพอุโบสถวัดสวยงามโดดเด่น",
+  "at": "2026-11-07T03:43:38.270Z"
+ },
+ "osm-w342455404": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Wat_Thewarat_Kunchon_Ahoerstemeier_15.jpg/960px-Wat_Thewarat_Kunchon_Ahoerstemeier_15.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Wat_Thewarat_Kunchon_Ahoerstemeier_15.jpg",
+  "credit": "Ahoerstemeier · CC BY 4.0",
+  "by": "ai",
+  "appeal": 8,
+  "why": "ภาพพระประธานในโบสถ์งดงามมาก",
+  "at": "2026-11-07T03:43:38.270Z"
+ },
+ "osm-w342462697": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%99%E0%B8%B2%E0%B8%A3%E0%B8%B5_03.jpg/960px-%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%99%E0%B8%B2%E0%B8%A3%E0%B8%B5_03.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%99%E0%B8%B2%E0%B8%A3%E0%B8%B5_03.jpg",
+  "credit": "Dharmadana · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 7,
+  "why": "ภาพเจดีย์สีทองเด่นชัด",
+  "at": "2026-11-07T03:43:38.270Z"
+ },
+ "osm-w342505962": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%99%E0%B9%89%E0%B8%AD%E0%B8%A2%E0%B8%99%E0%B8%9E%E0%B8%84%E0%B8%B8%E0%B8%93_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%94%E0%B8%B8%E0%B8%AA%E0%B8%B4%E0%B8%95_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%282%29.jpg/960px-%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%99%E0%B9%89%E0%B8%AD%E0%B8%A2%E0%B8%99%E0%B8%9E%E0%B8%84%E0%B8%B8%E0%B8%93_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%94%E0%B8%B8%E0%B8%AA%E0%B8%B4%E0%B8%95_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%282%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%99%E0%B9%89%E0%B8%AD%E0%B8%A2%E0%B8%99%E0%B8%9E%E0%B8%84%E0%B8%B8%E0%B8%93_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%94%E0%B8%B8%E0%B8%AA%E0%B8%B4%E0%B8%95_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_(2).jpg",
+  "credit": "กสิณธร ราชโอรส · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 7,
+  "why": "เห็นพระพุทธรูปองค์ใหญ่เด่นชัดพร้อมฉากหลังสวยงาม",
+  "at": "2026-11-07T03:43:58.338Z"
+ },
+ "osm-w342513647": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/%282023%29_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%84%E0%B8%9C%E0%B9%88%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%82%E0%B8%8A%E0%B8%95%E0%B8%99%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%84%E0%B8%AD%E0%B9%81%E0%B8%AB%E0%B8%A5%E0%B8%A1_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%2811%29.jpg/960px-%282023%29_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%84%E0%B8%9C%E0%B9%88%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%82%E0%B8%8A%E0%B8%95%E0%B8%99%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%84%E0%B8%AD%E0%B9%81%E0%B8%AB%E0%B8%A5%E0%B8%A1_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%2811%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:(2023)_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%84%E0%B8%9C%E0%B9%88%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%82%E0%B8%8A%E0%B8%95%E0%B8%99%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%84%E0%B8%AD%E0%B9%81%E0%B8%AB%E0%B8%A5%E0%B8%A1_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_(11).jpg",
+  "credit": "กสิณธร ราชโอรส · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 6,
+  "why": "โบสถ์สถาปัตยกรรมไทยสวยงามโดดเด่น",
+  "at": "2026-11-07T03:43:58.338Z"
+ },
+ "osm-w342517132": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Wat_Sai_Thai%2C_Krabi_Province%2C_Thailand_SF0005.jpg/960px-Wat_Sai_Thai%2C_Krabi_Province%2C_Thailand_SF0005.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Wat_Sai_Thai,_Krabi_Province,_Thailand_SF0005.jpg",
+  "credit": "Stefan Fussan · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 7,
+  "why": "ภาพมุมกว้างเห็นอุโบสถกับตึกสูงสมัยใหม่ตัดกันน่าสนใจ",
+  "at": "2026-11-07T03:43:58.338Z"
+ },
+ "osm-w342517137": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/%282023%29_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B8%AD%E0%B8%87%E0%B8%A2%E0%B8%A8%E0%B8%AA%E0%B8%B8%E0%B8%97%E0%B8%98%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%84%E0%B8%AD%E0%B9%81%E0%B8%AB%E0%B8%A5%E0%B8%A1_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%2812%29.jpg/960px-%282023%29_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B8%AD%E0%B8%87%E0%B8%A2%E0%B8%A8%E0%B8%AA%E0%B8%B8%E0%B8%97%E0%B8%98%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%84%E0%B8%AD%E0%B9%81%E0%B8%AB%E0%B8%A5%E0%B8%A1_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%2812%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:(2023)_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B8%AD%E0%B8%87%E0%B8%A2%E0%B8%A8%E0%B8%AA%E0%B8%B8%E0%B8%97%E0%B8%98%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%84%E0%B8%AD%E0%B9%81%E0%B8%AB%E0%B8%A5%E0%B8%A1_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_(12).jpg",
+  "credit": "กสิณธร ราชโอรส · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 6,
+  "why": "ภาพสถาปัตยกรรมวัดไทยชัดเจนบรรยากาศร่มรื่น",
+  "at": "2026-11-07T03:43:58.338Z"
+ },
+ "osm-w342518948": {
+  "image": null,
+  "by": "ai",
+  "why": "ภาพมุมกว้างเห็นตัวพระอุโบสถสวยงามโดดเด่น",
+  "at": "2026-11-07T03:44:38.753Z"
+ },
+ "osm-w342582505": {
+  "image": null,
+  "by": "ai",
+  "why": "ภาพพระพุทธรูปองค์ใหญ่ในวิหารดูงดงามน่าเลื่อมใส",
+  "at": "2026-11-07T03:44:38.753Z"
+ },
+ "osm-w347269595": {
+  "image": null,
+  "by": "ai",
+  "why": "ภาพถ่ายพระอุโบสถสถาปัตยกรรมไทยที่สวยงามชัดเจน",
+  "at": "2026-11-07T03:44:38.753Z"
+ },
+ "osm-w348393896": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AA%E0%B8%B8%E0%B8%99%E0%B8%97%E0%B8%A3%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%97%E0%B8%B2%E0%B8%99_%28%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%81%E0%B8%84%E0%B8%99%E0%B8%B2%E0%B8%87%E0%B9%80%E0%B8%A5%E0%B8%B4%E0%B9%89%E0%B8%87%29_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9B%E0%B9%89%E0%B8%AD%E0%B8%A1%E0%B8%9B%E0%B8%A3%E0%B8%B2%E0%B8%9A%E0%B8%A8%E0%B8%B1%E0%B8%95%E0%B8%A3%E0%B8%B9%E0%B8%9E%E0%B9%88%E0%B8%B2%E0%B8%A2_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%285%29.jpg/960px-thumbnail.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AA%E0%B8%B8%E0%B8%99%E0%B8%97%E0%B8%A3%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%97%E0%B8%B2%E0%B8%99_(%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%81%E0%B8%84%E0%B8%99%E0%B8%B2%E0%B8%87%E0%B9%80%E0%B8%A5%E0%B8%B4%E0%B9%89%E0%B8%87)_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9B%E0%B9%89%E0%B8%AD%E0%B8%A1%E0%B8%9B%E0%B8%A3%E0%B8%B2%E0%B8%9A%E0%B8%A8%E0%B8%B1%E0%B8%95%E0%B8%A3%E0%B8%B9%E0%B8%9E%E0%B9%88%E0%B8%B2%E0%B8%A2_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_(5).jpg",
+  "credit": "กสิณธร ราชโอรส · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 8,
+  "why": "ภาพพระอุโบสถสีขาวและทองโดดเด่นสวยงามมาก",
+  "at": "2026-11-07T03:44:38.753Z"
+ },
+ "osm-w348423322": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Wat_Chom_Sudaram_%2820240815%29.jpg/960px-Wat_Chom_Sudaram_%2820240815%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Wat_Chom_Sudaram_(20240815).jpg",
+  "credit": "Chomsuda1516 · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 8,
+  "why": "ภาพถ่ายโบสถ์วัดชัดเจน แสงสวยท้องฟ้าแจ่มใส",
+  "at": "2026-11-07T03:44:57.367Z"
+ },
+ "osm-w348425299": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%9C%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1_%28%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AA%E0%B9%89%E0%B8%A1%E0%B9%80%E0%B8%81%E0%B8%A5%E0%B8%B5%E0%B9%89%E0%B8%A2%E0%B8%87%29_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%94%E0%B8%B8%E0%B8%AA%E0%B8%B4%E0%B8%95_03.jpg/960px-%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%9C%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1_%28%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AA%E0%B9%89%E0%B8%A1%E0%B9%80%E0%B8%81%E0%B8%A5%E0%B8%B5%E0%B9%89%E0%B8%A2%E0%B8%87%29_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%94%E0%B8%B8%E0%B8%AA%E0%B8%B4%E0%B8%95_03.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%9C%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1_(%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AA%E0%B9%89%E0%B8%A1%E0%B9%80%E0%B8%81%E0%B8%A5%E0%B8%B5%E0%B9%89%E0%B8%A2%E0%B8%87)_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%94%E0%B8%B8%E0%B8%AA%E0%B8%B4%E0%B8%95_03.jpg",
+  "credit": "Chainwit. · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 7,
+  "why": "ภาพเจดีย์สีขาวทรงสวยงามโดดเด่น",
+  "at": "2026-11-07T03:44:57.367Z"
+ },
+ "osm-w348799504": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/%282024%29_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AA%E0%B8%A1%E0%B8%93%E0%B8%B2%E0%B8%99%E0%B8%B1%E0%B8%A1%E0%B8%9A%E0%B8%A3%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%94%E0%B8%B8%E0%B8%AA%E0%B8%B4%E0%B8%95_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%285%29.jpg/960px-%282024%29_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AA%E0%B8%A1%E0%B8%93%E0%B8%B2%E0%B8%99%E0%B8%B1%E0%B8%A1%E0%B8%9A%E0%B8%A3%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%94%E0%B8%B8%E0%B8%AA%E0%B8%B4%E0%B8%95_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%285%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:(2024)_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AA%E0%B8%A1%E0%B8%93%E0%B8%B2%E0%B8%99%E0%B8%B1%E0%B8%A1%E0%B8%9A%E0%B8%A3%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%94%E0%B8%B8%E0%B8%AA%E0%B8%B4%E0%B8%95_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_(5).jpg",
+  "credit": "กสิณธร ราชโอรส · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 8,
+  "why": "ภาพสถาปัตยกรรมวัดจีนสีแดงและหลังคาโดดเด่นสวยงาม",
+  "at": "2026-11-07T03:44:57.367Z"
+ },
+ "osm-w352819382": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/%282023%29_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%80%E0%B8%A7%E0%B8%AC%E0%B8%B8%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%B4%E0%B8%93_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%98%E0%B8%99%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%2814%29.jpg/960px-%282023%29_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%80%E0%B8%A7%E0%B8%AC%E0%B8%B8%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%B4%E0%B8%93_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%98%E0%B8%99%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%2814%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:(2023)_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%80%E0%B8%A7%E0%B8%AC%E0%B8%B8%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%B4%E0%B8%93_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%98%E0%B8%99%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_(14).jpg",
+  "credit": "กสิณธร ราชโอรส · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 8,
+  "why": "ภาพพระพุทธไสยาสน์องค์ใหญ่ทองอร่ามชัดเจนและมุมมองกว้างสวยงาม",
+  "at": "2026-11-07T03:44:57.367Z"
+ },
+ "osm-w375034558": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Wat_Nang_Nong_Worawihan_%28I%29.jpg/960px-Wat_Nang_Nong_Worawihan_%28I%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Wat_Nang_Nong_Worawihan_(I).jpg",
+  "credit": "This Photo was taken by Supanut Arunoprayote. Feel free to u · CC BY 4.0",
+  "by": "ai",
+  "appeal": 8,
+  "why": "ภาพถ่ายมุมกว้างของพระอุโบสถสถาปัตยกรรมงดงาม ท้องฟ้าสดใส",
+  "at": "2026-11-07T03:45:12.699Z"
+ },
+ "osm-w375807122": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%94%E0%B8%B9%E0%B9%88%E0%B8%89%E0%B8%B4%E0%B8%A1%E0%B8%9E%E0%B8%A5%E0%B8%B5_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%81%E0%B8%AD%E0%B8%81%E0%B9%83%E0%B8%AB%E0%B8%8D%E0%B9%88_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%284%29.jpg/960px-%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%94%E0%B8%B9%E0%B9%88%E0%B8%89%E0%B8%B4%E0%B8%A1%E0%B8%9E%E0%B8%A5%E0%B8%B5_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%81%E0%B8%AD%E0%B8%81%E0%B9%83%E0%B8%AB%E0%B8%8D%E0%B9%88_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%284%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%94%E0%B8%B9%E0%B9%88%E0%B8%89%E0%B8%B4%E0%B8%A1%E0%B8%9E%E0%B8%A5%E0%B8%B5_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%81%E0%B8%AD%E0%B8%81%E0%B9%83%E0%B8%AB%E0%B8%8D%E0%B9%88_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_(4).jpg",
+  "credit": "กสิณธร ราชโอรส · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 8,
+  "why": "ภาพถ่ายพระอุโบสถทรงไทยประยุกต์สวยงามโดดเด่น",
+  "at": "2026-11-07T03:45:12.699Z"
+ },
+ "osm-w375809412": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Wat_Chan_Pradittharam_1.jpg/960px-Wat_Chan_Pradittharam_1.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Wat_Chan_Pradittharam_1.jpg",
+  "credit": "Blackpoints · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 7,
+  "why": "ภาพพระอุโบสถวัดริมน้ำสถาปัตยกรรมไทยชัดเจน",
+  "at": "2026-11-07T03:45:12.699Z"
+ },
+ "osm-w376296691": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Wat_Kaeo_Bangkok_Ahoerstemeier_1.JPG/960px-Wat_Kaeo_Bangkok_Ahoerstemeier_1.JPG",
+  "page": "https://commons.wikimedia.org/wiki/File:Wat_Kaeo_Bangkok_Ahoerstemeier_1.JPG",
+  "credit": "Ahoerstemeier · CC BY 4.0",
+  "by": "ai",
+  "appeal": 8,
+  "why": "ภาพพระอุโบสถวัดไทยโบราณ ลวดลายประณีต ท้องฟ้าสวยงาม",
+  "at": "2026-11-07T03:45:12.699Z"
+ },
+ "osm-w376296694": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Wat_Phleng_Wipatsana_Ahoerstemeier_1.jpg/960px-Wat_Phleng_Wipatsana_Ahoerstemeier_1.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Wat_Phleng_Wipatsana_Ahoerstemeier_1.jpg",
+  "credit": "Ahoerstemeier · CC BY 4.0",
+  "by": "ai",
+  "appeal": 7,
+  "why": "ภาพอาคารวัดและสถาปัตยกรรมที่สวยงามชัดเจน",
+  "at": "2026-11-07T03:45:32.124Z"
+ },
+ "osm-w376297877": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/%282023%29_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%A3%E0%B8%B1%E0%B8%8A%E0%B8%8E%E0%B8%B2%E0%B8%98%E0%B8%B4%E0%B8%A9%E0%B8%90%E0%B8%B2%E0%B8%99%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%A7%E0%B8%A3%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%95%E0%B8%A5%E0%B8%B4%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B1%E0%B8%99_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%2811%29.jpg/960px-thumbnail.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:(2023)_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%A3%E0%B8%B1%E0%B8%8A%E0%B8%8E%E0%B8%B2%E0%B8%98%E0%B8%B4%E0%B8%A9%E0%B8%90%E0%B8%B2%E0%B8%99%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%A7%E0%B8%A3%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%95%E0%B8%A5%E0%B8%B4%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B1%E0%B8%99_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_(11).jpg",
+  "credit": "กสิณธร ราชโอรส · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 8,
+  "why": "ภาพภายในพระอุโบสถสวยงามมีพระประธานและพระสงฆ์",
+  "at": "2026-11-07T03:45:32.124Z"
+ },
+ "osm-w376297878": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Wat_Kanchana_Singhat_ubosot.jpg/960px-Wat_Kanchana_Singhat_ubosot.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Wat_Kanchana_Singhat_ubosot.jpg",
+  "credit": "Ahoerstemeier · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 7,
+  "why": "ภาพมุมมองด้านหน้าพระอุโบสถชัดเจนและสวยงาม",
+  "at": "2026-11-07T03:45:32.124Z"
+ },
+ "osm-w376299014": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Wat_Wiset_Kan_Ahoerstemeier_2.jpg/960px-Wat_Wiset_Kan_Ahoerstemeier_2.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Wat_Wiset_Kan_Ahoerstemeier_2.jpg",
+  "credit": "User:Ahoerstemeier · CC BY 4.0",
+  "by": "ai",
+  "appeal": 8,
+  "why": "ภาพประติมากรรมต้นไม้สีทองบนผนังอุโบสถโดดเด่นน่าสนใจ",
+  "at": "2026-11-07T03:45:32.124Z"
+ },
+ "osm-w376302664": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Wat_Bang_Bamru_Ahoerstemeier_15.jpg/960px-Wat_Bang_Bamru_Ahoerstemeier_15.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Wat_Bang_Bamru_Ahoerstemeier_15.jpg",
+  "credit": "User:Ahoerstemeier · CC BY 4.0",
+  "by": "ai",
+  "appeal": 7,
+  "why": "ภาพถ่ายโบสถ์และสถาปัตยกรรมวัดชัดเจนสวยงาม",
+  "at": "2026-11-07T03:45:51.028Z"
+ },
+ "osm-w376302665": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Wat_Pho_Riang_2018_Ahoerstemeier_7.jpg/960px-Wat_Pho_Riang_2018_Ahoerstemeier_7.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Wat_Pho_Riang_2018_Ahoerstemeier_7.jpg",
+  "credit": "User:Ahoerstemeier · CC BY 4.0",
+  "by": "ai",
+  "appeal": 6,
+  "why": "ภาพพระอุโบสถวัดสวยงามโดดเด่น",
+  "at": "2026-11-07T03:45:51.028Z"
+ },
+ "osm-w376302666": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Wat_Chai_Thit_Ahoerstemeier_4.jpg/960px-Wat_Chai_Thit_Ahoerstemeier_4.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Wat_Chai_Thit_Ahoerstemeier_4.jpg",
+  "credit": "Ahoerstemeier · CC BY 4.0",
+  "by": "ai",
+  "appeal": 6,
+  "why": "ภาพด้านหน้าวิหารวัดมีความชัดเจนและน่าสนใจ",
+  "at": "2026-11-07T03:45:51.028Z"
+ },
+ "osm-w376302667": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Wat_Bang_Sao_Thong_Ahoerstemeier_2.jpg/960px-Wat_Bang_Sao_Thong_Ahoerstemeier_2.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Wat_Bang_Sao_Thong_Ahoerstemeier_2.jpg",
+  "credit": "User:Ahoerstemeier · CC BY 4.0",
+  "by": "ai",
+  "appeal": 7,
+  "why": "ภาพอุโบสถสีขาวและเจดีย์ทองสวยงามโดดเด่น",
+  "at": "2026-11-07T03:45:51.028Z"
+ },
+ "osm-w376302668": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%84%E0%B8%A3%E0%B8%B8%E0%B8%91_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%81%E0%B8%AD%E0%B8%81%E0%B8%99%E0%B9%89%E0%B8%AD%E0%B8%A2_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3.jpg/960px-%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%84%E0%B8%A3%E0%B8%B8%E0%B8%91_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%81%E0%B8%AD%E0%B8%81%E0%B8%99%E0%B9%89%E0%B8%AD%E0%B8%A2_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%84%E0%B8%A3%E0%B8%B8%E0%B8%91_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%81%E0%B8%AD%E0%B8%81%E0%B8%99%E0%B9%89%E0%B8%AD%E0%B8%A2_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3.jpg",
+  "credit": "กสิณธร ราชโอรส · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 7,
+  "why": "ภาพตัวอาคารวัดพร้อมรถตุ๊กตุ๊ก ดูโดดเด่นและเป็นเอกลักษณ์",
+  "at": "2026-11-07T03:46:13.663Z"
+ },
+ "osm-w376303736": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Bangkok_-_Wat_Noi_Nang_Hong_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%99%E0%B9%89%E0%B8%AD%E0%B8%A2%E0%B8%99%E0%B8%B2%E0%B8%87%E0%B8%AB%E0%B8%87%E0%B8%A9%E0%B9%8C_%282026%29_01.jpg/960px-Bangkok_-_Wat_Noi_Nang_Hong_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%99%E0%B9%89%E0%B8%AD%E0%B8%A2%E0%B8%99%E0%B8%B2%E0%B8%87%E0%B8%AB%E0%B8%87%E0%B8%A9%E0%B9%8C_%282026%29_01.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Bangkok_-_Wat_Noi_Nang_Hong_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%99%E0%B9%89%E0%B8%AD%E0%B8%A2%E0%B8%99%E0%B8%B2%E0%B8%87%E0%B8%AB%E0%B8%87%E0%B8%A9%E0%B9%8C_(2026)_01.jpg",
+  "credit": "Chainwit. · CC BY 4.0",
+  "by": "ai",
+  "appeal": 8,
+  "why": "มุมกว้างริมน้ำบรรยากาศดี เห็นตัววัดและเจดีย์ชัดเจน",
+  "at": "2026-11-07T03:46:13.663Z"
+ },
+ "osm-w376303737": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/%282024%29_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%A2%E0%B8%B5%E0%B9%88%E0%B8%82%E0%B8%B1%E0%B8%99_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%9E%E0%B8%A5%E0%B8%B1%E0%B8%94_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%2821%29.jpg/960px-%282024%29_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%A2%E0%B8%B5%E0%B9%88%E0%B8%82%E0%B8%B1%E0%B8%99_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%9E%E0%B8%A5%E0%B8%B1%E0%B8%94_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%2821%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:(2024)_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%A2%E0%B8%B5%E0%B9%88%E0%B8%82%E0%B8%B1%E0%B8%99_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%9E%E0%B8%A5%E0%B8%B1%E0%B8%94_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_(21).jpg",
+  "credit": "กสิณธร ราชโอรส · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 8,
+  "why": "ภาพภายในพระอุโบสถ พระประธานสวยงามและมีภาพจิตรกรรมฝาผนัง",
+  "at": "2026-11-07T03:46:13.663Z"
+ },
+ "osm-w376303739": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%83%E0%B8%AB%E0%B8%A1%E0%B9%88%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%99%E0%B8%B4%E0%B8%A1%E0%B8%B4%E0%B8%95%E0%B8%A3_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%9E%E0%B8%A5%E0%B8%B1%E0%B8%94_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3.JPG/960px-%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%83%E0%B8%AB%E0%B8%A1%E0%B9%88%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%99%E0%B8%B4%E0%B8%A1%E0%B8%B4%E0%B8%95%E0%B8%A3_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%9E%E0%B8%A5%E0%B8%B1%E0%B8%94_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3.JPG",
+  "page": "https://commons.wikimedia.org/wiki/File:%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%83%E0%B8%AB%E0%B8%A1%E0%B9%88%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%99%E0%B8%B4%E0%B8%A1%E0%B8%B4%E0%B8%95%E0%B8%A3_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%9E%E0%B8%A5%E0%B8%B1%E0%B8%94_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3.JPG",
+  "credit": "กสิณธร ราชโอรส · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 8,
+  "why": "ภาพสถาปัตยกรรมพระอุโบสถทรงโบราณใต้ท้องฟ้าใส สวยงามชัดเจน",
+  "at": "2026-11-07T03:46:13.663Z"
+ },
+ "osm-w376303740": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%A3%E0%B8%A7%E0%B8%81%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%9A%E0%B8%B3%E0%B8%AB%E0%B8%A3%E0%B8%B8_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%9E%E0%B8%A5%E0%B8%B1%E0%B8%94_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%281%29.jpg/960px-%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%A3%E0%B8%A7%E0%B8%81%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%9A%E0%B8%B3%E0%B8%AB%E0%B8%A3%E0%B8%B8_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%9E%E0%B8%A5%E0%B8%B1%E0%B8%94_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%281%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%A3%E0%B8%A7%E0%B8%81%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%9A%E0%B8%B3%E0%B8%AB%E0%B8%A3%E0%B8%B8_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%9E%E0%B8%A5%E0%B8%B1%E0%B8%94_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_(1).jpg",
+  "credit": "กสิณธร ราชโอรส · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 7,
+  "why": "ภาพอุโบสถวัดสวยงามและเห็นสถาปัตยกรรมชัดเจน",
+  "at": "2026-11-07T03:46:46.904Z"
+ },
+ "osm-w376311200": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/%282023%29_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%89%E0%B8%B1%E0%B8%95%E0%B8%A3%E0%B9%81%E0%B8%81%E0%B9%89%E0%B8%A7%E0%B8%88%E0%B8%87%E0%B8%81%E0%B8%A5%E0%B8%93%E0%B8%B5_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%9E%E0%B8%A5%E0%B8%B1%E0%B8%94_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%283%29.jpg/960px-%282023%29_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%89%E0%B8%B1%E0%B8%95%E0%B8%A3%E0%B9%81%E0%B8%81%E0%B9%89%E0%B8%A7%E0%B8%88%E0%B8%87%E0%B8%81%E0%B8%A5%E0%B8%93%E0%B8%B5_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%9E%E0%B8%A5%E0%B8%B1%E0%B8%94_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%283%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:(2023)_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%89%E0%B8%B1%E0%B8%95%E0%B8%A3%E0%B9%81%E0%B8%81%E0%B9%89%E0%B8%A7%E0%B8%88%E0%B8%87%E0%B8%81%E0%B8%A5%E0%B8%93%E0%B8%B5_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%9E%E0%B8%A5%E0%B8%B1%E0%B8%94_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_(3).jpg",
+  "credit": "กสิณธร ราชโอรส · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 8,
+  "why": "ภาพพระปรางค์กับท้องฟ้าใสสวยงามโดดเด่น",
+  "at": "2026-11-07T03:46:46.904Z"
+ },
+ "osm-w376311482": {
+  "image": null,
+  "by": "ai",
+  "why": "ภาพพระอุโบสถวัดมุมกว้างพร้อมภูมิทัศน์สะอาดตา",
+  "at": "2026-11-07T03:46:46.904Z"
+ },
+ "osm-w376311483": {
+  "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AB%E0%B8%87%E0%B8%AA%E0%B9%8C%E0%B8%A3%E0%B8%B1%E0%B8%95%E0%B8%99%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1_Wat_Hong_Rattanaram_%2812%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AB%E0%B8%87%E0%B8%AA%E0%B9%8C%E0%B8%A3%E0%B8%B1%E0%B8%95%E0%B8%99%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1_Wat_Hong_Rattanaram_(12).jpg",
+  "credit": "กสิณธร ราชโอรส · CC BY-SA 3.0",
+  "by": "ai",
+  "appeal": 9,
+  "why": "ภาพองค์พระประธานในโบสถ์งดงามและสว่างชัดเจน",
+  "at": "2026-11-07T03:46:46.904Z"
+ },
+ "osm-w376378291": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%A1%E0%B8%B0%E0%B8%81%E0%B8%AD%E0%B8%81_%28%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3%29_02.jpg/960px-%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%A1%E0%B8%B0%E0%B8%81%E0%B8%AD%E0%B8%81_%28%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3%29_02.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%A1%E0%B8%B0%E0%B8%81%E0%B8%AD%E0%B8%81_(%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3)_02.jpg",
+  "credit": "Dharmadana · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 5,
+  "why": "ภาพถ่ายหน้าวัดเห็นป้ายและโบสถ์ชัดเจน",
+  "at": "2026-11-07T03:47:03.984Z"
+ },
+ "osm-w376378499": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%A1%E0%B8%B0%E0%B8%9E%E0%B8%A3%E0%B9%89%E0%B8%B2%E0%B8%A7%E0%B9%80%E0%B8%95%E0%B8%B5%E0%B9%89%E0%B8%A2_02.jpg/960px-%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%A1%E0%B8%B0%E0%B8%9E%E0%B8%A3%E0%B9%89%E0%B8%B2%E0%B8%A7%E0%B9%80%E0%B8%95%E0%B8%B5%E0%B9%89%E0%B8%A2_02.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%A1%E0%B8%B0%E0%B8%9E%E0%B8%A3%E0%B9%89%E0%B8%B2%E0%B8%A7%E0%B9%80%E0%B8%95%E0%B8%B5%E0%B9%89%E0%B8%A2_02.jpg",
+  "credit": "Dharmadana · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 6,
+  "why": "ภาพมุมกว้างของลานวัดและพระอุโบสถชัดเจน",
+  "at": "2026-11-07T03:47:03.984Z"
+ },
+ "osm-w376417869": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/%282024%29_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%84%E0%B8%A5%E0%B8%AD%E0%B8%87%E0%B9%80%E0%B8%95%E0%B8%A2%E0%B9%83%E0%B8%99_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%84%E0%B8%A5%E0%B8%AD%E0%B8%87%E0%B9%80%E0%B8%95%E0%B8%A2_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%2811%29.jpg/960px-%282024%29_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%84%E0%B8%A5%E0%B8%AD%E0%B8%87%E0%B9%80%E0%B8%95%E0%B8%A2%E0%B9%83%E0%B8%99_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%84%E0%B8%A5%E0%B8%AD%E0%B8%87%E0%B9%80%E0%B8%95%E0%B8%A2_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%2811%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:(2024)_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%84%E0%B8%A5%E0%B8%AD%E0%B8%87%E0%B9%80%E0%B8%95%E0%B8%A2%E0%B9%83%E0%B8%99_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%84%E0%B8%A5%E0%B8%AD%E0%B8%87%E0%B9%80%E0%B8%95%E0%B8%A2_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_(11).jpg",
+  "credit": "กสิณธร ราชโอรส · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 6,
+  "why": "ภาพถ่ายพระอุโบสถสวยงามและคมชัด",
+  "at": "2026-11-07T03:47:03.984Z"
+ },
+ "osm-w376674386": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/%282024%29_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AB%E0%B8%B4%E0%B8%A3%E0%B8%B1%E0%B8%8D%E0%B8%A3%E0%B8%B9%E0%B8%88%E0%B8%B5%E0%B8%A7%E0%B8%A3%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%98%E0%B8%99%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%2818%29.jpg/960px-%282024%29_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AB%E0%B8%B4%E0%B8%A3%E0%B8%B1%E0%B8%8D%E0%B8%A3%E0%B8%B9%E0%B8%88%E0%B8%B5%E0%B8%A7%E0%B8%A3%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%98%E0%B8%99%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%2818%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:(2024)_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AB%E0%B8%B4%E0%B8%A3%E0%B8%B1%E0%B8%8D%E0%B8%A3%E0%B8%B9%E0%B8%88%E0%B8%B5%E0%B8%A7%E0%B8%A3%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%98%E0%B8%99%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_(18).jpg",
+  "credit": "กสิณธร ราชโอรส · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 6,
+  "why": "ภาพถ่ายสถาปัตยกรรมพระอุโบสถและเจดีย์สวยงาม",
+  "at": "2026-11-07T03:47:03.984Z"
+ },
+ "osm-w376674387": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Wat_Suwan_railway_station_20240113_01.jpg/960px-Wat_Suwan_railway_station_20240113_01.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Wat_Suwan_railway_station_20240113_01.jpg",
+  "credit": "Suikotei · CC BY 4.0",
+  "by": "ai",
+  "appeal": 7,
+  "why": "ภาพมุมกว้างเห็นภาพรวมวัดและรางรถไฟชัดเจน บรรยากาศดี",
+  "at": "2026-11-07T03:47:24.243Z"
+ },
+ "osm-w376674388": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%94%E0%B8%B4%E0%B8%A9%E0%B8%90%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1_%28%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3%29_01.jpg/960px-%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%94%E0%B8%B4%E0%B8%A9%E0%B8%90%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1_%28%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3%29_01.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%94%E0%B8%B4%E0%B8%A9%E0%B8%90%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1_(%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3)_01.jpg",
+  "credit": "Dharmadana · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 6,
+  "why": "เห็นตัวโบสถ์และองค์ประกอบรอบวัดชัดเจน แม้จะมีรถจอดหน้าวัด",
+  "at": "2026-11-07T03:47:24.243Z"
+ },
+ "osm-w376674390": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Wat_Thong_Nopphakhun_%28I%29.jpg/960px-Wat_Thong_Nopphakhun_%28I%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Wat_Thong_Nopphakhun_(I).jpg",
+  "credit": "This Photo was taken by Supanut Arunoprayote. Feel free to u · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 8,
+  "why": "ภาพโบสถ์สีขาวทรงสวยงาม พร้อมตึกสูงเป็นฉากหลังโดดเด่น",
+  "at": "2026-11-07T03:47:24.243Z"
+ },
+ "osm-w376674391": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/%282022%29_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%97%E0%B8%AD%E0%B8%87%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B8%A7%E0%B8%A3%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%84%E0%B8%A5%E0%B8%AD%E0%B8%87%E0%B8%AA%E0%B8%B2%E0%B8%99_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%284%29.jpg/960px-%282022%29_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%97%E0%B8%AD%E0%B8%87%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B8%A7%E0%B8%A3%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%84%E0%B8%A5%E0%B8%AD%E0%B8%87%E0%B8%AA%E0%B8%B2%E0%B8%99_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%284%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:(2022)_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%97%E0%B8%AD%E0%B8%87%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B8%A7%E0%B8%A3%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%84%E0%B8%A5%E0%B8%AD%E0%B8%87%E0%B8%AA%E0%B8%B2%E0%B8%99_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_(4).jpg",
+  "credit": "กสิณธร ราชโอรส · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 9,
+  "why": "ภายในพระอุโบสถงดงาม แสงไฟสวยงามและมีภาพจิตรกรรมฝาผนังรอบด้าน",
+  "at": "2026-11-07T03:47:24.243Z"
+ },
+ "osm-w376675935": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AD%E0%B8%B4%E0%B8%99%E0%B8%97%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1%E0%B8%A7%E0%B8%A3%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3_Wat_Intharam_Worawiharn_%2810%29.jpg/960px-%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AD%E0%B8%B4%E0%B8%99%E0%B8%97%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1%E0%B8%A7%E0%B8%A3%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3_Wat_Intharam_Worawiharn_%2810%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AD%E0%B8%B4%E0%B8%99%E0%B8%97%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1%E0%B8%A7%E0%B8%A3%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3_Wat_Intharam_Worawiharn_(10).jpg",
+  "credit": "กสิณธร ราชโอรส · CC BY-SA 3.0",
+  "by": "ai",
+  "appeal": 8,
+  "why": "ภาพพระอุโบสถสวยงาม ชัดเจน น่าสนใจ",
+  "at": "2026-11-07T03:47:40.568Z"
+ },
+ "osm-w376675937": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Rang_Bua_Shrine_06.23.jpg/960px-Rang_Bua_Shrine_06.23.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Rang_Bua_Shrine_06.23.jpg",
+  "credit": "This Photo was taken by Supanut Arunoprayote. Feel free to u · CC BY 4.0",
+  "by": "ai",
+  "appeal": 8,
+  "why": "สถาปัตยกรรมศาลเจ้าสีสันสดใส โดดเด่น",
+  "at": "2026-11-07T03:47:40.568Z"
+ },
+ "osm-w376675938": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%81%E0%B8%B1%E0%B8%99%E0%B8%95%E0%B8%97%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1_02_%282%29.jpg/960px-%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%81%E0%B8%B1%E0%B8%99%E0%B8%95%E0%B8%97%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1_02_%282%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%81%E0%B8%B1%E0%B8%99%E0%B8%95%E0%B8%97%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1_02_(2).jpg",
+  "credit": "Dharmadana · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 7,
+  "why": "ภาพมุมหน้าบันวัดชัดเจน สมส่วน",
+  "at": "2026-11-07T03:47:40.568Z"
+ },
+ "osm-w376675939": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/%282023%29_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%88%E0%B8%B1%E0%B8%99%E0%B8%97%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1%E0%B8%A7%E0%B8%A3%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%98%E0%B8%99%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%286%29.jpg/960px-%282023%29_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%88%E0%B8%B1%E0%B8%99%E0%B8%97%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1%E0%B8%A7%E0%B8%A3%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%98%E0%B8%99%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%286%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:(2023)_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%88%E0%B8%B1%E0%B8%99%E0%B8%97%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1%E0%B8%A7%E0%B8%A3%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%98%E0%B8%99%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_(6).jpg",
+  "credit": "กสิณธร ราชโอรส · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 9,
+  "why": "ภายในพระอุโบสถสวยงาม พระประธานโดดเด่น",
+  "at": "2026-11-07T03:47:40.568Z"
+ },
+ "osm-w376675940": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%AA%E0%B8%B0%E0%B9%81%E0%B8%81%E0%B8%99%E0%B8%AD%E0%B8%81_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%98%E0%B8%99%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3.jpg/960px-%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%AA%E0%B8%B0%E0%B9%81%E0%B8%81%E0%B8%99%E0%B8%AD%E0%B8%81_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%98%E0%B8%99%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%AA%E0%B8%B0%E0%B9%81%E0%B8%81%E0%B8%99%E0%B8%AD%E0%B8%81_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%98%E0%B8%99%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3.jpg",
+  "credit": "กสิณธร ราชโอรส · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 7,
+  "why": "ภาพมุมกว้างเห็นอุโบสถสถาปัตยกรรมวัดสวยงามชัดเจน",
+  "at": "2026-11-07T03:48:03.758Z"
+ },
+ "osm-w376675941": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%83%E0%B8%AB%E0%B8%8D%E0%B9%88%E0%B8%A8%E0%B8%A3%E0%B8%B5%E0%B8%AA%E0%B8%B8%E0%B8%9E%E0%B8%A3%E0%B8%A3%E0%B8%93_01.jpg/960px-%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%83%E0%B8%AB%E0%B8%8D%E0%B9%88%E0%B8%A8%E0%B8%A3%E0%B8%B5%E0%B8%AA%E0%B8%B8%E0%B8%9E%E0%B8%A3%E0%B8%A3%E0%B8%93_01.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%83%E0%B8%AB%E0%B8%8D%E0%B9%88%E0%B8%A8%E0%B8%A3%E0%B8%B5%E0%B8%AA%E0%B8%B8%E0%B8%9E%E0%B8%A3%E0%B8%A3%E0%B8%93_01.jpg",
+  "credit": "Dharmadana · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 8,
+  "why": "ภาพมุมกว้างองค์พระอุโบสถกับท้องฟ้าสดใส",
+  "at": "2026-11-07T03:48:03.758Z"
+ },
+ "osm-w376675942": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/%282023%29_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%84%E0%B8%A4%E0%B8%AB%E0%B9%8C%E0%B8%A7%E0%B8%A3%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%98%E0%B8%99%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%2815%29.jpg/960px-%282023%29_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%84%E0%B8%A4%E0%B8%AB%E0%B9%8C%E0%B8%A7%E0%B8%A3%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%98%E0%B8%99%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%2815%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:(2023)_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%84%E0%B8%A4%E0%B8%AB%E0%B9%8C%E0%B8%A7%E0%B8%A3%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%98%E0%B8%99%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_(15).jpg",
+  "credit": "กสิณธร ราชโอรส · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 7,
+  "why": "ภาพหน้าบันอุโบสถลวดลายวิจิตรสวยงาม",
+  "at": "2026-11-07T03:48:03.758Z"
+ },
+ "osm-w376675943": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%80%E0%B8%9E%E0%B8%A5%E0%B8%87_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%A0%E0%B8%B2%E0%B8%A9%E0%B8%B5%E0%B9%80%E0%B8%88%E0%B8%A3%E0%B8%B4%E0%B8%8D_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%2814%29.jpg/960px-%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%80%E0%B8%9E%E0%B8%A5%E0%B8%87_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%A0%E0%B8%B2%E0%B8%A9%E0%B8%B5%E0%B9%80%E0%B8%88%E0%B8%A3%E0%B8%B4%E0%B8%8D_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%2814%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%80%E0%B8%9E%E0%B8%A5%E0%B8%87_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%A0%E0%B8%B2%E0%B8%A9%E0%B8%B5%E0%B9%80%E0%B8%88%E0%B8%A3%E0%B8%B4%E0%B8%8D_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_(14).jpg",
+  "credit": "กสิณธร ราชโอรส · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 6,
+  "why": "ภาพพระประธานภายในอุโบสถสวยงาม",
+  "at": "2026-11-07T03:48:03.758Z"
+ },
+ "osm-w376675944": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/%282022%29_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%A7%E0%B8%A3%E0%B8%B2%E0%B8%A1%E0%B8%B2%E0%B8%95%E0%B8%A2%E0%B8%A0%E0%B8%B1%E0%B8%93%E0%B8%91%E0%B8%AA%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1_%28%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%82%E0%B8%B8%E0%B8%99%E0%B8%88%E0%B8%B1%E0%B8%99%E0%B8%97%E0%B8%A3%E0%B9%8C%29_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%98%E0%B8%99%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%282%29.jpg/960px-thumbnail.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:(2022)_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%A7%E0%B8%A3%E0%B8%B2%E0%B8%A1%E0%B8%B2%E0%B8%95%E0%B8%A2%E0%B8%A0%E0%B8%B1%E0%B8%93%E0%B8%91%E0%B8%AA%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1_(%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%82%E0%B8%B8%E0%B8%99%E0%B8%88%E0%B8%B1%E0%B8%99%E0%B8%97%E0%B8%A3%E0%B9%8C)_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%98%E0%B8%99%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_(2).jpg",
+  "credit": "กสิณธร ราชโอรส · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 7,
+  "why": "มุมมองพระพุทธรูปและช้างทรงที่โดดเด่นน่าสนใจ",
+  "at": "2026-11-07T03:48:27.674Z"
+ },
+ "osm-w376675945": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/%282023%29_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%A2%E0%B8%B2%E0%B8%87%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%88%E0%B8%B2%E0%B8%81_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%A0%E0%B8%B2%E0%B8%A9%E0%B8%B5%E0%B9%80%E0%B8%88%E0%B8%A3%E0%B8%B4%E0%B8%8D_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%282%29.jpg/960px-%282023%29_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%A2%E0%B8%B2%E0%B8%87%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%88%E0%B8%B2%E0%B8%81_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%A0%E0%B8%B2%E0%B8%A9%E0%B8%B5%E0%B9%80%E0%B8%88%E0%B8%A3%E0%B8%B4%E0%B8%8D_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%282%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:(2023)_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%A2%E0%B8%B2%E0%B8%87%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%88%E0%B8%B2%E0%B8%81_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%A0%E0%B8%B2%E0%B8%A9%E0%B8%B5%E0%B9%80%E0%B8%88%E0%B8%A3%E0%B8%B4%E0%B8%8D_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_(2).jpg",
+  "credit": "กสิณธร ราชโอรส · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 6,
+  "why": "ภาพอุโบสถวัดสวยงามชัดเจน",
+  "at": "2026-11-07T03:48:27.674Z"
+ },
+ "osm-w376675946": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%99%E0%B8%B4%E0%B8%A1%E0%B8%A1%E0%B8%B2%E0%B8%99%E0%B8%A3%E0%B8%94%E0%B8%B5_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%A0%E0%B8%B2%E0%B8%A9%E0%B8%B5%E0%B9%80%E0%B8%88%E0%B8%A3%E0%B8%B4%E0%B8%8D_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%2835%29.jpg/960px-%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%99%E0%B8%B4%E0%B8%A1%E0%B8%A1%E0%B8%B2%E0%B8%99%E0%B8%A3%E0%B8%94%E0%B8%B5_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%A0%E0%B8%B2%E0%B8%A9%E0%B8%B5%E0%B9%80%E0%B8%88%E0%B8%A3%E0%B8%B4%E0%B8%8D_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%2835%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%99%E0%B8%B4%E0%B8%A1%E0%B8%A1%E0%B8%B2%E0%B8%99%E0%B8%A3%E0%B8%94%E0%B8%B5_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%A0%E0%B8%B2%E0%B8%A9%E0%B8%B5%E0%B9%80%E0%B8%88%E0%B8%A3%E0%B8%B4%E0%B8%8D_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_(35).jpg",
+  "credit": "กสิณธร ราชโอรส · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 6,
+  "why": "ภาพภายในวัดและพระประธานดูงดงาม",
+  "at": "2026-11-07T03:48:27.674Z"
+ },
+ "osm-w376675947": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Glass_stupa_wat_paknam.jpg/960px-Glass_stupa_wat_paknam.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Glass_stupa_wat_paknam.jpg",
+  "credit": "Wikiman5676 · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 9,
+  "why": "เจดีย์แก้วมรกตสีเขียวสวยงามอลังการน่าเข้าชม",
+  "at": "2026-11-07T03:48:27.674Z"
+ },
+ "osm-w376675953": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/%282023%29_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AD%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B9%81%E0%B8%81%E0%B9%89%E0%B8%A7_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%A0%E0%B8%B2%E0%B8%A9%E0%B8%B5%E0%B9%80%E0%B8%88%E0%B8%A3%E0%B8%B4%E0%B8%8D_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%2837%29.jpg/960px-%282023%29_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AD%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B9%81%E0%B8%81%E0%B9%89%E0%B8%A7_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%A0%E0%B8%B2%E0%B8%A9%E0%B8%B5%E0%B9%80%E0%B8%88%E0%B8%A3%E0%B8%B4%E0%B8%8D_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%2837%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:(2023)_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AD%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B9%81%E0%B8%81%E0%B9%89%E0%B8%A7_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%A0%E0%B8%B2%E0%B8%A9%E0%B8%B5%E0%B9%80%E0%B8%88%E0%B8%A3%E0%B8%B4%E0%B8%8D_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_(37).jpg",
+  "credit": "กสิณธร ราชโอรส · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 6,
+  "why": "ภาพจิตรกรรมฝาผนังในโบสถ์สวยงามชัดเจน",
+  "at": "2026-11-07T03:48:40.339Z"
+ },
+ "osm-w376679547": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Wat_Soi_Thong_Ahoerstemeier_1.jpg/960px-Wat_Soi_Thong_Ahoerstemeier_1.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Wat_Soi_Thong_Ahoerstemeier_1.jpg",
+  "credit": "Ahoerstemeier · CC BY 4.0",
+  "by": "ai",
+  "appeal": 7,
+  "why": "ภาพถ่ายตัวอาคารวัดมุมกว้างพร้อมหลังคากระเบื้องส้มเด่นชัด",
+  "at": "2026-11-07T03:48:40.339Z"
+ },
+ "osm-w376679550": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%8A%E0%B8%B2%E0%B8%A8%E0%B8%A3%E0%B8%B1%E0%B8%97%E0%B8%98%E0%B8%B2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1_%28%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3%29.jpg/960px-%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%8A%E0%B8%B2%E0%B8%A8%E0%B8%A3%E0%B8%B1%E0%B8%97%E0%B8%98%E0%B8%B2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1_%28%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%8A%E0%B8%B2%E0%B8%A8%E0%B8%A3%E0%B8%B1%E0%B8%97%E0%B8%98%E0%B8%B2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1_(%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3).jpg",
+  "credit": "Dharmadana · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 6,
+  "why": "ภาพอุโบสถสีชมพูและทองพร้อมดอกไม้ด้านหน้าสวยงาม",
+  "at": "2026-11-07T03:48:40.339Z"
+ },
+ "osm-w376833458": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AA%E0%B8%B2%E0%B8%A1%E0%B8%B1%E0%B8%84%E0%B8%84%E0%B8%B5%E0%B8%AA%E0%B8%B8%E0%B8%97%E0%B8%98%E0%B8%B2%E0%B8%A7%E0%B8%B2%E0%B8%AA.jpg/960px-%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AA%E0%B8%B2%E0%B8%A1%E0%B8%B1%E0%B8%84%E0%B8%84%E0%B8%B5%E0%B8%AA%E0%B8%B8%E0%B8%97%E0%B8%98%E0%B8%B2%E0%B8%A7%E0%B8%B2%E0%B8%AA.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AA%E0%B8%B2%E0%B8%A1%E0%B8%B1%E0%B8%84%E0%B8%84%E0%B8%B5%E0%B8%AA%E0%B8%B8%E0%B8%97%E0%B8%98%E0%B8%B2%E0%B8%A7%E0%B8%B2%E0%B8%AA.jpg",
+  "credit": "Dharmadana · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 6,
+  "why": "ภาพหน้าบันและเสาลวดลายไทยชัดเจน",
+  "at": "2026-11-07T03:48:40.339Z"
+ },
+ "osm-w376833459": {
+  "image": null,
+  "by": "ai",
+  "why": "ภาพพระพุทธรูปงดงามและคมชัด",
+  "at": "2026-11-07T03:48:49.893Z"
+ },
+ "osm-w376863072": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Wat_Bhanurangsi_2026-06-11_%285%29.jpg/960px-Wat_Bhanurangsi_2026-06-11_%285%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Wat_Bhanurangsi_2026-06-11_(5).jpg",
+  "credit": "Xiengyod~commonswiki · CC BY 4.0",
+  "by": "ai",
+  "appeal": 7,
+  "why": "ภาพอาคารวัดสถาปัตยกรรมไทยใต้ท้องฟ้าแจ่มใส",
+  "at": "2026-11-07T03:48:49.893Z"
+ },
+ "osm-w40277816": {
+  "image": null,
+  "by": "rule",
+  "at": "2026-11-07T03:48:49.893Z"
+ },
+ "osm-w194758858": {
+  "image": null,
+  "by": "rule",
+  "at": "2026-11-07T03:48:49.893Z"
+ },
+ "osm-w318678214": {
+  "image": null,
+  "by": "rule",
+  "at": "2026-11-07T03:48:49.893Z"
+ },
+ "osm-w331795136": {
+  "image": null,
+  "by": "rule",
+  "at": "2026-11-07T03:48:49.893Z"
+ },
+ "osm-w337817897": {
+  "image": null,
+  "by": "rule",
+  "at": "2026-11-07T03:48:49.893Z"
+ },
+ "osm-w375807120": {
+  "image": null,
+  "by": "rule",
+  "at": "2026-11-07T03:48:49.893Z"
+ },
+ "osm-w376311199": {
+  "image": null,
+  "by": "rule",
+  "at": "2026-11-07T03:48:49.893Z"
+ },
+ "osm-w376835531": {
+  "image": null,
+  "by": "rule",
+  "at": "2026-11-07T03:48:49.893Z"
  }
 }

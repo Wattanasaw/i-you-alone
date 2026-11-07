@@ -62,7 +62,8 @@
       "venue": {
         "name": "หัวหิน จ.ประจวบคีรีขันธ์",
         "province": "prachuap-khiri-khan"
-      }
+      },
+      "imageScore": 8
     },
     {
       "id": "ep-159559",
@@ -83,7 +84,8 @@
       "venue": {
         "name": "สถาบัน Triam วิทย์-คณิต MBK ชั้น 6 โซน D สถาบันติวสอบเข้า ม.1 และ ม.4",
         "province": "bangkok"
-      }
+      },
+      "imageScore": 2
     },
     {
       "id": "spg-siam-paragon-weekend-alert-oct-nov-26-407",
@@ -106,7 +108,8 @@
         "province": "bangkok",
         "lat": 13.74678,
         "lng": 100.53495
-      }
+      },
+      "imageScore": 8
     },
     {
       "id": "spg-spooky-enchin-enhypen-official-character-pop-up-in-bangkok-1",
@@ -129,7 +132,8 @@
         "province": "bangkok",
         "lat": 13.74678,
         "lng": 100.53495
-      }
+      },
+      "imageScore": 7
     },
     {
       "id": "ttm-lykn-reflexion-concert",
@@ -149,7 +153,8 @@
       "sourceUrl": "https://www.thaiticketmajor.com/concert/lykn-reflexion-concert.html",
       "sourceName": "ThaiTicketMajor",
       "fetchedAt": "2026-11-07T02:17:30.548Z",
-      "venueId": "impact"
+      "venueId": "impact",
+      "imageScore": 7
     },
     {
       "id": "spg-nct-127-the-7th-album-blingy-pop-up-neo-lostfound-center-in-",
@@ -172,7 +177,8 @@
         "province": "bangkok",
         "lat": 13.74678,
         "lng": 100.53495
-      }
+      },
+      "imageScore": 2
     },
     {
       "id": "ep-171021",
@@ -193,7 +199,8 @@
       "venue": {
         "name": "SOULSMITH By Empathy Sauce",
         "province": "bangkok"
-      }
+      },
+      "imageScore": 3
     },
     {
       "id": "ep-181282",
@@ -216,7 +223,8 @@
         "province": "bangkok",
         "lat": 13.76862,
         "lng": 100.50045
-      }
+      },
+      "imageScore": 6
     },
     {
       "id": "ttm-the-golden-show-all-stars-concert-2026",
@@ -239,7 +247,8 @@
       "venue": {
         "name": "เมืองไทยรัชดาลัย เธียเตอร์",
         "province": "bangkok"
-      }
+      },
+      "imageScore": 6
     },
     {
       "id": "spg-november-beats-2026-190",
@@ -262,7 +271,8 @@
         "province": "bangkok",
         "lat": 13.74678,
         "lng": 100.53495
-      }
+      },
+      "imageScore": 3
     },
     {
       "id": "ep-161857",
@@ -285,7 +295,8 @@
       "venue": {
         "name": "LEO PARK",
         "province": "khon-kaen"
-      }
+      },
+      "imageScore": 5
     },
     {
       "id": "ep-160395",
@@ -308,7 +319,8 @@
       "venue": {
         "name": "DONKI Mall Thonglor",
         "province": "bangkok"
-      }
+      },
+      "imageScore": 7
     },
     {
       "id": "ep-177671",
@@ -334,7 +346,8 @@
         "lat": 13.73152,
         "lng": 100.56428
       },
-      "sponsor": "Sales100Million"
+      "sponsor": "Sales100Million",
+      "imageScore": 6
     },
     {
       "id": "ep-175705",
@@ -356,7 +369,8 @@
       "venue": {
         "name": "Heavyweight brunch n bars",
         "province": "phuket"
-      }
+      },
+      "imageScore": 4
     },
     {
       "id": "ep-175043",
@@ -380,7 +394,8 @@
         "province": "bangkok",
         "lat": 13.71947,
         "lng": 100.5438
-      }
+      },
+      "imageScore": 7
     },
     {
       "id": "ep-174009",
@@ -404,7 +419,8 @@
         "province": "bangkok",
         "lat": 13.75693,
         "lng": 100.56469
-      }
+      },
+      "imageScore": 5
     },
     {
       "id": "ep-172847",
@@ -425,7 +441,8 @@
       "venue": {
         "name": "KMITL Lifelong Learning Center",
         "province": "bangkok"
-      }
+      },
+      "imageScore": 6
     },
     {
       "id": "ep-172345",
@@ -447,7 +464,8 @@
       "venue": {
         "name": "อาคารเคเอกซ์",
         "province": "bangkok"
-      }
+      },
+      "imageScore": 5
     },
     {
       "id": "ttm-mr-fanboy-ep11-screening-presented-by-monday-moist",
@@ -471,7 +489,8 @@
       "venue": {
         "name": "SF World Cinema โรงที่ 15",
         "province": "bangkok"
-      }
+      },
+      "imageScore": 7
     },
     {
       "id": "ttm-bigbang-2026-2027-world-tour-xx-cosmos-in-bangkok",
@@ -491,7 +510,8 @@
       "sourceUrl": "https://www.thaiticketmajor.com/concert/bigbang-2026-2027-world-tour-xx-cosmos-in-bangkok.html",
       "sourceName": "ThaiTicketMajor",
       "fetchedAt": "2026-11-07T00:41:58.575Z",
-      "venueId": "rajamangala"
+      "venueId": "rajamangala",
+      "imageScore": 3
     },
     {
       "id": "ttm-2026-27-babymonster-world-tour-choom-in-bangkok",
@@ -511,7 +531,8 @@
       "sourceUrl": "https://www.thaiticketmajor.com/concert/2026-27-babymonster-world-tour-choom-in-bangkok.html",
       "sourceName": "ThaiTicketMajor",
       "fetchedAt": "2026-11-07T02:17:27.913Z",
-      "venueId": "impact"
+      "venueId": "impact",
+      "imageScore": 8
     },
     {
       "id": "ttm-shine-bangkok-fansign-one-last-light",
@@ -534,7 +555,8 @@
       "venue": {
         "name": "SIAM PAVALAI ROYAL GRAND THEATRE",
         "province": "bangkok"
-      }
+      },
+      "imageScore": 6
     },
     {
       "id": "ttm-dew-tee-secret-area-fancon",
@@ -557,7 +579,8 @@
       "venue": {
         "name": "Live Streaming by TTM LIVE",
         "province": "bangkok"
-      }
+      },
+      "imageScore": 8
     },
     {
       "id": "ttm-royal-jazz-for-the-chaipattana-foundation-volume-3",
@@ -577,7 +600,8 @@
       "sourceUrl": "https://www.thaiticketmajor.com/concert/royal-jazz-for-the-chaipattana-foundation-volume-3.html",
       "sourceName": "ThaiTicketMajor",
       "fetchedAt": "2026-11-06T20:24:11.747Z",
-      "venueId": "qsncc"
+      "venueId": "qsncc",
+      "imageScore": 5
     },
     {
       "id": "ttm-mr-fanboy-series-ep11-presented-by-monday-moist",
@@ -601,7 +625,8 @@
       "venue": {
         "name": "SIAM PAVALAI ROYAL GRAND THEATRE",
         "province": "bangkok"
-      }
+      },
+      "imageScore": 8
     },
     {
       "id": "ttm-one-fight-night-49",
@@ -626,7 +651,8 @@
         "province": "bangkok",
         "lat": 13.87619,
         "lng": 100.59596
-      }
+      },
+      "imageScore": 9
     },
     {
       "id": "run-BOaQBWtD",
@@ -648,7 +674,8 @@
       "venue": {
         "name": "สวนสาธารณะ 80 พรรษา จ.สกลนคร",
         "province": "sakon-nakhon"
-      }
+      },
+      "imageScore": 7
     },
     {
       "id": "run-LaUljSFZ",
@@ -672,7 +699,8 @@
       "venue": {
         "name": "สนามกีฬากลางเทศบาลเมืองเมืองแกนพัฒนา ทางขึ้นเขื่อนแม่งัด อ.แม่แตง จ.เชียงใหม่",
         "province": "chiang-mai"
-      }
+      },
+      "imageScore": 5
     },
     {
       "id": "run-yUucSMDs",
@@ -694,7 +722,8 @@
       "venue": {
         "name": "สะพานรวมใจป่ายาง 2560 ต.สามเงา อ.สามเงา จ.ตาก",
         "province": "tak"
-      }
+      },
+      "imageScore": 6
     },
     {
       "id": "run-hvlkLXQc",
@@ -718,7 +747,8 @@
       "venue": {
         "name": "โรงเรียนบ้านรวมมิตร จ.เชียงราย",
         "province": "chiang-rai"
-      }
+      },
+      "imageScore": 3
     },
     {
       "id": "eb-1990074848443",
@@ -740,7 +770,8 @@
         "province": "bangkok",
         "lat": 13.74252,
         "lng": 100.67124
-      }
+      },
+      "imageScore": 6
     },
     {
       "id": "eb-1984931025129",
@@ -760,7 +791,8 @@
       "venue": {
         "name": "Restaurant of the Week",
         "province": "bangkok"
-      }
+      },
+      "imageScore": 8
     },
     {
       "id": "eb-2003975691238",
@@ -780,7 +812,8 @@
       "venue": {
         "name": "Kepler BKK",
         "province": "bangkok"
-      }
+      },
+      "imageScore": 4
     },
     {
       "id": "eb-1997329624674",
@@ -800,7 +833,8 @@
       "venue": {
         "name": "Radicle Beer Company",
         "province": "bangkok"
-      }
+      },
+      "imageScore": 5
     },
     {
       "id": "eb-1994143693468",
@@ -820,7 +854,8 @@
       "venue": {
         "name": "360Art Center",
         "province": "chiang-mai"
-      }
+      },
+      "imageScore": 8
     },
     {
       "id": "ep-176807",
@@ -844,7 +879,8 @@
         "province": "bangkok",
         "lat": 13.75693,
         "lng": 100.56469
-      }
+      },
+      "imageScore": 3
     },
     {
       "id": "ep-176609",
@@ -868,7 +904,8 @@
         "province": "phuket",
         "lat": 7.90274,
         "lng": 98.3015
-      }
+      },
+      "imageScore": 8
     },
     {
       "id": "ep-176069",
@@ -895,7 +932,8 @@
         "lat": 13.75135,
         "lng": 100.57096
       },
-      "sponsor": "Singha Corporation"
+      "sponsor": "Singha Corporation",
+      "imageScore": 8
     },
     {
       "id": "ep-173907",
@@ -917,7 +955,8 @@
       "venue": {
         "name": "Bangkok Island",
         "province": "bangkok"
-      }
+      },
+      "imageScore": 3
     },
     {
       "id": "run-vRCpDAef",
@@ -941,7 +980,8 @@
       "venue": {
         "name": "มหาวิทยาลัยเชียงใหม่ จ.เชียงใหม่",
         "province": "chiang-mai"
-      }
+      },
+      "imageScore": 7
     },
     {
       "id": "run-iXnqzLSp",
@@ -965,7 +1005,8 @@
       "venue": {
         "name": "คณะประมง มหาวิทยาลัยเกษตรศาสตร์ บางเขน กรุงเทพมหานคร",
         "province": "bangkok"
-      }
+      },
+      "imageScore": 5
     },
     {
       "id": "run-bGseZzrn",
@@ -989,7 +1030,8 @@
       "venue": {
         "name": "สนามฟุตบอล 1 การกีฬาแห่งประเทศไทย หัวหมาก กรุงเทพมหานคร",
         "province": "bangkok"
-      }
+      },
+      "imageScore": 4
     },
     {
       "id": "zip-the-black-kings-nephew-nov",
@@ -1009,7 +1051,8 @@
       "venue": {
         "name": "ข้อมูลอีเว้นท์",
         "province": "bangkok"
-      }
+      },
+      "imageScore": 7
     },
     {
       "id": "ep-180616",
@@ -1030,7 +1073,8 @@
       "venue": {
         "name": "IMC Institute",
         "province": "bangkok"
-      }
+      },
+      "imageScore": 5
     },
     {
       "id": "eb-2003451382015",
@@ -1050,7 +1094,8 @@
       "venue": {
         "name": "Yaru @ Grande Centre Point Lumphini",
         "province": "bangkok"
-      }
+      },
+      "imageScore": 3
     },
     {
       "id": "eb-1985491318983",
@@ -1070,7 +1115,8 @@
       "venue": {
         "name": "Grand Mercure Bangkok Atrium",
         "province": "bangkok"
-      }
+      },
+      "imageScore": 4
     },
     {
       "id": "ttm-lany-soft-world-tour-bangkok",
@@ -1095,7 +1141,8 @@
         "province": "bangkok",
         "lat": 13.73251,
         "lng": 100.56608
-      }
+      },
+      "imageScore": 8
     },
     {
       "id": "ep-179095",
@@ -1116,7 +1163,8 @@
       "venue": {
         "name": "Waterfall Festival",
         "province": "surat-thani"
-      }
+      },
+      "imageScore": 4
     },
     {
       "id": "ep-174376",
@@ -1138,7 +1186,8 @@
       "venue": {
         "name": "SiamPic Hall",
         "province": "bangkok"
-      }
+      },
+      "imageScore": 8
     },
     {
       "id": "eb-1996646602737",
@@ -1158,7 +1207,8 @@
       "venue": {
         "name": "Alliance Française de Bangkok",
         "province": "bangkok"
-      }
+      },
+      "imageScore": 4
     },
     {
       "id": "eb-2004474477120",
@@ -1178,7 +1228,8 @@
       "venue": {
         "name": "Wellnest Sauna & Ice Bath Chiang mai",
         "province": "chiang-mai"
-      }
+      },
+      "imageScore": 7
     },
     {
       "id": "eb-2003331932739",
@@ -1198,7 +1249,8 @@
       "venue": {
         "name": "Let's Relax Spa - Movenpick Siam Hotel Na Jomtien Pattaya",
         "province": "chonburi"
-      }
+      },
+      "imageScore": 3
     },
     {
       "id": "eb-1979838528334",
@@ -1218,7 +1270,8 @@
       "venue": {
         "name": "Grand Mercure Bangkok Atrium",
         "province": "bangkok"
-      }
+      },
+      "imageScore": 3
     },
     {
       "id": "ep-181082",
@@ -1240,7 +1293,8 @@
       "venue": {
         "name": "CU Auditorium",
         "province": "bangkok"
-      }
+      },
+      "imageScore": 3
     },
     {
       "id": "ep-180649",
@@ -1261,7 +1315,8 @@
       "venue": {
         "name": "IMC Institute",
         "province": "bangkok"
-      }
+      },
+      "imageScore": 3
     },
     {
       "id": "ep-177172",
@@ -1284,7 +1339,8 @@
         "name": "Industrious Gaysorn Tower",
         "province": "bangkok"
       },
-      "sponsor": "Bangkok Startup Association"
+      "sponsor": "Bangkok Startup Association",
+      "imageScore": 7
     },
     {
       "id": "ttm-wave-to-earth-the-pieces-tour",
@@ -1309,7 +1365,8 @@
         "province": "bangkok",
         "lat": 13.73251,
         "lng": 100.56608
-      }
+      },
+      "imageScore": 5
     },
     {
       "id": "eb-1998344763983",
@@ -1331,7 +1388,8 @@
         "province": "bangkok",
         "lat": 13.74651,
         "lng": 100.50916
-      }
+      },
+      "imageScore": 8
     },
     {
       "id": "ep-180121",
@@ -1353,7 +1411,8 @@
       "venue": {
         "name": "Bangkok Island",
         "province": "bangkok"
-      }
+      },
+      "imageScore": 9
     },
     {
       "id": "ttm-big-ass-big-concert",
@@ -1374,7 +1433,8 @@
       "sourceName": "ThaiTicketMajor",
       "fetchedAt": "2026-11-06T20:24:18.417Z",
       "sponsor": "ไทยประกันชีวิต",
-      "venueId": "impact"
+      "venueId": "impact",
+      "imageScore": 8
     },
     {
       "id": "ttm-one-lumpinee-178",
@@ -1399,7 +1459,8 @@
         "province": "bangkok",
         "lat": 13.87619,
         "lng": 100.59596
-      }
+      },
+      "imageScore": 8
     },
     {
       "id": "eb-1994931622184",
@@ -1419,7 +1480,8 @@
       "venue": {
         "name": "360Art Center",
         "province": "chiang-mai"
-      }
+      },
+      "imageScore": 5
     },
     {
       "id": "ep-181216",
@@ -1442,7 +1504,8 @@
         "province": "nakhon-si-thammarat",
         "lat": 8.42809,
         "lng": 99.96302
-      }
+      },
+      "imageScore": 9
     },
     {
       "id": "ep-179690",
@@ -1466,7 +1529,8 @@
         "province": "bangkok",
         "lat": 13.74689,
         "lng": 100.53876
-      }
+      },
+      "imageScore": 5
     },
     {
       "id": "ep-177803",
@@ -1489,7 +1553,8 @@
         "province": "bangkok",
         "lat": 13.74309,
         "lng": 100.53287
-      }
+      },
+      "imageScore": 4
     },
     {
       "id": "ep-177438",
@@ -1510,7 +1575,8 @@
       "venue": {
         "name": "Green Lake Resort Chiangmai",
         "province": "chiang-mai"
-      }
+      },
+      "imageScore": 8
     },
     {
       "id": "ep-175408",
@@ -1534,7 +1600,8 @@
         "province": "bangkok",
         "lat": 13.75693,
         "lng": 100.56469
-      }
+      },
+      "imageScore": 5
     },
     {
       "id": "ep-174077",
@@ -1560,7 +1627,8 @@
         "province": "bangkok",
         "lat": 13.76579,
         "lng": 100.64267
-      }
+      },
+      "imageScore": 7
     },
     {
       "id": "ep-172510",
@@ -1584,7 +1652,8 @@
         "province": "chiang-mai",
         "lat": 18.80093,
         "lng": 98.95216
-      }
+      },
+      "imageScore": 4
     },
     {
       "id": "ep-170487",
@@ -1610,7 +1679,8 @@
         "province": "bangkok",
         "lat": 7.96764,
         "lng": 98.39125
-      }
+      },
+      "imageScore": 5
     },
     {
       "id": "ep-118637",
@@ -1631,7 +1701,8 @@
       "venue": {
         "name": "Mr.FOX Live House",
         "province": "bangkok"
-      }
+      },
+      "imageScore": 9
     },
     {
       "id": "ttm-qwer-2nd-tour-rockation-rocket-launch-in-bangkok",
@@ -1654,7 +1725,8 @@
       "venue": {
         "name": "MCC HALL ชั้น 4, เดอะมอลล์ไลฟ์สโตร์ งามวงศ์วาน",
         "province": "bangkok"
-      }
+      },
+      "imageScore": 8
     },
     {
       "id": "ttm-2026-k-pop-masterz-special-live-in-bangkok-bambam-mark-jayb",
@@ -1674,7 +1746,8 @@
       "sourceUrl": "https://www.thaiticketmajor.com/concert/2026-k-pop-masterz-special-live-in-bangkok-bambam-mark-jayb.html",
       "sourceName": "ThaiTicketMajor",
       "fetchedAt": "2026-11-07T02:35:14.769Z",
-      "venueId": "thunderdome"
+      "venueId": "thunderdome",
+      "imageScore": 8
     },
     {
       "id": "ttm-mr-fanboy-final-episode-welcome-back",
@@ -1694,7 +1767,8 @@
       "sourceUrl": "https://www.thaiticketmajor.com/performance/mr-fanboy-final-episode-welcome-back.html",
       "sourceName": "ThaiTicketMajor",
       "fetchedAt": "2026-11-06T20:23:41.671Z",
-      "venueId": "impact"
+      "venueId": "impact",
+      "imageScore": 7
     },
     {
       "id": "ttm-be-peerapat-be-and-beyond-concert",
@@ -1717,7 +1791,8 @@
       "venue": {
         "name": "บีซีซี ฮอลล์ เซ็นทรัล พลาซ่า ลาดพร้าว ชั้น 5",
         "province": "bangkok"
-      }
+      },
+      "imageScore": 7
     },
     {
       "id": "ttm-namtan-film-glamorous-fancon",
@@ -1740,7 +1815,8 @@
       "venue": {
         "name": "Live Streaming by TTM LIVE",
         "province": "bangkok"
-      }
+      },
+      "imageScore": 7
     },
     {
       "id": "run-uEHdSmYI",
@@ -1764,7 +1840,8 @@
       "venue": {
         "name": "Black Mountain Water Park อ.หัวหิน จ.ประจวบคีรีขันธ์",
         "province": "prachuap-khiri-khan"
-      }
+      },
+      "imageScore": 8
     },
     {
       "id": "run-QjgVLNpU",
@@ -1788,7 +1865,8 @@
         "province": "bangkok",
         "lat": 13.81182,
         "lng": 100.55367
-      }
+      },
+      "imageScore": 4
     },
     {
       "id": "eb-1996079664008",
@@ -1808,7 +1886,8 @@
       "venue": {
         "name": "Meliá Chiang Mai Hotel",
         "province": "chiang-mai"
-      }
+      },
+      "imageScore": 8
     },
     {
       "id": "ep-179426",
@@ -1831,7 +1910,8 @@
         "province": "bangkok",
         "lat": 13.69101,
         "lng": 100.52807
-      }
+      },
+      "imageScore": 3
     },
     {
       "id": "ep-178234",
@@ -1855,7 +1935,8 @@
       "venue": {
         "name": "อาคารเรียนและปฏิบัติการรวม(อาคารปิยชาติ 2)",
         "province": "pathum-thani"
-      }
+      },
+      "imageScore": 6
     },
     {
       "id": "ep-176202",
@@ -1877,7 +1958,8 @@
       "venue": {
         "name": "Sasin School of Management",
         "province": "bangkok"
-      }
+      },
+      "imageScore": 4
     },
     {
       "id": "ep-170922",
@@ -1903,7 +1985,8 @@
         "province": "bangkok",
         "lat": 13.72038,
         "lng": 100.4983
-      }
+      },
+      "imageScore": 7
     },
     {
       "id": "ep-166139",
@@ -1925,7 +2008,8 @@
       "venue": {
         "name": "True Space Asoke",
         "province": "bangkok"
-      }
+      },
+      "imageScore": 5
     },
     {
       "id": "ttm-milk-love-whimsical-house-fancon",
@@ -1948,7 +2032,8 @@
       "venue": {
         "name": "Live Streaming by TTM LIVE",
         "province": "bangkok"
-      }
+      },
+      "imageScore": 8
     },
     {
       "id": "run-RxVbbjnN",
@@ -1972,7 +2057,8 @@
       "venue": {
         "name": "บึงศรีฐาน มหาวิทยาลัยขอนแก่น จ.ขอนแก่น",
         "province": "khon-kaen"
-      }
+      },
+      "imageScore": 6
     },
     {
       "id": "run-AqpDtjEc",
@@ -1996,7 +2082,8 @@
       "venue": {
         "name": "ศูนย์บริการนักท่องเที่ยวเทศบาลเมืองน่าน จ.น่าน",
         "province": "nan"
-      }
+      },
+      "imageScore": 5
     },
     {
       "id": "run-FvMlOOPp",
@@ -2020,7 +2107,8 @@
       "venue": {
         "name": "ลานอเนกประสงค์ โครงการป่าชายเลนในเมืองจังหวัดระยอง (ฝั่งท่าบรรทุก) ต.เนินพระ อ.เมืองระยอง จ.ระยอง",
         "province": "rayong"
-      }
+      },
+      "imageScore": 4
     },
     {
       "id": "run-PmRviWrw",
@@ -2044,7 +2132,8 @@
       "venue": {
         "name": "ลานวิ่ง นิคมอุตสาหกรรมสินสาคร จ.สมุทรสาคร",
         "province": "samut-sakhon"
-      }
+      },
+      "imageScore": 7
     },
     {
       "id": "run-FuUMYwAa",
@@ -2068,7 +2157,8 @@
       "venue": {
         "name": "สนามกีฬาโรงเรียนสัตยาไส จ.ลพบุรี",
         "province": "lopburi"
-      }
+      },
+      "imageScore": 5
     },
     {
       "id": "run-cgXyvAWj",
