@@ -17,9 +17,9 @@ window.APP_CONFIG = {
     { id: "social", icon: "💘", color: "#e11d48", color2: "#fb7185", name: { th: "หาเพื่อน/คู่", en: "Meet people", zh: "交友" } },
     { id: "seminar", icon: "🗣️", color: "#1d4ed8", color2: "#7c3aed", name: { th: "สัมมนา", en: "Talks", zh: "讲座" } },
     { id: "learning", icon: "🎓", color: "#2f7cf6", color2: "#00c2c7", name: { th: "เวิร์กช็อป", en: "Workshops", zh: "工作坊" } },
-    { id: "book", icon: "📚", color: "#8b5cf6", color2: "#ec4899", name: { th: "หนังสือ", en: "Books", zh: "书展" } },
-    { id: "motor", icon: "🏎️", color: "#0ea47a", color2: "#1e3a8a", name: { th: "รถยนต์", en: "Motor shows", zh: "车展" } },
-    { id: "sale", icon: "🛍️", color: "#ff7a45", color2: "#ff2d55", name: { th: "ลดราคา", en: "Sales", zh: "特卖" } },
+    { id: "book", icon: "📚", color: "#8b5cf6", color2: "#ec4899", name: { th: "งานหนังสือ", en: "Book fairs", zh: "书展" } },
+    { id: "motor", icon: "🏎️", color: "#0ea47a", color2: "#1e3a8a", name: { th: "มอเตอร์โชว์", en: "Motor shows", zh: "车展" } },
+    { id: "sale", icon: "🛍️", color: "#ff7a45", color2: "#ff2d55", name: { th: "แฟลชเซล", en: "Flash sales", zh: "限时特卖" } },
     { id: "food", icon: "🍜", color: "#f59e0b", color2: "#ef4444", name: { th: "อาหาร", en: "Food", zh: "美食" } },
     // งานประเพณี/เทศกาล (ลอยกระทง สงกรานต์ งานวัด เคาท์ดาวน์ ยี่เป็ง)
     { id: "festival", icon: "🏮", color: "#dc2626", color2: "#facc15", name: { th: "เทศกาล", en: "Festivals", zh: "节庆" } },
