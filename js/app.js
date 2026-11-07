@@ -819,7 +819,17 @@
     const d = DAYS[state.lang] || DAYS.th;
     return h.replace(/\b(Mo|Tu|We|Th|Fr|Sa|Su|PH)\b/g, m => d[m]).replace(/\boff\b/g, d.off).replace(/;\s*/g, " · ");
   };
-  const feeText = p => p.fee === "no" ? t("feeNo") : p.fee === "yes" || p.charge ? `${t("feeYes")}${p.charge ? ` (${p.charge})` : ""}` : t("feeUnknown");
+  // ค่าเข้า: ฟรี / "40 บาท (ต่างชาติ 200)" / "เสียค่าเข้า" (รู้ว่าเสียแต่ไม่รู้ราคา) / "-" (ไม่มีข้อมูล)
+  const fmtBaht = n => `${Number(n).toLocaleString(locale())} ${t("baht")}`;
+  function feeText(p) {
+    const e = p.entry;
+    if (e?.free || p.fee === "no") return t("feeNo");
+    if (e?.thai || e?.foreign) return [e.thai && fmtBaht(e.thai), e.foreign && e.foreign !== e.thai && `${t("foreigner")} ${fmtBaht(e.foreign)}`].filter(Boolean).join(" · ");
+    if (p.fee === "yes") return t("feeYes");
+    return "-";
+  }
+  const MENU_KINDS = new Set(["cafe", "animalcafe", "restaurant"]);
+  const menuText = p => p.menuPrice ? (p.menuPrice.min === p.menuPrice.max ? `~${fmtBaht(p.menuPrice.min)}` : `${Number(p.menuPrice.min).toLocaleString(locale())}–${fmtBaht(p.menuPrice.max)}`) : "-";
   const inPlaceProvince = p => state.filters.province === "all" || p.province === state.filters.province;
 
   function placeCover(p, cls = "cover") {
@@ -849,6 +859,7 @@
             <h3>${esc(placeName(p))}</h3>
             <div class="meta">📍 <span>${esc(place)}</span></div>
             ${p.hours ? `<div class="meta">🕒 <span>${(o => o === true ? `<b class="open-now">${t("openNowShort")}</b> · ` : o === false ? `<b class="closed-now">${t("closedNow")}</b> · ` : "")(openNow(p.hours))}${esc(fmtHours(p.hours))}</span></div>` : ""}
+            <div class="meta price-line">${MENU_KINDS.has(p.kind) ? `🍽️ <span>${t("menuPrice")}: ${esc(menuText(p))}</span>` : ""}${!MENU_KINDS.has(p.kind) || p.kind === "animalcafe" ? `🎟️ <span>${t("fee")}: ${esc(feeText(p))}</span>` : ""}</div>
             ${summary ? `<p class="place-sum">${esc(summary.slice(0, 110))}${summary.length > 110 ? "…" : ""}</p>` : ""}
           </div>
         </a>
@@ -1048,7 +1059,8 @@
               <dl class="facts">
                 <div><dt>📍</dt><dd>${esc(name)}<small>${esc([p.address, provName(p.province)].filter(Boolean).join(" · "))}</small></dd></div>
                 <div><dt>🕒</dt><dd>${t("hours")}<small>${esc(fmtHours(p.hours) || t("hoursUnknown"))}</small></dd></div>
-                <div><dt>💰</dt><dd>${t("fee")}<small>${esc(feeText(p))}</small></dd></div>
+                <div><dt>🎟️</dt><dd>${t("fee")}<small>${esc(feeText(p))}${p.entry?.src === "Lemon8" ? ` · ${t("fromReviews")}` : ""}</small></dd></div>
+                ${MENU_KINDS.has(p.kind) ? `<div><dt>🍽️</dt><dd>${t("menuPrice")}<small>${esc(menuText(p))}${p.menuPrice?.src === "Lemon8" ? ` · ${t("fromReviews")}` : p.menuPrice?.src === "owner" ? ` · ${t("fromOwner")}` : ""}</small></dd></div>` : ""}
                 ${p.phone ? `<div><dt>☎️</dt><dd>${t("phone")}<small><a href="tel:${esc(p.phone.replace(/[^\d+]/g, ""))}">${esc(p.phone)}</a></small></dd></div>` : ""}
               </dl>
             </section>

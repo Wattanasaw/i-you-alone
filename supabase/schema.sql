@@ -82,3 +82,8 @@ create policy "upload own folder" on storage.objects for insert to authenticated
   with check (bucket_id = 'shop-photos' and (storage.foldername(name))[1] = auth.uid()::text);
 create policy "delete own photos" on storage.objects for delete to authenticated
   using (bucket_id = 'shop-photos' and (storage.foldername(name))[1] = auth.uid()::text);
+
+-- ---------- ราคา (เพิ่ม 7 พ.ย. 2569) — รันไฟล์นี้ซ้ำได้ ----------
+alter table public.submissions add column if not exists price_min int check (price_min between 0 and 100000);
+alter table public.submissions add column if not exists price_max int check (price_max between 0 and 100000);
+alter table public.submissions add column if not exists entry_fee int check (entry_fee between 0 and 100000);

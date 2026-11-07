@@ -144,6 +144,8 @@ const places = approved.map(s => ({
   image: photoUrl(s.photos[s.ai_result?.cover || 0] || s.photos[0]), imageCredit: "รูปจากร้าน",
   photos: s.photos.map(photoUrl),
   summary: { th: s.ai_result?.summary || s.description || "" },
+  menuPrice: s.price_min != null || s.price_max != null ? { min: s.price_min ?? s.price_max, max: s.price_max ?? s.price_min, src: "owner" } : undefined,
+  entry: s.entry_fee === 0 ? { free: true, src: "owner" } : s.entry_fee ? { thai: s.entry_fee, src: "owner" } : undefined,
   verifiedAt: s.reviewed_at
 })).filter(p => p.province);
 await save("data/business-places.json", JSON.stringify(places, null, 1) + "\n");

@@ -41,6 +41,12 @@ jobs:
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: ค่าเข้า + ราคาเมนู จากรีวิว Lemon8 (AI ดึงเฉพาะราคาที่ระบุชัด)
+        run: node scripts/place-prices.mjs
+        continue-on-error: true
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: ข้อมูลจุดเดินทาง (รถไฟฟ้า ท่าเรือ สถานีรถไฟ บขส. สนามบิน) — อัปเดตสัปดาห์ละครั้ง
         run: node scripts/fetch-transit.mjs
         continue-on-error: true
@@ -69,5 +75,5 @@ jobs:
           git config user.name "news-bot"
           git config user.email "news-bot@users.noreply.github.com"
           git add data/news.json data/events.json data/venues.json data/auto-events.json data/geocache.json
-          git add data/ai-cache.json data/places.json data/transit.json data/place-images.json data/event-images.json 2>/dev/null || true
+          git add data/ai-cache.json data/places.json data/transit.json data/place-images.json data/event-images.json data/place-prices.json 2>/dev/null || true
           git diff --cached --quiet || (git commit -m "อัปเดตข่าวอีเว้นท์อัตโนมัติ" && git pull --rebase -X theirs && git push)

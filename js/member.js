@@ -228,6 +228,11 @@
         <div id="map" class="pin-map"></div>
         <p class="muted" id="where"></p>
         <label>${t("address")}<input id="saddr" maxlength="200"></label>
+        <div class="two-col">
+          <label>${t("priceMenuMin")}<input id="pmin" type="number" inputmode="numeric" min="0" max="100000"></label>
+          <label>${t("priceMenuMax")}<input id="pmax" type="number" inputmode="numeric" min="0" max="100000"></label>
+        </div>
+        <label>${t("entryFee")}<input id="pentry" type="number" inputmode="numeric" min="0" max="100000"></label>
         <label>${t("hours")}<input id="shours" maxlength="120" placeholder="จ.-ศ. 09:00-18:00"></label>
         <label>${t("phone")}<input id="sphone" maxlength="30" inputmode="tel"></label>
         <label>${t("website")}<input id="sweb" maxlength="200" inputmode="url" placeholder="https://"></label>
@@ -236,6 +241,7 @@
         <p class="form-msg" id="msg" role="status"></p>
       </section></div>`;
     const msg = s => { document.getElementById("msg").textContent = s || ""; };
+    const num = id => { const v = document.getElementById(id).value; return v === "" ? null : Math.max(0, Math.round(+v)); };
     // แผนที่ (Leaflet + แผนที่ OpenStreetMap ฟรี) — ลากหมุดให้ตรงหน้าร้าน
     loadCss(LEAFLET + ".css");
     await loadScript(LEAFLET + ".js");
@@ -285,7 +291,8 @@
           kind: document.getElementById("skind").value, name, description: document.getElementById("sdesc").value.trim() || null,
           lat: +ll.lat.toFixed(6), lng: +ll.lng.toFixed(6), address: document.getElementById("saddr").value.trim() || null,
           hours: document.getElementById("shours").value.trim() || null, phone: document.getElementById("sphone").value.trim() || null,
-          website: /^https?:\/\//.test(web) ? web : null, photos: paths
+          website: /^https?:\/\//.test(web) ? web : null, photos: paths,
+          price_min: num("pmin"), price_max: num("pmax"), entry_fee: num("pentry")
         });
         if (error) throw error;
         location.hash = "#/account";

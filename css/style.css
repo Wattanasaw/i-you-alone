@@ -544,3 +544,6 @@ html.theme-anim, html.theme-anim * { transition: background-color .35s, color .3
 .places-row select { font-size: .8rem; }
 .open-now { color: var(--free); font-weight: 600; }
 .closed-now { color: var(--muted); font-weight: 600; }
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.price-line { gap: 4px; flex-wrap: wrap; }
+.price-line span + span::before { content: ""; }
