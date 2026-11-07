@@ -686,9 +686,12 @@
     const freeMin = route?.min ?? road / (road < 30 ? 35 : 70) * 60;
     const k = carCfg(), x = trip === "round" ? 2 : 1, fp = fuelPrice(fd, k);
     const out = [];
+    // ใกล้มาก: เดินได้ฟรี · ระยะสั้นในเมือง: วินมอเตอร์ไซค์ (อัตรากรมการขนส่งทางบก: 2 กม.แรกไม่เกิน 25 บาท, กม.ที่ 2–5 ไม่เกิน กม.ละ 5 บาท)
+    if (road <= 1.5) out.push(["WALK", t("costWalk", { min: Math.max(1, Math.round(road * 13)) })]);
+    if (road <= 5 && (inMetro(v) || road <= 2)) { const w = 25 + Math.max(0, road - 2) * 5; out.push(["BIKE", t("costWin", { cost: range(Math.max(15, w * 0.6) * x, w * x) })]); }
     const fuel = road / k.kmpl * fp.price * x;
-    out.push(["CAR", t("costCar2", { km: Math.round(road * x), cost: range(fuel, fuel * 1.1), kmpl: k.kmpl, fuel: t("fuel_" + k.fuelType), price: fp.price.toFixed(2) })]);
-    if (road <= 300) { const b = road / k.bikeKmpl * fp.price * x; out.push(["BIKE", t("costBike", { cost: range(b, b * 1.1) })]); }
+    if (road >= 1) out.push(["CAR", t("costCar2", { km: Math.round(road * x), cost: range(fuel, fuel * 1.1), kmpl: k.kmpl, fuel: t("fuel_" + k.fuelType), price: fp.price.toFixed(2) })]);
+    if (road >= 1 && road <= 300) { const b = road / k.bikeKmpl * fp.price * x; out.push(["BIKE", t("costBike", { cost: range(b, b * 1.1) })]); }
     if (road <= 80) {
       // รถติด: เวลาเดินทางจริงในกรุงเทพฯ ~1.3–2 เท่าของเวลาวิ่งโล่ง ส่วนที่ช้ากว่า 6 กม./ชม. คิดนาทีละ 3 บาท
       const m = taxiMeter(road), lo = (m + freeMin * 0.25 * 3) * x, hi = (m + freeMin * 0.9 * 3) * x;
