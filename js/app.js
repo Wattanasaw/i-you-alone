@@ -587,7 +587,7 @@
     else text = `${t("recCar", { km: k })} ${v.parking ? t("recParking") : ""}`;
     return `<p class="recommend">💡 ${esc(text)}</p>`;
   }
-  const TRANSIT_ICON = { BIKE: "🛵", BTS: "🚈", MRT: "🚇", ARL: "🚄", SRT: "🚆", BUS: "🚌", BOAT: "⛴️", WALK: "🚶", TAXI: "🚕", SHUTTLE: "🚐", AIR: "✈️", CAR: "🚗", PARK: "🅿️" };
+  const TRANSIT_ICON = { BIKE: "🛵", BTS: "🚈", MRT: "🚇", ARL: "🚄", SRT: "🚆", BUS: "🚌", BOAT: "⛴️", WALK: "🚶", TAXI: "🚕", SHUTTLE: "🚐", AIR: "✈️", CAR: "🚗", PARK: "🅿️", TIP: "💡", SONGTHAEW: "🛻", RENT: "🔑" };
 
   // ---------- เส้นทางแนะนำจากจุดเดินทางจริงรอบสถานที่ (data/transit.json จาก OpenStreetMap) ----------
   const BKK_CENTER = { lat: 13.7563, lng: 100.5018 };
@@ -850,6 +850,29 @@
   // คำอธิบาย: ภาษาที่เลือก → ไทย → อังกฤษ
   const placeSummary = p => p.summary?.[state.lang] || p.summary?.th || p.summary?.en || "";
   const placeVenue = p => ({ name: placeName(p), address: p.address, province: p.province, lat: p.lat, lng: p.lng, approx: p.approx });
+  // การเดินทางของสถานที่: รูปแบบเดียวกับหน้าอีเว้นท์ ("ไม่ใช้รถ" + "ใช้รถ"/ที่จอด)
+  // ใช้ข้อมูลจริงก่อน (คำแนะนำการเดินทางจาก AI, เคล็ดลับที่จอดรถจากรีวิว) แล้วเติมคำแนะนำทั่วไปตามประเภทและพื้นที่
+  const METRO = new Set(["bangkok", "nonthaburi", "samutprakan", "pathumthani"]);
+  const FAR_KINDS = new Set(["nature", "park", "beach", "zoo", "themepark"]);
+  function placeTravelVenue(p) {
+    const v = placeVenue(p), transit = [], metro = METRO.has(p.province);
+    const aiTravel = state.ai[p.id]?.travel;
+    if (aiTravel?.th) transit.push({ type: "TIP", text: pick(aiTravel) || aiTravel.th });
+    if (metro) transit.push({ type: "TAXI", text: t("plTaxiCity") });
+    else {
+      transit.push({ type: "SONGTHAEW", text: t("plLocal") });
+      if (FAR_KINDS.has(p.kind)) transit.push({ type: "RENT", text: t("plRent") });
+    }
+    if (p.kind === "nightlife") transit.push({ type: "TAXI", text: t("plNight") });
+    // ที่จอดรถ: เคล็ดลับจากรีวิวจริง → ไม่มีใช้ค่าทั่วไปตามประเภท
+    const tips = reviewOf(p)?.tips, i = (tips?.th || []).findIndex(s => /จอด|parking/i.test(s));
+    const fromReview = i >= 0 ? (tips[state.lang]?.[i] || tips.en?.[i] || tips.th[i]) : "";
+    const typical = FAR_KINDS.has(p.kind) || ["temple", "museum"].includes(p.kind) ? t("parkLot")
+      : ["cafe", "animalcafe", "restaurant", "nightlife"].includes(p.kind) ? (metro ? t("parkShopCity") : t("parkShop")) : t("parkCity");
+    v.transit = transit;
+    v.parking = fromReview ? `${fromReview} (${t("fromReviews")})` : `${typical} (${t("typicalInfo")})`;
+    return v;
+  }
   // เวลาเปิดแบบ OpenStreetMap ("Mo-Su 09:00-18:00") → อ่านง่ายขึ้น
   const DAYS = { th: { Mo: "จ.", Tu: "อ.", We: "พ.", Th: "พฤ.", Fr: "ศ.", Sa: "ส.", Su: "อา.", PH: "วันหยุดนักขัตฤกษ์", off: "ปิด" },
     en: { Mo: "Mon", Tu: "Tue", We: "Wed", Th: "Thu", Fr: "Fri", Sa: "Sat", Su: "Sun", PH: "public holidays", off: "closed" },
@@ -1038,11 +1061,13 @@
       ${pl ? `<a class="trend-place" href="#/place/${encodeURIComponent(pl.id)}">📍 ${esc(placeName(pl))}</a>` : ""}
     </div>`;
   }
+  // ลิงก์รูป CDN ของ Lemon8 มีวันหมดอายุ (x-expires) → หมดแล้วไม่ใช้
+  const imgOk = u => /^https:\/\//.test(u || "") && !(+(String(u).match(/[?&]x-expires=(\d+)/) || [])[1] < Date.now() / 1000);
   function trendThumb(n) {
     const title = String(n.title || "").toLowerCase();
     // รูปปกของโพสต์ (พรีวิวจาก Lemon8 มีลายน้ำผู้โพสต์) → ไม่มีใช้รูปสถานที่ที่ชื่ออยู่ในโพสต์ → ไอคอนหมวด
     const p = !n.image && state.places.find(x => x.image && [x.name?.th, x.name?.en].some(s => s && s.length >= 6 && title.includes(s.toLowerCase())));
-    const src = /^https:\/\//.test(n.image || "") ? n.image : p?.image;
+    const src = imgOk(n.image) ? n.image : p?.image;
     const pc = PCAT[n.kind] || { icon: "🔥", color: "#ff7a45" };
     return `<span class="trend-thumb" style="background:linear-gradient(135deg, ${pc.color}, ${pc.color2 || pc.color})">${pc.icon}${src ? `<img src="${esc(src)}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">` : ""}${n.likes ? `<b class="trend-likes">❤️ ${n.likes >= 1000 ? (n.likes / 1000).toFixed(1) + "K" : n.likes}</b>` : ""}</span>`;
   }
@@ -1219,6 +1244,14 @@
     document.title = `${name} — ${C.siteName}`;
     // หน้ารายละเอียดแบบกะทัดรัด: รูปปก+ชื่อ → ข้อมูลด่วน → ปุ่มนำทาง → แท็บ (ภาพรวม / การเดินทาง / กระแส) ไม่ต้องเลื่อนยาว
     const posts = placePosts(p), open = placeOpen(p);
+    // โพสต์ยอดนิยมที่สุด (ไลก์มากสุด) แสดงรูปใหญ่บนสุดของแท็บกระแส
+    const top = [...posts].sort((a, b) => (b.likes || 0) - (a.likes || 0))[0];
+    const topImg = top && (imgOk(top.image) ? top.image : imgOk(coverOf(p)) ? coverOf(p) : "");
+    const topHtml = top ? `<a class="trend-hero" ${inAppLink(top.link)}>
+        <span class="th-img" style="background:linear-gradient(135deg, ${c?.color || "#ff7a45"}, ${c?.color2 || c?.color || "#ff2d78"})">${c?.icon || "🔥"}${topImg ? `<img src="${esc(topImg)}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">` : ""}</span>
+        <span class="th-badge">👑 ${t("topPost")}${top.likes ? ` · ❤️ ${fmtLikes(top.likes)}` : ""}</span>
+        <span class="th-txt"><b>${esc(top.title)}</b><small>${esc(String(top.source || "Lemon8").replace(/^Lemon8 · /, "@"))}${top.date ? ` · ${relDate(top.date)}` : ""}</small></span>
+      </a>` : "";
     const tabs = [["overview", "📋 " + t("tabOverview")], ["travel", "🧭 " + t("tabTravel")], ...(posts.length ? [["trends", `🔥 ${t("tabTrends")} ${posts.length}`]] : [])];
     if (!tabs.some(([k]) => k === state.placeTab)) state.placeTab = "overview";
     const quick = [
@@ -1268,7 +1301,7 @@
           ${posts.length ? `<section class="panel pd-buzz">
             <div class="pd-buzz-head"><h2>🔥 ${t("placeTrends")}</h2>${posts.length > 2 ? `<button class="link-btn" data-ptab="trends">${t("seeAll")} ${posts.length} ›</button>` : ""}</div>
             ${freshPopular(posts).slice(0, 2).map(n => `<a class="buzz-row" ${inAppLink(n.link)}>
-              ${n.image ? `<img src="${esc(n.image)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">` : `<span class="buzz-ico">🔥</span>`}
+              ${imgOk(n.image) ? `<img src="${esc(n.image)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">` : `<span class="buzz-ico">🔥</span>`}
               <span class="buzz-txt"><span class="buzz-title">${esc(n.title)}</span><small>${[n.likes ? `❤️ ${fmtLikes(n.likes)}` : "", n.date ? relDate(n.date) : ""].filter(Boolean).join(" · ")} · ${esc(String(n.source || "Lemon8").replace(/^Lemon8 · /, "@"))}</small></span>
             </a>`).join("")}
           </section>` : ""}
@@ -1277,10 +1310,11 @@
           <p class="pd-links">${p.fromTrend ? `<span>🔥 ${t("fromTrendNote")}</span>` : ""}${wiki ? `<a ${inAppLink(wiki)}>📖 ${t("wikipedia")}</a>` : ""}${p.imagePage ? `<span>${t("photo")}: <a ${inAppLink(p.imagePage)}>${esc(p.imageCredit || "Wikimedia Commons")}</a></span>` : ""}</p>
           ${!p.business ? `<a class="claim-link" href="#/account/new-shop?ref=${encodeURIComponent(p.id)}">🏪 ${t(p.image ? "claimPlace" : "claimPlaceNoPhoto")}</a>` : ""}
         </section>
-        <section class="pd-panel" data-panel="travel" ${state.placeTab === "travel" ? "" : "hidden"}>${state.ai[p.id]?.travel?.th ? `<section class="panel ai-travel"><h2>🚇 ${t("aiTravel")}</h2><p>${esc(pick(state.ai[p.id].travel) || state.ai[p.id].travel.th)}</p><small class="ai-note">🤖 ${t("aiBadge")}</small></section>` : ""}${travelPanel({}, v)}</section>
+        <section class="pd-panel" data-panel="travel" ${state.placeTab === "travel" ? "" : "hidden"}>${travelPanel({}, placeTravelVenue(p))}</section>
         ${posts.length ? `<section class="pd-panel trend-board place-trends" data-panel="trends" ${state.placeTab === "trends" ? "" : "hidden"}>
+          ${topHtml}
           <p class="muted">${t("placeTrendsSub")}</p>
-          <div class="news-list">${[...posts].sort((a, b) => String(b.date || "").localeCompare(String(a.date || ""))).map(n => `<div class="news-item trend-item"><a class="trend-link" ${inAppLink(n.link)}>${trendThumb(n)}<h3>${esc(n.title)}</h3><div class="meta">${esc(n.source || "Lemon8")}${n.date ? ` · ${relDate(n.date)}` : ""}</div></a></div>`).join("")}</div>
+          <div class="news-list">${[...posts].filter(n => n !== top).sort((a, b) => String(b.date || "").localeCompare(String(a.date || ""))).map(n => `<div class="news-item trend-item"><a class="trend-link" ${inAppLink(n.link)}>${trendThumb(n)}<h3>${esc(n.title)}</h3><div class="meta">${esc(n.source || "Lemon8")}${n.date ? ` · ${relDate(n.date)}` : ""}</div></a></div>`).join("")}</div>
         </section>` : ""}
         ${adSlot("detail")}
         <p class="disclosure">${t("placeNote")}</p>

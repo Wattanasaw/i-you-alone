@@ -731,3 +731,12 @@ label.check input[type=checkbox] { width: 22px; height: 22px; flex: none; margin
 .people-list li b { font-size: .92rem; }
 .people-list li small { font-size: .75rem; color: var(--muted); }
 .card .people-line span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+/* แท็บกระแสของสถานที่: โพสต์ยอดนิยมที่สุดพร้อมรูปใหญ่ */
+.trend-hero { position: relative; display: block; border-radius: 18px; overflow: hidden; margin: 0 0 14px; color: #fff; text-decoration: none; }
+.trend-hero .th-img { display: grid; place-items: center; width: 100%; aspect-ratio: 4 / 3; font-size: 3rem; position: relative; overflow: hidden; }
+.trend-hero .th-img img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.trend-hero .th-badge { position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,.6); backdrop-filter: blur(6px); padding: 4px 10px; border-radius: 999px; font-size: .8rem; font-weight: 700; }
+.trend-hero .th-txt { position: absolute; left: 0; right: 0; bottom: 0; padding: 40px 14px 12px; background: linear-gradient(transparent, rgba(0,0,0,.82)); display: grid; gap: 4px; }
+.trend-hero .th-txt b { font-size: 1rem; line-height: 1.35; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.trend-hero .th-txt small { opacity: .85; font-size: .8rem; }
