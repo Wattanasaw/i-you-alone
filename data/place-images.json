@@ -7176,11 +7176,14 @@
   "pending": true
  },
  "osm-n13463357301": {
-  "image": null,
-  "by": "rule",
-  "at": "2026-11-07T10:29:05.942Z",
-  "v": 3,
-  "pending": true
+  "image": "https://live.staticflickr.com/5329/9381955041_c1647b4613_b.jpg",
+  "page": "https://www.flickr.com/photos/64441474@N06/9381955041",
+  "credit": "Au Kirk · BY 2.0",
+  "by": "ai",
+  "appeal": 6,
+  "why": "เห็นอุปกรณ์การเล่นมินิกอล์ฟชัดเจน",
+  "at": "2026-11-07T12:41:33.946Z",
+  "v": 3
  },
  "osm-n14104606855": {
   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Saltasaurus_eggshell_fossils.jpg/960px-Saltasaurus_eggshell_fossils.jpg",
@@ -7201,32 +7204,44 @@
   "pending": true
  },
  "osm-w206495657": {
-  "image": null,
-  "by": "rule",
-  "at": "2026-11-07T10:29:05.942Z",
-  "v": 3,
-  "pending": true
+  "image": "https://live.staticflickr.com/2871/13564062085_6991afc67c_b.jpg",
+  "page": "https://www.flickr.com/photos/44124341325@N01/13564062085",
+  "credit": "Madjock · BY-NC-SA 2.0",
+  "by": "ai",
+  "appeal": 7,
+  "why": "เห็นป้ายชื่อและบรรยากาศสระว่ายน้ำ",
+  "at": "2026-11-07T12:41:33.946Z",
+  "v": 3
  },
  "osm-w314007913": {
-  "image": null,
-  "by": "rule",
-  "at": "2026-11-07T10:29:05.942Z",
-  "v": 3,
-  "pending": true
+  "image": "https://live.staticflickr.com/4622/39650291365_60a524950f_b.jpg",
+  "page": "https://www.flickr.com/photos/10228241@N05/39650291365",
+  "credit": "Fighting Irish 1977 · BY-NC 2.0",
+  "by": "ai",
+  "appeal": 7,
+  "why": "บรรยากาศร่มรื่นพร้อมน้ำพุและเรือเป็ด",
+  "at": "2026-11-07T12:41:33.946Z",
+  "v": 3
  },
  "osm-w332413834": {
-  "image": null,
-  "by": "rule",
-  "at": "2026-11-07T10:29:05.942Z",
-  "v": 3,
-  "pending": true
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Wat_Sri_Khom_Kam_001RS.jpg/960px-Wat_Sri_Khom_Kam_001RS.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Wat_Sri_Khom_Kam_001RS.jpg",
+  "credit": "Ritthichai Siangdee · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 7,
+  "why": "รูปพระพุทธรูปในวิหารสวยงามชัดเจน",
+  "at": "2026-11-07T12:41:47.066Z",
+  "v": 3
  },
  "osm-w413091408": {
-  "image": null,
-  "by": "rule",
-  "at": "2026-11-07T10:29:05.942Z",
-  "v": 3,
-  "pending": true
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Nong_Prue%2C_Bang_Lamung_District%2C_Chon_Buri_20150%2C_Thailand_-_panoramio_%2823%29.jpg/960px-Nong_Prue%2C_Bang_Lamung_District%2C_Chon_Buri_20150%2C_Thailand_-_panoramio_%2823%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Nong_Prue,_Bang_Lamung_District,_Chon_Buri_20150,_Thailand_-_panoramio_(23).jpg",
+  "credit": "song songroov · CC BY 3.0",
+  "by": "ai",
+  "appeal": 6,
+  "why": "เห็นลานขี่ม้าและบรรยากาศภายในฟาร์มชัดเจน",
+  "at": "2026-11-07T12:41:47.066Z",
+  "v": 3
  },
  "osm-n12404335207": {
   "image": null,
@@ -7292,6 +7307,280 @@
   "image": null,
   "by": "rule",
   "at": "2026-11-07T10:29:05.942Z",
+  "v": 3
+ },
+ "osm-n11021489081": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Elephant_running.jpg/960px-Elephant_running.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Elephant_running.jpg",
+  "credit": "Byrdyak · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 8,
+  "why": "ภาพโขลงช้างดูสวยงามและมีพลัง",
+  "at": "2026-11-07T12:41:33.946Z",
+  "v": 3
+ },
+ "osm-w463162785": {
+  "image": null,
+  "by": "ai",
+  "why": "ภาพเป็นเสาไฟฟ้าและถนน ไม่เกี่ยวกับสวนสนุก",
+  "at": "2026-11-07T12:41:47.066Z",
+  "v": 3
+ },
+ "osm-w1265700039": {
+  "image": "https://www.lemon8-app.com/seo/image?item_id=7290830859618320898&index=0&sign=b92d9b5056b6be19a0cf8900982d317b",
+  "page": "https://www.lemon8-app.com/@zarchimyathein2511/7290830859618320898?region=th",
+  "credit": "Lemon8 · ZarChi myathein",
+  "by": "ai",
+  "appeal": 7,
+  "why": "ภาพบรรยากาศการท่องเที่ยวสถานที่จริงที่สวยงาม",
+  "at": "2026-11-07T12:41:47.066Z",
+  "v": 3
+ },
+ "osm-w1330909144": {
+  "image": "https://www.lemon8-app.com/seo/image?item_id=7356872882309300753&index=0&sign=3403af651d3973af19110b9454c2101a",
+  "page": "https://www.lemon8-app.com/@mantiktok74/7356872882309300753?region=th",
+  "credit": "Lemon8 · เที่ยวหรอยแรง",
+  "by": "ai",
+  "appeal": 8,
+  "why": "มุมมองมุมสูงเห็นสวนน้ำและบรรยากาศทั้งหมดชัดเจน น่าสนใจ",
+  "at": "2026-11-07T12:42:04.746Z",
+  "v": 3
+ },
+ "osm-w1535502764": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/%E0%B9%80%E0%B8%82%E0%B8%B2%E0%B8%9E%E0%B8%A5%E0%B8%AD%E0%B8%87_%E0%B8%8A%E0%B8%B1%E0%B8%A2%E0%B8%99%E0%B8%B2%E0%B8%97_-_panoramio_%286%29.jpg/960px-%E0%B9%80%E0%B8%82%E0%B8%B2%E0%B8%9E%E0%B8%A5%E0%B8%AD%E0%B8%87_%E0%B8%8A%E0%B8%B1%E0%B8%A2%E0%B8%99%E0%B8%B2%E0%B8%97_-_panoramio_%286%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:%E0%B9%80%E0%B8%82%E0%B8%B2%E0%B8%9E%E0%B8%A5%E0%B8%AD%E0%B8%87_%E0%B8%8A%E0%B8%B1%E0%B8%A2%E0%B8%99%E0%B8%B2%E0%B8%97_-_panoramio_(6).jpg",
+  "credit": "::::=UT=:::: · CC BY-SA 3.0",
+  "by": "ai",
+  "appeal": 7,
+  "why": "ภาพวัดและวิวสวยงาม สื่อถึงสถานที่ได้ดี",
+  "at": "2026-11-07T12:42:04.746Z",
+  "v": 3
+ },
+ "osm-r18632531": {
+  "image": "https://www.lemon8-app.com/seo/image?item_id=7369082512339304977&index=0&sign=ac8366ef4949c1eb20c840980b466945",
+  "page": "https://www.lemon8-app.com/@puridetonelife/7369082512339304977?region=th",
+  "credit": "Lemon8 · Puridet",
+  "by": "ai",
+  "appeal": 7,
+  "why": "ภาพม้าหมุนและสวนสนุกสีสันสดใส ชวนให้น่าไปเที่ยว",
+  "at": "2026-11-07T12:42:04.746Z",
+  "v": 3
+ },
+ "wd-Q136565078": {
+  "image": "https://www.lemon8-app.com/seo/image?item_id=7085014497949270530&index=0&sign=ae356755f406b10054b1f49d31f3734b",
+  "page": "https://www.lemon8-app.com/@user62310374507/7085014497949270530?region=th",
+  "credit": "Lemon8 · Tarm Thithat",
+  "by": "ai",
+  "appeal": 9,
+  "why": "วิวธรรมชาติภูเขาสวยงามและบรรยากาศคาเฟ่ยามเช้าดึงดูดใจมาก",
+  "at": "2026-11-07T12:42:04.746Z",
+  "v": 3
+ },
+ "wd-Q141128659": {
+  "image": "https://izzyscoffeesamui.com/photos/menu-latte-cloud.jpg",
+  "page": "https://izzyscoffeesamui.com",
+  "credit": "รูปจากเว็บไซต์ร้าน",
+  "by": "ai",
+  "appeal": 7,
+  "why": "ภาพเครื่องดื่มสวยงามน่าดึงดูด",
+  "at": "2026-11-07T12:42:18.670Z",
+  "v": 3
+ },
+ "wd-Q55429944": {
+  "image": null,
+  "by": "ai",
+  "why": "ภาพไม่ตรงกับสถานที่และดูไม่น่าสนใจ",
+  "at": "2026-11-07T12:42:18.671Z",
+  "v": 3
+ },
+ "osm-n1038806303": {
+  "image": null,
+  "by": "ai",
+  "why": "ไม่มีรูปภาพ",
+  "at": "2026-11-07T12:42:18.671Z",
+  "v": 3
+ },
+ "osm-n3526055441": {
+  "image": "https://live.staticflickr.com/4363/37276500192_d1d379d8d3_b.jpg",
+  "page": "https://www.flickr.com/photos/70323761@N00/37276500192",
+  "credit": "wallyg · BY-NC-ND 2.0",
+  "by": "ai",
+  "appeal": 6,
+  "why": "ภาพอาหารน่าทานชัดเจน",
+  "at": "2026-11-07T12:42:18.671Z",
+  "v": 3
+ },
+ "osm-n5515883029": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/The_Grey_Owl_Coffee_shop_in_Norman_Oklahoma_on_the_morning_of_10_Dec_2023.jpg/960px-The_Grey_Owl_Coffee_shop_in_Norman_Oklahoma_on_the_morning_of_10_Dec_2023.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:The_Grey_Owl_Coffee_shop_in_Norman_Oklahoma_on_the_morning_of_10_Dec_2023.jpg",
+  "credit": "Matthew.kowal · CC BY 4.0",
+  "by": "ai",
+  "appeal": 7,
+  "why": "บรรยากาศร้านกว้างขวางน่านั่ง",
+  "at": "2026-11-07T12:42:31.387Z",
+  "v": 3
+ },
+ "osm-n5999760576": {
+  "image": null,
+  "by": "ai",
+  "why": "ภาพไม่เกี่ยวข้องกับคาเฟ่",
+  "at": "2026-11-07T12:42:31.387Z",
+  "v": 3
+ },
+ "osm-n9824686417": {
+  "image": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Black_Cat_Cafe%2C_San_Francisco_Peaks%2C_Bob_Bradshaw_photo_%28NBY_437215%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Black_Cat_Cafe,_San_Francisco_Peaks,_Bob_Bradshaw_photo_(NBY_437215).jpg",
+  "credit": "Unknown authorUnknown author · Public domain",
+  "by": "ai",
+  "appeal": 6,
+  "why": "โปสการ์ดหน้าร้านคลาสสิก",
+  "at": "2026-11-07T12:42:31.387Z",
+  "v": 3
+ },
+ "osm-n10705772012": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/The_Grey_Owl_Coffee_shop_in_Norman_Oklahoma_on_the_morning_of_10_Dec_2023.jpg/960px-The_Grey_Owl_Coffee_shop_in_Norman_Oklahoma_on_the_morning_of_10_Dec_2023.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:The_Grey_Owl_Coffee_shop_in_Norman_Oklahoma_on_the_morning_of_10_Dec_2023.jpg",
+  "credit": "Matthew.kowal · CC BY 4.0",
+  "by": "ai",
+  "appeal": 7,
+  "why": "บรรยากาศร้านน่านั่ง",
+  "at": "2026-11-07T12:42:31.387Z",
+  "v": 3
+ },
+ "osm-n12324830024": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Holey_Artisan_Bakery_Cafe_Suanplu%2C_Bangkok_%282026%29_-_IMG_03.jpg/960px-Holey_Artisan_Bakery_Cafe_Suanplu%2C_Bangkok_%282026%29_-_IMG_03.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Holey_Artisan_Bakery_Cafe_Suanplu,_Bangkok_(2026)_-_IMG_03.jpg",
+  "credit": "Chainwit. · CC BY 4.0",
+  "by": "ai",
+  "appeal": 7,
+  "why": "ตู้โชว์เบเกอรีน่ากินและบรรยากาศในร้านดูอบอุ่น",
+  "at": "2026-11-07T12:42:44.324Z",
+  "v": 3
+ },
+ "osm-n13437571901": {
+  "image": "https://live.staticflickr.com/65535/53407166184_9117b80a34_b.jpg",
+  "page": "https://www.flickr.com/photos/38817438@N00/53407166184",
+  "credit": "wombatarama · BY-NC-ND 2.0",
+  "by": "ai",
+  "appeal": 8,
+  "why": "น้องคาปิบาร่านอนน่ารักและเป็นมิตร",
+  "at": "2026-11-07T12:42:44.324Z",
+  "v": 3
+ },
+ "osm-w961802247": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/WhatCat_Cafe%2C_Tanalai_Rd.%2C_Chiang_Rai%2C_Thailand.jpg/960px-WhatCat_Cafe%2C_Tanalai_Rd.%2C_Chiang_Rai%2C_Thailand.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:WhatCat_Cafe,_Tanalai_Rd.,_Chiang_Rai,_Thailand.jpg",
+  "credit": "Tree Lightbulb · CC0",
+  "by": "ai",
+  "appeal": 8,
+  "why": "หน้าร้านน่ารัก สว่าง และน่านั่ง",
+  "at": "2026-11-07T12:42:44.324Z",
+  "v": 3
+ },
+ "osm-n1218832152": {
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Camp_Elephant_Bath_Self_River_Scene_Mudumalai_Mar21_A7C_00419.jpg/960px-Camp_Elephant_Bath_Self_River_Scene_Mudumalai_Mar21_A7C_00419.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Camp_Elephant_Bath_Self_River_Scene_Mudumalai_Mar21_A7C_00419.jpg",
+  "credit": "Timothy A. Gonsalves · CC BY-SA 4.0",
+  "by": "ai",
+  "appeal": 9,
+  "why": "ภาพช้างเล่นน้ำในธรรมชาติสวยงามน่าประทับใจ",
+  "at": "2026-11-07T12:42:44.324Z",
+  "v": 3
+ },
+ "osm-w551378345": {
+  "image": null,
+  "by": "rule",
+  "at": "2026-11-07T12:42:44.324Z",
+  "v": 3
+ },
+ "osm-w962532652": {
+  "image": null,
+  "by": "rule",
+  "at": "2026-11-07T12:42:44.324Z",
+  "v": 3
+ },
+ "osm-w1006205219": {
+  "image": null,
+  "by": "rule",
+  "at": "2026-11-07T12:42:44.324Z",
+  "v": 3
+ },
+ "osm-w1512882622": {
+  "image": null,
+  "by": "rule",
+  "at": "2026-11-07T12:42:44.324Z",
+  "v": 3
+ },
+ "osm-w1563168979": {
+  "image": null,
+  "by": "rule",
+  "at": "2026-11-07T12:42:44.324Z",
+  "v": 3
+ },
+ "wd-Q137829045": {
+  "image": null,
+  "by": "rule",
+  "at": "2026-11-07T12:42:44.324Z",
+  "v": 3
+ },
+ "wd-Q138640317": {
+  "image": null,
+  "by": "rule",
+  "at": "2026-11-07T12:42:44.324Z",
+  "v": 3
+ },
+ "wd-Q55739036": {
+  "image": null,
+  "by": "rule",
+  "at": "2026-11-07T12:42:44.324Z",
+  "v": 3
+ },
+ "osm-n5344068322": {
+  "image": null,
+  "by": "rule",
+  "at": "2026-11-07T12:42:44.324Z",
+  "v": 3
+ },
+ "osm-n10048602896": {
+  "image": null,
+  "by": "rule",
+  "at": "2026-11-07T12:42:44.324Z",
+  "v": 3
+ },
+ "osm-n12581979067": {
+  "image": null,
+  "by": "rule",
+  "at": "2026-11-07T12:42:44.324Z",
+  "v": 3
+ },
+ "osm-n13275811733": {
+  "image": null,
+  "by": "rule",
+  "at": "2026-11-07T12:42:44.324Z",
+  "v": 3
+ },
+ "osm-n13404186981": {
+  "image": null,
+  "by": "rule",
+  "at": "2026-11-07T12:42:44.324Z",
+  "v": 3
+ },
+ "osm-n13631448177": {
+  "image": null,
+  "by": "rule",
+  "at": "2026-11-07T12:42:44.324Z",
+  "v": 3
+ },
+ "osm-w1252641348": {
+  "image": null,
+  "by": "rule",
+  "at": "2026-11-07T12:42:44.324Z",
+  "v": 3
+ },
+ "osm-n1036927748": {
+  "image": null,
+  "by": "rule",
+  "at": "2026-11-07T12:42:44.324Z",
   "v": 3
  }
 }
