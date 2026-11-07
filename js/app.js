@@ -1112,9 +1112,28 @@
   // โพสต์ที่พูดถึงสถานที่นี้: จากข้อมูลรายสถานที่ (fetch-places) หรือจับคู่กับบอร์ดเทรนด์
   // (จำผลไว้ต่อสถานที่ — ถูกเรียกบ่อยตอนเรียงลำดับ/วาดการ์ด)
   const postCache = new WeakMap();
+  // รีวิว Lemon8 เต็มของแต่ละสถานที่ (สูงสุด 24 โพสต์) แบ่งเก็บ 32 ไฟล์ โหลดเฉพาะไฟล์ของสถานที่ที่เปิดดู
+  // (แบ่งไฟล์ด้วย FNV-1a เหมือน scripts/place-lemon8.mjs)
+  const placeShard = id => { let h = 0x811c9dc5; for (const ch of String(id)) { h ^= ch.codePointAt(0); h = Math.imul(h, 0x01000193) >>> 0; } return h % 32; };
+  const shardLoads = new Map();
+  function loadPlaceReviews(p) {
+    const n = placeShard(p.id);
+    if (!shardLoads.has(n)) shardLoads.set(n, getJSON(`data/place-posts/${String(n).padStart(2, "0")}.json`, {}));
+    return shardLoads.get(n).then(s => {
+      const extra = s?.[p.id]?.posts;
+      if (extra?.length && !p.allPostsLoaded) { p.allPosts = extra.map(x => ({ ...x, tag: 1 })); postCache.delete(p); }
+      p.allPostsLoaded = true;
+      return !!extra?.length;
+    });
+  }
   function placePosts(p) {
     if (postCache.has(p)) return postCache.get(p);
     let out = [];
+    if (p.allPosts?.length) {
+      out = [...new Map([...(p.posts || []), ...p.allPosts].map(x => [x.link, { ...x, kind: p.kind }])).values()];
+      postCache.set(p, out);
+      return out;
+    }
     const names = placeNames(p);
     // ตรวจซ้ำว่าหัวโพสต์มีชื่อสถานที่จริง (ข้อมูลรอบเก่าอาจจับคู่ด้วยชื่อจังหวัด) — ร้านธุรกิจ/โพสต์ที่ผู้โพสต์ปักหมุดที่นี่ (tag) เชื่อได้
     if (p.posts?.length) out = p.posts.filter(x => p.business || p.fromTrend || x.tag || names.some(nm => String(x.title || "").toLowerCase().includes(nm))).map(x => ({ ...x, kind: p.kind }));
@@ -1405,7 +1424,8 @@
         ${posts.length ? `<section class="pd-panel trend-board place-trends" data-panel="trends" ${state.placeTab === "trends" ? "" : "hidden"}>
           ${topHtml}
           <p class="muted">${t("placeTrendsSub")}</p>
-          <div class="news-list">${[...posts].filter(n => n !== top).sort((a, b) => String(b.date || "").localeCompare(String(a.date || ""))).map(n => `<div class="news-item trend-item"><a class="trend-link" ${inAppLink(n.link)}>${trendThumb(n)}<h3>${esc(n.title)}</h3><div class="meta">${esc(n.source || "Lemon8")}${n.date ? ` · ${relDate(n.date)}` : ""}</div></a></div>`).join("")}</div>
+          <div class="news-list">${[...posts].filter(n => n !== top).sort((a, b) => String(b.date || "").localeCompare(String(a.date || ""))).map(n => `<div class="news-item trend-item"><a class="trend-link" ${inAppLink(n.link)}>${trendThumb(n)}<h3>${esc(n.title)}</h3><div class="meta">${n.likes ? `❤️ ${fmtLikes(n.likes)} · ` : ""}${esc(n.source || "Lemon8")}${n.date ? ` · ${relDate(n.date)}` : ""}</div></a></div>`).join("")}</div>
+          <a class="btn block" style="margin-top:12px" ${inAppLink(`https://www.lemon8-app.com/experience/${encodeURIComponent(p.name?.th || p.name?.en || name)}?region=th`)}>🍋 ${t("moreOnLemon8")}</a>
         </section>` : ""}
         ${adSlot("detail")}
         <p class="disclosure">${t("placeNote")}</p>
@@ -1435,6 +1455,13 @@
     if (lb) lb.addEventListener("click", () => locate(() => { state.placeTab = "travel"; renderPlace(id); hydrateGuides(); }));
     window.IYA_GOOGLE?.bind(p);
     activateAdsense();
+    // โหลดรีวิว Lemon8 เต็มของที่นี่ แล้ววาดใหม่ (ยังอยู่หน้าเดิม · คงตำแหน่งเลื่อน)
+    if (!p.allPostsLoaded) loadPlaceReviews(p).then(had => {
+      if (!had || location.hash !== `#/place/${encodeURIComponent(id)}`) return;
+      const y = window.scrollY;
+      renderPlace(id); hydrateGuides();
+      window.scrollTo(0, y);
+    });
   }
 
   // บนมือถือที่ยังไม่ได้ติดตั้งแอพ: ชวนติดตั้ง เพื่อให้ลิงก์เปิดในแอพ
