@@ -848,13 +848,53 @@
           <div class="card-body">
             <h3>${esc(placeName(p))}</h3>
             <div class="meta">📍 <span>${esc(place)}</span></div>
-            ${p.hours ? `<div class="meta">🕒 <span>${esc(fmtHours(p.hours))}</span></div>` : ""}
+            ${p.hours ? `<div class="meta">🕒 <span>${(o => o === true ? `<b class="open-now">${t("openNowShort")}</b> · ` : o === false ? `<b class="closed-now">${t("closedNow")}</b> · ` : "")(openNow(p.hours))}${esc(fmtHours(p.hours))}</span></div>` : ""}
             ${summary ? `<p class="place-sum">${esc(summary.slice(0, 110))}${summary.length > 110 ? "…" : ""}</p>` : ""}
           </div>
         </a>
       </article>`;
   }
 
+  // ---------- "เปิดอยู่ตอนนี้" จากเวลาเปิดของ OpenStreetMap (รูปแบบที่พบบ่อย) → true/false/null (ไม่รู้) ----------
+  const DAY_IDX = { mo: 1, tu: 2, we: 3, th: 4, fr: 5, sa: 6, su: 0, mon: 1, tue: 2, wed: 3, thu: 4, fri: 5, sat: 6, sun: 0, di: 2, mi: 3, do: 4, so: 0 };
+  function daysOf(spec) {
+    if (!spec || /^(daily|everyday)$/i.test(spec)) return [0, 1, 2, 3, 4, 5, 6];
+    const out = new Set();
+    for (const part of spec.split(",")) {
+      const [x, y] = part.trim().toLowerCase().split(/\s*-\s*/).map(d => DAY_IDX[d]);
+      if (x == null) continue;
+      if (y == null) { out.add(x); continue; }
+      for (let d = x, n = 0; n < 7; d = (d + 1) % 7, n++) { out.add(d); if (d === y) break; }
+    }
+    return [...out];
+  }
+  function openNow(hours, now = new Date()) {
+    const h = String(hours || "").trim();
+    if (!h) return null;
+    if (/^24\/7$/.test(h)) return true;
+    const day = now.getDay(), mins = now.getHours() * 60 + now.getMinutes();
+    let state_ = null, matched = false;
+    // กฎหลังทับกฎก่อน (ตามหลัก OSM) · คั่นด้วย ; หรือ , ที่ตามด้วยชื่อวัน
+    for (const rule of h.split(/;|,(?=\s*[A-Za-z]{2,3}\b)/)) {
+      const m = rule.trim().match(/^((?:[A-Za-z]{2,3}(?:\s*-\s*[A-Za-z]{2,3})?\s*,?\s*)+|daily)?\s*(.*)$/i);
+      if (!m) continue;
+      const spec = (m[1] || "").replace(/\bPH\b,?/gi, "").trim().replace(/,$/, "");
+      if (m[1] && !spec && /PH/i.test(m[1])) continue; // กฎของวันหยุดนักขัตฤกษ์อย่างเดียว ข้าม
+      if (!daysOf(spec).includes(day)) continue;
+      const body = m[2].trim();
+      matched = true;
+      if (/^(off|closed)$/i.test(body)) { state_ = false; continue; }
+      const ranges = [...body.matchAll(/(\d{1,2}):(\d{2})\s*-\s*(\d{1,2}):(\d{2})/g)];
+      if (!ranges.length) continue;
+      state_ = ranges.some(r => { const s = +r[1] * 60 + +r[2]; let e = +r[3] * 60 + +r[4]; if (e <= s) e += 1440; return (mins >= s && mins < e) || (mins + 1440 >= s && mins + 1440 < e); });
+    }
+    return matched ? state_ : false; // มีเวลาเปิดแต่ไม่มีกฎของวันนี้ = ปิด
+  }
+  window.IYA_openNow = openNow; // ใช้ทดสอบ
+
+  // ตัวกรองหน้าที่เที่ยว (จำค่าไว้ในเครื่อง)
+  const PF_DEFAULT = { sort: "rec", dist: 0, open: false, free: false, hot: false, photo: false };
+  state.pf = { ...PF_DEFAULT, ...readLS("placeFilters", {}) };
   const placeRank = p => (p.hot ? 100 + Math.min(p.hot, 60) * 3 : 0) + (p.rising ? 40 : 0) + (p.image ? 20 + (p.imageScore || 6) * 2 : 0) + Math.min(p.fame || 0, 15);
   function trendThumb(n) {
     const title = String(n.title || "").toLowerCase();
@@ -872,10 +912,25 @@
     // ค้นหาจากชื่อ (ไทย/อังกฤษ/จีน) ที่อยู่ และชื่อจังหวัด
     const q = state.placeQ.trim().toLowerCase();
     const match = p => !q || [p.name?.th, p.name?.en, p.name?.zh, p.address, provName(p.province), PROV[p.province]?.th].some(s => String(s || "").toLowerCase().includes(q));
-    let list = state.places.filter(p => inPlaceProvince(p) && (cat === "all" || p.kind === cat) && match(p));
-    if (state.pos) list = [...list].sort((a, b) => (b.hot ? 1 : 0) - (a.hot ? 1 : 0) || distanceKm(state.pos, a) - distanceKm(state.pos, b));
-    // ไม่รู้ตำแหน่ง: กำลังเป็นกระแส → คนค้นหาเพิ่ม → มีรูปที่ AI ให้คะแนนความน่าดูสูง → ดัง
-    else list = [...list].sort((a, b) => placeRank(b) - placeRank(a));
+    const pf = state.pf, near = pf.sort === "near" && state.pos;
+    // ใกล้ฉัน: ไม่จำกัดจังหวัด (ดูรอบตัวจริงๆ)
+    const base = state.places.filter(p => (near || inPlaceProvince(p)) && (cat === "all" || p.kind === cat) && match(p));
+    const tests = {
+      open: p => openNow(p.hours) === true, free: p => p.fee === "no", hot: p => !!(p.hot || p.trend), photo: p => !!p.image,
+      dist: p => !near || !pf.dist || distanceKm(state.pos, p) <= pf.dist
+    };
+    const passAll = (p, skip) => Object.entries(tests).every(([k, f]) => k === skip || (k === "dist" ? f(p) : !pf[k] || f(p)));
+    let list = base.filter(p => passAll(p));
+    // จำนวนที่จะได้ถ้ากดตัวกรองนั้น (แสดงบนปุ่ม)
+    const would = k => base.filter(p => passAll(p, k) && tests[k](p)).length;
+    const SORTS = {
+      rec: (a, b) => placeRank(b) - placeRank(a),                                    // แนะนำ: กระแส → ค้นหาเพิ่ม → รูปสวย → ดัง
+      near: (a, b) => distanceKm(state.pos, a) - distanceKm(state.pos, b),
+      popular: (a, b) => (b.views || 0) - (a.views || 0) || (b.fame || 0) - (a.fame || 0),
+      photo: (a, b) => (b.image ? (b.imageScore || 6) : 0) - (a.image ? (a.imageScore || 6) : 0) || placeRank(b) - placeRank(a)
+    };
+    list = [...list].sort(SORTS[near ? "near" : pf.sort === "near" ? "rec" : pf.sort] || SORTS.rec);
+    const activeCount = ["open", "free", "hot", "photo"].filter(k => pf[k]).length + (near && pf.dist ? 1 : 0);
     // แสดงทีละ 30 แห่ง กด "ดูเพิ่ม" ได้ (หลายร้อยแห่งพร้อมกันทำให้แอพหน่วง)
     const shown = list.slice(0, state.placeShow);
     // บอร์ดเทรนด์: หมวดที่เลือก หรือข่าวใหม่สุดของทุกหมวด
@@ -893,7 +948,15 @@
           ${chip("all", "🌈", t("catAll"), "#ff7a45")}
           ${C.placeCategories.map(c => chip(c.id, c.icon, pick(c.name), c.color, counts[c.id] || 0)).join("")}
         </div>
-        <div class="filters places-row">${provinceSelect(state.places.reduce((m, p) => (m[p.province] = (m[p.province] || 0) + 1, m), {}))}</div>
+        <div class="filters places-row">
+          <button type="button" class="pill-btn ${pf.sort === "near" ? "on" : ""}" id="pfNear" aria-pressed="${pf.sort === "near"}">📍 ${t("nearMe")}</button>
+          ${near ? `<select id="pfDist" aria-label="${t("distance")}">${[0, 2, 5, 10, 20, 50, 100].map(d => `<option value="${d}" ${pf.dist === d ? "selected" : ""}>${d ? t("withinKm", { n: d }) : t("anyDistance")}</option>`).join("")}</select>` : provinceSelect(state.places.reduce((m, p) => (m[p.province] = (m[p.province] || 0) + 1, m), {}))}
+          <select id="pfSort" aria-label="${t("sortBy")}">
+            ${[["rec", t("sortRec")], ["popular", t("sortPopular")], ["photo", t("sortPhoto")]].map(([v, l]) => `<option value="${v}" ${(pf.sort === v || (pf.sort === "near" && v === "rec")) ? "selected" : ""}>${l}</option>`).join("")}
+          </select>
+          ${[["open", "🟢", t("openNowFilter")], ["hot", "🔥", t("trending")], ["free", "🆓", t("feeNo")], ["photo", "📷", t("hasPhoto")]].map(([k, i, l]) => `<button type="button" class="pill-btn ${pf[k] ? "on" : ""}" data-pf="${k}" aria-pressed="${!!pf[k]}">${i} ${esc(l)} <small>${would(k)}</small></button>`).join("")}
+          ${activeCount ? `<button type="button" class="pill-btn clear" id="pfClear">✕ ${t("clearFilters")}</button>` : ""}
+        </div>
       </div>
       ${board.length ? `<section class="trend-board">
         <div class="section-head"><h2>${t("trendBoard")}</h2><small>${t("swipe")}</small></div>
@@ -930,12 +993,24 @@
       renderPlaces();
       window.scrollTo(0, y);
     }));
-    document.getElementById("province").addEventListener("change", e => {
+    document.getElementById("province")?.addEventListener("change", e => {
       state.filters.province = e.target.value;
       writeLS("province", state.filters.province);
       state.placeShow = 30;
       keep(renderPlaces)();
     });
+    // ตัวกรองที่เที่ยว
+    const setPf = patch => { Object.assign(state.pf, patch); writeLS("placeFilters", state.pf); state.placeShow = 30; keep(renderPlaces)(); };
+    document.getElementById("pfNear").addEventListener("click", () => {
+      if (state.pf.sort === "near") return setPf({ sort: "rec", dist: 0 });
+      locate(() => { if (state.pos) setPf({ sort: "near", dist: state.pf.dist || 20 }); else setPf({ sort: "rec" }); });
+    });
+    document.getElementById("pfDist")?.addEventListener("change", e => setPf({ dist: +e.target.value }));
+    document.getElementById("pfSort").addEventListener("change", e => setPf({ sort: e.target.value }));
+    app.querySelectorAll("[data-pf]").forEach(b => b.addEventListener("click", () => setPf({ [b.dataset.pf]: !state.pf[b.dataset.pf] })));
+    // เคยเลือก "ใกล้ฉัน" ไว้ แต่เพิ่งเปิดแอพ (ยังไม่มีตำแหน่ง) → ขอตำแหน่งให้อีกครั้ง (ครั้งเดียวต่อการเปิด)
+    if (state.pf.sort === "near" && !state.pos && !state.nearTried) { state.nearTried = true; locate(() => { if (!state.pos) state.pf.sort = "rec"; keep(renderPlaces)(); }); }
+    document.getElementById("pfClear")?.addEventListener("click", () => setPf({ open: false, free: false, hot: false, photo: false, dist: state.pf.sort === "near" ? 0 : state.pf.dist }));
     bindSave(app, keep(renderPlaces));
     bindView(keep(renderPlaces));
     activateAdsense();

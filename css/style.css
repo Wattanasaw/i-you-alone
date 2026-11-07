@@ -531,3 +531,16 @@ html.theme-anim, html.theme-anim * { transition: background-color .35s, color .3
 .link-btn { border: 0; background: none; color: var(--muted); text-decoration: underline; cursor: pointer; padding: 0; font-size: .8rem; }
 .btn.ghost { background: transparent; }
 .topnav [data-nav="account"] { white-space: nowrap; }
+
+/* ---------- ตัวกรองที่เที่ยว ---------- */
+.pill-btn {
+  flex: none; display: inline-flex; align-items: center; gap: 4px; white-space: nowrap; cursor: pointer;
+  padding: 7px 12px; border-radius: 99px; border: 1px solid var(--border); background: var(--surface); color: var(--text); font: inherit; font-size: .8rem;
+}
+.pill-btn small { opacity: .55; font-size: .7rem; }
+.pill-btn.on { background: var(--text); color: var(--bg); border-color: transparent; font-weight: 600; }
+.pill-btn.on small { opacity: .7; }
+.pill-btn.clear { color: var(--accent); border-style: dashed; }
+.places-row select { font-size: .8rem; }
+.open-now { color: var(--free); font-weight: 600; }
+.closed-now { color: var(--muted); font-weight: 600; }
