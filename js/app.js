@@ -805,7 +805,7 @@
     const places = state.places.filter(p => state.saved.has(placeKey(p)));
     app.innerHTML = `<div class="page"><h1>${t("savedTitle")}</h1>
       ${list.length ? `<div class="grid">${list.map(card).join("")}</div>` : places.length ? "" : `<div class="empty-state"><div class="empty-ico">🤍</div><p>${t("savedEmpty")}</p><div class="actions" style="justify-content:center"><a class="btn primary" href="#/">🎉 ${t("navExplore")}</a><a class="btn" href="#/places">🗺️ ${t("navPlaces")}</a></div></div>`}
-      ${places.length ? `<div class="section-head"><h2>🗺️ ${t("savedPlaces")}</h2></div><div class="grid">${places.map(placeCard).join("")}</div>` : ""}</div>`;
+      ${places.length ? `<div class="section-head"><h2>🗺️ ${t("savedPlaces")}</h2></div><div class="place-list">${places.map(placeCard).join("")}</div>` : ""}</div>`;
     bindSave(app, renderSaved);
   }
 
@@ -857,31 +857,25 @@
   const GOOD_ICON = { photo: "📸", work: "💻", kids: "👶", pets: "🐾", date: "💑", group: "👯", view: "🌄", nature: "🌿", chill: "☕", budget: "💸", night: "🌙", food: "😋" };
   const reviewOf = p => { const r = state.reviews?.[p.id]; return r && r.summary && !r.skip ? r : null; };
   const rvList = v => { const l = v?.[state.lang]?.length ? v[state.lang] : v?.th || []; return l.filter(Boolean); };
+  // การ์ดที่เที่ยวแบบรายการ (ไม่มีรูป): ไอคอนหมวด · ชื่อ · เขต/อำเภอ จังหวัด ระยะทาง · เวลาเปิด · ราคา · สรุปรีวิว · เหมาะกับ
   function placeCard(p) {
-    const c = PCAT[p.kind], saved = state.saved.has(placeKey(p));
-    let place = provName(p.province);
-    if (state.pos && p.lat) place += ` · ${distanceKm(state.pos, p).toFixed(1)} ${t("km")}`;
-    const rv = reviewOf(p);
-    const summary = rv?.summary ? pick(rv.summary) : placeSummary(p);
+    const c = PCAT[p.kind] || { icon: "📍", color: "#888" }, saved = state.saved.has(placeKey(p));
+    const where = [p.district && `${p.province === "bangkok" ? t("districtBkk") : t("districtShort")}${p.district}`, provName(p.province), state.pos && p.lat ? `${distanceKm(state.pos, p).toFixed(1)} ${t("km")}` : ""].filter(Boolean).join(" · ");
+    const rv = reviewOf(p), summary = rv?.summary ? pick(rv.summary) : placeSummary(p);
+    const open = openNow(p.hours);
+    const price = [MENU_KINDS.has(p.kind) && menuText(p) !== "-" ? `🍽️ ${esc(menuText(p))}` : "", (!MENU_KINDS.has(p.kind) || p.kind === "animalcafe") && feeText(p) !== "-" ? `🎟️ ${esc(feeText(p))}` : ""].filter(Boolean).join(" · ");
     return `
-      <article class="card place-card">
+      <article class="card place-row" style="--c1:${c.color};--c2:${c.color2 || c.color}">
         <button class="save-btn" data-save="${esc(placeKey(p))}" aria-label="${saved ? t("unsaveAria") : t("saveAria")}">${saved ? "❤️" : "🤍"}</button>
         <a href="#/place/${encodeURIComponent(p.id)}">
-          ${placeCover(p)}
-            <div class="badges">
-              ${p.business ? `<span class="badge sponsor">✅ ${t("verifiedShop")}</span>` : ""}
-              ${p.trend ? `<span class="badge hot">🔥 ${t("trending")}</span>` : p.rising ? `<span class="badge hot">📈 ${t("searchRising")}</span>` : ""}
-              ${c ? `<span class="badge">${c.icon} ${esc(pick(c.name))}</span>` : ""}
-            </div>
-          </div>
-          <div class="card-body">
+          <span class="pr-icon" aria-hidden="true">${c.icon}</span>
+          <div class="pr-body">
             <h3>${esc(placeName(p))}</h3>
-            <div class="meta">📍 <span>${esc(place)}</span></div>
-            ${p.hours ? `<div class="meta">🕒 <span>${(o => o === true ? `<b class="open-now">${t("openNowShort")}</b> · ` : o === false ? `<b class="closed-now">${t("closedNow")}</b> · ` : "")(openNow(p.hours))}${esc(fmtHours(p.hours))}</span></div>` : ""}
-            <!-- การ์ด: แสดงราคา/ค่าเข้าเฉพาะที่มีข้อมูล (หน้ารายละเอียดยังแสดง - เมื่อไม่มี) -->
-            ${(parts => parts ? `<div class="meta price-line">${parts}</div>` : "")([MENU_KINDS.has(p.kind) && menuText(p) !== "-" ? `🍽️ <span>${t("menuPrice")}: ${esc(menuText(p))}</span>` : "", (!MENU_KINDS.has(p.kind) || p.kind === "animalcafe") && feeText(p) !== "-" ? `🎟️ <span>${t("fee")}: ${esc(feeText(p))}</span>` : ""].join(""))}
-            ${summary ? `<p class="place-sum">${esc(summary.slice(0, 110))}${summary.length > 110 ? "…" : ""}</p>` : ""}
-            ${rv?.goodFor?.length ? `<div class="good-for">${rv.goodFor.slice(0, 3).map(g => `<span>${GOOD_ICON[g] || "✨"} ${esc(t("gf_" + g))}</span>`).join("")}</div>` : ""}
+            <div class="pr-tags">${c.name ? `<span>${esc(pick(c.name))}</span>` : ""}${p.trend ? `<span class="hot">🔥 ${t("trending")}</span>` : p.rising ? `<span class="hot">📈 ${t("searchRising")}</span>` : ""}${p.business ? `<span class="ok">✅ ${t("verifiedShop")}</span>` : ""}</div>
+            <div class="meta">📍 <span>${esc(where)}</span></div>
+            ${p.hours || price ? `<div class="meta">${p.hours ? `🕒 <span>${open === true ? `<b class="open-now">${t("openNowShort")}</b> · ` : open === false ? `<b class="closed-now">${t("closedNow")}</b> · ` : ""}${esc(fmtHours(p.hours))}</span>` : ""}${p.hours && price ? " · " : ""}${price}</div>` : ""}
+            ${summary ? `<p class="place-sum">${esc(summary.slice(0, 120))}${summary.length > 120 ? "…" : ""}</p>` : ""}
+            ${rv?.goodFor?.length ? `<div class="good-for">${rv.goodFor.slice(0, 4).map(g => `<span>${GOOD_ICON[g] || "✨"} ${esc(t("gf_" + g))}</span>`).join("")}</div>` : ""}
           </div>
         </a>
       </article>`;
@@ -925,7 +919,7 @@
   window.IYA_openNow = openNow; // ใช้ทดสอบ
 
   // ตัวกรองหน้าที่เที่ยว (จำค่าไว้ในเครื่อง)
-  const PF_DEFAULT = { sort: "rec", dist: 0, open: false, free: false, hot: false, photo: false };
+  const PF_DEFAULT = { sort: "rec", dist: 0, open: false, free: false, hot: false, district: "", districtOf: "" };
   state.pf = { ...PF_DEFAULT, ...readLS("placeFilters", {}) };
   // คาเฟ่ + สถานที่บันเทิง (สวนสนุก สวนสัตว์ คาเฟ่สัตว์) ที่มีรูป ดันขึ้นก่อนในมุมมอง "แนะนำ"
   const FUN_BOOST = { cafe: 70, animalcafe: 70, themepark: 60, restaurant: 50, zoo: 45 };
@@ -1001,9 +995,14 @@
     const match = p => !q || [p.name?.th, p.name?.en, p.name?.zh, p.address, provName(p.province), PROV[p.province]?.th].some(s => String(s || "").toLowerCase().includes(q));
     const pf = state.pf, near = pf.sort === "near" && state.pos;
     // ใกล้ฉัน: ไม่จำกัดจังหวัด (ดูรอบตัวจริงๆ)
-    const base = state.places.filter(p => (near || inPlaceProvince(p)) && (cat === "all" || p.kind === cat) && match(p));
+    // เขต/อำเภอ: เลือกได้เมื่อเลือกจังหวัดแล้ว (เปลี่ยนจังหวัด = ล้างเขต)
+    const prov = state.filters.province, distOn = !near && prov !== "all";
+    if (!distOn || (pf.districtOf && pf.districtOf !== prov)) { pf.district = ""; pf.districtOf = ""; }
+    const inProv = state.places.filter(p => (near || inPlaceProvince(p)) && (cat === "all" || p.kind === cat) && match(p));
+    const districts = distOn ? Object.entries(inProv.reduce((m, p) => (p.district && (m[p.district] = (m[p.district] || 0) + 1), m), {})).sort((x, y) => x[0].localeCompare(y[0], "th")) : [];
+    const base = inProv.filter(p => !pf.district || p.district === pf.district);
     const tests = {
-      open: p => openNow(p.hours) === true, free: p => p.fee === "no", hot: p => !!(p.hot || p.trend), photo: hasCover,
+      open: p => openNow(p.hours) === true, free: p => p.fee === "no" || p.entry?.free === true, hot: p => !!(p.hot || p.trend),
       dist: p => !near || !pf.dist || distanceKm(state.pos, p) <= pf.dist
     };
     const passAll = (p, skip) => Object.entries(tests).every(([k, f]) => k === skip || (k === "dist" ? f(p) : !pf[k] || f(p)));
@@ -1014,10 +1013,10 @@
       rec: (a, b) => placeRank(b) - placeRank(a),                                    // แนะนำ: กระแส → ค้นหาเพิ่ม → รูปสวย → ดัง
       near: (a, b) => distanceKm(state.pos, a) - distanceKm(state.pos, b),
       popular: (a, b) => (b.views || 0) - (a.views || 0) || (b.fame || 0) - (a.fame || 0),
-      photo: (a, b) => (b.image ? (b.imageScore || 6) : hasCover(b) ? 5 : 0) - (a.image ? (a.imageScore || 6) : hasCover(a) ? 5 : 0) || placeRank(b) - placeRank(a)
+      reviews: (a, b) => (reviewOf(b) ? 1 : 0) - (reviewOf(a) ? 1 : 0) || placeRank(b) - placeRank(a)
     };
     list = [...list].sort(SORTS[near ? "near" : pf.sort === "near" ? "rec" : pf.sort] || SORTS.rec);
-    const activeCount = ["open", "free", "hot", "photo"].filter(k => pf[k]).length + (near && pf.dist ? 1 : 0);
+    const activeCount = ["open", "free", "hot"].filter(k => pf[k]).length + (near && pf.dist ? 1 : 0) + (pf.district ? 1 : 0);
     // แสดงทีละ 30 แห่ง กด "ดูเพิ่ม" ได้ (หลายร้อยแห่งพร้อมกันทำให้แอพหน่วง)
     const shown = list.slice(0, state.placeShow);
     // บอร์ดเทรนด์: เฉพาะโพสต์ยอดนิยม (ไลก์ ≥ 100 หรือครึ่งบนของหมวด) แล้วเรียงตามวันที่ใหม่สุดก่อน
@@ -1041,18 +1040,19 @@
         <div class="filters places-row">
           <button type="button" class="pill-btn ${pf.sort === "near" ? "on" : ""}" id="pfNear" aria-pressed="${pf.sort === "near"}">📍 ${t("nearMe")}</button>
           ${near ? `<select id="pfDist" aria-label="${t("distance")}">${[0, 2, 5, 10, 20, 50, 100].map(d => `<option value="${d}" ${pf.dist === d ? "selected" : ""}>${d ? t("withinKm", { n: d }) : t("anyDistance")}</option>`).join("")}</select>` : provinceSelect(state.places.reduce((m, p) => (m[p.province] = (m[p.province] || 0) + 1, m), {}))}
+          ${distOn && districts.length ? `<select id="pfDistrict" aria-label="${t("districtLabel")}"><option value="">🏘️ ${t(prov === "bangkok" ? "allDistrictsBkk" : "allDistricts")}</option>${districts.map(([d, n]) => `<option value="${esc(d)}" ${pf.district === d ? "selected" : ""}>${esc(d)} (${n})</option>`).join("")}</select>` : ""}
           <select id="pfSort" aria-label="${t("sortBy")}">
-            ${[["rec", t("sortRec")], ["popular", t("sortPopular")], ["photo", t("sortPhoto")]].map(([v, l]) => `<option value="${v}" ${(pf.sort === v || (pf.sort === "near" && v === "rec")) ? "selected" : ""}>${l}</option>`).join("")}
+            ${[["rec", t("sortRec")], ["popular", t("sortPopular")], ["reviews", t("sortReviews")]].map(([v, l]) => `<option value="${v}" ${(pf.sort === v || (pf.sort === "near" && v === "rec")) ? "selected" : ""}>${l}</option>`).join("")}
           </select>
-          ${[["open", "🟢", t("openNowFilter")], ["hot", "🔥", t("trending")], ["free", "🆓", t("feeNo")], ["photo", "📷", t("hasPhoto")]].map(([k, i, l]) => `<button type="button" class="pill-btn ${pf[k] ? "on" : ""}" data-pf="${k}" aria-pressed="${!!pf[k]}">${i} ${esc(l)} <small>${would(k)}</small></button>`).join("")}
+          ${[["open", "🟢", t("openNowFilter")], ["hot", "🔥", t("trending")], ["free", "🆓", t("feeNo")]].map(([k, i, l]) => `<button type="button" class="pill-btn ${pf[k] ? "on" : ""}" data-pf="${k}" aria-pressed="${!!pf[k]}">${i} ${esc(l)} <small>${would(k)}</small></button>`).join("")}
           ${activeCount ? `<button type="button" class="pill-btn clear" id="pfClear">✕ ${t("clearFilters")}</button>` : ""}
         </div>
       </div>
       ${board.length ? `<section class="trend-board">
         <div class="section-head"><h2>${t("trendBoard")}</h2><small>${t("swipe")}</small></div>
         <div class="news-list">${board.map(trendCard).join("")}</div></section>` : ""}
-      <div class="section-head" id="placesHead"><h2>${cat !== "all" && PCAT[cat] ? `${PCAT[cat].icon} ${esc(pick(PCAT[cat].name))}` : t("placesAll")} <small>${t("placesFound", { n: list.length })}</small></h2>${viewToggle()}</div>
-      ${list.length ? `<div class="grid ${state.view}">${shown.map(placeCard).join("")}</div>` : ""}
+      <div class="section-head" id="placesHead"><h2>${cat !== "all" && PCAT[cat] ? `${PCAT[cat].icon} ${esc(pick(PCAT[cat].name))}` : t("placesAll")} <small>${t("placesFound", { n: list.length })}</small></h2></div>
+      ${list.length ? `<div class="place-list">${shown.map(placeCard).join("")}</div>` : ""}
       ${adSlot("list_inline")}
       ${list.length ? "" : `<p class="empty">${t("noPlaces")}</p>`}
       ${list.length > shown.length ? `<div class="actions" style="justify-content:center"><button class="btn primary" id="moreBtn">${t("showMore", { n: list.length - shown.length })}</button></div>` : ""}
@@ -1092,12 +1092,12 @@
     });
     document.getElementById("pfDist")?.addEventListener("change", e => setPf({ dist: +e.target.value }));
     document.getElementById("pfSort").addEventListener("change", e => setPf({ sort: e.target.value }));
+    document.getElementById("pfDistrict")?.addEventListener("change", e => setPf({ district: e.target.value, districtOf: e.target.value ? state.filters.province : "" }));
     app.querySelectorAll("[data-pf]").forEach(b => b.addEventListener("click", () => setPf({ [b.dataset.pf]: !state.pf[b.dataset.pf] })));
     // เคยเลือก "ใกล้ฉัน" ไว้ แต่เพิ่งเปิดแอพ (ยังไม่มีตำแหน่ง) → ขอตำแหน่งให้อีกครั้ง (ครั้งเดียวต่อการเปิด)
     if (state.pf.sort === "near" && !state.pos && !state.nearTried) { state.nearTried = true; locate(() => { if (!state.pos) state.pf.sort = "rec"; keep(renderPlaces)(); }); }
-    document.getElementById("pfClear")?.addEventListener("click", () => setPf({ open: false, free: false, hot: false, photo: false, dist: state.pf.sort === "near" ? 0 : state.pf.dist }));
+    document.getElementById("pfClear")?.addEventListener("click", () => setPf({ open: false, free: false, hot: false, district: "", districtOf: "", dist: state.pf.sort === "near" ? 0 : state.pf.dist }));
     bindSave(app, keep(renderPlaces));
-    bindView(keep(renderPlaces));
     activateAdsense();
   }
 
@@ -1130,7 +1130,7 @@
       p.hours ? `<span class="q ${open === true ? "ok" : open === false ? "off" : ""}">🕒 ${open === true ? t("openNowShort") : open === false ? t("closedNow") : esc(fmtHours(p.hours))}</span>` : "",
       (!MENU_KINDS.has(p.kind) || p.kind === "animalcafe") && feeText(p) !== "-" ? `<span class="q">🎟️ ${esc(feeText(p))}</span>` : "",
       MENU_KINDS.has(p.kind) && menuText(p) !== "-" ? `<span class="q">🍽️ ${esc(menuText(p))}</span>` : "",
-      `<span class="q">📍 ${state.pos && p.lat ? `${distanceKm(state.pos, p).toFixed(1)} ${t("km")}` : esc(provName(p.province))}</span>`
+      `<span class="q">📍 ${esc([p.district && `${p.province === "bangkok" ? t("districtBkk") : t("districtShort")}${p.district}`, state.pos && p.lat ? `${distanceKm(state.pos, p).toFixed(1)} ${t("km")}` : provName(p.province)].filter(Boolean).join(" · "))}</span>`
     ].join("");
     const facts = `<dl class="facts compact">
         <div><dt>📍</dt><dd>${esc([p.address, provName(p.province)].filter(Boolean).join(" · ") || name)}</dd></div>

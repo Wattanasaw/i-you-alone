@@ -642,3 +642,19 @@ html.theme-anim, html.theme-anim * { transition: background-color .35s, color .3
 .rv-src a { color: inherit; text-decoration: underline; }
 .good-for { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
 .good-for span { font-size: .75rem; padding: 3px 8px; border-radius: 999px; background: color-mix(in srgb, var(--accent, #ff7a45) 14%, transparent); white-space: nowrap; }
+
+/* ที่เที่ยวแบบรายการ ไม่มีรูป: ไอคอนหมวดสีตามหมวด + รายละเอียด */
+.place-list { display: grid; gap: 10px; grid-template-columns: 1fr; }
+@media (min-width: 760px) { .place-list { grid-template-columns: 1fr 1fr; } }
+.place-row { position: relative; padding: 0; overflow: hidden; }
+.place-row > a { display: flex; flex-direction: row; gap: 12px; padding: 12px 44px 12px 12px; color: inherit; text-decoration: none; align-items: flex-start; }
+.place-row .pr-icon { flex: none; width: 46px; height: 46px; border-radius: 14px; display: grid; place-items: center; font-size: 1.5rem; background: linear-gradient(135deg, var(--c1), var(--c2)); box-shadow: 0 2px 8px color-mix(in srgb, var(--c1) 35%, transparent); }
+.place-row .pr-body { min-width: 0; flex: 1; display: flex; flex-direction: column; gap: 3px; }
+.place-row h3 { margin: 0; font-size: 1rem; line-height: 1.3; }
+.place-row .pr-tags { display: flex; flex-wrap: wrap; gap: 4px; }
+.place-row .pr-tags span { font-size: .72rem; padding: 2px 7px; border-radius: 999px; background: color-mix(in srgb, var(--c1) 16%, transparent); }
+.place-row .pr-tags .hot { background: color-mix(in srgb, #ff5a3c 20%, transparent); }
+.place-row .pr-tags .ok { background: color-mix(in srgb, #2fb36d 20%, transparent); }
+.place-row .meta { font-size: .82rem; opacity: .85; }
+.place-row .place-sum { margin: 2px 0 0; font-size: .85rem; opacity: .9; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.place-row .save-btn { position: absolute; top: 6px; right: 6px; z-index: 2; }
