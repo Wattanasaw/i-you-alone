@@ -234,3 +234,22 @@ node scripts/check-data.mjs
 6. Actions → "AI ตรวจร้านจากสมาชิกธุรกิจ" → Run workflow เพื่อทดสอบ
 
 ข้อจำกัดแพ็กเกจฟรี: ผู้ใช้ 50,000 คน/เดือน, ฐานข้อมูล 500 MB, รูป 1 GB · ระบบอีเมลในตัวส่งได้จำกัดต่อชั่วโมง (เมื่อคนเยอะ ตั้ง SMTP ฟรีเช่น Brevo เพิ่มได้) · workflow ตรวจร้านทุก 2 ชม. ช่วยไม่ให้โปรเจกต์ฟรีถูกพักเพราะไม่มีการใช้งาน
+
+## คะแนนและรีวิวจาก Google Maps (ไม่บังคับ)
+
+แอพใช้ Google Places API (New) ทางการ ดึงข้อมูลสดเฉพาะเมื่อผู้ใช้กดปุ่มในหน้าสถานที่ ไม่เก็บข้อมูลของ Google ไว้ในไฟล์ของเรา (ตามเงื่อนไข Google) จำแค่ place ID ในเครื่องผู้ใช้
+
+- ขั้นหา place ID ใช้ Text Search แบบ IDs only (ไม่มีค่าใช้จ่าย)
+- ขั้นรายละเอียด (คะแนน รีวิว เวลาเปิด) ใช้ SKU กลุ่ม Enterprise ที่ฟรี 1,000 ครั้ง/เดือน
+- **ตั้งโควต้าต่อวันใน Google Cloud เสมอ** (เช่น 30 ครั้ง/วัน ≈ 900/เดือน) เกินโควต้า = แอพขึ้นข้อความ "โควต้าวันนี้หมด" ไม่มีค่าใช้จ่าย
+
+วิธีตั้งค่า:
+1. https://console.cloud.google.com → สร้างโปรเจกต์ใหม่ เช่น `i-you-alone`
+2. Billing → ผูกบัญชีชำระเงิน (Google บังคับแม้ใช้ไม่เกินโควต้าฟรี)
+3. APIs & Services → Library → เปิด **Places API (New)**
+4. APIs & Services → Credentials → Create credentials → API key → Edit:
+   - Application restrictions: **Websites** → `https://wattanasaw.github.io/*`, `https://localhost/*`, `http://localhost:5173/*`
+   - API restrictions: **Restrict key** → เลือกเฉพาะ **Places API (New)**
+5. APIs & Services → Places API (New) → Quotas → ตั้ง **GetPlace / Place Details per day = 30** และ **SearchText per day = 200**
+6. (แนะนำ) Billing → Budgets & alerts → งบ 1 บาท แจ้งเตือนทางอีเมล
+7. ใส่คีย์ใน `js/config.js` → `googlePlaces.apiKey` แล้ว commit (คีย์แบบเบราว์เซอร์มองเห็นได้ในโค้ดเว็บอยู่แล้ว ความปลอดภัยมาจากการจำกัดเว็บไซต์ + API + โควต้า)

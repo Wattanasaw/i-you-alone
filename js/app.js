@@ -1230,6 +1230,7 @@
           ${summary ? `<p class="pd-summary" id="pdSum">${esc(summary)}</p>${summary.length > 180 ? `<button class="link-btn" id="pdMore">${t("readMore")}</button>` : ""}` : ""}
           ${facts}
           ${rv ? reviewBlock(rv) : ""}
+          ${window.IYA_GOOGLE?.block(p) || ""}
           ${posts.length ? `<section class="panel pd-buzz">
             <div class="pd-buzz-head"><h2>🔥 ${t("placeTrends")}</h2>${posts.length > 2 ? `<button class="link-btn" data-ptab="trends">${t("seeAll")} ${posts.length} ›</button>` : ""}</div>
             ${freshPopular(posts).slice(0, 2).map(n => `<a class="buzz-row" ${inAppLink(n.link)}>
@@ -1271,6 +1272,7 @@
     });
     const lb = document.getElementById("locBtn");
     if (lb) lb.addEventListener("click", () => locate(() => { state.placeTab = "travel"; renderPlace(id); hydrateGuides(); }));
+    window.IYA_GOOGLE?.bind(p);
     activateAdsense();
   }
 
@@ -1414,6 +1416,7 @@
   load().then(() => {
     // เริ่มระบบสมาชิกก่อนแสดงหน้า (คืนสถานะเข้าระบบเบื้องหลัง ไม่ต้องรอ)
     window.IYA_MEMBER?.init({ C, state, t, esc, pick, provName, readLS, writeLS, locate });
+    window.IYA_GOOGLE?.init({ C, t, esc, provName, inAppLink, lang: () => state.lang });
     route();
   });
 

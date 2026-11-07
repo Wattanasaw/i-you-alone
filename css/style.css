@@ -693,3 +693,24 @@ label.check input[type=checkbox] { width: 22px; height: 22px; flex: none; margin
 .geo-pick p { margin: 0 0 8px; font-size: .85rem; }
 .geo-pick-row { display: flex; gap: 8px; flex-wrap: wrap; }
 .geo-pick select { flex: 1; min-width: 160px; min-height: 44px; }
+
+/* ข้อมูลจาก Google Maps (Places API) */
+.g-box #gLoad { width: 100%; min-height: 44px; }
+.g-box .small { font-size: .78rem; margin: 6px 0 0; }
+.g-head { display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap; }
+.g-rating { display: flex; align-items: baseline; gap: 8px; }
+.g-rating b { font-size: 1.6rem; }
+.g-stars { color: #f5b301; letter-spacing: 1px; }
+.g-stars.small { font-size: .8rem; }
+.g-rating small, .g-rv-head small { color: var(--muted); }
+.g-price { font-size: .85rem; padding: 3px 10px; border-radius: 999px; background: var(--surface-2); }
+.g-sum { margin: 8px 0; }
+.g-hours { margin: 8px 0; font-size: .88rem; }
+.g-hours summary { cursor: pointer; min-height: 32px; }
+.g-hours ul { margin: 4px 0 0; padding-left: 1.2em; }
+.g-review { padding: 10px 0; border-top: 1px solid var(--border); font-size: .88rem; }
+.g-rv-head { display: flex; gap: 8px; align-items: baseline; flex-wrap: wrap; }
+.g-rv-head a { color: inherit; font-weight: 600; }
+.g-review p { margin: 4px 0 0; line-height: 1.5; }
+.g-attr { margin: 10px 0 0; font-size: .78rem; color: var(--muted); }
+.g-attr a { color: inherit; text-decoration: underline; }

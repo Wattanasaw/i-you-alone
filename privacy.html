@@ -1,6 +1,4 @@
-<!do
-    <h2>Membership (optional)</h2>
-    <p>Everything works without an account. If you sign up and consent, we store only your email (for sign-in codes), your profile (account type, display name, province, interests, saved items, vehicle settings) and, for business members, the shop details, photos and location you submit. Submissions are checked by AI (Google Gemini or GitHub Models) and published once approved. Data is stored on Supabase with per-user access rules. You can request access, correction or deletion at any time via the contact below.</p>ctype html>
+<!doctype html>
 <html lang="th">
 <head>
   <meta charset="utf-8">
@@ -27,6 +25,7 @@
     <p>I You Alone (เว็บและแอพ) <b>ใช้งานได้ทุกอย่างโดยไม่ต้องสมัครสมาชิก</b> ถ้าไม่สมัคร เราไม่เก็บข้อมูลส่วนตัวของคุณไว้ที่เซิร์ฟเวอร์</p>
     <ul>
       <li><b>งานที่บันทึก ภาษา และจังหวัดที่เลือก</b>: เก็บไว้ในเครื่องของคุณเท่านั้น (local storage) ลบได้ด้วยการล้างข้อมูลแอพ</li>
+      <li><b>ข้อมูลจาก Google Maps</b>: เมื่อคุณกดปุ่ม "ดูคะแนน รีวิว และเวลาเปิดจาก Google" ในหน้าสถานที่ เบราว์เซอร์ของคุณจะขอข้อมูลจาก Google Maps Platform โดยตรง (Google เห็นที่อยู่ IP และสถานที่ที่คุณเปิดดู ตามนโยบายความเป็นส่วนตัวของ Google) เราไม่เก็บข้อมูลของ Google ไว้ จำไว้เพียงรหัสสถานที่ของ Google ในเครื่องของคุณ</li>
       <li><b>ตำแหน่งที่ตั้ง</b>: ใช้เมื่อคุณกด "ใช้ตำแหน่งของฉัน" เพื่อคำนวณระยะทางและแนะนำการเดินทางในเครื่องเท่านั้น ไม่ได้ส่งหรือบันทึกไว้ที่ใด</li>
     </ul>
     <h2>สมาชิก (ไม่บังคับ)</h2>
@@ -58,6 +57,10 @@
     <p>Event information is collected from public websites. Ticket sites, Google Maps and news sites you open have their own privacy policies, and some links are affiliate links.
       The website may show Google AdSense ads, which may use cookies under Google's policies. The app shows only non-tracking direct banners. Nightlife events are labelled 20+ under Thai law.
       To request a correction or removal, contact us at <a href="https://github.com/Wattanasaw/i-you-alone/issues">github.com/Wattanasaw/i-you-alone/issues</a>.</p>
+    <h2>Membership (optional)</h2>
+    <p>Everything works without an account. If you sign up and consent, we store only your email (for sign-in codes), your profile (account type, display name, province, interests, saved items, vehicle settings) and, for business members, the shop details, photos and location you submit. Submissions are checked by AI (Google Gemini or GitHub Models) and published once approved. Data is stored on Supabase with per-user access rules. You can request access, correction or deletion at any time via the contact below.</p>
+    <h2>Google Maps data (optional)</h2>
+    <p>On a place page you can tap "Show rating, reviews &amp; hours from Google". Only then does your browser request that information directly from Google Maps Platform (Google sees your IP address and the place you look up, under Google's privacy policy). We do not store Google's content; only the Google place ID is remembered on your device.</p>
   </section>
 </main>
 </body>

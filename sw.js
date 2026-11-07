@@ -1,6 +1,6 @@
-﻿// Service worker: à¹ƒà¸«à¹‰à¹à¸­à¸žà¹€à¸›à¸´à¸”à¹„à¸”à¹‰à¹€à¸£à¹‡à¸§à¹à¸¥à¸°à¹ƒà¸Šà¹‰à¸‡à¸²à¸™à¸­à¸­à¸Ÿà¹„à¸¥à¸™à¹Œà¹„à¸”à¹‰à¸šà¸²à¸‡à¸ªà¹ˆà¸§à¸™
-const CACHE = "iyoualone-v28";
-const ASSETS = ["./", "index.html", "css/style.css", "js/config.js", "js/i18n.js", "js/app.js", "js/member.js", "icons/icon.svg", "icons/logo-full.svg", "manifest.webmanifest"];
+// Service worker: ให้แอพเปิดได้เร็วและใช้งานออฟไลน์ได้บางส่วน
+const CACHE = "iyoualone-v29";
+const ASSETS = ["./", "index.html", "css/style.css", "js/config.js", "js/i18n.js", "js/app.js", "js/member.js", "js/google-places.js", "icons/icon.svg", "icons/logo-full.svg", "manifest.webmanifest"];
 
 self.addEventListener("install", e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(ASSETS)).then(() => self.skipWaiting()));
@@ -11,7 +11,7 @@ self.addEventListener("activate", e => {
 self.addEventListener("fetch", e => {
   const url = new URL(e.request.url);
   if (e.request.method !== "GET" || url.origin !== location.origin) return;
-  // à¸‚à¹‰à¸­à¸¡à¸¹à¸¥à¹à¸¥à¸°à¹‚à¸„à¹‰à¸”: à¹€à¸Šà¹‡à¸„à¹€à¸§à¸­à¸£à¹Œà¸Šà¸±à¸™à¸¥à¹ˆà¸²à¸ªà¸¸à¸”à¸à¸±à¸šà¹€à¸‹à¸´à¸£à¹Œà¸Ÿà¹€à¸§à¸­à¸£à¹Œà¸à¹ˆà¸­à¸™à¹€à¸ªà¸¡à¸­ (no-cache) à¸–à¹‰à¸²à¸­à¸­à¸Ÿà¹„à¸¥à¸™à¹Œà¹ƒà¸Šà¹‰à¸‚à¸­à¸‡à¹ƒà¸™à¹à¸„à¸Š
+  // ข้อมูลและโค้ด: เช็คเวอร์ชันล่าสุดกับเซิร์ฟเวอร์ก่อนเสมอ (no-cache) ถ้าออฟไลน์ใช้ของในแคช
   e.respondWith(
     fetch(e.request, { cache: "no-cache" }).then(res => {
       const copy = res.clone();

@@ -40,6 +40,12 @@ window.APP_CONFIG = {
   // ===== ระบบสมาชิก (Supabase แพ็กเกจฟรี) =====
   // ว่างไว้ = ปิดระบบสมาชิก (หน้า "บัญชี" จะแจ้งว่าเร็วๆ นี้) · วิธีเปิดดู README-TH.md หัวข้อ "ระบบสมาชิก"
   // anon key เป็นคีย์สาธารณะ ใส่ในเว็บได้ (ความปลอดภัยอยู่ที่ Row Level Security ใน supabase/schema.sql)
+  // คะแนน/รีวิว/เวลาเปิดจาก Google Maps (Places API ทางการ) — ดึงสดเฉพาะเมื่อผู้ใช้กดปุ่มในหน้าสถานที่ ไม่เก็บลงข้อมูลของเรา
+  // ว่าง = ปิดฟีเจอร์ · คีย์แบบเบราว์เซอร์ (ต้องจำกัดเว็บไซต์ + จำกัดเฉพาะ Places API (New) + ตั้งโควต้าต่อวันใน Google Cloud)
+  googlePlaces: {
+    apiKey: ""
+  },
+
   members: {
     supabaseUrl: "https://sfqnckcnnszrvloybmtf.supabase.co",      // เช่น "https://xxxx.supabase.co"
     supabaseAnonKey: "sb_publishable_BsM0vVzgy5La0K1_75d9qw_0WR1Tnkk"   // Project Settings → API → anon public
