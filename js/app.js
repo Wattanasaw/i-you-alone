@@ -716,6 +716,27 @@
         out.push([a1[0].t, t("costRail", { from: `${t("line_" + a1[0].t)}${sep}${tName(a1[0])}`, to: `${t("line_" + b1[0].t)}${sep}${tName(b1[0])}`, cost: range(fare * 0.85 * x, fare * 1.1 * x) })]);
       } else out.push(["BUS", t("costCityBus", { cost: range(8 * x, 25 * x) })]);
     }
+    // รถไฟทางไกล (การรถไฟฯ): สถานีใกล้ต้นทางและปลายทางไม่เกิน 15 กม. ระยะระหว่างสถานี 30 กม.ขึ้นไป
+    // ค่าโดยสารต่อ กม. เทียบจากราคาปี 2569 กรุงเทพ–เชียงใหม่ 751 กม.: ชั้น 3 นั่ง 205–271 · ชั้น 2 579–1,105 · ชั้น 1 นอน 1,453–1,794 บาท
+    if (tr_?.train && line >= 30) {
+      // ในกรุงเทพฯ/ปริมณฑล รถไฟทางไกลขึ้น-ลงที่สถานีกลางกรุงเทพอภิวัฒน์ (สถานีใกล้สุดอาจเป็นสถานีขนส่งสินค้าหรือที่หยุดรถเล็ก)
+      const HUB = { n: { th: "กลางกรุงเทพอภิวัฒน์", en: "Krung Thep Aphiwat Central", zh: "曼谷中央车站" }, t: "SRT", lat: 13.8037, lng: 100.5408 };
+      const near = p => inMetro(p) ? [HUB, distanceKm(p, HUB)] : tr_.train.map(s => [s, distanceKm(p, s)]).filter(([, d]) => d <= 15).sort((a, b) => a[1] - b[1])[0];
+      const a1 = near(from), b1 = near(v);
+      if (a1 && b1 && tName(a1[0]) !== tName(b1[0])) {
+        // คนละสายที่แยกจากกรุงเทพฯ (เช่น เหนือ ↔ ใต้) ต้องต่อรถที่กรุงเทพฯ → ระยะทางอ้อมผ่านกรุงเทพฯ
+        const A = a1[0], B = b1[0], dA = distanceKm(BKK_CENTER, A), dB = distanceKm(BKK_CENTER, B), dAB = distanceKm(A, B);
+        const viaBkk = dA > 80 && dB > 80 && dAB > Math.max(dA, dB);
+        const km = (viaBkk ? dA + dB : dAB) * 1.25;
+        if (km >= 30) {
+          const cls = [[t("train3"), 0.27, 0.36, 8]];
+          if (km >= 50) cls.push([t("train2"), 0.77, 1.47, 60]);
+          if (km >= 300) cls.push([t("train1"), 1.93, 2.39, 400]);
+          const fares = cls.map(([n, lo, hi, min]) => `${n} ${range(Math.max(min, km * lo) * x, Math.max(min * 1.3, km * hi) * x)}`).join(" · ");
+          out.push(["SRT", t("costTrain", { from: tName(A), to: tName(B), km: Math.round(km), fares }) + (viaBkk ? " " + t("trainViaBkk") : "")]);
+        }
+      }
+    }
     if (road > 80) out.push(["BUS", t("costCoach", { cost: range(road * 0.7 * x, road * 1.3 * x) })]);
     if (road > 400) out.push(["AIR", t("costFly")]);
     return { out, road, freeMin, fp };
