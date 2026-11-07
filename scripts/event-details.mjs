@@ -49,7 +49,7 @@ async function pageText(url) {
 }
 
 // ---------- ถาม AI ----------
-const todo = data.events.filter(ev => (ev.ticketUrl || ev.sourceUrl) && cache[ev.id]?.sig !== sig(ev) && (ev.endDate || ev.startDate) >= today)
+const todo = data.events.filter(ev => (ev.ticketUrl || ev.sourceUrl) && (cache[ev.id]?.sig !== sig(ev) || (cache[ev.id]?.about?.th && !cache[ev.id].about.zh)) && (ev.endDate || ev.startDate) >= today)
   .sort((a, b) => String(a.startDate).localeCompare(String(b.startDate))).slice(0, aiAvailable() ? LIMIT : 0);
 console.log(`อีเว้นท์ ${data.events.length} · มีรายละเอียดแล้ว ${Object.keys(cache).length} · รอบนี้ ${todo.length} · AI: ${aiName()}`);
 const withText = [];
@@ -66,9 +66,9 @@ for (let i = 0; i < withText.length && asked < AI_MAX && fails < 3; i += PER_ASK
   const group = withText.slice(i, i + PER_ASK);
   const prompt = `You write event details for a Thai event app (users: Thai teens and young adults). Read the page text given for each event, understand it, then SUMMARIZE IT IN YOUR OWN WORDS — like a friend explaining the event. Do NOT copy or translate sentences from the page word for word, do not paste marketing slogans, hashtags, emoji lists, ticket rules or long schedules. Use ONLY facts from the page text. Never invent people, dates, prices or activities.
 For each event return:
-- "about": {"th": a 3–5 sentence summary in casual, natural Thai written by you (not copied): 1) what kind of event this is and its theme, 2) what actually happens / what you can do, see, eat, learn or win, 3) who it suits (e.g. families, students, fans of X, beginners), 4) anything notable (big names, first time in Thailand, free, limited seats). "en": same in English}
-- "people": performers and key people explicitly named in the text — artists, singers, bands, actors/actresses, celebrities, influencers, DJs, speakers, hosts, special guests, chefs, athletes. [{"name": as written (keep original spelling), "role": {"th": short role e.g. "ศิลปิน", "นักร้อง", "นักแสดง", "ดีเจ", "วิทยากร", "พิธีกร", "แขกรับเชิญ", "เชฟ", "en": ...}}] max 12, [] if none. Do not list organizers/companies/sponsors as people.
-- "highlights": {"th": [≤ 5 short points in your own words: what's included / special activities / why go — no copied slogans], "en": [...]}
+- "about": {"th": a 3–5 sentence summary in casual, natural Thai written by you (not copied): 1) what kind of event this is and its theme, 2) what actually happens / what you can do, see, eat, learn or win, 3) who it suits (e.g. families, students, fans of X, beginners), 4) anything notable (big names, first time in Thailand, free, limited seats). "en": same in English, "zh": same in Simplified Chinese}
+- "people": performers and key people explicitly named in the text — artists, singers, bands, actors/actresses, celebrities, influencers, DJs, speakers, hosts, special guests, chefs, athletes. [{"name": as written (keep original spelling), "role": {"th": short role e.g. "ศิลปิน", "นักร้อง", "นักแสดง", "ดีเจ", "วิทยากร", "พิธีกร", "แขกรับเชิญ", "เชฟ", "en": ..., "zh": ...}}] max 12, [] if none. Do not list organizers/companies/sponsors as people.
+- "highlights": {"th": [≤ 5 short points in your own words: what's included / special activities / why go — no copied slogans], "en": [...], "zh": [...]}
 - "category": one of ${JSON.stringify(CATS)} — "festival" = traditional/seasonal festivals (Loy Krathong, Songkran, temple fairs, countdown), "social" = speed dating/singles/matchmaking/meet-new-friends clubs, "seminar" = talks/seminars/conferences (people listen), "learning" = workshops/courses/classes (hands-on), "expo" = trade/consumer fairs & expos, "exhibition" = art/museum/photo/immersive exhibitions, "concert" = concerts/shows/fan meetings, "nightlife" = DJ/bar/club/party.
 Return JSON {"results":[{"id","about","people","highlights","category"}]}
 Events: ${JSON.stringify(group.map(({ ev, text }) => ({ id: ev.id, title: ev.title, category_now: ev.category, page: text })))}`;
@@ -80,10 +80,10 @@ Events: ${JSON.stringify(group.map(({ ev, text }) => ({ id: ev.id, title: ev.tit
       if (!r) continue;
       cache[ev.id] = {
         sig: sig(ev), at: today,
-        about: { th: String(r.about?.th || "").trim().slice(0, 900), en: String(r.about?.en || "").trim().slice(0, 1000) },
+        about: { th: String(r.about?.th || "").trim().slice(0, 900), en: String(r.about?.en || "").trim().slice(0, 1000), zh: String(r.about?.zh || "").trim().slice(0, 600) },
         people: [].concat(r.people || []).filter(p => typeof p?.name === "string" && p.name.trim().length >= 2).slice(0, 12)
-          .map(p => ({ name: p.name.trim().slice(0, 60), role: { th: String(p.role?.th || "").slice(0, 30), en: String(p.role?.en || "").slice(0, 30) } })),
-        highlights: { th: L(r.highlights?.th, 5, 90), en: L(r.highlights?.en, 5, 110) },
+          .map(p => ({ name: p.name.trim().slice(0, 60), role: { th: String(p.role?.th || "").slice(0, 30), en: String(p.role?.en || "").slice(0, 30), zh: String(p.role?.zh || "").slice(0, 20) } })),
+        highlights: { th: L(r.highlights?.th, 5, 90), en: L(r.highlights?.en, 5, 110), zh: L(r.highlights?.zh, 5, 60) },
         category: CATS.includes(r.category) ? r.category : undefined
       };
       done++;
@@ -97,8 +97,8 @@ let applied = 0, splitN = 0;
 for (const ev of [...data.events, ...manual]) {
   const c = cache[ev.id];
   if (c && c.sig === sig(ev) && !c.none) {
-    if (c.about?.th) { ev.details = c.about.th; ev.aiDetails = true; ev.i18n = ev.i18n || {}; if (c.about.en) ev.i18n.en = { ...(ev.i18n.en || {}), details: c.about.en }; }
-    if (c.highlights?.th?.length) { ev.highlights = c.highlights.th; if (c.highlights.en?.length) { ev.i18n = ev.i18n || {}; ev.i18n.en = { ...(ev.i18n.en || {}), highlights: c.highlights.en }; } }
+    if (c.about?.th) { ev.details = c.about.th; ev.aiDetails = true; ev.i18n = ev.i18n || {}; for (const l of ["en", "zh"]) if (c.about[l]) ev.i18n[l] = { ...(ev.i18n[l] || {}), details: c.about[l] }; }
+    if (c.highlights?.th?.length) { ev.highlights = c.highlights.th; ev.i18n = ev.i18n || {}; for (const l of ["en", "zh"]) if (c.highlights[l]?.length) ev.i18n[l] = { ...(ev.i18n[l] || {}), highlights: c.highlights[l] }; }
     if (c.people?.length) ev.people = c.people;
     if (c.category) ev.category = c.category;
     applied++;
