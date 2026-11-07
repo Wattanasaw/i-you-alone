@@ -1,0 +1,37 @@
+name: AI ตรวจความใช้งานง่าย (UI)
+
+# ถ่ายภาพหน้าจอมือถือของเว็บจริง แล้วให้ AI (Gemini / GitHub Models) วิเคราะห์ → reports/ui-review.md
+# กดรันเองได้ + รันอัตโนมัติทุกวันจันทร์
+on:
+  workflow_dispatch: {}
+  schedule:
+    - cron: "30 1 * * 1"
+
+permissions:
+  contents: write
+  models: read
+
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+      - name: ติดตั้งเบราว์เซอร์อัตโนมัติ (Playwright) สำหรับถ่ายภาพหน้าจอ
+        run: |
+          mkdir -p .tools && cd .tools && npm init -y >/dev/null
+          npm install --no-audit --no-fund playwright@1.48.2 >/dev/null
+          npx playwright install --with-deps chromium
+      - name: ถ่ายภาพหน้าจอ + ให้ AI วิเคราะห์
+        run: node scripts/ui-review.mjs
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: บันทึกรายงาน
+        run: |
+          git config user.name "news-bot"
+          git config user.email "news-bot@users.noreply.github.com"
+          git add reports/ui-review.md
+          git diff --cached --quiet || (git commit -m "ผลตรวจ UI โดย AI" && git pull --rebase -X theirs && git push)

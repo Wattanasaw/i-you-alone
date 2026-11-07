@@ -669,8 +669,8 @@
         </div>
         ${v.lat ? `<h3 class="subhead">🧭 ${t("bestWay")}</h3>
         <ul class="travel-list" id="guide" data-lat="${v.lat}" data-lng="${v.lng}"><li><span>⏳</span><span>${t("loading")}</span></li></ul>
-        <h3 class="subhead">💰 ${t("travelCost")}</h3>
-        <div id="cost" data-lat="${v.lat}" data-lng="${v.lng}"></div>` : ""}
+        <details class="cost-box"><summary class="subhead">💰 ${t("travelCost")}</summary>
+        <div id="cost" data-lat="${v.lat}" data-lng="${v.lng}"></div></details>` : ""}
         ${tips.length ? `<h3 class="subhead">${t("noCar")}</h3>
         <ul class="travel-list">
           ${tips.map(x => `<li><span>${TRANSIT_ICON[x.type] || "➡️"}</span><span><b>${esc(label(x.type))}</b> ${esc(x.text)}</span></li>`).join("")}
@@ -1059,55 +1059,65 @@
     const name = placeName(p), summary = placeSummary(p);
     const wiki = p.wiki?.[state.lang] || p.wiki?.th || p.wiki?.en;
     document.title = `${name} — ${C.siteName}`;
+    // หน้ารายละเอียดแบบกะทัดรัด: รูปปก+ชื่อ → ข้อมูลด่วน → ปุ่มนำทาง → แท็บ (ภาพรวม / การเดินทาง / กระแส) ไม่ต้องเลื่อนยาว
+    const posts = placePosts(p), open = openNow(p.hours);
+    const tabs = [["overview", "📋 " + t("tabOverview")], ["travel", "🧭 " + t("tabTravel")], ...(posts.length ? [["trends", `🔥 ${t("tabTrends")} ${posts.length}`]] : [])];
+    if (!tabs.some(([k]) => k === state.placeTab)) state.placeTab = "overview";
+    const quick = [
+      p.hours ? `<span class="q ${open === true ? "ok" : open === false ? "off" : ""}">🕒 ${open === true ? t("openNowShort") : open === false ? t("closedNow") : esc(fmtHours(p.hours))}</span>` : "",
+      (!MENU_KINDS.has(p.kind) || p.kind === "animalcafe") && feeText(p) !== "-" ? `<span class="q">🎟️ ${esc(feeText(p))}</span>` : "",
+      MENU_KINDS.has(p.kind) && menuText(p) !== "-" ? `<span class="q">🍽️ ${esc(menuText(p))}</span>` : "",
+      `<span class="q">📍 ${state.pos && p.lat ? `${distanceKm(state.pos, p).toFixed(1)} ${t("km")}` : esc(provName(p.province))}</span>`
+    ].join("");
+    const facts = `<dl class="facts compact">
+        <div><dt>📍</dt><dd>${esc([p.address, provName(p.province)].filter(Boolean).join(" · ") || name)}</dd></div>
+        <div><dt>🕒</dt><dd>${esc(fmtHours(p.hours) || t("hoursUnknown"))}</dd></div>
+        <div><dt>🎟️</dt><dd>${t("fee")}: ${esc(feeText(p))}${p.entry?.src === "Lemon8" ? ` <small>${t("fromReviews")}</small>` : ""}</dd></div>
+        ${MENU_KINDS.has(p.kind) ? `<div><dt>🍽️</dt><dd>${t("menuPrice")}: ${esc(menuText(p))}${p.menuPrice?.src === "Lemon8" ? ` <small>${t("fromReviews")}</small>` : p.menuPrice?.src === "owner" ? ` <small>${t("fromOwner")}</small>` : ""}</dd></div>` : ""}
+        ${p.phone ? `<div><dt>☎️</dt><dd><a href="tel:${esc(p.phone.replace(/[^\d+]/g, ""))}">${esc(p.phone)}</a></dd></div>` : ""}
+      </dl>`;
     app.innerHTML = `
       <a class="back" href="#/places">${t("backPlaces")}</a>
-      <div class="detail">
-        ${placeCover(p, "cover detail-cover")}</div>
-        <h1>${esc(name)}</h1>
-        <div class="tags">
-          ${c ? `<span class="tag">${c.icon} ${esc(pick(c.name))}</span>` : ""}
-          ${p.trend ? `<span class="tag sponsor">🔥 ${t("trending")}</span>` : ""}
-          ${p.rising ? `<span class="tag sponsor">📈 ${t("searchUp", { n: p.rising })}</span>` : ""}
-          ${p.views ? `<span class="tag">🔎 ${t("searchViews", { n: p.views.toLocaleString(locale()) })}</span>` : ""}
-          ${p.name?.en && p.name.en !== name ? `<span class="tag">${esc(p.name.en)}</span>` : ""}
-        </div>
-        <div class="actions">
-          ${p.website ? `<a class="btn primary" ${inAppLink(p.website)}>🌐 ${t("website")}</a>` : ""}
-          <a class="btn" ${mapsLink(v, null)}>${t("openMaps")}</a>
-          <button class="btn" id="saveBtn">${saved ? t("saved") : t("save")}</button>
-          <button class="btn" id="shareBtn">${t("share")}</button>
-        </div>
-        ${!p.business ? `<a class="claim-link" href="#/account/new-shop?ref=${encodeURIComponent(p.id)}">🏪 ${t(p.image ? "claimPlace" : "claimPlaceNoPhoto")}</a>` : ""}
-        <div class="detail-layout" style="margin-top:18px">
-          <div>
-            <section class="panel">
-              <h2>${t("placeInfo")}</h2>
-              <dl class="facts">
-                <div><dt>📍</dt><dd>${esc(name)}<small>${esc([p.address, provName(p.province)].filter(Boolean).join(" · "))}</small></dd></div>
-                <div><dt>🕒</dt><dd>${t("hours")}<small>${esc(fmtHours(p.hours) || t("hoursUnknown"))}</small></dd></div>
-                <div><dt>🎟️</dt><dd>${t("fee")}<small>${esc(feeText(p))}${p.entry?.src === "Lemon8" ? ` · ${t("fromReviews")}` : ""}</small></dd></div>
-                ${MENU_KINDS.has(p.kind) ? `<div><dt>🍽️</dt><dd>${t("menuPrice")}<small>${esc(menuText(p))}${p.menuPrice?.src === "Lemon8" ? ` · ${t("fromReviews")}` : p.menuPrice?.src === "owner" ? ` · ${t("fromOwner")}` : ""}</small></dd></div>` : ""}
-                ${p.phone ? `<div><dt>☎️</dt><dd>${t("phone")}<small><a href="tel:${esc(p.phone.replace(/[^\d+]/g, ""))}">${esc(p.phone)}</a></small></dd></div>` : ""}
-              </dl>
-            </section>
-            ${summary || wiki ? `<section class="panel prose">
-              <h2>${t("details")}</h2>
-              ${summary ? `<p>${esc(summary)}</p>` : ""}
-              ${wiki ? `<p><a ${inAppLink(wiki)}>📖 ${t("wikipedia")}</a></p>` : ""}
-              ${p.imagePage ? `<p class="disclosure">${t("photo")}: <a ${inAppLink(p.imagePage)}>${esc(p.imageCredit || "Wikimedia Commons")}</a></p>` : ""}
-            </section>` : ""}
-            ${(posts => posts.length ? `<section class="panel trend-board place-trends">
-              <h2>🔥 ${t("placeTrends")}</h2><p class="muted">${t("placeTrendsSub")}</p>
-              <div class="news-list">${posts.map(n => `<div class="news-item trend-item"><a class="trend-link" ${inAppLink(n.link)}>${trendThumb(n)}<h3>${esc(n.title)}</h3><div class="meta">${esc(n.source || "Lemon8")}${n.date ? ` · ${new Date(n.date).toLocaleDateString(locale(), { day: "numeric", month: "short" })}` : ""}</div></a></div>`).join("")}</div>
-            </section>` : "")(placePosts(p))}
-            <p class="disclosure">${t("placeNote")}</p>
+      <div class="pd">
+        <div class="pd-hero">
+          ${placeCover(p, "cover pd-cover")}</div>
+          <div class="pd-hero-text">
+            <div class="pd-tags">${c ? `<span>${c.icon} ${esc(pick(c.name))}</span>` : ""}${p.business ? `<span>✅ ${t("verifiedShop")}</span>` : ""}${p.trend ? `<span class="hot">🔥 ${t("trending")}</span>` : p.rising ? `<span class="hot">📈 ${t("searchUp", { n: p.rising })}</span>` : ""}</div>
+            <h1>${esc(name)}</h1>
+            ${p.name?.en && p.name.en !== name ? `<p class="pd-sub">${esc(p.name.en)}</p>` : ""}
           </div>
-          <div>
-            ${travelPanel({}, v)}
-            ${adSlot("detail")}
+          <div class="pd-icons">
+            <button class="icon-btn" id="saveBtn" aria-label="${saved ? t("unsaveAria") : t("saveAria")}">${saved ? "❤️" : "🤍"}</button>
+            <button class="icon-btn" id="shareBtn" aria-label="${t("share")}">🔗</button>
           </div>
         </div>
+        <div class="pd-quick">${quick}</div>
+        <div class="pd-actions">
+          <a class="btn primary" ${mapsLink(v, "driving")}>🧭 ${t("navigate")}</a>
+          ${p.website ? `<a class="btn" ${inAppLink(p.website)}>🌐 ${t("website")}</a>` : `<a class="btn" ${mapsLink(v, null)}>🗺️ ${t("openMapsShort")}</a>`}
+        </div>
+        <div class="pd-tabs" role="tablist">${tabs.map(([k, l]) => `<button role="tab" class="${state.placeTab === k ? "active" : ""}" data-ptab="${k}" aria-selected="${state.placeTab === k}">${l}</button>`).join("")}</div>
+        <section class="pd-panel" data-panel="overview" ${state.placeTab === "overview" ? "" : "hidden"}>
+          ${summary ? `<p class="pd-summary" id="pdSum">${esc(summary)}</p>${summary.length > 180 ? `<button class="link-btn" id="pdMore">${t("readMore")}</button>` : ""}` : ""}
+          ${facts}
+          <p class="pd-links">${wiki ? `<a ${inAppLink(wiki)}>📖 ${t("wikipedia")}</a>` : ""}${p.imagePage ? `<span>${t("photo")}: <a ${inAppLink(p.imagePage)}>${esc(p.imageCredit || "Wikimedia Commons")}</a></span>` : ""}</p>
+          ${!p.business ? `<a class="claim-link" href="#/account/new-shop?ref=${encodeURIComponent(p.id)}">🏪 ${t(p.image ? "claimPlace" : "claimPlaceNoPhoto")}</a>` : ""}
+        </section>
+        <section class="pd-panel" data-panel="travel" ${state.placeTab === "travel" ? "" : "hidden"}>${travelPanel({}, v)}</section>
+        ${posts.length ? `<section class="pd-panel trend-board place-trends" data-panel="trends" ${state.placeTab === "trends" ? "" : "hidden"}>
+          <p class="muted">${t("placeTrendsSub")}</p>
+          <div class="news-list">${posts.map(n => `<div class="news-item trend-item"><a class="trend-link" ${inAppLink(n.link)}>${trendThumb(n)}<h3>${esc(n.title)}</h3><div class="meta">${esc(n.source || "Lemon8")}${n.date ? ` · ${new Date(n.date).toLocaleDateString(locale(), { day: "numeric", month: "short" })}` : ""}</div></a></div>`).join("")}</div>
+        </section>` : ""}
+        ${adSlot("detail")}
+        <p class="disclosure">${t("placeNote")}</p>
       </div>`;
+    // แท็บ: สลับเนื้อหาโดยไม่ต้องเลื่อน (จำแท็บล่าสุดไว้ระหว่างเปิดสถานที่อื่น)
+    app.querySelectorAll("[data-ptab]").forEach(b => b.addEventListener("click", () => {
+      state.placeTab = b.dataset.ptab;
+      app.querySelectorAll("[data-ptab]").forEach(x => { x.classList.toggle("active", x === b); x.setAttribute("aria-selected", x === b); });
+      app.querySelectorAll("[data-panel]").forEach(x => { x.hidden = x.dataset.panel !== state.placeTab; });
+    }));
+    document.getElementById("pdMore")?.addEventListener("click", e => { document.getElementById("pdSum").classList.add("open"); e.target.remove(); });
     document.getElementById("saveBtn").addEventListener("click", () => {
       const k = placeKey(p);
       state.saved.has(k) ? state.saved.delete(k) : state.saved.add(k);
@@ -1122,7 +1132,7 @@
       else { try { await navigator.clipboard.writeText(data.url); alert(t("copied")); } catch {} }
     });
     const lb = document.getElementById("locBtn");
-    if (lb) lb.addEventListener("click", () => locate(() => { renderPlace(id); hydrateGuides(); }));
+    if (lb) lb.addEventListener("click", () => locate(() => { state.placeTab = "travel"; renderPlace(id); hydrateGuides(); }));
     activateAdsense();
   }
 

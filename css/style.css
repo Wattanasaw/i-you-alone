@@ -556,3 +556,52 @@ html.theme-anim, html.theme-anim * { transition: background-color .35s, color .3
 .trend-place { display: block; margin: -4px 10px 9px; font-size: .7rem; font-weight: 600; color: var(--accent); text-decoration: none; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .place-trends { margin: 0 0 18px; }
 .place-trends .news-list { grid-auto-columns: min(46%, 170px); }
+
+/* ---------- หน้ารายละเอียดสถานที่แบบกะทัดรัด (แท็บ) ---------- */
+.pd { max-width: 760px; margin: 0 auto 24px; }
+.pd-hero { position: relative; border-radius: 22px; overflow: hidden; margin-top: 6px; }
+.pd-cover { aspect-ratio: 16 / 10; max-height: 260px; width: 100%; border-radius: 0; }
+.pd-cover .emoji { font-size: 3.4rem; }
+.pd-hero .credit { display: none; }
+.pd-hero::after { content: ""; position: absolute; inset: 0; background: linear-gradient(to top, rgba(0, 0, 0, .78), rgba(0, 0, 0, .15) 55%, transparent); pointer-events: none; }
+.pd-hero-text { position: absolute; left: 14px; right: 14px; bottom: 12px; z-index: 2; color: #fff; }
+.pd-hero-text h1 { margin: 4px 0 0; font-size: clamp(1.3rem, 5.4vw, 1.9rem); line-height: 1.2; text-shadow: 0 2px 10px rgba(0, 0, 0, .4); }
+.pd-sub { margin: 2px 0 0; font-size: .82rem; opacity: .85; }
+.pd-tags { display: flex; gap: 6px; flex-wrap: wrap; }
+.pd-tags span { font-size: .7rem; font-weight: 600; padding: 2px 9px; border-radius: 99px; background: rgba(255, 255, 255, .22); backdrop-filter: blur(6px); }
+.pd-tags span.hot { background: #ffd36e; color: #5a3200; }
+.pd-icons { position: absolute; top: 10px; right: 10px; z-index: 3; display: flex; gap: 8px; }
+.icon-btn { width: 40px; height: 40px; border-radius: 50%; border: 0; background: rgba(255, 255, 255, .92); font-size: 1.05rem; cursor: pointer; box-shadow: 0 4px 12px rgba(0, 0, 0, .18); }
+.pd-quick { display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none; margin: 10px 0 0; padding-bottom: 2px; }
+.pd-quick::-webkit-scrollbar { display: none; }
+.pd-quick .q { flex: none; font-size: .8rem; padding: 6px 11px; border-radius: 12px; background: var(--surface); border: 1px solid var(--border); white-space: nowrap; }
+.pd-quick .q.ok { color: var(--free); border-color: color-mix(in srgb, var(--free) 40%, var(--border)); font-weight: 600; }
+.pd-quick .q.off { color: var(--muted); }
+.pd-actions { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 10px 0 0; }
+.pd-actions .btn { justify-content: center; text-align: center; }
+.pd-tabs { position: sticky; top: 58px; z-index: 15; display: flex; gap: 4px; margin: 14px -16px 0; padding: 8px 16px; background: color-mix(in srgb, var(--bg) 92%, transparent); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); }
+.pd-tabs button { flex: 1; border: 0; background: var(--surface-2); color: var(--muted); padding: 9px 6px; border-radius: 12px; font: inherit; font-size: .84rem; font-weight: 600; cursor: pointer; white-space: nowrap; }
+.pd-tabs button.active { background: var(--text); color: var(--bg); }
+.pd-panel { padding-top: 12px; }
+.pd-panel > .panel { margin: 0; }
+.pd-summary { margin: 0; line-height: 1.6; display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; }
+.pd-summary.open { display: block; }
+.facts.compact { margin: 12px 0 0; display: grid; gap: 8px; }
+.facts.compact > div { display: grid; grid-template-columns: 26px 1fr; align-items: start; font-size: .88rem; }
+.facts.compact dt { font-size: 1rem; }
+.facts.compact dd { margin: 0; }
+.facts.compact small { color: var(--muted); }
+.pd-links { display: flex; gap: 14px; flex-wrap: wrap; font-size: .8rem; color: var(--muted); margin: 12px 0 0; }
+/* แท็บการเดินทางในหน้าสถานที่: ไม่ซ้ำหัวข้อ ปุ่มโหมดแถวเดียว */
+.pd-panel #travel { padding: 14px; }
+.pd-panel #travel > h2 { display: none; }
+.pd-panel .travel-modes { grid-template-columns: repeat(4, 1fr); gap: 6px; }
+.pd-panel .travel-modes .btn { padding: 8px 4px; font-size: .74rem; flex-direction: column; gap: 2px; min-height: 0; }
+.pd-panel .subhead { margin: 14px 0 6px; font-size: .92rem; }
+.pd-panel .travel-list li { padding: 6px 0; font-size: .84rem; }
+
+.cost-box > summary { cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+.cost-box > summary::after { content: "▾"; color: var(--muted); transition: transform .2s; }
+.cost-box[open] > summary::after { transform: rotate(180deg); }
+.cost-box > summary::-webkit-details-marker { display: none; }
+
