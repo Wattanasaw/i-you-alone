@@ -348,6 +348,9 @@ for (const kind of Object.keys(OSM_QUERY)) {
   console.log(`${kind}: OSM ${found.length} → เพิ่มใหม่ ${added.length}`);
   places.push(...added);
 }
+// ชื่อเป็นคำกว้างๆ ("น้ำตก", "Cat cafe") = ข้อมูลไม่พอให้คนหาเจอ และไปตรงกับโพสต์เทรนด์ทั่วไปผิดๆ → ตัดออก
+const GENERIC = /^(น้ำตก|ชายหาด|หาด|จุดชมวิว|ร้านกาแฟ|คาเฟ่|คาเฟ่แมว|คาเฟ่หมา|แมวคาเฟ่|วัด|สวนสาธารณะ|พิพิธภัณฑ์|สวนสัตว์|สวนน้ำ|อุทยาน|ถ้ำ|cafe|café|coffee|coffee shop|cat ?cafe|dog ?cafe|waterfall|beach|view ?point|zoo|museum|park|temple|cave)\s*\d*$/i;
+for (let i = places.length - 1; i >= 0; i--) if (GENERIC.test((places[i].name.th || places[i].name.en || "").trim())) places.splice(i, 1);
 
 // สถานที่เดียวกันอาจอยู่หลายหมวด (เช่น สวนสัตว์ที่เป็นพิพิธภัณฑ์ด้วย) → เก็บหมวดแรก
 const seen = new Set();

@@ -17,52 +17,6 @@
    "trend": 11
   },
   {
-   "id": "osm-n1036882374",
-   "kind": "nature",
-   "fame": 1,
-   "name": {
-    "th": "น้ำตก",
-    "en": "Ton Sai Waterfall"
-   },
-   "lat": 8.02818,
-   "lng": 98.36533,
-   "fee": "yes",
-   "province": "phuket",
-   "summary": {},
-   "fetchedAt": "2026-11-07T01:30:51.299Z",
-   "trend": 7
-  },
-  {
-   "id": "osm-n13649027201",
-   "kind": "animalcafe",
-   "fame": 2,
-   "name": {
-    "th": "คาเฟ่แมว",
-    "en": "Kitten Café"
-   },
-   "lat": 12.91111,
-   "lng": 100.0183,
-   "hours": "Mo-Su 09:00-18:00",
-   "province": "phetchaburi",
-   "summary": {},
-   "fetchedAt": "2026-11-06T19:22:24.656Z",
-   "trend": 4
-  },
-  {
-   "id": "osm-w475556868",
-   "kind": "themepark",
-   "fame": 0,
-   "name": {
-    "th": "สวนน้ำ"
-   },
-   "lat": 16.71241,
-   "lng": 98.59019,
-   "province": "tak",
-   "summary": {},
-   "fetchedAt": "2026-11-06T20:12:47.869Z",
-   "trend": 4
-  },
-  {
    "id": "wd-Q3034913",
    "wikidata": "Q3034913",
    "kind": "zoo",
@@ -575,36 +529,6 @@
    "province": "loei",
    "summary": {},
    "fetchedAt": "2026-11-06T20:15:54.761Z",
-   "trend": 1
-  },
-  {
-   "id": "osm-n2951156678",
-   "kind": "animalcafe",
-   "fame": 0,
-   "name": {
-    "th": "Cat Cafe",
-    "en": "Cat Cafe"
-   },
-   "lat": 20.07288,
-   "lng": 99.86805,
-   "province": "chiang-rai",
-   "summary": {},
-   "fetchedAt": "2026-11-06T19:22:39.502Z",
-   "trend": 1
-  },
-  {
-   "id": "osm-n12443981401",
-   "kind": "animalcafe",
-   "fame": 0,
-   "name": {
-    "th": "Cat cafe",
-    "en": "Cat cafe"
-   },
-   "lat": 13.72892,
-   "lng": 100.47256,
-   "province": "bangkok",
-   "summary": {},
-   "fetchedAt": "2026-11-06T19:22:55.968Z",
    "trend": 1
   },
   {
@@ -22920,20 +22844,6 @@
    "fetchedAt": "2026-11-07T01:32:01.563Z"
   },
   {
-   "id": "osm-n2089847314",
-   "kind": "nature",
-   "fame": 1,
-   "name": {
-    "th": "จุดชมวิว 5",
-    "en": "Viewpoint 5"
-   },
-   "lat": 12.56664,
-   "lng": 99.94665,
-   "province": "prachuap-khiri-khan",
-   "summary": {},
-   "fetchedAt": "2026-11-07T01:32:02.989Z"
-  },
-  {
    "id": "osm-n2090531517",
    "kind": "nature",
    "fame": 1,
@@ -24390,20 +24300,6 @@
    "province": "trat",
    "summary": {},
    "fetchedAt": "2026-11-06T20:11:52.851Z"
-  },
-  {
-   "id": "osm-n2671327872",
-   "kind": "themepark",
-   "fame": 0,
-   "name": {
-    "th": "Cave",
-    "en": "Cave"
-   },
-   "lat": 9.16483,
-   "lng": 99.58724,
-   "province": "surat-thani",
-   "summary": {},
-   "fetchedAt": "2026-11-06T20:11:54.226Z"
   },
   {
    "id": "osm-n4769745301",

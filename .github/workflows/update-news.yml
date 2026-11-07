@@ -9,6 +9,11 @@ permissions:
   contents: write
   models: read      # ใช้ GitHub Models (AI ฟรี) สำรองเมื่อ Gemini โควต้าหมด
 
+# ไม่ให้รันพร้อมกับงานคัดรูป (แก้ไฟล์เดียวกัน)
+concurrency:
+  group: data-update
+  cancel-in-progress: false
+
 jobs:
   update:
     runs-on: ubuntu-latest
@@ -56,4 +61,4 @@ jobs:
           git config user.email "news-bot@users.noreply.github.com"
           git add data/news.json data/events.json data/venues.json data/auto-events.json data/geocache.json
           git add data/ai-cache.json data/places.json data/transit.json data/place-images.json 2>/dev/null || true
-          git diff --cached --quiet || (git commit -m "อัปเดตข่าวอีเว้นท์อัตโนมัติ" && git pull --rebase && git push)
+          git diff --cached --quiet || (git commit -m "อัปเดตข่าวอีเว้นท์อัตโนมัติ" && git pull --rebase -X theirs && git push)

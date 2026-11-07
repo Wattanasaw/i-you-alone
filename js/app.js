@@ -845,7 +845,7 @@
     const wiki = p.wiki?.[state.lang] || p.wiki?.th || p.wiki?.en;
     document.title = `${name} — ${C.siteName}`;
     app.innerHTML = `
-      <a class="back" href="#/places">${t("backList")}</a>
+      <a class="back" href="#/places">${t("backPlaces")}</a>
       <div class="detail">
         ${placeCover(p, "cover detail-cover")}</div>
         <h1>${esc(name)}</h1>
