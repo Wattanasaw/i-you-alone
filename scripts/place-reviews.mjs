@@ -100,7 +100,10 @@ for (let i = 0; i < todo.length && aiAvailable() && asked < AI_MAX && fails < 3;
 - "tips": {"th": [เคล็ดลับ ≤ 3 เช่น ที่จอดรถ เวลาที่ควรไป ต้องจองไหม ค่าใช้จ่าย], "en": [...]}
 - "cons": {"th": [ข้อควรรู้/ข้อเสียที่รีวิวบอก ≤ 2], "en": [...]}
 - "goodFor": แท็กจาก ${JSON.stringify(GOOD_FOR)} เฉพาะที่รีวิวสื่อชัด (≤ 4) (photo=มุมถ่ายรูป, work=นั่งทำงาน, kids=พาเด็ก, pets=พาสัตว์เลี้ยงไปได้/มีสัตว์ให้เล่น, date=เดท, group=ไปเป็นกลุ่ม, view=วิวสวย, nature=ธรรมชาติ, chill=นั่งชิล, budget=ราคาไม่แพง, night=เที่ยวกลางคืน, food=อาหารอร่อย)
-ส่งกลับ JSON: {"results":[{"id", "skip"?, "summary", "highlights", "mustTry", "tips", "cons", "goodFor"}]}
+- "hours": เวลาเปิด-ปิดถ้ารีวิวบอกชัด ในรูปแบบ OpenStreetMap เช่น "Mo-Fr 09:00-18:00; Sa,Su 08:00-20:00" หรือ "Tu-Su 10:00-22:00; Mo off" ไม่บอก = null
+- "entry": ค่าเข้าผู้ใหญ่ถ้ารีวิวบอกชัด {"free": true} หรือ {"thai": บาท, "foreign": บาท หรือ null} ไม่บอก = null
+- "menu": ช่วงราคาอาหาร/เครื่องดื่มของร้านนี้ถ้ารีวิวบอก {"min": บาท, "max": บาท} ไม่บอก = null
+ส่งกลับ JSON: {"results":[{"id", "skip"?, "summary", "highlights", "mustTry", "tips", "cons", "goodFor", "hours", "entry", "menu"}]}
 สถานที่: ${JSON.stringify(group.map(({ p, texts }) => ({ id: p.id, name: p.name?.th || p.name?.en, type: p.kind, reviews: texts })))}`;
   try {
     const out = await aiJSON(prompt, { temperature: 0.2 });
@@ -114,7 +117,9 @@ for (let i = 0; i < todo.length && aiAvailable() && asked < AI_MAX && fails < 3;
         ...base,
         summary: { th: String(r.summary?.th || "").slice(0, 140), en: String(r.summary?.en || "").slice(0, 160) },
         highlights: L(r.highlights, 4, 60), mustTry: L(r.mustTry, 4, 50), tips: L(r.tips, 3, 80), cons: L(r.cons, 2, 80),
-        goodFor: [].concat(r.goodFor || []).filter(x => GOOD_FOR.includes(x)).slice(0, 4)
+        goodFor: [].concat(r.goodFor || []).filter(x => GOOD_FOR.includes(x)).slice(0, 4),
+        // เวลาเปิด/ราคาที่รีวิวบอก (place-info.mjs ตรวจรูปแบบอีกครั้งก่อนใช้)
+        hours: typeof r.hours === "string" ? r.hours.slice(0, 160) : undefined, entry: r.entry || undefined, menu: r.menu || undefined
       };
       done++;
     }

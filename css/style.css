@@ -721,3 +721,6 @@ label.check input[type=checkbox] { width: 22px; height: 22px; flex: none; margin
 /* ข้อมูลที่รวบรวมด้วย AI (Gemini) */
 .ai-note { margin: 4px 0 8px; font-size: .8rem; color: var(--muted); }
 .ai-travel p { margin: 6px 0; line-height: 1.6; }
+
+/* ที่มาของเวลาเปิด/ราคา */
+.src-note { display: block; font-size: .75rem; color: var(--muted); }

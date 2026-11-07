@@ -180,7 +180,7 @@
       if (typeof p.address === "string") p.address = p.address.replace(/\s*;\s*/g, ", ").trim();
       // ข้อมูลจาก Gemini เติมเฉพาะช่องที่ยังว่าง (OpenStreetMap/รีวิว Lemon8/เจ้าของร้าน มาก่อน)
       const ai = state.ai[p.id];
-      if (ai?.hours && !p.hours) { p.hours = ai.hours; p.hoursAI = true; }
+      if (ai?.hours && !p.hours) { p.hours = ai.hours; p.hoursSrc = "ai"; }
       if (ai?.price && !p.menuPrice && ["cafe", "animalcafe", "restaurant", "nightlife"].includes(p.kind)) p.menuPrice = { ...ai.price, src: "ai" };
       if (ai?.closed) p.maybeClosed = true;
     }
@@ -856,6 +856,10 @@
     return "-";
   }
   const MENU_KINDS = new Set(["cafe", "animalcafe", "restaurant", "nightlife"]);
+  // ที่มาของเวลาเปิด/ราคา (OSM ไม่ต้องบอก) — ข้อมูลประมาณ/AI บอกชัดให้ผู้ใช้เช็กก่อนไป
+  const SRC_KEY = { Lemon8: "fromReviews", review: "fromReviews", owner: "fromOwner", web: "srcWeb", ai: "srcAI", typical: "srcTypical" };
+  const approx = src => src === "typical" || src === "ai" ? "≈ " : "";
+  const srcNote = src => SRC_KEY[src] ? `<small class="src-note src-${src}">${t(SRC_KEY[src])}</small>` : "";
   const menuText = p => p.menuPrice ? (p.menuPrice.min === p.menuPrice.max ? `~${fmtBaht(p.menuPrice.min)}` : `${Number(p.menuPrice.min).toLocaleString(locale())}–${fmtBaht(p.menuPrice.max)}`) : "-";
   const inPlaceProvince = p => state.filters.province === "all" || p.province === state.filters.province;
 
@@ -904,7 +908,7 @@
     const c = PCAT[p.kind] || { icon: "📍", color: "#888" }, saved = state.saved.has(placeKey(p));
     const where = [p.district && `${p.province === "bangkok" ? t("districtBkk") : t("districtShort")}${p.district}`, provName(p.province), state.pos && p.lat ? `${distanceKm(state.pos, p).toFixed(1)} ${t("km")}` : ""].filter(Boolean).join(" · ");
     const rv = reviewOf(p), summary = placeBlurb(p);
-    const open = openNow(p.hours);
+    const open = placeOpen(p);
     const price = [MENU_KINDS.has(p.kind) && menuText(p) !== "-" ? `🍽️ ${esc(menuText(p))}` : "", (!MENU_KINDS.has(p.kind) || p.kind === "animalcafe") && feeText(p) !== "-" ? `🎟️ ${esc(feeText(p))}` : ""].filter(Boolean).join(" · ");
     return `
       <article class="card place-row" style="--c1:${c.color};--c2:${c.color2 || c.color}">
@@ -914,7 +918,7 @@
             <h3>${esc(placeName(p))}</h3>
             <div class="pr-tags">${c.name ? `<span class="cat">${c.icon} ${esc(pick(c.name))}</span>` : ""}${c.adult ? `<span class="adult">🔞 ${t("age20")}</span>` : ""}${p.trend ? `<span class="hot">🔥 ${t("trending")}</span>` : p.rising ? `<span class="hot">📈 ${t("searchRising")}</span>` : ""}${p.business ? `<span class="ok">✅ ${t("verifiedShop")}</span>` : ""}</div>
             <div class="meta">📍 <span>${esc(where)}</span></div>
-            ${p.hours || price ? `<div class="meta">${p.hours ? `🕒 <span>${open === true ? `<b class="open-now">${t("openNowShort")}</b> · ` : open === false ? `<b class="closed-now">${t("closedNow")}</b> · ` : ""}${esc(fmtHours(p.hours))}</span>` : ""}${p.hours && price ? " · " : ""}${price}</div>` : ""}
+            ${p.hours || price ? `<div class="meta">${p.hours ? `🕒 <span>${open === true ? `<b class="open-now">${t("openNowShort")}</b> · ` : open === false ? `<b class="closed-now">${t("closedNow")}</b> · ` : ""}${approx(p.hoursSrc)}${esc(fmtHours(p.hours))}</span>` : ""}${p.hours && price ? " · " : ""}${price}</div>` : ""}
             ${summary ? `<p class="place-sum">${esc(summary.slice(0, 120))}${summary.length > 120 ? "…" : ""}</p>` : ""}
             ${rv?.goodFor?.length ? `<div class="good-for">${rv.goodFor.slice(0, 4).map(g => `<span>${GOOD_ICON[g] || "✨"} ${esc(t("gf_" + g))}</span>`).join("")}</div>` : ""}
           </div>
@@ -958,6 +962,8 @@
     return matched ? state_ : false; // มีเวลาเปิดแต่ไม่มีกฎของวันนี้ = ปิด
   }
   window.IYA_openNow = openNow; // ใช้ทดสอบ
+  // เวลาเปิด "โดยประมาณ" (ค่าทั่วไปตามประเภท) ไม่ใช้ตัดสินว่าเปิดอยู่ตอนนี้
+  const placeOpen = p => p.hoursSrc === "typical" ? null : openNow(p.hours);
 
   // ตัวกรองหน้าที่เที่ยว (จำค่าไว้ในเครื่อง)
   const PF_DEFAULT = { sort: "rec", dist: 0, open: false, free: false, hot: false, district: "", districtOf: "" };
@@ -1061,7 +1067,7 @@
     const districts = distOn ? Object.entries(inProv.reduce((m, p) => (p.district && (m[p.district] = (m[p.district] || 0) + 1), m), {})).sort((x, y) => x[0].localeCompare(y[0], "th")) : [];
     const base = inProv.filter(p => !pf.district || p.district === pf.district);
     const tests = {
-      open: p => openNow(p.hours) === true, free: p => p.fee === "no" || p.entry?.free === true, hot: p => !!(p.hot || p.trend),
+      open: p => placeOpen(p) === true, free: p => p.fee === "no" || p.entry?.free === true, hot: p => !!(p.hot || p.trend),
       dist: p => !near || !pf.dist || distanceKm(state.pos, p) <= pf.dist
     };
     const passAll = (p, skip) => Object.entries(tests).every(([k, f]) => k === skip || (k === "dist" ? f(p) : !pf[k] || f(p)));
@@ -1198,13 +1204,13 @@
     const wiki = p.wiki?.[state.lang] || p.wiki?.th || p.wiki?.en;
     document.title = `${name} — ${C.siteName}`;
     // หน้ารายละเอียดแบบกะทัดรัด: รูปปก+ชื่อ → ข้อมูลด่วน → ปุ่มนำทาง → แท็บ (ภาพรวม / การเดินทาง / กระแส) ไม่ต้องเลื่อนยาว
-    const posts = placePosts(p), open = openNow(p.hours);
+    const posts = placePosts(p), open = placeOpen(p);
     const tabs = [["overview", "📋 " + t("tabOverview")], ["travel", "🧭 " + t("tabTravel")], ...(posts.length ? [["trends", `🔥 ${t("tabTrends")} ${posts.length}`]] : [])];
     if (!tabs.some(([k]) => k === state.placeTab)) state.placeTab = "overview";
     const quick = [
-      p.hours ? `<span class="q ${open === true ? "ok" : open === false ? "off" : ""}">🕒 ${open === true ? t("openNowShort") : open === false ? t("closedNow") : esc(fmtHours(p.hours))}</span>` : "",
-      (!MENU_KINDS.has(p.kind) || p.kind === "animalcafe") && feeText(p) !== "-" ? `<span class="q">🎟️ ${esc(feeText(p))}</span>` : "",
-      MENU_KINDS.has(p.kind) && menuText(p) !== "-" ? `<span class="q">🍽️ ${esc(menuText(p))}</span>` : "",
+      p.hours ? `<span class="q ${open === true ? "ok" : open === false ? "off" : ""}">🕒 ${open === true ? t("openNowShort") : open === false ? t("closedNow") : approx(p.hoursSrc) + esc(fmtHours(p.hours))}</span>` : "",
+      (!MENU_KINDS.has(p.kind) || p.kind === "animalcafe") && feeText(p) !== "-" ? `<span class="q">🎟️ ${approx(p.entry?.src)}${esc(feeText(p))}</span>` : "",
+      MENU_KINDS.has(p.kind) && menuText(p) !== "-" ? `<span class="q">🍽️ ${approx(p.menuPrice?.src)}${esc(menuText(p))}</span>` : "",
       `<span class="q">📍 ${esc([p.district && `${p.province === "bangkok" ? t("districtBkk") : t("districtShort")}${p.district}`, state.pos && p.lat ? `${distanceKm(state.pos, p).toFixed(1)} ${t("km")}` : provName(p.province)].filter(Boolean).join(" · "))}</span>`
     ].join("");
     // ข้อมูลสำคัญ: รูปแบบเดียวกับหน้ารายละเอียดงาน (panel + facts + บรรทัดรอง)
@@ -1213,9 +1219,9 @@
         <h2>${t("keyInfo")}</h2>
         <dl class="facts">
           <div><dt>📍</dt><dd>${esc(p.address || name)}<small>${esc(area)}</small><a class="maps-link" ${mapsLink(v, null)}>${t("openMaps")}</a></dd></div>
-          <div><dt>🕒</dt><dd>${esc(fmtHours(p.hours) || t("hoursUnknown"))}${open != null ? `<small class="${open ? "open-now" : "closed-now"}">${open ? t("openNowShort") : t("closedNow")}</small>` : ""}${p.hoursAI ? `<small>🤖 ${t("aiBadge")}</small>` : ""}</dd></div>
-          ${!MENU_KINDS.has(p.kind) || p.kind === "animalcafe" ? `<div><dt>🎟️</dt><dd>${t("fee")}: ${esc(feeText(p))}${p.entry?.src === "Lemon8" ? `<small>${t("fromReviews")}</small>` : ""}</dd></div>` : ""}
-          ${MENU_KINDS.has(p.kind) ? `<div><dt>🍽️</dt><dd>${t("menuPrice")}: ${esc(menuText(p))}${p.menuPrice?.src === "Lemon8" ? `<small>${t("fromReviews")}</small>` : p.menuPrice?.src === "owner" ? `<small>${t("fromOwner")}</small>` : p.menuPrice?.src === "ai" ? `<small>🤖 ${t("aiBadge")}</small>` : ""}</dd></div>` : ""}
+          <div><dt>🕒</dt><dd>${esc(fmtHours(p.hours) || t("hoursUnknown"))}${open != null ? `<small class="${open ? "open-now" : "closed-now"}">${open ? t("openNowShort") : t("closedNow")}</small>` : ""}${srcNote(p.hoursSrc)}</dd></div>
+          ${!MENU_KINDS.has(p.kind) || p.kind === "animalcafe" ? `<div><dt>🎟️</dt><dd>${t("fee")}: ${esc(feeText(p))}${srcNote(p.entry?.src)}</dd></div>` : ""}
+          ${MENU_KINDS.has(p.kind) ? `<div><dt>🍽️</dt><dd>${t("menuPrice")}: ${esc(menuText(p))}${srcNote(p.menuPrice?.src)}</dd></div>` : ""}
           ${p.phone ? `<div><dt>☎️</dt><dd><a href="tel:${esc(p.phone.replace(/[^\d+]/g, ""))}">${esc(p.phone.split(";")[0])}</a></dd></div>` : ""}
         </dl>
       </section>`;
