@@ -155,7 +155,7 @@
     } catch { return fallback; }
   }
   async function load() {
-    const [events, venues, ads, news, auto, places, biz, trendPl, reviews] = await Promise.all([
+    const [events, venues, ads, news, auto, places, biz, trendPl, reviews, aiInfo] = await Promise.all([
       getJSON("data/events.json", []),
       getJSON("data/venues.json", []),
       getJSON("data/ads.json", []),
@@ -164,9 +164,11 @@
       getJSON("data/places.json", { places: [], trends: {} }),
       getJSON("data/business-places.json", []),  // ร้านที่สมาชิกธุรกิจเพิ่ม (AI ตรวจผ่านแล้ว)
       getJSON("data/trend-places.json", []),     // สถานที่จากโพสต์เทรนด์ (หมุดสถานที่ใน Lemon8 + พิกัด OSM)
-      getJSON("data/place-reviews.json", {})     // AI สรุปรีวิวจากโพสต์จริง (จุดเด่น ต้องลอง เคล็ดลับ เหมาะกับ)
+      getJSON("data/place-reviews.json", {}),    // AI สรุปรีวิวจากโพสต์จริง (จุดเด่น ต้องลอง เคล็ดลับ เหมาะกับ)
+      getJSON("data/place-ai.json", {})          // ข้อมูลที่เจ้าของแอพรวบรวมด้วย Gemini (scripts/import-gemini.mjs) — ใช้เสริมเมื่อไม่มีข้อมูลจากแหล่งอื่น
     ]);
     state.reviews = reviews && typeof reviews === "object" ? reviews : {};
+    state.ai = aiInfo && typeof aiInfo === "object" ? aiInfo : {};
     const bizList = Array.isArray(biz) ? biz : [], replaced = new Set(bizList.map(b => b.replaces).filter(Boolean));
     const base = [...(places.places || []).filter(p => !replaced.has(p.id)), ...bizList];
     const ids = new Set(base.map(p => p.id.replace(/^(osm|l8)-/, "")));
@@ -176,6 +178,11 @@
       if (typeof p.website === "string" && p.website.includes(";")) p.website = p.website.split(";")[0].trim();
       if (typeof p.phone === "string" && p.phone.includes(";")) p.phone = p.phone.split(";")[0].trim();
       if (typeof p.address === "string") p.address = p.address.replace(/\s*;\s*/g, ", ").trim();
+      // ข้อมูลจาก Gemini เติมเฉพาะช่องที่ยังว่าง (OpenStreetMap/รีวิว Lemon8/เจ้าของร้าน มาก่อน)
+      const ai = state.ai[p.id];
+      if (ai?.hours && !p.hours) { p.hours = ai.hours; p.hoursAI = true; }
+      if (ai?.price && !p.menuPrice && ["cafe", "animalcafe", "restaurant", "nightlife"].includes(p.kind)) p.menuPrice = { ...ai.price, src: "ai" };
+      if (ai?.closed) p.maybeClosed = true;
     }
     state.trends = places.trends || {};
     // งานที่ดึงอัตโนมัติ + งานที่ใส่เอง: งานใส่เองที่ id ตรงกันจะทับงานอัตโนมัติ, hidden: true = ซ่อน
@@ -868,7 +875,13 @@
   }
   // สรุปรีวิว (AI จากโพสต์จริง) ของสถานที่ · ภาษาที่เลือก ไม่มีใช้ไทย
   const GOOD_ICON = { photo: "📸", work: "💻", kids: "👶", pets: "🐾", date: "💑", group: "👯", view: "🌄", nature: "🌿", chill: "☕", budget: "💸", night: "🌙", food: "😋" };
-  const reviewOf = p => { const r = state.reviews?.[p.id]; return r && r.summary && !r.skip ? r : null; };
+  // สรุปรีวิว: จากโพสต์ Lemon8 จริงก่อน · ไม่มี → ข้อมูลที่รวบรวมด้วย Gemini (แสดงป้าย "AI อาจคลาดเคลื่อน")
+  const reviewOf = p => {
+    const r = state.reviews?.[p.id];
+    if (r && r.summary && !r.skip) return r;
+    const a = state.ai?.[p.id];
+    return a?.summary?.th || a?.highlights?.th?.length ? { ...a, ai: true } : null;
+  };
   const rvList = v => { const l = v?.[state.lang]?.length ? v[state.lang] : v?.th || []; return l.filter(Boolean); };
   // คำอธิบายของทุกสถานที่ (จากข้อมูลจริงเท่านั้น ไม่แต่งเอง):
   // AI สรุปรีวิว → คำอธิบายจาก Wikipedia/OSM → โพสต์ Lemon8 ที่พูดถึง → ประโยคพื้นฐานจากหมวด เขต และเวลาเปิด
@@ -1165,13 +1178,15 @@
   function reviewBlock(rv) {
     const sec = (icon, key, list) => list.length ? `<div class="rv-sec"><b>${icon} ${t(key)}</b><ul>${list.map(x => `<li>${esc(x)}</li>`).join("")}</ul></div>` : "";
     return `<section class="panel rv-box" aria-label="${t("rvTitle")}">
-      <div class="rv-head"><h2>📝 ${t("rvTitle")}</h2><small>${t("rvFrom", { n: rv.n || rv.src?.length || 1 })}</small></div>
+      <div class="rv-head"><h2>📝 ${t("rvTitle")}</h2><small>${rv.ai ? t("aiBadge") : t("rvFrom", { n: rv.n || rv.src?.length || 1 })}</small></div>
+      ${rv.ai ? `<p class="ai-note">🤖 ${t("aiNote")}</p>` : ""}
       ${rv.goodFor?.length ? `<div class="good-for">${rv.goodFor.map(g => `<span>${GOOD_ICON[g] || "✨"} ${esc(t("gf_" + g))}</span>`).join("")}</div>` : ""}
       ${sec("✨", "rvHighlights", rvList(rv.highlights))}
       ${sec("😋", "rvMustTry", rvList(rv.mustTry))}
       ${sec("💡", "rvTips", rvList(rv.tips))}
       ${sec("⚠️", "rvCons", rvList(rv.cons))}
       ${rv.src?.length ? `<p class="rv-src">${t("rvSources")}: ${rv.src.map((s, i) => `<a ${inAppLink(s.link)}>${esc(String(s.source || "Lemon8").replace(/^Lemon8 · /, "@"))}</a>`).join(" · ")}</p>` : ""}
+      ${rv.ai && rv.sources?.length ? `<p class="rv-src">${t("rvSources")}: ${rv.sources.map(u => { let h = u; try { h = new URL(u).hostname.replace(/^www\./, ""); } catch {} return `<a ${inAppLink(u)}>${esc(h)}</a>`; }).join(" · ")}</p>` : ""}
     </section>`;
   }
 
@@ -1198,9 +1213,9 @@
         <h2>${t("keyInfo")}</h2>
         <dl class="facts">
           <div><dt>📍</dt><dd>${esc(p.address || name)}<small>${esc(area)}</small><a class="maps-link" ${mapsLink(v, null)}>${t("openMaps")}</a></dd></div>
-          <div><dt>🕒</dt><dd>${esc(fmtHours(p.hours) || t("hoursUnknown"))}${open != null ? `<small class="${open ? "open-now" : "closed-now"}">${open ? t("openNowShort") : t("closedNow")}</small>` : ""}</dd></div>
+          <div><dt>🕒</dt><dd>${esc(fmtHours(p.hours) || t("hoursUnknown"))}${open != null ? `<small class="${open ? "open-now" : "closed-now"}">${open ? t("openNowShort") : t("closedNow")}</small>` : ""}${p.hoursAI ? `<small>🤖 ${t("aiBadge")}</small>` : ""}</dd></div>
           ${!MENU_KINDS.has(p.kind) || p.kind === "animalcafe" ? `<div><dt>🎟️</dt><dd>${t("fee")}: ${esc(feeText(p))}${p.entry?.src === "Lemon8" ? `<small>${t("fromReviews")}</small>` : ""}</dd></div>` : ""}
-          ${MENU_KINDS.has(p.kind) ? `<div><dt>🍽️</dt><dd>${t("menuPrice")}: ${esc(menuText(p))}${p.menuPrice?.src === "Lemon8" ? `<small>${t("fromReviews")}</small>` : p.menuPrice?.src === "owner" ? `<small>${t("fromOwner")}</small>` : ""}</dd></div>` : ""}
+          ${MENU_KINDS.has(p.kind) ? `<div><dt>🍽️</dt><dd>${t("menuPrice")}: ${esc(menuText(p))}${p.menuPrice?.src === "Lemon8" ? `<small>${t("fromReviews")}</small>` : p.menuPrice?.src === "owner" ? `<small>${t("fromOwner")}</small>` : p.menuPrice?.src === "ai" ? `<small>🤖 ${t("aiBadge")}</small>` : ""}</dd></div>` : ""}
           ${p.phone ? `<div><dt>☎️</dt><dd><a href="tel:${esc(p.phone.replace(/[^\d+]/g, ""))}">${esc(p.phone.split(";")[0])}</a></dd></div>` : ""}
         </dl>
       </section>`;
@@ -1229,6 +1244,7 @@
           ${summary ? `<p class="pd-summary" id="pdSum">${esc(summary)}</p>${summary.length > 180 ? `<button class="link-btn" id="pdMore">${t("readMore")}</button>` : ""}` : ""}
           ${facts}
           ${c?.adult ? `<p class="adult-note">🔞 ${t("age20Place")}</p>` : ""}
+          ${p.maybeClosed ? `<p class="adult-note">⚠️ ${t("aiClosed")}</p>` : ""}
           ${posts.length ? `<section class="panel pd-buzz">
             <div class="pd-buzz-head"><h2>🔥 ${t("placeTrends")}</h2>${posts.length > 2 ? `<button class="link-btn" data-ptab="trends">${t("seeAll")} ${posts.length} ›</button>` : ""}</div>
             ${freshPopular(posts).slice(0, 2).map(n => `<a class="buzz-row" ${inAppLink(n.link)}>
@@ -1241,7 +1257,7 @@
           <p class="pd-links">${p.fromTrend ? `<span>🔥 ${t("fromTrendNote")}</span>` : ""}${wiki ? `<a ${inAppLink(wiki)}>📖 ${t("wikipedia")}</a>` : ""}${p.imagePage ? `<span>${t("photo")}: <a ${inAppLink(p.imagePage)}>${esc(p.imageCredit || "Wikimedia Commons")}</a></span>` : ""}</p>
           ${!p.business ? `<a class="claim-link" href="#/account/new-shop?ref=${encodeURIComponent(p.id)}">🏪 ${t(p.image ? "claimPlace" : "claimPlaceNoPhoto")}</a>` : ""}
         </section>
-        <section class="pd-panel" data-panel="travel" ${state.placeTab === "travel" ? "" : "hidden"}>${travelPanel({}, v)}</section>
+        <section class="pd-panel" data-panel="travel" ${state.placeTab === "travel" ? "" : "hidden"}>${state.ai[p.id]?.travel?.th ? `<section class="panel ai-travel"><h2>🚇 ${t("aiTravel")}</h2><p>${esc(pick(state.ai[p.id].travel) || state.ai[p.id].travel.th)}</p><small class="ai-note">🤖 ${t("aiBadge")}</small></section>` : ""}${travelPanel({}, v)}</section>
         ${posts.length ? `<section class="pd-panel trend-board place-trends" data-panel="trends" ${state.placeTab === "trends" ? "" : "hidden"}>
           <p class="muted">${t("placeTrendsSub")}</p>
           <div class="news-list">${[...posts].sort((a, b) => String(b.date || "").localeCompare(String(a.date || ""))).map(n => `<div class="news-item trend-item"><a class="trend-link" ${inAppLink(n.link)}>${trendThumb(n)}<h3>${esc(n.title)}</h3><div class="meta">${esc(n.source || "Lemon8")}${n.date ? ` · ${relDate(n.date)}` : ""}</div></a></div>`).join("")}</div>

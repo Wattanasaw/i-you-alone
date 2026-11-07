@@ -16,3 +16,6 @@ android/app/release/
 
 # คลังโพสต์ชั่วคราวระหว่างสคริปต์
 .cache/
+
+# prompt สำหรับ Gemini (สร้างใหม่ได้ด้วย scripts/gemini-batches.mjs)
+gemini/prompts/

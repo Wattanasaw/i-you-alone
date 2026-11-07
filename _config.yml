@@ -1,5 +1,6 @@
 # ตั้งค่า GitHub Pages: ไม่ต้องเอาโปรเจกต์แอพมือถือและสคริปต์ขึ้นเว็บ (เว็บเล็กลง deploy เร็วขึ้น)
 exclude:
+  - gemini
   - android
   - ios
   - assets
