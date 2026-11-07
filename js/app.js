@@ -583,7 +583,8 @@
     let text;
     if (km < 1.2) text = t("recWalk", { km: k, min: Math.round(km * 13) });
     else if (km < 4) text = t("recTaxi", { km: k });
-    else if (railIdx >= 0) text = t("recRail", { km: k, rail: transitText(v, "transit", railIdx, v.transit[railIdx]) });
+    else if (railIdx >= 0 && km < 40) text = t("recRail", { km: k, rail: transitText(v, "transit", railIdx, v.transit[railIdx]) });
+    else if (km > 400) text = t("recFar", { km: Math.round(km) });
     else text = `${t("recCar", { km: k })} ${v.parking ? t("recParking") : ""}`;
     return `<p class="recommend">💡 ${esc(text)}</p>`;
   }
@@ -639,50 +640,108 @@
   }
   // ---------- คำนวณค่าเดินทาง (ประมาณการ) จากตำแหน่งผู้ใช้ หรือกลางกรุงเทพฯ ----------
   // ตั้งค่ารถของตัวเองได้ (กม./ลิตร, ราคาน้ำมัน) จำไว้ในเครื่อง · สมาชิกจะซิงก์ข้ามเครื่อง
-  const CAR_DEFAULT = { kmpl: 14, fuel: 33, bikeKmpl: 40 };
-  const carCfg = () => ({ ...CAR_DEFAULT, ...readLS("car", {}) });
-  // มิเตอร์แท็กซี่กรุงเทพฯ: 35 บาท กม.แรก แล้วคิดตามช่วงระยะ + รถติด ~2.5 บาท/นาที
-  function taxiFare(km) {
+  const CAR_DEFAULT = { kmpl: 14, fuelType: "g95", fuel: 0, bikeKmpl: 40 };
+  // ค่าที่บันทึกจากเวอร์ชันเก่า (ไม่มี fuelType) มีราคาน้ำมันตายตัว → ไม่ใช้ ให้ใช้ราคาจริงรายวันแทน
+  const carCfg = () => { const c = { ...readLS("car", {}) }; if (!c.fuelType) delete c.fuel; return { ...CAR_DEFAULT, ...c }; };
+  // ราคาน้ำมันจริงรายวัน (บางจาก · data/fuel.json อัปเดตทุกเช้า) → ไม่มีข้อมูลใช้ค่าสำรอง
+  const FUEL_FALLBACK = { g95: 39.8, g91: 39.5, e20: 31.8, e85: 30.6, diesel: 41.8, b20: 33.5 };
+  const FUEL_TYPES = ["g95", "g91", "e20", "e85", "diesel", "b20"];
+  let fuelLoad;
+  const fuelData = () => (fuelLoad ||= getJSON("data/fuel.json", null));
+  function fuelPrice(fd, k) {
+    if (k.fuel > 0) return { price: k.fuel, custom: true };
+    return { price: fd?.prices?.[k.fuelType] || FUEL_FALLBACK[k.fuelType] || FUEL_FALLBACK.g95, date: fd?.date };
+  }
+  // มิเตอร์แท็กซี่ (ประกาศกรมการขนส่งทางบก มีผล 13 ม.ค. 2566): กม.แรก 35 บาท
+  // กม.1–10 6.5 · 10–20 7 · 20–40 8 · 40–60 8.5 · 60–80 9 · 80+ 10.5 บาท/กม. · รถติด (ช้ากว่า 6 กม./ชม.) นาทีละ 3 บาท
+  function taxiMeter(km) {
     const steps = [[10, 6.5], [20, 7], [40, 8], [60, 8.5], [80, 9], [Infinity, 10.5]];
     let fare = 35, left = Math.max(0, km - 1), from = 1;
     for (const [to, rate] of steps) { const seg = Math.min(left, to - from); if (seg <= 0) break; fare += seg * rate; left -= seg; from = to; }
-    return fare + (km / 25 * 60) * 2.5 * 0.4;
+    return fare;
   }
+  // ค่ารถไฟฟ้าโดยประมาณตามระยะทาง (อัตราปี 2569): BTS 17–47 (+ส่วนต่อขยาย) · MRT สายสีน้ำเงิน 17–44
+  // Airport Rail Link 15–45 · รถไฟชานเมืองสายสีแดง 12–42 — ค่าจริงขึ้นกับจำนวนสถานี จึงแสดงเป็นช่วง
+  const RAIL_FARE = { BTS: [17, 3.2, 65], MRT: [17, 2.6, 44], ARL: [15, 1.4, 45], SRT: [12, 1.6, 42] };
+  const railFare = (type, km) => { const [base, perKm, max] = RAIL_FARE[type] || RAIL_FARE.MRT; return Math.min(max, base + perKm * km); };
   const baht = n => `${Math.round(n / 5) * 5 < 10 ? Math.round(n) : (Math.round(n / 5) * 5).toLocaleString(locale())}`;
-  const range = (a, b) => `฿${baht(a)}–${baht(b)}`;
-  function costItems(v, trip) {
-    const from = state.pos || BKK_CENTER, line = distanceKm(from, v);
-    const road = line * (line < 30 ? 1.35 : 1.25), k = carCfg(), x = trip === "round" ? 2 : 1;
-    const out = [];
-    const fuel = road / k.kmpl * k.fuel * x;
-    out.push(["CAR", t("costCar", { km: Math.round(road * x), cost: range(fuel, fuel * 1.15), kmpl: k.kmpl, fuel: k.fuel })]);
-    if (road <= 300) out.push(["BIKE", t("costBike", { cost: range(road / k.bikeKmpl * k.fuel * x, road / k.bikeKmpl * k.fuel * x * 1.15) })]);
-    if (road <= 80) { const tf = taxiFare(road) * x; out.push(["TAXI", t("costTaxi", { cost: range(tf, tf * 1.25), app: range(tf * 1.2, tf * 1.7) })]); }
-    if (road > 80) out.push(["BUS", t("costCoach", { cost: range(road * 0.9 * x, road * 1.6 * x) })]);
-    if (road > 400) out.push(["AIR", t("costFly")]);
-    return { out, line, from: state.pos ? "me" : "bkk" };
+  const range = (a, b) => baht(a) === baht(b) ? `฿${baht(a)}` : `฿${baht(a)}–${baht(b)}`;
+  // ระยะทางตามถนนจริง (OSRM บนข้อมูล OpenStreetMap · เซิร์ฟเวอร์สาธารณะของ FOSSGIS ฟรี)
+  // ปัดพิกัดผู้ใช้เหลือ 3 ตำแหน่ง (~100 ม.) ก่อนส่ง · ถามครั้งเดียวต่อปลายทาง (จำไว้ในหน่วยความจำ)
+  const routeCache = new Map();
+  function roadRoute(from, to) {
+    const o = `${(+from.lng).toFixed(3)},${(+from.lat).toFixed(3)}`, d = `${(+to.lng).toFixed(5)},${(+to.lat).toFixed(5)}`;
+    const key = o + ";" + d;
+    if (!routeCache.has(key)) routeCache.set(key, fetch(`https://routing.openstreetmap.de/routed-car/route/v1/driving/${key}?overview=false`, { signal: AbortSignal.timeout(9000) })
+      .then(r => r.ok ? r.json() : null)
+      .then(j => j?.code === "Ok" && j.routes?.[0] ? { km: j.routes[0].distance / 1000, min: j.routes[0].duration / 60 } : null)
+      .catch(() => null));
+    return routeCache.get(key);
   }
-  function renderCost() {
+  const inMetro = p => distanceKm(BKK_CENTER, p) <= 35;
+  function costItems(v, trip, route, fd, tr_) {
+    const from = state.pos || BKK_CENTER, line = distanceKm(from, v);
+    // ไม่มีเส้นทางจริง: ประมาณถนนยาวกว่าเส้นตรง 25–35% · เวลาขับโล่งๆ ~35 กม./ชม. ในเมือง 70 กม./ชม. นอกเมือง
+    const road = route?.km ?? line * (line < 30 ? 1.35 : 1.25);
+    const freeMin = route?.min ?? road / (road < 30 ? 35 : 70) * 60;
+    const k = carCfg(), x = trip === "round" ? 2 : 1, fp = fuelPrice(fd, k);
+    const out = [];
+    const fuel = road / k.kmpl * fp.price * x;
+    out.push(["CAR", t("costCar2", { km: Math.round(road * x), cost: range(fuel, fuel * 1.1), kmpl: k.kmpl, fuel: t("fuel_" + k.fuelType), price: fp.price.toFixed(2) })]);
+    if (road <= 300) { const b = road / k.bikeKmpl * fp.price * x; out.push(["BIKE", t("costBike", { cost: range(b, b * 1.1) })]); }
+    if (road <= 80) {
+      // รถติด: เวลาเดินทางจริงในกรุงเทพฯ ~1.3–2 เท่าของเวลาวิ่งโล่ง ส่วนที่ช้ากว่า 6 กม./ชม. คิดนาทีละ 3 บาท
+      const m = taxiMeter(road), lo = (m + freeMin * 0.25 * 3) * x, hi = (m + freeMin * 0.9 * 3) * x;
+      out.push(["TAXI", t("costTaxi2", { cost: range(lo, hi), app: range(lo * 1.1, hi * 1.6) })]);
+    }
+    // รถไฟฟ้า: มีสถานีใกล้ทั้งต้นทางและปลายทาง (กทม. และปริมณฑล)
+    if (tr_?.rail && inMetro(from) && inMetro(v) && line > 1.5) {
+      const near = (p, max) => (tr_.rail.map(s => [s, distanceKm(p, s)]).filter(([, d]) => d <= max).sort((a, b) => a[1] - b[1])[0]);
+      const a1 = near(from, 2), b1 = near(v, 2.5);
+      if (a1 && b1 && tName(a1[0]) !== tName(b1[0])) {
+        const km = distanceKm(a1[0], b1[0]) * 1.2;
+        const fare = a1[0].t === b1[0].t ? railFare(a1[0].t, km) : railFare(a1[0].t, km / 2) + railFare(b1[0].t, km / 2);
+        const sep = state.lang === "th" ? "" : " ";
+        out.push([a1[0].t, t("costRail", { from: `${t("line_" + a1[0].t)}${sep}${tName(a1[0])}`, to: `${t("line_" + b1[0].t)}${sep}${tName(b1[0])}`, cost: range(fare * 0.85 * x, fare * 1.1 * x) })]);
+      } else out.push(["BUS", t("costCityBus", { cost: range(8 * x, 25 * x) })]);
+    }
+    if (road > 80) out.push(["BUS", t("costCoach", { cost: range(road * 0.7 * x, road * 1.3 * x) })]);
+    if (road > 400) out.push(["AIR", t("costFly")]);
+    return { out, road, freeMin, fp };
+  }
+  async function renderCost() {
     const box = document.getElementById("cost");
     if (!box) return;
     const v = { lat: +box.dataset.lat, lng: +box.dataset.lng }, trip = box.dataset.trip || "one";
-    const { out, from } = costItems(v, trip);
+    const real = state.pos && !state.pos.manual;
+    if (!box.innerHTML && state.pos) box.innerHTML = `<p class="cost-from">⏳ ${t("costRouting")}</p>`;
+    transitLoad ||= getJSON("data/transit.json", {});
+    const [route, fd, tr_] = await Promise.all([state.pos ? roadRoute(state.pos, v) : null, fuelData(), transitLoad]);
+    if (!document.body.contains(box)) return;
+    const { out, road, freeMin, fp } = costItems(v, trip, route, fd, tr_);
     const k = carCfg();
+    const fromText = !state.pos ? t("costFromBkk") : real ? t("costFromMe") : t("costFromArea", { area: state.pos.label || "" });
     box.innerHTML = `
-      <p class="cost-from">${from === "me" ? t("costFromMe") : t("costFromBkk")}</p>
+      <p class="cost-from">${esc(fromText)}</p>
+      ${route ? `<p class="cost-route">🛣️ ${t("costRoute", { km: road.toFixed(1), time: fmtDuration(freeMin), busy: fmtDuration(freeMin * (road < 40 ? 2 : 1.3) + 5) })}</p>` : state.pos ? `<p class="cost-route">📏 ${t("costRouteEst", { km: Math.round(road) })}</p>` : ""}
       <div class="seg" role="group">
         <button type="button" class="${trip === "one" ? "active" : ""}" data-trip="one">${t("oneWay")}</button>
         <button type="button" class="${trip === "round" ? "active" : ""}" data-trip="round">${t("roundTrip")}</button>
       </div>
       <ul class="travel-list">${out.map(([type, text]) => `<li><span>${TRANSIT_ICON[type] || "➡️"}</span><span>${esc(text)}</span></li>`).join("")}</ul>
       <details class="car-cfg"><summary>⚙️ ${t("carSettings")}</summary>
+        <label>${t("fuelType")} <select id="fueltype">${FUEL_TYPES.map(f => `<option value="${f}" ${k.fuelType === f ? "selected" : ""}>${t("fuel_" + f)}</option>`).join("")}</select></label>
         <label>${t("kmpl")} <input type="number" inputmode="decimal" min="3" max="60" step="0.5" id="kmpl" value="${k.kmpl}"></label>
-        <label>${t("fuelPrice")} <input type="number" inputmode="decimal" min="10" max="80" step="0.1" id="fuelp" value="${k.fuel}"></label>
+        <label>${t("fuelPrice")} <input type="number" inputmode="decimal" min="0" max="80" step="0.01" id="fuelp" value="${k.fuel || ""}" placeholder="${fp.custom ? "" : fp.price.toFixed(2)}"></label>
       </details>
-      <p class="disclosure">${t("costNote")}</p>`;
+      <p class="disclosure">${[fp.date && !fp.custom ? t("costFuelSrc", { date: new Date(fp.date).toLocaleDateString(locale(), { day: "numeric", month: "short" }) }) : "", route ? t("costRouteSrc") : "", t("costNote2")].filter(Boolean).join(" · ")}</p>`;
     box.querySelectorAll("[data-trip]").forEach(b => b.addEventListener("click", () => { box.dataset.trip = b.dataset.trip; renderCost(); }));
-    const save = () => { writeLS("car", { kmpl: +document.getElementById("kmpl").value || CAR_DEFAULT.kmpl, fuel: +document.getElementById("fuelp").value || CAR_DEFAULT.fuel }); window.IYA_MEMBER?.sync?.(); const open = true; renderCost(); box.querySelector(".car-cfg").open = open; };
-    box.querySelectorAll(".car-cfg input").forEach(i => i.addEventListener("change", save));
+    const save = () => {
+      writeLS("car", { ...readLS("car", {}), fuelType: document.getElementById("fueltype").value, kmpl: +document.getElementById("kmpl").value || CAR_DEFAULT.kmpl, fuel: +document.getElementById("fuelp").value || 0 });
+      window.IYA_MEMBER?.sync?.();
+      renderCost().then(() => { const c = box.querySelector(".car-cfg"); if (c) c.open = true; });
+    };
+    box.querySelectorAll(".car-cfg input, .car-cfg select").forEach(i => i.addEventListener("change", save));
   }
 
   function travelPanel(ev, v) {
