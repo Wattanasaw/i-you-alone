@@ -33,6 +33,12 @@ jobs:
       - name: โพสต์เทรนด์ที่พูดถึงแต่ละสถานที่ (คลัง Lemon8 77 จังหวัด)
         run: node scripts/place-posts.mjs
         continue-on-error: true
+      - name: รวบรวมสถานที่จากโพสต์เทรนด์ (AI หาชื่อ + หาพิกัดจริงบนแผนที่ OSM)
+        run: node scripts/trend-places.mjs
+        continue-on-error: true
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: หารูปปก + ให้ AI ดูรูปจริง เลือกรูปที่ตรงและน่าดู
         run: node scripts/place-images.mjs --limit "${{ inputs.limit }}" --ai "${{ inputs.ai }}"
         env:
@@ -56,5 +62,5 @@ jobs:
         run: |
           git config user.name "news-bot"
           git config user.email "news-bot@users.noreply.github.com"
-          git add data/places.json data/place-images.json data/place-prices.json data/auto-events.json data/event-images.json
+          git add data/places.json data/trend-places.json data/trend-extract.json data/place-images.json data/place-prices.json data/auto-events.json data/event-images.json
           git diff --cached --quiet || (git commit -m "AI คัดรูปปกที่เที่ยว" && git pull --rebase -X theirs && git push)

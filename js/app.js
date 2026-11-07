@@ -155,17 +155,20 @@
     } catch { return fallback; }
   }
   async function load() {
-    const [events, venues, ads, news, auto, places, biz] = await Promise.all([
+    const [events, venues, ads, news, auto, places, biz, trendPl] = await Promise.all([
       getJSON("data/events.json", []),
       getJSON("data/venues.json", []),
       getJSON("data/ads.json", []),
       getJSON("data/news.json", { items: [] }),
       getJSON("data/auto-events.json", { events: [] }),
       getJSON("data/places.json", { places: [], trends: {} }),
-      getJSON("data/business-places.json", [])   // ร้านที่สมาชิกธุรกิจเพิ่ม (AI ตรวจผ่านแล้ว)
+      getJSON("data/business-places.json", []),  // ร้านที่สมาชิกธุรกิจเพิ่ม (AI ตรวจผ่านแล้ว)
+      getJSON("data/trend-places.json", [])      // สถานที่จากโพสต์เทรนด์ (AI หาชื่อ + พิกัดจริงจาก OSM)
     ]);
     const bizList = Array.isArray(biz) ? biz : [], replaced = new Set(bizList.map(b => b.replaces).filter(Boolean));
-    state.places = [...(places.places || []).filter(p => !replaced.has(p.id)), ...bizList];
+    const base = [...(places.places || []).filter(p => !replaced.has(p.id)), ...bizList];
+    const ids = new Set(base.map(p => p.id.replace(/^(osm|l8)-/, "")));
+    state.places = [...base, ...(Array.isArray(trendPl) ? trendPl : []).filter(p => !ids.has(p.id.replace(/^(osm|l8)-/, "")))];
     state.trends = places.trends || {};
     // งานที่ดึงอัตโนมัติ + งานที่ใส่เอง: งานใส่เองที่ id ตรงกันจะทับงานอัตโนมัติ, hidden: true = ซ่อน
     const manualIds = new Set(events.map(e => e.id));
@@ -497,7 +500,8 @@
   }
 
   // ---------- travel ----------
-  const mapsDest = v => v.lat ? `${v.lat},${v.lng}` : `${v.name} ${v.address || ""}`;
+  // พิกัดโดยประมาณ (สถานที่จากเทรนด์ที่ไม่มีในแผนที่ OSM) → ให้ Google Maps ค้นจากชื่อ + ที่อยู่แทน จะได้หมุดตรงร้าน
+  const mapsDest = v => v.lat && !v.approx ? `${v.lat},${v.lng}` : `${v.name} ${v.address || ""}`;
   // mode = driving | transit | walking | bicycling, หรือ null = เปิดหมุดสถานที่
   const mapsWeb = (v, mode) => mode
     ? `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(mapsDest(v))}&travelmode=${mode}`
@@ -809,7 +813,7 @@
   const placeName = p => p.name?.[state.lang] || p.name?.th || p.name?.en || "";
   // คำอธิบาย: ภาษาที่เลือก → ไทย → อังกฤษ
   const placeSummary = p => p.summary?.[state.lang] || p.summary?.th || p.summary?.en || "";
-  const placeVenue = p => ({ name: placeName(p), address: p.address, province: p.province, lat: p.lat, lng: p.lng });
+  const placeVenue = p => ({ name: placeName(p), address: p.address, province: p.province, lat: p.lat, lng: p.lng, approx: p.approx });
   // เวลาเปิดแบบ OpenStreetMap ("Mo-Su 09:00-18:00") → อ่านง่ายขึ้น
   const DAYS = { th: { Mo: "จ.", Tu: "อ.", We: "พ.", Th: "พฤ.", Fr: "ศ.", Sa: "ส.", Su: "อา.", PH: "วันหยุดนักขัตฤกษ์", off: "ปิด" },
     en: { Mo: "Mon", Tu: "Tue", We: "Wed", Th: "Thu", Fr: "Fri", Sa: "Sat", Su: "Sun", PH: "public holidays", off: "closed" },
@@ -934,18 +938,27 @@
     if (postCache.has(p)) return postCache.get(p);
     let out = [];
     const names = placeNames(p);
-    // ตรวจซ้ำว่าหัวโพสต์มีชื่อสถานที่จริง (ข้อมูลรอบเก่าอาจจับคู่ด้วยชื่อจังหวัด) — ร้านธุรกิจเชื่อโพสต์ตามที่ให้มา
-    if (p.posts?.length) out = p.posts.filter(x => p.business || names.some(nm => String(x.title || "").toLowerCase().includes(nm))).map(x => ({ ...x, kind: p.kind }));
+    // ตรวจซ้ำว่าหัวโพสต์มีชื่อสถานที่จริง (ข้อมูลรอบเก่าอาจจับคู่ด้วยชื่อจังหวัด) — ร้านธุรกิจ/โพสต์ที่ผู้โพสต์ปักหมุดที่นี่ (tag) เชื่อได้
+    if (p.posts?.length) out = p.posts.filter(x => p.business || p.fromTrend || x.tag || names.some(nm => String(x.title || "").toLowerCase().includes(nm))).map(x => ({ ...x, kind: p.kind }));
     if (!out.length && names.length) out = Object.entries(state.trends).flatMap(([k, items]) => items.map(n => ({ ...n, kind: k })))
       .filter(n => names.some(nm => String(n.title || "").toLowerCase().includes(nm))).sort((x, y) => (y.likes || 0) - (x.likes || 0)).slice(0, 4);
     postCache.set(p, out);
     return out;
   }
   const relDate = d => { const n = Math.round((Date.now() - new Date(d)) / 864e5); return n <= 0 ? t("today") : n < 30 ? t("daysAgo", { n }) : new Date(d).toLocaleDateString(locale(), { day: "numeric", month: "short" }); };
+  // โพสต์ยอดนิยม (ไลก์ ≥ 100 หรือ ≥ 20% ของโพสต์ที่ไลก์สูงสุดในชุดนั้น) เรียงใหม่สุดก่อน
+  function freshPopular(list) {
+    const min = Math.min(100, Math.max(0, ...list.map(n => n.likes || 0)) * 0.2);
+    return list.filter(n => (n.likes || 0) >= min).sort((a, b) => String(b.date || "").localeCompare(String(a.date || "")) || (b.likes || 0) - (a.likes || 0));
+  }
   const fmtLikes = n => n >= 1000 ? (n / 1000).toFixed(1).replace(/\.0$/, "") + "K" : String(n || 0);
   // สถานที่ที่โพสต์เทรนด์พูดถึง (ใช้บนบอร์ดเทรนด์)
   let trendPlaceCache = null;
+  let postPlace = null;
   function placeOfPost(n) {
+    // 1) โพสต์นี้ถูกผูกกับสถานที่แล้ว (สคริปต์จับคู่ชื่อ+พิกัดบนแผนที่) 2) ชื่อสถานที่อยู่ในหัวโพสต์
+    postPlace ||= new Map(state.places.flatMap(p => (p.posts || []).map(x => [x.link, p])));
+    if (postPlace.has(n.link)) return postPlace.get(n.link);
     trendPlaceCache ||= state.places.filter(p => placeNames(p).length).map(p => [p, placeNames(p)]);
     const title = String(n.title || "").toLowerCase();
     return trendPlaceCache.find(([, names]) => names.some(nm => title.includes(nm)))?.[0] || null;
@@ -999,13 +1012,12 @@
     // แสดงทีละ 30 แห่ง กด "ดูเพิ่ม" ได้ (หลายร้อยแห่งพร้อมกันทำให้แอพหน่วง)
     const shown = list.slice(0, state.placeShow);
     // บอร์ดเทรนด์: เฉพาะโพสต์ยอดนิยม (ไลก์ ≥ 100 หรือครึ่งบนของหมวด) แล้วเรียงตามวันที่ใหม่สุดก่อน
-    const pool = (cat === "all" ? Object.entries(state.trends) : [[cat, state.trends[cat] || []]])
-      .flatMap(([k, items]) => items.map(n => ({ ...n, kind: k })));
-    const byLikes = [...pool].sort((a, b) => (b.likes || 0) - (a.likes || 0));
-    const minLikes = Math.min(100, byLikes[Math.floor(byLikes.length / 2)]?.likes ?? 0);
-    const board = pool.filter(n => (n.likes || 0) >= minLikes)
-      .sort((a, b) => String(b.date || "").localeCompare(String(a.date || "")) || (b.likes || 0) - (a.likes || 0))
-      .slice(0, cat === "all" ? 14 : 10);
+    // + โพสต์ของสถานที่ที่รวบรวมจากเทรนด์ (ผูกกับพิกัดจริงแล้ว)
+    const pool = [...new Map([
+      ...(cat === "all" ? Object.entries(state.trends) : [[cat, state.trends[cat] || []]]).flatMap(([k, items]) => items.map(n => ({ ...n, kind: k }))),
+      ...state.places.filter(p => p.fromTrend && (cat === "all" || p.kind === cat) && inPlaceProvince(p)).flatMap(p => p.posts.map(n => ({ ...n, kind: p.kind })))
+    ].map(n => [n.link, n])).values()];
+    const board = freshPopular(pool).slice(0, cat === "all" ? 14 : 10);
     const chip = (id, icon, name, c1, n) =>
       `<button class="chip ${cat === id ? "active" : ""}" data-pcat="${id}" style="--c1:${c1}" aria-pressed="${cat === id}"><i>${icon}</i>${esc(name)}${n != null ? ` <small>${n}</small>` : ""}</button>`;
     app.innerHTML = `<div class="page">
@@ -1129,13 +1141,13 @@
           ${summary ? `<p class="pd-summary" id="pdSum">${esc(summary)}</p>${summary.length > 180 ? `<button class="link-btn" id="pdMore">${t("readMore")}</button>` : ""}` : ""}
           ${posts.length ? `<div class="pd-buzz">
             <div class="pd-buzz-head"><b>🔥 ${t("placeTrends")}</b>${posts.length > 2 ? `<button class="link-btn" data-ptab="trends">${t("seeAll")} ${posts.length} ›</button>` : ""}</div>
-            ${[...posts].sort((a, b) => String(b.date || "").localeCompare(String(a.date || ""))).slice(0, 2).map(n => `<a class="buzz-row" ${inAppLink(n.link)}>
+            ${freshPopular(posts).slice(0, 2).map(n => `<a class="buzz-row" ${inAppLink(n.link)}>
               ${n.image ? `<img src="${esc(n.image)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">` : `<span class="buzz-ico">🔥</span>`}
               <span class="buzz-txt"><span class="buzz-title">${esc(n.title)}</span><small>${[n.likes ? `❤️ ${fmtLikes(n.likes)}` : "", n.date ? relDate(n.date) : ""].filter(Boolean).join(" · ")} · ${esc(String(n.source || "Lemon8").replace(/^Lemon8 · /, "@"))}</small></span>
             </a>`).join("")}
           </div>` : ""}
           ${facts}
-          <p class="pd-links">${wiki ? `<a ${inAppLink(wiki)}>📖 ${t("wikipedia")}</a>` : ""}${p.imagePage ? `<span>${t("photo")}: <a ${inAppLink(p.imagePage)}>${esc(p.imageCredit || "Wikimedia Commons")}</a></span>` : ""}</p>
+          <p class="pd-links">${p.fromTrend ? `<span>🔥 ${t("fromTrendNote")}</span>` : ""}${wiki ? `<a ${inAppLink(wiki)}>📖 ${t("wikipedia")}</a>` : ""}${p.imagePage ? `<span>${t("photo")}: <a ${inAppLink(p.imagePage)}>${esc(p.imageCredit || "Wikimedia Commons")}</a></span>` : ""}</p>
           ${!p.business ? `<a class="claim-link" href="#/account/new-shop?ref=${encodeURIComponent(p.id)}">🏪 ${t(p.image ? "claimPlace" : "claimPlaceNoPhoto")}</a>` : ""}
         </section>
         <section class="pd-panel" data-panel="travel" ${state.placeTab === "travel" ? "" : "hidden"}>${travelPanel({}, v)}</section>

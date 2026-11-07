@@ -13,3 +13,6 @@ android/app/release/
 *.keystore
 *.jks
 .tools/
+
+# คลังโพสต์ชั่วคราวระหว่างสคริปต์
+.cache/

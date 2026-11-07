@@ -12,3 +12,4 @@ exclude:
   - README-TH.md
   - supabase
   - reports
+  - data/trend-extract.json

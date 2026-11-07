@@ -3,7 +3,7 @@
 // คลังโพสต์: หน้า "คาเฟ่/ที่เที่ยว + จังหวัด" ครบ 77 จังหวัด + หัวข้อยอดนิยม (ไม่ต้องค้นทีละสถานที่)
 // รูปปกโพสต์เป็นลิงก์พรีวิวของ Lemon8 เอง (มีลายน้ำผู้โพสต์) กดแล้วไปโพสต์ต้นฉบับ — ไม่ดาวน์โหลดเก็บ
 // รัน: node scripts/place-posts.mjs
-import { readFile, writeFile, rename } from "node:fs/promises";
+import { readFile, writeFile, rename, mkdir } from "node:fs/promises";
 
 const UA = "IYouAloneBot/1.0 (+https://wattanasaw.github.io/i-you-alone/)";
 const DAYS = 180; // โพสต์ช่วง 6 เดือนล่าสุด
@@ -39,7 +39,9 @@ const list = [...posts.values()].map(o => {
     title: o.title.replace(/\s+/g, " ").trim().slice(0, 140), likes: +o.articleLikes || 0, date: date.toISOString().slice(0, 10),
     link: `https://www.lemon8-app.com/${author.linkName ? "@" + author.linkName + "/" : ""}${o.groupId}?region=th`,
     source: `Lemon8${author.nickName ? " · " + author.nickName : ""}`,
-    image: [o.largeImage?.url, o.imageList?.[0]?.url].find(u => /^https:\/\/www\.lemon8-app\.com\/seo\/image\?/.test(u || ""))
+    image: [o.largeImage?.url, o.imageList?.[0]?.url].find(u => /^https:\/\/www\.lemon8-app\.com\/seo\/image\?/.test(u || "")),
+    // เนื้อโพสต์ย่อ (ใช้ใน trend-places.mjs ให้ AI หาชื่อร้าน/สถานที่ — ไม่บันทึกลงข้อมูลที่ขึ้นเว็บ)
+    text: `${String(o.shortContent || "").slice(0, 300)} ${[].concat(o.ocrTextArr || []).join(" ").slice(0, 150)}`.replace(/\s+/g, " ").trim()
   };
 }).filter(p => p.title.length >= 8 && !NOT_TREND.test(p.title) && (Date.now() - new Date(p.date)) / 864e5 <= DAYS);
 console.log(`คลังโพสต์ ${list.length} โพสต์ (ช่วง ${DAYS} วัน) จาก ${kws.length} หน้า`);
@@ -50,16 +52,22 @@ const GENERIC = /^(อุทยานแห่งชาติ|สวนสัต
 const PROV_NAMES = new Set(win.PROVINCES.flatMap(p => [p.th, p.en, p.th.replace(/^จังหวัด/, "")]).filter(Boolean).map(s => s.toLowerCase()).concat(["กรุงเทพ", "bangkok"]));
 const names = p => [...new Set([p.name?.th, p.name?.en, p.name?.th?.replace(GENERIC, "")].filter(n => n && n.length >= 6).map(n => n.toLowerCase().trim()))].filter(n => !PROV_NAMES.has(n));
 let matched = 0, newHot = 0;
+const usedLinks = new Set();
+const slim = ({ text, ...x }) => x;
 for (const p of data.places) {
   const ns = names(p);
   if (!ns.length) continue;
   const m = list.filter(x => ns.some(n => x.title.toLowerCase().includes(n)));
   if (!m.length) continue;
   matched++;
-  p.posts = [...new Map([...m, ...(p.posts || [])].map(x => [x.link, x])).values()].sort((a, b) => b.likes - a.likes).slice(0, 4);
+  m.forEach(x => usedLinks.add(x.link));
+  p.posts = [...new Map([...m.map(slim), ...(p.posts || [])].map(x => [x.link, x])).values()].sort((a, b) => b.likes - a.likes).slice(0, 4);
   // ถูกพูดถึงบ่อย/ไลก์เยอะ = กระแส (เพิ่มจากคะแนนเดิม ไม่ลด)
   const score = +m.reduce((s, x) => s + 1 + Math.log10(1 + x.likes), 0).toFixed(1);
   if (score >= 3 && score > (p.hot || 0)) { if (!p.hot) newHot++; p.hot = score; p.trend = Math.max(p.trend || 0, m.length); }
 }
 await save("data/places.json", JSON.stringify(data, null, 1) + "\n");
+// โพสต์ยอดนิยมที่ยังจับคู่กับสถานที่ไม่ได้ → ส่งต่อให้ trend-places.mjs (AI หาชื่อสถานที่ + หาพิกัดบนแผนที่) · ไฟล์ชั่วคราว ไม่ขึ้นเว็บ
+await mkdir(new URL(".cache/", root), { recursive: true });
+await writeFile(new URL(".cache/l8-pool.json", root), JSON.stringify(list.filter(x => !usedLinks.has(x.link) && x.likes >= 50).sort((a, b) => b.likes - a.likes)));
 console.log(`สถานที่ที่มีโพสต์พูดถึง ${matched} แห่ง · กระแสใหม่ ${newHot} แห่ง · กระแสรวม ${data.places.filter(p => p.hot).length} แห่ง`);
