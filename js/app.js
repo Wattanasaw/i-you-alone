@@ -798,7 +798,7 @@
     const list = state.events.filter(e => state.saved.has(e.id)).sort((a, b) => a.startDate.localeCompare(b.startDate));
     const places = state.places.filter(p => state.saved.has(placeKey(p)));
     app.innerHTML = `<div class="page"><h1>${t("savedTitle")}</h1>
-      ${list.length ? `<div class="grid">${list.map(card).join("")}</div>` : places.length ? "" : `<p class="empty">${t("savedEmpty")}</p>`}
+      ${list.length ? `<div class="grid">${list.map(card).join("")}</div>` : places.length ? "" : `<div class="empty-state"><div class="empty-ico">🤍</div><p>${t("savedEmpty")}</p><div class="actions" style="justify-content:center"><a class="btn primary" href="#/">🎉 ${t("navExplore")}</a><a class="btn" href="#/places">🗺️ ${t("navPlaces")}</a></div></div>`}
       ${places.length ? `<div class="section-head"><h2>🗺️ ${t("savedPlaces")}</h2></div><div class="grid">${places.map(placeCard).join("")}</div>` : ""}</div>`;
     bindSave(app, renderSaved);
   }

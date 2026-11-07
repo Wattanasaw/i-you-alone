@@ -605,3 +605,17 @@ html.theme-anim, html.theme-anim * { transition: background-color .35s, color .3
 .cost-box[open] > summary::after { transform: rotate(180deg); }
 .cost-box > summary::-webkit-details-marker { display: none; }
 
+
+/* ---------- แก้ตามผลตรวจ UI โดย AI ---------- */
+/* ปุ่มหลัก: ไล่เฉดเข้มขึ้น ตัวหนังสือขาวอ่านชัด (คอนทราสต์ ≥ 4.5:1) */
+.btn.primary { background: linear-gradient(120deg, #c2410c, #be185d 50%, #6d28d9); text-shadow: 0 1px 2px rgba(0, 0, 0, .25); }
+/* พื้นที่กดอย่างน้อย 44px */
+.btn { min-height: 44px; }
+.back { min-height: 44px; align-items: center; padding: 0 12px 0 0; }
+.pd-panel .travel-modes .btn { min-height: 52px; padding: 8px 4px; font-size: .78rem; }
+.icon-btn { width: 44px; height: 44px; }
+.pd-tabs button { min-height: 44px; }
+.pd-tabs button:not(.active) { background: transparent; border: 1px solid var(--border); }
+/* หน้าบันทึกว่าง: อยู่กลางจอ + ปุ่มชวนไปค้นหา */
+.empty-state { min-height: 55vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; gap: 6px; color: var(--muted); }
+.empty-ico { font-size: 3rem; }
