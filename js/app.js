@@ -860,7 +860,8 @@
             <h3>${esc(placeName(p))}</h3>
             <div class="meta">📍 <span>${esc(place)}</span></div>
             ${p.hours ? `<div class="meta">🕒 <span>${(o => o === true ? `<b class="open-now">${t("openNowShort")}</b> · ` : o === false ? `<b class="closed-now">${t("closedNow")}</b> · ` : "")(openNow(p.hours))}${esc(fmtHours(p.hours))}</span></div>` : ""}
-            <div class="meta price-line">${MENU_KINDS.has(p.kind) ? `🍽️ <span>${t("menuPrice")}: ${esc(menuText(p))}</span>` : ""}${!MENU_KINDS.has(p.kind) || p.kind === "animalcafe" ? `🎟️ <span>${t("fee")}: ${esc(feeText(p))}</span>` : ""}</div>
+            <!-- การ์ด: แสดงราคา/ค่าเข้าเฉพาะที่มีข้อมูล (หน้ารายละเอียดยังแสดง - เมื่อไม่มี) -->
+            ${(parts => parts ? `<div class="meta price-line">${parts}</div>` : "")([MENU_KINDS.has(p.kind) && menuText(p) !== "-" ? `🍽️ <span>${t("menuPrice")}: ${esc(menuText(p))}</span>` : "", (!MENU_KINDS.has(p.kind) || p.kind === "animalcafe") && feeText(p) !== "-" ? `🎟️ <span>${t("fee")}: ${esc(feeText(p))}</span>` : ""].join(""))}
             ${summary ? `<p class="place-sum">${esc(summary.slice(0, 110))}${summary.length > 110 ? "…" : ""}</p>` : ""}
           </div>
         </a>
