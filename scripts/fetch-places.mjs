@@ -112,14 +112,20 @@ async function wikidata(kind, classes) {
 
 // Overpass (ฐานข้อมูล OpenStreetMap) มีหลายเซิร์ฟเวอร์ฟรี: เซิร์ฟเวอร์หลักไม่ว่างก็ลองตัวสำรอง
 const OVERPASS = ["https://overpass-api.de/api/interpreter", "https://overpass.kumi.systems/api/interpreter", "https://overpass.private.coffee/api/interpreter", "https://maps.mail.ru/osm/tools/overpass/api/interpreter"];
+// เซิร์ฟเวอร์ที่ล้มเหลว 2 ครั้งในรอบนี้ → ข้าม (เดิมรอหมดเวลาทุกเซิร์ฟเวอร์ทุกหมวด เสียเวลารวมได้เกินชั่วโมง)
+const overpassFails = {};
+const T0 = Date.now(), mins = () => ((Date.now() - T0) / 60000).toFixed(1);
 async function overpass(q) {
   for (const url of OVERPASS) {
-    const r = await get(url, { method: "POST", timeout: 200000, body: "data=" + encodeURIComponent(q), headers: { "Content-Type": "application/x-www-form-urlencoded" } }, 1);
-    if (!r) continue;
+    if ((overpassFails[url] || 0) >= 2) continue;
+    const t = Date.now();
+    const r = await get(url, { method: "POST", timeout: 120000, body: "data=" + encodeURIComponent(q), headers: { "Content-Type": "application/x-www-form-urlencoded" } }, 1);
+    console.log(`  Overpass ${new URL(url).host} ${r ? r.status : "ล้มเหลว"} ใน ${((Date.now() - t) / 1000).toFixed(0)} วิ`);
+    if (!r) { overpassFails[url] = (overpassFails[url] || 0) + 1; continue; }
     try {
       const j = await r.json();
       // เซิร์ฟเวอร์ไม่ว่างบางทีตอบ 200 แต่แนบ remark ว่าหมดเวลา → ลองเซิร์ฟเวอร์ถัดไป
-      if (j.remark && /error|timed out|out of memory/i.test(j.remark)) { console.warn("Overpass:", j.remark.slice(0, 100)); continue; }
+      if (j.remark && /error|timed out|out of memory/i.test(j.remark)) { console.warn("Overpass:", j.remark.slice(0, 100)); overpassFails[url] = (overpassFails[url] || 0) + 1; continue; }
       return j.elements || [];
     } catch {}
   }
@@ -207,6 +213,7 @@ let lookups = 0;
 async function provinceAt(lat, lng) {
   const k = `rev|${lat.toFixed(3)},${lng.toFixed(3)}`;
   if (k in geocache) return geocache[k];
+  if (lookups >= 300) return null; // เกินโควต้ารอบนี้ → สถานที่นี้รอรอบหน้า
   await sleep(1100);
   const r = await get(`https://nominatim.openstreetmap.org/reverse?format=jsonv2&zoom=8&accept-language=en&lat=${lat}&lon=${lng}`, {}, 1);
   const a = r ? (await r.json()).address || {} : null;
@@ -338,6 +345,7 @@ for (const [kind, k] of Object.entries(KINDS)) {
   places.push(...found);
   await sleep(1500);
 }
+console.log(`[${mins()} นาที] Wikidata เสร็จ`);
 let animal = await osmAnimalCafes();
 // OSM ล่มทุกเซิร์ฟเวอร์ → ใช้รายการเดิมไปก่อน
 if (!animal) { animal = (prev.places || []).filter(p => p.kind === "animalcafe"); console.warn("OSM ไม่ตอบ ใช้คาเฟ่สัตว์ชุดเดิม", animal.length); }
@@ -359,6 +367,7 @@ for (const kind of Object.keys(OSM_QUERY)) {
   console.log(`${kind}: OSM ${found.length} → เพิ่มใหม่ ${added.length}`);
   places.push(...added);
 }
+console.log(`[${mins()} นาที] OpenStreetMap เสร็จ`);
 // ชื่อเป็นคำกว้างๆ ("น้ำตก", "Cat cafe") = ข้อมูลไม่พอให้คนหาเจอ และไปตรงกับโพสต์เทรนด์ทั่วไปผิดๆ → ตัดออก
 const GENERIC_NAME = /^(น้ำตก|ชายหาด|หาด|จุดชมวิว|ร้านกาแฟ|คาเฟ่|คาเฟ่แมว|คาเฟ่หมา|แมวคาเฟ่|วัด|สวนสาธารณะ|พิพิธภัณฑ์|สวนสัตว์|สวนน้ำ|อุทยาน|ถ้ำ|cafe|café|coffee|coffee shop|cat ?cafe|dog ?cafe|waterfall|beach|view ?point|zoo|museum|park|temple|cave)\s*\d*$/i;
 for (let i = places.length - 1; i >= 0; i--) if (GENERIC_NAME.test((places[i].name.th || places[i].name.en || "").trim())) places.splice(i, 1);
@@ -393,6 +402,7 @@ for (const p of places) {
   delete p.imageFile; delete p.osmDescription; delete p.osmWikidata;
 }
 places = places.filter(p => p.province);
+console.log(`[${mins()} นาที] จังหวัด/คำอธิบาย/รูป เสร็จ (ค้นจังหวัดใหม่ ${lookups})`);
 
 // บอร์ดเทรนด์: โพสต์ Lemon8 ยอดไลก์สูงช่วง 4 เดือนล่าสุด + หัวข้อไวรัลจากข่าว (เสริมเมื่อโพสต์น้อย)
 const trends = {};
@@ -424,6 +434,7 @@ for (const [kind, k] of Object.entries(KINDS)) {
   console.log(`เทรนด์ ${kind}: Lemon8 ${lemon.length} + ข่าวไวรัล ${items.length - lemon.length}`);
 }
 
+console.log(`[${mins()} นาที] บอร์ดเทรนด์ เสร็จ`);
 // คำค้นมาแรงจาก Google: สะสม 14 วัน
 const searchTrends = [...await googleTrends(), ...(prev.searchTrends || [])]
   .filter((x, i, a) => a.findIndex(y => y.term === x.term) === i && (Date.now() - new Date(x.date)) / 864e5 <= 14).slice(0, 400);
@@ -451,7 +462,9 @@ const buzzNames = p => coreNames(p).map(n => n.toLowerCase().trim()).filter(n =>
 const mentions = (p, posts) => { const names = buzzNames(p); if (!names.length) return []; return posts.filter(x => names.some(nm => x.title.toLowerCase().includes(nm))); };
 for (const p of places) if (prevById[p.id]?.l8 && daysAgo(prevById[p.id].l8.at) <= 10) p.l8 = prevById[p.id].l8;
 const due = places.filter(p => !p.l8).sort((a, b) => (b.views || 0) / 20 + (b.fame || 0) + (b.image ? 5 : 0) - ((a.views || 0) / 20 + (a.fame || 0) + (a.image ? 5 : 0))).slice(0, BUZZ_PER_RUN);
+console.log(`[${mins()} นาที] ยอดค้นหา + คลังรายจังหวัด เสร็จ`);
 for (const p of due) {
+  if (Date.now() - T0 > 40 * 60000) { console.warn("ใช้เวลาเกิน 40 นาที หยุดค้นชื่อสถานที่ใน Lemon8 ไว้รอบหน้า"); break; }
   const q = p.name.th?.length >= 4 ? p.name.th : p.name.en;
   if (!q) continue;
   const m = mentions(p, (await lemon8(q)).filter(clean));
@@ -472,6 +485,7 @@ for (const p of places) {
   if (posts.length) p.posts = posts; else delete p.posts;
   if (!p.hot) delete p.trend;
 }
+console.log(`[${mins()} นาที] เสร็จทั้งหมด`);
 console.log(`คลังโพสต์ Lemon8 ${pool.size} โพสต์ · ค้นชื่อสถานที่ ${due.length} แห่ง · มีกระแส ${places.filter(p => p.hot).length} แห่ง`);
 // เรียง: คะแนนกระแส → คนค้นหาเพิ่มขึ้น → คนค้นหาเยอะ → ความดัง
 places.sort((a, b) => (b.hot || 0) - (a.hot || 0) || (b.rising ? 1 : 0) - (a.rising ? 1 : 0) || (b.views || 0) - (a.views || 0) || b.fame - a.fame);

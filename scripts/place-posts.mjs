@@ -52,11 +52,24 @@ const kwNew = Object.keys(extract.kws).filter(k => extract.kws[k] === 0 && !base
 const kwOld = Object.keys(extract.kws).filter(k => typeof extract.kws[k] === "string" && !base.has(k) && (Date.now() - new Date(extract.kws[k])) / 864e5 > 14).slice(0, 40);
 kws.push(...kwNew, ...kwOld);
 console.log(`หน้าค้นหา ${kws.length} (ย่าน/ถนน ${areaKws.length} · คำค้นแนะนำใหม่ ${kwNew.length} · เปิดซ้ำ ${kwOld.length})`);
-for (const kw of kws) {
+// หน้า /experience/ มีเฉพาะคำค้นยอดนิยม: คำที่ไม่มีหน้า (404) ข้าม 30 วัน
+// และหยุดเมื่อใช้เวลาเกิน 25 นาที (ที่เหลือรอบหน้า) — เดิมเปิดทุกคำทุกวัน รายการโตขึ้นจนใช้เวลาเกือบชั่วโมง
+extract.seen ||= {};
+const T0 = Date.now(), DAILY = new Set(TOPICS);
+const ageDays = d => (Date.now() - new Date(d)) / 864e5;
+// หน้าที่มีอยู่ต้องเปิดทุกรอบ (โพสต์ที่ได้ไม่ได้เก็บข้ามรอบ ถ้าข้ามสถานที่จะเสียโพสต์ที่จับคู่ไว้)
+const skipKw = kw => { const s = extract.seen[kw]; if (!s || DAILY.has(kw) || s.ok) return false; return ageDays(s.at) < 30; };
+const todoKws = kws.filter(kw => !skipKw(kw));
+console.log(`เปิดรอบนี้ ${todoKws.length} หน้า (ข้ามหน้าที่เพิ่งเปิด/ไม่มีหน้า ${kws.length - todoKws.length})`);
+let opened = 0;
+for (const kw of todoKws) {
+  if (Date.now() - T0 > 25 * 60000) { console.warn(`ใช้เวลาเกิน 25 นาที เปิดไป ${opened} หน้า ที่เหลือรอบหน้า`); break; }
+  opened++;
   await sleep(1500);
   try {
     const res = await fetch(`https://www.lemon8-app.com/experience/${encodeURIComponent(kw)}?region=th`, { headers: { "User-Agent": UA, "Accept-Language": "th" }, signal: AbortSignal.timeout(20000) });
     if (kw in extract.kws) extract.kws[kw] = res.status === 404 ? -1 : today;
+    extract.seen[kw] = { at: today, ok: res.ok };
     const html = await res.text();
     const big = [...html.matchAll(/<script[^>]*>([\s\S]*?)<\/script>/g)].map(m => m[1]).sort((a, b) => b.length - a.length)[0] || "";
     (function walk(o) {

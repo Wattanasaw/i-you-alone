@@ -79,7 +79,9 @@ const postFrom = o => {
 const todo = pool.filter(x => !(x.link in cache.posts)).slice(0, POSTS_MAX);
 console.log(`โพสต์ยอดนิยมที่ยังไม่ตรงสถานที่ ${pool.length} · เปิดดูหมุดรอบนี้ ${todo.length}`);
 let pinned = 0;
+const T0 = Date.now(), over = m => Date.now() - T0 > m * 60000;
 for (const x of todo) {
+  if (over(18)) { console.warn("ใช้เวลาเปิดโพสต์เกิน 18 นาที ที่เหลือรอบหน้า"); break; }
   await sleep(1100);
   try {
     const j = await l8Data(x.link);
@@ -105,6 +107,7 @@ console.log(`มีหมุดสถานที่ ${pinned}/${todo.length} �
 const poiIds = [...new Set(Object.values(cache.posts).map(e => e.poi).filter(Boolean))];
 for (const id of poiIds) {
   if (cache.pois[id] && days(cache.pois[id].at) < 14) continue;
+  if (over(28)) { console.warn("ใช้เวลาเกิน 28 นาที หยุดเปิดหน้าสถานที่ ที่เหลือรอบหน้า"); break; }
   await sleep(1500);
   try {
     const j = await l8Data(`https://www.lemon8-app.com/poi/${id}?region=th`);
