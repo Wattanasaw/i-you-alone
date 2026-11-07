@@ -2,13 +2,13 @@
 // อ่านเนื้อโพสต์เต็ม (+ ตัวหนังสือบนรูป) ของโพสต์ที่พูดถึง/ปักหมุดสถานที่นั้น แล้วให้ AI สรุปด้วยคำของตัวเอง:
 // จุดเด่น · ต้องลอง · เคล็ดลับ (ที่จอดรถ เวลาที่ดี การจอง) · ข้อควรรู้ · เหมาะกับ (แท็ก) — ไม่คัดลอกข้อความ, มีลิงก์ไปโพสต์ต้นฉบับ
 // สรุปใหม่เมื่อมีโพสต์ใหม่หรือครบ 45 วัน · ไม่มี AI = ใช้ผลเดิม
-// รัน หลัง scripts/trend-places.mjs · node scripts/place-reviews.mjs [--ai 15]
+// รัน หลัง scripts/trend-places.mjs · node scripts/place-reviews.mjs [--ai 25]
 import { readFile, writeFile, rename } from "node:fs/promises";
 import { aiJSON, aiAvailable, aiName } from "./gemini.mjs";
 
 const UA = "IYouAloneBot/1.0 (+https://wattanasaw.github.io/i-you-alone/)";
 const arg = (n, d) => { const i = process.argv.indexOf(n); return i > 0 ? +process.argv[i + 1] : d; };
-const AI_MAX = arg("--ai", 15), PER_ASK = 3, POSTS_PER = 4, REFRESH_DAYS = 45;
+const AI_MAX = arg("--ai", 25), PER_ASK = 4, POSTS_PER = 4, REFRESH_DAYS = 45;
 export const GOOD_FOR = ["photo", "work", "kids", "pets", "date", "group", "view", "nature", "chill", "budget", "night", "food"];
 const root = new URL("../", import.meta.url);
 const sleep = ms => new Promise(r => setTimeout(r, ms));
@@ -23,7 +23,7 @@ const all = [...data.places, ...trendPl];
 const sig = p => (p.posts || []).map(x => x.link).sort().join("|");
 
 // สถานที่ที่มีโพสต์รีวิว: กระแสแรงก่อน, คาเฟ่/ร้าน/ที่บันเทิงก่อน
-const FUN = new Set(["cafe", "animalcafe", "restaurant", "themepark", "zoo"]);
+const FUN = new Set(["cafe", "animalcafe", "restaurant", "nightlife", "themepark", "zoo"]);
 const todo = all.filter(p => p.posts?.length && (!cache[p.id] || cache[p.id].sig !== sig(p) && days(cache[p.id].at) > 7 || days(cache[p.id].at) > REFRESH_DAYS))
   .sort((a, b) => (b.hot || 0) + (FUN.has(b.kind) ? 5 : 0) - (a.hot || 0) - (FUN.has(a.kind) ? 5 : 0));
 console.log(`สถานที่ที่มีโพสต์รีวิว ${all.filter(p => p.posts?.length).length} · สรุปแล้ว ${Object.keys(cache).length} · รอสรุป ${todo.length} · AI: ${aiName()}`);
@@ -38,7 +38,11 @@ async function postText(link) {
     if (!a) return null;
     const body = String(a.content || a.shortContent || "").replace(/<br\s*\/?>|<\/p>/gi, "\n").replace(/<[^>]+>/g, "").replace(/&nbsp;/g, " ").replace(/&amp;/g, "&").replace(/[ \t]+/g, " ").replace(/\n{2,}/g, "\n").trim();
     const ocr = [].concat(Array.isArray(a.ocrText) ? a.ocrText : (() => { try { return JSON.parse(a.ocrText || "[]"); } catch { return [a.ocrText || ""]; } })()).join(" ").replace(/\s+/g, " ").trim();
-    const text = `${a.title}\n${body.slice(0, 1400)}${ocr ? `\n[ข้อความบนรูป] ${ocr.slice(0, 300)}` : ""}`;
+    // คอมเมนต์ของคนที่ไปมาแล้ว (ประสบการณ์จริงเพิ่ม เช่น "คิวยาว", "จอดรถยาก") — ไลก์มากก่อน สูงสุด 6 อัน
+    const cm = Object.values(ld).flatMap(v => v && typeof v === "object" ? Object.entries(v) : []).find(([k]) => k.includes("ArticleComments"))?.[1]?.items || [];
+    const comments = cm.map(c => ({ t: String(c.text || "").replace(/\s+/g, " ").trim(), d: +c.diggCount || 0 })).filter(c => c.t.length >= 12)
+      .sort((x, y) => y.d - x.d).slice(0, 6).map(c => c.t.slice(0, 140));
+    const text = `${a.title}\n${body.slice(0, 1400)}${ocr ? `\n[ข้อความบนรูป] ${ocr.slice(0, 300)}` : ""}${comments.length ? `\n[คอมเมนต์] ${comments.join(" / ")}` : ""}`;
     return { text, poi: a.locationInfo?.poiId ? { id: String(a.locationInfo.poiId), name: a.locationInfo.poiName || "" } : null };
   } catch { return null; }
 }

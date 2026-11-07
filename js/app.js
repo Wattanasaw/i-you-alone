@@ -848,7 +848,7 @@
     if (p.fee === "yes") return t("feeYes");
     return "-";
   }
-  const MENU_KINDS = new Set(["cafe", "animalcafe", "restaurant"]);
+  const MENU_KINDS = new Set(["cafe", "animalcafe", "restaurant", "nightlife"]);
   const menuText = p => p.menuPrice ? (p.menuPrice.min === p.menuPrice.max ? `~${fmtBaht(p.menuPrice.min)}` : `${Number(p.menuPrice.min).toLocaleString(locale())}–${fmtBaht(p.menuPrice.max)}`) : "-";
   const inPlaceProvince = p => state.filters.province === "all" || p.province === state.filters.province;
 
@@ -899,7 +899,7 @@
         <a href="#/place/${encodeURIComponent(p.id)}">
           <div class="pr-body">
             <h3>${esc(placeName(p))}</h3>
-            <div class="pr-tags">${c.name ? `<span class="cat">${c.icon} ${esc(pick(c.name))}</span>` : ""}${p.trend ? `<span class="hot">🔥 ${t("trending")}</span>` : p.rising ? `<span class="hot">📈 ${t("searchRising")}</span>` : ""}${p.business ? `<span class="ok">✅ ${t("verifiedShop")}</span>` : ""}</div>
+            <div class="pr-tags">${c.name ? `<span class="cat">${c.icon} ${esc(pick(c.name))}</span>` : ""}${c.adult ? `<span class="adult">🔞 ${t("age20")}</span>` : ""}${p.trend ? `<span class="hot">🔥 ${t("trending")}</span>` : p.rising ? `<span class="hot">📈 ${t("searchRising")}</span>` : ""}${p.business ? `<span class="ok">✅ ${t("verifiedShop")}</span>` : ""}</div>
             <div class="meta">📍 <span>${esc(where)}</span></div>
             ${p.hours || price ? `<div class="meta">${p.hours ? `🕒 <span>${open === true ? `<b class="open-now">${t("openNowShort")}</b> · ` : open === false ? `<b class="closed-now">${t("closedNow")}</b> · ` : ""}${esc(fmtHours(p.hours))}</span>` : ""}${p.hours && price ? " · " : ""}${price}</div>` : ""}
             ${summary ? `<p class="place-sum">${esc(summary.slice(0, 120))}${summary.length > 120 ? "…" : ""}</p>` : ""}
@@ -950,7 +950,7 @@
   const PF_DEFAULT = { sort: "rec", dist: 0, open: false, free: false, hot: false, district: "", districtOf: "" };
   state.pf = { ...PF_DEFAULT, ...readLS("placeFilters", {}) };
   // คาเฟ่ + สถานที่บันเทิง (สวนสนุก สวนสัตว์ คาเฟ่สัตว์) ที่มีรูป ดันขึ้นก่อนในมุมมอง "แนะนำ"
-  const FUN_BOOST = { cafe: 70, animalcafe: 70, themepark: 60, restaurant: 50, zoo: 45 };
+  const FUN_BOOST = { cafe: 70, animalcafe: 70, themepark: 60, restaurant: 50, nightlife: 50, zoo: 45 };
   // มีรูปปก (รูปที่ AI คัด หรือรูปจากโพสต์รีวิว) = ดันขึ้น; รูปจากโพสต์ได้คะแนนรูปกลางๆ (6)
   const hasCover = p => !!(p.image || coverOf(p));
   // ไม่ต้องมีรูปก็ขึ้นก่อนได้: หมวดสนุก + กระแส + มีสรุปรีวิว สำคัญกว่ารูป (รูปเป็นแค่โบนัสเล็กน้อย)
@@ -1096,7 +1096,6 @@
           ${activeCount ? `<button type="button" class="pill-btn clear" id="pfClear">✕ ${t("clearFilters")}</button>` : ""}
         </div>
       </div>
-      ${state.geoFail && (!near || state.pos?.manual) ? nearPicker() : ""}
       ${board.length ? `<section class="trend-board">
         <div class="section-head"><h2>${t("trendBoard")}</h2><small>${t("swipe")}</small></div>
         <div class="news-list">${board.map(trendCard).join("")}</div></section>` : ""}
@@ -1137,7 +1136,7 @@
     const setPf = patch => { Object.assign(state.pf, patch); writeLS("placeFilters", state.pf); state.placeShow = 30; keep(renderPlaces)(); };
     document.getElementById("pfNear").addEventListener("click", () => {
       if (state.pf.sort === "near") return setPf({ sort: "rec", dist: 0 });
-      locate(() => { if (state.pos) setPf({ sort: "near", dist: state.pf.dist || 20 }); else setPf({ sort: "rec" }); }, true);
+      locate(() => { if (state.pos) setPf({ sort: "near", dist: state.pf.dist || 20 }); else setPf({ sort: "rec" }); });
     });
     // ระบุตำแหน่งไม่ได้ → เลือกจุดเอง (จังหวัด → เขต/อำเภอ) ใช้จุดกึ่งกลางของสถานที่ในพื้นที่นั้นเป็น "ตำแหน่งของฉัน"
     document.getElementById("nearPick")?.addEventListener("change", e => {
@@ -1211,7 +1210,7 @@
         <div class="pd-hero ${coverOf(p) ? "" : "noimg"}">
           ${placeCover(p, "cover pd-cover")}</div>
           <div class="pd-hero-text">
-            <div class="pd-tags">${c ? `<span>${c.icon} ${esc(pick(c.name))}</span>` : ""}${p.business ? `<span>✅ ${t("verifiedShop")}</span>` : ""}${p.trend ? `<span class="hot">🔥 ${t("trending")}</span>` : p.rising ? `<span class="hot">📈 ${t("searchUp", { n: p.rising })}</span>` : ""}</div>
+            <div class="pd-tags">${c ? `<span>${c.icon} ${esc(pick(c.name))}</span>` : ""}${c?.adult ? `<span class="adult">🔞 ${t("age20")}</span>` : ""}${p.business ? `<span>✅ ${t("verifiedShop")}</span>` : ""}${p.trend ? `<span class="hot">🔥 ${t("trending")}</span>` : p.rising ? `<span class="hot">📈 ${t("searchUp", { n: p.rising })}</span>` : ""}</div>
             <h1>${esc(name)}</h1>
             ${p.name?.en && p.name.en !== name ? `<p class="pd-sub">${esc(p.name.en)}</p>` : ""}
           </div>
@@ -1229,6 +1228,7 @@
         <section class="pd-panel" data-panel="overview" ${state.placeTab === "overview" ? "" : "hidden"}>
           ${summary ? `<p class="pd-summary" id="pdSum">${esc(summary)}</p>${summary.length > 180 ? `<button class="link-btn" id="pdMore">${t("readMore")}</button>` : ""}` : ""}
           ${facts}
+          ${c?.adult ? `<p class="adult-note">🔞 ${t("age20Place")}</p>` : ""}
           ${posts.length ? `<section class="panel pd-buzz">
             <div class="pd-buzz-head"><h2>🔥 ${t("placeTrends")}</h2>${posts.length > 2 ? `<button class="link-btn" data-ptab="trends">${t("seeAll")} ${posts.length} ›</button>` : ""}</div>
             ${freshPopular(posts).slice(0, 2).map(n => `<a class="buzz-row" ${inAppLink(n.link)}>

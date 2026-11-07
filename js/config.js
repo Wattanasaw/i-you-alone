@@ -29,6 +29,8 @@ window.APP_CONFIG = {
     { id: "cafe", icon: "☕", color: "#b45309", color2: "#f9a8d4", name: { th: "คาเฟ่", en: "Cafés", zh: "咖啡馆" } },
     { id: "animalcafe", icon: "🐱", color: "#f97316", color2: "#facc15", name: { th: "คาเฟ่สัตว์", en: "Animal cafés", zh: "动物咖啡馆" } },
     { id: "restaurant", icon: "🍽️", color: "#dc2626", color2: "#f59e0b", name: { th: "ร้านอาหาร", en: "Restaurants", zh: "餐厅" } },
+    // ผับ/บาร์/ร้านนั่งดื่มกลางคืน (แสดงป้าย 20+ อัตโนมัติ)
+    { id: "nightlife", icon: "🍸", color: "#4c1d95", color2: "#db2777", adult: true, name: { th: "ผับ/บาร์กลางคืน", en: "Bars & nightlife", zh: "酒吧/夜生活" } },
     { id: "themepark", icon: "🎢", color: "#e11d48", color2: "#8b5cf6", name: { th: "สวนสนุก/สวนน้ำ", en: "Theme & water parks", zh: "游乐园/水上乐园" } },
     { id: "zoo", icon: "🦒", color: "#65a30d", color2: "#0d9488", name: { th: "สวนสัตว์", en: "Zoos & aquariums", zh: "动物园/水族馆" } },
     { id: "nature", icon: "🏖️", color: "#0891b2", color2: "#22c55e", name: { th: "ทะเล/น้ำตก/จุดชมวิว", en: "Beaches, waterfalls & viewpoints", zh: "海滩/瀑布/观景台" } },

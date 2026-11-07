@@ -14,7 +14,7 @@ import { aiJSON, aiAvailable, aiName } from "./gemini.mjs";
 const UA = "IYouAloneBot/1.0 (+https://wattanasaw.github.io/i-you-alone/)";
 const arg = (n, d) => { const i = process.argv.indexOf(n); return i > 0 ? +process.argv[i + 1] : d; };
 const POSTS_MAX = arg("--posts", 320), AI_MAX = arg("--ai", 8), KEEP_DAYS = 200;
-const KINDS = ["cafe", "animalcafe", "restaurant", "themepark", "zoo", "nature", "landmark", "museum", "park"];
+const KINDS = ["cafe", "animalcafe", "restaurant", "nightlife", "themepark", "zoo", "nature", "landmark", "museum", "park"];
 const root = new URL("../", import.meta.url);
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 const readJSON = async (p, fb) => { try { return JSON.parse(await readFile(new URL(p, root), "utf8")); } catch { return fb; } };
@@ -26,9 +26,11 @@ const data = await readJSON("data/places.json", null);
 if (!data?.places) { console.error("ไม่มี data/places.json"); process.exit(1); }
 // โพสต์บนบอร์ด "เทรนด์วัยรุ่นมาแรง" (คนเห็นจริงในแอพ) มาก่อน → ทุกการ์ดเทรนด์ควรกดไปหน้าสถานที่ได้ (เช่น Baan Biome)
 const boardPosts = Object.values(data.trends || {}).flat().filter(x => /lemon8-app\.com/.test(x.link || ""));
-const pool = [...new Map([...boardPosts, ...await readJSON(".cache/l8-pool.json", [])].map(x => [x.link, x])).values()];
 const cache = await readJSON("data/trend-extract.json", {});
-cache.posts ||= {}; cache.pois ||= {}; cache.geo ||= {};
+cache.posts ||= {}; cache.pois ||= {}; cache.geo ||= {}; cache.related ||= {}; cache.kws ||= {};
+// คลัง: บอร์ด → โพสต์จากหน้าค้นหา → "โพสต์ที่เกี่ยวข้อง" ที่เจอในหน้าโพสต์รอบก่อนๆ (ขยายวงออกไปเรื่อยๆ ทุกวัน)
+const related = Object.values(cache.related).filter(x => x.likes >= 5).sort((a, b) => b.likes - a.likes);
+const pool = [...new Map([...boardPosts, ...await readJSON(".cache/l8-pool.json", []), ...related].map(x => [x.link, x])).values()];
 const win = {}; new Function("window", await readFile(new URL("js/i18n.js", root), "utf8"))(win);
 const PROVINCES = win.PROVINCES;
 
@@ -80,7 +82,19 @@ let pinned = 0;
 for (const x of todo) {
   await sleep(1100);
   try {
-    const loc = find(await l8Data(x.link), "locationInfo");
+    const j = await l8Data(x.link);
+    const loc = find(j, "locationInfo");
+    // ขยายวง: โพสต์ที่เกี่ยวข้อง (~20–60 โพสต์/หน้า) → คลังรอบหน้า · คำค้นที่เกี่ยวข้อง → หน้าค้นหาใหม่ให้ place-posts.mjs
+    const ld = Object.values(j?.state?.loaderData || {}).find(v => v && Object.keys(v).some(k => k.startsWith("$ArticleDetail"))) || {};
+    for (const o of Object.entries(ld).find(([k]) => k.startsWith("$ArticleRelatedPost"))?.[1]?.items || []) {
+      if (!o?.groupId || !o.title) continue;
+      const r = postFrom(o);
+      if (r.title.length >= 8 && days(r.date) <= KEEP_DAYS && !(r.link in cache.posts)) { delete r.image; cache.related[r.link] = r; }
+    }
+    for (const q of find(j, "relatedQueryInfos") || []) {
+      const w = String(q?.word || "").trim().toLowerCase();
+      if (w.length >= 4 && w.length <= 40 && !(w in cache.kws)) cache.kws[w] = 0; // 0 = ยังไม่ได้เปิด
+    }
     cache.posts[x.link] = loc?.poiId ? { at: today, poi: String(loc.poiId), name: loc.poiName } : { at: today };
     if (loc?.poiId) pinned++;
   } catch (e) { console.warn("เปิดโพสต์ไม่ได้:", e.message.slice(0, 80)); }
@@ -106,20 +120,21 @@ for (const id of poiIds) {
 const ANIMAL = /ซามอย|หมา|สุนัข|น้องหมา|แมว|น้องแมว|คาปิบาร่า|capybara|อัลปาก้า|alpaca|แรคคูน|เม่นแคระ|กระต่าย|นกฮูก|แกะ|นาก|samoyed|corgi|คอร์กี้|ชิบะ|shiba|ไซบีเรียน|husky|โกลเด้น|golden|dog|cat|puppy|kitten/i;
 const guessKind = s => /แมว|หมา|สุนัข|cat|dog|นก|กระต่าย|อัลปาก้า|capybara|คาปิบาร่า|animal|สัตว์/i.test(s) && /คาเฟ่|cafe|café/i.test(s) ? "animalcafe"
   : /คาเฟ่|cafe|café|coffee|กาแฟ|bakery|เบเกอรี่|มัทฉะ|matcha|ขนม|dessert/i.test(s) ? "cafe"
-  : /ร้านอาหาร|restaurant|หมูกระทะ|ชาบู|ก๋วยเตี๋ยว|ปิ้งย่าง|ซีฟู้ด|bistro|bar\b|ครัว|kitchen/i.test(s) ? "restaurant"
+  : /ผับ|\bpub\b|\bbar\b|บาร์|cocktail|ค็อกเทล|ร้านเหล้า|ร้านนั่งดื่ม|rooftop|รูฟท็อป|speakeasy|craft ?beer|คราฟต์เบียร์|nightclub|ไนท์คลับ|ดนตรีสด|live ?music/i.test(s) ? "nightlife"
+  : /ร้านอาหาร|restaurant|หมูกระทะ|ชาบู|ก๋วยเตี๋ยว|ปิ้งย่าง|ซีฟู้ด|bistro|ครัว|kitchen/i.test(s) ? "restaurant"
   : /สวนสัตว์|zoo|ฟาร์ม|farm|aquarium|อควาเรียม/i.test(s) ? "zoo"
   : /สวนน้ำ|สวนสนุก|water ?park|theme ?park|amusement/i.test(s) ? "themepark"
   : /พิพิธภัณฑ์|museum|gallery|แกลเลอรี|นิทรรศการ|art/i.test(s) ? "museum"
   : /น้ำตก|ทะเล|หาด|beach|ภูเขา|ดอย|เขา|ทะเลสาบ|lake|จุดชมวิว|view ?point|อุทยาน|เกาะ|island|ถ้ำ|cave|camp|แคมป์/i.test(s) ? "nature"
   : /สวนสาธารณะ|park|สวน/i.test(s) ? "park" : "landmark";
-const SKIP = /โรงแรม|รีสอร์ท|hotel|resort|hostel|villa|วิลล่า|condo|คอนโด|โรงพยาบาล|clinic|คลินิก|สนามบิน|airport|สถานี|station|mall|ห้าง|central|เซ็นทรัล|เดอะมอลล์|robinson|lotus|โลตัส|big ?c|7-eleven|เซเว่น/i;
+const SKIP = /โรงแรม|รีสอร์ท|hotel|resort|hostel|villa|วิลล่า|condo|คอนโด|โรงพยาบาล|clinic|คลินิก|สนามบิน|airport|สถานี|station|mall|ห้าง|central|เซ็นทรัล|เดอะมอลล์|robinson|lotus|โลตัส|big ?c|7-eleven|เซเว่น|a.?go.?go|อะโกโก้|อาบอบนวด|massage|soapy/i;
 const needKind = Object.entries(cache.pois).filter(([, p]) => p.name && !p.kind);
 let asked = 0;
 for (let i = 0; i < needKind.length && aiAvailable() && asked < AI_MAX; i += 30) {
   const group = needKind.slice(i, i + 30);
   try {
     const out = await aiJSON(`Classify each place in Thailand (from Lemon8 location tags) into one kind: ${KINDS.join("|")}, or "skip" if it is a hotel/resort/accommodation, shopping mall, shop/store, hospital, office, transport station, or not a place people visit for leisure.
-animal cafés (cat/dog/samoyed/capybara/alpaca... — also when the name sounds like a normal café but the posts are about playing with animals there) = animalcafe; beaches, waterfalls, mountains, viewpoints, islands, camping = nature; temples, markets, old towns, landmarks = landmark.
+bars, pubs, cocktail/rooftop bars, nightclubs, live-music drinking venues = nightlife (but go-go bars, massage, adult entertainment = skip); animal cafés (cat/dog/samoyed/capybara/alpaca... — also when the name sounds like a normal café but the posts are about playing with animals there) = animalcafe; beaches, waterfalls, mountains, viewpoints, islands, camping = nature; temples, markets, old towns, landmarks = landmark.
 Return JSON {"results":[{"id","kind"}]}
 Places: ${JSON.stringify(group.map(([id, p]) => ({ id, name: p.name, address: p.address.slice(0, 80), posts: (p.posts || []).slice(0, 4).map(x => x.title) })))}`);
     asked++;
@@ -221,6 +236,10 @@ for (const id of poiIds) {
 const list = [...out.values()].map(({ _k, ...p }) => p).sort((a, b) => b.hot - a.hot);
 
 for (const [k, v] of Object.entries(cache.posts)) if (days(v.at) > KEEP_DAYS) delete cache.posts[k];
+// คลังโพสต์ที่เกี่ยวข้อง: ตัดที่เปิดแล้ว/เก่า เก็บไลก์สูงสุด 3,000 โพสต์ (คุมขนาดไฟล์)
+cache.related = Object.fromEntries(Object.entries(cache.related).filter(([k, v]) => !(k in cache.posts) && days(v.date) <= KEEP_DAYS).sort((a, b) => b[1].likes - a[1].likes).slice(0, 3000));
+// คำค้น: เก็บสูงสุด 3,000 คำ (ไม่มีหน้า = -1 ไม่เปิดซ้ำ)
+cache.kws = Object.fromEntries(Object.entries(cache.kws).slice(-3000));
 for (const [k, v] of Object.entries(cache.geo)) if (days(v.at) > 120) delete cache.geo[k];
 const live = new Set(Object.values(cache.posts).map(e => e.poi).filter(Boolean));
 for (const k of Object.keys(cache.pois)) if (!live.has(k)) delete cache.pois[k];

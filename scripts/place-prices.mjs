@@ -10,7 +10,7 @@ import { aiJSON, aiAvailable, aiName } from "./gemini.mjs";
 const UA = "IYouAloneBot/1.0 (+https://wattanasaw.github.io/i-you-alone/)";
 const arg = (n, d) => { const i = process.argv.indexOf(n); return i > 0 ? +process.argv[i + 1] : d; };
 const LIMIT = arg("--limit", 80), AI_MAX = arg("--ai", 20), PER_ASK = 5, REFRESH_DAYS = 60;
-const MENU_KINDS = new Set(["cafe", "animalcafe", "restaurant"]);
+const MENU_KINDS = new Set(["cafe", "animalcafe", "restaurant", "nightlife"]);
 const root = new URL("../", import.meta.url);
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 const readJSON = async (p, fb) => { try { return JSON.parse(await readFile(new URL(p, root), "utf8")); } catch { return fb; } };

@@ -12,7 +12,7 @@ const DRY = process.argv.includes("--dry");
 const UA = "IYouAloneBot/1.0 (+https://wattanasaw.github.io/i-you-alone/)";
 const PER_KIND = 60;        // จำนวนสถานที่ดังจาก Wikidata สูงสุดต่อหมวด
 // จำนวนสูงสุดจาก OpenStreetMap ต่อหมวด (เรียงจากข้อมูลครบที่สุด)
-const OSM_LIMIT = { cafe: 250, animalcafe: 80, zoo: 150, themepark: 150, museum: 250, park: 180, nature: 300, landmark: 300 };
+const OSM_LIMIT = { nightlife: 300, cafe: 250, animalcafe: 80, zoo: 150, themepark: 150, museum: 250, park: 180, nature: 300, landmark: 300 };
 // สถานที่ที่ปิดไปแล้วแต่ Wikidata ยังไม่อัปเดต (ใส่ชื่อภาษาอังกฤษ) — เพิ่มได้เมื่อเจอ
 const CLOSED = [/^Dusit Zoo$/i];
 const REFRESH_DAYS = 14;    // คำอธิบาย/เครดิตรูปเก่ากว่านี้ค่อยโหลดใหม่
@@ -64,6 +64,7 @@ const KINDS = {
   park:       { topic: /อุทยาน|ดอย|ภู[ก-ฮ]|ทะเลหมอก|น้ำตก|แคมป์|camping|จุดชมวิว|เดินป่า|national park|เขาใหญ่|ป่า|ทุ่ง/i, classes: ["Q46169"], news: ["ที่เที่ยวธรรมชาติ ไวรัล", "จุดชมวิว ทะเลหมอก วัยรุ่น", "แคมป์ปิ้ง ฮิต เช็คอิน"] },
   // น้ำตก ชายหาด เกาะ
   nature:     { topic: /ทะเล|ชายหาด|หาด|เกาะ|น้ำตก|จุดชมวิว|วิว|ทะเลหมอก|beach|island|waterfall|viewpoint/i, classes: ["Q34038", "Q40080", "Q23442"], news: ["ทะเล ไวรัล วัยรุ่น", "น้ำตก เช็คอิน", "จุดชมวิว ไวรัล"] },
+  nightlife:  { topic: /ผับ|บาร์|\bbar\b|\bpub\b|ร้านเหล้า|ร้านนั่งดื่ม|ค็อกเทล|cocktail|rooftop|รูฟท็อป|คราฟต์เบียร์|ดนตรีสด|ไนท์คลับ|ที่เที่ยวกลางคืน/i, classes: [], news: ["บาร์ลับ ไวรัล", "ร้านเหล้า เปิดใหม่ วัยรุ่น", "รูฟท็อปบาร์ วิวสวย"] },
   // วัดพุทธ โบราณสถาน
   landmark:   { topic: /วัด|แลนด์มาร์ก|landmark|โบราณสถาน|อุทยานประวัติศาสตร์|พระธาตุ|เจดีย์|ถนนคนเดิน|ตลาดน้ำ|ตลาด/i, classes: ["Q5393308", "Q839954"], news: ["วัดสวย ไวรัล", "แลนด์มาร์กใหม่ เช็คอิน", "ตลาด ไวรัล วัยรุ่น"] }
 };
@@ -152,17 +153,22 @@ const OSM_QUERY = {
   nature: `nwr["natural"="beach"]["name"](${BBOX});nwr["waterway"="waterfall"]["name"](${BBOX});nwr["tourism"="viewpoint"]["name"](${BBOX});`,
   // แลนด์มาร์ก: จุดท่องเที่ยว/โบราณสถาน/วัดที่เป็นแหล่งท่องเที่ยว (มีข้อมูลอ้างอิง)
   landmark: `nwr["tourism"="attraction"]["name"](${BBOX});nwr["historic"~"^(archaeological_site|ruins|monument|castle)$"]["name"](${BBOX});nwr["amenity"="place_of_worship"]["religion"="buddhist"]["wikidata"](${BBOX});`,
+  // ผับ/บาร์/ไนท์คลับ: เฉพาะร้านที่มีเวลาเปิด หรือเว็บ/เพจ (ข้อมูลพอให้ไปได้จริง)
+  nightlife: `nwr["amenity"~"^(bar|pub|nightclub)$"]["name"]["opening_hours"](${BBOX});nwr["amenity"~"^(bar|pub|nightclub)$"]["name"]["website"](${BBOX});nwr["amenity"~"^(bar|pub|nightclub)$"]["name"]["contact:facebook"](${BBOX});nwr["amenity"~"^(bar|pub|nightclub)$"]["name"]["contact:instagram"](${BBOX});`,
   // คาเฟ่ทั่วไปมีเป็นหมื่น → เอาเฉพาะร้านที่ข้อมูลครบ (เวลาเปิด + เว็บ/เพจ)
   cafe: `nwr["amenity"="cafe"]["name"]["opening_hours"]["website"](${BBOX});nwr["amenity"="cafe"]["name"]["opening_hours"]["contact:facebook"](${BBOX});nwr["amenity"="cafe"]["name"]["opening_hours"]["contact:instagram"](${BBOX});nwr["amenity"="cafe"]["name"]["tourism"="attraction"](${BBOX});`
 };
 // ร้านเครือข่าย/แฟรนไชส์ ไม่ใช่ "คาเฟ่ที่ไปเที่ยว"
 const CHAIN = /amazon|อเมซอน|starbucks|สตาร์บัค|inthanin|อินทนิล|punthai|พันธุ์ไทย|true coffee|ทรู คอฟฟี่|black canyon|แบล็คแคนยอน|doi chaang|ดอยช้าง|coffee world|chao doi|ชาวดอย|kudsan|กาแฟพันธุ์|all cafe|7-?eleven|เซเว่น|ptt|tim hortons|%|mezzo|cafe de norasingh|wawee|วาวี|dunkin|mister donut|after you|swensen|s&p|bake a wish|kamu|ชาตรามือ|cha tra mue|bearhouse|tiger sugar/i;
+// ผับ/บาร์: ไม่รวมอะโกโก้/สถานบริการ/อาบอบนวด/บาร์โฮสเตส (แอพแนะนำที่เที่ยวทั่วไป)
+const ADULT_ONLY = /a.?go.?go|อะโกโก้|โคโยตี้|coyote|massage|นวด|soapy|lady ?boy|girls?\b|ladies|beer bar|เบียร์บาร์|strip|cabaret|host(ess)? bar|gentlemen|cannabis|weed|กัญชา|\bbuds?\b|\b420\b|dispensary/i;
 const osmTagsFame = t => ["website", "contact:website", "opening_hours", "phone", "contact:phone", "contact:facebook", "contact:instagram", "name:en", "image", "wikimedia_commons", "description"].filter(k => t[k]).length + (t.wikidata ? 3 : 0) + (t.wikipedia ? 2 : 0);
 async function osmKind(kind) {
   const q = `[out:json][timeout:150];(${OSM_QUERY[kind]});out center tags;`;
   const els = await overpass(q);
   if (!els) return null;
-  return els.filter(e => e.tags?.name && (e.lat || e.center) && !(kind === "cafe" && (CHAIN.test(e.tags.name) || e.tags.brand)))
+  return els.filter(e => e.tags?.name && (e.lat || e.center) && !(kind === "cafe" && (CHAIN.test(e.tags.name) || e.tags.brand))
+      && !(kind === "nightlife" && (ADULT_ONLY.test(e.tags.name) || e.tags.brand || /hotel|hostel|lobby/i.test(e.tags.name))))
     .map(e => {
       const t = e.tags;
       const file = (t.wikimedia_commons || "").replace(/^File:/i, "") || (/commons\.wikimedia\.org\/wiki\/File:(.+)$/.exec(t.image || "") || [])[1];
@@ -263,7 +269,7 @@ async function news(q) {
 const LEMON8 = {
   cafe: ["คาเฟ่เปิดใหม่", "คาเฟ่"], animalcafe: ["คาเฟ่แมว", "คาเฟ่สัตว์", "คาเฟ่หมา"], zoo: ["สวนสัตว์", "ฟาร์มสัตว์"],
   themepark: ["สวนสนุก", "สวนน้ำ"], museum: ["นิทรรศการ", "พิพิธภัณฑ์"], park: ["อุทยานแห่งชาติ", "กางเต็นท์", "ทะเลหมอก"],
-  nature: ["น้ำตก", "ทะเล", "จุดชมวิว"], landmark: ["วัดสวย", "ที่เที่ยว", "ตลาดน้ำ"]
+  nature: ["น้ำตก", "ทะเล", "จุดชมวิว"], nightlife: ["บาร์ลับ", "ร้านเหล้า", "รูฟท็อปบาร์"], landmark: ["วัดสวย", "ที่เที่ยว", "ตลาดน้ำ"]
 };
 const LEMON8_DAYS = 120;
 // จังหวัด/ย่านเที่ยวยอดนิยม → หน้า "ที่เที่ยว…/คาเฟ่…" ใน Lemon8 (ช่วยจับกระแสรายสถานที่)

@@ -23,6 +23,9 @@ const TOPICS = ["คาเฟ่เปิดใหม่", "คาเฟ่ล�
   "คาเฟ่ถ่ายรูป", "คาเฟ่นั่งทำงาน", "คาเฟ่ใกล้bts", "คาเฟ่ใกล้mrt", "คาเฟ่เปิดดึก", "คาเฟ่มัทฉะ", "คาเฟ่ญี่ปุ่น", "คาเฟ่เกาหลี", "คาเฟ่ดอกไม้",
   "คาเฟ่ทุ่งหญ้า", "คาเฟ่ในป่า", "คาเฟ่วิวนา", "คาเฟ่บ้านไม้", "คาเฟ่ลอยน้ำ", "คาเฟ่ขนมอร่อย", "คาเฟ่ครัวซองต์", "คาเฟ่ wellness", "คาเฟ่ฮีลใจ",
   "ร้านอาหารวิวสวย", "ร้านอาหารริมน้ำ", "ร้านอาหารบรรยากาศดี", "ร้านอาหารเปิดใหม่", "หมูกระทะ", "บุฟเฟ่ต์", "ร้านเด็ด", "ร้านลับ",
+  // ผับ/บาร์/ที่เที่ยวกลางคืน
+  "บาร์ลับ", "บาร์", "ผับ", "ร้านเหล้า", "ร้านนั่งดื่ม", "รูฟท็อปบาร์", "rooftop bar", "บาร์ค็อกเทล", "cocktail bar", "speakeasy bar", "คราฟต์เบียร์", "ร้านเหล้าดนตรีสด",
+  "ร้านนั่งชิลกลางคืน", "ที่เที่ยวกลางคืน", "ผับเปิดใหม่", "บาร์เปิดใหม่", "jazz bar", "บาร์วิวสวย", "ร้านเหล้าริมน้ำ", "ไนท์คลับ",
   "ที่เที่ยวเปิดใหม่", "ที่เที่ยวใกล้กรุงเทพ", "ที่เที่ยวถ่ายรูป", "ฟาร์มแกะ", "สวนดอกไม้", "ทุ่งดอกไม้", "ล่องเรือ", "สวนสัตว์เปิด"];
 // คาเฟ่สัตว์ในเมืองท่องเที่ยวหลัก
 const ANIMAL_CITIES = ["เชียงใหม่", "เชียงราย", "ชลบุรี", "พัทยา", "ระยอง", "นครราชสีมา", "เขาใหญ่", "หัวหิน", "ขอนแก่น", "ภูเก็ต", "นนทบุรี", "ปทุมธานี", "นครปฐม", "อยุธยา", "กาญจนบุรี", "สมุทรปราการ"];
@@ -36,14 +39,25 @@ const districtCache = JSON.parse(await readFile(new URL("data/place-districts.js
 const districtOf = p => p.district || (Number.isFinite(+p.lat) ? districtCache[`${(+p.lat).toFixed(3)},${(+p.lng).toFixed(3)}`] : null);
 const BIG_ROADS = /^(สุขุมวิท|พหลโยธิน|เพชรเกษม|มิตรภาพ|สายเอเชีย|พระราม)/;
 const streetOf = p => [...String(p.address || "").matchAll(/(?:ซอย|ซ\.|ถนน|ถ\.)\s*([ก-๙a-zA-Z]{3,20})/g)].map(m => m[1]).filter(x => !BIG_ROADS.test(x));
-const AREA_KINDS = { cafe: "คาเฟ่", animalcafe: "คาเฟ่", restaurant: "ร้านอาหาร" };
+const AREA_KINDS = { cafe: "คาเฟ่", animalcafe: "คาเฟ่", restaurant: "ร้านอาหาร", nightlife: "บาร์" };
 const areaKws = [...new Set(data.places.filter(p => AREA_KINDS[p.kind]).flatMap(p => [districtOf(p) && `${AREA_KINDS[p.kind]}${districtOf(p)}`, ...streetOf(p).map(st => `${AREA_KINDS[p.kind]}${st}`)]).filter(Boolean))];
-const kws = [...new Set([...TOPICS, ...ANIMAL_CITIES.flatMap(c => [`คาเฟ่หมา${c}`, `คาเฟ่แมว${c}`]), ...PROV.flatMap(p => [`คาเฟ่${p}`, `ที่เที่ยว${p}`, `ร้านอาหาร${p}`]), ...areaKws])];
-console.log(`หน้าค้นหา ${kws.length} (ย่าน/ถนน ${areaKws.length})`);
+const kws = [...new Set([...TOPICS, ...ANIMAL_CITIES.flatMap(c => [`คาเฟ่หมา${c}`, `คาเฟ่แมว${c}`]), ...PROV.flatMap(p => [`คาเฟ่${p}`, `ที่เที่ยว${p}`, `ร้านอาหาร${p}`, `บาร์${p}`]), ...areaKws])];
+// คำค้นที่ Lemon8 แนะนำในหน้าโพสต์ (เก็บโดย trend-places.mjs เช่น "คาเฟ่ซามอยด์ กรุงเทพ") — ขยายวงทุกวัน
+// 0 = ยังไม่เปิด · -1 = ไม่มีหน้า (ไม่เปิดซ้ำ) · วันที่ = เปิดล่าสุด (เปิดซ้ำทุก 14 วัน)
+const extract = JSON.parse(await readFile(new URL("data/trend-extract.json", root), "utf8").catch(() => "{}"));
+extract.kws ||= {};
+const today = new Date().toISOString().slice(0, 10);
+const base = new Set(kws);
+const kwNew = Object.keys(extract.kws).filter(k => extract.kws[k] === 0 && !base.has(k)).slice(0, 120);
+const kwOld = Object.keys(extract.kws).filter(k => typeof extract.kws[k] === "string" && !base.has(k) && (Date.now() - new Date(extract.kws[k])) / 864e5 > 14).slice(0, 40);
+kws.push(...kwNew, ...kwOld);
+console.log(`หน้าค้นหา ${kws.length} (ย่าน/ถนน ${areaKws.length} · คำค้นแนะนำใหม่ ${kwNew.length} · เปิดซ้ำ ${kwOld.length})`);
 for (const kw of kws) {
   await sleep(1500);
   try {
-    const html = await (await fetch(`https://www.lemon8-app.com/experience/${encodeURIComponent(kw)}?region=th`, { headers: { "User-Agent": UA, "Accept-Language": "th" }, signal: AbortSignal.timeout(20000) })).text();
+    const res = await fetch(`https://www.lemon8-app.com/experience/${encodeURIComponent(kw)}?region=th`, { headers: { "User-Agent": UA, "Accept-Language": "th" }, signal: AbortSignal.timeout(20000) });
+    if (kw in extract.kws) extract.kws[kw] = res.status === 404 ? -1 : today;
+    const html = await res.text();
     const big = [...html.matchAll(/<script[^>]*>([\s\S]*?)<\/script>/g)].map(m => m[1]).sort((a, b) => b.length - a.length)[0] || "";
     (function walk(o) {
       if (!o || typeof o !== "object") return;
@@ -93,7 +107,8 @@ for (const p of data.places) {
   if (score >= 3 && score > (p.hot || 0)) { if (!p.hot) newHot++; p.hot = score; p.trend = Math.max(p.trend || 0, m.length); }
 }
 await save("data/places.json", JSON.stringify(data, null, 1) + "\n");
+await save("data/trend-extract.json", JSON.stringify(extract) + "\n");
 // โพสต์ยอดนิยมที่ยังจับคู่กับสถานที่ไม่ได้ → ส่งต่อให้ trend-places.mjs (AI หาชื่อสถานที่ + หาพิกัดบนแผนที่) · ไฟล์ชั่วคราว ไม่ขึ้นเว็บ
 await mkdir(new URL(".cache/", root), { recursive: true });
-await writeFile(new URL(".cache/l8-pool.json", root), JSON.stringify(list.filter(x => !usedLinks.has(x.link) && x.likes >= 20).sort((a, b) => b.likes - a.likes).map(({ body, ...x }) => x)));
+await writeFile(new URL(".cache/l8-pool.json", root), JSON.stringify(list.filter(x => !usedLinks.has(x.link) && x.likes >= 5).sort((a, b) => b.likes - a.likes).map(({ body, ...x }) => x)));
 console.log(`สถานที่ที่มีโพสต์พูดถึง ${matched} แห่ง · กระแสใหม่ ${newHot} แห่ง · กระแสรวม ${data.places.filter(p => p.hot).length} แห่ง`);
