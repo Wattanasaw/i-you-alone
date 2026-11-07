@@ -910,6 +910,33 @@
   // คาเฟ่ + สถานที่บันเทิง (สวนสนุก สวนสัตว์ คาเฟ่สัตว์) ที่มีรูป ดันขึ้นก่อนในมุมมอง "แนะนำ"
   const FUN_BOOST = { cafe: 70, animalcafe: 70, themepark: 60, restaurant: 50, zoo: 45 };
   const placeRank = p => (p.image ? FUN_BOOST[p.kind] || 0 : 0) + (p.business ? 30 : 0) + (p.hot ? 100 + Math.min(p.hot, 60) * 3 : 0) + (p.rising ? 40 : 0) + (p.image ? 20 + (p.imageScore || 6) * 2 : 0) + Math.min(p.fame || 0, 15);
+  const placeNames = p => [p.name?.th, p.name?.en, p.name?.th?.replace(/^(อุทยานแห่งชาติ|สวนสัตว์|พิพิธภัณฑสถานแห่งชาติ|พิพิธภัณฑ์|คาเฟ่|ร้าน|วัด)\s*/, "")].filter(s => s && s.length >= 6).map(s => s.toLowerCase());
+  // โพสต์ที่พูดถึงสถานที่นี้: จากข้อมูลรายสถานที่ (fetch-places) หรือจับคู่กับบอร์ดเทรนด์
+  function placePosts(p) {
+    if (p.posts?.length) return p.posts.map(x => ({ ...x, kind: p.kind }));
+    const names = placeNames(p);
+    if (!names.length) return [];
+    return Object.entries(state.trends).flatMap(([k, items]) => items.map(n => ({ ...n, kind: k })))
+      .filter(n => names.some(nm => String(n.title || "").toLowerCase().includes(nm))).sort((x, y) => (y.likes || 0) - (x.likes || 0)).slice(0, 4);
+  }
+  // สถานที่ที่โพสต์เทรนด์พูดถึง (ใช้บนบอร์ดเทรนด์)
+  let trendPlaceCache = null;
+  function placeOfPost(n) {
+    trendPlaceCache ||= state.places.filter(p => placeNames(p).length).map(p => [p, placeNames(p)]);
+    const title = String(n.title || "").toLowerCase();
+    return trendPlaceCache.find(([, names]) => names.some(nm => title.includes(nm)))?.[0] || null;
+  }
+  function trendCard(n) {
+    const pl = placeOfPost(n);
+    return `<div class="news-item trend-item" style="--c1:${PCAT[n.kind]?.color || "var(--accent)"}">
+      <a class="trend-link" ${inAppLink(n.link)}>
+        ${trendThumb(n)}
+        <h3>${esc(n.title)}</h3>
+        <div class="meta">${PCAT[n.kind]?.icon || ""} ${esc(n.source || "")}${n.date ? ` · ${new Date(n.date).toLocaleDateString(locale(), { day: "numeric", month: "short" })}` : ""}</div>
+      </a>
+      ${pl ? `<a class="trend-place" href="#/place/${encodeURIComponent(pl.id)}">📍 ${esc(placeName(pl))}</a>` : ""}
+    </div>`;
+  }
   function trendThumb(n) {
     const title = String(n.title || "").toLowerCase();
     // รูปปกของโพสต์ (พรีวิวจาก Lemon8 มีลายน้ำผู้โพสต์) → ไม่มีใช้รูปสถานที่ที่ชื่ออยู่ในโพสต์ → ไอคอนหมวด
@@ -974,12 +1001,7 @@
       </div>
       ${board.length ? `<section class="trend-board">
         <div class="section-head"><h2>${t("trendBoard")}</h2><small>${t("swipe")}</small></div>
-        <div class="news-list">${board.map(n => `
-          <a class="news-item trend-item" ${inAppLink(n.link)} style="--c1:${PCAT[n.kind]?.color || "var(--accent)"}">
-            ${trendThumb(n)}
-            <h3>${esc(n.title)}</h3>
-            <div class="meta">${PCAT[n.kind]?.icon || ""} ${esc(n.source || "")} · ${new Date(n.date).toLocaleDateString(locale(), { day: "numeric", month: "short" })}</div>
-          </a>`).join("")}</div></section>` : ""}
+        <div class="news-list">${board.map(trendCard).join("")}</div></section>` : ""}
       <div class="section-head" id="placesHead"><h2>${cat !== "all" && PCAT[cat] ? `${PCAT[cat].icon} ${esc(pick(PCAT[cat].name))}` : t("placesAll")} <small>${t("placesFound", { n: list.length })}</small></h2>${viewToggle()}</div>
       ${list.length ? `<div class="grid ${state.view}">${shown.map(placeCard).join("")}</div>` : ""}
       ${adSlot("list_inline")}
@@ -1074,6 +1096,10 @@
               ${wiki ? `<p><a ${inAppLink(wiki)}>📖 ${t("wikipedia")}</a></p>` : ""}
               ${p.imagePage ? `<p class="disclosure">${t("photo")}: <a ${inAppLink(p.imagePage)}>${esc(p.imageCredit || "Wikimedia Commons")}</a></p>` : ""}
             </section>` : ""}
+            ${(posts => posts.length ? `<section class="panel trend-board place-trends">
+              <h2>🔥 ${t("placeTrends")}</h2><p class="muted">${t("placeTrendsSub")}</p>
+              <div class="news-list">${posts.map(n => `<div class="news-item trend-item"><a class="trend-link" ${inAppLink(n.link)}>${trendThumb(n)}<h3>${esc(n.title)}</h3><div class="meta">${esc(n.source || "Lemon8")}${n.date ? ` · ${new Date(n.date).toLocaleDateString(locale(), { day: "numeric", month: "short" })}` : ""}</div></a></div>`).join("")}</div>
+            </section>` : "")(placePosts(p))}
             <p class="disclosure">${t("placeNote")}</p>
           </div>
           <div>

@@ -550,3 +550,9 @@ html.theme-anim, html.theme-anim * { transition: background-color .35s, color .3
 
 .claim-link { display: inline-block; margin-top: 10px; font-size: .85rem; color: var(--accent); text-decoration: none; border-bottom: 1px dashed currentColor; }
 
+
+/* โพสต์เทรนด์: การ์ด + ลิงก์ไปสถานที่ที่ตรงกัน */
+.trend-item .trend-link { display: flex; flex-direction: column; text-decoration: none; color: inherit; flex: 1; }
+.trend-place { display: block; margin: -4px 10px 9px; font-size: .7rem; font-weight: 600; color: var(--accent); text-decoration: none; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.place-trends { margin: 0 0 18px; }
+.place-trends .news-list { grid-auto-columns: min(46%, 170px); }

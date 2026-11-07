@@ -35,6 +35,9 @@ jobs:
       - name: รวบรวมที่เที่ยวดัง + ข่าวเทรนด์ (Wikidata, Wikipedia, OpenStreetMap, Google News)
         run: node scripts/fetch-places.mjs
         continue-on-error: true
+      - name: โพสต์เทรนด์ที่พูดถึงแต่ละสถานที่ (คลัง Lemon8 77 จังหวัด)
+        run: node scripts/place-posts.mjs
+        continue-on-error: true
       - name: เลือกรูปปกที่เที่ยวที่น่าดู (Wikimedia Commons + AI ดูรูปจริง)
         run: node scripts/place-images.mjs
         continue-on-error: true

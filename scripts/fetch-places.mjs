@@ -435,6 +435,7 @@ console.log(`ยอดค้นหา Wikipedia: ${pvOk} แห่ง · ค้�
 // 1) โพสต์ท่องเที่ยวรายจังหวัด/ย่านยอดฮิตใน Lemon8 (เพิ่มคลังโพสต์ให้กว้าง)
 for (const area of AREAS) for (const kw of [`ที่เที่ยว${area}`, `คาเฟ่${area}`]) addPool(await lemon8(kw));
 // 2) ค้นชื่อสถานที่ใน Lemon8 ตรงๆ (หมุนเวียน วันละ BUZZ_PER_RUN แห่ง ที่ดัง/คนค้นเยอะก่อน ผลใช้ได้ 10 วัน)
+const slimPost = x => ({ title: x.title.slice(0, 140), likes: x.likes, date: x.date, link: x.link, source: x.source, image: x.image });
 const daysAgo = t => (Date.now() - new Date(t || 0)) / 864e5;
 // ชื่อสั้น/คำทั่วไป ("ใหม่", "กลาง") ไปตรงกับโพสต์อื่นมั่ว → ใช้เฉพาะชื่อยาว 6 ตัวอักษรขึ้นไป
 const buzzNames = p => coreNames(p).map(n => n.toLowerCase().trim()).filter(n => n.length >= 6);
@@ -445,7 +446,7 @@ for (const p of due) {
   const q = p.name.th?.length >= 4 ? p.name.th : p.name.en;
   if (!q) continue;
   const m = mentions(p, (await lemon8(q)).filter(clean));
-  p.l8 = { n: m.length, likes: m.reduce((s, x) => s + x.likes, 0), at: new Date().toISOString().slice(0, 10) };
+  p.l8 = { n: m.length, likes: m.reduce((s, x) => s + x.likes, 0), at: new Date().toISOString().slice(0, 10), posts: m.sort((a, b) => b.likes - a.likes).slice(0, 4).map(slimPost) };
 }
 // 3) รวมคะแนน: โพสต์ที่พูดถึง (ถ่วงยอดไลก์) + คำค้นมาแรง Google + ยอดค้นหา Wikipedia ที่พุ่งขึ้น
 const poolPosts = [...pool.values()];
@@ -457,6 +458,9 @@ for (const p of places) {
   const hot = lemonScore + google * 4 + (p.rising ? 2 + Math.min(p.rising, 300) / 100 : 0);
   p.hot = hot >= 3 ? +hot.toFixed(1) : undefined;           // คะแนนกระแส (ใช้เรียงลำดับแนะนำ)
   p.trend = (m.length + (p.l8?.n || 0) + google) || undefined; // จำนวนครั้งที่ถูกพูดถึง (ป้าย 🔥)
+  // โพสต์เทรนด์ที่พูดถึงที่นี่ (แสดงในหน้ารายละเอียด) — รวมจากคลังรายจังหวัด + ค้นชื่อตรง, ยอดไลก์สูงก่อน
+  const posts = [...new Map([...m.map(slimPost), ...(p.l8?.posts || [])].map(x => [x.link, x])).values()].sort((a, b) => b.likes - a.likes).slice(0, 4);
+  if (posts.length) p.posts = posts; else delete p.posts;
   if (!p.hot) delete p.trend;
 }
 console.log(`คลังโพสต์ Lemon8 ${pool.size} โพสต์ · ค้นชื่อสถานที่ ${due.length} แห่ง · มีกระแส ${places.filter(p => p.hot).length} แห่ง`);
