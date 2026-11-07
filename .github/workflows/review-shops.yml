@@ -1,0 +1,37 @@
+name: AI ตรวจร้านจากสมาชิกธุรกิจ
+
+# ทุก 2 ชั่วโมง (ยังไม่ตั้งค่า Supabase = จบทันที ไม่เสียอะไร) · การเรียกสม่ำเสมอยังช่วยไม่ให้ Supabase ฟรีหยุดโปรเจกต์เพราะไม่มีการใช้งาน
+on:
+  schedule:
+    - cron: "17 */2 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  models: read
+
+concurrency:
+  group: data-update
+  cancel-in-progress: false
+
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+      - name: ตรวจรูป + ตำแหน่งร้านด้วย AI แล้วอนุมัติ/แจ้งให้แก้
+        run: node scripts/review-shops.mjs
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: บันทึกร้านที่อนุมัติ
+        run: |
+          git config user.name "news-bot"
+          git config user.email "news-bot@users.noreply.github.com"
+          git add data/business-places.json
+          git diff --cached --quiet || (git commit -m "อัปเดตร้านที่ผ่านการตรวจ" && git pull --rebase -X theirs && git push)

@@ -32,8 +32,18 @@ window.APP_CONFIG = {
     { id: "museum", icon: "🏛️", color: "#475569", color2: "#a16207", name: { th: "พิพิธภัณฑ์", en: "Museums", zh: "博物馆" } },
     { id: "park", icon: "🏞️", color: "#15803d", color2: "#0369a1", name: { th: "อุทยาน", en: "National parks", zh: "国家公园" } },
     { id: "nature", icon: "🏖️", color: "#0891b2", color2: "#22c55e", name: { th: "ทะเล/น้ำตก/จุดชมวิว", en: "Beaches, waterfalls & viewpoints", zh: "海滩/瀑布/观景台" } },
-    { id: "landmark", icon: "🛕", color: "#d97706", color2: "#7c3aed", name: { th: "วัด/แลนด์มาร์ก", en: "Temples & landmarks", zh: "寺庙/地标" } }
+    { id: "landmark", icon: "🛕", color: "#d97706", color2: "#7c3aed", name: { th: "วัด/แลนด์มาร์ก", en: "Temples & landmarks", zh: "寺庙/地标" } },
+    // ร้านอาหารที่เจ้าของร้านเพิ่มเอง (สมาชิกธุรกิจ ผ่านการตรวจของ AI แล้ว)
+    { id: "restaurant", icon: "🍽️", color: "#dc2626", color2: "#f59e0b", name: { th: "ร้านอาหาร", en: "Restaurants", zh: "餐厅" } }
   ],
+
+  // ===== ระบบสมาชิก (Supabase แพ็กเกจฟรี) =====
+  // ว่างไว้ = ปิดระบบสมาชิก (หน้า "บัญชี" จะแจ้งว่าเร็วๆ นี้) · วิธีเปิดดู README-TH.md หัวข้อ "ระบบสมาชิก"
+  // anon key เป็นคีย์สาธารณะ ใส่ในเว็บได้ (ความปลอดภัยอยู่ที่ Row Level Security ใน supabase/schema.sql)
+  members: {
+    supabaseUrl: "",      // เช่น "https://xxxx.supabase.co"
+    supabaseAnonKey: ""   // Project Settings → API → anon public
+  },
 
   // ===== โฆษณา =====
   // 1) ยังไม่มี Google AdSense: เว้นว่าง adsenseClient ไว้ แอพจะแสดงแบนเนอร์จาก data/ads.json

@@ -259,13 +259,16 @@ async function news(q) {
   });
 }
 // ---------- เทรนด์วัยรุ่นจาก Lemon8 (โพสต์รีวิวสาธารณะ, robots.txt อนุญาต) ----------
-// ดึงหน้า "ค้นพบ" ของคำค้น → โพสต์ (ชื่อ, ยอดไลก์, ผู้โพสต์) · วันที่โพสต์ถอดจากเลขโพสต์ · ไม่เก็บรูปของผู้โพสต์
+// ดึงหน้า "ค้นพบ" ของคำค้น → โพสต์ (ชื่อ, ยอดไลก์, ผู้โพสต์, ลิงก์รูปปกพรีวิว) · วันที่โพสต์ถอดจากเลขโพสต์
 const LEMON8 = {
   cafe: ["คาเฟ่เปิดใหม่", "คาเฟ่"], animalcafe: ["คาเฟ่แมว", "คาเฟ่สัตว์", "คาเฟ่หมา"], zoo: ["สวนสัตว์", "ฟาร์มสัตว์"],
   themepark: ["สวนสนุก", "สวนน้ำ"], museum: ["นิทรรศการ", "พิพิธภัณฑ์"], park: ["อุทยานแห่งชาติ", "กางเต็นท์", "ทะเลหมอก"],
   nature: ["น้ำตก", "ทะเล", "จุดชมวิว"], landmark: ["วัดสวย", "ที่เที่ยว", "ตลาดน้ำ"]
 };
-const LEMON8_DAYS = 120; // เอาเฉพาะโพสต์ช่วง 4 เดือนล่าสุด = เทรนด์ช่วงนี้
+const LEMON8_DAYS = 120;
+// จังหวัด/ย่านเที่ยวยอดนิยม → หน้า "ที่เที่ยว…/คาเฟ่…" ใน Lemon8 (ช่วยจับกระแสรายสถานที่)
+const AREAS = ["กรุงเทพ", "เชียงใหม่", "เชียงราย", "ภูเก็ต", "กระบี่", "พัทยา", "หัวหิน", "เขาใหญ่", "กาญจนบุรี", "อยุธยา", "น่าน", "ระยอง", "เกาะช้าง", "นครปฐม", "อัมพวา", "ปาย", "ขอนแก่น", "สงขลา", "ราชบุรี", "จันทบุรี"];
+const BUZZ_PER_RUN = 120; // ค้นชื่อสถานที่ใน Lemon8 ต่อรอบ (~2.5 วินาที/ครั้ง) // เอาเฉพาะโพสต์ช่วง 4 เดือนล่าสุด = เทรนด์ช่วงนี้
 async function lemon8(keyword) {
   await sleep(2500);
   const r = await get(`https://www.lemon8-app.com/experience/${encodeURIComponent(keyword)}?region=th`, { headers: { "Accept-Language": "th" } }, 1);
@@ -285,7 +288,9 @@ async function lemon8(keyword) {
     return {
       title: o.title.replace(/\s+/g, " ").trim(), likes: +o.articleLikes || 0, date: date.toISOString().slice(0, 10),
       link: `https://www.lemon8-app.com/${author.linkName ? "@" + author.linkName + "/" : ""}${o.groupId}?region=th`,
-      source: `Lemon8${author.nickName ? " · " + author.nickName : ""}`, from: "lemon8"
+      source: `Lemon8${author.nickName ? " · " + author.nickName : ""}`, from: "lemon8",
+      // รูปปกโพสต์: ลิงก์พรีวิวของ Lemon8 เอง (มีลายน้ำชื่อผู้โพสต์) แสดงแบบลิงก์ตรง ไม่ดาวน์โหลดเก็บ
+      image: [o.largeImage?.url, o.imageList?.[0]?.url].find(u => /^https:\/\/www\.lemon8-app\.com\/seo\/image\?/.test(u || ""))
     };
   }).filter(p => p.title.length >= 8 && (Date.now() - new Date(p.date)) / 864e5 <= LEMON8_DAYS);
 }
@@ -349,8 +354,8 @@ for (const kind of Object.keys(OSM_QUERY)) {
   places.push(...added);
 }
 // ชื่อเป็นคำกว้างๆ ("น้ำตก", "Cat cafe") = ข้อมูลไม่พอให้คนหาเจอ และไปตรงกับโพสต์เทรนด์ทั่วไปผิดๆ → ตัดออก
-const GENERIC = /^(น้ำตก|ชายหาด|หาด|จุดชมวิว|ร้านกาแฟ|คาเฟ่|คาเฟ่แมว|คาเฟ่หมา|แมวคาเฟ่|วัด|สวนสาธารณะ|พิพิธภัณฑ์|สวนสัตว์|สวนน้ำ|อุทยาน|ถ้ำ|cafe|café|coffee|coffee shop|cat ?cafe|dog ?cafe|waterfall|beach|view ?point|zoo|museum|park|temple|cave)\s*\d*$/i;
-for (let i = places.length - 1; i >= 0; i--) if (GENERIC.test((places[i].name.th || places[i].name.en || "").trim())) places.splice(i, 1);
+const GENERIC_NAME = /^(น้ำตก|ชายหาด|หาด|จุดชมวิว|ร้านกาแฟ|คาเฟ่|คาเฟ่แมว|คาเฟ่หมา|แมวคาเฟ่|วัด|สวนสาธารณะ|พิพิธภัณฑ์|สวนสัตว์|สวนน้ำ|อุทยาน|ถ้ำ|cafe|café|coffee|coffee shop|cat ?cafe|dog ?cafe|waterfall|beach|view ?point|zoo|museum|park|temple|cave)\s*\d*$/i;
+for (let i = places.length - 1; i >= 0; i--) if (GENERIC_NAME.test((places[i].name.th || places[i].name.en || "").trim())) places.splice(i, 1);
 
 // สถานที่เดียวกันอาจอยู่หลายหมวด (เช่น สวนสัตว์ที่เป็นพิพิธภัณฑ์ด้วย) → เก็บหมวดแรก
 const seen = new Set();
@@ -386,9 +391,13 @@ places = places.filter(p => p.province);
 // บอร์ดเทรนด์: โพสต์ Lemon8 ยอดไลก์สูงช่วง 4 เดือนล่าสุด + หัวข้อไวรัลจากข่าว (เสริมเมื่อโพสต์น้อย)
 const trends = {};
 const clean = n => !NOT_TREND.test(n.title) && !ABROAD.test(n.title);
+// คลังโพสต์ Lemon8 ช่วง 4 เดือน (ทุกโพสต์ ไม่ใช่แค่ 10 อันดับบนบอร์ด) ใช้นับว่าสถานที่ไหนถูกพูดถึงบ่อย
+const pool = new Map();
+const addPool = list => list.filter(clean).forEach(p => pool.set(p.link, p));
 for (const [kind, k] of Object.entries(KINDS)) {
   const posts = [];
   for (const kw of LEMON8[kind] || []) posts.push(...await lemon8(kw));
+  addPool(posts);
   const lemon = [...new Map(posts.map(p => [p.link, p])).values()].filter(clean).sort((a, b) => b.likes - a.likes).slice(0, 10);
   let items = lemon;
   if (lemon.length < 6) {
@@ -422,16 +431,38 @@ for (const p of places) {
 }
 console.log(`ยอดค้นหา Wikipedia: ${pvOk} แห่ง · ค้นหาเพิ่มขึ้น ${places.filter(p => p.rising).length} · คำค้นมาแรง Google สะสม ${searchTrends.length}`);
 
-// กำลังเป็นกระแส = ถูกพูดถึงในโพสต์/หัวข้อเทรนด์ หรืออยู่ในคำค้นมาแรงของ Google
-const allTrend = Object.values(trends).flat();
-for (const p of places) {
-  const names = coreNames(p).map(n => n.toLowerCase());
-  const hits = allTrend.filter(n => names.some(nm => n.title.toLowerCase().includes(nm))).length
-    + searchTrends.filter(x => names.some(nm => x.term.toLowerCase().includes(nm) || nm.includes(x.term.toLowerCase()) && x.term.length >= 4)).length;
-  p.trend = hits || undefined;
+// ---------- คะแนนกระแสรายสถานที่ ----------
+// 1) โพสต์ท่องเที่ยวรายจังหวัด/ย่านยอดฮิตใน Lemon8 (เพิ่มคลังโพสต์ให้กว้าง)
+for (const area of AREAS) for (const kw of [`ที่เที่ยว${area}`, `คาเฟ่${area}`]) addPool(await lemon8(kw));
+// 2) ค้นชื่อสถานที่ใน Lemon8 ตรงๆ (หมุนเวียน วันละ BUZZ_PER_RUN แห่ง ที่ดัง/คนค้นเยอะก่อน ผลใช้ได้ 10 วัน)
+const daysAgo = t => (Date.now() - new Date(t || 0)) / 864e5;
+// ชื่อสั้น/คำทั่วไป ("ใหม่", "กลาง") ไปตรงกับโพสต์อื่นมั่ว → ใช้เฉพาะชื่อยาว 6 ตัวอักษรขึ้นไป
+const buzzNames = p => coreNames(p).map(n => n.toLowerCase().trim()).filter(n => n.length >= 6);
+const mentions = (p, posts) => { const names = buzzNames(p); if (!names.length) return []; return posts.filter(x => names.some(nm => x.title.toLowerCase().includes(nm))); };
+for (const p of places) if (prevById[p.id]?.l8 && daysAgo(prevById[p.id].l8.at) <= 10) p.l8 = prevById[p.id].l8;
+const due = places.filter(p => !p.l8).sort((a, b) => (b.views || 0) / 20 + (b.fame || 0) + (b.image ? 5 : 0) - ((a.views || 0) / 20 + (a.fame || 0) + (a.image ? 5 : 0))).slice(0, BUZZ_PER_RUN);
+for (const p of due) {
+  const q = p.name.th?.length >= 4 ? p.name.th : p.name.en;
+  if (!q) continue;
+  const m = mentions(p, (await lemon8(q)).filter(clean));
+  p.l8 = { n: m.length, likes: m.reduce((s, x) => s + x.likes, 0), at: new Date().toISOString().slice(0, 10) };
 }
-// เรียง: กำลังเป็นกระแส → คนค้นหาเพิ่มขึ้น → คนค้นหาเยอะ → ความดัง
-places.sort((a, b) => (b.trend || 0) - (a.trend || 0) || (b.rising ? 1 : 0) - (a.rising ? 1 : 0) || (b.views || 0) - (a.views || 0) || b.fame - a.fame);
+// 3) รวมคะแนน: โพสต์ที่พูดถึง (ถ่วงยอดไลก์) + คำค้นมาแรง Google + ยอดค้นหา Wikipedia ที่พุ่งขึ้น
+const poolPosts = [...pool.values()];
+for (const p of places) {
+  const names = buzzNames(p);
+  const m = mentions(p, poolPosts);
+  const google = searchTrends.filter(x => names.some(nm => x.term.toLowerCase().includes(nm) || nm.includes(x.term.toLowerCase()) && x.term.length >= 4)).length;
+  const lemonScore = Math.max(m.reduce((s, x) => s + 1 + Math.log10(1 + x.likes), 0), p.l8 ? p.l8.n + Math.log10(1 + p.l8.likes) * 1.5 : 0);
+  const hot = lemonScore + google * 4 + (p.rising ? 2 + Math.min(p.rising, 300) / 100 : 0);
+  p.hot = hot >= 3 ? +hot.toFixed(1) : undefined;           // คะแนนกระแส (ใช้เรียงลำดับแนะนำ)
+  p.trend = (m.length + (p.l8?.n || 0) + google) || undefined; // จำนวนครั้งที่ถูกพูดถึง (ป้าย 🔥)
+  if (!p.hot) delete p.trend;
+}
+console.log(`คลังโพสต์ Lemon8 ${pool.size} โพสต์ · ค้นชื่อสถานที่ ${due.length} แห่ง · มีกระแส ${places.filter(p => p.hot).length} แห่ง`);
+// เรียง: คะแนนกระแส → คนค้นหาเพิ่มขึ้น → คนค้นหาเยอะ → ความดัง
+places.sort((a, b) => (b.hot || 0) - (a.hot || 0) || (b.rising ? 1 : 0) - (a.rising ? 1 : 0) || (b.views || 0) - (a.views || 0) || b.fame - a.fame);
+console.log("มาแรง 10 อันดับ:", places.filter(p => p.hot).slice(0, 10).map(p => `${p.name.th || p.name.en} (${p.hot})`).join(", "));
 
 const byKind = places.reduce((m, p) => (m[p.kind] = (m[p.kind] || 0) + 1, m), {});
 console.log("สถานที่:", places.length, JSON.stringify(byKind), "· มีรูป", places.filter(p => p.image).length, "· อยู่ในข่าว", places.filter(p => p.trend).length);

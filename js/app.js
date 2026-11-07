@@ -155,15 +155,16 @@
     } catch { return fallback; }
   }
   async function load() {
-    const [events, venues, ads, news, auto, places] = await Promise.all([
+    const [events, venues, ads, news, auto, places, biz] = await Promise.all([
       getJSON("data/events.json", []),
       getJSON("data/venues.json", []),
       getJSON("data/ads.json", []),
       getJSON("data/news.json", { items: [] }),
       getJSON("data/auto-events.json", { events: [] }),
-      getJSON("data/places.json", { places: [], trends: {} })
+      getJSON("data/places.json", { places: [], trends: {} }),
+      getJSON("data/business-places.json", [])   // ร้านที่สมาชิกธุรกิจเพิ่ม (AI ตรวจผ่านแล้ว)
     ]);
-    state.places = places.places || [];
+    state.places = [...(places.places || []), ...(Array.isArray(biz) ? biz : [])];
     state.trends = places.trends || {};
     // งานที่ดึงอัตโนมัติ + งานที่ใส่เอง: งานใส่เองที่ id ตรงกันจะทับงานอัตโนมัติ, hidden: true = ซ่อน
     const manualIds = new Set(events.map(e => e.id));
@@ -337,6 +338,17 @@
     return s;
   }
 
+  function recommendFor(upcoming, skip) {
+    const w = {};
+    (window.IYA_MEMBER?.interests?.() || []).filter(x => !x.startsWith("p:")).forEach(c => { w[c] = (w[c] || 0) + 3; });
+    state.events.filter(e => state.saved.has(e.id)).forEach(e => { w[e.category] = (w[e.category] || 0) + 1; });
+    if (!Object.keys(w).length) return [];
+    const home = window.IYA_MEMBER?.homeProvince?.();
+    return upcoming.filter(e => !skip.has(e.id) && !state.saved.has(e.id) && w[e.category] && (parseDate(e.startDate) - today()) / DAY <= 45)
+      .map(e => [e, w[e.category] * 2 + bigScore(e) + (home && provinceOf(e) === home ? 3 : 0)])
+      .sort((x, y) => y[1] - x[1]).slice(0, 8).map(([e]) => e);
+  }
+
   function renderHome() {
     const f = state.filters;
     const opt = (val, label, cur) => `<option value="${val}" ${cur === val ? "selected" : ""}>${label}</option>`;
@@ -359,6 +371,7 @@
       })
       .slice(0, 10 - pinned.length).map(([e]) => e);
     const featured = [...pinned, ...big].sort((a, b) => a.startDate.localeCompare(b.startDate));
+    const forYou = recommendFor(upcoming, new Set(featured.map(e => e.id)));
     const catChip = (id, icon, name, c1) =>
       `<button class="chip ${f.cat === id ? "active" : ""}" data-cat="${id}" style="--c1:${c1}" aria-pressed="${f.cat === id}"><i>${icon}</i>${esc(name)}</button>`;
     app.innerHTML = `
@@ -393,6 +406,9 @@
       ${featured.length && f.cat === "all" ? `
         <div class="section-head"><h2>${t("mustSee")}</h2><small>${t("swipe")}</small></div>
         <div class="rail" id="rail">${featured.map(card).join("")}</div>` : ""}
+      ${forYou.length && f.cat === "all" ? `
+        <div class="section-head"><h2>✨ ${t("forYou")}</h2><small>${t("forYouWhy")}</small></div>
+        <div class="rail" id="railYou">${forYou.map(card).join("")}</div>` : ""}
       ${adSlot("home_top")}
       <div class="section-head" id="resultsHead"><h2>${f.cat !== "all" && CAT[f.cat] ? `${CAT[f.cat].icon} ${esc(catName(CAT[f.cat]))}` : t("allEvents")}${f.province !== "all" ? ` · ${esc(provName(f.province))}` : ""}</h2>${viewToggle()}</div>
       <div id="results"></div>`;
@@ -401,6 +417,8 @@
     renderResults();
     const rail = document.getElementById("rail");
     if (rail) bindSave(rail, renderHome);
+    const railYou = document.getElementById("railYou");
+    if (railYou) bindSave(railYou, renderHome);
     document.getElementById("province").addEventListener("change", e => {
       f.province = e.target.value;
       writeLS("province", f.province);
@@ -463,6 +481,7 @@
       const id = b.dataset.save;
       state.saved.has(id) ? state.saved.delete(id) : state.saved.add(id);
       writeLS("saved", [...state.saved]);
+      window.IYA_MEMBER?.sync?.();
       rerender();
     }));
   }
@@ -532,7 +551,7 @@
     else text = `${t("recCar", { km: k })} ${v.parking ? t("recParking") : ""}`;
     return `<p class="recommend">💡 ${esc(text)}</p>`;
   }
-  const TRANSIT_ICON = { BTS: "🚈", MRT: "🚇", ARL: "🚄", SRT: "🚆", BUS: "🚌", BOAT: "⛴️", WALK: "🚶", TAXI: "🚕", SHUTTLE: "🚐", AIR: "✈️", CAR: "🚗", PARK: "🅿️" };
+  const TRANSIT_ICON = { BIKE: "🛵", BTS: "🚈", MRT: "🚇", ARL: "🚄", SRT: "🚆", BUS: "🚌", BOAT: "⛴️", WALK: "🚶", TAXI: "🚕", SHUTTLE: "🚐", AIR: "✈️", CAR: "🚗", PARK: "🅿️" };
 
   // ---------- เส้นทางแนะนำจากจุดเดินทางจริงรอบสถานที่ (data/transit.json จาก OpenStreetMap) ----------
   const BKK_CENTER = { lat: 13.7563, lng: 100.5018 };
@@ -570,6 +589,7 @@
   }
   // เติม "เส้นทางแนะนำ" หลังหน้าแสดงแล้ว (โหลดข้อมูลจุดเดินทางเฉพาะตอนเปิดหน้ารายละเอียด)
   async function hydrateGuides() {
+    renderCost();
     const box = document.getElementById("guide");
     if (!box) return;
     transitLoad ||= getJSON("data/transit.json", {});
@@ -581,6 +601,54 @@
       ? items.map(([type, text]) => `<li><span>${TRANSIT_ICON[type] || "➡️"}</span><span>${esc(text)}</span></li>`).join("")
       : `<li><span>ℹ️</span><span>${t("noGuide")}</span></li>`;
   }
+  // ---------- คำนวณค่าเดินทาง (ประมาณการ) จากตำแหน่งผู้ใช้ หรือกลางกรุงเทพฯ ----------
+  // ตั้งค่ารถของตัวเองได้ (กม./ลิตร, ราคาน้ำมัน) จำไว้ในเครื่อง · สมาชิกจะซิงก์ข้ามเครื่อง
+  const CAR_DEFAULT = { kmpl: 14, fuel: 33, bikeKmpl: 40 };
+  const carCfg = () => ({ ...CAR_DEFAULT, ...readLS("car", {}) });
+  // มิเตอร์แท็กซี่กรุงเทพฯ: 35 บาท กม.แรก แล้วคิดตามช่วงระยะ + รถติด ~2.5 บาท/นาที
+  function taxiFare(km) {
+    const steps = [[10, 6.5], [20, 7], [40, 8], [60, 8.5], [80, 9], [Infinity, 10.5]];
+    let fare = 35, left = Math.max(0, km - 1), from = 1;
+    for (const [to, rate] of steps) { const seg = Math.min(left, to - from); if (seg <= 0) break; fare += seg * rate; left -= seg; from = to; }
+    return fare + (km / 25 * 60) * 2.5 * 0.4;
+  }
+  const baht = n => `${Math.round(n / 5) * 5 < 10 ? Math.round(n) : (Math.round(n / 5) * 5).toLocaleString(locale())}`;
+  const range = (a, b) => `฿${baht(a)}–${baht(b)}`;
+  function costItems(v, trip) {
+    const from = state.pos || BKK_CENTER, line = distanceKm(from, v);
+    const road = line * (line < 30 ? 1.35 : 1.25), k = carCfg(), x = trip === "round" ? 2 : 1;
+    const out = [];
+    const fuel = road / k.kmpl * k.fuel * x;
+    out.push(["CAR", t("costCar", { km: Math.round(road * x), cost: range(fuel, fuel * 1.15), kmpl: k.kmpl, fuel: k.fuel })]);
+    if (road <= 300) out.push(["BIKE", t("costBike", { cost: range(road / k.bikeKmpl * k.fuel * x, road / k.bikeKmpl * k.fuel * x * 1.15) })]);
+    if (road <= 80) { const tf = taxiFare(road) * x; out.push(["TAXI", t("costTaxi", { cost: range(tf, tf * 1.25), app: range(tf * 1.2, tf * 1.7) })]); }
+    if (road > 80) out.push(["BUS", t("costCoach", { cost: range(road * 0.9 * x, road * 1.6 * x) })]);
+    if (road > 400) out.push(["AIR", t("costFly")]);
+    return { out, line, from: state.pos ? "me" : "bkk" };
+  }
+  function renderCost() {
+    const box = document.getElementById("cost");
+    if (!box) return;
+    const v = { lat: +box.dataset.lat, lng: +box.dataset.lng }, trip = box.dataset.trip || "one";
+    const { out, from } = costItems(v, trip);
+    const k = carCfg();
+    box.innerHTML = `
+      <p class="cost-from">${from === "me" ? t("costFromMe") : t("costFromBkk")}</p>
+      <div class="seg" role="group">
+        <button type="button" class="${trip === "one" ? "active" : ""}" data-trip="one">${t("oneWay")}</button>
+        <button type="button" class="${trip === "round" ? "active" : ""}" data-trip="round">${t("roundTrip")}</button>
+      </div>
+      <ul class="travel-list">${out.map(([type, text]) => `<li><span>${TRANSIT_ICON[type] || "➡️"}</span><span>${esc(text)}</span></li>`).join("")}</ul>
+      <details class="car-cfg"><summary>⚙️ ${t("carSettings")}</summary>
+        <label>${t("kmpl")} <input type="number" inputmode="decimal" min="3" max="60" step="0.5" id="kmpl" value="${k.kmpl}"></label>
+        <label>${t("fuelPrice")} <input type="number" inputmode="decimal" min="10" max="80" step="0.1" id="fuelp" value="${k.fuel}"></label>
+      </details>
+      <p class="disclosure">${t("costNote")}</p>`;
+    box.querySelectorAll("[data-trip]").forEach(b => b.addEventListener("click", () => { box.dataset.trip = b.dataset.trip; renderCost(); }));
+    const save = () => { writeLS("car", { kmpl: +document.getElementById("kmpl").value || CAR_DEFAULT.kmpl, fuel: +document.getElementById("fuelp").value || CAR_DEFAULT.fuel }); window.IYA_MEMBER?.sync?.(); const open = true; renderCost(); box.querySelector(".car-cfg").open = open; };
+    box.querySelectorAll(".car-cfg input").forEach(i => i.addEventListener("change", save));
+  }
+
   function travelPanel(ev, v) {
     if (!v || v.online) return `<section class="panel"><h2>${t("onlineTitle")}</h2><p>${t("onlineDesc")}</p></section>`;
     const tips = [
@@ -599,7 +667,9 @@
           <a class="btn" ${mapsLink(v, "bicycling")}>${t("bike")}</a>
         </div>
         ${v.lat ? `<h3 class="subhead">🧭 ${t("bestWay")}</h3>
-        <ul class="travel-list" id="guide" data-lat="${v.lat}" data-lng="${v.lng}"><li><span>⏳</span><span>${t("loading")}</span></li></ul>` : ""}
+        <ul class="travel-list" id="guide" data-lat="${v.lat}" data-lng="${v.lng}"><li><span>⏳</span><span>${t("loading")}</span></li></ul>
+        <h3 class="subhead">💰 ${t("travelCost")}</h3>
+        <div id="cost" data-lat="${v.lat}" data-lng="${v.lng}"></div>` : ""}
         ${tips.length ? `<h3 class="subhead">${t("noCar")}</h3>
         <ul class="travel-list">
           ${tips.map(x => `<li><span>${TRANSIT_ICON[x.type] || "➡️"}</span><span><b>${esc(label(x.type))}</b> ${esc(x.text)}</span></li>`).join("")}
@@ -719,7 +789,7 @@
       else { try { await navigator.clipboard.writeText(data.url); alert(t("copied")); } catch {} }
     };
     const loc = document.getElementById("locBtn");
-    if (loc) loc.onclick = () => locate(() => { document.getElementById("rec").innerHTML = recommendation(v) || ""; });
+    if (loc) loc.onclick = () => locate(() => { document.getElementById("rec").innerHTML = recommendation(v) || ""; renderCost(); });
     activateAdsense();
   }
 
@@ -770,6 +840,7 @@
         <a href="#/place/${encodeURIComponent(p.id)}">
           ${placeCover(p)}
             <div class="badges">
+              ${p.business ? `<span class="badge sponsor">✅ ${t("verifiedShop")}</span>` : ""}
               ${p.trend ? `<span class="badge hot">🔥 ${t("trending")}</span>` : p.rising ? `<span class="badge hot">📈 ${t("searchRising")}</span>` : ""}
               ${c ? `<span class="badge">${c.icon} ${esc(pick(c.name))}</span>` : ""}
             </div>
@@ -784,12 +855,14 @@
       </article>`;
   }
 
-  const placeRank = p => (p.trend ? 100 : 0) + (p.rising ? 40 : 0) + (p.image ? 20 + (p.imageScore || 6) * 2 : 0) + Math.min(p.fame || 0, 15);
+  const placeRank = p => (p.hot ? 100 + Math.min(p.hot, 60) * 3 : 0) + (p.rising ? 40 : 0) + (p.image ? 20 + (p.imageScore || 6) * 2 : 0) + Math.min(p.fame || 0, 15);
   function trendThumb(n) {
     const title = String(n.title || "").toLowerCase();
-    const p = state.places.find(x => x.image && [x.name?.th, x.name?.en].some(s => s && s.length >= 4 && title.includes(s.toLowerCase())));
+    // รูปปกของโพสต์ (พรีวิวจาก Lemon8 มีลายน้ำผู้โพสต์) → ไม่มีใช้รูปสถานที่ที่ชื่ออยู่ในโพสต์ → ไอคอนหมวด
+    const p = !n.image && state.places.find(x => x.image && [x.name?.th, x.name?.en].some(s => s && s.length >= 6 && title.includes(s.toLowerCase())));
+    const src = /^https:\/\//.test(n.image || "") ? n.image : p?.image;
     const pc = PCAT[n.kind] || { icon: "🔥", color: "#ff7a45" };
-    return `<span class="trend-thumb" style="background:linear-gradient(135deg, ${pc.color}, ${pc.color2 || pc.color})">${pc.icon}${p ? `<img src="${esc(p.image)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">` : ""}</span>`;
+    return `<span class="trend-thumb" style="background:linear-gradient(135deg, ${pc.color}, ${pc.color2 || pc.color})">${pc.icon}${src ? `<img src="${esc(src)}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">` : ""}${n.likes ? `<b class="trend-likes">❤️ ${n.likes >= 1000 ? (n.likes / 1000).toFixed(1) + "K" : n.likes}</b>` : ""}</span>`;
   }
 
   function renderPlaces() {
@@ -800,7 +873,7 @@
     const q = state.placeQ.trim().toLowerCase();
     const match = p => !q || [p.name?.th, p.name?.en, p.name?.zh, p.address, provName(p.province), PROV[p.province]?.th].some(s => String(s || "").toLowerCase().includes(q));
     let list = state.places.filter(p => inPlaceProvince(p) && (cat === "all" || p.kind === cat) && match(p));
-    if (state.pos) list = [...list].sort((a, b) => (b.trend || 0) - (a.trend || 0) || distanceKm(state.pos, a) - distanceKm(state.pos, b));
+    if (state.pos) list = [...list].sort((a, b) => (b.hot ? 1 : 0) - (a.hot ? 1 : 0) || distanceKm(state.pos, a) - distanceKm(state.pos, b));
     // ไม่รู้ตำแหน่ง: กำลังเป็นกระแส → คนค้นหาเพิ่ม → มีรูปที่ AI ให้คะแนนความน่าดูสูง → ดัง
     else list = [...list].sort((a, b) => placeRank(b) - placeRank(a));
     // แสดงทีละ 30 แห่ง กด "ดูเพิ่ม" ได้ (หลายร้อยแห่งพร้อมกันทำให้แอพหน่วง)
@@ -822,17 +895,16 @@
         </div>
         <div class="filters places-row">${provinceSelect(state.places.reduce((m, p) => (m[p.province] = (m[p.province] || 0) + 1, m), {}))}</div>
       </div>
-      <div class="section-head" id="placesHead"><h2>${cat !== "all" && PCAT[cat] ? `${PCAT[cat].icon} ${esc(pick(PCAT[cat].name))}` : t("placesAll")} <small>${t("placesFound", { n: list.length })}</small></h2>${viewToggle()}</div>
-      ${list.length ? `<div class="grid ${state.view}">${shown.slice(0, 6).map(placeCard).join("")}</div>` : ""}
       ${board.length ? `<section class="trend-board">
         <div class="section-head"><h2>${t("trendBoard")}</h2><small>${t("swipe")}</small></div>
         <div class="news-list">${board.map(n => `
           <a class="news-item trend-item" ${inAppLink(n.link)} style="--c1:${PCAT[n.kind]?.color || "var(--accent)"}">
             ${trendThumb(n)}
             <h3>${esc(n.title)}</h3>
-            <div class="meta">${PCAT[n.kind]?.icon || ""} ${n.likes ? `❤️ ${n.likes >= 1000 ? (n.likes / 1000).toFixed(1) + "K" : n.likes} · ` : ""}${esc(n.source || "")} · ${new Date(n.date).toLocaleDateString(locale(), { day: "numeric", month: "short" })}</div>
+            <div class="meta">${PCAT[n.kind]?.icon || ""} ${esc(n.source || "")} · ${new Date(n.date).toLocaleDateString(locale(), { day: "numeric", month: "short" })}</div>
           </a>`).join("")}</div></section>` : ""}
-      ${list.length > 6 ? `<div class="grid ${state.view}">${shown.slice(6).map(placeCard).join("")}</div>` : ""}
+      <div class="section-head" id="placesHead"><h2>${cat !== "all" && PCAT[cat] ? `${PCAT[cat].icon} ${esc(pick(PCAT[cat].name))}` : t("placesAll")} <small>${t("placesFound", { n: list.length })}</small></h2>${viewToggle()}</div>
+      ${list.length ? `<div class="grid ${state.view}">${shown.map(placeCard).join("")}</div>` : ""}
       ${adSlot("list_inline")}
       ${list.length ? "" : `<p class="empty">${t("noPlaces")}</p>`}
       ${list.length > shown.length ? `<div class="actions" style="justify-content:center"><button class="btn primary" id="moreBtn">${t("showMore", { n: list.length - shown.length })}</button></div>` : ""}
@@ -1009,6 +1081,7 @@
     document.querySelectorAll("[data-i18n]").forEach(el => { el.textContent = t(el.dataset.i18n); });
     document.getElementById("footerText").textContent = `© ${new Date().getFullYear()} ${C.siteName} · ${t("footer")}`;
     const sel = document.getElementById("langSel");
+    window.IYA_MEMBER?.paint?.();
     sel.innerHTML = (C.languages || ["th"]).map(l => `<option value="${l}" ${l === state.lang ? "selected" : ""}>${window.I18N[l].langName}</option>`).join("");
     paintThemeBtn();
   }
@@ -1065,6 +1138,7 @@
     else if (page === "saved") renderSaved();
     else if (page === "news") renderNews();
     else if (page === "about") renderAbout();
+    else if (page === "account") window.IYA_MEMBER ? window.IYA_MEMBER.render(app, arg) : renderAbout();
     else renderHome();
     window.scrollTo(0, 0);
     hydrateGuides();
@@ -1072,7 +1146,11 @@
 
   applyStaticText();
   window.addEventListener("hashchange", route);
-  load().then(route);
+  load().then(() => {
+    // เริ่มระบบสมาชิกก่อนแสดงหน้า (คืนสถานะเข้าระบบเบื้องหลัง ไม่ต้องรอ)
+    window.IYA_MEMBER?.init({ C, state, t, esc, pick, provName, readLS, writeLS, locate });
+    route();
+  });
 
   // แอพมือถือมีไฟล์ติดเครื่องอยู่แล้ว ไม่ต้องใช้ service worker
   if (!NATIVE && "serviceWorker" in navigator && location.protocol !== "file:") {

@@ -10,3 +10,4 @@ exclude:
   - package-lock.json
   - capacitor.config.json
   - README-TH.md
+  - supabase
