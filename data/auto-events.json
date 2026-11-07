@@ -4267,7 +4267,8 @@
       "sourceUrl": "https://www.impact.co.th/th/visitors/event-calendar/exhibition-public/the-43rd-thailand-international-motor-expo-2026",
       "sourceName": "IMPACT",
       "fetchedAt": "2026-11-07T02:30:02.637Z",
-      "venueId": "impact"
+      "venueId": "impact",
+      "imageScore": 7
     },
     {
       "id": "ep-178830",
@@ -4291,7 +4292,8 @@
         "province": "bangkok",
         "lat": 13.72337,
         "lng": 100.58052
-      }
+      },
+      "imageScore": 6
     },
     {
       "id": "ep-181080",
@@ -4313,7 +4315,8 @@
       "venue": {
         "name": "Dose Social Canteen",
         "province": "bangkok"
-      }
+      },
+      "imageScore": 8
     },
     {
       "id": "ep-177537",
@@ -4336,7 +4339,8 @@
         "province": "bangkok",
         "lat": 13.68342,
         "lng": 100.60829
-      }
+      },
+      "imageScore": 8
     },
     {
       "id": "qs-cat-expo-thailand-2026",
@@ -4355,7 +4359,8 @@
       "sourceUrl": "https://qsncc.com/th/whats-on/event-calendar/cat-expo-thailand-2026/",
       "sourceName": "QSNCC",
       "fetchedAt": "2026-11-07T02:23:06.386Z",
-      "venueId": "qsncc"
+      "venueId": "qsncc",
+      "imageScore": 9
     },
     {
       "id": "ep-175474",
@@ -4379,7 +4384,8 @@
         "province": "bangkok",
         "lat": 13.75693,
         "lng": 100.56469
-      }
+      },
+      "imageScore": 5
     },
     {
       "id": "zip-gaolaewngai2",
@@ -4402,7 +4408,8 @@
       "venue": {
         "name": "ไร่คาเซ Kaze Camp & Coffee บ่อวิน จ.ชลบุรี",
         "province": "chonburi"
-      }
+      },
+      "imageScore": 7
     },
     {
       "id": "ttm-chalieng-nang-len-nang-lao",
@@ -4425,7 +4432,8 @@
       "venue": {
         "name": "SPHERE HALL, 5M Floor EMSPHERE",
         "province": "bangkok"
-      }
+      },
+      "imageScore": 5
     },
     {
       "id": "ttm-william-est-reign-together-concert",
@@ -4445,7 +4453,8 @@
       "sourceUrl": "https://www.thaiticketmajor.com/concert/william-est-reign-together-concert.html",
       "sourceName": "ThaiTicketMajor",
       "fetchedAt": "2026-11-07T02:17:57.710Z",
-      "venueId": "impact"
+      "venueId": "impact",
+      "imageScore": 6
     },
     {
       "id": "ep-175241",
@@ -4467,7 +4476,8 @@
       "venue": {
         "name": "ซี อาเซียน สามย่าน โค-ออป",
         "province": "bangkok"
-      }
+      },
+      "imageScore": 3
     },
     {
       "id": "ep-159526",
@@ -4491,7 +4501,8 @@
       "venue": {
         "name": "Jolly Land Starlight Amphitheater Khaokho Phetchabun",
         "province": "phetchabun"
-      }
+      },
+      "imageScore": 4
     },
     {
       "id": "zip-a-safe-journey-with-her-2026",
@@ -4514,7 +4525,8 @@
         "province": "bangkok",
         "lat": 13.81182,
         "lng": 100.55367
-      }
+      },
+      "imageScore": 6
     },
     {
       "id": "run-QXgWZqGA",
@@ -4538,7 +4550,8 @@
       "venue": {
         "name": "KINGSQUARE Community Mall ถนนพระราม 3 กรุงเทพมหานคร",
         "province": "bangkok"
-      }
+      },
+      "imageScore": 8
     },
     {
       "id": "run-LqSuMrTX",
@@ -4562,7 +4575,8 @@
       "venue": {
         "name": "ชายหาดแตงโม หมู่ที่ 2 ต.เกาะสุกร อ.ปะเหลียน จ.ตรัง",
         "province": "trang"
-      }
+      },
+      "imageScore": 9
     },
     {
       "id": "run-LjwuTCvX",
@@ -4586,7 +4600,8 @@
       "venue": {
         "name": "ดอยขะม้อ ต.มะเขือแจ้ อ.เมืองลำพูน จ.ลำพูน",
         "province": "lamphun"
-      }
+      },
+      "imageScore": 4
     },
     {
       "id": "run-zSsPlcoo",
@@ -4610,7 +4625,8 @@
       "venue": {
         "name": "วัดพระหฤทัยพระเยซูเจ้า ศรีราชา จ.ชลบุรี",
         "province": "chonburi"
-      }
+      },
+      "imageScore": 3
     },
     {
       "id": "run-vtGQkcLE",
@@ -4634,7 +4650,8 @@
       "venue": {
         "name": "วิทยาลัยชุมชนอุทัยธานี อ.บ้านไร่ จ.อุทัยธานี",
         "province": "uthai-thani"
-      }
+      },
+      "imageScore": 9
     },
     {
       "id": "eb-1990963888586",
@@ -4656,7 +4673,8 @@
         "province": "phuket",
         "lat": 7.88543,
         "lng": 98.29048
-      }
+      },
+      "imageScore": 7
     },
     {
       "id": "eb-2004054467861",
@@ -4678,7 +4696,8 @@
         "province": "bangkok",
         "lat": 13.74202,
         "lng": 100.55724
-      }
+      },
+      "imageScore": 4
     },
     {
       "id": "ep-181549",
@@ -4699,7 +4718,8 @@
       "venue": {
         "name": "Waterfall Festival",
         "province": "surat-thani"
-      }
+      },
+      "imageScore": 6
     },
     {
       "id": "ep-176102",
@@ -4721,7 +4741,8 @@
       "venue": {
         "name": "SiamPic Hall",
         "province": "bangkok"
-      }
+      },
+      "imageScore": 9
     },
     {
       "id": "zip-jamboxxmusicconnection-10",
@@ -4744,7 +4765,8 @@
       "venue": {
         "name": "Speakerbox Livehouse",
         "province": "bangkok"
-      }
+      },
+      "imageScore": 5
     },
     {
       "id": "ttm-the-love-of-siam-the-musical",
@@ -4767,7 +4789,8 @@
       "venue": {
         "name": "เมืองไทยรัชดาลัย เธียเตอร์",
         "province": "bangkok"
-      }
+      },
+      "imageScore": 7
     },
     {
       "id": "eb-2001039286372",
@@ -4789,7 +4812,8 @@
         "province": "bangkok",
         "lat": 13.72076,
         "lng": 100.51378
-      }
+      },
+      "imageScore": 2
     },
     {
       "id": "ttm-charity-boydkochristmas",
@@ -4810,7 +4834,8 @@
       "sourceName": "ThaiTicketMajor",
       "fetchedAt": "2026-11-07T02:17:59.359Z",
       "sponsor": "TUH",
-      "venueId": "impact"
+      "venueId": "impact",
+      "imageScore": 9
     },
     {
       "id": "qs-eternal-happiness-2026",
@@ -4828,7 +4853,8 @@
       "sourceUrl": "https://qsncc.com/th/whats-on/event-calendar/eternal-happiness-2026/",
       "sourceName": "QSNCC",
       "fetchedAt": "2026-11-07T02:23:04.738Z",
-      "venueId": "qsncc"
+      "venueId": "qsncc",
+      "imageScore": 2
     },
     {
       "id": "ep-179526",
@@ -4847,7 +4873,8 @@
       "sourceUrl": "https://www.eventpop.me/e/179526",
       "sourceName": "Eventpop",
       "fetchedAt": "2026-11-06T16:13:54.935Z",
-      "venueId": "centralworld"
+      "venueId": "centralworld",
+      "imageScore": 8
     },
     {
       "id": "ep-175142",
@@ -4868,7 +4895,8 @@
       "venue": {
         "name": "Bangkok Island",
         "province": "bangkok"
-      }
+      },
+      "imageScore": 5
     },
     {
       "id": "ep-174744",
@@ -4890,7 +4918,8 @@
       "venue": {
         "name": "ซี อาเซียน สามย่าน โค-ออป",
         "province": "bangkok"
-      }
+      },
+      "imageScore": 4
     },
     {
       "id": "ep-172880",
@@ -4914,7 +4943,8 @@
         "province": "bangkok",
         "lat": 13.75693,
         "lng": 100.56469
-      }
+      },
+      "imageScore": 4
     },
     {
       "id": "ep-164250",
@@ -4935,7 +4965,8 @@
       "venue": {
         "name": "ถวิลหา",
         "province": "sukhothai"
-      }
+      },
+      "imageScore": 9
     },
     {
       "id": "ttm-boydkochristmas",
@@ -4956,7 +4987,8 @@
       "sourceName": "ThaiTicketMajor",
       "fetchedAt": "2026-11-07T02:18:01.027Z",
       "sponsor": "SINGHA LIFE",
-      "venueId": "impact"
+      "venueId": "impact",
+      "imageScore": 8
     },
     {
       "id": "ttm-uppoompat-fanmeet-2026-suit-up",
@@ -4980,7 +5012,8 @@
       "venue": {
         "name": "MCC HALL ชั้น 3 เดอะมอลล์ไลฟ์สโตร์ บางกะปิ",
         "province": "bangkok"
-      }
+      },
+      "imageScore": 10
     },
     {
       "id": "run-NVqWRqjk",
@@ -5004,7 +5037,8 @@
       "venue": {
         "name": "มหาวิทยาลัยบูรพา วิทยาเขตจันทบุรี อ.ท่าใหม่ จ.จันทบุรี",
         "province": "chanthaburi"
-      }
+      },
+      "imageScore": 5
     },
     {
       "id": "ep-175342",
@@ -5026,7 +5060,8 @@
       "venue": {
         "name": "ซี อาเซียน สามย่าน โค-ออป",
         "province": "bangkok"
-      }
+      },
+      "imageScore": 4
     },
     {
       "id": "ep-173441",
@@ -5048,7 +5083,8 @@
       "venue": {
         "name": "True Space Asoke",
         "province": "bangkok"
-      }
+      },
+      "imageScore": 4
     },
     {
       "id": "run-CVqrfmFQ",
@@ -5072,7 +5108,8 @@
       "venue": {
         "name": "วิทยาลัยเทคโนโลยีอุตรดิตถ์ จ.อุตรดิตถ์",
         "province": "uttaradit"
-      }
+      },
+      "imageScore": 4
     },
     {
       "id": "run-CTTwKrkL",
@@ -5096,7 +5133,8 @@
       "venue": {
         "name": "สำนักงานเทศบาลเมืองกะทู้ จ.ภูเก็ต",
         "province": "phuket"
-      }
+      },
+      "imageScore": 3
     },
     {
       "id": "run-wjYxXNJM",
@@ -5122,7 +5160,8 @@
         "province": "bangkok",
         "lat": 13.74873,
         "lng": 100.63846
-      }
+      },
+      "imageScore": 7
     },
     {
       "id": "run-hxtTBXoA",
@@ -5146,7 +5185,8 @@
       "venue": {
         "name": "สวนป่าประดู่ 200 ไร่ ต.มะขามคู่ อ.นิคมพัฒนา จ.ระยอง",
         "province": "rayong"
-      }
+      },
+      "imageScore": 8
     },
     {
       "id": "run-ZcTYtFjQ",
@@ -5170,7 +5210,8 @@
       "venue": {
         "name": "ศูนย์การค้าเซ็นทรัล เวสต์เกต อ.บางใหญ่ (เส้นชัยที่โรงเรียนกสิณธรเซนต์ปีเตอร์ อ.บางบัวทอง) จ.นนทบุรี",
         "province": "nonthaburi"
-      }
+      },
+      "imageScore": 4
     },
     {
       "id": "ep-173607",
@@ -5193,7 +5234,8 @@
         "province": "surat-thani",
         "lat": 9.73495,
         "lng": 100.03057
-      }
+      },
+      "imageScore": 9
     },
     {
       "id": "ep-132318",
@@ -5214,7 +5256,8 @@
       "venue": {
         "name": "17 Dec 2026 15:00 - 18 Dec 2026 00:00",
         "province": "phuket"
-      }
+      },
+      "imageScore": 9
     },
     {
       "id": "ttm-one-lumpinee-183",
@@ -5239,7 +5282,8 @@
         "province": "bangkok",
         "lat": 13.87619,
         "lng": 100.59596
-      }
+      },
+      "imageScore": 8
     },
     {
       "id": "eb-1992996704794",
@@ -5261,7 +5305,8 @@
         "province": "bangkok",
         "lat": 13.74202,
         "lng": 100.55724
-      }
+      },
+      "imageScore": 2
     },
     {
       "id": "ep-179393",
@@ -5287,7 +5332,8 @@
         "province": "bangkok",
         "lat": 13.74745,
         "lng": 100.53021
-      }
+      },
+      "imageScore": 9
     },
     {
       "id": "ep-175077",
@@ -5311,7 +5357,8 @@
         "province": "bangkok",
         "lat": 13.76343,
         "lng": 100.52825
-      }
+      },
+      "imageScore": 4
     },
     {
       "id": "ep-174578",
@@ -5332,7 +5379,8 @@
       "venue": {
         "name": "Hii Festival Koh Tao",
         "province": "surat-thani"
-      }
+      },
+      "imageScore": 5
     },
     {
       "id": "ttm-one-fight-night-50",
@@ -5357,7 +5405,8 @@
         "province": "bangkok",
         "lat": 13.87619,
         "lng": 100.59596
-      }
+      },
+      "imageScore": 9
     },
     {
       "id": "run-uKcdcwgd",
@@ -5381,7 +5430,8 @@
       "venue": {
         "name": "อาคารจักรพันธุ์เพ็ญศิริ มหาวิทยาลัยเกษตรศาสตร์ บางเขน กรุงเทพมหานคร",
         "province": "bangkok"
-      }
+      },
+      "imageScore": 7
     },
     {
       "id": "run-EZHIFBlm",
@@ -5405,7 +5455,8 @@
       "venue": {
         "name": "โบนันซ่า เขาใหญ่ จ.นครราชสีมา",
         "province": "nakhon-ratchasima"
-      }
+      },
+      "imageScore": 8
     },
     {
       "id": "run-ObiXolNI",
@@ -5429,7 +5480,8 @@
       "venue": {
         "name": "สวนสมเด็จพระศรีนครินทร์ จ.พังงา",
         "province": "phang-nga"
-      }
+      },
+      "imageScore": 4
     },
     {
       "id": "ep-175109",
@@ -5451,7 +5503,8 @@
       "venue": {
         "name": "ซี อาเซียน สามย่าน โค-ออป",
         "province": "bangkok"
-      }
+      },
+      "imageScore": 5
     },
     {
       "id": "ep-173276",
@@ -5473,7 +5526,8 @@
       "venue": {
         "name": "อาคารเคเอกซ์",
         "province": "bangkok"
-      }
+      },
+      "imageScore": 5
     },
     {
       "id": "zip-the-bells-rang-again-the-new-musical",
@@ -5496,7 +5550,8 @@
         "province": "bangkok",
         "lat": 13.77293,
         "lng": 100.61022
-      }
+      },
+      "imageScore": 8
     },
     {
       "id": "run-fNVuTfgd",
@@ -5520,7 +5575,8 @@
       "venue": {
         "name": "ปราสาทตาควาย อ.พนมดงรัก จ.สุรินทร์",
         "province": "surin"
-      }
+      },
+      "imageScore": 9
     },
     {
       "id": "run-uUFzcKuD",
@@ -5544,7 +5600,8 @@
       "venue": {
         "name": "โรงแรมบันยันทรี กรุงเทพ ถนนสาทรใต้ เขตสาทร กรุงเทพมหานคร",
         "province": "bangkok"
-      }
+      },
+      "imageScore": 7
     },
     {
       "id": "run-TtmMRcLJ",
@@ -5568,7 +5625,8 @@
       "venue": {
         "name": "มหาวิทยาลัยราชภัฏกำแพงเพชร จ.กำแพงเพชร",
         "province": "kamphaeng-phet"
-      }
+      },
+      "imageScore": 7
     },
     {
       "id": "eb-1982348303138",
@@ -5590,7 +5648,8 @@
         "province": "bangkok",
         "lat": 13.7662,
         "lng": 100.57405
-      }
+      },
+      "imageScore": 3
     },
     {
       "id": "eb-1535777254109",
@@ -5610,7 +5669,8 @@
       "venue": {
         "name": "ibis Styles Bangkok Ratchada",
         "province": "bangkok"
-      }
+      },
+      "imageScore": 2
     },
     {
       "id": "eb-1994919440749",
@@ -5630,7 +5690,8 @@
       "venue": {
         "name": "Baiyoke Boutique Hotel",
         "province": "bangkok"
-      }
+      },
+      "imageScore": 5
     },
     {
       "id": "ep-181582",
@@ -5651,7 +5712,8 @@
       "venue": {
         "name": "Waterfall Festival",
         "province": "surat-thani"
-      }
+      },
+      "imageScore": 6
     },
     {
       "id": "ep-178566",
@@ -5676,7 +5738,8 @@
         "name": "UOB LIVE",
         "province": "bangkok"
       },
-      "sponsor": "มาม่า"
+      "sponsor": "มาม่า",
+      "imageScore": 9
     },
     {
       "id": "ep-176642",
@@ -5700,7 +5763,8 @@
         "province": "phuket",
         "lat": 7.90274,
         "lng": 98.3015
-      }
+      },
+      "imageScore": 7
     },
     {
       "id": "ep-181115",
@@ -5721,7 +5785,8 @@
       "venue": {
         "name": "Crazy Gringo’s Tex Mex FUN-Diner",
         "province": "krabi"
-      }
+      },
+      "imageScore": 8
     },
     {
       "id": "ep-181615",
@@ -5742,7 +5807,8 @@
       "venue": {
         "name": "Waterfall Festival",
         "province": "surat-thani"
-      }
+      },
+      "imageScore": 5
     },
     {
       "id": "ep-178401",
@@ -5766,7 +5832,8 @@
         "province": "bangkok",
         "lat": 13.72911,
         "lng": 100.56522
-      }
+      },
+      "imageScore": 7
     },
     {
       "id": "ep-177902",
@@ -5790,7 +5857,8 @@
         "province": "bangkok",
         "lat": 13.73251,
         "lng": 100.56608
-      }
+      },
+      "imageScore": 9
     },
     {
       "id": "ep-174010",
@@ -5814,7 +5882,8 @@
       "venue": {
         "name": "ICONSIAM HALL 7 floor",
         "province": "bangkok"
-      }
+      },
+      "imageScore": 8
     },
     {
       "id": "run-pMjZddlR",
@@ -5838,7 +5907,8 @@
       "venue": {
         "name": "แหล่งเรียนรู้ภูมิปัญญาท้องถิ่นบ้านโคกกุง-โคกเจริญ อ.สีชมพู จ.ขอนแก่น",
         "province": "khon-kaen"
-      }
+      },
+      "imageScore": 4
     },
     {
       "id": "ep-177073",
@@ -5860,7 +5930,8 @@
       "venue": {
         "name": "ICONSIAM HALL",
         "province": "bangkok"
-      }
+      },
+      "imageScore": 9
     },
     {
       "id": "ep-174611",
@@ -5881,7 +5952,8 @@
       "venue": {
         "name": "Hii Festival Koh Tao",
         "province": "surat-thani"
-      }
+      },
+      "imageScore": 5
     },
     {
       "id": "run-vjbmljhe",
@@ -5905,7 +5977,8 @@
       "venue": {
         "name": "ลานไทยสมายล์บัส สำนักงานใหญ่ เจริญนคร กรุงเทพมหานคร",
         "province": "bangkok"
-      }
+      },
+      "imageScore": 7
     },
     {
       "id": "run-DkDUFGvZ",
@@ -5929,7 +6002,8 @@
       "venue": {
         "name": "วัดควนอุโบสถ ต.ปริก อ.ทุ่งใหญ่ จ.นครศรีธรรมราช",
         "province": "nakhon-si-thammarat"
-      }
+      },
+      "imageScore": 3
     },
     {
       "id": "run-bpLvBuhO",
@@ -5953,7 +6027,8 @@
       "venue": {
         "name": "รพ.สต.บ้านหนองอียอ อ.สนม จ.สุรินทร์",
         "province": "surin"
-      }
+      },
+      "imageScore": 4
     },
     {
       "id": "run-ruYlnwfk",
@@ -5975,7 +6050,8 @@
       "venue": {
         "name": "โรงเรียนบ้านน้ำรี อ.เฉลิมพระเกียรติ จ.น่าน",
         "province": "nan"
-      }
+      },
+      "imageScore": 9
     },
     {
       "id": "ep-181648",
@@ -5996,7 +6072,8 @@
       "venue": {
         "name": "Waterfall Festival",
         "province": "surat-thani"
-      }
+      },
+      "imageScore": 5
     },
     {
       "id": "ep-159292",
@@ -6014,7 +6091,8 @@
       "sourceUrl": "https://www.eventpop.me/e/159292/wpbkk2027amaxon",
       "sourceName": "Eventpop",
       "fetchedAt": "2026-11-06T15:27:46.452Z",
-      "venueId": "paragonhall"
+      "venueId": "paragonhall",
+      "imageScore": 10
     },
     {
       "id": "zip-material-submission-showcase-from-local-to-global-2473dd17",
@@ -6037,7 +6115,8 @@
         "province": "bangkok",
         "lat": 13.72705,
         "lng": 100.51518
-      }
+      },
+      "imageScore": 3
     },
     {
       "id": "ep-181116",
@@ -6058,7 +6137,8 @@
       "venue": {
         "name": "Crazy Gringo's Tex Mex FUN-Dining",
         "province": "krabi"
-      }
+      },
+      "imageScore": 8
     },
     {
       "id": "ep-179492",
@@ -6079,7 +6159,8 @@
       "venue": {
         "name": "Hotel Clover Patong Phuket",
         "province": "phuket"
-      }
+      },
+      "imageScore": 5
     },
     {
       "id": "ep-176675",
@@ -6102,7 +6183,8 @@
         "province": "phuket",
         "lat": 7.90274,
         "lng": 98.3015
-      }
+      },
+      "imageScore": 5
     },
     {
       "id": "ep-152872",
@@ -6125,7 +6207,8 @@
       "venue": {
         "name": "Bangkok Island",
         "province": "bangkok"
-      }
+      },
+      "imageScore": 8
     },
     {
       "id": "ep-177471",
@@ -6148,7 +6231,8 @@
         "province": "phuket",
         "lat": 7.98482,
         "lng": 98.31007
-      }
+      },
+      "imageScore": 8
     },
     {
       "id": "eb-1740977784419",
@@ -6170,7 +6254,8 @@
         "province": "phuket",
         "lat": 7.88479,
         "lng": 98.38915
-      }
+      },
+      "imageScore": 8
     },
     {
       "id": "ep-173641",
