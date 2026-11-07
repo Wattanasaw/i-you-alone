@@ -1972,5 +1972,33 @@
  "rev|13.723,100.521": "bangkok",
  "rev|11.587,104.654": null,
  "rev|18.784,99.003": "chiang-mai",
- "rev|17.406,102.802": "udon-thani"
+ "rev|17.406,102.802": "udon-thani",
+ "กรุงเทพมหานคร ประเทศไทย|bangkok": {
+  "lat": 13.76862,
+  "lng": 100.50045,
+  "state": "Bangkok"
+ },
+ "พีเพิล เฮ้าส์ people haus|pathum-thani": null,
+ "สวนเบญจกิติ|bangkok": {
+  "lat": 13.72922,
+  "lng": 100.55852,
+  "state": "Bangkok"
+ },
+ "arai arai home cafe local bar|bangkok": null,
+ "bhiraj tower at emquartier ภิรัชทาวเวอร์ แอท เอ็มควอเทียร์|bangkok": null,
+ "haus garden|bangkok": null,
+ "เอ็มสเฟียร์|bangkok": {
+  "lat": 13.73251,
+  "lng": 100.56608,
+  "state": "Bangkok"
+ },
+ "ontrack station national stadium|bangkok": null,
+ "อัฒจันทร์กลาง|bangkok": {
+  "lat": 13.72851,
+  "lng": 100.55359,
+  "state": "Bangkok"
+ },
+ "kloud by kbank คลาวด์ บาย เคแบงก์|bangkok": null,
+ "zillaspace|bangkok": null,
+ "larder chatuchak|bangkok": null
 }
