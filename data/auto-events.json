@@ -2184,7 +2184,8 @@
         "province": "chiang-rai",
         "lat": 18.9136,
         "lng": 99.2282
-      }
+      },
+      "imageScore": 7
     },
     {
       "id": "run-gqsYUOOF",
@@ -2208,7 +2209,8 @@
       "venue": {
         "name": "ริมคลองชลประทานหลังเทศบาลโคกชะงาย จ.พัทลุง",
         "province": "phatthalung"
-      }
+      },
+      "imageScore": 4
     },
     {
       "id": "run-HyQmDWWi",
@@ -2232,7 +2234,8 @@
       "venue": {
         "name": "บ้านหนองหล่ม ต.ศรีบัวบาน อ.เมือง จ.ลำพูน",
         "province": "lamphun"
-      }
+      },
+      "imageScore": 9
     },
     {
       "id": "run-HAjDNzlm",
@@ -2256,7 +2259,8 @@
       "venue": {
         "name": "วิทยาลัยเทคโนโลยีหลวงปู่สรวงวัดไพรพัฒนา อ.ภูสิงห์ จ.ศรีสะเกษ",
         "province": "sisaket"
-      }
+      },
+      "imageScore": 8
     },
     {
       "id": "eb-2003959940126",
@@ -2276,7 +2280,8 @@
       "venue": {
         "name": "Adam's Apple Club",
         "province": "chiang-mai"
-      }
+      },
+      "imageScore": 4
     },
     {
       "id": "eb-1982855973594",
@@ -2296,7 +2301,8 @@
       "venue": {
         "name": "Grand Mercure Bangkok Atrium",
         "province": "bangkok"
-      }
+      },
+      "imageScore": 5
     },
     {
       "id": "ep-172813",
@@ -2319,7 +2325,8 @@
         "province": "surat-thani",
         "lat": 9.73495,
         "lng": 100.03057
-      }
+      },
+      "imageScore": 7
     },
     {
       "id": "ep-167931",
@@ -2342,7 +2349,8 @@
         "province": "pathum-thani",
         "lat": 14.08033,
         "lng": 100.61143
-      }
+      },
+      "imageScore": 6
     },
     {
       "id": "eb-2003306309098",
@@ -2364,7 +2372,8 @@
         "province": "chonburi",
         "lat": 12.85756,
         "lng": 100.90876
-      }
+      },
+      "imageScore": 9
     },
     {
       "id": "ep-180715",
@@ -2385,7 +2394,8 @@
       "venue": {
         "name": "IMC Institute",
         "province": "bangkok"
-      }
+      },
+      "imageScore": 5
     },
     {
       "id": "ep-180682",
@@ -2405,7 +2415,8 @@
       "venue": {
         "name": "IMC Institute",
         "province": "bangkok"
-      }
+      },
+      "imageScore": 5
     },
     {
       "id": "ep-159192",
@@ -2425,7 +2436,8 @@
       "sourceUrl": "https://www.eventpop.me/e/159192/admansymposium2026",
       "sourceName": "Eventpop",
       "fetchedAt": "2026-11-06T15:27:47.937Z",
-      "venueId": "samyan"
+      "venueId": "samyan",
+      "imageScore": 6
     },
     {
       "id": "ttm-road-to-the-grim-lover",
@@ -2450,7 +2462,8 @@
         "province": "bangkok",
         "lat": 13.72682,
         "lng": 100.51029
-      }
+      },
+      "imageScore": 9
     },
     {
       "id": "qs-thailand-smart-city-2026",
@@ -2469,7 +2482,8 @@
       "sourceUrl": "https://qsncc.com/th/whats-on/event-calendar/thailand-smart-city-2026/",
       "sourceName": "QSNCC",
       "fetchedAt": "2026-11-07T02:23:20.394Z",
-      "venueId": "qsncc"
+      "venueId": "qsncc",
+      "imageScore": 5
     },
     {
       "id": "ep-180847",
@@ -2491,7 +2505,8 @@
       "venue": {
         "name": "Liberty Plaza",
         "province": "bangkok"
-      }
+      },
+      "imageScore": 7
     },
     {
       "id": "ep-174544",
@@ -2512,7 +2527,8 @@
       "venue": {
         "name": "Hii Festival Koh Tao",
         "province": "surat-thani"
-      }
+      },
+      "imageScore": 4
     },
     {
       "id": "ttm-rbso-2026-the-maisky-trio-debut-in-thailand",
@@ -2535,7 +2551,8 @@
       "venue": {
         "name": "หอประชุม จุฬาลงกรณ์มหาวิทยาลัย",
         "province": "bangkok"
-      }
+      },
+      "imageScore": 8
     },
     {
       "id": "eb-2004272105822",
@@ -2557,7 +2574,8 @@
         "province": "chiang-mai",
         "lat": 18.79137,
         "lng": 98.97957
-      }
+      },
+      "imageScore": 8
     },
     {
       "id": "eb-2004271594292",
@@ -2579,7 +2597,8 @@
         "province": "chiang-mai",
         "lat": 18.79137,
         "lng": 98.97957
-      }
+      },
+      "imageScore": 8
     },
     {
       "id": "qs-money-expo-2026-bangkok-year-end",
@@ -2598,7 +2617,8 @@
       "sourceUrl": "https://qsncc.com/th/whats-on/event-calendar/money-expo-2026-bangkok-year-end/",
       "sourceName": "QSNCC",
       "fetchedAt": "2026-11-07T02:23:18.720Z",
-      "venueId": "qsncc"
+      "venueId": "qsncc",
+      "imageScore": 5
     },
     {
       "id": "eb-2004279331434",
@@ -2620,7 +2640,8 @@
         "province": "chiang-mai",
         "lat": 18.79137,
         "lng": 98.97957
-      }
+      },
+      "imageScore": 4
     },
     {
       "id": "ep-181150",
@@ -2642,7 +2663,8 @@
       "venue": {
         "name": "Hotel Clover Patong Phuket",
         "province": "phuket"
-      }
+      },
+      "imageScore": 8
     },
     {
       "id": "ep-179956",
@@ -2664,7 +2686,8 @@
       "venue": {
         "name": "White Cloud Ari",
         "province": "bangkok"
-      }
+      },
+      "imageScore": 5
     },
     {
       "id": "ep-179459",
@@ -2685,7 +2708,8 @@
       "venue": {
         "name": "Bangkok Island",
         "province": "bangkok"
-      }
+      },
+      "imageScore": 2
     },
     {
       "id": "ep-160560",
@@ -2707,7 +2731,8 @@
       "venue": {
         "name": "SCBX NEXT TECH",
         "province": "bangkok"
-      }
+      },
+      "imageScore": 4
     },
     {
       "id": "ttm-one-lumpinee-179",
@@ -2732,7 +2757,8 @@
         "province": "bangkok",
         "lat": 13.87619,
         "lng": 100.59596
-      }
+      },
+      "imageScore": 8
     },
     {
       "id": "eb-1980443150776",
@@ -2752,7 +2778,8 @@
       "venue": {
         "name": "Grand Mercure Bangkok Atrium",
         "province": "bangkok"
-      }
+      },
+      "imageScore": 2
     },
     {
       "id": "qs-friends-family-sale-2026",
@@ -2770,7 +2797,8 @@
       "sourceUrl": "https://qsncc.com/th/whats-on/event-calendar/friends-family-sale-2026/",
       "sourceName": "QSNCC",
       "fetchedAt": "2026-11-07T02:23:17.026Z",
-      "venueId": "qsncc"
+      "venueId": "qsncc",
+      "imageScore": 3
     },
     {
       "id": "ep-179525",
@@ -2789,7 +2817,8 @@
       "sourceUrl": "https://www.eventpop.me/e/179525",
       "sourceName": "Eventpop",
       "fetchedAt": "2026-11-06T16:13:56.789Z",
-      "venueId": "centralworld"
+      "venueId": "centralworld",
+      "imageScore": 9
     },
     {
       "id": "ep-178599",
@@ -2810,7 +2839,8 @@
       "sourceUrl": "https://www.eventpop.me/e/178599/jmnkconcert",
       "sourceName": "Eventpop",
       "fetchedAt": "2026-11-06T15:21:15.326Z",
-      "venueId": "centralworld"
+      "venueId": "centralworld",
+      "imageScore": 9
     },
     {
       "id": "ep-176101",
@@ -2832,7 +2862,8 @@
       "venue": {
         "name": "ซี อาเซียน สามย่าน โค-ออป",
         "province": "bangkok"
-      }
+      },
+      "imageScore": 5
     },
     {
       "id": "ep-171584",
@@ -2855,7 +2886,8 @@
         "name": "Scarlette Café",
         "province": "bangkok"
       },
-      "sponsor": "Singha Corporation"
+      "sponsor": "Singha Corporation",
+      "imageScore": 8
     },
     {
       "id": "ep-167139",
@@ -2879,7 +2911,8 @@
         "province": "bangkok",
         "lat": 13.76343,
         "lng": 100.52825
-      }
+      },
+      "imageScore": 5
     },
     {
       "id": "ep-162189",
@@ -2905,7 +2938,8 @@
         "province": "bangkok",
         "lat": 13.73251,
         "lng": 100.56608
-      }
+      },
+      "imageScore": 6
     },
     {
       "id": "ttm-third-person-final-episode",
@@ -2930,7 +2964,8 @@
         "province": "bangkok",
         "lat": 13.82868,
         "lng": 100.56848
-      }
+      },
+      "imageScore": 9
     },
     {
       "id": "ttm-the-players-build-fancon",
@@ -2953,7 +2988,8 @@
       "venue": {
         "name": "Phenix Grand Ballroom",
         "province": "bangkok"
-      }
+      },
+      "imageScore": 6
     },
     {
       "id": "ttm-jan-jingjing-bewitch-you-fancon",
@@ -2973,7 +3009,8 @@
       "sourceUrl": "https://www.thaiticketmajor.com/concert/jan-jingjing-bewitch-you-fancon.html",
       "sourceName": "ThaiTicketMajor",
       "fetchedAt": "2026-11-06T20:24:35.378Z",
-      "venueId": "impact"
+      "venueId": "impact",
+      "imageScore": 6
     },
     {
       "id": "ttm-the-rising-sun-innongsa-1st-fan-meeting-in-bangkok",
@@ -2996,7 +3033,8 @@
       "venue": {
         "name": "Live Streaming by TTM LIVE",
         "province": "bangkok"
-      }
+      },
+      "imageScore": 8
     },
     {
       "id": "run-nJTMxCVU",
@@ -3020,7 +3058,8 @@
       "venue": {
         "name": "โรงเรียนชุมชนนิคมทับกวางสงเคราะห์ 1 ต.ทับกวาง อ.แก่งคอย จ.สระบุรี",
         "province": "saraburi"
-      }
+      },
+      "imageScore": 3
     },
     {
       "id": "eb-2002423584846",
@@ -3042,7 +3081,8 @@
         "province": "bangkok",
         "lat": 13.73704,
         "lng": 100.56036
-      }
+      },
+      "imageScore": 7
     },
     {
       "id": "ep-179128",
@@ -3063,7 +3103,8 @@
       "venue": {
         "name": "Waterfall Festival",
         "province": "surat-thani"
-      }
+      },
+      "imageScore": 4
     },
     {
       "id": "ep-177570",
@@ -3085,7 +3126,8 @@
       "venue": {
         "name": "สนามแข่งรถปทุมธานี สปีดเวย์",
         "province": "pathum-thani"
-      }
+      },
+      "imageScore": 8
     },
     {
       "id": "ep-177405",
@@ -3109,7 +3151,8 @@
         "province": "bangkok",
         "lat": 13.84826,
         "lng": 100.56754
-      }
+      },
+      "imageScore": 9
     },
     {
       "id": "ep-176035",
@@ -3131,7 +3174,8 @@
       "venue": {
         "name": "True Space Asoke",
         "province": "bangkok"
-      }
+      },
+      "imageScore": 4
     },
     {
       "id": "ep-171120",
@@ -3153,7 +3197,8 @@
       "venue": {
         "name": "Ambience space",
         "province": "bangkok"
-      }
+      },
+      "imageScore": 8
     },
     {
       "id": "ep-159791",
@@ -3174,7 +3219,8 @@
       "venue": {
         "name": "สถาบัน Triam วิทย์-คณิต MBK ชั้น 6 โซน D สถาบันติวสอบเข้า ม.1 และ ม.4",
         "province": "bangkok"
-      }
+      },
+      "imageScore": 2
     },
     {
       "id": "run-oSLkfhra",
@@ -3197,7 +3243,8 @@
       "venue": {
         "name": "สนามกีฬาโรงเรียนอนุบาลเวียงเชียงรุ้ง จ.เชียงราย",
         "province": "chiang-rai"
-      }
+      },
+      "imageScore": 6
     },
     {
       "id": "run-qONUmcTW",
@@ -3220,7 +3267,8 @@
       "venue": {
         "name": "วิทยาลัยพยาบาลบรมราชชนนี จักรีรัช อ.บ้านโป่ง จ.ราชบุรี",
         "province": "ratchaburi"
-      }
+      },
+      "imageScore": 5
     },
     {
       "id": "run-JtpJlkvn",
@@ -3244,7 +3292,8 @@
       "venue": {
         "name": "โรงเรียนประชาฤกษ์สมบูรณ์ ต.บางน้ำเปรี้ยว อ.บางน้ำเปรี้ยว จ.ฉะเชิงเทรา",
         "province": "chachoengsao"
-      }
+      },
+      "imageScore": 5
     },
     {
       "id": "run-gtKwVQdg",
@@ -3269,7 +3318,8 @@
       "venue": {
         "name": "วัดพระพุทธบาทเขาลูกช้าง จ.เพชรบุรี",
         "province": "phetchaburi"
-      }
+      },
+      "imageScore": 7
     },
     {
       "id": "ep-180748",
@@ -3290,7 +3340,8 @@
       "venue": {
         "name": "IMC Institute",
         "province": "bangkok"
-      }
+      },
+      "imageScore": 6
     },
     {
       "id": "eb-2004158494006",
@@ -3310,7 +3361,8 @@
       "venue": {
         "name": "Holiday Inn Express Bangkok Soi Soonvijai by IHG",
         "province": "bangkok"
-      }
+      },
+      "imageScore": 6
     },
     {
       "id": "eb-2004158662510",
@@ -3330,7 +3382,8 @@
       "venue": {
         "name": "Holiday Inn Express Bangkok Soi Soonvijai by IHG",
         "province": "bangkok"
-      }
+      },
+      "imageScore": 3
     },
     {
       "id": "ttm-joji-solaris-tour-2026",
@@ -3350,7 +3403,8 @@
       "sourceUrl": "https://www.thaiticketmajor.com/concert/joji-solaris-tour-2026.html",
       "sourceName": "ThaiTicketMajor",
       "fetchedAt": "2026-11-06T20:24:37.016Z",
-      "venueId": "impact"
+      "venueId": "impact",
+      "imageScore": 4
     },
     {
       "id": "eb-1978873470821",
@@ -3372,7 +3426,8 @@
         "province": "chiang-mai",
         "lat": 18.6968,
         "lng": 98.96576
-      }
+      },
+      "imageScore": 8
     },
     {
       "id": "eb-1978825508364",
@@ -3392,7 +3447,8 @@
       "venue": {
         "name": "The CAD Cultural Center Lanna",
         "province": "chiang-mai"
-      }
+      },
+      "imageScore": 7
     },
     {
       "id": "zip-chiangmai-heritage-sky-lanterns-festival",
@@ -3415,7 +3471,8 @@
       "venue": {
         "name": "ปางแฟน Rock'n River",
         "province": "chiang-mai"
-      }
+      },
+      "imageScore": 8
     },
     {
       "id": "ep-180781",
@@ -3436,7 +3493,8 @@
       "venue": {
         "name": "IMC Institute",
         "province": "bangkok"
-      }
+      },
+      "imageScore": 5
     },
     {
       "id": "zip-generative-ai-for-everyday-work-documents-data-content",
@@ -3457,7 +3515,8 @@
       "venue": {
         "name": "Udomsuk Hub",
         "province": "bangkok"
-      }
+      },
+      "imageScore": 6
     },
     {
       "id": "eb-2004276043600",
@@ -3479,7 +3538,8 @@
         "province": "chiang-mai",
         "lat": 18.79609,
         "lng": 99.00768
-      }
+      },
+      "imageScore": 5
     },
     {
       "id": "ep-179161",
@@ -3500,7 +3560,8 @@
       "venue": {
         "name": "Waterfall Festival",
         "province": "surat-thani"
-      }
+      },
+      "imageScore": 5
     },
     {
       "id": "qs-find-design-fair-asia-2026",
@@ -3519,7 +3580,8 @@
       "sourceUrl": "https://qsncc.com/th/whats-on/event-calendar/find-design-fair-asia-2026/",
       "sourceName": "QSNCC",
       "fetchedAt": "2026-11-07T02:23:13.622Z",
-      "venueId": "qsncc"
+      "venueId": "qsncc",
+      "imageScore": 6
     },
     {
       "id": "ep-169325",
@@ -3537,7 +3599,8 @@
       "sourceUrl": "https://www.eventpop.me/e/169325/lifeexpo2026",
       "sourceName": "Eventpop",
       "fetchedAt": "2026-11-06T15:26:59.080Z",
-      "venueId": "paragonhall"
+      "venueId": "paragonhall",
+      "imageScore": 8
     },
     {
       "id": "ttm-the-grim-lover-first-premiere",
@@ -3560,7 +3623,8 @@
       "venue": {
         "name": "สยามภาวลัย ชั้น 6 สยามพารากอน",
         "province": "bangkok"
-      }
+      },
+      "imageScore": 8
     },
     {
       "id": "ep-181315",
@@ -3582,7 +3646,8 @@
       "venue": {
         "name": "PYONG Rehabilitation Center Ratchaprasong | เปียง ศูนย์เวชศาสตร์ฟื้นฟู",
         "province": "bangkok"
-      }
+      },
+      "imageScore": 7
     },
     {
       "id": "ep-181117",
@@ -3606,7 +3671,8 @@
         "province": "bangkok",
         "lat": 13.76862,
         "lng": 100.50045
-      }
+      },
+      "imageScore": 7
     },
     {
       "id": "ep-178199",
@@ -3630,7 +3696,8 @@
         "province": "bangkok",
         "lat": 13.72911,
         "lng": 100.56522
-      }
+      },
+      "imageScore": 5
     },
     {
       "id": "ep-177935",
@@ -3655,7 +3722,8 @@
         "lat": 13.74537,
         "lng": 100.53236
       },
-      "sponsor": "Singha Corporation"
+      "sponsor": "Singha Corporation",
+      "imageScore": 7
     },
     {
       "id": "ep-177704",
@@ -3678,7 +3746,8 @@
         "province": "bangkok",
         "lat": 13.73152,
         "lng": 100.56428
-      }
+      },
+      "imageScore": 2
     },
     {
       "id": "ep-152837",
@@ -3704,7 +3773,8 @@
         "province": "nakhon-pathom",
         "lat": 13.79465,
         "lng": 100.32186
-      }
+      },
+      "imageScore": 7
     },
     {
       "id": "ttm-gmmtv-starlympics-2026",
@@ -3724,7 +3794,8 @@
       "sourceUrl": "https://www.thaiticketmajor.com/concert/gmmtv-starlympics-2026.html",
       "sourceName": "ThaiTicketMajor",
       "fetchedAt": "2026-11-06T20:24:39.642Z",
-      "venueId": "impact"
+      "venueId": "impact",
+      "imageScore": 5
     },
     {
       "id": "ttm-2026-9th-concert-island-encore-in-bangkok",
@@ -3749,7 +3820,8 @@
         "province": "nonthaburi",
         "lat": 13.90355,
         "lng": 100.5282
-      }
+      },
+      "imageScore": 8
     },
     {
       "id": "ttm-true-x-major-group-present-movie-rally-game-2026",
@@ -3773,7 +3845,8 @@
       "venue": {
         "name": "Major Ratchyothin - Novotel Rayong RimPae Resort",
         "province": "rayong"
-      }
+      },
+      "imageScore": 7
     },
     {
       "id": "run-zNVamhSI",
@@ -3797,7 +3870,8 @@
       "venue": {
         "name": "โรงแรมเลอ เมอริเดียน จ.เชียงราย",
         "province": "chiang-rai"
-      }
+      },
+      "imageScore": 5
     },
     {
       "id": "eb-2001683100036",
@@ -3817,7 +3891,8 @@
       "venue": {
         "name": "Baiyoke Boutique Hotel",
         "province": "bangkok"
-      }
+      },
+      "imageScore": 4
     },
     {
       "id": "qs-binance-blockchain-week-bangkok-2026",
@@ -3835,7 +3910,8 @@
       "sourceUrl": "https://qsncc.com/th/whats-on/event-calendar/binance-blockchain-week-bangkok-2026/",
       "sourceName": "QSNCC",
       "fetchedAt": "2026-11-07T02:23:11.934Z",
-      "venueId": "qsncc"
+      "venueId": "qsncc",
+      "imageScore": 6
     },
     {
       "id": "ep-179922",
@@ -3860,7 +3936,8 @@
         "lat": 13.74537,
         "lng": 100.53236
       },
-      "sponsor": "Singha Corporation"
+      "sponsor": "Singha Corporation",
+      "imageScore": 8
     },
     {
       "id": "ep-179823",
@@ -3882,7 +3959,8 @@
       "venue": {
         "name": "Bangkok Island",
         "province": "bangkok"
-      }
+      },
+      "imageScore": 6
     },
     {
       "id": "ep-174577",
@@ -3903,7 +3981,8 @@
       "venue": {
         "name": "Hii Festival Koh Tao",
         "province": "surat-thani"
-      }
+      },
+      "imageScore": 5
     },
     {
       "id": "ep-173408",
@@ -3926,7 +4005,8 @@
       "venue": {
         "name": "MCC HALL The Mall Lifestore Bangkae",
         "province": "bangkok"
-      }
+      },
+      "imageScore": 8
     },
     {
       "id": "ep-172814",
@@ -3948,7 +4028,8 @@
       "venue": {
         "name": "อาคารเคเอกซ์",
         "province": "bangkok"
-      }
+      },
+      "imageScore": 5
     },
     {
       "id": "ep-167073",
@@ -3970,7 +4051,8 @@
       "venue": {
         "name": "ICONSIAM HALL",
         "province": "bangkok"
-      }
+      },
+      "imageScore": 9
     },
     {
       "id": "run-zXCauYPT",
@@ -3994,7 +4076,8 @@
       "venue": {
         "name": "โรงเรียนม่วงไข่พิทยาคม จ.แพร่",
         "province": "phrae"
-      }
+      },
+      "imageScore": 7
     },
     {
       "id": "run-lCXoQoUo",
@@ -4018,7 +4101,8 @@
       "venue": {
         "name": "จุดสตาร์ททางขึ้นภูตาจอ อ.กะปง จ.พังงา",
         "province": "phang-nga"
-      }
+      },
+      "imageScore": 7
     },
     {
       "id": "run-EMuVDaMQ",
@@ -4042,7 +4126,8 @@
       "venue": {
         "name": "โรงเรียนบ้านปล้องส้าน ต.ปล้อง อ.เทิง จ.เชียงราย",
         "province": "chiang-rai"
-      }
+      },
+      "imageScore": 3
     },
     {
       "id": "ep-180814",
@@ -4064,7 +4149,8 @@
       "venue": {
         "name": "IMC Institute",
         "province": "bangkok"
-      }
+      },
+      "imageScore": 5
     },
     {
       "id": "zip-sala-saneha-9-temples-to-heaven",
@@ -4085,7 +4171,8 @@
       "venue": {
         "name": "Sala Saneha",
         "province": "bangkok"
-      }
+      },
+      "imageScore": 6
     },
     {
       "id": "ep-179989",
@@ -4109,7 +4196,8 @@
         "province": "bangkok",
         "lat": 13.6867,
         "lng": 100.61121
-      }
+      },
+      "imageScore": 7
     },
     {
       "id": "ep-173574",
@@ -4132,7 +4220,8 @@
         "province": "surat-thani",
         "lat": 9.73495,
         "lng": 100.03057
-      }
+      },
+      "imageScore": 6
     },
     {
       "id": "zip-film-connection-12",
@@ -4157,7 +4246,8 @@
         "province": "bangkok",
         "lat": 13.80383,
         "lng": 100.63005
-      }
+      },
+      "imageScore": 5
     },
     {
       "id": "imp-the-43rd-thailand-international-motor-expo-2026",

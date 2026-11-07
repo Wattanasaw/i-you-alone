@@ -548,7 +548,12 @@
    "province": "chiang-rai",
    "summary": {},
    "fetchedAt": "2026-11-07T01:22:27.029Z",
-   "trend": 1
+   "trend": 1,
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/HallOfOpium_Valley.JPG/960px-HallOfOpium_Valley.JPG",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:HallOfOpium_Valley.JPG",
+   "imageCredit": "Jpatokal · CC BY-SA 4.0",
+   "imageAi": true,
+   "imageScore": 6
   },
   {
    "id": "osm-n2315561244",
@@ -2221,7 +2226,12 @@
     "en": "Varadis Palace is the former residence of Prince Tisavarakumarn, the Prince Damrong Rajanubhab on Lan Luang Road in Bangkok, Thailand. The palace was built in 1911 by German architect Karl Döhring during the reign of King Rama V to the reign of King Rama VI."
    },
    "fetchedAt": "2026-11-06T18:41:45.126Z",
-   "views": 8
+   "views": 8,
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/%282024%29_%E0%B8%84%E0%B8%A5%E0%B8%AD%E0%B8%87%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%B2%E0%B8%84_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9B%E0%B9%89%E0%B8%AD%E0%B8%A1%E0%B8%9B%E0%B8%A3%E0%B8%B2%E0%B8%9A%E0%B8%A8%E0%B8%B1%E0%B8%95%E0%B8%A3%E0%B8%B9%E0%B8%9E%E0%B9%88%E0%B8%B2%E0%B8%A2_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%281%29.jpg/960px-%282024%29_%E0%B8%84%E0%B8%A5%E0%B8%AD%E0%B8%87%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%B2%E0%B8%84_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9B%E0%B9%89%E0%B8%AD%E0%B8%A1%E0%B8%9B%E0%B8%A3%E0%B8%B2%E0%B8%9A%E0%B8%A8%E0%B8%B1%E0%B8%95%E0%B8%A3%E0%B8%B9%E0%B8%9E%E0%B9%88%E0%B8%B2%E0%B8%A2_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%281%29.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:(2024)_%E0%B8%84%E0%B8%A5%E0%B8%AD%E0%B8%87%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%B2%E0%B8%84_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9B%E0%B9%89%E0%B8%AD%E0%B8%A1%E0%B8%9B%E0%B8%A3%E0%B8%B2%E0%B8%9A%E0%B8%A8%E0%B8%B1%E0%B8%95%E0%B8%A3%E0%B8%B9%E0%B8%9E%E0%B9%88%E0%B8%B2%E0%B8%A2_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_(1).jpg",
+   "imageCredit": "กสิณธร ราชโอรส · CC BY-SA 4.0",
+   "imageAi": true,
+   "imageScore": 6
   },
   {
    "id": "wd-Q985155",
@@ -2747,7 +2757,12 @@
     "en": "Chiang Mai Night Safari is located in the sub-district of Mae Hia in Chiang Mai, and the district Nong Khwai, and the district Hang Dong in Thailand. It is a zoo that is located to the west of Royal Flora Ratchaphruek 2006. Chiang Mai Night Safari is a government property under the Zoological Park Organization. The park was opened for the first time on 18 November 2005 and opened officially on the 6 February 2006."
    },
    "fetchedAt": "2026-11-06T18:16:15.988Z",
-   "views": 6
+   "views": 6,
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Nong_Kwai%2C_Hang_Dong_District%2C_Chiang_Mai_50230%2C_Thailand_-_panoramio.jpg/960px-Nong_Kwai%2C_Hang_Dong_District%2C_Chiang_Mai_50230%2C_Thailand_-_panoramio.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Nong_Kwai,_Hang_Dong_District,_Chiang_Mai_50230,_Thailand_-_panoramio.jpg",
+   "imageCredit": "mohigan · CC BY-SA 3.0",
+   "imageAi": true,
+   "imageScore": 8
   },
   {
    "id": "wd-Q14216076",
@@ -2768,7 +2783,12 @@
     "en": "Nathon is a town on the west coast of the Thai island of Ko Samui, a commercial center and a major port for fishing and transport of goods and people to mainland Thailand."
    },
    "fetchedAt": "2026-11-07T01:20:55.564Z",
-   "views": 6
+   "views": 6,
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Nathon_Samui.jpg/960px-Nathon_Samui.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Nathon_Samui.jpg",
+   "imageCredit": "Jens Schinke · CC BY-SA 3.0",
+   "imageAi": true,
+   "imageScore": 7
   },
   {
    "id": "wd-Q13025702",
@@ -3606,7 +3626,12 @@
     "en": "Phu Sang National Park is a national park in Northern Thailand."
    },
    "fetchedAt": "2026-11-06T18:19:26.203Z",
-   "views": 3
+   "views": 3,
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Phu_sang_water_fall.jpg/960px-Phu_sang_water_fall.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Phu_sang_water_fall.jpg",
+   "imageCredit": "Yoshifumi Iwata · CC BY-SA 4.0",
+   "imageAi": true,
+   "imageScore": 9
   },
   {
    "id": "wd-Q1620999",
@@ -3657,7 +3682,12 @@
     "en": "Phu Phan National Park is a national park in Sakon Nakhon and Kalasin provinces, Thailand. This isolated park covers a wide jungle area in the Phu Phan Mountains of Isan."
    },
    "fetchedAt": "2026-11-07T02:01:59.446Z",
-   "views": 3
+   "views": 3,
+   "image": "https://upload.wikimedia.org/wikipedia/commons/9/96/Phu_Phan_Mountains_-_view_from_Wat_Tham_Kham.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Phu_Phan_Mountains_-_view_from_Wat_Tham_Kham.jpg",
+   "imageCredit": "User:Mattes · Public domain",
+   "imageAi": true,
+   "imageScore": 6
   },
   {
    "id": "wd-Q1968975",
@@ -3845,7 +3875,12 @@
     "en": "Ko Libong (เกาะลิบง) is one of 550 islands in the Andaman Sea. Lying off the coast of Thailand, it is a part of an eponymous sub-district of Kantang District, Trang Province, which also includes several other islands of the Libong Archipelago and a small section of the shoreline near Kantang."
    },
    "fetchedAt": "2026-11-07T01:20:54.995Z",
-   "views": 3
+   "views": 3,
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Unnamed_Road%2C_Tambon_Ko_Libong%2C_Amphoe_Kantang%2C_Chang_Wat_Trang_92110%2C_Thailand_-_panoramio_%2842%29.jpg/960px-Unnamed_Road%2C_Tambon_Ko_Libong%2C_Amphoe_Kantang%2C_Chang_Wat_Trang_92110%2C_Thailand_-_panoramio_%2842%29.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Unnamed_Road,_Tambon_Ko_Libong,_Amphoe_Kantang,_Chang_Wat_Trang_92110,_Thailand_-_panoramio_(42).jpg",
+   "imageCredit": "Максим Улитин · CC BY 3.0",
+   "imageAi": true,
+   "imageScore": 8
   },
   {
    "id": "wd-Q17189240",
@@ -3868,7 +3903,12 @@
     "en": "Ko Yo is an island, located in the Songkhla lake in the area of Mueang Songkhla District, Songkhla Province in southern Thailand."
    },
    "fetchedAt": "2026-11-07T01:20:59.816Z",
-   "views": 3
+   "views": 3,
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/%E0%B9%80%E0%B8%81%E0%B8%B2%E0%B8%B0%E0%B8%A2%E0%B8%AD_-_panoramio.jpg/960px-%E0%B9%80%E0%B8%81%E0%B8%B2%E0%B8%B0%E0%B8%A2%E0%B8%AD_-_panoramio.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:%E0%B9%80%E0%B8%81%E0%B8%B2%E0%B8%B0%E0%B8%A2%E0%B8%AD_-_panoramio.jpg",
+   "imageCredit": "::::=UT=:::: · CC BY-SA 3.0",
+   "imageAi": true,
+   "imageScore": 8
   },
   {
    "id": "wd-Q549717",
@@ -4576,7 +4616,12 @@
     "en": "Ko Phra Thong is an island in Khura Buri District, Phang Nga Province, southern Thailand on the Andaman Sea. It has an area of 88 square kilometres (34 sq mi) and is separated from the mainland by a seven-metre-deep (23 ft) canal. The nearest town is Khura Buri, on the mainland about 10 km (6.2 mi) east."
    },
    "fetchedAt": "2026-11-07T01:20:28.056Z",
-   "views": 2
+   "views": 2,
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Blackeye_Thicklip%2C_Ko_Surin%2C_Ko_Phra_Thong%2C_Amphoe_Khura_Buri%2C_Phang-nga%2C_Thailand_imported_from_iNaturalist_photo_263326284.jpg/960px-Blackeye_Thicklip%2C_Ko_Surin%2C_Ko_Phra_Thong%2C_Amphoe_Khura_Buri%2C_Phang-nga%2C_Thailand_imported_from_iNaturalist_photo_263326284.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Blackeye_Thicklip,_Ko_Surin,_Ko_Phra_Thong,_Amphoe_Khura_Buri,_Phang-nga,_Thailand_imported_from_iNaturalist_photo_263326284.jpg",
+   "imageCredit": "no rights reserved · CC0",
+   "imageAi": true,
+   "imageScore": 6
   },
   {
    "id": "wd-Q1777754",
@@ -4869,7 +4914,12 @@
     "en": "The Royal Elephant National Museum, also known as Chang Ton National Museum, is a museum located in Dusit District, Bangkok, Thailand. Permanent closed"
    },
    "fetchedAt": "2026-11-06T20:04:30.579Z",
-   "views": 2
+   "views": 2,
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%99%E0%B8%B1%E0%B9%88%E0%B8%87%E0%B8%A7%E0%B8%B4%E0%B8%A1%E0%B8%B2%E0%B8%99%E0%B9%80%E0%B8%A1%E0%B8%86_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%94%E0%B8%B8%E0%B8%AA%E0%B8%B4%E0%B8%95_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%286%29.jpg/960px-%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%99%E0%B8%B1%E0%B9%88%E0%B8%87%E0%B8%A7%E0%B8%B4%E0%B8%A1%E0%B8%B2%E0%B8%99%E0%B9%80%E0%B8%A1%E0%B8%86_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%94%E0%B8%B8%E0%B8%AA%E0%B8%B4%E0%B8%95_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%286%29.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%99%E0%B8%B1%E0%B9%88%E0%B8%87%E0%B8%A7%E0%B8%B4%E0%B8%A1%E0%B8%B2%E0%B8%99%E0%B9%80%E0%B8%A1%E0%B8%86_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%94%E0%B8%B8%E0%B8%AA%E0%B8%B4%E0%B8%95_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_(6).jpg",
+   "imageCredit": "กสิณธร ราชโอรส · CC BY-SA 4.0",
+   "imageAi": true,
+   "imageScore": 7
   },
   {
    "id": "wd-Q4855203",
@@ -5005,7 +5055,12 @@
     "en": "The Golden Jubilee Museum of Agriculture, is an agricultural museum in Pathum Thani Province, Thailand."
    },
    "fetchedAt": "2026-11-06T20:04:46.740Z",
-   "views": 2
+   "views": 2,
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Pathumthani_The_Golden_Jubilee_Museum_of_Agriculture_3.jpg/960px-Pathumthani_The_Golden_Jubilee_Museum_of_Agriculture_3.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Pathumthani_The_Golden_Jubilee_Museum_of_Agriculture_3.jpg",
+   "imageCredit": "Mr.Peerapong Prasutr · CC BY-SA 4.0",
+   "imageAi": true,
+   "imageScore": 8
   },
   {
    "id": "wd-Q7709272",
@@ -5833,7 +5888,12 @@
     "en": "Children's Discovery Museum Bangkok 1, or formerly known as Bangkok Children's Discovery Museum, is a museum in Bangkok, Thailand, considered as the first museum and learning centre for children in Thailand and Southeast Asia. It is situated on the southern edge of Queen Sirikit Park, opposite Sunday Market."
    },
    "fetchedAt": "2026-11-06T18:41:47.735Z",
-   "views": 1
+   "views": 1,
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Archaeopteryx_fossils_reconstruction_-_Bangkok_Childrens_Discovery_Museum.jpg/960px-Archaeopteryx_fossils_reconstruction_-_Bangkok_Childrens_Discovery_Museum.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Archaeopteryx_fossils_reconstruction_-_Bangkok_Childrens_Discovery_Museum.jpg",
+   "imageCredit": "Pescov · CC BY-SA 4.0",
+   "imageAi": true,
+   "imageScore": 7
   },
   {
    "id": "wd-Q6583114",
@@ -5884,7 +5944,12 @@
     "en": "Ko Rang is an island in the southwestern part of the Ko Chang archipelago on the southeastern edge of the Gulf of Thailand. The island rises up out of 60m of water in most places and has few beaches. The southeastern corner of the island offers a reasonable anchorage and the Thai Coast Guard has deployed several mooring buoys in this area for dive boats."
    },
    "fetchedAt": "2026-11-07T01:20:52.590Z",
-   "views": 1
+   "views": 1,
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Small_island_next_to_Ko_Rang_2.jpg/960px-Small_island_next_to_Ko_Rang_2.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Small_island_next_to_Ko_Rang_2.jpg",
+   "imageCredit": "kallerna · CC BY-SA 4.0",
+   "imageAi": true,
+   "imageScore": 8
   },
   {
    "id": "wd-Q18816957",
@@ -5989,7 +6054,12 @@
     "en": "The Khon Kaen National Museum was opened by King Bhumibol Adulyadej on 20 December 1972. Most of the exhibits are concerned with history, art, and archaeology. Besides the museum's permanent collection, temporary exhibitions are shown throughout the year."
    },
    "fetchedAt": "2026-11-06T20:04:57.235Z",
-   "views": 1
+   "views": 1,
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Khon_Kaen_National_Museum.jpg/960px-Khon_Kaen_National_Museum.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Khon_Kaen_National_Museum.jpg",
+   "imageCredit": "LittleT889 · CC0",
+   "imageAi": true,
+   "imageScore": 7
   },
   {
    "id": "wd-Q2530020",
@@ -6601,7 +6671,12 @@
    "address": "248 แขวงบวรนิเวศ",
    "province": "bangkok",
    "summary": {},
-   "fetchedAt": "2026-11-07T02:02:14.298Z"
+   "fetchedAt": "2026-11-07T02:02:14.298Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/%E0%B8%95%E0%B8%B3%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%9E%E0%B9%87%E0%B8%8A%E0%B8%A3_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9A%E0%B8%A7%E0%B8%A3%E0%B8%99%E0%B8%B4%E0%B9%80%E0%B8%A7%E0%B8%A8%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3_Tamnak_Phet_%28Diamond_Residence%29_in_Wat_Bowonniwet_01.jpg/960px-%E0%B8%95%E0%B8%B3%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%9E%E0%B9%87%E0%B8%8A%E0%B8%A3_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9A%E0%B8%A7%E0%B8%A3%E0%B8%99%E0%B8%B4%E0%B9%80%E0%B8%A7%E0%B8%A8%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3_Tamnak_Phet_%28Diamond_Residence%29_in_Wat_Bowonniwet_01.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:%E0%B8%95%E0%B8%B3%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%9E%E0%B9%87%E0%B8%8A%E0%B8%A3_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9A%E0%B8%A7%E0%B8%A3%E0%B8%99%E0%B8%B4%E0%B9%80%E0%B8%A7%E0%B8%A8%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3_Tamnak_Phet_(Diamond_Residence)_in_Wat_Bowonniwet_01.jpg",
+   "imageCredit": "Chainwit. · CC BY-SA 4.0",
+   "imageAi": true,
+   "imageScore": 8
   },
   {
    "id": "osm-w242673270",
@@ -7661,7 +7736,12 @@
    "summary": {
     "th": "วัดภูเขาทอง (เกาะสมุย จังหวัดสุราษฎร์ธานี) Wat Phu Khao Thong (Gukauthong) Ko Samui Thailand"
    },
-   "fetchedAt": "2026-11-07T02:03:09.374Z"
+   "fetchedAt": "2026-11-07T02:03:09.374Z",
+   "image": "https://www.lemon8-app.com/seo/image?item_id=7225970238259724802&index=0&sign=0fc4ae6ff54edffd8366efce2a80d183",
+   "imagePage": "https://www.lemon8-app.com/@anna_genz/7225970238259724802?region=th",
+   "imageCredit": "Lemon8 · Anna",
+   "imageAi": true,
+   "imageScore": 8
   },
   {
    "id": "osm-n2578808292",
@@ -7804,7 +7884,12 @@
    "lng": 100.49864,
    "province": "bangkok",
    "summary": {},
-   "fetchedAt": "2026-11-07T02:03:30.274Z"
+   "fetchedAt": "2026-11-07T02:03:30.274Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Bangkok_-_Wat_Dibayavarivihara_%28Wat_Thipphawari_Wihan%29_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%97%E0%B8%B4%E0%B8%9E%E0%B8%A2%E0%B8%A7%E0%B8%B2%E0%B8%A3%E0%B8%B5%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3_%282019%29_-_img_02.jpg/960px-Bangkok_-_Wat_Dibayavarivihara_%28Wat_Thipphawari_Wihan%29_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%97%E0%B8%B4%E0%B8%9E%E0%B8%A2%E0%B8%A7%E0%B8%B2%E0%B8%A3%E0%B8%B5%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3_%282019%29_-_img_02.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Bangkok_-_Wat_Dibayavarivihara_(Wat_Thipphawari_Wihan)_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%97%E0%B8%B4%E0%B8%9E%E0%B8%A2%E0%B8%A7%E0%B8%B2%E0%B8%A3%E0%B8%B5%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3_(2019)_-_img_02.jpg",
+   "imageCredit": "Chainwit. · CC BY 4.0",
+   "imageAi": true,
+   "imageScore": 5
   },
   {
    "id": "osm-n12645537690",
@@ -7833,7 +7918,12 @@
    "lng": 100.79926,
    "province": "samut-prakan",
    "summary": {},
-   "fetchedAt": "2026-11-07T02:03:33.697Z"
+   "fetchedAt": "2026-11-07T02:03:33.697Z",
+   "image": "https://www.lemon8-app.com/seo/image?item_id=7504086311834599954&index=0&sign=446342349a8f21b5b09778f8128a61ef",
+   "imagePage": "https://www.lemon8-app.com/@mpathiaowat/7504086311834599954?region=th",
+   "imageCredit": "Lemon8 · เอ็มพาเที่ยววัด",
+   "imageAi": true,
+   "imageScore": 7
   },
   {
    "id": "osm-n13713779734",
@@ -7955,7 +8045,12 @@
    "lng": 100.60295,
    "province": "bangkok",
    "summary": {},
-   "fetchedAt": "2026-11-07T02:03:45.614Z"
+   "fetchedAt": "2026-11-07T02:03:45.614Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Wat_Tai_Ahoerstemeier_6.jpg/960px-Wat_Tai_Ahoerstemeier_6.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Wat_Tai_Ahoerstemeier_6.jpg",
+   "imageCredit": "Ahoerstemeier · CC BY 4.0",
+   "imageAi": true,
+   "imageScore": 7
   },
   {
    "id": "osm-w118171998",
@@ -8354,7 +8449,12 @@
    "lng": 100.54401,
    "province": "bangkok",
    "summary": {},
-   "fetchedAt": "2026-11-07T02:04:22.719Z"
+   "fetchedAt": "2026-11-07T02:04:22.719Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%97%E0%B8%B1%E0%B8%A8%E0%B8%99%E0%B8%B2%E0%B8%A3%E0%B8%B8%E0%B8%93%E0%B8%AA%E0%B8%B8%E0%B8%99%E0%B8%97%E0%B8%A3%E0%B8%B4%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1_03.jpg/960px-%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%97%E0%B8%B1%E0%B8%A8%E0%B8%99%E0%B8%B2%E0%B8%A3%E0%B8%B8%E0%B8%93%E0%B8%AA%E0%B8%B8%E0%B8%99%E0%B8%97%E0%B8%A3%E0%B8%B4%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1_03.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%97%E0%B8%B1%E0%B8%A8%E0%B8%99%E0%B8%B2%E0%B8%A3%E0%B8%B8%E0%B8%93%E0%B8%AA%E0%B8%B8%E0%B8%99%E0%B8%97%E0%B8%A3%E0%B8%B4%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1_03.jpg",
+   "imageCredit": "Dharmadana · CC BY-SA 4.0",
+   "imageAi": true,
+   "imageScore": 7
   },
   {
    "id": "osm-w245925196",
@@ -8446,7 +8546,12 @@
    "address": "78 Bang Krathuek Sam Phran",
    "province": "nakhon-pathom",
    "summary": {},
-   "fetchedAt": "2026-11-07T02:04:28.047Z"
+   "fetchedAt": "2026-11-07T02:04:28.047Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Wat_Don_Wai_2.jpg/960px-Wat_Don_Wai_2.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Wat_Don_Wai_2.jpg",
+   "imageCredit": "Ahoerstemeier · CC BY-SA 4.0",
+   "imageAi": true,
+   "imageScore": 9
   },
   {
    "id": "osm-w283081376",
@@ -8556,7 +8661,12 @@
    "lng": 100.51256,
    "province": "bangkok",
    "summary": {},
-   "fetchedAt": "2026-11-07T02:04:35.677Z"
+   "fetchedAt": "2026-11-07T02:04:35.677Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9E%E0%B8%A5%E0%B8%B1%E0%B8%9A%E0%B8%9E%E0%B8%A5%E0%B8%B2%E0%B8%8A%E0%B8%B1%E0%B8%A2_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9B%E0%B9%89%E0%B8%AD%E0%B8%A1%E0%B8%9B%E0%B8%A3%E0%B8%B2%E0%B8%9A%E0%B8%A8%E0%B8%B1%E0%B8%95%E0%B8%A3%E0%B8%B9%E0%B8%9E%E0%B9%88%E0%B8%B2%E0%B8%A2_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%282%29.jpg/960px-%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9E%E0%B8%A5%E0%B8%B1%E0%B8%9A%E0%B8%9E%E0%B8%A5%E0%B8%B2%E0%B8%8A%E0%B8%B1%E0%B8%A2_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9B%E0%B9%89%E0%B8%AD%E0%B8%A1%E0%B8%9B%E0%B8%A3%E0%B8%B2%E0%B8%9A%E0%B8%A8%E0%B8%B1%E0%B8%95%E0%B8%A3%E0%B8%B9%E0%B8%9E%E0%B9%88%E0%B8%B2%E0%B8%A2_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%282%29.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9E%E0%B8%A5%E0%B8%B1%E0%B8%9A%E0%B8%9E%E0%B8%A5%E0%B8%B2%E0%B8%8A%E0%B8%B1%E0%B8%A2_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9B%E0%B9%89%E0%B8%AD%E0%B8%A1%E0%B8%9B%E0%B8%A3%E0%B8%B2%E0%B8%9A%E0%B8%A8%E0%B8%B1%E0%B8%95%E0%B8%A3%E0%B8%B9%E0%B8%9E%E0%B9%88%E0%B8%B2%E0%B8%A2_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_(2).jpg",
+   "imageCredit": "กสิณธร ราชโอรส · CC BY-SA 4.0",
+   "imageAi": true,
+   "imageScore": 6
   },
   {
    "id": "osm-w313679048",
@@ -9423,7 +9533,12 @@
    "lng": 100.50431,
    "province": "bangkok",
    "summary": {},
-   "fetchedAt": "2026-11-07T02:05:44.123Z"
+   "fetchedAt": "2026-11-07T02:05:44.123Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%AA%E0%B8%B4%E0%B8%87%E0%B8%82%E0%B8%A3_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%84%E0%B8%AD%E0%B9%81%E0%B8%AB%E0%B8%A5%E0%B8%A1_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%287%29.jpg/960px-%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%AA%E0%B8%B4%E0%B8%87%E0%B8%82%E0%B8%A3_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%84%E0%B8%AD%E0%B9%81%E0%B8%AB%E0%B8%A5%E0%B8%A1_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%287%29.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%AA%E0%B8%B4%E0%B8%87%E0%B8%82%E0%B8%A3_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%84%E0%B8%AD%E0%B9%81%E0%B8%AB%E0%B8%A5%E0%B8%A1_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_(7).jpg",
+   "imageCredit": "กสิณธร ราชโอรส · CC BY-SA 4.0",
+   "imageAi": true,
+   "imageScore": 6
   },
   {
    "id": "osm-w342582505",
@@ -9437,7 +9552,12 @@
    "lng": 100.50557,
    "province": "bangkok",
    "summary": {},
-   "fetchedAt": "2026-11-07T02:05:45.498Z"
+   "fetchedAt": "2026-11-07T02:05:45.498Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AD%E0%B8%B2%E0%B8%A7%E0%B8%B8%E0%B8%98%E0%B8%A7%E0%B8%B4%E0%B8%81%E0%B8%AA%E0%B8%B4%E0%B8%95%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%9E%E0%B8%A5%E0%B8%B1%E0%B8%94_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%2810%29.jpg/960px-%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AD%E0%B8%B2%E0%B8%A7%E0%B8%B8%E0%B8%98%E0%B8%A7%E0%B8%B4%E0%B8%81%E0%B8%AA%E0%B8%B4%E0%B8%95%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%9E%E0%B8%A5%E0%B8%B1%E0%B8%94_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%2810%29.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AD%E0%B8%B2%E0%B8%A7%E0%B8%B8%E0%B8%98%E0%B8%A7%E0%B8%B4%E0%B8%81%E0%B8%AA%E0%B8%B4%E0%B8%95%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%9E%E0%B8%A5%E0%B8%B1%E0%B8%94_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_(10).jpg",
+   "imageCredit": "กสิณธร ราชโอรส · CC BY-SA 4.0",
+   "imageAi": true,
+   "imageScore": 7
   },
   {
    "id": "osm-w347269595",
@@ -9451,7 +9571,12 @@
    "lng": 100.50161,
    "province": "bangkok",
    "summary": {},
-   "fetchedAt": "2026-11-07T02:05:46.858Z"
+   "fetchedAt": "2026-11-07T02:05:46.858Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%83%E0%B8%AB%E0%B8%A1%E0%B9%88%E0%B8%AD%E0%B8%A1%E0%B8%95%E0%B8%A3%E0%B8%AA_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%99%E0%B8%84%E0%B8%A3_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%287%29.jpg/960px-%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%83%E0%B8%AB%E0%B8%A1%E0%B9%88%E0%B8%AD%E0%B8%A1%E0%B8%95%E0%B8%A3%E0%B8%AA_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%99%E0%B8%84%E0%B8%A3_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%287%29.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%83%E0%B8%AB%E0%B8%A1%E0%B9%88%E0%B8%AD%E0%B8%A1%E0%B8%95%E0%B8%A3%E0%B8%AA_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%99%E0%B8%84%E0%B8%A3_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_(7).jpg",
+   "imageCredit": "กสิณธร ราชโอรส · CC BY-SA 4.0",
+   "imageAi": true,
+   "imageScore": 6
   },
   {
    "id": "osm-w348393896",
@@ -9933,7 +10058,12 @@
    "lng": 100.48331,
    "province": "bangkok",
    "summary": {},
-   "fetchedAt": "2026-11-07T02:06:22.408Z"
+   "fetchedAt": "2026-11-07T02:06:22.408Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Wat_Phraya_Tham_Ahoerstemeier_1.jpg/960px-Wat_Phraya_Tham_Ahoerstemeier_1.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Wat_Phraya_Tham_Ahoerstemeier_1.jpg",
+   "imageCredit": "Ahoerstemeier · CC BY 4.0",
+   "imageAi": true,
+   "imageScore": 8
   },
   {
    "id": "osm-w376311483",
@@ -10423,7 +10553,12 @@
    "lng": 100.49347,
    "province": "nonthaburi",
    "summary": {},
-   "fetchedAt": "2026-11-07T02:07:02.895Z"
+   "fetchedAt": "2026-11-07T02:07:02.895Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%82%E0%B8%9E%E0%B8%98%E0%B8%B4%E0%B9%8C%E0%B9%80%E0%B8%9C%E0%B8%B7%E0%B8%AD%E0%B8%81_%28%E0%B8%88%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%99%E0%B8%99%E0%B8%97%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5%29_02.jpg/960px-%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%82%E0%B8%9E%E0%B8%98%E0%B8%B4%E0%B9%8C%E0%B9%80%E0%B8%9C%E0%B8%B7%E0%B8%AD%E0%B8%81_%28%E0%B8%88%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%99%E0%B8%99%E0%B8%97%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5%29_02.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%82%E0%B8%9E%E0%B8%98%E0%B8%B4%E0%B9%8C%E0%B9%80%E0%B8%9C%E0%B8%B7%E0%B8%AD%E0%B8%81_(%E0%B8%88%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%99%E0%B8%99%E0%B8%97%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5)_02.jpg",
+   "imageCredit": "Dharmadana · CC BY-SA 4.0",
+   "imageAi": true,
+   "imageScore": 7
   },
   {
    "id": "osm-w376835531",
@@ -10472,7 +10607,12 @@
    "lng": 100.46796,
    "province": "bangkok",
    "summary": {},
-   "fetchedAt": "2026-11-07T02:07:07.197Z"
+   "fetchedAt": "2026-11-07T02:07:07.197Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Wat_Suwan_Khiri_Ahoerstemeier_5.jpg/960px-Wat_Suwan_Khiri_Ahoerstemeier_5.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Wat_Suwan_Khiri_Ahoerstemeier_5.jpg",
+   "imageCredit": "Ahoerstemeier · CC BY 4.0",
+   "imageAi": true,
+   "imageScore": 6
   },
   {
    "id": "osm-w376872751",
@@ -10486,7 +10626,12 @@
    "lng": 100.44663,
    "province": "bangkok",
    "summary": {},
-   "fetchedAt": "2026-11-07T02:07:09.013Z"
+   "fetchedAt": "2026-11-07T02:07:09.013Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/2023-07-21_Wat_Lao_Buddha_Phothisaram_Inc_Conley_Georgia_USA_25.jpg/960px-2023-07-21_Wat_Lao_Buddha_Phothisaram_Inc_Conley_Georgia_USA_25.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2023-07-21_Wat_Lao_Buddha_Phothisaram_Inc_Conley_Georgia_USA_25.jpg",
+   "imageCredit": "Clifflandis · CC0",
+   "imageAi": true,
+   "imageScore": 6
   },
   {
    "id": "osm-w376904783",
@@ -10500,7 +10645,12 @@
    "lng": 100.37791,
    "province": "bangkok",
    "summary": {},
-   "fetchedAt": "2026-11-07T02:07:10.399Z"
+   "fetchedAt": "2026-11-07T02:07:10.399Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%A3%E0%B8%B2%E0%B8%A9%E0%B8%8E%E0%B8%A3%E0%B9%8C%E0%B8%9A%E0%B8%B3%E0%B8%A3%E0%B8%B8%E0%B8%87_%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3%E0%B8%AB%E0%B8%A5%E0%B8%A7%E0%B8%87%E0%B8%9E%E0%B9%88%E0%B8%AD%E0%B8%9B%E0%B9%88%E0%B8%B2%E0%B9%80%E0%B8%A5%E0%B9%84%E0%B8%A5%E0%B8%A2%E0%B8%81%E0%B9%8C_03.jpg/960px-%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%A3%E0%B8%B2%E0%B8%A9%E0%B8%8E%E0%B8%A3%E0%B9%8C%E0%B8%9A%E0%B8%B3%E0%B8%A3%E0%B8%B8%E0%B8%87_%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3%E0%B8%AB%E0%B8%A5%E0%B8%A7%E0%B8%87%E0%B8%9E%E0%B9%88%E0%B8%AD%E0%B8%9B%E0%B9%88%E0%B8%B2%E0%B9%80%E0%B8%A5%E0%B9%84%E0%B8%A5%E0%B8%A2%E0%B8%81%E0%B9%8C_03.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%A3%E0%B8%B2%E0%B8%A9%E0%B8%8E%E0%B8%A3%E0%B9%8C%E0%B8%9A%E0%B8%B3%E0%B8%A3%E0%B8%B8%E0%B8%87_%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3%E0%B8%AB%E0%B8%A5%E0%B8%A7%E0%B8%87%E0%B8%9E%E0%B9%88%E0%B8%AD%E0%B8%9B%E0%B9%88%E0%B8%B2%E0%B9%80%E0%B8%A5%E0%B9%84%E0%B8%A5%E0%B8%A2%E0%B8%81%E0%B9%8C_03.jpg",
+   "imageCredit": "Piith.hant · CC BY-SA 4.0",
+   "imageAi": true,
+   "imageScore": 8
   },
   {
    "id": "osm-w377879332",
@@ -10514,7 +10664,12 @@
    "lng": 100.45148,
    "province": "nonthaburi",
    "summary": {},
-   "fetchedAt": "2026-11-07T02:07:12.122Z"
+   "fetchedAt": "2026-11-07T02:07:12.122Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9B%E0%B8%A3%E0%B8%B2%E0%B8%AA%E0%B8%B2%E0%B8%97_%E0%B8%AD.%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87_%E0%B8%88.%E0%B8%99%E0%B8%99%E0%B8%97%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5_%2810%29.jpg/960px-%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9B%E0%B8%A3%E0%B8%B2%E0%B8%AA%E0%B8%B2%E0%B8%97_%E0%B8%AD.%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87_%E0%B8%88.%E0%B8%99%E0%B8%99%E0%B8%97%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5_%2810%29.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9B%E0%B8%A3%E0%B8%B2%E0%B8%AA%E0%B8%B2%E0%B8%97_%E0%B8%AD.%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87_%E0%B8%88.%E0%B8%99%E0%B8%99%E0%B8%97%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5_(10).jpg",
+   "imageCredit": "กสิณธร ราชโอรส · CC BY-SA 4.0",
+   "imageAi": true,
+   "imageScore": 8
   },
   {
    "id": "osm-w377882070",
@@ -10556,7 +10711,12 @@
    "lng": 100.49684,
    "province": "bangkok",
    "summary": {},
-   "fetchedAt": "2026-11-07T02:07:16.980Z"
+   "fetchedAt": "2026-11-07T02:07:16.980Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/%E0%B8%AA%E0%B8%B0%E0%B8%9E%E0%B8%B2%E0%B8%99%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%A3%E0%B8%B2%E0%B8%A1_%E0%B9%98_%E0%B8%A2%E0%B8%B2%E0%B8%A1%E0%B9%80%E0%B8%A2%E0%B9%87%E0%B8%99_-_panoramio.jpg/960px-%E0%B8%AA%E0%B8%B0%E0%B8%9E%E0%B8%B2%E0%B8%99%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%A3%E0%B8%B2%E0%B8%A1_%E0%B9%98_%E0%B8%A2%E0%B8%B2%E0%B8%A1%E0%B9%80%E0%B8%A2%E0%B9%87%E0%B8%99_-_panoramio.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:%E0%B8%AA%E0%B8%B0%E0%B8%9E%E0%B8%B2%E0%B8%99%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%A3%E0%B8%B2%E0%B8%A1_%E0%B9%98_%E0%B8%A2%E0%B8%B2%E0%B8%A1%E0%B9%80%E0%B8%A2%E0%B9%87%E0%B8%99_-_panoramio.jpg",
+   "imageCredit": "::::=UT=:::: · CC BY-SA 3.0",
+   "imageAi": true,
+   "imageScore": 7
   },
   {
    "id": "osm-w377888078",
@@ -10570,7 +10730,12 @@
    "lng": 100.49369,
    "province": "bangkok",
    "summary": {},
-   "fetchedAt": "2026-11-07T02:07:18.741Z"
+   "fetchedAt": "2026-11-07T02:07:18.741Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Wat_Thong_Noppakhun%2C_Bagkok_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%97%E0%B8%AD%E0%B8%87%E0%B8%99%E0%B8%9E%E0%B8%84%E0%B8%B8%E0%B8%93_14.jpg/960px-Wat_Thong_Noppakhun%2C_Bagkok_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%97%E0%B8%AD%E0%B8%87%E0%B8%99%E0%B8%9E%E0%B8%84%E0%B8%B8%E0%B8%93_14.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Wat_Thong_Noppakhun,_Bagkok_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%97%E0%B8%AD%E0%B8%87%E0%B8%99%E0%B8%9E%E0%B8%84%E0%B8%B8%E0%B8%93_14.jpg",
+   "imageCredit": "Disthan · CC BY-SA 4.0",
+   "imageAi": true,
+   "imageScore": 7
   },
   {
    "id": "osm-w377888079",
@@ -10613,7 +10778,12 @@
    "lng": 100.51105,
    "province": "bangkok",
    "summary": {},
-   "fetchedAt": "2026-11-07T02:07:21.887Z"
+   "fetchedAt": "2026-11-07T02:07:21.887Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/%E0%B8%AD%E0%B8%B8%E0%B9%82%E0%B8%9A%E0%B8%AA%E0%B8%96%E0%B9%80%E0%B8%81%E0%B9%88%E0%B8%B2_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%82%E0%B8%9A%E0%B8%AA%E0%B8%96%E0%B9%8C%E0%B8%AA%E0%B8%B2%E0%B8%A1%E0%B9%80%E0%B8%AA%E0%B8%99_Old_Ordination_Hall_of_Wat_Bot_Samsen_%2813%29.jpg/960px-%E0%B8%AD%E0%B8%B8%E0%B9%82%E0%B8%9A%E0%B8%AA%E0%B8%96%E0%B9%80%E0%B8%81%E0%B9%88%E0%B8%B2_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%82%E0%B8%9A%E0%B8%AA%E0%B8%96%E0%B9%8C%E0%B8%AA%E0%B8%B2%E0%B8%A1%E0%B9%80%E0%B8%AA%E0%B8%99_Old_Ordination_Hall_of_Wat_Bot_Samsen_%2813%29.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:%E0%B8%AD%E0%B8%B8%E0%B9%82%E0%B8%9A%E0%B8%AA%E0%B8%96%E0%B9%80%E0%B8%81%E0%B9%88%E0%B8%B2_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%82%E0%B8%9A%E0%B8%AA%E0%B8%96%E0%B9%8C%E0%B8%AA%E0%B8%B2%E0%B8%A1%E0%B9%80%E0%B8%AA%E0%B8%99_Old_Ordination_Hall_of_Wat_Bot_Samsen_(13).jpg",
+   "imageCredit": "กสิณธร ราชโอรส · CC BY-SA 3.0",
+   "imageAi": true,
+   "imageScore": 5
   },
   {
    "id": "osm-w377894776",
@@ -10627,7 +10797,12 @@
    "lng": 100.48247,
    "province": "bangkok",
    "summary": {},
-   "fetchedAt": "2026-11-07T02:07:23.261Z"
+   "fetchedAt": "2026-11-07T02:07:23.261Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AA%E0%B8%B8%E0%B8%97%E0%B8%98%E0%B8%B2%E0%B8%A7%E0%B8%B2%E0%B8%AA_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%98%E0%B8%99%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5.jpg/960px-%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AA%E0%B8%B8%E0%B8%97%E0%B8%98%E0%B8%B2%E0%B8%A7%E0%B8%B2%E0%B8%AA_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%98%E0%B8%99%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AA%E0%B8%B8%E0%B8%97%E0%B8%98%E0%B8%B2%E0%B8%A7%E0%B8%B2%E0%B8%AA_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%98%E0%B8%99%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5.jpg",
+   "imageCredit": "Dharmadana · CC BY-SA 4.0",
+   "imageAi": true,
+   "imageScore": 6
   },
   {
    "id": "osm-w377894777",
@@ -10641,7 +10816,12 @@
    "lng": 100.49039,
    "province": "bangkok",
    "summary": {},
-   "fetchedAt": "2026-11-07T02:07:24.983Z"
+   "fetchedAt": "2026-11-07T02:07:24.983Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Samre%2C_Thon_Buri%2C_Bangkok_10600%2C_Thailand_-_panoramio_%288%29.jpg/960px-Samre%2C_Thon_Buri%2C_Bangkok_10600%2C_Thailand_-_panoramio_%288%29.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Samre,_Thon_Buri,_Bangkok_10600,_Thailand_-_panoramio_(8).jpg",
+   "imageCredit": "mohigan · CC BY-SA 3.0",
+   "imageAi": true,
+   "imageScore": 7
   },
   {
    "id": "osm-w377894778",
@@ -10655,7 +10835,12 @@
    "lng": 100.48,
    "province": "bangkok",
    "summary": {},
-   "fetchedAt": "2026-11-07T02:07:26.889Z"
+   "fetchedAt": "2026-11-07T02:07:26.889Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%99%E0%B8%B2%E0%B8%84%E0%B8%99%E0%B8%B4%E0%B8%A1%E0%B8%B4%E0%B8%95%E0%B8%A3_01.jpg/960px-%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%99%E0%B8%B2%E0%B8%84%E0%B8%99%E0%B8%B4%E0%B8%A1%E0%B8%B4%E0%B8%95%E0%B8%A3_01.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%99%E0%B8%B2%E0%B8%84%E0%B8%99%E0%B8%B4%E0%B8%A1%E0%B8%B4%E0%B8%95%E0%B8%A3_01.jpg",
+   "imageCredit": "Dharmadana · CC BY-SA 4.0",
+   "imageAi": true,
+   "imageScore": 6
   },
   {
    "id": "osm-w377894843",
@@ -10669,7 +10854,12 @@
    "lng": 100.48914,
    "province": "bangkok",
    "summary": {},
-   "fetchedAt": "2026-11-07T02:07:28.686Z"
+   "fetchedAt": "2026-11-07T02:07:28.686Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Hiranruchi%2C_Thon_Buri%2C_Bangkok_10600%2C_Thailand_-_panoramio.jpg/960px-Hiranruchi%2C_Thon_Buri%2C_Bangkok_10600%2C_Thailand_-_panoramio.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Hiranruchi,_Thon_Buri,_Bangkok_10600,_Thailand_-_panoramio.jpg",
+   "imageCredit": "Evgeniy Metyolkin · CC BY-SA 3.0",
+   "imageAi": true,
+   "imageScore": 6
   },
   {
    "id": "osm-w377896478",
@@ -10683,7 +10873,12 @@
    "lng": 100.46528,
    "province": "bangkok",
    "summary": {},
-   "fetchedAt": "2026-11-07T02:07:30.058Z"
+   "fetchedAt": "2026-11-07T02:07:30.058Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/%282024%29_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%84%E0%B8%81%E0%B9%88%E0%B9%80%E0%B8%95%E0%B8%B5%E0%B9%89%E0%B8%A2_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%95%E0%B8%A5%E0%B8%B4%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B1%E0%B8%99_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%2817%29.jpg/960px-%282024%29_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%84%E0%B8%81%E0%B9%88%E0%B9%80%E0%B8%95%E0%B8%B5%E0%B9%89%E0%B8%A2_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%95%E0%B8%A5%E0%B8%B4%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B1%E0%B8%99_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%2817%29.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:(2024)_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%84%E0%B8%81%E0%B9%88%E0%B9%80%E0%B8%95%E0%B8%B5%E0%B9%89%E0%B8%A2_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%95%E0%B8%A5%E0%B8%B4%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B1%E0%B8%99_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_(17).jpg",
+   "imageCredit": "กสิณธร ราชโอรส · CC BY-SA 4.0",
+   "imageAi": true,
+   "imageScore": 7
   },
   {
    "id": "osm-w377896480",
@@ -10697,7 +10892,12 @@
    "lng": 100.46867,
    "province": "bangkok",
    "summary": {},
-   "fetchedAt": "2026-11-07T02:07:31.828Z"
+   "fetchedAt": "2026-11-07T02:07:31.828Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Wat_Bang_Khun_Non_2.jpg/960px-Wat_Bang_Khun_Non_2.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Wat_Bang_Khun_Non_2.jpg",
+   "imageCredit": "Ahoerstemeier · CC BY-SA 4.0",
+   "imageAi": true,
+   "imageScore": 7
   },
   {
    "id": "osm-w377896483",
@@ -10711,7 +10911,12 @@
    "lng": 100.46734,
    "province": "bangkok",
    "summary": {},
-   "fetchedAt": "2026-11-07T02:07:33.269Z"
+   "fetchedAt": "2026-11-07T02:07:33.269Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Wat_Ruak_Suttharam_Ahoerstemeier_5.jpg/960px-Wat_Ruak_Suttharam_Ahoerstemeier_5.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Wat_Ruak_Suttharam_Ahoerstemeier_5.jpg",
+   "imageCredit": "Ahoerstemeier · CC BY 4.0",
+   "imageAi": true,
+   "imageScore": 6
   },
   {
    "id": "osm-w378152030",
@@ -10725,7 +10930,12 @@
    "lng": 100.43328,
    "province": "bangkok",
    "summary": {},
-   "fetchedAt": "2026-11-07T02:07:35.093Z"
+   "fetchedAt": "2026-11-07T02:07:35.093Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%9E%E0%B8%A5_%283%29.jpg/960px-%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%9E%E0%B8%A5_%283%29.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%9E%E0%B8%A5_(3).jpg",
+   "imageCredit": "Dharmadana · CC BY-SA 4.0",
+   "imageAi": true,
+   "imageScore": 7
   },
   {
    "id": "osm-w378171108",
@@ -10753,7 +10963,12 @@
    "lng": 100.48778,
    "province": "bangkok",
    "summary": {},
-   "fetchedAt": "2026-11-07T02:07:38.612Z"
+   "fetchedAt": "2026-11-07T02:07:38.612Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%82%E0%B8%9E%E0%B8%98%E0%B8%B4%E0%B9%8C%E0%B9%81%E0%B8%81%E0%B9%89%E0%B8%A7_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%88%E0%B8%AD%E0%B8%A1%E0%B8%97%E0%B8%AD%E0%B8%87_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%284%29.jpg/960px-%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%82%E0%B8%9E%E0%B8%98%E0%B8%B4%E0%B9%8C%E0%B9%81%E0%B8%81%E0%B9%89%E0%B8%A7_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%88%E0%B8%AD%E0%B8%A1%E0%B8%97%E0%B8%AD%E0%B8%87_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%284%29.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%82%E0%B8%9E%E0%B8%98%E0%B8%B4%E0%B9%8C%E0%B9%81%E0%B8%81%E0%B9%89%E0%B8%A7_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%88%E0%B8%AD%E0%B8%A1%E0%B8%97%E0%B8%AD%E0%B8%87_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_(4).jpg",
+   "imageCredit": "กสิณธร ราชโอรส · CC BY-SA 4.0",
+   "imageAi": true,
+   "imageScore": 7
   },
   {
    "id": "osm-w378171112",
@@ -10781,7 +10996,12 @@
    "lng": 100.52071,
    "province": "samut-prakan",
    "summary": {},
-   "fetchedAt": "2026-11-07T02:07:41.712Z"
+   "fetchedAt": "2026-11-07T02:07:41.712Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Wat_Ruak_Suttharam_Ahoerstemeier_5.jpg/960px-Wat_Ruak_Suttharam_Ahoerstemeier_5.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Wat_Ruak_Suttharam_Ahoerstemeier_5.jpg",
+   "imageCredit": "Ahoerstemeier · CC BY 4.0",
+   "imageAi": true,
+   "imageScore": 7
   },
   {
    "id": "osm-w378171189",
@@ -10809,7 +11029,12 @@
    "lng": 100.52255,
    "province": "samut-prakan",
    "summary": {},
-   "fetchedAt": "2026-11-07T02:07:44.847Z"
+   "fetchedAt": "2026-11-07T02:07:44.847Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%9E%E0%B8%B6%E0%B9%88%E0%B8%87_%E0%B8%AD.%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B9%81%E0%B8%94%E0%B8%87_%E0%B8%88.%E0%B8%AA%E0%B8%A1%E0%B8%B8%E0%B8%97%E0%B8%A3%E0%B8%9B%E0%B8%A3%E0%B8%B2%E0%B8%81%E0%B8%B2%E0%B8%A3.jpg/960px-%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%9E%E0%B8%B6%E0%B9%88%E0%B8%87_%E0%B8%AD.%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B9%81%E0%B8%94%E0%B8%87_%E0%B8%88.%E0%B8%AA%E0%B8%A1%E0%B8%B8%E0%B8%97%E0%B8%A3%E0%B8%9B%E0%B8%A3%E0%B8%B2%E0%B8%81%E0%B8%B2%E0%B8%A3.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%9E%E0%B8%B6%E0%B9%88%E0%B8%87_%E0%B8%AD.%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B9%81%E0%B8%94%E0%B8%87_%E0%B8%88.%E0%B8%AA%E0%B8%A1%E0%B8%B8%E0%B8%97%E0%B8%A3%E0%B8%9B%E0%B8%A3%E0%B8%B2%E0%B8%81%E0%B8%B2%E0%B8%A3.jpg",
+   "imageCredit": "กสิณธร ราชโอรส · CC BY-SA 4.0",
+   "imageAi": true,
+   "imageScore": 7
   },
   {
    "id": "osm-w378173840",
@@ -10823,7 +11048,12 @@
    "lng": 100.52624,
    "province": "bangkok",
    "summary": {},
-   "fetchedAt": "2026-11-07T02:07:46.222Z"
+   "fetchedAt": "2026-11-07T02:07:46.222Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%97%E0%B8%AD%E0%B8%87%E0%B8%9A%E0%B8%99_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B8%99%E0%B8%B2%E0%B8%A7%E0%B8%B2_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%282%29.jpg/960px-%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%97%E0%B8%AD%E0%B8%87%E0%B8%9A%E0%B8%99_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B8%99%E0%B8%B2%E0%B8%A7%E0%B8%B2_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%282%29.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%97%E0%B8%AD%E0%B8%87%E0%B8%9A%E0%B8%99_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B8%99%E0%B8%B2%E0%B8%A7%E0%B8%B2_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_(2).jpg",
+   "imageCredit": "กสิณธร ราชโอรส · CC BY-SA 4.0",
+   "imageAi": true,
+   "imageScore": 8
   },
   {
    "id": "osm-w378173842",
@@ -10837,7 +11067,12 @@
    "lng": 100.52657,
    "province": "bangkok",
    "summary": {},
-   "fetchedAt": "2026-11-07T02:07:47.929Z"
+   "fetchedAt": "2026-11-07T02:07:47.929Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%94%E0%B8%AD%E0%B8%81%E0%B9%84%E0%B8%A1%E0%B9%89_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B8%99%E0%B8%B2%E0%B8%A7%E0%B8%B2_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%285%29.jpg/960px-%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%94%E0%B8%AD%E0%B8%81%E0%B9%84%E0%B8%A1%E0%B9%89_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B8%99%E0%B8%B2%E0%B8%A7%E0%B8%B2_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%285%29.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%94%E0%B8%AD%E0%B8%81%E0%B9%84%E0%B8%A1%E0%B9%89_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B8%99%E0%B8%B2%E0%B8%A7%E0%B8%B2_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_(5).jpg",
+   "imageCredit": "กสิณธร ราชโอรส · CC BY-SA 4.0",
+   "imageAi": true,
+   "imageScore": 7
   },
   {
    "id": "osm-w378173844",
@@ -10851,7 +11086,12 @@
    "lng": 100.52698,
    "province": "samut-prakan",
    "summary": {},
-   "fetchedAt": "2026-11-07T02:07:50.660Z"
+   "fetchedAt": "2026-11-07T02:07:50.660Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Wat_Prodket.jpg/960px-Wat_Prodket.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Wat_Prodket.jpg",
+   "imageCredit": "Khunmoohan · CC BY-SA 4.0",
+   "imageAi": true,
+   "imageScore": 9
   },
   {
    "id": "osm-w378173845",
@@ -10865,7 +11105,12 @@
    "lng": 100.52875,
    "province": "samut-prakan",
    "summary": {},
-   "fetchedAt": "2026-11-07T02:07:52.380Z"
+   "fetchedAt": "2026-11-07T02:07:52.380Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Wat_Prot_Ket_Chettharam_1.jpg/960px-Wat_Prot_Ket_Chettharam_1.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Wat_Prot_Ket_Chettharam_1.jpg",
+   "imageCredit": "User:HAH · CC BY 2.5",
+   "imageAi": true,
+   "imageScore": 6
   },
   {
    "id": "osm-w378173859",
@@ -10879,7 +11124,12 @@
    "lng": 100.53561,
    "province": "samut-prakan",
    "summary": {},
-   "fetchedAt": "2026-11-07T02:07:53.751Z"
+   "fetchedAt": "2026-11-07T02:07:53.751Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Wat_Songtham_Worawihan%2C_Phra_Pradaeng%2C_Thailand.jpg/960px-Wat_Songtham_Worawihan%2C_Phra_Pradaeng%2C_Thailand.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Wat_Songtham_Worawihan,_Phra_Pradaeng,_Thailand.jpg",
+   "imageCredit": "Preecha.MJ · CC BY-SA 4.0",
+   "imageAi": true,
+   "imageScore": 9
   },
   {
    "id": "osm-w378173860",
@@ -10907,7 +11157,12 @@
    "lng": 100.53121,
    "province": "samut-prakan",
    "summary": {},
-   "fetchedAt": "2026-11-07T02:08:00.019Z"
+   "fetchedAt": "2026-11-07T02:08:00.019Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%8A%E0%B8%A1%E0%B8%99%E0%B8%B4%E0%B8%A1%E0%B8%B4%E0%B8%95%E0%B8%A3_02.jpg/960px-%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%8A%E0%B8%A1%E0%B8%99%E0%B8%B4%E0%B8%A1%E0%B8%B4%E0%B8%95%E0%B8%A3_02.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%8A%E0%B8%A1%E0%B8%99%E0%B8%B4%E0%B8%A1%E0%B8%B4%E0%B8%95%E0%B8%A3_02.jpg",
+   "imageCredit": "Dharmadana · CC BY-SA 4.0",
+   "imageAi": true,
+   "imageScore": 5
   },
   {
    "id": "osm-w378275385",
@@ -10921,7 +11176,12 @@
    "lng": 100.53147,
    "province": "samut-prakan",
    "summary": {},
-   "fetchedAt": "2026-11-07T02:08:01.760Z"
+   "fetchedAt": "2026-11-07T02:08:01.760Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%84%E0%B8%B9%E0%B9%88%E0%B8%AA%E0%B8%A3%E0%B9%89%E0%B8%B2%E0%B8%87_3.jpg/960px-%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%84%E0%B8%B9%E0%B9%88%E0%B8%AA%E0%B8%A3%E0%B9%89%E0%B8%B2%E0%B8%87_3.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%84%E0%B8%B9%E0%B9%88%E0%B8%AA%E0%B8%A3%E0%B9%89%E0%B8%B2%E0%B8%87_3.jpg",
+   "imageCredit": "Dharmadana · CC BY-SA 4.0",
+   "imageAi": true,
+   "imageScore": 7
   },
   {
    "id": "osm-w378277582",
@@ -10950,7 +11210,12 @@
    "address": "ซอยประชาอุทิศ 84",
    "province": "bangkok",
    "summary": {},
-   "fetchedAt": "2026-11-07T02:08:05.306Z"
+   "fetchedAt": "2026-11-07T02:08:05.306Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%97%E0%B8%B8%E0%B9%88%E0%B8%87%E0%B8%84%E0%B8%A3%E0%B8%B8.jpg/960px-%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%97%E0%B8%B8%E0%B9%88%E0%B8%87%E0%B8%84%E0%B8%A3%E0%B8%B8.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%97%E0%B8%B8%E0%B9%88%E0%B8%87%E0%B8%84%E0%B8%A3%E0%B8%B8.jpg",
+   "imageCredit": "Dharmadana · CC BY-SA 4.0",
+   "imageAi": true,
+   "imageScore": 6
   },
   {
    "id": "osm-w378278187",
@@ -10964,7 +11229,12 @@
    "lng": 100.48836,
    "province": "bangkok",
    "summary": {},
-   "fetchedAt": "2026-11-07T02:08:06.712Z"
+   "fetchedAt": "2026-11-07T02:08:06.712Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Bang_Kho_Laem%2C_Bangkok_10120%2C_Thailand_-_panoramio_%282%29.jpg/960px-Bang_Kho_Laem%2C_Bangkok_10120%2C_Thailand_-_panoramio_%282%29.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Bang_Kho_Laem,_Bangkok_10120,_Thailand_-_panoramio_(2).jpg",
+   "imageCredit": "song songroov · CC BY 3.0",
+   "imageAi": true,
+   "imageScore": 6
   },
   {
    "id": "osm-w378294315",
@@ -10978,7 +11248,12 @@
    "lng": 100.46416,
    "province": "bangkok",
    "summary": {},
-   "fetchedAt": "2026-11-07T02:08:08.065Z"
+   "fetchedAt": "2026-11-07T02:08:08.065Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Wat_Si_Suk%2C_Bangkok_02.jpg/960px-Wat_Si_Suk%2C_Bangkok_02.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Wat_Si_Suk,_Bangkok_02.jpg",
+   "imageCredit": "Dharmadana · CC BY-SA 4.0",
+   "imageAi": true,
+   "imageScore": 7
   },
   {
    "id": "osm-w378294316",
@@ -10992,7 +11267,12 @@
    "lng": 100.46812,
    "province": "bangkok",
    "summary": {},
-   "fetchedAt": "2026-11-07T02:08:09.911Z"
+   "fetchedAt": "2026-11-07T02:08:09.911Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/%282024%29_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%82%E0%B8%B8%E0%B8%99%E0%B9%80%E0%B8%97%E0%B8%B5%E0%B8%A2%E0%B8%99%E0%B9%83%E0%B8%99_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%88%E0%B8%AD%E0%B8%A1%E0%B8%97%E0%B8%AD%E0%B8%87_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%2818%29.jpg/960px-%282024%29_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%82%E0%B8%B8%E0%B8%99%E0%B9%80%E0%B8%97%E0%B8%B5%E0%B8%A2%E0%B8%99%E0%B9%83%E0%B8%99_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%88%E0%B8%AD%E0%B8%A1%E0%B8%97%E0%B8%AD%E0%B8%87_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%2818%29.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:(2024)_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%82%E0%B8%B8%E0%B8%99%E0%B9%80%E0%B8%97%E0%B8%B5%E0%B8%A2%E0%B8%99%E0%B9%83%E0%B8%99_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%88%E0%B8%AD%E0%B8%A1%E0%B8%97%E0%B8%AD%E0%B8%87_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_(18).jpg",
+   "imageCredit": "กสิณธร ราชโอรส · CC BY-SA 4.0",
+   "imageAi": true,
+   "imageScore": 7
   },
   {
    "id": "osm-w378294319",
@@ -11006,7 +11286,12 @@
    "lng": 100.44735,
    "province": "bangkok",
    "summary": {},
-   "fetchedAt": "2026-11-07T02:08:11.626Z"
+   "fetchedAt": "2026-11-07T02:08:11.626Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%97%E0%B9%88%E0%B8%B2%E0%B8%82%E0%B9%89%E0%B8%B2%E0%B8%A1_%28%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3%29_01.jpg/960px-%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%97%E0%B9%88%E0%B8%B2%E0%B8%82%E0%B9%89%E0%B8%B2%E0%B8%A1_%28%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3%29_01.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%97%E0%B9%88%E0%B8%B2%E0%B8%82%E0%B9%89%E0%B8%B2%E0%B8%A1_(%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3)_01.jpg",
+   "imageCredit": "Dharmadana · CC BY-SA 4.0",
+   "imageAi": true,
+   "imageScore": 6
   },
   {
    "id": "osm-w378330226",
@@ -11020,7 +11305,12 @@
    "lng": 100.53057,
    "province": "samut-prakan",
    "summary": {},
-   "fetchedAt": "2026-11-07T02:08:13.436Z"
+   "fetchedAt": "2026-11-07T02:08:13.436Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AD%E0%B8%B2%E0%B8%A9%E0%B8%B2%E0%B8%AA%E0%B8%87%E0%B8%84%E0%B8%A3%E0%B8%B2%E0%B8%A11.jpg/960px-%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AD%E0%B8%B2%E0%B8%A9%E0%B8%B2%E0%B8%AA%E0%B8%87%E0%B8%84%E0%B8%A3%E0%B8%B2%E0%B8%A11.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AD%E0%B8%B2%E0%B8%A9%E0%B8%B2%E0%B8%AA%E0%B8%87%E0%B8%84%E0%B8%A3%E0%B8%B2%E0%B8%A11.jpg",
+   "imageCredit": "Dharmadana · CC BY-SA 4.0",
+   "imageAi": true,
+   "imageScore": 7
   },
   {
    "id": "osm-w378330227",
@@ -11034,7 +11324,12 @@
    "lng": 100.54041,
    "province": "bangkok",
    "summary": {},
-   "fetchedAt": "2026-11-07T02:08:15.151Z"
+   "fetchedAt": "2026-11-07T02:08:15.151Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Bhumibol_Bridge_%28%E0%B8%AA%E0%B8%B0%E0%B8%9E%E0%B8%B2%E0%B8%99%E0%B8%A0%E0%B8%B9%E0%B8%A1%E0%B8%B4%E0%B8%9E%E0%B8%A5%29_-_Bangkok_%285014628977%29.jpg/960px-Bhumibol_Bridge_%28%E0%B8%AA%E0%B8%B0%E0%B8%9E%E0%B8%B2%E0%B8%99%E0%B8%A0%E0%B8%B9%E0%B8%A1%E0%B8%B4%E0%B8%9E%E0%B8%A5%29_-_Bangkok_%285014628977%29.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Bhumibol_Bridge_(%E0%B8%AA%E0%B8%B0%E0%B8%9E%E0%B8%B2%E0%B8%99%E0%B8%A0%E0%B8%B9%E0%B8%A1%E0%B8%B4%E0%B8%9E%E0%B8%A5)_-_Bangkok_(5014628977).jpg",
+   "imageCredit": "Mike Behnken · CC BY 2.0",
+   "imageAi": true,
+   "imageScore": 8
   },
   {
    "id": "osm-w378330229",
@@ -11048,7 +11343,12 @@
    "lng": 100.5385,
    "province": "samut-prakan",
    "summary": {},
-   "fetchedAt": "2026-11-07T02:08:16.951Z"
+   "fetchedAt": "2026-11-07T02:08:16.951Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Wat_Phranon_Laem_Pho_-_011_Sitting_Buddha_%2810358514046%29.jpg/960px-Wat_Phranon_Laem_Pho_-_011_Sitting_Buddha_%2810358514046%29.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Wat_Phranon_Laem_Pho_-_011_Sitting_Buddha_(10358514046).jpg",
+   "imageCredit": "Photo Dharma from Penang, Malaysia · CC BY 2.0",
+   "imageAi": true,
+   "imageScore": 7
   },
   {
    "id": "osm-w378330230",
@@ -11063,7 +11363,12 @@
    "address": "463 ซอยพระรามที่ 3 ซอย 67 ช่องนนทรี ยานนาวา",
    "province": "bangkok",
    "summary": {},
-   "fetchedAt": "2026-11-07T02:08:16.951Z"
+   "fetchedAt": "2026-11-07T02:08:16.951Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%8A%E0%B9%88%E0%B8%AD%E0%B8%87%E0%B8%99%E0%B8%99%E0%B8%97%E0%B8%A3%E0%B8%B5_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B8%99%E0%B8%B2%E0%B8%A7%E0%B8%B2_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%2859%29.jpg/960px-%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%8A%E0%B9%88%E0%B8%AD%E0%B8%87%E0%B8%99%E0%B8%99%E0%B8%97%E0%B8%A3%E0%B8%B5_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B8%99%E0%B8%B2%E0%B8%A7%E0%B8%B2_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%2859%29.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%8A%E0%B9%88%E0%B8%AD%E0%B8%87%E0%B8%99%E0%B8%99%E0%B8%97%E0%B8%A3%E0%B8%B5_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B8%99%E0%B8%B2%E0%B8%A7%E0%B8%B2_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_(59).jpg",
+   "imageCredit": "กสิณธร ราชโอรส · CC BY-SA 4.0",
+   "imageAi": true,
+   "imageScore": 7
   },
   {
    "id": "osm-w378330231",
@@ -11077,7 +11382,12 @@
    "lng": 100.54505,
    "province": "bangkok",
    "summary": {},
-   "fetchedAt": "2026-11-07T02:08:18.306Z"
+   "fetchedAt": "2026-11-07T02:08:18.306Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%84%E0%B8%A5%E0%B8%AD%E0%B8%87%E0%B9%83%E0%B8%AB%E0%B8%A1%E0%B9%88_%28%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3%29_01.jpg/960px-%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%84%E0%B8%A5%E0%B8%AD%E0%B8%87%E0%B9%83%E0%B8%AB%E0%B8%A1%E0%B9%88_%28%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3%29_01.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%84%E0%B8%A5%E0%B8%AD%E0%B8%87%E0%B9%83%E0%B8%AB%E0%B8%A1%E0%B9%88_(%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3)_01.jpg",
+   "imageCredit": "Dharmadana · CC BY-SA 4.0",
+   "imageAi": true,
+   "imageScore": 5
   },
   {
    "id": "osm-w378330234",
@@ -11091,7 +11401,12 @@
    "lng": 100.54948,
    "province": "bangkok",
    "summary": {},
-   "fetchedAt": "2026-11-07T02:08:19.676Z"
+   "fetchedAt": "2026-11-07T02:08:19.676Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Wat_Khlong_Phum_Ahoerstemeier_2.jpg/960px-Wat_Khlong_Phum_Ahoerstemeier_2.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Wat_Khlong_Phum_Ahoerstemeier_2.jpg",
+   "imageCredit": "Ahoerstemeier · CC BY 4.0",
+   "imageAi": true,
+   "imageScore": 6
   },
   {
    "id": "osm-w378330236",
@@ -11105,7 +11420,12 @@
    "lng": 100.53076,
    "province": "samut-prakan",
    "summary": {},
-   "fetchedAt": "2026-11-07T02:08:21.028Z"
+   "fetchedAt": "2026-11-07T02:08:21.028Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%81%E0%B8%84_%E0%B8%88.%E0%B8%AA%E0%B8%B8%E0%B8%9E%E0%B8%A3%E0%B8%A3%E0%B8%93%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5_%288%29.jpg/960px-%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%81%E0%B8%84_%E0%B8%88.%E0%B8%AA%E0%B8%B8%E0%B8%9E%E0%B8%A3%E0%B8%A3%E0%B8%93%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5_%288%29.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%81%E0%B8%84_%E0%B8%88.%E0%B8%AA%E0%B8%B8%E0%B8%9E%E0%B8%A3%E0%B8%A3%E0%B8%93%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5_(8).jpg",
+   "imageCredit": "กสิณธร ราชโอรส · CC BY-SA 4.0",
+   "imageAi": true,
+   "imageScore": 6
   },
   {
    "id": "osm-w378330237",
@@ -11119,7 +11439,12 @@
    "lng": 100.5307,
    "province": "samut-prakan",
    "summary": {},
-   "fetchedAt": "2026-11-07T02:08:22.778Z"
+   "fetchedAt": "2026-11-07T02:08:22.778Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%82%E0%B8%A1%E0%B8%81%E0%B8%82%E0%B9%8C_%283%29.jpg/960px-%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%82%E0%B8%A1%E0%B8%81%E0%B8%82%E0%B9%8C_%283%29.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%82%E0%B8%A1%E0%B8%81%E0%B8%82%E0%B9%8C_(3).jpg",
+   "imageCredit": "Dharmadana · CC BY-SA 4.0",
+   "imageAi": true,
+   "imageScore": 5
   },
   {
    "id": "osm-w378530686",
@@ -11161,7 +11486,12 @@
    "lng": 100.47862,
    "province": "bangkok",
    "summary": {},
-   "fetchedAt": "2026-11-07T02:08:27.948Z"
+   "fetchedAt": "2026-11-07T02:08:27.948Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Wat_Lakhon_Tham_additional_building.jpg/960px-Wat_Lakhon_Tham_additional_building.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Wat_Lakhon_Tham_additional_building.jpg",
+   "imageCredit": "Ahoerstemeier · CC BY-SA 4.0",
+   "imageAi": true,
+   "imageScore": 6
   },
   {
    "id": "osm-w379081002",
@@ -11175,7 +11505,12 @@
    "lng": 100.48016,
    "province": "bangkok",
    "summary": {},
-   "fetchedAt": "2026-11-07T02:08:29.748Z"
+   "fetchedAt": "2026-11-07T02:08:29.748Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Wat_Chim_Thai_Ka_Wat_Ahoerstemeier_1.jpg/960px-Wat_Chim_Thai_Ka_Wat_Ahoerstemeier_1.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Wat_Chim_Thai_Ka_Wat_Ahoerstemeier_1.jpg",
+   "imageCredit": "User:Ahoerstemeier · CC BY 4.0",
+   "imageAi": true,
+   "imageScore": 6
   },
   {
    "id": "osm-w379081006",
@@ -11189,7 +11524,12 @@
    "lng": 100.4762,
    "province": "bangkok",
    "summary": {},
-   "fetchedAt": "2026-11-07T02:08:31.349Z"
+   "fetchedAt": "2026-11-07T02:08:31.349Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Wat_Sutthawat_Ahoerstemeier_5.jpg/960px-Wat_Sutthawat_Ahoerstemeier_5.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Wat_Sutthawat_Ahoerstemeier_5.jpg",
+   "imageCredit": "Ahoerstemeier · CC BY 4.0",
+   "imageAi": true,
+   "imageScore": 8
   },
   {
    "id": "osm-w379081007",
@@ -11203,7 +11543,12 @@
    "lng": 100.47421,
    "province": "bangkok",
    "summary": {},
-   "fetchedAt": "2026-11-07T02:08:32.777Z"
+   "fetchedAt": "2026-11-07T02:08:32.777Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Wat_Mai_Bangkok_Ubosot.jpg/960px-Wat_Mai_Bangkok_Ubosot.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Wat_Mai_Bangkok_Ubosot.jpg",
+   "imageCredit": "Ahoerstemeier · CC BY-SA 4.0",
+   "imageAi": true,
+   "imageScore": 7
   },
   {
    "id": "osm-n12309377969",
@@ -11319,7 +11664,12 @@
    "lng": 100.533,
    "province": "bangkok",
    "summary": {},
-   "fetchedAt": "2026-11-07T01:22:35.776Z"
+   "fetchedAt": "2026-11-07T01:22:35.776Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Phya_Thai_Palace_%283%29.jpg/960px-Phya_Thai_Palace_%283%29.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Phya_Thai_Palace_(3).jpg",
+   "imageCredit": "Kriengsak Jirasirirojanakorn · CC BY-SA 4.0",
+   "imageAi": true,
+   "imageScore": 9
   },
   {
    "id": "osm-w1224439620",
@@ -11334,7 +11684,12 @@
    "fee": "yes",
    "province": "samut-prakan",
    "summary": {},
-   "fetchedAt": "2026-11-07T01:22:39.155Z"
+   "fetchedAt": "2026-11-07T01:22:39.155Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Phisuea_Samut_Fort_%28I%29.jpg/960px-Phisuea_Samut_Fort_%28I%29.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Phisuea_Samut_Fort_(I).jpg",
+   "imageCredit": "This Photo was taken by Supanut Arunoprayote. Feel free to u · CC BY 4.0",
+   "imageAi": true,
+   "imageScore": 8
   },
   {
    "id": "osm-w1365786068",
@@ -11348,7 +11703,12 @@
    "lng": 100.54581,
    "province": "bangkok",
    "summary": {},
-   "fetchedAt": "2026-11-07T01:22:42.665Z"
+   "fetchedAt": "2026-11-07T01:22:42.665Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/The_Wireless_House_One_Bangkok_%28Oct_2024%29_-_img_03.jpg/960px-The_Wireless_House_One_Bangkok_%28Oct_2024%29_-_img_03.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:The_Wireless_House_One_Bangkok_(Oct_2024)_-_img_03.jpg",
+   "imageCredit": "Chainwit. · CC BY 4.0",
+   "imageAi": true,
+   "imageScore": 7
   },
   {
    "id": "osm-w1541260113",
@@ -11364,7 +11724,12 @@
    "phone": "+66 55-697-367",
    "province": "sukhothai",
    "summary": {},
-   "fetchedAt": "2026-11-07T01:22:42.665Z"
+   "fetchedAt": "2026-11-07T01:22:42.665Z",
+   "image": "https://upload.wikimedia.org/wikipedia/commons/7/73/King_Ramkhamhaeng_National_Museum%2C_Sukhothai%2C_Thailand.JPG",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:King_Ramkhamhaeng_National_Museum,_Sukhothai,_Thailand.JPG",
+   "imageCredit": "User: (WT-shared) Shoestring at wts wikivoyage · CC BY-SA 4.0",
+   "imageAi": true,
+   "imageScore": 8
   },
   {
    "id": "osm-r20443104",
@@ -11378,7 +11743,12 @@
    "lng": 100.58301,
    "province": "bangkok",
    "summary": {},
-   "fetchedAt": "2026-11-07T01:22:44.264Z"
+   "fetchedAt": "2026-11-07T01:22:44.264Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/%D0%9C%D1%83%D0%B7%D0%B5%D0%B9_%D0%BD%D0%B0%D1%83%D1%87%D0%BD%D1%8B%D1%85_%D0%B7%D0%BD%D0%B0%D0%BD%D0%B8%D0%B9_%2820250430120712%29.jpg/960px-%D0%9C%D1%83%D0%B7%D0%B5%D0%B9_%D0%BD%D0%B0%D1%83%D1%87%D0%BD%D1%8B%D1%85_%D0%B7%D0%BD%D0%B0%D0%BD%D0%B8%D0%B9_%2820250430120712%29.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:%D0%9C%D1%83%D0%B7%D0%B5%D0%B9_%D0%BD%D0%B0%D1%83%D1%87%D0%BD%D1%8B%D1%85_%D0%B7%D0%BD%D0%B0%D0%BD%D0%B8%D0%B9_(20250430120712).jpg",
+   "imageCredit": "MikSed · CC BY-SA 4.0",
+   "imageAi": true,
+   "imageScore": 7
   },
   {
    "id": "osm-r2418623",
@@ -11392,7 +11762,12 @@
    "lng": 105.60397,
    "province": "ubon-ratchathani",
    "summary": {},
-   "fetchedAt": "2026-11-06T20:13:46.348Z"
+   "fetchedAt": "2026-11-06T20:13:46.348Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/%E0%B8%95%E0%B9%89%E0%B8%99%E0%B9%84%E0%B8%A1%E0%B9%89%E0%B9%81%E0%B8%A5%E0%B8%B0%E0%B8%97%E0%B8%B8%E0%B9%88%E0%B8%87%E0%B8%99%E0%B8%B2%E0%B8%82%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B8%97%E0%B8%B2%E0%B8%87%E0%B9%84%E0%B8%9B%E0%B8%9A%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%9B%E0%B8%B2%E0%B8%81%E0%B8%A5%E0%B8%B2-Tree-Rice_field_on_the_way_to_Pakla_-_panoramio.jpg/960px-%E0%B8%95%E0%B9%89%E0%B8%99%E0%B9%84%E0%B8%A1%E0%B9%89%E0%B9%81%E0%B8%A5%E0%B8%B0%E0%B8%97%E0%B8%B8%E0%B9%88%E0%B8%87%E0%B8%99%E0%B8%B2%E0%B8%82%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B8%97%E0%B8%B2%E0%B8%87%E0%B9%84%E0%B8%9B%E0%B8%9A%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%9B%E0%B8%B2%E0%B8%81%E0%B8%A5%E0%B8%B2-Tree-Rice_field_on_the_way_to_Pakla_-_panoramio.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:%E0%B8%95%E0%B9%89%E0%B8%99%E0%B9%84%E0%B8%A1%E0%B9%89%E0%B9%81%E0%B8%A5%E0%B8%B0%E0%B8%97%E0%B8%B8%E0%B9%88%E0%B8%87%E0%B8%99%E0%B8%B2%E0%B8%82%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B8%97%E0%B8%B2%E0%B8%87%E0%B9%84%E0%B8%9B%E0%B8%9A%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%9B%E0%B8%B2%E0%B8%81%E0%B8%A5%E0%B8%B2-Tree-Rice_field_on_the_way_to_Pakla_-_panoramio.jpg",
+   "imageCredit": "::::=UT=:::: · CC BY-SA 3.0",
+   "imageAi": true,
+   "imageScore": 7
   },
   {
    "id": "osm-r7175753",
@@ -11406,7 +11781,12 @@
    "lng": 99.87388,
    "province": "surat-thani",
    "summary": {},
-   "fetchedAt": "2026-11-06T20:13:53.839Z"
+   "fetchedAt": "2026-11-06T20:13:53.839Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Phaeng_Waterfall_3.jpg/960px-Phaeng_Waterfall_3.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Phaeng_Waterfall_3.jpg",
+   "imageCredit": "Christophe95 · CC BY-SA 4.0",
+   "imageAi": true,
+   "imageScore": 6
   },
   {
    "id": "osm-r21373397",
@@ -11420,7 +11800,12 @@
    "lng": 99.62461,
    "province": "chiang-rai",
    "summary": {},
-   "fetchedAt": "2026-11-06T20:13:55.200Z"
+   "fetchedAt": "2026-11-06T20:13:55.200Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Huai_mak_liam_hot_spring.jpg/960px-Huai_mak_liam_hot_spring.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Huai_mak_liam_hot_spring.jpg",
+   "imageCredit": "Chaiyathat · CC BY-SA 4.0",
+   "imageAi": true,
+   "imageScore": 8
   },
   {
    "id": "osm-n3277475708",
@@ -11434,7 +11819,12 @@
    "lng": 98.36708,
    "province": "phuket",
    "summary": {},
-   "fetchedAt": "2026-11-07T01:25:30.664Z"
+   "fetchedAt": "2026-11-07T01:25:30.664Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Racha_Yai_Island.jpg/960px-Racha_Yai_Island.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Racha_Yai_Island.jpg",
+   "imageCredit": "ELPHUKET · CC BY-SA 4.0",
+   "imageAi": true,
+   "imageScore": 9
   },
   {
    "id": "osm-n3709531279",
@@ -11448,7 +11838,12 @@
    "lng": 98.06911,
    "province": "mae-hong-son",
    "summary": {},
-   "fetchedAt": "2026-11-07T01:25:32.279Z"
+   "fetchedAt": "2026-11-07T01:25:32.279Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Namtok_Mae_Surin%2C_Waterfall_2%2C_Thailand.jpg/960px-Namtok_Mae_Surin%2C_Waterfall_2%2C_Thailand.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Namtok_Mae_Surin,_Waterfall_2,_Thailand.jpg",
+   "imageCredit": "Vyacheslav Argenberg · CC BY 4.0",
+   "imageAi": true,
+   "imageScore": 8
   },
   {
    "id": "osm-n4252127462",
@@ -11462,7 +11857,12 @@
    "lng": 100.63213,
    "province": "phitsanulok",
    "summary": {},
-   "fetchedAt": "2026-11-07T01:25:34.184Z"
+   "fetchedAt": "2026-11-07T01:25:34.184Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Thailand_178_kaeng_song.jpg/960px-Thailand_178_kaeng_song.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Thailand_178_kaeng_song.jpg",
+   "imageCredit": "CC BY-SA 3.0",
+   "imageAi": true,
+   "imageScore": 7
   },
   {
    "id": "osm-n4686722331",
@@ -11476,7 +11876,12 @@
    "lng": 101.64931,
    "province": "chaiyaphum",
    "summary": {},
-   "fetchedAt": "2026-11-07T01:25:35.994Z"
+   "fetchedAt": "2026-11-07T01:25:35.994Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/%E0%B8%9B%E0%B8%A5%E0%B8%B2%E0%B8%A2%E0%B8%97%E0%B8%B2%E0%B8%87%40%E0%B9%80%E0%B8%82%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B8%88%E0%B8%B8%E0%B8%AC%E0%B8%B2%E0%B8%A0%E0%B8%A3%E0%B8%93%E0%B9%8C_-_panoramio.jpg/960px-%E0%B8%9B%E0%B8%A5%E0%B8%B2%E0%B8%A2%E0%B8%97%E0%B8%B2%E0%B8%87%40%E0%B9%80%E0%B8%82%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B8%88%E0%B8%B8%E0%B8%AC%E0%B8%B2%E0%B8%A0%E0%B8%A3%E0%B8%93%E0%B9%8C_-_panoramio.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:%E0%B8%9B%E0%B8%A5%E0%B8%B2%E0%B8%A2%E0%B8%97%E0%B8%B2%E0%B8%87@%E0%B9%80%E0%B8%82%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B8%88%E0%B8%B8%E0%B8%AC%E0%B8%B2%E0%B8%A0%E0%B8%A3%E0%B8%93%E0%B9%8C_-_panoramio.jpg",
+   "imageCredit": "o_bankok · CC BY-SA 3.0",
+   "imageAi": true,
+   "imageScore": 6
   },
   {
    "id": "osm-n5499015449",
@@ -11492,7 +11897,12 @@
    "fee": "no",
    "province": "chiang-rai",
    "summary": {},
-   "fetchedAt": "2026-11-07T01:25:37.740Z"
+   "fetchedAt": "2026-11-07T01:25:37.740Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Khun_Korn_Waterfall.jpg/960px-Khun_Korn_Waterfall.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Khun_Korn_Waterfall.jpg",
+   "imageCredit": "Photogrammar · CC BY-SA 4.0",
+   "imageAi": true,
+   "imageScore": 9
   },
   {
    "id": "osm-n11168687044",
@@ -11506,7 +11916,12 @@
    "lng": 97.95775,
    "province": "mae-hong-son",
    "summary": {},
-   "fetchedAt": "2026-11-07T01:25:39.305Z"
+   "fetchedAt": "2026-11-07T01:25:39.305Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Shane_Pangung-01.jpg/960px-Shane_Pangung-01.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Shane_Pangung-01.jpg",
+   "imageCredit": "Shane WP Wongperk · CC BY-SA 4.0",
+   "imageAi": true,
+   "imageScore": 9
   },
   {
    "id": "osm-w170860502",
@@ -11520,7 +11935,12 @@
    "lng": 100.03571,
    "province": "surat-thani",
    "summary": {},
-   "fetchedAt": "2026-11-07T01:25:41.028Z"
+   "fetchedAt": "2026-11-07T01:25:41.028Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/View_to_Bottle_Beach%2C_Koh_Phangan.jpg/960px-View_to_Bottle_Beach%2C_Koh_Phangan.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:View_to_Bottle_Beach,_Koh_Phangan.jpg",
+   "imageCredit": "kaaist · CC0",
+   "imageAi": true,
+   "imageScore": 9
   },
   {
    "id": "osm-r5846432",
@@ -11534,7 +11954,12 @@
    "lng": 98.37585,
    "province": "phuket",
    "summary": {},
-   "fetchedAt": "2026-11-07T01:25:44.745Z"
+   "fetchedAt": "2026-11-07T01:25:44.745Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Strand_i_Thailand_-_panoramio.jpg/960px-Strand_i_Thailand_-_panoramio.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Strand_i_Thailand_-_panoramio.jpg",
+   "imageCredit": "Tobias Barkskog · CC BY 3.0",
+   "imageAi": true,
+   "imageScore": 8
   },
   {
    "id": "osm-r5846433",
@@ -11548,7 +11973,12 @@
    "lng": 98.37434,
    "province": "phuket",
    "summary": {},
-   "fetchedAt": "2026-11-07T01:25:46.459Z"
+   "fetchedAt": "2026-11-07T01:25:46.459Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Strand_i_Thailand_-_panoramio.jpg/960px-Strand_i_Thailand_-_panoramio.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Strand_i_Thailand_-_panoramio.jpg",
+   "imageCredit": "Tobias Barkskog · CC BY 3.0",
+   "imageAi": true,
+   "imageScore": 8
   },
   {
    "id": "osm-n10130402356",
@@ -11626,7 +12056,12 @@
    "summary": {
     "th": "Chinese and Northern Thai loose-leaf tea, teaware, and gongfu tea tastings and ceremonies."
    },
-   "fetchedAt": "2026-11-07T02:08:32.778Z"
+   "fetchedAt": "2026-11-07T02:08:32.778Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Leaf_Spirit_by_Simon_Gudgeon%2C_Kew_Gardens.jpg/960px-Leaf_Spirit_by_Simon_Gudgeon%2C_Kew_Gardens.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Leaf_Spirit_by_Simon_Gudgeon,_Kew_Gardens.jpg",
+   "imageCredit": "AndyScott · CC BY-SA 4.0",
+   "imageAi": true,
+   "imageScore": 7
   },
   {
    "id": "osm-n14322242075",
@@ -11644,7 +12079,12 @@
    "address": "45/12 ซอยทิมอุทิศ หน้าไม้ ลาดหลุมแก้ว",
    "province": "pathum-thani",
    "summary": {},
-   "fetchedAt": "2026-11-07T02:08:32.778Z"
+   "fetchedAt": "2026-11-07T02:08:32.778Z",
+   "image": "https://sundaecoffeeandbakery.com/images/og-image.jpg",
+   "imagePage": "https://sundaecoffeeandbakery.com/",
+   "imageCredit": "รูปจากเว็บไซต์ร้าน",
+   "imageAi": true,
+   "imageScore": 8
   },
   {
    "id": "osm-w1350835874",
@@ -11751,7 +12191,12 @@
     "en": "Ko Sukorn or Ko Sukon or Ko Mu is an island in the Andaman Sea in the Palian district, Trang province, southwest Thailand. Sukon and mu both mean 'pig'. It has a population of about 3,000 people, most of whom profess Islam."
    },
    "fetchedAt": "2026-11-07T01:20:56.973Z",
-   "views": 0
+   "views": 0,
+   "image": "https://www.lemon8-app.com/seo/image?item_id=7253799094261629442&index=0&sign=e6ffd59357ad118286c611554307510f",
+   "imagePage": "https://www.lemon8-app.com/@_pview/7253799094261629442?region=th",
+   "imageCredit": "Lemon8 · Pview_พีวิว",
+   "imageAi": true,
+   "imageScore": 7
   },
   {
    "id": "wd-Q16692133",
@@ -11813,7 +12258,12 @@
    "charge": "50 TBH",
    "province": "chiang-rai",
    "summary": {},
-   "fetchedAt": "2026-11-07T01:22:45.635Z"
+   "fetchedAt": "2026-11-07T01:22:45.635Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/House_of_Opium.jpg/960px-House_of_Opium.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:House_of_Opium.jpg",
+   "imageCredit": "Douglas Perkins · CC BY 4.0",
+   "imageAi": true,
+   "imageScore": 8
   },
   {
    "id": "osm-n1116453647",
@@ -11828,7 +12278,12 @@
    "hours": "We-Su 09:00-16:00",
    "province": "songkhla",
    "summary": {},
-   "fetchedAt": "2026-11-07T01:22:47.464Z"
+   "fetchedAt": "2026-11-07T01:22:47.464Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Songkhla_national_museum.jpg/960px-Songkhla_national_museum.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Songkhla_national_museum.jpg",
+   "imageCredit": "Ahoerstemeier · CC BY-SA 3.0",
+   "imageAi": true,
+   "imageScore": 8
   },
   {
    "id": "osm-n2313723117",
@@ -11846,7 +12301,12 @@
    "address": "เวียง เชียงแสน",
    "province": "chiang-rai",
    "summary": {},
-   "fetchedAt": "2026-11-07T01:22:47.464Z"
+   "fetchedAt": "2026-11-07T01:22:47.464Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Chiang_Saen_-_Wat_Chedi_Luang_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%80%E0%B8%88%E0%B8%94%E0%B8%B5%E0%B8%A2%E0%B9%8C%E0%B8%AB%E0%B8%A5%E0%B8%A7%E0%B8%87_%E0%B9%80%E0%B8%8A%E0%B8%B5%E0%B8%A2%E0%B8%87%E0%B9%81%E0%B8%AA%E0%B8%99_%282020%29_-_IMG_08.jpg/960px-Chiang_Saen_-_Wat_Chedi_Luang_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%80%E0%B8%88%E0%B8%94%E0%B8%B5%E0%B8%A2%E0%B9%8C%E0%B8%AB%E0%B8%A5%E0%B8%A7%E0%B8%87_%E0%B9%80%E0%B8%8A%E0%B8%B5%E0%B8%A2%E0%B8%87%E0%B9%81%E0%B8%AA%E0%B8%99_%282020%29_-_IMG_08.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Chiang_Saen_-_Wat_Chedi_Luang_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%80%E0%B8%88%E0%B8%94%E0%B8%B5%E0%B8%A2%E0%B9%8C%E0%B8%AB%E0%B8%A5%E0%B8%A7%E0%B8%87_%E0%B9%80%E0%B8%8A%E0%B8%B5%E0%B8%A2%E0%B8%87%E0%B9%81%E0%B8%AA%E0%B8%99_(2020)_-_IMG_08.jpg",
+   "imageCredit": "Chainwit. · CC BY 4.0",
+   "imageAi": true,
+   "imageScore": 8
   },
   {
    "id": "osm-n5535178219",
@@ -11926,7 +12386,12 @@
    "website": "https://www.nsm.or.th/index_nature.php",
    "province": "pathum-thani",
    "summary": {},
-   "fetchedAt": "2026-11-07T01:22:54.336Z"
+   "fetchedAt": "2026-11-07T01:22:54.336Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/20181228_IT_Information_Museum.jpg/960px-20181228_IT_Information_Museum.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:20181228_IT_Information_Museum.jpg",
+   "imageCredit": "ยุทธนาสาระขันธ์ · CC BY-SA 4.0",
+   "imageAi": true,
+   "imageScore": 8
   },
   {
    "id": "osm-w688176784",
@@ -11941,7 +12406,12 @@
    "hours": "09:00-16:00",
    "province": "kamphaeng-phet",
    "summary": {},
-   "fetchedAt": "2026-11-07T01:22:56.076Z"
+   "fetchedAt": "2026-11-07T01:22:56.076Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Kamphaeng_Phet_National_Museum_%22Shiva_statue%22_%2829_May_2026%29_%E2%80%93_IMG_02.jpg/960px-Kamphaeng_Phet_National_Museum_%22Shiva_statue%22_%2829_May_2026%29_%E2%80%93_IMG_02.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Kamphaeng_Phet_National_Museum_%22Shiva_statue%22_(29_May_2026)_%E2%80%93_IMG_02.jpg",
+   "imageCredit": "Supakit prem · CC BY 4.0",
+   "imageAi": true,
+   "imageScore": 8
   },
   {
    "id": "osm-w992101976",
@@ -11981,7 +12451,12 @@
    "summary": {
     "th": "พิพิธบางลำพูเป็นแหล่งท่องเที่ยวบริเวณเกาะรัตนโกสินทร์ และศูนย์การเรียนรู้เชิงการศึกษาวัฒนธรรมชุมชน เป็นพิพิธภัณฑ์สมัยใหม่ซึ่งประยุกต์การ แสดงวัตถุและการเล่าเรื่องเชิงประวัติศาสตร์เข้ากับการแสดงวิถีชุมชนบางลำพูเดิมอย่างน่าสนใจ"
    },
-   "fetchedAt": "2026-11-07T01:22:58.920Z"
+   "fetchedAt": "2026-11-07T01:22:58.920Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/%E0%B8%9B%E0%B9%89%E0%B8%AD%E0%B8%A1%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%AA%E0%B8%B8%E0%B9%80%E0%B8%A1%E0%B8%A3%E0%B8%B8_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%99%E0%B8%84%E0%B8%A3_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%2822%29.jpg/960px-%E0%B8%9B%E0%B9%89%E0%B8%AD%E0%B8%A1%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%AA%E0%B8%B8%E0%B9%80%E0%B8%A1%E0%B8%A3%E0%B8%B8_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%99%E0%B8%84%E0%B8%A3_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%2822%29.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:%E0%B8%9B%E0%B9%89%E0%B8%AD%E0%B8%A1%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%AA%E0%B8%B8%E0%B9%80%E0%B8%A1%E0%B8%A3%E0%B8%B8_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%99%E0%B8%84%E0%B8%A3_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_(22).jpg",
+   "imageCredit": "กสิณธร ราชโอรส · CC BY-SA 4.0",
+   "imageAi": true,
+   "imageScore": 8
   },
   {
    "id": "osm-w1466799252",
@@ -11994,7 +12469,12 @@
    "lng": 100.50389,
    "province": "bangkok",
    "summary": {},
-   "fetchedAt": "2026-11-07T01:23:00.724Z"
+   "fetchedAt": "2026-11-07T01:23:00.724Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/%E0%B8%9E%E0%B8%B4%E0%B8%9E%E0%B8%B4%E0%B8%98%E0%B8%A0%E0%B8%B1%E0%B8%93%E0%B8%91%E0%B9%8C%E0%B8%AA%E0%B8%B8%E0%B8%99%E0%B8%97%E0%B8%A3%E0%B8%A0%E0%B8%B9%E0%B9%88_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%98%E0%B8%B4%E0%B8%94%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1.jpg/960px-%E0%B8%9E%E0%B8%B4%E0%B8%9E%E0%B8%B4%E0%B8%98%E0%B8%A0%E0%B8%B1%E0%B8%93%E0%B8%91%E0%B9%8C%E0%B8%AA%E0%B8%B8%E0%B8%99%E0%B8%97%E0%B8%A3%E0%B8%A0%E0%B8%B9%E0%B9%88_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%98%E0%B8%B4%E0%B8%94%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:%E0%B8%9E%E0%B8%B4%E0%B8%9E%E0%B8%B4%E0%B8%98%E0%B8%A0%E0%B8%B1%E0%B8%93%E0%B8%91%E0%B9%8C%E0%B8%AA%E0%B8%B8%E0%B8%99%E0%B8%97%E0%B8%A3%E0%B8%A0%E0%B8%B9%E0%B9%88_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%98%E0%B8%B4%E0%B8%94%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1.jpg",
+   "imageCredit": "Mastertongapollo · CC BY-SA 4.0",
+   "imageAi": true,
+   "imageScore": 5
   },
   {
    "id": "osm-r12104353",
@@ -12008,7 +12488,12 @@
    "lng": 99.5075,
    "province": "prachuap-khiri-khan",
    "summary": {},
-   "fetchedAt": "2026-11-07T02:02:04.795Z"
+   "fetchedAt": "2026-11-07T02:02:04.795Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Huai_Yang%2C_Thap_Sakae_District%2C_Prachuap_Khiri_Khan%2C_Thailand_-_panoramio_%281%29.jpg/960px-Huai_Yang%2C_Thap_Sakae_District%2C_Prachuap_Khiri_Khan%2C_Thailand_-_panoramio_%281%29.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Huai_Yang,_Thap_Sakae_District,_Prachuap_Khiri_Khan,_Thailand_-_panoramio_(1).jpg",
+   "imageCredit": "::::=UT=:::: · CC BY-SA 3.0",
+   "imageAi": true,
+   "imageScore": 6
   },
   {
    "id": "osm-n2231865009",
@@ -12024,7 +12509,12 @@
    "summary": {
     "th": "#2pricethailand\nThis park is subject to dual-pricing wherein foreigners, regardless of residential/work status, must pay 5x more."
    },
-   "fetchedAt": "2026-11-07T01:25:51.156Z"
+   "fetchedAt": "2026-11-07T01:25:51.156Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Entrance_to_Phliu.jpg/960px-Entrance_to_Phliu.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Entrance_to_Phliu.jpg",
+   "imageCredit": "Yoshifumi Iwata · CC BY-SA 4.0",
+   "imageAi": true,
+   "imageScore": 7
   },
   {
    "id": "osm-n2678596386",
@@ -12039,7 +12529,12 @@
    "website": "https://www.world-of-waterfalls.com/asia-haew-narok-waterfall.html",
    "province": "nakhon-nayok",
    "summary": {},
-   "fetchedAt": "2026-11-07T01:25:52.741Z"
+   "fetchedAt": "2026-11-07T01:25:52.741Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Haew_Narok_%28I%29.jpg/960px-Haew_Narok_%28I%29.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Haew_Narok_(I).jpg",
+   "imageCredit": "This Photo was taken by Supanut Arunoprayote. Feel free to u · CC BY 4.0",
+   "imageAi": true,
+   "imageScore": 8
   },
   {
    "id": "osm-n7121055787",
@@ -12055,7 +12550,12 @@
    "summary": {
     "th": "#2pricethailand\nThe entrance fees are 100฿ for foreign children and 200฿ for adults. For Thai nationals it's 20฿ and 40฿ respectively."
    },
-   "fetchedAt": "2026-11-07T01:25:54.349Z"
+   "fetchedAt": "2026-11-07T01:25:54.349Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/The_water_from_the_fall_%2848046946997%29.jpg/960px-The_water_from_the_fall_%2848046946997%29.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:The_water_from_the_fall_(48046946997).jpg",
+   "imageCredit": "E.C.L. · CC BY-SA 2.0",
+   "imageAi": true,
+   "imageScore": 6
   },
   {
    "id": "osm-w150298518",
@@ -12070,7 +12570,12 @@
    "website": "https://www.instagram.com/explore/locations/142387116296336/bang-tao-beach/",
    "province": "phuket",
    "summary": {},
-   "fetchedAt": "2026-11-07T01:25:57.868Z"
+   "fetchedAt": "2026-11-07T01:25:57.868Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Bang_Tao_Beach_%2853668069638%29.jpg/960px-Bang_Tao_Beach_%2853668069638%29.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Bang_Tao_Beach_(53668069638).jpg",
+   "imageCredit": "Raita Futo from Tokyo, Japan · CC BY 2.0",
+   "imageAi": true,
+   "imageScore": 7
   },
   {
    "id": "osm-w180233580",
@@ -12084,7 +12589,12 @@
    "lng": 100.06736,
    "province": "surat-thani",
    "summary": {},
-   "fetchedAt": "2026-11-07T01:25:59.590Z"
+   "fetchedAt": "2026-11-07T01:25:59.590Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Stairs_2017-06-09_044.jpg/960px-Stairs_2017-06-09_044.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Stairs_2017-06-09_044.jpg",
+   "imageCredit": "Chris Light · CC BY-SA 4.0",
+   "imageAi": true,
+   "imageScore": 8
   },
   {
    "id": "osm-r5657696",
@@ -12099,7 +12609,12 @@
    "website": "https://www.instagram.com/explore/locations/114996700317103/yanui-beach/",
    "province": "phuket",
    "summary": {},
-   "fetchedAt": "2026-11-07T01:26:01.391Z"
+   "fetchedAt": "2026-11-07T01:26:01.391Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/A_view_from_Yanui_Beach%2C_Phuket.jpg/960px-A_view_from_Yanui_Beach%2C_Phuket.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:A_view_from_Yanui_Beach,_Phuket.jpg",
+   "imageCredit": "Satdeep Gill · CC BY-SA 4.0",
+   "imageAi": true,
+   "imageScore": 6
   },
   {
    "id": "osm-r6162518",
@@ -12114,7 +12629,12 @@
    "website": "https://instagram.com/explore/locations/1701135409937792/nai-harn-beach-phuket",
    "province": "phuket",
    "summary": {},
-   "fetchedAt": "2026-11-07T01:26:01.391Z"
+   "fetchedAt": "2026-11-07T01:26:01.391Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Phuket_-_Nai_Harn_Beach_022.jpg/960px-Phuket_-_Nai_Harn_Beach_022.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Phuket_-_Nai_Harn_Beach_022.jpg",
+   "imageCredit": "ADwarf · Public domain",
+   "imageAi": true,
+   "imageScore": 7
   },
   {
    "id": "osm-r14010442",
@@ -12129,7 +12649,12 @@
    "website": "https://www.instagram.com/explore/locations/527041673990545/surin-beach-phuket/",
    "province": "phuket",
    "summary": {},
-   "fetchedAt": "2026-11-07T01:26:04.904Z"
+   "fetchedAt": "2026-11-07T01:26:04.904Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Surin_Beach.JPG/960px-Surin_Beach.JPG",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Surin_Beach.JPG",
+   "imageCredit": "Jpatokal · CC BY-SA 4.0",
+   "imageAi": true,
+   "imageScore": 9
   },
   {
    "id": "osm-n4343798786",
@@ -12147,7 +12672,12 @@
    "address": "251/3 Chalermprakiat Road Nai Mueang Mueang Khon Kaen",
    "province": "khon-kaen",
    "summary": {},
-   "fetchedAt": "2026-11-07T02:08:37.498Z"
+   "fetchedAt": "2026-11-07T02:08:37.498Z",
+   "image": "https://www.lemon8-app.com/seo/image?item_id=7405614711250715152&index=0&sign=ad109beb123d98f4dfe75560987a6720",
+   "imagePage": "https://www.lemon8-app.com/@arttt.ch/7405614711250715152?region=th",
+   "imageCredit": "Lemon8 · artt.ch",
+   "imageAi": true,
+   "imageScore": 8
   },
   {
    "id": "osm-n4420366089",
@@ -12238,7 +12768,12 @@
    "address": "130/27 ถนนสายยุทธศาสตร์ ซ ตำบล พลูตาหลวง อำเภอสัตหีบ",
    "province": "chonburi",
    "summary": {},
-   "fetchedAt": "2026-11-07T02:08:50.615Z"
+   "fetchedAt": "2026-11-07T02:08:50.615Z",
+   "image": "https://oldenhousecafe.com/images/image-2.jpg",
+   "imagePage": "https://www.oldenhousecafe.com/",
+   "imageCredit": "รูปจากเว็บไซต์ร้าน",
+   "imageAi": true,
+   "imageScore": 9
   },
   {
    "id": "osm-n10628291805",
@@ -12291,7 +12826,12 @@
    "address": "359 ถนนวงแหวนรอบเมืองร้อยเอ็ด ตำบลนิเวศน์ อำเภอธวัชบุรี",
    "province": "roi-et",
    "summary": {},
-   "fetchedAt": "2026-11-07T02:08:51.994Z"
+   "fetchedAt": "2026-11-07T02:08:51.994Z",
+   "image": "https://www.lemon8-app.com/seo/image?item_id=7260932502431269378&index=0&sign=b441bf07664784f04e3e7fd9f89193f6",
+   "imagePage": "https://www.lemon8-app.com/@ppickkk/7260932502431269378?region=th",
+   "imageCredit": "Lemon8 · Ppickkk.bri",
+   "imageAi": true,
+   "imageScore": 8
   },
   {
    "id": "osm-n10902432008",
@@ -12559,7 +13099,12 @@
    "address": "131 ซอยนาจอมเทียน 4",
    "province": "chonburi",
    "summary": {},
-   "fetchedAt": "2026-11-07T02:09:02.704Z"
+   "fetchedAt": "2026-11-07T02:09:02.704Z",
+   "image": "https://www.lemon8-app.com/seo/image?item_id=7501601110415966728&index=0&sign=953f16ae1ee62f4721e15146d585fbab",
+   "imagePage": "https://www.lemon8-app.com/@nueksanuk/7501601110415966728?region=th",
+   "imageCredit": "Lemon8 · Morneetiew",
+   "imageAi": true,
+   "imageScore": 7
   },
   {
    "id": "osm-n14114212924",
@@ -12650,7 +13195,12 @@
    "summary": {
     "th": "Stylish cafe and restaurant"
    },
-   "fetchedAt": "2026-11-07T02:09:04.077Z"
+   "fetchedAt": "2026-11-07T02:09:04.077Z",
+   "image": "https://baanmaechiangmai.com/wp-content/uploads/2024/05/001-bm-menu-june-2024-.webp",
+   "imagePage": "https://baanmaechiangmai.com/menu/",
+   "imageCredit": "รูปจากเว็บไซต์ร้าน",
+   "imageAi": true,
+   "imageScore": 8
   },
   {
    "id": "osm-w1532542590",
@@ -12743,7 +13293,12 @@
     "en": "Jamjuree Art Gallery is an art museum owned by Chulalongkorn University in Bangkok, Thailand. Regular exhibits at the gallery include works of the university's students along with more experimental exhibits by rising local artists, established national painters, and international artists."
    },
    "fetchedAt": "2026-11-06T20:04:36.211Z",
-   "views": 0
+   "views": 0,
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/CUArtgallery.jpg/960px-CUArtgallery.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:CUArtgallery.jpg",
+   "imageCredit": "BunBn · CC BY-SA 4.0",
+   "imageAi": true,
+   "imageScore": 6
   },
   {
    "id": "wd-Q1314425",
@@ -12828,7 +13383,12 @@
    "address": "Nai Mueang Mueang Roi Et",
    "province": "roi-et",
    "summary": {},
-   "fetchedAt": "2026-11-06T20:07:09.749Z"
+   "fetchedAt": "2026-11-06T20:07:09.749Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Wat_Burapha_Phiram%2C_Roi_Et_%28I%29.jpg/960px-Wat_Burapha_Phiram%2C_Roi_Et_%28I%29.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Wat_Burapha_Phiram,_Roi_Et_(I).jpg",
+   "imageCredit": "This Photo was taken by Supanut Arunoprayote. Feel free to u · CC BY 4.0",
+   "imageAi": true,
+   "imageScore": 6
   },
   {
    "id": "osm-n5052506726",
@@ -12902,7 +13462,12 @@
    "summary": {
     "th": "Floating water park in man made lake"
    },
-   "fetchedAt": "2026-11-06T20:10:09.917Z"
+   "fetchedAt": "2026-11-06T20:10:09.917Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Chiang_Mai%2C_2016_april_-_panoramio_-_Roma_Neus_%2811%29.jpg/960px-Chiang_Mai%2C_2016_april_-_panoramio_-_Roma_Neus_%2811%29.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Chiang_Mai,_2016_april_-_panoramio_-_Roma_Neus_(11).jpg",
+   "imageCredit": "Roma Neus · CC BY 3.0",
+   "imageAi": true,
+   "imageScore": 8
   },
   {
    "id": "osm-w441601880",
@@ -12920,7 +13485,12 @@
    "fee": "yes",
    "province": "chiang-mai",
    "summary": {},
-   "fetchedAt": "2026-11-06T20:10:11.283Z"
+   "fetchedAt": "2026-11-06T20:10:11.283Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Chiang_Mai%2C_2016_april_-_panoramio_-_Roma_Neus_%2811%29.jpg/960px-Chiang_Mai%2C_2016_april_-_panoramio_-_Roma_Neus_%2811%29.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Chiang_Mai,_2016_april_-_panoramio_-_Roma_Neus_(11).jpg",
+   "imageCredit": "Roma Neus · CC BY 3.0",
+   "imageAi": true,
+   "imageScore": 8
   },
   {
    "id": "osm-n303924229",
@@ -12937,7 +13507,12 @@
    "address": "26 138 ถนนวิสุทธิ์กษัตริย์ Nai Mueang Mueang Phitsanulok",
    "province": "phitsanulok",
    "summary": {},
-   "fetchedAt": "2026-11-07T01:23:00.724Z"
+   "fetchedAt": "2026-11-07T01:23:00.724Z",
+   "image": "https://upload.wikimedia.org/wikipedia/commons/2/24/Sgt._Maj._Thawee_Folk_Museum%2C_Phitsanulok%2C_Sukhothai%2C_Thailand.JPG",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Sgt._Maj._Thawee_Folk_Museum,_Phitsanulok,_Sukhothai,_Thailand.JPG",
+   "imageCredit": "User: (WT-shared) Shoestring at wts wikivoyage · CC BY-SA 4.0",
+   "imageAi": true,
+   "imageScore": 7
   },
   {
    "id": "osm-n1614993559",
@@ -12951,7 +13526,12 @@
    "lng": 98.98684,
    "province": "chiang-mai",
    "summary": {},
-   "fetchedAt": "2026-11-07T01:23:02.105Z"
+   "fetchedAt": "2026-11-07T01:23:02.105Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Chiang-Mai_Thailand_Buddhist-Manuscript-Library-and-Museum-01.jpg/960px-Chiang-Mai_Thailand_Buddhist-Manuscript-Library-and-Museum-01.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Chiang-Mai_Thailand_Buddhist-Manuscript-Library-and-Museum-01.jpg",
+   "imageCredit": "CEphoto, Uwe Aranas · CC BY-SA 4.0",
+   "imageAi": true,
+   "imageScore": 8
   },
   {
    "id": "osm-n1799203298",
@@ -13057,7 +13637,12 @@
    "lng": 99.80956,
    "province": "chiang-rai",
    "summary": {},
-   "fetchedAt": "2026-11-07T01:23:14.936Z"
+   "fetchedAt": "2026-11-07T01:23:14.936Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Doi_Tung_Royal_Villa_20250117.jpg/960px-Doi_Tung_Royal_Villa_20250117.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Doi_Tung_Royal_Villa_20250117.jpg",
+   "imageCredit": "This Photo was taken by Supanut Arunoprayote. Feel free to u · CC BY 4.0",
+   "imageAi": true,
+   "imageScore": 9
   },
   {
    "id": "osm-w259502249",
@@ -13071,7 +13656,12 @@
    "lng": 100.57756,
    "province": "ayutthaya",
    "summary": {},
-   "fetchedAt": "2026-11-07T01:23:16.855Z"
+   "fetchedAt": "2026-11-07T01:23:16.855Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Sabh%C4%81g%C4%81r_R%C4%81ja_Pray%C5%ABr_%E0%B8%AA%E0%B8%A0%E0%B8%B2%E0%B8%84%E0%B8%B2%E0%B8%A3%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%A2%E0%B8%B9%E0%B8%A3_%28Bang_Pa-in%29_%282025%29_-_img_01.jpg/960px-Sabh%C4%81g%C4%81r_R%C4%81ja_Pray%C5%ABr_%E0%B8%AA%E0%B8%A0%E0%B8%B2%E0%B8%84%E0%B8%B2%E0%B8%A3%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%A2%E0%B8%B9%E0%B8%A3_%28Bang_Pa-in%29_%282025%29_-_img_01.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Sabh%C4%81g%C4%81r_R%C4%81ja_Pray%C5%ABr_%E0%B8%AA%E0%B8%A0%E0%B8%B2%E0%B8%84%E0%B8%B2%E0%B8%A3%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%A2%E0%B8%B9%E0%B8%A3_(Bang_Pa-in)_(2025)_-_img_01.jpg",
+   "imageCredit": "Chainwit. · CC BY 4.0",
+   "imageAi": true,
+   "imageScore": 8
   },
   {
    "id": "osm-w547713585",
@@ -13089,7 +13679,12 @@
    "address": "620/25 3 floor ถนน ธนาลัย",
    "province": "chiang-rai",
    "summary": {},
-   "fetchedAt": "2026-11-07T01:23:21.705Z"
+   "fetchedAt": "2026-11-07T01:23:21.705Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Chiang_Rai%2C_Temple%2C_Thailand.jpg/960px-Chiang_Rai%2C_Temple%2C_Thailand.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Chiang_Rai,_Temple,_Thailand.jpg",
+   "imageCredit": "Vyacheslav Argenberg · CC BY 4.0",
+   "imageAi": true,
+   "imageScore": 7
   },
   {
    "id": "osm-w1020885012",
@@ -13106,7 +13701,12 @@
    "address": "ถนนเยาวราช",
    "province": "phuket",
    "summary": {},
-   "fetchedAt": "2026-11-07T01:23:23.500Z"
+   "fetchedAt": "2026-11-07T01:23:23.500Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Phuket_Thai_Hua_School_%28I%29.jpg/960px-Phuket_Thai_Hua_School_%28I%29.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Phuket_Thai_Hua_School_(I).jpg",
+   "imageCredit": "This Photo was taken by Supanut Arunoprayote. Feel free to u · CC BY 4.0",
+   "imageAi": true,
+   "imageScore": 8
   },
   {
    "id": "osm-w1467945373",
@@ -13138,7 +13738,12 @@
    "lng": 99.89287,
    "province": "chiang-rai",
    "summary": {},
-   "fetchedAt": "2026-11-07T01:23:24.913Z"
+   "fetchedAt": "2026-11-07T01:23:24.913Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Burmese_Nat_%28spirit%29_%22Nakkarai%22_-_Mekong_Basin_Civilization_Museum_01.jpg/960px-Burmese_Nat_%28spirit%29_%22Nakkarai%22_-_Mekong_Basin_Civilization_Museum_01.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Burmese_Nat_(spirit)_%22Nakkarai%22_-_Mekong_Basin_Civilization_Museum_01.jpg",
+   "imageCredit": "Chainwit. · CC BY 4.0",
+   "imageAi": true,
+   "imageScore": 6
   },
   {
    "id": "osm-w1472988287",
@@ -13152,7 +13757,12 @@
    "lng": 99.89311,
    "province": "chiang-rai",
    "summary": {},
-   "fetchedAt": "2026-11-07T01:23:24.913Z"
+   "fetchedAt": "2026-11-07T01:23:24.913Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Statues_-_Mekong_Basin_Civilization_Museum_%282021%29_-_img_02.jpg/960px-Statues_-_Mekong_Basin_Civilization_Museum_%282021%29_-_img_02.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Statues_-_Mekong_Basin_Civilization_Museum_(2021)_-_img_02.jpg",
+   "imageCredit": "Chainwit. · CC BY 4.0",
+   "imageAi": true,
+   "imageScore": 6
   },
   {
    "id": "osm-w1472988288",
@@ -13166,7 +13776,12 @@
    "lng": 99.89321,
    "province": "chiang-rai",
    "summary": {},
-   "fetchedAt": "2026-11-07T01:23:24.913Z"
+   "fetchedAt": "2026-11-07T01:23:24.913Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Statues_-_Mekong_Basin_Civilization_Museum_%282021%29_-_img_02.jpg/960px-Statues_-_Mekong_Basin_Civilization_Museum_%282021%29_-_img_02.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Statues_-_Mekong_Basin_Civilization_Museum_(2021)_-_img_02.jpg",
+   "imageCredit": "Chainwit. · CC BY 4.0",
+   "imageAi": true,
+   "imageScore": 6
   },
   {
    "id": "osm-w223725728",
@@ -13180,7 +13795,12 @@
    "lng": 97.86575,
    "province": "phang-nga",
    "summary": {},
-   "fetchedAt": "2026-11-06T20:13:58.328Z"
+   "fetchedAt": "2026-11-06T20:13:58.328Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Shane_Koh_Surin-01.jpg/960px-Shane_Koh_Surin-01.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Shane_Koh_Surin-01.jpg",
+   "imageCredit": "Shane WP Wongperk · CC BY-SA 4.0",
+   "imageAi": true,
+   "imageScore": 9
   },
   {
    "id": "osm-r2969526",
@@ -13194,7 +13814,12 @@
    "lng": 98.82671,
    "province": "krabi",
    "summary": {},
-   "fetchedAt": "2026-11-07T02:02:04.795Z"
+   "fetchedAt": "2026-11-07T02:02:04.795Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Phi-Phi_Island%2C_2013_march_-_panoramio_%2820%29.jpg/960px-Phi-Phi_Island%2C_2013_march_-_panoramio_%2820%29.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Phi-Phi_Island,_2013_march_-_panoramio_(20).jpg",
+   "imageCredit": "Roma Neus · CC BY 3.0",
+   "imageAi": true,
+   "imageScore": 9
   },
   {
    "id": "osm-r3263607",
@@ -13208,7 +13833,12 @@
    "lng": 97.72286,
    "province": "phang-nga",
    "summary": {},
-   "fetchedAt": "2026-11-06T20:14:01.022Z"
+   "fetchedAt": "2026-11-06T20:14:01.022Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Donald_Duck_Bay%2C_Similan_Island_-8.jpg/960px-Donald_Duck_Bay%2C_Similan_Island_-8.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Donald_Duck_Bay,_Similan_Island_-8.jpg",
+   "imageCredit": "No Troubles Just Bubbles · CC BY-SA 4.0",
+   "imageAi": true,
+   "imageScore": 9
   },
   {
    "id": "osm-r3283059",
@@ -13222,7 +13852,12 @@
    "lng": 99.59497,
    "province": "satun",
    "summary": {},
-   "fetchedAt": "2026-11-06T20:14:02.813Z"
+   "fetchedAt": "2026-11-06T20:14:02.813Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/%E0%B8%A3%E0%B8%AD%E0%B8%A2%E0%B8%AA%E0%B8%B1%E0%B8%A1%E0%B8%9C%E0%B8%B1%E0%B8%AA%E0%B8%97%E0%B8%B2%E0%B8%87%E0%B8%98%E0%B8%A3%E0%B8%93%E0%B8%B5%E0%B8%A7%E0%B8%B4%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B8%AD%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B9%82%E0%B8%94%E0%B8%A7%E0%B8%B4%E0%B9%80%E0%B8%8A%E0%B8%B5%E0%B8%A2%E0%B8%99_%E0%B8%AA%E0%B8%B0%E0%B8%9E%E0%B8%B2%E0%B8%99%E0%B8%82%E0%B9%89%E0%B8%B2%E0%B8%A1%E0%B8%81%E0%B8%B2%E0%B8%A5%E0%B9%80%E0%B8%A7%E0%B8%A5%E0%B8%B2_-_Ordovician_geological_contact_line_at_Khao_To_Ngai.jpg/960px-thumbnail.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:%E0%B8%A3%E0%B8%AD%E0%B8%A2%E0%B8%AA%E0%B8%B1%E0%B8%A1%E0%B8%9C%E0%B8%B1%E0%B8%AA%E0%B8%97%E0%B8%B2%E0%B8%87%E0%B8%98%E0%B8%A3%E0%B8%93%E0%B8%B5%E0%B8%A7%E0%B8%B4%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B8%AD%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B9%82%E0%B8%94%E0%B8%A7%E0%B8%B4%E0%B9%80%E0%B8%8A%E0%B8%B5%E0%B8%A2%E0%B8%99_%E0%B8%AA%E0%B8%B0%E0%B8%9E%E0%B8%B2%E0%B8%99%E0%B8%82%E0%B9%89%E0%B8%B2%E0%B8%A1%E0%B8%81%E0%B8%B2%E0%B8%A5%E0%B9%80%E0%B8%A7%E0%B8%A5%E0%B8%B2_-_Ordovician_geological_contact_line_at_Khao_To_Ngai.jpg",
+   "imageCredit": "Dreampetal · CC BY-SA 4.0",
+   "imageAi": true,
+   "imageScore": 8
   },
   {
    "id": "osm-r3283184",
@@ -13236,7 +13871,12 @@
    "lng": 98.68131,
    "province": "krabi",
    "summary": {},
-   "fetchedAt": "2026-11-06T20:14:04.634Z"
+   "fetchedAt": "2026-11-06T20:14:04.634Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Uppermost_pool_of_Thanbok_Khoranee_waterfall.JPG/960px-Uppermost_pool_of_Thanbok_Khoranee_waterfall.JPG",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Uppermost_pool_of_Thanbok_Khoranee_waterfall.JPG",
+   "imageCredit": "M.inse31 · CC BY-SA 3.0",
+   "imageAi": true,
+   "imageScore": 8
   },
   {
    "id": "osm-r3284822",
@@ -13250,7 +13890,12 @@
    "lng": 98.27556,
    "province": "phang-nga",
    "summary": {},
-   "fetchedAt": "2026-11-07T02:02:04.795Z"
+   "fetchedAt": "2026-11-07T02:02:04.795Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Rueangrit_0011.jpg/960px-Rueangrit_0011.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Rueangrit_0011.jpg",
+   "imageCredit": "Rueangrit srisuk · CC BY-SA 3.0",
+   "imageAi": true,
+   "imageScore": 9
   },
   {
    "id": "osm-r3288698",
@@ -13264,7 +13909,12 @@
    "lng": 99.27538,
    "province": "chumphon",
    "summary": {},
-   "fetchedAt": "2026-11-06T20:14:08.181Z"
+   "fetchedAt": "2026-11-06T20:14:08.181Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Mu_Ko_Chumphon_National_Park_Chumphon_Thailand.jpg/960px-Mu_Ko_Chumphon_National_Park_Chumphon_Thailand.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mu_Ko_Chumphon_National_Park_Chumphon_Thailand.jpg",
+   "imageCredit": "KOSIN SUKHUM · CC BY-SA 4.0",
+   "imageAi": true,
+   "imageScore": 9
   },
   {
    "id": "osm-r3790589",
@@ -13278,7 +13928,12 @@
    "lng": 98.67589,
    "province": "ranong",
    "summary": {},
-   "fetchedAt": "2026-11-06T20:14:09.923Z"
+   "fetchedAt": "2026-11-06T20:14:09.923Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%95%E0%B8%81%E0%B8%9B%E0%B8%B8%E0%B8%8D%E0%B8%8D%E0%B8%9A%E0%B8%B2%E0%B8%A5_%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B8%A5%E0%B8%B3%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%81%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5.JPG/960px-%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%95%E0%B8%81%E0%B8%9B%E0%B8%B8%E0%B8%8D%E0%B8%8D%E0%B8%9A%E0%B8%B2%E0%B8%A5_%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B8%A5%E0%B8%B3%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%81%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5.JPG",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%95%E0%B8%81%E0%B8%9B%E0%B8%B8%E0%B8%8D%E0%B8%8D%E0%B8%9A%E0%B8%B2%E0%B8%A5_%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B8%A5%E0%B8%B3%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%81%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5.JPG",
+   "imageCredit": "attaponlim · CC BY-SA 3.0",
+   "imageAi": true,
+   "imageScore": 8
   },
   {
    "id": "osm-r3790891",
@@ -13292,7 +13947,12 @@
    "lng": 98.7925,
    "province": "ranong",
    "summary": {},
-   "fetchedAt": "2026-11-06T20:14:11.634Z"
+   "fetchedAt": "2026-11-06T20:14:11.634Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Ngao_waterfall_surrounded_with_rainforest.jpg/960px-Ngao_waterfall_surrounded_with_rainforest.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Ngao_waterfall_surrounded_with_rainforest.jpg",
+   "imageCredit": "Sucha Kittiwararat · CC BY-SA 4.0",
+   "imageAi": true,
+   "imageScore": 8
   },
   {
    "id": "osm-r3801566",
@@ -13306,7 +13966,12 @@
    "lng": 98.83802,
    "province": "kanchanaburi",
    "summary": {},
-   "fetchedAt": "2026-11-06T20:14:13.373Z"
+   "fetchedAt": "2026-11-06T20:14:13.373Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/%E0%B8%96%E0%B9%89%E0%B8%B3%E0%B8%99%E0%B8%81%E0%B8%99%E0%B8%B2%E0%B8%87%E0%B9%81%E0%B8%AD%E0%B9%88%E0%B8%99.jpg/960px-%E0%B8%96%E0%B9%89%E0%B8%B3%E0%B8%99%E0%B8%81%E0%B8%99%E0%B8%B2%E0%B8%87%E0%B9%81%E0%B8%AD%E0%B9%88%E0%B8%99.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:%E0%B8%96%E0%B9%89%E0%B8%B3%E0%B8%99%E0%B8%81%E0%B8%99%E0%B8%B2%E0%B8%87%E0%B9%81%E0%B8%AD%E0%B9%88%E0%B8%99.jpg",
+   "imageCredit": "Chaiyathat · CC BY-SA 3.0",
+   "imageAi": true,
+   "imageScore": 9
   },
   {
    "id": "osm-r5911629",
@@ -13320,7 +13985,12 @@
    "lng": 98.12539,
    "province": "tak",
    "summary": {},
-   "fetchedAt": "2026-11-06T20:14:15.084Z"
+   "fetchedAt": "2026-11-06T20:14:15.084Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/92_Mae_Moei_National_Park-Mae_Usu.jpg/960px-92_Mae_Moei_National_Park-Mae_Usu.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:92_Mae_Moei_National_Park-Mae_Usu.jpg",
+   "imageCredit": "Chonwee · CC BY-SA 4.0",
+   "imageAi": true,
+   "imageScore": 9
   },
   {
    "id": "osm-r5944547",
@@ -13363,7 +14033,12 @@
    "fee": "no",
    "province": "chiang-rai",
    "summary": {},
-   "fetchedAt": "2026-11-07T02:02:04.795Z"
+   "fetchedAt": "2026-11-07T02:02:04.795Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/%E0%B8%A5%E0%B8%B1%E0%B8%87%E0%B8%81%E0%B8%B2%E0%B8%99%E0%B9%89%E0%B8%AD%E0%B8%A2_%E0%B8%A5%E0%B8%B1%E0%B8%87%E0%B8%81%E0%B8%B2%E0%B8%AB%E0%B8%A5%E0%B8%A7%E0%B8%87_%E0%B8%AD%E0%B8%8A_%E0%B8%82%E0%B8%B8%E0%B8%99%E0%B9%81%E0%B8%88_2.jpg/960px-%E0%B8%A5%E0%B8%B1%E0%B8%87%E0%B8%81%E0%B8%B2%E0%B8%99%E0%B9%89%E0%B8%AD%E0%B8%A2_%E0%B8%A5%E0%B8%B1%E0%B8%87%E0%B8%81%E0%B8%B2%E0%B8%AB%E0%B8%A5%E0%B8%A7%E0%B8%87_%E0%B8%AD%E0%B8%8A_%E0%B8%82%E0%B8%B8%E0%B8%99%E0%B9%81%E0%B8%88_2.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:%E0%B8%A5%E0%B8%B1%E0%B8%87%E0%B8%81%E0%B8%B2%E0%B8%99%E0%B9%89%E0%B8%AD%E0%B8%A2_%E0%B8%A5%E0%B8%B1%E0%B8%87%E0%B8%81%E0%B8%B2%E0%B8%AB%E0%B8%A5%E0%B8%A7%E0%B8%87_%E0%B8%AD%E0%B8%8A_%E0%B8%82%E0%B8%B8%E0%B8%99%E0%B9%81%E0%B8%88_2.jpg",
+   "imageCredit": "Patipath · CC BY-SA 3.0",
+   "imageAi": true,
+   "imageScore": 9
   },
   {
    "id": "osm-r5944648",
@@ -13377,7 +14052,12 @@
    "lng": 99.8634,
    "province": "chiang-rai",
    "summary": {},
-   "fetchedAt": "2026-11-06T20:14:22.081Z"
+   "fetchedAt": "2026-11-06T20:14:22.081Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Mae_Puem_National_Park%2C_Phayao%2C_Thailand.jpg/960px-Mae_Puem_National_Park%2C_Phayao%2C_Thailand.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mae_Puem_National_Park,_Phayao,_Thailand.jpg",
+   "imageCredit": "MEI NAPIKUL · CC BY-SA 4.0",
+   "imageAi": true,
+   "imageScore": 9
   },
   {
    "id": "osm-r5944649",
@@ -13391,7 +14071,12 @@
    "lng": 99.47466,
    "province": "sukhothai",
    "summary": {},
-   "fetchedAt": "2026-11-06T20:14:23.839Z"
+   "fetchedAt": "2026-11-06T20:14:23.839Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%AD%E0%B8%B2%E0%B8%97%E0%B8%B4%E0%B8%95%E0%B8%A2%E0%B9%8C%E0%B8%A2%E0%B8%B2%E0%B8%A1%E0%B9%80%E0%B8%A2%E0%B9%87%E0%B8%99_%E0%B8%93_%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%A2%E0%B8%A1_%E0%B8%AD.%E0%B8%A8%E0%B8%A3%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%8A%E0%B8%99%E0%B8%B2%E0%B8%A5%E0%B8%B1%E0%B8%A2.jpg/960px-%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%AD%E0%B8%B2%E0%B8%97%E0%B8%B4%E0%B8%95%E0%B8%A2%E0%B9%8C%E0%B8%A2%E0%B8%B2%E0%B8%A1%E0%B9%80%E0%B8%A2%E0%B9%87%E0%B8%99_%E0%B8%93_%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%A2%E0%B8%A1_%E0%B8%AD.%E0%B8%A8%E0%B8%A3%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%8A%E0%B8%99%E0%B8%B2%E0%B8%A5%E0%B8%B1%E0%B8%A2.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%AD%E0%B8%B2%E0%B8%97%E0%B8%B4%E0%B8%95%E0%B8%A2%E0%B9%8C%E0%B8%A2%E0%B8%B2%E0%B8%A1%E0%B9%80%E0%B8%A2%E0%B9%87%E0%B8%99_%E0%B8%93_%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%A2%E0%B8%A1_%E0%B8%AD.%E0%B8%A8%E0%B8%A3%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%8A%E0%B8%99%E0%B8%B2%E0%B8%A5%E0%B8%B1%E0%B8%A2.jpg",
+   "imageCredit": "KaveeH · CC BY-SA 3.0",
+   "imageAi": true,
+   "imageScore": 9
   },
   {
    "id": "osm-r5944651",
@@ -13405,7 +14090,12 @@
    "lng": 100.80182,
    "province": "phitsanulok",
    "summary": {},
-   "fetchedAt": "2026-11-06T20:14:25.561Z"
+   "fetchedAt": "2026-11-06T20:14:25.561Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/COD_1804.jpg/960px-COD_1804.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:COD_1804.jpg",
+   "imageCredit": "27Tula · CC BY-SA 3.0",
+   "imageAi": true,
+   "imageScore": 9
   },
   {
    "id": "osm-r5963190",
@@ -13419,7 +14109,12 @@
    "lng": 98.63034,
    "province": "chiang-mai",
    "summary": {},
-   "fetchedAt": "2026-11-06T20:14:27.301Z"
+   "fetchedAt": "2026-11-06T20:14:27.301Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/4.Hidden_Nature.jpg/960px-4.Hidden_Nature.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:4.Hidden_Nature.jpg",
+   "imageCredit": "Wisan Numkarng · CC BY-SA 4.0",
+   "imageAi": true,
+   "imageScore": 9
   },
   {
    "id": "osm-r5963313",
@@ -13433,7 +14128,12 @@
    "lng": 98.69491,
    "province": "chiang-mai",
    "summary": {},
-   "fetchedAt": "2026-11-06T20:14:28.653Z"
+   "fetchedAt": "2026-11-06T20:14:28.653Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Mae_Wang_National_Park_%28I%29.jpg/960px-Mae_Wang_National_Park_%28I%29.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mae_Wang_National_Park_(I).jpg",
+   "imageCredit": "This Photo was taken by Supanut Arunoprayote. Feel free to u · CC BY 4.0",
+   "imageAi": true,
+   "imageScore": 9
   },
   {
    "id": "osm-r5963397",
@@ -13447,7 +14147,12 @@
    "lng": 98.68763,
    "province": "tak",
    "summary": {},
-   "fetchedAt": "2026-11-06T20:14:30.006Z"
+   "fetchedAt": "2026-11-06T20:14:30.006Z",
+   "image": "https://www.lemon8-app.com/seo/image?item_id=7299464585487106562&index=0&sign=90737c98aa693ab8c04c9ca3625683a2",
+   "imagePage": "https://www.lemon8-app.com/@chompink12/7299464585487106562?region=th",
+   "imageCredit": "Lemon8 · CH OM",
+   "imageAi": true,
+   "imageScore": 6
   },
   {
    "id": "osm-r5964088",
@@ -13461,7 +14166,12 @@
    "lng": 99.15342,
    "province": "chiang-mai",
    "summary": {},
-   "fetchedAt": "2026-11-06T20:14:31.842Z"
+   "fetchedAt": "2026-11-06T20:14:31.842Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Mae_Ngat_Somboon_Chon.jpg/960px-Mae_Ngat_Somboon_Chon.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mae_Ngat_Somboon_Chon.jpg",
+   "imageCredit": "Nejumy · CC BY-SA 4.0",
+   "imageAi": true,
+   "imageScore": 7
   },
   {
    "id": "osm-r6004034",
@@ -13517,7 +14227,12 @@
    "lng": 101.02899,
    "province": "uttaradit",
    "summary": {},
-   "fetchedAt": "2026-11-06T20:14:38.758Z"
+   "fetchedAt": "2026-11-06T20:14:38.758Z",
+   "image": "https://www.lemon8-app.com/seo/image?item_id=7696532854632661510&index=0&sign=a1cf12ab9ad00d18f398fec347a2ad8d",
+   "imagePage": "https://www.lemon8-app.com/@bubblebee_bubble/7696532854632661510?region=th",
+   "imageCredit": "Lemon8 · Bubble(ไปตะพึด)",
+   "imageAi": true,
+   "imageScore": 8
   },
   {
    "id": "osm-r6009660",
@@ -13531,7 +14246,12 @@
    "lng": 100.85518,
    "province": "nan",
    "summary": {},
-   "fetchedAt": "2026-11-06T20:14:40.494Z"
+   "fetchedAt": "2026-11-06T20:14:40.494Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/1104_Camp_site_on_Doy_Samur_Dow_-_Si_Nan_National_Park%2C_Nan%2C_Thailand.jpg/960px-1104_Camp_site_on_Doy_Samur_Dow_-_Si_Nan_National_Park%2C_Nan%2C_Thailand.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1104_Camp_site_on_Doy_Samur_Dow_-_Si_Nan_National_Park,_Nan,_Thailand.jpg",
+   "imageCredit": "Piith.hant · CC BY-SA 4.0",
+   "imageAi": true,
+   "imageScore": 8
   },
   {
    "id": "osm-r6009661",
@@ -13545,7 +14265,12 @@
    "lng": 101.37485,
    "province": "phetchabun",
    "summary": {},
-   "fetchedAt": "2026-11-07T02:02:04.795Z"
+   "fetchedAt": "2026-11-07T02:02:04.795Z",
+   "image": "https://upload.wikimedia.org/wikipedia/commons/0/04/Tadmok-waterfall7.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Tadmok-waterfall7.jpg",
+   "imageCredit": "เบนนี่ · CC BY-SA 3.0",
+   "imageAi": true,
+   "imageScore": 7
   },
   {
    "id": "osm-r6009662",
@@ -13559,7 +14284,12 @@
    "lng": 100.5669,
    "province": "uttaradit",
    "summary": {},
-   "fetchedAt": "2026-11-06T20:14:43.560Z"
+   "fetchedAt": "2026-11-06T20:14:43.560Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Nature_Trail_and_Giant_Teak_Trees_at_Ton_Sak_Yai_National_Park.jpg/960px-Nature_Trail_and_Giant_Teak_Trees_at_Ton_Sak_Yai_National_Park.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Nature_Trail_and_Giant_Teak_Trees_at_Ton_Sak_Yai_National_Park.jpg",
+   "imageCredit": "Tang2bar · CC BY-SA 4.0",
+   "imageAi": true,
+   "imageScore": 8
   },
   {
    "id": "osm-r6009663",
@@ -13587,7 +14317,12 @@
    "lng": 101.44435,
    "province": "chaiyaphum",
    "summary": {},
-   "fetchedAt": "2026-11-06T20:14:47.024Z"
+   "fetchedAt": "2026-11-06T20:14:47.024Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Pa_Hin_Ngam_National_Park_%285%29.jpg/960px-Pa_Hin_Ngam_National_Park_%285%29.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Pa_Hin_Ngam_National_Park_(5).jpg",
+   "imageCredit": "Chaiyathat · CC BY-SA 4.0",
+   "imageAi": true,
+   "imageScore": 8
   },
   {
    "id": "osm-r6011588",
@@ -13601,7 +14336,12 @@
    "lng": 102.5644,
    "province": "nong-bua-lamphu",
    "summary": {},
-   "fetchedAt": "2026-11-06T20:14:48.740Z"
+   "fetchedAt": "2026-11-06T20:14:48.740Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/%E0%B8%A5%E0%B8%AD%E0%B8%A2%E0%B9%80%E0%B8%97%E0%B9%89%E0%B8%B2%E0%B9%84%E0%B8%94%E0%B9%82%E0%B8%94%E0%B9%80%E0%B8%AA%E0%B8%B2%E0%B8%A3%E0%B9%8C_%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%81%E0%B9%89%E0%B8%B2-%E0%B8%A0%E0%B8%B9%E0%B8%9E%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%B3.jpg/960px-%E0%B8%A5%E0%B8%AD%E0%B8%A2%E0%B9%80%E0%B8%97%E0%B9%89%E0%B8%B2%E0%B9%84%E0%B8%94%E0%B9%82%E0%B8%94%E0%B9%80%E0%B8%AA%E0%B8%B2%E0%B8%A3%E0%B9%8C_%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%81%E0%B9%89%E0%B8%B2-%E0%B8%A0%E0%B8%B9%E0%B8%9E%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%B3.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:%E0%B8%A5%E0%B8%AD%E0%B8%A2%E0%B9%80%E0%B8%97%E0%B9%89%E0%B8%B2%E0%B9%84%E0%B8%94%E0%B9%82%E0%B8%94%E0%B9%80%E0%B8%AA%E0%B8%B2%E0%B8%A3%E0%B9%8C_%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%81%E0%B9%89%E0%B8%B2-%E0%B8%A0%E0%B8%B9%E0%B8%9E%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%B3.jpg",
+   "imageCredit": "Thanongsuk harakunno · CC BY-SA 4.0",
+   "imageAi": true,
+   "imageScore": 6
   },
   {
    "id": "osm-r6011590",
@@ -13615,7 +14355,12 @@
    "lng": 101.89575,
    "province": "chaiyaphum",
    "summary": {},
-   "fetchedAt": "2026-11-06T20:14:50.463Z"
+   "fetchedAt": "2026-11-06T20:14:50.463Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B8%A0%E0%B8%B9%E0%B9%81%E0%B8%A5%E0%B8%99%E0%B8%84%E0%B8%B23.jpg/960px-%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B8%A0%E0%B8%B9%E0%B9%81%E0%B8%A5%E0%B8%99%E0%B8%84%E0%B8%B23.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B8%A0%E0%B8%B9%E0%B9%81%E0%B8%A5%E0%B8%99%E0%B8%84%E0%B8%B23.jpg",
+   "imageCredit": "Yakuzakorat · CC BY-SA 4.0",
+   "imageAi": true,
+   "imageScore": 9
   },
   {
    "id": "osm-r6011591",
@@ -13643,7 +14388,12 @@
    "lng": 104.27663,
    "province": "mukdahan",
    "summary": {},
-   "fetchedAt": "2026-11-06T20:14:53.919Z"
+   "fetchedAt": "2026-11-06T20:14:53.919Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Phu_Pha_Yon_National_Park.jpg/960px-Phu_Pha_Yon_National_Park.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Phu_Pha_Yon_National_Park.jpg",
+   "imageCredit": "Chaiyathat · CC BY-SA 4.0",
+   "imageAi": true,
+   "imageScore": 6
   },
   {
    "id": "osm-r6011595",
@@ -13671,7 +14421,12 @@
    "lng": 100.97577,
    "province": "loei",
    "summary": {},
-   "fetchedAt": "2026-11-06T20:14:56.633Z"
+   "fetchedAt": "2026-11-06T20:14:56.633Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Trimeresurus_macrops%2C_Large-eyed_pit_viper_-_Phu_Suan_Sai_National_Park_%2846432728305%29.jpg/960px-Trimeresurus_macrops%2C_Large-eyed_pit_viper_-_Phu_Suan_Sai_National_Park_%2846432728305%29.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Trimeresurus_macrops,_Large-eyed_pit_viper_-_Phu_Suan_Sai_National_Park_(46432728305).jpg",
+   "imageCredit": "Rushen · CC BY-SA 2.0",
+   "imageAi": true,
+   "imageScore": 7
   },
   {
    "id": "osm-r6011597",
@@ -13685,7 +14440,12 @@
    "lng": 102.02804,
    "province": "chaiyaphum",
    "summary": {},
-   "fetchedAt": "2026-11-06T20:14:57.981Z"
+   "fetchedAt": "2026-11-06T20:14:57.981Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Tatton_Waterfall01.jpg/960px-Tatton_Waterfall01.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Tatton_Waterfall01.jpg",
+   "imageCredit": "Nawit science · CC BY-SA 4.0",
+   "imageAi": true,
+   "imageScore": 8
   },
   {
    "id": "osm-r10925148",
@@ -13699,7 +14459,12 @@
    "lng": 99.16038,
    "province": "lampang",
    "summary": {},
-   "fetchedAt": "2026-11-06T20:14:59.332Z"
+   "fetchedAt": "2026-11-06T20:14:59.332Z",
+   "image": "https://www.lemon8-app.com/seo/image?item_id=7458826384085877265&index=0&sign=db6e30e29a8a3d4ee311b95183ee3d2c",
+   "imagePage": "https://www.lemon8-app.com/@pr.dnp/7458826384085877265?region=th",
+   "imageCredit": "Lemon8 · DNP Official",
+   "imageAi": true,
+   "imageScore": 7
   },
   {
    "id": "osm-r11577997",
@@ -13714,7 +14479,12 @@
    "lng": 99.23156,
    "province": "chiang-mai",
    "summary": {},
-   "fetchedAt": "2026-11-06T20:15:00.676Z"
+   "fetchedAt": "2026-11-06T20:15:00.676Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/San_Kamphaeng_Hot_Springs_P1120674.jpg/960px-San_Kamphaeng_Hot_Springs_P1120674.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:San_Kamphaeng_Hot_Springs_P1120674.jpg",
+   "imageCredit": "FredTC · CC BY-SA 4.0",
+   "imageAi": true,
+   "imageScore": 7
   },
   {
    "id": "osm-r12088743",
@@ -13728,7 +14498,12 @@
    "lng": 99.81963,
    "province": "phatthalung",
    "summary": {},
-   "fetchedAt": "2026-11-06T20:15:02.416Z"
+   "fetchedAt": "2026-11-06T20:15:02.416Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Boatman_in_Waterfowl_Park.jpg/960px-Boatman_in_Waterfowl_Park.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Boatman_in_Waterfowl_Park.jpg",
+   "imageCredit": "Richard Ragland · CC BY-SA 4.0",
+   "imageAi": true,
+   "imageScore": 8
   },
   {
    "id": "osm-r12088747",
@@ -13742,7 +14517,12 @@
    "lng": 100.15446,
    "province": "satun",
    "summary": {},
-   "fetchedAt": "2026-11-06T20:15:04.169Z"
+   "fetchedAt": "2026-11-06T20:15:04.169Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/%E0%B8%97%E0%B8%B0%E0%B9%80%E0%B8%A5%E0%B9%83%E0%B8%99%E0%B9%80%E0%B8%82%E0%B8%B2.jpg/960px-%E0%B8%97%E0%B8%B0%E0%B9%80%E0%B8%A5%E0%B9%83%E0%B8%99%E0%B9%80%E0%B8%82%E0%B8%B2.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:%E0%B8%97%E0%B8%B0%E0%B9%80%E0%B8%A5%E0%B9%83%E0%B8%99%E0%B9%80%E0%B8%82%E0%B8%B2.jpg",
+   "imageCredit": "Sarawut Hassama · CC BY-SA 4.0",
+   "imageAi": true,
+   "imageScore": 8
   },
   {
    "id": "osm-r12088748",
@@ -13756,7 +14536,12 @@
    "lng": 100.59232,
    "province": "songkhla",
    "summary": {},
-   "fetchedAt": "2026-11-06T20:15:05.928Z"
+   "fetchedAt": "2026-11-06T20:15:05.928Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Khao_Nam_Khang_National_Park_in_Songkhla%2C_Thailand.jpg/960px-Khao_Nam_Khang_National_Park_in_Songkhla%2C_Thailand.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Khao_Nam_Khang_National_Park_in_Songkhla,_Thailand.jpg",
+   "imageCredit": "Earng.oi · CC BY-SA 4.0",
+   "imageAi": true,
+   "imageScore": 7
   },
   {
    "id": "osm-r12088749",
@@ -13798,7 +14583,12 @@
    "lng": 99.69243,
    "province": "surat-thani",
    "summary": {},
-   "fetchedAt": "2026-11-06T20:15:10.756Z"
+   "fetchedAt": "2026-11-06T20:15:10.756Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/The_beauty_of_Si_Khit_Waterfall_%2CThailand.jpg/960px-The_beauty_of_Si_Khit_Waterfall_%2CThailand.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:The_beauty_of_Si_Khit_Waterfall_,Thailand.jpg",
+   "imageCredit": "Sorapak · CC BY-SA 4.0",
+   "imageAi": true,
+   "imageScore": 9
   },
   {
    "id": "osm-r12092898",
@@ -13812,7 +14602,12 @@
    "lng": 99.48648,
    "province": "surat-thani",
    "summary": {},
-   "fetchedAt": "2026-11-06T20:15:12.109Z"
+   "fetchedAt": "2026-11-06T20:15:12.109Z",
+   "image": "https://www.lemon8-app.com/seo/image?item_id=7519346862525612552&index=0&sign=1b8186bcf25534f6e6d41c8334da7698",
+   "imagePage": "https://www.lemon8-app.com/@pr.dnp/7519346862525612552?region=th",
+   "imageCredit": "Lemon8 · DNP Official",
+   "imageAi": true,
+   "imageScore": 8
   },
   {
    "id": "osm-r12092899",
@@ -13826,7 +14621,12 @@
    "lng": 99.66463,
    "province": "nakhon-si-thammarat",
    "summary": {},
-   "fetchedAt": "2026-11-06T20:15:13.822Z"
+   "fetchedAt": "2026-11-06T20:15:13.822Z",
+   "image": "https://www.lemon8-app.com/seo/image?item_id=7506693349261197831&index=0&sign=12b9b95f5a7a3d96f286c2ae06de3639",
+   "imagePage": "https://www.lemon8-app.com/@pr.dnp/7506693349261197831?region=th",
+   "imageCredit": "Lemon8 · DNP Official",
+   "imageAi": true,
+   "imageScore": 8
   },
   {
    "id": "osm-r12092900",
@@ -13840,7 +14640,12 @@
    "lng": 99.74024,
    "province": "nakhon-si-thammarat",
    "summary": {},
-   "fetchedAt": "2026-11-06T20:15:15.577Z"
+   "fetchedAt": "2026-11-06T20:15:15.577Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Krung_Ching_Waterfall_%282%29.jpg/960px-Krung_Ching_Waterfall_%282%29.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Krung_Ching_Waterfall_(2).jpg",
+   "imageCredit": "Chaiyathat · CC BY-SA 4.0",
+   "imageAi": true,
+   "imageScore": 8
   },
   {
    "id": "osm-r12092901",
@@ -13854,7 +14659,12 @@
    "lng": 99.73766,
    "province": "nakhon-si-thammarat",
    "summary": {},
-   "fetchedAt": "2026-11-06T20:15:17.301Z"
+   "fetchedAt": "2026-11-06T20:15:17.301Z",
+   "image": "https://upload.wikimedia.org/wikipedia/commons/8/80/%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%95%E0%B8%81%E0%B9%82%E0%B8%A2%E0%B8%87.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%95%E0%B8%81%E0%B9%82%E0%B8%A2%E0%B8%87.jpg",
+   "imageCredit": "Nakhonkup999 · CC BY-SA 3.0",
+   "imageAi": true,
+   "imageScore": 8
   },
   {
    "id": "osm-r12095597",
@@ -13868,7 +14678,12 @@
    "lng": 98.46023,
    "province": "phang-nga",
    "summary": {},
-   "fetchedAt": "2026-11-06T20:15:19.059Z"
+   "fetchedAt": "2026-11-06T20:15:19.059Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%95%E0%B8%81%E0%B8%95%E0%B8%B3%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87.jpg/960px-%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%95%E0%B8%81%E0%B8%95%E0%B8%B3%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%95%E0%B8%81%E0%B8%95%E0%B8%B3%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87.jpg",
+   "imageCredit": "Setaphong Tantanawat · CC BY-SA 4.0",
+   "imageAi": true,
+   "imageScore": 8
   },
   {
    "id": "osm-r12095601",
@@ -13882,7 +14697,12 @@
    "lng": 98.63302,
    "province": "surat-thani",
    "summary": {},
-   "fetchedAt": "2026-11-06T20:15:20.807Z"
+   "fetchedAt": "2026-11-06T20:15:20.807Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/Khlong_Phanom%2C_Limestone_rock_formations%2C_Surat_Thani%2C_Thailand.jpg/960px-Khlong_Phanom%2C_Limestone_rock_formations%2C_Surat_Thani%2C_Thailand.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Khlong_Phanom,_Limestone_rock_formations,_Surat_Thani,_Thailand.jpg",
+   "imageCredit": "Vyacheslav Argenberg · CC BY 4.0",
+   "imageAi": true,
+   "imageScore": 7
   },
   {
    "id": "osm-r12095604",
@@ -13896,7 +14716,12 @@
    "lng": 98.38303,
    "province": "phang-nga",
    "summary": {},
-   "fetchedAt": "2026-11-06T20:15:22.563Z"
+   "fetchedAt": "2026-11-06T20:15:22.563Z",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/%E0%B9%80%E0%B8%82%E0%B8%B2%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%81_%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B8%A5%E0%B8%B3%E0%B8%94%E0%B8%B1%E0%B8%9A%E0%B8%97%E0%B8%B5%E0%B9%8824_%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B9%80%E0%B8%82%E0%B8%B2%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%81-%E0%B8%A5%E0%B8%B3%E0%B8%A3%E0%B8%B9%E0%B9%88.jpg/960px-thumbnail.jpg",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:%E0%B9%80%E0%B8%82%E0%B8%B2%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%81_%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B8%A5%E0%B8%B3%E0%B8%94%E0%B8%B1%E0%B8%9A%E0%B8%97%E0%B8%B5%E0%B9%8824_%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B9%80%E0%B8%82%E0%B8%B2%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%81-%E0%B8%A5%E0%B8%B3%E0%B8%A3%E0%B8%B9%E0%B9%88.jpg",
+   "imageCredit": "Swhemma · CC BY-SA 3.0",
+   "imageAi": true,
+   "imageScore": 8
   },
   {
    "id": "osm-r12100307",
