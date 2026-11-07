@@ -676,3 +676,7 @@ html.theme-anim, html.theme-anim * { transition: background-color .35s, color .3
 @media (max-width: 759px) { body { padding-bottom: calc(110px + env(safe-area-inset-bottom, 0px)); } }
 label.check { display: flex; gap: 10px; align-items: flex-start; min-height: 44px; padding: 8px 0; cursor: pointer; }
 label.check input[type=checkbox] { width: 22px; height: 22px; flex: none; margin-top: 2px; accent-color: var(--accent); }
+
+/* ผลตรวจ UI รอบ 2: แถบตัวกรองทึบ (ไม่ให้เนื้อหาทะลุ), หัวใจในแถวที่เที่ยวมีขอบชัด */
+.filter-bar { background: var(--bg); box-shadow: 0 6px 14px -10px rgba(0, 0, 0, .35); }
+.place-row .save-btn { background: var(--surface); border: 1.5px solid var(--border); color: var(--text); }

@@ -1037,7 +1037,9 @@
       ...(cat === "all" ? Object.entries(state.trends) : [[cat, state.trends[cat] || []]]).flatMap(([k, items]) => items.map(n => ({ ...n, kind: k }))),
       ...state.places.filter(p => p.fromTrend && (cat === "all" || p.kind === cat) && inPlaceProvince(p)).flatMap(p => p.posts.map(n => ({ ...n, kind: p.kind })))
     ].map(n => [n.link, n])).values()];
-    const board = freshPopular(pool).slice(0, cat === "all" ? 14 : 10);
+    // โพสต์ที่มีรูปปกขึ้นก่อน (การ์ดไม่มีรูปดูเหมือนโหลดไม่เสร็จ) — ไม่มีรูปใช้เมื่อโพสต์มีรูปไม่พอ
+    const fp = freshPopular(pool), withImg = fp.filter(n => String(n.image || "").startsWith("https://"));
+    const board = (withImg.length >= 6 ? withImg : fp).slice(0, cat === "all" ? 14 : 10);
     const chip = (id, icon, name, c1, n) =>
       `<button class="chip ${cat === id ? "active" : ""}" data-pcat="${id}" style="--c1:${c1}" aria-pressed="${cat === id}"><i>${icon}</i>${esc(name)}${n != null ? ` <small>${n}</small>` : ""}</button>`;
     app.innerHTML = `<div class="page">
