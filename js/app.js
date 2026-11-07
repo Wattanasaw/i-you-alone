@@ -155,7 +155,7 @@
     } catch { return fallback; }
   }
   async function load() {
-    const [events, venues, ads, news, auto, places, biz, trendPl] = await Promise.all([
+    const [events, venues, ads, news, auto, places, biz, trendPl, reviews] = await Promise.all([
       getJSON("data/events.json", []),
       getJSON("data/venues.json", []),
       getJSON("data/ads.json", []),
@@ -163,8 +163,10 @@
       getJSON("data/auto-events.json", { events: [] }),
       getJSON("data/places.json", { places: [], trends: {} }),
       getJSON("data/business-places.json", []),  // ร้านที่สมาชิกธุรกิจเพิ่ม (AI ตรวจผ่านแล้ว)
-      getJSON("data/trend-places.json", [])      // สถานที่จากโพสต์เทรนด์ (AI หาชื่อ + พิกัดจริงจาก OSM)
+      getJSON("data/trend-places.json", []),     // สถานที่จากโพสต์เทรนด์ (หมุดสถานที่ใน Lemon8 + พิกัด OSM)
+      getJSON("data/place-reviews.json", {})     // AI สรุปรีวิวจากโพสต์จริง (จุดเด่น ต้องลอง เคล็ดลับ เหมาะกับ)
     ]);
+    state.reviews = reviews && typeof reviews === "object" ? reviews : {};
     const bizList = Array.isArray(biz) ? biz : [], replaced = new Set(bizList.map(b => b.replaces).filter(Boolean));
     const base = [...(places.places || []).filter(p => !replaced.has(p.id)), ...bizList];
     const ids = new Set(base.map(p => p.id.replace(/^(osm|l8)-/, "")));
@@ -851,11 +853,16 @@
       : "";
     return `<div class="${cls}" style="background:linear-gradient(135deg, ${c.color}, ${c.color2 || c.color})"><span class="emoji">${c.icon}</span>${img}`;
   }
+  // สรุปรีวิว (AI จากโพสต์จริง) ของสถานที่ · ภาษาที่เลือก ไม่มีใช้ไทย
+  const GOOD_ICON = { photo: "📸", work: "💻", kids: "👶", pets: "🐾", date: "💑", group: "👯", view: "🌄", nature: "🌿", chill: "☕", budget: "💸", night: "🌙", food: "😋" };
+  const reviewOf = p => { const r = state.reviews?.[p.id]; return r && r.summary && !r.skip ? r : null; };
+  const rvList = v => { const l = v?.[state.lang]?.length ? v[state.lang] : v?.th || []; return l.filter(Boolean); };
   function placeCard(p) {
     const c = PCAT[p.kind], saved = state.saved.has(placeKey(p));
     let place = provName(p.province);
     if (state.pos && p.lat) place += ` · ${distanceKm(state.pos, p).toFixed(1)} ${t("km")}`;
-    const summary = placeSummary(p);
+    const rv = reviewOf(p);
+    const summary = rv?.summary ? pick(rv.summary) : placeSummary(p);
     return `
       <article class="card place-card">
         <button class="save-btn" data-save="${esc(placeKey(p))}" aria-label="${saved ? t("unsaveAria") : t("saveAria")}">${saved ? "❤️" : "🤍"}</button>
@@ -874,6 +881,7 @@
             <!-- การ์ด: แสดงราคา/ค่าเข้าเฉพาะที่มีข้อมูล (หน้ารายละเอียดยังแสดง - เมื่อไม่มี) -->
             ${(parts => parts ? `<div class="meta price-line">${parts}</div>` : "")([MENU_KINDS.has(p.kind) && menuText(p) !== "-" ? `🍽️ <span>${t("menuPrice")}: ${esc(menuText(p))}</span>` : "", (!MENU_KINDS.has(p.kind) || p.kind === "animalcafe") && feeText(p) !== "-" ? `🎟️ <span>${t("fee")}: ${esc(feeText(p))}</span>` : ""].join(""))}
             ${summary ? `<p class="place-sum">${esc(summary.slice(0, 110))}${summary.length > 110 ? "…" : ""}</p>` : ""}
+            ${rv?.goodFor?.length ? `<div class="good-for">${rv.goodFor.slice(0, 3).map(g => `<span>${GOOD_ICON[g] || "✨"} ${esc(t("gf_" + g))}</span>`).join("")}</div>` : ""}
           </div>
         </a>
       </article>`;
@@ -923,7 +931,8 @@
   const FUN_BOOST = { cafe: 70, animalcafe: 70, themepark: 60, restaurant: 50, zoo: 45 };
   // มีรูปปก (รูปที่ AI คัด หรือรูปจากโพสต์รีวิว) = ดันขึ้น; รูปจากโพสต์ได้คะแนนรูปกลางๆ (6)
   const hasCover = p => !!(p.image || coverOf(p));
-  const placeRank = p => { const cv = hasCover(p); return (cv ? FUN_BOOST[p.kind] || 0 : 0) + (p.business ? 30 : 0) + (p.hot ? 100 + Math.min(p.hot, 60) * 3 : 0) + (p.rising ? 40 : 0) + (cv ? 20 + (p.image ? p.imageScore || 6 : 6) * 2 : 0) + Math.min(p.fame || 0, 15); };
+  // ไม่ต้องมีรูปก็ขึ้นก่อนได้: หมวดสนุก + กระแส + มีสรุปรีวิว สำคัญกว่ารูป (รูปเป็นแค่โบนัสเล็กน้อย)
+  const placeRank = p => (FUN_BOOST[p.kind] || 0) + (p.business ? 30 : 0) + (p.hot ? 100 + Math.min(p.hot, 60) * 3 : 0) + (p.rising ? 40 : 0) + (reviewOf(p) ? 35 : 0) + (hasCover(p) ? 10 : 0) + Math.min(p.fame || 0, 15);
   // ชื่อที่ใช้จับคู่โพสต์ (ตัดคำนำหน้าทั่วไปออก แต่ถ้าเหลือแค่ชื่อจังหวัด เช่น "สวนสัตว์เชียงใหม่" → "เชียงใหม่" ไม่ใช้ กันจับผิดที่)
   let provNameSet = null;
   const placeNames = p => {
@@ -1092,11 +1101,25 @@
     activateAdsense();
   }
 
+  // "สรุปจากรีวิว": เหมาะกับ · จุดเด่น · ต้องลอง · เคล็ดลับ · ข้อควรรู้ (แต่ละหัวข้อแสดงเมื่อมีข้อมูล) + ลิงก์โพสต์ต้นทาง
+  function reviewBlock(rv) {
+    const sec = (icon, key, list) => list.length ? `<div class="rv-sec"><b>${icon} ${t(key)}</b><ul>${list.map(x => `<li>${esc(x)}</li>`).join("")}</ul></div>` : "";
+    return `<section class="rv-box" aria-label="${t("rvTitle")}">
+      <div class="rv-head"><b>📝 ${t("rvTitle")}</b><small>${t("rvFrom", { n: rv.n || rv.src?.length || 1 })}</small></div>
+      ${rv.goodFor?.length ? `<div class="good-for">${rv.goodFor.map(g => `<span>${GOOD_ICON[g] || "✨"} ${esc(t("gf_" + g))}</span>`).join("")}</div>` : ""}
+      ${sec("✨", "rvHighlights", rvList(rv.highlights))}
+      ${sec("😋", "rvMustTry", rvList(rv.mustTry))}
+      ${sec("💡", "rvTips", rvList(rv.tips))}
+      ${sec("⚠️", "rvCons", rvList(rv.cons))}
+      ${rv.src?.length ? `<p class="rv-src">${t("rvSources")}: ${rv.src.map((s, i) => `<a ${inAppLink(s.link)}>${esc(String(s.source || "Lemon8").replace(/^Lemon8 · /, "@"))}</a>`).join(" · ")}</p>` : ""}
+    </section>`;
+  }
+
   function renderPlace(id) {
     const p = state.places.find(x => x.id === id);
     if (!p) { app.innerHTML = `<a class="back" href="#/places">${t("back")}</a><p class="empty">${t("notFound")}</p>`; return; }
     const c = PCAT[p.kind], v = placeVenue(p), saved = state.saved.has(placeKey(p));
-    const name = placeName(p), summary = placeSummary(p);
+    const name = placeName(p), rv = reviewOf(p), summary = placeSummary(p) || (rv ? pick(rv.summary) : "");
     const wiki = p.wiki?.[state.lang] || p.wiki?.th || p.wiki?.en;
     document.title = `${name} — ${C.siteName}`;
     // หน้ารายละเอียดแบบกะทัดรัด: รูปปก+ชื่อ → ข้อมูลด่วน → ปุ่มนำทาง → แท็บ (ภาพรวม / การเดินทาง / กระแส) ไม่ต้องเลื่อนยาว
@@ -1139,6 +1162,7 @@
         <div class="pd-tabs" role="tablist">${tabs.map(([k, l]) => `<button role="tab" class="${state.placeTab === k ? "active" : ""}" data-ptab="${k}" aria-selected="${state.placeTab === k}">${l}</button>`).join("")}</div>
         <section class="pd-panel" data-panel="overview" ${state.placeTab === "overview" ? "" : "hidden"}>
           ${summary ? `<p class="pd-summary" id="pdSum">${esc(summary)}</p>${summary.length > 180 ? `<button class="link-btn" id="pdMore">${t("readMore")}</button>` : ""}` : ""}
+          ${rv ? reviewBlock(rv) : ""}
           ${posts.length ? `<div class="pd-buzz">
             <div class="pd-buzz-head"><b>🔥 ${t("placeTrends")}</b>${posts.length > 2 ? `<button class="link-btn" data-ptab="trends">${t("seeAll")} ${posts.length} ›</button>` : ""}</div>
             ${freshPopular(posts).slice(0, 2).map(n => `<a class="buzz-row" ${inAppLink(n.link)}>

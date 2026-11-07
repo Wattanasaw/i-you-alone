@@ -630,3 +630,15 @@ html.theme-anim, html.theme-anim * { transition: background-color .35s, color .3
 .buzz-txt { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
 .buzz-title { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; font-size: .9rem; line-height: 1.35; }
 .buzz-txt small { opacity: .75; font-size: .78rem; }
+
+/* สรุปจากรีวิว (AI สรุปจากโพสต์จริง) */
+.rv-box { margin: 12px 0; padding: 12px 14px; border-radius: 14px; background: var(--surface-2); }
+.rv-head { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; margin-bottom: 8px; }
+.rv-head small { opacity: .7; font-size: .76rem; }
+.rv-sec { margin-top: 8px; font-size: .9rem; }
+.rv-sec ul { margin: 4px 0 0; padding-left: 1.2em; }
+.rv-sec li { margin: 2px 0; line-height: 1.45; }
+.rv-src { margin: 10px 0 0; font-size: .78rem; opacity: .8; }
+.rv-src a { color: inherit; text-decoration: underline; }
+.good-for { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
+.good-for span { font-size: .75rem; padding: 3px 8px; border-radius: 999px; background: color-mix(in srgb, var(--accent, #ff7a45) 14%, transparent); white-space: nowrap; }

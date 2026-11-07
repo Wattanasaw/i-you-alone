@@ -1,5 +1,5 @@
 ﻿// Service worker: à¹ƒà¸«à¹‰à¹à¸­à¸žà¹€à¸›à¸´à¸”à¹„à¸”à¹‰à¹€à¸£à¹‡à¸§à¹à¸¥à¸°à¹ƒà¸Šà¹‰à¸‡à¸²à¸™à¸­à¸­à¸Ÿà¹„à¸¥à¸™à¹Œà¹„à¸”à¹‰à¸šà¸²à¸‡à¸ªà¹ˆà¸§à¸™
-const CACHE = "iyoualone-v21";
+const CACHE = "iyoualone-v22";
 const ASSETS = ["./", "index.html", "css/style.css", "js/config.js", "js/i18n.js", "js/app.js", "js/member.js", "icons/icon.svg", "icons/logo-full.svg", "manifest.webmanifest"];
 
 self.addEventListener("install", e => {
