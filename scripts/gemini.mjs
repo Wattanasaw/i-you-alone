@@ -54,13 +54,14 @@ export async function geminiJSON(key, prompt, temperature = 0, images = []) {
       let why = "";
       try { why = ((await res.json()).error?.message || "").replace(/\s+/g, " ").slice(0, 220); } catch {}
       lastErr = Object.assign(new Error(`Gemini ${res.status} (${model})${why ? ": " + why : ""}`), { status: res.status });
-      // 429 = โควต้าฟรีหมด → หยุด (เปลี่ยนรุ่นก็ไม่ช่วยมาก รอรอบหน้า)
-      if (res.status === 429) throw lastErr;
-      if (res.status === 503 && attempt === 1) { await sleep(6000); continue; }
+      // 429 = โควต้าของรุ่นนี้หมด (แต่ละรุ่นมีโควต้าแยก) → ลองรุ่นถัดไป
+      if (res.status === 429) break;
+      // 503 = คนใช้เยอะชั่วคราว → รอแล้วลองใหม่
+      if (res.status === 503 && attempt === 1) { await sleep(15000); continue; }
       break;
     }
     // รุ่นนี้ไม่ว่าง/ไม่มี → ใช้รุ่นถัดไปตลอดรอบนี้
-    if (lastErr.status === 503 || lastErr.status === 404 || lastErr.status === 500) {
+    if (lastErr.status === 503 || lastErr.status === 404 || lastErr.status === 500 || lastErr.status === 429) {
       current++;
       if (current < list.length) console.warn(`${lastErr.message} → เปลี่ยนไปใช้ ${list[current]}`);
       continue;
@@ -93,8 +94,12 @@ async function githubJSON(prompt, temperature, images) {
       });
     } catch (e) { res = { ok: false, status: 503, json: async () => ({ error: { message: e.message } }) }; }
     if (res.ok) {
-      const data = await res.json();
-      return JSON.parse(data.choices?.[0]?.message?.content || "null");
+      const raw = await res.text();
+      try {
+        const data = JSON.parse(raw);
+        const txt = data.choices?.[0]?.message?.content || "null";
+        return JSON.parse(txt.replace(/^```(?:json)?\s*|\s*```$/g, ""));
+      } catch { throw Object.assign(new Error(`GitHub Models ตอบไม่ใช่ JSON (${res.headers.get("content-type")}): ${raw.slice(0, 160)}`), { status: 502 }); }
     }
     let why = "";
     try { const j = await res.json(); why = (j.error?.message || j.message || "").replace(/\s+/g, " ").slice(0, 200); } catch {}
@@ -109,7 +114,7 @@ export async function aiJSON(prompt, { temperature = 0, images = [] } = {}) {
   if (!geminiDown) {
     try { return await geminiJSON(process.env.GEMINI_API_KEY, prompt, temperature, images); }
     catch (e) {
-      if (e.status !== 429 && e.status !== 403 && e.status !== 400) throw e;
+      if (![400, 403, 404, 429, 500, 503].includes(e.status)) throw e;
       geminiDown = true;
       console.warn(`${e.message.slice(0, 120)} → ${ghDown ? "ไม่มี AI สำรอง" : "สลับไปใช้ GitHub Models"}`);
     }
