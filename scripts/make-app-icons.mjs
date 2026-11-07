@@ -6,10 +6,10 @@ import { fileURLToPath } from "node:url";
 
 const grad = `<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
   <stop offset="0" stop-color="#ff7a45"/><stop offset=".5" stop-color="#ff2d78"/><stop offset="1" stop-color="#7b2ff7"/></linearGradient></defs>`;
-// หมุด + ประกาย (พิกัดเดียวกับ icons/icon.svg)
-const mark = `<path d="M256 92C178 92 118 152 118 230c0 98 138 196 138 196s138-98 138-196c0-78-60-138-138-138z" fill="#fff"/>
-  <path d="M256 160q9 59 68 68q-59 9-68 68q-9-59-68-68q59-9 68-68z" fill="url(#g)"/>
-  <path d="M392 92q4 22 26 26q-22 4-26 26q-4-22-26-26q22-4 26-26z" fill="#fff" opacity=".9"/>`;
+// ตัว i + หมุด (พิกัดเดียวกับ icons/icon.svg)
+const mark = `<path d="M256 70c-46 0-82 35-82 80 0 58 82 116 82 116s82-58 82-116c0-45-36-80-82-80z" fill="#fff"/>
+  <circle cx="256" cy="148" r="28" fill="url(#g)"/>
+  <rect x="210" y="296" width="92" height="148" rx="46" fill="#fff"/>`;
 const svg = (body, bg = "") => Buffer.from(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">${grad}${bg}${body}</svg>`);
 const png = (buf, size, file) => sharp(buf, { density: 600 }).resize(size, size).png().toFile(fileURLToPath(new URL(`../assets/${file}`, import.meta.url)));
 

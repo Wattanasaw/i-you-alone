@@ -13,10 +13,10 @@
   </defs>
   <g transform="translate(22 22) scale(.5)">
     <rect width="512" height="512" rx="120" fill="url(#g)"/>
-    <path d="M256 92C178 92 118 152 118 230c0 98 138 196 138 196s138-98 138-196c0-78-60-138-138-138z" fill="#fff"/>
-    <path d="M256 160q9 59 68 68q-59 9-68 68q-9-59-68-68q59-9 68-68z" fill="url(#g)"/>
-    <path d="M392 92q4 22 26 26q-22 4-26 26q-4-22-26-26q22-4 26-26z" fill="#fff" opacity=".9"/>
+    <path d="M256 70c-46 0-82 35-82 80 0 58 82 116 82 116s82-58 82-116c0-45-36-80-82-80z" fill="#fff"/>
+    <circle cx="256" cy="148" r="28" fill="url(#g)"/>
+    <rect x="210" y="296" width="92" height="148" rx="46" fill="#fff"/>
   </g>
   <text x="318" y="170" font-family="Prompt, 'Segoe UI', Arial, sans-serif" font-size="128" font-weight="700" fill="#1a1530">I <tspan fill="url(#t)">You</tspan> Alone</text>
-  <text x="322" y="240" font-family="Prompt, 'Segoe UI', Arial, sans-serif" font-size="44" font-weight="500" fill="#7a7490" letter-spacing="2">ไปงานไหนดี · รวมอีเว้นท์ทั่วไทย</text>
+  <text x="322" y="240" font-family="Prompt, 'Segoe UI', Arial, sans-serif" font-size="44" font-weight="500" fill="#7a7490" letter-spacing="2">ไปเที่ยวไหนดี · รวมอีเว้นท์ทั่วไทย</text>
 </svg>
