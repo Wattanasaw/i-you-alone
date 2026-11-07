@@ -17,6 +17,8 @@ const readJSON = async (p, fb) => { try { return JSON.parse(await readFile(new U
 const save = async (p, text) => { const tmp = new URL(p + ".tmp", root); await writeFile(tmp, text); await rename(tmp, new URL(p, root)); };
 const win = {}; new Function("window", await readFile(new URL("js/config.js", root), "utf8"))(win);
 const CATS = win.APP_CONFIG.categories.map(c => c.id);
+// กฎจัดหมวดที่หลง (ไฟล์เดียวกับที่แอพใช้)
+new Function("window", await readFile(new URL("js/categorize.js", root), "utf8"))(win);
 
 const data = await readJSON("data/auto-events.json", null);
 if (!data?.events) { console.error("อ่าน data/auto-events.json ไม่ได้"); process.exit(1); }
@@ -115,8 +117,9 @@ for (const ev of [...data.events, ...manual]) {
     if (c.category) ev.category = c.category;
     applied++;
   }
-  const s = split(ev);
-  if (s) { ev.category = s; splitN++; }
+  const s = win.IYA_fixCategory(ev);
+  if (s === null) ev.hidden = true;
+  else if (s !== ev.category) { ev.category = s; splitN++; }
 }
 const live = new Set(data.events.map(e => e.id));
 for (const id of Object.keys(cache)) if (!live.has(id)) delete cache[id];
