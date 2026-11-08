@@ -1101,13 +1101,51 @@
     const a = state.ai?.[p.id];
     return a?.summary?.th || a?.highlights?.th?.length ? { ...a, ai: true } : null;
   };
-  const rvList = v => { const l = v?.[state.lang]?.length ? v[state.lang] : v?.th || []; return l.filter(Boolean); };
+  // ตัดเรื่องราคาออกจากข้อความสรุปรีวิว (ราคาแสดงแยกในช่องค่าเข้า/ราคาเมนูแล้ว)
+  const PRICE_RE = /ราคา|แพง|ถูกมาก|ถูกดี|คุ้มค่า|คุ้มราคา|บาท|฿|ค่าใช้จ่าย|ค่าเข้า|ค่าบัตร|ค่าบริการ|เป็นมิตรกับกระเป๋า|\bprices?\b|\bpriced\b|pricey|pricier|expensive|cheap|affordabl|overpriced|value for money|good value|budget|\bcosts?\b|\bTHB\b|\bbaht\b|\bfees?\b|admission|价格|价位|昂贵|偏贵|较贵|很贵|便宜|实惠|性价比|泰铢|门票|费用/i;
+  const NOUN_END = /(เครื่องดื่ม|อาหาร|ขนม|เมนู|กาแฟ|เค้ก|บุฟเฟ่ต์|ของกิน|ของ|สินค้า|ที่พัก|ห้อง|ตั๋ว|บัตร|ทุกอย่าง)$/;
+  const TH_CONN = /\s*(และ|แต่|ส่วน|รวมถึง|พร้อม|โดย|ซึ่ง)$/;
+  const EN_ADJ = /\s*,?\s*(?:and\s+|with\s+|at\s+)?(?:very\s+|quite\s+|reasonably\s+|fairly\s+|relatively\s+)?(?:affordable|cheap|reasonable|budget[- ]friendly|inexpensive|pricey|expensive|good[- ]value|low[- ]cost)\s+(?:prices?|drinks?|food|menus?|meals?|items?|desserts?|coffee|snacks?|dishes)\b/gi;
+  const EN_FEE = /\s*,?\s*(?:and\s+|with\s+)?(?:free|no)\s+(?:admission|entry|entrance)(?:\s+(?:fees?|charges?))?\b|\s*,?\s*(?:and\s+|with\s+)?an?\s+(?:\d[\d,]*\s*(?:baht|THB)\s+)?(?:admission|entry|entrance)\s+(?:fees?|charges?)\b/gi;
+  function noPriceTh(s) {
+    const out = [];
+    for (const x of s.split(/\s+/).filter(Boolean)) {
+      const m = x.match(PRICE_RE);
+      if (!m) { out.push(x); continue; }
+      if (m.index >= 6) { const pre = x.slice(0, m.index).replace(TH_CONN, "").trim(); if (pre && !NOUN_END.test(pre)) out.push(pre); }
+    }
+    let r = out.join(" ");
+    for (let i = 0; i < 3; i++) r = r.replace(/\s+(และ|แต่|ส่วน|รวมถึง|พร้อม|โดย)$/, "").trim();
+    return r;
+  }
+  function noPriceOther(s) {
+    s = s.replace(EN_ADJ, "").replace(EN_FEE, "");
+    if (!PRICE_RE.test(s)) return s.replace(/\s+([,.])/g, "$1");
+    const cjk = /[一-鿿]/.test(s);
+    // ทีละประโยค → ทีละวลี (คั่นด้วยจุลภาค) ตัดวลีที่พูดถึงราคา
+    const sents = s.match(/[^.!?。！？]+[.!?。！？]?/g) || [s];
+    return sents.map(st => {
+      if (!PRICE_RE.test(st)) return st;
+      const end = (st.match(/[.!?。！？]\s*$/) || [""])[0].trim();
+      const cl = st.replace(/[.!?。！？]\s*$/, "").split(cjk ? /[，、;；]/ : /,\s*|;\s*/);
+      const keep = cl.filter(c => !PRICE_RE.test(c));
+      if (!keep.length) return "";
+      return (cjk ? keep.join("，") : keep.join(", ")).trim() + end;
+    }).filter(Boolean).join(cjk ? "" : " ").trim();
+  }
+  function noPrice(s) {
+    if (typeof s === "string") s = s.replace(/with (?:free|no) (?:admission|entry|entrance)(?: fees?)? and /gi, "with ");
+    if (typeof s !== "string" || !s || !(PRICE_RE.test(s) || EN_ADJ.test(s))) return s;
+    EN_ADJ.lastIndex = 0;
+    return /[฀-๿]/.test(s) ? noPriceTh(s) : noPriceOther(s);
+  }
+  const rvList = v => { const l = v?.[state.lang]?.length ? v[state.lang] : v?.th || []; return l.filter(x => x && !PRICE_RE.test(x)); };
   // คำอธิบายของทุกสถานที่ (จากข้อมูลจริงเท่านั้น ไม่แต่งเอง):
   // AI สรุปรีวิว → คำอธิบายจาก Wikipedia/OSM → โพสต์ Lemon8 ที่พูดถึง → ประโยคพื้นฐานจากหมวด เขต และเวลาเปิด
   function placeBlurb(p) {
     const rv = reviewOf(p);
-    if (rv?.summary && pick(rv.summary)) return pick(rv.summary);
-    const own = placeSummary(p);
+    if (rv?.summary && noPrice(pick(rv.summary))) return noPrice(pick(rv.summary));
+    const own = noPrice(placeSummary(p));
     if (own) return own;
     const posts = placePosts(p);
     if (posts.length) {
@@ -1488,7 +1526,7 @@
           <div><dt>📍</dt><dd>${esc(p.address || name)}<small>${esc(area)}</small><a class="maps-link" ${mapsLink(v, null)}>${t("openMaps")}</a></dd></div>
           <div><dt>🕒</dt><dd>${esc(fmtHours(p.hours) || t("hoursUnknown"))}${open != null ? `<small class="${open ? "open-now" : "closed-now"}">${open ? t("openNowShort") : t("closedNow")}</small>` : ""}${srcNote(p.hoursSrc)}</dd></div>
           ${!MENU_KINDS.has(p.kind) || p.kind === "animalcafe" ? `<div><dt>🎟️</dt><dd>${t("fee")}: ${esc(feeText(p))}${srcNote(p.entry?.src)}${feeTiers(p)}</dd></div>` : ""}
-          ${MENU_KINDS.has(p.kind) ? `<div><dt>🍽️</dt><dd>${t("menuPrice")}: ${esc(menuText(p))}${srcNote(p.menuPrice?.src)}${p.menuPrice?.items?.length ? `<ul class="fee-tiers">${p.menuPrice.items.map(x => `<li><span>${esc(pick(x.name))}</span><b>${fmtBaht(x.price)}</b></li>`).join("")}</ul>` : ""}</dd></div>` : ""}
+          ${MENU_KINDS.has(p.kind) ? `<div><dt>🍽️</dt><dd>${t("menuPrice")}: ${esc(menuText(p))}${srcNote(p.menuPrice?.src)}</dd></div>` : ""}
           ${p.phone ? `<div><dt>☎️</dt><dd><a href="tel:${esc(p.phone.replace(/[^\d+]/g, ""))}">${esc(p.phone.split(";")[0])}</a></dd></div>` : ""}
         </dl>
       </section>`;

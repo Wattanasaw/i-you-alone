@@ -294,7 +294,7 @@ function checkFacts(r, srcs, kind) {
 // ---------- ถาม AI ----------
 const prompt = group => `You are building an accurate travel guide for places in Thailand. For each place you get SEVERAL SOURCES (official website "W", Wikipedia "WP…", Wikivoyage "WV", and real visitor reviews from Lemon8 "L1…"). Read ALL sources together.
 
-1) Write a review summary IN YOUR OWN WORDS that combines what all sources say (do not copy sentences). Only use what the sources say about THIS place — no outside knowledge, no guessing. If sources contradict each other, prefer the official website, then the most recent and most repeated information. If the sources are not about this place at all, return "skip": true.
+1) Write a review summary IN YOUR OWN WORDS that combines what all sources say (do not copy sentences). Only use what the sources say about THIS place — no outside knowledge, no guessing. If sources contradict each other, prefer the official website, then the most recent and most repeated information. If the sources are not about this place at all, return "skip": true. Do NOT mention prices, costs, fees, "expensive/cheap/affordable/value" or baht amounts in the summary, highlights, mustTry, tips or cons (prices are shown separately from the facts).
 2) Extract FACTS with the ids of the sources that state them:
  - "hours": {"value": OpenStreetMap opening_hours e.g. "Mo-Su 10:00-20:00", "Tu-Su 09:00-17:00; Mo off", "24/7", "src": ["W","L2"]} or null
  - "entry": admission fee. List EVERY ticket type the sources give (adult, child, Thai citizen, foreigner, senior, online/early-bird, walk-in, combo/package…) as separate tiers:

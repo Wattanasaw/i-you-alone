@@ -385,7 +385,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "ปากพลี"
   },
   {
    "id": "osm-n4109703479",
@@ -636,7 +637,8 @@
      }
     ],
     "src": "review"
-   }
+   },
+   "district": "พระนคร"
   },
   {
    "id": "wd-Q13424404",
@@ -779,7 +781,8 @@
    "entry": {
     "free": true,
     "src": "typical"
-   }
+   },
+   "district": "เมืองภูเก็ต"
   },
   {
    "id": "wd-Q941265",
@@ -803,7 +806,8 @@
    "entry": {
     "free": true,
     "src": "typical"
-   }
+   },
+   "district": "เกาะช้าง"
   },
   {
    "id": "wd-Q990128",
@@ -963,7 +967,8 @@
      }
     ],
     "src": "review"
-   }
+   },
+   "district": "ศรีสวัสดิ์"
   },
   {
    "id": "osm-n686818122",
@@ -1245,7 +1250,8 @@
    "entry": {
     "free": true,
     "src": "review"
-   }
+   },
+   "district": "พระนคร"
   },
   {
    "id": "wd-Q10825651",
@@ -2213,7 +2219,8 @@
      }
     ],
     "src": "web"
-   }
+   },
+   "district": "เมืองสมุทรปราการ"
   },
   {
    "id": "wd-Q1760508",
@@ -2359,7 +2366,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "กุยบุรี"
   },
   {
    "id": "wd-Q1968973",
@@ -2503,7 +2511,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "โขงเจียม"
   },
   {
    "id": "wd-Q1968833",
@@ -2647,7 +2656,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "คลองลาน"
   },
   {
    "id": "wd-Q2063779",
@@ -2793,7 +2803,8 @@
    "entry": {
     "free": true,
     "src": "typical"
-   }
+   },
+   "district": "พระนครศรีอยุธยา"
   },
   {
    "id": "wd-Q4925853",
@@ -2937,7 +2948,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "กุยบุรี"
   },
   {
    "id": "wd-Q2522114",
@@ -3221,7 +3233,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "ภูกระดึง"
   },
   {
    "id": "wd-Q1069922",
@@ -3639,7 +3652,8 @@
     }
    ],
    "imageAi": true,
-   "imageScore": 8
+   "imageScore": 8,
+   "district": "เกาะกูด"
   },
   {
    "id": "osm-w301157260",
@@ -3910,7 +3924,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "เขาค้อ"
   },
   {
    "id": "osm-w37911198",
@@ -4337,7 +4352,8 @@
    "entry": {
     "free": true,
     "src": "typical"
-   }
+   },
+   "district": "เมืองกระบี่"
   },
   {
    "id": "wd-Q4921050",
@@ -4618,7 +4634,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "เมืองปาน"
   },
   {
    "id": "wd-Q739851",
@@ -4762,7 +4779,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "ปางศิลาทอง"
   },
   {
    "id": "osm-w242673271",
@@ -5141,7 +5159,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "เมืองเพชรบูรณ์"
   },
   {
    "id": "wd-Q1968775",
@@ -5284,7 +5303,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "ศรีสวัสดิ์"
   },
   {
    "id": "wd-Q38284",
@@ -5836,7 +5856,8 @@
      "th": "data/thumbs/7617485447446397447-0.webp"
     }
    ],
-   "reviewCount": 12
+   "reviewCount": 12,
+   "district": "เกาะกูด"
   },
   {
    "id": "osm-n3201222026",
@@ -6355,7 +6376,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "โกสัมพีนคร"
   },
   {
    "id": "wd-Q1968944",
@@ -6498,7 +6520,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "แหลมสิงห์"
   },
   {
    "id": "osm-w376311483",
@@ -7224,7 +7247,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "นครไทย"
   },
   {
    "id": "wd-Q1968923",
@@ -7367,7 +7391,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "นครไทย"
   },
   {
    "id": "wd-Q6652873",
@@ -7513,7 +7538,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "ศรีสวัสดิ์"
   },
   {
    "id": "osm-w204897611",
@@ -8162,7 +8188,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "พนม"
   },
   {
    "id": "wd-Q13022377",
@@ -8403,7 +8430,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "ตาพระยา"
   },
   {
    "id": "wd-Q2033070",
@@ -8678,7 +8706,8 @@
    "entry": {
     "free": true,
     "src": "typical"
-   }
+   },
+   "district": "เมืองภูเก็ต"
   },
   {
    "id": "wd-Q1777774",
@@ -8804,7 +8833,8 @@
     }
    ],
    "imageAi": true,
-   "imageScore": 9
+   "imageScore": 9,
+   "district": "บางละมุง"
   },
   {
    "id": "osm-w260608411",
@@ -9163,7 +9193,8 @@
     "thai": 60,
     "foreign": 300,
     "src": "web"
-   }
+   },
+   "district": "แก่งกระจาน"
   },
   {
    "id": "wd-Q1322836",
@@ -9307,7 +9338,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "ปัว"
   },
   {
    "id": "wd-Q38205",
@@ -9935,7 +9967,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "เมืองระยอง"
   },
   {
    "id": "wd-Q4919631",
@@ -10073,7 +10106,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "นาดี"
   },
   {
    "id": "wd-Q1968804",
@@ -10339,7 +10373,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "เกาะสมุย"
   },
   {
    "id": "wd-Q1968824",
@@ -10474,7 +10509,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "เขาคิชฌกูฏ"
   },
   {
    "id": "wd-Q25894317",
@@ -10739,7 +10775,8 @@
    "entry": {
     "free": true,
     "src": "typical"
-   }
+   },
+   "district": "ถลาง"
   },
   {
    "id": "wd-Q2084809",
@@ -11779,7 +11816,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "เมืองกระบี่"
   },
   {
    "id": "wd-Q14469669",
@@ -11976,7 +12014,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "ด่านช้าง"
   },
   {
    "id": "osm-n12645537703",
@@ -12316,7 +12355,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "เมืองแม่ฮ่องสอน"
   },
   {
    "id": "wd-Q4921882",
@@ -12488,7 +12528,8 @@
      }
     ],
     "src": "web"
-   }
+   },
+   "district": "พระนคร"
   },
   {
    "id": "wd-Q3576017",
@@ -13199,7 +13240,8 @@
    "entry": {
     "free": true,
     "src": "typical"
-   }
+   },
+   "district": "ธาตุพนม"
   },
   {
    "id": "wd-Q38225",
@@ -13457,7 +13499,8 @@
    "entry": {
     "free": true,
     "src": "typical"
-   }
+   },
+   "district": "เมืองเชียงใหม่"
   },
   {
    "id": "wd-Q270375",
@@ -13716,7 +13759,8 @@
      }
     ],
     "src": "web"
-   }
+   },
+   "district": "คันนายาว"
   },
   {
    "id": "wd-Q16138299",
@@ -13888,7 +13932,8 @@
    "entry": {
     "free": true,
     "src": "typical"
-   }
+   },
+   "district": "บางละมุง"
   },
   {
    "id": "wd-Q16305399",
@@ -14154,7 +14199,8 @@
    "entry": {
     "free": true,
     "src": "typical"
-   }
+   },
+   "district": "พระนคร"
   },
   {
    "id": "wd-Q1061764",
@@ -14374,7 +14420,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "จอมทอง"
   },
   {
    "id": "wd-Q13021500",
@@ -14810,7 +14857,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "ฮอด"
   },
   {
    "id": "wd-Q6424175",
@@ -15022,7 +15070,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "เมืองเชียงใหม่"
   },
   {
    "id": "wd-Q1130183",
@@ -15486,7 +15535,8 @@
    "entry": {
     "free": true,
     "src": "typical"
-   }
+   },
+   "district": "ห้วยขวาง"
   },
   {
    "id": "wd-Q1666277",
@@ -15899,7 +15949,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "ห้างฉัตร"
   },
   {
    "id": "wd-Q1476495",
@@ -16016,7 +16067,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "แม่แตง"
   },
   {
    "id": "wd-Q1647822",
@@ -16133,7 +16185,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "น้ำหนาว"
   },
   {
    "id": "wd-Q1474515",
@@ -16250,7 +16303,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "บุณฑริก"
   },
   {
    "id": "wd-Q14216076",
@@ -16276,7 +16330,8 @@
    "fetchedAt": "2026-11-07T01:20:55.564Z",
    "views": 6,
    "imageAi": true,
-   "imageScore": 7
+   "imageScore": 7,
+   "district": "เกาะสมุย"
   },
   {
    "id": "wd-Q13025702",
@@ -16635,7 +16690,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "เมืองสตูล"
   },
   {
    "id": "wd-Q1536858",
@@ -16744,7 +16800,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "กันทรลักษ์"
   },
   {
    "id": "wd-Q1968373",
@@ -16851,7 +16908,8 @@
    ],
    "reviewCount": 10,
    "imageAi": true,
-   "imageScore": 6
+   "imageScore": 6,
+   "district": "พระนคร"
   },
   {
    "id": "wd-Q2916351",
@@ -17084,7 +17142,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "ลี้"
   },
   {
    "id": "wd-Q6652894",
@@ -17188,7 +17247,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "สิรินธร"
   },
   {
    "id": "wd-Q13024192",
@@ -17291,7 +17351,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "ชุมแพ"
   },
   {
    "id": "wd-Q4922129",
@@ -17331,7 +17392,8 @@
    },
    "imageAi": true,
    "imageScore": 8,
-   "websiteDead": "https://www.museum.rtaf.mi.th/"
+   "websiteDead": "https://www.museum.rtaf.mi.th/",
+   "district": "ดอนเมือง"
   },
   {
    "id": "wd-Q7200579",
@@ -17598,7 +17660,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "เมืองสระแก้ว"
   },
   {
    "id": "wd-Q3575650",
@@ -17773,7 +17836,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "ภูซาง"
   },
   {
    "id": "wd-Q15707827",
@@ -17873,7 +17937,8 @@
    ],
    "reviewCount": 2,
    "imageAi": true,
-   "imageScore": 9
+   "imageScore": 9,
+   "district": "กันตัง"
   },
   {
    "id": "wd-Q3327331",
@@ -17996,7 +18061,8 @@
    ],
    "reviewCount": 13,
    "imageAi": true,
-   "imageScore": 9
+   "imageScore": 9,
+   "district": "เกาะยาว"
   },
   {
    "id": "wd-Q10542974",
@@ -18986,7 +19052,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "พาน"
   },
   {
    "id": "wd-Q6652728",
@@ -19103,7 +19170,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "ทองผาภูมิ"
   },
   {
    "id": "wd-Q238906",
@@ -19143,7 +19211,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "เกาะช้าง"
   },
   {
    "id": "wd-Q13024202",
@@ -19263,7 +19332,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "ถลาง"
   },
   {
    "id": "wd-Q6652795",
@@ -19375,7 +19445,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "นาหมื่น"
   },
   {
    "id": "wd-Q6898895",
@@ -19438,7 +19509,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "เวียงป่าเป้า"
   },
   {
    "id": "wd-Q13024211",
@@ -19545,7 +19617,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "ท้ายเหมือง"
   },
   {
    "id": "wd-Q123198",
@@ -19605,7 +19678,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "สอง"
   },
   {
    "id": "wd-Q386580",
@@ -20724,7 +20798,8 @@
      "tag": 1
     }
    ],
-   "reviewCount": 1
+   "reviewCount": 1,
+   "district": "เมืองกาญจนบุรี"
   },
   {
    "id": "wd-Q7840310",
@@ -20963,7 +21038,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "ไทรโยค"
   },
   {
    "id": "wd-Q5617474",
@@ -21092,7 +21168,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "เกาะลันตา"
   },
   {
    "id": "wd-Q5359345",
@@ -21410,7 +21487,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "คุระบุรี"
   },
   {
    "id": "wd-Q1968825",
@@ -21513,7 +21591,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "สังขละบุรี"
   },
   {
    "id": "wd-Q4925823",
@@ -21596,7 +21675,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "เชียงม่วน"
   },
   {
    "id": "wd-Q12666284",
@@ -21670,7 +21750,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "ทับสะแก"
   },
   {
    "id": "wd-Q674005",
@@ -21774,7 +21855,8 @@
    ],
    "reviewCount": 13,
    "imageAi": true,
-   "imageScore": 8
+   "imageScore": 8,
+   "district": "เมืองตาก"
   },
   {
    "id": "wd-Q546844",
@@ -22642,7 +22724,8 @@
      "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/ooPhcAQB1Cs546iiiAAtJEEqeB1NfRcgO2IPC7~tplv-sdweummd6v-text-logo-v1:QHR1bmdtYXk0NDE2:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=n%2Br%2BRj1XLjYf0DsaNu618dugsQc%3D",
      "tag": 1
     }
-   ]
+   ],
+   "district": "อู่ทอง"
   },
   {
    "id": "wd-Q6583115",
@@ -22670,7 +22753,8 @@
    "imageCredit": "Medelam · CC BY-SA 4.0",
    "fetchedAt": "2026-11-06T20:04:50.154Z",
    "views": 1,
-   "websiteDead": "http://www.thaibankmuseum.or.th/eng/home.php"
+   "websiteDead": "http://www.thaibankmuseum.or.th/eng/home.php",
+   "district": "จตุจักร"
   },
   {
    "id": "wd-Q15959888",
@@ -23018,7 +23102,8 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:HTMS_Phai_and_HTMS_Kut.jpg",
    "imageCredit": "US Navy · Public domain",
    "fetchedAt": "2026-11-07T01:21:45.831Z",
-   "views": 1
+   "views": 1,
+   "district": "สัตหีบ"
   },
   {
    "id": "wd-Q13014565",
@@ -23929,7 +24014,8 @@
    ],
    "reviewCount": 13,
    "imageAi": true,
-   "imageScore": 7
+   "imageScore": 7,
+   "district": "นครไทย"
   },
   {
    "id": "osm-w320273828",
@@ -25336,7 +25422,8 @@
    ],
    "imageAi": true,
    "imageScore": 9,
-   "websiteDead": "https://thawan-duchanee.com/"
+   "websiteDead": "https://thawan-duchanee.com/",
+   "district": "เมืองเชียงราย"
   },
   {
    "id": "osm-w396643502",
@@ -25588,7 +25675,8 @@
     "likes": 0,
     "at": "2026-11-07",
     "posts": []
-   }
+   },
+   "district": "สัตหีบ"
   },
   {
    "id": "osm-n1669111106",
@@ -34278,7 +34366,8 @@
      }
     ],
     "src": "web"
-   }
+   },
+   "district": "ปทุมวัน"
   },
   {
    "id": "wd-Q37471",
@@ -34314,7 +34403,8 @@
      "thumb": "https://p19-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/oMtEOnqZBDVi0UKKISFCgTIEtEfBAwgf9ACqAl~tplv-sdweummd6v-text-logo-v1:QGNob21wb28ubnVjaHk=:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=l2mqELCAXOK0JabxZuulTc8dsk8%3D",
      "tag": 1
     }
-   ]
+   ],
+   "district": "บ่อเกลือ"
   },
   {
    "id": "osm-w91562454",
@@ -34367,7 +34457,8 @@
    ],
    "reviewCount": 1,
    "imageAi": true,
-   "imageScore": 5
+   "imageScore": 5,
+   "district": "สาทร"
   },
   {
    "id": "osm-w863463383",
@@ -34640,7 +34731,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "เมืองเชียงราย"
   },
   {
    "id": "osm-n3277475708",
@@ -35182,7 +35274,8 @@
    "entry": {
     "free": true,
     "src": "typical"
-   }
+   },
+   "district": "เกาะพะงัน"
   },
   {
    "id": "osm-r5846432",
@@ -35613,7 +35706,8 @@
    "entry": {
     "free": true,
     "src": "typical"
-   }
+   },
+   "district": "เกาะสมุย"
   },
   {
    "id": "wd-Q15238684",
@@ -35855,7 +35949,8 @@
    ],
    "reviewCount": 15,
    "imageAi": true,
-   "imageScore": 8
+   "imageScore": 8,
+   "district": "เมืองสงขลา"
   },
   {
    "id": "osm-n2313723117",
@@ -35941,7 +36036,8 @@
    ],
    "reviewCount": 15,
    "imageAi": true,
-   "imageScore": 8
+   "imageScore": 8,
+   "district": "เชียงแสน"
   },
   {
    "id": "osm-n5535178219",
@@ -36499,7 +36595,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "ทับสะแก"
   },
   {
    "id": "osm-n2231865009",
@@ -36779,7 +36876,8 @@
    "entry": {
     "free": true,
     "src": "typical"
-   }
+   },
+   "district": "ถลาง"
   },
   {
    "id": "osm-w180233580",
@@ -36804,7 +36902,8 @@
    "entry": {
     "free": true,
     "src": "typical"
-   }
+   },
+   "district": "เกาะสมุย"
   },
   {
    "id": "osm-r5657696",
@@ -36844,7 +36943,8 @@
    "entry": {
     "free": true,
     "src": "typical"
-   }
+   },
+   "district": "เมืองภูเก็ต"
   },
   {
    "id": "osm-r6162518",
@@ -36933,7 +37033,8 @@
    "entry": {
     "free": true,
     "src": "typical"
-   }
+   },
+   "district": "เมืองภูเก็ต"
   },
   {
    "id": "osm-r14010442",
@@ -37022,7 +37123,8 @@
    "entry": {
     "free": true,
     "src": "typical"
-   }
+   },
+   "district": "ถลาง"
   },
   {
    "id": "osm-n2769486127",
@@ -37110,7 +37212,8 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:Long_Beach_-_Had_Phra_Ae_-_panoramio.jpg",
    "imageCredit": "Владимир Е · CC BY-SA 3.0",
    "imageAi": true,
-   "imageScore": 7
+   "imageScore": 7,
+   "district": "เกาะลันตา"
   },
   {
    "id": "osm-n4742863324",
@@ -37184,7 +37287,8 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:Sunset_auf_Ko_Lanta_(31327953975).jpg",
    "imageCredit": "Peter Addor from underway; mailnly Switzerland, Italy and Sr · CC BY 2.0",
    "imageAi": true,
-   "imageScore": 7
+   "imageScore": 7,
+   "district": "เกาะลันตา"
   },
   {
    "id": "osm-n6839690397",
@@ -37291,7 +37395,8 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:Why_not_bar,_Ko_Lanta_Yai,_April,_2018.jpg",
    "imageCredit": "Alexey Komarov · CC BY-SA 4.0",
    "imageAi": true,
-   "imageScore": 7
+   "imageScore": 7,
+   "district": "เกาะลันตา"
   },
   {
    "id": "osm-n4343798786",
@@ -38161,7 +38266,8 @@
    "imageCredit": "Iudexvivorum · CC0",
    "fetchedAt": "2026-11-06T20:04:28.903Z",
    "views": 0,
-   "websiteDead": "http://library2.parliament.go.th/museum/mainmenu.html"
+   "websiteDead": "http://library2.parliament.go.th/museum/mainmenu.html",
+   "district": "ดุสิต"
   },
   {
    "id": "wd-Q11310084",
@@ -38427,7 +38533,8 @@
    "province": "phang-nga",
    "summary": {},
    "fetchedAt": "2026-11-06T20:07:19.756Z",
-   "websiteDead": "https://elephantsanctuaryandspa.com/"
+   "websiteDead": "https://elephantsanctuaryandspa.com/",
+   "district": "เมืองพังงา"
   },
   {
    "id": "osm-w1358889801",
@@ -38517,7 +38624,8 @@
    "imageCredit": "Roma Neus · CC BY 3.0",
    "fetchedAt": "2026-11-06T20:10:11.283Z",
    "imageAi": true,
-   "imageScore": 7
+   "imageScore": 7,
+   "district": "หางดง"
   },
   {
    "id": "osm-n303924229",
@@ -38595,7 +38703,8 @@
    "address": "Don Faek Nakhon Chai Si",
    "province": "nakhon-pathom",
    "summary": {},
-   "fetchedAt": "2026-11-07T01:23:06.754Z"
+   "fetchedAt": "2026-11-07T01:23:06.754Z",
+   "district": "นครชัยศรี"
   },
   {
    "id": "osm-n6934861361",
@@ -38677,7 +38786,8 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:Nan_National_Museum_2018-07-30_(08).jpg",
    "imageCredit": "Index Librorum Permissorum · CC0",
    "imageAi": true,
-   "imageScore": 8
+   "imageScore": 8,
+   "district": "เมืองน่าน"
   },
   {
    "id": "osm-n7079813308",
@@ -39019,7 +39129,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "คุระบุรี"
   },
   {
    "id": "osm-r2969526",
@@ -39249,7 +39360,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "อ่าวลึก"
   },
   {
    "id": "osm-r3284822",
@@ -39338,7 +39450,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "ท้ายเหมือง"
   },
   {
    "id": "osm-r3288698",
@@ -39432,7 +39545,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "เมืองชุมพร"
   },
   {
    "id": "osm-r3790589",
@@ -39521,7 +39635,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "เมืองระนอง"
   },
   {
    "id": "osm-r3790891",
@@ -39610,7 +39725,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "ละอุ่น"
   },
   {
    "id": "osm-r3801566",
@@ -39699,7 +39815,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "ทองผาภูมิ"
   },
   {
    "id": "osm-r5911629",
@@ -39788,7 +39905,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "ท่าสองยาง"
   },
   {
    "id": "osm-r5944547",
@@ -39877,7 +39995,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "ฝาง"
   },
   {
    "id": "osm-r5944551",
@@ -39926,7 +40045,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "เมืองแม่ฮ่องสอน"
   },
   {
    "id": "osm-r5944645",
@@ -40015,7 +40135,8 @@
    "imageAi": true,
    "imageScore": 9,
    "hours": "08:00-18:00",
-   "hoursSrc": "typical"
+   "hoursSrc": "typical",
+   "district": "เวียงป่าเป้า"
   },
   {
    "id": "osm-r5944648",
@@ -40109,7 +40230,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "พาน"
   },
   {
    "id": "osm-r5944649",
@@ -40198,7 +40320,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "ศรีสัชนาลัย"
   },
   {
    "id": "osm-r5944651",
@@ -40287,7 +40410,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "เนินมะปราง"
   },
   {
    "id": "osm-r5963190",
@@ -40313,7 +40437,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "สะเมิง"
   },
   {
    "id": "osm-r5963313",
@@ -40402,7 +40527,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "ดอยหล่อ"
   },
   {
    "id": "osm-r5963397",
@@ -40582,7 +40708,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "พร้าว"
   },
   {
    "id": "osm-r6004034",
@@ -40621,7 +40748,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "เถิน"
   },
   {
    "id": "osm-r6009654",
@@ -40700,7 +40828,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "บ่อเกลือ"
   },
   {
    "id": "osm-r6009655",
@@ -40734,7 +40863,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "แม่จริม"
   },
   {
    "id": "osm-r6009658",
@@ -40914,7 +41044,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "นาน้อย"
   },
   {
    "id": "osm-r6009661",
@@ -41003,7 +41134,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "เมืองเพชรบูรณ์"
   },
   {
    "id": "osm-r6009662",
@@ -41052,7 +41184,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "น้ำปาด"
   },
   {
    "id": "osm-r6009663",
@@ -41141,7 +41274,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "วังชิ้น"
   },
   {
    "id": "osm-r6011585",
@@ -41234,7 +41368,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "เทพสถิต"
   },
   {
    "id": "osm-r6011588",
@@ -41260,7 +41395,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "โนนสัง"
   },
   {
    "id": "osm-r6011590",
@@ -41349,7 +41485,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "เกษตรสมบูรณ์"
   },
   {
    "id": "osm-r6011591",
@@ -41460,7 +41597,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "ดงหลวง"
   },
   {
    "id": "osm-r6011595",
@@ -41571,7 +41709,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "นาแห้ว"
   },
   {
    "id": "osm-r6011597",
@@ -41660,7 +41799,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "เมืองชัยภูมิ"
   },
   {
    "id": "osm-r10925148",
@@ -41841,7 +41981,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "แม่ออน"
   },
   {
    "id": "osm-r12088743",
@@ -41920,7 +42061,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "ศรีบรรพต"
   },
   {
    "id": "osm-r12088747",
@@ -42009,7 +42151,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "เมืองสตูล"
   },
   {
    "id": "osm-r12088748",
@@ -42078,7 +42221,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "สะเดา"
   },
   {
    "id": "osm-r12088749",
@@ -42126,7 +42270,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "ธารโต"
   },
   {
    "id": "osm-r12092897",
@@ -42195,7 +42340,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "กาญจนดิษฐ์"
   },
   {
    "id": "osm-r12092898",
@@ -42466,7 +42612,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "พรหมคีรี"
   },
   {
    "id": "osm-r12092901",
@@ -42555,7 +42702,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "ทุ่งสง"
   },
   {
    "id": "osm-r12095597",
@@ -42644,7 +42792,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "คุระบุรี"
   },
   {
    "id": "osm-r12095601",
@@ -42670,7 +42819,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "พนม"
   },
   {
    "id": "osm-r12095604",
@@ -42729,7 +42879,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "ท้ายเหมือง"
   },
   {
    "id": "osm-r12100307",
@@ -42813,7 +42964,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "ไชยา"
   },
   {
    "id": "osm-r12104352",
@@ -42902,7 +43054,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "เมืองประจวบคีรีขันธ์"
   },
   {
    "id": "osm-r12113343",
@@ -43020,7 +43173,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "ภูผาม่าน"
   },
   {
    "id": "osm-r12632007",
@@ -43114,7 +43268,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "หนองบัวระเหว"
   },
   {
    "id": "osm-r12656181",
@@ -43152,7 +43307,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "มวกเหล็ก"
   },
   {
    "id": "osm-r12659452",
@@ -43241,7 +43397,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "เขาชะเมา"
   },
   {
    "id": "osm-r12659453",
@@ -43381,7 +43538,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "บ่อไร่"
   },
   {
    "id": "osm-r12695293",
@@ -43470,7 +43628,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "สิรินธร"
   },
   {
    "id": "osm-r12719043",
@@ -43559,7 +43718,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "เชียงคำ"
   },
   {
    "id": "osm-r12719044",
@@ -43648,7 +43808,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "นาหมื่น"
   },
   {
    "id": "osm-n261548252",
@@ -45268,7 +45429,8 @@
    "entry": {
     "free": true,
     "src": "typical"
-   }
+   },
+   "district": "เกาะลันตา"
   },
   {
    "id": "osm-w27813979",
@@ -45293,7 +45455,8 @@
    "entry": {
     "free": true,
     "src": "typical"
-   }
+   },
+   "district": "เกาะลันตา"
   },
   {
    "id": "osm-w32743506",
@@ -45414,7 +45577,8 @@
    "entry": {
     "free": true,
     "src": "typical"
-   }
+   },
+   "district": "เกาะลันตา"
   },
   {
    "id": "osm-w51250515",
@@ -45439,7 +45603,8 @@
    "entry": {
     "free": true,
     "src": "typical"
-   }
+   },
+   "district": "เกาะลันตา"
   },
   {
    "id": "osm-w91115478",
@@ -45532,7 +45697,8 @@
    "entry": {
     "free": true,
     "src": "typical"
-   }
+   },
+   "district": "เมืองสตูล"
   },
   {
    "id": "osm-w106843819",
@@ -45626,7 +45792,8 @@
    "entry": {
     "free": true,
     "src": "typical"
-   }
+   },
+   "district": "สัตหีบ"
   },
   {
    "id": "osm-w147841651",
@@ -45719,7 +45886,8 @@
    "entry": {
     "free": true,
     "src": "typical"
-   }
+   },
+   "district": "เมืองกระบี่"
   },
   {
    "id": "osm-w150178573",
@@ -45744,7 +45912,8 @@
    "entry": {
     "free": true,
     "src": "typical"
-   }
+   },
+   "district": "ถลาง"
   },
   {
    "id": "osm-w185942618",
@@ -45763,7 +45932,8 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:Unnamed_Road,_Tambon_Ko_Lanta_Yai,_Amphoe_Ko_Lanta,_Chang_Wat_Krabi_81150,_Thailand_-_panoramio_(14).jpg",
    "imageCredit": "Максим Улитин · CC BY 3.0",
    "imageAi": true,
-   "imageScore": 7
+   "imageScore": 7,
+   "district": "เกาะลันตา"
   },
   {
    "id": "osm-w192428839",
@@ -45829,7 +45999,8 @@
    "entry": {
     "free": true,
     "src": "typical"
-   }
+   },
+   "district": "เกาะลันตา"
   },
   {
    "id": "osm-w242648106",
@@ -45924,7 +46095,8 @@
    "entry": {
     "free": true,
     "src": "typical"
-   }
+   },
+   "district": "เกาะพะงัน"
   },
   {
    "id": "osm-w246391251",
@@ -45949,7 +46121,8 @@
    "entry": {
     "free": true,
     "src": "typical"
-   }
+   },
+   "district": "เกาะสมุย"
   },
   {
    "id": "osm-w246395838",
@@ -46021,7 +46194,8 @@
    "entry": {
     "free": true,
     "src": "typical"
-   }
+   },
+   "district": "เกาะสมุย"
   },
   {
    "id": "osm-w253816464",
@@ -46046,7 +46220,8 @@
    "entry": {
     "free": true,
     "src": "typical"
-   }
+   },
+   "district": "เมืองประจวบคีรีขันธ์"
   },
   {
    "id": "osm-w255261810",
@@ -46140,7 +46315,8 @@
    "entry": {
     "free": true,
     "src": "typical"
-   }
+   },
+   "district": "เกาะพะงัน"
   },
   {
    "id": "osm-w381444090",
@@ -46165,7 +46341,8 @@
    "entry": {
     "free": true,
     "src": "typical"
-   }
+   },
+   "district": "เกาะพะงัน"
   },
   {
    "id": "osm-w609896645",
@@ -46206,7 +46383,8 @@
    "entry": {
     "free": true,
     "src": "typical"
-   }
+   },
+   "district": "บางสะพาน"
   },
   {
    "id": "osm-r14010438",
@@ -46302,7 +46480,8 @@
    ],
    "reviewCount": 12,
    "hours": "24/7",
-   "hoursSrc": "typical"
+   "hoursSrc": "typical",
+   "district": "ถลาง"
   },
   {
    "id": "osm-r14937094",
@@ -46397,7 +46576,8 @@
    "entry": {
     "free": true,
     "src": "typical"
-   }
+   },
+   "district": "เมืองกระบี่"
   },
   {
    "id": "osm-r16031134",
@@ -46423,7 +46603,8 @@
    "entry": {
     "free": true,
     "src": "typical"
-   }
+   },
+   "district": "ถลาง"
   },
   {
    "id": "osm-r19738774",
@@ -46543,7 +46724,8 @@
    "entry": {
     "free": true,
     "src": "typical"
-   }
+   },
+   "district": "เมืองกระบี่"
   },
   {
    "id": "osm-n2066072188",
@@ -51230,7 +51412,8 @@
     "thai": 150,
     "foreign": 300,
     "src": "web"
-   }
+   },
+   "district": "แม่ริม"
   },
   {
    "id": "osm-n2147672094",
@@ -51264,7 +51447,8 @@
    "province": "khon-kaen",
    "summary": {},
    "fetchedAt": "2026-11-06T20:07:21.526Z",
-   "websiteDead": "http://www.khaosuankwangzoo.com/"
+   "websiteDead": "http://www.khaosuankwangzoo.com/",
+   "district": "เขาสวนกวาง"
   },
   {
    "id": "osm-n4203697890",
@@ -51654,7 +51838,8 @@
    "summary": {},
    "fetchedAt": "2026-11-06T20:10:13.025Z",
    "hours": "Mo-Fr 09:00-17:00; Sa,Su 09:00-19:00",
-   "hoursSrc": "web"
+   "hoursSrc": "web",
+   "district": "สวนผึ้ง"
   },
   {
    "id": "osm-n12863642364",
@@ -51710,7 +51895,8 @@
    "province": "chonburi",
    "summary": {},
    "fetchedAt": "2026-11-06T20:10:16.534Z",
-   "websiteDead": "http://www.gretafarm.com/"
+   "websiteDead": "http://www.gretafarm.com/",
+   "district": "บางละมุง"
   },
   {
    "id": "osm-w589130835",
@@ -51731,7 +51917,8 @@
    },
    "fetchedAt": "2026-11-06T20:10:16.534Z",
    "hours": "Mo 09:00-18:00; Tu 09:00-18:00; We 09:00-18:00; Th 09:00-18:00; Fr 09:00-18:00; Sa 09:00-18:00; Su 09:00-18:00",
-   "hoursSrc": "web"
+   "hoursSrc": "web",
+   "district": "เมืองภูเก็ต"
   },
   {
    "id": "osm-w897610595",
@@ -51749,7 +51936,8 @@
    "province": "phuket",
    "summary": {},
    "fetchedAt": "2026-11-06T20:10:17.880Z",
-   "websiteDead": "https://www.bluetree.fun/"
+   "websiteDead": "https://www.bluetree.fun/",
+   "district": "ถลาง"
   },
   {
    "id": "osm-w1032851977",
@@ -51959,7 +52147,8 @@
    "province": "chiang-mai",
    "summary": {},
    "fetchedAt": "2026-11-07T01:23:26.344Z",
-   "websiteDead": "https://www.baanjangnak.com/"
+   "websiteDead": "https://www.baanjangnak.com/",
+   "district": "สันกำแพง"
   },
   {
    "id": "osm-n1121030565",
@@ -52112,7 +52301,8 @@
    "province": "chiang-mai",
    "summary": {},
    "fetchedAt": "2026-11-07T01:23:32.362Z",
-   "websiteDead": "https://www.firstroyalfactory.org/"
+   "websiteDead": "https://www.firstroyalfactory.org/",
+   "district": "ฝาง"
   },
   {
    "id": "osm-n4759661526",
@@ -52470,7 +52660,8 @@
    "province": "chiang-mai",
    "summary": {},
    "fetchedAt": "2026-11-07T01:23:45.915Z",
-   "websiteDead": "http://www2.bot.or.th/museum/eng/index.asp"
+   "websiteDead": "http://www2.bot.or.th/museum/eng/index.asp",
+   "district": "เมืองเชียงใหม่"
   },
   {
    "id": "osm-w115567618",
@@ -52693,7 +52884,8 @@
    "entry": {
     "free": true,
     "src": "web"
-   }
+   },
+   "district": "นครชัยศรี"
   },
   {
    "id": "osm-w312167241",
@@ -53190,7 +53382,8 @@
    "address": "Mueang Kalasin",
    "province": "kalasin",
    "summary": {},
-   "fetchedAt": "2026-11-07T01:24:04.907Z"
+   "fetchedAt": "2026-11-07T01:24:04.907Z",
+   "district": "เมืองกาฬสินธุ์"
   },
   {
    "id": "osm-w938909070",
@@ -53216,7 +53409,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "ขลุง"
   },
   {
    "id": "osm-n265689795",
@@ -53239,7 +53433,8 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:Laem_Phromthep,_Phuket_03102016.jpg",
    "imageCredit": "Jeanvenotella · CC BY-SA 4.0",
    "imageAi": true,
-   "imageScore": 9
+   "imageScore": 9,
+   "district": "เมืองภูเก็ต"
   },
   {
    "id": "osm-n2641658813",
@@ -53253,7 +53448,8 @@
    "lng": 99.67079,
    "province": "prachuap-khiri-khan",
    "summary": {},
-   "fetchedAt": "2026-11-07T01:28:00.744Z"
+   "fetchedAt": "2026-11-07T01:28:00.744Z",
+   "district": "ทับสะแก"
   },
   {
    "id": "osm-n5389387921",
@@ -53318,7 +53514,8 @@
    "entry": {
     "free": true,
     "src": "typical"
-   }
+   },
+   "district": "เกาะสมุย"
   },
   {
    "id": "osm-w263781656",
@@ -53337,7 +53534,8 @@
    "entry": {
     "free": true,
     "src": "typical"
-   }
+   },
+   "district": "บางสะพาน"
   },
   {
    "id": "osm-w321033379",
@@ -53381,7 +53579,8 @@
    "entry": {
     "free": true,
     "src": "typical"
-   }
+   },
+   "district": "ถลาง"
   },
   {
    "id": "osm-r14010439",
@@ -53406,7 +53605,8 @@
    "entry": {
     "free": true,
     "src": "typical"
-   }
+   },
+   "district": "ถลาง"
   },
   {
    "id": "osm-r14031387",
@@ -53457,7 +53657,8 @@
    "entry": {
     "free": true,
     "src": "typical"
-   }
+   },
+   "district": "เมืองภูเก็ต"
   },
   {
    "id": "osm-r19742131",
@@ -53482,7 +53683,8 @@
    "entry": {
     "free": true,
     "src": "typical"
-   }
+   },
+   "district": "เมืองกระบี่"
   },
   {
    "id": "osm-n942311647",
@@ -53887,7 +54089,8 @@
    "imageCredit": "Christophe95 · CC BY-SA 4.0",
    "imageAi": true,
    "imageScore": 7,
-   "websiteDead": "https://cocotams.business.site/"
+   "websiteDead": "https://cocotams.business.site/",
+   "district": "เกาะสมุย"
   },
   {
    "id": "osm-n4863350621",
@@ -55652,7 +55855,8 @@
    "address": "ท่าเทววงษ์ เกาะสีชัง",
    "province": "chonburi",
    "summary": {},
-   "fetchedAt": "2026-11-06T20:07:42.512Z"
+   "fetchedAt": "2026-11-06T20:07:42.512Z",
+   "district": "ศรีราชา"
   },
   {
    "id": "osm-n13109858748",
@@ -56167,7 +56371,8 @@
    "province": "chanthaburi",
    "summary": {},
    "fetchedAt": "2026-11-06T20:10:25.752Z",
-   "websiteDead": "http://www.wangkhonchalet.com/"
+   "websiteDead": "http://www.wangkhonchalet.com/",
+   "district": "โป่งน้ำร้อน"
   },
   {
    "id": "osm-n3182486833",
@@ -56627,7 +56832,8 @@
    "imageScore": 9,
    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/oQiv8A1zWE5nBdlAizJPC29CQtxfILPAe5IgEB~tplv-sdweummd6v-text-logo-v1:QHZhbmFuYXZhaHVhaGlu:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796709600&x-signature=dxwUw6i3aQkrU8%2BHjfzWpmZdEEg%3D",
    "hours": "Mo-Su 11:00-17:00",
-   "hoursSrc": "web"
+   "hoursSrc": "web",
+   "district": "หัวหิน"
   },
   {
    "id": "osm-w481897764",
@@ -57031,7 +57237,8 @@
    "imageAi": true,
    "imageScore": 8,
    "hours": "Mo-Su 10:00-20:00",
-   "hoursSrc": "web"
+   "hoursSrc": "web",
+   "district": "ปทุมวัน"
   },
   {
    "id": "osm-n2638516614",
@@ -57363,7 +57570,8 @@
    "hours": "24/7",
    "province": "phang-nga",
    "summary": {},
-   "fetchedAt": "2026-11-07T01:24:32.780Z"
+   "fetchedAt": "2026-11-07T01:24:32.780Z",
+   "district": "ตะกั่วป่า"
   },
   {
    "id": "osm-n11301593402",
@@ -57420,7 +57628,8 @@
    "imageAi": true,
    "imageScore": 8,
    "hours": "Mo,Tu,We,Fr,Sa,Su 11:00-21:00",
-   "hoursSrc": "web"
+   "hoursSrc": "web",
+   "district": "ถลาง"
   },
   {
    "id": "osm-n13076284527",
@@ -57727,7 +57936,8 @@
    "province": "bangkok",
    "summary": {},
    "fetchedAt": "2026-11-07T01:24:42.855Z",
-   "websiteDead": "http://www.kuhistory.ku.ac.th/"
+   "websiteDead": "http://www.kuhistory.ku.ac.th/",
+   "district": "จตุจักร"
   },
   {
    "id": "osm-w115567619",
@@ -57747,7 +57957,8 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:Ban_Chiang_Museum_Excavation.JPG",
    "imageCredit": "Kiwiodysee · CC BY-SA 3.0",
    "imageAi": true,
-   "imageScore": 8
+   "imageScore": 8,
+   "district": "หนองหาน"
   },
   {
    "id": "osm-w178329986",
@@ -58166,7 +58377,8 @@
    "imageAi": true,
    "imageScore": 8,
    "hours": "Mo-Su 09:00-18:00",
-   "hoursSrc": "web"
+   "hoursSrc": "web",
+   "district": "ถลาง"
   },
   {
    "id": "osm-w1044722332",
@@ -58351,7 +58563,8 @@
    "imageAi": true,
    "imageScore": 8,
    "hours": "Mo-Su 09:00-18:00",
-   "hoursSrc": "web"
+   "hoursSrc": "web",
+   "district": "เมืองภูเก็ต"
   },
   {
    "id": "osm-w1233476540",
@@ -58585,7 +58798,8 @@
     "thai": 70,
     "foreign": 100,
     "src": "web"
-   }
+   },
+   "district": "พระนคร"
   },
   {
    "id": "osm-w1442803256",
@@ -59311,7 +59525,8 @@
    "entry": {
     "free": true,
     "src": "typical"
-   }
+   },
+   "district": "ถลาง"
   },
   {
    "id": "osm-n5414408821",
@@ -59878,7 +60093,8 @@
    "entry": {
     "free": true,
     "src": "typical"
-   }
+   },
+   "district": "สัตหีบ"
   },
   {
    "id": "osm-w32877657",
@@ -60025,7 +60241,8 @@
    "entry": {
     "free": true,
     "src": "typical"
-   }
+   },
+   "district": "เกาะพะงัน"
   },
   {
    "id": "osm-w248470596",
@@ -60113,7 +60330,8 @@
      "th": "data/thumbs/7598572503140762120-0.webp"
     }
    ],
-   "reviewCount": 4
+   "reviewCount": 4,
+   "district": "เกาะลันตา"
   },
   {
    "id": "osm-r6099532",
@@ -61094,7 +61312,8 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:Samui_Chaweng_2013_may_-_panoramio_(9).jpg",
    "imageCredit": "Roma Neus · CC BY 3.0",
    "imageAi": true,
-   "imageScore": 7
+   "imageScore": 7,
+   "district": "เกาะสมุย"
   },
   {
    "id": "osm-n4199638321",
@@ -61151,7 +61370,8 @@
    "address": "32/33 Ang Thong",
    "province": "surat-thani",
    "summary": {},
-   "fetchedAt": "2026-11-07T13:52:27.056Z"
+   "fetchedAt": "2026-11-07T13:52:27.056Z",
+   "district": "เกาะสมุย"
   },
   {
    "id": "osm-n4254015290",
@@ -61637,7 +61857,8 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:Beach_House_Railay_Beach_(125419561).jpeg",
    "imageCredit": "Dronepicr · CC BY 3.0",
    "imageAi": true,
-   "imageScore": 8
+   "imageScore": 8,
+   "district": "เมืองกระบี่"
   },
   {
    "id": "osm-n6442761585",
@@ -61894,7 +62115,8 @@
    "entry": {
     "free": true,
     "src": "typical"
-   }
+   },
+   "district": "ห้วยยอด"
   },
   {
    "id": "wd-Q21551090",
@@ -62082,7 +62304,8 @@
    "entry": {
     "free": true,
     "src": "typical"
-   }
+   },
+   "district": "เมืองพิจิตร"
   },
   {
    "id": "osm-n5157438000",
@@ -63466,7 +63689,8 @@
    "province": "surat-thani",
    "summary": {},
    "fetchedAt": "2026-11-06T20:10:58.378Z",
-   "websiteDead": "https://challengephangan.com/"
+   "websiteDead": "https://challengephangan.com/",
+   "district": "เกาะพะงัน"
   },
   {
    "id": "osm-n4677275094",
@@ -64211,7 +64435,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "เมืองมุกดาหาร"
   },
   {
    "id": "osm-w399882800",
@@ -64306,7 +64531,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "ภูเรือ"
   },
   {
    "id": "osm-w400316522",
@@ -64332,7 +64558,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "ลอง"
   },
   {
    "id": "osm-w400474959",
@@ -64358,7 +64585,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "เวียงเก่า"
   },
   {
    "id": "osm-w400477572",
@@ -64446,7 +64674,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "บ้านแพง"
   },
   {
    "id": "osm-w888242282",
@@ -64508,7 +64737,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "แม่แตง"
   },
   {
    "id": "osm-w937803013",
@@ -64534,7 +64764,8 @@
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   }
+   },
+   "district": "วิหารแดง"
   },
   {
    "id": "osm-n245227907",
@@ -66616,7 +66847,8 @@
      "th": "data/thumbs/7652189199445049877-0.webp"
     }
    ],
-   "reviewCount": 1
+   "reviewCount": 1,
+   "district": "ขนอม"
   },
   {
    "id": "osm-n1822525760",
@@ -67129,7 +67361,8 @@
    "entry": {
     "free": true,
     "src": "typical"
-   }
+   },
+   "district": "เมืองระยอง"
   },
   {
    "id": "osm-n2036129600",
@@ -68526,7 +68759,8 @@
    "entry": {
     "free": true,
     "src": "typical"
-   }
+   },
+   "district": "เกาะพะงัน"
   },
   {
    "id": "osm-n2511826214",
@@ -68595,7 +68829,8 @@
     "min": 100,
     "max": 200,
     "src": "web"
-   }
+   },
+   "district": "เมืองเชียงใหม่"
   },
   {
    "id": "wd-Q136565078",
@@ -68702,7 +68937,8 @@
    "imageAi": true,
    "imageScore": 7,
    "hours": "Mo,We,Th,Fr,Sa,Su 09:00-17:00",
-   "hoursSrc": "web"
+   "hoursSrc": "web",
+   "district": "เกาะสมุย"
   },
   {
    "id": "wd-Q123002567",
@@ -68951,7 +69187,8 @@
    "imageCredit": "Matthew.kowal · CC BY 4.0",
    "fetchedAt": "2026-11-06T19:22:51.050Z",
    "imageAi": true,
-   "imageScore": 7
+   "imageScore": 7,
+   "district": "เมืองกระบี่"
   },
   {
    "id": "osm-n12324830024",
@@ -70082,7 +70319,8 @@
    "imageCredit": "cloud.shepherd · CC BY 2.0",
    "fetchedAt": "2026-11-06T20:12:26.469Z",
    "imageAi": true,
-   "imageScore": 8
+   "imageScore": 8,
+   "district": "เกาะช้าง"
   },
   {
    "id": "osm-w148588339",
@@ -70404,7 +70642,8 @@
    "summary": {
     "th": "ร้านกาแฟดริปเล็กๆ ในซอยสุขุมวิท บรรยากาศเงียบ"
    },
-   "fetchedAt": "2026-11-08T10:05:27.634Z"
+   "fetchedAt": "2026-11-08T10:05:27.634Z",
+   "district": "วัฒนา"
   },
   {
    "id": "osm-n13748210457",
@@ -70422,7 +70661,8 @@
    "summary": {
     "th": "ร้านขนมไทยประยุกต์ใกล้คูเมืองเชียงใหม่"
    },
-   "fetchedAt": "2026-11-08T10:05:27.635Z"
+   "fetchedAt": "2026-11-08T10:05:27.635Z",
+   "district": "เมืองเชียงใหม่"
   },
   {
    "id": "osm-w1478823016",
@@ -70440,7 +70680,8 @@
    "summary": {
     "th": "ร้านอาหารไทยริมคลองบางกรวย"
    },
-   "fetchedAt": "2026-11-08T10:05:27.635Z"
+   "fetchedAt": "2026-11-08T10:05:27.635Z",
+   "district": "เมืองนนทบุรี"
   }
  ],
  "trends": {

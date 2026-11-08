@@ -21,16 +21,23 @@ const clean = s => String(s || "").replace(/^(อำเภอ|เขต|กิ�
 const fromAddr = p => clean(String(p.address || "").match(/(?:อำเภอ|อ\.|เขต)\s*([^\s,]+)/)?.[0]);
 
 const all = [...data.places, ...trend].filter(p => Number.isFinite(+p.lat) && Number.isFinite(+p.lng));
-const todo = [...new Set(all.filter(p => !fromAddr(p) && !(key(p) in cache)).map(key))].slice(0, MAX);
+// ช่องที่เคยหาไม่เจอ (null) ลองใหม่ (เดิมถามแบบ zoom 8 = ระดับจังหวัด หลายจุดเลยไม่ได้อำเภอ)
+const todo = [...new Set(all.filter(p => !fromAddr(p) && !cache[key(p)]).map(key))].slice(0, MAX);
 console.log(`สถานที่ ${all.length} · จำแล้ว ${Object.keys(cache).length} ช่อง · รอบนี้ถาม ${todo.length}`);
 let fails = 0;
 for (const k of todo) {
   const [lat, lng] = k.split(",");
   await sleep(1100);
   try {
-    const j = await (await fetch(`https://nominatim.openstreetmap.org/reverse?format=jsonv2&zoom=8&accept-language=th&lat=${lat}&lon=${lng}`, { headers: { "User-Agent": UA }, signal: AbortSignal.timeout(20000) })).json();
-    const a = j.address || {};
-    const d = Object.values(a).find(v => /^(อำเภอ|เขต|กิ่งอำเภอ)/.test(v)) || (a.city === "กรุงเทพมหานคร" ? a.suburb : null) || a.county || a.town || null;
+    // zoom 10 = ระดับอำเภอ/เขต · ไม่เจอ (จุดริมทะเล/เกาะ) ลองละเอียดขึ้น
+    let d = null;
+    for (const z of [10, 14]) {
+      if (z !== 10) await sleep(1100);
+      const j = await (await fetch(`https://nominatim.openstreetmap.org/reverse?format=jsonv2&zoom=${z}&accept-language=th&lat=${lat}&lon=${lng}`, { headers: { "User-Agent": UA }, signal: AbortSignal.timeout(20000) })).json();
+      const a = j.address || {};
+      d = Object.values(a).find(v => /^(อำเภอ|เขต|กิ่งอำเภอ)/.test(v)) || (a.city === "กรุงเทพมหานคร" ? a.suburb : null) || a.county || null;
+      if (d) break;
+    }
     cache[k] = d ? clean(d) : null;
     fails = 0;
   } catch (e) { if (++fails >= 5) { console.warn("Nominatim ไม่ตอบ หยุดรอบนี้:", e.message); break; } }
