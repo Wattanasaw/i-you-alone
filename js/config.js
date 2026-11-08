@@ -11,9 +11,9 @@ window.APP_CONFIG = {
   categories: [
     // color / color2 = สีไล่เฉดของปกการ์ด · เรียงเป็นกลุ่ม: ดนตรี/บันเทิง → ช้อป/กิน → กีฬา → เรียนรู้ → นิทรรศการ/แสดงสินค้า → หาเพื่อน
     { id: "concert", icon: "🎤", color: "#ff2d78", color2: "#7b2ff7", name: { th: "คอนเสิร์ต", en: "Concerts", zh: "演唱会" } },
-    // K-POP: คอนเสิร์ต แฟนคอน แฟนมีต แฟนไซน์ ป๊อปอัพ ของศิลปิน/นักแสดงเกาหลี (แฟนคลับตามศิลปิน ไม่ได้ตามรูปแบบงาน)
+    // K-POP: เฉพาะงานแสดง/พบศิลปินเกาหลี — คอนเสิร์ต แฟนคอน แฟนมีต แฟนไซน์ โชว์เคส (ป๊อปอัพสโตร์อยู่หมวดนิทรรศการ/ป๊อปอัพ)
     { id: "kpop", icon: "💜", color: "#7c3aed", color2: "#ec4899", name: { th: "K-POP", en: "K-pop", zh: "韩流 K-POP" } },
-    // แฟนมีต แฟนคอน แฟนไซน์ ฉายตอนจบซีรีส์ ป๊อปอัพศิลปิน
+    // แฟนมีต แฟนคอน แฟนไซน์ ฉายตอนจบซีรีส์ (ศิลปิน/นักแสดงที่ไม่ใช่เกาหลี)
     { id: "fanmeet", icon: "💖", color: "#ec4899", color2: "#a855f7", name: { th: "แฟนมีต", en: "Fan meetings", zh: "粉丝见面会" } },
     // ละครเวที มิวสิคัล โชว์ บัลเลต์ คอมเมดี้ ละครสัตว์
     { id: "show", icon: "🎭", color: "#7c3aed", color2: "#f43f5e", name: { th: "ละครเวที/โชว์", en: "Shows & musicals", zh: "演出/音乐剧" } },
@@ -33,7 +33,8 @@ window.APP_CONFIG = {
     { id: "seminar", icon: "🗣️", color: "#1d4ed8", color2: "#7c3aed", name: { th: "สัมมนา", en: "Talks", zh: "讲座" } },
     { id: "learning", icon: "🎓", color: "#2f7cf6", color2: "#00c2c7", name: { th: "เวิร์กช็อป/ค่าย", en: "Workshops & camps", zh: "工作坊/营" } },
     { id: "book", icon: "📚", color: "#8b5cf6", color2: "#ec4899", name: { th: "งานหนังสือ", en: "Book fairs", zh: "书展" } },
-    { id: "exhibition", icon: "🎨", color: "#be185d", color2: "#f59e0b", name: { th: "นิทรรศการ", en: "Exhibitions", zh: "展览" } },
+    // นิทรรศการศิลปะ/พิพิธภัณฑ์/อิมเมอร์ซีฟ + ป๊อปอัพสโตร์ (ร้านของที่ระลึก/คาเฟ่ธีมศิลปินหรือคาแรกเตอร์)
+    { id: "exhibition", icon: "🎨", color: "#be185d", color2: "#f59e0b", name: { th: "นิทรรศการ/ป๊อปอัพ", en: "Exhibitions & pop-ups", zh: "展览/快闪店" } },
     // งานแสดงสินค้า/เอ็กซ์โปในศูนย์ประชุม (B2B + คนทั่วไป)
     { id: "expo", icon: "🏢", color: "#475569", color2: "#0ea5e9", name: { th: "งานแสดงสินค้า", en: "Expos", zh: "展会" } },
     { id: "motor", icon: "🏎️", color: "#0ea47a", color2: "#1e3a8a", name: { th: "มอเตอร์โชว์", en: "Motor shows", zh: "车展" } },
