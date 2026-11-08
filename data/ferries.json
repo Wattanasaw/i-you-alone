@@ -1,0 +1,1209 @@
+{
+ "checked": "2026-11-08",
+ "note": "ราคาต่อคน เที่ยวเดียว (บาท) · รวบรวมจากประกาศ/ข่าว/เว็บจองตั๋ว/รีวิว ณ วันที่ checked · ราคาเรือปรับตามราคาน้ำมัน (ปี 2569 หลายเส้นทางขึ้นราคา) ควรเช็คกับท่าเรือก่อนเดินทาง · src = ที่มาหลัก",
+ "islands": [
+  {
+   "id": "samet",
+   "name": {
+    "th": "เกาะเสม็ด",
+    "en": "Ko Samet",
+    "zh": "沙美岛"
+   },
+   "lat": 12.565,
+   "lng": 101.455,
+   "r": 5,
+   "extra": {
+    "th": "ค่าเข้าอุทยานฯ คนไทย 40 บาท ต่างชาติ 200 บาท · บนเกาะมีรถสองแถว/เช่ามอเตอร์ไซค์ ~300 บาท/วัน",
+    "en": "National park fee: Thai 40, foreigner 200 baht · songthaews and scooter rental (~300 baht/day) on the island"
+   },
+   "routes": [
+    {
+     "from": {
+      "th": "ท่าเรือบ้านเพ (นวลทิพย์/ศรีบ้านเพ) ระยอง",
+      "en": "Ban Phe pier (Nuanthip / Sri Ban Phe), Rayong"
+     },
+     "lat": 12.6294,
+     "lng": 101.4407,
+     "type": "slow",
+     "min": 45,
+     "price": [
+      80,
+      100
+     ],
+     "freq": {
+      "th": "ทุก ~1 ชม. 08:00–17:00",
+      "en": "about hourly 08:00–17:00"
+     },
+     "src": "Travelfish 2026, รีวิวนักท่องเที่ยว"
+    },
+    {
+     "from": {
+      "th": "ท่าเรือบ้านเพ ระยอง",
+      "en": "Ban Phe pier, Rayong"
+     },
+     "lat": 12.6294,
+     "lng": 101.4407,
+     "type": "speed",
+     "min": 15,
+     "price": [
+      150,
+      200
+     ],
+     "freq": {
+      "th": "ออกเมื่อคนเต็ม · เหมาลำ ~1,500–2,500 บาท",
+      "en": "leaves when full · charter ~1,500–2,500 baht"
+     },
+     "src": "Travelfish 2026, Wikivoyage"
+    }
+   ]
+  },
+  {
+   "id": "chang",
+   "name": {
+    "th": "เกาะช้าง",
+    "en": "Ko Chang",
+    "zh": "象岛"
+   },
+   "lat": 12.06,
+   "lng": 102.34,
+   "r": 11.5,
+   "extra": {
+    "th": "เฟอร์รี่ขนรถได้ · วันหยุดยาวรถต่อคิวลงเรือนาน เผื่อเวลา · ราคาปรับขึ้นตั้งแต่ 10 เม.ย. 2569",
+    "en": "Car ferries · long queues on holidays · fares rose on 10 Apr 2026"
+   },
+   "routes": [
+    {
+     "from": {
+      "th": "ท่าเรืออ่าวธรรมชาติ แหลมงอบ ตราด",
+      "en": "Ao Thammachat pier, Laem Ngop, Trat"
+     },
+     "lat": 12.2009,
+     "lng": 102.2826,
+     "type": "car",
+     "min": 30,
+     "price": [
+      130,
+      130
+     ],
+     "car": [
+      280,
+      280
+     ],
+     "freq": {
+      "th": "ทุก 30–60 นาที ~06:30–19:00",
+      "en": "every 30–60 min ~06:30–19:00"
+     },
+     "src": "ไทยโพสต์ เม.ย. 2569"
+    },
+    {
+     "from": {
+      "th": "ท่าเรือเซ็นเตอร์พอยต์ แหลมงอบ ตราด",
+      "en": "Centrepoint pier, Laem Ngop, Trat"
+     },
+     "lat": 12.2335,
+     "lng": 102.2859,
+     "type": "car",
+     "min": 45,
+     "price": [
+      130,
+      130
+     ],
+     "car": [
+      280,
+      280
+     ],
+     "freq": {
+      "th": "ทุก ~1 ชม. ~06:00–19:00",
+      "en": "about hourly ~06:00–19:00"
+     },
+     "src": "ไทยโพสต์ เม.ย. 2569"
+    }
+   ]
+  },
+  {
+   "id": "kut",
+   "name": {
+    "th": "เกาะกูด",
+    "en": "Ko Kut",
+    "zh": "库德岛"
+   },
+   "lat": 11.65,
+   "lng": 102.56,
+   "r": 10,
+   "routes": [
+    {
+     "from": {
+      "th": "ท่าเรือแหลมศอก ตราด",
+      "en": "Laem Sok pier, Trat"
+     },
+     "lat": 11.9958,
+     "lng": 102.5956,
+     "type": "speed",
+     "min": 75,
+     "price": [
+      500,
+      700
+     ],
+     "freq": {
+      "th": "วันละ 2–4 เที่ยว (ช่วงมรสุม พ.ค.–ต.ค. ลดเที่ยว/งด)",
+      "en": "2–4 a day (fewer/suspended in monsoon May–Oct)"
+     },
+     "approx": true,
+     "src": "เว็บจองตั๋ว (ประมาณ)"
+    }
+   ]
+  },
+  {
+   "id": "mak",
+   "name": {
+    "th": "เกาะหมาก",
+    "en": "Ko Mak",
+    "zh": "麦岛"
+   },
+   "lat": 11.82,
+   "lng": 102.48,
+   "r": 4,
+   "routes": [
+    {
+     "from": {
+      "th": "ท่าเรือแหลมศอก ตราด",
+      "en": "Laem Sok pier, Trat"
+     },
+     "lat": 11.9958,
+     "lng": 102.5956,
+     "type": "speed",
+     "min": 50,
+     "price": [
+      450,
+      600
+     ],
+     "freq": {
+      "th": "วันละ 2–3 เที่ยว",
+      "en": "2–3 a day"
+     },
+     "approx": true,
+     "src": "เว็บจองตั๋ว (ประมาณ)"
+    }
+   ]
+  },
+  {
+   "id": "larn",
+   "name": {
+    "th": "เกาะล้าน",
+    "en": "Ko Larn",
+    "zh": "格兰岛"
+   },
+   "lat": 12.918,
+   "lng": 100.78,
+   "r": 4,
+   "extra": {
+    "th": "บนเกาะมีรถสองแถว/มอเตอร์ไซค์รับจ้าง ~20–100 บาท หรือเช่ามอเตอร์ไซค์",
+    "en": "Songthaews/motorbike taxis ~20–100 baht or scooter rental on the island"
+   },
+   "routes": [
+    {
+     "from": {
+      "th": "ท่าเรือแหลมบาลีฮาย พัทยา → ท่าหน้าบ้าน/หาดตาแหวน",
+      "en": "Bali Hai pier, Pattaya → Na Ban / Tawaen"
+     },
+     "lat": 12.9251,
+     "lng": 100.8717,
+     "type": "slow",
+     "min": 45,
+     "price": [
+      30,
+      30
+     ],
+     "freq": {
+      "th": "ทุก ~1–2 ชม. 07:00–18:30",
+      "en": "every 1–2 h 07:00–18:30"
+     },
+     "src": "Dailynews, Wongnai 2567"
+    },
+    {
+     "from": {
+      "th": "ท่าเรือแหลมบาลีฮาย พัทยา",
+      "en": "Bali Hai pier, Pattaya"
+     },
+     "lat": 12.9251,
+     "lng": 100.8717,
+     "type": "speed",
+     "min": 20,
+     "price": [
+      150,
+      300
+     ],
+     "freq": {
+      "th": "ร่วมเรือ/เหมาลำ ~1,500–3,000 บาท",
+      "en": "shared or charter ~1,500–3,000 baht"
+     },
+     "approx": true,
+     "src": "รีวิว Wongnai"
+    }
+   ]
+  },
+  {
+   "id": "sichang",
+   "name": {
+    "th": "เกาะสีชัง",
+    "en": "Ko Si Chang",
+    "zh": "西昌岛"
+   },
+   "lat": 13.155,
+   "lng": 100.81,
+   "r": 4,
+   "extra": {
+    "th": "บนเกาะมีสามล้อเครื่อง (ตุ๊กตุ๊กสีชัง) เหมาเที่ยวรอบเกาะ",
+    "en": "Hire a Si Chang tuk-tuk to tour the island"
+   },
+   "routes": [
+    {
+     "from": {
+      "th": "ท่าเรือเกาะลอย ศรีราชา ชลบุรี",
+      "en": "Ko Loi pier, Si Racha, Chonburi"
+     },
+     "lat": 13.1727,
+     "lng": 100.9194,
+     "type": "slow",
+     "min": 45,
+     "price": [
+      50,
+      60
+     ],
+     "freq": {
+      "th": "ทุก ~1–2 ชม. 07:00–20:00",
+      "en": "every 1–2 h 07:00–20:00"
+     },
+     "src": "รีวิว TrueID/Wongnai"
+    }
+   ]
+  },
+  {
+   "id": "samui",
+   "name": {
+    "th": "เกาะสมุย",
+    "en": "Ko Samui",
+    "zh": "苏梅岛"
+   },
+   "lat": 9.5,
+   "lng": 100,
+   "r": 12,
+   "extra": {
+    "th": "บินตรงสนามบินสมุยได้ (แพง) · ราคาเรือปรับตามราคาดีเซล (ซีทรานปรับขึ้น มี.ค. 2569)",
+    "en": "Direct flights to Samui airport (pricey) · ferry fares follow diesel prices (raised Mar 2026)"
+   },
+   "routes": [
+    {
+     "from": {
+      "th": "ท่าเรือดอนสัก สุราษฎร์ธานี (ราชาเฟอร์รี่/ซีทราน)",
+      "en": "Don Sak pier, Surat Thani (Raja Ferry / Seatran)"
+     },
+     "lat": 9.3265,
+     "lng": 99.7096,
+     "type": "car",
+     "min": 90,
+     "price": [
+      200,
+      250
+     ],
+     "car": [
+      420,
+      700
+     ],
+     "freq": {
+      "th": "ทุก ~1 ชม. 05:00–19:00",
+      "en": "about hourly 05:00–19:00"
+     },
+     "approx": true,
+     "src": "ราชาเฟอร์รี่ (LINE), ข่าว 2565–2569"
+    },
+    {
+     "from": {
+      "th": "ท่าเรือดอนสัก (ลมพระยา เรือเร็ว)",
+      "en": "Don Sak pier (Lomprayah high-speed)"
+     },
+     "lat": 9.3265,
+     "lng": 99.7096,
+     "type": "speed",
+     "min": 60,
+     "price": [
+      450,
+      500
+     ],
+     "freq": {
+      "th": "วันละหลายเที่ยว (มักขายรวมรถบัสจากสุราษฎร์ฯ)",
+      "en": "several a day (often sold with bus from Surat Thani)"
+     },
+     "src": "phuketferry.com"
+    },
+    {
+     "from": {
+      "th": "ท่าเรือชุมพร (ลมพระยา)",
+      "en": "Chumphon pier (Lomprayah)"
+     },
+     "lat": 10.3916,
+     "lng": 99.2981,
+     "type": "speed",
+     "min": 240,
+     "price": [
+      1100,
+      1300
+     ],
+     "freq": {
+      "th": "วันละ 2 เที่ยว (แวะเกาะเต่า/พะงัน)",
+      "en": "2 a day (via Ko Tao/Pha-ngan)"
+     },
+     "approx": true,
+     "src": "phuketferry.com"
+    }
+   ]
+  },
+  {
+   "id": "phangan",
+   "name": {
+    "th": "เกาะพะงัน",
+    "en": "Ko Pha-ngan",
+    "zh": "帕岸岛"
+   },
+   "lat": 9.74,
+   "lng": 100.03,
+   "r": 11,
+   "routes": [
+    {
+     "from": {
+      "th": "ท่าเรือดอนสัก สุราษฎร์ธานี (ราชาเฟอร์รี่)",
+      "en": "Don Sak pier, Surat Thani (Raja Ferry)"
+     },
+     "lat": 9.3265,
+     "lng": 99.7096,
+     "type": "car",
+     "min": 150,
+     "price": [
+      300,
+      350
+     ],
+     "car": [
+      550,
+      800
+     ],
+     "freq": {
+      "th": "วันละ ~4–5 เที่ยว",
+      "en": "~4–5 a day"
+     },
+     "approx": true,
+     "src": "ราชาเฟอร์รี่ (LINE)"
+    },
+    {
+     "from": {
+      "th": "เกาะสมุย (บางรัก/ท่าเรือบ่อผุด) → ท้องศาลา/หาดริ้น",
+      "en": "Ko Samui (Bangrak/Bophut) → Thong Sala / Haad Rin"
+     },
+     "lat": 9.567,
+     "lng": 100.06,
+     "type": "speed",
+     "min": 30,
+     "price": [
+      250,
+      400
+     ],
+     "freq": {
+      "th": "วันละหลายเที่ยว (หาดริ้นควีน/ลมพระยา/ซีทราน)",
+      "en": "many a day (Haad Rin Queen / Lomprayah / Seatran)"
+     },
+     "approx": true,
+     "src": "เว็บจองตั๋ว (ประมาณ)"
+    },
+    {
+     "from": {
+      "th": "ท่าเรือชุมพร (ลมพระยา)",
+      "en": "Chumphon pier (Lomprayah)"
+     },
+     "lat": 10.3916,
+     "lng": 99.2981,
+     "type": "speed",
+     "min": 180,
+     "price": [
+      1100,
+      1200
+     ],
+     "freq": {
+      "th": "วันละ 2 เที่ยว",
+      "en": "2 a day"
+     },
+     "src": "phuketferry.com"
+    }
+   ]
+  },
+  {
+   "id": "tao",
+   "name": {
+    "th": "เกาะเต่า",
+    "en": "Ko Tao",
+    "zh": "涛岛"
+   },
+   "lat": 10.095,
+   "lng": 99.84,
+   "r": 5,
+   "extra": {
+    "th": "เกาะนางยวน: เรือหางยาว/แท็กซี่เรือจากแม่หาด ~150–300 บาท + ค่าขึ้นเกาะ",
+    "en": "Ko Nang Yuan: longtail/taxi boat from Mae Haad ~150–300 baht + landing fee"
+   },
+   "routes": [
+    {
+     "from": {
+      "th": "ท่าเรือชุมพร (ลมพระยา/ซงเสิร์ม)",
+      "en": "Chumphon pier (Lomprayah / Songserm)"
+     },
+     "lat": 10.3916,
+     "lng": 99.2981,
+     "type": "speed",
+     "min": 105,
+     "price": [
+      700,
+      800
+     ],
+     "freq": {
+      "th": "วันละ 2–4 เที่ยว",
+      "en": "2–4 a day"
+     },
+     "approx": true,
+     "src": "12go, lomprayah.com"
+    },
+    {
+     "from": {
+      "th": "เกาะสมุย / เกาะพะงัน (ลมพระยา)",
+      "en": "Ko Samui / Ko Pha-ngan (Lomprayah)"
+     },
+     "lat": 9.567,
+     "lng": 100.06,
+     "type": "speed",
+     "min": 90,
+     "price": [
+      600,
+      850
+     ],
+     "freq": {
+      "th": "วันละหลายเที่ยว",
+      "en": "several a day"
+     },
+     "approx": true,
+     "src": "เว็บจองตั๋ว (ประมาณ)"
+    }
+   ]
+  },
+  {
+   "id": "phiphi",
+   "name": {
+    "th": "เกาะพีพี",
+    "en": "Ko Phi Phi",
+    "zh": "皮皮岛"
+   },
+   "lat": 7.73,
+   "lng": 98.77,
+   "r": 7,
+   "extra": {
+    "th": "ค่าขึ้นเกาะพีพี 20 บาท · อ่าวมาหยา (พีพีเล) เข้าได้กับทัวร์ ค่าอุทยานฯ แยก · ไม่มีรถบนเกาะ เดิน/เรือหางยาว",
+    "en": "Phi Phi landing fee 20 baht · Maya Bay (Phi Phi Leh) by tour, park fee extra · no cars, walk or longtail"
+   },
+   "routes": [
+    {
+     "from": {
+      "th": "ท่าเรือคลองจิหลาด กระบี่",
+      "en": "Klong Jilad pier, Krabi"
+     },
+     "lat": 8.0466,
+     "lng": 98.9114,
+     "type": "ferry",
+     "min": 110,
+     "price": [
+      400,
+      450
+     ],
+     "freq": {
+      "th": "วันละ 2–4 เที่ยว",
+      "en": "2–4 a day"
+     },
+     "src": "phuketferry.com"
+    },
+    {
+     "from": {
+      "th": "ท่าเรือรัษฎา ภูเก็ต",
+      "en": "Rassada pier, Phuket"
+     },
+     "lat": 7.8721,
+     "lng": 98.4044,
+     "type": "ferry",
+     "min": 120,
+     "price": [
+      500,
+      700
+     ],
+     "freq": {
+      "th": "วันละ 3–5 เที่ยว · สปีดโบ๊ท ~1,000–1,500 บาท",
+      "en": "3–5 a day · speedboat ~1,000–1,500 baht"
+     },
+     "approx": true,
+     "src": "phuketferry.com (ประมาณ)"
+    }
+   ]
+  },
+  {
+   "id": "lanta",
+   "name": {
+    "th": "เกาะลันตา",
+    "en": "Ko Lanta",
+    "zh": "兰塔岛"
+   },
+   "lat": 7.58,
+   "lng": 99.07,
+   "r": 15,
+   "extra": {
+    "th": "ขับรถไปได้: แพขนานยนต์ข้ามไปเกาะลันตาน้อย แล้วข้ามสะพานสิริลันตาไปลันตาใหญ่ (สะพานเชื่อมแผ่นดินใหญ่ยังสร้างไม่เสร็จ คาดปี 2572) · วันหยุดรถต่อคิวลงแพ",
+    "en": "Drive in: car ferry to Lanta Noi, then Siri Lanta bridge to Lanta Yai (mainland bridge expected ~2029) · holiday queues"
+   },
+   "routes": [
+    {
+     "from": {
+      "th": "ท่าแพหัวหิน (เหนือคลอง) กระบี่ → เกาะลันตาน้อย",
+      "en": "Hua Hin car-ferry pier, Nuea Khlong, Krabi → Ko Lanta Noi"
+     },
+     "lat": 7.7652,
+     "lng": 99.0372,
+     "type": "car",
+     "min": 15,
+     "price": [
+      20,
+      30
+     ],
+     "car": [
+      100,
+      150
+     ],
+     "freq": {
+      "th": "ทุก 15–30 นาที ~06:00–22:00",
+      "en": "every 15–30 min ~06:00–22:00"
+     },
+     "approx": true,
+     "src": "ประมาณ (รีวิว)"
+    },
+    {
+     "from": {
+      "th": "ท่าเรือคลองจิหลาด กระบี่ (เรือ/สปีดโบ๊ท ช่วงไฮซีซั่น)",
+      "en": "Klong Jilad pier, Krabi (ferry/speedboat, high season)"
+     },
+     "lat": 8.0466,
+     "lng": 98.9114,
+     "type": "ferry",
+     "min": 120,
+     "price": [
+      450,
+      600
+     ],
+     "freq": {
+      "th": "พ.ย.–เม.ย. วันละ 1–2 เที่ยว",
+      "en": "Nov–Apr 1–2 a day"
+     },
+     "approx": true,
+     "src": "เว็บจองตั๋ว (ประมาณ)"
+    }
+   ]
+  },
+  {
+   "id": "lipe",
+   "name": {
+    "th": "เกาะหลีเป๊ะ",
+    "en": "Ko Lipe",
+    "zh": "丽贝岛"
+   },
+   "lat": 6.49,
+   "lng": 99.3,
+   "r": 4,
+   "extra": {
+    "th": "ไม่มีรถบนเกาะ เดินได้ · เกาะอาดัง/ราวี/หินงาม: ทัวร์เรือหางยาวจากหลีเป๊ะ · ค่าอุทยานฯ ตะรุเตาแยก · มรสุม พ.ค.–ต.ค. เรือน้อย",
+    "en": "No cars, walkable · Adang/Rawi/Hin Ngam by longtail tour · Tarutao park fee extra · fewer boats May–Oct"
+   },
+   "routes": [
+    {
+     "from": {
+      "th": "ท่าเรือปากบารา ละงู สตูล",
+      "en": "Pak Bara pier, La-ngu, Satun"
+     },
+     "lat": 6.8645,
+     "lng": 99.7356,
+     "type": "speed",
+     "min": 90,
+     "price": [
+      600,
+      750
+     ],
+     "freq": {
+      "th": "วันละหลายเที่ยว (หลายบริษัท) · หน้าฝนลดเที่ยว",
+      "en": "several a day (many operators) · fewer in rainy season"
+     },
+     "src": "phuketferry.com, 12go"
+    }
+   ]
+  },
+  {
+   "id": "tarutao",
+   "name": {
+    "th": "เกาะตะรุเตา",
+    "en": "Ko Tarutao",
+    "zh": "达鲁岛"
+   },
+   "lat": 6.62,
+   "lng": 99.65,
+   "r": 12,
+   "extra": {
+    "th": "อุทยานแห่งชาติ ปิดฤดูมรสุม (ราว 16 พ.ค.–15 ต.ค.)",
+    "en": "National park, closed in monsoon (~16 May–15 Oct)"
+   },
+   "routes": [
+    {
+     "from": {
+      "th": "ท่าเรือปากบารา ละงู สตูล",
+      "en": "Pak Bara pier, La-ngu, Satun"
+     },
+     "lat": 6.8645,
+     "lng": 99.7356,
+     "type": "speed",
+     "min": 45,
+     "price": [
+      400,
+      500
+     ],
+     "freq": {
+      "th": "ช่วงเปิดอุทยานฯ วันละ 2–3 เที่ยว",
+      "en": "2–3 a day in park season"
+     },
+     "approx": true,
+     "src": "ประมาณ"
+    }
+   ]
+  },
+  {
+   "id": "ngai",
+   "name": {
+    "th": "เกาะไหง",
+    "en": "Ko Ngai",
+    "zh": "艾岛"
+   },
+   "lat": 7.415,
+   "lng": 99.2,
+   "r": 2.5,
+   "routes": [
+    {
+     "from": {
+      "th": "ท่าเรือปากเมง ตรัง",
+      "en": "Pak Meng pier, Trang"
+     },
+     "lat": 7.5048,
+     "lng": 99.3133,
+     "type": "speed",
+     "min": 30,
+     "price": [
+      350,
+      650
+     ],
+     "freq": {
+      "th": "ร่วมเรือ/รถ+เรือจากตัวเมืองตรัง · เหมาเรือหางยาว ~1,500 บาท",
+      "en": "shared or van+boat from Trang town · longtail charter ~1,500 baht"
+     },
+     "approx": true,
+     "src": "ประมาณ"
+    }
+   ]
+  },
+  {
+   "id": "mook",
+   "name": {
+    "th": "เกาะมุก",
+    "en": "Ko Mook",
+    "zh": "慕岛"
+   },
+   "lat": 7.375,
+   "lng": 99.3,
+   "r": 3,
+   "extra": {
+    "th": "ถ้ำมรกต: ทัวร์เรือหางยาว/คายัก (เข้าตามน้ำขึ้นลง) ค่าอุทยานฯ แยก",
+    "en": "Emerald Cave: longtail/kayak tour (tide-dependent), park fee extra"
+   },
+   "routes": [
+    {
+     "from": {
+      "th": "ท่าเรือควนตุ้งกู ตรัง",
+      "en": "Kuan Tung Ku pier, Trang"
+     },
+     "lat": 7.4113,
+     "lng": 99.3786,
+     "type": "longtail",
+     "min": 30,
+     "price": [
+      100,
+      200
+     ],
+     "freq": {
+      "th": "เรือหางยาวร่วม/เหมา ~800–1,200 บาท",
+      "en": "shared longtail or charter ~800–1,200 baht"
+     },
+     "approx": true,
+     "src": "ประมาณ"
+    }
+   ]
+  },
+  {
+   "id": "kradan",
+   "name": {
+    "th": "เกาะกระดาน",
+    "en": "Ko Kradan",
+    "zh": "克拉丹岛"
+   },
+   "lat": 7.31,
+   "lng": 99.25,
+   "r": 2.5,
+   "routes": [
+    {
+     "from": {
+      "th": "ท่าเรือปากเมง / ควนตุ้งกู ตรัง",
+      "en": "Pak Meng / Kuan Tung Ku pier, Trang"
+     },
+     "lat": 7.4113,
+     "lng": 99.3786,
+     "type": "speed",
+     "min": 45,
+     "price": [
+      400,
+      650
+     ],
+     "freq": {
+      "th": "ร่วมเรือ/ทัวร์ 4 เกาะ ~800–1,200 บาท",
+      "en": "shared boat or 4-island tour ~800–1,200 baht"
+     },
+     "approx": true,
+     "src": "ประมาณ"
+    }
+   ]
+  },
+  {
+   "id": "libong",
+   "name": {
+    "th": "เกาะลิบง",
+    "en": "Ko Libong",
+    "zh": "利邦岛"
+   },
+   "lat": 7.24,
+   "lng": 99.4,
+   "r": 6,
+   "routes": [
+    {
+     "from": {
+      "th": "ท่าเรือหาดยาว (บ้านเจ้าไหม) ตรัง",
+      "en": "Hat Yao pier (Ban Chao Mai), Trang"
+     },
+     "lat": 7.3002,
+     "lng": 99.4286,
+     "type": "longtail",
+     "min": 20,
+     "price": [
+      50,
+      100
+     ],
+     "freq": {
+      "th": "ออกเมื่อคนเต็ม 07:00–17:00",
+      "en": "leaves when full 07:00–17:00"
+     },
+     "approx": true,
+     "src": "ประมาณ"
+    }
+   ]
+  },
+  {
+   "id": "sukorn",
+   "name": {
+    "th": "เกาะสุกร",
+    "en": "Ko Sukorn",
+    "zh": "苏宫岛"
+   },
+   "lat": 7.1,
+   "lng": 99.56,
+   "r": 4,
+   "routes": [
+    {
+     "from": {
+      "th": "ท่าเรือท่าสุกร ปะเหลียน ตรัง",
+      "en": "Tha Sukorn pier, Palian, Trang"
+     },
+     "lat": 7.1281,
+     "lng": 99.6227,
+     "type": "longtail",
+     "min": 20,
+     "price": [
+      50,
+      100
+     ],
+     "freq": {
+      "th": "ออกเมื่อคนเต็ม",
+      "en": "leaves when full"
+     },
+     "approx": true,
+     "src": "ประมาณ"
+    }
+   ]
+  },
+  {
+   "id": "phayam",
+   "name": {
+    "th": "เกาะพยาม",
+    "en": "Ko Phayam",
+    "zh": "帕扬岛"
+   },
+   "lat": 9.74,
+   "lng": 98.4,
+   "r": 5,
+   "extra": {
+    "th": "บนเกาะไม่มีรถยนต์ เช่ามอเตอร์ไซค์/มอเตอร์ไซค์รับจ้าง",
+    "en": "No cars; rent a scooter or take a motorbike taxi"
+   },
+   "routes": [
+    {
+     "from": {
+      "th": "ท่าเรือสะพานปลา ระนอง",
+      "en": "Saphan Pla pier, Ranong"
+     },
+     "lat": 9.9572,
+     "lng": 98.5963,
+     "type": "slow",
+     "min": 120,
+     "price": [
+      200,
+      200
+     ],
+     "freq": {
+      "th": "วันละ 2 เที่ยว",
+      "en": "2 a day"
+     },
+     "src": "รีวิว TrueID/gotoknow"
+    },
+    {
+     "from": {
+      "th": "ท่าเรือสะพานปลา ระนอง",
+      "en": "Saphan Pla pier, Ranong"
+     },
+     "lat": 9.9572,
+     "lng": 98.5963,
+     "type": "speed",
+     "min": 40,
+     "price": [
+      350,
+      350
+     ],
+     "freq": {
+      "th": "วันละหลายเที่ยว",
+      "en": "several a day"
+     },
+     "src": "รีวิว TrueID/gotoknow"
+    }
+   ]
+  },
+  {
+   "id": "yaonoi",
+   "name": {
+    "th": "เกาะยาวน้อย",
+    "en": "Ko Yao Noi",
+    "zh": "小瑶岛"
+   },
+   "lat": 8.13,
+   "lng": 98.62,
+   "r": 6,
+   "routes": [
+    {
+     "from": {
+      "th": "ท่าเรือบางโรง ภูเก็ต",
+      "en": "Bang Rong pier, Phuket"
+     },
+     "lat": 8.0438,
+     "lng": 98.4189,
+     "type": "speed",
+     "min": 30,
+     "price": [
+      150,
+      250
+     ],
+     "freq": {
+      "th": "วันละหลายเที่ยว (เรือหางยาว/สปีดโบ๊ท)",
+      "en": "several a day (longtail/speedboat)"
+     },
+     "approx": true,
+     "src": "ประมาณ"
+    },
+    {
+     "from": {
+      "th": "ท่าเรือท่าเลน กระบี่",
+      "en": "Tha Len pier, Krabi"
+     },
+     "lat": 8.1408,
+     "lng": 98.7487,
+     "type": "longtail",
+     "min": 30,
+     "price": [
+      100,
+      200
+     ],
+     "freq": {
+      "th": "วันละหลายเที่ยว",
+      "en": "several a day"
+     },
+     "approx": true,
+     "src": "ประมาณ"
+    }
+   ]
+  },
+  {
+   "id": "yaoyai",
+   "name": {
+    "th": "เกาะยาวใหญ่",
+    "en": "Ko Yao Yai",
+    "zh": "大瑶岛"
+   },
+   "lat": 7.98,
+   "lng": 98.58,
+   "r": 9,
+   "routes": [
+    {
+     "from": {
+      "th": "ท่าเรือบางโรง ภูเก็ต",
+      "en": "Bang Rong pier, Phuket"
+     },
+     "lat": 8.0438,
+     "lng": 98.4189,
+     "type": "speed",
+     "min": 30,
+     "price": [
+      150,
+      250
+     ],
+     "freq": {
+      "th": "วันละหลายเที่ยว",
+      "en": "several a day"
+     },
+     "approx": true,
+     "src": "ประมาณ"
+    }
+   ]
+  },
+  {
+   "id": "kret",
+   "name": {
+    "th": "เกาะเกร็ด",
+    "en": "Ko Kret",
+    "zh": "格叻岛"
+   },
+   "lat": 13.912,
+   "lng": 100.478,
+   "r": 1.2,
+   "extra": {
+    "th": "บนเกาะเดิน/เช่าจักรยาน · ตลาดคึกคักวันเสาร์-อาทิตย์",
+    "en": "Walk or rent a bicycle · busiest on weekends"
+   },
+   "routes": [
+    {
+     "from": {
+      "th": "ท่าเรือวัดสนามเหนือ ปากเกร็ด นนทบุรี",
+      "en": "Wat Sanam Nuea pier, Pak Kret, Nonthaburi"
+     },
+     "lat": 13.9105,
+     "lng": 100.4974,
+     "type": "slow",
+     "min": 3,
+     "price": [
+      5,
+      5
+     ],
+     "freq": {
+      "th": "ข้ามฟากตลอด ~05:00–21:00",
+      "en": "continuous ~05:00–21:00"
+     },
+     "approx": true,
+     "src": "ประมาณ"
+    }
+   ]
+  },
+  {
+   "id": "similan",
+   "name": {
+    "th": "หมู่เกาะสิมิลัน",
+    "en": "Similan Islands",
+    "zh": "斯米兰群岛"
+   },
+   "lat": 8.65,
+   "lng": 97.65,
+   "r": 14,
+   "extra": {
+    "th": "ไปกับทัวร์เท่านั้น · เปิด 15 ต.ค.–15 พ.ค. · ค่าอุทยานฯ คนไทย 100 ต่างชาติ 500 บาท",
+    "en": "Tours only · open 15 Oct–15 May · park fee Thai 100, foreigner 500 baht"
+   },
+   "routes": [
+    {
+     "from": {
+      "th": "ท่าเรือทับละมุ พังงา (ทัวร์วันเดียว)",
+      "en": "Thap Lamu pier, Phang Nga (day tour)"
+     },
+     "lat": 8.5737,
+     "lng": 98.2286,
+     "type": "tour",
+     "min": 90,
+     "price": [
+      2500,
+      3500
+     ],
+     "freq": {
+      "th": "ทัวร์รวมรถรับส่ง อาหาร ดำน้ำ",
+      "en": "tour incl. transfer, meals, snorkelling"
+     },
+     "approx": true,
+     "src": "ประมาณ"
+    }
+   ]
+  },
+  {
+   "id": "surin",
+   "name": {
+    "th": "หมู่เกาะสุรินทร์",
+    "en": "Surin Islands",
+    "zh": "素林群岛"
+   },
+   "lat": 9.43,
+   "lng": 97.87,
+   "r": 9,
+   "extra": {
+    "th": "เปิดประมาณ 15 ต.ค.–15 พ.ค.",
+    "en": "open about 15 Oct–15 May"
+   },
+   "routes": [
+    {
+     "from": {
+      "th": "ท่าเรือคุระบุรี พังงา",
+      "en": "Kuraburi pier, Phang Nga"
+     },
+     "lat": 9.2087,
+     "lng": 98.3669,
+     "type": "speed",
+     "min": 75,
+     "price": [
+      1000,
+      2000
+     ],
+     "freq": {
+      "th": "สปีดโบ๊ทไป-กลับ/ทัวร์ ~2,500–3,500 บาท",
+      "en": "speedboat return or tour ~2,500–3,500 baht"
+     },
+     "approx": true,
+     "src": "ประมาณ"
+    }
+   ]
+  },
+  {
+   "id": "phrathong",
+   "name": {
+    "th": "เกาะพระทอง",
+    "en": "Ko Phra Thong",
+    "zh": "帕通岛"
+   },
+   "lat": 9.1,
+   "lng": 98.29,
+   "r": 9,
+   "routes": [
+    {
+     "from": {
+      "th": "ท่าเรือคุระบุรี พังงา",
+      "en": "Kuraburi pier, Phang Nga"
+     },
+     "lat": 9.2087,
+     "lng": 98.3669,
+     "type": "longtail",
+     "min": 60,
+     "price": [
+      150,
+      300
+     ],
+     "freq": {
+      "th": "เรือรับส่งที่พัก/เหมาลำ ~1,500–2,500 บาท",
+      "en": "resort transfer or charter ~1,500–2,500 baht"
+     },
+     "approx": true,
+     "src": "ประมาณ"
+    }
+   ]
+  },
+  {
+   "id": "samaesan",
+   "name": {
+    "th": "เกาะแสมสาร",
+    "en": "Ko Samae San",
+    "zh": "沙美桑岛"
+   },
+   "lat": 12.575,
+   "lng": 100.95,
+   "r": 1.5,
+   "routes": [
+    {
+     "from": {
+      "th": "ท่าเรือแสมสาร สัตหีบ ชลบุรี",
+      "en": "Samae San pier, Sattahip, Chonburi"
+     },
+     "lat": 12.5952,
+     "lng": 100.9455,
+     "type": "longtail",
+     "min": 15,
+     "price": [
+      100,
+      200
+     ],
+     "freq": {
+      "th": "เรือร่วม/เหมาเที่ยวเกาะ ~1,500–3,000 บาท",
+      "en": "shared or island-hopping charter ~1,500–3,000 baht"
+     },
+     "approx": true,
+     "src": "ประมาณ"
+    }
+   ]
+  },
+  {
+   "id": "angthong",
+   "name": {
+    "th": "หมู่เกาะอ่างทอง",
+    "en": "Ang Thong Marine Park",
+    "zh": "安通群岛"
+   },
+   "lat": 9.63,
+   "lng": 99.67,
+   "r": 12,
+   "extra": {
+    "th": "ไปกับทัวร์จากสมุย/พะงัน · ค่าอุทยานฯ แยก",
+    "en": "Tours from Samui/Pha-ngan · park fee extra"
+   },
+   "routes": [
+    {
+     "from": {
+      "th": "เกาะสมุย (ทัวร์วันเดียว)",
+      "en": "Ko Samui (day tour)"
+     },
+     "lat": 9.535,
+     "lng": 99.94,
+     "type": "tour",
+     "min": 90,
+     "price": [
+      1800,
+      2800
+     ],
+     "freq": {
+      "th": "ทัวร์เรือใหญ่/สปีดโบ๊ท รวมอาหาร คายัก",
+      "en": "big boat or speedboat tour incl. lunch, kayak"
+     },
+     "approx": true,
+     "src": "ประมาณ"
+    }
+   ]
+  }
+ ]
+}

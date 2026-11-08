@@ -638,8 +638,37 @@
     return items;
   }
   // เติม "เส้นทางแนะนำ" หลังหน้าแสดงแล้ว (โหลดข้อมูลจุดเดินทางเฉพาะตอนเปิดหน้ารายละเอียด)
+  // ---------- เรือข้ามฟากไปเกาะ (data/ferries.json: ท่าเรือ เวลา ราคาต่อคน รวบรวมจากประกาศ/ข่าว/เว็บจองตั๋ว) ----------
+  let ferryLoad;
+  const ferryData = () => (ferryLoad ||= getJSON("data/ferries.json", null));
+  // สถานที่อยู่บนเกาะไหน (ในรัศมีของเกาะ)
+  const islandAt = (fd, v) => (v?.lat ? (fd?.islands || []).find(i => distanceKm(i, v) <= i.r) : null) || null;
+  const FERRY_ICON = { slow: "⛴️", ferry: "⛴️", car: "🚢", speed: "🚤", longtail: "🛶", tour: "🏝️" };
+  const pickL = o => (o?.[state.lang] ?? o?.en ?? o?.th ?? "");
+  // ท่าเรือที่ใกล้ต้นทางที่สุด (ตำแหน่งผู้ใช้ หรือกรุงเทพฯ)
+  const nearestPier = (isl, from) => [...isl.routes].sort((a, b) => distanceKm(from, a) - distanceKm(from, b))[0];
+  function ferryHtml(isl, fd) {
+    const date = fd.checked ? new Date(fd.checked).toLocaleDateString(locale(), { day: "numeric", month: "short", year: "numeric" }) : "";
+    return `<h3 class="subhead">🚢 ${esc(t("ferryTitle", { island: pickL(isl.name) }))}</h3>
+      <ul class="travel-list ferry-list">${isl.routes.map(r => `<li><span>${FERRY_ICON[r.type] || "⛴️"}</span><span>
+        <b>${esc(pickL(r.from))}</b><br>
+        ${esc(t("ferryType_" + r.type))} · ~${esc(fmtDuration(r.min))} · <b>${r.approx ? "≈ " : ""}${range(r.price[0], r.price[1])}</b> ${esc(t("ferryPer"))}${r.car ? ` · 🚗 ${esc(t("ferryCar", { cost: range(r.car[0], r.car[1]) }))}` : ""}
+        ${r.freq ? `<br><small>🕒 ${esc(pickL(r.freq))}</small>` : ""}</span></li>`).join("")}
+        ${isl.extra ? `<li><span>💡</span><span>${esc(pickL(isl.extra))}</span></li>` : ""}
+      </ul>
+      <p class="disclosure">${esc(t("ferryNote", { date }))}</p>`;
+  }
+  async function hydrateFerry() {
+    const box = document.getElementById("ferry");
+    if (!box) return;
+    const fd = await ferryData();
+    if (!document.body.contains(box)) return;
+    const isl = islandAt(fd, { lat: +box.dataset.lat, lng: +box.dataset.lng });
+    box.innerHTML = isl ? ferryHtml(isl, fd) : "";
+  }
   async function hydrateGuides() {
     renderCost();
+    hydrateFerry();
     const box = document.getElementById("guide");
     if (!box) return;
     transitLoad ||= getJSON("data/transit.json", {});
@@ -761,13 +790,23 @@
     const real = state.pos && !state.pos.manual;
     if (!box.innerHTML && state.pos) box.innerHTML = `<p class="cost-from">⏳ ${t("costRouting")}</p>`;
     transitLoad ||= getJSON("data/transit.json", {});
-    const [route, fd, tr_] = await Promise.all([state.pos ? roadRoute(state.pos, v) : null, fuelData(), transitLoad]);
+    // ปลายทางอยู่บนเกาะ (ไม่มีสะพาน) → คิดค่าเดินทางถึงท่าเรือที่ใกล้ต้นทางที่สุด แล้วบวกค่าเรือ
+    const isl = islandAt(await ferryData(), v);
+    const pier = isl && nearestPier(isl, state.pos || BKK_CENTER);
+    const dest = pier ? { lat: pier.lat, lng: pier.lng } : v;
+    const [route, fd, tr_] = await Promise.all([state.pos ? roadRoute(state.pos, dest) : null, fuelData(), transitLoad]);
     if (!document.body.contains(box)) return;
-    const { out, road, freeMin, fp } = costItems(v, trip, route, fd, tr_);
+    const { out, road, freeMin, fp } = costItems(dest, trip, route, fd, tr_);
+    if (pier) {
+      const x = trip === "round" ? 2 : 1;
+      const same = isl.routes.filter(r => distanceKm(r, pier) < 3);
+      out.push(...same.map(r => ["BOAT", t("costFerry", { type: t("ferryType_" + r.type), min: fmtDuration(r.min), cost: range(r.price[0] * x, r.price[1] * x) }) + (r.car ? " · " + t("ferryCar", { cost: range(r.car[0] * x, r.car[1] * x) }) : "")]));
+    }
     const k = carCfg();
     const fromText = !state.pos ? t("costFromBkk") : real ? t("costFromMe") : t("costFromArea", { area: state.pos.label || "" });
     box.innerHTML = `
       <p class="cost-from">${esc(fromText)}</p>
+      ${pier ? `<p class="cost-route">⚓ ${esc(t("costToPier", { pier: pickL(pier.from), island: pickL(isl.name) }))}</p>` : ""}
       ${route ? `<p class="cost-route">🛣️ ${t("costRoute", { km: road.toFixed(1), time: fmtDuration(freeMin), busy: fmtDuration(freeMin * (road < 40 ? 2 : 1.3) + 5) })}</p>` : state.pos ? `<p class="cost-route">📏 ${t("costRouteEst", { km: Math.round(road) })}</p>` : ""}
       <div class="seg" role="group">
         <button type="button" class="${trip === "one" ? "active" : ""}" data-trip="one">${t("oneWay")}</button>
@@ -806,7 +845,8 @@
           <a class="btn" ${mapsLink(v, "walking")}>${t("walk")}</a>
           <a class="btn" ${mapsLink(v, "bicycling")}>${t("bike")}</a>
         </div>
-        ${v.lat ? `<h3 class="subhead">🧭 ${t("bestWay")}</h3>
+        ${v.lat ? `<div id="ferry" data-lat="${v.lat}" data-lng="${v.lng}"></div>
+        <h3 class="subhead">🧭 ${t("bestWay")}</h3>
         <ul class="travel-list" id="guide" data-lat="${v.lat}" data-lng="${v.lng}"><li><span>⏳</span><span>${t("loading")}</span></li></ul>
         <details class="cost-box"><summary class="subhead">💰 ${t("travelCost")}</summary>
         <div id="cost" data-lat="${v.lat}" data-lng="${v.lng}"></div></details>` : ""}
