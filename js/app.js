@@ -1194,10 +1194,10 @@
     if (["cafe", "animalcafe", "restaurant"].includes(k)) return "cafe";
     return "city";
   }
-  // คลังสินค้าแนวละ ~50 ชิ้น → สุ่มโชว์ 10 ชิ้นทุกครั้งที่เปิดหน้าสถานที่ (แต่ละที่/แต่ละครั้งไม่ซ้ำกัน)
+  // คลังสินค้าแนวละ ~50 ชิ้น → สุ่มโชว์ 15 ชิ้นทุกครั้งที่เปิดหน้าสถานที่ (แต่ละที่/แต่ละครั้งไม่ซ้ำกัน)
   // จำชุดที่สุ่มไว้ต่อสถานที่จนกว่าจะออกจากหน้า เพื่อไม่ให้สลับเองตอนหน้าวาดใหม่ (เช่น เปลี่ยนภาษา)
   const outfitSeen = new Map();
-  function outfitPick(p, list, n = 10) {
+  function outfitPick(p, list, n = 15) {
     const key = p.id + "|" + list.length;
     if (outfitSeen.has(key)) return outfitSeen.get(key);
     const shuffle = a => { a = [...a]; for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
@@ -1637,13 +1637,6 @@
           ${facts}
           ${c?.adult ? `<p class="adult-note">${t("age20Place")}</p>` : ""}
           ${p.maybeClosed ? `<p class="adult-note">⚠️ ${t("aiClosed")}</p>` : ""}
-          ${posts.length ? `<section class="panel pd-buzz">
-            <div class="pd-buzz-head"><h2>🔥 ${t("placeTrends")}</h2>${posts.length > 2 ? `<button class="link-btn" data-ptab="trends">${t("seeAll")} ${posts.length} ›</button>` : ""}</div>
-            ${freshPopular(posts).slice(0, 2).map(n => `<a class="buzz-row" ${inAppLink(n.link)}>
-              ${n.th || imgOk(n.image) ? `<img ${imgSrc(n.image, n.thumb, 160, 160, n.th)} alt="" loading="lazy" referrerpolicy="no-referrer" onerror="${IMG_RETRY}this.remove()">` : `<span class="buzz-ico">🔥</span>`}
-              <span class="buzz-txt"><span class="buzz-title">${esc(n.title)}</span><small>${[n.likes ? `❤️ ${fmtLikes(n.likes)}` : "", n.date ? relDate(n.date) : ""].filter(Boolean).join(" · ")} · ${esc(String(n.source || "Lemon8").replace(/^Lemon8 · /, "@"))}</small></span>
-            </a>`).join("")}
-          </section>` : ""}
           ${rv ? reviewBlock(rv) : ""}
           ${outfitBlock(p)}
           ${window.IYA_GOOGLE?.block(p) || ""}

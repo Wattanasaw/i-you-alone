@@ -580,7 +580,7 @@ html.theme-anim, html.theme-anim * { transition: background-color .35s, color .3
 .pd-actions { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 10px 0 0; }
 .pd-actions .btn { justify-content: center; text-align: center; }
 .pd-tabs { position: sticky; top: 58px; z-index: 15; display: flex; gap: 4px; margin: 14px -16px 0; padding: 8px 16px; background: color-mix(in srgb, var(--bg) 92%, transparent); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); }
-.pd-tabs button { flex: 1; border: 0; background: var(--surface-2); color: var(--muted); padding: 9px 6px; border-radius: 12px; font: inherit; font-size: .84rem; font-weight: 600; cursor: pointer; white-space: nowrap; }
+.pd-tabs button { flex: 1; border: 0; background: var(--surface-2); color: var(--muted); padding: 9px 6px; border-radius: 12px; font: inherit; font-size: .84rem; font-weight: 600; cursor: pointer; white-space: normal; line-height: 1.2; min-width: 0; }
 .pd-tabs button.active { background: var(--text); color: var(--bg); }
 .pd-panel { padding-top: 12px; }
 .pd-panel > .panel { margin: 0; }
