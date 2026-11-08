@@ -39,6 +39,8 @@
   const UA = navigator.userAgent;
   // เปิดอยู่ในแอพมือถือ (Capacitor: Android/iOS) ไม่ใช่เว็บ
   const NATIVE = !!window.Capacitor?.isNativePlatform?.();
+  // ระบบสมาชิก: ปิดไว้ก่อน (ซ่อนเมนูบัญชี ปุ่มอ้างสิทธิ์ร้าน และหน้า #/account)
+  const MEMBERS = false;
   // ลิงก์ที่แชร์ให้คนอื่นต้องเป็นลิงก์เว็บจริง (ในแอพ location.href เป็น https://localhost)
   const publicUrl = () => NATIVE ? C.webUrl + location.hash : location.href;
   const PLATFORM = /Android/i.test(UA) ? "android"
@@ -181,14 +183,25 @@
     const ids = new Set(base.map(p => p.id.replace(/^(osm|l8)-/, "")));
     state.places = [...base, ...(Array.isArray(trendPl) ? trendPl : []).filter(p => !ids.has(p.id.replace(/^(osm|l8)-/, "")))];
     // ค่าจาก OpenStreetMap ที่มีหลายค่าคั่นด้วย ";" (เว็บไซต์ 2 ลิงก์, เบอร์ 2 เบอร์, ที่อยู่) → ใช้ค่าแรก / คั่นด้วย ", "
+    // แก้หมวดที่ผิดรายที่ (ตรวจด้วยคนแล้ว) · "hide" = ไม่ใช่ที่เที่ยว (เช่น โรงแรม)
+    const KIND_FIX = {
+      "l8-42203861114024016": "cafe", "l8-42203860775297072": "cafe", "l8-22535797337218975": "cafe", "l8-42203861076315530": "cafe",
+      "l8-22535865223462982": "cafe", "l8-22535797309026983": "cafe", "l8-34955879830612195": "cafe",
+      "l8-22535865208351531": "zoo", "osm-n4764269638": "zoo", "wd-Q6583260": "zoo", "osm-w429602627": "zoo", "osm-w962532652": "zoo", "osm-n9094881748": "zoo", "osm-n13909525592": "hide"
+    };
     for (const p of state.places) {
       if (typeof p.website === "string" && p.website.includes(";")) p.website = p.website.split(";")[0].trim();
       if (typeof p.phone === "string" && p.phone.includes(";")) p.phone = p.phone.split(";")[0].trim();
       if (typeof p.address === "string") p.address = p.address.replace(/\s*;\s*/g, ", ").trim();
       // แยกหมวดย่อยให้เข้าใจง่าย: ทะเล (ออกจาก น้ำตก/วิว) · วัด (ออกจาก แลนด์มาร์ก)
       const nm = `${p.name?.th || ""} ${p.name?.en || ""}`;
-      if (p.kind === "nature" && /หาด|ชายหาด|beach|เกาะ|island|อ่าว|\bbay\b|ทะเล/i.test(nm)) p.kind = "beach";
-      else if (p.kind === "landmark" && /^\s*(วัด|wat\b)|temple|พระธาตุ|พระมหาธาตุ|เจดีย์/i.test(nm)) p.kind = "temple";
+      if (KIND_FIX[p.id]) p.kind = KIND_FIX[p.id];
+      // ชื่อบอกชัดว่าอยู่ผิดหมวด (OpenStreetMap ติดแท็กกว้าง เช่น ร้านกาแฟติดแท็ก bar)
+      else if ((p.kind === "nightlife" || p.kind === "restaurant") && /café|cafe|coffee|คาเฟ่|กาแฟ|คอฟฟี่|kafe/i.test(nm) && !/\bbar\b|บาร์|pub|ผับ|beer|เบียร์|restaurant|ร้านอาหาร|dining|kitchen|ครัว|eatery/i.test(nm)) p.kind = "cafe";
+      else if ((p.kind === "nightlife" || p.kind === "cafe") && /restaurant|ร้านอาหาร|ramen|ราเมง|ก๋วยเตี๋ยว|noodle|ラーメン/i.test(nm) && !/\bbar\b|บาร์|pub|ผับ/i.test(nm)) p.kind = "restaurant";
+      else if (p.kind === "landmark" && /^\s*(ถ้ำ|ถ้ํา|เขา|ดอย|น้ำตก)/.test(nm)) p.kind = "nature";
+      if (p.kind === "nature" && /หาด|ชายหาด|beach|เกาะ|island|อ่าว|\bbay\b|ทะเล(?!หมอก|สาบ|บัว)/i.test(nm)) p.kind = "beach";
+      else if (p.kind === "landmark" && /^\s*(วัด|wat\b)|temple|พระธาตุ|พระมหาธาตุ|เจดีย์|วัด\S|สำนักสงฆ์|วรวิหาร/i.test(nm)) p.kind = "temple";
       // ข้อมูลจาก Gemini เติมเฉพาะช่องที่ยังว่าง (OpenStreetMap/รีวิว Lemon8/เจ้าของร้าน มาก่อน)
       const ai = state.ai[p.id];
       // เวลาเปิด/ราคาจาก AI ความรู้ทั่วไป ไม่ใช้ (ยังไม่ผ่านการตรวจกับเว็บไซต์ทางการ/หลายแหล่ง)
@@ -196,7 +209,7 @@
     }
     state.trends = Object.fromEntries(Object.entries(places.trends || {}).map(([k, v]) => [k, (v || []).filter(state.postOk)]));
     // ข้อมูลล่อ (hidden) ใช้ตรวจว่าใครคัดลอกไฟล์ข้อมูลไปทั้งชุด — ไม่แสดงในแอพ
-    state.places = state.places.filter(p => !p.hidden && !p.ck);
+    state.places = state.places.filter(p => !p.hidden && !p.ck && p.kind !== "hide");
     for (const p of state.places) if (p.posts) p.posts = p.posts.filter(state.postOk);
     // งานที่ดึงอัตโนมัติ + งานที่ใส่เอง: งานใส่เองที่ id ตรงกันจะทับงานอัตโนมัติ, hidden: true = ซ่อน
     const manualIds = new Set(events.map(e => e.id));
@@ -441,12 +454,14 @@
       </div>
       </div>
       ${hasSample ? `<p class="notice">${t("sampleNotice")}</p>` : ""}
+      <div id="rails" ${f.q.trim() ? "hidden" : ""}>
       ${featured.length && f.cat === "all" ? `
         <div class="section-head"><h2>${t("mustSee")}</h2><small>${t("swipe")}</small></div>
         <div class="rail" id="rail">${featured.map(card).join("")}</div>` : ""}
       ${forYou.length && f.cat === "all" ? `
         <div class="section-head"><h2>✨ ${t("forYou")}</h2><small>${t("forYouWhy")}</small></div>
         <div class="rail" id="railYou">${forYou.map(card).join("")}</div>` : ""}
+      </div>
       ${adSlot("home_top")}
       <div class="section-head" id="resultsHead"><h2>${f.cat !== "all" && CAT[f.cat] ? `${CAT[f.cat].icon} ${esc(catName(CAT[f.cat]))}` : t("allEvents")}${f.province !== "all" ? ` · ${esc(provName(f.province))}` : ""}</h2>${viewToggle()}</div>
       <div id="results"></div>`;
@@ -466,7 +481,8 @@
     });
 
     const q = document.getElementById("q");
-    q.addEventListener("input", () => { f.q = q.value; renderResults(); });
+    // กำลังค้นหา → ซ่อน "ห้ามพลาด/แนะนำ" ให้ผลค้นหาขึ้นมาก่อน
+    q.addEventListener("input", () => { f.q = q.value; document.getElementById("rails").hidden = !!f.q.trim(); renderResults(); });
     // กดหมวด → แสดงเฉพาะหมวดนั้น แล้วเลื่อนให้รายการงานเริ่มใต้แถบตัวกรองพอดี
     document.getElementById("catSel").addEventListener("change", e => {
       f.cat = e.target.value;
@@ -1566,7 +1582,7 @@
           ${rv ? reviewBlock(rv) : ""}
           ${window.IYA_GOOGLE?.block(p) || ""}
           <p class="pd-links">${p.fromTrend ? `<span>🔥 ${t("fromTrendNote")}</span>` : ""}${wiki ? `<a ${inAppLink(wiki)}>📖 ${t("wikipedia")}</a>` : ""}${p.imagePage ? `<span>${t("photo")}: <a ${inAppLink(p.imagePage)}>${esc(p.imageCredit || "Wikimedia Commons")}</a></span>` : ""}</p>
-          ${!p.business ? `<a class="claim-link" href="#/account/new-shop?ref=${encodeURIComponent(p.id)}">🏪 ${t(p.image ? "claimPlace" : "claimPlaceNoPhoto")}</a>` : ""}
+          ${MEMBERS && !p.business ? `<a class="claim-link" href="#/account/new-shop?ref=${encodeURIComponent(p.id)}">🏪 ${t(p.image ? "claimPlace" : "claimPlaceNoPhoto")}</a>` : ""}
         </section>
         <section class="pd-panel" data-panel="travel" ${state.placeTab === "travel" ? "" : "hidden"}>${travelPanel({}, placeTravelVenue(p))}</section>
         ${posts.length ? `<section class="pd-panel trend-board place-trends" data-panel="trends" ${state.placeTab === "trends" ? "" : "hidden"}>
@@ -1761,7 +1777,7 @@
     else if (page === "saved") renderSaved();
     else if (page === "news") renderNews();
     else if (page === "about") renderAbout();
-    else if (page === "account") window.IYA_MEMBER ? window.IYA_MEMBER.render(app, arg) : renderAbout();
+    else if (page === "account") MEMBERS && window.IYA_MEMBER ? window.IYA_MEMBER.render(app, arg) : renderAbout();
     else renderHome();
     window.scrollTo(0, 0);
     hydrateGuides();
@@ -1771,7 +1787,7 @@
   window.addEventListener("hashchange", route);
   load().then(() => {
     // เริ่มระบบสมาชิกก่อนแสดงหน้า (คืนสถานะเข้าระบบเบื้องหลัง ไม่ต้องรอ)
-    window.IYA_MEMBER?.init({ C, state, t, esc, pick, provName, readLS, writeLS, locate });
+    if (MEMBERS) window.IYA_MEMBER?.init({ C, state, t, esc, pick, provName, readLS, writeLS, locate });
     window.IYA_GOOGLE?.init({ C, t, esc, provName, inAppLink, lang: () => state.lang });
     route();
   });

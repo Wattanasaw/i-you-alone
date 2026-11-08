@@ -38,7 +38,7 @@ window.APP_CONFIG = {
     // ผับ/บาร์/ร้านนั่งดื่มกลางคืน (แสดงป้าย 20+ อัตโนมัติ)
     { id: "nightlife", icon: "🍸", color: "#4c1d95", color2: "#db2777", adult: true, name: { th: "ผับ/บาร์", en: "Bars", zh: "酒吧" } },
     { id: "themepark", icon: "🎢", color: "#e11d48", color2: "#8b5cf6", name: { th: "สวนสนุก", en: "Theme parks", zh: "游乐园" } },
-    { id: "zoo", icon: "🦒", color: "#65a30d", color2: "#0d9488", name: { th: "สวนสัตว์", en: "Zoos", zh: "动物园" } },
+    { id: "zoo", icon: "🦒", color: "#65a30d", color2: "#0d9488", name: { th: "สวนสัตว์/ฟาร์ม", en: "Zoos & farms", zh: "动物园/农场" } },
     { id: "beach", icon: "🏖️", color: "#0284c7", color2: "#22d3ee", name: { th: "ทะเล", en: "Beaches", zh: "海滩" } },
     { id: "nature", icon: "🏞️", color: "#0891b2", color2: "#22c55e", name: { th: "น้ำตก/วิว", en: "Nature", zh: "自然风光" } },
     { id: "temple", icon: "🛕", color: "#d97706", color2: "#f59e0b", name: { th: "วัด", en: "Temples", zh: "寺庙" } },

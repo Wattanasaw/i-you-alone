@@ -4,9 +4,9 @@
 (function (root) {
   const R = {
     hide: /\b(420|cannabis|weed|marijuana|kush)\b|กัญชา/i,
-    social: /\b(speed ?dating|singles?|dating|matchmaking|blind ?date|cupid|new friends|make friends|meet new people|social club|book club|reading club|language exchange|board ?game night|no strangers|introverts?)\b|คนโสด|หาคู่|หาแฟน|จับคู่|หาเพื่อนใหม่|เพื่อนใหม่|ชมรมหนังสือ|ชมรมอ่าน|บอร์ดเกม/i,
+    social: /\b(speed ?dating|singles?|dating|matchmaking|blind ?date|cupid|new friends|make friends|meet new people|social club|book club|reading club|language exchange|board ?game night|no strangers|introverts?|tinder)\b|คนโสด|หาคู่|หาแฟน|จับคู่|หาเพื่อนใหม่|เพื่อนใหม่|ชมรมหนังสือ|ชมรมอ่าน|บอร์ดเกม/i,
     festival: /\b(loy ?krathong|songkran|yi ?peng|yeepeng|lanterns? festival|sky lanterns?|countdown|fireworks|chinese new year|vegetarian festival)\b|ลอยกระทง|สงกรานต์|งานวัด|งานประจำปี|ประเพณี|ยี่เป็ง|เคาท์ดาวน์|เคานต์ดาวน์|เทศกาลโคม|พลุ|ตรุษจีน|กินเจ/i,
-    notFestival: /concert|คอนเสิร์ต|fansign|fan ?meet|fancon|showcase|dinner|ดินเนอร์|buffet|บุฟเฟ่ต์|pool party|run\b|วิ่ง/i,
+    notFestival: /music festival|concert|คอนเสิร์ต|fansign|fan ?meet|fancon|showcase|dinner|ดินเนอร์|buffet|บุฟเฟ่ต์|pool party|run\b|วิ่ง/i,
     party: /\b(full ?moon|half ?moon|waterfall festival|hii festival|jungle party|pool party|boat party|yacht party|t-?dance|rave|white party|party|parties|cocktails?|bar crawl|pub crawl)\b|ปาร์ตี้/i,
     seminar: /\b(conference|conf|congress|summit|symposium|forum|convention|seminar|talks?|keynote|panel|ted ?x|pechakucha|webinar|meetup)\b|สัมมนา|ประชุมวิชาการ|เสวนา|ทอล์ก|บรรยาย/i,
     learning: /\b(workshop|masterclass|class|course|bootcamp|training|camp|lab|hands-?on|mastery|diy|development|developers?|fundamentals|essentials|theory and practice|programming|coding|software testing|rag|llms?|ai agents?|for everyday work|from concept to)\b|เวิร์กช็อป|เวิร์คช็อป|เวิร์กชอป|เวิร์คชอป|คอร์ส|ค่าย|ห้องเรียนจำลอง|อบรม|ติว|ตะลุยโจทย์|คลาส/i,
@@ -18,6 +18,12 @@
   function fixCategory(ev) {
     const t = String(ev?.title || ""), c = ev?.category;
     if (is(R.hide, t)) return null;
+    // วงดนตรี/ศิลปินต่างชาติ (ชื่อภาษารัสเซีย) · fan screening · music festival → คอนเสิร์ต
+    if (["expo", "nightlife", "festival"].includes(c) && (/[\u0400-\u04FF]{3}/.test(t) || /\bfan ?screening\b|\bmusic festival\b|\bkirtan\b/i.test(t))) return "concert";
+    // ทอล์ก/งานบรรยายที่ไม่มีคำว่า seminar (ภาษาฝรั่งเศส · หัวข้อ AI)
+    if (["expo", "outdoor"].includes(c) && /\bcomment se\b|\bconférence\b|\bunsucking ai\b|\bai era\b|pattern recognition|machine learning/i.test(t)) return "seminar";
+    if (c === "outdoor" && is(R.party, t)) return "nightlife";
+    if (c === "outdoor" && /\b(breathwork|sauna|ice bath|meditation)\b|สมาธิ/i.test(t)) return "learning";
     if (c !== "social" && is(R.social, t)) return "social";
     if (["food", "concert", "expo", "nightlife"].includes(c) && is(R.festival, t) && !is(R.notFestival, t)) return "festival";
     if (["concert", "food", "learning", "seminar"].includes(c) && is(R.party, t) && !is(R.seminar, t)) return "nightlife";
