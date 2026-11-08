@@ -793,3 +793,6 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 .trend-board .trend-item { border-left-width: 1px; border-left-color: var(--border); }
 /* กด "ตัวกรอง" ตอนเลื่อนลง (แถบย่อ/ติดบน) → แสดงครบทุกตัวเลือก ไม่ต้องเลื่อนข้าง */
 .filter-bar.open .filters, .filter-bar.open.slim .filters, .filter-bar.open.stuck .filters { flex-wrap: wrap; overflow: visible; max-height: none; opacity: 1; pointer-events: auto; }
+/* การ์ดเทรนด์อยู่กลางจอ: เว้นขอบซ้าย-ขวาเท่ากัน ปัดแล้วการ์ดหยุดตรงกลางพอดี (การ์ดข้างๆ โผล่ให้รู้ว่าปัดได้) */
+.trend-board .news-list { margin-left: -16px; margin-right: -16px; padding-left: calc(50% - 75px); padding-right: calc(50% - 75px); scroll-padding: 0 calc(50% - 75px); scroll-snap-type: x mandatory; }
+.trend-board .news-item { scroll-snap-align: center; }
