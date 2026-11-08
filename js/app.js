@@ -1748,7 +1748,7 @@
       <section class="panel prose">
         <h2>${t("adsTitle")}</h2>
         <p>${t("adsDesc")}</p>
-        <div class="actions">${contact || `<span class="tag">${t("contactSetup")}</span>`}</div>
+        <div class="actions">${contact || `<a class="btn" href="https://github.com/Wattanasaw/i-you-alone/issues" target="_blank" rel="noopener">💬 ${t("contactUs")}</a>`}</div>
       </section>
       ${NATIVE ? "" : `<section class="panel prose">
         <h2>${t("installTitle")}</h2>

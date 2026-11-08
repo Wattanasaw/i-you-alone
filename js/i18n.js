@@ -74,7 +74,7 @@ window.I18N = {
     about2: "ข้อมูลรวบรวมจากแหล่งข่าวและผู้จัดงาน อาจมีการเปลี่ยนแปลง กรุณาตรวจสอบกับผู้จัดก่อนเดินทาง",
     adsTitle: "📣 ลงโฆษณา / โปรโมทอีเว้นท์ของคุณ",
     adsDesc: "มีพื้นที่แบนเนอร์หน้าแรก ระหว่างรายการอีเว้นท์ และหน้ารายละเอียดอีเว้นท์ รวมถึงการปักหมุด \"แนะนำ\" ให้อีเว้นท์ของคุณขึ้นก่อน",
-    contactSetup: "ตั้งค่าช่องทางติดต่อที่ js/config.js",
+    contactSetup: "ตั้งค่าช่องทางติดต่อที่ js/config.js", contactUs: "ติดต่อเรา",
     installTitle: "📲 ติดตั้งเป็นแอพบนมือถือ",
     installDesc: "<b>Android (Chrome):</b> เมนู ⋮ → \"ติดตั้งแอป\" / \"เพิ่มไปยังหน้าจอหลัก\"<br><b>iPhone (Safari):</b> ปุ่มแชร์ → \"เพิ่มไปยังหน้าจอโฮม\"",
     footer: "ข้อมูลอาจเปลี่ยนแปลง โปรดตรวจสอบกับผู้จัดงาน"
@@ -153,7 +153,7 @@ window.I18N = {
     about2: "Information is gathered from news sources and organizers and may change. Please check with the organizer before you go.",
     adsTitle: "📣 Advertise / promote your event",
     adsDesc: "Banner spots on the home page, between listings and on event pages, plus \"Featured\" placement to put your event first.",
-    contactSetup: "Set contact details in js/config.js",
+    contactSetup: "Set contact details in js/config.js", contactUs: "Contact us",
     installTitle: "📲 Install as an app",
     installDesc: "<b>Android (Chrome):</b> menu ⋮ → \"Install app\" / \"Add to Home screen\"<br><b>iPhone (Safari):</b> Share → \"Add to Home Screen\"",
     footer: "Information may change — please check with the organizer"
@@ -232,7 +232,7 @@ window.I18N = {
     about2: "信息来自新闻和主办方，可能有变动，出行前请向主办方确认。",
     adsTitle: "📣 广告合作 / 推广你的活动",
     adsDesc: "首页、活动列表之间及活动详情页均有横幅广告位，也可购买“推荐”置顶。",
-    contactSetup: "请在 js/config.js 中设置联系方式",
+    contactSetup: "请在 js/config.js 中设置联系方式", contactUs: "联系我们",
     installTitle: "📲 安装到手机",
     installDesc: "<b>Android (Chrome)：</b>菜单 ⋮ → “安装应用” / “添加到主屏幕”<br><b>iPhone (Safari)：</b>分享 → “添加到主屏幕”",
     footer: "信息可能变动，请向主办方确认"
