@@ -46,7 +46,7 @@ const SOCIAL = /facebook|fb\.com|fb\.me|instagram|line\.me|lin\.ee|tiktok|twitte
 const site = p => [p.website].flat().find(u => /^https?:\/\//.test(u || "") && !SOCIAL.test(u));
 const hasSource = p => postsOf(p).length || site(p) || p.wiki;
 const due = p => { const c = cache[p.id]; return !c || (c.v || 0) < VERSION || days(c.at) > REFRESH_DAYS || (c.sig !== sig(p) && days(c.at) > 7); };
-const prio = p => (FEE_KINDS.has(p.kind) ? 20 : 0) + (p.wikidata ? 10 : 0) + (p.fame || 0) + Math.min(p.hot || 0, 30) + (site(p) ? 5 : 0) + Math.min(postsOf(p).length, 6);
+const prio = p => (FEE_KINDS.has(p.kind) || MENU_KINDS.has(p.kind) && postsOf(p).length ? 20 : 0) + (p.wikidata ? 10 : 0) + (p.fame || 0) + Math.min(p.hot || 0, 30) + (site(p) ? 5 : 0) + Math.min(postsOf(p).length, 6);
 const todo = all.filter(p => (!ONLY || p.id === ONLY) && hasSource(p) && (ONLY || due(p))).sort((a, b) => prio(b) - prio(a));
 console.log(`สถานที่ ${all.length} · มีแหล่งข้อมูล ${all.filter(hasSource).length} · สรุปแบบหลายแหล่งแล้ว ${Object.values(cache).filter(c => c.v >= VERSION).length} · รอสรุป ${todo.length} · AI: ${aiName()}`);
 
@@ -209,6 +209,15 @@ function supportOf(srcs, cited, test) {
   const others = srcs.filter(s => !fromCited.includes(s) && test(s.text));
   return [...fromCited, ...others];
 }
+// ราคาเมนูอยู่ในข้อความ: ตัวเลขนี้ + (ชื่อเมนูอยู่ใกล้ๆ หรือมีคำว่า บาท/฿/.-)
+function menuPriceIn(text, n, keys) {
+  const t = flat(text);
+  for (const m of t.matchAll(new RegExp(`(?<![\\d.])${n}(?![\\d])`, "g"))) {
+    const near = t.slice(Math.max(0, m.index - 60), m.index + 20);
+    if (/บาท|฿|thb|baht|\.-|ราคา|price/.test(near) || keys.some(k => near.includes(k))) return true;
+  }
+  return false;
+}
 const verified = sup => sup.some(s => s.type === "web") || indep(sup) >= 2;
 const srcTag = sup => sup.some(s => s.type === "web") ? "web" : "reviews";
 const DAY = "(?:Mo|Tu|We|Th|Fr|Sa|Su|PH)";
@@ -249,13 +258,26 @@ function checkFacts(r, srcs, kind) {
       else log.push("เข้าฟรี (ยืนยันไม่ได้)");
     }
   }
-  // ช่วงราคาเมนู: ราคาต่ำสุดและสูงสุดต้องพบในแหล่ง
-  if (MENU_KINDS.has(kind) && r.menu?.min > 0) {
-    let a = Math.round(+r.menu.min), b = Math.round(+(r.menu.max || r.menu.min));
-    if (a > b) [a, b] = [b, a];
-    const sa = supportOf(srcs, r.menu.src, t => priceIn(t, a)), sb = supportOf(srcs, r.menu.src, t => priceIn(t, b));
-    if (b <= 5000 && verified([...sa, ...sb]) && sa.length && sb.length) facts.menu = { min: a, max: b, src: srcTag([...sa, ...sb]), n: indep([...sa, ...sb]) };
-    else log.push(`เมนู ${a}-${b}`);
+  // ราคาเมนู (คาเฟ่/ร้านอาหาร/บาร์): ตรวจทีละเมนู — ราคาต้องอยู่ในข้อความของแหล่งที่อ้าง ใกล้ชื่อเมนูหรือคำว่า บาท/฿/.-
+  // ช่วงราคา = จากเมนูที่ผ่านการตรวจ · ต้องมาจากเมนูบนเว็บไซต์ทางการ หรือรวมแล้วจาก ≥ 2 แหล่งที่เป็นอิสระ และอย่างน้อย 2 เมนู
+  if (MENU_KINDS.has(kind)) {
+    const ok = [];
+    for (const it of [].concat(r.menu?.items || [])) {
+      const price = Math.round(+it?.price), name = L3(it?.name, 40);
+      if (!(price >= 10 && price <= 5000) || !name) continue;
+      const keys = [name.th, name.en].filter(Boolean).flatMap(x => String(x).toLowerCase().split(/\s+/)).filter(w => w.length >= 3);
+      const sup = supportOf(srcs, it.src, t => menuPriceIn(t, price, keys));
+      if (sup.length) ok.push({ name, price, sup });
+      else log.push(`เมนู ${name.th || name.en} ${price}`);
+    }
+    const all_ = ok.flatMap(x => x.sup);
+    if (ok.length >= 2 && verified(all_)) {
+      const ps = ok.map(x => x.price).sort((a, b) => a - b);
+      // ตัดราคาสุดโต่ง (เมนูพิเศษ/ชุดใหญ่) เมื่อมีหลายเมนู
+      const q = f => ps[Math.min(ps.length - 1, Math.round(f * (ps.length - 1)))];
+      const [a, b] = ps.length >= 5 ? [q(0.1), q(0.9)] : [ps[0], ps.at(-1)];
+      facts.menu = { min: a, max: b, src: srcTag(all_), n: indep(all_), items: ok.sort((x, y) => x.price - y.price).slice(0, 6).map(x => ({ name: x.name, price: x.price })) };
+    } else if (ok.length) log.push(`ช่วงราคาเมนู (ยืนยันได้ ${ok.length} เมนู จาก ${indep(all_)} แหล่ง ไม่พอ)`);
   }
   return { facts, log };
 }
@@ -269,7 +291,8 @@ const prompt = group => `You are building an accurate travel guide for places in
  - "entry": admission fee. List EVERY ticket type the sources give (adult, child, Thai citizen, foreigner, senior, online/early-bird, walk-in, combo/package…) as separate tiers:
    {"free": true/false/null, "freeSrc": [ids], "tiers": [{"who": {"th","en","zh"} e.g. {"th":"ผู้ใหญ่ (ซื้อออนไลน์)","en":"Adult (online)","zh":"成人（网上购票）"}, "price": number in baht exactly as written, "note": {"th","en","zh"} or null (e.g. height limit, weekday only, includes X), "src": [ids]}]}
    Use the price exactly as written in a source. Do NOT include parking, food, souvenirs, temporary discount codes or promotions that have ended. null if no source states a price.
- - "menu": food/drink price range for cafes/restaurants/bars {"min","max","src":[ids]} or null
+ - "menu": for cafes/restaurants/bars ONLY: menu items with prices that the sources state, from as many different sources as possible (drinks, desserts, main dishes, set menus):
+   {"items": [{"name": {"th","en"}, "price": number in baht exactly as written, "src": [ids]}]} (up to 12 items) or null
 Return JSON {"results":[{"id","skip"?,
  "summary": {"th": 1-2 sentences (≤ 140 chars), "en", "zh"},
  "highlights": {"th": [≤ 4 items, ≤ 45 chars each], "en": [...], "zh": [...]},

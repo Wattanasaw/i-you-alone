@@ -1,0 +1,58 @@
+name: ตรวจข้อมูลสถานที่ (สรุปรีวิวหลายแหล่ง + เวลาเปิด ค่าเข้า ราคาเมนู)
+
+# รอบเสริมระหว่างวัน: ไล่ตรวจทุกสถานที่ให้ครบเร็วขึ้น (รอบใหญ่ update-news.yml ทำวันละครั้งตอน 06:00 น.)
+# ทุกค่าต้องพบในเว็บไซต์ทางการ หรือตรงกัน ≥ 2 แหล่งก่อนใช้ (ดู scripts/place-reviews.mjs)
+# เวลาไทย 12:00 15:00 18:00 21:00 00:00 03:00 — เว้นช่วงรอบใหญ่ (06:00–10:00 น.) ไม่ให้คิวรอบใหญ่ถูกยกเลิก
+on:
+  schedule:
+    - cron: "0 5,8,11,14,17,20 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  models: read      # ใช้ GitHub Models (AI ฟรี) สำรองเมื่อ Gemini โควต้าหมด
+
+# ไม่ให้รันพร้อมรอบใหญ่ (แก้ไฟล์เดียวกัน)
+concurrency:
+  group: data-update
+  cancel-in-progress: false
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: ${{ github.ref_name }}
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+      - name: รีวิว Lemon8 ของสถานที่ที่ยังไม่ได้ค้น (ค้นด้วยชื่อเต็ม + ชื่อเรียกสั้น)
+        run: node scripts/place-lemon8.mjs --minutes 20
+        timeout-minutes: 25
+        continue-on-error: true
+      - name: ตรวจลิงก์เว็บไซต์
+        run: node scripts/check-links.mjs --minutes 8
+        timeout-minutes: 12
+        continue-on-error: true
+      - name: สรุปรีวิวจากหลายแหล่ง + ตรวจเวลาเปิด/ค่าเข้า/ราคาเมนู
+        run: node scripts/place-reviews.mjs --ai 50 --minutes 60
+        timeout-minutes: 70
+        continue-on-error: true
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: ใส่ข้อมูลที่ผ่านการตรวจลงสถานที่
+        run: node scripts/place-info.mjs --ai 0
+        timeout-minutes: 15
+        continue-on-error: true
+      - name: บันทึกการเปลี่ยนแปลง
+        if: ${{ always() }}
+        run: |
+          git config user.name "news-bot"
+          git config user.email "news-bot@users.noreply.github.com"
+          for f in data/places.json data/trend-places.json data/place-reviews.json data/place-info.json data/place-posts data/link-check.json; do
+            if [ -e "$f" ]; then git add "$f"; fi
+          done
+          git diff --cached --quiet || (git commit -m "ตรวจข้อมูลสถานที่ (หลายแหล่ง)" && git pull --rebase -X theirs && git push)

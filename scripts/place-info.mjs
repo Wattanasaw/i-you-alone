@@ -168,7 +168,7 @@ for (const p of all) {
   const c = cache[p.id] || {};
   const li = l8info[p.id] || {}, f = rv.facts || {};
   // ลำดับ: ข้อมูลที่ตรวจแล้วจากเว็บไซต์ทางการ → ตรวจแล้วจากหลายแหล่ง → เว็บไซต์ (AI อ่านหน้าเว็บ) → เวลาเปิดที่ ≥ 2 รีวิวเขียนตรงกัน → ค่าทั่วไปตามประเภท
-  const fx = s => ({ hours: f.hours?.src === s ? hoursOk(f.hours.value) : null, entry: f.entry?.src === s ? (f.entry.tiers ? { tiers: f.entry.tiers } : f.entry.free ? { free: true } : null) : null, menu: f.menu?.src === s ? menuOk(f.menu) : null });
+  const fx = s => ({ hours: f.hours?.src === s ? hoursOk(f.hours.value) : null, entry: f.entry?.src === s ? (f.entry.tiers ? { tiers: f.entry.tiers } : f.entry.free ? { free: true } : null) : null, menu: f.menu?.src === s ? (menuOk(f.menu) && { ...menuOk(f.menu), ...(f.menu.items ? { items: f.menu.items } : {}) }) : null });
   const srcs = [["web", fx("web")], ["review", fx("reviews")], ["web", c.web], ["review", { hours: li.hoursN >= 2 ? hoursOk(li.hours) : null }], ["typical", typical(p)]];
   const n = need(p);
   for (const [src, v] of srcs) {

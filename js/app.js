@@ -1470,7 +1470,7 @@
           <div><dt>📍</dt><dd>${esc(p.address || name)}<small>${esc(area)}</small><a class="maps-link" ${mapsLink(v, null)}>${t("openMaps")}</a></dd></div>
           <div><dt>🕒</dt><dd>${esc(fmtHours(p.hours) || t("hoursUnknown"))}${open != null ? `<small class="${open ? "open-now" : "closed-now"}">${open ? t("openNowShort") : t("closedNow")}</small>` : ""}${srcNote(p.hoursSrc)}</dd></div>
           ${!MENU_KINDS.has(p.kind) || p.kind === "animalcafe" ? `<div><dt>🎟️</dt><dd>${t("fee")}: ${esc(feeText(p))}${srcNote(p.entry?.src)}${feeTiers(p)}</dd></div>` : ""}
-          ${MENU_KINDS.has(p.kind) ? `<div><dt>🍽️</dt><dd>${t("menuPrice")}: ${esc(menuText(p))}${srcNote(p.menuPrice?.src)}</dd></div>` : ""}
+          ${MENU_KINDS.has(p.kind) ? `<div><dt>🍽️</dt><dd>${t("menuPrice")}: ${esc(menuText(p))}${srcNote(p.menuPrice?.src)}${p.menuPrice?.items?.length ? `<ul class="fee-tiers">${p.menuPrice.items.map(x => `<li><span>${esc(pick(x.name))}</span><b>${fmtBaht(x.price)}</b></li>`).join("")}</ul>` : ""}</dd></div>` : ""}
           ${p.phone ? `<div><dt>☎️</dt><dd><a href="tel:${esc(p.phone.replace(/[^\d+]/g, ""))}">${esc(p.phone.split(";")[0])}</a></dd></div>` : ""}
         </dl>
       </section>`;
