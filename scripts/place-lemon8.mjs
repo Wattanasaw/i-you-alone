@@ -4,7 +4,7 @@
 // หมุนเวียน: สถานที่ที่ยังไม่มีโพสต์ก่อน · อ่านซ้ำทุก 14 วัน · หยุดเมื่อครบเวลา (ที่เหลือรอบหน้า)
 // รัน หลัง scripts/trend-places.mjs · node scripts/place-lemon8.mjs [--minutes 20]
 import { readFile, writeFile, rename, mkdir } from "node:fs/promises";
-import { postFits, bestOwners, ownsPost } from "./place-quality.mjs";
+import { postFits, bestOwners, ownsPost, infoFromPosts } from "./place-quality.mjs";
 
 const UA = "IYouAloneBot/1.0 (+https://wattanasaw.github.io/i-you-alone/)";
 const arg = (n, d) => { const i = process.argv.indexOf(n); return i > 0 ? +process.argv[i + 1] : d; };
@@ -65,7 +65,8 @@ async function search(q) {
 }
 
 // คิว: ไม่เคยค้น/ครบรอบอ่านซ้ำ · ที่ยังไม่มีโพสต์เลยก่อน แล้วที่ดัง/มีกระแส
-const due = all.filter(p => query(p) && names(p).length && !(entry(p.id) && days(entry(p.id).at) < REFRESH))
+// ยังไม่เคยอ่านเวลาเปิด-ปิด/ราคาจากโพสต์ (ไม่มีช่อง info) → ค้นใหม่ด้วย
+const due = all.filter(p => query(p) && names(p).length && !(entry(p.id) && entry(p.id).info && days(entry(p.id).at) < REFRESH))
   .sort((a, b) => ((a.posts?.length ? 1 : 0) - (b.posts?.length ? 1 : 0)) || ((b.hot || 0) + (b.fame || 0) + (b.views || 0) / 50) - ((a.hot || 0) + (a.fame || 0) + (a.views || 0) / 50));
 console.log(`สถานที่ ${all.length} · มีรีวิว Lemon8 ในคลังแล้ว ${all.filter(p => entry(p.id)?.posts?.length).length} · รอค้น ${due.length}`);
 
@@ -95,7 +96,9 @@ for (const p of due) {
   const old = entry(p.id)?.posts || [];
   const posts = [...new Map([...rel.map(({ body, ...x }) => x), ...old].map(x => [x.link, x])).values()]
     .sort((a, b) => b.likes - a.likes).slice(0, KEEP);
-  shards[shardOf(p.id)][p.id] = { at: today, posts };
+  // เวลาเปิด-ปิด + ช่วงราคา ที่ผู้รีวิวเขียนไว้ในโพสต์ (อ่านจากข้อความ ไม่ใช้ AI)
+  const info = infoFromPosts(rel.map(x => x.body), p.kind);
+  shards[shardOf(p.id)][p.id] = { at: today, posts, info };
   if (posts.length > old.length) gained++;
 }
 
@@ -111,6 +114,14 @@ for (const p of all) {
   if (p.posts?.length) { p.posts = p.posts.filter(x => postFits(x, p) && ownsPost(x, ns, BEST)); if (!p.posts.length) delete p.posts; }
 }
 console.log(`ตัดโพสต์ที่ไม่ใช่เรื่องของสถานที่นั้น ${removed} โพสต์`);
+// เวลาเปิด-ปิด/ช่วงราคาจากรีวิว → ใส่เมื่อยังไม่มี (หรือมีแค่ "ค่าทั่วไปตามประเภท")
+let addHours = 0, addPrice = 0;
+for (const p of all) {
+  const i = entry(p.id)?.info; if (!i) continue;
+  if (i.hours && (!p.hours || p.hoursSrc === "typical")) { p.hours = i.hours; p.hoursSrc = "review"; addHours++; }
+  if (i.price && !p.menuPrice) { p.menuPrice = { min: i.price.min, max: i.price.max, src: "review" }; addPrice++; }
+}
+console.log(`จากรีวิว: เวลาเปิด-ปิด +${addHours} · ช่วงราคา +${addPrice}`);
 // 6 โพสต์ยอดนิยมเข้า places.json (รวมกับที่มีอยู่) · ลบรายการของสถานที่ที่ไม่มีแล้ว
 const live = new Set(all.map(p => p.id));
 let withPosts = 0;

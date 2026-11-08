@@ -791,3 +791,5 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 @media (min-width: 760px) { .to-top { bottom: 24px; } }
 /* การ์ดเทรนด์: ไม่มีแถบสีขอบซ้าย รูปเต็มกรอบ */
 .trend-board .trend-item { border-left-width: 1px; border-left-color: var(--border); }
+/* กด "ตัวกรอง" ตอนเลื่อนลง (แถบย่อ/ติดบน) → แสดงครบทุกตัวเลือก ไม่ต้องเลื่อนข้าง */
+.filter-bar.open .filters, .filter-bar.open.slim .filters, .filter-bar.open.stuck .filters { flex-wrap: wrap; overflow: visible; max-height: none; opacity: 1; pointer-events: auto; }

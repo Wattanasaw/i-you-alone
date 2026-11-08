@@ -78,3 +78,51 @@ export const ownsPost = (post, ns, best) => {
   const top = best.get(post.link) || 0;
   return mine === 0 ? true : mine >= top; // ไม่ได้ตรงที่หัวโพสต์ (ตรงที่เนื้อหา) → ไม่ตัดด้วยกฎนี้
 };
+
+// ---------- เวลาเปิด-ปิด + ช่วงราคา จากโพสต์รีวิว (ไม่ใช้ AI — อ่านจากข้อความที่ผู้รีวิวเขียนชัดๆ) ----------
+// bodies: ข้อความโพสต์ (หัวข้อ + เนื้อหา + ข้อความบนรูป) ตัวเล็ก · คืน { hours?, price?: {min,max,n} }
+const DAY = { "จันทร์": "Mo", "อังคาร": "Tu", "พุธ": "We", "พฤหัส": "Th", "พฤหัสบดี": "Th", "ศุกร์": "Fr", "เสาร์": "Sa", "อาทิตย์": "Su",
+  monday: "Mo", tuesday: "Tu", wednesday: "We", thursday: "Th", friday: "Fr", saturday: "Sa", sunday: "Su" };
+const pad = n => String(n).padStart(2, "0");
+export function infoFromPosts(bodies, kind) {
+  const out = {};
+  // เวลา: "เปิด 10.00-20.00 น." "⏰ 9:00 - 18:00" "open 10am" (เฉพาะรูปแบบ ชม.นาที–ชม.นาที ที่มีคำว่าเปิด/เวลา/open นำหน้าใกล้ๆ)
+  const times = new Map(), offs = new Map();
+  for (const b of bodies) {
+    const seen = new Set();
+    for (const m of b.matchAll(/(?:เปิด|เวลา|open|⏰|🕙|🕘|🕚|🕐|🕑|🕒|🕓|🕔|🕕|🕖|🕗)[^\d\n]{0,18}(\d{1,2})[.:](\d{2})\s*(?:น\.?|am|pm)?\s*(?:-|–|—|~|ถึง|to)\s*(\d{1,2})[.:](\d{2})/gi)) {
+      const [h1, m1, h2, m2] = [+m[1], +m[2], +m[3], +m[4]];
+      if (h1 > 23 || h2 > 24 || m1 > 59 || m2 > 59 || (h1 === h2 && m1 === m2)) continue;
+      const k = `${pad(h1)}:${pad(m1)}-${pad(h2)}:${pad(m2)}`;
+      if (!seen.has(k)) { seen.add(k); times.set(k, (times.get(k) || 0) + 1); }
+    }
+    for (const m of b.matchAll(/(?:หยุด|ปิด|closed?)\s*(?:ทุก)?\s*(?:วัน)?\s*(จันทร์|อังคาร|พุธ|พฤหัสบดี|พฤหัส|ศุกร์|เสาร์|อาทิตย์|monday|tuesday|wednesday|thursday|friday|saturday|sunday)/gi)) {
+      const d = DAY[m[1].toLowerCase()];
+      if (d) offs.set(d, (offs.get(d) || 0) + 1);
+    }
+  }
+  const best = [...times].sort((a, b) => b[1] - a[1])[0];
+  if (best) {
+    const off = [...offs].sort((a, b) => b[1] - a[1])[0];
+    out.hours = `Mo-Su ${best[0]}${off ? `; ${off[0]} off` : ""}`;
+  }
+  // ราคา (ร้านอาหาร/คาเฟ่/บาร์): ตัวเลขที่มี "บาท" "฿" ".-" ติดกัน · ช่วงกลางของราคาที่พบ (ตัดค่าสุดโต่ง) · ต้องพบอย่างน้อย 3 ราคา
+  if (VENUE_KINDS.has(kind)) {
+    const prices = [];
+    for (const b of bodies) for (const m of b.matchAll(/(?:฿\s*(\d{2,4})(?!\d)|(?<![\d.,])(\d{2,4})\s*(?:บาท|฿|\.-|thb\b))/gi)) {
+      const v = +(m[1] || m[2]);
+      // ไม่ใช่ราคาอาหาร: ค่าจอด/ส่วนลด/โปรฯ ลด
+      const before = b.slice(Math.max(0, m.index - 14), m.index);
+      if (/จอด|ส่วนลด|ลด|off|คูปอง|voucher/.test(before)) continue;
+      if (v >= 20 && v <= 3000) prices.push(v);
+    }
+    if (prices.length >= 3) {
+      prices.sort((a, b) => a - b);
+      const q = f => prices[Math.min(prices.length - 1, Math.round(f * (prices.length - 1)))];
+      const r = v => v >= 100 ? Math.round(v / 10) * 10 : Math.round(v / 5) * 5;
+      out.price = { min: r(q(0.15)), max: r(q(0.85)), n: prices.length };
+      if (out.price.max < out.price.min) out.price.max = out.price.min;
+    }
+  }
+  return out;
+}
