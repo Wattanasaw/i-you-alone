@@ -4606,8 +4606,8 @@
     ],
     "src": "review1"
    },
-   "websiteDead": "http://park.dnp.go.th/visitor/nationparkshow.php?PTA_CODE=1058",
-   "reviewCount": 59
+   "reviewCount": 59,
+   "websiteDead": "http://park.dnp.go.th/visitor/nationparkshow.php?PTA_CODE=1058"
   },
   {
    "id": "wd-Q739851",
@@ -24920,13 +24920,13 @@
    "imageAi": true,
    "imageScore": 8,
    "districtEn": "Phra Nakhon",
-   "websiteDead": "https://www.watbowon.com/",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   }
+   },
+   "websiteDead": "https://www.watbowon.com/"
   },
   {
    "id": "osm-w242673270",
@@ -25652,13 +25652,13 @@
     "posts": []
    },
    "districtEn": "Pom Prap Sattru Phai",
-   "websiteDead": "http://www.watdebsirin.com/",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   }
+   },
+   "websiteDead": "http://www.watdebsirin.com/"
   },
   {
    "id": "osm-w342337807",
@@ -53716,12 +53716,12 @@
     }
    ],
    "reviewCount": 18,
-   "websiteDead": "http://www.khaosuankwangzoo.com/",
    "entry": {
     "min": 40,
     "max": 130,
     "src": "review"
-   }
+   },
+   "websiteDead": "http://www.khaosuankwangzoo.com/"
   },
   {
    "id": "osm-n4203697890",

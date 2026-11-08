@@ -57,7 +57,8 @@
   // ข้อความหน้าจอ: t("found", { n: 3 })
   const t = (key, params = {}) => String(dict()[key] ?? window.I18N.th[key] ?? key).replace(/\{(\w+)\}/g, (_, k) => params[k] ?? "");
   // ข้อความที่เป็น { th, en, zh } ใน config
-  const pick = obj => typeof obj === "string" ? obj : (obj?.[state.lang] || obj?.th || "");
+  // ภาษาจีนไม่มีคำแปล → ใช้ภาษาอังกฤษก่อน (อ่านง่ายกว่าภาษาไทยสำหรับคนจีน) แล้วค่อยไทย
+  const pick = obj => typeof obj === "string" ? obj : (obj?.[state.lang] || (state.lang === "zh" ? obj?.en : "") || obj?.th || "");
   // เนื้อหางาน/สถานที่: ใช้คำแปลใน i18n.<lang> ถ้ามี ไม่งั้นใช้ภาษาไทยต้นฉบับ
   const tr = (item, field) => item?.i18n?.[state.lang]?.[field] ?? item?.[field];
   const isLatinName = s => /[a-z]/i.test(s || "") && !/[฀-๿]/.test(s || "");
@@ -1302,6 +1303,8 @@
   // ตัวกรองหน้าที่เที่ยว (จำค่าไว้ในเครื่อง)
   const PF_DEFAULT = { sort: "rec", dist: 0, open: false, free: false, hot: false, district: "", districtOf: "" };
   state.pf = { ...PF_DEFAULT, ...readLS("placeFilters", {}) };
+  // ตำแหน่งไม่ได้จำข้ามการเปิดแอพ → "ใกล้ฉัน" ที่ค้างไว้จะไม่มีพิกัด กลับเป็นเรียงแบบแนะนำ (ไม่งั้นปุ่มดูเหมือนเปิดอยู่แต่ไม่ได้เรียงตามระยะ)
+  if (state.pf.sort === "near") state.pf.sort = "rec";
   // คาเฟ่ + สถานที่บันเทิง (สวนสนุก สวนสัตว์ คาเฟ่สัตว์) ที่มีรูป ดันขึ้นก่อนในมุมมอง "แนะนำ"
   const FUN_BOOST = { cafe: 70, animalcafe: 70, themepark: 60, restaurant: 50, nightlife: 50, zoo: 45 };
   // มีรูปปก (รูปที่ AI คัด หรือรูปจากโพสต์รีวิว) = ดันขึ้น; รูปจากโพสต์ได้คะแนนรูปกลางๆ (6)
@@ -1493,6 +1496,7 @@
           ${activeCount ? `<button type="button" class="pill-btn clear xf" id="pfClear">✕ ${t("clearFilters")}</button>` : ""}
         </div>
       </div>
+      ${state.geoFail && !(near && state.pos) ? nearPicker() : ""}
       ${board.length ? `<section class="trend-board">
         <div class="section-head"><h2>${t("trendBoard")}</h2><small>${t("swipe")}</small></div>
         <div class="news-list">${board.map(trendCard).join("")}</div></section>` : ""}
@@ -1533,7 +1537,8 @@
     const setPf = patch => { Object.assign(state.pf, patch); writeLS("placeFilters", state.pf); state.placeShow = 30; keep(renderPlaces)(); };
     document.getElementById("pfNear").addEventListener("click", () => {
       if (state.pf.sort === "near") return setPf({ sort: "rec", dist: 0 });
-      locate(() => { if (state.pos) setPf({ sort: "near", dist: state.pf.dist || 20 }); else setPf({ sort: "rec" }); });
+      // ระบุตำแหน่งไม่ได้ → ไม่เด้ง alert แต่โชว์ตัวเลือกพื้นที่ (nearPicker) ใต้แถบตัวกรองแทน
+      locate(() => { if (state.pos) setPf({ sort: "near", dist: state.pf.dist || 20 }); else setPf({ sort: "rec" }); }, true);
     });
     // ระบุตำแหน่งไม่ได้ → เลือกจุดเอง (จังหวัด → เขต/อำเภอ) ใช้จุดกึ่งกลางของสถานที่ในพื้นที่นั้นเป็น "ตำแหน่งของฉัน"
     document.getElementById("nearPick")?.addEventListener("change", e => {
@@ -1748,7 +1753,7 @@
       ${NATIVE ? "" : `<section class="panel prose">
         <h2>${t("installTitle")}</h2>
         <p>${t("installDesc")}</p>
-        ${C.apkUrl && PLATFORM !== "ios" ? `<div class="actions"><a class="btn primary" href="${safeUrl(C.apkUrl)}" download>📲 ${t("getApp")}</a></div><p class="disclosure">${t("getAppDesc")}</p>` : ""}
+        ${C.apkUrl && !NATIVE && PLATFORM !== "ios" ? `<div class="actions"><a class="btn primary" href="${safeUrl(C.apkUrl)}" download>📲 ${t("getApp")}</a></div><p class="disclosure">${t("getAppDesc")}</p>` : ""}
       </section>`}
       <p class="disclosure"><a href="privacy.html" ${NATIVE ? "" : `target="_blank" rel="noopener"`}>${t("privacy")}</a></p></div>`;
   }
