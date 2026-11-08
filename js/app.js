@@ -401,7 +401,7 @@
     const featured = [...pinned, ...big].sort((a, b) => a.startDate.localeCompare(b.startDate));
     const forYou = recommendFor(upcoming, new Set(featured.map(e => e.id)));
     // ตัวกรองเพิ่มเติมที่ใช้อยู่ (แสดงจำนวนบนปุ่ม "ตัวกรอง")
-    const homeExtra = ["when", "price"].filter(k => f[k] !== "all").length + (f.sort !== "soon" ? 1 : 0) + (f.showEnded ? 1 : 0);
+    const homeExtra = ["when", "price"].filter(k => f[k] !== "all").length + (f.sort !== "soon" && f.sort !== "near" ? 1 : 0) + (f.showEnded ? 1 : 0);
     app.innerHTML = `
       <section class="hero">
         <div class="blob"></div>
@@ -417,6 +417,7 @@
           <option value="all">${esc(t("categories"))}: ${esc(t("catAll"))}</option>
           ${C.categories.filter(c => f.cat === c.id || state.events.some(e => e.category === c.id && status(e).key !== "ended")).map(c => `<option value="${c.id}" ${f.cat === c.id ? "selected" : ""}>${c.icon} ${esc(catName(c))}</option>`).join("")}
         </select>
+        <button type="button" class="pill-btn ${f.sort === "near" ? "on" : ""}" id="homeNear" aria-pressed="${f.sort === "near"}">📍 ${t("nearMe")}</button>
         ${provinceSelect()}
         <button type="button" class="pill-btn more-btn ${homeExtra ? "on" : ""}" data-more aria-expanded="${!!state.moreFilters}">⚙️ ${t("moreFilters")}${homeExtra ? ` (${homeExtra})` : ""}</button>
         <select id="when" class="xf" aria-label="${t("whenAll")}">
@@ -468,6 +469,11 @@
     });
     ["when", "price"].forEach(id => document.getElementById(id).addEventListener("change", e => { f[id] = e.target.value; renderResults(); }));
     document.getElementById("ended").addEventListener("change", e => { f.showEnded = e.target.checked; renderResults(); });
+    // ใกล้ฉัน: เรียงงานจากใกล้ไปไกล (ขอตำแหน่งตอนกด) · กดซ้ำ = กลับไปเรียงตามวันที่
+    document.getElementById("homeNear").addEventListener("click", () => {
+      if (f.sort === "near") { f.sort = "soon"; return renderHome(); }
+      locate(() => { if (state.pos) f.sort = "near"; renderHome(); });
+    });
     document.getElementById("sort").addEventListener("change", e => {
       f.sort = e.target.value;
       if (f.sort === "near" && !state.pos) locate(renderResults); else renderResults();
@@ -1214,7 +1220,7 @@
     const own = n.th || imgOk(n.image);
     const src = own ? n.image : p?.image, thumb = own ? n.thumb : "", th = own ? n.th : p?.imageTh;
     const pc = PCAT[n.kind] || { icon: "🔥", color: "#ff7a45" };
-    return `<span class="trend-thumb" style="background:linear-gradient(135deg, ${pc.color}, ${pc.color2 || pc.color})">${pc.icon}${src ? `${fitBg(src, thumb, th)}<img class="img-fit" ${imgSrc(src, thumb, 340, 0, th)} alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="${IMG_RETRY}this.remove()">` : ""}${n.likes ? `<b class="trend-likes">❤️ ${n.likes >= 1000 ? (n.likes / 1000).toFixed(1) + "K" : n.likes}</b>` : ""}</span>`;
+    return `<span class="trend-thumb" style="background:linear-gradient(135deg, ${pc.color}, ${pc.color2 || pc.color})">${pc.icon}${src ? `<img ${imgSrc(src, thumb, 340, 425, th)} alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="${IMG_RETRY}this.remove()">` : ""}${n.likes ? `<b class="trend-likes">❤️ ${n.likes >= 1000 ? (n.likes / 1000).toFixed(1) + "K" : n.likes}</b>` : ""}</span>`;
   }
 
   // ตัวเลือกจุดเอง เมื่อเบราว์เซอร์/เครื่องไม่ให้ตำแหน่ง
@@ -1629,6 +1635,13 @@
     b.closest(".filter-bar")?.classList.toggle("open", state.moreFilters);
     b.setAttribute("aria-expanded", String(state.moreFilters));
   });
+  // ปุ่มกลับขึ้นบนสุด (รายการยาว) — โผล่เมื่อเลื่อนลงเกิน ~1.5 จอ
+  const toTop = document.createElement("button");
+  toTop.type = "button"; toTop.className = "to-top"; toTop.textContent = "↑";
+  toTop.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
+  document.body.append(toTop);
+  const paintTop = () => { toTop.classList.toggle("show", window.scrollY > window.innerHeight * 1.5); toTop.setAttribute("aria-label", t("toTop")); toTop.title = t("toTop"); };
+  window.addEventListener("scroll", paintTop, { passive: true });
   function route() {
     const h = location.hash.replace(/^#/, "") || "/";
     const [, page, arg] = h.split("/");

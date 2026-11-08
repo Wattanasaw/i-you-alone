@@ -784,3 +784,10 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 /* ปุ่มเล็กเกินนิ้วกด: ขยายพื้นที่กด */
 .save-btn { min-width: 40px; min-height: 40px; }
 .toggle { min-height: 40px; }
+
+/* ปุ่มกลับขึ้นบนสุด: มุมขวาล่าง เหนือแถบเมนูล่าง */
+.to-top { position: fixed; right: 16px; bottom: calc(96px + env(safe-area-inset-bottom, 0px)); z-index: 40; width: 46px; height: 46px; border-radius: 50%; border: 1px solid var(--border); background: var(--surface); color: var(--text); font-size: 1.3rem; font-weight: 700; box-shadow: 0 6px 18px rgba(0, 0, 0, .3); cursor: pointer; opacity: 0; transform: translateY(12px); pointer-events: none; transition: opacity .2s, transform .2s; }
+.to-top.show { opacity: 1; transform: none; pointer-events: auto; }
+@media (min-width: 760px) { .to-top { bottom: 24px; } }
+/* การ์ดเทรนด์: ไม่มีแถบสีขอบซ้าย รูปเต็มกรอบ */
+.trend-board .trend-item { border-left-width: 1px; border-left-color: var(--border); }
