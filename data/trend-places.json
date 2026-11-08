@@ -69,8 +69,42 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.284Z",
-  "district": "พญาไท"
+  "fetchedAt": "2026-11-08T03:32:51.610Z",
+  "menuPrice": {
+   "min": 30,
+   "max": 125,
+   "items": [
+    {
+     "name": {
+      "th": "อาหารน้องหมา",
+      "en": "Dog food"
+     },
+     "price": 30
+    },
+    {
+     "name": {
+      "th": "ลิ้นจี่ กุหลาบ ราสเบอร์รี่",
+      "en": "Lychee Rose Raspberry"
+     },
+     "price": 125
+    },
+    {
+     "name": {
+      "th": "มิกซ์เบอร์รี่",
+      "en": "Mixed Berries"
+     },
+     "price": 125
+    },
+    {
+     "name": {
+      "th": "ฝรั่งบ๊วยเกลือ",
+      "en": "Guava Salted Plum"
+     },
+     "price": 125
+    }
+   ],
+   "src": "review"
+  }
  },
  {
   "id": "l8-22535797336112863",
@@ -142,8 +176,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.407Z",
-  "district": "บางรัก"
+  "fetchedAt": "2026-11-08T03:32:51.746Z"
  },
  {
   "id": "l8-22535865206784625",
@@ -215,12 +248,7 @@
   ],
   "fetchedAt": "2026-11-08T03:34:52.068Z",
   "hours": "Mo-Su 09:00-18:00",
-  "hoursSrc": "review",
-  "menuPrice": {
-   "min": 100,
-   "max": 300,
-   "src": "review"
-  }
+  "hoursSrc": "review"
  },
  {
   "id": "l8-22535797336404029",
@@ -291,7 +319,9 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-08T03:32:51.700Z"
+  "fetchedAt": "2026-11-08T03:32:51.700Z",
+  "hours": "We-Su 11:00-18:00; Mo,Tu off",
+  "hoursSrc": "review"
  },
  {
   "id": "l8-22535865735508569",
@@ -376,9 +406,7 @@
     "th": "data/thumbs/7688013145540018706-0.webp"
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.274Z",
-  "district": "พระนครศรีอยุธยา",
-  "reviewCount": 22
+  "fetchedAt": "2026-11-08T03:32:51.599Z"
  },
  {
   "id": "l8-22535797336862220",
@@ -683,8 +711,9 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.303Z",
-  "district": "วังทองหลาง"
+  "fetchedAt": "2026-11-08T03:32:51.631Z",
+  "hours": "Tu-Su 10:00-17:00; Mo off",
+  "hoursSrc": "review"
  },
  {
   "id": "l8-22535797323678582",
@@ -757,8 +786,77 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.277Z",
-  "district": "คลองหลวง"
+  "fetchedAt": "2026-11-08T03:32:51.603Z"
+ },
+ {
+  "id": "l8-22535796486729813",
+  "kind": "cafe",
+  "fromTrend": true,
+  "l8poi": "22535796486729813",
+  "name": {
+   "th": "BAY Aree",
+   "en": "BAY Aree"
+  },
+  "lat": 13.77973,
+  "lng": 100.54244,
+  "approx": true,
+  "province": "bangkok",
+  "address": "111 ถนน พหลโยธิน ซอย 7 แขวงพญาไท เขตพญาไท กรุงเทพมหานคร",
+  "hot": 22.8,
+  "trend": 10,
+  "posts": [
+   {
+    "title": "BAY Aree คาเฟ่อารีย์ชิคๆ🌟🤠",
+    "likes": 352,
+    "date": "2026-08-16",
+    "link": "https://www.lemon8-app.com/@chommaniii/7674516230330171922?region=th",
+    "source": "Lemon8 · chommaniii",
+    "tag": 1,
+    "image": "https://p16-lemon8-cross-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/o0IbYuIBICDdAXGeEAefLuJgAdEy7AZtDrAVW7~tplv-tej9nj120t-wap-logo:QGNob21tYW5paWk=:1080:0.webp?lk3s=66c60501&source=wap_large_logo_image&x-expires=1794744000&x-signature=2LdRHTNb3UE%2BOSNIG2WzO5CIv5g%3D"
+   },
+   {
+    "title": "Ari dump",
+    "likes": 147,
+    "date": "2026-10-15",
+    "link": "https://www.lemon8-app.com/@ellebspr/7696873372344386100?region=th",
+    "source": "Lemon8 · elle",
+    "tag": 1,
+    "image": "https://p16-lemon8-cross-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/oEEaQtzAiPBiDiBIByHgAbPDMYvPAa5yJGnAl~tplv-tej9nj120t-wap-logo:QGVsbGVic3By:1080:0.webp?lk3s=66c60501&source=wap_large_logo_image&x-expires=1794744000&x-signature=tGFw1S1Ag5i6nElPQGPNlwVu%2B2o%3D"
+   },
+   {
+    "title": "BAR Aree🧺🤎",
+    "likes": 89,
+    "date": "2026-10-22",
+    "link": "https://www.lemon8-app.com/@_nnatthacha/7699289854227513864?region=th",
+    "source": "Lemon8 · Nutcha✧",
+    "tag": 1
+   },
+   {
+    "title": "☕️🤎ตามเทรน Gen Z สักหน่อย กับ BAY AREE คาเฟ่สุดฮิปย่านอารี",
+    "likes": 25,
+    "date": "2026-10-29",
+    "link": "https://www.lemon8-app.com/@immayreview/7701991887846048257?region=th",
+    "source": "Lemon8 · May’s Journey - เมเจอนี่",
+    "tag": 1
+   },
+   {
+    "title": "OOTD",
+    "likes": 15,
+    "date": "2026-10-17",
+    "link": "https://www.lemon8-app.com/@paixathw/7697553950064558613?region=th",
+    "source": "Lemon8 · pai :•)",
+    "tag": 1
+   },
+   {
+    "title": "มาชูแขนที่อารีย์ยัง",
+    "likes": 7,
+    "date": "2026-10-11",
+    "link": "https://www.lemon8-app.com/@mofusonn/7695329237317861896?region=th",
+    "source": "Lemon8 · มินนี่แม่น้องโมฟุ",
+    "tag": 1
+   }
+  ],
+  "fetchedAt": "2026-11-08T03:35:01.016Z"
  },
  {
   "id": "l8-42203861090919897",
@@ -830,8 +928,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.332Z",
-  "district": "บางกอกใหญ่"
+  "fetchedAt": "2026-11-08T03:32:51.666Z"
  },
  {
   "id": "l8-42203861111485655",
@@ -1058,9 +1155,33 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.447Z",
-  "district": "พญาไท",
-  "reviewCount": 14
+  "fetchedAt": "2026-11-08T03:32:51.787Z",
+  "entry": {
+   "tiers": [
+    {
+     "who": {
+      "th": "ผู้ใหญ่",
+      "en": "Adult",
+      "zh": "成人"
+     },
+     "note": {
+      "th": "รวมเครื่องดื่ม 1 แก้ว เล่นกับน้องหมาไม่จำกัดเวลา",
+      "en": "Includes 1 drink, unlimited time with dogs",
+      "zh": "含一杯饮料，无限时与狗狗玩耍"
+     },
+     "price": 350,
+     "n": 4,
+     "ids": [
+      "L1",
+      "L3",
+      "L4",
+      "L6"
+     ],
+     "rv": true
+    }
+   ],
+   "src": "review"
+  }
  },
  {
   "id": "l8-22535796489240047",
@@ -1131,8 +1252,58 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.352Z",
-  "district": "บางรัก"
+  "fetchedAt": "2026-11-08T03:32:51.687Z",
+  "hours": "Mo-Su 11:00-23:00",
+  "hoursSrc": "review",
+  "menuPrice": {
+   "min": 140,
+   "max": 190,
+   "items": [
+    {
+     "name": {
+      "th": "ชาดำเย็นเลมอน",
+      "en": "Lemon Iced Tea"
+     },
+     "price": 120
+    },
+    {
+     "name": {
+      "th": "Very Berry",
+      "en": "Very Berry"
+     },
+     "price": 140
+    },
+    {
+     "name": {
+      "th": "เฝอไก่",
+      "en": "Pho Chicken"
+     },
+     "price": 180
+    },
+    {
+     "name": {
+      "th": "เฝอหมู",
+      "en": "Pho Pork"
+     },
+     "price": 180
+    },
+    {
+     "name": {
+      "th": "ก๋วยจั๊บ",
+      "en": "Guay Jub"
+     },
+     "price": 180
+    },
+    {
+     "name": {
+      "th": "เฝอหมูรวม",
+      "en": "Pho Pork"
+     },
+     "price": 190
+    }
+   ],
+   "src": "review"
+  }
  },
  {
   "id": "l8-22535797338992427",
@@ -1381,8 +1552,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.296Z",
-  "district": "ปากช่อง",
+  "fetchedAt": "2026-11-08T03:32:51.623Z",
   "hours": "08:00-17:00",
   "hoursSrc": "typical",
   "entry": {
@@ -1463,155 +1633,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.410Z",
-  "district": "คลองเตย"
- },
- {
-  "id": "l8-22535797336404029",
-  "kind": "cafe",
-  "fromTrend": true,
-  "l8poi": "22535797336404029",
-  "name": {
-   "th": "NORMAN’S COLLECTIVE Coffee Shop",
-   "en": "NORMAN’S COLLECTIVE Coffee Shop"
-  },
-  "lat": 13.80304,
-  "lng": 100.55023,
-  "approx": true,
-  "province": "bangkok",
-  "address": "room 9 แขวงจตุจักร จตุจักร กรุงเทพมหานคร",
-  "hot": 20.7,
-  "trend": 9,
-  "posts": [
-   {
-    "title": "outfit white & blue 🐰🤍🥣",
-    "likes": 299,
-    "date": "2026-08-04",
-    "link": "https://www.lemon8-app.com/@cacatoon/7670026669427655176?region=th",
-    "source": "Lemon8 · Cacartoon",
-    "tag": 1,
-    "image": "https://p16-lemon8-cross-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/o41onLBkEiETIOCOaAiUAaeAB8L3f2Nx1HcBg5~tplv-tej9nj120t-wap-logo:QGNhY2F0b29u:1080:0.webp?lk3s=66c60501&source=wap_large_logo_image&x-expires=1794700800&x-signature=k4XtZWhE3V2jlcZGQLNGhaultjg%3D",
-    "th": "data/thumbs/c1jjf941.webp"
-   },
-   {
-    "title": "norman's cafe 🥤",
-    "likes": 123,
-    "date": "2026-08-18",
-    "link": "https://www.lemon8-app.com/@preawva.a/7675235639474635282?region=th",
-    "source": "Lemon8 · 𐙚˚ แพรววา 🦢🎀",
-    "tag": 1,
-    "image": "https://p16-lemon8-cross-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/o8X9gfCglgWtDhAQAUrEE6CUXBcFIwf7q56dAD~tplv-tej9nj120t-wap-logo:QHByZWF3dmEuYQ==:1080:0.webp?lk3s=66c60501&source=wap_large_logo_image&x-expires=1794700800&x-signature=4gzWW615FpxCxSVJ31gRI%2BqlmEk%3D",
-    "th": "data/thumbs/c10476ll.webp"
-   },
-   {
-    "title": "เป็นคาเฟ่ที่โคตรจะ vibes ดี🫰🏻🩵",
-    "likes": 63,
-    "date": "2026-07-25",
-    "link": "https://www.lemon8-app.com/@mimints/7666491092855390741?region=th",
-    "source": "Lemon8 · Mintmimyns",
-    "tag": 1
-   },
-   {
-    "title": "Norman’s",
-    "likes": 61,
-    "date": "2026-08-18",
-    "link": "https://www.lemon8-app.com/@opalopla__/7675333085060858375?region=th",
-    "source": "Lemon8 · Opalopla__",
-    "tag": 1
-   },
-   {
-    "title": "ONNIIROOM Store | ร้านเสื้อผ้า & คาเฟ่ย่านจตุจักรที่ต้องไป!💖⭐️",
-    "likes": 10,
-    "date": "2026-08-08",
-    "link": "https://www.lemon8-app.com/@natchanchom/7671663518256464400?region=th",
-    "source": "Lemon8 · natchanchom",
-    "tag": 1
-   },
-   {
-    "title": "คาเฟ่ที่ถ่ายสวยทุกมุม!!!",
-    "likes": 7,
-    "date": "2026-07-26",
-    "link": "https://www.lemon8-app.com/@joymayy/7666808736995869191?region=th",
-    "source": "Lemon8 · เอ็นจอย",
-    "tag": 1
-   }
-  ],
-  "fetchedAt": "2026-11-07T19:20:35.364Z",
-  "district": "จตุจักร"
- },
- {
-  "id": "l8-22535797338731450",
-  "kind": "cafe",
-  "fromTrend": true,
-  "l8poi": "22535797338731450",
-  "name": {
-   "th": "loafly.pastries",
-   "en": "loafly.pastries"
-  },
-  "lat": 16.48473,
-  "lng": 102.81045,
-  "approx": true,
-  "province": "khon-kaen",
-  "address": "198/23 ม.16 2 ซอย มะลิวัลย์ ตำบลในเมือง อ.เมือง ขอนแก่น",
-  "hot": 20.6,
-  "trend": 11,
-  "posts": [
-   {
-    "title": "คาเฟ่ขอนแก่น🎠",
-    "likes": 532,
-    "date": "2026-05-24",
-    "link": "https://www.lemon8-app.com/@aoilyys/7643289969808769543?region=th",
-    "source": "Lemon8 · babyaaoi",
-    "image": "https://www.lemon8-app.com/seo/image?item_id=7643289969808769543&index=0&sign=6fc37957fab443eaa8a040f4a668c3ac",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/ocwk2a8OoIQA2AGh1JSL9AfIQyGApIT2lAeHff~tplv-sdweummd6v-text-logo-v1:QGFvaWx5eXM=:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796709600&x-signature=tSphxCckKB1Z2HRjXyTbvzOEE3g%3D",
-    "th": "data/thumbs/7643289969808769543-0.webp"
-   },
-   {
-    "title": "คาเฟ่ขอนแก่น",
-    "likes": 185,
-    "date": "2026-08-18",
-    "link": "https://www.lemon8-app.com/@nongmildheli/7675399221624799761?region=th",
-    "source": "Lemon8 · NongMild :)",
-    "tag": 1,
-    "image": "https://p16-lemon8-cross-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/ooA5Af8sDBCqFAO9PEEjI1EYhCUIvfEgp8tV2E~tplv-tej9nj120t-wap-logo:QG5vbmdtaWxkaGVsaQ==:1080:0.webp?lk3s=66c60501&source=wap_large_logo_image&x-expires=1794700800&x-signature=68f07Cxad52oDKJAfp40SfG%2For4%3D",
-    "th": "data/thumbs/ctlzs3v.webp"
-   },
-   {
-    "title": "Loafly.Pastries | Khonkaen",
-    "likes": 28,
-    "date": "2026-07-31",
-    "link": "https://www.lemon8-app.com/@imthecoolestindaworld/7668598078936531474?region=th",
-    "source": "Lemon8 · Kannoey",
-    "tag": 1
-   },
-   {
-    "title": "คาเฟ่สไตล์โฮมมี่ 🩷🩵",
-    "likes": 9,
-    "date": "2026-08-04",
-    "link": "https://www.lemon8-app.com/@kru_vill/7670205981384704530?region=th",
-    "source": "Lemon8 · คูมครูวิววี่ 🍭",
-    "tag": 1
-   },
-   {
-    "title": "loafly.pastries",
-    "likes": 2,
-    "date": "2026-08-18",
-    "link": "https://www.lemon8-app.com/@pisuda040338/7675331857006330375?region=th",
-    "source": "Lemon8 · ป้าคือคนเก๋นะคะ",
-    "tag": 1
-   },
-   {
-    "title": "Loaflypastrie",
-    "likes": 2,
-    "date": "2026-08-07",
-    "link": "https://www.lemon8-app.com/@aommmtk/7671364120628822535?region=th",
-    "source": "Lemon8 · อ๋อมแอ๋ม",
-    "tag": 1
-   }
-  ],
-  "fetchedAt": "2026-11-07T19:20:35.275Z",
-  "district": "อ.เมือง"
+  "fetchedAt": "2026-11-08T03:32:51.749Z"
  },
  {
   "id": "l8-22535796481521442",
@@ -1696,9 +1718,7 @@
     "th": "data/thumbs/7573542906095731218-0.webp"
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.320Z",
-  "district": "บึงโขงหลง",
-  "reviewCount": 24
+  "fetchedAt": "2026-11-08T03:32:51.650Z"
  },
  {
   "id": "l8-42203860796751116",
@@ -1771,8 +1791,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.276Z",
-  "district": "เมืองเชียงใหม่"
+  "fetchedAt": "2026-11-08T03:32:51.601Z"
  },
  {
   "id": "l8-22535865204873418",
@@ -1843,8 +1862,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.314Z",
-  "district": "บางปะอิน",
+  "fetchedAt": "2026-11-08T03:32:51.643Z",
   "entry": {
    "free": true,
    "src": "typical"
@@ -2210,8 +2228,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.381Z",
-  "district": "บางรัก"
+  "fetchedAt": "2026-11-08T03:32:51.718Z"
  },
  {
   "id": "l8-42203861114024016",
@@ -2356,8 +2373,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.301Z",
-  "district": "แก่งคอย"
+  "fetchedAt": "2026-11-08T03:32:51.629Z"
  },
  {
   "id": "l8-22535797321472135",
@@ -2436,9 +2452,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.430Z",
-  "district": "บางกะปิ",
-  "reviewCount": 10
+  "fetchedAt": "2026-11-08T03:32:51.770Z"
  },
  {
   "id": "l8-22535797334624942",
@@ -2656,8 +2670,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.422Z",
-  "district": "เมืองเชียงใหม่"
+  "fetchedAt": "2026-11-08T03:32:51.762Z"
  },
  {
   "id": "l8-22535865297780909",
@@ -3219,8 +3232,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.326Z",
-  "district": "ปทุมวัน"
+  "fetchedAt": "2026-11-08T03:32:51.659Z"
  },
  {
   "id": "l8-22535865676450235",
@@ -3370,9 +3382,7 @@
     "th": "data/thumbs/7654530160783344135-0.webp"
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.348Z",
-  "district": "แก่งคอย",
-  "reviewCount": 7
+  "fetchedAt": "2026-11-08T03:32:51.682Z"
  },
  {
   "id": "l8-22535865204520492",
@@ -3452,9 +3462,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.300Z",
-  "district": "คีรีรัฐนิคม",
-  "reviewCount": 10
+  "fetchedAt": "2026-11-08T03:32:51.627Z"
  },
  {
   "id": "l8-22535865219436221",
@@ -3598,8 +3606,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.414Z",
-  "district": "พระนคร"
+  "fetchedAt": "2026-11-08T03:32:51.753Z"
  },
  {
   "id": "l8-22535797309347381",
@@ -3680,9 +3687,7 @@
     "th": "data/thumbs/7684173638874055188-0.webp"
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.441Z",
-  "district": "เมืองชลบุรี",
-  "reviewCount": 18
+  "fetchedAt": "2026-11-08T03:32:51.781Z"
  },
  {
   "id": "l8-22535797338190866",
@@ -4056,9 +4061,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.344Z",
-  "district": "สัมพันธวงศ์",
-  "reviewCount": 1
+  "fetchedAt": "2026-11-08T03:32:51.679Z"
  },
  {
   "id": "l8-22535865210950092",
@@ -4130,8 +4133,146 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.389Z",
-  "district": "บางกรวย"
+  "fetchedAt": "2026-11-08T03:32:51.726Z"
+ },
+ {
+  "id": "l8-42203860775297072",
+  "kind": "animalcafe",
+  "fromTrend": true,
+  "l8poi": "42203860775297072",
+  "name": {
+   "th": "เทค อะ เรสต์"
+  },
+  "lat": 12.4829,
+  "lng": 102.06691,
+  "approx": true,
+  "province": "chanthaburi",
+  "address": "7 16 ตำบล ปากน้ำแหลมสิงห์ อำเภอ แหลมสิงห์ จันทบุรี",
+  "hot": 18.1,
+  "trend": 11,
+  "posts": [
+   {
+    "title": "พิกัดคาเฟ่น่าถ่ายรูป จันทบุรี 🌳🐇",
+    "likes": 106,
+    "date": "2026-09-29",
+    "link": "https://www.lemon8-app.com/@purepwr.g/7690881731520954888?region=th",
+    "source": "Lemon8 · Purewarin",
+    "tag": 1,
+    "image": "https://p16-lemon8-cross-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/o8Q7eew7fA2bGpAIAgBIJbFSgDdLEUi7VNIYAC~tplv-tej9nj120t-wap-logo:QHB1cmVwd3IuZw==:1080:0.webp?lk3s=66c60501&source=wap_large_logo_image&x-expires=1794744000&x-signature=%2Fl1Hmhk3x%2F4qV%2BmUTEg%2F%2FtQoHrE%3D"
+   },
+   {
+    "title": "คาเฟ่จันทบุรี ชิลล์ริมทะเล ฟีลดี๊ดี🌅",
+    "likes": 11,
+    "date": "2026-11-03",
+    "link": "https://www.lemon8-app.com/@jjijie/7703840738840183297?region=th",
+    "source": "Lemon8 · JieJourney",
+    "tag": 1,
+    "image": "https://p16-lemon8-cross-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/ogtYmEDPPAhQlk6xBa3AibQqWApHiiuiIvB4l~tplv-tej9nj120t-wap-logo:QGpqaWppZQ==:1080:0.webp?lk3s=66c60501&source=wap_large_logo_image&x-expires=1794744000&x-signature=6y2ukoBGywI%2BQSFKFgCRih7yCTY%3D"
+   },
+   {
+    "title": "Take a rest cafe ฮีลใจที่คาเฟ่ริมทะเล แหลมสิงห์",
+    "likes": 6,
+    "date": "2026-11-03",
+    "link": "https://www.lemon8-app.com/@pangboontharika/7703890598842892807?region=th",
+    "source": "Lemon8 · แป้งที่ชอบมอนชิชิ",
+    "tag": 1
+   },
+   {
+    "title": "พิกัดคาเฟ่ติดทะเล ห้ามพลาด Take a rest เทค อะ เรสต์ ☀️🍵🌊",
+    "likes": 5,
+    "date": "2026-08-20",
+    "link": "https://www.lemon8-app.com/@siiwaap/7676114431012504071?region=th",
+    "source": "Lemon8 · mysii review",
+    "tag": 1
+   },
+   {
+    "title": "☕🌿Take Arest | จันทบุรี",
+    "likes": 3,
+    "date": "2026-10-25",
+    "link": "https://www.lemon8-app.com/@krit.mapradit/7700510854780830214?region=th",
+    "source": "Lemon8 · Krit Mapradit",
+    "tag": 1
+   },
+   {
+    "title": "บรรยากาศดีฮีลใจ",
+    "likes": 2,
+    "date": "2026-11-04",
+    "link": "https://www.lemon8-app.com/@kornthipparaothanchonkul/7704233931700175367?region=th",
+    "source": "Lemon8 · Kornthippa",
+    "tag": 1
+   }
+  ],
+  "fetchedAt": "2026-11-08T03:34:16.574Z"
+ },
+ {
+  "id": "l8-42203860930341363",
+  "kind": "cafe",
+  "fromTrend": true,
+  "l8poi": "42203860930341363",
+  "name": {
+   "th": "AVANTCHA Tea & Cocktail Bar",
+   "en": "AVANTCHA Tea & Cocktail Bar"
+  },
+  "lat": 13.73556,
+  "lng": 100.59787,
+  "approx": true,
+  "province": "bangkok",
+  "address": "929 ถ. สุขุมวิท แขวงคลองตันเหนือ เขตวัฒนา กรุงเทพมหานคร",
+  "hot": 18,
+  "trend": 10,
+  "posts": [
+   {
+    "title": "มัทฉะใจกลางทองหล่อ 🍵 5 แก้ว 350.- แต่เสิร์ฟหรูเกินราคา!",
+    "likes": 369,
+    "date": "2026-08-30",
+    "link": "https://www.lemon8-app.com/@noeyyxs/7679726317390086672?region=th",
+    "source": "Lemon8 · Come With Noey",
+    "tag": 1,
+    "image": "https://p16-lemon8-cross-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/osGeTdeuAUH7VLA79D0EJz4eIJID3ESAbgCAnJ~tplv-tej9nj120t-wap-logo:QG5vZXl5eHM=:1080:0.webp?lk3s=66c60501&source=wap_large_logo_image&x-expires=1794744000&x-signature=3ep%2FaZ2ZJlT0s%2B6hpGcB0ayYwhQ%3D"
+   },
+   {
+    "title": "🍵 ได้มาลอง The Matcha Flight ที่ AVANTCHA Tea & Cocktail Bar สักที!",
+    "likes": 14,
+    "date": "2026-10-27",
+    "link": "https://www.lemon8-app.com/@may.kul9/7701217139978273300?region=th",
+    "source": "Lemon8 · MAY",
+    "tag": 1,
+    "image": "https://p16-lemon8-cross-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/o8I7AXVmHEAeDGMyQ829A4AAQfdeowv9SHbJbv~tplv-tej9nj120t-wap-logo:QG1heS5rdWw5:1080:0.webp?lk3s=66c60501&source=wap_large_logo_image&x-expires=1794744000&x-signature=mWolhZJDynpc%2FsfWULGAMROMv0Q%3D"
+   },
+   {
+    "title": "Bar Matcha🍵🍃🤍ย่านทองหล่อ",
+    "likes": 10,
+    "date": "2026-10-07",
+    "link": "https://www.lemon8-app.com/@peace.dangkhunnath/7693906998223503880?region=th",
+    "source": "Lemon8 · Peacechy",
+    "tag": 1
+   },
+   {
+    "title": "🍵ลองเมนูมัทฉะใหม่ไหม?",
+    "likes": 9,
+    "date": "2026-10-17",
+    "link": "https://www.lemon8-app.com/@pear.nut_/7697675168944865793?region=th",
+    "source": "Lemon8 · ลูกแพร์🩶",
+    "tag": 1
+   },
+   {
+    "title": "🍵💚 มัทฉะเซ็ตละ 350.- ที่ AVANTICHA สุขุมวิท 51",
+    "likes": 7,
+    "date": "2026-10-14",
+    "link": "https://www.lemon8-app.com/@wanwiith/7696493630248288776?region=th",
+    "source": "Lemon8 · Porpor",
+    "tag": 1
+   },
+   {
+    "title": "AVANTCHA 🍸 Tea & Cocktail Bar ที่จะเปิดประสบการณ์ใหม่ของการดื่มคอกเทล✨",
+    "likes": 6,
+    "date": "2026-10-13",
+    "link": "https://www.lemon8-app.com/@review.lism/7696122959987081734?region=th",
+    "source": "Lemon8 · Review.lism",
+    "tag": 1
+   }
+  ],
+  "fetchedAt": "2026-11-08T03:34:57.916Z"
  },
  {
   "id": "l8-22535797302126493",
@@ -4517,9 +4658,7 @@
     "th": "data/thumbs/c4jruj.webp"
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.429Z",
-  "district": "ชะอำ",
-  "reviewCount": 9
+  "fetchedAt": "2026-11-08T03:32:51.769Z"
  },
  {
   "id": "l8-22535797338804261",
@@ -4675,9 +4814,7 @@
     "th": "data/thumbs/7576496014043906576-0.webp"
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.380Z",
-  "district": "เมืองสมุทรสงคราม",
-  "reviewCount": 24,
+  "fetchedAt": "2026-11-08T03:32:51.717Z",
   "entry": {
    "free": true,
    "src": "typical"
@@ -4825,8 +4962,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.270Z",
-  "district": "ปราณบุรี"
+  "fetchedAt": "2026-11-08T03:32:51.595Z"
  },
  {
   "id": "l8-22535797336555350",
@@ -5120,9 +5256,7 @@
     "th": "data/thumbs/7677072696332648978-0.webp"
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.397Z",
-  "district": "บางคอแหลม",
-  "reviewCount": 3
+  "fetchedAt": "2026-11-08T03:32:51.735Z"
  },
  {
   "id": "l8-22535797335956663",
@@ -5192,14 +5326,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-08T03:34:41.121Z",
-  "hours": "Tu-Su 11:30-21:00; Mo off",
-  "hoursSrc": "review",
-  "menuPrice": {
-   "min": 20,
-   "max": 990,
-   "src": "review"
-  }
+  "fetchedAt": "2026-11-08T03:34:41.121Z"
  },
  {
   "id": "l8-22535797338731450",
@@ -5500,8 +5627,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:22:29.799Z",
-  "district": "บางใหญ่"
+  "fetchedAt": "2026-11-08T03:32:51.819Z"
  },
  {
   "id": "l8-22535865770920384",
@@ -5729,9 +5855,7 @@
     "th": "data/thumbs/7681946075434992144-0.webp"
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.291Z",
-  "district": "เมืองนครนายก",
-  "reviewCount": 15
+  "fetchedAt": "2026-11-08T03:32:51.618Z"
  },
  {
   "id": "l8-22535865205514334",
@@ -5978,9 +6102,7 @@
     "th": "data/thumbs/7664171003265991175-0.webp"
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.453Z",
-  "district": "สันกำแพง",
-  "reviewCount": 21
+  "fetchedAt": "2026-11-08T03:32:51.795Z"
  },
  {
   "id": "l8-22535797338796592",
@@ -6049,9 +6171,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-08T03:34:54.635Z",
-  "hours": "Mo-Su 12:00-00:00",
-  "hoursSrc": "review"
+  "fetchedAt": "2026-11-08T03:34:54.635Z"
  },
  {
   "id": "l8-22535797313047239",
@@ -6122,8 +6242,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:21:03.253Z",
-  "district": "บางคล้า"
+  "fetchedAt": "2026-11-08T03:32:51.805Z"
  },
  {
   "id": "l8-22535796483408639",
@@ -6440,8 +6559,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.431Z",
-  "district": "สามชุก"
+  "fetchedAt": "2026-11-08T03:32:51.771Z"
  },
  {
   "id": "l8-22535865205910402",
@@ -6524,9 +6642,7 @@
     "th": "data/thumbs/7688713461400437268-0.webp"
    }
   ],
-  "fetchedAt": "2026-11-07T19:21:42.769Z",
-  "district": "ศรีราชา",
-  "reviewCount": 10
+  "fetchedAt": "2026-11-08T03:32:51.813Z"
  },
  {
   "id": "l8-22535796492075783",
@@ -6824,8 +6940,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.440Z",
-  "district": "สัมพันธวงศ์"
+  "fetchedAt": "2026-11-08T03:32:51.779Z"
  },
  {
   "id": "l8-22535865204400811",
@@ -6905,9 +7020,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.312Z",
-  "district": "ลานสัก",
-  "reviewCount": 11
+  "fetchedAt": "2026-11-08T03:32:51.641Z"
  },
  {
   "id": "l8-22535797298008886",
@@ -6979,8 +7092,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.370Z",
-  "district": "ประเวศ"
+  "fetchedAt": "2026-11-08T03:32:51.707Z"
  },
  {
   "id": "l8-22535797337218975",
@@ -7125,8 +7237,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.448Z",
-  "district": "บางรัก"
+  "fetchedAt": "2026-11-08T03:32:51.788Z"
  },
  {
   "id": "l8-22535865223794193",
@@ -7429,8 +7540,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:22:40.228Z",
-  "district": "บางรัก"
+  "fetchedAt": "2026-11-08T03:32:51.821Z"
  },
  {
   "id": "l8-22535797337547205",
@@ -7502,8 +7612,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:57.524Z",
-  "district": "บางกรวย"
+  "fetchedAt": "2026-11-08T03:32:51.805Z"
  },
  {
   "id": "l8-22535797325022560",
@@ -7575,8 +7684,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:22:53.594Z",
-  "district": "เมืองเชียงราย"
+  "fetchedAt": "2026-11-08T03:32:51.824Z"
  },
  {
   "id": "l8-22535797334811414",
@@ -7648,8 +7756,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.375Z",
-  "district": "จตุจักร"
+  "fetchedAt": "2026-11-08T03:32:51.711Z"
  },
  {
   "id": "l8-22535865229056227",
@@ -7719,13 +7826,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-08T03:34:50.687Z",
-  "hours": "Tu-Su 10:30-18:30; Mo off",
-  "hoursSrc": "review",
-  "entry": {
-   "thai": 280,
-   "src": "review"
-  }
+  "fetchedAt": "2026-11-08T03:34:50.687Z"
  },
  {
   "id": "l8-22535796481482728",
@@ -7888,8 +7989,13 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:21:10.698Z",
-  "district": "เมืองพิษณุโลก"
+  "fetchedAt": "2026-11-08T03:32:51.824Z",
+  "hours": "08:00-17:00",
+  "hoursSrc": "typical",
+  "entry": {
+   "free": true,
+   "src": "typical"
+  }
  },
  {
   "id": "l8-22535797331730841",
@@ -7961,8 +8067,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.280Z",
-  "district": "บ้านฉาง"
+  "fetchedAt": "2026-11-08T03:32:51.606Z"
  },
  {
   "id": "l8-22535797231849922",
@@ -8033,8 +8138,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.289Z",
-  "district": "นครชัยศรี"
+  "fetchedAt": "2026-11-08T03:32:51.615Z"
  },
  {
   "id": "l8-22535797328496394",
@@ -8187,9 +8291,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.444Z",
-  "district": "หนองเสือ",
-  "reviewCount": 16
+  "fetchedAt": "2026-11-08T03:32:51.784Z"
  },
  {
   "id": "l8-22535797337538414",
@@ -8261,8 +8363,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.317Z",
-  "district": "พระโขนง"
+  "fetchedAt": "2026-11-08T03:32:51.648Z"
  },
  {
   "id": "l8-22535797290448067",
@@ -8335,8 +8436,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.331Z",
-  "district": "บางรัก"
+  "fetchedAt": "2026-11-08T03:32:51.664Z"
  },
  {
   "id": "l8-42203860907824099",
@@ -8420,9 +8520,7 @@
     "th": "data/thumbs/7610054561075577345-0.webp"
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.333Z",
-  "district": "สัตหีบ",
-  "reviewCount": 24
+  "fetchedAt": "2026-11-08T03:32:51.667Z"
  },
  {
   "id": "l8-22535797340042840",
@@ -8567,8 +8665,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.431Z",
-  "district": "พระนครศรีอยุธยา"
+  "fetchedAt": "2026-11-08T03:32:51.771Z"
  },
  {
   "id": "l8-22535865233328541",
@@ -8641,8 +8738,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.277Z",
-  "district": "บางกรวย"
+  "fetchedAt": "2026-11-08T03:32:51.602Z"
  },
  {
   "id": "l8-22535797338194999",
@@ -8786,8 +8882,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.334Z",
-  "district": "เมืองลพบุรี"
+  "fetchedAt": "2026-11-08T03:32:51.667Z"
  },
  {
   "id": "l8-22535796507544578",
@@ -8946,9 +9041,7 @@
     "th": "data/thumbs/7656024523837342226-0.webp"
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.433Z",
-  "district": "พระโขนง",
-  "reviewCount": 15
+  "fetchedAt": "2026-11-08T03:32:51.772Z"
  },
  {
   "id": "l8-22535865208351531",
@@ -9019,8 +9112,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.300Z",
-  "district": "เมืองสมุทรสาคร"
+  "fetchedAt": "2026-11-08T03:32:51.627Z"
  },
  {
   "id": "l8-22535865743704662",
@@ -9176,9 +9268,7 @@
     "th": "data/thumbs/7672782798302102034-0.webp"
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.403Z",
-  "district": "แก่งกระจาน",
-  "reviewCount": 14
+  "fetchedAt": "2026-11-08T03:32:51.740Z"
  },
  {
   "id": "l8-22535865258871317",
@@ -9250,8 +9340,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.309Z",
-  "district": "เมืองสระบุรี"
+  "fetchedAt": "2026-11-08T03:32:51.636Z"
  },
  {
   "id": "l8-22535796482086418",
@@ -9333,9 +9422,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.377Z",
-  "district": "แม่แตง",
-  "reviewCount": 9
+  "fetchedAt": "2026-11-08T03:32:51.714Z"
  },
  {
   "id": "l8-22535797309800311",
@@ -9577,9 +9664,7 @@
     "th": "data/thumbs/7626289821451633160-0.webp"
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.292Z",
-  "district": "เมืองราชบุรี",
-  "reviewCount": 20
+  "fetchedAt": "2026-11-08T03:32:51.618Z"
  },
  {
   "id": "l8-22535797332270135",
@@ -9733,9 +9818,7 @@
     "th": "data/thumbs/7578784454034964999-0.webp"
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.336Z",
-  "district": "ปากพลี",
-  "reviewCount": 24
+  "fetchedAt": "2026-11-08T03:32:51.670Z"
  },
  {
   "id": "l8-42203860725629097",
@@ -9806,8 +9889,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.391Z",
-  "district": "สีคิ้ว"
+  "fetchedAt": "2026-11-08T03:32:51.728Z"
  },
  {
   "id": "l8-22535865221941703",
@@ -9879,8 +9961,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.398Z",
-  "district": "เมืองสมุทรสงคราม"
+  "fetchedAt": "2026-11-08T03:32:51.735Z"
  },
  {
   "id": "l8-21568226364537155",
@@ -10021,8 +10102,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.455Z",
-  "district": "ปราณบุรี"
+  "fetchedAt": "2026-11-08T03:32:51.797Z"
  },
  {
   "id": "l8-22535797339295019",
@@ -10091,8 +10171,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:21:06.250Z",
-  "district": "เมืองนครปฐม"
+  "fetchedAt": "2026-11-08T03:32:51.806Z"
  },
  {
   "id": "l8-22535797314611887",
@@ -10161,14 +10240,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-08T03:33:35.194Z",
-  "hours": "Tu-Su 10:00-16:00; Mo off",
-  "hoursSrc": "review",
-  "menuPrice": {
-   "min": 50,
-   "max": 60,
-   "src": "review"
-  }
+  "fetchedAt": "2026-11-08T03:33:35.194Z"
  },
  {
   "id": "l8-22535865204855857",
@@ -10311,8 +10383,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.444Z",
-  "district": "บ้านโพธิ์"
+  "fetchedAt": "2026-11-08T03:32:51.784Z"
  },
  {
   "id": "l8-22535797339259028",
@@ -10381,8 +10452,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.357Z",
-  "district": "หางดง"
+  "fetchedAt": "2026-11-08T03:32:51.693Z"
  },
  {
   "id": "l8-22535797337225152",
@@ -10451,8 +10521,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.431Z",
-  "district": "เมืองนนทบุรี"
+  "fetchedAt": "2026-11-08T03:32:51.770Z"
  },
  {
   "id": "l8-22535797006592878",
@@ -10532,9 +10601,7 @@
     "th": "data/thumbs/7601436311584506388-0.webp"
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.450Z",
-  "district": "เมืองพิษณุโลก",
-  "reviewCount": 13
+  "fetchedAt": "2026-11-08T03:32:51.791Z"
  },
  {
   "id": "l8-22535865204383570",
@@ -10603,8 +10670,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.367Z",
-  "district": "ปากช่อง"
+  "fetchedAt": "2026-11-08T03:32:51.702Z"
  },
  {
   "id": "l8-21568226303400900",
@@ -10674,8 +10740,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.388Z",
-  "district": "โพธาราม"
+  "fetchedAt": "2026-11-08T03:32:51.725Z"
  },
  {
   "id": "l8-22535796495191293",
@@ -10744,76 +10809,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:21:21.059Z",
-  "district": "ตะกั่วป่า"
- },
- {
-  "id": "l8-22535797265829515",
-  "kind": "cafe",
-  "fromTrend": true,
-  "l8poi": "22535797265829515",
-  "name": {
-   "th": "สลัก (Salak Cafe)"
-  },
-  "lat": 12.78304,
-  "lng": 101.61647,
-  "approx": true,
-  "province": "rayong",
-  "address": "36 เทศบาลตำบลเมืองแกลง อำเภอเมืองระยอง ระยอง",
-  "hot": 12.6,
-  "trend": 9,
-  "posts": [
-   {
-    "title": "คาเฟ่ที่ควรค่าแก่การแมส ระยอง 🍰🫧📼",
-    "likes": 151,
-    "date": "2026-08-04",
-    "link": "https://www.lemon8-app.com/@meinmelbnn/7670139480505926145?region=th",
-    "source": "Lemon8 · Meinmel",
-    "tag": 1
-   },
-   {
-    "title": "คาเฟ่ที่มี๊แนะนำ",
-    "likes": 3,
-    "date": "2026-07-11",
-    "link": "https://www.lemon8-app.com/@mamiidaughters/7661150240057147912?region=th",
-    "source": "Lemon8 · ลูกหมาของมี๊",
-    "tag": 1
-   },
-   {
-    "title": "🤎 คาเฟ่ไม้สุดอบอุ่นในแกลง ที่ทำให้ \"วันธรรมดา\" กลายเป็นวันพิเศษ | สลัก คาเฟ่",
-    "likes": 2,
-    "date": "2026-07-11",
-    "link": "https://www.lemon8-app.com/@jeejeewilawan/7661147163367375368?region=th",
-    "source": "Lemon8 · จอ อี 🍀ที่แปลว่า จี❤️",
-    "tag": 1
-   },
-   {
-    "title": "ร้านนี้ต้องโดน 🎄✨",
-    "likes": 1,
-    "date": "2026-08-06",
-    "link": "https://www.lemon8-app.com/@beersasiwimol/7670952126280974855?region=th",
-    "source": "Lemon8 · Beer Sasiwimol",
-    "tag": 1
-   },
-   {
-    "title": "คาเฟ่มูสดีโทนอบอุ่น🫶🏻✨",
-    "likes": 0,
-    "date": "2026-07-09",
-    "link": "https://www.lemon8-app.com/@salid009/7660414901956903432?region=th",
-    "source": "Lemon8 · SALIDไปเรื่อย🙈",
-    "tag": 1
-   },
-   {
-    "title": "วันหยุด🍀🍀",
-    "likes": 0,
-    "date": "2026-06-12",
-    "link": "https://www.lemon8-app.com/@enjoy_ry/7650329835344085511?region=th",
-    "source": "Lemon8 · ☘️Enjoy RY🌈❄️",
-    "tag": 1
-   }
-  ],
-  "fetchedAt": "2026-11-07T19:20:35.297Z",
-  "district": "เมืองระยอง"
+  "fetchedAt": "2026-11-08T03:32:51.808Z"
  },
  {
   "id": "l8-22535796482515827",
@@ -10882,8 +10878,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.340Z",
-  "district": "ตะกั่วทุ่ง"
+  "fetchedAt": "2026-11-08T03:32:51.674Z"
  },
  {
   "id": "l8-22535797337004693",
@@ -10953,8 +10948,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.367Z",
-  "district": "ไทรน้อย"
+  "fetchedAt": "2026-11-08T03:32:51.703Z"
  },
  {
   "id": "l8-22535865247419830",
@@ -11024,8 +11018,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.302Z",
-  "district": "กะทู้"
+  "fetchedAt": "2026-11-08T03:32:51.629Z"
  },
  {
   "id": "l8-22535865206459638",
@@ -11094,8 +11087,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.330Z",
-  "district": "วารินชำราบ"
+  "fetchedAt": "2026-11-08T03:32:51.662Z"
  },
  {
   "id": "l8-21568226386006639",
@@ -11234,13 +11226,12 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.403Z",
-  "district": "เมืองสิงห์บุรี",
+  "fetchedAt": "2026-11-08T03:32:51.742Z",
   "hours": "08:00-17:00",
   "hoursSrc": "typical",
   "entry": {
    "free": true,
-   "src": "ai"
+   "src": "typical"
   }
  },
  {
@@ -11311,8 +11302,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:21:26.290Z",
-  "district": "สวนหลวง"
+  "fetchedAt": "2026-11-08T03:32:51.809Z"
  },
  {
   "id": "l8-22535865208477618",
@@ -11381,14 +11371,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-08T03:33:09.913Z",
-  "hours": "Mo-Su 10:00-18:00",
-  "hoursSrc": "review",
-  "menuPrice": {
-   "min": 100,
-   "max": 100,
-   "src": "review"
-  }
+  "fetchedAt": "2026-11-08T03:33:09.913Z"
  },
  {
   "id": "l8-22535865216079241",
@@ -11459,9 +11442,76 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.421Z",
-  "district": "คลองเตย",
-  "reviewCount": 1
+  "fetchedAt": "2026-11-08T03:32:51.760Z"
+ },
+ {
+  "id": "l8-22535797265829515",
+  "kind": "cafe",
+  "fromTrend": true,
+  "l8poi": "22535797265829515",
+  "name": {
+   "th": "สลัก (Salak Cafe)"
+  },
+  "lat": 12.78304,
+  "lng": 101.61647,
+  "approx": true,
+  "province": "rayong",
+  "address": "36 เทศบาลตำบลเมืองแกลง อำเภอเมืองระยอง ระยอง",
+  "hot": 11.6,
+  "trend": 8,
+  "posts": [
+   {
+    "title": "คาเฟ่ที่ควรค่าแก่การแมส ระยอง 🍰🫧📼",
+    "likes": 151,
+    "date": "2026-08-04",
+    "link": "https://www.lemon8-app.com/@meinmelbnn/7670139480505926145?region=th",
+    "source": "Lemon8 · Meinmel",
+    "tag": 1,
+    "image": "https://p16-lemon8-cross-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/oAEexi1XOCAOBpBkIfpZAQAgib0PxO80GBiE2W~tplv-tej9nj120t-wap-logo:QG1laW5tZWxibm4=:1080:0.webp?lk3s=66c60501&source=wap_large_logo_image&x-expires=1794744000&x-signature=5PWDcKT%2FR%2BcY8ZH0xYZNsZqSlPg%3D"
+   },
+   {
+    "title": "คาเฟ่ที่มี๊แนะนำ",
+    "likes": 3,
+    "date": "2026-07-11",
+    "link": "https://www.lemon8-app.com/@mamiidaughters/7661150240057147912?region=th",
+    "source": "Lemon8 · ลูกหมาของมี๊",
+    "tag": 1,
+    "image": "https://p16-lemon8-cross-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/ooH2hAc7bgRJIoeeRFQAWZGUAMoLIDH8EAfBgo~tplv-tej9nj120t-wap-logo:QG1hbWlpZGF1Z2h0ZXJz:1080:0.webp?lk3s=66c60501&source=wap_large_logo_image&x-expires=1794744000&x-signature=AtuuYlnjk%2F1zOsFpJtp5A0W9kzw%3D"
+   },
+   {
+    "title": "🤎 คาเฟ่ไม้สุดอบอุ่นในแกลง ที่ทำให้ \"วันธรรมดา\" กลายเป็นวันพิเศษ | สลัก คาเฟ่",
+    "likes": 2,
+    "date": "2026-07-11",
+    "link": "https://www.lemon8-app.com/@jeejeewilawan/7661147163367375368?region=th",
+    "source": "Lemon8 · จอ อี 🍀ที่แปลว่า จี❤️",
+    "tag": 1
+   },
+   {
+    "title": "ร้านนี้ต้องโดน 🎄✨",
+    "likes": 1,
+    "date": "2026-08-06",
+    "link": "https://www.lemon8-app.com/@beersasiwimol/7670952126280974855?region=th",
+    "source": "Lemon8 · Beer Sasiwimol",
+    "tag": 1
+   },
+   {
+    "title": "คาเฟ่มูสดีโทนอบอุ่น🫶🏻✨",
+    "likes": 0,
+    "date": "2026-07-09",
+    "link": "https://www.lemon8-app.com/@salid009/7660414901956903432?region=th",
+    "source": "Lemon8 · SALIDไปเรื่อย🙈",
+    "tag": 1
+   },
+   {
+    "title": "วันหยุด🍀🍀",
+    "likes": 0,
+    "date": "2026-06-12",
+    "link": "https://www.lemon8-app.com/@enjoy_ry/7650329835344085511?region=th",
+    "source": "Lemon8 · ☘️Enjoy RY🌈❄️",
+    "tag": 1
+   }
+  ],
+  "fetchedAt": "2026-11-08T03:32:51.624Z"
  },
  {
   "id": "l8-42203860728776864",
@@ -11523,8 +11573,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.454Z",
-  "district": "ปทุมวัน"
+  "fetchedAt": "2026-11-08T03:32:51.796Z"
  },
  {
   "id": "l8-42203860763517905",
@@ -11594,9 +11643,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-08T03:35:03.665Z",
-  "hours": "Mo-Su 07:00-23:30",
-  "hoursSrc": "review"
+  "fetchedAt": "2026-11-08T03:35:03.665Z"
  },
  {
   "id": "l8-22535797329631507",
@@ -11666,9 +11713,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-08T03:33:30.892Z",
-  "hours": "Mo-Su 10:00-18:00",
-  "hoursSrc": "review"
+  "fetchedAt": "2026-11-08T03:33:30.892Z"
  },
  {
   "id": "l8-22535797339436976",
@@ -11737,8 +11782,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.335Z",
-  "district": "ปากเกร็ด"
+  "fetchedAt": "2026-11-08T03:32:51.669Z"
  },
  {
   "id": "l8-22535865206177353",
@@ -11807,8 +11851,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.336Z",
-  "district": "เมืองลำปาง"
+  "fetchedAt": "2026-11-08T03:32:51.670Z"
  },
  {
   "id": "l8-42203861091643347",
@@ -11878,8 +11921,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.339Z",
-  "district": "วัฒนา"
+  "fetchedAt": "2026-11-08T03:32:51.673Z"
  },
  {
   "id": "l8-22535865246013081",
@@ -11948,8 +11990,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.354Z",
-  "district": "คลองหลวง"
+  "fetchedAt": "2026-11-08T03:32:51.689Z"
  },
  {
   "id": "l8-22535797313869084",
@@ -12023,9 +12064,7 @@
     "th": "data/thumbs/7591120094768661000-0.webp"
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.325Z",
-  "district": "ปากเกร็ด",
-  "reviewCount": 2
+  "fetchedAt": "2026-11-08T03:32:51.657Z"
  },
  {
   "id": "l8-22535865226725552",
@@ -12086,8 +12125,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.310Z",
-  "district": "พระโขนง"
+  "fetchedAt": "2026-11-08T03:32:51.637Z"
  },
  {
   "id": "l8-22535865286030198",
@@ -12161,9 +12199,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:22:05.519Z",
-  "district": "บ้านแหลม",
-  "reviewCount": 4
+  "fetchedAt": "2026-11-08T03:32:51.815Z"
  },
  {
   "id": "l8-22535797336034486",
@@ -12233,8 +12269,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:22:35.737Z",
-  "district": "คลองเตย"
+  "fetchedAt": "2026-11-08T03:32:51.820Z"
  },
  {
   "id": "l8-22535797332658440",
@@ -12304,8 +12339,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.427Z",
-  "district": "เมืองชลบุรี"
+  "fetchedAt": "2026-11-08T03:32:51.767Z"
  },
  {
   "id": "l8-22535797323133983",
@@ -12374,8 +12408,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.413Z",
-  "district": "บางกอกน้อย"
+  "fetchedAt": "2026-11-08T03:34:08.963Z"
  },
  {
   "id": "l8-22535865208459299",
@@ -12436,8 +12469,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.359Z",
-  "district": "บางกอกน้อย"
+  "fetchedAt": "2026-11-08T03:32:51.694Z"
  },
  {
   "id": "l8-22535797323145692",
@@ -12499,8 +12531,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:44.677Z",
-  "district": "บางละมุง"
+  "fetchedAt": "2026-11-08T03:32:51.803Z"
  },
  {
   "id": "l8-22535797333307996",
@@ -12570,8 +12601,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.290Z",
-  "district": "เมืองอุดรธานี"
+  "fetchedAt": "2026-11-08T03:32:51.616Z"
  },
  {
   "id": "l8-22535797304979049",
@@ -12649,9 +12679,7 @@
     "th": "data/thumbs/7629764661491073544-0.webp"
    }
   ],
-  "fetchedAt": "2026-11-07T19:22:47.700Z",
-  "district": "เมืองเชียงใหม่",
-  "reviewCount": 4
+  "fetchedAt": "2026-11-08T03:32:51.823Z"
  },
  {
   "id": "l8-22535865208978186",
@@ -12766,8 +12794,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.341Z",
-  "district": "แกลง"
+  "fetchedAt": "2026-11-08T03:32:51.675Z"
  },
  {
   "id": "l8-42203861076315530",
@@ -12829,8 +12856,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.325Z",
-  "district": "เมืองเชียงใหม่"
+  "fetchedAt": "2026-11-08T03:32:51.657Z"
  },
  {
   "id": "l8-22535797307015007",
@@ -12891,8 +12917,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.442Z",
-  "district": "ชะอำ"
+  "fetchedAt": "2026-11-08T03:32:51.782Z"
  },
  {
   "id": "l8-23661696392380915",
@@ -12978,9 +13003,7 @@
     "th": "data/thumbs/7688272487074857473-0.webp"
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.400Z",
-  "district": "บางละมุง",
-  "reviewCount": 19
+  "fetchedAt": "2026-11-08T03:32:51.738Z"
  },
  {
   "id": "l8-42203860794031127",
@@ -13042,8 +13065,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.449Z",
-  "district": "ลำลูกกา"
+  "fetchedAt": "2026-11-08T03:32:51.790Z"
  },
  {
   "id": "l8-22535796495336099",
@@ -13104,8 +13126,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.300Z",
-  "district": "แกลง"
+  "fetchedAt": "2026-11-08T03:32:51.628Z"
  },
  {
   "id": "l8-21568226362897883",
@@ -13166,8 +13187,68 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.327Z",
-  "district": "เมืองสมุทรปราการ"
+  "fetchedAt": "2026-11-08T03:32:51.660Z"
+ },
+ {
+  "id": "l8-22535865214957211",
+  "kind": "nightlife",
+  "fromTrend": true,
+  "l8poi": "22535865214957211",
+  "name": {
+   "th": "ตานีเบียร์แทปบาร์"
+  },
+  "lat": 13.75804,
+  "lng": 100.48471,
+  "approx": true,
+  "province": "bangkok",
+  "address": "342 อรุณอมรินทร์18, แขวงศิริราช เขตบางกอกน้อย กรุงเทพมหานคร",
+  "hot": 9,
+  "trend": 5,
+  "posts": [
+   {
+    "title": "นั่งชิล วังหลัง วิวกลางคืนฮีลใจ",
+    "likes": 199,
+    "date": "2026-09-17",
+    "link": "https://www.lemon8-app.com/@kinthiao519/7686548708547314184?region=th",
+    "source": "Lemon8 · บีม บีม ไง ที่ชอบกินมัทฉะ",
+    "tag": 1,
+    "image": "https://p16-lemon8-cross-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/oQB6aPCAIiqPAYCIlwpcAsUkBAlbFtiTnKEIi~tplv-tej9nj120t-wap-logo:QGtpbnRoaWFvNTE5:1080:0.webp?lk3s=66c60501&source=wap_large_logo_image&x-expires=1794744000&x-signature=zu6k5sfdPOt3wpvlD%2BabqDwZFP4%3D"
+   },
+   {
+    "title": "นั่งจิบเบียร์เบาๆ พร้อมวิวสวยดูแพง ✨",
+    "likes": 3,
+    "date": "2026-05-22",
+    "link": "https://www.lemon8-app.com/@kookikkok/7642527149043302913?region=th",
+    "source": "Lemon8 · กิ๊กกี้ไดอารี่",
+    "tag": 1,
+    "image": "https://p16-lemon8-cross-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/oInPFKgBfEEvrxAUAB21nIC2uiBUieAkr9AIW5~tplv-tej9nj120t-wap-logo:QGtvb2tpa2tvaw==:1080:0.webp?lk3s=66c60501&source=wap_large_logo_image&x-expires=1794744000&x-signature=TWpKFg2%2BAZi5C058kqBCmkxF2Rs%3D"
+   },
+   {
+    "title": "Chilling Day. : ร้านนั่งชิวริมแม่น้ำเจ้าพระยา 🍻🍷🫶🏻",
+    "likes": 2,
+    "date": "2026-07-22",
+    "link": "https://www.lemon8-app.com/@pungzepx_/7665348890949845511?region=th",
+    "source": "Lemon8 · 𝗽𝗽𝗱𝗶𝗮𝗿𝘆_",
+    "tag": 1
+   },
+   {
+    "title": "พิกัดลับบรรยากาศเลิศ #tanee beer tap 🍻",
+    "likes": 1,
+    "date": "2026-09-05",
+    "link": "https://www.lemon8-app.com/@mysnack_07/7681869840512221703?region=th",
+    "source": "Lemon8 · สอนอ Say Hi👋🏻",
+    "tag": 1
+   },
+   {
+    "title": "ร้านนั่งชิลวังหลัง แบบปล่อยใจ",
+    "likes": 1,
+    "date": "2026-07-19",
+    "link": "https://www.lemon8-app.com/@filmlala/7664179251448381960?region=th",
+    "source": "Lemon8 · Film_lala",
+    "tag": 1
+   }
+  ],
+  "fetchedAt": "2026-11-08T03:32:51.752Z"
  },
  {
   "id": "l8-23661696388770039",
@@ -13228,8 +13309,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.380Z",
-  "district": "คลองสาน"
+  "fetchedAt": "2026-11-08T03:32:51.716Z"
  },
  {
   "id": "l8-21568226299714895",
@@ -13281,8 +13361,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.295Z",
-  "district": "เมืองราชบุรี"
+  "fetchedAt": "2026-11-08T03:32:51.622Z"
  },
  {
   "id": "l8-22535797332087009",
@@ -13343,8 +13422,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.450Z",
-  "district": "เมืองระยอง"
+  "fetchedAt": "2026-11-08T03:32:51.791Z"
  },
  {
   "id": "l8-42203860932219144",
@@ -13428,9 +13506,7 @@
     "th": "data/thumbs/7692651232202490388-0.webp"
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.361Z",
-  "district": "บางนา",
-  "reviewCount": 24
+  "fetchedAt": "2026-11-08T03:32:51.697Z"
  },
  {
   "id": "l8-42203861091224168",
@@ -13484,8 +13560,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.419Z",
-  "district": "พญาไท"
+  "fetchedAt": "2026-11-08T03:32:51.759Z"
  },
  {
   "id": "l8-22535865206866886",
@@ -13537,8 +13612,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.434Z",
-  "district": "สวนผึ้ง"
+  "fetchedAt": "2026-11-08T03:32:51.773Z"
  },
  {
   "id": "l8-42203860546730583",
@@ -13600,8 +13674,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.451Z",
-  "district": "เมืองระยอง"
+  "fetchedAt": "2026-11-08T03:32:51.793Z"
  },
  {
   "id": "l8-22535797338616151",
@@ -13662,8 +13735,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.322Z",
-  "district": "ทองแสนขัน"
+  "fetchedAt": "2026-11-08T03:32:51.653Z"
  },
  {
   "id": "l8-42203861107510416",
@@ -13780,8 +13852,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.385Z",
-  "district": "เมืองนนทบุรี"
+  "fetchedAt": "2026-11-08T03:32:51.722Z"
  },
  {
   "id": "l8-22535797337976077",
@@ -13834,8 +13905,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.333Z",
-  "district": "เมืองกาญจนบุรี"
+  "fetchedAt": "2026-11-08T03:32:51.666Z"
  },
  {
   "id": "l8-22535865218292870",
@@ -13888,8 +13958,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:21:32.557Z",
-  "district": "วังทองหลาง"
+  "fetchedAt": "2026-11-08T03:32:51.812Z"
  },
  {
   "id": "l8-22535797254192383",
@@ -13943,8 +14012,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.292Z",
-  "district": "เมืองตาก"
+  "fetchedAt": "2026-11-08T03:32:51.619Z"
  },
  {
   "id": "l8-22535865212170357",
@@ -13989,8 +14057,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.282Z",
-  "district": "ลำลูกกา"
+  "fetchedAt": "2026-11-08T03:32:51.608Z"
  },
  {
   "id": "l8-22535797310017671",
@@ -14051,14 +14118,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-08T03:33:23.118Z",
-  "hours": "Mo-Su 11:00-22:00",
-  "hoursSrc": "review",
-  "menuPrice": {
-   "min": 100,
-   "max": 500,
-   "src": "review"
-  }
+  "fetchedAt": "2026-11-08T03:33:23.118Z"
  },
  {
   "id": "l8-22535865213314842",
@@ -14140,9 +14200,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.459Z",
-  "district": "เมืองระยอง",
-  "reviewCount": 5
+  "fetchedAt": "2026-11-08T03:32:51.802Z"
  },
  {
   "id": "l8-22535865348301434",
@@ -14203,8 +14261,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:21:35.322Z",
-  "district": "เมืองฉะเชิงเทรา"
+  "fetchedAt": "2026-11-08T03:32:51.812Z"
  },
  {
   "id": "l8-22535797275781308",
@@ -14284,9 +14341,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:23:08.259Z",
-  "district": "เมืองนครพนม",
-  "reviewCount": 5
+  "fetchedAt": "2026-11-08T03:32:51.826Z"
  },
  {
   "id": "l8-42203860726465047",
@@ -14366,9 +14421,68 @@
     "th": "data/thumbs/7576561790696325653-0.webp"
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.373Z",
-  "district": "สาทร",
-  "reviewCount": 10
+  "fetchedAt": "2026-11-08T03:32:51.709Z"
+ },
+ {
+  "id": "l8-22535865204865279",
+  "kind": "cafe",
+  "fromTrend": true,
+  "l8poi": "22535865204865279",
+  "name": {
+   "th": "โฮะ: เบรค & คร๊าฟคาเฟ่"
+  },
+  "lat": 18.13381,
+  "lng": 100.13485,
+  "approx": true,
+  "province": "phrae",
+  "address": "18.148563,100.143706 ตำบล ในเวียง อำเภอเมืองแพร่ แพร่",
+  "hot": 7,
+  "trend": 5,
+  "posts": [
+   {
+    "title": "โฮะ : คาเฟ่ฟีลพื้นเมือง จังหวัดแพร่",
+    "likes": 11,
+    "date": "2026-08-09",
+    "link": "https://www.lemon8-app.com/@journeypairueai/7672011858789941778?region=th",
+    "source": "Lemon8 · เจอนี่ไปเรื่อย JourneyPairueai",
+    "tag": 1,
+    "image": "https://p16-lemon8-cross-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/oUjb9eEBfAB4W4oy78cld6AEDfJDFDAwAEAUHI~tplv-tej9nj120t-wap-logo:QGpvdXJuZXlwYWlydWVhaQ==:1080:0.webp?lk3s=66c60501&source=wap_large_logo_image&x-expires=1794744000&x-signature=3jxWvaU3ruYB3EVRLagJ4CBBYHc%3D"
+   },
+   {
+    "title": "Ho : BAKE & CRAFT CAFE’ (โฮะ)",
+    "likes": 8,
+    "date": "2026-07-01",
+    "link": "https://www.lemon8-app.com/@chalii.h/7657576345643467271?region=th",
+    "source": "Lemon8 · หงหงตงหม๋งเหมียวขื่อ🍄",
+    "tag": 1,
+    "image": "https://p16-lemon8-cross-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/ok9wezIgUaEF2ESWCYt5nRfcA1DbBCAQ0AuqKK~tplv-tej9nj120t-wap-logo:QGNoYWxpaS5o:1080:0.webp?lk3s=66c60501&source=wap_large_logo_image&x-expires=1794744000&x-signature=xZ62dgn50hWHTXSPygzGvVkpFwI%3D"
+   },
+   {
+    "title": "Ho: Bake & Craft Café – คาเฟ่เล็ก ๆ ที่อบอุ่นที่สุดร้านหนึ่งในเมืองแพร่ ☕🌿",
+    "likes": 0,
+    "date": "2026-07-28",
+    "link": "https://www.lemon8-app.com/@pangmaebokhaiyubaan/7667370304217367041?region=th",
+    "source": "Lemon8 · แป้งแม่บอกให้อยู่บ้าน",
+    "tag": 1
+   },
+   {
+    "title": "Ho: Bake&Craft Café คาเฟ่บ้านไม้สุดชิค ณ เมืองแพร่ ☕️",
+    "likes": 0,
+    "date": "2026-07-24",
+    "link": "https://www.lemon8-app.com/@nook29nc/7666114333151166984?region=th",
+    "source": "Lemon8 · Nook29nc",
+    "tag": 1
+   },
+   {
+    "title": "ร้านกาแฟจังหวัดแพร่",
+    "likes": 0,
+    "date": "2026-04-26",
+    "link": "https://www.lemon8-app.com/@user2291703250805/7633219331886809618?region=th",
+    "source": "Lemon8 · เขาว่าเราคือ นุ๊กนิ๊ก😊",
+    "tag": 1
+   }
+  ],
+  "fetchedAt": "2026-11-08T03:33:00.334Z"
  },
  {
   "id": "l8-22535797336531994",
@@ -14414,8 +14528,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.289Z",
-  "district": "เมืองเชียงใหม่"
+  "fetchedAt": "2026-11-08T03:32:51.616Z"
  },
  {
   "id": "l8-42203860646035112",
@@ -14548,9 +14661,7 @@
     "th": "data/thumbs/7620692114497700360-0.webp"
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.434Z",
-  "district": "เมืองเชียงราย",
-  "reviewCount": 10
+  "fetchedAt": "2026-11-08T03:32:51.774Z"
  },
  {
   "id": "l8-22535796483567228",
@@ -14604,8 +14715,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.423Z",
-  "district": "คลองเตย"
+  "fetchedAt": "2026-11-08T03:32:51.763Z"
  },
  {
   "id": "l8-22535796487969479",
@@ -14686,9 +14796,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.456Z",
-  "district": "แม่ริม",
-  "reviewCount": 7
+  "fetchedAt": "2026-11-08T03:32:51.798Z"
  },
  {
   "id": "l8-22535865258899075",
@@ -14741,8 +14849,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:53.136Z",
-  "district": "เมืองหนองคาย"
+  "fetchedAt": "2026-11-08T03:32:51.804Z"
  },
  {
   "id": "l8-22535797284527152",
@@ -14843,8 +14950,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.311Z",
-  "district": "ไทรน้อย"
+  "fetchedAt": "2026-11-08T03:32:51.639Z"
  },
  {
   "id": "l8-42203861090687025",
@@ -14897,8 +15003,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.321Z",
-  "district": "บ้านสร้าง"
+  "fetchedAt": "2026-11-08T03:32:51.652Z"
  },
  {
   "id": "l8-42203861098307222",
@@ -14944,8 +15049,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.417Z",
-  "district": "จตุจักร"
+  "fetchedAt": "2026-11-08T03:32:51.756Z"
  },
  {
   "id": "l8-22535796494773488",
@@ -15020,9 +15124,7 @@
     "th": "data/thumbs/7573605115681145365-0.webp"
    }
   ],
-  "fetchedAt": "2026-11-07T19:22:19.894Z",
-  "district": "เมืองลำปาง",
-  "reviewCount": 2
+  "fetchedAt": "2026-11-08T03:32:51.817Z"
  },
  {
   "id": "l8-34955879850629584",
@@ -15157,9 +15259,7 @@
     "th": "data/thumbs/7630413756673851911-0.webp"
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.352Z",
-  "district": "บางบัวทอง",
-  "reviewCount": 9
+  "fetchedAt": "2026-11-08T03:32:51.687Z"
  },
  {
   "id": "l8-42203861107552154",
@@ -15205,61 +15305,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:48.927Z",
-  "district": "เมืองกาฬสินธุ์"
- },
- {
-  "id": "l8-22535797318600046",
-  "kind": "cafe",
-  "fromTrend": true,
-  "l8poi": "22535797318600046",
-  "name": {
-   "th": "Tamora cafe &eatery",
-   "en": "Tamora cafe &eatery"
-  },
-  "lat": 19.902076,
-  "lng": 99.211184,
-  "osm": "n13823950601",
-  "province": "chiang-mai",
-  "address": "170 บ้านสบมาว ตำบล สันทราย อำเภอ ฝาง เชียงใหม่",
-  "hot": 6.1,
-  "trend": 4,
-  "posts": [
-   {
-    "title": "คาเฟ่เมืองฝาง Tamora cafe & eatery",
-    "likes": 9,
-    "date": "2026-06-08",
-    "link": "https://www.lemon8-app.com/@asnnwrd/7649045744246080008?region=th",
-    "source": "Lemon8 · อินสอมจ้าว",
-    "tag": 1
-   },
-   {
-    "title": "Tamora ฝาง",
-    "likes": 2,
-    "date": "2026-05-06",
-    "link": "https://www.lemon8-app.com/@jjaimie1/7636715953052484112?region=th",
-    "source": "Lemon8 · jaimie",
-    "tag": 1
-   },
-   {
-    "title": "Tamora cafe &eatery อ.ฝาง จ.เชียงใหม่",
-    "likes": 1,
-    "date": "2026-05-02",
-    "link": "https://www.lemon8-app.com/@jaonew171142/7635321116382249473?region=th",
-    "source": "Lemon8 · New Kanjana",
-    "tag": 1
-   },
-   {
-    "title": "Tamora cafe &eatery",
-    "likes": 1,
-    "date": "2026-04-22",
-    "link": "https://www.lemon8-app.com/@bam_skz/7631730573832176136?region=th",
-    "source": "Lemon8 · Bam",
-    "tag": 1
-   }
-  ],
-  "fetchedAt": "2026-11-07T19:21:29.431Z",
-  "district": "ฝาง"
+  "fetchedAt": "2026-11-08T03:32:51.804Z"
  },
  {
   "id": "l8-22535796484081635",
@@ -15519,8 +15565,7 @@
     "image": "https://p16-lemon8-cross-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/ogA8A4vRDQCewX4HE1FAUltrnCfTqABIETg59S~tplv-tej9nj120t-share_card_play.jpeg?lk3s=66c60501&source=share_card&x-expires=1794744000&x-signature=e30%2FMWzXiQ9c6ae%2Fso9bDlo0R%2FQ%3D"
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.427Z",
-  "district": "สวนหลวง"
+  "fetchedAt": "2026-11-08T03:32:51.766Z"
  },
  {
   "id": "l8-22535865205801548",
@@ -15565,8 +15610,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:21:37.880Z",
-  "district": "เมืองฉะเชิงเทรา"
+  "fetchedAt": "2026-11-08T03:32:51.812Z"
  },
  {
   "id": "l8-21568226306551839",
@@ -15612,8 +15656,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.457Z",
-  "district": "เมืองเชียงใหม่"
+  "fetchedAt": "2026-11-08T03:32:51.799Z"
  },
  {
   "id": "l8-22535797302000005",
@@ -15659,8 +15702,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:23:14.477Z",
-  "district": "เมืองน่าน"
+  "fetchedAt": "2026-11-08T03:32:51.827Z"
  },
  {
   "id": "l8-21568226385925071",
@@ -15741,9 +15783,7 @@
     "th": "data/thumbs/7627433820338340370-0.webp"
    }
   ],
-  "fetchedAt": "2026-11-07T19:22:52.164Z",
-  "district": "ปากเกร็ด",
-  "reviewCount": 8
+  "fetchedAt": "2026-11-08T03:32:51.823Z"
  },
  {
   "id": "l8-42203860961123246",
@@ -15787,8 +15827,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:22:59.617Z",
-  "district": "อ.เมือง"
+  "fetchedAt": "2026-11-08T03:32:51.825Z"
  },
  {
   "id": "l8-22535865203054444",
@@ -15880,8 +15919,51 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.392Z",
-  "district": "เมืองลพบุรี"
+  "fetchedAt": "2026-11-08T03:32:51.729Z"
+ },
+ {
+  "id": "l8-22535797318600046",
+  "kind": "cafe",
+  "fromTrend": true,
+  "l8poi": "22535797318600046",
+  "name": {
+   "th": "Tamora cafe &eatery",
+   "en": "Tamora cafe &eatery"
+  },
+  "lat": 19.902076,
+  "lng": 99.211184,
+  "osm": "n13823950601",
+  "province": "chiang-mai",
+  "address": "170 บ้านสบมาว ตำบล สันทราย อำเภอ ฝาง เชียงใหม่",
+  "hot": 4.8,
+  "trend": 3,
+  "posts": [
+   {
+    "title": "คาเฟ่เมืองฝาง Tamora cafe & eatery",
+    "likes": 9,
+    "date": "2026-06-08",
+    "link": "https://www.lemon8-app.com/@asnnwrd/7649045744246080008?region=th",
+    "source": "Lemon8 · อินสอมจ้าว",
+    "tag": 1
+   },
+   {
+    "title": "Tamora ฝาง",
+    "likes": 2,
+    "date": "2026-05-06",
+    "link": "https://www.lemon8-app.com/@jjaimie1/7636715953052484112?region=th",
+    "source": "Lemon8 · jaimie",
+    "tag": 1
+   },
+   {
+    "title": "Tamora cafe &eatery อ.ฝาง จ.เชียงใหม่",
+    "likes": 1,
+    "date": "2026-05-02",
+    "link": "https://www.lemon8-app.com/@jaonew171142/7635321116382249473?region=th",
+    "source": "Lemon8 · New Kanjana",
+    "tag": 1
+   }
+  ],
+  "fetchedAt": "2026-11-08T03:32:51.810Z"
  },
  {
   "id": "l8-21568226270903168",
@@ -16003,9 +16085,7 @@
     "th": "data/thumbs/7587754981844615698-0.webp"
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.416Z",
-  "district": "ปทุมวัน",
-  "reviewCount": 17
+  "fetchedAt": "2026-11-08T03:32:51.755Z"
  },
  {
   "id": "l8-22535865213743576",
@@ -16049,8 +16129,54 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:21:50.141Z",
-  "district": "หลังสวน"
+  "fetchedAt": "2026-11-08T03:32:51.814Z"
+ },
+ {
+  "id": "l8-21568226255637355",
+  "kind": "landmark",
+  "fromTrend": true,
+  "l8poi": "21568226255637355",
+  "name": {
+   "th": "ตลาดบ้านใหม่ 100 ปี ฉะเชิงเทรา"
+  },
+  "lat": 13.697144,
+  "lng": 101.090793,
+  "osm": "n6018819685",
+  "province": "chachoengsao",
+  "address": "ถนนศุภกิจ ตำบล หน้าเมือง อำเภอเมืองฉะเชิงเทรา ฉะเชิงเทรา",
+  "hot": 4.6,
+  "trend": 3,
+  "posts": [
+   {
+    "title": "ตลาดบ้านใหม่ เมืองแปดริ้ว ฉะเชิงเทรา",
+    "likes": 6,
+    "date": "2026-09-19",
+    "link": "https://www.lemon8-app.com/@suriyapornsuri/7687217525523792402?region=th",
+    "source": "Lemon8 · Suri",
+    "tag": 1
+   },
+   {
+    "title": "แซ่บจนต้องซ้ำ 🌶️",
+    "likes": 2,
+    "date": "2026-09-09",
+    "link": "https://www.lemon8-app.com/@suriyapornsuri/7683512222982734343?region=th",
+    "source": "Lemon8 · Suri",
+    "tag": 1
+   },
+   {
+    "title": "#กลางใจบางปะกง",
+    "likes": 1,
+    "date": "2026-10-04",
+    "link": "https://www.lemon8-app.com/@kasipon.nbrb17/7692747928502485524?region=th",
+    "source": "Lemon8 · 0bp",
+    "tag": 1
+   }
+  ],
+  "fetchedAt": "2026-11-08T03:33:16.746Z",
+  "entry": {
+   "free": true,
+   "src": "typical"
+  }
  },
  {
   "id": "l8-42203861116497603",
@@ -16085,8 +16211,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.319Z",
-  "district": "เมืองนครปฐม"
+  "fetchedAt": "2026-11-08T03:32:51.649Z"
  },
  {
   "id": "l8-22535796495400418",
@@ -16122,8 +16247,95 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.324Z",
-  "district": "หาดใหญ่"
+  "fetchedAt": "2026-11-08T03:32:51.656Z"
+ },
+ {
+  "id": "l8-42203860796297618",
+  "kind": "animalcafe",
+  "fromTrend": true,
+  "l8poi": "42203860796297618",
+  "name": {
+   "th": "MARL CAFE Coffee Shop",
+   "en": "MARL CAFE Coffee Shop"
+  },
+  "lat": 14.09829,
+  "lng": 100.68712,
+  "approx": true,
+  "province": "pathum-thani",
+  "address": "CJ ร้านอยู่ซ้ายมือ 11 หมู่ 6 ซอย 30 ตะวันออก ตำบล คลองสี่ อำเภอคลองหลวง ปทุมธานี",
+  "hot": 4.4,
+  "trend": 3,
+  "posts": [
+   {
+    "title": "Marl Cafe คาเฟ่ลับๆ ย่านคลอง 4 ☕️🙋🏻‍♀️✨",
+    "likes": 6,
+    "date": "2026-09-21",
+    "link": "https://www.lemon8-app.com/@siriwan.we/7687915777504100882?region=th",
+    "source": "Lemon8 · DDAO◝✩",
+    "tag": 1
+   },
+   {
+    "title": "CAFE",
+    "likes": 1,
+    "date": "2026-10-18",
+    "link": "https://www.lemon8-app.com/@nan.nm20/7697869238035300871?region=th",
+    "source": "Lemon8 · NaN",
+    "tag": 1
+   },
+   {
+    "title": "MARL CAFE",
+    "likes": 1,
+    "date": "2026-10-09",
+    "link": "https://www.lemon8-app.com/@im_jalleiei/7694708301820461575?region=th",
+    "source": "Lemon8 · เจ้าปอม",
+    "tag": 1
+   }
+  ],
+  "fetchedAt": "2026-11-08T03:33:41.765Z"
+ },
+ {
+  "id": "l8-22535797290143078",
+  "kind": "cafe",
+  "fromTrend": true,
+  "l8poi": "22535797290143078",
+  "name": {
+   "th": "Idyllic House Cafe",
+   "en": "Idyllic House Cafe"
+  },
+  "lat": 6.525481,
+  "lng": 101.758758,
+  "osm": "n11294733363",
+  "province": "narathiwat",
+  "address": "181 ตำบล โคกเคียน อ.เมือง นราธิวาส",
+  "hot": 4.4,
+  "trend": 3,
+  "posts": [
+   {
+    "title": "Idillic House Cafe’ เป็นคาเฟ่ที่ไปซ้ำบ่อที่สุดละ",
+    "likes": 5,
+    "date": "2026-06-18",
+    "link": "https://www.lemon8-app.com/@tlittlezone/7652747481008144904?region=th",
+    "source": "Lemon8 · The Littlezone",
+    "tag": 1
+   },
+   {
+    "title": "Idyllic Houses Cafe คาเฟ่ริมทะเล",
+    "likes": 3,
+    "date": "2026-06-11",
+    "link": "https://www.lemon8-app.com/@tlittlezone/7650138045991911943?region=th",
+    "source": "Lemon8 · The Littlezone",
+    "tag": 1
+   },
+   {
+    "title": "Idyllic House Cafe",
+    "likes": 0,
+    "date": "2026-07-21",
+    "link": "https://www.lemon8-app.com/@thichanuan/7664932083311198738?region=th",
+    "source": "Lemon8 · Thichanuan :))",
+    "tag": 1
+   }
+  ],
+  "fetchedAt": "2026-11-08T03:34:18.228Z"
  },
  {
   "id": "l8-22535865257566340",
@@ -16167,8 +16379,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.445Z",
-  "district": "สูงเม่น"
+  "fetchedAt": "2026-11-08T03:32:51.785Z"
  },
  {
   "id": "l8-22535796492979581",
@@ -16251,9 +16462,7 @@
     "th": "data/thumbs/7607489901768786450-0.webp"
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.373Z",
-  "district": "เมืองนนทบุรี",
-  "reviewCount": 20
+  "fetchedAt": "2026-11-08T03:32:51.709Z"
  },
  {
   "id": "l8-22535797334219324",
@@ -16288,8 +16497,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.402Z",
-  "district": "เมืองลำพูน"
+  "fetchedAt": "2026-11-08T03:32:51.740Z"
  },
  {
   "id": "l8-22535865712556497",
@@ -16325,8 +16533,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.442Z",
-  "district": "เมืองนราธิวาส"
+  "fetchedAt": "2026-11-08T03:32:51.782Z"
  },
  {
   "id": "l8-42203861083680436",
@@ -16362,8 +16569,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.383Z",
-  "district": "ภาษีเจริญ"
+  "fetchedAt": "2026-11-08T03:32:51.720Z"
  },
  {
   "id": "l8-21568226261642598",
@@ -16399,8 +16605,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.395Z",
-  "district": "บางรัก"
+  "fetchedAt": "2026-11-08T03:32:51.733Z"
  },
  {
   "id": "l8-22535796495542596",
@@ -16436,8 +16641,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.452Z",
-  "district": "คลองเตย"
+  "fetchedAt": "2026-11-08T03:32:51.794Z"
  },
  {
   "id": "l8-22535865204500327",
@@ -16557,8 +16761,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.459Z",
-  "district": "ตลิ่งชัน"
+  "fetchedAt": "2026-11-08T03:32:51.801Z"
  },
  {
   "id": "l8-21568226259924574",
@@ -16594,8 +16797,35 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:22:07.405Z",
-  "district": "ราชเทวี"
+  "fetchedAt": "2026-11-08T03:32:51.816Z"
+ },
+ {
+  "id": "l8-22535865207439420",
+  "kind": "restaurant",
+  "fromTrend": true,
+  "l8poi": "22535865207439420",
+  "name": {
+   "th": "FAT. P the fat kids'eatery",
+   "en": "FAT. P the fat kids'eatery"
+  },
+  "lat": 13.72623,
+  "lng": 100.52813,
+  "approx": true,
+  "province": "bangkok",
+  "address": "PGGJ35R, Soi Silom 5, แขวงสีลม เขตบางรัก กรุงเทพมหานคร",
+  "hot": 3.9,
+  "trend": 1,
+  "posts": [
+   {
+    "title": "🥪🍪 พิกัดร้านเบเกอรี่ลับไซส์มินิย่านสาทร! 🤫",
+    "likes": 729,
+    "date": "2026-06-19",
+    "link": "https://www.lemon8-app.com/@bunjaratt_/7653143452766798344?region=th",
+    "source": "Lemon8 · lieng อ่านว่า ลี่อิง🍋",
+    "tag": 1
+   }
+  ],
+  "fetchedAt": "2026-11-08T03:34:45.677Z"
  },
  {
   "id": "l8-22535865823638246",
@@ -16631,8 +16861,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.394Z",
-  "district": "เมืองสิงห์บุรี"
+  "fetchedAt": "2026-11-08T03:32:51.731Z"
  },
  {
   "id": "l8-42203861107283107",
@@ -16715,9 +16944,7 @@
     "th": "data/thumbs/7628967874837529108-0.webp"
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.401Z",
-  "district": "คลองเตย",
-  "reviewCount": 12
+  "fetchedAt": "2026-11-08T03:32:51.739Z"
  },
  {
   "id": "l8-22535865205777527",
@@ -16781,8 +17008,7 @@
     "tag": 1
    }
   ],
-  "fetchedAt": "2026-11-07T19:20:35.451Z",
-  "district": "เมืองอุดรธานี"
+  "fetchedAt": "2026-11-08T03:32:51.792Z"
  },
  {
   "id": "l8-22535797261476523",
