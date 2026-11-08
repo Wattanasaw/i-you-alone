@@ -1032,14 +1032,24 @@
   function feeText(p) {
     const e = p.entry;
     if (e?.free || p.fee === "no") return t("feeNo");
+    if (e?.tiers?.length) {
+      const ps = e.tiers.map(x => x.price), lo = Math.min(...ps), hi = Math.max(...ps);
+      return lo === hi ? fmtBaht(lo) : `${Number(lo).toLocaleString(locale())}–${fmtBaht(hi)}`;
+    }
     if (e?.min && e?.max) return `${Number(e.min).toLocaleString(locale())}–${fmtBaht(e.max)}`;
     if (e?.thai || e?.foreign) return [e.thai && fmtBaht(e.thai), e.foreign && e.foreign !== e.thai && `${t("foreigner")} ${fmtBaht(e.foreign)}`].filter(Boolean).join(" · ");
     if (p.fee === "yes") return t("feeYes");
     return "-";
   }
   const MENU_KINDS = new Set(["cafe", "animalcafe", "restaurant", "nightlife"]);
+  // ค่าเข้าแต่ละประเภทบัตร (ผู้ใหญ่/เด็ก/คนไทย/ต่างชาติ/ออนไลน์/หน้างาน) · ราคาที่มาจากรีวิวบอกกำกับ
+  const feeTiers = p => {
+    const ts = p.entry?.tiers;
+    if (!ts || ts.length < 2 && !ts[0]?.note) return "";
+    return `<ul class="fee-tiers">${ts.map(x => `<li><span>${esc(pick(x.who))}${x.note ? `<small>${esc(pick(x.note))}</small>` : ""}</span><b>${fmtBaht(x.price)}</b>${x.rv ? `<small class="src-note src-review">${t("srcVerified")}</small>` : ""}</li>`).join("")}</ul>`;
+  };
   // ที่มาของเวลาเปิด/ราคา (OSM ไม่ต้องบอก) — ข้อมูลประมาณ/AI บอกชัดให้ผู้ใช้เช็กก่อนไป
-  const SRC_KEY = { Lemon8: "fromReviews", review: "fromReviews", owner: "fromOwner", web: "srcWeb", ai: "srcAI", typical: "srcTypical" };
+  const SRC_KEY = { Lemon8: "fromReviews", review: "srcVerified", owner: "fromOwner", web: "srcWeb", ai: "srcAI", typical: "srcTypical" };
   const approx = src => src === "typical" || src === "ai" ? "≈ " : "";
   const srcNote = src => SRC_KEY[src] ? `<small class="src-note src-${src}">${t(SRC_KEY[src])}</small>` : "";
   const menuText = p => p.menuPrice ? (p.menuPrice.min === p.menuPrice.max ? `~${fmtBaht(p.menuPrice.min)}` : `${Number(p.menuPrice.min).toLocaleString(locale())}–${fmtBaht(p.menuPrice.max)}`) : "-";
@@ -1422,7 +1432,7 @@
       ${sec("😋", "rvMustTry", rvList(rv.mustTry))}
       ${sec("💡", "rvTips", rvList(rv.tips))}
       ${sec("⚠️", "rvCons", rvList(rv.cons))}
-      ${rv.src?.length ? `<p class="rv-src">${t("rvSources")}: ${rv.src.map((s, i) => `<a ${inAppLink(s.link)}>${esc(String(s.source || "Lemon8").replace(/^Lemon8 · /, "@"))}</a>`).join(" · ")}</p>` : ""}
+      ${rv.src?.length ? `<p class="rv-src">${t("rvSources")}: ${rv.src.map(s => `<a ${inAppLink(s.link)}>${{ web: "🌐 ", wiki: "📖 ", voyage: "🧳 " }[s.type] || ""}${esc(String(s.source || "Lemon8").replace(/^Lemon8 · /, "@"))}</a>`).join(" · ")}</p>` : ""}
       ${rv.ai && rv.sources?.length ? `<p class="rv-src">${t("rvSources")}: ${rv.sources.map(u => { let h = u; try { h = new URL(u).hostname.replace(/^www\./, ""); } catch {} return `<a ${inAppLink(u)}>${esc(h)}</a>`; }).join(" · ")}</p>` : ""}
     </section>`;
   }
@@ -1459,7 +1469,7 @@
         <dl class="facts">
           <div><dt>📍</dt><dd>${esc(p.address || name)}<small>${esc(area)}</small><a class="maps-link" ${mapsLink(v, null)}>${t("openMaps")}</a></dd></div>
           <div><dt>🕒</dt><dd>${esc(fmtHours(p.hours) || t("hoursUnknown"))}${open != null ? `<small class="${open ? "open-now" : "closed-now"}">${open ? t("openNowShort") : t("closedNow")}</small>` : ""}${srcNote(p.hoursSrc)}</dd></div>
-          ${!MENU_KINDS.has(p.kind) || p.kind === "animalcafe" ? `<div><dt>🎟️</dt><dd>${t("fee")}: ${esc(feeText(p))}${srcNote(p.entry?.src)}</dd></div>` : ""}
+          ${!MENU_KINDS.has(p.kind) || p.kind === "animalcafe" ? `<div><dt>🎟️</dt><dd>${t("fee")}: ${esc(feeText(p))}${srcNote(p.entry?.src)}${feeTiers(p)}</dd></div>` : ""}
           ${MENU_KINDS.has(p.kind) ? `<div><dt>🍽️</dt><dd>${t("menuPrice")}: ${esc(menuText(p))}${srcNote(p.menuPrice?.src)}</dd></div>` : ""}
           ${p.phone ? `<div><dt>☎️</dt><dd><a href="tel:${esc(p.phone.replace(/[^\d+]/g, ""))}">${esc(p.phone.split(";")[0])}</a></dd></div>` : ""}
         </dl>

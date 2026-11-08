@@ -152,10 +152,11 @@ export function infoFromPosts(bodies, kind) {
   // "เปิด 24 ชั่วโมง" / "open 24 hours"
   const h24 = bodies.filter(b => /(?:เปิด|open)\s*(?:ทุกวัน\s*)?24\s*(?:ชั่วโมง|ชม\.?|hours?|hrs?|\/7)/i.test(b)).length;
   const best = [...times].sort((a, b) => b[1] - a[1])[0];
-  if (h24 >= 2 && (!best || h24 >= best[1])) out.hours = "24/7";
-  else if (best) {
+  if (h24 >= 2 && (!best || h24 >= best[1])) { out.hours = "24/7"; out.hoursN = h24; }
+  else if (best && best[1] >= 2) {
     const off = [...offs].sort((a, b) => b[1] - a[1])[0];
     out.hours = `Mo-Su ${best[0]}${off ? `; ${off[0]} off` : ""}`;
+    out.hoursN = best[1]; // จำนวนโพสต์ที่เขียนเวลาตรงกัน
   }
   // ราคา (ร้านอาหาร/คาเฟ่/บาร์): ตัวเลขที่มี "บาท" "฿" ".-" ติดกัน · ช่วงกลางของราคาที่พบ (ตัดค่าสุดโต่ง) · ต้องพบอย่างน้อย 3 ราคา
   if (VENUE_KINDS.has(kind)) {

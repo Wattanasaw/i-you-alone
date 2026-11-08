@@ -1,133 +1,324 @@
-// สรุปรีวิวแต่ละสถานที่จากโพสต์รีวิวจริง (Lemon8) → data/place-reviews.json (แสดงในหน้ารายละเอียด "สรุปจากรีวิว")
-// อ่านเนื้อโพสต์เต็ม (+ ตัวหนังสือบนรูป) ของโพสต์ที่พูดถึง/ปักหมุดสถานที่นั้น แล้วให้ AI สรุปด้วยคำของตัวเอง:
-// จุดเด่น · ต้องลอง · เคล็ดลับ (ที่จอดรถ เวลาที่ดี การจอง) · ข้อควรรู้ · เหมาะกับ (แท็ก) — ไม่คัดลอกข้อความ, มีลิงก์ไปโพสต์ต้นฉบับ
-// สรุปใหม่เมื่อมีโพสต์ใหม่หรือครบ 45 วัน · ไม่มี AI = ใช้ผลเดิม
-// รัน หลัง scripts/trend-places.mjs · node scripts/place-reviews.mjs [--ai 25]
+// สรุปรีวิว + ข้อมูลจริง (เวลาเปิด-ปิด · ค่าเข้าทุกราคา · ช่วงราคาเมนู) ของแต่ละสถานที่ จาก "หลายแหล่ง" → data/place-reviews.json
+// แหล่งที่อ่าน (ต่อสถานที่):
+//   W  = เว็บไซต์ทางการ (หน้าแรก + หน้าราคา/บัตร/เวลาเปิด ที่ลิงก์จากหน้าแรก)
+//   WP = Wikipedia (ไทย/อังกฤษ) · WV = Wikivoyage (รายการสถานที่ในคู่มือท่องเที่ยว มีราคา/เวลาเปิด)
+//   L1…Ln = โพสต์รีวิวจริงใน Lemon8 (เนื้อโพสต์เต็ม + ข้อความบนรูป + คอมเมนต์) หลายคน + รีวิวที่ปักหมุดที่เดียวกัน
+// AI อ่านทุกแหล่งพร้อมกันแล้วสรุปด้วยคำของตัวเอง + ดึงข้อมูลจริงพร้อมบอกว่ามาจากแหล่งไหน
+// ข้อมูลจริงทุกค่าถูกตรวจซ้ำด้วยโค้ดก่อนใช้ (ไม่เชื่อ AI อย่างเดียว):
+//   1) ตัวเลขราคา/เวลาต้องมีอยู่จริงในข้อความของแหล่งนั้น (กัน AI แต่งตัวเลข)
+//   2) ต้องมาจากเว็บไซต์ทางการ หรือพบตรงกันอย่างน้อย 2 แหล่งที่เป็นอิสระต่อกัน (คนละคน/คนละเว็บ) — ไม่ผ่าน = ไม่ใช้
+//   3) มีราคาจากเว็บไซต์ทางการ → ใช้ชุดราคาทางการ (ราคาในรีวิวอาจเป็นโปรฯ หรือราคาเก่า)
+// ค่าเข้าเก็บทุกประเภทบัตร (ผู้ใหญ่/เด็ก/คนไทย/ต่างชาติ/ซื้อออนไลน์/หน้างาน) · place-info.mjs ใส่ลงข้อมูลสถานที่
+// สรุปใหม่เมื่อมีโพสต์ใหม่หรือครบ 60 วัน · สถานที่ดัง/มีค่าเข้าก่อน · ไม่มี AI = ใช้ผลเดิม
+// node scripts/place-reviews.mjs [--ai 40] [--only <id>] [--sources]  (--sources = แสดงแหล่งที่รวบรวมได้ ไม่ถาม AI)
 import { readFile, writeFile, rename } from "node:fs/promises";
 import { aiJSON, aiAvailable, aiName } from "./gemini.mjs";
 
-const UA = "IYouAloneBot/1.0 (+https://wattanasaw.github.io/i-you-alone/)";
-const arg = (n, d) => { const i = process.argv.indexOf(n); return i > 0 ? +process.argv[i + 1] : d; };
-const AI_MAX = arg("--ai", 25), PER_ASK = 4, POSTS_PER = 4, REFRESH_DAYS = 45;
+const BOT = "IYouAloneBot/1.0 (+https://wattanasaw.github.io/i-you-alone/)";
+const BROWSER = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130 Safari/537.36";
+const argv = process.argv;
+const arg = (n, d) => { const i = argv.indexOf(n); return i > 0 ? argv[i + 1] : d; };
+const AI_MAX = +arg("--ai", 40), MINUTES = +arg("--minutes", 35), T0 = Date.now(), ONLY = arg("--only", ""), SHOW = argv.includes("--sources");
+const PER_ASK = 2, POSTS_PER = 6, REFRESH_DAYS = 60, VERSION = 3;
 export const GOOD_FOR = ["photo", "work", "kids", "pets", "date", "group", "view", "nature", "chill", "budget", "night", "food"];
 const root = new URL("../", import.meta.url);
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 const readJSON = async (p, fb) => { try { return JSON.parse(await readFile(new URL(p, root), "utf8")); } catch { return fb; } };
 const save = async (p, text) => { const tmp = new URL(p + ".tmp", root); await writeFile(tmp, text); await rename(tmp, new URL(p, root)); };
 const days = t => (Date.now() - new Date(t || 0)) / 864e5;
+const clean = s => String(s || "").replace(/&nbsp;/g, " ").replace(/&amp;/g, "&").replace(/&#(\d+);/g, (_, n) => String.fromCodePoint(+n)).replace(/&#x([\da-f]+);/gi, (_, n) => String.fromCodePoint(parseInt(n, 16))).replace(/[ \t]+/g, " ").replace(/\n\s*\n+/g, "\n").trim();
 
 const data = await readJSON("data/places.json", { places: [] });
 const trendPl = await readJSON("data/trend-places.json", []);
 const cache = await readJSON("data/place-reviews.json", {});
 const all = [...data.places, ...trendPl];
-const sig = p => (p.posts || []).map(x => x.link).sort().join("|");
+const SHARDS = 32;
+const shardOf = id => { let h = 0x811c9dc5; for (const ch of String(id)) { h ^= ch.codePointAt(0); h = Math.imul(h, 0x01000193) >>> 0; } return h % SHARDS; };
+const shards = await Promise.all([...Array(SHARDS)].map((_, i) => readJSON(`data/place-posts/${String(i).padStart(2, "0")}.json`, {})));
+const postsOf = p => { const m = new Map(); for (const x of [...(shards[shardOf(p.id)][p.id]?.posts || []), ...(p.posts || [])]) m.set(x.link, x); return [...m.values()]; };
+const sig = p => postsOf(p).map(x => x.link).sort().join("|") + "|" + (p.website || "");
+const nameOf = p => typeof p.name === "string" ? { th: p.name } : (p.name || {});
 
-// สถานที่ที่มีโพสต์รีวิว: กระแสแรงก่อน, คาเฟ่/ร้าน/ที่บันเทิงก่อน
-const FUN = new Set(["cafe", "animalcafe", "restaurant", "nightlife", "themepark", "zoo"]);
-const todo = all.filter(p => p.posts?.length && (!cache[p.id] || cache[p.id].sig !== sig(p) && days(cache[p.id].at) > 7 || days(cache[p.id].at) > REFRESH_DAYS))
-  .sort((a, b) => (b.hot || 0) + (FUN.has(b.kind) ? 5 : 0) - (a.hot || 0) - (FUN.has(a.kind) ? 5 : 0));
-console.log(`สถานที่ที่มีโพสต์รีวิว ${all.filter(p => p.posts?.length).length} · สรุปแล้ว ${Object.keys(cache).length} · รอสรุป ${todo.length} · AI: ${aiName()}`);
+// ---------- คิว ----------
+const MENU_KINDS = new Set(["cafe", "animalcafe", "restaurant", "nightlife"]);
+const FEE_KINDS = new Set(["zoo", "themepark", "museum", "park", "animalcafe"]);
+const SOCIAL = /facebook|fb\.com|fb\.me|instagram|line\.me|lin\.ee|tiktok|twitter|x\.com|youtube|google\.|goo\.gl|wongnai|tripadvisor|agoda|booking\.com|klook|linktr/i;
+const site = p => [p.website].flat().find(u => /^https?:\/\//.test(u || "") && !SOCIAL.test(u));
+const hasSource = p => postsOf(p).length || site(p) || p.wiki;
+const due = p => { const c = cache[p.id]; return !c || (c.v || 0) < VERSION || days(c.at) > REFRESH_DAYS || (c.sig !== sig(p) && days(c.at) > 7); };
+const prio = p => (FEE_KINDS.has(p.kind) ? 20 : 0) + (p.wikidata ? 10 : 0) + (p.fame || 0) + Math.min(p.hot || 0, 30) + (site(p) ? 5 : 0) + Math.min(postsOf(p).length, 6);
+const todo = all.filter(p => (!ONLY || p.id === ONLY) && hasSource(p) && (ONLY || due(p))).sort((a, b) => prio(b) - prio(a));
+console.log(`สถานที่ ${all.length} · มีแหล่งข้อมูล ${all.filter(hasSource).length} · สรุปแบบหลายแหล่งแล้ว ${Object.values(cache).filter(c => c.v >= VERSION).length} · รอสรุป ${todo.length} · AI: ${aiName()}`);
 
-// เนื้อโพสต์เต็มจากหน้าโพสต์ (HTML → ข้อความ)
+// ---------- แหล่ง: Lemon8 ----------
 async function postText(link) {
   try {
-    const html = await (await fetch(link, { headers: { "User-Agent": UA, "Accept-Language": "th" }, signal: AbortSignal.timeout(20000) })).text();
+    const html = await (await fetch(link, { headers: { "User-Agent": BOT, "Accept-Language": "th" }, signal: AbortSignal.timeout(20000) })).text();
     const big = [...html.matchAll(/<script[^>]*>([\s\S]*?)<\/script>/g)].map(m => m[1]).sort((a, b) => b.length - a.length)[0] || "";
     const ld = JSON.parse(decodeURIComponent(big))?.state?.loaderData || {};
     const a = Object.values(ld).flatMap(v => v && typeof v === "object" ? Object.entries(v) : []).find(([k]) => k.includes("ArticleDetail"))?.[1];
     if (!a) return null;
-    const body = String(a.content || a.shortContent || "").replace(/<br\s*\/?>|<\/p>/gi, "\n").replace(/<[^>]+>/g, "").replace(/&nbsp;/g, " ").replace(/&amp;/g, "&").replace(/[ \t]+/g, " ").replace(/\n{2,}/g, "\n").trim();
+    const body = clean(String(a.content || a.shortContent || "").replace(/<br\s*\/?>|<\/p>/gi, "\n").replace(/<[^>]+>/g, ""));
     const ocr = [].concat(Array.isArray(a.ocrText) ? a.ocrText : (() => { try { return JSON.parse(a.ocrText || "[]"); } catch { return [a.ocrText || ""]; } })()).join(" ").replace(/\s+/g, " ").trim();
-    // คอมเมนต์ของคนที่ไปมาแล้ว (ประสบการณ์จริงเพิ่ม เช่น "คิวยาว", "จอดรถยาก") — ไลก์มากก่อน สูงสุด 6 อัน
     const cm = Object.values(ld).flatMap(v => v && typeof v === "object" ? Object.entries(v) : []).find(([k]) => k.includes("ArticleComments"))?.[1]?.items || [];
     const comments = cm.map(c => ({ t: String(c.text || "").replace(/\s+/g, " ").trim(), d: +c.diggCount || 0 })).filter(c => c.t.length >= 12)
-      .sort((x, y) => y.d - x.d).slice(0, 6).map(c => c.t.slice(0, 140));
-    const text = `${a.title}\n${body.slice(0, 1400)}${ocr ? `\n[ข้อความบนรูป] ${ocr.slice(0, 300)}` : ""}${comments.length ? `\n[คอมเมนต์] ${comments.join(" / ")}` : ""}`;
-    return { text, poi: a.locationInfo?.poiId ? { id: String(a.locationInfo.poiId), name: a.locationInfo.poiName || "" } : null };
+      .sort((x, y) => y.d - x.d).slice(0, 5).map(c => c.t.slice(0, 120));
+    const text = `${a.title}\n${body.slice(0, 1300)}${ocr ? `\n[ข้อความบนรูป] ${ocr.slice(0, 350)}` : ""}${comments.length ? `\n[คอมเมนต์] ${comments.join(" / ")}` : ""}`;
+    const author = a.author?.linkName || a.user?.linkName || "";
+    return { text, author, poi: a.locationInfo?.poiId ? { id: String(a.locationInfo.poiId), name: a.locationInfo.poiName || "" } : null };
   } catch { return null; }
 }
-
 const norm = s => String(s || "").toLowerCase().replace(/คาเฟ่|ร้านกาแฟ|ร้าน|\b(cafe|café|coffee|shop|the)\b/g, "").replace(/[^ก-๙a-z0-9]/g, "");
 const sameName = (a, b) => { const x = norm(a), y = norm(b); return x.length >= 3 && y.length >= 3 && (x.includes(y) || y.includes(x)); };
-// รีวิวที่ปักหมุดสถานที่เดียวกัน (หน้า poi ของ Lemon8)
 async function poiPosts(id) {
   try {
-    const html = await (await fetch(`https://www.lemon8-app.com/poi/${id}?region=th`, { headers: { "User-Agent": UA, "Accept-Language": "th" }, signal: AbortSignal.timeout(20000) })).text();
+    const html = await (await fetch(`https://www.lemon8-app.com/poi/${id}?region=th`, { headers: { "User-Agent": BOT, "Accept-Language": "th" }, signal: AbortSignal.timeout(20000) })).text();
     const big = [...html.matchAll(/<script[^>]*>([\s\S]*?)<\/script>/g)].map(m => m[1]).sort((a, b) => b.length - a.length)[0] || "";
     const ld = JSON.parse(decodeURIComponent(big))?.state?.loaderData?.["routes/poi.$poi_id"] || {};
     const items = Object.entries(ld).find(([k]) => k.startsWith("$PoiPost"))?.[1]?.items || [];
     return items.filter(o => o.groupId && o.title).sort((a, b) => (+b.articleLikes || 0) - (+a.articleLikes || 0)).map(o => {
       const au = [o, ...Object.values(o)].find(v => v && typeof v === "object" && v.linkName) || {};
-      return { link: `https://www.lemon8-app.com/${au.linkName ? "@" + au.linkName + "/" : ""}${o.groupId}?region=th`, source: `Lemon8${au.nickName ? " · " + au.nickName : ""}`, likes: +o.articleLikes || 0, title: o.title, text: String(o.shortContent || "").slice(0, 600) };
+      return { link: `https://www.lemon8-app.com/${au.linkName ? "@" + au.linkName + "/" : ""}${o.groupId}?region=th`, source: `Lemon8${au.nickName ? " · " + au.nickName : ""}`, author: au.linkName || "", likes: +o.articleLikes || 0, title: o.title, text: `${o.title}\n${String(o.shortContent || "").slice(0, 700)}` };
     });
   } catch { return []; }
 }
 
-let asked = 0, fails = 0, done = 0;
-for (let i = 0; i < todo.length && aiAvailable() && asked < AI_MAX && fails < 3; i += PER_ASK) {
+// ---------- แหล่ง: เว็บไซต์ทางการ ----------
+const KEY = /เวลาเปิด|เวลาทำการ|เปิดให้บริการ|เปิดบริการ|เปิดทุกวัน|ปิดทุกวัน|หยุดทุก|ค่าเข้า|ค่าบัตร|บัตรผ่านประตู|อัตราค่า|ราคาบัตร|ราคา|ผู้ใหญ่|เด็ก|ต่างชาติ|ชาวไทย|เมนู|opening hours|open(?:ing)? (?:daily|time|hours)|business hours|hours|admission|ticket|entrance|price|adult|child|menu|฿|บาท|thb/gi;
+const PAGE_HINT = /ticket|price|pricing|admission|rate|fee|hour|opening|visit|plan|info|บัตร|ราคา|ค่าเข้า|เวลา|อัตรา|เยี่ยมชม|ข้อมูล/i;
+async function getHtml(url) {
+  const r = await fetch(url, { headers: { "User-Agent": BROWSER, "Accept-Language": "th,en" }, redirect: "follow", signal: AbortSignal.timeout(15000) });
+  if (!r.ok || !/html/i.test(r.headers.get("content-type") || "")) return null;
+  return { html: (await r.text()).slice(0, 800000), url: r.url };
+}
+const htmlText = html => clean(html.replace(/<(script|style|noscript|svg|nav|footer)[\s\S]*?<\/\1>/gi, " ").replace(/<br\s*\/?>|<\/(p|div|li|tr|td|th|h\d)>/gi, "\n").replace(/<[^>]+>/g, " "));
+function excerpt(text, max) {
+  const spans = [];
+  for (const m of text.matchAll(KEY)) { const a = Math.max(0, m.index - 140), b = Math.min(text.length, m.index + 320); if (!spans.length || a > spans.at(-1)[1]) spans.push([a, b]); else spans.at(-1)[1] = b; }
+  return spans.map(([a, b]) => text.slice(a, b).trim()).join("\n…\n").slice(0, max);
+}
+async function websiteSource(url) {
+  try {
+    const home = await getHtml(url);
+    if (!home) return null;
+    const ld = [...home.html.matchAll(/<script[^>]*application\/ld\+json[^>]*>([\s\S]*?)<\/script>/gi)].map(m => m[1].trim()).join(" ").match(/"(openingHours|openingHoursSpecification|priceRange|offers)"[\s\S]{0,400}/g) || [];
+    let text = excerpt(htmlText(home.html), 1800) + (ld.length ? "\n[schema] " + ld.join(" ").slice(0, 500) : "");
+    // หน้าย่อยเรื่องราคา/บัตร/เวลาเปิด (เว็บเดียวกัน สูงสุด 2 หน้า)
+    const host = new URL(home.url).hostname;
+    const links = [...home.html.matchAll(/<a[^>]+href="([^"#]+)"[^>]*>([\s\S]{0,120}?)<\/a>/gi)]
+      .map(m => { try { return { u: new URL(m[1], home.url).toString(), t: m[2].replace(/<[^>]+>/g, " ") }; } catch { return null; } })
+      .filter(x => x && new URL(x.u).hostname === host && x.u !== home.url && PAGE_HINT.test(x.u + " " + x.t) && !/\.(pdf|jpg|png|zip)$/i.test(x.u));
+    // หน้าราคา/บัตร/เวลาเปิดก่อน หน้าข้อมูลทั่วไปทีหลัง
+    const STRONG = /ticket|price|pricing|admission|fee|rate|hour|opening|บัตร|ราคา|ค่าเข้า|อัตรา|เวลาเปิด|เวลาทำการ/i;
+    const score = x => (STRONG.test(x.u) ? 4 : 0) + (STRONG.test(x.t) ? 3 : 0) + (/plan|visit|info|เยี่ยมชม|ข้อมูล/i.test(x.u + x.t) ? 1 : 0) - x.u.length / 200;
+    for (const l of [...new Map(links.map(x => [x.u, x])).values()].sort((a, b) => score(b) - score(a)).slice(0, 2)) {
+      await sleep(600);
+      const sub = await getHtml(l.u).catch(() => null);
+      if (sub) text += `\n[หน้า ${new URL(sub.url).pathname}]\n` + excerpt(htmlText(sub.html), 1600);
+    }
+    text = text.trim();
+    return text.length >= 40 ? { id: "W", type: "web", label: host.replace(/^www\./, ""), link: home.url, text: text.slice(0, 3800) } : null;
+  } catch { return null; }
+}
+
+// ---------- แหล่ง: Wikipedia / Wikivoyage ----------
+const nameCore = s => String(s || "").replace(/\(.*?\)/g, "").replace(/[\s_]+/g, "").replace(/^(อุทยานแห่งชาติ|พิพิธภัณฑสถานแห่งชาติ|พิพิธภัณฑ์|สวนสัตว์|วัด|น้ำตก|หาด|เกาะ|the)/i, "").slice(0, 4).toLowerCase();
+async function wikiSource(url, name) {
+  const m = String(url || "").match(/^https:\/\/(\w+)\.wikipedia\.org\/wiki\/(.+)$/);
+  if (!m) return null;
+  try {
+    const r = await fetch(`https://${m[1]}.wikipedia.org/w/api.php?action=query&prop=extracts&explaintext=1&exchars=1800&redirects=1&format=json&titles=${m[2]}`, { headers: { "User-Agent": BOT }, signal: AbortSignal.timeout(15000) });
+    const j = await r.json();
+    const pg = Object.values(j.query?.pages || {})[0];
+    const text = clean(pg?.extract || "");
+    // ถูก redirect ไปบทความอื่นที่ไม่ใช่ที่นี่ (เช่น ซี ไลฟ์ → สยามพารากอน) → ไม่ใช้
+    if (!text || (j.query?.redirects?.length && name && !text.replace(/\s+/g, "").toLowerCase().includes(nameCore(name)))) return null;
+    return { type: "wiki", label: `Wikipedia (${m[1]})`, link: url, text };
+  } catch { return null; }
+}
+async function voyageSource(p) {
+  const en = nameOf(p).en;
+  if (!en || en.length < 5) return null;
+  try {
+    const api = "https://en.wikivoyage.org/w/api.php";
+    const s = await (await fetch(`${api}?action=query&list=search&srlimit=3&format=json&srsearch=${encodeURIComponent(`"${en}"`)}`, { headers: { "User-Agent": BOT }, signal: AbortSignal.timeout(15000) })).json();
+    for (const hit of s.query?.search || []) {
+      await sleep(400);
+      const w = await (await fetch(`${api}?action=parse&prop=wikitext&format=json&page=${encodeURIComponent(hit.title)}`, { headers: { "User-Agent": BOT }, signal: AbortSignal.timeout(15000) })).json();
+      const wt = w.parse?.wikitext?.["*"] || "";
+      const key = en.toLowerCase().replace(/[^a-z0-9 ]/g, "").split(" ").filter(x => x.length > 2).slice(0, 3);
+      const line = wt.split("\n").find(l => /\{\{\s*(see|do|eat|drink|buy|listing|sleep)\b/i.test(l) && key.every(k => l.toLowerCase().includes(k)));
+      if (line) return { type: "voyage", label: `Wikivoyage · ${hit.title}`, link: `https://en.wikivoyage.org/wiki/${encodeURIComponent(hit.title.replace(/ /g, "_"))}`, text: clean(line.replace(/\[\[(?:[^|\]]*\|)?([^\]]*)\]\]/g, "$1").replace(/'''?/g, "")).slice(0, 1500) };
+    }
+  } catch {}
+  return null;
+}
+
+async function gather(p) {
+  const n = nameOf(p), srcs = [];
+  const url = site(p);
+  if (url) { const w = await websiteSource(url); if (w) srcs.push(w); }
+  for (const l of ["th", "en"]) { const w = await wikiSource(p.wiki?.[l], l === "th" ? n.th : n.en); if (w) srcs.push({ ...w, id: "WP" + (srcs.filter(x => x.type === "wiki").length + 1) }); }
+  const v = await voyageSource(p); if (v) srcs.push({ ...v, id: "WV" });
+  // โพสต์รีวิว: ไลก์มากก่อน แต่ไม่เอาคนเดิมซ้ำ (ต้องเป็นคนละคนถึงนับเป็นคนละแหล่ง)
+  const posts = postsOf(p).sort((a, b) => (b.likes || 0) - (a.likes || 0));
+  const authors = new Set();
+  let poi = null, k = 0;
+  for (const x of posts) {
+    if (k >= POSTS_PER) break;
+    await sleep(900);
+    const r = await postText(x.link);
+    if (!r) continue;
+    const who = r.author || (x.link.match(/@([^/]+)\//) || [])[1] || x.source;
+    if (authors.has(who)) continue;
+    authors.add(who); k++;
+    srcs.push({ id: "L" + k, type: "lemon8", label: x.source || "Lemon8", link: x.link, likes: x.likes || 0, date: x.date, author: who, text: r.text });
+    if (r.poi && !poi && sameName(r.poi.name, n.th || n.en)) poi = r.poi;
+  }
+  if ((poi || p.l8poi) && k < POSTS_PER + 2) {
+    await sleep(900);
+    for (const o of await poiPosts(poi?.id || p.l8poi)) {
+      if (k >= POSTS_PER + 2) break;
+      if (srcs.some(s => s.link === o.link) || authors.has(o.author)) continue;
+      authors.add(o.author); k++;
+      srcs.push({ id: "L" + k, type: "lemon8", label: o.source, link: o.link, likes: o.likes, author: o.author, text: o.text });
+    }
+  }
+  return srcs;
+}
+
+// ---------- ตรวจข้อมูลจริงกับข้อความต้นทาง ----------
+const flat = s => String(s || "").toLowerCase().replace(/(\d),(\d{3})/g, "$1$2");
+const FEE_WORD = /บัตร|ค่าเข้า|ตั๋ว|ราคา|ผู้ใหญ่|เด็ก|คนละ|ท่านละ|ticket|admission|entry|entrance|price|adult|child|฿|บาท|thb|baht/;
+// ตัวเลขราคานี้อยู่ในข้อความ (ใกล้คำเรื่องราคา) ไหม
+const priceIn = (text, n) => { const t = flat(text); for (const m of t.matchAll(new RegExp(`(?<![\\d.])${n}(?![\\d])`, "g"))) if (FEE_WORD.test(t.slice(Math.max(0, m.index - 50), m.index + 30))) return true; return false; };
+// เวลาเปิด-ปิดนี้อยู่ในข้อความไหม (10:00 = 10.00 / 10:00 / 10 โมง / 10am · 20:00 = 8pm / 8 pm)
+function timeIn(text, hhmm) {
+  const t = flat(text), [h, mm] = hhmm.split(":").map(Number);
+  const hs = [...new Set([h, h % 12 || 12, h === 24 ? 0 : h])];
+  return hs.some(x => new RegExp(`(?<!\\d)0?${x}\\s*[:.]\\s*${String(mm).padStart(2, "0")}(?!\\d)`).test(t)
+    || (mm === 0 && new RegExp(`(?<!\\d)0?${x}\\s*(?:am|pm|a\\.m|p\\.m|โมง|น\\.)`).test(t)));
+}
+const is24 = text => /24\s*(?:ชั่วโมง|ชม\.?|hours?|hrs?|\/7)|ตลอด\s*24|open 24/i.test(text);
+// แหล่งที่เป็นอิสระต่อกัน: เว็บไซต์ = 1, วิกิ = 1, Wikivoyage = 1, Lemon8 = 1 ต่อผู้โพสต์
+const indep = list => new Set(list.map(s => s.type === "lemon8" ? "L:" + s.author : s.type)).size;
+function supportOf(srcs, cited, test) {
+  const byId = new Map(srcs.map(s => [s.id, s]));
+  const fromCited = [].concat(cited || []).map(id => byId.get(String(id))).filter(s => s && test(s.text));
+  // AI อ้างแหล่งไม่ครบ → นับแหล่งอื่นที่มีค่าเดียวกันด้วย
+  const others = srcs.filter(s => !fromCited.includes(s) && test(s.text));
+  return [...fromCited, ...others];
+}
+const verified = sup => sup.some(s => s.type === "web") || indep(sup) >= 2;
+const srcTag = sup => sup.some(s => s.type === "web") ? "web" : "reviews";
+const DAY = "(?:Mo|Tu|We|Th|Fr|Sa|Su|PH)";
+const RULE = new RegExp(`^(?:${DAY}(?:\\s*-\\s*${DAY})?(?:\\s*,\\s*${DAY}(?:\\s*-\\s*${DAY})?)*\\s+)?(?:off|closed|\\d{1,2}:\\d{2}\\s*-\\s*\\d{1,2}:\\d{2}(?:\\s*,\\s*\\d{1,2}:\\d{2}\\s*-\\s*\\d{1,2}:\\d{2})*)$`);
+const hoursOk = h => { const s = String(h || "").trim(); return s && s.length <= 160 && (s === "24/7" || s.split(/\s*;\s*/).filter(Boolean).every(r => RULE.test(r))) ? s.replace(/\s*;\s*/g, "; ") : null; };
+const L3 = (o, max = 60) => { const r = {}; for (const l of ["th", "en", "zh"]) if (typeof o?.[l] === "string" && o[l].trim()) r[l] = o[l].trim().slice(0, max); return r.th || r.en ? r : null; };
+
+function checkFacts(r, srcs, kind) {
+  const facts = {}, log = [];
+  // เวลาเปิด-ปิด: ทุกเวลาในค่าต้องพบในแหล่ง
+  const h = hoursOk(r.hours?.value);
+  if (h) {
+    const times = h === "24/7" ? [] : [...h.matchAll(/\d{1,2}:\d{2}/g)].map(m => m[0]);
+    const sup = supportOf(srcs, r.hours.src, t => h === "24/7" ? is24(t) : times.every(x => timeIn(t, x)));
+    if (verified(sup)) facts.hours = { value: h, src: srcTag(sup), n: indep(sup), ids: sup.map(s => s.id) };
+    else log.push(`เวลา ${h} (พบใน ${sup.map(s => s.id).join(",") || "ไม่มีแหล่ง"})`);
+  }
+  // ค่าเข้า: ตรวจทีละราคา · มีราคาจากเว็บไซต์ทางการ → ใช้เฉพาะชุดทางการ
+  if (!MENU_KINDS.has(kind) || kind === "animalcafe") {
+    const tiers = [];
+    for (const x of [].concat(r.entry?.tiers || [])) {
+      const price = Math.round(+x?.price);
+      const who = L3(x?.who, 50);
+      if (!(price > 0 && price <= 20000) || !who) continue;
+      const sup = supportOf(srcs, x.src, t => priceIn(t, price));
+      if (verified(sup)) tiers.push({ who, note: L3(x.note, 70) || undefined, price, web: sup.some(s => s.type === "web"), n: indep(sup), ids: sup.map(s => s.id) });
+      else log.push(`ค่าเข้า ${who.th || who.en} ${price} (พบใน ${sup.map(s => s.id).join(",") || "ไม่มีแหล่ง"})`);
+    }
+    // ราคาทางการก่อน + ราคาจากรีวิว (ยืนยัน ≥ 2 แหล่ง) ที่ไม่ซ้ำราคาทางการ (เว็บมักบอกแค่ "เริ่มต้น")
+    const official = tiers.filter(x => x.web);
+    const use = [...official, ...tiers.filter(x => !x.web && !official.some(o => o.price === x.price)).map(x => ({ ...x, rv: true }))].slice(0, 8);
+    // ไม่เอาราคาซ้ำ (ประเภทเดียวกัน ราคาเดียวกัน)
+    const uniq = [...new Map(use.map(x => [`${x.who.th || x.who.en}|${x.price}`, x])).values()].sort((a, b) => (a.rv ? 1 : 0) - (b.rv ? 1 : 0) || a.price - b.price);
+    if (uniq.length) facts.entry = { tiers: uniq.map(({ web, ...x }) => x), src: official.length ? "web" : "reviews" };
+    else if (r.entry?.free === true) {
+      const sup = supportOf(srcs, r.entry.freeSrc, t => /ฟรี|ไม่เสียค่า|ไม่มีค่าเข้า|free (?:entry|admission|of charge)|no (?:entry|admission) fee|admission(?: is)? free/i.test(t));
+      if (verified(sup)) facts.entry = { free: true, src: srcTag(sup), n: indep(sup), ids: sup.map(s => s.id) };
+      else log.push("เข้าฟรี (ยืนยันไม่ได้)");
+    }
+  }
+  // ช่วงราคาเมนู: ราคาต่ำสุดและสูงสุดต้องพบในแหล่ง
+  if (MENU_KINDS.has(kind) && r.menu?.min > 0) {
+    let a = Math.round(+r.menu.min), b = Math.round(+(r.menu.max || r.menu.min));
+    if (a > b) [a, b] = [b, a];
+    const sa = supportOf(srcs, r.menu.src, t => priceIn(t, a)), sb = supportOf(srcs, r.menu.src, t => priceIn(t, b));
+    if (b <= 5000 && verified([...sa, ...sb]) && sa.length && sb.length) facts.menu = { min: a, max: b, src: srcTag([...sa, ...sb]), n: indep([...sa, ...sb]) };
+    else log.push(`เมนู ${a}-${b}`);
+  }
+  return { facts, log };
+}
+
+// ---------- ถาม AI ----------
+const prompt = group => `You are building an accurate travel guide for places in Thailand. For each place you get SEVERAL SOURCES (official website "W", Wikipedia "WP…", Wikivoyage "WV", and real visitor reviews from Lemon8 "L1…"). Read ALL sources together.
+
+1) Write a review summary IN YOUR OWN WORDS that combines what all sources say (do not copy sentences). Only use what the sources say about THIS place — no outside knowledge, no guessing. If sources contradict each other, prefer the official website, then the most recent and most repeated information. If the sources are not about this place at all, return "skip": true.
+2) Extract FACTS with the ids of the sources that state them:
+ - "hours": {"value": OpenStreetMap opening_hours e.g. "Mo-Su 10:00-20:00", "Tu-Su 09:00-17:00; Mo off", "24/7", "src": ["W","L2"]} or null
+ - "entry": admission fee. List EVERY ticket type the sources give (adult, child, Thai citizen, foreigner, senior, online/early-bird, walk-in, combo/package…) as separate tiers:
+   {"free": true/false/null, "freeSrc": [ids], "tiers": [{"who": {"th","en","zh"} e.g. {"th":"ผู้ใหญ่ (ซื้อออนไลน์)","en":"Adult (online)","zh":"成人（网上购票）"}, "price": number in baht exactly as written, "note": {"th","en","zh"} or null (e.g. height limit, weekday only, includes X), "src": [ids]}]}
+   Use the price exactly as written in a source. Do NOT include parking, food, souvenirs, temporary discount codes or promotions that have ended. null if no source states a price.
+ - "menu": food/drink price range for cafes/restaurants/bars {"min","max","src":[ids]} or null
+Return JSON {"results":[{"id","skip"?,
+ "summary": {"th": 1-2 sentences (≤ 140 chars), "en", "zh"},
+ "highlights": {"th": [≤ 4 items, ≤ 45 chars each], "en": [...], "zh": [...]},
+ "mustTry": {"th": [things to do/eat the sources recommend ≤ 4], "en", "zh"},
+ "tips": {"th": [≤ 4 practical tips: best time, booking, parking, how to get tickets cheaper, show/feeding times, what to bring], "en", "zh"},
+ "cons": {"th": [≤ 3 things to know / downsides], "en", "zh"},
+ "goodFor": tags from ${JSON.stringify(GOOD_FOR)} that the sources clearly support (≤ 4),
+ "hours", "entry", "menu"}]}
+Thai text must be natural Thai. Keep it concise.
+Places: ${JSON.stringify(group.map(({ p, srcs }) => ({ id: p.id, name: nameOf(p).th || nameOf(p).en, name_en: nameOf(p).en, type: p.kind, sources: srcs.map(s => ({ id: s.id, kind: s.type, ...(s.date ? { date: s.date } : {}), text: s.text })) })))}`;
+
+const L = (v, n, max) => { const r = {}; for (const l of ["th", "en", "zh"]) r[l] = [].concat(v?.[l] || []).filter(s => typeof s === "string" && s.trim()).map(s => s.trim().slice(0, max)).slice(0, n); return r; };
+let asked = 0, fails = 0, done = 0, factN = { hours: 0, entry: 0, menu: 0 }, rejected = 0;
+for (let i = 0; i < todo.length && (SHOW || (aiAvailable() && asked < AI_MAX && fails < 3 && Date.now() - T0 < MINUTES * 60000)); i += PER_ASK) {
   const group = [];
   for (const p of todo.slice(i, i + PER_ASK)) {
-    const posts = [...p.posts].sort((a, b) => (b.likes || 0) - (a.likes || 0)).slice(0, POSTS_PER);
-    const texts = [];
-    let poi = null;
-    for (const x of posts) {
-      await sleep(1100);
-      const r = await postText(x.link);
-      if (!r) continue;
-      texts.push(r.text);
-      if (r.poi && !poi && sameName(r.poi.name, p.name?.th || p.name?.en)) poi = r.poi;
-    }
-    // โพสต์ปักหมุดร้านนี้ → หน้าสถานที่ใน Lemon8 มีรีวิวอื่นที่ปักหมุดที่เดียวกันอีก (เพิ่มสูงสุด 4 รีวิว)
-    if (poi || p.l8poi) {
-      await sleep(1100);
-      for (const o of await poiPosts(poi?.id || p.l8poi)) {
-        if (posts.length >= POSTS_PER + 4) break;
-        if (posts.some(x => x.link === o.link)) continue;
-        posts.push(o); texts.push(`${o.title}\n${o.text}`);
-      }
-    }
-    if (texts.length) group.push({ p, posts, texts });
-    else cache[p.id] = { ...(cache[p.id] || {}), sig: sig(p), at: new Date().toISOString() };
+    const srcs = await gather(p);
+    if (SHOW) { console.log(`\n=== ${nameOf(p).th} (${p.id}) · ${srcs.length} แหล่ง`); for (const s of srcs) console.log(`--- ${s.id} ${s.label} ${s.link}\n${s.text.slice(0, 900)}`); continue; }
+    if (srcs.length) group.push({ p, srcs });
+    else cache[p.id] = { v: VERSION, sig: sig(p), at: new Date().toISOString(), skip: true, n: 0 };
   }
-  if (!group.length) continue;
-  const prompt = `คุณสรุปรีวิวสถานที่ในประเทศไทยจากโพสต์ของผู้ใช้จริง สำหรับแอพแนะนำที่เที่ยวของวัยรุ่น
-กฎ: ใช้เฉพาะข้อมูลที่อยู่ในรีวิวของสถานที่นั้นจริงๆ ห้ามเดา ห้ามใช้ความรู้ทั่วไป · เขียนด้วยคำของตัวเอง สั้น กระชับ (ไม่คัดลอกประโยคจากโพสต์) · ข้อมูลไหนไม่มีให้เป็น [] หรือ null
-· ถ้าโพสต์พูดถึงหลายที่ ใช้เฉพาะส่วนที่เกี่ยวกับสถานที่ที่ระบุ · ถ้าข้อมูลไม่พอสรุป (ไม่เกี่ยวกับสถานที่นี้เลย) ให้ "skip": true
-ต่อสถานที่ ส่ง:
-- "summary": {"th": 1 ประโยค (≤ 90 ตัวอักษร) บอกว่าที่นี่เป็นยังไง, "en": same in English}
-- "highlights": {"th": [จุดเด่น ≤ 4 ข้อ ข้อละ ≤ 40 ตัวอักษร], "en": [...]}
-- "mustTry": {"th": [เมนู/กิจกรรมที่รีวิวแนะนำ ≤ 4], "en": [...]}
-- "tips": {"th": [เคล็ดลับ ≤ 3 เช่น ที่จอดรถ เวลาที่ควรไป ต้องจองไหม ค่าใช้จ่าย], "en": [...]}
-- "cons": {"th": [ข้อควรรู้/ข้อเสียที่รีวิวบอก ≤ 2], "en": [...]}
-- "goodFor": แท็กจาก ${JSON.stringify(GOOD_FOR)} เฉพาะที่รีวิวสื่อชัด (≤ 4) (photo=มุมถ่ายรูป, work=นั่งทำงาน, kids=พาเด็ก, pets=พาสัตว์เลี้ยงไปได้/มีสัตว์ให้เล่น, date=เดท, group=ไปเป็นกลุ่ม, view=วิวสวย, nature=ธรรมชาติ, chill=นั่งชิล, budget=ราคาไม่แพง, night=เที่ยวกลางคืน, food=อาหารอร่อย)
-- "hours": เวลาเปิด-ปิดถ้ารีวิวบอกชัด ในรูปแบบ OpenStreetMap เช่น "Mo-Fr 09:00-18:00; Sa,Su 08:00-20:00" หรือ "Tu-Su 10:00-22:00; Mo off" ไม่บอก = null
-- "entry": ค่าเข้าผู้ใหญ่ถ้ารีวิวบอกชัด {"free": true} หรือ {"thai": บาท, "foreign": บาท หรือ null} ไม่บอก = null
-- "menu": ช่วงราคาอาหาร/เครื่องดื่มของร้านนี้ถ้ารีวิวบอก {"min": บาท, "max": บาท} ไม่บอก = null
-ส่งกลับ JSON: {"results":[{"id", "skip"?, "summary", "highlights", "mustTry", "tips", "cons", "goodFor", "hours", "entry", "menu"}]}
-สถานที่: ${JSON.stringify(group.map(({ p, texts }) => ({ id: p.id, name: p.name?.th || p.name?.en, type: p.kind, reviews: texts })))}`;
+  if (SHOW || !group.length) continue;
   try {
-    const out = await aiJSON(prompt, { temperature: 0.2 });
+    const out = await aiJSON(prompt(group), { temperature: 0.2 });
     asked++;
-    const L = (v, n, max) => ({ th: [].concat(v?.th || []).filter(s => typeof s === "string" && s.trim()).map(s => s.trim().slice(0, max)).slice(0, n), en: [].concat(v?.en || []).filter(s => typeof s === "string" && s.trim()).map(s => s.trim().slice(0, max)).slice(0, n) });
     for (const g of group) {
       const r = (out?.results || []).find(x => x.id === g.p.id);
-      const base = { sig: sig(g.p), at: new Date().toISOString(), n: g.texts.length, src: g.posts.map(x => ({ link: x.link, source: x.source, likes: x.likes })) };
+      const sources = g.srcs.map(s => ({ id: s.id, type: s.type, source: s.label, link: s.link, ...(s.likes ? { likes: s.likes } : {}) }));
+      const base = { v: VERSION, sig: sig(g.p), at: new Date().toISOString(), n: g.srcs.length, src: sources };
       if (!r || r.skip) { cache[g.p.id] = { ...base, skip: true }; continue; }
+      const { facts, log } = checkFacts(r, g.srcs, g.p.kind);
+      for (const k of Object.keys(facts)) factN[k]++;
+      rejected += log.length;
+      if (log.length) console.log(`  ✗ ${nameOf(g.p).th}: ไม่ผ่านการตรวจ → ไม่ใช้: ${log.join(" · ")}`);
       cache[g.p.id] = {
         ...base,
-        summary: { th: String(r.summary?.th || "").slice(0, 140), en: String(r.summary?.en || "").slice(0, 160) },
-        highlights: L(r.highlights, 4, 60), mustTry: L(r.mustTry, 4, 50), tips: L(r.tips, 3, 80), cons: L(r.cons, 2, 80),
+        summary: L3(r.summary, 180) || { th: "" },
+        highlights: L(r.highlights, 4, 60), mustTry: L(r.mustTry, 4, 60), tips: L(r.tips, 4, 110), cons: L(r.cons, 3, 100),
         goodFor: [].concat(r.goodFor || []).filter(x => GOOD_FOR.includes(x)).slice(0, 4),
-        // เวลาเปิด/ราคาที่รีวิวบอก (place-info.mjs ตรวจรูปแบบอีกครั้งก่อนใช้)
-        hours: typeof r.hours === "string" ? r.hours.slice(0, 160) : undefined, entry: r.entry || undefined, menu: r.menu || undefined
+        facts
       };
       done++;
     }
     await sleep(4000);
   } catch (e) { fails++; console.warn("AI สรุปรีวิวไม่ได้:", e.message.slice(0, 160)); }
 }
+if (SHOW) process.exit(0);
 
 const live = new Set(all.map(p => p.id));
 for (const id of Object.keys(cache)) if (!live.has(id)) delete cache[id];
 await save("data/place-reviews.json", JSON.stringify(cache) + "\n");
-console.log(`ถาม AI ${asked} ครั้ง · สรุปใหม่ ${done} แห่ง · มีสรุปรีวิวทั้งหมด ${Object.values(cache).filter(c => c.summary).length} แห่ง`);
+console.log(`ถาม AI ${asked} ครั้ง · สรุปใหม่ ${done} แห่ง · ข้อมูลที่ผ่านการตรวจ: เวลาเปิด ${factN.hours} · ค่าเข้า ${factN.entry} · เมนู ${factN.menu} · ไม่ผ่าน (ไม่ใช้) ${rejected} ค่า · มีสรุปทั้งหมด ${Object.values(cache).filter(c => c.summary?.th).length} แห่ง`);

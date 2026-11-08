@@ -121,9 +121,10 @@ Places: ${JSON.stringify(group.map(({ p, text }) => ({ id: p.id, name: p.name?.t
   }
 }
 
-// ---------- 4) ความรู้ทั่วไปของ AI (เฉพาะที่มีชื่อเสียง: มีบทความ Wikipedia/Wikidata หรือเป็นกระแส หรือเป็นสถานที่ประเภทที่มีข้อมูลทางการ) ----------
+// ---------- 4) ความรู้ทั่วไปของ AI — ไม่ใช้แล้ว (ไม่มีแหล่งยืนยัน) ใช้ข้อมูลที่ตรวจกับเว็บไซต์/หลายแหล่งจาก place-reviews.mjs แทน
+const USE_AI_KNOWLEDGE = false;
 const FAMOUS = p => p.wikidata || p.wiki || (p.fame || 0) >= 6 || (p.hot || 0) >= 5 || ["zoo", "themepark", "museum", "park"].includes(p.kind);
-const known = all.filter(p => needs(p) && FAMOUS(p) && stale(p, "ai"))
+const known = !USE_AI_KNOWLEDGE ? [] : all.filter(p => needs(p) && FAMOUS(p) && stale(p, "ai"))
   .sort((a, b) => (b.wikidata ? 5 : 0) + (b.fame || 0) + (b.hot || 0) - (a.wikidata ? 5 : 0) - (a.fame || 0) - (a.hot || 0));
 for (let i = 0; i < known.length; i += 15) {
   const group = known.slice(i, i + 15);
@@ -160,12 +161,15 @@ const stat = { web: 0, review: 0, ai: 0, typical: 0 };
 for (const p of all) {
   // ล้างค่าที่สคริปต์นี้เคยใส่ (ให้ค่าจากแหล่งที่ดีกว่าที่มาทีหลังได้ทับ)
   if (p.hoursSrc) { delete p.hours; delete p.hoursSrc; }
-  if (["web", "review", "ai", "typical"].includes(p.entry?.src)) delete p.entry;
-  if (["web", "review", "ai", "typical"].includes(p.menuPrice?.src)) delete p.menuPrice;
+  // ล้างค่าที่สคริปต์นี้/สคริปต์ราคาเดิมเคยใส่ (Lemon8 = place-prices.mjs เดิม อ่านรีวิวโพสต์เดียว ยังไม่ได้ตรวจ)
+  if (["web", "review", "reviews", "ai", "typical", "Lemon8"].includes(p.entry?.src)) delete p.entry;
+  if (["web", "review", "reviews", "ai", "typical", "Lemon8"].includes(p.menuPrice?.src)) delete p.menuPrice;
   const rv = reviews[p.id] || {};
   const c = cache[p.id] || {};
-  const li = l8info[p.id] || {};
-  const srcs = [["web", c.web], ["review", { hours: hoursOk(rv.hours) || hoursOk(li.hours), entry: entryOk(rv.entry) || entryOk(li.entry), menu: menuOk(rv.menu) || menuOk(li.price) }], ["ai", c.ai], ["typical", typical(p)]];
+  const li = l8info[p.id] || {}, f = rv.facts || {};
+  // ลำดับ: ข้อมูลที่ตรวจแล้วจากเว็บไซต์ทางการ → ตรวจแล้วจากหลายแหล่ง → เว็บไซต์ (AI อ่านหน้าเว็บ) → เวลาเปิดที่ ≥ 2 รีวิวเขียนตรงกัน → ค่าทั่วไปตามประเภท
+  const fx = s => ({ hours: f.hours?.src === s ? hoursOk(f.hours.value) : null, entry: f.entry?.src === s ? (f.entry.tiers ? { tiers: f.entry.tiers } : f.entry.free ? { free: true } : null) : null, menu: f.menu?.src === s ? menuOk(f.menu) : null });
+  const srcs = [["web", fx("web")], ["review", fx("reviews")], ["web", c.web], ["review", { hours: li.hoursN >= 2 ? hoursOk(li.hours) : null }], ["typical", typical(p)]];
   const n = need(p);
   for (const [src, v] of srcs) {
     if (!v) continue;

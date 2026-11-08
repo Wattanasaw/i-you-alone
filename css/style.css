@@ -796,3 +796,10 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 /* การ์ดเทรนด์อยู่กลางจอ: เว้นขอบซ้าย-ขวาเท่ากัน ปัดแล้วการ์ดหยุดตรงกลางพอดี (การ์ดข้างๆ โผล่ให้รู้ว่าปัดได้) */
 .trend-board .news-list { margin-left: -16px; margin-right: -16px; padding-left: calc(50% - 75px); padding-right: calc(50% - 75px); scroll-padding: 0 calc(50% - 75px); scroll-snap-type: x mandatory; }
 .trend-board .news-item { scroll-snap-align: center; }
+
+/* ค่าเข้าแต่ละประเภทบัตร */
+.fee-tiers { list-style: none; margin: 6px 0 0; padding: 0; display: grid; gap: 4px; }
+.fee-tiers li { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; padding: 4px 0; border-top: 1px dashed var(--line, rgba(127,127,127,.25)); }
+.fee-tiers li span { flex: 1 1 140px; min-width: 0; }
+.fee-tiers li span small { display: block; opacity: .7; }
+.fee-tiers li b { white-space: nowrap; }
