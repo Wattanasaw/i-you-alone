@@ -12,9 +12,9 @@ import { osmProvincePlaces } from "./osm-provinces.mjs";
 
 const DRY = process.argv.includes("--dry");
 const UA = "IYouAloneBot/1.0 (+https://wattanasaw.github.io/i-you-alone/)";
-const PER_KIND = 60;        // จำนวนสถานที่ดังจาก Wikidata สูงสุดต่อหมวด
+const PER_KIND = 1500;      // จำนวนสถานที่จาก Wikidata สูงสุดต่อหมวด (เรียงตามความดัง) — เดิม 60 ทำให้ที่เที่ยวน้อยกว่าความจริงมาก
 // จำนวนสูงสุดจาก OpenStreetMap ต่อหมวด (เรียงจากข้อมูลครบที่สุด)
-const OSM_LIMIT = { nightlife: 300, cafe: 250, animalcafe: 80, zoo: 150, themepark: 150, museum: 250, park: 180, nature: 300, landmark: 300 };
+const OSM_LIMIT = { nightlife: 300, cafe: 250, animalcafe: 150, zoo: 150, themepark: 150, museum: 250, park: 600, nature: 300, landmark: 300 };
 // สถานที่ที่ปิดไปแล้วแต่ Wikidata ยังไม่อัปเดต (ใส่ชื่อภาษาอังกฤษ) — เพิ่มได้เมื่อเจอ
 const CLOSED = [/^Dusit Zoo$/i];
 const REFRESH_DAYS = 14;    // คำอธิบาย/เครดิตรูปเก่ากว่านี้ค่อยโหลดใหม่
@@ -63,12 +63,12 @@ const KINDS = {
   zoo:        { topic: /สวนสัตว์|ซาฟารี|zoo|ฮิปโป|หมูเด้ง|ยีราฟ|เพนกวิน|แพนด้า|อควาเรียม|aquarium|โอเชียนเวิลด์|ฟาร์ม/i, classes: ["Q43501", "Q2281788", "Q1415221"], news: ["สวนสัตว์ ไวรัล", "สัตว์ น่ารัก แห่ดู สวนสัตว์", "สวนสัตว์ TikTok"] },
   themepark:  { topic: /สวนสนุก|สวนน้ำ|theme ?park|water ?park|ดรีมเวิลด์|dream ?world|สยามอะเมซิ่ง|แฮปปี้แลนด์|รามายณะ|เครื่องเล่น|รถไฟเหาะ|ลานสเก็ต|เพลย์กราวด์|playground|บ้านผีสิง/i, classes: ["Q194195", "Q2416723", "Q740326"], news: ["สวนสนุก วัยรุ่น", "สวนน้ำ ไวรัล", "สวนสนุก เปิดใหม่ เช็คอิน"] },
   museum:     { topic: /มิวเซียม|museum|พิพิธภัณฑ์|นิทรรศการ|exhibition|อาร์ตสเปซ|art ?space|แกลเลอรี|gallery|หอศิลป์|อาร์ตทอย|art ?toy|immersive/i, classes: ["Q33506", "Q207694"], news: ["มิวเซียม จุดถ่ายรูป", "นิทรรศการ ไวรัล เช็คอิน", "อาร์ตสเปซ วัยรุ่น", "นิทรรศการ เปิดใหม่ ห้ามพลาด", "immersive นิทรรศการ"] },
-  park:       { topic: /อุทยาน|ดอย|ภู[ก-ฮ]|ทะเลหมอก|น้ำตก|แคมป์|camping|จุดชมวิว|เดินป่า|national park|เขาใหญ่|ป่า|ทุ่ง/i, classes: ["Q46169"], news: ["ที่เที่ยวธรรมชาติ ไวรัล", "จุดชมวิว ทะเลหมอก วัยรุ่น", "แคมป์ปิ้ง ฮิต เช็คอิน"] },
+  park:       { topic: /อุทยาน|ดอย|ภู[ก-ฮ]|ทะเลหมอก|น้ำตก|แคมป์|camping|จุดชมวิว|เดินป่า|national park|เขาใหญ่|ป่า|ทุ่ง/i, classes: ["Q46169", "Q167346"], news: ["ที่เที่ยวธรรมชาติ ไวรัล", "จุดชมวิว ทะเลหมอก วัยรุ่น", "แคมป์ปิ้ง ฮิต เช็คอิน"] },
   // น้ำตก ชายหาด เกาะ
-  nature:     { topic: /ทะเล|ชายหาด|หาด|เกาะ|น้ำตก|จุดชมวิว|วิว|ทะเลหมอก|beach|island|waterfall|viewpoint/i, classes: ["Q34038", "Q40080", "Q23442"], news: ["ทะเล ไวรัล วัยรุ่น", "น้ำตก เช็คอิน", "จุดชมวิว ไวรัล"] },
+  nature:     { topic: /ทะเล|ชายหาด|หาด|เกาะ|น้ำตก|จุดชมวิว|วิว|ทะเลหมอก|beach|island|waterfall|viewpoint/i, classes: ["Q34038", "Q40080", "Q23442", "Q35509"], news: ["ทะเล ไวรัล วัยรุ่น", "น้ำตก เช็คอิน", "จุดชมวิว ไวรัล"] },
   nightlife:  { topic: /ผับ|บาร์|\bbar\b|\bpub\b|ร้านเหล้า|ร้านนั่งดื่ม|ค็อกเทล|cocktail|rooftop|รูฟท็อป|คราฟต์เบียร์|ดนตรีสด|ไนท์คลับ|ที่เที่ยวกลางคืน/i, classes: [], news: ["บาร์ลับ ไวรัล", "ร้านเหล้า เปิดใหม่ วัยรุ่น", "รูฟท็อปบาร์ วิวสวย"] },
   // วัดพุทธ โบราณสถาน
-  landmark:   { topic: /วัด|แลนด์มาร์ก|landmark|โบราณสถาน|อุทยานประวัติศาสตร์|พระธาตุ|เจดีย์|ถนนคนเดิน|ตลาดน้ำ|ตลาด/i, classes: ["Q5393308", "Q839954"], news: ["วัดสวย ไวรัล", "แลนด์มาร์กใหม่ เช็คอิน", "ตลาด ไวรัล วัยรุ่น"] }
+  landmark:   { topic: /วัด|แลนด์มาร์ก|landmark|โบราณสถาน|อุทยานประวัติศาสตร์|พระธาตุ|เจดีย์|ถนนคนเดิน|ตลาดน้ำ|ตลาด/i, classes: ["Q5393308", "Q839954", "Q330284", "Q4989906"], news: ["วัดสวย ไวรัล", "แลนด์มาร์กใหม่ เช็คอิน", "ตลาด ไวรัล วัยรุ่น"] }
 };
 // เทรนด์ต้องมีคำแนวกระแส/วัยรุ่น และไม่ใช่ข่าวทั่วไป (ราชการ อุบัติเหตุ อาชญากรรม การเมือง ประกาศปิด)
 const TREND_WORDS = /ไวรัล|viral|tiktok|ติ๊กต็อก|ติ๊กต๊อก|กระแส|ฮิต|แห่|เช็คอิน|เช็กอิน|check.?in|ถ่ายรูป|วัยรุ่น|มาแรง|ปัง|ฟิน|ห้ามพลาด|น่ารัก|คาเฟ่ลับ|ร้านลับ|ที่เที่ยวลับ|เปิดใหม่|instagram|ไอจี|\big\b|โซเชียล|ชาวเน็ต|จุดชมวิว|วิวสวย|มินิมอล|คิวยาว|ต้องไป|พิกัด/i;
@@ -157,7 +157,7 @@ const OSM_QUERY = {
   zoo: `nwr["tourism"="zoo"]["name"](${BBOX});nwr["tourism"="aquarium"]["name"](${BBOX});`,
   themepark: `nwr["tourism"="theme_park"]["name"](${BBOX});nwr["leisure"="water_park"]["name"](${BBOX});`,
   museum: `nwr["tourism"="museum"]["name"](${BBOX});`,
-  park: `nwr["boundary"="national_park"]["name"](${BBOX});nwr["boundary"="protected_area"]["protect_class"="2"]["name"](${BBOX});`,
+  park: `nwr["boundary"="national_park"]["name"](${BBOX});nwr["boundary"="protected_area"]["protect_class"~"^(2|5)$"]["name"](${BBOX});nwr["leisure"="nature_reserve"]["name"]["wikidata"](${BBOX});`,
   nature: `nwr["natural"="beach"]["name"](${BBOX});nwr["waterway"="waterfall"]["name"](${BBOX});nwr["tourism"="viewpoint"]["name"](${BBOX});`,
   // แลนด์มาร์ก: จุดท่องเที่ยว/โบราณสถาน/วัดที่เป็นแหล่งท่องเที่ยว (มีข้อมูลอ้างอิง)
   landmark: `nwr["tourism"="attraction"]["name"](${BBOX});nwr["historic"~"^(archaeological_site|ruins|monument|castle)$"]["name"](${BBOX});nwr["amenity"="place_of_worship"]["religion"="buddhist"]["wikidata"](${BBOX});`,
@@ -198,9 +198,13 @@ async function osmKind(kind) {
 // เวลาเปิด/เว็บไซต์/ค่าเข้า/เบอร์โทร จาก OpenStreetMap ของสถานที่ที่ผูกกับ Wikidata
 async function osmByWikidata(qids) {
   if (!qids.length) return {};
-  const q = `[out:json][timeout:120];nwr["wikidata"~"^(${qids.join("|")})$"](${BBOX});out tags 600;`;
-  const out = {};
-  for (const e of (await overpass(q)) || []) {
+  // แบ่งชุดละ 300 (สถานที่จาก Wikidata มีหลายพันแห่ง — คำค้นยาวเกินเซิร์ฟเวอร์รับไม่ได้)
+  const out = {}, els = [];
+  for (let i = 0; i < qids.length; i += 300) {
+    const q = `[out:json][timeout:120];nwr["wikidata"~"^(${qids.slice(i, i + 300).join("|")})$"](${BBOX});out tags;`;
+    els.push(...((await overpass(q)) || []));
+  }
+  for (const e of els) {
     const t = e.tags, o = out[t.wikidata] ||= {};
     o.hours ||= t.opening_hours; o.website ||= t.website || t["contact:website"]; o.phone ||= t.phone || t["contact:phone"];
     o.fee ||= t.fee; o.charge ||= t.charge;

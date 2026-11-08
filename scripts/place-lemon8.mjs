@@ -107,7 +107,7 @@ for (const p of due) {
   if (!ok) continue;
   searched++;
   const old = entry(p.id)?.v >= VER ? entry(p.id).posts || [] : [];
-  const posts = [...new Map([...rel.map(({ body, cover, coverDesc, ...x }) => x), ...old].map(x => [x.link, x])).values()]
+  const posts = [...new Map([...rel.map(({ body, cover, coverDesc, ...x }) => ({ ...x, ck: 1 })), ...old].map(x => [x.link, x])).values()]
     .sort((a, b) => b.likes - a.likes).slice(0, KEEP);
   // เวลาเปิด-ปิด + ช่วงราคา ที่ผู้รีวิวเขียนไว้ในโพสต์ (อ่านจากข้อความ ไม่ใช้ AI)
   const info = infoFromPosts(rel.map(x => x.body), p.kind);
@@ -121,7 +121,8 @@ const BEST = bestOwners(allPosts, all, names);
 let removed = 0;
 for (const p of all) {
   const e = entry(p.id), ns = names(p);
-  const ok = x => postAllowed(x) && !NOT_TREND.test(x.title || "") && postFits(x, p) && about(x, p) && ownsPost(x, ns, BEST);
+  // ck = ผ่านการตรวจตอนค้น (ดูข้อความบนปกด้วย) — ไม่มีข้อความปกเก็บไว้ จึงไม่ตรวจซ้ำด้วยหัวโพสต์อย่างเดียว
+  const ok = x => postAllowed(x) && !NOT_TREND.test(x.title || "") && postFits(x, p) && (x.ck || about(x, p)) && ownsPost(x, ns, BEST);
   if (e?.posts?.length) { const before = e.posts.length; e.posts = e.posts.filter(ok); removed += before - e.posts.length; }
   // โพสต์บนการ์ด (places.json) ทุกสถานที่ — ยกเว้นที่มาจากหมุดสถานที่ใน Lemon8 (fromTrend: โพสต์ติดหมุดที่นี่อยู่แล้ว)
   if (p.posts?.length) { p.posts = p.posts.filter(x => p.fromTrend ? postAllowed(x) && !NOT_TREND.test(x.title || "") : ok(x)); if (!p.posts.length) delete p.posts; }

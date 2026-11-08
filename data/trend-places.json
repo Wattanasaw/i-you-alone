@@ -3095,7 +3095,12 @@
   "district": "เมืองลพบุรี",
   "reviewCount": 14,
   "hours": "Mo-Su 07:30-17:00",
-  "hoursSrc": "review"
+  "hoursSrc": "review",
+  "menuPrice": {
+   "min": 85,
+   "max": 120,
+   "src": "review"
+  }
  },
  {
   "id": "l8-22535865245575652",
@@ -4419,7 +4424,11 @@
     "image": "https://www.lemon8-app.com/seo/image?item_id=7640846814846190101&index=0&sign=76aab2628ef6799f0948869bee3eda1f",
     "tag": 1
    }
-  ]
+  ],
+  "entry": {
+   "free": true,
+   "src": "review"
+  }
  },
  {
   "id": "l8-22535865210950092",
@@ -5758,7 +5767,11 @@
   "fetchedAt": "2026-11-08T03:32:51.735Z",
   "district": "บางคอแหลม",
   "districtEn": "Bang Kho Laem",
-  "reviewCount": 1
+  "reviewCount": 1,
+  "entry": {
+   "free": true,
+   "src": "review"
+  }
  },
  {
   "id": "l8-22535797335956663",
@@ -6424,11 +6437,13 @@
   "district": "เมืองนครนายก",
   "districtEn": "Mueang Nakhon Nayok",
   "entry": {
-   "min": 150,
+   "min": 40,
    "max": 350,
    "src": "review"
   },
-  "reviewCount": 48
+  "reviewCount": 48,
+  "hours": "Mo-Su 07:00-17:00",
+  "hoursSrc": "review"
  },
  {
   "id": "l8-22535865205514334",
@@ -6739,8 +6754,8 @@
     "date": "2026-08-12",
     "link": "https://www.lemon8-app.com/@nooporpim/7673157160621212168?region=th",
     "source": "Lemon8 · 🌾🪻หนู พ.พิม ขอแชร์...😺🌷☘️",
-    "tag": 1,
-    "image": "https://p16-lemon8-cross-sign.tiktokcdn-us.com/tos-alisg-i-sdweummd6v-sg/46e84b4d44294c2ab3fe4cba79bccbe2~tplv-tej9nj120t-wap-logo:QG5vb3BvcnBpbQ==:1080:0.webp?lk3s=66c60501&source=wap_large_logo_image&x-expires=1794744000&x-signature=NfovcZ4onWt1IC0eGMC5jIYFsUE%3D"
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7673157160621212168&index=0&sign=7f2476720dc45604e06d9b45a806979b",
+    "tag": 1
    },
    {
     "title": "ร้านสำหรับสายทานเนื้อๆ ในเมืองอยุธยา",
@@ -6767,11 +6782,12 @@
     "tag": 1
    },
    {
-    "title": "พิกัด: ร้านเนื้อย่าง",
-    "likes": 1,
-    "date": "2026-08-14",
-    "link": "https://www.lemon8-app.com/@pimchawisassk/7673701788425060872?region=th",
-    "source": "Lemon8 · Pim Chawisa Ssk",
+    "title": "Asado อยุธยา",
+    "likes": 2,
+    "date": "2026-03-14",
+    "link": "https://www.lemon8-app.com/@bowiiz7726/7617066796777849362?region=th",
+    "source": "Lemon8 · ไปกับโบว์",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7617066796777849362&index=0&sign=c43abff09ad9c7a7be75f8f0c80100e8",
     "tag": 1
    }
   ],
@@ -6779,7 +6795,13 @@
   "district": "พระนครศรีอยุธยา",
   "districtEn": "Phra Nakhon Si Ayutthaya",
   "hours": "Mo-Su 12:00-00:00",
-  "hoursSrc": "review"
+  "hoursSrc": "review",
+  "menuPrice": {
+   "min": 70,
+   "max": 320,
+   "src": "review"
+  },
+  "reviewCount": 6
  },
  {
   "id": "l8-22535797313047239",
@@ -6951,9 +6973,7 @@
     "link": "https://www.lemon8-app.com/@moowanstory/7652261440249971208?region=th",
     "source": "Lemon8 · MoowanStory",
     "image": "https://www.lemon8-app.com/seo/image?item_id=7652261440249971208&index=0&sign=d4d1c4c3f7d865cb56b7ca3143c389c5",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/ocCWElBMxFBAM9kAIqEDgefiQAOvgvVWBUkjPt~tplv-sdweummd6v-text-logo-v1:QG1vb3dhbnN0b3J5:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=4B36UOrLzxvs%2Bk6yAME0sTEQPgA%3D",
-    "th": "data/thumbs/7652261440249971208-0.webp"
+    "tag": 1
    },
    {
     "title": "ร้านกาลครั้งหนึ่ง",
@@ -6967,17 +6987,18 @@
     "th": "data/thumbs/7637882127116747285-0.webp"
    },
    {
-    "title": "กาลครั้งหนึ่ง อาหารโฮมมี่สไตล์ ของคุณตาคุณยาย",
-    "likes": 5,
-    "date": "2026-07-14",
-    "link": "https://www.lemon8-app.com/@kaimookar/7662329132906283538?region=th",
-    "source": "Lemon8 · KAIMOOK • TASTRIM",
+    "title": "คนไทยชอบ ต่างชาติทานได้ - กาลครั้งหนึ่ง นนทบุรี",
+    "likes": 6,
+    "date": "2025-01-25",
+    "link": "https://www.lemon8-app.com/@katielistic8/7463838356036665857?region=th",
+    "source": "Lemon8 · Kate ♾ 👼🏻",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7463838356036665857&index=0&sign=c6c33297967d9ffc84e1e775975a88b5",
     "tag": 1
    }
   ],
   "fetchedAt": "2026-11-07T19:20:35.298Z",
   "district": "ปากเกร็ด",
-  "reviewCount": 5,
+  "reviewCount": 2,
   "districtEn": "Pak Kret",
   "hours": "Mo-Th, Sa-Su 08:00-16:00; Fr off",
   "hoursSrc": "review",
@@ -7045,6 +7066,24 @@
     "th": "data/thumbs/c6w3s14.webp"
    },
    {
+    "title": "Calin cafe 🖼️🎨🥞",
+    "likes": 75,
+    "date": "2024-12-24",
+    "link": "https://www.lemon8-app.com/@bt_thksp15_/7451779422857986561?region=th",
+    "source": "Lemon8 · ใบตองเองคั้บบบบ",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7451779422857986561&index=0&sign=a1d33687a930b64da40f2fc85fbdd0f8",
+    "tag": 1
+   },
+   {
+    "title": "Calin cafe คาเฟ่ลับๆย่านนครชัยศรี 🦢🫧✨",
+    "likes": 73,
+    "date": "2022-08-20",
+    "link": "https://www.lemon8-app.com/@dormorgirlies/7133989894808027649?region=th",
+    "source": "Lemon8 · เด็กหญิงดอมอ🌷🫧",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7133989894808027649&index=0&sign=c68ad7ea44fade4ba3f2ea95dd410b08",
+    "tag": 1
+   },
+   {
     "title": "คาเฟ่ฟิวธรรมชาติย่านนครปฐม",
     "likes": 48,
     "date": "2026-07-05",
@@ -7055,45 +7094,33 @@
     "th": "data/thumbs/c8u4x83.webp"
    },
    {
-    "title": "📍calin cafe",
-    "likes": 7,
-    "date": "2025-11-29",
-    "link": "https://www.lemon8-app.com/@jaossom/7578002718430708240?region=th",
-    "source": "Lemon8 · somanuthida",
-    "image": "https://www.lemon8-app.com/seo/image?item_id=7578002718430708240&index=0&sign=b7df3d00db086ba2fec0da57588fd800",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/oEBWtpAIKBKE9FeCBEQA53ofKbUg2FIDAXUCCw~tplv-sdweummd6v-text-logo-v1:QGphb3Nzb20=:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=GAHMCYrBgu6pZXPxWRXjv%2FdKH50%3D",
-    "th": "data/thumbs/7578002718430708240-0.webp"
-   },
-   {
-    "title": "Calin Cafe นครปฐม",
-    "likes": 5,
-    "date": "2026-10-02",
-    "link": "https://www.lemon8-app.com/@krit.mapradit/7691976239019508225?region=th",
-    "source": "Lemon8 · Krit Mapradit",
+    "title": "หนีเมืองไปเข้าสวน คาเฟ่ลับนครปฐม Calin Cafe 🐶",
+    "likes": 33,
+    "date": "2025-05-05",
+    "link": "https://www.lemon8-app.com/@corgi.aster/7500939151563457041?region=th",
+    "source": "Lemon8 · aster.corgi",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7500939151563457041&index=0&sign=8504ccc8ed76eec85f103d52b0d28035",
     "tag": 1
    },
    {
-    "title": "ใครชอบบรรยากาศนี้?",
-    "likes": 5,
-    "date": "2026-06-14",
-    "link": "https://www.lemon8-app.com/@user59223022528438/7651194229858812434?region=th",
-    "source": "Lemon8 · Dawii 🫟",
-    "tag": 1
-   },
-   {
-    "title": "มุมฮีลใจ",
-    "likes": 4,
-    "date": "2026-06-22",
-    "link": "https://www.lemon8-app.com/@pupae_202/7654121958862258696?region=th",
-    "source": "Lemon8 · PPAE",
+    "title": "คาลิน Calin Cafe☕",
+    "likes": 15,
+    "date": "2023-11-12",
+    "link": "https://www.lemon8-app.com/@daonuea.11/7300414405043372546?region=th",
+    "source": "Lemon8 · Daonuea.11",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7300414405043372546&index=0&sign=2ea5852061949f3090f0f97f7453523f",
     "tag": 1
    }
   ],
   "fetchedAt": "2026-11-07T19:20:35.323Z",
   "district": "นครชัยศรี",
-  "reviewCount": 3,
-  "districtEn": "Nakhon Chai Si"
+  "reviewCount": 8,
+  "districtEn": "Nakhon Chai Si",
+  "menuPrice": {
+   "min": 65,
+   "max": 85,
+   "src": "review"
+  }
  },
  {
   "id": "l8-22535865227173304",
@@ -7124,6 +7151,24 @@
     "th": "data/thumbs/7623395611106083336-0.webp"
    },
    {
+    "title": "Demi Beach Concept น่ารักเกินปุยมุ้ยยยย😍🏝",
+    "likes": 53,
+    "date": "2023-07-22",
+    "link": "https://www.lemon8-app.com/@lbzero/7258625246717018626?region=th",
+    "source": "Lemon8 · lbzero",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7258625246717018626&index=0&sign=271f2abac03043455bbc549658102ee8",
+    "tag": 1
+   },
+   {
+    "title": "DEMI Beach Concept @Pranburi บาร์บีชคาเฟ่และที่พัก",
+    "likes": 38,
+    "date": "2023-03-05",
+    "link": "https://www.lemon8-app.com/@lekaing26/7207038655779586561?region=th",
+    "source": "Lemon8 · SuzieeDida",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7207038655779586561&index=0&sign=d38a4f8a7f2a461015f6e0b883b1d24e",
+    "tag": 1
+   },
+   {
     "title": "คาเฟ่ริมทะเลสุดชิล Vibes ดีต่อใจ #ปราณบุรี 🌊🌴🍰",
     "likes": 35,
     "date": "2026-01-15",
@@ -7146,42 +7191,26 @@
     "th": "data/thumbs/7658216215878091265-0.webp"
    },
    {
-    "title": "🔆🌅🏝️",
-    "likes": 28,
-    "date": "2026-07-28",
-    "link": "https://www.lemon8-app.com/@nattawat89/7667457216139493889?region=th",
-    "source": "Lemon8 · Natthawat Khumk",
-    "tag": 1,
-    "image": "https://p16-lemon8-cross-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/oMcqtfrnAEAoAtyQgIF8alQDtfGQNdEEB9CDQQ~tplv-tej9nj120t-wap-logo:QG5hdHRhd2F0ODk=:1080:0.webp?lk3s=66c60501&source=wap_large_logo_image&x-expires=1794700800&x-signature=j7i2Sp3uUt0By6SMlfMVUFWDi7Q%3D",
-    "th": "data/thumbs/ci2sb5d.webp"
-   },
-   {
-    "title": "คาเฟ่ปราณบุรีไวป์โครตดี✨🌊",
-    "likes": 27,
-    "date": "2026-07-06",
-    "link": "https://www.lemon8-app.com/@khwanji_wsw/7659464993192034817?region=th",
-    "source": "Lemon8 · Khwanji",
-    "image": "https://www.lemon8-app.com/seo/image?item_id=7659464993192034817&index=0&sign=7e261de84eab1a2213673712923f5e56",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/o8fLGLeGQIG72up2j0neCLl6XJjTxIRALAAfQA~tplv-sdweummd6v-text-logo-v1:QGtod2Fuamlfd3N3:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=mpfAUkYXrPZVBm81OVx7owZ7Dis%3D",
-    "th": "data/thumbs/7659464993192034817-0.webp"
-   },
-   {
-    "title": "อัปเดตคาเฟ่หัวหิน-ประจวบคีรีขันธ์ 🏡🌺🧺☀️",
-    "likes": 25,
-    "date": "2026-10-21",
-    "link": "https://www.lemon8-app.com/@mananbuu/7699031552801440276?region=th",
-    "source": "Lemon8 · มะนันหมีบราวน์",
-    "image": "https://www.lemon8-app.com/seo/image?item_id=7699031552801440276&index=0&sign=f745f8230ab56a8d476e8825cc0845e6",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/osB0EAyvA4YQbAAhWPsdWDBniQaP79Yl2itIb~tplv-sdweummd6v-text-logo-v1:QG1hbmFuYnV1:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=17y1EQOAQS8fNOwoOTlSVQ3wzP4%3D",
-    "th": "data/thumbs/7699031552801440276-0.webp"
+    "title": "Demi Beach Concept ที่พักริมทะเลวิว Panorama 🌅🌊",
+    "likes": 31,
+    "date": "2023-03-19",
+    "link": "https://www.lemon8-app.com/@ploythiii28/7212077269471232514?region=th",
+    "source": "Lemon8 · Ploythiii",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7212077269471232514&index=0&sign=1a7e8e75b7ea2d5cb2eb07d29eda82e4",
+    "tag": 1
    }
   ],
   "fetchedAt": "2026-11-07T19:20:35.403Z",
   "district": "ปราณบุรี",
-  "reviewCount": 24,
-  "districtEn": "Pran Buri"
+  "reviewCount": 34,
+  "districtEn": "Pran Buri",
+  "hours": "Mo-Su 10:00-19:00; We off",
+  "hoursSrc": "review",
+  "menuPrice": {
+   "min": 100,
+   "max": 250,
+   "src": "review"
+  }
  },
  {
   "id": "l8-22535797301637779",
@@ -7452,6 +7481,15 @@
     "th": "data/thumbs/7601834364183331344-0.webp"
    },
    {
+    "title": "มูยูคาเฟ่🥐🥨 ครัวซองค์เจ้าดังนครปฐมที่ห้ามพลาด",
+    "likes": 38,
+    "date": "2022-11-16",
+    "link": "https://www.lemon8-app.com/@miiw.w1/7166553108531724802?region=th",
+    "source": "Lemon8 · ชมิว",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7166553108531724802&index=0&sign=c1eacf7b94ace409f702f7f78366af7d",
+    "tag": 1
+   },
+   {
     "title": "Moo Yoo cafe นครปฐม🚤🍵🌳",
     "likes": 34,
     "date": "2026-06-16",
@@ -7469,9 +7507,7 @@
     "link": "https://www.lemon8-app.com/@nnokyungn/7591145289353576968?region=th",
     "source": "Lemon8 · Chanikan N",
     "image": "https://www.lemon8-app.com/seo/image?item_id=7591145289353576968&index=0&sign=c11deca1b4eefba68c744563850b646e",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/oE0gLBKOEyUeJ7U02IYCB0MohiIwEAiZABArfB~tplv-sdweummd6v-text-logo-v1:QG5ub2t5dW5nbg==:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=yhDg9C%2BYgg99zw3IqYJkgirOffw%3D",
-    "th": "data/thumbs/7591145289353576968-0.webp"
+    "tag": 1
    },
    {
     "title": "จากโรงงานเบเกอรี่ สู่สวนญี่ปุ่นสุดอบอุ่น",
@@ -7482,19 +7518,11 @@
     "tag": 1,
     "image": "https://p16-lemon8-cross-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/oEBE9AlkEFEWLaAgIt3DQSDU1OXAymqrbBffCJ~tplv-tej9nj120t-wap-logo:QHJhdHRvbWFydHk=:1080:0.webp?lk3s=66c60501&source=wap_large_logo_image&x-expires=1794700800&x-signature=PifdiRfkUJK7al4BPQPpNCAIPJY%3D",
     "th": "data/thumbs/cmv03oz.webp"
-   },
-   {
-    "title": "OUTFIT IDEA Black Top × Plaid Skirt",
-    "likes": 4,
-    "date": "2026-08-10",
-    "link": "https://www.lemon8-app.com/@vilxwn/7672413545866215943?region=th",
-    "source": "Lemon8 · Wirawan",
-    "tag": 1
    }
   ],
   "fetchedAt": "2026-11-07T19:20:35.329Z",
   "district": "บางเลน",
-  "reviewCount": 5,
+  "reviewCount": 3,
   "districtEn": "Bang Len"
  },
  {
@@ -7662,70 +7690,68 @@
   "trend": 10,
   "posts": [
    {
+    "title": "หุบป่าตาด หุบเขาที่เหมือนหลุดไปอีกโลก| Unseen Thailand🌲🏔 ✨",
+    "likes": 352,
+    "date": "2022-05-24",
+    "link": "https://www.lemon8-app.com/@isfaai/7101309765883642369?region=th",
+    "source": "Lemon8 · isfaai",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7101309765883642369&index=0&sign=5c53aedcd7cd7c69dfe763c4cdce59f6",
+    "tag": 1
+   },
+   {
+    "title": "หุบป่าตาด Unseen Thailand จ.อุทัยธานี 🌱",
+    "likes": 298,
+    "date": "2024-01-15",
+    "link": "https://www.lemon8-app.com/@preawjrp8/7324193889135559169?region=th",
+    "source": "Lemon8 · P",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7324193889135559169&index=0&sign=ed3e2d9f362a61a076b1c4647f89a720",
+    "tag": 1
+   },
+   {
+    "title": "หุบป่าตาด Unseen Thailand",
+    "likes": 113,
+    "date": "2023-01-19",
+    "link": "https://www.lemon8-app.com/@cheevittongjourney/7190371842954265090?region=th",
+    "source": "Lemon8 · ชีวิตต้องเจอนี่",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7190371842954265090&index=0&sign=3f5706c92f6737dbc73561e685c22b16",
+    "tag": 1
+   },
+   {
     "title": "หุบป่าตาด อุทัยธานี🌿",
     "likes": 112,
     "date": "2026-05-17",
     "link": "https://www.lemon8-app.com/@_kanyaaaaaaaaaa/7640741684799603217?region=th",
     "source": "Lemon8 · _kanyaaaaaaaaa",
     "image": "https://www.lemon8-app.com/seo/image?item_id=7640741684799603217&index=0&sign=fc74b8e079b883b14a630a8586460d51",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/okCftADuCAVf2AM8Spq8QWSEAIrFI9qoBQgEyM~tplv-sdweummd6v-text-logo-v1:QF9rYW55YWFhYWFhYWFhYQ==:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=8K3YyBwmKcNof1h47iNJvy1pxps%3D",
-    "th": "data/thumbs/7640741684799603217-0.webp"
+    "tag": 1
    },
    {
-    "title": "⛰️ บ้านขนมจีบ หุบป่าตาด ✨",
-    "likes": 35,
-    "date": "2026-05-25",
-    "link": "https://www.lemon8-app.com/@ellelovely__/7643691640279810568?region=th",
-    "source": "Lemon8 · Ellelovely",
-    "image": "https://www.lemon8-app.com/seo/image?item_id=7643691640279810568&index=0&sign=cd65e65856455906f127784114236a6b",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/oEA9a7hT61BABI98irvPa2AxbiYAsiAE3nPK8~tplv-sdweummd6v-text-logo-v1:QGVsbGVsb3ZlbHlfXw==:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=0bW5ZnsvHN0URLBcRlknGK6DE18%3D",
-    "th": "data/thumbs/7643691640279810568-0.webp"
+    "title": "เรื่องเล่า วิ่งป่าราบ ที่หุบป่าตาด",
+    "likes": 112,
+    "date": "2023-10-24",
+    "link": "https://www.lemon8-app.com/@nam124124/7293552293117559298?region=th",
+    "source": "Lemon8 · ckcrumble🍪",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7293552293117559298&index=0&sign=fe9438f4d93e4fdbd0f9284f58970a90",
+    "tag": 1
    },
    {
-    "title": "🍵แจกพิกัดอุทัยธานี 2 วัน 1 คืน ไปไหนไม่รู้ รู้แต่กิน!",
-    "likes": 21,
-    "date": "2026-10-31",
-    "link": "https://www.lemon8-app.com/@mymintte/7702748402433573384?region=th",
-    "source": "Lemon8 · Japaii.kab.bie",
-    "tag": 1,
-    "image": "https://p16-lemon8-cross-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/oMaJqAQIaEQbkxIAuYiinARWBPtRDAilPvKBq~tplv-tej9nj120t-wap-logo:QG15bWludHRl:1080:0.webp?lk3s=66c60501&source=wap_large_logo_image&x-expires=1794700800&x-signature=4MIMqZeYIs%2BXP3Aq9TUVnIG6qLc%3D",
-    "th": "data/thumbs/cbxtcg5.webp"
-   },
-   {
-    "title": "🍃✨ หนีเมืองไปสูดอากาศดีๆ ที่ “หุบป่าตาด” จ.อุทัยธานี 🌿",
-    "likes": 15,
-    "date": "2026-05-11",
-    "link": "https://www.lemon8-app.com/@sunshineday975/7638508943299396103?region=th",
-    "source": "Lemon8 · SunShineDay",
-    "image": "https://www.lemon8-app.com/seo/image?item_id=7638508943299396103&index=0&sign=e77b7ca5a4fb6a8c2cb1088196fd18c8",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/oEu0yLn7IgAQAqAKtFe38AtJbAd1UGopDAfeEU~tplv-sdweummd6v-text-logo-v1:QHN1bnNoaW5lZGF5OTc1:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=lMRpIqB%2BJjDVoCoGbiCCzA1E%2B1Y%3D",
-    "th": "data/thumbs/7638508943299396103-0.webp"
-   },
-   {
-    "title": "สายผจญภัยต้องลอง🦕🌳✨",
-    "likes": 7,
-    "date": "2026-11-07",
-    "link": "https://www.lemon8-app.com/@doublefimph/7705247291363377670?region=th",
-    "source": "Lemon8 · oramaterialgirl",
-    "tag": 1,
-    "image": "https://p19-lemon8-cross-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/oQDiAExAwQG7gFU9VpCfHteEdQAICtgMdqIoEB~tplv-tej9nj120t-wap-logo:QGRvdWJsZWZpbXBo:1080:0.webp?lk3s=66c60501&source=wap_large_logo_image&x-expires=1794700800&x-signature=c6Ito7aIAH%2B5W3ZqRWvy8NB%2BSUg%3D",
-    "th": "data/thumbs/cadw2fl.webp"
-   },
-   {
-    "title": "📍 หุบป่าตาด จ.อุทัยธานี 🌳⛰️",
-    "likes": 7,
-    "date": "2026-11-01",
-    "link": "https://www.lemon8-app.com/@puybabui/7703242833557193236?region=th",
-    "source": "Lemon8 · Puy Kannika🌷",
+    "title": "หุบป่าตาดbike camp : อุทัยธานี 🌳",
+    "likes": 109,
+    "date": "2024-05-22",
+    "link": "https://www.lemon8-app.com/@king_queencat/7371799793997316625?region=th",
+    "source": "Lemon8 · JΛΛΣ ♡",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7371799793997316625&index=0&sign=821aa129bd40b2c54b5178ae57156680",
     "tag": 1
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.641Z",
   "district": "ลานสัก",
-  "districtEn": "Lan Sak"
+  "districtEn": "Lan Sak",
+  "entry": {
+   "thai": 30,
+   "src": "review"
+  },
+  "reviewCount": 41
  },
  {
   "id": "l8-22535797298008886",
@@ -8065,6 +8091,15 @@
   "trend": 10,
   "posts": [
    {
+    "title": "เพื่อนสวนฟาร์ม 🍃🍈💐",
+    "likes": 340,
+    "date": "2025-06-26",
+    "link": "https://www.lemon8-app.com/@titkongwaan/7520207302675317255?region=th",
+    "source": "Lemon8 · titkongwaan",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7520207302675317255&index=0&sign=707424a26e57fba4a44be0a22f2b2f97",
+    "tag": 1
+   },
+   {
     "title": "ใครจะเชื่อว่านี่คือคาเฟ่ในระยอง 🌳",
     "likes": 145,
     "date": "2026-06-20",
@@ -8075,51 +8110,46 @@
     "th": "data/thumbs/c1dbc6od.webp"
    },
    {
-    "title": "ระยองหน้าฝนไปไหนดีน้าาา 🩵🌧️ อัพเดท 2026",
-    "likes": 13,
-    "date": "2026-06-17",
-    "link": "https://www.lemon8-app.com/@waiikl/7652324664416485909?region=th",
-    "source": "Lemon8 · ✿ IntroWaii Ꮺ",
-    "tag": 1,
-    "image": "https://p16-lemon8-cross-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/oQATAe0fGDAULAT7zyIkS7ENZEgIhvfAQlbKGJ~tplv-tej9nj120t-wap-logo:QHdhaWlrbA==:1080:0.webp?lk3s=66c60501&source=wap_large_logo_image&x-expires=1794700800&x-signature=cB5oBd9b5dloMFo1Saa0EContUk%3D",
-    "th": "data/thumbs/c11xilt9.webp"
-   },
-   {
-    "title": "Phuean Suan Farm",
-    "likes": 2,
-    "date": "2026-08-18",
-    "link": "https://www.lemon8-app.com/@mameawthekop/7675347143700972050?region=th",
-    "source": "Lemon8 · VARA B.",
+    "title": "คาเฟ่บ้านไม้สุดโฮมมี่ เพื่อนสวนฟาร์ม ระยอง 🌼🍃",
+    "likes": 112,
+    "date": "2025-02-25",
+    "link": "https://www.lemon8-app.com/@triptamjai/7475201085095854610?region=th",
+    "source": "Lemon8 · TripTamJai",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7475201085095854610&index=0&sign=41c5e80e88cf51b295cc90bb8e0d069f",
     "tag": 1
    },
    {
-    "title": "เพื่อนสวนฟาร์ม คาเฟ่บ้านสวนระยอง🌸🫧",
-    "likes": 2,
-    "date": "2026-06-18",
-    "link": "https://www.lemon8-app.com/@wahine.w/7652793228286149128?region=th",
-    "source": "Lemon8 · ลาออกมาชงมัทฉะ🍵",
+    "title": "PHUEANSUAN FARM. Rayong (เพื่อนสวนฟาร์ม)🦆🌿",
+    "likes": 32,
+    "date": "2025-07-22",
+    "link": "https://www.lemon8-app.com/@talarongg/7529900643381740033?region=th",
+    "source": "Lemon8 · Talarong",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7529900643381740033&index=0&sign=92358aa52eb0602ec8b0923b795930d3",
     "tag": 1
    },
    {
-    "title": "-เพื่อนสวนฟาร์ม-",
-    "likes": 1,
-    "date": "2026-08-18",
-    "link": "https://www.lemon8-app.com/@mameawthekop/7675348739384443400?region=th",
-    "source": "Lemon8 · VARA B.",
+    "title": "เพื่อนสวนฟาร์ม ☁️🪿✨",
+    "likes": 26,
+    "date": "2025-05-29",
+    "link": "https://www.lemon8-app.com/@alyszininjully/7509883691213554184?region=th",
+    "source": "Lemon8 · alyszin",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7509883691213554184&index=0&sign=df11f657e4d226a9f185c9c93ddd5185",
     "tag": 1
    },
    {
-    "title": "เพื่อนสวนฟาร์ม คาเฟ่ระยอง",
-    "likes": 1,
-    "date": "2026-08-08",
-    "link": "https://www.lemon8-app.com/@lita.chimploy/7671684532591968775?region=th",
-    "source": "Lemon8 · 🌻LitA🌻รักรีวิว💕",
+    "title": "คาเฟ่จังหวัดระยอง : เพื่อนสวนฟาร์ม🌷",
+    "likes": 25,
+    "date": "2025-08-19",
+    "link": "https://www.lemon8-app.com/@p_attaranan/7540242070427419154?region=th",
+    "source": "Lemon8 · Proud :)",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7540242070427419154&index=0&sign=e3fb681fdec2407beac1ce0c617c64e4",
     "tag": 1
    }
   ],
   "fetchedAt": "2026-11-07T19:20:35.298Z",
   "district": "เมืองระยอง",
-  "districtEn": "Mueang Rayong"
+  "districtEn": "Mueang Rayong",
+  "reviewCount": 8
  },
  {
   "id": "l8-22535797338943061",
@@ -8212,14 +8242,12 @@
   "posts": [
    {
     "title": "📍Cafe Berlin คาเฟ่ที่ช่วงนี้เลื่อนฟีดไปไหนก็เจอ",
-    "likes": 1210,
+    "likes": 1211,
     "date": "2026-07-11",
     "link": "https://www.lemon8-app.com/@thipammm/7661144994866938369?region=th",
     "source": "Lemon8 · คุณมอมอ",
     "image": "https://www.lemon8-app.com/seo/image?item_id=7661144994866938369&index=0&sign=0507c58ad9ec72a68128255c4f707878",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/oAgTowfbzhkE7eODQU7AnwMkWP8AJEBAKAfOAg~tplv-sdweummd6v-text-logo-v1:QHRoaXBhbW1t:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796709600&x-signature=u%2Fhxd1cHkm63ToY5X7JBYcHGapU%3D",
-    "th": "data/thumbs/7661144994866938369-0.webp"
+    "tag": 1
    },
    {
     "title": "Cafe Berlin ☕️🍸 คาเฟ่ยอดฮิตที่สุดในตอนนี้คนสวยรวมอยู่ที่นี่หมดแล้ว!",
@@ -8228,9 +8256,7 @@
     "link": "https://www.lemon8-app.com/@sweetsweet.yy/7668593624040342033?region=th",
     "source": "Lemon8 · Sweet 莹莹",
     "image": "https://www.lemon8-app.com/seo/image?item_id=7668593624040342033&index=0&sign=f031271b0a61a5b81f5fa8a61a80b773",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/oUEBAsPsiQqIfCwAmBDFkEIMUbVtEbFgAxZ9Gf~tplv-sdweummd6v-text-logo-v1:QHN3ZWV0c3dlZXQueXk=:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796709600&x-signature=VGJkL7BDWsovsDRXlPpZGCKcjy8%3D",
-    "th": "data/thumbs/7668593624040342033-0.webp"
+    "tag": 1
    },
    {
     "title": "📍Cafe Berlin ราชพฤกษ์",
@@ -8239,9 +8265,7 @@
     "link": "https://www.lemon8-app.com/@pimmmlapads/7655721223535542801?region=th",
     "source": "Lemon8 · Pimlapadss",
     "image": "https://www.lemon8-app.com/seo/image?item_id=7655721223535542801&index=0&sign=4ac50c70a88fb6f9df7db17cfcc379a2",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/oY8PmT7AfJGXvaeIAQfAXAT1pGEAJobXM22eQB~tplv-sdweummd6v-text-logo-v1:QHBpbW1tbGFwYWRz:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=6yOelCU8Xus321JtLfNCDxnwRao%3D",
-    "th": "data/thumbs/7655721223535542801-0.webp"
+    "tag": 1
    },
    {
     "title": "cafe berlin คาเฟ่สวยๆย่าน ราชพฤกษ์ เหมือนหลุดเข้าไปอยู่โซนยุโรป ข้างในร้่านจะเป็นแสงมืดๆหน่อย แต่ถ่ายรูปออกมาจึ้งทุกรูป ว้าวตั้งแต่หน้าประตู",
@@ -8250,9 +8274,7 @@
     "link": "https://www.lemon8-app.com/@cream412/7682287475963822600?region=th",
     "source": "Lemon8 · Chananchiida",
     "image": "https://www.lemon8-app.com/seo/image?item_id=7682287475963822600&index=0&sign=8448cf9123d46efd1e2720d983ce8ea5",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/o0cnA53I9fIBcAvqTeAQ27gLteEVuf2AGGGJAV~tplv-sdweummd6v-text-logo-v1:QGNyZWFtNDEy:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=NZjnEpBhDoDBLPkeWmhfXeMb5p0%3D",
-    "th": "data/thumbs/7682287475963822600-0.webp"
+    "tag": 1
    },
    {
     "title": "Cafe Berlin ☕️✨",
@@ -8261,9 +8283,7 @@
     "link": "https://www.lemon8-app.com/@onichan0591/7661230438685655570?region=th",
     "source": "Lemon8 · maidyah",
     "image": "https://www.lemon8-app.com/seo/image?item_id=7661230438685655570&index=0&sign=1f194e2992a78575728dbf0ae66bef72",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/ogenIU8miDE8UpASAiFvBtqAC9xglCdUQhfDkE~tplv-sdweummd6v-text-logo-v1:QG9uaWNoYW4wNTkx:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=JLaG%2F9yPi16af8DyzAj%2FQGaQ2uk%3D",
-    "th": "data/thumbs/7661230438685655570-0.webp"
+    "tag": 1
    },
    {
     "title": "คาเฟ่เปิดใหม่สไตล์ยุโรป ย่านราชพฤกษ์🥀",
@@ -8279,7 +8299,7 @@
   ],
   "fetchedAt": "2026-11-07T19:20:35.372Z",
   "district": "ปากเกร็ด",
-  "reviewCount": 24,
+  "reviewCount": 40,
   "hours": "Mo-Su 08:00-20:00",
   "hoursSrc": "review",
   "menuPrice": {
@@ -8823,76 +8843,66 @@
   "trend": 10,
   "posts": [
    {
+    "title": "📮เที่ยววัดพระธาตุดอยพระฌาน l ลำปาง🍋 🙏 ❤️🌺🌼นมัสการพระไดบุทสึ",
+    "likes": 443,
+    "date": "2023-09-12",
+    "link": "https://www.lemon8-app.com/@lapakteaw_family/7277761220189389314?region=th",
+    "source": "Lemon8 · ลาพักเที่ยว",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7277761220189389314&index=0&sign=7fdec812165672d091c4e87f851a935d",
+    "tag": 1
+   },
+   {
+    "title": "DAIBUTSU LUMPANG 🇹🇭x🇯🇵 วัดพระธาตุดอยพระฌาน อ.แม่ทะ จ.ลำปาง เปิดเวลา 06.00 - 17.00 น. (ปิดทุกวันพุธ) 📌 พิกัด GPS : https://goo.gl/maps/9",
+    "likes": 79,
+    "date": "2025-01-24",
+    "link": "https://www.lemon8-app.com/@i.darrr/7463493198967931409?region=th",
+    "source": "Lemon8 · Nittha",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7463493198967931409&index=0&sign=20ae51893dcde4e3e85670e9ab5fcf0e",
+    "tag": 1
+   },
+   {
+    "title": "วัดพระธาตุดอยพระฌาน ลำปาง",
+    "likes": 60,
+    "date": "2024-05-06",
+    "link": "https://www.lemon8-app.com/@grandfather_beaw/7365843488589513233?region=th",
+    "source": "Lemon8 · ตา-ยายแอบเที่ยว",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7365843488589513233&index=0&sign=388157c1de64c35c4a01ff15b2a43696",
+    "tag": 1
+   },
+   {
     "title": "📮วัดพระธาตุดอยพระฌาน | จ.ลำปาง",
     "likes": 45,
     "date": "2026-06-17",
     "link": "https://www.lemon8-app.com/@kaninkismyname/7652227550114021904?region=th",
     "source": "Lemon8 · 𑁍𝙺 𝙰 𝙽 𝙸 𝙽 𝙺",
     "image": "https://www.lemon8-app.com/seo/image?item_id=7652227550114021904&index=0&sign=8dbff3e5f45b1be1e717b6b7e1a9aeaa",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/oMLADBajlYBqaimA5itPAM3E3byAvPIBoA2ZI~tplv-sdweummd6v-text-logo-v1:QGthbmlua2lzbXluYW1l:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=%2B0jR4zjDSBK8CI82MNQwjH4sjeU%3D",
-    "th": "data/thumbs/7652227550114021904-0.webp"
+    "tag": 1
+   },
+   {
+    "title": "📍” พระใหญ่ไดบุทสึ “ 🙏🏻 วัดพระธาตุดอยพระฌาน ลำปาง",
+    "likes": 38,
+    "date": "2024-07-10",
+    "link": "https://www.lemon8-app.com/@hrpatiew/7389827036069708305?region=th",
+    "source": "Lemon8 · HRพาเที่ยว",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7389827036069708305&index=0&sign=ee801b246b1af03a6a07c10fbfe6355c",
+    "tag": 1
    },
    {
     "title": "🙏 วัดพระธาตุดอยพระฌาน | ลำปาง",
-    "likes": 34,
+    "likes": 36,
     "date": "2026-10-09",
     "link": "https://www.lemon8-app.com/@paitieow/7694812845647938055?region=th",
     "source": "Lemon8 · ไปเที่ยว",
     "image": "https://www.lemon8-app.com/seo/image?item_id=7694812845647938055&index=0&sign=0ccbec31211f81cb7b08123afc0da2de",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/oIZvQgs2vGJfeBAcAvL4DbVAM78ALE0kgReBlI~tplv-sdweummd6v-text-logo-v1:QHBhaXRpZW93:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=66ZOYBKdyUZakwI5D08TxDLcC1g%3D",
-    "th": "data/thumbs/7694812845647938055-0.webp"
-   },
-   {
-    "title": "วัดพระธาตุดอยพระฌาน ลำปาง",
-    "likes": 15,
-    "date": "2026-01-11",
-    "link": "https://www.lemon8-app.com/@gaewjung21/7594041704945074696?region=th",
-    "source": "Lemon8 · Gaew Gaew",
-    "image": "https://www.lemon8-app.com/seo/image?item_id=7594041704945074696&index=0&sign=f3e2e09a2ad623963f676efa1ad47756",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/oIJeifbj6gl2B6AIAs0iEMCQdBsiEOkH0lpPAB~tplv-sdweummd6v-text-logo-v1:QGdhZXdqdW5nMjE=:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=abuApUbDig%2Fulubi%2BMkGrqmvr1c%3D",
-    "th": "data/thumbs/7594041704945074696-0.webp"
-   },
-   {
-    "title": "วัดสวยที่ต้องไปเยือน พระใหญ่ไดบุตสึ",
-    "likes": 12,
-    "date": "2026-10-27",
-    "link": "https://www.lemon8-app.com/@nidnoi.yawaluk/7701367092670382598?region=th",
-    "source": "Lemon8 · Nidnoi 19",
-    "tag": 1,
-    "image": "https://p16-lemon8-cross-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/ogb6PAcnabPIxYalBxP8iYDIAABivuagrFADE~tplv-tej9nj120t-wap-logo:QG5pZG5vaS55YXdhbHVr:1080:0.webp?lk3s=66c60501&source=wap_large_logo_image&x-expires=1794700800&x-signature=6bS%2BA0tMCyG9QUfAYnLoNNNY6OA%3D",
-    "th": "data/thumbs/c1gu97pz.webp"
-   },
-   {
-    "title": "พิกัดลับวัดญี่ปุ่น แต่อยู่จังหวัดลำปาง",
-    "likes": 9,
-    "date": "2026-10-27",
-    "link": "https://www.lemon8-app.com/@nidnoi.yawaluk/7701308608193020468?region=th",
-    "source": "Lemon8 · Nidnoi 19",
-    "tag": 1,
-    "image": "https://p16-lemon8-cross-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/ogB9aPTAIiuPAYDjkCSkAgHkBALb0VNwCrE2i~tplv-tej9nj120t-share_card_play.jpeg?lk3s=66c60501&source=share_card&x-expires=1794700800&x-signature=21cvnaCaLXEQjWyaSt395f7YA6M%3D",
-    "th": "data/thumbs/cydet2g.webp"
-   },
-   {
-    "title": "วัดพระธาตุดอยพระฌาน จ.ลำปาง",
-    "likes": 8,
-    "date": "2026-01-09",
-    "link": "https://www.lemon8-app.com/@koong_saengoun/7593379425350189585?region=th",
-    "source": "Lemon8 · Koong Saeng-un",
-    "image": "https://www.lemon8-app.com/seo/image?item_id=7593379425350189585&index=0&sign=8c4fd0cb556830f1aab5ffe747f368eb",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/ogGAIBaWlYBzsiIASia2BWREwbhAvPEN7ArRI~tplv-sdweummd6v-text-logo-v1:QGtvb25nX3NhZW5nb3Vu:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=fhFeGC5rLsOR2VuMmZbvSgX3o%2Fo%3D",
-    "th": "data/thumbs/7593379425350189585-0.webp"
+    "tag": 1
    }
   ],
   "fetchedAt": "2026-11-07T19:22:54.943Z",
   "district": "แม่ทะ",
-  "reviewCount": 11,
+  "reviewCount": 48,
   "districtEn": "Mae Tha",
-  "hours": "08:00-17:00",
-  "hoursSrc": "typical",
+  "hours": "Mo-Su 06:00-17:00; We off",
+  "hoursSrc": "review",
   "entry": {
    "free": true,
    "src": "typical"
@@ -9210,15 +9220,31 @@
   "trend": 10,
   "posts": [
    {
+    "title": "🚗บรรยากาศดีย่านปทุมธานี คาเฟ่ ” แกะกะบัว “",
+    "likes": 55,
+    "date": "2024-06-08",
+    "link": "https://www.lemon8-app.com/@driodvlogth/7378174209383744001?region=th",
+    "source": "Lemon8 · ดอยติดเที่ยว",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7378174209383744001&index=0&sign=ba4cb01334289634036d62ef4d97127b",
+    "tag": 1
+   },
+   {
     "title": "📍แจกพิกัดฟาร์มคาเฟ่ แกะกะบัว คลอง 10 หนองเสือ ปทุมธานี 🐑🌿",
     "likes": 20,
     "date": "2026-07-13",
     "link": "https://www.lemon8-app.com/@swoil/7661891439068054032?region=th",
     "source": "Lemon8 · swoilsw",
     "image": "https://www.lemon8-app.com/seo/image?item_id=7661891439068054032&index=0&sign=5789ffb949846d608c65a83613a6bdde",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/okYtiAahByBLF6U9lQltbAiIPOAv2jOEASBIA~tplv-sdweummd6v-text-logo-v1:QHN3b2ls:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796709600&x-signature=u5obmURqcelDXYGwUynSMWuzzBo%3D",
-    "th": "data/thumbs/7661891439068054032-0.webp"
+    "tag": 1
+   },
+   {
+    "title": "ไปเจอน้อง Capybara ที่แกะกะบัว",
+    "likes": 16,
+    "date": "2024-08-13",
+    "link": "https://www.lemon8-app.com/@dutchmiilll/7402482379912200721?region=th",
+    "source": "Lemon8 · MiCha 더치 밀",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7402482379912200721&index=0&sign=cbcb58cbc674531ced58edc8178e2c07",
+    "tag": 1
    },
    {
     "title": "แกะกะบัวคาเฟ่ 🐑🛖✨",
@@ -9227,9 +9253,7 @@
     "link": "https://www.lemon8-app.com/@premchobtiew/7597987540729168392?region=th",
     "source": "Lemon8 · เปรมชอบเที่ยว",
     "image": "https://www.lemon8-app.com/seo/image?item_id=7597987540729168392&index=0&sign=143afee95ab8baa643e36db2b964e7e1",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/ocI9iFpRXCARBhDIQfKXAUAgEA8nicgy7DnEtf~tplv-sdweummd6v-text-logo-v1:QHByZW1jaG9idGlldw==:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=OBUq4hsMpV5BjgQyt8nlZBCjUK4%3D",
-    "th": "data/thumbs/7597987540729168392-0.webp"
+    "tag": 1
    },
    {
     "title": "แกะกะบัว คาเฟ่ ✨🛖",
@@ -9238,37 +9262,15 @@
     "link": "https://www.lemon8-app.com/@premchobtiew/7597680497006739976?region=th",
     "source": "Lemon8 · เปรมชอบเที่ยว",
     "image": "https://www.lemon8-app.com/seo/image?item_id=7597680497006739976&index=0&sign=82e3f54b072ab1c7a63834474061591a",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/oonD2BugIEUewIAe4BYiVcEAiEB2gAiu0wC0kP~tplv-sdweummd6v-text-logo-v1:QHByZW1jaG9idGlldw==:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=150YeKxpHzXsMs7aqkxOopeWGgU%3D",
-    "th": "data/thumbs/7597680497006739976-0.webp"
+    "tag": 1
    },
    {
-    "title": "🐑🪷 บันทึกไว้อยากไปอีก คาเฟ่ที่มีอาหารอร่อยและมีสัตว์น่ารักอ้อนม้ากก 🐾",
-    "likes": 6,
-    "date": "2026-09-15",
-    "link": "https://www.lemon8-app.com/@conymallow/7685766065646338581?region=th",
-    "source": "Lemon8 · Jollypop",
-    "tag": 1,
-    "image": "https://p16-lemon8-cross-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/oow9ifVSCgltD9AQAlmEEECUqBqFIveUq8WrAF~tplv-tej9nj120t-wap-logo:QGNvbnltYWxsb3c=:1080:0.webp?lk3s=66c60501&source=wap_large_logo_image&x-expires=1794700800&x-signature=GrmZlPN8H0oYTadpdHmqrhfPKRc%3D",
-    "th": "data/thumbs/c4c7rpu.webp"
-   },
-   {
-    "title": "ไปอุ้มเบบี๋คาปิบ่าร่ากัน!🤎",
-    "likes": 6,
-    "date": "2026-08-15",
-    "link": "https://www.lemon8-app.com/@poongpoongmommy/7674191041784349202?region=th",
-    "source": "Lemon8 · PoongPoongMommy",
-    "image": "https://www.lemon8-app.com/seo/image?item_id=7674191041784349202&index=0&sign=6d5598868dbf1d35398440998b4c05eb",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/oAEBASYApkqIfCtAeCDD1EqIUgNtEUFgA6q9gK~tplv-sdweummd6v-text-logo-v1:QHBvb25ncG9vbmdtb21teQ==:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=BnzbVQEvSytva4Bs%2FdS3AJfO0e8%3D",
-    "th": "data/thumbs/7674191041784349202-0.webp"
-   },
-   {
-    "title": "คาเฟ่เด็ก",
-    "likes": 2,
-    "date": "2026-08-30",
-    "link": "https://www.lemon8-app.com/@jibdiary/7679707745097450004?region=th",
-    "source": "Lemon8 · JibDiary",
+    "title": "ไปดูคาปิบาร่าที่ แกะกะบัว Farm cafe and restaurants 🐑🍸",
+    "likes": 13,
+    "date": "2025-04-14",
+    "link": "https://www.lemon8-app.com/@mallitong/7493110212656677383?region=th",
+    "source": "Lemon8 · mallitong🐰♡",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7493110212656677383&index=0&sign=f7cf23cb88f593e5d788810a65c7f138",
     "tag": 1
    }
   ],
@@ -9297,7 +9299,13 @@
    "src": "review1"
   },
   "hours": "We-Mo 10:00-20:00",
-  "hoursSrc": "review"
+  "hoursSrc": "review",
+  "menuPrice": {
+   "min": 30,
+   "max": 150,
+   "src": "review"
+  },
+  "reviewCount": 25
  },
  {
   "id": "l8-22535797337538414",
@@ -9487,9 +9495,7 @@
     "link": "https://www.lemon8-app.com/@thichaaab/7588467362228109825?region=th",
     "source": "Lemon8 · 𝑇ℎ𝑖𝑐ℎ𝑎❀",
     "image": "https://www.lemon8-app.com/seo/image?item_id=7588467362228109825&index=0&sign=e0d0cf24010d245cf1df4f27bca04b92",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/oUibfnEBEAthbPo57ReWpsAEDfJ3FDAQkEAS0I~tplv-sdweummd6v-text-logo-v1:QHRoaWNoYWFhYg==:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=L%2FPxk3lxXx%2BpM5BRl%2FgUOWk%2BiIo%3D",
-    "th": "data/thumbs/7588467362228109825-0.webp"
+    "tag": 1
    },
    {
     "title": "Palyn cafe and eatery ปาลิณ คาเฟ่ริมทะเลสัตหีบที่วิวสวยจนใจเจ็บ",
@@ -9548,7 +9554,8 @@
   ],
   "fetchedAt": "2026-11-08T03:32:51.667Z",
   "hours": "Mo-Su 08:30-20:30",
-  "hoursSrc": "review"
+  "hoursSrc": "review",
+  "reviewCount": 7
  },
  {
   "id": "l8-22535797340042840",
@@ -10107,6 +10114,15 @@
   "trend": 9,
   "posts": [
    {
+    "title": "คาเฟ่ย่านสุขุมวิท “The Wood Land”",
+    "likes": 539,
+    "date": "2024-01-17",
+    "link": "https://www.lemon8-app.com/@pagunteaw/7325085605141103105?region=th",
+    "source": "Lemon8 · NAPATSANAN.B",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7325085605141103105&index=0&sign=beeceb5c7ca7ee19307435b70a11f3db",
+    "tag": 1
+   },
+   {
     "title": "Cafe OOTD 🪵🌲",
     "likes": 340,
     "date": "2026-01-30",
@@ -10118,64 +10134,53 @@
     "th": "data/thumbs/7600948650949001735-0.webp"
    },
    {
-    "title": "คาเฟ่ป่าใจกลางสุขุมวิท the wood land",
-    "likes": 25,
-    "date": "2026-09-17",
-    "link": "https://www.lemon8-app.com/@muzubigi/7686349885712499218?region=th",
-    "source": "Lemon8 · มอนเล่เมล่อน",
-    "image": "https://www.lemon8-app.com/seo/image?item_id=7686349885712499218&index=0&sign=0801c76ca16827185f9df10c4677e11d",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/owCEQIalgEilBTtytFfI2qDC7AqwSE9QIAeOAr~tplv-sdweummd6v-text-logo-v1:QG11enViaWdp:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=gdgXveF8lC6zTAYlO10DdSe86gw%3D",
-    "th": "data/thumbs/7686349885712499218-0.webp"
+    "title": "“The Wood Land”คาเฟ่ในสวน ย่านอ่อนนุช🌳🐱💐",
+    "likes": 114,
+    "date": "2025-08-22",
+    "link": "https://www.lemon8-app.com/@ka_faes/7541394917941772818?region=th",
+    "source": "Lemon8 · กาแฟ",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7541394917941772818&index=0&sign=b37ef30e2d3c93eff4768dba6a49d827",
+    "tag": 1
    },
    {
-    "title": "🚩ปักหมุดคาเฟ่ ติดบีทีเอสอ่อนนุช The Wood Land Sukhumvit 52",
-    "likes": 9,
-    "date": "2025-12-07",
-    "link": "https://www.lemon8-app.com/@mndmnd.ncn/7581018888985461266?region=th",
-    "source": "Lemon8 · mndmnd",
-    "image": "https://www.lemon8-app.com/seo/image?item_id=7581018888985461266&index=0&sign=8e3c364d44b14049633a80bed39eb7ce",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/oQABOh08AM2xiO7eipEApEIB1gnUmAICI3fvJ1~tplv-sdweummd6v-text-logo-v1:QG1uZG1uZC5uY24=:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=SPTbcMibCRs4RPQLP%2F6QcTVfNy4%3D",
-    "th": "data/thumbs/7581018888985461266-0.webp"
+    "title": "The Wood Land คาเฟ่กรุงเทพฟีลเขาใหญ่🪵🐿🍃",
+    "likes": 103,
+    "date": "2022-07-06",
+    "link": "https://www.lemon8-app.com/@cherryldw/7117182686791238146?region=th",
+    "source": "Lemon8 · icherryu 🍒🫧〰️",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7117182686791238146&index=0&sign=68f829ca866849dedc123104a49d60d4",
+    "tag": 1
    },
    {
-    "title": "เก็บลิสต์ คาเฟ่ฮีลใจวันฝนตก!",
-    "likes": 8,
-    "date": "2026-09-02",
-    "link": "https://www.lemon8-app.com/@mwporri/7680861270861546000?region=th",
-    "source": "Lemon8 · Mangpor ₊˚⊹ᡣ𐭩",
-    "image": "https://www.lemon8-app.com/seo/image?item_id=7680861270861546000&index=0&sign=b236dbc6f9d0b52dbbc5283f62c6335d",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/o4CuEQiBAMvBG5IA71fXeqvIlAiPW2EScUCnZg~tplv-sdweummd6v-text-logo-v1:QG13cG9ycmk=:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=jSAujK0nBqU7WCou4w7NnJ5KBC8%3D",
-    "th": "data/thumbs/7680861270861546000-0.webp"
+    "title": "The wood land คาเฟ่pet friendly สุดร่มรื่นกลางเมือง ✨☀️🐶",
+    "likes": 94,
+    "date": "2023-06-26",
+    "link": "https://www.lemon8-app.com/@peargipear/7249036948814234113?region=th",
+    "source": "Lemon8 · sapearsikorn",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7249036948814234113&index=0&sign=31ff21fa98a70cecdaf976b7f911f7e3",
+    "tag": 1
    },
    {
-    "title": "คาเฟ่BTSอ่อนนุช",
-    "likes": 8,
-    "date": "2026-07-09",
-    "link": "https://www.lemon8-app.com/@chxmmoo/7660431158248768001?region=th",
-    "source": "Lemon8 · มูมู่",
-    "image": "https://www.lemon8-app.com/seo/image?item_id=7660431158248768001&index=0&sign=cabf379ef93c2717f153bf901c817af8",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/oQAA6IAjP41E4YdVw0i8CiJe2BMBNgpQ8EfBx3~tplv-sdweummd6v-text-logo-v1:QGNoeG1tb28=:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=iZTOUvCHfArSDV%2Blkm7gOU6j2CQ%3D",
-    "th": "data/thumbs/7660431158248768001-0.webp"
-   },
-   {
-    "title": "THE WOOD LAND ป่ากลางกรุง",
-    "likes": 5,
-    "date": "2026-06-27",
-    "link": "https://www.lemon8-app.com/@muzubigi/7656024523837342226?region=th",
-    "source": "Lemon8 · มอนเล่เมล่อน",
-    "image": "https://www.lemon8-app.com/seo/image?item_id=7656024523837342226&index=0&sign=14035d1c763b8c9f6d798d2d8a4c1613",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/oc3vi7DoIFEqQoCPgAEQAq9ABt6Jft0fqMqBgz~tplv-sdweummd6v-text-logo-v1:QG11enViaWdp:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=gtsyK2h%2FulPzfG078q9f6QbEpMQ%3D",
-    "th": "data/thumbs/7656024523837342226-0.webp"
+    "title": "The wood land cafe ☕️ 🌳",
+    "likes": 91,
+    "date": "2025-02-11",
+    "link": "https://www.lemon8-app.com/@cnk.cartoon/7470030648682512912?region=th",
+    "source": "Lemon8 · Cartooncnk",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7470030648682512912&index=0&sign=d5532c05063d66111917b64ee97a25c0",
+    "tag": 1
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.772Z",
   "district": "พระโขนง",
-  "districtEn": "Phra Khanong"
+  "districtEn": "Phra Khanong",
+  "hours": "Mo-Su 09:00-19:00; Sa off",
+  "hoursSrc": "review",
+  "menuPrice": {
+   "min": 120,
+   "max": 250,
+   "src": "review"
+  },
+  "reviewCount": 47
  },
  {
   "id": "l8-22535865208351531",
@@ -10341,73 +10346,64 @@
   "trend": 9,
   "posts": [
    {
+    "title": "ถ่ายรูปชิคๆกับวิวภูเขาที่เขื่อนแก่งกระจาน⛰️🌳🛣️",
+    "likes": 448,
+    "date": "2024-08-15",
+    "link": "https://www.lemon8-app.com/@ma_ilk/7403246455474979329?region=th",
+    "source": "Lemon8 · MI LK",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7403246455474979329&index=0&sign=20a45a8576099e502be77f4d0240ae71",
+    "tag": 1
+   },
+   {
+    "title": "Summer vibes💛 เขื่อนแก่งกระจาน จังหวัดเพชรบุรี",
+    "likes": 116,
+    "date": "2024-02-26",
+    "link": "https://www.lemon8-app.com/@chubbytaewraew/7339729980991357442?region=th",
+    "source": "Lemon8 · Chubbytaewraew",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7339729980991357442&index=0&sign=609b10ff822a15edbb5edae9ad5cb85f",
+    "tag": 1
+   },
+   {
+    "title": "ชวนมาถ่ายรูปสันเขื่อนแก่งกระจาน",
+    "likes": 54,
+    "date": "2024-12-02",
+    "link": "https://www.lemon8-app.com/@maremararymareelll/7443727675350614545?region=th",
+    "source": "Lemon8 · maremararymaree",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7443727675350614545&index=0&sign=f6cb97f2ce6d823f0544b06be18031e7",
+    "tag": 1
+   },
+   {
+    "title": "1 Day Trip เขื่อนแก่งกระจาน ⛰️🌿✨ เช้าไปเย็นกลับก็ฟินได้!",
+    "likes": 53,
+    "date": "2022-12-09",
+    "link": "https://www.lemon8-app.com/@wonderwonder/7175213528675009026?region=th",
+    "source": "Lemon8 · wonder.wonder",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7175213528675009026&index=0&sign=3b92ace997c2c9ad96c8d08d59ef628b",
+    "tag": 1
+   },
+   {
+    "title": "ชมวิวกลางน้ำ \"สะพานแขวน\" เขื่อนแก่งกระจาน #น้ำรักพี่โชน",
+    "likes": 41,
+    "date": "2022-09-16",
+    "link": "https://www.lemon8-app.com/@cuttinghairsalon/7143876370806866434?region=th",
+    "source": "Lemon8 · memewth__",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7143876370806866434&index=0&sign=2e084f034fbdabb7c50fe8671217e026",
+    "tag": 1
+   },
+   {
     "title": "วิวบ้ามากกก สันเขื่อนแก่งกระจานเพชรบุรีสวยจัง💚 #เขื่อนแก่งกระจาน #เพชรบุรี #สันเขื่อนแก่งกระจานเพชรบุรี",
     "likes": 39,
     "date": "2026-05-31",
     "link": "https://www.lemon8-app.com/@siriluckjaa/7645859216537780756?region=th",
     "source": "Lemon8 · เที่ยวกะเทอ🛵💨",
     "image": "https://www.lemon8-app.com/seo/image?item_id=7645859216537780756&index=0&sign=34b36df5388f565f35abb128a43a4de1",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/oUAbAAyOSkvbuhmiulLgI0YkBAIaAimQlPqBE~tplv-sdweummd6v-text-logo-v1:QHNpcmlsdWNramFh:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=yKl%2Fi1KFooB3iy%2B7hppy9hfYy2I%3D",
-    "th": "data/thumbs/7645859216537780756-0.webp"
-   },
-   {
-    "title": "✨เที่ยวเพชรบุรี 2วัน1คืน ฉบับพาน้องแมวไปด้วย พักที่ไหน ไปไหนบ้าง‼️",
-    "likes": 27,
-    "date": "2026-05-14",
-    "link": "https://www.lemon8-app.com/@shine.seek/7639642673976214032?region=th",
-    "source": "Lemon8 · shine.seek",
-    "tag": 1,
-    "image": "https://p16-lemon8-cross-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/o0TIDDNvBDeBcUPK4cFAggQEtE6mA95f9ACqAX~tplv-tej9nj120t-wap-logo:QHNoaW5lLnNlZWs=:1080:0.webp?lk3s=66c60501&source=wap_large_logo_image&x-expires=1794700800&x-signature=y69xHA6r0bmq4IKHf6vcY9o%2Fc44%3D",
-    "th": "data/thumbs/c576zn2.webp"
-   },
-   {
-    "title": "เขื่อนแก่งกระจาน เพชรบุรี",
-    "likes": 24,
-    "date": "2026-01-26",
-    "link": "https://www.lemon8-app.com/@nawarat_kea/7599640854256484880?region=th",
-    "source": "Lemon8 · Nawarat_Kea",
-    "image": "https://www.lemon8-app.com/seo/image?item_id=7599640854256484880&index=0&sign=94e8713b1fc4c2930538724de69a5ea8",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/ogJAEBfixgua0W9Q2ICz2mE1A1E2imeAB6B6W3~tplv-sdweummd6v-text-logo-v1:QG5hd2FyYXRfa2Vh:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=y14HAfj0%2FJns0Mlj9cNCP0H7uPM%3D",
-    "th": "data/thumbs/7599640854256484880-0.webp"
-   },
-   {
-    "title": "ส่องความอุดมสมบูรณ์บริเวณ “เขื่อนแก่งกระจาน”",
-    "likes": 15,
-    "date": "2025-12-20",
-    "link": "https://www.lemon8-app.com/@pr.dnp/7585861164636684807?region=th",
-    "source": "Lemon8 · DNP Official",
-    "image": "https://www.lemon8-app.com/seo/image?item_id=7585861164636684807&index=0&sign=37f4dd403bec6902657a2e418491fe58",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/ogMtxRECaAaGnMUn9VU8yegIDfEXFBAgrCApmQ~tplv-sdweummd6v-text-logo-v1:QHByLmRucA==:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=%2F3IEV8MHHTWyEA%2BUip70LMA3O2I%3D",
-    "th": "data/thumbs/7585861164636684807-0.webp"
-   },
-   {
-    "title": "วิวดี๊ดีต้องโดน",
-    "likes": 8,
-    "date": "2026-10-09",
-    "link": "https://www.lemon8-app.com/@saviaxr/7694458490068730389?region=th",
-    "source": "Lemon8 · ป.ปลา ตากลม",
-    "tag": 1,
-    "image": "https://p16-lemon8-cross-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/o8aviE1A1IY2AAlD50A4FB5iBsEgaPONiL1bI~tplv-tej9nj120t-wap-logo:QHNhdmlheHI=:1080:0.webp?lk3s=66c60501&source=wap_large_logo_image&x-expires=1794700800&x-signature=KaiMc9RYpN1bKRpiWJstT7fcFKY%3D",
-    "th": "data/thumbs/c1wt9me6.webp"
-   },
-   {
-    "title": "เขื่อนแก่งกระจาน",
-    "likes": 7,
-    "date": "2026-08-11",
-    "link": "https://www.lemon8-app.com/@snook8866/7672782798302102034?region=th",
-    "source": "Lemon8 · Nook (นุ๊ก)",
-    "image": "https://www.lemon8-app.com/seo/image?item_id=7672782798302102034&index=0&sign=cd2fb4a67ac88bf278424e8ceb83efc5",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/oU76AeDAAIUAFBNOJgfEbbTR5ecNMz7RJEDriE~tplv-sdweummd6v-text-logo-v1:QHNub29rODg2Ng==:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=ViW93DbokmtcZhuMdT8%2FWj4Fw3g%3D",
-    "th": "data/thumbs/7672782798302102034-0.webp"
+    "tag": 1
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.740Z",
   "district": "แก่งกระจาน",
-  "districtEn": "Kaeng Krachan"
+  "districtEn": "Kaeng Krachan",
+  "reviewCount": 29
  },
  {
   "id": "l8-22535865258871317",
@@ -10537,71 +10533,64 @@
   "trend": 7,
   "posts": [
    {
+    "title": "Araksa Tea Garden ไร่ชาที่สวยที่สุดในเชียงใหม่",
+    "likes": 474,
+    "date": "2022-01-19",
+    "link": "https://www.lemon8-app.com/@chynn/7054828253160194562?region=th",
+    "source": "Lemon8 · eiip.chynn",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7054828253160194562&index=0&sign=d973961cdc16c702d6b7f493dc0e354a",
+    "tag": 1
+   },
+   {
+    "title": "ARAKSA Tea Garden ไร่ชาเชียงใหม่ ฟีลดีมาก🍃",
+    "likes": 211,
+    "date": "2023-06-25",
+    "link": "https://www.lemon8-app.com/@vvvvvvvvvaew/7248469421549797889?region=th",
+    "source": "Lemon8 · Vaews",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7248469421549797889&index=0&sign=09998783514dd6d475a710aeb6fb79f1",
+    "tag": 1
+   },
+   {
+    "title": "ARAKSA TEA GARDEN, chiang mai",
+    "likes": 210,
+    "date": "2024-04-28",
+    "link": "https://www.lemon8-app.com/@ffoilfoil/7362756423610270224?region=th",
+    "source": "Lemon8 · foilfoil",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7362756423610270224&index=0&sign=70307dfd57eb1243aeb989eb71b606a1",
+    "tag": 1
+   },
+   {
+    "title": "ARAKSA TEA GARDEN : ChiangMai",
+    "likes": 120,
+    "date": "2023-02-06",
+    "link": "https://www.lemon8-app.com/@meenn_cn/7197057717167456770?region=th",
+    "source": "Lemon8 · Meenn.cn",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7197057717167456770&index=0&sign=16e3b3766d9034699e1f19add226dd56",
+    "tag": 1
+   },
+   {
     "title": "วันชิลๆที่ Araksa Tea Garden, Chiang Mai 🌱",
     "likes": 104,
     "date": "2026-04-11",
     "link": "https://www.lemon8-app.com/@spommyy/7627420845908034055?region=th",
     "source": "Lemon8 · spommyy",
     "image": "https://www.lemon8-app.com/seo/image?item_id=7627420845908034055&index=0&sign=d17a2459bc8ae8da1c66375e22bc877b",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/oce6AoYQBZQdtADTJlAgbLBWf8NfnE7oDMYEAA~tplv-sdweummd6v-text-logo-v1:QHNwb21teXk=:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=Ibptmfi45l0djPX9fd%2F%2B1Qs8sJ4%3D",
-    "th": "data/thumbs/7627420845908034055-0.webp"
+    "tag": 1
    },
    {
-    "title": "Araksa Tea Garden 🍵🍃",
-    "likes": 54,
-    "date": "2026-06-12",
-    "link": "https://www.lemon8-app.com/@outside.ontheweekend/7650555340898959890?region=th",
-    "source": "Lemon8 · OUTSIDE.ontheweekend",
-    "image": "https://www.lemon8-app.com/seo/image?item_id=7650555340898959890&index=0&sign=8c7018019bc01dd27e83c88b3080db2d",
-    "tag": 1,
-    "thumb": "https://p19-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/oktCvFB3As9fBmLLfq2sEkUYbAI9QAY7DDdtEg~tplv-sdweummd6v-text-logo-v1:QG91dHNpZGUub250aGV3ZWVrZW5k:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=gUumhSprWOts0CQzumJJ4B5sEAo%3D",
-    "th": "data/thumbs/7650555340898959890-0.webp"
-   },
-   {
-    "title": "Araksa tea tour 🍵",
-    "likes": 49,
-    "date": "2025-11-16",
-    "link": "https://www.lemon8-app.com/@user8657120155271/7573374809590088200?region=th",
-    "source": "Lemon8 · Summers.burst",
-    "image": "https://www.lemon8-app.com/seo/image?item_id=7573374809590088200&index=0&sign=391c57b39e597d334ab9bace3d2bc64a",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/owJBPAA3pABtPIeaC8FEgTD89GEtXzAIEUfjQg~tplv-sdweummd6v-text-logo-v1:QHVzZXI4NjU3MTIwMTU1Mjcx:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=8qU%2Bh0EZFyU4Xkfa%2BbFnQxJJFUY%3D",
-    "th": "data/thumbs/7573374809590088200-0.webp"
-   },
-   {
-    "title": "รีวิวเชียงใหม่ รอบที่ 2 ของปี 🐼",
-    "likes": 30,
-    "date": "2026-08-18",
-    "link": "https://www.lemon8-app.com/@muttana_kp/7675414947363209736?region=th",
-    "source": "Lemon8 · 🌈 Mutt",
-    "tag": 1,
-    "image": "https://p16-lemon8-cross-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/o0ijCyIiA7oKPkaPElPYv0PC1AIBASAEmMbJB~tplv-tej9nj120t-wap-logo:QG11dHRhbmFfa3A=:1080:0.webp?lk3s=66c60501&source=wap_large_logo_image&x-expires=1794700800&x-signature=dZ9ygPEYoqItjpmIQEuIAWidNBs%3D",
-    "th": "data/thumbs/cey6b6n.webp"
-   },
-   {
-    "title": "Araksa Tea Garden Chiang Mai ,Thailand🍂",
-    "likes": 20,
-    "date": "2026-07-17",
-    "link": "https://www.lemon8-app.com/@pnwwnp_/7663395405677347336?region=th",
-    "source": "Lemon8 · NAWICH",
-    "image": "https://www.lemon8-app.com/seo/image?item_id=7663395405677347336&index=0&sign=f8cf1c85233e3e55b4abb2acf43e9efc",
-    "tag": 1,
-    "thumb": "https://p19-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/o42ijobBiYPlPCJAPLBaiAK1lZunBI4EAaBA3~tplv-sdweummd6v-text-logo-v1:QHBud3ducF8=:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=PwbNrT9tlMNBJ%2FsNqCzswoAN3vo%3D",
-    "th": "data/thumbs/7663395405677347336-0.webp"
-   },
-   {
-    "title": "One day trip ที่เที่ยวแม่แตง เชียงใหม่ สวยเกินคาด🌲☁️",
-    "likes": 12,
-    "date": "2026-06-24",
-    "link": "https://www.lemon8-app.com/@everlynnne/7654896684832490001?region=th",
-    "source": "Lemon8 · everlynne🗝️🩰",
+    "title": "Araksa tea garden จุดเช็คอินใหม่ที่แม่แตง",
+    "likes": 65,
+    "date": "2023-08-07",
+    "link": "https://www.lemon8-app.com/@toeymono/7264473241534677506?region=th",
+    "source": "Lemon8 · Toey Mono",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7264473241534677506&index=0&sign=e804a0ff70c2e5ebf620e8bb085b36e5",
     "tag": 1
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.714Z",
   "district": "แม่แตง",
-  "districtEn": "Hang Dong"
+  "districtEn": "Hang Dong",
+  "reviewCount": 30
  },
  {
   "id": "l8-22535797309800311",
@@ -10621,6 +10610,15 @@
   "trend": 8,
   "posts": [
    {
+    "title": "Treat Tea House 🍵",
+    "likes": 183,
+    "date": "2026-09-09",
+    "link": "https://www.lemon8-app.com/@cacatoon/7683381696116359700?region=th",
+    "source": "Lemon8 · Cacartoon",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7683381696116359700&index=0&sign=7a4f10eca2acc25798fd9aaa73ad2579",
+    "tag": 1
+   },
+   {
     "title": "เที่ยวพิษณุโลก ฉบับ ไม่เข้าวัด",
     "likes": 168,
     "date": "2026-08-02",
@@ -10630,44 +10628,39 @@
     "image": "https://p16-lemon8-cross-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/osJAeLhn53cmGDeAbezEgc74AoIUDGAgWURhQw~tplv-tej9nj120t-wap-logo:QHBlbWlpc3R1ZGlv:1080:0.webp?lk3s=66c60501&source=wap_large_logo_image&x-expires=1794744000&x-signature=LtAMU3BRsdy7kgypnnKUaSBmkyI%3D"
    },
    {
+    "title": "Treat Tea House",
+    "likes": 96,
+    "date": "2024-02-20",
+    "link": "https://www.lemon8-app.com/@namfahhh17/7337647724323602945?region=th",
+    "source": "Lemon8 · Namfah",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7337647724323602945&index=0&sign=31ff1e0eeeff4011a3bf70be65c04209",
+    "tag": 1
+   },
+   {
+    "title": "TREAT TEA HOUSE",
+    "likes": 37,
+    "date": "2024-06-11",
+    "link": "https://www.lemon8-app.com/@ilysstudio.th/7379162381122814465?region=th",
+    "source": "Lemon8 · ของดีไม่ต้องหาอุ๋มพาไปตำ🌻",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7379162381122814465&index=0&sign=1a952457f7417c5ad177ade5f53c89db",
+    "tag": 1
+   },
+   {
     "title": "Treat tea 🍵",
-    "likes": 21,
+    "likes": 22,
     "date": "2026-07-26",
     "link": "https://www.lemon8-app.com/@n.ningggggg/7666688852433633799?region=th",
     "source": "Lemon8 · nIngnIng",
-    "tag": 1,
-    "image": "https://p16-lemon8-cross-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/oUDQCG5OIff7ofyE2LpM8DubjrJWAAxAAItUQb~tplv-tej9nj120t-wap-logo:QG4ubmluZ2dnZ2dn:1080:0.webp?lk3s=66c60501&source=wap_large_logo_image&x-expires=1794744000&x-signature=BVSXgd8Ky296lNrbX9slxAzJ80g%3D"
-   },
-   {
-    "title": "คาเฟ่ พิษณุโลก ☕️",
-    "likes": 5,
-    "date": "2026-08-08",
-    "link": "https://www.lemon8-app.com/@s_nitiporn24/7671511802806649351?region=th",
-    "source": "Lemon8 · Kamiin",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7666688852433633799&index=0&sign=fad331df98d8cc708849be07e5d45cbb",
     "tag": 1
    },
    {
-    "title": "🍵 คาเฟ่ชาในพิษณุโลกที่อยากบอกต่อ!",
-    "likes": 5,
-    "date": "2026-06-23",
-    "link": "https://www.lemon8-app.com/@shin_shita/7654621048633180680?region=th",
-    "source": "Lemon8 · Shin_shita",
-    "tag": 1
-   },
-   {
-    "title": "ใครชอบบรรยากาศนี้? Treat tea house จ. พิษณุโลก",
-    "likes": 3,
-    "date": "2026-07-02",
-    "link": "https://www.lemon8-app.com/@nananam45/7657810773900673544?region=th",
-    "source": "Lemon8 · Nam Kittima",
-    "tag": 1
-   },
-   {
-    "title": "a lot of TEA",
-    "likes": 2,
-    "date": "2026-08-18",
-    "link": "https://www.lemon8-app.com/@niida53official/7675273078179447314?region=th",
-    "source": "Lemon8 · Massi Miracle",
+    "title": "🍵 TREAT tea house คาเฟ่ชาที่ไม่ได้มีดีแค่ชา!✨",
+    "likes": 20,
+    "date": "2025-04-25",
+    "link": "https://www.lemon8-app.com/@nutdapanutda/7497191093956526609?region=th",
+    "source": "Lemon8 · นัดดา✿",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7497191093956526609&index=0&sign=3ea28879eb9169ff87d609eb201b3aba",
     "tag": 1
    }
   ],
@@ -10708,7 +10701,10 @@
     }
    ],
    "src": "review"
-  }
+  },
+  "hours": "Mo-Su 07:30-17:00; Mo off",
+  "hoursSrc": "review",
+  "reviewCount": 29
  },
  {
   "id": "l8-42203861073491832",
@@ -10733,9 +10729,7 @@
     "link": "https://www.lemon8-app.com/@gamchuleekorn/7575774739839369729?region=th",
     "source": "Lemon8 · chulee.g",
     "image": "https://www.lemon8-app.com/seo/image?item_id=7575774739839369729&index=0&sign=fc9ff5b1441c96679a6d3a6b6d0c6385",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/ocElJjFR3FAAf7RAESED48fmIAYxAfdmDoiG4b~tplv-sdweummd6v-text-logo-v1:QGdhbWNodWxlZWtvcm4=:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=h7gOe62U%2BrHk%2FrQvoPNTw9BP2AM%3D",
-    "th": "data/thumbs/7575774739839369729-0.webp"
+    "tag": 1
    },
    {
     "title": "แลนด์มาร์กใหม่สระบุรี!! ที่นี่คาเฟ่และที่พักฟีลญี่ปุ่นที่ใช้งบสร้างกว่า 100 ล้านบาท",
@@ -10750,14 +10744,12 @@
    },
    {
     "title": "Oeimi café สระบุรี มาแปปเดียวได้รูปเป็นร้อย",
-    "likes": 209,
+    "likes": 211,
     "date": "2026-03-21",
     "link": "https://www.lemon8-app.com/@darkduck38/7619751565275988496?region=th",
     "source": "Lemon8 · ได้ไปซะที",
     "image": "https://www.lemon8-app.com/seo/image?item_id=7619751565275988496&index=0&sign=373b7874911b63f15bad4f71eb5d96a7",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/oYAVAfEBDBFpFAV9deEzsnIVvCUQVOqgx1tm1E~tplv-sdweummd6v-text-logo-v1:QGRhcmtkdWNrMzg=:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=yv0z6vLPazDekQ9WQ8qwa6aR9og%3D",
-    "th": "data/thumbs/7619751565275988496-0.webp"
+    "tag": 1
    },
    {
     "title": "Oeimi Café",
@@ -10766,9 +10758,7 @@
     "link": "https://www.lemon8-app.com/@thitirat_25/7669390629712953872?region=th",
     "source": "Lemon8 · ᴬᵁ",
     "image": "https://www.lemon8-app.com/seo/image?item_id=7669390629712953872&index=0&sign=4f5b2354c19635df0d89e7250e1d192d",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/ocGQaTaeQU92AvvJfeFM8GM2fDTXAAJAAoLpgc~tplv-sdweummd6v-text-logo-v1:QHRoaXRpcmF0XzI1:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=ZYsrqnDw4ZeT66l2UbYN%2FYB0mKE%3D",
-    "th": "data/thumbs/7669390629712953872-0.webp"
+    "tag": 1
    },
    {
     "title": "คาเฟ่สระบุรี",
@@ -10795,10 +10785,15 @@
   ],
   "fetchedAt": "2026-11-07T19:20:35.281Z",
   "district": "หนองแค",
-  "reviewCount": 24,
+  "reviewCount": 14,
   "districtEn": "Nong Khae",
   "hours": "Mo-Su 08:00-18:00",
-  "hoursSrc": "review1"
+  "hoursSrc": "review1",
+  "menuPrice": {
+   "min": 140,
+   "max": 160,
+   "src": "review"
+  }
  },
  {
   "id": "l8-22535865934633773",
@@ -10818,15 +10813,40 @@
   "trend": 8,
   "posts": [
    {
+    "title": "1991 Home Cafe Ratchaburi 🍋✨",
+    "likes": 534,
+    "date": "2025-07-05",
+    "link": "https://www.lemon8-app.com/@momiinnm/7523405500931899912?region=th",
+    "source": "Lemon8 · littlemo",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7523405500931899912&index=0&sign=98a2f9161ee4c1e00206af3a3601cb76",
+    "tag": 1
+   },
+   {
+    "title": "1991 home cafe 🏡",
+    "likes": 396,
+    "date": "2024-07-11",
+    "link": "https://www.lemon8-app.com/@_ppsxn/7390391984214753809?region=th",
+    "source": "Lemon8 · .",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7390391984214753809&index=0&sign=c0f736136cbe69dcc609c9aafcfa6450",
+    "tag": 1
+   },
+   {
+    "title": "1991 home cafe 🎧",
+    "likes": 317,
+    "date": "2023-10-29",
+    "link": "https://www.lemon8-app.com/@bunnyangel1/7295279882752246273?region=th",
+    "source": "Lemon8 · ibunnyj",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7295279882752246273&index=0&sign=39b5a7c15a7ecce789e004cb8593019b",
+    "tag": 1
+   },
+   {
     "title": "1991 HOME CAFE",
     "likes": 293,
     "date": "2026-03-14",
     "link": "https://www.lemon8-app.com/@moomeng9/7617064022801744402?region=th",
     "source": "Lemon8 · moo meng 🐻",
     "image": "https://www.lemon8-app.com/seo/image?item_id=7617064022801744402&index=0&sign=2c0a2c13a7df4af7cb875ce3fa7eab15",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/oAJMTfG1QLLAv2PAQmIGEeeQgARCAfPAGQUJV2~tplv-sdweummd6v-text-logo-v1:QG1vb21lbmc5:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=GadYQQR8PXTiB0szzurGBUpRBco%3D",
-    "th": "data/thumbs/7617064022801744402-0.webp"
+    "tag": 1
    },
    {
     "title": "Cafe สุดคิ้วในตัวเมืองราชบุรี",
@@ -10840,54 +10860,26 @@
     "th": "data/thumbs/7641601633062846994-0.webp"
    },
    {
-    "title": "1991 HOME CAFE & BAR",
-    "likes": 79,
-    "date": "2026-01-27",
-    "link": "https://www.lemon8-app.com/@praewnetnapha/7600057170889130512?region=th",
-    "source": "Lemon8 · Praew Netnapha",
-    "image": "https://www.lemon8-app.com/seo/image?item_id=7600057170889130512&index=0&sign=57343e41895624674bbd5d900064a85b",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/oEi0BCRiAyXaTnaPEkmYIAPpyAIBAjA4yFbOB~tplv-sdweummd6v-text-logo-v1:QHByYWV3bmV0bmFwaGE=:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=k4P%2Bgf8oKY4l0Uc0vvUNjq%2BDTVA%3D",
-    "th": "data/thumbs/7600057170889130512-0.webp"
-   },
-   {
-    "title": "1991 HOME CAFE 📍",
-    "likes": 34,
-    "date": "2025-11-23",
-    "link": "https://www.lemon8-app.com/@skinfoodbynn/7575807395989864968?region=th",
-    "source": "Lemon8 · ‧₊ นงนุ้ยไง 🍖ˊ˗",
-    "image": "https://www.lemon8-app.com/seo/image?item_id=7575807395989864968&index=0&sign=0faf2a743deff0ac5f9fd8cd8e5054e9",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/osU3FEjMqUALCEQpBIFfBCgfCVyAumI2tAD395~tplv-sdweummd6v-text-logo-v1:QHNraW5mb29kYnlubg==:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=J97bxJHPlGi1TJi1KOI5CSQxqDs%3D",
-    "th": "data/thumbs/7575807395989864968-0.webp"
-   },
-   {
-    "title": "1991HOMECAFE 🏠☕️",
-    "likes": 10,
-    "date": "2026-08-12",
-    "link": "https://www.lemon8-app.com/@32.bubblegumm/7673170536633008658?region=th",
-    "source": "Lemon8 · 32.bubblegumm",
-    "tag": 1,
-    "image": "https://p16-lemon8-cross-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/oYx8VahIAe2DAIpEPJLpTlBGABQCAG1CeSe2fn~tplv-tej9nj120t-wap-logo:QDMyLmJ1YmJsZWd1bW0=:1080:0.webp?lk3s=66c60501&source=wap_large_logo_image&x-expires=1794700800&x-signature=dLFjVq1Dcgwnkd6KacyNXycidtc%3D",
-    "th": "data/thumbs/c3xruzo.webp"
-   },
-   {
-    "title": "1991 HOME CAFE 📌",
-    "likes": 7,
-    "date": "2026-04-08",
-    "link": "https://www.lemon8-app.com/@panjamood/7626289821451633160?region=th",
-    "source": "Lemon8 · Saimood",
-    "image": "https://www.lemon8-app.com/seo/image?item_id=7626289821451633160&index=0&sign=1b78a7eef75eb112fc3ddfe7fc41402a",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/okfHBwBU6CBiCz4EAIrA7AEMJQLgY0OgBe2WiD~tplv-sdweummd6v-text-logo-v1:QHBhbmphbW9vZA==:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=yd0zoldmQB%2BmZM5vy%2Bk02aPZG5E%3D",
-    "th": "data/thumbs/7626289821451633160-0.webp"
+    "title": "1991 HOME CAFE คาเฟ่สุดวินเทจในตัวเมืองราชรี 📺☕️🍝",
+    "likes": 103,
+    "date": "2023-03-06",
+    "link": "https://www.lemon8-app.com/@singwijittra/7207308877451248129?region=th",
+    "source": "Lemon8 · Ssing .T",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7207308877451248129&index=0&sign=2bf666a482ea5199ed39ba6b543534c2",
+    "tag": 1
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.618Z",
   "district": "เมืองราชบุรี",
   "districtEn": "Mueang Ratchaburi",
   "hours": "Tu-Su 09:00-17:00; Mo off",
-  "hoursSrc": "review1"
+  "hoursSrc": "review1",
+  "menuPrice": {
+   "min": 95,
+   "max": 190,
+   "src": "review"
+  },
+  "reviewCount": 41
  },
  {
   "id": "l8-22535797332270135",
@@ -10978,6 +10970,33 @@
   "trend": 8,
   "posts": [
    {
+    "title": "ธรรมชาติ ฮีลใจ💚🍃🌿Montra cafe 🍃",
+    "likes": 336,
+    "date": "2023-10-03",
+    "link": "https://www.lemon8-app.com/@gamkoi1/7285766272535790082?region=th",
+    "source": "Lemon8 · Koi Arisa (koi)",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7285766272535790082&index=0&sign=edbaf6743c7defbb44815198d857fc15",
+    "tag": 1
+   },
+   {
+    "title": "Montra cafe คาเฟ่ใกล้เขาใหญ่ 🏕️",
+    "likes": 155,
+    "date": "2023-05-22",
+    "link": "https://www.lemon8-app.com/@fifavorakij275/7235951270111199746?region=th",
+    "source": "Lemon8 · Fifa Vorakij",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7235951270111199746&index=0&sign=1e67983f5711bc3e284ea5990d566f85",
+    "tag": 1
+   },
+   {
+    "title": "Montra cafe",
+    "likes": 154,
+    "date": "2023-05-27",
+    "link": "https://www.lemon8-app.com/@fifavorakij275/7237940700963144193?region=th",
+    "source": "Lemon8 · Fifa Vorakij",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7237940700963144193&index=0&sign=3db503c1ab9febd6285407d4ec1be035",
+    "tag": 1
+   },
+   {
     "title": "🌫️🌳💚​",
     "likes": 123,
     "date": "2026-09-21",
@@ -10989,63 +11008,35 @@
     "th": "data/thumbs/7687906355667010064-0.webp"
    },
    {
+    "title": "🍃คาเฟ่หมาเข้าได้ ‘Montra Cafe byไร่วังบอน’",
+    "likes": 58,
+    "date": "2023-12-04",
+    "link": "https://www.lemon8-app.com/@tuktikttp/7308688915299303937?region=th",
+    "source": "Lemon8 · TUKTIK ◡̈⃝",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7308688915299303937&index=0&sign=9aadc2fce1d9a6cbf3f284156d10e277",
+    "tag": 1
+   },
+   {
     "title": "Montra Cafe - Nakhon Nayok 🛖🍃",
     "likes": 54,
     "date": "2026-09-01",
     "link": "https://www.lemon8-app.com/@jjunediary_/7680572637776495120?region=th",
     "source": "Lemon8 · jjunediary_",
     "image": "https://www.lemon8-app.com/seo/image?item_id=7680572637776495120&index=0&sign=59c92873071b72dc9decd01ef3fcf2f9",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/oUIAPTJvgBAi5BAbawbDpBsW4kiEMMAYHCq8S~tplv-sdweummd6v-text-logo-v1:QGpqdW5lZGlhcnlf:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=LC2R6izacOsrHLpOx4eWMyc%2Bqug%3D",
-    "th": "data/thumbs/7680572637776495120-0.webp"
-   },
-   {
-    "title": "คาเฟ่น่าเที่ยว สวย กิจกรรมเยอะ ใกล้ธรรมชาติ ที่วังบอน นครนายก",
-    "likes": 52,
-    "date": "2026-10-08",
-    "link": "https://www.lemon8-app.com/@ti_chom1/7694294372127556114?region=th",
-    "source": "Lemon8 · ติชม",
-    "tag": 1,
-    "image": "https://p16-lemon8-cross-sign.tiktokcdn.com/tos-alisg-v-a3e477-sg/ooAASFiIEBgzgF1fawiUoZCgzcD9deEmBCG2Ay~tplv-sdweummd6v-shrinkf:640:0:q50.webp?lk3s=66c60501&source=seo_middle_feed_list&x-expires=1825632000&x-signature=DHFLo9bZx7MfRGfhq7SfBoVjXlc%3D",
-    "th": "data/thumbs/c1q6af6n.webp"
-   },
-   {
-    "title": "Montra Cafe",
-    "likes": 20,
-    "date": "2026-04-24",
-    "link": "https://www.lemon8-app.com/@chop_teaw/7632326031399813639?region=th",
-    "source": "Lemon8 · ชอบเที่ยว",
-    "image": "https://www.lemon8-app.com/seo/image?item_id=7632326031399813639&index=0&sign=d6a8fbfe21d15c3e57a02e22a344a0c1",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/oMbeKAAQpHBBSAwWCtFEgiDo96EtqiAQICfmU3~tplv-sdweummd6v-text-logo-v1:QGNob3BfdGVhdw==:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=ELmjc3SMhUKhkaHVgl3thCBLZYA%3D",
-    "th": "data/thumbs/7632326031399813639-0.webp"
-   },
-   {
-    "title": "แจกพิกัดคาเฟ่ฮีลใจ💗🌿พักผ่อนใจกับธรรมชาติ วิวสวย ถ่ายรูปเริส✨😍",
-    "likes": 10,
-    "date": "2026-04-08",
-    "link": "https://www.lemon8-app.com/@26.94n/7626328827442102785?region=th",
-    "source": "Lemon8 · 26.94n ˚🌻",
-    "image": "https://www.lemon8-app.com/seo/image?item_id=7626328827442102785&index=0&sign=fb3504cb49e1e656c5fe2715fd3331f4",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/ogAqKiMbDIDnDWepEUFAUttzqCfjpABEEXgW91~tplv-sdweummd6v-text-logo-v1:QDI2Ljk0bg==:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=7efGbPm7NEPyLOlgBlIJxGs1BXU%3D",
-    "th": "data/thumbs/7626328827442102785-0.webp"
-   },
-   {
-    "title": "คาเฟ่ฟิลธรรมชาติ Montra Cafe",
-    "likes": 6,
-    "date": "2025-12-01",
-    "link": "https://www.lemon8-app.com/@weevii.wee/7578784454034964999?region=th",
-    "source": "Lemon8 · 𝑩𝒊𝒃𝒃𝒍𝒆𝒘𝒆𝒆˚◞♡",
-    "image": "https://www.lemon8-app.com/seo/image?item_id=7578784454034964999&index=0&sign=823f597dc2420bf04aa1ebfa517fc175",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/oM3UPqgzlEAdpAOpEsAFIQEtfD9AJCBUfD1tLF~tplv-sdweummd6v-text-logo-v1:QHdlZXZpaS53ZWU=:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=wiNsQr0SwSgapS4egAh0OYlf8ok%3D",
-    "th": "data/thumbs/7578784454034964999-0.webp"
+    "tag": 1
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.670Z",
   "district": "ปากพลี",
-  "districtEn": "Pak Phli"
+  "districtEn": "Pak Phli",
+  "hours": "Mo-Su 09:00-18:00; Mo off",
+  "hoursSrc": "review",
+  "menuPrice": {
+   "min": 85,
+   "max": 130,
+   "src": "review"
+  },
+  "reviewCount": 64
  },
  {
   "id": "l8-42203860725629097",
@@ -11601,6 +11592,24 @@
   "trend": 8,
   "posts": [
    {
+    "title": "จูเลี๊ยะ แคมป์ ม่อนเงาะ : เชียงใหม่",
+    "likes": 158,
+    "date": "2022-11-05",
+    "link": "https://www.lemon8-app.com/@daowthi/7162606728599699969?region=th",
+    "source": "Lemon8 · Brightly Daw'w",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7162606728599699969&index=0&sign=42dd0e3b0b837c5bfdb81bff94fe3326",
+    "tag": 1
+   },
+   {
+    "title": "หนีงานไปพักกาย พักใจ | จูเลี๊ยะ แคมป์ ม่อนเงาะ",
+    "likes": 95,
+    "date": "2023-08-18",
+    "link": "https://www.lemon8-app.com/@mmmmorkmoeiii/7268537826872934913?region=th",
+    "source": "Lemon8 · 𝐦𝐦 ♡︎",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7268537826872934913&index=0&sign=22890e34e21440b3ff237efead3e9049",
+    "tag": 1
+   },
+   {
     "title": "ทะเลหมอกที่ประทับใจที่สุด⛰️✨",
     "likes": 52,
     "date": "2026-07-31",
@@ -11610,6 +11619,24 @@
     "image": "https://p19-lemon8-cross-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/okXEQP8jBBBNAUdsCMiBgKIi2Ez2AcGfeAC1Ag~tplv-tej9nj120t-wap-logo:QGl0cy5teWJlc3RkYXk=:1080:0.webp?lk3s=66c60501&source=wap_large_logo_image&x-expires=1794744000&x-signature=6z23YhQQSZSYhTVJFhn2Jocq%2BZM%3D"
    },
    {
+    "title": "จูเลี๊ยะ แคมป์ ม่อนเงาะ",
+    "likes": 52,
+    "date": "2023-10-06",
+    "link": "https://www.lemon8-app.com/@suwannapaboonkaw/7286827869144252929?region=th",
+    "source": "Lemon8 · Pompam",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7286827869144252929&index=0&sign=0aef1c8ac2da598961cbc75668358db8",
+    "tag": 1
+   },
+   {
+    "title": "จูเลี๊ยะ แคมป์ ม่อนเงาะ",
+    "likes": 20,
+    "date": "2024-11-28",
+    "link": "https://www.lemon8-app.com/@samlamsakon/7442473169727914504?region=th",
+    "source": "Lemon8 · Here We Go",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7442473169727914504&index=0&sign=9c121fe4dc4a509a574b2a4aebc8786a",
+    "tag": 1
+   },
+   {
     "title": "📍 จูเลี๊ยะแคมป์ ม่อนเงาะ ฟรี ATV",
     "likes": 9,
     "date": "2026-09-06",
@@ -11617,46 +11644,11 @@
     "source": "Lemon8 · MM",
     "tag": 1,
     "image": "https://p16-lemon8-cross-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/o8EInR1GI0a7g2OEo6nGeD4bRpJLAAkAAeUVQf~tplv-tej9nj120t-wap-logo:QGRlY2VtYmVyMTk5Ni4xOA==:1080:0.webp?lk3s=66c60501&source=wap_large_logo_image&x-expires=1794744000&x-signature=b1WC6%2BsSk9eK51BJ8QTkXdasMNE%3D"
-   },
-   {
-    "title": "วิวหลักล้านที่📍จูเลี๊ยะ แคมป์ ม่อนเงาะ✨️",
-    "likes": 3,
-    "date": "2026-01-20",
-    "link": "https://www.lemon8-app.com/@trip_lenlen/7597297375710953992?region=th",
-    "source": "Lemon8 · ทริปเล่นเล่น",
-    "image": "https://www.lemon8-app.com/seo/image?item_id=7597297375710953992&index=0&sign=a6e0a98b2dcf326a1118fc31885263dc",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/oQzP4EvAVIYBAAkB1pAFWBViBWS8aPBbiDVbv~tplv-sdweummd6v-text-logo-v1:QHRyaXBfbGVubGVu:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=YFwglQG4mr%2B9T8lN6kIB19Wck74%3D",
-    "th": "data/thumbs/7597297375710953992-0.webp"
-   },
-   {
-    "title": "กาแฟดริป บนดอย",
-    "likes": 2,
-    "date": "2026-08-12",
-    "link": "https://www.lemon8-app.com/@baandurian.th/7673285529194267154?region=th",
-    "source": "Lemon8 · Baandurian By Kace",
-    "tag": 1
-   },
-   {
-    "title": "จูเลี๊ยะแคมป์ ดอยม่อนเงาะ ⛰️🌳✨",
-    "likes": 2,
-    "date": "2026-06-08",
-    "link": "https://www.lemon8-app.com/@yammii46/7648930259156353543?region=th",
-    "source": "Lemon8 · แลมยูม 🐼🤍",
-    "tag": 1
-   },
-   {
-    "title": "บรรยากาศยามเช้า",
-    "likes": 1,
-    "date": "2026-08-12",
-    "link": "https://www.lemon8-app.com/@baandurian.th/7673287013495947783?region=th",
-    "source": "Lemon8 · Baandurian By Kace",
-    "tag": 1
    }
   ],
   "fetchedAt": "2026-11-07T19:20:35.346Z",
   "district": "แม่แตง",
-  "reviewCount": 4,
+  "reviewCount": 11,
   "districtEn": "Mae Taeng"
  },
  {
@@ -11965,65 +11957,58 @@
   "trend": 8,
   "posts": [
    {
-    "title": "☕️ คาเฟ่ลับฟีลยุโรปกลางพิษณุโลก ที่ถ่ายรูปสวยทุกมุม!",
-    "likes": 18,
-    "date": "2026-05-14",
-    "link": "https://www.lemon8-app.com/@mybooisnini/7639606945237697031?region=th",
-    "source": "Lemon8 · นินิวไม่ชอบกินผัก🥬",
-    "image": "https://www.lemon8-app.com/seo/image?item_id=7639606945237697031&index=0&sign=7d413cd2d247622dc511d2cc226f85af",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/osAaEUEDAXfBz5yAVqVF9OjIpAFtmtEBfcC5Ng~tplv-sdweummd6v-text-logo-v1:QG15Ym9vaXNuaW5p:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=r%2FoQbAacsImeG85kFskGHDMoBdU%3D",
-    "th": "data/thumbs/7639606945237697031-0.webp"
-   },
-   {
-    "title": "คาเฟ่พิษณุโลก ที่ไปซ้ำบ่อยมากกกก☕️",
-    "likes": 6,
-    "date": "2026-05-31",
-    "link": "https://www.lemon8-app.com/@rsm_110/7646078306160345617?region=th",
-    "source": "Lemon8 · Pleum",
-    "tag": 1,
-    "image": "https://p16-lemon8-cross-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/okHxfqfgAZaRAg8QilthPWBYBoAfAYVf4Wxbfe~tplv-tej9nj120t-wap-logo:QHJzbV8xMTA=:1080:0.webp?lk3s=66c60501&source=wap_large_logo_image&x-expires=1794744000&x-signature=zZuG9%2FTZ415QY1SAq4zOhzYWwsc%3D"
-   },
-   {
-    "title": "เชิญคาเฟ่ ☕️🍕🍰",
-    "likes": 4,
-    "date": "2026-05-31",
-    "link": "https://www.lemon8-app.com/@maprangltd/7646074303519195655?region=th",
-    "source": "Lemon8 · Ma’Prang",
+    "title": "Churn Cafe 🍒🥤 phitsanulok",
+    "likes": 389,
+    "date": "2024-08-28",
+    "link": "https://www.lemon8-app.com/@kato_142/7408024696660230673?region=th",
+    "source": "Lemon8 · kato",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7408024696660230673&index=0&sign=671a14d869205dffe8a39e2746504d88",
     "tag": 1
    },
    {
-    "title": "Churn cafe พิษณุโลก",
-    "likes": 4,
-    "date": "2026-01-26",
-    "link": "https://www.lemon8-app.com/@moopansaiharn/7599608650042343937?region=th",
-    "source": "Lemon8 · ศยาเอง ♡´･ᴗ･`♡",
-    "image": "https://www.lemon8-app.com/seo/image?item_id=7599608650042343937&index=0&sign=5a5b2021c686138eae9d326bbb2f7f8e",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/o82uBf3BeiJUIwOIiA0giCi3EU25EAoyBBOAH4~tplv-sdweummd6v-text-logo-v1:QG1vb3BhbnNhaWhhcm4=:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=8v5%2FxtS5tr84%2BUlWxe1NDgOS%2F1w%3D",
-    "th": "data/thumbs/7599608650042343937-0.webp"
+    "title": "Churn cafe phitsanulok - สไตล์ยุโรป",
+    "likes": 257,
+    "date": "2023-04-28",
+    "link": "https://www.lemon8-app.com/@nattavalan/7226985946946830850?region=th",
+    "source": "Lemon8 · IG : Nattavalan 🧚🏻",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7226985946946830850&index=0&sign=f35d1227b66ace2f534eec32e8880a15",
+    "tag": 1
    },
    {
-    "title": "Churn cafe 🍪🍵",
-    "likes": 4,
-    "date": "2026-01-03",
-    "link": "https://www.lemon8-app.com/@07_aon/7590934029592035858?region=th",
-    "source": "Lemon8 · 𝙰𝚘𝚗 ☻",
-    "image": "https://www.lemon8-app.com/seo/image?item_id=7590934029592035858&index=0&sign=cfff793aa6d815434c7ba958022a64d7",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/okAAK3iIEBg02srfvaiQYNBNUuVqdeE4BCD2A3~tplv-sdweummd6v-text-logo-v1:QDA3X2Fvbg==:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=dLgmEj5oAYwGSBXkJIPQTxJBPnY%3D",
-    "th": "data/thumbs/7590934029592035858-0.webp"
+    "title": "🍰🥛@villie.co Churn Cafe Phitsanulok (เชิญคาเฟ่)",
+    "likes": 212,
+    "date": "2025-01-15",
+    "link": "https://www.lemon8-app.com/@night021046/7460061281945682448?region=th",
+    "source": "Lemon8 · night💋",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7460061281945682448&index=0&sign=bc3bcab420433fad05ee21c5315ebf63",
+    "tag": 1
    },
    {
-    "title": "CHURN CAFE :3 🥞",
-    "likes": 3,
-    "date": "2026-01-31",
-    "link": "https://www.lemon8-app.com/@kxvisara/7601436311584506388?region=th",
-    "source": "Lemon8 · Baitonggg",
-    "image": "https://www.lemon8-app.com/seo/image?item_id=7601436311584506388&index=0&sign=6c30b4779fc63d1e34bb5a9c8cbbc240",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/oEDIfdBbII32we9Jl78GeGc2tfTLAAuAACUlQr~tplv-sdweummd6v-text-logo-v1:QGt4dmlzYXJh:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=a5d35nSlVXdZbmLPBInWG8D3r8c%3D",
-    "th": "data/thumbs/7601436311584506388-0.webp"
+    "title": "ทริปกิน 1 Day สุดอร่อยในพิษณุโลก Churn Cafe Phitsanulok (เชิญคาเฟ่) : คาเฟ่สไตล์ Vintage บรรยากาศสบาย ๆ กาแฟหอมกรุ่นและขนมโฮมเมดคือความสุขใน",
+    "likes": 172,
+    "date": "2024-07-27",
+    "link": "https://www.lemon8-app.com/@russgarll/7396322990314488336?region=th",
+    "source": "Lemon8 · Ome Lette",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7396322990314488336&index=0&sign=4532564e6c8fca0bb7f4bc489ac7962d",
+    "tag": 1
+   },
+   {
+    "title": "Brunch cafe ใน พิดโลก | Churn Cafe 🥓🥑🍳",
+    "likes": 144,
+    "date": "2024-06-09",
+    "link": "https://www.lemon8-app.com/@fae.yanika/7378497598719590913?region=th",
+    "source": "Lemon8 · fae.yänika",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7378497598719590913&index=0&sign=acde096a5c266e0f8a116ab338902139",
+    "tag": 1
+   },
+   {
+    "title": "Churn Cafe",
+    "likes": 51,
+    "date": "2024-05-12",
+    "link": "https://www.lemon8-app.com/@ilysstudio.th/7368127198659904017?region=th",
+    "source": "Lemon8 · ของดีไม่ต้องหาอุ๋มพาไปตำ🌻",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7368127198659904017&index=0&sign=04d42f8571dd3ec2f193b20e5d061756",
+    "tag": 1
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.791Z",
@@ -12079,7 +12064,8 @@
     }
    ],
    "src": "review"
-  }
+  },
+  "reviewCount": 32
  },
  {
   "id": "l8-22535865204383570",
@@ -12860,6 +12846,15 @@
   "trend": 8,
   "posts": [
    {
+    "title": "☕RAWR Cafe \"รอวร์คาเฟ่\" กลางกรุง🌳🌳🌳",
+    "likes": 22,
+    "date": "2024-02-08",
+    "link": "https://www.lemon8-app.com/@tu_matchalover/7333019429669749249?region=th",
+    "source": "Lemon8 · tu bgood",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7333019429669749249&index=0&sign=dd541f8584787019777d8aa4caf356fc",
+    "tag": 1
+   },
+   {
     "title": "RAWR Cafe คาเฟ่ธรรมชาติกลางกรุง☘️",
     "likes": 9,
     "date": "2026-06-28",
@@ -12900,19 +12895,12 @@
     "link": "https://www.lemon8-app.com/@everymonday_23/7671544250634355217?region=th",
     "source": "Lemon8 · mondaeblu",
     "tag": 1
-   },
-   {
-    "title": "คาเฟ่กลางป่า ที่ทำให้ลืมไปเลยว่าอยู่กรุงเทพฯ",
-    "likes": 1,
-    "date": "2026-07-11",
-    "link": "https://www.lemon8-app.com/@kamepillow/7661311660925207058?region=th",
-    "source": "Lemon8 · sai .rtnp",
-    "tag": 1
    }
   ],
   "fetchedAt": "2026-11-08T03:33:09.913Z",
   "district": "คลองเตย",
-  "districtEn": "Khlong Toei"
+  "districtEn": "Khlong Toei",
+  "reviewCount": 2
  },
  {
   "id": "l8-22535865216079241",
@@ -12985,7 +12973,8 @@
   ],
   "fetchedAt": "2026-11-08T03:32:51.760Z",
   "district": "คลองเตย",
-  "districtEn": "Khlong Toei"
+  "districtEn": "Khlong Toei",
+  "reviewCount": 1
  },
  {
   "id": "l8-22535797265829515",
@@ -13920,6 +13909,15 @@
   "trend": 8,
   "posts": [
    {
+    "title": "ครัวเข้าท่า คาเฟ่ ปากคลองหาดเจ้าสำราญ",
+    "likes": 89,
+    "date": "2023-03-14",
+    "link": "https://www.lemon8-app.com/@piinn.pp/7210434544741450241?region=th",
+    "source": "Lemon8 · Pptsmrr",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7210434544741450241&index=0&sign=217968a7d960f3d79c07f3780d9b7272",
+    "tag": 1
+   },
+   {
     "title": "ร้านลับเพชรบุรี \"ครัวเข้าท่า คาเฟ่\" 🌊🦐",
     "likes": 13,
     "date": "2026-08-05",
@@ -13929,55 +13927,53 @@
     "image": "https://p16-lemon8-cross-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/o0aMPFnIAubpAg4Q1ELUJeHGA0o9ADecen57n1~tplv-tej9nj120t-wap-logo:QGNyZWFtaWVkZDc=:1080:0.webp?lk3s=66c60501&source=wap_large_logo_image&x-expires=1794744000&x-signature=zYkSC%2BTqKCrmbP9eTTa5z71ObwY%3D"
    },
    {
+    "title": "ครัวเข้าท่า คาเฟ่ ปากคลองหาดเจ้า @เพชรบุรี",
+    "likes": 12,
+    "date": "2024-07-22",
+    "link": "https://www.lemon8-app.com/@thunsineepnp/7394405501938811408?region=th",
+    "source": "Lemon8 · Paint",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7394405501938811408&index=0&sign=f5080d40af94cc54eeef33e52d837efe",
+    "tag": 1
+   },
+   {
+    "title": "🪔ครัวเข้าท่า คาเฟ่ ปากคลองหาดเจ้า🪔",
+    "likes": 11,
+    "date": "2024-02-18",
+    "link": "https://www.lemon8-app.com/@supattra8538/7336959055887499778?region=th",
+    "source": "Lemon8 · Supattra Aor",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7336959055887499778&index=0&sign=d98ee70a5fe666b4505f61cf96751c79",
+    "tag": 1
+   },
+   {
     "title": "ครัวเข้าท่า คาเฟ่ ปากคลองหาดเจ้า เพชรบุรี",
     "likes": 9,
     "date": "2026-08-08",
     "link": "https://www.lemon8-app.com/@kt.grand249/7671632337297228296?region=th",
     "source": "Lemon8 · Katin➆➇➈➅✡️",
     "image": "https://www.lemon8-app.com/seo/image?item_id=7671632337297228296&index=0&sign=bf636551f3118ff8cc617d96c59d1b25",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/o8AKOxdMDQDeAus3EJFAUJtnvCfAqABIEEgx9d~tplv-sdweummd6v-text-logo-v1:QGt0LmdyYW5kMjQ5:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=T60J2YeE4raSRlv5O%2FCy3f1fhWQ%3D",
-    "th": "data/thumbs/7671632337297228296-0.webp"
-   },
-   {
-    "title": "มีหลากหลายเมนูให้เลือก",
-    "likes": 1,
-    "date": "2026-07-08",
-    "link": "https://www.lemon8-app.com/@khowtha1111/7660013675034231304?region=th",
-    "source": "Lemon8 · ครัวเข้าท่าปากคลองหาดเจ้า",
     "tag": 1
    },
    {
-    "title": "ปูม้าสดๆ",
-    "likes": 1,
-    "date": "2026-06-27",
-    "link": "https://www.lemon8-app.com/@khowtha1111/7655934206622663176?region=th",
-    "source": "Lemon8 · ครัวเข้าท่าปากคลองหาดเจ้า",
-    "tag": 1
-   },
-   {
-    "title": "🔥🦀 เปิดแล้ววันนี้! ใครกำลังหาร้านซีฟู้ดดี ๆ ต้องปักหมุดร้านนี้เลย! 🦐🌊 ครัวเข้าท่า คาเฟ่ ปากคลองหาดเจ้า ร้านซีฟู้ดริมคลอง บรรยากาศดี วิวป",
-    "likes": 1,
-    "date": "2026-09-01",
-    "link": "https://www.lemon8-app.com/@khowtha1111/7680410038476833288?region=th",
-    "source": "Lemon8 · ครัวเข้าท่าปากคลองหาดเจ้า",
-    "image": "https://www.lemon8-app.com/seo/image?item_id=7680410038476833288&index=0&sign=f04b7e550e308c1d52d115c0e66e1a78",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/ogCB3dDGFAqRlTWHAtxfECC9v4xEIcAfgqkYrE~tplv-sdweummd6v-text-logo-v1:QGtob3d0aGExMTEx:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=A03vFdig3lUPPBQUyw9qPBdBB0Q%3D",
-    "th": "data/thumbs/7680410038476833288-0.webp"
-   },
-   {
-    "title": "😊😊💗",
-    "likes": 0,
-    "date": "2026-07-14",
-    "link": "https://www.lemon8-app.com/@user62304280356295/7662231251260162576?region=th",
-    "source": "Lemon8 · ครัวเข้าค่าเฟ่  ทำถึง",
+    "title": "🏝ครัวเข้าท่า คาเฟ่ ปากคลองหาดเจ้า🏝",
+    "likes": 7,
+    "date": "2023-09-14",
+    "link": "https://www.lemon8-app.com/@supattra8538/7278722905989579266?region=th",
+    "source": "Lemon8 · Supattra Aor",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7278722905989579266&index=0&sign=d9ea3dfefe14fc2069aade68db94a1af",
     "tag": 1
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.815Z",
   "district": "บ้านแหลม",
-  "districtEn": "Ban Lat"
+  "districtEn": "Ban Lat",
+  "hours": "Mo-Su 10:00-23:00",
+  "hoursSrc": "review",
+  "menuPrice": {
+   "min": 170,
+   "max": 500,
+   "src": "review"
+  },
+  "reviewCount": 9
  },
  {
   "id": "l8-22535797336034486",
@@ -14502,6 +14498,42 @@
   "trend": 6,
   "posts": [
    {
+    "title": "*📍ปักหมุดคาเฟ่น่าไป at วิฬาร์คาเฟ่น้องแมวเชียงใหม่😻🌟",
+    "likes": 178,
+    "date": "2024-06-03",
+    "link": "https://www.lemon8-app.com/@goggieboomie/7376219667725074960?region=th",
+    "source": "Lemon8 · boonyacamel",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7376219667725074960&index=0&sign=6902f175920bff61f5e04c7aae1b5553",
+    "tag": 1
+   },
+   {
+    "title": "วิฬาร์คาเฟ่น้องแมวเชียงใหม่ เข้าฟรี ราคาถูก! 🐈",
+    "likes": 33,
+    "date": "2025-02-21",
+    "link": "https://www.lemon8-app.com/@kwanboe/7473829379966992903?region=th",
+    "source": "Lemon8 · ขวัญโบสตอรี่",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7473829379966992903&index=0&sign=ee530a66cb4e9f87fc78d1cdbe523749",
+    "tag": 1
+   },
+   {
+    "title": "วิฬาร์คาเฟ่น้องแมวเชียงใหม่",
+    "likes": 24,
+    "date": "2024-08-17",
+    "link": "https://www.lemon8-app.com/@_nootchy_/7404048209774969361?region=th",
+    "source": "Lemon8 · _Nootchy_",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7404048209774969361&index=0&sign=9ed1a945f90443eda027816de9b7f284",
+    "tag": 1
+   },
+   {
+    "title": "คิดถึงแมว_คิดถึงวิฬาร์คาเฟ่น้องแมวเชียงใหม่😻😺😽",
+    "likes": 16,
+    "date": "2025-01-28",
+    "link": "https://www.lemon8-app.com/@mollyguppycnx/7464831580771582481?region=th",
+    "source": "Lemon8 · Wit Wittaya",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7464831580771582481&index=0&sign=0efa691144f482922dc6563ed3fd992b",
+    "tag": 1
+   },
+   {
     "title": "威拉爾咖啡館, 清邁 😻😻😻",
     "likes": 14,
     "date": "2026-03-07",
@@ -14513,52 +14545,13 @@
     "th": "data/thumbs/7614376255210930689-0.webp"
    },
    {
-    "title": "Go with the flow in Chiang Mai 🌿",
-    "likes": 9,
-    "date": "2026-05-15",
-    "link": "https://www.lemon8-app.com/@tklmn1004/7640151041668874759?region=th",
-    "source": "Lemon8 · TIDCHING",
-    "tag": 1,
-    "image": "https://p16-lemon8-cross-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/okNUDAGtIDEIAA6ce7JAQQALjmOFN0t90eebgb~tplv-tej9nj120t-wap-logo:QHRrbG1uMTAwNA==:1080:0.webp?lk3s=66c60501&source=wap_large_logo_image&x-expires=1794744000&x-signature=NGptKiIs2iq8sLpdF%2FY3JunBWTE%3D"
-   },
-   {
-    "title": "มุมลับคาเฟ่น้องแมวเชียงใหม่🐱",
-    "likes": 7,
-    "date": "2026-07-19",
-    "link": "https://www.lemon8-app.com/@xiaofennn_/7664326657259422224?region=th",
-    "source": "Lemon8 · itsmexiaofen",
-    "tag": 1,
-    "image": "https://p16-lemon8-cross-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/oEAiBlI2yAPW6OYAAElLUoBlvFJV0utBVdabi~tplv-tej9nj120t-wap-logo:QHhpYW9mZW5ubl8=:1080:0.webp?lk3s=66c60501&source=wap_large_logo_image&x-expires=1794744000&x-signature=wd5if1xh8kFIvDZuTUC0JEJ6cHE%3D"
-   },
-   {
-    "title": "Wilar Cafe Chiangmai 🐈",
-    "likes": 5,
-    "date": "2026-03-06",
-    "link": "https://www.lemon8-app.com/@gyozaa2548/7613999349039514132?region=th",
-    "source": "Lemon8 · น้อนนเก๊วว💖",
-    "image": "https://www.lemon8-app.com/seo/image?item_id=7613999349039514132&index=0&sign=7d6a1056bb004db4299f4f5b6c97654d",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/ok2CDiB1AsWfC41Ta0zhEvUqjAEeIAPDBTYcig~tplv-sdweummd6v-text-logo-v1:QGd5b3phYTI1NDg=:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=0eA32DGNsfClthKffItwcPqkySw%3D",
-    "th": "data/thumbs/7613999349039514132-0.webp"
-   },
-   {
-    "title": "Review Wilar Cafe คาเฟ่แมว บรรยากาศอบอุ่น 🍞🐱",
-    "likes": 4,
-    "date": "2026-08-09",
-    "link": "https://www.lemon8-app.com/@ari.areeya/7672044696213930497?region=th",
-    "source": "Lemon8 · a.aom_areeya.a",
+    "title": "📍วิฬาร์คาเฟ่น้องแมวเชียงใหม่📍",
+    "likes": 11,
+    "date": "2024-11-17",
+    "link": "https://www.lemon8-app.com/@.for_juneee/7438159201056211474?region=th",
+    "source": "Lemon8 · Ü for june",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7438159201056211474&index=0&sign=57acb079712ad51d1920fe0ca9ebd0a3",
     "tag": 1
-   },
-   {
-    "title": "ใครไปเชียงใหม่ชิวๆแวะเล่นกับน้องๆได้นะ",
-    "likes": 3,
-    "date": "2026-04-17",
-    "link": "https://www.lemon8-app.com/@tantawantsp/7629764661491073544?region=th",
-    "source": "Lemon8 · tawantsp",
-    "image": "https://www.lemon8-app.com/seo/image?item_id=7629764661491073544&index=0&sign=834c413ef296dd57d909a14fd30c1a2d",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/ogo8xr6bfE5g7XtDETLAJ4DiFefAJExADImiAD~tplv-sdweummd6v-text-logo-v1:QHRhbnRhd2FudHNw:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=ObX%2FzoR35BPY2Lg8hInoKHcvBZU%3D",
-    "th": "data/thumbs/7629764661491073544-0.webp"
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.823Z",
@@ -14586,7 +14579,15 @@
     }
    ],
    "src": "review1"
-  }
+  },
+  "hours": "Mo-Su 11:00-21:00; Mo off",
+  "hoursSrc": "review",
+  "menuPrice": {
+   "min": 30,
+   "max": 50,
+   "src": "review"
+  },
+  "reviewCount": 6
  },
  {
   "id": "l8-22535865208978186",
@@ -14919,37 +14920,31 @@
     "th": "data/thumbs/7581759838468981265-0.webp"
    },
    {
+    "title": "บุกคาเฟ่แมว พบกับน้องเหมียวสุดน่ารักที่ Cat sky bar cafe",
+    "likes": 26,
+    "date": "2024-09-04",
+    "link": "https://www.lemon8-app.com/@dish.is.dietfood/7410785746241716753?region=th",
+    "source": "Lemon8 · Dishisdietfood",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7410785746241716753&index=0&sign=e09785593d8f56bdc3319c5e7909e196",
+    "tag": 1
+   },
+   {
+    "title": "CAT SKY BAR CAFE PATTAYA 😻",
+    "likes": 22,
+    "date": "2025-03-27",
+    "link": "https://www.lemon8-app.com/@dcfongfah/7486396747279909393?region=th",
+    "source": "Lemon8 · Nongfahreview",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7486396747279909393&index=0&sign=18a1fb7a6102f50bf22ef59d8df98256",
+    "tag": 1
+   },
+   {
     "title": "🐈 Cat Sky Bar Cafe 🍹คาเฟ่แมววิวทะเลพัทยา",
     "likes": 21,
     "date": "2026-09-22",
     "link": "https://www.lemon8-app.com/@triptamjai/7688178260491944468?region=th",
     "source": "Lemon8 · TripTamJai",
     "image": "https://www.lemon8-app.com/seo/image?item_id=7688178260491944468&index=0&sign=3cecb013c05d0607d228c5fe18685ac4",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/oEg14A6qabQh5YAXBrPAizCIAABiPrmxTnQHE~tplv-sdweummd6v-text-logo-v1:QHRyaXB0YW1qYWk=:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=oANvxp7ePTPyCZTRGOSuRtm0xhU%3D",
-    "th": "data/thumbs/7688178260491944468-0.webp"
-   },
-   {
-    "title": "บรรยากาศดีๆแบบนี้",
-    "likes": 16,
-    "date": "2026-02-10",
-    "link": "https://www.lemon8-app.com/@catskybarcafe/7605253213586997761?region=th",
-    "source": "Lemon8 · 𝑪𝒂𝒕 𝑺𝒌𝒚 𝑩𝒂𝒓 𝑪𝒂𝒇𝒆",
-    "image": "https://www.lemon8-app.com/seo/image?item_id=7605253213586997761&index=0&sign=e44eb4b2af173af68dffad4497d00e71",
-    "tag": 1,
-    "thumb": "https://p19-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/oYEAB9ppQEbAAtbIqfLfCFSiCDhub0ElPZ7KXg~tplv-sdweummd6v-text-logo-v1:QGNhdHNreWJhcmNhZmU=:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=9fMV2E9eqJuL7i86kfWOjLkK420%3D",
-    "th": "data/thumbs/7605253213586997761-0.webp"
-   },
-   {
-    "title": "#คาเฟ่แมวพัทยา #คาเฟ่พัทยา #Catskybarcafe",
-    "likes": 14,
-    "date": "2026-09-22",
-    "link": "https://www.lemon8-app.com/@jennyjack2909/7688272487074857473?region=th",
-    "source": "Lemon8 · JennyJack - คนชอบเที่ยว ⛰",
-    "image": "https://www.lemon8-app.com/seo/image?item_id=7688272487074857473&index=0&sign=58084a774a1886af4bb9aa8c5cfe89b4",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/osf2yOBEBACiAkg4yOBgUqI4sEAfxPtjji29CX~tplv-sdweummd6v-text-logo-v1:QGplbm55amFjazI5MDk=:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=Z%2B0eDf08vbx8uE2eAGDyea3dhvA%3D",
-    "th": "data/thumbs/7688272487074857473-0.webp"
+    "tag": 1
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.738Z",
@@ -14958,49 +14953,16 @@
   "hours": "Mo-Su 11:00-23:00",
   "hoursSrc": "review",
   "entry": {
-   "tiers": [
-    {
-     "who": {
-      "th": "เข้าโซนคาเฟ่แมว (โปรโมชั่นวันพุธ)",
-      "en": "Cat zone entry (Wednesday promotion)",
-      "zh": "猫咪区门票（周三优惠）"
-     },
-     "note": {
-      "th": "ไม่จำกัดเวลา ได้เครื่องดื่ม 1 แก้ว อกไก่ และถุงเท้า 1 คู่",
-      "en": "Unlimited time, includes 1 drink, chicken breast, and 1 pair of socks",
-      "zh": "不限时，含1杯饮品、鸡胸肉和1双袜子"
-     },
-     "price": 199,
-     "n": 3,
-     "ids": [
-      "L2",
-      "L3",
-      "L4"
-     ],
-     "rv": true
-    },
-    {
-     "who": {
-      "th": "เข้าโซนคาเฟ่แมว",
-      "en": "Cat zone entry",
-      "zh": "猫咪区门票"
-     },
-     "note": {
-      "th": "ไม่จำกัดเวลา ได้ถุงเท้า 1 คู่ และอกไก่ฉีก 1 ชุด",
-      "en": "Unlimited time, includes 1 pair of socks and 1 set of chicken breast",
-      "zh": "不限时，含1双袜子和1份鸡胸肉"
-     },
-     "price": 250,
-     "n": 2,
-     "ids": [
-      "L3",
-      "L4"
-     ],
-     "rv": true
-    }
-   ],
+   "min": 150,
+   "max": 250,
    "src": "review"
-  }
+  },
+  "menuPrice": {
+   "min": 150,
+   "max": 250,
+   "src": "review"
+  },
+  "reviewCount": 24
  },
  {
   "id": "l8-42203860794031127",
@@ -15453,15 +15415,49 @@
   "trend": 3,
   "posts": [
    {
+    "title": "piccolo vicolo เปิดสาขาใหม่ ร้านสวยมาก!!",
+    "likes": 832,
+    "date": "2025-03-09",
+    "link": "https://www.lemon8-app.com/@ppair.ir/7479718379209933319?region=th",
+    "source": "Lemon8 · Ppair",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7479718379209933319&index=0&sign=9dba36acde44b6517ee8f3263ab7c9cc",
+    "tag": 1
+   },
+   {
+    "title": "Piccolo Vicolo 📸 BTSราชเทวี",
+    "likes": 689,
+    "date": "2023-09-01",
+    "link": "https://www.lemon8-app.com/@bebew_27/7273870470674661890?region=th",
+    "source": "Lemon8 · B.📸",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7273870470674661890&index=0&sign=53cedf43170ad9468bcdab8960cf3405",
+    "tag": 1
+   },
+   {
     "title": "📍Piccolo Vicolo Café at Samyot🍃",
     "likes": 637,
     "date": "2026-06-29",
     "link": "https://www.lemon8-app.com/@aeiauey/7656840380222259719?region=th",
     "source": "Lemon8 · AeiAuey",
     "image": "https://www.lemon8-app.com/seo/image?item_id=7656840380222259719&index=0&sign=8ab07887567b2872415b6b9d2a51eb97",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/ogCQgQDAAIqAFBFEwUfCtDpZS5Unkp9FEEBfbE~tplv-sdweummd6v-text-logo-v1:QGFlaWF1ZXk=:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=nOyIMEh5iiLPKizE5bpTDqOM930%3D",
-    "th": "data/thumbs/7656840380222259719-0.webp"
+    "tag": 1
+   },
+   {
+    "title": "Piccolo vicolo คาเฟ่แสงดีย่านบรรทัดทอง!",
+    "likes": 548,
+    "date": "2025-07-17",
+    "link": "https://www.lemon8-app.com/@.doublemew/7527952629977170433?region=th",
+    "source": "Lemon8 · kuromew🐈‍⬛",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7527952629977170433&index=0&sign=239bcc58f0222e87b184bd189ff094db",
+    "tag": 1
+   },
+   {
+    "title": "piccolo vicolo cafe 🍵🌿🪑",
+    "likes": 330,
+    "date": "2025-06-26",
+    "link": "https://www.lemon8-app.com/@meanid/7520230221631980050?region=th",
+    "source": "Lemon8 · Meanid",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7520230221631980050&index=0&sign=7f2a9fc81d5faed89d4d16d80067a118",
+    "tag": 1
    },
    {
     "title": "Piccolo Vicolo คาเฟ่วินเทจที่สามยอด🌳🤎",
@@ -15470,56 +15466,20 @@
     "link": "https://www.lemon8-app.com/@jn555555/7614691971193799188?region=th",
     "source": "Lemon8 · Jinnie",
     "image": "https://www.lemon8-app.com/seo/image?item_id=7614691971193799188&index=0&sign=673fd43370bf2dba5b8c18e54dc18bae",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-i-sdweummd6v-sg/1f1ccf81a554425b8050842d2043e569~tplv-sdweummd6v-text-logo-v1:QGpuNTU1NTU1:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=UgyInMjzlHJ8wObbjqblPHqgK9o%3D",
-    "th": "data/thumbs/7614691971193799188-0.webp"
-   },
-   {
-    "title": "คาเฟ่สไตล์วินเทจสุดอบอุ่น Vibes สวยดีต่อใจ #บางนา ☕️🥯🍃",
-    "likes": 127,
-    "date": "2026-09-09",
-    "link": "https://www.lemon8-app.com/@widsawaphatiew/7683512218276839957?region=th",
-    "source": "Lemon8 · วิ ศ ว ะ พ า เ ที่ ย ว",
-    "tag": 1,
-    "image": "https://p16-lemon8-cross-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/oAAhCA9yxqvbwqxiFN8ythYUBAIaQi2TkPIBE~tplv-tej9nj120t-wap-logo:QHdpZHNhd2FwaGF0aWV3:1080:0.webp?lk3s=66c60501&source=wap_large_logo_image&x-expires=1794744000&x-signature=cvQktW5sy2gvqAwxlTIpRVVUdWE%3D"
-   },
-   {
-    "title": "ใครสาย WFH หาคาเฟ่นั่งทำงาน เซฟร้านนี้ได้เลย ! 💬💻🍵",
-    "likes": 115,
-    "date": "2026-09-13",
-    "link": "https://www.lemon8-app.com/@thaksaonf/7684855867860697621?region=th",
-    "source": "Lemon8 · This is fern",
-    "image": "https://www.lemon8-app.com/seo/image?item_id=7684855867860697621&index=0&sign=ac9b24060197a414ddb9c4b45ecc96b9",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/oMCm4YxiABplGAaEBAU6iI9WvFiPbw1lAXqYY~tplv-sdweummd6v-text-logo-v1:QHRoYWtzYW9uZg==:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=RN8QjIzwKQzikk3FRyltRI7pG2g%3D",
-    "th": "data/thumbs/7684855867860697621-0.webp"
-   },
-   {
-    "title": "piccolo vicolo , bkk",
-    "likes": 102,
-    "date": "2026-03-15",
-    "link": "https://www.lemon8-app.com/@keeponwad/7617336551080477204?region=th",
-    "source": "Lemon8 · wad",
-    "image": "https://www.lemon8-app.com/seo/image?item_id=7617336551080477204&index=0&sign=889488328c1295369804386c2bfe4780",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/oI7HTDgRcAGEASJvQfL7EoCYEoLlbboIeAapeA~tplv-sdweummd6v-text-logo-v1:QGtlZXBvbndhZA==:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=z5yq26LTgsH5ZXFFPq92fZtTxco%3D",
-    "th": "data/thumbs/7617336551080477204-0.webp"
-   },
-   {
-    "title": "คาเฟ่แถวลาซาลสุดชิดดดดด🌵🫶🏻",
-    "likes": 88,
-    "date": "2026-10-04",
-    "link": "https://www.lemon8-app.com/@nankrd/7692651232202490388?region=th",
-    "source": "Lemon8 · Babinan🐰✨",
-    "image": "https://www.lemon8-app.com/seo/image?item_id=7692651232202490388&index=0&sign=924b21fa24b58549aa85146eef919f34",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/o4vAriKIPABBidxtxkbsDaYyM2AsEbAnlBsHY~tplv-sdweummd6v-text-logo-v1:QG5hbmtyZA==:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=FTdTo6sfnip2AYZAzJKwG7ioEgU%3D",
-    "th": "data/thumbs/7692651232202490388-0.webp"
+    "tag": 1
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.697Z",
   "district": "บางนา",
-  "districtEn": "Bang Na"
+  "districtEn": "Bang Na",
+  "hours": "Mo-Su 09:00-17:00; Tu off",
+  "hoursSrc": "review",
+  "menuPrice": {
+   "min": 90,
+   "max": 160,
+   "src": "review"
+  },
+  "reviewCount": 51
  },
  {
   "id": "l8-42203861091224168",
@@ -16170,6 +16130,24 @@
   "trend": 4,
   "posts": [
    {
+    "title": "Moonless World @Rayong ร้านลับๆที่ห้ามพลาด🥂✨",
+    "likes": 45,
+    "date": "2022-07-15",
+    "link": "https://www.lemon8-app.com/@dreamday_____/7120602093894910466?region=th",
+    "source": "Lemon8 · Dream❞",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7120602093894910466&index=0&sign=23be317aac2e87aa38fe895821d59d36",
+    "tag": 1
+   },
+   {
+    "title": "Moonless World | RAYONG 💫",
+    "likes": 19,
+    "date": "2023-05-09",
+    "link": "https://www.lemon8-app.com/@ranaxul/7231227630056374785?region=th",
+    "source": "Lemon8 · Babenarax",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7231227630056374785&index=0&sign=c59984a9f8812edc70433d4cf1ef2137",
+    "tag": 1
+   },
+   {
     "title": "บาร์ลับๆ ในระยอง 🍸",
     "likes": 15,
     "date": "2026-05-16",
@@ -16181,6 +16159,24 @@
     "th": "data/thumbs/7640413323485397511-0.webp"
    },
    {
+    "title": "บาร์ลับระยอง (moonless world ธรรมดาโลกไม่จำ)",
+    "likes": 15,
+    "date": "2024-11-25",
+    "link": "https://www.lemon8-app.com/@beamtyl/7441123437482967568?region=th",
+    "source": "Lemon8 · beam",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7441123437482967568&index=0&sign=4915edd35c5b2bfc8622a8f5ae5261a5",
+    "tag": 1
+   },
+   {
+    "title": "บาร์ลับระยอง 📍Moonless world ธรรมดาโลกไม่จำ",
+    "likes": 11,
+    "date": "2025-06-13",
+    "link": "https://www.lemon8-app.com/@mmiindwanidaa/7515236868775084560?region=th",
+    "source": "Lemon8 · mmiindwanidaa",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7515236868775084560&index=0&sign=20819737394e6a4f6e5ccaccc620dcd7",
+    "tag": 1
+   },
+   {
     "title": "บาร์ลับฉบับไม่ลับ🍹✨",
     "likes": 6,
     "date": "2026-05-06",
@@ -16190,52 +16186,14 @@
     "tag": 1,
     "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/okt05EvTUfIAVr2DeXgAEsiiT7AJA09VBGB2Cd~tplv-sdweummd6v-text-logo-v1:QG5ld3dfaWFt:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=H9EeU0cLoh%2F9g6ljpiBrtZpWbR8%3D",
     "th": "data/thumbs/7636825592755454482-0.webp"
-   },
-   {
-    "title": "บาร์ลับในระยองที่อยากให้แมส 🍸✨ 📍Moonless world , rayong #บาร์ลับ #บาร์ลับระยอง #ค็อกเทลบาร์",
-    "likes": 5,
-    "date": "2025-11-13",
-    "link": "https://www.lemon8-app.com/@sodiumtitanium_/7572154815468356113?region=th",
-    "source": "Lemon8 · Sodiumtitanium",
-    "image": "https://www.lemon8-app.com/seo/image?item_id=7572154815468356113&index=0&sign=f2227e22f4aeccc522e3b4b126e95106",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/oMIBpFA6xkfb9CMuy8MBS2AEiAQzVKAEGgfits~tplv-sdweummd6v-text-logo-v1:QHNvZGl1bXRpdGFuaXVtXw==:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=Ha1Gx49U8CBTHRk35Tg9snLMkKw%3D",
-    "th": "data/thumbs/7572154815468356113-0.webp"
-   },
-   {
-    "title": "บาร์ลับ!!! Moonless World ระยอง (ค็อกเทลบาร์) 🍸🍹",
-    "likes": 3,
-    "date": "2026-05-07",
-    "link": "https://www.lemon8-app.com/@review.by.beaubea/7637055038900257287?region=th",
-    "source": "Lemon8 · Nichabeau",
-    "image": "https://www.lemon8-app.com/seo/image?item_id=7637055038900257287&index=0&sign=288ea121e480ed5a11954bb9aaeba834",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/o8wGYAKAIPIAgeLAnfwTaFIeCvo2Jv2exQGBrI~tplv-sdweummd6v-text-logo-v1:QHJldmlldy5ieS5iZWF1YmVh:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=nwA%2FNdi5TYCdybMdRb%2F6uP1RaaE%3D",
-    "th": "data/thumbs/7637055038900257287-0.webp"
-   },
-   {
-    "title": "ระยองก็มีบาร์ลับแบบนี้เหรอ?! 🍸✨",
-    "likes": 3,
-    "date": "2026-08-31",
-    "link": "https://www.lemon8-app.com/@mintnyhtcn/7680127905791328786?region=th",
-    "source": "Lemon8 · m",
-    "image": "https://www.lemon8-app.com/seo/image?item_id=7680127905791328786&index=0&sign=c79a5e76f7eef27cd534ced824759105",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/o8cTgAASVCDarteVEfLIAwGb7KJb93AIEAe1gp~tplv-sdweummd6v-text-logo-v1:QG1pbnRueWh0Y24=:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=Yr5aeto%2F6Omu5yxZqLEi7wshOUw%3D",
-    "th": "data/thumbs/7680127905791328786-0.webp"
-   },
-   {
-    "title": "บาร์ลับระยอง🍸",
-    "likes": 2,
-    "date": "2026-10-21",
-    "link": "https://www.lemon8-app.com/@ppppppp.k1/7699110695975092788?region=th",
-    "source": "Lemon8 · Pasal ♡",
-    "tag": 1
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.802Z",
   "district": "เมืองระยอง",
-  "districtEn": "Mueang Rayong"
+  "districtEn": "Mueang Rayong",
+  "hours": "Mo-Su 19:00-00:00; Tu off",
+  "hoursSrc": "review",
+  "reviewCount": 8
  },
  {
   "id": "l8-22535865348301434",
@@ -16328,6 +16286,15 @@
     "th": "data/thumbs/7655330659241574920-0.webp"
    },
    {
+    "title": "ปรุงสุข นครพนม✨",
+    "likes": 39,
+    "date": "2024-06-19",
+    "link": "https://www.lemon8-app.com/@meekhaoeiei/7382054327780639248?region=th",
+    "source": "Lemon8 · มะหลวยเจอนี่",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7382054327780639248&index=0&sign=dba136cd6a033dac5e974173f6df0353",
+    "tag": 1
+   },
+   {
     "title": "แจกพิกัดเที่ยวนครพนม 2 วัน 1 คืน",
     "likes": 27,
     "date": "2026-04-27",
@@ -16343,9 +16310,16 @@
     "link": "https://www.lemon8-app.com/@aaoon.wn/7682780546146632212?region=th",
     "source": "Lemon8 · aaoon",
     "image": "https://www.lemon8-app.com/seo/image?item_id=7682780546146632212&index=0&sign=18c327c93ddfbe1851ea9e8c0f66d4bc",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/oMIA9VK7MEXA3AbyfVQJELIDPcGzLPAY7eqNeo~tplv-sdweummd6v-text-logo-v1:QGFhb29uLndu:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=M45EaN8V69%2FzB8yp3IxU9IjVhAE%3D",
-    "th": "data/thumbs/7682780546146632212-0.webp"
+    "tag": 1
+   },
+   {
+    "title": "ปรุงสุข นครพนม - ร้านอาหารนครพนม",
+    "likes": 22,
+    "date": "2024-12-09",
+    "link": "https://www.lemon8-app.com/@theraisinjay/7446368419408134657?region=th",
+    "source": "Lemon8 · Theraisinjay",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7446368419408134657&index=0&sign=58a311cd2d1a186aa1017d48f8040ad1",
+    "tag": 1
    },
    {
     "title": "ร้านอาหารเช้านครพนม✨",
@@ -16357,30 +16331,17 @@
     "tag": 1,
     "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/osWUgc0Y1zAIPi27TnNSbYPilOPBBgaAA4AEB~tplv-sdweummd6v-text-logo-v1:QHNhbGlkMDA5:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=sFZi0FANryE3i%2B%2FPwdFfegK%2F7nQ%3D",
     "th": "data/thumbs/7671946105839518215-0.webp"
-   },
-   {
-    "title": "NAKHONPHANOM บรรยากาศเมืองโฮมมี่สุดๆ✨🫶🏼",
-    "likes": 2,
-    "date": "2026-06-11",
-    "link": "https://www.lemon8-app.com/@chlp71/7649996111175811605?region=th",
-    "source": "Lemon8 · Bunny B. ◡̈ 🖤",
-    "image": "https://www.lemon8-app.com/seo/image?item_id=7649996111175811605&index=0&sign=700fb3f9749812c95d1ab38b18c178c6",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/oEAEBS9mEcy9QaKCxquDfBetprEFAAkgA8mqIa~tplv-sdweummd6v-text-logo-v1:QGNobHA3MQ==:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=PbzEv1340UQmygV6G6YutsvBj5o%3D",
-    "th": "data/thumbs/7649996111175811605-0.webp"
-   },
-   {
-    "title": "วิถีตัวแทนประกันชีวิต",
-    "likes": 1,
-    "date": "2026-05-19",
-    "link": "https://www.lemon8-app.com/@must.ktaxa/7641425775383560724?region=th",
-    "source": "Lemon8 · กดใจให้หนูดีด้วยนะฮับ🙏",
-    "tag": 1
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.826Z",
   "district": "เมืองนครพนม",
-  "districtEn": "Mueang Nakhon Phanom"
+  "districtEn": "Mueang Nakhon Phanom",
+  "menuPrice": {
+   "min": 25,
+   "max": 35,
+   "src": "review"
+  },
+  "reviewCount": 3
  },
  {
   "id": "l8-42203860726465047",
@@ -16455,14 +16416,13 @@
     "link": "https://www.lemon8-app.com/@kinlomchomview40/7576561790696325653?region=th",
     "source": "Lemon8 · กินลมชมวิว",
     "image": "https://www.lemon8-app.com/seo/image?item_id=7576561790696325653&index=0&sign=76c7cd928e3c1ba1c6b998ced905941f",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/oEfQAloEVmESJAipEWAItWmFdfAMia9UBDlCgI~tplv-sdweummd6v-text-logo-v1:QGtpbmxvbWNob212aWV3NDA=:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=pRU5MNCRei9iaEvu0UTY15bQrXM%3D",
-    "th": "data/thumbs/7576561790696325653-0.webp"
+    "tag": 1
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.709Z",
   "district": "สาทร",
-  "districtEn": "Sathon"
+  "districtEn": "Sathon",
+  "reviewCount": 5
  },
  {
   "id": "l8-22535865204865279",
@@ -16677,39 +16637,37 @@
     "image": "https://p16-lemon8-cross-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/oYIsw2JqAIQleLVf8WEG6AA2QjGeTt3AfQALIS~tplv-tej9nj120t-wap-logo:QGZvb25ueXJldmlldw==:1080:0.webp?lk3s=66c60501&source=wap_large_logo_image&x-expires=1794744000&x-signature=5FgUucoxcusURlJxJGruO6dMbZA%3D"
    },
    {
-    "title": "Abonzo Yama Mitsu",
-    "likes": 3,
-    "date": "2026-02-12",
-    "link": "https://www.lemon8-app.com/@minnie.patta/7605826281653125648?region=th",
-    "source": "Lemon8 · 𝙼𝙸𝙽𝙽𝙸𝙴 ♡",
-    "image": "https://www.lemon8-app.com/seo/image?item_id=7605826281653125648&index=0&sign=cc626c55bf5e8f4476bc627276db6c3a",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/oQU9ZWbJiYgYP9kAvkCTiAcukN51BIkEAaBA2~tplv-sdweummd6v-text-logo-v1:QG1pbm5pZS5wYXR0YQ==:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=FhmIGZbCl9tXB4V84RckLHCgTXA%3D",
-    "th": "data/thumbs/7605826281653125648-0.webp"
-   },
-   {
-    "title": "นึกว่าอยู่ต่างประเทศ ที่แท้เจียงฮาย 🌿",
-    "likes": 2,
-    "date": "2026-10-05",
-    "link": "https://www.lemon8-app.com/@knknknn_/7693200536736121396?region=th",
-    "source": "Lemon8 · Knknn",
+    "title": "อะบอนโซ่ ยามะมิซึ 🐑",
+    "likes": 7,
+    "date": "2025-10-07",
+    "link": "https://www.lemon8-app.com/@991tra2/7558326247961444881?region=th",
+    "source": "Lemon8 · Wine.11",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7558326247961444881&index=0&sign=a603c44cdd371727caa82ff8e997e942",
     "tag": 1
    },
    {
-    "title": "คาเฟ่ฟาร์มแกะในเชียงรายย",
-    "likes": 2,
-    "date": "2026-03-24",
-    "link": "https://www.lemon8-app.com/@ttiny50/7620692114497700360?region=th",
-    "source": "Lemon8 · Kannikaaa",
-    "image": "https://www.lemon8-app.com/seo/image?item_id=7620692114497700360&index=0&sign=38e1e3c09f9f99b40478147c4941f2a8",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/okpHEQSVCBE4IIAXARi9B20ADe5gwCp4IZfCCi~tplv-sdweummd6v-text-logo-v1:QHR0aW55NTA=:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=w8QKNEGcvkRZFa44bINl6EUiqdM%3D",
-    "th": "data/thumbs/7620692114497700360-0.webp"
+    "title": "📍พิกัด: Abonzo Yama Mitsu #ร้านเด็ดเชียงราย อะบอนโซ่ ยามะมิซึ #ที่เที่ยวเชียงราย",
+    "likes": 5,
+    "date": "2025-09-17",
+    "link": "https://www.lemon8-app.com/@bunny_05zz/7550885206798942741?region=th",
+    "source": "Lemon8 · ส้มจี๊ดดดดด",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7550885206798942741&index=0&sign=e6e33e72e3c50e87de31b92d548b306a",
+    "tag": 1
+   },
+   {
+    "title": "🌳⛰️ อะบอนโซ่ ยามะมิซึ #raining day",
+    "likes": 4,
+    "date": "2025-10-15",
+    "link": "https://www.lemon8-app.com/@namwanwan18/7561379866562560533?region=th",
+    "source": "Lemon8 · 🩷🤍Namwan🤍🩷",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7561379866562560533&index=0&sign=1d31e4b027ec2ab542f89fa98b130a26",
+    "tag": 1
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.774Z",
   "district": "เมืองเชียงราย",
-  "districtEn": "Mueang Chiang Rai"
+  "districtEn": "Mueang Chiang Rai",
+  "reviewCount": 7
  },
  {
   "id": "l8-22535796483567228",
@@ -16786,14 +16744,12 @@
   "posts": [
    {
     "title": "📍 Why Coffee and Bar ร้านเล็กๆ ท่ามกลางธรรมชาติ ขนมอร่อย กาแฟดี 🌳☘️🥤",
-    "likes": 57,
+    "likes": 58,
     "date": "2026-10-02",
     "link": "https://www.lemon8-app.com/@chutimajang/7692043642806026804?region=th",
     "source": "Lemon8 · JupJang",
     "image": "https://www.lemon8-app.com/seo/image?item_id=7692043642806026804&index=0&sign=5d10f7786c33f9f0ab7f6d6b00eba781",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/ooz0GWeGwIKl29q2epg4Ffz0fJGTWIjALAAZQA~tplv-sdweummd6v-text-logo-v1:QGNodXRpbWFqYW5n:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=PJmgjlNKrw1N7kZrPJUjVy7M5AY%3D",
-    "th": "data/thumbs/7692043642806026804-0.webp"
+    "tag": 1
    },
    {
     "title": "📍WHY Coffee & Bar",
@@ -16802,9 +16758,7 @@
     "link": "https://www.lemon8-app.com/@athipchai/7609640250259948040?region=th",
     "source": "Lemon8 · Athipchai",
     "image": "https://www.lemon8-app.com/seo/image?item_id=7609640250259948040&index=0&sign=6124e8b22f5a05103f9bbb7031052ee8",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/o88atpAcmCni93R1BEIA44ffhvOgNiEBAFUC8t~tplv-sdweummd6v-text-logo-v1:QGF0aGlwY2hhaQ==:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=ISE%2B7vaqDAyvlKjS6qAjW8dVlTA%3D",
-    "th": "data/thumbs/7609640250259948040-0.webp"
+    "tag": 1
    },
    {
     "title": "คาเฟ่เล็กๆ โซนแม่ริม บรรยากาศกลางสวนสุดอบอุ่น #เชียงใหม่ 🥤🌼🍃",
@@ -16816,39 +16770,39 @@
     "image": "https://p16-lemon8-cross-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/ogIB1PA0vdGJeCERirfBtxAEiBUx5bAEagvi2P~tplv-tej9nj120t-wap-logo:QHdpZHNhd2FwaGF0aWV3:1080:0.webp?lk3s=66c60501&source=wap_large_logo_image&x-expires=1794744000&x-signature=2rcDVGDFjoAYUcqPXH%2BPxKuBs9Q%3D"
    },
    {
+    "title": "Why coffee Cafe’ คาเฟ่ที่เพิ่งเปิดใหม่ในใจกลางเมืองยะลา",
+    "likes": 11,
+    "date": "2023-12-23",
+    "link": "https://www.lemon8-app.com/@puipuifai8/7315765312501105153?region=th",
+    "source": "Lemon8 · Puipuifai",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7315765312501105153&index=0&sign=00142eaf7bff343596ddec23dc127cf3",
+    "tag": 1
+   },
+   {
+    "title": "Why coffee Cafe’ คาเฟ่ที่เพิ่งเปิดใหม่ในใจกลางเมืองยะลา",
+    "likes": 11,
+    "date": "2023-12-23",
+    "link": "https://www.lemon8-app.com/@puipuifai8/7315765284269654529?region=th",
+    "source": "Lemon8 · Puipuifai",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7315765284269654529&index=0&sign=a7bcc4625084d36f0173c42fcd7f79f4",
+    "tag": 1
+   },
+   {
     "title": "Why Coffee and Bar คาเฟ่บรรยากาศดี ☘️",
     "likes": 9,
     "date": "2026-01-04",
     "link": "https://www.lemon8-app.com/@nook29nc/7591520615597703688?region=th",
     "source": "Lemon8 · Nook29nc",
     "image": "https://www.lemon8-app.com/seo/image?item_id=7591520615597703688&index=0&sign=b26ed03bbc6203bd908f3c01e7632c65",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/owJDAIK1IOSQeEwAyCGQ4IDeotAbICLAAVu7Ye~tplv-sdweummd6v-text-logo-v1:QG5vb2syOW5j:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=61OOL%2BV%2B%2FSuYKK9KrcEkcoKs0lQ%3D",
-    "th": "data/thumbs/7591520615597703688-0.webp"
-   },
-   {
-    "title": "กาแฟระดับพรีเมี่ยมเมืองยะลา",
-    "likes": 3,
-    "date": "2026-02-24",
-    "link": "https://www.lemon8-app.com/@tonnam4271/7610275327461425680?region=th",
-    "source": "Lemon8 · Paicheckinkan",
-    "image": "https://www.lemon8-app.com/seo/image?item_id=7610275327461425680&index=0&sign=1eb947be03b6d755ccd4f67b0419f9e0",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/o0adPBA4bEYZYBkFzriVhiCAIbIDPv7A0x2NA~tplv-sdweummd6v-text-logo-v1:QHRvbm5hbTQyNzE=:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=r6M2gk6ZbP%2BySYVHnUOQh5cA%2B5k%3D",
-    "th": "data/thumbs/7610275327461425680-0.webp"
-   },
-   {
-    "title": "☕️ WHY coffee and barคาเฟ่ฟีลดี กับลุค All Black 🖤",
-    "likes": 2,
-    "date": "2026-10-20",
-    "link": "https://www.lemon8-app.com/@miira.miis/7698689124689101320?region=th",
-    "source": "Lemon8 · miii.rinmiry",
     "tag": 1
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.798Z",
   "district": "แม่ริม",
-  "districtEn": "Mae Rim"
+  "districtEn": "Mae Rim",
+  "hours": "Mo-Su 07:00-23:00",
+  "hoursSrc": "review",
+  "reviewCount": 14
  },
  {
   "id": "l8-22535865258899075",
@@ -17128,6 +17082,15 @@
   "trend": 4,
   "posts": [
    {
+    "title": "DRiP.d Café -ร้านกาแฟดิบดี ลำปาง",
+    "likes": 16,
+    "date": "2025-03-16",
+    "link": "https://www.lemon8-app.com/@min.or.mean/7482336956047704597?region=th",
+    "source": "Lemon8 · min-or-mean",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7482336956047704597&index=0&sign=51a574ecd496587f7d7e17be188d7900",
+    "tag": 1
+   },
+   {
     "title": "📍#แชร์โล | ร้านกาแฟมู้ดเท่ๆ ใต้อัฒจรรย์ของสนามกีฬาเก่า ลำปาง",
     "likes": 8,
     "date": "2026-07-07",
@@ -17157,36 +17120,27 @@
     "th": "data/thumbs/7583562590702305808-0.webp"
    },
    {
+    "title": "DRiP.D Café -ร้านกาแฟดิบดี",
+    "likes": 4,
+    "date": "2025-04-06",
+    "link": "https://www.lemon8-app.com/@exque_nattawoot/7490027914894344711?region=th",
+    "source": "Lemon8 · Exque",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7490027914894344711&index=0&sign=d8e9df533951e80b344d7e405b96fefe",
+    "tag": 1
+   },
+   {
     "title": "บาร์ลับที่หลายคนไม่รู้จัก",
     "likes": 1,
     "date": "2026-05-29",
     "link": "https://www.lemon8-app.com/@ongsuda/7645214015689359879?region=th",
     "source": "Lemon8 · Watertan St",
     "tag": 1
-   },
-   {
-    "title": "ร้านเหล้าปาง",
-    "likes": 1,
-    "date": "2026-05-19",
-    "link": "https://www.lemon8-app.com/@aeyrujang/7641442617628066305?region=th",
-    "source": "Lemon8 · วิถีเอจัง",
-    "tag": 1
-   },
-   {
-    "title": "คาเฟ่ลำปางเท่ๆ",
-    "likes": 1,
-    "date": "2025-11-17",
-    "link": "https://www.lemon8-app.com/@bobeammy/7573605115681145365?region=th",
-    "source": "Lemon8 · Beam",
-    "image": "https://www.lemon8-app.com/seo/image?item_id=7573605115681145365&index=0&sign=f628dab3e0b10d302eba3091503ee14b",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/o8ANBjfDcIzltSp9Kus8AGLt1CjEfE0AFAAYQg~tplv-sdweummd6v-text-logo-v1:QGJvYmVhbW15:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=REKG4z1NcezbQGfWhLi4uYb%2BgiA%3D",
-    "th": "data/thumbs/7573605115681145365-0.webp"
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.817Z",
   "district": "เมืองลำปาง",
-  "districtEn": "Mueang Lampang"
+  "districtEn": "Mueang Lampang",
+  "reviewCount": 4
  },
  {
   "id": "l8-34955879850629584",
@@ -17264,9 +17218,25 @@
     "link": "https://www.lemon8-app.com/@porporchrev/7673791217980801553?region=th",
     "source": "Lemon8 · Mr.Porches",
     "image": "https://www.lemon8-app.com/seo/image?item_id=7673791217980801553&index=0&sign=93c4102aea6d9b1818f45da9cfec555b",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/oY6A1UlfT1Y2ZuAp2buJGP0VjEQfIAF9ADAffD~tplv-sdweummd6v-text-logo-v1:QHBvcnBvcmNocmV2:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=d%2BEVH5tgsMJzjC1QT%2FlP5vY2Tq8%3D",
-    "th": "data/thumbs/7673791217980801553-0.webp"
+    "tag": 1
+   },
+   {
+    "title": "คาเฟ่เปิดใหม่ #เจริญนคร The Old School Specialty Coffee ที่จะพาเราย้อนไปสมัยโรงเรียนยุคเก่า สไตล์วินเทจ พร้อมบรรยากาศความสดชื่น กับสวนน้ำตก ",
+    "likes": 115,
+    "date": "2025-05-23",
+    "link": "https://www.lemon8-app.com/@khuneverywhere/7507610122579984912?region=th",
+    "source": "Lemon8 · KhunEverywhere",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7507610122579984912&index=0&sign=5ce7e091386d5f6d34852fb15a0a8389",
+    "tag": 1
+   },
+   {
+    "title": "The Old School - MRT ตลาดบางใหญ่ นนทบุรี",
+    "likes": 93,
+    "date": "2023-09-15",
+    "link": "https://www.lemon8-app.com/@chinchilachicha/7279043332221878785?region=th",
+    "source": "Lemon8 · Chichxphxt",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7279043332221878785&index=0&sign=fdeeea600ef4152fabce78a619d186b1",
+    "tag": 1
    },
    {
     "title": "🏫☕️ The Old School Specialty Coffee คาเฟ่ลับย่านเจริญนครที่ซ่อนตัวอยู่ในตึกเก่า กับบรรยากาศที่เต็มไปด้วย \"โอโซน\" และกลิ่นอายความคลาสสิกที่จ",
@@ -17275,56 +17245,38 @@
     "link": "https://www.lemon8-app.com/@callmebacon.th/7600685837944242695?region=th",
     "source": "Lemon8 · callmebacon.th",
     "image": "https://www.lemon8-app.com/seo/image?item_id=7600685837944242695&index=0&sign=039cfb1810a757a3822efe0756100d16",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/o4X7ZeAIEODJ9g4FhGE1BSDf5AXDb7AAEB8YfP~tplv-sdweummd6v-text-logo-v1:QGNhbGxtZWJhY29uLnRo:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=DMaAq3pCwiX3HuIzCxSJzwtWa9g%3D",
-    "th": "data/thumbs/7600685837944242695-0.webp"
+    "tag": 1
    },
    {
-    "title": "☕ The Old School Specialty Coffee คาเฟ่ฟีลห้องเรียนเก่า ย่านเจริญนคร🌿",
-    "likes": 7,
-    "date": "2026-09-30",
-    "link": "https://www.lemon8-app.com/@poppupu0/7691308189337338369?region=th",
-    "source": "Lemon8 · Poppupu",
-    "image": "https://www.lemon8-app.com/seo/image?item_id=7691308189337338369&index=0&sign=6e73ddc885e4618aaa4c57d90e8989f1",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/oUTBvrBXIA0lXzgP9riYAFECAb0GiPaABIzAB~tplv-sdweummd6v-text-logo-v1:QHBvcHB1cHUw:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=RKiHiOUCpAD0lw5F1Dsl03nxdVE%3D",
-    "th": "data/thumbs/7691308189337338369-0.webp"
+    "title": "The Old School : Spacialty Coffee&Roastery `~♡🥐🥖🧈☕",
+    "likes": 18,
+    "date": "2023-11-26",
+    "link": "https://www.lemon8-app.com/@apass.p/7305791251087901185?region=th",
+    "source": "Lemon8 · APSD.PL ⋆౨ৎ⋆˚",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7305791251087901185&index=0&sign=2c3d18f78c1a2aef50cc51ce1488de17",
+    "tag": 1
    },
    {
-    "title": "คาเฟ่ Pet friendly บางใหญ่🐾🦴",
-    "likes": 3,
-    "date": "2026-05-21",
-    "link": "https://www.lemon8-app.com/@minimourstore/7642196386510832135?region=th",
-    "source": "Lemon8 · Madbunny",
-    "tag": 1,
-    "image": "https://p16-lemon8-cross-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/osAeDh8hGQAdWd4uT6LAQe2fXJePoAGIIjAw2O~tplv-tej9nj120t-wap-logo:QG1pbmltb3Vyc3RvcmU=:1080:0.webp?lk3s=66c60501&source=wap_large_logo_image&x-expires=1794744000&x-signature=0o46f831FYRyUUi%2Fi%2FM0gtRo1Q0%3D"
-   },
-   {
-    "title": "The Old School Specialty Coffee - เจริญนคร",
-    "likes": 3,
-    "date": "2026-04-01",
-    "link": "https://www.lemon8-app.com/@phatthanan.tk/7623678101369717255?region=th",
-    "source": "Lemon8 · Phatthanan",
-    "image": "https://www.lemon8-app.com/seo/image?item_id=7623678101369717255&index=0&sign=9ad26655cd6d58276c2a406bbc7fe4ab",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/okoFkeYLhuTxAfJMwAgAAf2AGUvs42klnlEZAe~tplv-sdweummd6v-text-logo-v1:QHBoYXR0aGFuYW4udGs=:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=E4riBaAiiVlDKwH3eY6oDYGcG5c%3D",
-    "th": "data/thumbs/7623678101369717255-0.webp"
-   },
-   {
-    "title": "The Old School Specialty Coffee & Roastery",
-    "likes": 2,
-    "date": "2026-04-19",
-    "link": "https://www.lemon8-app.com/@lalystory/7630413756673851911?region=th",
-    "source": "Lemon8 · SKYWAYDiary",
-    "image": "https://www.lemon8-app.com/seo/image?item_id=7630413756673851911&index=0&sign=f4006b080cfac1289d6cb2f8ee69650b",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/oQHyoI9QGufhVEWnAIeHJ1AAeLH2ATD7ySObvJ~tplv-sdweummd6v-text-logo-v1:QGxhbHlzdG9yeQ==:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=D1WDo%2BeuRm9Yi7rF0EQPdWv1Ab4%3D",
-    "th": "data/thumbs/7630413756673851911-0.webp"
+    "title": "the old school specialty coffee #cafe #Bangyai,Non",
+    "likes": 12,
+    "date": "2023-05-23",
+    "link": "https://www.lemon8-app.com/@ningning_ningg/7236395731727254017?region=th",
+    "source": "Lemon8 · Ningning",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7236395731727254017&index=0&sign=fda8a488da7f03013172f45f12ff2287",
+    "tag": 1
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.687Z",
   "district": "บางบัวทอง",
-  "districtEn": "Bang Bua Thong"
+  "districtEn": "Bang Bua Thong",
+  "hours": "Mo-Su 07:00-18:00; Mo off",
+  "hoursSrc": "review",
+  "menuPrice": {
+   "min": 95,
+   "max": 160,
+   "src": "review"
+  },
+  "reviewCount": 39
  },
  {
   "id": "l8-42203861107552154",
@@ -17400,62 +17352,54 @@
     "image": "https://p16-lemon8-cross-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/oYfIgbQEYaAuBmqO4FLU9kEAADzRfQEKtACkBQ~tplv-tej9nj120t-wap-logo:QHRyYXZlbDI1NDE=:1080:0.webp?lk3s=66c60501&source=wap_large_logo_image&x-expires=1794744000&x-signature=sAB50f1HJa4BDBIohm2S3W0TbKQ%3D"
    },
    {
-    "title": "วันหยุดชิวๆๆ🚣‍♀️💦🍃",
-    "likes": 2,
-    "date": "2026-05-01",
-    "link": "https://www.lemon8-app.com/@nooyui190234/7634913507162604048?region=th",
-    "source": "Lemon8 · 🌻🧸Nooyui🦋🕊️",
-    "tag": 1,
-    "image": "https://p19-lemon8-cross-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/oUw0S5YiAxt0AIWEOCipErDBgRQdABACfle9p3~tplv-tej9nj120t-wap-logo:QG5vb3l1aTE5MDIzNA==:1080:0.webp?lk3s=66c60501&source=wap_large_logo_image&x-expires=1794744000&x-signature=VQlj4L%2FTlvvBcazr7wM8bsBbXXc%3D"
+    "title": "ท่าน้ำขุนด่าน สวนคุณเล็ก นครนายก",
+    "likes": 75,
+    "date": "2023-08-19",
+    "link": "https://www.lemon8-app.com/@lipy53/7268968918021095938?region=th",
+    "source": "Lemon8 · เด็กขี้เบื่อ",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7268968918021095938&index=0&sign=fdb299b244bd6409aa1c4262a47a87ae",
+    "tag": 1
    },
    {
-    "title": "สวนคุณเล็กช่วงน้ำลด",
-    "likes": 1,
-    "date": "2026-06-11",
-    "link": "https://www.lemon8-app.com/@nantipak.p/7650288196416274951?region=th",
-    "source": "Lemon8 · Nantipak.p",
-    "image": "https://www.lemon8-app.com/seo/image?item_id=7650288196416274951&index=0&sign=34fa15bf2695e8badc9c067c336ecac8",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/oItAEBEFvEAeAtAgoA9KzsI0ozSwDfXCUzvqEr~tplv-sdweummd6v-text-logo-v1:QG5hbnRpcGFrLnA=:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=fQ87vRQqMgQvYoJiq%2Fjkn3icC2E%3D",
-    "th": "data/thumbs/7650288196416274951-0.webp"
+    "title": "อากาศร้อนๆแบบนี้ แวะคลายร้อนที่ใกล้กรุงเทพหน่อยค่า 😛 ไปมาวัน พฤ คนน้อย ฟินมากกค่า 😍 #นครนายก #ทริปเที่ยว #สวนคุณเล็ก ⭐️ความพอใจ: 🌟🌟🌟🌟\ud83c",
+    "likes": 71,
+    "date": "2024-03-10",
+    "link": "https://www.lemon8-app.com/@ice.vyvy14/7344735106298331650?region=th",
+    "source": "Lemon8 · Supawan Sangnuy",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7344735106298331650&index=0&sign=3bbad92f05474f2602e1e0a3f57bd914",
+    "tag": 1
    },
    {
-    "title": "สับปะรดกวนสวนคุณเล็ก 🍍🍍🍍Original taste💰",
-    "likes": 1,
-    "date": "2026-06-09",
-    "link": "https://www.lemon8-app.com/@user2669142042458/7649291306216309255?region=th",
-    "source": "Lemon8 · สวนคุณเล็ก",
-    "image": "https://www.lemon8-app.com/seo/image?item_id=7649291306216309255&index=0&sign=ffa736db5552e1d18a2c1f2e4c47056e",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/oAu1VD9KAEA7A2oAgEiPEvQBKfzL4p9iBeCAnI~tplv-sdweummd6v-text-logo-v1:QHVzZXIyNjY5MTQyMDQyNDU4:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=zs8i94KgZ2VcvV7xc3mB70m%2BCzM%3D",
-    "th": "data/thumbs/7649291306216309255-0.webp"
+    "title": "ท่าน้ำขุนด่าน สวนคุณเล็ก จ.นครนายก 🚣‍♀️🚣",
+    "likes": 14,
+    "date": "2024-12-07",
+    "link": "https://www.lemon8-app.com/@tidtiewkubkamyui17/7445546126315373063?region=th",
+    "source": "Lemon8 · tidtiewkubkamyui17",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7445546126315373063&index=0&sign=d9e2b2ef3871f75267382c9b83acfbf6",
+    "tag": 1
    },
    {
-    "title": "#กางเต๊นท์นครนายก #ออกไปเที่ยว #ท่าน้ําขุนด่านสวนคุณเล็ก",
-    "likes": 0,
-    "date": "2026-04-15",
-    "link": "https://www.lemon8-app.com/@patja1_/7628943511942234644?region=th",
-    "source": "Lemon8 · Noi Ja",
-    "image": "https://www.lemon8-app.com/seo/image?item_id=7628943511942234644&index=0&sign=bde0e93aabc966f224814ac4ccefd2f2",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/oYgMTvAOmFxv7E4wdgAD4vAJQNgBefAQOA8Wbe~tplv-sdweummd6v-text-logo-v1:QHBhdGphMV8=:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=hTqIWF3YyDsYyY11nB%2BuGOyuaMY%3D",
-    "th": "data/thumbs/7628943511942234644-0.webp"
+    "title": "ท่าน้ำขุนด่านสวนคุณเล็ก",
+    "likes": 12,
+    "date": "2025-03-14",
+    "link": "https://www.lemon8-app.com/@pan_pan37/7481818219062280722?region=th",
+    "source": "Lemon8 · pan",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7481818219062280722&index=0&sign=a80213d66ec7f69675897f6137be2ebf",
+    "tag": 1
    },
    {
-    "title": "#ท่าน้ําขุนด่านสวนคุณเล็ก ⛺️💦🌿🏞️🐠",
-    "likes": 0,
-    "date": "2026-07-23",
-    "link": "https://www.lemon8-app.com/@tnky2107/7665728788130464272?region=th",
-    "source": "Lemon8 · ジャック",
-    "image": "https://www.lemon8-app.com/seo/image?item_id=7665728788130464272&index=0&sign=b3c716f75277e31c4fc2d216277502fb",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/o0BMUE2IBi0ORCJwgif2E2AAWidiA1BeOyW27i~tplv-sdweummd6v-text-logo-v1:QHRua3kyMTA3:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=qyIzxBmAfie06VDurSQDOxasuJI%3D",
-    "th": "data/thumbs/7665728788130464272-0.webp"
+    "title": "สวนคุณเล็ก",
+    "likes": 9,
+    "date": "2024-06-15",
+    "link": "https://www.lemon8-app.com/@candygirlsnanny/7380675354345603601?region=th",
+    "source": "Lemon8 · JENDARIN⭐️",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7380675354345603601&index=0&sign=be2f201d43ceaf3efe8c18c7e289d429",
+    "tag": 1
    }
   ],
   "fetchedAt": "2026-11-07T19:20:35.315Z",
   "district": "เมืองนครนายก",
-  "reviewCount": 6,
+  "reviewCount": 15,
   "districtEn": "Mueang Nakhon Nayok"
  },
  {
@@ -17864,7 +17808,8 @@
   ],
   "fetchedAt": "2026-11-08T03:32:51.823Z",
   "district": "ปากเกร็ด",
-  "districtEn": "Mueang Nonthaburi"
+  "districtEn": "Mueang Nonthaburi",
+  "reviewCount": 1
  },
  {
   "id": "l8-42203860961123246",
@@ -18114,9 +18059,7 @@
     "link": "https://www.lemon8-app.com/@iamirenewk/7656001114541785621?region=th",
     "source": "Lemon8 · Irne.wk",
     "image": "https://www.lemon8-app.com/seo/image?item_id=7656001114541785621&index=0&sign=8e87d662d145caf02374a40bff1edb69",
-    "tag": 1,
-    "thumb": "https://p19-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/o4o9ZBFPQIDxbsAEaaAgfOEsqfQutL2BQAp6pC~tplv-sdweummd6v-text-logo-v1:QGlhbWlyZW5ld2s=:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=VvBvraUQt7NcG0%2BKHjgLRlqubEg%3D",
-    "th": "data/thumbs/7656001114541785621-0.webp"
+    "tag": 1
    },
    {
     "title": "คืนที่กรุงเทพฯที่อยากกดหยุดเวลา—ฟังแจ๊สบนชั้น 45 แล้วปล่อยค่ำคืนไหลไปช้า ๆ 🍸🎷🌃 🎷 Brass House Bangkok — Jazz Rooftop Bar. 📍 ชั้น 45, Gra",
@@ -18125,9 +18068,7 @@
     "link": "https://www.lemon8-app.com/@barofthedayth/7584820419073442322?region=th",
     "source": "Lemon8 · 1.dayz",
     "image": "https://www.lemon8-app.com/seo/image?item_id=7584820419073442322&index=0&sign=f4a85ab0d68c29e5965a188f3a654b78",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/osj21oiBWAVIFCQmeMkwspgEBfEuiBA8mCA0VI~tplv-sdweummd6v-text-logo-v1:QGJhcm9mdGhlZGF5dGg=:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=c%2FTGh%2FrnzQv3JZ1D0aTUV2P7Bmc%3D",
-    "th": "data/thumbs/7584820419073442322-0.webp"
+    "tag": 1
    },
    {
     "title": "Brass house live jazz bar vibes✨",
@@ -18136,9 +18077,7 @@
     "link": "https://www.lemon8-app.com/@cindy_dekroon5/7676333619173982736?region=th",
     "source": "Lemon8 · Cindy de Kroon",
     "image": "https://www.lemon8-app.com/seo/image?item_id=7676333619173982736&index=0&sign=de791f0958be6902eac10e77c4a1bde8",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/oo5tyhiC5AVXOHUx9OmJ06gEBfE5iBAKgCAqeI~tplv-sdweummd6v-text-logo-v1:QGNpbmR5X2Rla3Jvb241:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=3n0zlSN27o0z9HKewzIRe1giqe4%3D",
-    "th": "data/thumbs/7676333619173982736-0.webp"
+    "tag": 1
    },
    {
     "title": "Brass house Jazz bars",
@@ -18147,9 +18086,7 @@
     "link": "https://www.lemon8-app.com/@harxch/7591783633812390416?region=th",
     "source": "Lemon8 · Harxch",
     "image": "https://www.lemon8-app.com/seo/image?item_id=7591783633812390416&index=0&sign=b8f1d2eb78771d368c19b9322e44aacf",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/o0BA5tm0IEbkVPby7YaiPbBk5AiGAAVEkAbBv~tplv-sdweummd6v-text-logo-v1:QGhhcnhjaA==:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=8YXBb7qqpxEfkgowx8hhCngOHFk%3D",
-    "th": "data/thumbs/7591783633812390416-0.webp"
+    "tag": 1
    },
    {
     "title": "แจกพิกัดร้านดินเนอร์ ✨",
@@ -18176,7 +18113,10 @@
   ],
   "fetchedAt": "2026-11-08T03:32:51.755Z",
   "district": "ปทุมวัน",
-  "districtEn": "Pathum Wan"
+  "districtEn": "Pathum Wan",
+  "hours": "Mo-Su 17:00-01:00",
+  "hoursSrc": "review",
+  "reviewCount": 10
  },
  {
   "id": "l8-22535865213743576",
@@ -18241,27 +18181,57 @@
   "trend": 3,
   "posts": [
    {
-    "title": "ตลาดบ้านใหม่ เมืองแปดริ้ว ฉะเชิงเทรา",
-    "likes": 6,
-    "date": "2026-09-19",
-    "link": "https://www.lemon8-app.com/@suriyapornsuri/7687217525523792402?region=th",
-    "source": "Lemon8 · Suri",
+    "title": "ตลาดบ้านใหม่ 100 ปี (ฉะเชิงเทรา)",
+    "likes": 212,
+    "date": "2023-08-06",
+    "link": "https://www.lemon8-app.com/@takeyou2somewhere/7264088866666267137?region=th",
+    "source": "Lemon8 · คนจะไป ก็ต้องไป",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7264088866666267137&index=0&sign=0f9c619989dded4299d9bbd1c42d9557",
     "tag": 1
    },
    {
-    "title": "แซ่บจนต้องซ้ำ 🌶️",
-    "likes": 2,
-    "date": "2026-09-09",
-    "link": "https://www.lemon8-app.com/@suriyapornsuri/7683512222982734343?region=th",
-    "source": "Lemon8 · Suri",
+    "title": "🏮ตลาดบ้านใหม่ 100 ปี เสน่ห์ที่รูปถ่ายยังถ่ายทอดได้ไม่หมด✨",
+    "likes": 49,
+    "date": "2026-07-25",
+    "link": "https://www.lemon8-app.com/@nooporpim/7666428798410572296?region=th",
+    "source": "Lemon8 · 🌾🪻หนู พ.พิม ขอแชร์...😺🌷☘️",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7666428798410572296&index=0&sign=b1fa1810a00d9810d443744995f86947",
     "tag": 1
    },
    {
-    "title": "#กลางใจบางปะกง",
-    "likes": 1,
-    "date": "2026-10-04",
-    "link": "https://www.lemon8-app.com/@kasipon.nbrb17/7692747928502485524?region=th",
-    "source": "Lemon8 · 0bp",
+    "title": "ตลาดบ้านใหม่ 100 ปีฉะเชิงเทรา 💖 #ที่เที่ยวฉะเชิงเทรา #ฉะเชิงเทรา #เที่ยวไหนดี #เที่ยวกับlemon8 #เที่ยว #เที่ยวเก่ง",
+    "likes": 41,
+    "date": "2023-04-06",
+    "link": "https://www.lemon8-app.com/@pikulham/7218972341479440897?region=th",
+    "source": "Lemon8 · Pikulham",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7218972341479440897&index=0&sign=ffd1766708cabd466cf90d38161b0ab9",
+    "tag": 1
+   },
+   {
+    "title": "แวะเที่ยวตลาดบ้านใหม่ 100ปี ที่ฉะเชิงเทรา 📌",
+    "likes": 24,
+    "date": "2025-10-14",
+    "link": "https://www.lemon8-app.com/@eyenanthikan/7560982122421355028?region=th",
+    "source": "Lemon8 · eye nanthikan",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7560982122421355028&index=0&sign=870fdb637d65aaa26532ae3f6d03097b",
+    "tag": 1
+   },
+   {
+    "title": "ตลาดบ้านใหม่ 100 ปี",
+    "likes": 15,
+    "date": "2025-05-07",
+    "link": "https://www.lemon8-app.com/@oreooat/7501549551061336596?region=th",
+    "source": "Lemon8 · Oreooat",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7501549551061336596&index=0&sign=ffa174c776e1086af7e8263ea1e6dc7f",
+    "tag": 1
+   },
+   {
+    "title": "ตลาดบ้านใหม่ 100 ปี ฉะเชิงเทรา",
+    "likes": 13,
+    "date": "2026-04-05",
+    "link": "https://www.lemon8-app.com/@darinphatchayamon/7625346953601139217?region=th",
+    "source": "Lemon8 · Darin Family",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7625346953601139217&index=0&sign=b408432c80110f72d97b632a823391be",
     "tag": 1
    }
   ],
@@ -18271,7 +18241,8 @@
   "entry": {
    "free": true,
    "src": "typical"
-  }
+  },
+  "reviewCount": 24
  },
  {
   "id": "l8-42203861116497603",
@@ -18511,6 +18482,15 @@
     "tag": 1
    },
    {
+    "title": "TONARI Coffee House คาเฟ่เปิดใหม่ย่านราชพฤกษ์✨🍵",
+    "likes": 42,
+    "date": "2024-12-28",
+    "link": "https://www.lemon8-app.com/@mintsrsp/7453472928731447816?region=th",
+    "source": "Lemon8 · Mintsrc",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7453472928731447816&index=0&sign=a67027eaa44b46c38c0b71aff0509796",
+    "tag": 1
+   },
+   {
     "title": "คาเฟ่มัทฉะ",
     "likes": 33,
     "date": "2026-10-16",
@@ -18550,25 +18530,20 @@
     "link": "https://www.lemon8-app.com/@ths.nm/7677525352524136981?region=th",
     "source": "Lemon8 · normore.",
     "image": "https://www.lemon8-app.com/seo/image?item_id=7677525352524136981&index=0&sign=f93b5e04c4df9c48c6106300c41cfc28",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/okvAMboiQQBQEWxC8aAAAJy0EEBMiIlwKyYvP~tplv-sdweummd6v-text-logo-v1:QHRocy5ubQ==:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=LMSwNxP5kXAqzdh3%2BnkLP7GawlY%3D",
-    "th": "data/thumbs/7677525352524136981-0.webp"
-   },
-   {
-    "title": "Tonari Coffee House 🍵 คาเฟ่ Matcha ย่าน ราชพฤกษ์",
-    "likes": 11,
-    "date": "2026-02-16",
-    "link": "https://www.lemon8-app.com/@booniee.b/7607489901768786450?region=th",
-    "source": "Lemon8 · Booniee.b",
-    "image": "https://www.lemon8-app.com/seo/image?item_id=7607489901768786450&index=0&sign=6cf028731d5c949b6578e9130d3677ee",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/o4FgyodYEzr9z9Uptf2CBhA4bEQhIAFmAEAkfD~tplv-sdweummd6v-text-logo-v1:QGJvb25pZWUuYg==:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=dp6Nx8O%2BLEpcgwvvkMxFM2osWY4%3D",
-    "th": "data/thumbs/7607489901768786450-0.webp"
+    "tag": 1
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.709Z",
   "district": "เมืองนนทบุรี",
-  "districtEn": "Mueang Nonthaburi"
+  "districtEn": "Mueang Nonthaburi",
+  "hours": "Mo-Su 08:00-17:00",
+  "hoursSrc": "review",
+  "menuPrice": {
+   "min": 120,
+   "max": 220,
+   "src": "review"
+  },
+  "reviewCount": 27
  },
  {
   "id": "l8-22535797334219324",
@@ -18776,15 +18751,31 @@
   "trend": 2,
   "posts": [
    {
+    "title": "น้ำตกคลองปลาก้าง อุทยานแห่งชาติเขาชะเมา - เขาวง",
+    "likes": 32,
+    "date": "2024-08-06",
+    "link": "https://www.lemon8-app.com/@chan_nes1998/7399998631039762961?region=th",
+    "source": "Lemon8 · Channes",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7399998631039762961&index=0&sign=8c0c85ed05c2943d6423925924d01ec3",
+    "tag": 1
+   },
+   {
+    "title": "ชวนไปลุย \"น้ำตกคลองปลาก้าง\" และ \"น้ำตกเขาชะเมา\"",
+    "likes": 16,
+    "date": "2025-10-09",
+    "link": "https://www.lemon8-app.com/@pr.dnp/7559144701706650130?region=th",
+    "source": "Lemon8 · DNP Official",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7559144701706650130&index=0&sign=33cf65a118b26bd6334c77f66418d30e",
+    "tag": 1
+   },
+   {
     "title": "หนีป่าแมสมาซบ “ป่าน้ำตกคลองปลาก้าง” จังหวัดระยอง 🍃🍀🫧🌿⛰️",
     "likes": 10,
     "date": "2026-08-13",
     "link": "https://www.lemon8-app.com/@ncp.me19/7673470521610076688?region=th",
     "source": "Lemon8 · NICHA :-)",
     "image": "https://www.lemon8-app.com/seo/image?item_id=7673470521610076688&index=0&sign=1aeea3a573db069a8aa418247d465783",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/o4VuqJfTofIATpbB7zA0E2FEUNAeAU9XDiDaEI~tplv-sdweummd6v-text-logo-v1:QG5jcC5tZTE5:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796709600&x-signature=R40HhmkdzZ6pIqPRTMNo3arpRtA%3D",
-    "th": "data/thumbs/7673470521610076688-0.webp"
+    "tag": 1
    },
    {
     "title": "OOTD แต่งตังไปน้ำตก 🌱",
@@ -18801,9 +18792,7 @@
     "link": "https://www.lemon8-app.com/@pr.dnp/7626596985467437589?region=th",
     "source": "Lemon8 · DNP Official",
     "image": "https://www.lemon8-app.com/seo/image?item_id=7626596985467437589&index=0&sign=430404f59c8e362cfc9bae63c9c95cfa",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/oAFCcg9YhFAIPiykLdUpb6vilJCDB6aAAXAEB~tplv-sdweummd6v-text-logo-v1:QHByLmRucA==:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=Zak%2BgiPiNqArh87RlME9b43yKTY%3D",
-    "th": "data/thumbs/7626596985467437589-0.webp"
+    "tag": 1
    },
    {
     "title": "One day trip น้ำตกคลองปลาก้าง เดินป่าขึ้นชมน้ำตกชั้นที่ 7 ระยะทางไป-กลับ 2 กิโลเมตร ธรรมชาติเขียวขจีมาก อากาศบริสุทธิ์ สถานที่📍:น้ำตกคลองปล",
@@ -18812,37 +18801,20 @@
     "link": "https://www.lemon8-app.com/@por_thanawut37/7664758987547542023?region=th",
     "source": "Lemon8 · Por_1994",
     "image": "https://www.lemon8-app.com/seo/image?item_id=7664758987547542023&index=0&sign=28b68c33e6ead1c9cb5e146ca8b6f9f5",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/ooAfrFQBEA9tUDyYQktBFCAQCvE9Xq9UgACeIv~tplv-sdweummd6v-text-logo-v1:QHBvcl90aGFuYXd1dDM3:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=KTZ6lhKsuj0KMVsbZGq7Etg2Gm8%3D",
-    "th": "data/thumbs/7664758987547542023-0.webp"
-   },
-   {
-    "title": "🌿 สัมผัสความงามที่รูปถ่ายก็เล่าไม่หมด ชวนหลงรักธรรมชาติที่ \"น้ำตกคลองปลาก้าง\" จ.ระยอง 💦 ความสวยงามของธรรมชาติจะสวยเหมือนกันมั้ย? คำตอบนี้ค",
-    "likes": 4,
-    "date": "2026-07-20",
-    "link": "https://www.lemon8-app.com/@pr.dnp/7664420252435989013?region=th",
-    "source": "Lemon8 · DNP Official",
-    "image": "https://www.lemon8-app.com/seo/image?item_id=7664420252435989013&index=0&sign=9238703c7449ce5e79d20b5243b048e4",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/o8iY2EBPvAjAjt4nBaiAXbmltAdPiil5ITB1I~tplv-sdweummd6v-text-logo-v1:QHByLmRucA==:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=a2ZgaEPoVPL%2F4WGPTD4oL33Ggbw%3D",
-    "th": "data/thumbs/7664420252435989013-0.webp"
-   },
-   {
-    "title": "ถ้ามีเวลาว่าง ลองแวะมาเดินเล่น ‘น้ำตกคลองปลาก้าง‘ กันมั้ย🌿💦🫶🏻",
-    "likes": 3,
-    "date": "2026-08-28",
-    "link": "https://www.lemon8-app.com/@raochobpapthai/7678969513446834696?region=th",
-    "source": "Lemon8 · Raochobpapthai",
-    "image": "https://www.lemon8-app.com/seo/image?item_id=7678969513446834696&index=0&sign=07cb53874f6b36b342b18082dc2c8d5c",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-i-sdweummd6v-sg/3a7bcdfe27c54e129cbab6f6ec4f12cc~tplv-sdweummd6v-text-logo-v1:QHJhb2Nob2JwYXB0aGFp:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=tWBQFrxHkAKWh2BboQFZoFHpv1U%3D",
-    "th": "data/thumbs/7678969513446834696-0.webp"
+    "tag": 1
    }
   ],
   "fetchedAt": "2026-11-07T19:20:35.347Z",
   "district": "เขาชะเมา",
-  "reviewCount": 23,
-  "districtEn": "Khao Chamao"
+  "reviewCount": 31,
+  "districtEn": "Khao Chamao",
+  "hours": "Mo-Su 08:00-16:00",
+  "hoursSrc": "review",
+  "entry": {
+   "min": 30,
+   "max": 40,
+   "src": "review"
+  }
  },
  {
   "id": "l8-22535797229030953",
@@ -19006,15 +18978,22 @@
   "trend": 2,
   "posts": [
    {
+    "title": "Asok Pethouse คาเฟ่แมวจรที่เป็นมากกว่าคาเฟ่ 🐈",
+    "likes": 4692,
+    "date": "2024-10-13",
+    "link": "https://www.lemon8-app.com/@prohubpromotion/7425231323285013008?region=th",
+    "source": "Lemon8 · Prohubpromotion",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7425231323285013008&index=0&sign=f7e7115253ae40f753898bfca625ca93",
+    "tag": 1
+   },
+   {
     "title": "รีวิว @Asok Pethouse Cat Cafe ร้านใหม่ ดีใจที่ร้านหาที่ย้ายแล้วยังเปิดต่อ เด็กๆน่ารัก ร้านใหม่กว้าง สะอาด มีที่จอดรถ น่าอยู่ทั้งวันมากกก❤️ \ud83d",
     "likes": 274,
     "date": "2026-01-13",
     "link": "https://www.lemon8-app.com/@benjytrdd/7594794923238867463?region=th",
     "source": "Lemon8 · บจ เบนจี้",
     "image": "https://www.lemon8-app.com/seo/image?item_id=7594794923238867463&index=0&sign=e525bf226184ce10f503e2d3d502dc9d",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/oIeb4zEBXAM76mgD7dBeKHAEDfJrFDAwdEASFI~tplv-sdweummd6v-text-logo-v1:QGJlbmp5dHJkZA==:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=ETcAlDb8iAt%2Bcq8279ipe2W1n80%3D",
-    "th": "data/thumbs/7594794923238867463-0.webp"
+    "tag": 1
    },
    {
     "title": "🐱 ฮีลใจด้วยแมว! คาเฟ่ลับย่านอโศกที่ทาสแมวห้ามพลาด",
@@ -19034,9 +19013,16 @@
     "link": "https://www.lemon8-app.com/@shop.daidai/7633826095950840338?region=th",
     "source": "Lemon8 · ShopDaidai",
     "image": "https://www.lemon8-app.com/seo/image?item_id=7633826095950840338&index=0&sign=aceef409773208d9a4cc77c991116fc4",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/oIyIg3eElEAzBwp1iiGq9ciAwB6dfXEktACbDU~tplv-sdweummd6v-text-logo-v1:QHNob3AuZGFpZGFp:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=k1fBRu3r%2F4ZTxpczPoHjbscy9Mw%3D",
-    "th": "data/thumbs/7633826095950840338-0.webp"
+    "tag": 1
+   },
+   {
+    "title": "🐱 Asok Pethouse Cat Cafe คาเฟ่น้องแมวย่านอโศก",
+    "likes": 30,
+    "date": "2025-07-20",
+    "link": "https://www.lemon8-app.com/@kedkieeee/7529102785779204616?region=th",
+    "source": "Lemon8 · ⸝⸝⸝ ♡ kedkie🌷꒱",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7529102785779204616&index=0&sign=77580dcd9e9110a2534ae20ffeeb9849",
+    "tag": 1
    },
    {
     "title": "คาเฟ่แมวติด Mrt สุขุมวิท 🐈🐱",
@@ -19045,33 +19031,17 @@
     "link": "https://www.lemon8-app.com/@isayingyang/7687603699205177864?region=th",
     "source": "Lemon8 · isayingyang",
     "tag": 1
-   },
-   {
-    "title": "คาเฟ่แมวที่ทาสรักแมวต้องมา!!",
-    "likes": 18,
-    "date": "2026-06-27",
-    "link": "https://www.lemon8-app.com/@daakyupyup/7655924191304106504?region=th",
-    "source": "Lemon8 · แดกยับยับ",
-    "image": "https://www.lemon8-app.com/seo/image?item_id=7655924191304106504&index=0&sign=b2d6fb01399789d00c1255ed5bb3f2a0",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/oY7hISSfAxp2TIfjoAQBS0LG21GfQ9e7JQAiGA~tplv-sdweummd6v-text-logo-v1:QGRhYWt5dXB5dXA=:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=LfEBXB1syNEGnL0WWnYvJkNvxnA%3D",
-    "th": "data/thumbs/7655924191304106504-0.webp"
-   },
-   {
-    "title": "คาเฟ่แมวจรย่านอโศก🐈",
-    "likes": 17,
-    "date": "2026-04-15",
-    "link": "https://www.lemon8-app.com/@pppytd_/7628967874837529108?region=th",
-    "source": "Lemon8 · p",
-    "image": "https://www.lemon8-app.com/seo/image?item_id=7628967874837529108&index=0&sign=e80653d03f40470cdd56fb49294f2e62",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/o8SPAMfQIAWjMCx8tAnfwAOfHNtffnQwQgNSAi~tplv-sdweummd6v-text-logo-v1:QHBwcHl0ZF8=:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=CtTKYWRUgvRaohFrUxxTt4pNRL0%3D",
-    "th": "data/thumbs/7628967874837529108-0.webp"
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.739Z",
   "district": "คลองเตย",
-  "districtEn": "Khlong Toei"
+  "districtEn": "Khlong Toei",
+  "entry": {
+   "min": 150,
+   "max": 250,
+   "src": "review"
+  },
+  "reviewCount": 16
  },
  {
   "id": "l8-22535865205777527",
@@ -19424,54 +19394,76 @@
   "trend": 1,
   "posts": [
    {
+    "title": "สัมผัสวัฒนธรรมชงชาแบบญี่ปุ่นที่ Chaya Teahouse🎌🍵",
+    "likes": 1041,
+    "date": "2025-01-02",
+    "link": "https://www.lemon8-app.com/@nuutcha.ch/7455278123702288897?region=th",
+    "source": "Lemon8 · Nutcha🫐🪽",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7455278123702288897&index=0&sign=2ae3f7f2723848d2e7caca02241151dd",
+    "tag": 1
+   },
+   {
     "title": "Chaya Teahouse 🍵🌿ร้านมัทฉะลับสไตล์ญี่ปุ่นย่านประดิษฐ์พันธ์",
-    "likes": 114,
+    "likes": 115,
     "date": "2026-09-10",
     "link": "https://www.lemon8-app.com/@foundbythacha/7683783526914802177?region=th",
     "source": "Lemon8 · phufah",
     "image": "https://www.lemon8-app.com/seo/image?item_id=7683783526914802177&index=0&sign=28043a086b6148a64b3d76f1f26e9826",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/o0fDFCzLk9tA7FwEIAAEEfsnQmo0qQEjxBwtgL~tplv-sdweummd6v-text-logo-v1:QGZvdW5kYnl0aGFjaGE=:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=SY%2FEC76qLhla%2BZGssyhGNv24QNA%3D",
-    "th": "data/thumbs/7683783526914802177-0.webp"
+    "tag": 1
    },
    {
-    "title": "Cafe matcha 🍵(ลับมาก) ย่านสะพานควาย",
-    "likes": 6,
-    "date": "2026-03-24",
-    "link": "https://www.lemon8-app.com/@hythayatee/7620655651181675009?region=th",
-    "source": "Lemon8 · HYT◡̈ ♡",
-    "image": "https://www.lemon8-app.com/seo/image?item_id=7620655651181675009&index=0&sign=4cc8593c3ea8e069e4e37509abd800a8",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/o0LcKiAhzC7avAABDIz8Pwk2ACiABp6Yl7IbE~tplv-sdweummd6v-text-logo-v1:QGh5dGhheWF0ZWU=:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=gsbvoWY8kCUFMXhbOcHwcIsTxtk%3D",
-    "th": "data/thumbs/7620655651181675009-0.webp"
+    "title": "Chaya Teahouse ร้านมัทฉะที่ต้องมาลองสักครั้ง",
+    "likes": 114,
+    "date": "2025-01-05",
+    "link": "https://www.lemon8-app.com/@n.wanlisut/7456325522776441352?region=th",
+    "source": "Lemon8 · noppawan_kook",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7456325522776441352&index=0&sign=dd3f240640261fd02f3313ea58e81857",
+    "tag": 1
    },
    {
-    "title": "ถ่ายไว้ตอนนั้น เพิ่งได้เล่าวันนี้ ⏳",
-    "likes": 5,
-    "date": "2025-12-27",
-    "link": "https://www.lemon8-app.com/@pastnposted/7588448702982636052?region=th",
-    "source": "Lemon8 · Past • N • Posted",
-    "image": "https://www.lemon8-app.com/seo/image?item_id=7588448702982636052&index=0&sign=2b0e70b161a59cfdbc0f9c3090f656d5",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/oseAIDJLzEADBbAAf07nEWIzK2m7GeTEotMSjP~tplv-sdweummd6v-text-logo-v1:QHBhc3RucG9zdGVk:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=maMzdhti2jDL8HFKxM%2Fwt%2FfF%2FP8%3D",
-    "th": "data/thumbs/7588448702982636052-0.webp"
+    "title": "🏠ร้านบ้านชา Chaya Teahouse 🌱ที่คนรักชาห้ามพลาด!!",
+    "likes": 33,
+    "date": "2022-07-19",
+    "link": "https://www.lemon8-app.com/@ploylamaisdiary/7122110002155848194?region=th",
+    "source": "Lemon8 · Ploylamai",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7122110002155848194&index=0&sign=e73465255e68199943268ed2a11ffd5a",
+    "tag": 1
    },
    {
-    "title": "MATCHA TEAHOUSE IN BKK",
-    "likes": 3,
-    "date": "2026-10-11",
-    "link": "https://www.lemon8-app.com/@saunteringexplorer/7695243005105160756?region=th",
-    "source": "Lemon8 · THE EXPLORER",
-    "image": "https://www.lemon8-app.com/seo/image?item_id=7695243005105160756&index=0&sign=de7b51a6ff938cf7c9bf533b78d8e835",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/ocpsbvAbEzi8AzLP0AAAOailB5AYksuBDIayg~tplv-sdweummd6v-text-logo-v1:QHNhdW50ZXJpbmdleHBsb3Jlcg==:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=u0DBXIuFHNTUBzl7eiTGkHKSjDM%3D",
-    "th": "data/thumbs/7695243005105160756-0.webp"
+    "title": "ร้าน Chaya Teahouse กับความเรียบง่าย Homey in Japane",
+    "likes": 25,
+    "date": "2021-12-01",
+    "link": "https://www.lemon8-app.com/@chomchimm/7036765476122362369?region=th",
+    "source": "Lemon8 · chomchim",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7036765476122362369&index=0&sign=5f6771d37d998fbb50b12945f15b2b47",
+    "tag": 1
+   },
+   {
+    "title": "✨“Chaya Teahouse\" สวรรค์ของคนรักชาเขียวญี่ปุ่น🍵🇯🇵",
+    "likes": 22,
+    "date": "2025-07-26",
+    "link": "https://www.lemon8-app.com/@_narumisatang/7531320844107186704?region=th",
+    "source": "Lemon8 · Narumi.style♡",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7531320844107186704&index=0&sign=db39425c4b7b0f032bdeae0cd1be75cf",
+    "tag": 1
    }
   ],
   "fetchedAt": "2026-11-07T19:20:35.310Z",
   "district": "พญาไท",
-  "reviewCount": 4,
-  "districtEn": "Phaya Thai"
+  "reviewCount": 13,
+  "districtEn": "Phaya Thai",
+  "hours": "Mo-Su 10:00-18:00",
+  "hoursSrc": "review",
+  "menuPrice": {
+   "min": 130,
+   "max": 260,
+   "src": "review"
+  },
+  "entry": {
+   "min": 130,
+   "max": 190,
+   "src": "review"
+  }
  },
  {
   "id": "l8-42203861124377722",
@@ -19558,64 +19550,54 @@
     "tag": 1
    },
    {
-    "title": "#แจกโรงทานก๋วยเตี๋ยว #อดีตวัดร้าง_วัดป่าธรรมวิเวก #วัดดังหนองบัวลําภู #ถ้าถูกหวยลูกและครอบครัวสิมาทำบุญอีก🙏🙏 #ขอรางวัลใหญ่แหน่เด้อปู่",
-    "likes": 0,
-    "date": "2026-01-27",
-    "link": "https://www.lemon8-app.com/@khongkhuan24/7599872812381635079?region=th",
-    "source": "Lemon8 · Khuan Khaaa",
-    "image": "https://www.lemon8-app.com/seo/image?item_id=7599872812381635079&index=0&sign=98648b2b363e40d000102175f65e4d30",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/o8f7D8xgegJGGA92eZxPg8ADkAQTUEMHSQLbAW~tplv-sdweummd6v-text-logo-v1:QGtob25na2h1YW4yNA==:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=L1tKgDIkxSzDmt2xTDUP4jNHO7o%3D",
-    "th": "data/thumbs/7599872812381635079-0.webp"
+    "title": "รำถวายปู่ศรีสุทโธแม่ย่าศรีปทุมมา ที่วัดป่าธรรมวิเวก สาธุบารมีปู่ย่าค่ะ #วัดป่าธรรมวิเวก #หนองบัวลําภู",
+    "likes": 9,
+    "date": "2025-10-09",
+    "link": "https://www.lemon8-app.com/@tt_shop888/7559024156768272914?region=th",
+    "source": "Lemon8 · ทิพมนตรา",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7559024156768272914&index=0&sign=e46f3d24435169fa1e70e2c8b82aeaaf",
+    "tag": 1
    },
    {
-    "title": "วัดป่าธรรมวิเวก จ.หนองบัวลำภู",
-    "likes": 0,
-    "date": "2026-05-11",
-    "link": "https://www.lemon8-app.com/@winewinesmile/7638530899567198727?region=th",
-    "source": "Lemon8 · Wine Wine 🍷",
-    "image": "https://www.lemon8-app.com/seo/image?item_id=7638530899567198727&index=0&sign=bbe915234878dd95e8078b32bd5ebbee",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/oEQ0A8AtMEFf9iEBEqYgXiDyFAfAECIAAIhBAm~tplv-sdweummd6v-text-logo-v1:QHdpbmV3aW5lc21pbGU=:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=dztAxIAiOrp%2FoRJPb7VDfml6RIc%3D",
-    "th": "data/thumbs/7638530899567198727-0.webp"
+    "title": "วัดป่าธรรมวิเวก อดีตวัดร้าง #หนองบัวลำภู",
+    "likes": 8,
+    "date": "2024-10-24",
+    "link": "https://www.lemon8-app.com/@tiewtamjai.85/7429213094364332562?region=th",
+    "source": "Lemon8 · เที่ยวตามใจ",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7429213094364332562&index=0&sign=ce9f5ae4ae5c708ffd5551b3ee6e8242",
+    "tag": 1
+   },
+   {
+    "title": "#วัดป่าธรรมวิเวก",
+    "likes": 5,
+    "date": "2025-06-08",
+    "link": "https://www.lemon8-app.com/@notyuptoyou/7513509500314190337?region=th",
+    "source": "Lemon8 · Noty lemon",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7513509500314190337&index=0&sign=e18f2dc1ec84a10ce1f2a68ca81cea27",
+    "tag": 1
    },
    {
     "title": "วัดป่าธรรมวิเวก",
-    "likes": 0,
-    "date": "2026-09-16",
-    "link": "https://www.lemon8-app.com/@eighteggs_sbvs/7685986753216021012?region=th",
-    "source": "Lemon8 · ร้านไข่แปดใบSBVS",
-    "image": "https://www.lemon8-app.com/seo/image?item_id=7685986753216021012&index=0&sign=d706f13bbea92f94fd4675a5da90beb3",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/owhCALifCqOqFBEwE2amtHFDgEb9cIAf25qIIA~tplv-sdweummd6v-text-logo-v1:QGVpZ2h0ZWdnc19zYnZz:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=U0aOwkj9qjMhS4Aqj%2FyAEgzf1uc%3D",
-    "th": "data/thumbs/7685986753216021012-0.webp"
+    "likes": 3,
+    "date": "2025-09-02",
+    "link": "https://www.lemon8-app.com/@dyar4xksov1p/7545292086057239058?region=th",
+    "source": "Lemon8 · 🪷สุ🪷สุภาวดี🪷",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7545292086057239058&index=0&sign=570e11be288b91b05515299bb168a2ab",
+    "tag": 1
    },
    {
-    "title": "#วัดป่าธรรมวิเวก_หนองบัวลําภู #พระอาจารย์อภินันท์_สุจิตฺโต🙇🙏🏻 #วัดป่าธรรมวิเวก",
-    "likes": 0,
-    "date": "2026-08-07",
-    "link": "https://www.lemon8-app.com/@ansasiphu/7671189720156783124?region=th",
-    "source": "Lemon8 · AnanSasithon",
-    "image": "https://www.lemon8-app.com/seo/image?item_id=7671189720156783124&index=0&sign=9f0183d40d31c81f35ea9bb56eb4f900",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-i-sdweummd6v-sg/ebe49e29d4c34f53b640e1a4f72ada00~tplv-sdweummd6v-text-logo-v1:QGFuc2FzaXBodQ==:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=oUrXNzcXFyP8id78oiuP%2BnZhvaI%3D",
-    "th": "data/thumbs/7671189720156783124-0.webp"
-   },
-   {
-    "title": "คิดดี ทำดี พูดดี รักษาศีล5 สิ่งศักดิ์สิทธิเป็นแค่เครื่องยึดเหนี่ยวจิตใจ #วัดป่าธรรมวิเวก #วัดป่าธรรมวิเวก_หนองบัวลําภู #วัดดังtiktok",
-    "likes": 0,
-    "date": "2026-09-15",
-    "link": "https://www.lemon8-app.com/@ladypu17/7685630097891000850?region=th",
-    "source": "Lemon8 · มาวินชา",
-    "image": "https://www.lemon8-app.com/seo/image?item_id=7685630097891000850&index=0&sign=d1497cf80606729202db82e4245d60f9",
-    "tag": 1,
-    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/osp1tqAFfTJqAlDe2fZRfWQAJF252oXAYAEIGc~tplv-sdweummd6v-text-logo-v1:QGxhZHlwdTE3:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=%2Fwdj3O7G2nExuRPOaP7JczsBel8%3D",
-    "th": "data/thumbs/7685630097891000850-0.webp"
+    "title": "วัดป่าธรรมวิเวก🙏",
+    "likes": 3,
+    "date": "2024-10-16",
+    "link": "https://www.lemon8-app.com/@aod_chef/7426255902476485136?region=th",
+    "source": "Lemon8 · Aod_Anant",
+    "image": "https://www.lemon8-app.com/seo/image?item_id=7426255902476485136&index=0&sign=34742e0b346d73069c326c54f4c332dc",
+    "tag": 1
    }
   ],
   "fetchedAt": "2026-11-07T19:20:35.323Z",
   "district": "เมืองหนองบัวลำภู",
-  "reviewCount": 9,
+  "reviewCount": 15,
   "districtEn": "Mueang Nong Bua Lam Phu",
   "hours": "08:00-17:00",
   "hoursSrc": "typical",

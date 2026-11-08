@@ -11,9 +11,10 @@ const save = async (p, text) => { const tmp = new URL(p + ".tmp", root); await w
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 
 // จำนวนสูงสุดต่อจังหวัด [จังหวัดทั่วไป, จังหวัดท่องเที่ยวหลัก, กรุงเทพฯ]
+// (2026-11: เพิ่มจากเดิมหลายเท่า — เดิมจังหวัดเล็กได้ที่เที่ยวแค่ 1-5 แห่ง น้อยกว่าความจริงมาก)
 export const CAPS = {
-  restaurant: [15, 40, 150], cafe: [15, 40, 120], nightlife: [6, 25, 60], museum: [10, 15, 40],
-  zoo: [5, 8, 10], themepark: [5, 8, 12], nature: [15, 25, 8], landmark: [15, 25, 40]
+  restaurant: [25, 60, 200], cafe: [25, 60, 200], nightlife: [10, 40, 100], museum: [40, 40, 100],
+  zoo: [20, 20, 30], themepark: [20, 20, 30], nature: [100, 150, 40], landmark: [80, 120, 200]
 };
 const BIG = new Set(["chiang-mai", "phuket", "chonburi", "krabi", "surat-thani", "prachuap-khiri-khan", "chiang-rai", "nakhon-ratchasima", "phang-nga", "rayong", "kanchanaburi", "phra-nakhon-si-ayutthaya", "khon-kaen", "songkhla", "nakhon-pathom", "nonthaburi", "samut-prakan", "pathum-thani"]);
 const capOf = (kind, prov) => CAPS[kind][prov === "bangkok" ? 2 : BIG.has(prov) ? 1 : 0];
@@ -32,9 +33,12 @@ function kindOf(t) {
   if (/^(bar|pub|nightclub)$/.test(a || "")) return "nightlife";
   if (to === "zoo" || to === "aquarium") return "zoo";
   if (to === "theme_park" || t.leisure === "water_park") return "themepark";
-  if (to === "museum") return "museum";
-  if (t.natural === "beach" || t.waterway === "waterfall" || to === "viewpoint") return "nature";
-  if (to === "attraction" || /^(archaeological_site|ruins|monument|castle)$/.test(t.historic || "") || (a === "place_of_worship" && t.wikidata)) return "landmark";
+  if (to === "museum" || to === "gallery") return "museum";
+  if (t.natural === "beach" || t.waterway === "waterfall" || to === "viewpoint" || t.natural === "cave_entrance" || (/^(island|islet)$/.test(t.place || "") && (t.wikidata || t["name:en"]))) return "nature";
+  if (to === "attraction" || /^(archaeological_site|ruins|monument|castle|memorial|temple)$/.test(t.historic || "") || (a === "place_of_worship" && (t.wikidata || t.tourism || t.wikipedia))) return "landmark";
+  // ตลาดน้ำ ไนท์มาร์เก็ต ถนนคนเดิน (ต้องมีข้อมูลอ้างอิง กันตลาดสดทั่วไป) · สวนสาธารณะที่มีชื่อเสียง (มี Wikidata)
+  if (a === "marketplace" && (t.wikidata || t.website || t.opening_hours || t["name:en"])) return "landmark";
+  if (t.leisure === "park" && t.wikidata) return "landmark";
   return null;
 }
 const FOOD = new Set(["restaurant", "cafe", "animalcafe", "nightlife"]);
@@ -50,11 +54,17 @@ function keep(kind, t) {
 }
 const query = area => `[out:json][timeout:180];area(${area})->.a;(
 nwr["amenity"~"^(restaurant|cafe|bar|pub|nightclub)$"]["name"](area.a);
-nwr["tourism"~"^(zoo|aquarium|theme_park|museum|attraction|viewpoint)$"]["name"](area.a);
+nwr["tourism"~"^(zoo|aquarium|theme_park|museum|gallery|attraction|viewpoint)$"]["name"](area.a);
+nwr["natural"="cave_entrance"]["name"](area.a);
+nwr["place"~"^(island|islet)$"]["name"](area.a);
+nwr["amenity"="marketplace"]["name"](area.a);
+nwr["leisure"="park"]["name"]["wikidata"](area.a);
+nwr["amenity"="place_of_worship"]["religion"="buddhist"]["tourism"](area.a);
+nwr["amenity"="place_of_worship"]["religion"="buddhist"]["wikipedia"](area.a);
 nwr["leisure"="water_park"]["name"](area.a);
 nwr["natural"="beach"]["name"](area.a);
 nwr["waterway"="waterfall"]["name"](area.a);
-nwr["historic"~"^(archaeological_site|ruins|monument|castle)$"]["name"](area.a);
+nwr["historic"~"^(archaeological_site|ruins|monument|castle|memorial|temple)$"]["name"](area.a);
 nwr["amenity"="place_of_worship"]["religion"="buddhist"]["wikidata"](area.a);
 );out center tags;`;
 
