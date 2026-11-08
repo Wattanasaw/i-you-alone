@@ -9,24 +9,34 @@ window.APP_CONFIG = {
 
   // หมวดหมู่งาน (id ต้องตรงกับ category ใน data/events.json)
   categories: [
-    // color / color2 = สีไล่เฉดของปกการ์ด
+    // color / color2 = สีไล่เฉดของปกการ์ด · เรียงเป็นกลุ่ม: ดนตรี/บันเทิง → ช้อป/กิน → กีฬา → เรียนรู้ → นิทรรศการ/แสดงสินค้า → หาเพื่อน
     { id: "concert", icon: "🎤", color: "#ff2d78", color2: "#7b2ff7", name: { th: "คอนเสิร์ต", en: "Concerts", zh: "演唱会" } },
+    // แฟนมีต แฟนคอน แฟนไซน์ ฉายตอนจบซีรีส์ ป๊อปอัพศิลปิน
+    { id: "fanmeet", icon: "💖", color: "#ec4899", color2: "#a855f7", name: { th: "แฟนมีต", en: "Fan meetings", zh: "粉丝见面会" } },
+    // ละครเวที มิวสิคัล โชว์ บัลเลต์ คอมเมดี้ ละครสัตว์
+    { id: "show", icon: "🎭", color: "#7c3aed", color2: "#f43f5e", name: { th: "ละครเวที/โชว์", en: "Shows & musicals", zh: "演出/音乐剧" } },
     // ศิลปินเล่นตามผับบาร์ ปาร์ตี้ ดีเจ (แสดงป้าย 20+ อัตโนมัติ)
     { id: "nightlife", icon: "🌙", color: "#4c1d95", color2: "#db2777", adult: true, name: { th: "ปาร์ตี้/ผับ", en: "Nightlife", zh: "夜生活" } },
-    // คนโสด/หาคู่/หาเพื่อนใหม่: speed dating, ปาร์ตี้คนโสด, ชมรม/มีตอัพหาเพื่อน
-    { id: "social", icon: "💘", color: "#e11d48", color2: "#fb7185", name: { th: "หาเพื่อน/คู่", en: "Meet people", zh: "交友" } },
-    { id: "seminar", icon: "🗣️", color: "#1d4ed8", color2: "#7c3aed", name: { th: "สัมมนา", en: "Talks", zh: "讲座" } },
-    { id: "learning", icon: "🎓", color: "#2f7cf6", color2: "#00c2c7", name: { th: "เวิร์กช็อป", en: "Workshops", zh: "工作坊" } },
-    { id: "book", icon: "📚", color: "#8b5cf6", color2: "#ec4899", name: { th: "งานหนังสือ", en: "Book fairs", zh: "书展" } },
-    { id: "motor", icon: "🏎️", color: "#0ea47a", color2: "#1e3a8a", name: { th: "มอเตอร์โชว์", en: "Motor shows", zh: "车展" } },
+    // งานประเพณี/เทศกาล (ลอยกระทง สงกรานต์ งานวัด เคาท์ดาวน์ ยี่เป็ง คริสต์มาส)
+    { id: "festival", icon: "🏮", color: "#dc2626", color2: "#facc15", name: { th: "เทศกาล", en: "Festivals", zh: "节庆" } },
+    // ตลาดนัด/มาร์เก็ตขนาดใหญ่: อาร์ตทอย วินเทจ คราฟต์ คริสต์มาสมาร์เก็ต แฟร์ขายของ งานกาชาด OTOP
+    { id: "market", icon: "🧺", color: "#ea580c", color2: "#16a34a", name: { th: "ตลาดนัด/มาร์เก็ต", en: "Markets", zh: "市集" } },
     { id: "sale", icon: "🛍️", color: "#ff7a45", color2: "#ff2d55", name: { th: "แฟลชเซล", en: "Flash sales", zh: "限时特卖" } },
     { id: "food", icon: "🍜", color: "#f59e0b", color2: "#ef4444", name: { th: "อาหาร", en: "Food", zh: "美食" } },
-    // งานประเพณี/เทศกาล (ลอยกระทง สงกรานต์ งานวัด เคาท์ดาวน์ ยี่เป็ง)
-    { id: "festival", icon: "🏮", color: "#dc2626", color2: "#facc15", name: { th: "เทศกาล", en: "Festivals", zh: "节庆" } },
-    { id: "outdoor", icon: "🏃", color: "#16a34a", color2: "#06b6d4", name: { th: "วิ่ง/กีฬา", en: "Sports", zh: "运动" } },
     { id: "cafe", icon: "☕", color: "#b45309", color2: "#f9a8d4", name: { th: "คาเฟ่", en: "Cafés", zh: "咖啡馆" } },
-    { id: "expo", icon: "🏢", color: "#475569", color2: "#0ea5e9", name: { th: "งานแฟร์", en: "Expos", zh: "展会" } },
-    { id: "exhibition", icon: "🎨", color: "#be185d", color2: "#f59e0b", name: { th: "นิทรรศการ", en: "Exhibitions", zh: "展览" } }
+    // งานวิ่ง (มาราธอน มินิ ฮาล์ฟ เทรล) — แยกจากกีฬา เพราะมีเยอะที่สุด
+    { id: "run", icon: "🏃", color: "#16a34a", color2: "#06b6d4", name: { th: "งานวิ่ง", en: "Running", zh: "跑步" } },
+    // กีฬาอื่น: มวย ชกต่อย แข่งขัน ปั่นจักรยาน ไตรกีฬา ฟิตเนส โยคะ
+    { id: "outdoor", icon: "🏅", color: "#0891b2", color2: "#2563eb", name: { th: "กีฬา", en: "Sports", zh: "运动" } },
+    { id: "seminar", icon: "🗣️", color: "#1d4ed8", color2: "#7c3aed", name: { th: "สัมมนา", en: "Talks", zh: "讲座" } },
+    { id: "learning", icon: "🎓", color: "#2f7cf6", color2: "#00c2c7", name: { th: "เวิร์กช็อป/ค่าย", en: "Workshops & camps", zh: "工作坊/营" } },
+    { id: "book", icon: "📚", color: "#8b5cf6", color2: "#ec4899", name: { th: "งานหนังสือ", en: "Book fairs", zh: "书展" } },
+    { id: "exhibition", icon: "🎨", color: "#be185d", color2: "#f59e0b", name: { th: "นิทรรศการ", en: "Exhibitions", zh: "展览" } },
+    // งานแสดงสินค้า/เอ็กซ์โปในศูนย์ประชุม (B2B + คนทั่วไป)
+    { id: "expo", icon: "🏢", color: "#475569", color2: "#0ea5e9", name: { th: "งานแสดงสินค้า", en: "Expos", zh: "展会" } },
+    { id: "motor", icon: "🏎️", color: "#0ea47a", color2: "#1e3a8a", name: { th: "มอเตอร์โชว์", en: "Motor shows", zh: "车展" } },
+    // คนโสด/หาคู่/หาเพื่อนใหม่: speed dating, ปาร์ตี้คนโสด, ชมรม/มีตอัพหาเพื่อน
+    { id: "social", icon: "💘", color: "#e11d48", color2: "#fb7185", name: { th: "หาเพื่อน/คู่", en: "Meet people", zh: "交友" } }
   ],
 
   // หมวดสถานที่เที่ยว (หน้า "ที่เที่ยว") — ข้อมูลจาก data/places.json (scripts/fetch-places.mjs)

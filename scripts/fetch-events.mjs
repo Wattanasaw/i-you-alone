@@ -325,7 +325,9 @@ const SOURCES = {
           refs.push({ id: "tm-" + u.split("/").slice(-2).join("-").toLowerCase().replace(/[^a-z0-9-]+/g, "-").slice(0, 60), url: u, mod: m[2] });
         }
       }
-      return refs.sort((a, b) => b.mod.localeCompare(a.mod));
+      // ตลาด/แฟร์ (งานฟรีที่ไม่ค่อยขึ้นเว็บขายบัตร) เปิดก่อน ให้ทันโควตา
+      const fair = r => /market|fair|bazaar|flea|craft|vintage/i.test(r.url) ? 0 : 1;
+      return refs.sort((a, b) => fair(a) - fair(b) || b.mod.localeCompare(a.mod));
     },
     parse(html) {
       const nd = html.match(/__NEXT_DATA__[^>]*>([\s\S]*?)<\/script>/);
@@ -508,6 +510,11 @@ const CATEGORY_RULES = [
   ["social", /\b(speed ?dating|singles?|dating|matchmaking|blind ?date|cupid|new friends|make friends|meet new people|social club|book club|reading club|language exchange|board ?game night|no strangers|introverts?)\b|คนโสด|หาคู่|หาแฟน|จับคู่|เดท|หาเพื่อนใหม่|เพื่อนใหม่|ชมรมหนังสือ|ชมรมอ่าน|บอร์ดเกม/i],
   // งานประเพณี/เทศกาล (ก่อน อาหาร/คอนเสิร์ต)
   ["festival", /\b(loy ?krathong|songkran|yi ?peng|lantern festival|countdown|fireworks|chinese new year|vegetarian festival)\b|ลอยกระทง|สงกรานต์|งานวัด|งานประจำปี|ประเพณี|ยี่เป็ง|เคาท์ดาวน์|เคานต์ดาวน์|เทศกาลโคม|พลุ|ตรุษจีน|กินเจ/i],
+  // ตลาดนัด/มาร์เก็ต (ก่อนอาหาร/งานแสดงสินค้า) · ไม่ใช่สัมมนาการตลาด
+  ["market", /\b(flea ?market|night ?market|christmas market|art ?toy market|craft (fair|market)|vintage (fair|market)|bazaar|ploenchit fair|otop)\b|ตลาดนัด|มาร์เก็ต|มาร์เก็ท|ถนนคนเดิน|งานกาชาด|สินค้าชุมชน|โอทอป/i],
+  ["run", /\b(run|running|marathon|trail run|ultra ?trail|ekiden|fun ?run)\b|วิ่ง|มาราธอน|เทรล/i],
+  ["fanmeet", /\b(fan ?meet(ing)?|fan ?con|fancon|fan ?sign|fansign|fan ?screening|fan-?meeting)\b|แฟนมีต|แฟนคอน|แฟนไซน์/i],
+  ["show", /\b(the musical|musical|theatre|theater|ballet|opera|circus|comedy|stand ?up|magic show)\b|มิวสิคัล|ละครเวที|บัลเลต์|ละครสัตว์|มายากล|เดี่ยวไมโครโฟน/i],
   ["outdoor", /\b(run|running|marathon|trail|hyrox|triathlon|fun ?run|cycling|bike|yoga|fitness|sport|workout|crossfit)\b|วิ่ง|มาราธอน|ปั่นจักรยาน|ไตรกีฬา|โยคะ|ฟิตเนส|กีฬา/i],
   ["book", /\bbook|หนังสือ/i],
   ["motor", /\bmotor|car show|auto ?salon|รถยนต์|ยานยนต์|มอเตอร์|บิ๊กไบค์|รถจักรยานยนต์/i],
