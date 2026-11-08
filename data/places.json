@@ -699,6 +699,8 @@
    ],
    "imageAi": true,
    "imageScore": 8,
+   "district": "พระนคร",
+   "districtEn": "Phra Nakhon",
    "entry": {
     "tiers": [
      {
@@ -718,9 +720,7 @@
      }
     ],
     "src": "review"
-   },
-   "district": "พระนคร",
-   "districtEn": "Phra Nakhon"
+   }
   },
   {
    "id": "wd-Q13424404",
@@ -860,12 +860,12 @@
    ],
    "imageAi": true,
    "imageScore": 9,
+   "district": "เมืองภูเก็ต",
+   "districtEn": "Mueang Phuket",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "district": "เมืองภูเก็ต",
-   "districtEn": "Mueang Phuket"
+   }
   },
   {
    "id": "wd-Q941265",
@@ -1082,6 +1082,8 @@
    ],
    "imageAi": true,
    "imageScore": 6,
+   "district": "ศรีสวัสดิ์",
+   "districtEn": "Si Sawat",
    "entry": {
     "tiers": [
      {
@@ -1135,9 +1137,7 @@
      }
     ],
     "src": "review"
-   },
-   "district": "ศรีสวัสดิ์",
-   "districtEn": "Si Sawat"
+   }
   },
   {
    "id": "osm-n686818122",
@@ -1417,12 +1417,12 @@
    "imageAi": true,
    "imageScore": 9,
    "nameEn": true,
+   "district": "พระนคร",
+   "districtEn": "Phra Nakhon",
    "entry": {
     "free": true,
     "src": "review"
-   },
-   "district": "พระนคร",
-   "districtEn": "Phra Nakhon"
+   }
   },
   {
    "id": "wd-Q10825651",
@@ -2356,6 +2356,8 @@
    ],
    "imageAi": true,
    "imageScore": 8,
+   "district": "เมืองสมุทรปราการ",
+   "districtEn": "Mueang Samut Prakan",
    "entry": {
     "tiers": [
      {
@@ -2485,9 +2487,7 @@
      }
     ],
     "src": "web"
-   },
-   "district": "เมืองสมุทรปราการ",
-   "districtEn": "Mueang Samut Prakan"
+   }
   },
   {
    "id": "wd-Q1760508",
@@ -2799,13 +2799,13 @@
    ],
    "imageAi": true,
    "imageScore": 7,
+   "district": "โขงเจียม",
+   "districtEn": "Khong Chiam",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "district": "โขงเจียม",
-   "districtEn": "Khong Chiam"
+   }
   },
   {
    "id": "wd-Q1968833",
@@ -2945,13 +2945,13 @@
    ],
    "imageAi": true,
    "imageScore": 9,
+   "district": "คลองลาน",
+   "districtEn": "Khlong Lan",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "district": "คลองลาน",
-   "districtEn": "Khlong Lan"
+   }
   },
   {
    "id": "wd-Q2063779",
@@ -3270,13 +3270,13 @@
    ],
    "imageAi": true,
    "imageScore": 8,
+   "district": "กุยบุรี",
+   "districtEn": "Kui Buri",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "district": "กุยบุรี",
-   "districtEn": "Kui Buri"
+   }
   },
   {
    "id": "wd-Q2522114",
@@ -3899,13 +3899,13 @@
     }
    ],
    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/e06d8f81ebaf439491f1445c65f5f397~tplv-sdweummd6v-text-logo-v1:QGFubmFfZ2Vueg==:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796709600&x-signature=i4nf41Uga5%2BLOO1eCciLUELycwE%3D",
+   "districtEn": "Ko Samui",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Ko Samui"
+   }
   },
   {
    "id": "wd-Q1502738",
@@ -4045,7 +4045,67 @@
    "imageAi": true,
    "imageScore": 8,
    "district": "เกาะกูด",
-   "districtEn": "Ko Kut"
+   "districtEn": "Ko Kut",
+   "entry": {
+    "tiers": [
+     {
+      "who": {
+       "th": "เด็ก (อายุไม่เกิน 18 ปี)",
+       "en": "Child (under 18 years old)",
+       "zh": "儿童（18岁以下）"
+      },
+      "note": {
+       "th": "เวลาราชการ",
+       "en": "Official hours",
+       "zh": "办公时间"
+      },
+      "price": 250,
+      "n": 1,
+      "ids": [
+       "L4"
+      ],
+      "rv": true
+     },
+     {
+      "who": {
+       "th": "ผู้ใหญ่",
+       "en": "Adult",
+       "zh": "成人"
+      },
+      "note": {
+       "th": "เวลาราชการ",
+       "en": "Official hours",
+       "zh": "办公时间"
+      },
+      "price": 300,
+      "n": 2,
+      "ids": [
+       "L4",
+       "L3"
+      ],
+      "rv": true
+     },
+     {
+      "who": {
+       "th": "ชาวต่างชาติ",
+       "en": "Foreigner",
+       "zh": "外国人"
+      },
+      "note": {
+       "th": "เวลาราชการ",
+       "en": "Official hours",
+       "zh": "办公时间"
+      },
+      "price": 600,
+      "n": 1,
+      "ids": [
+       "L4"
+      ],
+      "rv": true
+     }
+    ],
+    "src": "review"
+   }
   },
   {
    "id": "osm-w301157260",
@@ -4170,13 +4230,13 @@
    },
    "hot": 10.1,
    "trend": 6,
+   "districtEn": "Pom Prap Sattru Phai",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Pom Prap Sattru Phai"
+   }
   },
   {
    "id": "wd-Q6400444",
@@ -4450,11 +4510,11 @@
    "imageAi": true,
    "imageScore": 7,
    "reviewCount": 9,
+   "districtEn": "Chatuchak",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Chatuchak"
+   }
   },
   {
    "id": "wd-Q806451",
@@ -4594,13 +4654,13 @@
     }
    ],
    "reviewCount": 13,
+   "districtEn": "Mueang Chon Buri",
    "hours": "24/7",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Mueang Chon Buri"
+   }
   },
   {
    "id": "wd-Q664877",
@@ -4742,12 +4802,12 @@
    ],
    "imageAi": true,
    "imageScore": 9,
+   "district": "เมืองกระบี่",
+   "districtEn": "Mueang Krabi",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "district": "เมืองกระบี่",
-   "districtEn": "Mueang Krabi"
+   }
   },
   {
    "id": "wd-Q4921050",
@@ -5023,7 +5083,6 @@
    ],
    "imageAi": true,
    "imageScore": 8,
-   "websiteDead": "http://park.dnp.go.th/visitor/nationparkshow.php?PTA_CODE=1058",
    "entry": {
     "tiers": [
      {
@@ -5054,7 +5113,8 @@
      }
     ],
     "src": "review1"
-   }
+   },
+   "websiteDead": "http://park.dnp.go.th/visitor/nationparkshow.php?PTA_CODE=1058"
   },
   {
    "id": "wd-Q739851",
@@ -5194,13 +5254,13 @@
    ],
    "imageAi": true,
    "imageScore": 8,
+   "district": "ปางศิลาทอง",
+   "districtEn": "Pang Sila Thong",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "district": "ปางศิลาทอง",
-   "districtEn": "Pang Sila Thong"
+   }
   },
   {
    "id": "osm-w242673271",
@@ -5328,13 +5388,13 @@
    },
    "hot": 9,
    "trend": 7,
+   "districtEn": "Mueang Phuket",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Mueang Phuket"
+   }
   },
   {
    "id": "osm-w342343926",
@@ -5460,13 +5520,13 @@
    },
    "hot": 9,
    "trend": 6,
+   "districtEn": "Phra Nakhon",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Phra Nakhon"
+   }
   },
   {
    "id": "wd-Q15708580",
@@ -5575,8 +5635,6 @@
    ],
    "imageAi": true,
    "imageScore": 8,
-   "hours": "Mo-Fr 06:00-21:30",
-   "hoursSrc": "web",
    "entry": {
     "tiers": [
      {
@@ -5607,7 +5665,9 @@
      }
     ],
     "src": "review1"
-   }
+   },
+   "hours": "Mo-Fr 06:00-21:30",
+   "hoursSrc": "web"
   },
   {
    "id": "wd-Q1968775",
@@ -6539,13 +6599,13 @@
      "th": "data/thumbs/7575928600822546961-0.webp"
     }
    ],
+   "districtEn": "Khlong Sam Wa",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Khlong Sam Wa"
+   }
   },
   {
    "id": "osm-w321528547",
@@ -6644,13 +6704,13 @@
    },
    "hot": 7.4,
    "trend": 5,
+   "districtEn": "Lat Krabang",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Lat Krabang"
+   }
   },
   {
    "id": "osm-w337817494",
@@ -6777,13 +6837,13 @@
    },
    "hot": 7.2,
    "trend": 4,
+   "districtEn": "Khlong San",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Khlong San"
+   }
   },
   {
    "id": "wd-Q1968847",
@@ -7079,13 +7139,13 @@
    ],
    "imageAi": true,
    "imageScore": 8,
+   "district": "แหลมสิงห์",
+   "districtEn": "Laem Sing",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "district": "แหลมสิงห์",
-   "districtEn": "Laem Sing"
+   }
   },
   {
    "id": "osm-w376311483",
@@ -7210,13 +7270,13 @@
    },
    "hot": 6.5,
    "trend": 4,
+   "districtEn": "Bangkok Yai",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Bangkok Yai"
+   }
   },
   {
    "id": "wd-Q257554",
@@ -7342,8 +7402,6 @@
    ],
    "district": "เมืองสมุทรปราการ",
    "reviewCount": 6,
-   "hours": "Mo-Su 09:00-19:00",
-   "hoursSrc": "web",
    "entry": {
     "tiers": [
      {
@@ -7379,7 +7437,9 @@
      }
     ],
     "src": "review1"
-   }
+   },
+   "hours": "Mo-Su 09:00-19:00",
+   "hoursSrc": "web"
   },
   {
    "id": "wd-Q2132910",
@@ -7913,13 +7973,13 @@
    ],
    "imageAi": true,
    "imageScore": 8,
+   "district": "นครไทย",
+   "districtEn": "Nakhon Thai",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "district": "นครไทย",
-   "districtEn": "Nakhon Thai"
+   }
   },
   {
    "id": "wd-Q1968923",
@@ -8410,11 +8470,11 @@
    "imageAi": true,
    "imageScore": 9,
    "reviewCount": 24,
+   "districtEn": "Mueang Chiang Rai",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Mueang Chiang Rai"
+   }
   },
   {
    "id": "osm-w376466920",
@@ -8537,13 +8597,13 @@
      "th": "data/thumbs/7653027155558842887-0.webp"
     }
    ],
+   "districtEn": "Mueang Nonthaburi",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Mueang Nonthaburi"
+   }
   },
   {
    "id": "osm-w283081376",
@@ -8661,13 +8721,13 @@
    },
    "hot": 5.8,
    "trend": 3,
+   "districtEn": "Chom Thong",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Chom Thong"
+   }
   },
   {
    "id": "osm-w342517132",
@@ -8784,13 +8844,13 @@
    },
    "hot": 5.8,
    "trend": 3,
+   "districtEn": "Bang Kho Laem",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Bang Kho Laem"
+   }
   },
   {
    "id": "wd-Q1760520",
@@ -8924,13 +8984,13 @@
    ],
    "imageAi": true,
    "imageScore": 9,
+   "district": "พนม",
+   "districtEn": "Phanom",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "district": "พนม",
-   "districtEn": "Phanom"
+   }
   },
   {
    "id": "wd-Q13022377",
@@ -9206,13 +9266,13 @@
    ],
    "imageAi": true,
    "imageScore": 7,
+   "district": "ตาพระยา",
+   "districtEn": "Ta Phraya",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "district": "ตาพระยา",
-   "districtEn": "Ta Phraya"
+   }
   },
   {
    "id": "wd-Q2033070",
@@ -9485,12 +9545,12 @@
    ],
    "imageAi": true,
    "imageScore": 8,
+   "district": "เมืองภูเก็ต",
+   "districtEn": "Mueang Phuket",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "district": "เมืองภูเก็ต",
-   "districtEn": "Mueang Phuket"
+   }
   },
   {
    "id": "wd-Q1777774",
@@ -9968,13 +10028,13 @@
    ],
    "imageAi": true,
    "imageScore": 9,
+   "district": "แก่งกระจาน",
+   "districtEn": "Kaeng Krachan",
    "entry": {
     "thai": 60,
     "foreign": 300,
     "src": "web"
-   },
-   "district": "แก่งกระจาน",
-   "districtEn": "Kaeng Krachan"
+   }
   },
   {
    "id": "wd-Q1322836",
@@ -10114,13 +10174,13 @@
    ],
    "imageAi": true,
    "imageScore": 7,
+   "district": "ปัว",
+   "districtEn": "Pua",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "district": "ปัว",
-   "districtEn": "Pua"
+   }
   },
   {
    "id": "wd-Q38205",
@@ -10372,11 +10432,11 @@
     ]
    },
    "reviewCount": 11,
+   "districtEn": "Sam Phran",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Sam Phran"
+   }
   },
   {
    "id": "osm-w320617683",
@@ -10485,13 +10545,13 @@
    },
    "hot": 4.8,
    "trend": 2,
+   "districtEn": "Yan Nawa",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Yan Nawa"
+   }
   },
   {
    "id": "wd-Q1413851",
@@ -10928,13 +10988,13 @@
    ],
    "imageAi": true,
    "imageScore": 9,
+   "district": "นาดี",
+   "districtEn": "Na Di",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "district": "นาดี",
-   "districtEn": "Na Di"
+   }
   },
   {
    "id": "wd-Q1968804",
@@ -11223,13 +11283,13 @@
    ],
    "imageAi": true,
    "imageScore": 9,
+   "district": "เกาะสมุย",
+   "districtEn": "Ko Samui",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "district": "เกาะสมุย",
-   "districtEn": "Ko Samui"
+   }
   },
   {
    "id": "wd-Q1968824",
@@ -11685,12 +11745,12 @@
    ],
    "imageAi": true,
    "imageScore": 8,
+   "district": "ถลาง",
+   "districtEn": "Thalang",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "district": "ถลาง",
-   "districtEn": "Thalang"
+   }
   },
   {
    "id": "wd-Q2084809",
@@ -11816,7 +11876,64 @@
    ],
    "district": "เฉลิมพระเกียรติ",
    "reviewCount": 6,
-   "districtEn": "Chaloem Phra Kiat"
+   "districtEn": "Chaloem Phra Kiat",
+   "entry": {
+    "tiers": [
+     {
+      "who": {
+       "th": "ชาวไทย",
+       "en": "Thai citizen",
+       "zh": "泰国公民"
+      },
+      "price": 20,
+      "n": 1,
+      "ids": [
+       "L2"
+      ],
+      "rv": true
+     },
+     {
+      "who": {
+       "th": "ชาวไทย (บัตรรวมปราสาทเมืองต่ำ)",
+       "en": "Thai citizen (combo ticket with Muang Tam)",
+       "zh": "泰国公民（含芒特城堡联票）"
+      },
+      "price": 30,
+      "n": 1,
+      "ids": [
+       "L2"
+      ],
+      "rv": true
+     },
+     {
+      "who": {
+       "th": "ชาวต่างชาติ",
+       "en": "Foreigner",
+       "zh": "外国人"
+      },
+      "price": 200,
+      "n": 1,
+      "ids": [
+       "L2"
+      ],
+      "rv": true
+     },
+     {
+      "who": {
+       "th": "ชาวต่างชาติ (บัตรรวมปราสาทเมืองต่ำ)",
+       "en": "Foreigner (combo ticket with Muang Tam)",
+       "zh": "外国人（含芒特城堡联票）"
+      },
+      "price": 250,
+      "n": 1,
+      "ids": [
+       "L2"
+      ],
+      "rv": true
+     }
+    ],
+    "src": "review1"
+   }
   },
   {
    "id": "wd-Q1968975",
@@ -11947,14 +12064,14 @@
    ],
    "district": "ภูเวียง",
    "reviewCount": 14,
+   "districtEn": "Phu Wiang",
    "hours": "Mo-Su 08:30-16:30",
    "hoursSrc": "review1",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "districtEn": "Phu Wiang"
+   }
   },
   {
    "id": "osm-n5292842922",
@@ -12607,13 +12724,13 @@
    },
    "hot": 3.6,
    "trend": 2,
+   "districtEn": "Bang Khen",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Bang Khen"
+   }
   },
   {
    "id": "wd-Q5193022",
@@ -12736,13 +12853,13 @@
    ],
    "imageAi": true,
    "imageScore": 8,
+   "district": "เมืองกระบี่",
+   "districtEn": "Mueang Krabi",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "district": "เมืองกระบี่",
-   "districtEn": "Mueang Krabi"
+   }
   },
   {
    "id": "wd-Q14469669",
@@ -12936,13 +13053,13 @@
    ],
    "imageAi": true,
    "imageScore": 9,
+   "district": "ด่านช้าง",
+   "districtEn": "Dan Chang",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "district": "ด่านช้าง",
-   "districtEn": "Dan Chang"
+   }
   },
   {
    "id": "osm-n12645537703",
@@ -13451,6 +13568,8 @@
    ],
    "imageAi": true,
    "imageScore": 8,
+   "district": "พระนคร",
+   "districtEn": "Phra Nakhon",
    "entry": {
     "tiers": [
      {
@@ -13508,9 +13627,7 @@
      }
     ],
     "src": "web"
-   },
-   "district": "พระนคร",
-   "districtEn": "Phra Nakhon"
+   }
   },
   {
    "id": "wd-Q3576017",
@@ -14118,13 +14235,13 @@
     ]
    },
    "reviewCount": 4,
+   "districtEn": "Mueang Phuket",
    "hours": "24/7",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Mueang Phuket"
+   }
   },
   {
    "id": "wd-Q873769",
@@ -14290,12 +14407,12 @@
    },
    "imageAi": true,
    "imageScore": 9,
+   "district": "ธาตุพนม",
+   "districtEn": "That Phanom",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "district": "ธาตุพนม",
-   "districtEn": "That Phanom"
+   }
   },
   {
    "id": "wd-Q38225",
@@ -14545,12 +14662,12 @@
    ],
    "imageAi": true,
    "imageScore": 9,
+   "district": "เมืองเชียงใหม่",
+   "districtEn": "Mueang Chiang Mai",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "district": "เมืองเชียงใหม่",
-   "districtEn": "Mueang Chiang Mai"
+   }
   },
   {
    "id": "wd-Q270375",
@@ -14794,6 +14911,8 @@
    "trend": 8,
    "imageAi": true,
    "imageScore": 7,
+   "district": "คันนายาว",
+   "districtEn": "Khan Na Yao",
    "entry": {
     "tiers": [
      {
@@ -14874,9 +14993,7 @@
      }
     ],
     "src": "web"
-   },
-   "district": "คันนายาว",
-   "districtEn": "Khan Na Yao"
+   }
   },
   {
    "id": "wd-Q16138299",
@@ -15047,12 +15164,12 @@
    ],
    "imageAi": true,
    "imageScore": 8,
+   "district": "บางละมุง",
+   "districtEn": "Bang Lamung",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "district": "บางละมุง",
-   "districtEn": "Bang Lamung"
+   }
   },
   {
    "id": "wd-Q16305399",
@@ -15318,12 +15435,12 @@
    "views": 12,
    "imageAi": true,
    "imageScore": 8,
+   "district": "พระนคร",
+   "districtEn": "Phra Nakhon",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "district": "พระนคร",
-   "districtEn": "Phra Nakhon"
+   }
   },
   {
    "id": "wd-Q1061764",
@@ -15540,13 +15657,13 @@
    ],
    "imageAi": true,
    "imageScore": 8,
+   "district": "จอมทอง",
+   "districtEn": "Chom Thong",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "district": "จอมทอง",
-   "districtEn": "Chom Thong"
+   }
   },
   {
    "id": "wd-Q13021500",
@@ -16252,13 +16369,13 @@
    "reviewCount": 11,
    "imageAi": true,
    "imageScore": 8,
+   "district": "เมืองเชียงใหม่",
+   "districtEn": "Mueang Chiang Mai",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "district": "เมืองเชียงใหม่",
-   "districtEn": "Mueang Chiang Mai"
+   }
   },
   {
    "id": "wd-Q1130183",
@@ -16668,7 +16785,42 @@
     }
    ],
    "reviewCount": 10,
-   "districtEn": "Phra Nakhon Si Ayutthaya"
+   "districtEn": "Phra Nakhon Si Ayutthaya",
+   "entry": {
+    "tiers": [
+     {
+      "who": {
+       "th": "คนไทย",
+       "en": "Thai citizen",
+       "zh": "泰国公民"
+      },
+      "price": 30,
+      "n": 4,
+      "ids": [
+       "L1",
+       "L2",
+       "L4",
+       "L6"
+      ],
+      "rv": true
+     },
+     {
+      "who": {
+       "th": "ชาวต่างชาติ",
+       "en": "Foreigner",
+       "zh": "外籍游客"
+      },
+      "price": 200,
+      "n": 2,
+      "ids": [
+       "L2",
+       "L4"
+      ],
+      "rv": true
+     }
+    ],
+    "src": "review"
+   }
   },
   {
    "id": "wd-Q2510561",
@@ -16722,12 +16874,12 @@
    "imageCredit": "กสิณธร ราชโอรส · CC BY-SA 4.0",
    "fetchedAt": "2026-11-07T01:21:46.388Z",
    "views": 8,
+   "district": "ห้วยขวาง",
+   "districtEn": "Huai Khwang",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "district": "ห้วยขวาง",
-   "districtEn": "Huai Khwang"
+   }
   },
   {
    "id": "wd-Q1666277",
@@ -17029,7 +17181,9 @@
     }
    ],
    "reviewCount": 24,
-   "districtEn": "Pathum Wan"
+   "districtEn": "Pathum Wan",
+   "hours": "We-Su 09:30-16:30; Mo-Tu off",
+   "hoursSrc": "review"
   },
   {
    "id": "wd-Q1322807",
@@ -17128,13 +17282,13 @@
    "reviewCount": 24,
    "imageAi": true,
    "imageScore": 9,
+   "district": "ห้างฉัตร",
+   "districtEn": "Hang Chat",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "district": "ห้างฉัตร",
-   "districtEn": "Hang Chat"
+   }
   },
   {
    "id": "wd-Q1476495",
@@ -17247,13 +17401,13 @@
    ],
    "imageAi": true,
    "imageScore": 9,
+   "district": "แม่แตง",
+   "districtEn": "Mae Taeng",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "district": "แม่แตง",
-   "districtEn": "Mae Taeng"
+   }
   },
   {
    "id": "wd-Q1647822",
@@ -17366,13 +17520,13 @@
    ],
    "imageAi": true,
    "imageScore": 7,
+   "district": "น้ำหนาว",
+   "districtEn": "Nam Nao",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "district": "น้ำหนาว",
-   "districtEn": "Nam Nao"
+   }
   },
   {
    "id": "wd-Q1474515",
@@ -17962,13 +18116,13 @@
    "reviewCount": 20,
    "imageAi": true,
    "imageScore": 7,
+   "district": "เมืองสตูล",
+   "districtEn": "Mueang Satun",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "district": "เมืองสตูล",
-   "districtEn": "Mueang Satun"
+   }
   },
   {
    "id": "wd-Q1536858",
@@ -18067,13 +18221,13 @@
    "reviewCount": 19,
    "imageAi": true,
    "imageScore": 9,
+   "district": "กันทรลักษ์",
+   "districtEn": "Kantharalak",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "district": "กันทรลักษ์",
-   "districtEn": "Kantharalak"
+   }
   },
   {
    "id": "wd-Q1968373",
@@ -18535,15 +18689,15 @@
    "reviewCount": 12,
    "imageAi": true,
    "imageScore": 6,
+   "district": "สิรินธร",
+   "districtEn": "Sirindhorn",
    "hours": "08:00-18:00",
    "hoursSrc": "typical",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "district": "สิรินธร",
-   "districtEn": "Sirindhorn"
+   }
   },
   {
    "id": "wd-Q13024192",
@@ -18640,15 +18794,15 @@
    "imageCredit": "Samornthip · CC BY-SA 4.0",
    "imageAi": true,
    "imageScore": 8,
+   "district": "ชุมแพ",
+   "districtEn": "Chum Phae",
    "hours": "08:00-18:00",
    "hoursSrc": "typical",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "district": "ชุมแพ",
-   "districtEn": "Chum Phae"
+   }
   },
   {
    "id": "wd-Q4922129",
@@ -18688,9 +18842,9 @@
    },
    "imageAi": true,
    "imageScore": 8,
-   "websiteDead": "https://www.museum.rtaf.mi.th/",
    "district": "ดอนเมือง",
-   "districtEn": "Don Mueang"
+   "districtEn": "Don Mueang",
+   "websiteDead": "https://www.museum.rtaf.mi.th/"
   },
   {
    "id": "wd-Q7200579",
@@ -19158,13 +19312,13 @@
    ],
    "imageAi": true,
    "imageScore": 9,
+   "district": "ภูซาง",
+   "districtEn": "Phu Sang",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "district": "ภูซาง",
-   "districtEn": "Phu Sang"
+   }
   },
   {
    "id": "wd-Q15707827",
@@ -19485,11 +19639,11 @@
    "reviewCount": 14,
    "imageAi": true,
    "imageScore": 8,
+   "districtEn": "Kathu",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Kathu"
+   }
   },
   {
    "id": "wd-Q10951101",
@@ -20378,13 +20532,13 @@
    "reviewCount": 12,
    "imageAi": true,
    "imageScore": 9,
+   "district": "พาน",
+   "districtEn": "Phan",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "district": "พาน",
-   "districtEn": "Phan"
+   }
   },
   {
    "id": "wd-Q6652728",
@@ -20497,13 +20651,13 @@
    ],
    "imageAi": true,
    "imageScore": 9,
+   "district": "ทองผาภูมิ",
+   "districtEn": "Thong Pha Phum",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "district": "ทองผาภูมิ",
-   "districtEn": "Thong Pha Phum"
+   }
   },
   {
    "id": "wd-Q238906",
@@ -20539,13 +20693,13 @@
    },
    "imageAi": true,
    "imageScore": 8,
+   "district": "เกาะช้าง",
+   "districtEn": "Ko Chang",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "district": "เกาะช้าง",
-   "districtEn": "Ko Chang"
+   }
   },
   {
    "id": "wd-Q13024202",
@@ -20899,15 +21053,15 @@
    ],
    "imageAi": true,
    "imageScore": 9,
+   "district": "เวียงป่าเป้า",
+   "districtEn": "Wiang Pa Pao",
    "hours": "08:00-18:00",
    "hoursSrc": "typical",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "district": "เวียงป่าเป้า",
-   "districtEn": "Wiang Pa Pao"
+   }
   },
   {
    "id": "wd-Q13024211",
@@ -21008,15 +21162,15 @@
    "reviewCount": 8,
    "imageAi": true,
    "imageScore": 6,
+   "district": "ท้ายเหมือง",
+   "districtEn": "Thai Mueang",
    "hours": "08:00-18:00",
    "hoursSrc": "typical",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "district": "ท้ายเหมือง",
-   "districtEn": "Thai Mueang"
+   }
   },
   {
    "id": "wd-Q123198",
@@ -21072,13 +21226,13 @@
    ],
    "imageAi": true,
    "imageScore": 6,
+   "district": "สอง",
+   "districtEn": "Song",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "district": "สอง",
-   "districtEn": "Song"
+   }
   },
   {
    "id": "wd-Q386580",
@@ -22001,11 +22155,11 @@
     }
    ],
    "reviewCount": 13,
+   "districtEn": "Thon Buri",
    "entry": {
     "free": true,
     "src": "web"
-   },
-   "districtEn": "Thon Buri"
+   }
   },
   {
    "id": "wd-Q6411961",
@@ -22126,7 +22280,13 @@
      "tag": 1
     }
    ],
-   "reviewCount": 9
+   "reviewCount": 9,
+   "hours": "Tu-Su 08:30-16:30; Mo off",
+   "hoursSrc": "review",
+   "entry": {
+    "free": true,
+    "src": "review"
+   }
   },
   {
    "id": "wd-Q6363380",
@@ -22622,13 +22782,13 @@
    ],
    "imageAi": true,
    "imageScore": 9,
+   "district": "เกาะลันตา",
+   "districtEn": "Ko Lanta",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "district": "เกาะลันตา",
-   "districtEn": "Ko Lanta"
+   }
   },
   {
    "id": "wd-Q5359345",
@@ -22915,14 +23075,14 @@
    ],
    "reviewCount": 4,
    "district": "เชียงม่วน",
+   "districtEn": "Chiang Muan",
    "hours": "Mo-Su 08:30-16:30",
    "hoursSrc": "review1",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "districtEn": "Chiang Muan"
+   }
   },
   {
    "id": "wd-Q5768500",
@@ -23003,13 +23163,13 @@
    ],
    "imageAi": true,
    "imageScore": 9,
+   "district": "คุระบุรี",
+   "districtEn": "Khura Buri",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "district": "คุระบุรี",
-   "districtEn": "Khura Buri"
+   }
   },
   {
    "id": "wd-Q1968825",
@@ -23217,13 +23377,13 @@
    "reviewCount": 4,
    "imageAi": true,
    "imageScore": 9,
+   "district": "เชียงม่วน",
+   "districtEn": "Chiang Muan",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "district": "เชียงม่วน",
-   "districtEn": "Chiang Muan"
+   }
   },
   {
    "id": "wd-Q12666284",
@@ -23291,8 +23451,6 @@
    "reviewCount": 3,
    "imageAi": true,
    "imageScore": 6,
-   "hours": "08:00-16:30",
-   "hoursSrc": "review1",
    "entry": {
     "tiers": [
      {
@@ -23310,7 +23468,9 @@
      }
     ],
     "src": "review1"
-   }
+   },
+   "hours": "08:00-16:30",
+   "hoursSrc": "review1"
   },
   {
    "id": "wd-Q674005",
@@ -23449,8 +23609,6 @@
     "posts": []
    },
    "district": "จตุจักร",
-   "hours": "Tu-Su 10:00-16:00; Mo off",
-   "hoursSrc": "review1",
    "entry": {
     "tiers": [
      {
@@ -23468,7 +23626,9 @@
      }
     ],
     "src": "review1"
-   }
+   },
+   "hours": "Tu-Su 10:00-16:00; Mo off",
+   "hoursSrc": "review1"
   },
   {
    "id": "wd-Q6424111",
@@ -24038,7 +24198,72 @@
    "fetchedAt": "2026-11-06T18:41:48.683Z",
    "views": 1,
    "district": "หาดใหญ่",
-   "districtEn": "Hat Yai"
+   "districtEn": "Hat Yai",
+   "entry": {
+    "tiers": [
+     {
+      "who": {
+       "th": "นักศึกษา / บุคลากร ม.อ.",
+       "en": "PSU students / staff",
+       "zh": "宋卡王子大学学生/教职工"
+      },
+      "price": 20,
+      "n": 1,
+      "ids": [
+       "W"
+      ]
+     },
+     {
+      "who": {
+       "th": "นักเรียน / นักศึกษาทั่วไป",
+       "en": "General students",
+       "zh": "一般学生"
+      },
+      "price": 30,
+      "n": 1,
+      "ids": [
+       "W"
+      ]
+     },
+     {
+      "who": {
+       "th": "ผู้ใหญ่ / บุคคลทั่วไป (คนไทย)",
+       "en": "General public (Thai)",
+       "zh": "一般成人（泰国人）"
+      },
+      "price": 40,
+      "n": 1,
+      "ids": [
+       "W"
+      ]
+     },
+     {
+      "who": {
+       "th": "นักเรียน / นักศึกษา (ชาวต่างชาติ)",
+       "en": "Students (Foreigner)",
+       "zh": "学生（外国人）"
+      },
+      "price": 40,
+      "n": 1,
+      "ids": [
+       "W"
+      ]
+     },
+     {
+      "who": {
+       "th": "ผู้ใหญ่ / บุคคลทั่วไป (ชาวต่างชาติ)",
+       "en": "General public (Foreigner)",
+       "zh": "一般成人（外国人）"
+      },
+      "price": 60,
+      "n": 1,
+      "ids": [
+       "W"
+      ]
+     }
+    ],
+    "src": "web"
+   }
   },
   {
    "id": "wd-Q6424168",
@@ -24319,9 +24544,9 @@
    "imageCredit": "Medelam · CC BY-SA 4.0",
    "fetchedAt": "2026-11-06T20:04:50.154Z",
    "views": 1,
-   "websiteDead": "http://www.thaibankmuseum.or.th/eng/home.php",
    "district": "จตุจักร",
-   "districtEn": "Chatuchak"
+   "districtEn": "Chatuchak",
+   "websiteDead": "http://www.thaibankmuseum.or.th/eng/home.php"
   },
   {
    "id": "wd-Q15959888",
@@ -24774,8 +24999,6 @@
     }
    ],
    "reviewCount": 8,
-   "hours": "Mo-Su 09:00-17:00",
-   "hoursSrc": "review1",
    "entry": {
     "tiers": [
      {
@@ -24793,7 +25016,9 @@
      }
     ],
     "src": "review1"
-   }
+   },
+   "hours": "Mo-Su 09:00-17:00",
+   "hoursSrc": "review1"
   },
   {
    "id": "wd-Q807015",
@@ -25168,11 +25393,11 @@
      "tag": 1
     }
    ],
+   "districtEn": "Phra Nakhon",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Phra Nakhon"
+   }
   },
   {
    "id": "osm-n4331626405",
@@ -25191,11 +25416,11 @@
    "summary": {},
    "fetchedAt": "2026-11-07T02:02:07.631Z",
    "district": "วารินชำราบ",
+   "districtEn": "Warin Chamrap",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Warin Chamrap"
+   }
   },
   {
    "id": "osm-w82541999",
@@ -25319,11 +25544,11 @@
      "tag": 1
     }
    ],
+   "districtEn": "Mueang Chiang Mai",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Mueang Chiang Mai"
+   }
   },
   {
    "id": "osm-w138947464",
@@ -25351,11 +25576,11 @@
    "district": "พระนคร",
    "imageAi": true,
    "imageScore": 6,
+   "districtEn": "Phra Nakhon",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Phra Nakhon"
+   }
   },
   {
    "id": "osm-w233810865",
@@ -25384,14 +25609,14 @@
    "district": "พระนคร",
    "imageAi": true,
    "imageScore": 8,
+   "districtEn": "Phra Nakhon",
    "websiteDead": "https://www.watbowon.com/",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Phra Nakhon"
+   }
   },
   {
    "id": "osm-w242673270",
@@ -25482,11 +25707,11 @@
    "district": "จอมทอง",
    "imageAi": true,
    "imageScore": 7,
+   "districtEn": "Chom Thong",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Chom Thong"
+   }
   },
   {
    "id": "osm-w1212829140",
@@ -25514,13 +25739,13 @@
    "district": "หลักสี่",
    "imageAi": true,
    "imageScore": 7,
+   "districtEn": "Lak Si",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Lak Si"
+   }
   },
   {
    "id": "wd-Q37818",
@@ -25795,13 +26020,13 @@
      "tag": 1
     }
    ],
+   "districtEn": "Dusit",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Dusit"
+   }
   },
   {
    "id": "osm-w41291954",
@@ -25926,11 +26151,11 @@
     "at": "2026-11-07",
     "posts": []
    },
+   "districtEn": "Bang Bua Thong",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Bang Bua Thong"
+   }
   },
   {
    "id": "osm-w194521680",
@@ -26083,13 +26308,13 @@
      "tag": 1
     }
    ],
+   "districtEn": "Chatuchak",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Chatuchak"
+   }
   },
   {
    "id": "osm-w333223521",
@@ -26116,14 +26341,14 @@
     "at": "2026-11-07",
     "posts": []
    },
+   "districtEn": "Pom Prap Sattru Phai",
    "websiteDead": "http://www.watdebsirin.com/",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Pom Prap Sattru Phai"
+   }
   },
   {
    "id": "osm-w342337807",
@@ -26150,13 +26375,13 @@
     "at": "2026-11-07",
     "posts": []
    },
+   "districtEn": "Phra Nakhon",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Phra Nakhon"
+   }
   },
   {
    "id": "osm-w342343925",
@@ -26185,13 +26410,13 @@
     "at": "2026-11-07",
     "posts": []
    },
+   "districtEn": "Phra Nakhon",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Phra Nakhon"
+   }
   },
   {
    "id": "osm-w376302669",
@@ -26219,13 +26444,13 @@
     "at": "2026-11-07",
     "posts": []
    },
+   "districtEn": "Bangkok Noi",
    "hours": "We-Su 08:00-17:00; Mo,Tu off",
    "hoursSrc": "web",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Bangkok Noi"
+   }
   },
   {
    "id": "osm-w376377640",
@@ -26253,13 +26478,13 @@
     "at": "2026-11-07",
     "posts": []
    },
+   "districtEn": "Mueang Nonthaburi",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Mueang Nonthaburi"
+   }
   },
   {
    "id": "osm-w376679542",
@@ -26288,13 +26513,13 @@
     "at": "2026-11-07",
     "posts": []
    },
+   "districtEn": "Mueang Nonthaburi",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Mueang Nonthaburi"
+   }
   },
   {
    "id": "osm-w712045323",
@@ -26336,13 +26561,13 @@
      "th": "data/thumbs/7669094113003258376-0.webp"
     }
    ],
+   "districtEn": "Mueang Chiang Rai",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Mueang Chiang Rai"
+   }
   },
   {
    "id": "osm-w784424308",
@@ -26397,13 +26622,13 @@
     "at": "2026-11-07",
     "posts": []
    },
+   "districtEn": "Phra Nakhon",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Phra Nakhon"
+   }
   },
   {
    "id": "osm-w1348245391",
@@ -26574,11 +26799,11 @@
    ],
    "hot": 3.1,
    "trend": 1,
+   "districtEn": "Mueang Lampang",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Mueang Lampang"
+   }
   },
   {
    "id": "osm-w1433798308",
@@ -26606,13 +26831,13 @@
     "at": "2026-11-07",
     "posts": []
    },
+   "districtEn": "Bang Sue",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Bang Sue"
+   }
   },
   {
    "id": "osm-w1458701064",
@@ -26640,13 +26865,13 @@
     "at": "2026-11-07",
     "posts": []
    },
+   "districtEn": "Nakhon Chai Si",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Nakhon Chai Si"
+   }
   },
   {
    "id": "osm-w1489131358",
@@ -26676,11 +26901,11 @@
     "at": "2026-11-07",
     "posts": []
    },
+   "districtEn": "Na Noi",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Na Noi"
+   }
   },
   {
    "id": "osm-r4051990",
@@ -26771,11 +26996,11 @@
      "tag": 1
     }
    ],
+   "districtEn": "Bangkok Noi",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Bangkok Noi"
+   }
   },
   {
    "id": "osm-r11169995",
@@ -26828,11 +27053,11 @@
      "tag": 1
     }
    ],
+   "districtEn": "Phra Nakhon",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Phra Nakhon"
+   }
   },
   {
    "id": "osm-r20594102",
@@ -26862,13 +27087,13 @@
     "at": "2026-11-07",
     "posts": []
    },
+   "districtEn": "Pom Prap Sattru Phai",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Pom Prap Sattru Phai"
+   }
   },
   {
    "id": "wd-Q806441",
@@ -27032,9 +27257,9 @@
    ],
    "imageAi": true,
    "imageScore": 9,
-   "websiteDead": "https://thawan-duchanee.com/",
    "district": "เมืองเชียงราย",
-   "districtEn": "Mueang Chiang Rai"
+   "districtEn": "Mueang Chiang Rai",
+   "websiteDead": "https://thawan-duchanee.com/"
   },
   {
    "id": "osm-w396643502",
@@ -27227,13 +27452,13 @@
      "tag": 1
     }
    ],
+   "districtEn": "Bang Khun Thian",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Bang Khun Thian"
+   }
   },
   {
    "id": "osm-n1114352991",
@@ -27315,13 +27540,13 @@
     "at": "2026-11-07",
     "posts": []
    },
+   "districtEn": "Mueang Samut Prakan",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Mueang Samut Prakan"
+   }
   },
   {
    "id": "osm-n2578808292",
@@ -27339,13 +27564,13 @@
    "summary": {},
    "fetchedAt": "2026-11-07T02:03:10.812Z",
    "district": "เมืองราชบุรี",
+   "districtEn": "Mueang Ratchaburi",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Mueang Ratchaburi"
+   }
   },
   {
    "id": "osm-n3452272155",
@@ -27403,11 +27628,11 @@
     "at": "2026-11-07",
     "posts": []
    },
+   "districtEn": "Warin Chamrap",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Warin Chamrap"
+   }
   },
   {
    "id": "osm-n5318173821",
@@ -27562,13 +27787,13 @@
    "summary": {},
    "fetchedAt": "2026-11-07T02:03:28.510Z",
    "district": "ราษฎร์บูรณะ",
+   "districtEn": "Rat Burana",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Rat Burana"
+   }
   },
   {
    "id": "osm-n12526550268",
@@ -27595,13 +27820,13 @@
     "at": "2026-11-07",
     "posts": []
    },
+   "districtEn": "Phra Nakhon",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Phra Nakhon"
+   }
   },
   {
    "id": "osm-n12645537690",
@@ -27641,13 +27866,13 @@
    "summary": {},
    "fetchedAt": "2026-11-07T02:03:33.697Z",
    "district": "เมืองสุโขทัย",
+   "districtEn": "Mueang Sukhothai",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Mueang Sukhothai"
+   }
   },
   {
    "id": "osm-w23630366",
@@ -27846,13 +28071,13 @@
     "at": "2026-11-07",
     "posts": []
    },
+   "districtEn": "Khlong San",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Khlong San"
+   }
   },
   {
    "id": "osm-w113107217",
@@ -27892,13 +28117,13 @@
      "tag": 1
     }
    ],
+   "districtEn": "Suan Luang",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Suan Luang"
+   }
   },
   {
    "id": "osm-w118171998",
@@ -27926,13 +28151,13 @@
     "at": "2026-11-08",
     "posts": []
    },
+   "districtEn": "Phra Nakhon",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Phra Nakhon"
+   }
   },
   {
    "id": "osm-w158185227",
@@ -28002,13 +28227,13 @@
     "at": "2026-11-08",
     "posts": []
    },
+   "districtEn": "Vadhana",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Vadhana"
+   }
   },
   {
    "id": "osm-w178329973",
@@ -28063,13 +28288,13 @@
     "at": "2026-11-08",
     "posts": []
    },
+   "districtEn": "Phra Nakhon",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Phra Nakhon"
+   }
   },
   {
    "id": "osm-w194758858",
@@ -28086,11 +28311,11 @@
    "summary": {},
    "fetchedAt": "2026-11-07T02:03:58.661Z",
    "district": "ดอนเมือง",
+   "districtEn": "Don Mueang",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Don Mueang"
+   }
   },
   {
    "id": "osm-w194876464",
@@ -28180,13 +28405,13 @@
     }
    ],
    "reviewCount": 12,
+   "districtEn": "Don Mueang",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Don Mueang"
+   }
   },
   {
    "id": "osm-w202933329",
@@ -28213,13 +28438,13 @@
     "at": "2026-11-08",
     "posts": []
    },
+   "districtEn": "Phra Nakhon",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Phra Nakhon"
+   }
   },
   {
    "id": "osm-w202933331",
@@ -28246,13 +28471,13 @@
     "at": "2026-11-08",
     "posts": []
    },
+   "districtEn": "Phra Nakhon",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Phra Nakhon"
+   }
   },
   {
    "id": "osm-w203053775",
@@ -28279,13 +28504,13 @@
     "at": "2026-11-08",
     "posts": []
    },
+   "districtEn": "Phra Nakhon",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Phra Nakhon"
+   }
   },
   {
    "id": "osm-w203906323",
@@ -28312,13 +28537,13 @@
     "at": "2026-11-08",
     "posts": []
    },
+   "districtEn": "Ratchathewi",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Ratchathewi"
+   }
   },
   {
    "id": "osm-w228099647",
@@ -28408,13 +28633,13 @@
      "tag": 1
     }
    ],
+   "districtEn": "Phra Nakhon",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Phra Nakhon"
+   }
   },
   {
    "id": "osm-w231405199",
@@ -28454,13 +28679,13 @@
    ],
    "hot": 3.1,
    "trend": 1,
+   "districtEn": "Bang Rak",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Bang Rak"
+   }
   },
   {
    "id": "osm-w231405200",
@@ -28487,13 +28712,13 @@
     "at": "2026-11-08",
     "posts": []
    },
+   "districtEn": "Bang Rak",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Bang Rak"
+   }
   },
   {
    "id": "osm-w231405201",
@@ -28520,13 +28745,13 @@
     "at": "2026-11-08",
     "posts": []
    },
+   "districtEn": "Bang Rak",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Bang Rak"
+   }
   },
   {
    "id": "osm-w231405202",
@@ -28554,13 +28779,13 @@
     "at": "2026-11-08",
     "posts": []
    },
+   "districtEn": "Bang Rak",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Bang Rak"
+   }
   },
   {
    "id": "osm-w241879483",
@@ -28661,13 +28886,13 @@
      }
     ]
    },
+   "districtEn": "Samphanthawong",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Samphanthawong"
+   }
   },
   {
    "id": "osm-w241879485",
@@ -28695,13 +28920,13 @@
     "at": "2026-11-08",
     "posts": []
    },
+   "districtEn": "Samphanthawong",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Samphanthawong"
+   }
   },
   {
    "id": "osm-w243729155",
@@ -28728,13 +28953,13 @@
     "at": "2026-11-08",
     "posts": []
    },
+   "districtEn": "Ratchathewi",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Ratchathewi"
+   }
   },
   {
    "id": "osm-w245925196",
@@ -28761,13 +28986,13 @@
     "at": "2026-11-08",
     "posts": []
    },
+   "districtEn": "Bang Phlat",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Bang Phlat"
+   }
   },
   {
    "id": "osm-w256159188",
@@ -28857,13 +29082,13 @@
      "tag": 1
     }
    ],
+   "districtEn": "Taling Chan",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Taling Chan"
+   }
   },
   {
    "id": "osm-w256159631",
@@ -28890,13 +29115,13 @@
     "at": "2026-11-08",
     "posts": []
    },
+   "districtEn": "Phasi Charoen",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Phasi Charoen"
+   }
   },
   {
    "id": "osm-w257267416",
@@ -28987,13 +29212,13 @@
      "tag": 1
     }
    ],
+   "districtEn": "Pathum Wan",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Pathum Wan"
+   }
   },
   {
    "id": "osm-w296528235",
@@ -29020,13 +29245,13 @@
     "at": "2026-11-08",
     "posts": []
    },
+   "districtEn": "Thon Buri",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Thon Buri"
+   }
   },
   {
    "id": "osm-w296528240",
@@ -29053,13 +29278,13 @@
     "at": "2026-11-08",
     "posts": []
    },
+   "districtEn": "Thon Buri",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Thon Buri"
+   }
   },
   {
    "id": "osm-w304092138",
@@ -29086,13 +29311,13 @@
     "at": "2026-11-08",
     "posts": []
    },
+   "districtEn": "Thon Buri",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Thon Buri"
+   }
   },
   {
    "id": "osm-w305102104",
@@ -29119,13 +29344,13 @@
     "at": "2026-11-08",
     "posts": []
    },
+   "districtEn": "Pom Prap Sattru Phai",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Pom Prap Sattru Phai"
+   }
   },
   {
    "id": "osm-w313679048",
@@ -29231,13 +29456,13 @@
    },
    "hot": 3.7,
    "trend": 1,
+   "districtEn": "Sai Mai",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Sai Mai"
+   }
   },
   {
    "id": "osm-w318678214",
@@ -29256,13 +29481,13 @@
    },
    "fetchedAt": "2026-11-07T02:04:40.479Z",
    "district": "เมืองสมุทรสาคร",
+   "districtEn": "Mueang Samut Sakhon",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Mueang Samut Sakhon"
+   }
   },
   {
    "id": "osm-w320617683",
@@ -29346,13 +29571,13 @@
     }
    ],
    "reviewCount": 14,
+   "districtEn": "Yan Nawa",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Yan Nawa"
+   }
   },
   {
    "id": "osm-w321528547",
@@ -29442,13 +29667,13 @@
     }
    ],
    "reviewCount": 21,
+   "districtEn": "Lat Krabang",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Lat Krabang"
+   }
   },
   {
    "id": "osm-w322604729",
@@ -29478,11 +29703,11 @@
     "at": "2026-11-08",
     "posts": []
    },
+   "districtEn": "Mueang Chiang Mai",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Mueang Chiang Mai"
+   }
   },
   {
    "id": "osm-w327812601",
@@ -29509,13 +29734,13 @@
     "at": "2026-11-08",
     "posts": []
    },
+   "districtEn": "Yan Nawa",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Yan Nawa"
+   }
   },
   {
    "id": "osm-w331795136",
@@ -29531,13 +29756,13 @@
    "summary": {},
    "fetchedAt": "2026-11-07T02:04:47.255Z",
    "district": "ดินแดง",
+   "districtEn": "Din Daeng",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Din Daeng"
+   }
   },
   {
    "id": "osm-w332853807",
@@ -29627,13 +29852,13 @@
      "tag": 1
     }
    ],
+   "districtEn": "Sathon",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Sathon"
+   }
   },
   {
    "id": "osm-w333177939",
@@ -29660,13 +29885,13 @@
     "at": "2026-11-08",
     "posts": []
    },
+   "districtEn": "Ratchathewi",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Ratchathewi"
+   }
   },
   {
    "id": "osm-w333223513",
@@ -29693,13 +29918,13 @@
     "at": "2026-11-08",
     "posts": []
    },
+   "districtEn": "Pom Prap Sattru Phai",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Pom Prap Sattru Phai"
+   }
   },
   {
    "id": "osm-w333223516",
@@ -29726,13 +29951,13 @@
     "at": "2026-11-08",
     "posts": []
    },
+   "districtEn": "Pom Prap Sattru Phai",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Pom Prap Sattru Phai"
+   }
   },
   {
    "id": "osm-w333223518",
@@ -29759,13 +29984,13 @@
     "at": "2026-11-08",
     "posts": []
    },
+   "districtEn": "Phra Nakhon",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Phra Nakhon"
+   }
   },
   {
    "id": "osm-w333223519",
@@ -29792,13 +30017,13 @@
     "at": "2026-11-08",
     "posts": []
    },
+   "districtEn": "Pom Prap Sattru Phai",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Pom Prap Sattru Phai"
+   }
   },
   {
    "id": "osm-w333223617",
@@ -29825,13 +30050,13 @@
     "at": "2026-11-08",
     "posts": []
    },
+   "districtEn": "Pom Prap Sattru Phai",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Pom Prap Sattru Phai"
+   }
   },
   {
    "id": "osm-w333227699",
@@ -29858,13 +30083,13 @@
     "at": "2026-11-08",
     "posts": []
    },
+   "districtEn": "Bangkok Noi",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Bangkok Noi"
+   }
   },
   {
    "id": "osm-w333227704",
@@ -29892,13 +30117,13 @@
     "at": "2026-11-08",
     "posts": []
    },
+   "districtEn": "Bangkok Noi",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Bangkok Noi"
+   }
   },
   {
    "id": "osm-w333227705",
@@ -29925,13 +30150,13 @@
     "at": "2026-11-08",
     "posts": []
    },
+   "districtEn": "Bangkok Noi",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Bangkok Noi"
+   }
   },
   {
    "id": "osm-w333233933",
@@ -29959,13 +30184,13 @@
     "at": "2026-11-08",
     "posts": []
    },
+   "districtEn": "Dusit",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Dusit"
+   }
   },
   {
    "id": "osm-w333233934",
@@ -30005,13 +30230,13 @@
      "th": "data/thumbs/7685330429531980289-0.webp"
     }
    ],
+   "districtEn": "Bang Phlat",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Bang Phlat"
+   }
   },
   {
    "id": "osm-w333233935",
@@ -30038,13 +30263,13 @@
     "at": "2026-11-08",
     "posts": []
    },
+   "districtEn": "Bang Phlat",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Bang Phlat"
+   }
   },
   {
    "id": "osm-w337817897",
@@ -30060,13 +30285,13 @@
    "summary": {},
    "fetchedAt": "2026-11-07T02:05:08.551Z",
    "district": "ธนบุรี",
+   "districtEn": "Thon Buri",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Thon Buri"
+   }
   },
   {
    "id": "osm-w337996235",
@@ -30093,13 +30318,13 @@
     "at": "2026-11-08",
     "posts": []
    },
+   "districtEn": "Thon Buri",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Thon Buri"
+   }
   },
   {
    "id": "osm-w342343927",
@@ -30126,13 +30351,13 @@
     "at": "2026-11-08",
     "posts": []
    },
+   "districtEn": "Phra Nakhon",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Phra Nakhon"
+   }
   },
   {
    "id": "osm-w342346818",
@@ -30159,13 +30384,13 @@
     "at": "2026-11-08",
     "posts": []
    },
+   "districtEn": "Bangkok Yai",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Bangkok Yai"
+   }
   },
   {
    "id": "osm-w342346819",
@@ -30193,13 +30418,13 @@
     "at": "2026-11-08",
     "posts": []
    },
+   "districtEn": "Bangkok Yai",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Bangkok Yai"
+   }
   },
   {
    "id": "osm-w342346820",
@@ -30226,13 +30451,13 @@
     "at": "2026-11-08",
     "posts": []
    },
+   "districtEn": "Bangkok Yai",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Bangkok Yai"
+   }
   },
   {
    "id": "osm-w342355805",
@@ -30259,13 +30484,13 @@
     "at": "2026-11-08",
     "posts": []
    },
+   "districtEn": "Thon Buri",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Thon Buri"
+   }
   },
   {
    "id": "osm-w342368970",
@@ -30293,13 +30518,13 @@
     "at": "2026-11-08",
     "posts": []
    },
+   "districtEn": "Khlong San",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Khlong San"
+   }
   },
   {
    "id": "osm-w342368971",
@@ -30326,13 +30551,13 @@
     "at": "2026-11-08",
     "posts": []
    },
+   "districtEn": "Thon Buri",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Thon Buri"
+   }
   },
   {
    "id": "osm-w342384923",
@@ -30359,13 +30584,13 @@
     "at": "2026-11-08",
     "posts": []
    },
+   "districtEn": "Khlong San",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Khlong San"
+   }
   },
   {
    "id": "osm-w342451145",
@@ -30392,13 +30617,13 @@
     "at": "2026-11-08",
     "posts": []
    },
+   "districtEn": "Bangkok Yai",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Bangkok Yai"
+   }
   },
   {
    "id": "osm-w342451146",
@@ -30425,13 +30650,13 @@
     "at": "2026-11-08",
     "posts": []
    },
+   "districtEn": "Bangkok Yai",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Bangkok Yai"
+   }
   },
   {
    "id": "osm-w342451147",
@@ -30458,13 +30683,13 @@
     "at": "2026-11-08",
     "posts": []
    },
+   "districtEn": "Bangkok Yai",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Bangkok Yai"
+   }
   },
   {
    "id": "osm-w342451148",
@@ -30544,13 +30769,13 @@
      "tag": 1
     }
    ],
+   "districtEn": "Phasi Charoen",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Phasi Charoen"
+   }
   },
   {
    "id": "osm-w342451149",
@@ -30577,13 +30802,13 @@
     "at": "2026-11-08",
     "posts": []
    },
+   "districtEn": "Phasi Charoen",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Phasi Charoen"
+   }
   },
   {
    "id": "osm-w342451150",
@@ -30634,13 +30859,13 @@
      "th": "data/thumbs/7673127978309517842-0.webp"
     }
    ],
+   "districtEn": "Bangkok Yai",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Bangkok Yai"
+   }
   },
   {
    "id": "osm-w342451151",
@@ -30667,13 +30892,13 @@
     "at": "2026-11-08",
     "posts": []
    },
+   "districtEn": "Phasi Charoen",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Phasi Charoen"
+   }
   },
   {
    "id": "osm-w342455404",
@@ -30700,13 +30925,13 @@
     "at": "2026-11-08",
     "posts": []
    },
+   "districtEn": "Dusit",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Dusit"
+   }
   },
   {
    "id": "osm-w342462697",
@@ -30734,13 +30959,13 @@
     "at": "2026-11-08",
     "posts": []
    },
+   "districtEn": "Bang Phlat",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Bang Phlat"
+   }
   },
   {
    "id": "osm-w342505962",
@@ -30767,13 +30992,13 @@
     "at": "2026-11-08",
     "posts": []
    },
+   "districtEn": "Dusit",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Dusit"
+   }
   },
   {
    "id": "osm-w342513647",
@@ -30873,13 +31098,13 @@
      }
     ]
    },
+   "districtEn": "Bang Kho Laem",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Bang Kho Laem"
+   }
   },
   {
    "id": "osm-w342517137",
@@ -30906,13 +31131,13 @@
     "at": "2026-11-08",
     "posts": []
    },
+   "districtEn": "Bang Kho Laem",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Bang Kho Laem"
+   }
   },
   {
    "id": "osm-w342518948",
@@ -30939,13 +31164,13 @@
     "at": "2026-11-08",
     "posts": []
    },
+   "districtEn": "Bang Kho Laem",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Bang Kho Laem"
+   }
   },
   {
    "id": "osm-w342582505",
@@ -31044,13 +31269,13 @@
      }
     ]
    },
+   "districtEn": "Bang Phlat",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Bang Phlat"
+   }
   },
   {
    "id": "osm-w347269595",
@@ -31077,13 +31302,13 @@
     "at": "2026-11-08",
     "posts": []
    },
+   "districtEn": "Phra Nakhon",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Phra Nakhon"
+   }
   },
   {
    "id": "osm-w348393896",
@@ -31110,13 +31335,13 @@
     "at": "2026-11-08",
     "posts": []
    },
+   "districtEn": "Pom Prap Sattru Phai",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Pom Prap Sattru Phai"
+   }
   },
   {
    "id": "osm-w348423322",
@@ -31143,13 +31368,13 @@
     "at": "2026-11-08",
     "posts": []
    },
+   "districtEn": "Dusit",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Dusit"
+   }
   },
   {
    "id": "osm-w348425299",
@@ -31177,13 +31402,13 @@
     "at": "2026-11-08",
     "posts": []
    },
+   "districtEn": "Dusit",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Dusit"
+   }
   },
   {
    "id": "osm-w348799504",
@@ -31273,13 +31498,13 @@
      "tag": 1
     }
    ],
+   "districtEn": "Dusit",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Dusit"
+   }
   },
   {
    "id": "osm-w352819382",
@@ -31306,13 +31531,13 @@
     "at": "2026-11-08",
     "posts": []
    },
+   "districtEn": "Thon Buri",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Thon Buri"
+   }
   },
   {
    "id": "osm-w375034558",
@@ -31356,13 +31581,13 @@
    "summary": {},
    "fetchedAt": "2026-11-07T02:05:54.067Z",
    "district": "บางกอกใหญ่",
+   "districtEn": "Bangkok Yai",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Bangkok Yai"
+   }
   },
   {
    "id": "osm-w375807122",
@@ -31470,13 +31695,13 @@
      }
     ]
    },
+   "districtEn": "Bangkok Yai",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Bangkok Yai"
+   }
   },
   {
    "id": "osm-w375809412",
@@ -31503,13 +31728,13 @@
     "at": "2026-11-08",
     "posts": []
    },
+   "districtEn": "Phasi Charoen",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Phasi Charoen"
+   }
   },
   {
    "id": "osm-w376296691",
@@ -31599,13 +31824,13 @@
      "tag": 1
     }
    ],
+   "districtEn": "Taling Chan",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Taling Chan"
+   }
   },
   {
    "id": "osm-w376296694",
@@ -31632,13 +31857,13 @@
     "at": "2026-11-08",
     "posts": []
    },
+   "districtEn": "Bangkok Noi",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Bangkok Noi"
+   }
   },
   {
    "id": "osm-w376297877",
@@ -31665,13 +31890,13 @@
     "at": "2026-11-08",
     "posts": []
    },
+   "districtEn": "Taling Chan",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Taling Chan"
+   }
   },
   {
    "id": "osm-w376297878",
@@ -31698,13 +31923,13 @@
     "at": "2026-11-08",
     "posts": []
    },
+   "districtEn": "Taling Chan",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Taling Chan"
+   }
   },
   {
    "id": "osm-w376299014",
@@ -31731,13 +31956,13 @@
     "at": "2026-11-08",
     "posts": []
    },
+   "districtEn": "Bangkok Noi",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Bangkok Noi"
+   }
   },
   {
    "id": "osm-w376302664",
@@ -31797,13 +32022,13 @@
      "tag": 1
     }
    ],
+   "districtEn": "Bangkok Noi",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Bangkok Noi"
+   }
   },
   {
    "id": "osm-w376302665",
@@ -31830,13 +32055,13 @@
     "at": "2026-11-08",
     "posts": []
    },
+   "districtEn": "Bangkok Noi",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Bangkok Noi"
+   }
   },
   {
    "id": "osm-w376302666",
@@ -31896,13 +32121,13 @@
      "tag": 1
     }
    ],
+   "districtEn": "Bangkok Noi",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Bangkok Noi"
+   }
   },
   {
    "id": "osm-w376302667",
@@ -31992,13 +32217,13 @@
      "tag": 1
     }
    ],
+   "districtEn": "Bangkok Noi",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Bangkok Noi"
+   }
   },
   {
    "id": "osm-w376302668",
@@ -32091,13 +32316,13 @@
      "th": "data/thumbs/7600459539091112464-0.webp"
     }
    ],
+   "districtEn": "Bangkok Noi",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Bangkok Noi"
+   }
   },
   {
    "id": "osm-w376303736",
@@ -32124,13 +32349,13 @@
     "at": "2026-11-08",
     "posts": []
    },
+   "districtEn": "Bang Phlat",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Bang Phlat"
+   }
   },
   {
    "id": "osm-w376303737",
@@ -32170,13 +32395,13 @@
      "tag": 1
     }
    ],
+   "districtEn": "Bang Phlat",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Bang Phlat"
+   }
   },
   {
    "id": "osm-w376303739",
@@ -32203,13 +32428,13 @@
     "at": "2026-11-08",
     "posts": []
    },
+   "districtEn": "Bang Phlat",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Bang Phlat"
+   }
   },
   {
    "id": "osm-w376303740",
@@ -32236,13 +32461,13 @@
     "at": "2026-11-08",
     "posts": []
    },
+   "districtEn": "Bang Phlat",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Bang Phlat"
+   }
   },
   {
    "id": "osm-w376311199",
@@ -32258,13 +32483,13 @@
    "summary": {},
    "fetchedAt": "2026-11-07T02:06:19.339Z",
    "district": "ตลิ่งชัน",
+   "districtEn": "Taling Chan",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Taling Chan"
+   }
   },
   {
    "id": "osm-w376311200",
@@ -32291,13 +32516,13 @@
     "at": "2026-11-08",
     "posts": []
    },
+   "districtEn": "Bang Phlat",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Bang Phlat"
+   }
   },
   {
    "id": "osm-w376311482",
@@ -32324,13 +32549,13 @@
     "at": "2026-11-08",
     "posts": []
    },
+   "districtEn": "Bangkok Noi",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Bangkok Noi"
+   }
   },
   {
    "id": "osm-w376378291",
@@ -32420,13 +32645,13 @@
      "tag": 1
     }
    ],
+   "districtEn": "Taling Chan",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Taling Chan"
+   }
   },
   {
    "id": "osm-w376378499",
@@ -32453,13 +32678,13 @@
     "at": "2026-11-08",
     "posts": []
    },
+   "districtEn": "Phasi Charoen",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Phasi Charoen"
+   }
   },
   {
    "id": "osm-w376417869",
@@ -32486,13 +32711,13 @@
     "at": "2026-11-08",
     "posts": []
    },
+   "districtEn": "Khlong Toei",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Khlong Toei"
+   }
   },
   {
    "id": "osm-w376674386",
@@ -32519,13 +32744,13 @@
     "at": "2026-11-08",
     "posts": []
    },
+   "districtEn": "Thon Buri",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Thon Buri"
+   }
   },
   {
    "id": "osm-w376674387",
@@ -32552,13 +32777,13 @@
     "at": "2026-11-08",
     "posts": []
    },
+   "districtEn": "Khlong San",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Khlong San"
+   }
   },
   {
    "id": "osm-w376674388",
@@ -32598,13 +32823,13 @@
      "tag": 1
     }
    ],
+   "districtEn": "Thon Buri",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Thon Buri"
+   }
   },
   {
    "id": "osm-w376674390",
@@ -32631,13 +32856,13 @@
     "at": "2026-11-08",
     "posts": []
    },
+   "districtEn": "Khlong San",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Khlong San"
+   }
   },
   {
    "id": "osm-w376674391",
@@ -32664,13 +32889,13 @@
     "at": "2026-11-08",
     "posts": []
    },
+   "districtEn": "Khlong San",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Khlong San"
+   }
   },
   {
    "id": "osm-w376675935",
@@ -32697,13 +32922,13 @@
     "at": "2026-11-08",
     "posts": []
    },
+   "districtEn": "Thon Buri",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Thon Buri"
+   }
   },
   {
    "id": "osm-w376675937",
@@ -32730,13 +32955,13 @@
     "at": "2026-11-08",
     "posts": []
    },
+   "districtEn": "Phasi Charoen",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Phasi Charoen"
+   }
   },
   {
    "id": "osm-w376675938",
@@ -32763,13 +32988,13 @@
     "at": "2026-11-08",
     "posts": []
    },
+   "districtEn": "Thon Buri",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Thon Buri"
+   }
   },
   {
    "id": "osm-w376675939",
@@ -32796,13 +33021,13 @@
     "at": "2026-11-08",
     "posts": []
    },
+   "districtEn": "Thon Buri",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Thon Buri"
+   }
   },
   {
    "id": "osm-w376675940",
@@ -32829,13 +33054,13 @@
     "at": "2026-11-08",
     "posts": []
    },
+   "districtEn": "Thon Buri",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Thon Buri"
+   }
   },
   {
    "id": "osm-w376675941",
@@ -32856,13 +33081,13 @@
    "district": "ธนบุรี",
    "imageAi": true,
    "imageScore": 8,
+   "districtEn": "Thon Buri",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Thon Buri"
+   }
   },
   {
    "id": "osm-w376675942",
@@ -32883,13 +33108,13 @@
    "district": "ธนบุรี",
    "imageAi": true,
    "imageScore": 7,
+   "districtEn": "Thon Buri",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Thon Buri"
+   }
   },
   {
    "id": "osm-w376675943",
@@ -32973,13 +33198,13 @@
      "tag": 1
     }
    ],
+   "districtEn": "Phasi Charoen",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Phasi Charoen"
+   }
   },
   {
    "id": "osm-w376675944",
@@ -33000,13 +33225,13 @@
    "district": "ธนบุรี",
    "imageAi": true,
    "imageScore": 7,
+   "districtEn": "Thon Buri",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Thon Buri"
+   }
   },
   {
    "id": "osm-w376675945",
@@ -33027,13 +33252,13 @@
    "district": "ภาษีเจริญ",
    "imageAi": true,
    "imageScore": 6,
+   "districtEn": "Phasi Charoen",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Phasi Charoen"
+   }
   },
   {
    "id": "osm-w376675946",
@@ -33117,13 +33342,13 @@
      "tag": 1
     }
    ],
+   "districtEn": "Phasi Charoen",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Phasi Charoen"
+   }
   },
   {
    "id": "osm-w376675947",
@@ -33214,13 +33439,13 @@
    ],
    "hot": 15.5,
    "trend": 7,
+   "districtEn": "Phasi Charoen",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Phasi Charoen"
+   }
   },
   {
    "id": "osm-w376675953",
@@ -33304,13 +33529,13 @@
      "tag": 1
     }
    ],
+   "districtEn": "Phasi Charoen",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Phasi Charoen"
+   }
   },
   {
    "id": "osm-w376679547",
@@ -33394,13 +33619,13 @@
      "tag": 1
     }
    ],
+   "districtEn": "Bang Sue",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Bang Sue"
+   }
   },
   {
    "id": "osm-w376679550",
@@ -33421,13 +33646,13 @@
    "district": "บางซื่อ",
    "imageAi": true,
    "imageScore": 6,
+   "districtEn": "Bang Sue",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Bang Sue"
+   }
   },
   {
    "id": "osm-w376833458",
@@ -33448,13 +33673,13 @@
    "district": "บางพลัด",
    "imageAi": true,
    "imageScore": 6,
+   "districtEn": "Bang Phlat",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Bang Phlat"
+   }
   },
   {
    "id": "osm-w376833459",
@@ -33488,13 +33713,13 @@
      "tag": 1
     }
    ],
+   "districtEn": "Bang Kruai",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Bang Kruai"
+   }
   },
   {
    "id": "osm-w376835531",
@@ -33512,13 +33737,13 @@
    },
    "fetchedAt": "2026-11-07T02:07:04.323Z",
    "district": "บางกรวย",
+   "districtEn": "Bang Kruai",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Bang Kruai"
+   }
   },
   {
    "id": "osm-w376863072",
@@ -33582,13 +33807,13 @@
      "tag": 1
     }
    ],
+   "districtEn": "Bang Phlat",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Bang Phlat"
+   }
   },
   {
    "id": "osm-w376863074",
@@ -33609,13 +33834,13 @@
    "district": "บางกอกน้อย",
    "imageAi": true,
    "imageScore": 6,
+   "districtEn": "Bangkok Noi",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Bangkok Noi"
+   }
   },
   {
    "id": "osm-w376872751",
@@ -33636,13 +33861,13 @@
    "district": "บางขุนเทียน",
    "imageAi": true,
    "imageScore": 6,
+   "districtEn": "Bang Khun Thian",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Bang Khun Thian"
+   }
   },
   {
    "id": "osm-w376904783",
@@ -33716,13 +33941,13 @@
      "tag": 1
     }
    ],
+   "districtEn": "Bang Khae",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Bang Khae"
+   }
   },
   {
    "id": "osm-w377879332",
@@ -33813,13 +34038,13 @@
    ],
    "hot": 3.9,
    "trend": 2,
+   "districtEn": "Mueang Nonthaburi",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Mueang Nonthaburi"
+   }
   },
   {
    "id": "osm-w377882070",
@@ -33840,13 +34065,13 @@
    "imageCredit": "Archy36 · CC BY-SA 3.0",
    "imageAi": true,
    "imageScore": 6,
+   "districtEn": "Mueang Nonthaburi",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Mueang Nonthaburi"
+   }
   },
   {
    "id": "osm-w377882071",
@@ -33862,13 +34087,13 @@
    "summary": {},
    "fetchedAt": "2026-11-07T02:07:15.258Z",
    "district": "บางกรวย",
+   "districtEn": "Bang Kruai",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Bang Kruai"
+   }
   },
   {
    "id": "osm-w377888067",
@@ -33889,13 +34114,13 @@
    "district": "บางพลัด",
    "imageAi": true,
    "imageScore": 7,
+   "districtEn": "Bang Phlat",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Bang Phlat"
+   }
   },
   {
    "id": "osm-w377888078",
@@ -33916,13 +34141,13 @@
    "district": "บางพลัด",
    "imageAi": true,
    "imageScore": 7,
+   "districtEn": "Bang Phlat",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Bang Phlat"
+   }
   },
   {
    "id": "osm-w377888079",
@@ -33944,13 +34169,13 @@
    "imageCredit": "Dharmadana · CC BY-SA 4.0",
    "imageAi": true,
    "imageScore": 6,
+   "districtEn": "Bang Phlat",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Bang Phlat"
+   }
   },
   {
    "id": "osm-w377888080",
@@ -33971,13 +34196,13 @@
    "imageCredit": "กสิณธร ราชโอรส · CC BY-SA 4.0",
    "imageAi": true,
    "imageScore": 7,
+   "districtEn": "Bang Phlat",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Bang Phlat"
+   }
   },
   {
    "id": "osm-w377888677",
@@ -33998,13 +34223,13 @@
    "district": "ดุสิต",
    "imageAi": true,
    "imageScore": 5,
+   "districtEn": "Dusit",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Dusit"
+   }
   },
   {
    "id": "osm-w377894776",
@@ -34025,13 +34250,13 @@
    "district": "ธนบุรี",
    "imageAi": true,
    "imageScore": 6,
+   "districtEn": "Thon Buri",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Thon Buri"
+   }
   },
   {
    "id": "osm-w377894777",
@@ -34052,13 +34277,13 @@
    "district": "ธนบุรี",
    "imageAi": true,
    "imageScore": 7,
+   "districtEn": "Thon Buri",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Thon Buri"
+   }
   },
   {
    "id": "osm-w377894778",
@@ -34079,13 +34304,13 @@
    "district": "จอมทอง",
    "imageAi": true,
    "imageScore": 6,
+   "districtEn": "Chom Thong",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Chom Thong"
+   }
   },
   {
    "id": "osm-w377894843",
@@ -34106,13 +34331,13 @@
    "district": "ธนบุรี",
    "imageAi": true,
    "imageScore": 6,
+   "districtEn": "Thon Buri",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Thon Buri"
+   }
   },
   {
    "id": "osm-w377896478",
@@ -34133,13 +34358,13 @@
    "district": "ตลิ่งชัน",
    "imageAi": true,
    "imageScore": 7,
+   "districtEn": "Taling Chan",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Taling Chan"
+   }
   },
   {
    "id": "osm-w377896480",
@@ -34182,13 +34407,13 @@
    ],
    "hot": 6.2,
    "trend": 2,
+   "districtEn": "Bangkok Noi",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Bangkok Noi"
+   }
   },
   {
    "id": "osm-w377896483",
@@ -34209,13 +34434,13 @@
    "district": "บางกอกน้อย",
    "imageAi": true,
    "imageScore": 6,
+   "districtEn": "Bangkok Noi",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Bangkok Noi"
+   }
   },
   {
    "id": "osm-w378152030",
@@ -34259,13 +34484,13 @@
      "tag": 1
     }
    ],
+   "districtEn": "Taling Chan",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Taling Chan"
+   }
   },
   {
    "id": "osm-w378171108",
@@ -34329,13 +34554,13 @@
      "tag": 1
     }
    ],
+   "districtEn": "Rat Burana",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Rat Burana"
+   }
   },
   {
    "id": "osm-w378171110",
@@ -34356,13 +34581,13 @@
    "district": "จอมทอง",
    "imageAi": true,
    "imageScore": 7,
+   "districtEn": "Chom Thong",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Chom Thong"
+   }
   },
   {
    "id": "osm-w378171112",
@@ -34441,13 +34666,13 @@
      "tag": 1
     }
    ],
+   "districtEn": "Rat Burana",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Rat Burana"
+   }
   },
   {
    "id": "osm-w378171114",
@@ -34468,13 +34693,13 @@
    "district": "พระประแดง",
    "imageAi": true,
    "imageScore": 7,
+   "districtEn": "Phra Pradaeng",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Phra Pradaeng"
+   }
   },
   {
    "id": "osm-w378171189",
@@ -34495,13 +34720,13 @@
    "imageCredit": "Two Steps Behind · BY-NC 2.0",
    "imageAi": true,
    "imageScore": 7,
+   "districtEn": "Rat Burana",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Rat Burana"
+   }
   },
   {
    "id": "osm-w378173837",
@@ -34522,13 +34747,13 @@
    "district": "พระประแดง",
    "imageAi": true,
    "imageScore": 7,
+   "districtEn": "Phra Pradaeng",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Phra Pradaeng"
+   }
   },
   {
    "id": "osm-w378173840",
@@ -34549,13 +34774,13 @@
    "district": "ยานนาวา",
    "imageAi": true,
    "imageScore": 8,
+   "districtEn": "Yan Nawa",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Yan Nawa"
+   }
   },
   {
    "id": "osm-w378173842",
@@ -34610,13 +34835,13 @@
    ],
    "hot": 10.3,
    "trend": 3,
+   "districtEn": "Yan Nawa",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Yan Nawa"
+   }
   },
   {
    "id": "osm-w378173843",
@@ -34700,13 +34925,13 @@
      "tag": 1
     }
    ],
+   "districtEn": "Phra Pradaeng",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Phra Pradaeng"
+   }
   },
   {
    "id": "osm-w378173844",
@@ -34727,13 +34952,13 @@
    "district": "พระประแดง",
    "imageAi": true,
    "imageScore": 9,
+   "districtEn": "Phra Pradaeng",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Phra Pradaeng"
+   }
   },
   {
    "id": "osm-w378173845",
@@ -34780,13 +35005,13 @@
    "district": "พระประแดง",
    "imageAi": true,
    "imageScore": 9,
+   "districtEn": "Phra Pradaeng",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Phra Pradaeng"
+   }
   },
   {
    "id": "osm-w378173860",
@@ -34815,13 +35040,13 @@
      "tag": 1
     }
    ],
+   "districtEn": "Rat Burana",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Rat Burana"
+   }
   },
   {
    "id": "osm-w378274467",
@@ -34930,13 +35155,13 @@
    "district": "พระประแดง",
    "imageAi": true,
    "imageScore": 5,
+   "districtEn": "Phra Pradaeng",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Phra Pradaeng"
+   }
   },
   {
    "id": "osm-w378275385",
@@ -34978,13 +35203,13 @@
    "summary": {},
    "fetchedAt": "2026-11-07T02:08:03.535Z",
    "district": "ราษฎร์บูรณะ",
+   "districtEn": "Rat Burana",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Rat Burana"
+   }
   },
   {
    "id": "osm-w378277583",
@@ -35069,13 +35294,13 @@
      "tag": 1
     }
    ],
+   "districtEn": "Thung Khru",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Thung Khru"
+   }
   },
   {
    "id": "osm-w378278187",
@@ -35096,13 +35321,13 @@
    "district": "ธนบุรี",
    "imageAi": true,
    "imageScore": 6,
+   "districtEn": "Thon Buri",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Thon Buri"
+   }
   },
   {
    "id": "osm-w378294315",
@@ -35123,13 +35348,13 @@
    "district": "จอมทอง",
    "imageAi": true,
    "imageScore": 7,
+   "districtEn": "Chom Thong",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Chom Thong"
+   }
   },
   {
    "id": "osm-w378294316",
@@ -35150,13 +35375,13 @@
    "district": "จอมทอง",
    "imageAi": true,
    "imageScore": 7,
+   "districtEn": "Chom Thong",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Chom Thong"
+   }
   },
   {
    "id": "osm-w378294319",
@@ -35240,13 +35465,13 @@
     }
    ],
    "reviewCount": 9,
+   "districtEn": "Bang Khun Thian",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Bang Khun Thian"
+   }
   },
   {
    "id": "osm-w378330226",
@@ -35267,13 +35492,13 @@
    "district": "พระประแดง",
    "imageAi": true,
    "imageScore": 7,
+   "districtEn": "Phra Pradaeng",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Phra Pradaeng"
+   }
   },
   {
    "id": "osm-w378330227",
@@ -35357,13 +35582,13 @@
     }
    ],
    "reviewCount": 7,
+   "districtEn": "Yan Nawa",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Yan Nawa"
+   }
   },
   {
    "id": "osm-w378330229",
@@ -35384,13 +35609,13 @@
    "district": "พระประแดง",
    "imageAi": true,
    "imageScore": 7,
+   "districtEn": "Phra Pradaeng",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Phra Pradaeng"
+   }
   },
   {
    "id": "osm-w378330230",
@@ -35445,13 +35670,13 @@
     }
    ],
    "reviewCount": 3,
+   "districtEn": "Yan Nawa",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Yan Nawa"
+   }
   },
   {
    "id": "osm-w378330231",
@@ -35472,13 +35697,13 @@
    "district": "ยานนาวา",
    "imageAi": true,
    "imageScore": 5,
+   "districtEn": "Yan Nawa",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Yan Nawa"
+   }
   },
   {
    "id": "osm-w378330234",
@@ -35499,13 +35724,13 @@
    "district": "ยานนาวา",
    "imageAi": true,
    "imageScore": 6,
+   "districtEn": "Yan Nawa",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Yan Nawa"
+   }
   },
   {
    "id": "osm-w378330236",
@@ -35526,13 +35751,13 @@
    "district": "พระประแดง",
    "imageAi": true,
    "imageScore": 6,
+   "districtEn": "Phra Pradaeng",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Phra Pradaeng"
+   }
   },
   {
    "id": "osm-w378330237",
@@ -35553,13 +35778,13 @@
    "district": "พระประแดง",
    "imageAi": true,
    "imageScore": 5,
+   "districtEn": "Phra Pradaeng",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Phra Pradaeng"
+   }
   },
   {
    "id": "osm-w378530686",
@@ -35643,13 +35868,13 @@
     }
    ],
    "reviewCount": 6,
+   "districtEn": "Nong Khaem",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Nong Khaem"
+   }
   },
   {
    "id": "osm-w379073040",
@@ -35670,13 +35895,13 @@
    "imageCredit": "Dharmadana · CC BY-SA 4.0",
    "imageAi": true,
    "imageScore": 7,
+   "districtEn": "Thon Buri",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Thon Buri"
+   }
   },
   {
    "id": "osm-w379073927",
@@ -35697,13 +35922,13 @@
    "district": "บางกอกน้อย",
    "imageAi": true,
    "imageScore": 6,
+   "districtEn": "Bangkok Noi",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Bangkok Noi"
+   }
   },
   {
    "id": "osm-w379081002",
@@ -35724,13 +35949,13 @@
    "district": "บางกอกน้อย",
    "imageAi": true,
    "imageScore": 6,
+   "districtEn": "Bangkok Noi",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Bangkok Noi"
+   }
   },
   {
    "id": "osm-w379081006",
@@ -35751,13 +35976,13 @@
    "district": "บางกอกน้อย",
    "imageAi": true,
    "imageScore": 8,
+   "districtEn": "Bangkok Noi",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Bangkok Noi"
+   }
   },
   {
    "id": "osm-w379081007",
@@ -35778,13 +36003,13 @@
    "district": "บางกอกน้อย",
    "imageAi": true,
    "imageScore": 7,
+   "districtEn": "Bangkok Noi",
    "hours": "08:00-17:00",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Bangkok Noi"
+   }
   },
   {
    "id": "osm-n2156864010",
@@ -35985,6 +36210,8 @@
    ],
    "reviewCount": 22,
    "nameEn": true,
+   "district": "ปทุมวัน",
+   "districtEn": "Pathum Wan",
    "hours": "Mo-Su 10:00-20:00",
    "hoursSrc": "web",
    "entry": {
@@ -36044,9 +36271,7 @@
      }
     ],
     "src": "web"
-   },
-   "district": "ปทุมวัน",
-   "districtEn": "Pathum Wan"
+   }
   },
   {
    "id": "wd-Q37471",
@@ -36411,15 +36636,15 @@
    "imageCredit": "Chaiyathat · CC BY-SA 4.0",
    "imageAi": true,
    "imageScore": 8,
+   "district": "เมืองเชียงราย",
+   "districtEn": "Mueang Chiang Rai",
    "hours": "08:00-18:00",
    "hoursSrc": "typical",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "district": "เมืองเชียงราย",
-   "districtEn": "Mueang Chiang Rai"
+   }
   },
   {
    "id": "osm-n3277475708",
@@ -36755,11 +36980,11 @@
     }
    ],
    "reviewCount": 8,
+   "districtEn": "Khon San",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Khon San"
+   }
   },
   {
    "id": "osm-n5499015449",
@@ -36958,14 +37183,14 @@
    "fetchedAt": "2026-11-07T01:25:41.028Z",
    "imageAi": true,
    "imageScore": 9,
+   "district": "เกาะพะงัน",
+   "districtEn": "Ko Pha-ngan",
    "hours": "24/7",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "district": "เกาะพะงัน",
-   "districtEn": "Ko Pha-ngan"
+   }
   },
   {
    "id": "osm-r5846432",
@@ -37316,7 +37541,13 @@
      "tag": 1
     }
    ],
-   "reviewCount": 2
+   "reviewCount": 2,
+   "hours": "Tu-Su 10:00-16:00; Mo off",
+   "hoursSrc": "review",
+   "entry": {
+    "free": true,
+    "src": "review"
+   }
   },
   {
    "id": "wd-Q2094487",
@@ -37403,12 +37634,12 @@
    "reviewCount": 8,
    "imageAi": true,
    "imageScore": 8,
+   "district": "เกาะสมุย",
+   "districtEn": "Ko Samui",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "district": "เกาะสมุย",
-   "districtEn": "Ko Samui"
+   }
   },
   {
    "id": "wd-Q15238684",
@@ -38168,8 +38399,8 @@
    "reviewCount": 19,
    "imageAi": true,
    "imageScore": 8,
-   "websiteDead": "http://banglamphumuseum.treasury.go.th/",
-   "districtEn": "Phra Nakhon"
+   "districtEn": "Phra Nakhon",
+   "websiteDead": "http://banglamphumuseum.treasury.go.th/"
   },
   {
    "id": "osm-w1466799252",
@@ -38303,15 +38534,15 @@
    "reviewCount": 3,
    "imageAi": true,
    "imageScore": 6,
+   "district": "ทับสะแก",
+   "districtEn": "Thap Sakae",
    "hours": "08:00-18:00",
    "hoursSrc": "typical",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "district": "ทับสะแก",
-   "districtEn": "Thap Sakae"
+   }
   },
   {
    "id": "osm-n2231865009",
@@ -38589,14 +38820,14 @@
     }
    ],
    "reviewCount": 17,
+   "district": "ถลาง",
+   "districtEn": "Thalang",
    "hours": "24/7",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "district": "ถลาง",
-   "districtEn": "Thalang"
+   }
   },
   {
    "id": "osm-w180233580",
@@ -38616,14 +38847,14 @@
    "fetchedAt": "2026-11-07T01:25:59.590Z",
    "imageAi": true,
    "imageScore": 8,
+   "district": "เกาะสมุย",
+   "districtEn": "Ko Samui",
    "hours": "24/7",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "district": "เกาะสมุย",
-   "districtEn": "Ko Samui"
+   }
   },
   {
    "id": "osm-r5657696",
@@ -38658,14 +38889,14 @@
    ],
    "hot": 3.6,
    "trend": 1,
+   "district": "เมืองภูเก็ต",
+   "districtEn": "Mueang Phuket",
    "hours": "24/7",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "district": "เมืองภูเก็ต",
-   "districtEn": "Mueang Phuket"
+   }
   },
   {
    "id": "osm-r6162518",
@@ -38749,14 +38980,14 @@
     }
    ],
    "reviewCount": 16,
+   "district": "เมืองภูเก็ต",
+   "districtEn": "Mueang Phuket",
    "hours": "24/7",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "district": "เมืองภูเก็ต",
-   "districtEn": "Mueang Phuket"
+   }
   },
   {
    "id": "osm-r14010442",
@@ -38840,14 +39071,14 @@
     }
    ],
    "reviewCount": 22,
+   "district": "ถลาง",
+   "districtEn": "Thalang",
    "hours": "24/7",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "district": "ถลาง",
-   "districtEn": "Thalang"
+   }
   },
   {
    "id": "osm-n2769486127",
@@ -39311,8 +39542,8 @@
    "district": "เดิมบางนางบวช",
    "imageAi": true,
    "imageScore": 6,
-   "websiteDead": "https://coffeefarmcafe.business.site/",
-   "nameEn": true
+   "nameEn": true,
+   "websiteDead": "https://coffeefarmcafe.business.site/"
   },
   {
    "id": "osm-n10246276947",
@@ -39399,7 +39630,56 @@
      "tag": 1
     }
    ],
-   "reviewCount": 10
+   "reviewCount": 10,
+   "menuPrice": {
+    "min": 75,
+    "max": 99,
+    "items": [
+     {
+      "name": {
+       "th": "ครัวซองต์มินิ",
+       "en": "Mini Croissant"
+      },
+      "price": 35
+     },
+     {
+      "name": {
+       "th": "เอแคลร์",
+       "en": "Eclair"
+      },
+      "price": 75
+     },
+     {
+      "name": {
+       "th": "ขนมปังบัน",
+       "en": "Bun"
+      },
+      "price": 85
+     },
+     {
+      "name": {
+       "th": "ชีสพาย",
+       "en": "Cheese Pie"
+      },
+      "price": 95
+     },
+     {
+      "name": {
+       "th": "เค้กส้ม",
+       "en": "Orange Cake"
+      },
+      "price": 99
+     },
+     {
+      "name": {
+       "th": "ช็อกโกแลตเค้ก",
+       "en": "Chocolate Cake"
+      },
+      "price": 99
+     }
+    ],
+    "src": "review"
+   }
   },
   {
    "id": "osm-n10628291805",
@@ -39486,8 +39766,8 @@
     }
    ],
    "reviewCount": 2,
-   "websiteDead": "https://the-roof-by-sangthai.business.site/",
-   "districtEn": "Thawat Buri"
+   "districtEn": "Thawat Buri",
+   "websiteDead": "https://the-roof-by-sangthai.business.site/"
   },
   {
    "id": "osm-n10902432008",
@@ -39657,8 +39937,8 @@
    "summary": {},
    "fetchedAt": "2026-11-07T02:09:01.345Z",
    "district": "เมืองชุมพร",
-   "websiteDead": "https://www.meekhwamsook.com/",
-   "districtEn": "Mueang Chumphon"
+   "districtEn": "Mueang Chumphon",
+   "websiteDead": "https://www.meekhwamsook.com/"
   },
   {
    "id": "osm-n13057327865",
@@ -39901,12 +40181,12 @@
    "summary": {},
    "fetchedAt": "2026-11-07T02:09:02.704Z",
    "district": "เมืองภูเก็ต",
+   "districtEn": "Mueang Phuket",
    "menuPrice": {
     "min": 50,
     "max": 600,
     "src": "web"
-   },
-   "districtEn": "Mueang Phuket"
+   }
   },
   {
    "id": "osm-w1162793798",
@@ -40028,9 +40308,9 @@
    "imageCredit": "Iudexvivorum · CC0",
    "fetchedAt": "2026-11-06T20:04:28.903Z",
    "views": 0,
-   "websiteDead": "http://library2.parliament.go.th/museum/mainmenu.html",
    "district": "ดุสิต",
-   "districtEn": "Dusit"
+   "districtEn": "Dusit",
+   "websiteDead": "http://library2.parliament.go.th/museum/mainmenu.html"
   },
   {
    "id": "wd-Q11310084",
@@ -40301,9 +40581,9 @@
    "province": "phang-nga",
    "summary": {},
    "fetchedAt": "2026-11-06T20:07:19.756Z",
-   "websiteDead": "https://elephantsanctuaryandspa.com/",
    "district": "เมืองพังงา",
-   "districtEn": "Mueang Phang-nga"
+   "districtEn": "Mueang Phang-nga",
+   "websiteDead": "https://elephantsanctuaryandspa.com/"
   },
   {
    "id": "osm-w1358889801",
@@ -40908,15 +41188,15 @@
    "reviewCount": 24,
    "imageAi": true,
    "imageScore": 9,
+   "district": "คุระบุรี",
+   "districtEn": "Khura Buri",
    "hours": "08:00-18:00",
    "hoursSrc": "typical",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "district": "คุระบุรี",
-   "districtEn": "Khura Buri"
+   }
   },
   {
    "id": "osm-r2969526",
@@ -41140,15 +41420,15 @@
    "fetchedAt": "2026-11-06T20:14:04.634Z",
    "imageAi": true,
    "imageScore": 8,
+   "district": "อ่าวลึก",
+   "districtEn": "Ao Luek",
    "hours": "08:00-18:00",
    "hoursSrc": "typical",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "district": "อ่าวลึก",
-   "districtEn": "Ao Luek"
+   }
   },
   {
    "id": "osm-r3284822",
@@ -41231,15 +41511,15 @@
    "reviewCount": 8,
    "imageAi": true,
    "imageScore": 9,
+   "district": "ท้ายเหมือง",
+   "districtEn": "Thai Mueang",
    "hours": "08:00-18:00",
    "hoursSrc": "typical",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "district": "ท้ายเหมือง",
-   "districtEn": "Thai Mueang"
+   }
   },
   {
    "id": "osm-r3288698",
@@ -41327,15 +41607,15 @@
    ],
    "imageAi": true,
    "imageScore": 9,
+   "district": "เมืองชุมพร",
+   "districtEn": "Mueang Chumphon",
    "hours": "08:00-18:00",
    "hoursSrc": "typical",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "district": "เมืองชุมพร",
-   "districtEn": "Mueang Chumphon"
+   }
   },
   {
    "id": "osm-r3790589",
@@ -41418,15 +41698,15 @@
    "reviewCount": 11,
    "imageAi": true,
    "imageScore": 8,
+   "district": "เมืองระนอง",
+   "districtEn": "Mueang Ranong",
    "hours": "08:00-18:00",
    "hoursSrc": "typical",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "district": "เมืองระนอง",
-   "districtEn": "Mueang Ranong"
+   }
   },
   {
    "id": "osm-r3790891",
@@ -41509,15 +41789,15 @@
    "reviewCount": 18,
    "imageAi": true,
    "imageScore": 8,
+   "district": "ละอุ่น",
+   "districtEn": "La-un",
    "hours": "08:00-18:00",
    "hoursSrc": "typical",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "district": "ละอุ่น",
-   "districtEn": "La-un"
+   }
   },
   {
    "id": "osm-r3801566",
@@ -41600,15 +41880,15 @@
    "reviewCount": 24,
    "imageAi": true,
    "imageScore": 9,
+   "district": "ทองผาภูมิ",
+   "districtEn": "Thong Pha Phum",
    "hours": "08:00-18:00",
    "hoursSrc": "typical",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "district": "ทองผาภูมิ",
-   "districtEn": "Thong Pha Phum"
+   }
   },
   {
    "id": "osm-r5911629",
@@ -41691,15 +41971,15 @@
    "reviewCount": 19,
    "imageAi": true,
    "imageScore": 9,
+   "district": "ท่าสองยาง",
+   "districtEn": "Tha Song Yang",
    "hours": "08:00-18:00",
    "hoursSrc": "typical",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "district": "ท่าสองยาง",
-   "districtEn": "Tha Song Yang"
+   }
   },
   {
    "id": "osm-r5944547",
@@ -41782,15 +42062,15 @@
    "reviewCount": 24,
    "imageAi": true,
    "imageScore": 8,
+   "district": "ฝาง",
+   "districtEn": "Fang",
    "hours": "08:00-18:00",
    "hoursSrc": "typical",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "district": "ฝาง",
-   "districtEn": "Fang"
+   }
   },
   {
    "id": "osm-r5944551",
@@ -41833,15 +42113,15 @@
    "reviewCount": 2,
    "imageAi": true,
    "imageScore": 9,
+   "district": "เมืองแม่ฮ่องสอน",
+   "districtEn": "Mueang Mae Hong Son",
    "hours": "08:00-18:00",
    "hoursSrc": "typical",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "district": "เมืองแม่ฮ่องสอน",
-   "districtEn": "Mueang Mae Hong Son"
+   }
   },
   {
    "id": "osm-r5944645",
@@ -41929,10 +42209,10 @@
    "reviewCount": 7,
    "imageAi": true,
    "imageScore": 9,
-   "hours": "08:00-18:00",
-   "hoursSrc": "typical",
    "district": "เวียงป่าเป้า",
-   "districtEn": "Wiang Pa Pao"
+   "districtEn": "Wiang Pa Pao",
+   "hours": "08:00-18:00",
+   "hoursSrc": "typical"
   },
   {
    "id": "osm-r5944648",
@@ -42020,15 +42300,15 @@
    ],
    "imageAi": true,
    "imageScore": 9,
+   "district": "พาน",
+   "districtEn": "Phan",
    "hours": "08:00-18:00",
    "hoursSrc": "typical",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "district": "พาน",
-   "districtEn": "Phan"
+   }
   },
   {
    "id": "osm-r5944649",
@@ -42111,15 +42391,15 @@
    "reviewCount": 22,
    "imageAi": true,
    "imageScore": 9,
+   "district": "ศรีสัชนาลัย",
+   "districtEn": "Si Satchanalai",
    "hours": "08:00-18:00",
    "hoursSrc": "typical",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "district": "ศรีสัชนาลัย",
-   "districtEn": "Si Satchanalai"
+   }
   },
   {
    "id": "osm-r5944651",
@@ -42202,15 +42482,15 @@
    "reviewCount": 18,
    "imageAi": true,
    "imageScore": 9,
+   "district": "เนินมะปราง",
+   "districtEn": "Noen Maprang",
    "hours": "08:00-18:00",
    "hoursSrc": "typical",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "district": "เนินมะปราง",
-   "districtEn": "Noen Maprang"
+   }
   },
   {
    "id": "osm-r5963190",
@@ -42287,15 +42567,15 @@
     }
    ],
    "reviewCount": 6,
+   "district": "สะเมิง",
+   "districtEn": "Samoeng",
    "hours": "08:00-18:00",
    "hoursSrc": "typical",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "district": "สะเมิง",
-   "districtEn": "Samoeng"
+   }
   },
   {
    "id": "osm-r5963313",
@@ -42378,15 +42658,15 @@
    "reviewCount": 15,
    "imageAi": true,
    "imageScore": 9,
+   "district": "ดอยหล่อ",
+   "districtEn": "Doi Lo",
    "hours": "08:00-18:00",
    "hoursSrc": "typical",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "district": "ดอยหล่อ",
-   "districtEn": "Doi Lo"
+   }
   },
   {
    "id": "osm-r5963397",
@@ -42471,14 +42751,14 @@
    "reviewCount": 23,
    "imageAi": true,
    "imageScore": 6,
+   "districtEn": "Mae Sot",
    "hours": "08:00-18:00",
    "hoursSrc": "typical",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "districtEn": "Mae Sot"
+   }
   },
   {
    "id": "osm-r5964088",
@@ -42561,15 +42841,15 @@
    "reviewCount": 8,
    "imageAi": true,
    "imageScore": 7,
+   "district": "พร้าว",
+   "districtEn": "Phrao",
    "hours": "08:00-18:00",
    "hoursSrc": "typical",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "district": "พร้าว",
-   "districtEn": "Phrao"
+   }
   },
   {
    "id": "osm-r6004034",
@@ -42602,15 +42882,15 @@
    "reviewCount": 1,
    "imageAi": true,
    "imageScore": 7,
+   "district": "เถิน",
+   "districtEn": "Thoen",
    "hours": "08:00-18:00",
    "hoursSrc": "typical",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "district": "เถิน",
-   "districtEn": "Thoen"
+   }
   },
   {
    "id": "osm-r6009654",
@@ -42683,15 +42963,15 @@
    "reviewCount": 5,
    "imageAi": true,
    "imageScore": 7,
+   "district": "บ่อเกลือ",
+   "districtEn": "Bo Kluea",
    "hours": "08:00-18:00",
    "hoursSrc": "typical",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "district": "บ่อเกลือ",
-   "districtEn": "Bo Kluea"
+   }
   },
   {
    "id": "osm-r6009655",
@@ -42719,15 +42999,15 @@
     }
    ],
    "reviewCount": 1,
+   "district": "แม่จริม",
+   "districtEn": "Mae Charim",
    "hours": "08:00-18:00",
    "hoursSrc": "typical",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "district": "แม่จริม",
-   "districtEn": "Mae Charim"
+   }
   },
   {
    "id": "osm-r6009658",
@@ -42812,14 +43092,14 @@
    "reviewCount": 24,
    "imageAi": true,
    "imageScore": 8,
+   "districtEn": "Nam Pat",
    "hours": "08:00-18:00",
    "hoursSrc": "typical",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "districtEn": "Nam Pat"
+   }
   },
   {
    "id": "osm-r6009660",
@@ -42902,15 +43182,15 @@
    "reviewCount": 10,
    "imageAi": true,
    "imageScore": 8,
+   "district": "นาน้อย",
+   "districtEn": "Na Noi",
    "hours": "08:00-18:00",
    "hoursSrc": "typical",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "district": "นาน้อย",
-   "districtEn": "Na Noi"
+   }
   },
   {
    "id": "osm-r6009661",
@@ -42993,15 +43273,15 @@
    "reviewCount": 24,
    "imageAi": true,
    "imageScore": 7,
+   "district": "เมืองเพชรบูรณ์",
+   "districtEn": "Mueang Phetchabun",
    "hours": "08:00-18:00",
    "hoursSrc": "typical",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "district": "เมืองเพชรบูรณ์",
-   "districtEn": "Mueang Phetchabun"
+   }
   },
   {
    "id": "osm-r6009662",
@@ -43044,15 +43324,15 @@
    "reviewCount": 2,
    "imageAi": true,
    "imageScore": 8,
+   "district": "น้ำปาด",
+   "districtEn": "Nam Pat",
    "hours": "08:00-18:00",
    "hoursSrc": "typical",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "district": "น้ำปาด",
-   "districtEn": "Nam Pat"
+   }
   },
   {
    "id": "osm-r6009663",
@@ -43135,15 +43415,15 @@
    "reviewCount": 12,
    "imageAi": true,
    "imageScore": 7,
+   "district": "วังชิ้น",
+   "districtEn": "Wang Chin",
    "hours": "08:00-18:00",
    "hoursSrc": "typical",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "district": "วังชิ้น",
-   "districtEn": "Wang Chin"
+   }
   },
   {
    "id": "osm-r6011585",
@@ -43230,15 +43510,15 @@
    "trend": 10,
    "imageAi": true,
    "imageScore": 8,
+   "district": "เทพสถิต",
+   "districtEn": "Thep Sathit",
    "hours": "08:00-18:00",
    "hoursSrc": "typical",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "district": "เทพสถิต",
-   "districtEn": "Thep Sathit"
+   }
   },
   {
    "id": "osm-r6011588",
@@ -43258,15 +43538,15 @@
    "fetchedAt": "2026-11-06T20:14:48.740Z",
    "imageAi": true,
    "imageScore": 6,
+   "district": "โนนสัง",
+   "districtEn": "Non Sang",
    "hours": "08:00-18:00",
    "hoursSrc": "typical",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "district": "โนนสัง",
-   "districtEn": "Non Sang"
+   }
   },
   {
    "id": "osm-r6011590",
@@ -43349,15 +43629,15 @@
    "reviewCount": 21,
    "imageAi": true,
    "imageScore": 9,
+   "district": "เกษตรสมบูรณ์",
+   "districtEn": "Kaset Sombun",
    "hours": "08:00-18:00",
    "hoursSrc": "typical",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "district": "เกษตรสมบูรณ์",
-   "districtEn": "Kaset Sombun"
+   }
   },
   {
    "id": "osm-r6011591",
@@ -43373,14 +43653,14 @@
    "summary": {},
    "fetchedAt": "2026-11-06T20:14:52.182Z",
    "district": "คำม่วง",
+   "districtEn": "Kham Muang",
    "hours": "08:00-18:00",
    "hoursSrc": "typical",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "districtEn": "Kham Muang"
+   }
   },
   {
    "id": "osm-r6011593",
@@ -43463,15 +43743,15 @@
    "reviewCount": 24,
    "imageAi": true,
    "imageScore": 6,
+   "district": "ดงหลวง",
+   "districtEn": "Dong Luang",
    "hours": "08:00-18:00",
    "hoursSrc": "typical",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "district": "ดงหลวง",
-   "districtEn": "Dong Luang"
+   }
   },
   {
    "id": "osm-r6011595",
@@ -43487,14 +43767,14 @@
    "summary": {},
    "fetchedAt": "2026-11-06T20:14:55.271Z",
    "district": "เลิงนกทา",
+   "districtEn": "Loeng Nok Tha",
    "hours": "08:00-18:00",
    "hoursSrc": "typical",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "districtEn": "Loeng Nok Tha"
+   }
   },
   {
    "id": "osm-r6011596",
@@ -43577,15 +43857,15 @@
    "reviewCount": 17,
    "imageAi": true,
    "imageScore": 7,
+   "district": "นาแห้ว",
+   "districtEn": "Na Haeo",
    "hours": "08:00-18:00",
    "hoursSrc": "typical",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "district": "นาแห้ว",
-   "districtEn": "Na Haeo"
+   }
   },
   {
    "id": "osm-r6011597",
@@ -43668,15 +43948,15 @@
    "reviewCount": 18,
    "imageAi": true,
    "imageScore": 8,
+   "district": "เมืองชัยภูมิ",
+   "districtEn": "Mueang Chaiyaphum",
    "hours": "08:00-18:00",
    "hoursSrc": "typical",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "district": "เมืองชัยภูมิ",
-   "districtEn": "Mueang Chaiyaphum"
+   }
   },
   {
    "id": "osm-r10925148",
@@ -43761,14 +44041,14 @@
    "reviewCount": 8,
    "imageAi": true,
    "imageScore": 7,
+   "districtEn": "Thoen",
    "hours": "08:00-18:00",
    "hoursSrc": "typical",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "districtEn": "Thoen"
+   }
   },
   {
    "id": "osm-r11577997",
@@ -43852,15 +44132,15 @@
    "reviewCount": 21,
    "imageAi": true,
    "imageScore": 7,
+   "district": "แม่ออน",
+   "districtEn": "Mae On",
    "hours": "08:00-18:00",
    "hoursSrc": "typical",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "district": "แม่ออน",
-   "districtEn": "Mae On"
+   }
   },
   {
    "id": "osm-r12088743",
@@ -43933,15 +44213,15 @@
    "reviewCount": 5,
    "imageAi": true,
    "imageScore": 8,
+   "district": "ศรีบรรพต",
+   "districtEn": "Si Banphot",
    "hours": "08:00-18:00",
    "hoursSrc": "typical",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "district": "ศรีบรรพต",
-   "districtEn": "Si Banphot"
+   }
   },
   {
    "id": "osm-r12088747",
@@ -44024,15 +44304,15 @@
    "reviewCount": 15,
    "imageAi": true,
    "imageScore": 8,
+   "district": "เมืองสตูล",
+   "districtEn": "Mueang Satun",
    "hours": "08:00-18:00",
    "hoursSrc": "typical",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "district": "เมืองสตูล",
-   "districtEn": "Mueang Satun"
+   }
   },
   {
    "id": "osm-r12088748",
@@ -44095,15 +44375,15 @@
    "reviewCount": 4,
    "imageAi": true,
    "imageScore": 7,
+   "district": "สะเดา",
+   "districtEn": "Sadao",
    "hours": "08:00-18:00",
    "hoursSrc": "typical",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "district": "สะเดา",
-   "districtEn": "Sadao"
+   }
   },
   {
    "id": "osm-r12088749",
@@ -44119,14 +44399,14 @@
    "summary": {},
    "fetchedAt": "2026-11-06T20:15:07.663Z",
    "district": "ระแงะ",
+   "districtEn": "Ra-ngae",
    "hours": "08:00-18:00",
    "hoursSrc": "typical",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "districtEn": "Ra-ngae"
+   }
   },
   {
    "id": "osm-r12088751",
@@ -44146,15 +44426,15 @@
    "fetchedAt": "2026-11-06T20:15:09.388Z",
    "imageAi": true,
    "imageScore": 7,
+   "district": "ธารโต",
+   "districtEn": "Than To",
    "hours": "08:00-18:00",
    "hoursSrc": "typical",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "district": "ธารโต",
-   "districtEn": "Than To"
+   }
   },
   {
    "id": "osm-r12092897",
@@ -44217,15 +44497,15 @@
    "reviewCount": 4,
    "imageAi": true,
    "imageScore": 9,
+   "district": "กาญจนดิษฐ์",
+   "districtEn": "Kanchanadit",
    "hours": "08:00-18:00",
    "hoursSrc": "typical",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "district": "กาญจนดิษฐ์",
-   "districtEn": "Kanchanadit"
+   }
   },
   {
    "id": "osm-r12092898",
@@ -44310,14 +44590,14 @@
    "reviewCount": 12,
    "imageAi": true,
    "imageScore": 8,
+   "districtEn": "Ban Na San",
    "hours": "08:00-18:00",
    "hoursSrc": "typical",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "districtEn": "Ban Na San"
+   }
   },
   {
    "id": "osm-r12092899",
@@ -44402,14 +44682,14 @@
    "reviewCount": 16,
    "imageAi": true,
    "imageScore": 8,
+   "districtEn": "Nopphitam",
    "hours": "08:00-18:00",
    "hoursSrc": "typical",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "districtEn": "Nopphitam"
+   }
   },
   {
    "id": "osm-r12092900",
@@ -44492,15 +44772,15 @@
    "reviewCount": 12,
    "imageAi": true,
    "imageScore": 8,
+   "district": "พรหมคีรี",
+   "districtEn": "Phrom Khiri",
    "hours": "08:00-18:00",
    "hoursSrc": "typical",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "district": "พรหมคีรี",
-   "districtEn": "Phrom Khiri"
+   }
   },
   {
    "id": "osm-r12092901",
@@ -44583,15 +44863,15 @@
    "reviewCount": 18,
    "imageAi": true,
    "imageScore": 8,
+   "district": "ทุ่งสง",
+   "districtEn": "Thung Song",
    "hours": "08:00-18:00",
    "hoursSrc": "typical",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "district": "ทุ่งสง",
-   "districtEn": "Thung Song"
+   }
   },
   {
    "id": "osm-r12095597",
@@ -44674,15 +44954,15 @@
    "reviewCount": 24,
    "imageAi": true,
    "imageScore": 8,
+   "district": "คุระบุรี",
+   "districtEn": "Khura Buri",
    "hours": "08:00-18:00",
    "hoursSrc": "typical",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "district": "คุระบุรี",
-   "districtEn": "Khura Buri"
+   }
   },
   {
    "id": "osm-r12095601",
@@ -44702,15 +44982,15 @@
    "fetchedAt": "2026-11-06T20:15:20.807Z",
    "imageAi": true,
    "imageScore": 7,
+   "district": "พนม",
+   "districtEn": "Phanom",
    "hours": "08:00-18:00",
    "hoursSrc": "typical",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "district": "พนม",
-   "districtEn": "Phanom"
+   }
   },
   {
    "id": "osm-r12095604",
@@ -44763,15 +45043,15 @@
    "reviewCount": 3,
    "imageAi": true,
    "imageScore": 8,
+   "district": "ท้ายเหมือง",
+   "districtEn": "Thai Mueang",
    "hours": "08:00-18:00",
    "hoursSrc": "typical",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "district": "ท้ายเหมือง",
-   "districtEn": "Thai Mueang"
+   }
   },
   {
    "id": "osm-r12100307",
@@ -44849,15 +45129,15 @@
     }
    ],
    "reviewCount": 6,
+   "district": "ไชยา",
+   "districtEn": "Chaiya",
    "hours": "08:00-18:00",
    "hoursSrc": "typical",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "district": "ไชยา",
-   "districtEn": "Chaiya"
+   }
   },
   {
    "id": "osm-r12104352",
@@ -44940,15 +45220,15 @@
    "reviewCount": 19,
    "imageAi": true,
    "imageScore": 7,
+   "district": "เมืองประจวบคีรีขันธ์",
+   "districtEn": "Mueang Prachuap Khiri Khan",
    "hours": "08:00-18:00",
    "hoursSrc": "typical",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "district": "เมืองประจวบคีรีขันธ์",
-   "districtEn": "Mueang Prachuap Khiri Khan"
+   }
   },
   {
    "id": "osm-r12113343",
@@ -44964,14 +45244,14 @@
    "summary": {},
    "fetchedAt": "2026-11-06T20:15:27.416Z",
    "district": "บ้านคา",
+   "districtEn": "Ban Kha",
    "hours": "08:00-18:00",
    "hoursSrc": "typical",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "districtEn": "Ban Kha"
+   }
   },
   {
    "id": "osm-r12601624",
@@ -45061,15 +45341,15 @@
    "trend": 2,
    "imageAi": true,
    "imageScore": 8,
+   "district": "ภูผาม่าน",
+   "districtEn": "Phu Pha Man",
    "hours": "08:00-18:00",
    "hoursSrc": "typical",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "district": "ภูผาม่าน",
-   "districtEn": "Phu Pha Man"
+   }
   },
   {
    "id": "osm-r12632007",
@@ -45157,15 +45437,15 @@
    ],
    "imageAi": true,
    "imageScore": 9,
+   "district": "หนองบัวระเหว",
+   "districtEn": "Nong Bua Rawe",
    "hours": "08:00-18:00",
    "hoursSrc": "typical",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "district": "หนองบัวระเหว",
-   "districtEn": "Nong Bua Rawe"
+   }
   },
   {
    "id": "osm-r12656181",
@@ -45197,15 +45477,15 @@
    ],
    "imageAi": true,
    "imageScore": 9,
+   "district": "มวกเหล็ก",
+   "districtEn": "Muak Lek",
    "hours": "08:00-18:00",
    "hoursSrc": "typical",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "district": "มวกเหล็ก",
-   "districtEn": "Muak Lek"
+   }
   },
   {
    "id": "osm-r12659452",
@@ -45288,15 +45568,15 @@
    "reviewCount": 23,
    "imageAi": true,
    "imageScore": 8,
+   "district": "เขาชะเมา",
+   "districtEn": "Khao Chamao",
    "hours": "08:00-18:00",
    "hoursSrc": "typical",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "district": "เขาชะเมา",
-   "districtEn": "Khao Chamao"
+   }
   },
   {
    "id": "osm-r12659453",
@@ -45381,14 +45661,14 @@
    ],
    "district": "แก่งหางแมว",
    "reviewCount": 17,
+   "districtEn": "Kaeng Hang Maeo",
    "hours": "08:00-18:00",
    "hoursSrc": "typical",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "districtEn": "Kaeng Hang Maeo"
+   }
   },
   {
    "id": "osm-r12667365",
@@ -45431,15 +45711,15 @@
    "reviewCount": 2,
    "imageAi": true,
    "imageScore": 9,
+   "district": "บ่อไร่",
+   "districtEn": "Bo Rai",
    "hours": "08:00-18:00",
    "hoursSrc": "typical",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "district": "บ่อไร่",
-   "districtEn": "Bo Rai"
+   }
   },
   {
    "id": "osm-r12695293",
@@ -45522,15 +45802,15 @@
    "reviewCount": 12,
    "imageAi": true,
    "imageScore": 6,
+   "district": "สิรินธร",
+   "districtEn": "Sirindhorn",
    "hours": "08:00-18:00",
    "hoursSrc": "typical",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "district": "สิรินธร",
-   "districtEn": "Sirindhorn"
+   }
   },
   {
    "id": "osm-r12719043",
@@ -45613,15 +45893,15 @@
    "reviewCount": 8,
    "imageAi": true,
    "imageScore": 8,
+   "district": "เชียงคำ",
+   "districtEn": "Chiang Kham",
    "hours": "08:00-18:00",
    "hoursSrc": "typical",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "district": "เชียงคำ",
-   "districtEn": "Chiang Kham"
+   }
   },
   {
    "id": "osm-r12719044",
@@ -45704,15 +45984,15 @@
    "reviewCount": 18,
    "imageAi": true,
    "imageScore": 8,
+   "district": "นาหมื่น",
+   "districtEn": "Na Muen",
    "hours": "08:00-18:00",
    "hoursSrc": "typical",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "district": "นาหมื่น",
-   "districtEn": "Na Muen"
+   }
   },
   {
    "id": "osm-n261548252",
@@ -45927,13 +46207,13 @@
      "th": "data/thumbs/7668306154283368977-0.webp"
     }
    ],
+   "districtEn": "Cha-am",
    "hours": "24/7",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Cha-am"
+   }
   },
   {
    "id": "osm-n795685862",
@@ -46492,11 +46772,11 @@
     }
    ],
    "reviewCount": 18,
+   "districtEn": "Mueang Phuket",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Mueang Phuket"
+   }
   },
   {
    "id": "osm-n1641043583",
@@ -47357,14 +47637,14 @@
    "imageCredit": "Lamacchiacosta · CC BY-SA 4.0",
    "imageAi": true,
    "imageScore": 8,
+   "district": "เกาะลันตา",
+   "districtEn": "Ko Lanta",
    "hours": "24/7",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "district": "เกาะลันตา",
-   "districtEn": "Ko Lanta"
+   }
   },
   {
    "id": "osm-w27813979",
@@ -47384,14 +47664,14 @@
    "imageCredit": "Rittigai · CC BY-SA 3.0",
    "imageAi": true,
    "imageScore": 7,
+   "district": "เกาะลันตา",
+   "districtEn": "Ko Lanta",
    "hours": "24/7",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "district": "เกาะลันตา",
-   "districtEn": "Ko Lanta"
+   }
   },
   {
    "id": "osm-w32743506",
@@ -47482,13 +47762,13 @@
    ],
    "hot": 3.9,
    "trend": 1,
+   "districtEn": "Hua Hin",
    "hours": "24/7",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Hua Hin"
+   }
   },
   {
    "id": "osm-w51248133",
@@ -47508,14 +47788,14 @@
    "imageCredit": "Fabio Achilli · CC BY 2.0",
    "imageAi": true,
    "imageScore": 8,
+   "district": "เกาะลันตา",
+   "districtEn": "Ko Lanta",
    "hours": "24/7",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "district": "เกาะลันตา",
-   "districtEn": "Ko Lanta"
+   }
   },
   {
    "id": "osm-w51250515",
@@ -47535,14 +47815,14 @@
    "imageCredit": "Vaclav Zrno · CC BY 3.0",
    "imageAi": true,
    "imageScore": 7,
+   "district": "เกาะลันตา",
+   "districtEn": "Ko Lanta",
    "hours": "24/7",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "district": "เกาะลันตา",
-   "districtEn": "Ko Lanta"
+   }
   },
   {
    "id": "osm-w91115478",
@@ -47630,14 +47910,14 @@
      "th": "data/thumbs/7622949746663031313-0.webp"
     }
    ],
+   "district": "เมืองสตูล",
+   "districtEn": "Mueang Satun",
    "hours": "24/7",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "district": "เมืองสตูล",
-   "districtEn": "Mueang Satun"
+   }
   },
   {
    "id": "osm-w106843819",
@@ -47726,14 +48006,14 @@
     }
    ],
    "reviewCount": 15,
+   "district": "สัตหีบ",
+   "districtEn": "Sattahip",
    "hours": "24/7",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "district": "สัตหีบ",
-   "districtEn": "Sattahip"
+   }
   },
   {
    "id": "osm-w147841651",
@@ -47821,14 +48101,14 @@
      "th": "data/thumbs/7583664423756120583-0.webp"
     }
    ],
+   "district": "เมืองกระบี่",
+   "districtEn": "Mueang Krabi",
    "hours": "24/7",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "district": "เมืองกระบี่",
-   "districtEn": "Mueang Krabi"
+   }
   },
   {
    "id": "osm-w150178573",
@@ -47848,14 +48128,14 @@
    "imageCredit": "ADwarf · Public domain",
    "imageAi": true,
    "imageScore": 8,
+   "district": "ถลาง",
+   "districtEn": "Thalang",
    "hours": "24/7",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "district": "ถลาง",
-   "districtEn": "Thalang"
+   }
   },
   {
    "id": "osm-w185942618",
@@ -47928,13 +48208,13 @@
     }
    ],
    "reviewCount": 3,
+   "districtEn": "Sam Roi Yot",
    "hours": "24/7",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Sam Roi Yot"
+   }
   },
   {
    "id": "osm-w212246066",
@@ -47968,14 +48248,14 @@
     }
    ],
    "reviewCount": 1,
+   "district": "เกาะลันตา",
+   "districtEn": "Ko Lanta",
    "hours": "24/7",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "district": "เกาะลันตา",
-   "districtEn": "Ko Lanta"
+   }
   },
   {
    "id": "osm-w242648106",
@@ -48065,14 +48345,14 @@
    ],
    "hot": 3.8,
    "trend": 2,
+   "district": "เกาะพะงัน",
+   "districtEn": "Ko Pha-ngan",
    "hours": "24/7",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "district": "เกาะพะงัน",
-   "districtEn": "Ko Pha-ngan"
+   }
   },
   {
    "id": "osm-w246391251",
@@ -48092,14 +48372,14 @@
    "imageCredit": "Roma Neus · CC BY 3.0",
    "imageAi": true,
    "imageScore": 7,
+   "district": "เกาะสมุย",
+   "districtEn": "Ko Samui",
    "hours": "24/7",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "district": "เกาะสมุย",
-   "districtEn": "Ko Samui"
+   }
   },
   {
    "id": "osm-w246395838",
@@ -48166,14 +48446,14 @@
     }
    ],
    "reviewCount": 4,
+   "district": "เกาะสมุย",
+   "districtEn": "Ko Samui",
    "hours": "24/7",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "district": "เกาะสมุย",
-   "districtEn": "Ko Samui"
+   }
   },
   {
    "id": "osm-w253816464",
@@ -48193,14 +48473,14 @@
    "imageCredit": "This Photo was taken by Supanut Arunoprayote. Feel free to u · CC BY 4.0",
    "imageAi": true,
    "imageScore": 8,
+   "district": "เมืองประจวบคีรีขันธ์",
+   "districtEn": "Mueang Prachuap Khiri Khan",
    "hours": "24/7",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "district": "เมืองประจวบคีรีขันธ์",
-   "districtEn": "Mueang Prachuap Khiri Khan"
+   }
   },
   {
    "id": "osm-w255261810",
@@ -48289,14 +48569,14 @@
     }
    ],
    "reviewCount": 12,
+   "district": "เกาะพะงัน",
+   "districtEn": "Ko Pha-ngan",
    "hours": "24/7",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "district": "เกาะพะงัน",
-   "districtEn": "Ko Pha-ngan"
+   }
   },
   {
    "id": "osm-w381444090",
@@ -48316,14 +48596,14 @@
    "imageCredit": "Renek78 · CC BY-SA 4.0",
    "imageAi": true,
    "imageScore": 8,
+   "district": "เกาะพะงัน",
+   "districtEn": "Ko Pha-ngan",
    "hours": "24/7",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "district": "เกาะพะงัน",
-   "districtEn": "Ko Pha-ngan"
+   }
   },
   {
    "id": "osm-w609896645",
@@ -48339,13 +48619,13 @@
    "summary": {},
    "fetchedAt": "2026-11-07T01:27:32.901Z",
    "district": "เกาะลันตา",
+   "districtEn": "Ko Lanta",
    "hours": "24/7",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Ko Lanta"
+   }
   },
   {
    "id": "osm-w1029321479",
@@ -48360,14 +48640,14 @@
    "province": "prachuap-khiri-khan",
    "summary": {},
    "fetchedAt": "2026-11-07T01:27:38.032Z",
+   "district": "บางสะพาน",
+   "districtEn": "Bang Saphan",
    "hours": "24/7",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "district": "บางสะพาน",
-   "districtEn": "Bang Saphan"
+   }
   },
   {
    "id": "osm-r14010438",
@@ -48462,10 +48742,10 @@
     }
    ],
    "reviewCount": 12,
-   "hours": "24/7",
-   "hoursSrc": "typical",
    "district": "ถลาง",
-   "districtEn": "Thalang"
+   "districtEn": "Thalang",
+   "hours": "24/7",
+   "hoursSrc": "typical"
   },
   {
    "id": "osm-r14937094",
@@ -48555,14 +48835,14 @@
     }
    ],
    "reviewCount": 9,
+   "district": "เมืองกระบี่",
+   "districtEn": "Mueang Krabi",
    "hours": "24/7",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "district": "เมืองกระบี่",
-   "districtEn": "Mueang Krabi"
+   }
   },
   {
    "id": "osm-r16031134",
@@ -48640,14 +48920,14 @@
     }
    ],
    "reviewCount": 13,
+   "district": "ถลาง",
+   "districtEn": "Thalang",
    "hours": "24/7",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "district": "ถลาง",
-   "districtEn": "Thalang"
+   }
   },
   {
    "id": "osm-r19738774",
@@ -48737,13 +49017,13 @@
      "th": "data/thumbs/7693501457546347009-0.webp"
     }
    ],
+   "districtEn": "Mueang Krabi",
    "hours": "24/7",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Mueang Krabi"
+   }
   },
   {
    "id": "osm-r19741820",
@@ -48763,14 +49043,14 @@
    "imageCredit": "Krzysztof Golik · CC BY-SA 4.0",
    "imageAi": true,
    "imageScore": 9,
+   "district": "เมืองกระบี่",
+   "districtEn": "Mueang Krabi",
    "hours": "24/7",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "district": "เมืองกระบี่",
-   "districtEn": "Mueang Krabi"
+   }
   },
   {
    "id": "osm-n2066072188",
@@ -48930,8 +49210,8 @@
    "summary": {},
    "fetchedAt": "2026-11-07T13:49:07.687Z",
    "district": "เกาะลันตา",
-   "websiteDead": "http://lantaparklife.com/",
-   "nameEn": true
+   "nameEn": true,
+   "websiteDead": "http://lantaparklife.com/"
   },
   {
    "id": "osm-n6263926889",
@@ -48950,8 +49230,8 @@
    "summary": {},
    "fetchedAt": "2026-11-07T13:49:13.434Z",
    "district": "บางรัก",
-   "websiteDead": "https://mewinesshop.com/",
-   "nameEn": true
+   "nameEn": true,
+   "websiteDead": "https://mewinesshop.com/"
   },
   {
    "id": "osm-n7843595285",
@@ -49056,12 +49336,12 @@
    "imageCredit": "Joachim Lutz · CC BY-SA 4.0",
    "imageAi": true,
    "imageScore": 6,
+   "districtEn": "Mueang Phuket",
    "menuPrice": {
     "min": 235,
     "max": 350,
     "src": "web"
-   },
-   "districtEn": "Mueang Phuket"
+   }
   },
   {
    "id": "osm-n12558655503",
@@ -49415,8 +49695,8 @@
    "imageCredit": "hijirin · CC BY 3.0",
    "imageAi": true,
    "imageScore": 7,
-   "websiteDead": "https://www.fitzgeraldsbangkok.com/",
-   "districtEn": "Khlong Toei"
+   "districtEn": "Khlong Toei",
+   "websiteDead": "https://www.fitzgeraldsbangkok.com/"
   },
   {
    "id": "osm-w1312364662",
@@ -49455,8 +49735,8 @@
    "summary": {},
    "fetchedAt": "2026-11-07T02:09:05.849Z",
    "district": "พนัสนิคม",
-   "websiteDead": "http://www.kamolchanokcoffee.com/",
-   "nameEn": true
+   "nameEn": true,
+   "websiteDead": "http://www.kamolchanokcoffee.com/"
   },
   {
    "id": "osm-n2080924990",
@@ -49683,12 +49963,12 @@
    "district": "วัฒนา",
    "imageAi": true,
    "imageScore": 7,
+   "districtEn": "Vadhana",
    "menuPrice": {
     "min": 270,
     "max": 500,
     "src": "web"
-   },
-   "districtEn": "Vadhana"
+   }
   },
   {
    "id": "osm-n4624928091",
@@ -49778,8 +50058,8 @@
    "summary": {},
    "fetchedAt": "2026-11-07T02:09:42.010Z",
    "district": "เมืองเชียงใหม่",
-   "websiteDead": "http://iberryhomemade.com/",
-   "nameEn": true
+   "nameEn": true,
+   "websiteDead": "http://iberryhomemade.com/"
   },
   {
    "id": "osm-n5444296337",
@@ -50562,8 +50842,8 @@
    },
    "fetchedAt": "2026-11-07T02:10:25.609Z",
    "district": "พระพุทธบาท",
-   "websiteDead": "https://thai-spa-guesthouse-baan-rommai.business.site/",
-   "districtEn": "Phra Phutthabat"
+   "districtEn": "Phra Phutthabat",
+   "websiteDead": "https://thai-spa-guesthouse-baan-rommai.business.site/"
   },
   {
    "id": "osm-n8819922117",
@@ -50655,8 +50935,8 @@
      "th": "data/thumbs/7685400597993964039-0.webp"
     }
    ],
-   "websiteDead": "https://treehousecafe.business.site/",
-   "districtEn": "Ko Pha-ngan"
+   "districtEn": "Ko Pha-ngan",
+   "websiteDead": "https://treehousecafe.business.site/"
   },
   {
    "id": "osm-n8827011153",
@@ -51611,7 +51891,64 @@
    "imageAi": true,
    "imageScore": 8,
    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/e5423ce0d13649229b22edf6483cbb9d~tplv-sdweummd6v-text-logo-v1:QGpqdXBhanVwcA==:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796709600&x-signature=moATWF%2BT1095jI1ZOB1PzOBrh7k%3D",
-   "nameEn": true
+   "nameEn": true,
+   "posts": [
+    {
+     "title": "ของฝากชลบุรีห้ามพลาด #ท๊อฟฟี่เค้กชลบุรี",
+     "likes": 34,
+     "date": "2026-05-07",
+     "link": "https://www.lemon8-app.com/@miiw.w1/7637171886039876104?region=th",
+     "source": "Lemon8 · ชมิว",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7637171886039876104&index=0&sign=d52c559385b18868dcdd5265543dcd40",
+     "tag": 1
+    },
+    {
+     "title": "Toffee Cake ชลบุรี ซื้อเอง กินเอง อร่อยจริงหรือแค่กระแส? 🤤",
+     "likes": 9,
+     "date": "2026-08-23",
+     "link": "https://www.lemon8-app.com/@__inxrx_/7677183660604310017?region=th",
+     "source": "Lemon8 · SXXNN(.+👀🎀)",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7677183660604310017&index=0&sign=2fbd1f99bf64a2657b20e7ca4d166544",
+     "tag": 1
+    },
+    {
+     "title": "Toffy cake ชลบุรี",
+     "likes": 6,
+     "date": "2026-01-25",
+     "link": "https://www.lemon8-app.com/@sleepygirlllllllllll/7599298412575687186?region=th",
+     "source": "Lemon8 · ดาวขกตื่นเช้า",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7599298412575687186&index=0&sign=e1701ddada4245aa0edc1f2b95fa5e34",
+     "tag": 1
+    },
+    {
+     "title": "รีวิว toffee cake ชลบุรี‼️",
+     "likes": 5,
+     "date": "2026-04-16",
+     "link": "https://www.lemon8-app.com/@am.srt/7629331922753208840?region=th",
+     "source": "Lemon8 · Am sari🫧",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7629331922753208840&index=0&sign=786b3473ad7a62121c82677852c77442",
+     "tag": 1
+    },
+    {
+     "title": "ท๊อฟฟี่เค้กชลบุรี สาขาบางแสน",
+     "likes": 3,
+     "date": "2026-04-12",
+     "link": "https://www.lemon8-app.com/@program.travel/7627685153506083336?region=th",
+     "source": "Lemon8 · program.travel",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7627685153506083336&index=0&sign=d52887fd8ac25ac441d356ab87166a60",
+     "tag": 1
+    },
+    {
+     "title": "ท๊อฟฟี่เค้กชลบุรี​ ซื้อเป็นของฝากได้",
+     "likes": 3,
+     "date": "2025-12-01",
+     "link": "https://www.lemon8-app.com/@faifaichalisa/7578795329881965077?region=th",
+     "source": "Lemon8 · FAICHALISA",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7578795329881965077&index=0&sign=0ab5ae3447cf36d6cccb643100208c10",
+     "tag": 1
+    }
+   ],
+   "reviewCount": 12
   },
   {
    "id": "osm-n10844099391",
@@ -51921,8 +52258,8 @@
    "summary": {},
    "fetchedAt": "2026-11-07T02:11:30.046Z",
    "district": "กะทู้",
-   "websiteDead": "https://www.miami-production.com/",
-   "nameEn": true
+   "nameEn": true,
+   "websiteDead": "https://www.miami-production.com/"
   },
   {
    "id": "osm-n11919287069",
@@ -52254,8 +52591,8 @@
    },
    "fetchedAt": "2026-11-07T02:11:36.568Z",
    "district": "สามพราน",
-   "websiteDead": "https://www.mylittlefarm.cafe/",
-   "districtEn": "Sam Phran"
+   "districtEn": "Sam Phran",
+   "websiteDead": "https://www.mylittlefarm.cafe/"
   },
   {
    "id": "osm-n12569126260",
@@ -52564,8 +52901,8 @@
    "summary": {},
    "fetchedAt": "2026-11-07T02:11:41.284Z",
    "district": "เมืองภูเก็ต",
-   "websiteDead": "https://chachatea.th/",
-   "districtEn": "Mueang Phuket"
+   "districtEn": "Mueang Phuket",
+   "websiteDead": "https://chachatea.th/"
   },
   {
    "id": "osm-n13000324058",
@@ -53459,12 +53796,12 @@
    ],
    "hot": 3.7,
    "trend": 2,
+   "districtEn": "Bang Phli",
    "menuPrice": {
     "min": 20,
     "max": 399,
     "src": "web"
-   },
-   "districtEn": "Bang Phli"
+   }
   },
   {
    "id": "osm-n14134249701",
@@ -53601,8 +53938,8 @@
    "summary": {},
    "fetchedAt": "2026-11-07T02:12:23.927Z",
    "district": "ถลาง",
-   "websiteDead": "https://phuket-homestay.com/",
-   "districtEn": "Thalang"
+   "districtEn": "Thalang",
+   "websiteDead": "https://phuket-homestay.com/"
   },
   {
    "id": "osm-w1206068563",
@@ -53647,12 +53984,12 @@
    "district": "ปทุมวัน",
    "imageAi": true,
    "imageScore": 7,
+   "districtEn": "Pathum Wan",
    "menuPrice": {
     "min": 100,
     "max": 200,
     "src": "web"
-   },
-   "districtEn": "Pathum Wan"
+   }
   },
   {
    "id": "osm-w1229610353",
@@ -53928,13 +54265,52 @@
    "fetchedAt": "2026-11-06T20:07:19.756Z",
    "imageAi": true,
    "imageScore": 8,
+   "district": "แม่ริม",
+   "districtEn": "Mae Rim",
+   "posts": [
+    {
+     "title": "ถ้ามีโอกาส ไปหาน้องช้างกันนะคะ #แม่ฟางจอมพลัง #เชียงใหม่ #ปางช้างแม่สา",
+     "likes": 21,
+     "date": "2026-10-20",
+     "link": "https://www.lemon8-app.com/@maefangjompalang/7698682847095374356?region=th",
+     "source": "Lemon8 · แม่ฟางจอมพลัง",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7698682847095374356&index=0&sign=212e107dbc04af47dcb1a0a521da1333",
+     "tag": 1
+    },
+    {
+     "title": "🐘✨ พาเที่ยว 📍ปางช้างแม่สา | เชียงใหม่💸 ค่าเข้า 150 บาท/คน🥬 ได้อาหารป้อนช้าง 1 ตะกร้า ความคุ้ม : 10/10 ความน่ารักของน้อง : ช้างทุกตัวที่เ",
+     "likes": 5,
+     "date": "2026-06-01",
+     "link": "https://www.lemon8-app.com/@alienaye/7646305629648241168?region=th",
+     "source": "Lemon8 · องอาย 🦭",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7646305629648241168&index=0&sign=56f3693976af0a655a6f61dd465f5a87",
+     "tag": 1
+    },
+    {
+     "title": "นางคงเหนื่อย เดินลงมาแบบโมโห มาถึงที่ก็วางอย่างแรงเลย😅 แต่น้องก็น่ารักน๊า #ปางช้าง #ปางช้างแม่สา #เชียงใหม่ #แม่ริม #เทรนด์วันนี้",
+     "likes": 2,
+     "date": "2025-11-14",
+     "link": "https://www.lemon8-app.com/@lily2519/7572456999632421397?region=th",
+     "source": "Lemon8 · ธัญลักษณ์ ธันยมนย์วร",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7572456999632421397&index=0&sign=6eb885dfad736c8960a8b501e6dc90cd",
+     "tag": 1
+    },
+    {
+     "title": "เด็กเลี้ยงช้าง #ปางช้างแม่สา #ช้าง #เชียงใหม่ #ที่เที่ยวเชียงใหม่ #เด็กน่ารัก",
+     "likes": 0,
+     "date": "2026-07-10",
+     "link": "https://www.lemon8-app.com/@akin_1107/7660800737255522836?region=th",
+     "source": "Lemon8 · Akin_น้องอคิณ",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7660800737255522836&index=0&sign=e844dc86d8a179707ec4c556a77e62d7",
+     "tag": 1
+    }
+   ],
+   "reviewCount": 4,
    "entry": {
     "thai": 150,
     "foreign": 300,
     "src": "web"
-   },
-   "district": "แม่ริม",
-   "districtEn": "Mae Rim"
+   }
   },
   {
    "id": "osm-n2147672094",
@@ -53969,9 +54345,66 @@
    "province": "khon-kaen",
    "summary": {},
    "fetchedAt": "2026-11-06T20:07:21.526Z",
-   "websiteDead": "http://www.khaosuankwangzoo.com/",
    "district": "เขาสวนกวาง",
-   "districtEn": "Khao Suan Kwang"
+   "districtEn": "Khao Suan Kwang",
+   "posts": [
+    {
+     "title": "\"หลิงหลิง คอง\"จากนางงามเขาสวนกวาง 2561 สู่ ผู้หญิงที่ถูกจัดอันดับสวยที่สุดในโลก",
+     "likes": 253,
+     "date": "2026-08-23",
+     "link": "https://www.lemon8-app.com/@tootsy_review/7677186663965032976?region=th",
+     "source": "Lemon8 · tootsyreview",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7677186663965032976&index=0&sign=9b22f6745955ed0595c7ef4617047853",
+     "tag": 1
+    },
+    {
+     "title": "ไก่ย่างเขาสวนกวาง",
+     "likes": 6,
+     "date": "2026-09-14",
+     "link": "https://www.lemon8-app.com/@onpreeya7197/7685287671261839893?region=th",
+     "source": "Lemon8 · onpreeya719",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7685287671261839893&index=0&sign=db8d741f8a99636ee86086b84eb8518b",
+     "tag": 1
+    },
+    {
+     "title": "🍗 ไก่ย่างเขาสวนกวาง AHHA KITCHEN ✨",
+     "likes": 6,
+     "date": "2026-06-13",
+     "link": "https://www.lemon8-app.com/@lukmeepakin/7650892202238902791?region=th",
+     "source": "Lemon8 · พี่ลูกหมีพากิน อร่อยตาเหลือก",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7650892202238902791&index=0&sign=21724d85efbf0b593fea8e9924e431bf",
+     "tag": 1
+    },
+    {
+     "title": "เที่ยวเขาสวนกวาง งบ 500 มีถอน",
+     "likes": 4,
+     "date": "2025-12-07",
+     "link": "https://www.lemon8-app.com/@nanthana4255/7581095908654203399?region=th",
+     "source": "Lemon8 · nanthana 🥴🤍",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7581095908654203399&index=0&sign=6a8fa6bc4708bcee841c0be54b1ea7bc",
+     "tag": 1
+    },
+    {
+     "title": "อร่อยจนต้องซ้ำ​ แม่ลาไก่ย่างเขาสวนกวาง",
+     "likes": 4,
+     "date": "2026-06-25",
+     "link": "https://www.lemon8-app.com/@deetongmee123/7655305174684041736?region=th",
+     "source": "Lemon8 · ทำครัวทำกิน",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7655305174684041736&index=0&sign=2e1de2f5cafe1a9543305ecebcbf2d61",
+     "tag": 1
+    },
+    {
+     "title": "\"ไก่ย่างเขาสวนกวาง\" ของกิน ของดี ประจำจังหวัดขอนแก่น 🍗🐔🔥",
+     "likes": 3,
+     "date": "2026-07-14",
+     "link": "https://www.lemon8-app.com/@khunnay_reviwe/7662378399821824529?region=th",
+     "source": "Lemon8 · คุณนายรีวิว",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7662378399821824529&index=0&sign=f4faad32dbae790380e9cacb6c070341",
+     "tag": 1
+    }
+   ],
+   "reviewCount": 18,
+   "websiteDead": "http://www.khaosuankwangzoo.com/"
   },
   {
    "id": "osm-n4203697890",
@@ -54371,10 +54804,10 @@
    "summary": {},
    "fetchedAt": "2026-11-06T20:10:13.025Z",
    "nameEn": true,
-   "hours": "Mo-Fr 09:00-17:00; Sa,Su 09:00-19:00",
-   "hoursSrc": "web",
    "district": "สวนผึ้ง",
-   "districtEn": "Suan Phueng"
+   "districtEn": "Suan Phueng",
+   "hours": "Mo-Fr 09:00-17:00; Sa,Su 09:00-19:00",
+   "hoursSrc": "web"
   },
   {
    "id": "osm-n12863642364",
@@ -54432,9 +54865,9 @@
    "province": "chonburi",
    "summary": {},
    "fetchedAt": "2026-11-06T20:10:16.534Z",
-   "websiteDead": "http://www.gretafarm.com/",
    "district": "บางละมุง",
-   "districtEn": "Bang Lamung"
+   "districtEn": "Bang Lamung",
+   "websiteDead": "http://www.gretafarm.com/"
   },
   {
    "id": "osm-w589130835",
@@ -54454,10 +54887,10 @@
     "th": "Jungle Xtrem Adventures offers a world-class experience designed for everyone—from families to thrill-seekers. Built to international safety standards, our courses offer easy-to-navigate routes with professional guidance."
    },
    "fetchedAt": "2026-11-06T20:10:16.534Z",
-   "hours": "Mo 09:00-18:00; Tu 09:00-18:00; We 09:00-18:00; Th 09:00-18:00; Fr 09:00-18:00; Sa 09:00-18:00; Su 09:00-18:00",
-   "hoursSrc": "web",
    "district": "เมืองภูเก็ต",
-   "districtEn": "Mueang Phuket"
+   "districtEn": "Mueang Phuket",
+   "hours": "Mo 09:00-18:00; Tu 09:00-18:00; We 09:00-18:00; Th 09:00-18:00; Fr 09:00-18:00; Sa 09:00-18:00; Su 09:00-18:00",
+   "hoursSrc": "web"
   },
   {
    "id": "osm-w897610595",
@@ -54475,9 +54908,9 @@
    "province": "phuket",
    "summary": {},
    "fetchedAt": "2026-11-06T20:10:17.880Z",
-   "websiteDead": "https://www.bluetree.fun/",
    "district": "ถลาง",
-   "districtEn": "Thalang"
+   "districtEn": "Thalang",
+   "websiteDead": "https://www.bluetree.fun/"
   },
   {
    "id": "osm-w1032851977",
@@ -54691,9 +55124,9 @@
    "province": "chiang-mai",
    "summary": {},
    "fetchedAt": "2026-11-07T01:23:26.344Z",
-   "websiteDead": "https://www.baanjangnak.com/",
    "district": "สันกำแพง",
-   "districtEn": "San Kamphaeng"
+   "districtEn": "San Kamphaeng",
+   "websiteDead": "https://www.baanjangnak.com/"
   },
   {
    "id": "osm-n1121030565",
@@ -54849,9 +55282,9 @@
    "province": "chiang-mai",
    "summary": {},
    "fetchedAt": "2026-11-07T01:23:32.362Z",
-   "websiteDead": "https://www.firstroyalfactory.org/",
    "district": "ฝาง",
-   "districtEn": "Fang"
+   "districtEn": "Fang",
+   "websiteDead": "https://www.firstroyalfactory.org/"
   },
   {
    "id": "osm-n4759661526",
@@ -55219,9 +55652,9 @@
    "province": "chiang-mai",
    "summary": {},
    "fetchedAt": "2026-11-07T01:23:45.915Z",
-   "websiteDead": "http://www2.bot.or.th/museum/eng/index.asp",
    "district": "เมืองเชียงใหม่",
-   "districtEn": "Mueang Chiang Mai"
+   "districtEn": "Mueang Chiang Mai",
+   "websiteDead": "http://www2.bot.or.th/museum/eng/index.asp"
   },
   {
    "id": "osm-w115567618",
@@ -55445,12 +55878,12 @@
    "imageCredit": "km30192002 · CC BY 2.0",
    "imageAi": true,
    "imageScore": 7,
+   "district": "นครชัยศรี",
+   "districtEn": "Nakhon Chai Si",
    "entry": {
     "free": true,
     "src": "web"
-   },
-   "district": "นครชัยศรี",
-   "districtEn": "Nakhon Chai Si"
+   }
   },
   {
    "id": "osm-w312167241",
@@ -55982,14 +56415,71 @@
    "imageCredit": "กสิณธร ราชโอรส · CC BY-SA 4.0",
    "imageAi": true,
    "imageScore": 8,
+   "district": "ขลุง",
+   "posts": [
+    {
+     "title": "น้ำตกพลิ้ว จันทบุรี🧚‍♀️",
+     "likes": 425,
+     "date": "2026-01-24",
+     "link": "https://www.lemon8-app.com/@pimmmlapads/7599054310353256961?region=th",
+     "source": "Lemon8 · Pimlapadss",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7599054310353256961&index=0&sign=2d6d2414c155e093498197078baab0fa",
+     "tag": 1
+    },
+    {
+     "title": "น้ำตกพลิ้ว",
+     "likes": 42,
+     "date": "2026-05-02",
+     "link": "https://www.lemon8-app.com/@travelbychuyslowlife/7635120063730270738?region=th",
+     "source": "Lemon8 · เที่ยวตามตังค์",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7635120063730270738&index=0&sign=16859f38ea69662024e0e56497d2e369",
+     "tag": 1
+    },
+    {
+     "title": "หนีร้อนไป น้ำตกพลิ้ว จันทบุรี กันนน💚🌴🦚‼️",
+     "likes": 11,
+     "date": "2026-04-13",
+     "link": "https://www.lemon8-app.com/@birdsdailyy/7628235832511480327?region=th",
+     "source": "Lemon8 · heybdl.yy",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7628235832511480327&index=0&sign=230eaf2653b2e026d2dee35cc666e59e",
+     "tag": 1
+    },
+    {
+     "title": "อุทยานแห่งชาติน้ำตกพลิ้ว จ.จันทบุรี",
+     "likes": 7,
+     "date": "2026-06-22",
+     "link": "https://www.lemon8-app.com/@pws.2003/7654232082478088720?region=th",
+     "source": "Lemon8 · drxeam_",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7654232082478088720&index=0&sign=2c940b45fbce2b151d96b1b1d3b25647",
+     "tag": 1
+    },
+    {
+     "title": "เก็บตราสแตมป์อุทยาน …น้ำตกพลิ้ว",
+     "likes": 6,
+     "date": "2026-07-13",
+     "link": "https://www.lemon8-app.com/@bow_in/7661843991092085265?region=th",
+     "source": "Lemon8 · JiRa",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7661843991092085265&index=0&sign=c499e8cf5abb6dfbc01f430a61332181",
+     "tag": 1
+    },
+    {
+     "title": "น้ำตกฟีลธรรมชาติ💦 “น้ำตกพลิ้ว”",
+     "likes": 4,
+     "date": "2026-08-19",
+     "link": "https://www.lemon8-app.com/@arpyo/7675684102585975303?region=th",
+     "source": "Lemon8 · ARPYO",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7675684102585975303&index=0&sign=f3680717b7036a89b41ce19b5574d793",
+     "tag": 1
+    }
+   ],
+   "reviewCount": 20,
    "hours": "08:00-18:00",
    "hoursSrc": "typical",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "district": "ขลุง"
+   }
   },
   {
    "id": "osm-n265689795",
@@ -56014,7 +56504,64 @@
    "imageAi": true,
    "imageScore": 9,
    "district": "เมืองภูเก็ต",
-   "districtEn": "Mueang Phuket"
+   "districtEn": "Mueang Phuket",
+   "posts": [
+    {
+     "title": "Promthep Cape แหลมพรหมเทพ 🌊⛰️🌅",
+     "likes": 182,
+     "date": "2026-01-22",
+     "link": "https://www.lemon8-app.com/@zxxxn.03/7598055675223704071?region=th",
+     "source": "Lemon8 · zeenmemories⭐️",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7598055675223704071&index=0&sign=9b30c475607a4998f835e033bda7d42f",
+     "tag": 1
+    },
+    {
+     "title": "ชมพระอาทิตย์ตกดิน @แหลมพรหมเทพ",
+     "likes": 17,
+     "date": "2025-12-30",
+     "link": "https://www.lemon8-app.com/@kittyyuyung/7589740565781086737?region=th",
+     "source": "Lemon8 · คุณนกยูง",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7589740565781086737&index=0&sign=8a5b205f997103c5482e735ea49325a1",
+     "tag": 1
+    },
+    {
+     "title": "ดูพระอาทิตย์ตกที่แหลมพรหมเทพ จ.ภูเก็ต 🌞🌅✨",
+     "likes": 10,
+     "date": "2026-10-08",
+     "link": "https://www.lemon8-app.com/@little.plaire/7694302062795899412?region=th",
+     "source": "Lemon8 · 𝐏𝐥𝐚𝐢𝐫𝐞",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7694302062795899412&index=0&sign=8d46c90ea3148421e8fa93d468bc6673",
+     "tag": 1
+    },
+    {
+     "title": "“แหลมพรหมเทพ” ภูเก็ต จุดชมวิว & ถ่ายรูปพระอาทิตย์ตกที่ห้ามพลาด 🌅📸",
+     "likes": 10,
+     "date": "2026-10-10",
+     "link": "https://www.lemon8-app.com/@callmepattra/7694964312548442642?region=th",
+     "source": "Lemon8 · Pattra🍀",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7694964312548442642&index=0&sign=129b81a2616b6aacd9b928bb855cae7e",
+     "tag": 1
+    },
+    {
+     "title": "สายธรรมชาติห้ามพลาด#แหลมพรหมเทพ #phuket#thailand",
+     "likes": 4,
+     "date": "2026-09-11",
+     "link": "https://www.lemon8-app.com/@annaamreen/7684078654640439824?region=th",
+     "source": "Lemon8 · Anna Amreen",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7684078654640439824&index=0&sign=64d0ea7b00bd1128b9d1458bbfbceb02",
+     "tag": 1
+    },
+    {
+     "title": "แหลมพรหมเทพ",
+     "likes": 3,
+     "date": "2026-01-19",
+     "link": "https://www.lemon8-app.com/@taew.zaza/7596929598227530257?region=th",
+     "source": "Lemon8 · แต้ว ที่ชอบพื้นที่สีเขียว 🌳🌻",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7596929598227530257&index=0&sign=01a5534c8c40eb1454149536aac08764",
+     "tag": 1
+    }
+   ],
+   "reviewCount": 16
   },
   {
    "id": "osm-n2641658813",
@@ -56092,14 +56639,14 @@
    "imageCredit": "Dirk Enthoven · CC BY 3.0",
    "imageAi": true,
    "imageScore": 6,
+   "district": "เกาะสมุย",
+   "districtEn": "Ko Samui",
    "hours": "24/7",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "district": "เกาะสมุย",
-   "districtEn": "Ko Samui"
+   }
   },
   {
    "id": "osm-w263781656",
@@ -56113,14 +56660,14 @@
    "province": "prachuap-khiri-khan",
    "summary": {},
    "fetchedAt": "2026-11-07T01:28:10.762Z",
+   "district": "บางสะพาน",
+   "districtEn": "Bang Saphan",
    "hours": "24/7",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "district": "บางสะพาน",
-   "districtEn": "Bang Saphan"
+   }
   },
   {
    "id": "osm-w321033379",
@@ -56160,14 +56707,14 @@
    "imageAi": true,
    "imageScore": 6,
    "nameEn": true,
+   "district": "ถลาง",
+   "districtEn": "Thalang",
    "hours": "24/7",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "district": "ถลาง",
-   "districtEn": "Thalang"
+   }
   },
   {
    "id": "osm-r14010439",
@@ -56187,14 +56734,14 @@
    "imageCredit": "Maleewan1wanpen2thai · CC BY-SA 4.0",
    "imageAi": true,
    "imageScore": 5,
+   "district": "ถลาง",
+   "districtEn": "Thalang",
    "hours": "24/7",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "district": "ถลาง",
-   "districtEn": "Thalang"
+   }
   },
   {
    "id": "osm-r14031387",
@@ -56215,13 +56762,13 @@
    "imageCredit": "Alexander Annenkov from Moscow, Russia · CC BY 2.0",
    "imageAi": true,
    "imageScore": 8,
+   "districtEn": "Kathu",
    "hours": "24/7",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Kathu"
+   }
   },
   {
    "id": "osm-r17281600",
@@ -56241,14 +56788,14 @@
    "imageCredit": "Wolfgang Holzem · CC BY-SA 4.0",
    "imageAi": true,
    "imageScore": 7,
+   "district": "เมืองภูเก็ต",
+   "districtEn": "Mueang Phuket",
    "hours": "24/7",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "district": "เมืองภูเก็ต",
-   "districtEn": "Mueang Phuket"
+   }
   },
   {
    "id": "osm-r19742131",
@@ -56268,14 +56815,14 @@
    "imageCredit": "Альберт Исмаилов · CC BY 3.0",
    "imageAi": true,
    "imageScore": 8,
+   "district": "เมืองกระบี่",
+   "districtEn": "Mueang Krabi",
    "hours": "24/7",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "district": "เมืองกระบี่",
-   "districtEn": "Mueang Krabi"
+   }
   },
   {
    "id": "osm-n942311647",
@@ -56362,8 +56909,8 @@
    "imageCredit": "PattayaPatrol · CC BY-SA 4.0",
    "imageAi": true,
    "imageScore": 6,
-   "websiteDead": "https://www.jamesons-pattaya.com/",
-   "districtEn": "Bang Lamung"
+   "districtEn": "Bang Lamung",
+   "websiteDead": "https://www.jamesons-pattaya.com/"
   },
   {
    "id": "osm-n1574173747",
@@ -56386,8 +56933,8 @@
    "imageCredit": "Sfarmer45 · CC0",
    "imageAi": true,
    "imageScore": 7,
-   "websiteDead": "https://www.beerfest-thai.com/",
-   "districtEn": "Bang Lamung"
+   "districtEn": "Bang Lamung",
+   "websiteDead": "https://www.beerfest-thai.com/"
   },
   {
    "id": "osm-n1913901819",
@@ -56406,8 +56953,8 @@
    "summary": {},
    "fetchedAt": "2026-11-07T13:49:39.840Z",
    "district": "บางละมุง",
-   "websiteDead": "https://studio69bar.com/",
-   "districtEn": "Bang Lamung"
+   "districtEn": "Bang Lamung",
+   "websiteDead": "https://studio69bar.com/"
   },
   {
    "id": "osm-n2111898181",
@@ -56425,7 +56972,64 @@
    "summary": {},
    "fetchedAt": "2026-11-07T13:49:41.024Z",
    "district": "ลาดพร้าว",
-   "districtEn": "Lat Phrao"
+   "districtEn": "Lat Phrao",
+   "posts": [
+    {
+     "title": "Unbox HOBS 2025",
+     "likes": 30,
+     "date": "2026-08-21",
+     "link": "https://www.lemon8-app.com/@ywly_h/7676543077737103888?region=th",
+     "source": "Lemon8 · มายเลิ้บเวอร์",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7676543077737103888&index=0&sign=ca2c50b9a6f78101a12f99792f9b04bf",
+     "tag": 1
+    },
+    {
+     "title": "Hobs Iconsaim 🥗🍹",
+     "likes": 3,
+     "date": "2026-01-04",
+     "link": "https://www.lemon8-app.com/@beyourfern1/7591462414890123792?region=th",
+     "source": "Lemon8 · Fern Su",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7591462414890123792&index=0&sign=2ad05347ab5f93e4272815f792eb6fb8",
+     "tag": 1
+    },
+    {
+     "title": "Hobs Ari Samosorn บรรยากาศ Cozy อารมณ์ดี ✨🍻",
+     "likes": 2,
+     "date": "2026-10-13",
+     "link": "https://www.lemon8-app.com/@kingkanbi/7696021887943574023?region=th",
+     "source": "Lemon8 · 🌱King Kan Bai🌿",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7696021887943574023&index=0&sign=22533f4bf44f716617924ce3fa634d37",
+     "tag": 1
+    },
+    {
+     "title": "สาย Adventure ต้องมี กระเป๋าคู่ใจ Honbs Odyssey เหมาะกับทุกสถานการณ์👩🏻🧑🏻💕 #Hobscltg #Odysseyhobs #surfskate #surfskatethailand #ootd",
+     "likes": 2,
+     "date": "2026-03-09",
+     "link": "https://www.lemon8-app.com/@goingwithyou/7615131033697354261?region=th",
+     "source": "Lemon8 · Going with you",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7615131033697354261&index=0&sign=43268a6d4ca5473f68b83bcd3921b3d0",
+     "tag": 1
+    },
+    {
+     "title": "แจกพิกัดมุมถ่ายรูปเด็กสยาม 📸 พร้อม OOTD ลุค Western แมตช์กับ HOBS X HOLD’EM #Hobscltg #Hobs #Holdem #HobsxHoldem #พิกัดถ่ายรูปกรุงเทพ",
+     "likes": 1,
+     "date": "2026-10-06",
+     "link": "https://www.lemon8-app.com/@thorhmx/7693506634849468936?region=th",
+     "source": "Lemon8 · Torhm",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7693506634849468936&index=0&sign=64e343a44ece5889ecdd46d9589683fe",
+     "tag": 1
+    },
+    {
+     "title": "HOBS X The​ ghost​ radio 💀💀💀​",
+     "likes": 1,
+     "date": "2026-10-14",
+     "link": "https://www.lemon8-app.com/@nida.nii/7696477151754863122?region=th",
+     "source": "Lemon8 · nida.nii",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7696477151754863122&index=0&sign=3ddd4f26658e211c9d4361a8c84edc44",
+     "tag": 1
+    }
+   ],
+   "reviewCount": 7
   },
   {
    "id": "osm-n2111898187",
@@ -56504,7 +57108,55 @@
    "imageCredit": "Welcome to Thailand · CC0",
    "imageAi": true,
    "imageScore": 8,
-   "districtEn": "Pathum Wan"
+   "districtEn": "Pathum Wan",
+   "posts": [
+    {
+     "title": "Red Sky Bar | @Centara Grand at CentralWord",
+     "likes": 4,
+     "date": "2026-01-19",
+     "link": "https://www.lemon8-app.com/@moodstory.p/7597091237639815698?region=th",
+     "source": "Lemon8 · mood story",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7597091237639815698&index=0&sign=96aecbfe456b5a8a385caa49b2a38d39",
+     "tag": 1
+    },
+    {
+     "title": "Red Sky Bar",
+     "likes": 4,
+     "date": "2025-12-11",
+     "link": "https://www.lemon8-app.com/@user3061376835441/7582603993063358994?region=th",
+     "source": "Lemon8 · Alice Yu",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7582603993063358994&index=0&sign=b6bfd332868d1fc0d1741027be60b906",
+     "tag": 1
+    },
+    {
+     "title": "📍Red Sky Rooftop | Bangkok Looking for the perfect rooftop dinner in Bangkok? ✨ Red Sky is one of those places that truly has it all—delici",
+     "likes": 1,
+     "date": "2026-07-04",
+     "link": "https://www.lemon8-app.com/@nanny_bussaba/7658624627740951047?region=th",
+     "source": "Lemon8 · Nan_Bussaba",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7658624627740951047&index=0&sign=784f0fcea70db71a9d1ad543e764e7b7",
+     "tag": 1
+    },
+    {
+     "title": "Red sky✨",
+     "likes": 1,
+     "date": "2026-03-03",
+     "link": "https://www.lemon8-app.com/@lblbcbcb/7613030061364494864?region=th",
+     "source": "Lemon8 · บัสจะบอก",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7613030061364494864&index=0&sign=8fd0e6f94e44b17871e5a70d3e9ca3b6",
+     "tag": 1
+    },
+    {
+     "title": "🌃 Red Sky Bar 📍 โลเคชัน รูฟท็อปบาร์ชื่อดังบนชั้น 55–56 ของโรงแรม Centara Grand ที่เชื่อมกับ CentralWorld ใจกลางกรุงเทพ เดินทางง่ายมากทั้ง ",
+     "likes": 0,
+     "date": "2026-08-21",
+     "link": "https://www.lemon8-app.com/@phak29037/7676341706955555336?region=th",
+     "source": "Lemon8 · จุ๊งจิ้งรีวิว💝",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7676341706955555336&index=0&sign=25c47b404a867b6e2a78ae9741dff4d8",
+     "tag": 1
+    }
+   ],
+   "reviewCount": 5
   },
   {
    "id": "osm-n3181780623",
@@ -56596,8 +57248,8 @@
    "imageCredit": "Chicago Crime Scenes · BY 2.0",
    "imageAi": true,
    "imageScore": 9,
-   "websiteDead": "http://www.kellyspubgrill.com/",
-   "districtEn": "Bang Lamung"
+   "districtEn": "Bang Lamung",
+   "websiteDead": "http://www.kellyspubgrill.com/"
   },
   {
    "id": "osm-n4466027403",
@@ -56699,9 +57351,9 @@
    "imageCredit": "Christophe95 · CC BY-SA 4.0",
    "imageAi": true,
    "imageScore": 7,
-   "websiteDead": "https://cocotams.business.site/",
    "district": "เกาะสมุย",
-   "districtEn": "Ko Samui"
+   "districtEn": "Ko Samui",
+   "websiteDead": "https://cocotams.business.site/"
   },
   {
    "id": "osm-n4863350621",
@@ -57017,8 +57669,8 @@
    "imageCredit": "Tuderna · CC BY 3.0",
    "imageAi": true,
    "imageScore": 6,
-   "websiteDead": "https://www.beachfrontdivers.com/beachfront/bar",
-   "districtEn": "Mueang Krabi"
+   "districtEn": "Mueang Krabi",
+   "websiteDead": "https://www.beachfrontdivers.com/beachfront/bar"
   },
   {
    "id": "osm-n6331784774",
@@ -57146,8 +57798,8 @@
    },
    "fetchedAt": "2026-11-07T13:50:43.122Z",
    "district": "ลาดพร้าว",
-   "websiteDead": "https://www.thlgun.com/",
-   "districtEn": "Lat Phrao"
+   "districtEn": "Lat Phrao",
+   "websiteDead": "https://www.thlgun.com/"
   },
   {
    "id": "osm-n10023564669",
@@ -57375,8 +58027,8 @@
    "summary": {},
    "fetchedAt": "2026-11-07T13:50:55.858Z",
    "district": "เกาะลันตา",
-   "websiteDead": "https://www.plzenskybarkohlanta.cz/",
-   "districtEn": "Ko Lanta"
+   "districtEn": "Ko Lanta",
+   "websiteDead": "https://www.plzenskybarkohlanta.cz/"
   },
   {
    "id": "osm-n12634940122",
@@ -57850,7 +58502,64 @@
    "imageCredit": "Azreey · CC BY-SA 3.0",
    "imageAi": true,
    "imageScore": 8,
-   "districtEn": "Samphanthawong"
+   "districtEn": "Samphanthawong",
+   "posts": [
+    {
+     "title": "พิกัดถ่ายรูปย่านเจริญกรุง 🚗🪔🏰🪄",
+     "likes": 1610,
+     "date": "2026-08-05",
+     "link": "https://www.lemon8-app.com/@haroofang/7670545624000971265?region=th",
+     "source": "Lemon8 · Cha",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7670545624000971265&index=0&sign=b3e4a0d754f38bd11f85f7a86bfde42e",
+     "tag": 1
+    },
+    {
+     "title": "✨🍮แจกแพลน วันเดย์ทริป ตลาดน้อย-เจริญกรุง เที่ยวง่าย ชิวสุดๆ🌤️🍜",
+     "likes": 675,
+     "date": "2026-02-13",
+     "link": "https://www.lemon8-app.com/@my_sherrylime/7606311483215774224?region=th",
+     "source": "Lemon8 · My sherrylime🍒",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7606311483215774224&index=0&sign=9d38f3f0b763f896de77da1afc5341e3",
+     "tag": 1
+    },
+    {
+     "title": "🤳🏻Photo spot idea — แนะนำมุมถ่ายรูป (เจริญกรุง-บางรัก)👀",
+     "likes": 443,
+     "date": "2026-09-29",
+     "link": "https://www.lemon8-app.com/@rileyapparels/7690899740994175509?region=th",
+     "source": "Lemon8 · Riley.apparels",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7690899740994175509&index=0&sign=867204310deb65c0623006543ef61a6b",
+     "tag": 1
+    },
+    {
+     "title": "เดินเล่นอัพเดตย่านเจริญกรุง มุมถ่ายรูปใหม่ๆเพียบ ! 🥯⭐️🤍 (1 day งบ200.-)",
+     "likes": 389,
+     "date": "2026-06-25",
+     "link": "https://www.lemon8-app.com/@chortorrr/7655360335139488276?region=th",
+     "source": "Lemon8 · chutinn",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7655360335139488276&index=0&sign=d51b88e8d780e9c73a077cddcb368c74",
+     "tag": 1
+    },
+    {
+     "title": "แจกแพลน One Day Trip เจริญกรุง-ทรงวาด-เยาวราชงบ 500✨",
+     "likes": 227,
+     "date": "2026-03-15",
+     "link": "https://www.lemon8-app.com/@gee_chov/7617445451608719893?region=th",
+     "source": "Lemon8 · Let’s Wander Luna",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7617445451608719893&index=0&sign=9d7da5da6659bc1d336c7aa1b2de72d6",
+     "tag": 1
+    },
+    {
+     "title": "เจริญกรุง 40 มีดีอะไร !! ดูนี่👀",
+     "likes": 185,
+     "date": "2026-04-30",
+     "link": "https://www.lemon8-app.com/@imphxn/7634463216227877384?region=th",
+     "source": "Lemon8 · 🐰พะแลม🐰",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7634463216227877384&index=0&sign=6f4c3e51c393a457033a18edabf9028a",
+     "tag": 1
+    }
+   ],
+   "reviewCount": 14
   },
   {
    "id": "osm-w1232461360",
@@ -58027,7 +58736,42 @@
    ],
    "reviewCount": 7,
    "imageTh": "data/thumbs/7481307137399046673-0.webp",
-   "districtEn": "Ao Luek"
+   "districtEn": "Ao Luek",
+   "menuPrice": {
+    "min": 150,
+    "max": 180,
+    "items": [
+     {
+      "name": {
+       "th": "แซนด์วิชไก่ย่าง",
+       "en": "Grilled Chicken Sandwich"
+      },
+      "price": 150
+     },
+     {
+      "name": {
+       "th": "พิซซ่ากระเพราไก่",
+       "en": "Chicken and Basil Pizza"
+      },
+      "price": 160
+     },
+     {
+      "name": {
+       "th": "พิซซ่ากุ้งฮาวาย",
+       "en": "Hawaii Shrimp Pizza"
+      },
+      "price": 160
+     },
+     {
+      "name": {
+       "th": "พิซซ่ากระเทียมกุ้ง",
+       "en": "Shrimp Garlic Pizza"
+      },
+      "price": 180
+     }
+    ],
+    "src": "review1"
+   }
   },
   {
    "id": "wd-Q13022372",
@@ -58122,7 +58866,9 @@
     }
    ],
    "reviewCount": 20,
-   "districtEn": "Mueang Lop Buri"
+   "districtEn": "Mueang Lop Buri",
+   "hours": "Mo-Su 08:00-18:00",
+   "hoursSrc": "review1"
   },
   {
    "id": "wd-Q1415091",
@@ -59061,8 +59807,8 @@
    "province": "chanthaburi",
    "summary": {},
    "fetchedAt": "2026-11-06T20:10:25.752Z",
-   "websiteDead": "http://www.wangkhonchalet.com/",
-   "district": "โป่งน้ำร้อน"
+   "district": "โป่งน้ำร้อน",
+   "websiteDead": "http://www.wangkhonchalet.com/"
   },
   {
    "id": "osm-n3182486833",
@@ -59534,10 +60280,10 @@
    "imageScore": 9,
    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/oQiv8A1zWE5nBdlAizJPC29CQtxfILPAe5IgEB~tplv-sdweummd6v-text-logo-v1:QHZhbmFuYXZhaHVhaGlu:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796709600&x-signature=dxwUw6i3aQkrU8%2BHjfzWpmZdEEg%3D",
    "nameEn": true,
-   "hours": "Mo-Su 11:00-17:00",
-   "hoursSrc": "web",
    "district": "หัวหิน",
-   "districtEn": "Hua Hin"
+   "districtEn": "Hua Hin",
+   "hours": "Mo-Su 11:00-17:00",
+   "hoursSrc": "web"
   },
   {
    "id": "osm-w481897764",
@@ -59949,10 +60695,10 @@
    "imageAi": true,
    "imageScore": 8,
    "nameEn": true,
-   "hours": "Mo-Su 10:00-20:00",
-   "hoursSrc": "web",
    "district": "ปทุมวัน",
-   "districtEn": "Pathum Wan"
+   "districtEn": "Pathum Wan",
+   "hours": "Mo-Su 10:00-20:00",
+   "hoursSrc": "web"
   },
   {
    "id": "osm-n2638516614",
@@ -60360,10 +61106,10 @@
    "imageCredit": "รูปจากเว็บไซต์ร้าน",
    "imageAi": true,
    "imageScore": 8,
-   "hours": "Mo,Tu,We,Fr,Sa,Su 11:00-21:00",
-   "hoursSrc": "web",
    "district": "ถลาง",
-   "districtEn": "Thalang"
+   "districtEn": "Thalang",
+   "hours": "Mo,Tu,We,Fr,Sa,Su 11:00-21:00",
+   "hoursSrc": "web"
   },
   {
    "id": "osm-n13076284527",
@@ -60646,11 +61392,11 @@
    "summary": {},
    "fetchedAt": "2026-11-07T01:24:41.384Z",
    "district": "บางเลน",
+   "districtEn": "Bang Len",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Bang Len"
+   }
   },
   {
    "id": "osm-n14330927571",
@@ -60683,9 +61429,9 @@
    "province": "bangkok",
    "summary": {},
    "fetchedAt": "2026-11-07T01:24:42.855Z",
-   "websiteDead": "http://www.kuhistory.ku.ac.th/",
    "district": "จตุจักร",
-   "districtEn": "Chatuchak"
+   "districtEn": "Chatuchak",
+   "websiteDead": "http://www.kuhistory.ku.ac.th/"
   },
   {
    "id": "osm-w115567619",
@@ -61140,10 +61886,10 @@
    "imageCredit": "Diego Delso · CC BY-SA 4.0",
    "imageAi": true,
    "imageScore": 8,
-   "hours": "Mo-Su 09:00-18:00",
-   "hoursSrc": "web",
    "district": "ถลาง",
-   "districtEn": "Thalang"
+   "districtEn": "Thalang",
+   "hours": "Mo-Su 09:00-18:00",
+   "hoursSrc": "web"
   },
   {
    "id": "osm-w1044722332",
@@ -61332,10 +62078,10 @@
    "imageCredit": "Diego Delso · CC BY-SA 4.0",
    "imageAi": true,
    "imageScore": 8,
-   "hours": "Mo-Su 09:00-18:00",
-   "hoursSrc": "web",
    "district": "เมืองภูเก็ต",
-   "districtEn": "Mueang Phuket"
+   "districtEn": "Mueang Phuket",
+   "hours": "Mo-Su 09:00-18:00",
+   "hoursSrc": "web"
   },
   {
    "id": "osm-w1233476540",
@@ -61570,15 +62316,15 @@
    "trend": 1,
    "imageAi": true,
    "imageScore": 8,
+   "district": "พระนคร",
+   "districtEn": "Phra Nakhon",
    "hours": "Tu-Su 09:00-17:00; Mo off",
    "hoursSrc": "web",
    "entry": {
     "thai": 70,
     "foreign": 100,
     "src": "web"
-   },
-   "district": "พระนคร",
-   "districtEn": "Phra Nakhon"
+   }
   },
   {
    "id": "osm-w1442803256",
@@ -61983,11 +62729,11 @@
    "imageCredit": "Rom870 · CC BY 3.0",
    "imageAi": true,
    "imageScore": 8,
+   "districtEn": "Mueang Phuket",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Mueang Phuket"
+   }
   },
   {
    "id": "osm-n2262154851",
@@ -62205,11 +62951,11 @@
    "imageCredit": "Christophe95 · CC BY-SA 4.0",
    "imageAi": true,
    "imageScore": 7,
+   "districtEn": "Mueang Phuket",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Mueang Phuket"
+   }
   },
   {
    "id": "osm-n2933521303",
@@ -62317,12 +63063,12 @@
    "imageCredit": "Roma Neus · CC BY 3.0",
    "imageAi": true,
    "imageScore": 8,
+   "district": "ถลาง",
+   "districtEn": "Thalang",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "district": "ถลาง",
-   "districtEn": "Thalang"
+   }
   },
   {
    "id": "osm-n5414408821",
@@ -62837,11 +63583,11 @@
    },
    "fetchedAt": "2026-11-07T01:29:34.022Z",
    "district": "สังคม",
+   "districtEn": "Sangkhom",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Sangkhom"
+   }
   },
   {
    "id": "osm-n13123333081",
@@ -62876,11 +63622,11 @@
    "summary": {},
    "fetchedAt": "2026-11-07T01:29:35.459Z",
    "district": "พบพระ",
+   "districtEn": "Phop Phra",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Phop Phra"
+   }
   },
   {
    "id": "osm-w27837685",
@@ -62901,12 +63647,12 @@
    "imageCredit": "Jtorquy · CC BY-SA 4.0",
    "imageAi": true,
    "imageScore": 7,
+   "district": "สัตหีบ",
+   "districtEn": "Sattahip",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "district": "สัตหีบ",
-   "districtEn": "Sattahip"
+   }
   },
   {
    "id": "osm-w32877657",
@@ -62998,13 +63744,13 @@
    ],
    "hot": 5.9,
    "trend": 2,
+   "districtEn": "Mueang Chon Buri",
    "hours": "24/7",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Mueang Chon Buri"
+   }
   },
   {
    "id": "osm-w150203035",
@@ -63022,13 +63768,13 @@
    },
    "fetchedAt": "2026-11-07T01:29:43.140Z",
    "district": "เมืองภูเก็ต",
+   "districtEn": "Mueang Phuket",
    "hours": "24/7",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Mueang Phuket"
+   }
   },
   {
    "id": "osm-w244555510",
@@ -63050,14 +63796,14 @@
    "imageCredit": "No machine-readable author provided. Tsui assumed (based on  · CC BY-SA 3.0",
    "imageAi": true,
    "imageScore": 6,
+   "district": "เกาะพะงัน",
+   "districtEn": "Ko Pha-ngan",
    "hours": "24/7",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "district": "เกาะพะงัน",
-   "districtEn": "Ko Pha-ngan"
+   }
   },
   {
    "id": "osm-w248470596",
@@ -63079,11 +63825,11 @@
    "imageCredit": "-1g · CC BY-SA 3.0",
    "imageAi": true,
    "imageScore": 7,
+   "districtEn": "Pai",
    "entry": {
     "free": true,
     "src": "web"
-   },
-   "districtEn": "Pai"
+   }
   },
   {
    "id": "osm-w491364296",
@@ -63170,13 +63916,13 @@
    "imageCredit": "Максим Улитин · CC BY 3.0",
    "imageAi": true,
    "imageScore": 8,
+   "districtEn": "Mueang Krabi",
    "hours": "24/7",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Mueang Krabi"
+   }
   },
   {
    "id": "osm-r10632198",
@@ -63198,13 +63944,13 @@
    "imageCredit": "Phuket@photographer.net from Phuket, Thailand · CC BY 2.0",
    "imageAi": true,
    "imageScore": 8,
+   "districtEn": "Mueang Phuket",
    "hours": "24/7",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Mueang Phuket"
+   }
   },
   {
    "id": "osm-n301567636",
@@ -63258,8 +64004,8 @@
    "summary": {},
    "fetchedAt": "2026-11-07T13:51:22.106Z",
    "district": "บางละมุง",
-   "websiteDead": "http://www.hotel-fabrice-resort-pattaya.com/",
-   "districtEn": "Bang Lamung"
+   "districtEn": "Bang Lamung",
+   "websiteDead": "http://www.hotel-fabrice-resort-pattaya.com/"
   },
   {
    "id": "osm-n1149165277",
@@ -63277,14 +64023,14 @@
    "summary": {},
    "fetchedAt": "2026-11-07T13:51:23.631Z",
    "district": "เกาะสมุย",
+   "districtEn": "Ko Samui",
    "hours": "Mo-Su 08:00-21:00",
    "hoursSrc": "web",
    "menuPrice": {
     "min": 90,
     "max": 90,
     "src": "web"
-   },
-   "districtEn": "Ko Samui"
+   }
   },
   {
    "id": "osm-n1154019828",
@@ -63364,8 +64110,8 @@
    "imageCredit": "Jason \"Textfiles\" Scott · CC BY 2.0",
    "imageAi": true,
    "imageScore": 7,
-   "websiteDead": "http://www.rockhousepattaya.com/",
-   "districtEn": "Bang Lamung"
+   "districtEn": "Bang Lamung",
+   "websiteDead": "http://www.rockhousepattaya.com/"
   },
   {
    "id": "osm-n1577988810",
@@ -63382,8 +64128,8 @@
    "summary": {},
    "fetchedAt": "2026-11-07T13:51:31.715Z",
    "district": "เกาะช้าง",
-   "websiteDead": "http://www.filou-kohchang.com/",
-   "districtEn": "Ko Chang"
+   "districtEn": "Ko Chang",
+   "websiteDead": "http://www.filou-kohchang.com/"
   },
   {
    "id": "osm-n1598709817",
@@ -63446,8 +64192,8 @@
    "imageCredit": "David Howard · CC BY-SA 2.0",
    "imageAi": true,
    "imageScore": 5,
-   "websiteDead": "http://www.lionpubpattaya.com/",
-   "districtEn": "Bang Lamung"
+   "districtEn": "Bang Lamung",
+   "websiteDead": "http://www.lionpubpattaya.com/"
   },
   {
    "id": "osm-n1874113073",
@@ -63487,8 +64233,8 @@
    "imageCredit": "KAI LARS SCHERER · CC BY 3.0",
    "imageAi": true,
    "imageScore": 6,
-   "websiteDead": "https://www.bluemoosesportsbar.com/",
-   "districtEn": "Bang Lamung"
+   "districtEn": "Bang Lamung",
+   "websiteDead": "https://www.bluemoosesportsbar.com/"
   },
   {
    "id": "osm-n1896218950",
@@ -63510,8 +64256,8 @@
    "imageCredit": "Man vyi · Public domain",
    "imageAi": true,
    "imageScore": 6,
-   "websiteDead": "http://punchandjudy.co.th/",
-   "districtEn": "Bang Lamung"
+   "districtEn": "Bang Lamung",
+   "websiteDead": "http://punchandjudy.co.th/"
   },
   {
    "id": "osm-n2172525754",
@@ -63549,8 +64295,8 @@
    "imageCredit": "josef knecht · CC BY 3.0",
    "imageAi": true,
    "imageScore": 7,
-   "websiteDead": "http://www.sunsetbarkohkood.com/",
-   "districtEn": "Ko Kut"
+   "districtEn": "Ko Kut",
+   "websiteDead": "http://www.sunsetbarkohkood.com/"
   },
   {
    "id": "osm-n2604541970",
@@ -63607,8 +64353,8 @@
    "summary": {},
    "fetchedAt": "2026-11-07T13:51:49.281Z",
    "district": "บางละมุง",
-   "websiteDead": "http://www.maikanmajatalo.com/",
-   "districtEn": "Bang Lamung"
+   "districtEn": "Bang Lamung",
+   "websiteDead": "http://www.maikanmajatalo.com/"
   },
   {
    "id": "osm-n2769314527",
@@ -63654,8 +64400,8 @@
    "imageCredit": "PattayaPatrol · CC BY-SA 4.0",
    "imageAi": true,
    "imageScore": 7,
-   "websiteDead": "https://thenaughtyclubpattaya.com/",
-   "districtEn": "Bang Lamung"
+   "districtEn": "Bang Lamung",
+   "websiteDead": "https://thenaughtyclubpattaya.com/"
   },
   {
    "id": "osm-n3088004212",
@@ -63672,8 +64418,8 @@
    "summary": {},
    "fetchedAt": "2026-11-07T13:51:51.999Z",
    "district": "บางละมุง",
-   "websiteDead": "http://richmanpoorman.net/",
-   "districtEn": "Bang Lamung"
+   "districtEn": "Bang Lamung",
+   "websiteDead": "http://richmanpoorman.net/"
   },
   {
    "id": "osm-n3101148636",
@@ -63778,8 +64524,8 @@
    "imageCredit": "PattayaPatrol · CC BY-SA 4.0",
    "imageAi": true,
    "imageScore": 7,
-   "websiteDead": "http://www.nickysbarpattaya.com/",
-   "districtEn": "Bang Lamung"
+   "districtEn": "Bang Lamung",
+   "websiteDead": "http://www.nickysbarpattaya.com/"
   },
   {
    "id": "osm-n3216987061",
@@ -63797,9 +64543,9 @@
    "summary": {},
    "fetchedAt": "2026-11-07T13:51:59.611Z",
    "district": "กะทู้",
+   "districtEn": "Kathu",
    "hours": "Mo,Tu,We,Th,Fr,Sa,Su 0:00-03:00; Mo,Tu,We,Th,Fr,Sa,Su 20:30-0:00",
-   "hoursSrc": "web",
-   "districtEn": "Kathu"
+   "hoursSrc": "web"
   },
   {
    "id": "osm-n3227769374",
@@ -63834,8 +64580,8 @@
    "summary": {},
    "fetchedAt": "2026-11-07T13:52:02.296Z",
    "district": "บางละมุง",
-   "websiteDead": "http://www.venuepattaya.com/",
-   "districtEn": "Bang Lamung"
+   "districtEn": "Bang Lamung",
+   "websiteDead": "http://www.venuepattaya.com/"
   },
   {
    "id": "osm-n3287871972",
@@ -63880,8 +64626,8 @@
    "imageCredit": "OxfordPlayhouse · CC BY-SA 3.0",
    "imageAi": true,
    "imageScore": 8,
-   "websiteDead": "http://www.playhousebarthailand.com/",
-   "districtEn": "Mueang Chiang Mai"
+   "districtEn": "Mueang Chiang Mai",
+   "websiteDead": "http://www.playhousebarthailand.com/"
   },
   {
    "id": "osm-n3440636525",
@@ -63903,8 +64649,8 @@
    "imageCredit": "PattayaPatrol · CC BY-SA 4.0",
    "imageAi": true,
    "imageScore": 8,
-   "websiteDead": "http://www.69ersbeerbar.com/",
-   "districtEn": "Bang Lamung"
+   "districtEn": "Bang Lamung",
+   "websiteDead": "http://www.69ersbeerbar.com/"
   },
   {
    "id": "osm-n3507438459",
@@ -63968,8 +64714,8 @@
    "imageCredit": "blizzy63 · PDM 1.0",
    "imageAi": true,
    "imageScore": 5,
-   "websiteDead": "http://www.pmcafepattaya.com/",
-   "districtEn": "Bang Lamung"
+   "districtEn": "Bang Lamung",
+   "websiteDead": "http://www.pmcafepattaya.com/"
   },
   {
    "id": "osm-n3587471530",
@@ -64028,8 +64774,8 @@
    "summary": {},
    "fetchedAt": "2026-11-07T13:52:15.115Z",
    "district": "เกาะสมุย",
-   "websiteDead": "http://blackpearlsamuirestaurant.com/",
-   "districtEn": "Ko Samui"
+   "districtEn": "Ko Samui",
+   "websiteDead": "http://blackpearlsamuirestaurant.com/"
   },
   {
    "id": "osm-n3710582725",
@@ -64201,8 +64947,8 @@
    "imageCredit": "PattayaPatrol · CC BY-SA 4.0",
    "imageAi": true,
    "imageScore": 8,
-   "websiteDead": "http://www.pigandwhistlepattaya.com/",
-   "districtEn": "Bang Lamung"
+   "districtEn": "Bang Lamung",
+   "websiteDead": "http://www.pigandwhistlepattaya.com/"
   },
   {
    "id": "osm-n4223412508",
@@ -64724,12 +65470,12 @@
    "imageCredit": "Jothefiredragon · CC0",
    "imageAi": true,
    "imageScore": 7,
+   "districtEn": "Phra Nakhon",
    "menuPrice": {
     "min": 35,
     "max": 35,
     "src": "web"
-   },
-   "districtEn": "Phra Nakhon"
+   }
   },
   {
    "id": "osm-n6300528387",
@@ -65016,12 +65762,12 @@
    },
    "fetchedAt": "2026-11-07T01:21:57.551Z",
    "views": 0,
+   "district": "ห้วยยอด",
+   "districtEn": "Huai Yot",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "district": "ห้วยยอด",
-   "districtEn": "Huai Yot"
+   }
   },
   {
    "id": "wd-Q21551090",
@@ -65043,11 +65789,11 @@
    "fetchedAt": "2026-11-07T01:21:58.477Z",
    "district": "เมืองลำพูน",
    "hours": "08:00-17:00",
+   "districtEn": "Mueang Lamphun",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Mueang Lamphun"
+   }
   },
   {
    "id": "wd-Q55315232",
@@ -65210,12 +65956,12 @@
    "imageAi": true,
    "imageScore": 9,
    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/oQATAfExDDBMFAf7HIEbNyE4kEgIoXIAidbleJ~tplv-sdweummd6v-text-logo-v1:QGF5dXR0aGF5YV9zdGF0aW9u:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796709600&x-signature=trwxs%2BVrA0uH92DpLCOl6RFjWyc%3D",
+   "district": "เมืองพิจิตร",
+   "districtEn": "Mueang Phichit",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "district": "เมืองพิจิตร",
-   "districtEn": "Mueang Phichit"
+   }
   },
   {
    "id": "osm-n5157438000",
@@ -66647,9 +67393,9 @@
    "province": "surat-thani",
    "summary": {},
    "fetchedAt": "2026-11-06T20:10:58.378Z",
-   "websiteDead": "https://challengephangan.com/",
    "district": "เกาะพะงัน",
-   "districtEn": "Ko Pha-ngan"
+   "districtEn": "Ko Pha-ngan",
+   "websiteDead": "https://challengephangan.com/"
   },
   {
    "id": "osm-n4677275094",
@@ -67408,15 +68154,15 @@
    "imageCredit": "Markus G. Klötzer · CC BY-SA 4.0",
    "imageAi": true,
    "imageScore": 5,
+   "district": "เมืองมุกดาหาร",
+   "districtEn": "Mueang Mukdahan",
    "hours": "08:00-18:00",
    "hoursSrc": "typical",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "district": "เมืองมุกดาหาร",
-   "districtEn": "Mueang Mukdahan"
+   }
   },
   {
    "id": "osm-w399882800",
@@ -67505,15 +68251,15 @@
    "trend": 3,
    "imageAi": true,
    "imageScore": 7,
+   "district": "ภูเรือ",
+   "districtEn": "Phu Ruea",
    "hours": "08:00-18:00",
    "hoursSrc": "typical",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "district": "ภูเรือ",
-   "districtEn": "Phu Ruea"
+   }
   },
   {
    "id": "osm-w400316522",
@@ -67533,15 +68279,15 @@
    "imageCredit": "ทรงกุล ศิริวรกุล · CC BY-SA 4.0",
    "imageAi": true,
    "imageScore": 7,
+   "district": "ลอง",
+   "districtEn": "Long",
    "hours": "08:00-18:00",
    "hoursSrc": "typical",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "district": "ลอง",
-   "districtEn": "Long"
+   }
   },
   {
    "id": "osm-w400474959",
@@ -67561,15 +68307,15 @@
    "imageCredit": "Wickanet · CC BY 3.0",
    "imageAi": true,
    "imageScore": 6,
+   "district": "เวียงเก่า",
+   "districtEn": "Wiang Kao",
    "hours": "08:00-18:00",
    "hoursSrc": "typical",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "district": "เวียงเก่า",
-   "districtEn": "Wiang Kao"
+   }
   },
   {
    "id": "osm-w400477572",
@@ -67651,15 +68397,15 @@
    ],
    "hot": 11.5,
    "trend": 6,
+   "district": "บ้านแพง",
+   "districtEn": "Ban Phaeng",
    "hours": "08:00-18:00",
    "hoursSrc": "typical",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "district": "บ้านแพง",
-   "districtEn": "Ban Phaeng"
+   }
   },
   {
    "id": "osm-w888242282",
@@ -67689,14 +68435,14 @@
     }
    ],
    "reviewCount": 1,
+   "districtEn": "Yaha",
    "hours": "08:00-18:00",
    "hoursSrc": "typical",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "districtEn": "Yaha"
+   }
   },
   {
    "id": "osm-w920174697",
@@ -67716,15 +68462,15 @@
    "imageCredit": "chootrong · CC BY 3.0",
    "imageAi": true,
    "imageScore": 7,
+   "district": "แม่แตง",
+   "districtEn": "Mae Taeng",
    "hours": "08:00-18:00",
    "hoursSrc": "typical",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "district": "แม่แตง",
-   "districtEn": "Mae Taeng"
+   }
   },
   {
    "id": "osm-w937803013",
@@ -67744,15 +68490,15 @@
    "imageCredit": "Jomis 9 · CC BY-SA 4.0",
    "imageAi": true,
    "imageScore": 8,
+   "district": "วิหารแดง",
+   "districtEn": "Wihan Daeng",
    "hours": "08:00-18:00",
    "hoursSrc": "typical",
    "entry": {
     "thai": 40,
     "foreign": 200,
     "src": "typical"
-   },
-   "district": "วิหารแดง",
-   "districtEn": "Wihan Daeng"
+   }
   },
   {
    "id": "osm-n245227907",
@@ -67770,11 +68516,11 @@
    "summary": {},
    "fetchedAt": "2026-11-07T01:29:59.412Z",
    "district": "เมืองเชียงใหม่",
+   "districtEn": "Mueang Chiang Mai",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Mueang Chiang Mai"
+   }
   },
   {
    "id": "osm-n259288820",
@@ -68301,11 +69047,11 @@
    "imageCredit": "Rushen · CC BY-SA 2.0",
    "imageAi": true,
    "imageScore": 9,
+   "districtEn": "Pak Chong",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Pak Chong"
+   }
   },
   {
    "id": "osm-n501833975",
@@ -68804,11 +69550,11 @@
    "imageCredit": "::::=UT=:::: · CC BY-SA 3.0",
    "imageAi": true,
    "imageScore": 7,
+   "districtEn": "Chiang Khong",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Chiang Khong"
+   }
   },
   {
    "id": "osm-n960961428",
@@ -68829,11 +69575,11 @@
    "imageCredit": "jackylim · CC BY-SA 3.0",
    "imageAi": true,
    "imageScore": 7,
+   "districtEn": "Sangkhla Buri",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Sangkhla Buri"
+   }
   },
   {
    "id": "osm-n966242380",
@@ -68877,11 +69623,11 @@
    "imageCredit": "Pradid MeChai · CC BY-SA 3.0",
    "imageAi": true,
    "imageScore": 7,
+   "districtEn": "Mueang Chumphon",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Mueang Chumphon"
+   }
   },
   {
    "id": "osm-n1044028485",
@@ -68902,11 +69648,11 @@
    "imageCredit": "MikSed · CC BY-SA 4.0",
    "imageAi": true,
    "imageScore": 7,
+   "districtEn": "Bang Lamung",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Bang Lamung"
+   }
   },
   {
    "id": "osm-n1116453651",
@@ -68944,11 +69690,11 @@
    "imageAi": true,
    "imageScore": 6,
    "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/oYAHFXJYdZBABI7PWYvPaBASbiYCziAEjlgZ1~tplv-sdweummd6v-text-logo-v1:QGZsYW1lX2tyaXNhZGE=:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=2zGzpqtUu7hS%2F7C8j9sEbO%2FfcZg%3D",
+   "districtEn": "Mueang Rayong",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Mueang Rayong"
+   }
   },
   {
    "id": "osm-n1217833324",
@@ -69085,11 +69831,11 @@
    "imageCredit": "Kysasi · CC BY-SA 4.0",
    "imageAi": true,
    "imageScore": 7,
+   "districtEn": "Phu Ruea",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Phu Ruea"
+   }
   },
   {
    "id": "osm-n1311831569",
@@ -69621,13 +70367,13 @@
    "summary": {},
    "fetchedAt": "2026-11-07T01:31:31.577Z",
    "district": "สิเกา",
+   "districtEn": "Sikao",
    "hours": "24/7",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Sikao"
+   }
   },
   {
    "id": "osm-n1641043450",
@@ -69771,9 +70517,9 @@
    "imageCredit": "Jakub Michankow · CC BY 2.0",
    "imageAi": true,
    "imageScore": 9,
+   "districtEn": "Ko Pha-ngan",
    "hours": "24/7",
-   "hoursSrc": "typical",
-   "districtEn": "Ko Pha-ngan"
+   "hoursSrc": "typical"
   },
   {
    "id": "osm-n1731883529",
@@ -70404,14 +71150,14 @@
    "imageCredit": "PattayaPatrol · CC BY-SA 4.0",
    "imageAi": true,
    "imageScore": 7,
+   "district": "เมืองระยอง",
+   "districtEn": "Mueang Rayong",
    "hours": "24/7",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "district": "เมืองระยอง",
-   "districtEn": "Mueang Rayong"
+   }
   },
   {
    "id": "osm-n2036129600",
@@ -70985,11 +71731,11 @@
    "imageCredit": "mohigan · CC BY-SA 3.0",
    "imageAi": true,
    "imageScore": 9,
+   "districtEn": "Mueang Pan",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Mueang Pan"
+   }
   },
   {
    "id": "osm-n2262155283",
@@ -71190,11 +71936,11 @@
    "imageCredit": "::::=UT=:::: · CC BY-SA 3.0",
    "imageAi": true,
    "imageScore": 7,
+   "districtEn": "Pang Mapha",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Pang Mapha"
+   }
   },
   {
    "id": "osm-n2349272252",
@@ -71809,13 +72555,13 @@
    "imageCredit": "S Z · CC BY-SA 2.0",
    "imageAi": true,
    "imageScore": 7,
+   "districtEn": "Kantang",
    "hours": "24/7",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "districtEn": "Kantang"
+   }
   },
   {
    "id": "osm-n2501100052",
@@ -71835,14 +72581,14 @@
    "imageCredit": "martin.ale · CC BY-SA 3.0",
    "imageAi": true,
    "imageScore": 7,
+   "district": "เกาะพะงัน",
+   "districtEn": "Ko Pha-ngan",
    "hours": "24/7",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
     "src": "typical"
-   },
-   "district": "เกาะพะงัน",
-   "districtEn": "Ko Pha-ngan"
+   }
   },
   {
    "id": "osm-n2511826214",
@@ -71907,15 +72653,15 @@
    "fetchedAt": "2026-11-06T18:15:52.946Z",
    "imageAi": true,
    "imageScore": 7,
+   "district": "เมืองเชียงใหม่",
+   "districtEn": "Mueang Chiang Mai",
    "hours": "Mo,Tu,We,Th,Fr,Sa,Su 07:00-21:00",
    "hoursSrc": "web",
    "menuPrice": {
     "min": 100,
     "max": 200,
     "src": "web"
-   },
-   "district": "เมืองเชียงใหม่",
-   "districtEn": "Mueang Chiang Mai"
+   }
   },
   {
    "id": "wd-Q136565078",
@@ -72024,10 +72770,10 @@
    "fetchedAt": "2026-11-06T18:15:52.946Z",
    "imageAi": true,
    "imageScore": 7,
-   "hours": "Mo,We,Th,Fr,Sa,Su 09:00-17:00",
-   "hoursSrc": "web",
    "district": "เกาะสมุย",
-   "districtEn": "Ko Samui"
+   "districtEn": "Ko Samui",
+   "hours": "Mo,We,Th,Fr,Sa,Su 09:00-17:00",
+   "hoursSrc": "web"
   },
   {
    "id": "wd-Q123002567",
