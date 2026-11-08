@@ -2000,5 +2000,35 @@
  },
  "kloud by kbank คลาวด์ บาย เคแบงก์|bangkok": null,
  "zillaspace|bangkok": null,
- "larder chatuchak|bangkok": null
+ "larder chatuchak|bangkok": null,
+ "nightlife party|": {
+  "lat": 7.74325,
+  "lng": 98.77381,
+  "state": "Ao Nang"
+ },
+ "bangkok international trade and exhibition centre|bangkok": null,
+ "three kings monument|chiang-mai": {
+  "lat": 18.79023,
+  "lng": 98.98735,
+  "state": "Chiang Mai City Municipality"
+ },
+ "4seas nimman coliving coworking space|chiang-mai": null,
+ "tony s sukhumvit 11|bangkok": {
+  "lat": 13.74361,
+  "lng": 100.55655,
+  "state": "Bangkok"
+ },
+ "restaurant of the month|bangkok": null,
+ "restaurant of the night|bangkok": null,
+ "siam kempinski hotel bangkok|bangkok": {
+  "lat": 13.74854,
+  "lng": 100.53482,
+  "state": "Bangkok"
+ },
+ "hemingway|bangkok": {
+  "lat": 13.74286,
+  "lng": 100.55647,
+  "state": "Bangkok"
+ },
+ "กัมพ์ อารีย์ คอมมูนิตี้สเปซ|bangkok": null
 }
