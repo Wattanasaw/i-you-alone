@@ -1233,7 +1233,9 @@
   // โพสต์ยอดนิยม (ไลก์ ≥ 100 หรือ ≥ 20% ของโพสต์ที่ไลก์สูงสุดในชุดนั้น) เรียงใหม่สุดก่อน
   function freshPopular(list) {
     const min = Math.min(100, Math.max(0, ...list.map(n => n.likes || 0)) * 0.2);
-    return list.filter(n => (n.likes || 0) >= min).sort((a, b) => String(b.date || "").localeCompare(String(a.date || "")) || (b.likes || 0) - (a.likes || 0));
+    // โพสต์ใหม่ (≤ 14 วัน) ยังไม่ทันมีไลก์เยอะ → ใช้เกณฑ์ไลก์ต่ำกว่า (≥ 10) ให้เทรนด์ล่าสุดขึ้นก่อนเสมอ
+    const recent = n => n.date && (Date.now() - new Date(n.date)) / 864e5 <= 14;
+    return list.filter(n => (n.likes || 0) >= min || (recent(n) && (n.likes || 0) >= Math.min(10, min))).sort((a, b) => String(b.date || "").localeCompare(String(a.date || "")) || (b.likes || 0) - (a.likes || 0));
   }
   const fmtLikes = n => n >= 1000 ? (n / 1000).toFixed(1).replace(/\.0$/, "") + "K" : String(n || 0);
   // สถานที่ที่โพสต์เทรนด์พูดถึง (ใช้บนบอร์ดเทรนด์)
