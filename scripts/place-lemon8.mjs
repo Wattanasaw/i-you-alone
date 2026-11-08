@@ -1,5 +1,5 @@
 // รีวิวจาก Lemon8 ของแต่ละสถานที่ (ค้นด้วยชื่อสถานที่ตรงๆ) — ได้ ~60 โพสต์ต่อหน้า กรองเฉพาะโพสต์ที่พูดถึงที่นี่จริง
-// เก็บสูงสุด 24 โพสต์/แห่ง ใน data/place-posts/NN.json (แบ่ง 32 ไฟล์ แอพโหลดเฉพาะไฟล์ของสถานที่ที่เปิดดู ไม่ทำให้หน้าแรกช้า)
+// เก็บทุกโพสต์ที่หาเจอ (สูงสุด 120 โพสต์/แห่ง เรียงตามยอดไลก์) ใน data/place-posts/NN.json (แบ่ง 32 ไฟล์ แอพโหลดเฉพาะไฟล์ของสถานที่ที่เปิดดู ไม่ทำให้หน้าแรกช้า)
 // และใส่ 6 โพสต์ยอดนิยมใน places.json / trend-places.json (ใช้บนการ์ด, คะแนนกระแส, AI สรุปรีวิว)
 // หมุนเวียน: สถานที่ที่ยังไม่มีโพสต์ก่อน · อ่านซ้ำทุก 14 วัน · หยุดเมื่อครบเวลา (ที่เหลือรอบหน้า)
 // รัน หลัง scripts/trend-places.mjs · node scripts/place-lemon8.mjs [--minutes 20]
@@ -8,7 +8,7 @@ import { postFits, bestOwners, ownsPost, infoFromPosts, aliasMap, postAllowed } 
 
 const UA = "IYouAloneBot/1.0 (+https://wattanasaw.github.io/i-you-alone/)";
 const arg = (n, d) => { const i = process.argv.indexOf(n); return i > 0 ? +process.argv[i + 1] : d; };
-const MINUTES = arg("--minutes", 25), KEEP = 24, TOP = 6, REFRESH = 14, SHARDS = 32, DAYS = 365;
+const MINUTES = arg("--minutes", 25), KEEP = 120, TOP = 6, REFRESH = 14, SHARDS = 32, DAYS = 3650, VER = 3;
 const root = new URL("../", import.meta.url);
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 const readJSON = async (p, fb) => { try { return JSON.parse(await readFile(new URL(p, root), "utf8")); } catch { return fb; } };
@@ -71,8 +71,10 @@ async function search(q) {
 // ยังไม่เคยอ่านเวลาเปิด-ปิด/ราคาจากโพสต์ (ไม่มีช่อง info) → ค้นใหม่ด้วย
 // ค้นด้วยชื่อเรียกสั้นแล้ว (v ≥ 2) · ยังไม่เคย → ค้นใหม่
 const ONLY = process.argv.includes("--only") ? process.argv[process.argv.indexOf("--only") + 1] : "";
-const due = all.filter(p => (!ONLY || p.id === ONLY) && query(p) && names(p).length && (ONLY || !(entry(p.id) && entry(p.id).info && entry(p.id).v >= 2 && days(entry(p.id).at) < REFRESH)))
-  .sort((a, b) => ((a.posts?.length ? 1 : 0) - (b.posts?.length ? 1 : 0)) || ((b.hot || 0) + (b.fame || 0) + (b.views || 0) / 50) - ((a.hot || 0) + (a.fame || 0) + (a.views || 0) / 50));
+const rank = p => !entry(p.id) ? 0 : entry(p.id).posts?.length ? 1 : 2;
+const due = all.filter(p => (!ONLY || p.id === ONLY) && query(p) && names(p).length && (ONLY || !(entry(p.id) && entry(p.id).info && entry(p.id).v >= VER && days(entry(p.id).at) < REFRESH)))
+  // ลำดับ: ยังไม่เคยค้นเลย → มีรีวิวอยู่แล้ว (ค้นเพิ่มให้ครบ) → ที่เหลือ · แล้วเรียงตามความดัง
+  .sort((a, b) => (rank(a) - rank(b)) || ((b.hot || 0) + (b.fame || 0) + (b.views || 0) / 50) - ((a.hot || 0) + (a.fame || 0) + (a.views || 0) / 50));
 console.log(`สถานที่ ${all.length} · มีรีวิว Lemon8 ในคลังแล้ว ${all.filter(p => entry(p.id)?.posts?.length).length} · รอค้น ${due.length}`);
 
 const T0 = Date.now();
@@ -87,13 +89,12 @@ for (const p of due) {
   const venue = ["cafe", "animalcafe", "restaurant", "nightlife"].includes(p.kind);
   const relevant = list => list.filter(x => x.title.length >= 4 && days(x.date) <= DAYS && !NOT_TREND.test(x.title) && postFits(x, p)
     && (ns.some(n => x.title.toLowerCase().includes(n)) || (venue && ns.some(n => n.length >= 6 && x.body.includes(n)))));
-  // ลองทีละชื่อ จนได้โพสต์พอ (ชื่อทางการมักไม่มีคนค้น แต่ชื่ออังกฤษ/ชื่อย่อมี)
+  // ค้นทุกชื่อ (ชื่อไทย/อังกฤษ/ชื่อย่อ) รวมโพสต์ทั้งหมดที่เจอ — ให้แท็บกระแสมีรีวิวครบที่สุด
   let rel = [], ok = false;
   for (const q of queries(p)) {
     let r;
     try { r = await search(q); fails = 0; ok = true; } catch { fails++; break; }
     rel = [...new Map([...rel, ...relevant(r.posts)].map(x => [x.link, x])).values()];
-    if (rel.length >= 8) break;
     await sleep(1200);
   }
   if (!ok) continue;
@@ -103,7 +104,7 @@ for (const p of due) {
     .sort((a, b) => b.likes - a.likes).slice(0, KEEP);
   // เวลาเปิด-ปิด + ช่วงราคา ที่ผู้รีวิวเขียนไว้ในโพสต์ (อ่านจากข้อความ ไม่ใช้ AI)
   const info = infoFromPosts(rel.map(x => x.body), p.kind);
-  shards[shardOf(p.id)][p.id] = { at: today, v: 2, posts, info };
+  shards[shardOf(p.id)][p.id] = { at: today, v: VER, posts, info };
   if (posts.length > old.length) gained++;
 }
 

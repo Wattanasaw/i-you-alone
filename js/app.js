@@ -1318,7 +1318,7 @@
   // โพสต์ที่พูดถึงสถานที่นี้: จากข้อมูลรายสถานที่ (fetch-places) หรือจับคู่กับบอร์ดเทรนด์
   // (จำผลไว้ต่อสถานที่ — ถูกเรียกบ่อยตอนเรียงลำดับ/วาดการ์ด)
   const postCache = new WeakMap();
-  // รีวิว Lemon8 เต็มของแต่ละสถานที่ (สูงสุด 24 โพสต์) แบ่งเก็บ 32 ไฟล์ โหลดเฉพาะไฟล์ของสถานที่ที่เปิดดู
+  // รีวิว Lemon8 เต็มของแต่ละสถานที่ (ทุกโพสต์ที่หาเจอ สูงสุด 120) แบ่งเก็บ 32 ไฟล์ โหลดเฉพาะไฟล์ของสถานที่ที่เปิดดู
   // (แบ่งไฟล์ด้วย FNV-1a เหมือน scripts/place-lemon8.mjs)
   const placeShard = id => { let h = 0x811c9dc5; for (const ch of String(id)) { h ^= ch.codePointAt(0); h = Math.imul(h, 0x01000193) >>> 0; } return h % 32; };
   const shardLoads = new Map();
@@ -1647,7 +1647,7 @@
         ${posts.length ? `<section class="pd-panel trend-board place-trends" data-panel="trends" ${state.placeTab === "trends" ? "" : "hidden"}>
           ${topHtml}
           <p class="muted">${t("placeTrendsSub")}</p>
-          <div class="news-list">${[...posts].filter(n => n !== top).sort((a, b) => String(b.date || "").localeCompare(String(a.date || ""))).map(n => `<div class="news-item trend-item"><a class="trend-link" ${inAppLink(n.link)}>${trendThumb(n)}<h3>${esc(n.title)}</h3><div class="meta">${n.likes ? `❤️ ${fmtLikes(n.likes)} · ` : ""}${esc(n.source || "Lemon8")}${n.date ? ` · ${relDate(n.date)}` : ""}</div></a></div>`).join("")}</div>
+          <div class="news-list">${[...posts].filter(n => n !== top).sort((a, b) => (b.likes || 0) - (a.likes || 0) || String(b.date || "").localeCompare(String(a.date || ""))).map(n => `<div class="news-item trend-item"><a class="trend-link" ${inAppLink(n.link)}>${trendThumb(n)}<h3>${esc(n.title)}</h3><div class="meta">${n.likes ? `❤️ ${fmtLikes(n.likes)} · ` : ""}${esc(n.source || "Lemon8")}${n.date ? ` · ${relDate(n.date)}` : ""}</div></a></div>`).join("")}</div>
           <a class="btn block" style="margin-top:12px" ${inAppLink(`https://www.lemon8-app.com/experience/${encodeURIComponent(p.name?.th || p.name?.en || name)}?region=th`)}>🍋 ${t("moreOnLemon8")}</a>
         </section>` : ""}
         ${adSlot("detail")}
