@@ -91,6 +91,10 @@ jobs:
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: ตรวจลิงก์เว็บไซต์ทุกสถานที่ (แก้รูปแบบ · ลบลิงก์เสีย · หาเว็บที่ใช้ได้แทน)
+        run: node scripts/check-links.mjs --minutes 10
+        timeout-minutes: 15   # เพดานเวลา (กันทั้งรอบเกิน 6 ชม. แล้วโดนตัดก่อนบันทึก)
+        continue-on-error: true
       - name: เวลาเปิด-ปิด + ค่าเข้า + ราคาเมนู ให้ครบ (เว็บไซต์ทางการ · รีวิว · AI · ค่าทั่วไปตามประเภท)
         run: node scripts/place-info.mjs --ai 60
         timeout-minutes: 20   # เพดานเวลา (กันทั้งรอบเกิน 6 ชม. แล้วโดนตัดก่อนบันทึก)
@@ -149,7 +153,7 @@ jobs:
           git config user.name "news-bot"
           git config user.email "news-bot@users.noreply.github.com"
           # เพิ่มทีละไฟล์ (ถ้าไฟล์ไหนไม่มี git add ทั้งบรรทัดจะล้ม แล้วไฟล์อื่นไม่ถูกบันทึก)
-          for f in data/news.json data/events.json data/venues.json data/auto-events.json data/geocache.json data/ai-cache.json data/event-details.json data/places.json data/trend-places.json data/trend-extract.json data/place-reviews.json data/place-ai.json gemini/answers data/place-districts.json data/transit.json data/place-images.json data/event-images.json data/place-prices.json data/place-info.json data/post-images.json data/thumb-cache.json data/thumbs data/fuel.json data/place-posts; do
+          for f in data/news.json data/events.json data/venues.json data/auto-events.json data/geocache.json data/ai-cache.json data/event-details.json data/places.json data/trend-places.json data/trend-extract.json data/place-reviews.json data/place-ai.json gemini/answers data/place-districts.json data/transit.json data/place-images.json data/event-images.json data/place-prices.json data/place-info.json data/post-images.json data/thumb-cache.json data/thumbs data/fuel.json data/place-posts data/link-check.json data/website-fix.json; do
             if [ -e "$f" ]; then git add "$f"; fi
           done
           git diff --cached --quiet || (git commit -m "อัปเดตข่าวอีเว้นท์อัตโนมัติ" && git pull --rebase -X theirs && git push)
