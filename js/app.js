@@ -994,8 +994,20 @@
   // รูปปก: รูปที่ AI คัดแล้ว → ไม่มี ใช้รูปปกโพสต์รีวิว Lemon8 ที่พูดถึงที่นี่ (ไลก์มากสุด มีลายน้ำ+เครดิตผู้โพสต์) → ไอคอนหมวด
   function coverOf(p) {
     if (/^https:\/\//.test(p.image || "")) return { src: p.image, credit: p.imageCredit || "Wikimedia Commons" };
-    const post = placePosts(p).filter(x => /^https:\/\//.test(x.image || "")).sort((a, b) => (b.likes || 0) - (a.likes || 0))[0];
+    // คัดรูปโพสต์: หัวข้อมีชื่อสถานที่ก่อน (รูปร้าน/บรรยากาศ) · ตัดโพสต์แต่งตัว/เซลฟี่ (รูปคน ไม่ใช่รูปสถานที่) → แล้วค่อยดูไลก์
+    const keys = coverKeys(p);
+    const score = x => { const tl = String(x.title || "").toLowerCase(); return (keys.some(k => tl.includes(k)) ? 2 : 0) + (PERSON_POST.test(tl) ? -3 : 0); };
+    const post = placePosts(p).filter(x => imgOk(x.image)).sort((a, b) => (score(b) - score(a)) || ((b.likes || 0) - (a.likes || 0)))[0];
     return post ? { src: post.image, credit: post.source || "Lemon8", post: true } : null;
+  }
+  const PERSON_POST = /ootd|outfit|แต่งตัว|ลุค|look|เซลฟี่|selfie|แต่งหน้า|makeup|ทรงผม|hair|นางแบบ|โพสท่า|ถ่ายรูปคน|ชุดไป/i;
+  const COVER_GENERIC = /^(คาเฟ่|cafe|café|coffee|ร้าน|the|bar|บาร์|restaurant|ร้านอาหาร|museum|พิพิธภัณฑ์|สวน|park|วัด|wat)$/i;
+  // คำจากชื่อสถานที่ที่ใช้ตรวจหัวข้อโพสต์ ("Timo Cafe" → timo cafe, timo)
+  function coverKeys(p) {
+    const n = typeof p.name === "string" ? { th: p.name } : (p.name || {});
+    const full = [n.th, n.en].filter(Boolean).map(s => s.toLowerCase().trim());
+    const words = full.flatMap(s => s.split(/[\s\-–|·,()]+/)).filter(w => w.length >= 3 && !COVER_GENERIC.test(w));
+    return [...new Set([...full, ...words])].filter(s => s.length >= 3);
   }
   function placeCover(p, cls = "cover") {
     const c = PCAT[p.kind] || { icon: "📍", color: "#888" };
@@ -1356,7 +1368,7 @@
     const posts = placePosts(p), open = placeOpen(p);
     // โพสต์ยอดนิยมที่สุด (ไลก์มากสุด) แสดงรูปใหญ่บนสุดของแท็บกระแส
     const top = [...posts].sort((a, b) => (b.likes || 0) - (a.likes || 0))[0];
-    const topImg = top && (imgOk(top.image) ? top.image : imgOk(coverOf(p)) ? coverOf(p) : "");
+    const topImg = top && (imgOk(top.image) ? top.image : imgOk(coverOf(p)?.src) ? coverOf(p).src : "");
     const topHtml = top ? `<a class="trend-hero" ${inAppLink(top.link)}>
         <span class="th-img" style="background:linear-gradient(135deg, ${c?.color || "#ff7a45"}, ${c?.color2 || c?.color || "#ff2d78"})">${c?.icon || "🔥"}${topImg ? `<img src="${esc(topImg)}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">` : ""}</span>
         <span class="th-badge">👑 ${t("topPost")}${top.likes ? ` · ❤️ ${fmtLikes(top.likes)}` : ""}</span>
