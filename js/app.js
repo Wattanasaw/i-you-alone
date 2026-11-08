@@ -162,7 +162,7 @@
     } catch { return fallback; }
   }
   async function load() {
-    const [events, venues, ads, news, auto, places, biz, trendPl, reviews, aiInfo, removed] = await Promise.all([
+    const [events, venues, ads, news, auto, places, biz, trendPl, reviews, aiInfo, removed, outfits] = await Promise.all([
       getJSON("data/events.json", []),
       getJSON("data/venues.json", []),
       getJSON("data/ads.json", []),
@@ -173,10 +173,12 @@
       getJSON("data/trend-places.json", []),     // สถานที่จากโพสต์เทรนด์ (หมุดสถานที่ใน Lemon8 + พิกัด OSM)
       getJSON("data/place-reviews.json", {}),    // AI สรุปรีวิวจากโพสต์จริง (จุดเด่น ต้องลอง เคล็ดลับ เหมาะกับ)
       getJSON("data/place-ai.json", {}),         // ข้อมูลที่เจ้าของแอพรวบรวมด้วย Gemini (scripts/import-gemini.mjs) — ใช้เสริมเมื่อไม่มีข้อมูลจากแหล่งอื่น
-      getJSON("data/removed.json", {})           // เนื้อหาที่เจ้าของขอให้ลบ (ลิงก์โพสต์ / ผู้โพสต์) → ไม่แสดงในแอพ
+      getJSON("data/removed.json", {}),         // เนื้อหาที่เจ้าของขอให้ลบ (ลิงก์โพสต์ / ผู้โพสต์) → ไม่แสดงในแอพ
+      getJSON("data/outfits.json", {})          // แนวการแต่งตัว + สินค้าลิงก์พันธมิตร (Shopee) ต่อแนว
     ]);
     // เจ้าของโพสต์ขอลบ: ตัดตามลิงก์โพสต์ หรือทุกโพสต์ของผู้โพสต์ (@ชื่อ)
     const rmLinks = new Set([].concat(removed?.links || [])), rmAuthors = new Set([].concat(removed?.authors || []).map(a => String(a).replace(/^@/, "").toLowerCase()));
+    state.outfits = outfits || {};
     state.postOk = x => !rmLinks.has(x?.link) && !rmAuthors.has((String(x?.link || "").split("lemon8-app.com/@")[1] || "").split("/")[0].toLowerCase());
     state.reviews = reviews && typeof reviews === "object" ? reviews : {};
     state.ai = aiInfo && typeof aiInfo === "object" ? aiInfo : {};
@@ -609,7 +611,7 @@
     if (!a || a.download) return;
     e.preventDefault();
     const { Browser, AppLauncher } = window.Capacitor?.Plugins || {};
-    if (a.hasAttribute("data-native-maps") && AppLauncher) AppLauncher.openUrl({ url: a.href }).catch(() => Browser?.open({ url: a.href }));
+    if ((a.hasAttribute("data-native-maps") || a.hasAttribute("data-ext-app")) && AppLauncher) AppLauncher.openUrl({ url: a.href }).catch(() => Browser?.open({ url: a.href }));
     else if (Browser) Browser.open({ url: a.href, presentationStyle: "popover" });
     else location.href = a.href;
   });
@@ -1166,6 +1168,34 @@
   const distEn = d => { if (state.lang === "th") return d; distEnMap ||= new Map(state.places.filter(p => p.districtEn).map(p => [p.district, p.districtEn])); return distEnMap.get(d) || d; };
   const distName = p => (state.lang !== "th" && p.districtEn) || p.district;
   const distLabel = p => p.district ? (state.lang === "th" ? `${p.province === "bangkok" ? t("districtBkk") : t("districtShort")}${p.district}` : distName(p)) : "";
+  // ---------- แต่งตัวไปที่นี่: แนวการแต่งตัวตามหมวด/ชื่อสถานที่ + สินค้าลิงก์พันธมิตร (data/outfits.json) ----------
+  function outfitStyle(p) {
+    const nm = `${p.name?.th || ""} ${p.name?.en || ""}`;
+    if (p.kind === "temple" || (p.kind === "landmark" && /พระราชวัง|พระบรมมหาราชวัง|พระที่นั่ง|พระตำหนัก|\bpalace\b/i.test(nm))) return "modest";
+    if (p.kind === "beach") return "beach";
+    if (p.kind === "nature" || p.kind === "park") return /ดอย|ภู|ม่อน|ผา|เขา|จุดชมวิว|ทะเลหมอก|mountain|\bdoi\b|\bphu\b|view ?point/i.test(nm) ? "mountain" : "hiking";
+    if (p.kind === "themepark") return /สวนน้ำ|water ?park|water ?world|lagoon/i.test(nm) ? "waterpark" : "themepark";
+    if (p.kind === "zoo") return "farm";
+    if (p.kind === "nightlife") return "night";
+    if (["cafe", "animalcafe", "restaurant"].includes(p.kind)) return "cafe";
+    return "city";
+  }
+  function outfitBlock(p) {
+    const st = state.outfits?.styles?.[outfitStyle(p)];
+    if (!st) return "";
+    const m = new Date().getMonth(), cold = st.tipCold && (m >= 10 || m <= 1);
+    const items = (st.products || []).filter(x => /^https:\/\//.test(x?.url || ""));
+    return `<section class="panel outfit-box">
+      <h2>👗 ${t("outfitTitle")}</h2>
+      <p class="outfit-style">${st.icon || ""} ${esc(pick(st.name))}</p>
+      <p>${esc(pick(st.tip))}</p>
+      ${cold ? `<p class="outfit-cold">❄️ ${esc(pick(st.tipCold))}</p>` : ""}
+      ${items.length ? `<div class="outfit-rail">${items.map(x => `<a class="outfit-item" href="${safeUrl(x.url)}" target="_blank" rel="sponsored nofollow noopener" data-ext-app>
+          ${x.image ? `<img src="${safeUrl(x.image)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">` : ""}
+          <span>${esc(pick(x.title) || x.title || "")}</span>${x.price ? `<b>${fmtBaht(x.price)}</b>` : ""}</a>`).join("")}</div>
+        <small class="outfit-note">${t("outfitAffiliate")}</small>` : ""}
+    </section>`;
+  }
   function placeBlurb(p) {
     const rv = reviewOf(p);
     if (rv?.summary && noPrice(pick(rv.summary))) return noPrice(pick(rv.summary));
@@ -1588,6 +1618,7 @@
             </a>`).join("")}
           </section>` : ""}
           ${rv ? reviewBlock(rv) : ""}
+          ${outfitBlock(p)}
           ${window.IYA_GOOGLE?.block(p) || ""}
           <p class="pd-links">${p.fromTrend ? `<span>🔥 ${t("fromTrendNote")}</span>` : ""}${wiki ? `<a ${inAppLink(wiki)}>📖 ${t("wikipedia")}</a>` : ""}${p.imagePage ? `<span>${t("photo")}: <a ${inAppLink(p.imagePage)}>${esc(p.imageCredit || "Wikimedia Commons")}</a></span>` : ""}</p>
           ${MEMBERS && !p.business ? `<a class="claim-link" href="#/account/new-shop?ref=${encodeURIComponent(p.id)}">🏪 ${t(p.image ? "claimPlace" : "claimPlaceNoPhoto")}</a>` : ""}

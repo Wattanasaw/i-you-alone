@@ -12,7 +12,7 @@ for (const f of ["index.html", "privacy.html", "manifest.webmanifest"]) await cp
 for (const d of ["css", "icons"]) await cp(new URL(d + "/", root), new URL(d + "/", out), { recursive: true });
 await cp(new URL("js/", root), new URL("js/", out), { recursive: true, filter: src => !src.endsWith("admin.js") });
 // ข้อมูลชุดล่าสุด ติดแอพไว้ใช้ตอนออฟไลน์ (เปิดแอพแล้วมีเน็ตจะโหลดชุดใหม่จากเว็บเอง)
-for (const f of ["events", "venues", "ads", "news", "auto-events", "places", "transit", "business-places", "trend-places", "place-reviews", "place-ai"]) await cp(new URL(`data/${f}.json`, root), new URL(`data/${f}.json`, out));
+for (const f of ["events", "venues", "ads", "news", "auto-events", "places", "transit", "business-places", "trend-places", "place-reviews", "place-ai", "outfits", "removed"]) await cp(new URL(`data/${f}.json`, root), new URL(`data/${f}.json`, out));
 // บีบโค้ดในแอพ (ตัดคอมเมนต์/ช่องว่าง เปลี่ยนชื่อตัวแปรภายใน) — คนแกะไฟล์ APK อ่านและลอกยากขึ้น ไฟล์เล็กลง
 // (เว็บบน GitHub Pages ยังใช้ไฟล์เดิม) · ใช้ esbuild แปลงทีละไฟล์ ไม่รวมไฟล์ (สคริปต์ใช้ตัวแปร window ร่วมกัน)
 {

@@ -806,3 +806,15 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 .fee-tiers li span { flex: 1 1 140px; min-width: 0; }
 .fee-tiers li span small { display: block; opacity: .7; }
 .fee-tiers li b { white-space: nowrap; }
+
+/* แต่งตัวไปที่นี่ + สินค้าลิงก์พันธมิตร */
+.outfit-box h2 { margin: 0 0 6px; font-size: 1.05rem; }
+.outfit-box p { margin: 4px 0; line-height: 1.55; }
+.outfit-style { font-weight: 600; color: var(--accent); }
+.outfit-cold { background: color-mix(in srgb, #38bdf8 12%, transparent); border-radius: 10px; padding: 6px 10px; }
+.outfit-rail { display: flex; gap: 10px; overflow-x: auto; padding: 8px 0 4px; scroll-snap-type: x mandatory; }
+.outfit-item { flex: 0 0 132px; scroll-snap-align: start; display: flex; flex-direction: column; gap: 4px; text-decoration: none; color: inherit; background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 6px; }
+.outfit-item img { width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 8px; background: var(--border); }
+.outfit-item span { font-size: .8rem; line-height: 1.3; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.outfit-item b { font-size: .85rem; color: var(--accent); }
+.outfit-note { display: block; margin-top: 4px; opacity: .7; font-size: .75rem; }

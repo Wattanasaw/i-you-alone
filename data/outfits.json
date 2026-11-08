@@ -1,0 +1,66 @@
+{
+  "_howTo": "ใส่ลิงก์ Shopee Affiliate ของแต่ละแนวใน products (แนวละ 6-8 ชิ้น): {\"title\": \"ชื่อสินค้าสั้นๆ\", \"price\": 299, \"image\": \"ลิงก์รูปสินค้า https://...\", \"url\": \"ลิงก์จากปุ่ม 'เอาลิงก์' เช่น https://s.shopee.co.th/xxxx\"} · ทุกสถานที่ในแนวเดียวกันใช้สินค้าชุดเดียวกัน · products ว่าง = แสดงแค่คำแนะนำการแต่งตัว",
+  "styles": {
+    "modest": {
+      "icon": "🛕",
+      "name": { "th": "สุภาพ (วัด/วัง)", "en": "Modest (temples & palaces)", "zh": "端庄（寺庙/皇宫）" },
+      "tip": { "th": "ใส่เสื้อมีแขน กางเกงขายาวหรือกระโปรงคลุมเข่า ไม่ใส่เสื้อสายเดี่ยว/เกาะอก กางเกงขาสั้น หรือชุดซีทรู พกผ้าคลุมไหล่ไว้ และเลือกรองเท้าที่ถอดง่าย", "en": "Cover shoulders and knees: sleeved tops, long trousers or skirts. No tank tops, shorts or see-through clothes. Bring a shawl and shoes that slip off easily.", "zh": "请穿有袖上衣、长裤或过膝裙，勿穿吊带、短裤或透视装。可带披肩，穿易脱的鞋。" },
+      "products": []
+    },
+    "beach": {
+      "icon": "🏖️",
+      "name": { "th": "ทะเล", "en": "Beach", "zh": "海边" },
+      "tip": { "th": "ชุดผ้าบางเบาสีสด ชุดว่ายน้ำ + เสื้อคลุม หมวกปีกกว้าง แว่นกันแดด รองเท้าแตะ และครีมกันแดด", "en": "Light, bright clothes, swimwear with a cover-up, a wide-brim hat, sunglasses, sandals and sunscreen.", "zh": "轻薄亮色衣物、泳衣加罩衫、宽檐帽、墨镜、凉鞋和防晒霜。" },
+      "products": []
+    },
+    "cafe": {
+      "icon": "☕",
+      "name": { "th": "คาเฟ่ ถ่ายรูป", "en": "Café & photos", "zh": "咖啡馆拍照" },
+      "tip": { "th": "ลุคมินิมอลโทนเดียวกับร้าน (ครีม ขาว น้ำตาล) เดรสหรือเสื้อเชิ้ตตัวโคร่ง + กระเป๋าใบเล็ก ถ่ายรูปออกมาเข้ากับบรรยากาศ", "en": "A minimal look that matches the café's tones (cream, white, brown): a dress or an oversized shirt with a small bag photographs well.", "zh": "与店内色调相配的简约穿搭（米色、白色、棕色），连衣裙或宽松衬衫配小包，拍照更出片。" },
+      "products": []
+    },
+    "city": {
+      "icon": "🏙️",
+      "name": { "th": "เที่ยวเมือง", "en": "City day out", "zh": "城市漫游" },
+      "tip": { "th": "เสื้อผ้าระบายอากาศดี รองเท้าผ้าใบใส่สบายเพราะต้องเดินเยอะ กระเป๋าคาดอก/สะพายข้าง และหมวกกันแดด", "en": "Breathable clothes, comfortable sneakers for lots of walking, a cross-body bag and a sun hat.", "zh": "透气衣物、适合久走的舒适运动鞋、斜挎包和遮阳帽。" },
+      "products": []
+    },
+    "hiking": {
+      "icon": "🥾",
+      "name": { "th": "เดินป่า น้ำตก", "en": "Hiking & waterfalls", "zh": "徒步/瀑布" },
+      "tip": { "th": "เสื้อแห้งเร็ว กางเกงขายาวกันแมลง รองเท้าเดินป่าหรือรองเท้ารัดส้นกันลื่น เสื้อกันฝน และกระเป๋ากันน้ำ", "en": "Quick-dry tops, long trousers against insects, grippy hiking shoes or strap sandals, a rain jacket and a waterproof bag.", "zh": "速干上衣、防蚊长裤、防滑登山鞋或绑带凉鞋、雨衣和防水包。" },
+      "products": []
+    },
+    "mountain": {
+      "icon": "⛰️",
+      "name": { "th": "ดอย ภูเขา", "en": "Mountains & viewpoints", "zh": "山区/观景点" },
+      "tip": { "th": "แต่งตัวเป็นชั้นๆ เช้ามืดและกลางคืนหนาวกว่าข้างล่างมาก รองเท้าหุ้มส้น หมวก และผ้าพันคอ", "en": "Dress in layers, as early mornings and nights are much colder than the lowlands. Closed shoes, a hat and a scarf.", "zh": "多层穿搭，清晨和夜间比山下冷得多。穿包头鞋，带帽子和围巾。" },
+      "tipCold": { "th": "ช่วงหนาว (พ.ย.–ก.พ.) บนดอยอาจเหลือ 5–15°C เตรียมแจ็คเก็ตกันหนาว เสื้อไหมพรม และถุงเท้า", "en": "In the cool season (Nov–Feb) it can drop to 5–15°C up here. Bring a warm jacket, a sweater and socks.", "zh": "凉季（11月至2月）山上可低至5–15°C，请带保暖外套、毛衣和袜子。" },
+      "products": []
+    },
+    "themepark": {
+      "icon": "🎢",
+      "name": { "th": "สวนสนุก", "en": "Theme parks", "zh": "游乐园" },
+      "tip": { "th": "เสื้อยืด กางเกงขาสั้น/ขายาวที่ขยับตัวง่าย รองเท้าผ้าใบรัดส้น (เครื่องเล่นบางอย่างห้ามรองเท้าแตะ) หมวก และกระเป๋าคาดเอว", "en": "A T-shirt and easy-moving shorts or trousers, secure sneakers (some rides don't allow sandals), a hat and a waist bag.", "zh": "T恤、方便活动的短裤或长裤、包脚运动鞋（部分设施禁止拖鞋）、帽子和腰包。" },
+      "products": []
+    },
+    "waterpark": {
+      "icon": "💦",
+      "name": { "th": "สวนน้ำ", "en": "Water parks", "zh": "水上乐园" },
+      "tip": { "th": "ชุดว่ายน้ำที่เป็นผ้าไลคร่า (หลายที่ห้ามผ้าฝ้าย/ยีนส์) เสื้อรัชการ์ด รองเท้าแตะกันลื่น และซองกันน้ำใส่มือถือ", "en": "Lycra swimwear (many parks don't allow cotton or denim), a rash guard, non-slip sandals and a waterproof phone pouch.", "zh": "莱卡泳衣（很多乐园禁止棉质或牛仔面料）、防晒泳衣、防滑拖鞋和手机防水袋。" },
+      "products": []
+    },
+    "farm": {
+      "icon": "🦒",
+      "name": { "th": "สวนสัตว์ ฟาร์ม", "en": "Zoos & farms", "zh": "动物园/农场" },
+      "tip": { "th": "เสื้อผ้าสบายๆ ที่เปื้อนได้ รองเท้าผ้าใบ หมวกปีกกว้าง และเสื้อแขนยาวบางๆ กันแดด", "en": "Comfortable clothes you don't mind getting dirty, sneakers, a wide-brim hat and a light long-sleeve top for sun.", "zh": "不怕脏的舒适衣物、运动鞋、宽檐帽和防晒薄长袖。" },
+      "products": []
+    },
+    "night": {
+      "icon": "🍸",
+      "name": { "th": "ไนท์ ปาร์ตี้", "en": "Night out", "zh": "夜生活" },
+      "tip": { "th": "ลุคออกงานกลางคืน เดรสหรือเสื้อเชิ้ต + กางเกงสแล็ค ร้านบางที่มีกฎห้ามรองเท้าแตะ/กางเกงขาสั้น และพกบัตรประชาชน", "en": "A night-out look: a dress, or a shirt with trousers. Some venues don't allow flip-flops or shorts. Bring your ID.", "zh": "夜晚造型：连衣裙或衬衫配长裤。部分场所禁止拖鞋和短裤，请携带身份证件。" },
+      "products": []
+    }
+  }
+}
