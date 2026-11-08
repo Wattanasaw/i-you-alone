@@ -998,7 +998,7 @@
     const keys = coverKeys(p);
     const score = x => { const tl = String(x.title || "").toLowerCase(); return (keys.some(k => tl.includes(k)) ? 2 : 0) + (PERSON_POST.test(tl) ? -3 : 0); };
     const post = placePosts(p).filter(x => imgOk(x.image)).sort((a, b) => (score(b) - score(a)) || ((b.likes || 0) - (a.likes || 0)))[0];
-    return post ? { src: post.image, credit: post.source || "Lemon8", post: true } : null;
+    return post ? { src: post.image, thumb: post.thumb, credit: post.source || "Lemon8", post: true } : null;
   }
   const PERSON_POST = /ootd|outfit|แต่งตัว|ลุค|look|เซลฟี่|selfie|แต่งหน้า|makeup|ทรงผม|hair|นางแบบ|โพสท่า|ถ่ายรูปคน|ชุดไป/i;
   const COVER_GENERIC = /^(คาเฟ่|cafe|café|coffee|ร้าน|the|bar|บาร์|restaurant|ร้านอาหาร|museum|พิพิธภัณฑ์|สวน|park|วัด|wat)$/i;
@@ -1013,7 +1013,7 @@
     const c = PCAT[p.kind] || { icon: "📍", color: "#888" };
     const cv = coverOf(p);
     const img = cv
-      ? `<img class="cover-img" src="${esc(cv.src)}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var c=this.nextElementSibling;if(c&&c.classList.contains('credit'))c.remove();this.remove()"><span class="credit">📷 ${esc(cv.credit)}</span>`
+      ? `<img class="cover-img" ${imgSrc(cv.src, cv.thumb, cls.includes("pd-cover") ? 800 : 480, cls.includes("pd-cover") ? 600 : 360)} alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="${IMG_RETRY}var c=this.nextElementSibling;if(c&&c.classList.contains('credit'))c.remove();this.remove()"><span class="credit">📷 ${esc(cv.credit)}</span>`
       : "";
     return `<div class="${cls}" style="background:linear-gradient(135deg, ${c.color}, ${c.color2 || c.color})"><span class="emoji">${c.icon}</span>${img}`;
   }
@@ -1185,13 +1185,23 @@
   }
   // ลิงก์รูป CDN ของ Lemon8 มีวันหมดอายุ (x-expires) → หมดแล้วไม่ใช้
   const imgOk = u => /^https:\/\//.test(u || "") && !(+(String(u).match(/[?&]x-expires=(\d+)/) || [])[1] < Date.now() / 1000);
+  // รูปจาก Lemon8 เป็นรูปเต็ม 1080px (200 KB – 1.3 MB) → ย่อผ่าน wsrv.nl (ฟรี · ~20–40 KB) จากลิงก์ CDN (ช่อง thumb ที่ scripts/thumbs.mjs หาไว้)
+  // ย่อไม่ได้ → onerror สลับไปรูปเดิม (data-o) → ยังไม่ได้ค่อยซ่อน
+  const CDN = /^https:\/\/[^/]*(tiktokcdn|lemon8cdn|byteimg)[^/]*\//;
+  function imgSrc(u, thumb, w, h) {
+    const base = imgOk(thumb) ? thumb : CDN.test(u || "") && imgOk(u) ? u : "";
+    if (!base) return `src="${esc(u)}"`;
+    const small = `https://wsrv.nl/?url=${encodeURIComponent(base)}&w=${w}&h=${h}&fit=cover&a=attention&output=webp&q=72`;
+    return `src="${esc(small)}" data-o="${esc(imgOk(u) ? u : base)}"`;
+  }
+  const IMG_RETRY = "if(this.dataset.o){this.src=this.dataset.o;this.dataset.o='';return}";
   function trendThumb(n) {
     const title = String(n.title || "").toLowerCase();
     // รูปปกของโพสต์ (พรีวิวจาก Lemon8 มีลายน้ำผู้โพสต์) → ไม่มีใช้รูปสถานที่ที่ชื่ออยู่ในโพสต์ → ไอคอนหมวด
     const p = !n.image && state.places.find(x => x.image && [x.name?.th, x.name?.en].some(s => s && s.length >= 6 && title.includes(s.toLowerCase())));
-    const src = imgOk(n.image) ? n.image : p?.image;
+    const src = imgOk(n.image) ? n.image : p?.image, thumb = imgOk(n.image) ? n.thumb : "";
     const pc = PCAT[n.kind] || { icon: "🔥", color: "#ff7a45" };
-    return `<span class="trend-thumb" style="background:linear-gradient(135deg, ${pc.color}, ${pc.color2 || pc.color})">${pc.icon}${src ? `<img src="${esc(src)}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">` : ""}${n.likes ? `<b class="trend-likes">❤️ ${n.likes >= 1000 ? (n.likes / 1000).toFixed(1) + "K" : n.likes}</b>` : ""}</span>`;
+    return `<span class="trend-thumb" style="background:linear-gradient(135deg, ${pc.color}, ${pc.color2 || pc.color})">${pc.icon}${src ? `<img ${imgSrc(src, thumb, 340, 425)} alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="${IMG_RETRY}this.remove()">` : ""}${n.likes ? `<b class="trend-likes">❤️ ${n.likes >= 1000 ? (n.likes / 1000).toFixed(1) + "K" : n.likes}</b>` : ""}</span>`;
   }
 
   // ตัวเลือกจุดเอง เมื่อเบราว์เซอร์/เครื่องไม่ให้ตำแหน่ง
@@ -1368,9 +1378,9 @@
     const posts = placePosts(p), open = placeOpen(p);
     // โพสต์ยอดนิยมที่สุด (ไลก์มากสุด) แสดงรูปใหญ่บนสุดของแท็บกระแส
     const top = [...posts].sort((a, b) => (b.likes || 0) - (a.likes || 0))[0];
-    const topImg = top && (imgOk(top.image) ? top.image : imgOk(coverOf(p)?.src) ? coverOf(p).src : "");
+    const topCv = top && (imgOk(top.image) ? { src: top.image, thumb: top.thumb } : imgOk(coverOf(p)?.src) ? coverOf(p) : null), topImg = topCv?.src;
     const topHtml = top ? `<a class="trend-hero" ${inAppLink(top.link)}>
-        <span class="th-img" style="background:linear-gradient(135deg, ${c?.color || "#ff7a45"}, ${c?.color2 || c?.color || "#ff2d78"})">${c?.icon || "🔥"}${topImg ? `<img src="${esc(topImg)}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">` : ""}</span>
+        <span class="th-img" style="background:linear-gradient(135deg, ${c?.color || "#ff7a45"}, ${c?.color2 || c?.color || "#ff2d78"})">${c?.icon || "🔥"}${topImg ? `<img ${imgSrc(topImg, topCv.thumb, 800, 600)} alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="${IMG_RETRY}this.remove()">` : ""}</span>
         <span class="th-badge">👑 ${t("topPost")}${top.likes ? ` · ❤️ ${fmtLikes(top.likes)}` : ""}</span>
         <span class="th-txt"><b>${esc(top.title)}</b><small>${esc(String(top.source || "Lemon8").replace(/^Lemon8 · /, "@"))}${top.date ? ` · ${relDate(top.date)}` : ""}</small></span>
       </a>` : "";
@@ -1423,7 +1433,7 @@
           ${posts.length ? `<section class="panel pd-buzz">
             <div class="pd-buzz-head"><h2>🔥 ${t("placeTrends")}</h2>${posts.length > 2 ? `<button class="link-btn" data-ptab="trends">${t("seeAll")} ${posts.length} ›</button>` : ""}</div>
             ${freshPopular(posts).slice(0, 2).map(n => `<a class="buzz-row" ${inAppLink(n.link)}>
-              ${imgOk(n.image) ? `<img src="${esc(n.image)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">` : `<span class="buzz-ico">🔥</span>`}
+              ${imgOk(n.image) ? `<img ${imgSrc(n.image, n.thumb, 160, 160)} alt="" loading="lazy" referrerpolicy="no-referrer" onerror="${IMG_RETRY}this.remove()">` : `<span class="buzz-ico">🔥</span>`}
               <span class="buzz-txt"><span class="buzz-title">${esc(n.title)}</span><small>${[n.likes ? `❤️ ${fmtLikes(n.likes)}` : "", n.date ? relDate(n.date) : ""].filter(Boolean).join(" · ")} · ${esc(String(n.source || "Lemon8").replace(/^Lemon8 · /, "@"))}</small></span>
             </a>`).join("")}
           </section>` : ""}
