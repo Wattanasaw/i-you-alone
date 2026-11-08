@@ -7,6 +7,7 @@
 //   สถานที่ที่เป็นกระแส/คนค้นหาเพิ่มขึ้น ขึ้นป้ายและขึ้นก่อน (Instagram ห้ามดึงข้อมูลอัตโนมัติ จึงไม่ใช้)
 // รัน: node scripts/fetch-places.mjs [--dry]
 import { readFile, writeFile, rename } from "node:fs/promises";
+import { specificPlaces, postFits, bestOwners, ownsPost } from "./place-quality.mjs";
 
 const DRY = process.argv.includes("--dry");
 const UA = "IYouAloneBot/1.0 (+https://wattanasaw.github.io/i-you-alone/)";
@@ -371,6 +372,8 @@ console.log(`[${mins()} นาที] OpenStreetMap เสร็จ`);
 // ชื่อเป็นคำกว้างๆ ("น้ำตก", "Cat cafe") = ข้อมูลไม่พอให้คนหาเจอ และไปตรงกับโพสต์เทรนด์ทั่วไปผิดๆ → ตัดออก
 const GENERIC_NAME = /^(น้ำตก|ชายหาด|หาด|จุดชมวิว|ร้านกาแฟ|คาเฟ่|คาเฟ่แมว|คาเฟ่หมา|แมวคาเฟ่|วัด|สวนสาธารณะ|พิพิธภัณฑ์|สวนสัตว์|สวนน้ำ|อุทยาน|ถ้ำ|cafe|café|coffee|coffee shop|cat ?cafe|dog ?cafe|waterfall|beach|view ?point|zoo|museum|park|temple|cave)\s*\d*$/i;
 for (let i = places.length - 1; i >= 0; i--) if (GENERIC_NAME.test((places[i].name.th || places[i].name.en || "").trim())) places.splice(i, 1);
+// ชื่อกว้างเกินไป ("บางแสน" → "หาดบางแสน") / ไม่ใช่สถานที่ / ซ้ำกับที่ใกล้ๆ
+places = specificPlaces(places);
 
 // สถานที่เดียวกันอาจอยู่หลายหมวด (เช่น สวนสัตว์ที่เป็นพิพิธภัณฑ์ด้วย) → เก็บหมวดแรก
 const seen = new Set();
@@ -459,7 +462,9 @@ const slimPost = x => ({ title: x.title.slice(0, 140), likes: x.likes, date: x.d
 const daysAgo = t => (Date.now() - new Date(t || 0)) / 864e5;
 // ชื่อสั้น/คำทั่วไป ("ใหม่", "กลาง") ไปตรงกับโพสต์อื่นมั่ว → ใช้เฉพาะชื่อยาว 6 ตัวอักษรขึ้นไป
 const buzzNames = p => coreNames(p).map(n => n.toLowerCase().trim()).filter(n => n.length >= 6);
-const mentions = (p, posts) => { const names = buzzNames(p); if (!names.length) return []; return posts.filter(x => names.some(nm => x.title.toLowerCase().includes(nm))); };
+// + โพสต์ต้องเป็นเรื่องของที่นี่จริง: ที่เที่ยวธรรมชาติไม่รับรีวิวร้าน/ที่พัก · โพสต์ที่ตรงกับชื่อสถานที่อื่นที่เจาะจงกว่า (ชื่อยาวกว่า) ให้ที่นั้น
+let BEST = new Map();
+const mentions = (p, posts) => { const names = buzzNames(p); if (!names.length) return []; return posts.filter(x => names.some(nm => x.title.toLowerCase().includes(nm)) && postFits(x, p) && ownsPost(x, names, BEST)); };
 for (const p of places) if (prevById[p.id]?.l8 && daysAgo(prevById[p.id].l8.at) <= 10) p.l8 = prevById[p.id].l8;
 const due = places.filter(p => !p.l8).sort((a, b) => (b.views || 0) / 20 + (b.fame || 0) + (b.image ? 5 : 0) - ((a.views || 0) / 20 + (a.fame || 0) + (a.image ? 5 : 0))).slice(0, BUZZ_PER_RUN);
 console.log(`[${mins()} นาที] ยอดค้นหา + คลังรายจังหวัด เสร็จ`);
@@ -472,6 +477,7 @@ for (const p of due) {
 }
 // 3) รวมคะแนน: โพสต์ที่พูดถึง (ถ่วงยอดไลก์) + คำค้นมาแรง Google + ยอดค้นหา Wikipedia ที่พุ่งขึ้น
 const poolPosts = [...pool.values()];
+BEST = bestOwners(poolPosts, places, buzzNames);
 for (const p of places) {
   const names = buzzNames(p);
   const m = mentions(p, poolPosts);
@@ -481,7 +487,7 @@ for (const p of places) {
   p.hot = hot >= 3 ? +hot.toFixed(1) : undefined;           // คะแนนกระแส (ใช้เรียงลำดับแนะนำ)
   p.trend = (m.length + (p.l8?.n || 0) + google) || undefined; // จำนวนครั้งที่ถูกพูดถึง (ป้าย 🔥)
   // โพสต์เทรนด์ที่พูดถึงที่นี่ (แสดงในหน้ารายละเอียด) — รวมจากคลังรายจังหวัด + ค้นชื่อตรง, ยอดไลก์สูงก่อน
-  const posts = [...new Map([...m.map(slimPost), ...(p.l8?.posts || [])].map(x => [x.link, x])).values()].sort((a, b) => b.likes - a.likes).slice(0, 4);
+  const posts = [...new Map([...m.map(slimPost), ...(p.l8?.posts || []).filter(x => postFits(x, p))].map(x => [x.link, x])).values()].sort((a, b) => b.likes - a.likes).slice(0, 4);
   if (posts.length) p.posts = posts; else delete p.posts;
   if (!p.hot) delete p.trend;
 }

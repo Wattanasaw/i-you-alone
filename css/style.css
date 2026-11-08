@@ -755,3 +755,17 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 /* รูปปกจากโพสต์ Lemon8 (รูปแนวตั้ง) ในกรอบแนวนอน: เห็นทั้งรูป อยู่กึ่งกลาง · ขอบว่างเติมด้วยรูปเดียวกันแบบเบลอ */
 .cover .img-bg, .trend-hero .th-img img.img-bg { position: absolute; inset: -12%; width: 124%; height: 124%; object-fit: cover; filter: blur(16px) brightness(.7); transform: none; max-width: none; }
 .cover .cover-img.img-fit, .trend-hero .th-img img.img-fit { object-fit: contain; object-position: center; }
+.trend-item .trend-thumb img.img-bg { inset: -12%; width: 124%; height: 124%; max-width: none; object-fit: cover; filter: blur(12px) brightness(.7); }
+.trend-item .trend-thumb img.img-fit { object-fit: contain; object-position: center; }
+
+/* ตัวกรอง: เห็นครบทุกตัวเลือกโดยไม่ต้องเลื่อนไปข้างๆ (ผู้ใช้ใหม่ไม่รู้ว่าต้องปัด)
+   เลื่อนหน้าลง (แถบย่อ) → หมวดกลับเป็นแถวเดียว ตัวกรองซ่อน ไม่บังเนื้อหา */
+.filter-bar .chips { flex-wrap: wrap; overflow: visible; row-gap: 6px; padding-bottom: 8px; }
+.filter-bar .filters { flex-wrap: wrap; overflow: visible; row-gap: 6px; max-height: 160px; }
+.filter-bar.slim .chips { flex-wrap: nowrap; overflow-x: auto; padding-bottom: 2px; }
+@media (max-width: 480px) {
+  .filter-bar .chip { padding: 5px 10px 5px 7px; font-size: .76rem; }
+  .filter-bar .filters .pill-btn, .filter-bar .filters select { font-size: .76rem; }
+}
+.filter-bar.stuck .chips, .filter-bar.stuck .filters { flex-wrap: nowrap; overflow-x: auto; }
+.filter-bar.stuck:not(.slim) .filters { max-height: 60px; }

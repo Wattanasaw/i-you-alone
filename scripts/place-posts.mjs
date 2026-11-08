@@ -4,6 +4,7 @@
 // รูปปกโพสต์เป็นลิงก์พรีวิวของ Lemon8 เอง (มีลายน้ำผู้โพสต์) กดแล้วไปโพสต์ต้นฉบับ — ไม่ดาวน์โหลดเก็บ
 // รัน: node scripts/place-posts.mjs
 import { readFile, writeFile, rename, mkdir } from "node:fs/promises";
+import { postFits, bestOwners, ownsPost } from "./place-quality.mjs";
 
 const UA = "IYouAloneBot/1.0 (+https://wattanasaw.github.io/i-you-alone/)";
 const DAYS = 180; // โพสต์ช่วง 6 เดือนล่าสุด
@@ -105,11 +106,16 @@ const slim = ({ text, body, ...x }) => x;
 // ชื่อเต็มของร้าน (≥ 5 ตัวอักษร) อยู่ในเนื้อโพสต์/ข้อความบนรูป = รีวิวร้านนี้ (tag = เชื่อได้แม้หัวโพสต์ไม่มีชื่อ)
 const fullNames = p => [...new Set([p.name?.th, p.name?.en].filter(n => n && n.trim().length >= 5).map(n => n.toLowerCase().trim()))]
   .filter(n => !PROV_NAMES.has(n) && !/^(คาเฟ่|ร้านกาแฟ|ร้านอาหาร|coffee shop|cafe|café|coffee)$/.test(n));
+// โพสต์ที่ตรงกับหลายสถานที่ → ให้สถานที่ที่ชื่อตรงยาวที่สุด (เจาะจงที่สุด) เท่านั้น
+const BEST = bestOwners(list, data.places, names);
 for (const p of data.places) {
   const ns = names(p), fns = fullNames(p);
+  // โพสต์เก่าที่ไม่ใช่เรื่องของที่นี่ (เช่น รีวิวบาร์ในย่าน) → ตัดออก
+  if (p.posts?.length) { p.posts = p.posts.filter(x => postFits(x, p) && ownsPost(x, ns, BEST)); if (!p.posts.length) delete p.posts; }
   if (!ns.length && !fns.length) continue;
-  const inTitle = list.filter(x => ns.some(n => x.title.toLowerCase().includes(n)));
-  const inBody = list.filter(x => !inTitle.includes(x) && fns.some(n => x.body.includes(n))).map(x => ({ ...x, tag: 1 }));
+  const inTitle = list.filter(x => ns.some(n => x.title.toLowerCase().includes(n)) && postFits(x, p) && ownsPost(x, ns, BEST));
+  // ชื่อในเนื้อหาเท่านั้น: เฉพาะร้าน (ชื่อเฉพาะ) — ที่เที่ยวธรรมชาติ/ย่านถูกพูดถึงในเนื้อหาโพสต์อื่นเยอะ ("…ใกล้หาดบางแสน")
+  const inBody = ["cafe", "animalcafe", "restaurant", "nightlife"].includes(p.kind) ? list.filter(x => !inTitle.includes(x) && fns.some(n => x.body.includes(n)) && postFits(x, p) && ownsPost(x, ns, BEST)).map(x => ({ ...x, tag: 1 })) : [];
   const m = [...inTitle, ...inBody];
   if (!m.length) continue;
   matched++;

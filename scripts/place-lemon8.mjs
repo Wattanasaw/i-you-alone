@@ -4,6 +4,7 @@
 // หมุนเวียน: สถานที่ที่ยังไม่มีโพสต์ก่อน · อ่านซ้ำทุก 14 วัน · หยุดเมื่อครบเวลา (ที่เหลือรอบหน้า)
 // รัน หลัง scripts/trend-places.mjs · node scripts/place-lemon8.mjs [--minutes 20]
 import { readFile, writeFile, rename, mkdir } from "node:fs/promises";
+import { postFits, bestOwners, ownsPost } from "./place-quality.mjs";
 
 const UA = "IYouAloneBot/1.0 (+https://wattanasaw.github.io/i-you-alone/)";
 const arg = (n, d) => { const i = process.argv.indexOf(n); return i > 0 ? +process.argv[i + 1] : d; };
@@ -76,8 +77,10 @@ for (const p of due) {
   await sleep(1200);
   const ns = names(p);
   // โพสต์ที่พูดถึงที่นี่จริง: ชื่อในหัวข้อ หรือชื่อเต็ม (≥ 6 ตัวอักษร) ในเนื้อหา/ข้อความบนรูป
-  const relevant = list => list.filter(x => x.title.length >= 4 && days(x.date) <= DAYS && !NOT_TREND.test(x.title)
-    && (ns.some(n => x.title.toLowerCase().includes(n)) || ns.some(n => n.length >= 6 && x.body.includes(n))));
+  // + ที่เที่ยวธรรมชาติ/สถานที่สำคัญ: ไม่รับรีวิวร้าน/ที่พัก และชื่อต้องอยู่ในหัวโพสต์ (ชื่อในเนื้อหามักเป็น "ร้าน X ใกล้หาด Y")
+  const venue = ["cafe", "animalcafe", "restaurant", "nightlife"].includes(p.kind);
+  const relevant = list => list.filter(x => x.title.length >= 4 && days(x.date) <= DAYS && !NOT_TREND.test(x.title) && postFits(x, p)
+    && (ns.some(n => x.title.toLowerCase().includes(n)) || (venue && ns.some(n => n.length >= 6 && x.body.includes(n)))));
   // ลองทีละชื่อ จนได้โพสต์พอ (ชื่อทางการมักไม่มีคนค้น แต่ชื่ออังกฤษ/ชื่อย่อมี)
   let rel = [], ok = false;
   for (const q of queries(p)) {
@@ -96,6 +99,18 @@ for (const p of due) {
   if (posts.length > old.length) gained++;
 }
 
+// โพสต์เดียวกันอยู่หลายสถานที่ → ให้ที่ชื่อตรงยาวที่สุด · ตัดโพสต์ที่ไม่ใช่เรื่องของที่นี่ (ทั้งของเก่าในคลัง)
+const allPosts = [...new Map(shards.flatMap(s => Object.values(s).flatMap(e => e.posts || [])).map(x => [x.link, x])).values()];
+const BEST = bestOwners(allPosts, all, names);
+let removed = 0;
+for (const p of all) {
+  const e = entry(p.id); if (!e?.posts?.length) continue;
+  const ns = names(p), before = e.posts.length;
+  e.posts = e.posts.filter(x => postFits(x, p) && ownsPost(x, ns, BEST));
+  removed += before - e.posts.length;
+  if (p.posts?.length) { p.posts = p.posts.filter(x => postFits(x, p) && ownsPost(x, ns, BEST)); if (!p.posts.length) delete p.posts; }
+}
+console.log(`ตัดโพสต์ที่ไม่ใช่เรื่องของสถานที่นั้น ${removed} โพสต์`);
 // 6 โพสต์ยอดนิยมเข้า places.json (รวมกับที่มีอยู่) · ลบรายการของสถานที่ที่ไม่มีแล้ว
 const live = new Set(all.map(p => p.id));
 let withPosts = 0;
