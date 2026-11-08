@@ -16,7 +16,8 @@ if (!data?.places) { console.error("ไม่มี data/places.json"); process.
 const trend = await readJSON("data/trend-places.json", []);
 const cache = await readJSON("data/place-districts.json", {});
 const key = p => `${(+p.lat).toFixed(3)},${(+p.lng).toFixed(3)}`;
-const clean = s => String(s || "").replace(/^(อำเภอ|เขต|กิ่งอำเภอ)\s*/, "").trim();
+// ตัด "อำเภอ/อ./เขต" นำหน้า (แอพเติมเอง) · "เมือง" เฉยๆ ไม่พอ (ต้องเป็น "เมืองกาญจนบุรี") → ถามแผนที่แทน
+const clean = s => { const d = String(s || "").replace(/^(อำเภอ|กิ่งอำเภอ|อ\.|เขต)\s*/, "").trim(); return d === "เมือง" ? "" : d; };
 // ที่อยู่ที่มี "อำเภอ X" / "อ.X" / "เขต X" อยู่แล้ว ใช้ได้เลยไม่ต้องถาม
 const fromAddr = p => clean(String(p.address || "").match(/(?:อำเภอ|อ\.|เขต)\s*([^\s,]+)/)?.[0]);
 
@@ -42,8 +43,30 @@ for (const k of todo) {
     fails = 0;
   } catch (e) { if (++fails >= 5) { console.warn("Nominatim ไม่ตอบ หยุดรอบนี้:", e.message); break; } }
 }
+// ชื่ออำเภอ/เขตภาษาอังกฤษ (โหมดภาษาอังกฤษ/จีน) · แยกแคช data/place-districts-en.json
+const cacheEn = await readJSON("data/place-districts-en.json", {});
+const MAX_EN = arg("--max-en", 400);
+const todoEn = [...new Set(all.map(key))].filter(k => !(k in cacheEn)).slice(0, MAX_EN);
+console.log(`ชื่ออังกฤษ: รอบนี้ถาม ${todoEn.length}`);
+fails = 0;
+for (const k of todoEn) {
+  const [lat, lng] = k.split(",");
+  try {
+    let d = null;
+    for (const z of [10, 14]) {
+      await sleep(1100);
+      const j = await (await fetch(`https://nominatim.openstreetmap.org/reverse?format=jsonv2&zoom=${z}&accept-language=en&lat=${lat}&lon=${lng}`, { headers: { "User-Agent": UA }, signal: AbortSignal.timeout(20000) })).json();
+      d = Object.values(j.address || {}).find(v => / District$/.test(v)) || null;
+      if (d) break;
+    }
+    cacheEn[k] = d ? d.replace(/ District$/, "").trim() : null;
+    fails = 0;
+  } catch (e) { if (++fails >= 5) { console.warn("Nominatim ไม่ตอบ หยุดรอบนี้:", e.message); break; } }
+}
+await save("data/place-districts-en.json", JSON.stringify(cacheEn) + "\n");
 let n = 0;
-for (const p of all) { const d = fromAddr(p) || cache[key(p)]; if (d) { p.district = d; n++; } else delete p.district; }
+for (const p of all) {
+  if (cacheEn[key(p)]) p.districtEn = cacheEn[key(p)]; else delete p.districtEn; const d = fromAddr(p) || cache[key(p)]; if (d) { p.district = d; n++; } else delete p.district; }
 await save("data/place-districts.json", JSON.stringify(cache) + "\n");
 await save("data/places.json", JSON.stringify(data, null, 1) + "\n");
 await save("data/trend-places.json", JSON.stringify(trend, null, 1) + "\n");

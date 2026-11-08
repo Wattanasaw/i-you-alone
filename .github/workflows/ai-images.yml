@@ -80,7 +80,7 @@ jobs:
         run: |
           git config user.name "news-bot"
           git config user.email "news-bot@users.noreply.github.com"
-          for f in data/places.json data/trend-places.json data/trend-extract.json data/place-reviews.json data/place-districts.json data/place-images.json data/place-prices.json data/place-info.json data/auto-events.json data/event-images.json; do
+          for f in data/places.json data/trend-places.json data/trend-extract.json data/place-reviews.json data/place-districts.json data/place-districts-en.json data/place-images.json data/place-prices.json data/place-info.json data/auto-events.json data/event-images.json; do
             if [ -e "$f" ]; then git add "$f"; fi
           done
           git diff --cached --quiet || (git commit -m "AI คัดรูปปกที่เที่ยว" && git pull --rebase -X theirs && git push)

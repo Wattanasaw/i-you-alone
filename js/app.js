@@ -114,6 +114,8 @@
   const venueOf = ev => (ev.venueId && state.venues[ev.venueId]) || ev.venue || null;
   const venueName = v => v && !v.online ? tr(v, "name") : t("online");
   const provinceOf = ev => venueOf(ev)?.province || null;
+  // ชื่อสถานที่จัดงานมีชื่อจังหวัดอยู่แล้ว (เช่น "หัวหิน จ.ประจวบคีรีขันธ์") → ไม่ต่อท้ายจังหวัดซ้ำ
+  const hasProv = (text, id) => { const p = (window.PROVINCES || []).find(x => (x.id || x[0]) === id); const names = [provName(id), ...(Array.isArray(p) ? p.slice(1) : [])].filter(Boolean); return names.some(n => String(text || "").toLowerCase().includes(String(n).toLowerCase())); };
   // งานออนไลน์แสดงทุกจังหวัด
   const inProvince = ev => state.filters.province === "all" || venueOf(ev)?.online || provinceOf(ev) === state.filters.province;
   function distanceKm(a, b) {
@@ -314,7 +316,7 @@
     const saved = state.saved.has(ev.id);
     const time = tr(ev, "time"), races = tr(ev, "races"), reg = registration(ev);
     let place = venueName(v);
-    if (state.filters.province === "all" && v?.province) place += ` · ${provName(v.province)}`;
+    if (state.filters.province === "all" && v?.province && !hasProv(place, v.province)) place += ` · ${provName(v.province)}`;
     if (state.pos && v?.lat) place += ` · ${distanceKm(state.pos, v).toFixed(1)} ${t("km")}`;
     return `
       <article class="card ${st.key === "ended" ? "ended" : ""}">
@@ -919,7 +921,7 @@
     const original = !["title", "details", "highlights"].every(k => isTranslated(ev, k));
     document.title = `${title} — ${C.siteName}`;
     const paragraphs = String(details || "").split(/\n+/).filter(Boolean).map(p => `<p>${esc(p)}</p>`).join("");
-    const address = [tr(v, "address"), v?.province ? provName(v.province) : ""].filter(Boolean).join(" · ");
+    const address = [tr(v, "address"), v?.province && !hasProv(tr(v, "address"), v.province) ? provName(v.province) : ""].filter(Boolean).join(" · ");
     app.innerHTML = `
       <a class="back" href="#/">${t("backList")}</a>
       <div class="detail">
@@ -1158,6 +1160,12 @@
   const rvList = v => { const l = v?.[state.lang]?.length ? v[state.lang] : v?.th || []; return l.filter(x => x && !PRICE_RE.test(x)); };
   // คำอธิบายของทุกสถานที่ (จากข้อมูลจริงเท่านั้น ไม่แต่งเอง):
   // AI สรุปรีวิว → คำอธิบายจาก Wikipedia/OSM → โพสต์ Lemon8 ที่พูดถึง → ประโยคพื้นฐานจากหมวด เขต และเวลาเปิด
+  // อำเภอ/เขต: ภาษาไทย "อ.X"/"เขตX" · ภาษาอื่นใช้ชื่ออังกฤษ (ไม่มีก็ใช้ชื่อไทย)
+  let distEnMap = null;
+  // ชื่ออำเภอไทย → อังกฤษ (ใช้กับตัวเลือกอำเภอในตัวกรอง)
+  const distEn = d => { if (state.lang === "th") return d; distEnMap ||= new Map(state.places.filter(p => p.districtEn).map(p => [p.district, p.districtEn])); return distEnMap.get(d) || d; };
+  const distName = p => (state.lang !== "th" && p.districtEn) || p.district;
+  const distLabel = p => p.district ? (state.lang === "th" ? `${p.province === "bangkok" ? t("districtBkk") : t("districtShort")}${p.district}` : distName(p)) : "";
   function placeBlurb(p) {
     const rv = reviewOf(p);
     if (rv?.summary && noPrice(pick(rv.summary))) return noPrice(pick(rv.summary));
@@ -1169,13 +1177,13 @@
       return t("blurbPosts", { n: posts.length, title: String(top.title || "").replace(/\s+/g, " ").trim().slice(0, 70) });
     }
     const c = PCAT[p.kind];
-    const area = [p.district && `${p.province === "bangkok" ? t("districtBkk") : t("districtShort")}${p.district}`, provName(p.province)].filter(Boolean).join(" ");
+    const area = [distLabel(p), provName(p.province)].filter(Boolean).join(" ");
     return t("blurbBasic", { kind: c ? pick(c.name) : "", area }) + (p.hours ? ` ${t("blurbHours", { hours: fmtHours(p.hours) })}` : "");
   }
   // การ์ดที่เที่ยวแบบรายการ (ไม่มีรูป ไม่มีไอคอน): กรอบสีตามหมวด · ชื่อ · แท็ก · เขต/อำเภอ จังหวัด ระยะทาง · เวลาเปิด · ราคา · คำอธิบาย · เหมาะกับ
   function placeCard(p) {
     const c = PCAT[p.kind] || { icon: "📍", color: "#888" }, saved = state.saved.has(placeKey(p));
-    const where = [p.district && `${p.province === "bangkok" ? t("districtBkk") : t("districtShort")}${p.district}`, provName(p.province), state.pos && p.lat ? `${distanceKm(state.pos, p).toFixed(1)} ${t("km")}` : ""].filter(Boolean).join(" · ");
+    const where = [distLabel(p), provName(p.province), state.pos && p.lat ? `${distanceKm(state.pos, p).toFixed(1)} ${t("km")}` : ""].filter(Boolean).join(" · ");
     const rv = reviewOf(p), summary = placeBlurb(p);
     const open = placeOpen(p);
     const price = [MENU_KINDS.has(p.kind) && menuText(p) !== "-" ? `🍽️ ${approx(p.menuPrice?.src)}${esc(menuText(p))}` : "", (!MENU_KINDS.has(p.kind) || p.kind === "animalcafe") && feeText(p) !== "-" ? `🎟️ ${approx(p.entry?.src)}${esc(feeText(p))}` : ""].filter(Boolean).join(" · ");
@@ -1350,7 +1358,7 @@
       opts = window.PROVINCES.filter(p => counts[p.id]).sort((a, b) => provName(a.id).localeCompare(provName(b.id), locale())).map(p => `<option value="prov:${p.id}">${esc(provName(p.id))}</option>`).join("");
     } else {
       const ds = [...new Set(state.places.filter(p => p.province === prov && p.district).map(p => p.district))].sort((a, b) => a.localeCompare(b, "th"));
-      opts = `<option value="prov:${prov}">${esc(t("provCenter", { prov: provName(prov) }))}</option>` + ds.map(d => `<option value="dist:${esc(d)}">${esc(d)}</option>`).join("");
+      opts = `<option value="prov:${prov}">${esc(t("provCenter", { prov: provName(prov) }))}</option>` + ds.map(d => `<option value="dist:${esc(d)}">${esc(distEn(d))}</option>`).join("");
     }
     return `<div class="geo-pick" role="group" aria-label="${t("nearPickLabel")}">
       <p>📍 ${t("geoPickNote")}</p>
@@ -1420,7 +1428,7 @@
           <button type="button" class="pill-btn ${pf.sort === "near" ? "on" : ""}" id="pfNear" aria-pressed="${pf.sort === "near"}">📍 ${near && state.pos?.label ? esc(t("nearPlace", { place: state.pos.label })) : t("nearMe")}</button>
           ${near ? `<select id="pfDist" aria-label="${t("distance")}">${[0, 2, 5, 10, 20, 50, 100].map(d => `<option value="${d}" ${pf.dist === d ? "selected" : ""}>${d ? t("withinKm", { n: d }) : t("anyDistance")}</option>`).join("")}</select>` : provinceSelect(state.places.reduce((m, p) => (m[p.province] = (m[p.province] || 0) + 1, m), {}))}
           <button type="button" class="pill-btn more-btn ${placeExtra ? "on" : ""}" data-more aria-expanded="${!!state.moreFilters}">⚙️ ${t("moreFilters")}${placeExtra ? ` (${placeExtra})` : ""}</button>
-          ${distOn && districts.length ? `<select id="pfDistrict" class="xf" aria-label="${t("districtLabel")}"><option value="">🏘️ ${t(prov === "bangkok" ? "allDistrictsBkk" : "allDistricts")}</option>${districts.map(([d, n]) => `<option value="${esc(d)}" ${pf.district === d ? "selected" : ""}>${esc(d)} (${n})</option>`).join("")}</select>` : ""}
+          ${distOn && districts.length ? `<select id="pfDistrict" class="xf" aria-label="${t("districtLabel")}"><option value="">🏘️ ${t(prov === "bangkok" ? "allDistrictsBkk" : "allDistricts")}</option>${districts.map(([d, n]) => `<option value="${esc(d)}" ${pf.district === d ? "selected" : ""}>${esc(distEn(d))} (${n})</option>`).join("")}</select>` : ""}
           <select id="pfSort" class="xf" aria-label="${t("sortBy")}">
             ${[["rec", t("sortRec")], ["popular", t("sortPopular")], ["reviews", t("sortReviews")]].map(([v, l]) => `<option value="${v}" ${(pf.sort === v || (pf.sort === "near" && v === "rec")) ? "selected" : ""}>${l}</option>`).join("")}
           </select>
@@ -1532,10 +1540,10 @@
       p.hours ? `<span class="q ${open === true ? "ok" : open === false ? "off" : ""}">🕒 ${open === true ? t("openNowShort") : open === false ? t("closedNow") : approx(p.hoursSrc) + esc(fmtHours(p.hours))}</span>` : "",
       (!MENU_KINDS.has(p.kind) || p.kind === "animalcafe") && feeText(p) !== "-" ? `<span class="q">🎟️ ${approx(p.entry?.src)}${esc(feeText(p))}</span>` : "",
       MENU_KINDS.has(p.kind) && menuText(p) !== "-" ? `<span class="q">🍽️ ${approx(p.menuPrice?.src)}${esc(menuText(p))}</span>` : "",
-      `<span class="q">📍 ${esc([p.district && `${p.province === "bangkok" ? t("districtBkk") : t("districtShort")}${p.district}`, state.pos && p.lat ? `${distanceKm(state.pos, p).toFixed(1)} ${t("km")}` : provName(p.province)].filter(Boolean).join(" · "))}</span>`
+      `<span class="q">📍 ${esc([distLabel(p), state.pos && p.lat ? `${distanceKm(state.pos, p).toFixed(1)} ${t("km")}` : provName(p.province)].filter(Boolean).join(" · "))}</span>`
     ].join("");
     // ข้อมูลสำคัญ: รูปแบบเดียวกับหน้ารายละเอียดงาน (panel + facts + บรรทัดรอง)
-    const area = [p.district && `${p.province === "bangkok" ? t("districtBkk") : t("districtShort")}${p.district}`, provName(p.province)].filter(Boolean).join(" · ");
+    const area = [distLabel(p), provName(p.province)].filter(Boolean).join(" · ");
     const facts = `<section class="panel">
         <h2>${t("keyInfo")}</h2>
         <dl class="facts">
