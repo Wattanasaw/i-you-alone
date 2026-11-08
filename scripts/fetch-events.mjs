@@ -513,6 +513,8 @@ const CATEGORY_RULES = [
   // ตลาดนัด/มาร์เก็ต (ก่อนอาหาร/งานแสดงสินค้า) · ไม่ใช่สัมมนาการตลาด
   ["market", /\b(flea ?market|night ?market|christmas market|art ?toy market|craft (fair|market)|vintage (fair|market)|bazaar|ploenchit fair|otop)\b|ตลาดนัด|มาร์เก็ต|มาร์เก็ท|ถนนคนเดิน|งานกาชาด|สินค้าชุมชน|โอทอป/i],
   ["run", /\b(run|running|marathon|trail run|ultra ?trail|ekiden|fun ?run)\b|วิ่ง|มาราธอน|เทรล/i],
+  // K-POP (ก่อนแฟนมีต/คอนเสิร์ต)
+  ["kpop", /\b(k-?pop|kpop)\b|[\uAC00-\uD7A3]{2}|เคป็อป/i],
   ["fanmeet", /\b(fan ?meet(ing)?|fan ?con|fancon|fan ?sign|fansign|fan ?screening|fan-?meeting)\b|แฟนมีต|แฟนคอน|แฟนไซน์/i],
   ["show", /\b(the musical|musical|theatre|theater|ballet|opera|circus|comedy|stand ?up|magic show)\b|มิวสิคัล|ละครเวที|บัลเลต์|ละครสัตว์|มายากล|เดี่ยวไมโครโฟน/i],
   ["outdoor", /\b(run|running|marathon|trail|hyrox|triathlon|fun ?run|cycling|bike|yoga|fitness|sport|workout|crossfit)\b|วิ่ง|มาราธอน|ปั่นจักรยาน|ไตรกีฬา|โยคะ|ฟิตเนส|กีฬา/i],

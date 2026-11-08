@@ -12,6 +12,7 @@
     learning: /\b(workshop|masterclass|class|course|bootcamp|training|camp|lab|hands-?on|mastery|diy|development|developers?|fundamentals|essentials|theory and practice|programming|coding|software testing|rag|llms?|ai agents?|for everyday work|from concept to)\b|เวิร์กช็อป|เวิร์คช็อป|เวิร์กชอป|เวิร์คชอป|คอร์ส|ค่าย|ห้องเรียนจำลอง|อบรม|ติว|ตะลุยโจทย์|คลาส/i,
     expo: /\b(expo|trade ?show|card show|traders show|fair|techspo)\b|มหกรรม|งานแสดงสินค้า|แฟร์|เอ็กซ์โป/i,
     exhibition: /\b(exhibition|exhibit|pop-?up|art center|art island|gallery|museum|immersive)\b|นิทรรศการ|ป๊อปอัพ|พิพิธภัณฑ์/i,
+    kpop: /\b(k-?pop|kpop|k-?drama|korean|babymonster|big ?bang|qwer|bambam|jay ?b|got7|stray ?kids|suho|exo|enhypen|blackpink|jennie|jisoo|rosé|twice|seventeen|nct( ?127| ?dream| ?wish)?|wayv|aespa|le ?sserafim|newjeans|itzy|tomorrow ?x ?together|ateez|bts|jimin|jungkook|j-?hope|red ?velvet|mamamoo|\(?g\)?i-?dle|i-?dle|kiss ?of ?life|illit|boynextdoor|riize|zerobaseone|zb1|plave|nmixx|kep1er|fromis_?9|taeyeon|sunmi|chung ?ha|hwasa|akmu|day6|n\.ssign|xikers|cravity|monsta ?x|shinee|taemin|super ?junior|2pm|ikon|dreamcatcher|viviz|p1harmony|so ?ji ?sub|lee ?min ?ho|park ?bo ?gum|cha ?eun ?woo|btob|oh ?my ?girl|apink|g-?dragon|taeyang|daesung|zico|jay ?park|ph-?1|dynamic ?duo|epik ?high|10cm|hyolyn|baekhyun|xiumin|doyoung|taeil|mark ?tuan|jackson ?wang|yugyeom|youngjae|jinyoung|evnne|tempest|8turn|ampers&one|nexz|kickflip|hearts2hearts|izna|meovv|close ?your ?eyes|wave ?to ?earth|allday ?project)\b|[\uAC00-\uD7A3]{2}|เคป็อป|เกาหลี/i,
     market: /\b(markets?|bazaars?|flea|craft fair|vintage fair|art ?toy fair|christmas fair|ploenchit fair|otop|marché)\b|ตลาดนัด|ตลาด|มาร์เก็ต|มาร์เก็ท|ถนนคนเดิน|งานกาชาด|สินค้าชุมชน|โอทอป|ของดี.{0,12}(จังหวัด|ชุมชน|เมือง)/i,
     notMarket: /market(ing| research| insights?|place conference)|stock market|money market|capital market|crypto|traders?/i,
     fanmeet: /\b(fan ?meet(ing)?s?|fan-?con|fancon|fan ?sign|fansign|fan ?screening|fan ?party|meet ?(&|and) ?greet|hi-?touch|character pop-?up|official .{0,30}pop-?up|final episode)\b|แฟนมีต|แฟนคอน|แฟนไซน์/i,
@@ -24,12 +25,16 @@
   function fixCategory(ev) {
     const t = String(ev?.title || ""), c = ev?.category;
     if (is(R.hide, t)) return null;
+    // K-POP: คอนเสิร์ต/แฟนมีต/ป๊อปอัพของศิลปินเกาหลี (ก่อนแยกแฟนมีต)
+    if (["concert", "fanmeet", "expo", "exhibition", "nightlife", "festival"].includes(c) && is(R.kpop, t)) return "kpop";
+    // ชื่องานไม่บอก แต่รายละเอียด (AI สรุปจากหน้างาน) บอกว่าเป็นศิลปิน/วง/นักแสดงเกาหลี
+    if (["concert", "fanmeet"].includes(c) && /k-?pop|ศิลปินเกาหลี|(วง|นักร้อง|ไอดอล|นักแสดง|บอยแบนด์|เกิร์ลกรุ๊ป)[^ ]{0,12}s?เกาหลี|korean (artist|band|singer|actor|actress|idol|group)/i.test(`${ev?.details || ""} ${ev?.summary || ""}`)) return "kpop";
     // ตลาดนัด/มาร์เก็ต (ไม่ใช่สัมมนาการตลาด/ตลาดหุ้น)
     if (c !== "market" && !["seminar", "learning"].includes(c) && is(R.market, t) && !is(R.notMarket, t)) return "market";
     // งานวิ่ง: แยกจากกีฬา (แหล่ง RunLah = งานวิ่งทั้งหมด)
     if (c === "outdoor" && !is(R.party, t) && (ev?.sourceName === "RunLah" || is(R.run, t))) return "run";
     // แฟนมีต/แฟนคอน/ป๊อปอัพศิลปิน · ละครเวที/มิวสิคัล/โชว์
-    if (["concert", "expo", "exhibition", "nightlife"].includes(c) && is(R.fanmeet, t)) return "fanmeet";
+    if (["concert", "expo", "exhibition", "nightlife"].includes(c) && is(R.fanmeet, t)) return is(R.kpop, t) ? "kpop" : "fanmeet";
     if (["concert", "expo", "exhibition"].includes(c) && is(R.show, t) && !is(R.notShow, t)) return "show";
     // คริสต์มาส/ฮาโลวีนเฟสติวัล (งานรวมกิจกรรม ไม่ใช่คอนเสิร์ต)
     if (["concert", "expo"].includes(c) && /\b(christmas|halloween) (festival|fair|fest)\b|คริสต์มาส เฟสติวัล/i.test(t)) return "festival";
