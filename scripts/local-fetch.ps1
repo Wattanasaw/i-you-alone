@@ -16,10 +16,22 @@ if (-not $node) { Log "ไม่พบ node — ข้ามรอบนี้";
 # ให้ git หา gh (ตัวช่วยล็อกอิน) เจอ
 $env:PATH = "C:\Program Files\Git\cmd;C:\Program Files\GitHub CLI;$env:PATH"
 
-Set-Location $repo
+# ทำงานในสำเนาแยก (%LOCALAPPDATA%\IYouAlone\repo) — ไฟล์ที่กำลังแก้ค้างในโฟลเดอร์โปรเจกต์จะไม่ทำให้รอบนี้ถูกข้าม
+$work = Join-Path $logDir "repo"
 Log "เริ่มดึงงาน"
-& $git pull -q --rebase 2>&1 | ForEach-Object { Log "git: $_" }
-if ($LASTEXITCODE -ne 0) { Log "pull ไม่สำเร็จ (ยังไม่ต่อเน็ต?) — ข้ามรอบนี้"; exit 1 }
+if (-not (Test-Path (Join-Path $work ".git"))) {
+  $origin = (& $git -C $repo remote get-url origin).Trim()
+  & $git clone -q --depth 50 $origin $work 2>&1 | ForEach-Object { Log "git: $_" }
+  if ($LASTEXITCODE -ne 0) { Log "clone ไม่สำเร็จ — ข้ามรอบนี้"; exit 1 }
+}
+Set-Location $work
+& $git config user.name "Wattanasaw"
+& $git config user.email "Wattanasaw@users.noreply.github.com"
+# สำเนานี้ใช้ดึงงานอย่างเดียว → ล้างของค้างจากรอบก่อนแล้วตามให้ตรงกับบน GitHub
+& $git fetch -q origin 2>&1 | ForEach-Object { Log "git: $_" }
+if ($LASTEXITCODE -ne 0) { Log "fetch ไม่สำเร็จ (ยังไม่ต่อเน็ต?) — ข้ามรอบนี้"; exit 1 }
+& $git reset -q --hard origin/main
+& $git clean -q -fd data
 
 # เก็บผลทั้งหมดก่อนแล้วค่อยตัด (ห้ามใช้ Select-Object -First กับ node ตรงๆ เพราะจะหยุด node กลางทาง)
 $out = & $node scripts/fetch-events.mjs 2>&1

@@ -246,13 +246,35 @@ const SOURCES = {
   thaiticketmajor: {
     name: "ThaiTicketMajor", quota: 40,
     async list() {
-      const urls = new Set();
+      const urls = new Set(), ext = new Map();
+      // กล่อง "งานแสดงแนะนำ": งานใหญ่ที่ขายบนเว็บอื่น (Ticketmaster ฯลฯ) — มีชื่อ วันที่ สถานที่ รูปโปสเตอร์ ครบในกล่อง
+      const recommended = html => {
+        for (const m of (html || "").matchAll(/<div class="event-item">([\s\S]*?)<\/div>\s*<\/div>/g)) {
+          const b = m[1];
+          const href = (b.match(/href="(https?:\/\/[^"]+)"/) || [])[1];
+          if (!href || /thaiticketmajor\.com/.test(href)) continue;
+          const title = decode((b.match(/class="title"[^>]*>([^<]+)</) || [])[1] || "").trim();
+          const when = decode((b.match(/class="datetime"[^>]*>(?:<span>)?([^<]+)/) || [])[1] || "");
+          const venue = decode((b.match(/class="venue"[^>]*>(?:<span>)?([^<]+)/) || b.match(/<span>([^<]+)<\/span>\s*<\/span>\s*<span[^>]*>([^<]+)/) || [])[1] || "").trim();
+          const img = (b.match(/(?:data-src|src)="([^"]+\.(?:jpe?g|png|webp)[^"]*)"/) || [])[1];
+          const dates = datesIn(when);
+          if (!title || !dates.length) continue;
+          ext.set(href, { id: "ttmx-" + href.replace(/^https?:\/\/(www\.)?/, "").replace(/[^a-z0-9]+/gi, "-").slice(0, 60), url: href, parsed: {
+            title, image: img ? new URL(img, "https://www.thaiticketmajor.com/").toString() : undefined, summary: title,
+            dates: [dates[0], dates.at(-1)], venueText: venue, provinceText: "", catText: "concert", prices: [], free: false, bodyText: `${title} ${venue}`
+          } });
+        }
+      };
+      let firstEvent = null;
       for (const c of ["concert", "performance", "sport", "exhibition"]) {
         const html = await getHtml(`https://www.thaiticketmajor.com/${c}/`);
+        recommended(html);
         [...(html || "").matchAll(/href="(?:https:\/\/www\.thaiticketmajor\.com)?\/(concert|performance|sport|exhibition)\/([a-z0-9-]+)\.html/g)]
-          .forEach(m => urls.add(`https://www.thaiticketmajor.com/${m[1]}/${m[2]}.html`));
+          .forEach(m => { const u = `https://www.thaiticketmajor.com/${m[1]}/${m[2]}.html`; urls.add(u); firstEvent ||= u; });
       }
-      return [...urls].map(url => ({ id: "ttm-" + url.split("/").pop().replace(/\.html$/, "").slice(0, 60), url }));
+      // กล่องงานแนะนำอยู่ในหน้างาน → เปิดหน้างานแรก 1 หน้าเพื่ออ่านกล่องนี้
+      if (firstEvent) recommended(await getHtml(firstEvent));
+      return [...[...urls].map(url => ({ id: "ttm-" + url.split("/").pop().replace(/\.html$/, "").slice(0, 60), url })), ...ext.values()];
     },
     parse(html, url) {
       // หน้ามีงานแนะนำอื่นปนมาด้วย → เลือกงานที่ชื่อตรงกับหัวหน้าเว็บ
@@ -262,10 +284,71 @@ const SOURCES = {
       if (!ev) return null;
       const p = fromLd(ev, /\/sport\//.test(url) ? "sport" : /\/exhibition\//.test(url) ? "exhibition" : "concert");
       p.title = p.title.replace(/^Official Ticket\s*\|\s*/i, "");
+      // วันที่จริงจากตาราง "วันที่แสดง" (schema.org ในหน้ารวมช่วงดูย้อนหลัง/ไลฟ์สตรีม → วันจบผิด)
+      const L = lines(html);
+      // เฉพาะตารางรอบแสดง ("วันที่แสดง" → "เวลา" → แถว วัน/เวลา/สถานะ) — ไม่เอาวันเปิดขายบัตร
+      const shows = [];
+      L.forEach((l, i) => {
+        if (!/^วันที่แสดง$/.test(l.trim()) || !/^เวลา$/.test((L[i + 1] || "").trim())) return;
+        for (let j = i + 2; j < L.length && j < i + 80; j++) {
+          const x = L[j].trim();
+          if (/^วัน\S*ที่\s*\d{1,2}\s+\S+\s+\d{4}$/.test(x)) shows.push(...datesIn(x));
+          else if (!/^(\d{1,2}[:.]\d{2}(\s*น\.)?|sold ?out|on sale|available|เต็ม|ซื้อบัตร|เลือก|-)?$/i.test(x)) break;
+        }
+      });
+      shows.sort();
+      const head = L.find((l, i) => /^วันที่แสดง$/.test(L[i - 1]?.trim() || "") && /\d{4}/.test(l)) || "";
+      // "ศุกร์ที่ 23, เสาร์ที่ 24 และ อาทิตย์ที่ 25 ตุลาคม 2569" → 23–25 ต.ค.
+      const headM = head.match(/(\d{1,2})[^\d]+(?:.*?(\d{1,2})\s+)?(\S+)\s+(\d{4})\s*$/);
+      if (shows.length) p.dates = [shows[0], shows.at(-1)];
+      else if (headM) { const last = datesIn(`${headM[2] || headM[1]} ${headM[3]} ${headM[4]}`)[0], first = datesIn(`${headM[1]} ${headM[3]} ${headM[4]}`)[0]; if (first && last) p.dates = [first, last]; }
       if (!p.image) p.image = meta(html, "og:image");
       // ราคาบัตรในหน้า (เช่น "ราคาบัตร 2,500 / 3,500 บาท")
       if (!p.prices.length) p.prices = prices([...lines(html).join(" ").matchAll(/([\d,]{3,})\s*(?:บาท|THB|฿)/g)].map(m => m[1]));
       return p;
+    }
+  },
+  // ---------- Ticketmelon: เทศกาลดนตรี แฟนมีต คอนเสิร์ตอินดี้ เวิร์กช็อป (robots อนุญาต · มี sitemap) ----------
+  ticketmelon: {
+    name: "Ticketmelon", quota: 45,
+    async list() {
+      const idx = await getHtml("https://www.ticketmelon.com/sitemap.xml");
+      const maps = [...(idx || "").matchAll(/<loc>([^<]+sitemap-event\d+\.xml)<\/loc>/g)].map(m => m[1]);
+      const refs = [];
+      for (const sm of maps) {
+        const xml = await getHtml(sm);
+        for (const m of (xml || "").matchAll(/<loc>([^<]+)<\/loc>\s*<lastmod>([^<]+)<\/lastmod>/g)) {
+          // แก้ไขล่าสุดภายใน 150 วัน (งานเก่าที่จบแล้วไม่ต้องเปิด)
+          if ((Date.now() - new Date(m[2])) / 864e5 > 150) continue;
+          const u = m[1].replace(/\/$/, "");
+          if (!/^https:\/\/www\.ticketmelon\.com\/[^/]+\/[^/?#]+$/.test(u)) continue;
+          refs.push({ id: "tm-" + u.split("/").slice(-2).join("-").toLowerCase().replace(/[^a-z0-9-]+/g, "-").slice(0, 60), url: u, mod: m[2] });
+        }
+      }
+      return refs.sort((a, b) => b.mod.localeCompare(a.mod));
+    },
+    parse(html) {
+      const nd = html.match(/__NEXT_DATA__[^>]*>([\s\S]*?)<\/script>/);
+      let e;
+      try { e = JSON.parse(nd[1]).props.pageProps.event; } catch { return null; }
+      if (!e?.name || e.status !== "publish" || e.is_hide_web) return null;
+      const t0 = +e.show_starttime || +e.start, t1 = +e.show_endtime || +e.end || t0;
+      if (!t0) return null;
+      const day = ms => new Date(ms + 7 * 3600e3).toISOString().slice(0, 10);
+      const v = e.venue || {};
+      const desc = decode(String(e.description || "").replace(/<[^>]+>/g, " ")).replace(/\s+/g, " ").trim();
+      const comp = (v.address_components || []).map(c => c.long_name).join(" ");
+      return {
+        title: decode(e.name).trim(), image: e.img_poster || e.img_banner || meta(html, "og:image"), summary: desc.slice(0, 300) || meta(html, "og:description"),
+        dates: [day(t0), day(t1)], time: new Date(t0 + 7 * 3600e3).toISOString().slice(11, 16).replace(/^00:00$/, "") || undefined,
+        venueText: v.name || v.address || "", provinceText: comp || v.address || "",
+        lat: v.location?.lat ?? v.latitude, lng: v.location?.lng ?? v.longitude,
+        outsideThailand: !!v.address && !/Thailand|ประเทศไทย|ไทย/i.test(`${v.address} ${comp}`),
+        catText: [].concat(e.categories || []).join(" ").toLowerCase().replace("music", "concert"),
+        prices: prices([...desc.matchAll(/([\d,]{3,})\s*(?:บาท|THB|฿)|฿\s*([\d,]{3,})/g)].map(m => m[1] || m[2])),
+        free: /เข้าฟรี|เข้าชมฟรี|free entry|free admission/i.test(desc),
+        bodyText: `${v.address || ""} ${desc}`.slice(0, 800)
+      };
     }
   },
   // งานวิ่ง/ปั่น/ไตรกีฬา ทั่วประเทศ
@@ -561,7 +644,8 @@ async function build(src, ref, p) {
   if (known) { ev.venueId = known.id; return ev; }
   if (!p.venueText) return reject("ไม่มีสถานที่", item);
   let province = provinceFrom(`${p.provinceText} ${p.venueText}`);
-  const geo = await geocode(p.venueText, province);
+  // แหล่งที่มีพิกัดสถานที่มาให้ (Ticketmelon) ไม่ต้องค้นพิกัดเอง
+  const geo = p.lat && p.lng ? { lat: +(+p.lat).toFixed(5), lng: +(+p.lng).toFixed(5), state: "" } : await geocode(p.venueText, province);
   if (!province && geo?.state) province = provinceFrom(geo.state);
   // ทางสุดท้าย: หาชื่อจังหวัด/ย่านในรายละเอียดงาน
   if (!province) province = provinceFrom(p.bodyText, { strict: true });
@@ -591,6 +675,7 @@ prev ??= { events: [] };
 const prevById = Object.fromEntries((prev.events || []).map(e => [e.id, e]));
 // งานที่เคยตรวจแล้วว่าจบแล้ว/นอกไทย/ไม่ผ่านตัวกรองถาวร → ไม่ต้องเปิดซ้ำ
 const skip = new Set(prev.skip || []);
+const dropped = new Set(); // เปิดหน้าแล้วไม่ผ่าน (เช่น จบแล้ว) → ไม่เก็บของเดิมไว้ต่อ
 const PERMANENT = new Set(["งานเฉพาะธุรกิจ (B2B)", "จบแล้ว", "อยู่นอกประเทศไทย", "คำต้องห้าม", "เปิดประจำ ไม่ใช่อีเว้นท์", "งานออนไลน์"]);
 const out = [], stats = {};
 let opened = 0;
@@ -608,7 +693,7 @@ for (const [key, src] of Object.entries(SOURCES)) {
     const old = prevById[ref.id];
     // งานที่ยังไม่รู้ราคา เปิดหน้าใหม่ทุก 3 วัน (ผู้จัดมักใส่ราคาทีหลัง)
     const age = old ? (Date.now() - new Date(old.fetchedAt)) / 864e5 : Infinity;
-    const fresh = age < REFRESH_DAYS && (old.price?.type !== "unknown" || age < 3);
+    const fresh = !process.argv.includes("--refresh") && age < REFRESH_DAYS && (old.price?.type !== "unknown" || age < 3);
     let ev = null;
     // แหล่งที่หน้ารวมมีข้อมูลครบแล้ว (Eventbrite) ไม่ต้องเปิดหน้างาน
     if (ref.parsed) {
@@ -621,12 +706,13 @@ for (const [key, src] of Object.entries(SOURCES)) {
       lastReject = null;
       ev = await build(src, ref, html ? src.parse(html, ref.url) : null);
       if (!ev && PERMANENT.has(lastReject)) skip.add(ref.id);
+      if (!ev && html && PERMANENT.has(lastReject)) dropped.add(ref.id);
     } else ev = old || null; // เกินโควต้ารอบนี้: ใช้ข้อมูลเดิมไปก่อน
     if (ev && (ev.endDate || ev.startDate) >= today || ev?.ongoing) { out.push(ev); stats[src.name].kept++; }
   }
 }
 // งานที่หายจากหน้ารวมแต่ยังไม่จบ: เก็บไว้ต่อ (เว็บต้นทางอาจแค่เลื่อนหน้า)
-for (const e of prev.events || []) if (!out.find(x => x.id === e.id) && ((e.endDate || e.startDate) >= today || e.ongoing)) out.push(e);
+for (const e of prev.events || []) if (!dropped.has(e.id) && !out.find(x => x.id === e.id) && ((e.endDate || e.startDate) >= today || e.ongoing)) out.push(e);
 // งานเดิมที่เป็นแบบเปิดประจำ/ออนไลน์ (เก็บไว้ก่อนเปลี่ยนกฎ) → เอาออก และไม่เปิดหน้าซ้ำอีก
 for (let i = out.length - 1; i >= 0; i--) if (out[i].ongoing || out[i].venueId === "online") { skip.add(out[i].id); out.splice(i, 1); }
 
