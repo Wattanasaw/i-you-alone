@@ -1248,7 +1248,7 @@
     return trendPlaceCache.find(([, names]) => names.some(nm => title.includes(nm)))?.[0] || null;
   }
   function trendCard(n) {
-    const pl = placeOfPost(n);
+    const pl = n.pl || placeOfPost(n);
     return `<div class="news-item trend-item" style="--c1:${PCAT[n.kind]?.color || "var(--accent)"}">
       <a class="trend-link" ${inAppLink(n.link)}>
         ${trendThumb(n)}
@@ -1341,11 +1341,16 @@
     // + โพสต์ของสถานที่ที่รวบรวมจากเทรนด์ (ผูกกับพิกัดจริงแล้ว)
     const pool = [...new Map([
       ...(cat === "all" ? Object.entries(state.trends) : [[cat, state.trends[cat] || []]]).flatMap(([k, items]) => items.map(n => ({ ...n, kind: k }))),
-      ...state.places.filter(p => p.fromTrend && (cat === "all" || p.kind === cat) && inPlaceProvince(p)).flatMap(p => p.posts.map(n => ({ ...n, kind: p.kind })))
-    ].map(n => [n.link, n])).values()];
+      // โพสต์ที่ผูกกับสถานที่แล้ว (ทุกสถานที่ ไม่ใช่แค่ที่มาจากเทรนด์) → บอร์ดมีโพสต์มากขึ้น
+      ...state.places.filter(p => p.posts?.length && (cat === "all" || p.kind === cat) && inPlaceProvince(p)).flatMap(p => placePosts(p).map(n => ({ ...n, kind: p.kind, pl: p })))
+    ].map(n => [n.link, n])).values()]
+      // ต้องรู้ว่าโพสต์พูดถึงสถานที่ไหน (มีป้าย 📍) ถึงขึ้นบอร์ดเทรนด์
+      .map(n => n.pl ? n : { ...n, pl: placeOfPost(n) }).filter(n => n.pl && inPlaceProvince(n.pl) && (cat === "all" || n.pl.kind === cat));
     // โพสต์ที่มีรูปปกขึ้นก่อน (การ์ดไม่มีรูปดูเหมือนโหลดไม่เสร็จ) — ไม่มีรูปใช้เมื่อโพสต์มีรูปไม่พอ
     const fp = freshPopular(pool), withImg = fp.filter(n => String(n.image || "").startsWith("https://"));
-    const board = (withImg.length >= 6 ? withImg : fp).slice(0, cat === "all" ? 14 : 10);
+    // สถานที่ละไม่เกิน 2 โพสต์ (บอร์ดไม่ซ้ำร้านเดิม)
+    const perPl = new Map();
+    const board = (withImg.length >= 6 ? withImg : fp).filter(n => { const c = perPl.get(n.pl) || 0; perPl.set(n.pl, c + 1); return c < 2; }).slice(0, cat === "all" ? 40 : 24);
     app.innerHTML = `<div class="page">
       <h1 class="page-title">🗺️ ${t("placesTitle")}</h1>
       <!-- จังหวัด + หมวด อยู่ด้วยกันในแถบตัวกรอง ติดด้านบนตอนเลื่อน -->
