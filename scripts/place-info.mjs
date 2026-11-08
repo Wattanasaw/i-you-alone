@@ -157,19 +157,19 @@ function typical(p) {
 }
 
 // ---------- ใส่ลงข้อมูล (เฉพาะช่องว่าง) ----------
-const stat = { web: 0, review: 0, ai: 0, typical: 0 };
+const stat = { web: 0, review: 0, review1: 0, ai: 0, typical: 0 };
 for (const p of all) {
   // ล้างค่าที่สคริปต์นี้เคยใส่ (ให้ค่าจากแหล่งที่ดีกว่าที่มาทีหลังได้ทับ)
   if (p.hoursSrc) { delete p.hours; delete p.hoursSrc; }
   // ล้างค่าที่สคริปต์นี้/สคริปต์ราคาเดิมเคยใส่ (Lemon8 = place-prices.mjs เดิม อ่านรีวิวโพสต์เดียว ยังไม่ได้ตรวจ)
   if (["web", "review", "reviews", "ai", "typical", "Lemon8"].includes(p.entry?.src)) delete p.entry;
-  if (["web", "review", "reviews", "ai", "typical", "Lemon8"].includes(p.menuPrice?.src)) delete p.menuPrice;
+  if (["web", "review", "reviews", "review1", "ai", "typical", "Lemon8"].includes(p.menuPrice?.src)) delete p.menuPrice;
   const rv = reviews[p.id] || {};
   const c = cache[p.id] || {};
   const li = l8info[p.id] || {}, f = rv.facts || {};
   // ลำดับ: ข้อมูลที่ตรวจแล้วจากเว็บไซต์ทางการ → ตรวจแล้วจากหลายแหล่ง → เว็บไซต์ (AI อ่านหน้าเว็บ) → เวลาเปิดที่ ≥ 2 รีวิวเขียนตรงกัน → ค่าทั่วไปตามประเภท
   const fx = s => ({ hours: f.hours?.src === s ? hoursOk(f.hours.value) : null, entry: f.entry?.src === s ? (f.entry.tiers ? { tiers: f.entry.tiers } : f.entry.free ? { free: true } : null) : null, menu: f.menu?.src === s ? (menuOk(f.menu) && { ...menuOk(f.menu), ...(f.menu.items ? { items: f.menu.items } : {}) }) : null });
-  const srcs = [["web", fx("web")], ["review", fx("reviews")], ["web", c.web], ["review", { hours: li.hoursN >= 2 ? hoursOk(li.hours) : null }], ["typical", typical(p)]];
+  const srcs = [["web", fx("web")], ["review", fx("reviews")], ["web", c.web], ["review1", fx("review1")], ["review", { hours: li.hoursN >= 2 ? hoursOk(li.hours) : null }], ["typical", typical(p)]];
   const n = need(p);
   for (const [src, v] of srcs) {
     if (!v) continue;

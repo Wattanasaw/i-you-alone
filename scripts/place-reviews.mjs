@@ -45,7 +45,9 @@ const FEE_KINDS = new Set(["zoo", "themepark", "museum", "park", "animalcafe"]);
 const SOCIAL = /facebook|fb\.com|fb\.me|instagram|line\.me|lin\.ee|tiktok|twitter|x\.com|youtube|google\.|goo\.gl|wongnai|tripadvisor|agoda|booking\.com|klook|linktr/i;
 const site = p => [p.website].flat().find(u => /^https?:\/\//.test(u || "") && !SOCIAL.test(u));
 const hasSource = p => postsOf(p).length || site(p) || p.wiki;
-const due = p => { const c = cache[p.id]; return !c || (c.v || 0) < VERSION || days(c.at) > REFRESH_DAYS || (c.sig !== sig(p) && days(c.at) > 7); };
+// MENU_V: เกณฑ์ราคาเมนูเปลี่ยน (รับเมนูจากรีวิวเดียวได้ ถ้าราคาอยู่ในโพสต์จริง ≥ 2 เมนู) → ร้านที่ยังไม่มีราคาเมนูตรวจใหม่
+const MENU_V = 1;
+const due = p => { const c = cache[p.id]; return !c || (c.v || 0) < VERSION || (MENU_KINDS.has(p.kind) && !c.facts?.menu && (c.mv || 0) < MENU_V && postsOf(p).length > 0) || days(c.at) > REFRESH_DAYS || (c.sig !== sig(p) && days(c.at) > 7); };
 const prio = p => (FEE_KINDS.has(p.kind) || MENU_KINDS.has(p.kind) && postsOf(p).length ? 20 : 0) + (p.wikidata ? 10 : 0) + (p.fame || 0) + Math.min(p.hot || 0, 30) + (site(p) ? 5 : 0) + Math.min(postsOf(p).length, 6);
 const todo = all.filter(p => (!ONLY || p.id === ONLY) && hasSource(p) && (ONLY || due(p))).sort((a, b) => prio(b) - prio(a));
 console.log(`สถานที่ ${all.length} · มีแหล่งข้อมูล ${all.filter(hasSource).length} · สรุปแบบหลายแหล่งแล้ว ${Object.values(cache).filter(c => c.v >= VERSION).length} · รอสรุป ${todo.length} · AI: ${aiName()}`);
@@ -271,12 +273,13 @@ function checkFacts(r, srcs, kind) {
       else log.push(`เมนู ${name.th || name.en} ${price}`);
     }
     const all_ = ok.flatMap(x => x.sup);
-    if (ok.length >= 2 && verified(all_)) {
+    // ยืนยันหลายแหล่ง/เว็บไซต์ → "reviews"/"web" · รีวิวเดียว แต่ราคาอยู่ในโพสต์จริง ≥ 2 เมนู → "review1" (แอพแสดง ≈ และบอกว่ามาจากรีวิว)
+    if (ok.length >= 2) {
       const ps = ok.map(x => x.price).sort((a, b) => a - b);
       // ตัดราคาสุดโต่ง (เมนูพิเศษ/ชุดใหญ่) เมื่อมีหลายเมนู
       const q = f => ps[Math.min(ps.length - 1, Math.round(f * (ps.length - 1)))];
       const [a, b] = ps.length >= 5 ? [q(0.1), q(0.9)] : [ps[0], ps.at(-1)];
-      facts.menu = { min: a, max: b, src: srcTag(all_), n: indep(all_), items: ok.sort((x, y) => x.price - y.price).slice(0, 6).map(x => ({ name: x.name, price: x.price })) };
+      facts.menu = { min: a, max: b, src: verified(all_) ? srcTag(all_) : "review1", n: indep(all_), items: ok.sort((x, y) => x.price - y.price).slice(0, 6).map(x => ({ name: x.name, price: x.price })) };
     } else if (ok.length) log.push(`ช่วงราคาเมนู (ยืนยันได้ ${ok.length} เมนู จาก ${indep(all_)} แหล่ง ไม่พอ)`);
   }
   return { facts, log };
@@ -327,7 +330,7 @@ while (i < todo.length && (SHOW || (aiAvailable() && asked < AI_MAX && fails < 3
     for (const g of group) {
       const r = (out?.results || []).find(x => x.id === g.p.id);
       const sources = g.srcs.map(s => ({ id: s.id, type: s.type, source: s.label, link: s.link, ...(s.likes ? { likes: s.likes } : {}) }));
-      const base = { v: VERSION, sig: sig(g.p), at: new Date().toISOString(), n: g.srcs.length, src: sources };
+      const base = { v: VERSION, mv: MENU_V, sig: sig(g.p), at: new Date().toISOString(), n: g.srcs.length, src: sources };
       if (!r || r.skip) { cache[g.p.id] = { ...base, skip: true }; continue; }
       const { facts, log } = checkFacts(r, g.srcs, g.p.kind);
       for (const k of Object.keys(facts)) factN[k]++;

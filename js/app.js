@@ -1060,8 +1060,8 @@
     return `<ul class="fee-tiers">${ts.map(x => `<li><span>${esc(pick(x.who))}${x.note ? `<small>${esc(pick(x.note))}</small>` : ""}</span><b>${fmtBaht(x.price)}</b>${x.rv ? `<small class="src-note src-review">${t("srcVerified")}</small>` : ""}</li>`).join("")}</ul>`;
   };
   // ที่มาของเวลาเปิด/ราคา (OSM ไม่ต้องบอก) — ข้อมูลประมาณ/AI บอกชัดให้ผู้ใช้เช็กก่อนไป
-  const SRC_KEY = { Lemon8: "fromReviews", review: "srcVerified", owner: "fromOwner", web: "srcWeb", ai: "srcAI", typical: "srcTypical" };
-  const approx = src => src === "typical" || src === "ai" ? "≈ " : "";
+  const SRC_KEY = { review1: "srcReview1", Lemon8: "fromReviews", review: "srcVerified", owner: "fromOwner", web: "srcWeb", ai: "srcAI", typical: "srcTypical" };
+  const approx = src => src === "typical" || src === "ai" || src === "review1" ? "≈ " : "";
   const srcNote = src => SRC_KEY[src] ? `<small class="src-note src-${src}">${t(SRC_KEY[src])}</small>` : "";
   const menuText = p => p.menuPrice ? (p.menuPrice.min === p.menuPrice.max ? `~${fmtBaht(p.menuPrice.min)}` : `${Number(p.menuPrice.min).toLocaleString(locale())}–${fmtBaht(p.menuPrice.max)}`) : "-";
   const inPlaceProvince = p => state.filters.province === "all" || p.province === state.filters.province;
@@ -1124,7 +1124,7 @@
     const where = [p.district && `${p.province === "bangkok" ? t("districtBkk") : t("districtShort")}${p.district}`, provName(p.province), state.pos && p.lat ? `${distanceKm(state.pos, p).toFixed(1)} ${t("km")}` : ""].filter(Boolean).join(" · ");
     const rv = reviewOf(p), summary = placeBlurb(p);
     const open = placeOpen(p);
-    const price = [MENU_KINDS.has(p.kind) && menuText(p) !== "-" ? `🍽️ ${esc(menuText(p))}` : "", (!MENU_KINDS.has(p.kind) || p.kind === "animalcafe") && feeText(p) !== "-" ? `🎟️ ${esc(feeText(p))}` : ""].filter(Boolean).join(" · ");
+    const price = [MENU_KINDS.has(p.kind) && menuText(p) !== "-" ? `🍽️ ${approx(p.menuPrice?.src)}${esc(menuText(p))}` : "", (!MENU_KINDS.has(p.kind) || p.kind === "animalcafe") && feeText(p) !== "-" ? `🎟️ ${esc(feeText(p))}` : ""].filter(Boolean).join(" · ");
     return `
       <article class="card place-row" style="--c1:${c.color};--c2:${c.color2 || c.color}">
         <button class="save-btn" data-save="${esc(placeKey(p))}" aria-label="${saved ? t("unsaveAria") : t("saveAria")}">${saved ? "❤️" : "🤍"}</button>
