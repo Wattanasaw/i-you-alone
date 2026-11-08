@@ -1399,6 +1399,18 @@
   }
   const IMG_RETRY = "if(this.dataset.o){this.src=this.dataset.o;this.dataset.o='';return}";
   const fitBg = (u, thumb, th) => `<img class="img-bg" ${imgSrc(u, thumb, 120, 0, th)} alt="" aria-hidden="true" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">`;
+  // แจ้งโพสต์ที่ไม่ตรงสถานที่ / เจ้าของโพสต์ขอให้ลบ → เปิด GitHub Issue ที่กรอกชื่อสถานที่ไว้แล้ว (ไม่ส่งข้อมูลส่วนตัว)
+  function reportUrl(p, name) {
+    const title = `แจ้งโพสต์: ${name} (${p.id})`;
+    const body = `สถานที่: ${name}
+รหัส: ${p.id}
+
+ลิงก์โพสต์ที่ไม่ตรงสถานที่ / ต้องการให้ลบ:
+
+เหตุผล:
+`;
+    return `https://github.com/Wattanasaw/i-you-alone/issues/new?title=${encodeURIComponent(title)}&body=${encodeURIComponent(body)}`;
+  }
   function trendThumb(n) {
     const title = String(n.title || "").toLowerCase();
     // รูปปกของโพสต์ (พรีวิวจาก Lemon8 มีลายน้ำผู้โพสต์) → ไม่มีใช้รูปสถานที่ที่ชื่ออยู่ในโพสต์ → ไอคอนหมวด
@@ -1654,6 +1666,7 @@
           <p class="muted">${t("placeTrendsSub")}</p>
           <div class="news-list">${[...posts].filter(n => n !== top).sort((a, b) => (b.likes || 0) - (a.likes || 0) || String(b.date || "").localeCompare(String(a.date || ""))).map(n => `<div class="news-item trend-item"><a class="trend-link" ${inAppLink(n.link)}>${trendThumb(n)}<h3>${esc(n.title)}</h3><div class="meta">${n.likes ? `❤️ ${fmtLikes(n.likes)} · ` : ""}${esc(n.source || "Lemon8")}${n.date ? ` · ${relDate(n.date)}` : ""}</div></a></div>`).join("")}</div>
           <a class="btn block" style="margin-top:12px" ${inAppLink(`https://www.lemon8-app.com/experience/${encodeURIComponent(p.name?.th || p.name?.en || name)}?region=th`)}>🍋 ${t("moreOnLemon8")}</a>
+          <a class="report-link" href="${reportUrl(p, name)}" target="_blank" rel="noopener">🚩 ${t("reportPost")}</a>
         </section>` : ""}
         ${adSlot("detail")}
         <p class="disclosure">${t("placeNote")}</p>

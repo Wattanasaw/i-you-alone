@@ -10,6 +10,7 @@
 // node scripts/trend-places.mjs [--posts 160] [--ai 8]
 import { readFile, writeFile, rename } from "node:fs/promises";
 import { aiJSON, aiAvailable, aiName } from "./gemini.mjs";
+import { postAbout } from "./place-quality.mjs";
 
 const UA = "IYouAloneBot/1.0 (+https://wattanasaw.github.io/i-you-alone/)";
 const arg = (n, d) => { const i = process.argv.indexOf(n); return i > 0 ? +process.argv[i + 1] : d; };
@@ -214,11 +215,13 @@ for (const id of poiIds) {
   const hot = +posts.reduce((s, x) => s + 1 + Math.log10(1 + x.likes), 0).toFixed(1);
   const hit = await locate(id, p, prov);
   if (hit?.area) { skipped++; continue; }
-  const old = (hit?.osm && byOsm.get(hit.osm))
-    || data.places.find(q => q.province === prov && [q.name?.th, q.name?.en].some(n => n && sameName(n, p.name)))
-    || (hit && !hit.approx && data.places.find(q => q.lat && km(q, hit) <= 0.15));
+  const named = (hit?.osm && byOsm.get(hit.osm))
+    || data.places.find(q => q.province === prov && [q.name?.th, q.name?.en].some(n => n && sameName(n, p.name)));
+  const old = named || (hit && !hit.approx && data.places.find(q => q.lat && km(q, hit) <= 0.15));
   if (old) {
-    old.posts = [...new Map([...posts.slice(0, 4), ...(old.posts || [])].map(x => [x.link, x])).values()].sort((a, b) => b.likes - a.likes).slice(0, 4);
+    // จับคู่ด้วยพิกัดใกล้กันเท่านั้น (ชื่อหมุดไม่ตรง) = อาจเป็นร้าน/ที่อื่นที่ตั้งติดกัน → รับเฉพาะโพสต์ที่ระบุชื่อที่นี่
+    const mine = named ? posts : posts.filter(x => postAbout(x, old));
+    old.posts = [...new Map([...mine.slice(0, 4), ...(old.posts || [])].map(x => [x.link, x])).values()].sort((a, b) => b.likes - a.likes).slice(0, 4);
     if (hot > (old.hot || 0)) old.hot = hot;
     old.trend = Math.max(old.trend || 0, posts.length);
     toOld++;

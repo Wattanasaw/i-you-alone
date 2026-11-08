@@ -4,11 +4,11 @@
 // หมุนเวียน: สถานที่ที่ยังไม่มีโพสต์ก่อน · อ่านซ้ำทุก 14 วัน · หยุดเมื่อครบเวลา (ที่เหลือรอบหน้า)
 // รัน หลัง scripts/trend-places.mjs · node scripts/place-lemon8.mjs [--minutes 20]
 import { readFile, writeFile, rename, mkdir } from "node:fs/promises";
-import { postFits, bestOwners, ownsPost, infoFromPosts, aliasMap, postAllowed } from "./place-quality.mjs";
+import { postFits, bestOwners, ownsPost, infoFromPosts, aliasMap, postAllowed, postAbout } from "./place-quality.mjs";
 
 const UA = "IYouAloneBot/1.0 (+https://wattanasaw.github.io/i-you-alone/)";
 const arg = (n, d) => { const i = process.argv.indexOf(n); return i > 0 ? +process.argv[i + 1] : d; };
-const MINUTES = arg("--minutes", 25), KEEP = 120, TOP = 6, REFRESH = 14, SHARDS = 32, DAYS = 3650, VER = 3;
+const MINUTES = arg("--minutes", 25), KEEP = 120, TOP = 6, REFRESH = 14, SHARDS = 32, DAYS = 3650, VER = 4;
 const root = new URL("../", import.meta.url);
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 const readJSON = async (p, fb) => { try { return JSON.parse(await readFile(new URL(p, root), "utf8")); } catch { return fb; } };
@@ -35,9 +35,14 @@ const names0 = p => { const n = nameOf(p); return [...new Set([n.th, n.en, n.th?
 // คำค้น: ชื่อไทย → ชื่ออังกฤษ → ชื่อไทยตัดคำนำหน้า (ชื่อทางการยาวๆ อย่าง "วัดพระศรีรัตนศาสดาราม" คนไม่ค่อยใช้ค้น)
 // + ชื่อเรียกสั้น (ลองหลังชื่อเต็ม สูงสุด 3 ชื่อ)
 const names = p => [...new Set([...names0(p), ...(ALIAS.get(p.id) || [])])];
+// โพสต์นี้เรื่องของที่นี่จริงไหม → กฎกลางใน place-quality.mjs (postAbout) ใช้ร่วมกับ place-posts / fetch-places
+const about = (x, p) => postAbout(x, p, ALIAS.get(p.id));
 const queries = p => { const n = nameOf(p); return [...new Set([n.th, n.en, n.th?.replace(GENERIC, ""), ...(ALIAS.get(p.id) || []).slice(0, 3)].filter(s => s && s.trim().length >= 4).map(s => s.trim()))]; };
 const query = p => queries(p)[0] || "";
-const NOT_TREND = /เสียชีวิต|อุบัติเหตุ|ไฟไหม้|น้ำท่วม|จับกุม|ดราม่า|ร้องเรียน|ปิดถาวร|ปิดกิจการ/;
+const NOT_TREND = /เสียชีวิต|อุบัติเหตุ|ไฟไหม้|น้ำท่วม|จับกุม|ดราม่า|ร้องเรียน|ปิดถาวร|ปิดกิจการ|มีมติ|เฉือน/;
+
+// OCR มักได้ "ํา" แยกตัว → รวมเป็น "ำ"
+const fix = s => String(s || "").replace(/ํา/g, "ำ").replace(/\s+/g, " ").toLowerCase();
 
 async function search(q) {
   const res = await fetch(`https://www.lemon8-app.com/experience/${encodeURIComponent(q)}?region=th`, { headers: { "User-Agent": UA, "Accept-Language": "th" }, signal: AbortSignal.timeout(20000) });
@@ -61,7 +66,10 @@ async function search(q) {
       link: `https://www.lemon8-app.com/${author.linkName ? "@" + author.linkName + "/" : ""}${o.groupId}?region=th`,
       source: `Lemon8${author.nickName ? " · " + author.nickName : ""}`,
       image: [o.largeImage?.url, o.imageList?.[0]?.url].find(u => /^https:\/\/www\.lemon8-app\.com\/seo\/image\?/.test(u || "")),
-      body: `${o.title} ${o.shortContent || ""} ${[].concat(o.ocrTextArr || []).join(" ")}`.replace(/\s+/g, " ").toLowerCase()
+      body: fix(`${o.title} ${o.shortContent || ""} ${[].concat(o.ocrTextArr || []).join(" ")} ${(o.imageList || []).map(i => i.gptImageDescription || "").join(" ")}`),
+      // ปก (รูปแรกที่แอพโชว์): ข้อความบนรูป + คำบรรยายรูป
+      cover: fix(`${[].concat(o.ocrTextArr || [])[0] || ""} ${o.imageList?.[0]?.gptImageDescription || ""}`),
+      coverDesc: fix(o.imageList?.[0]?.gptImageDescription || "")
     };
   });
   return { status: 200, posts };
@@ -71,9 +79,9 @@ async function search(q) {
 // ยังไม่เคยอ่านเวลาเปิด-ปิด/ราคาจากโพสต์ (ไม่มีช่อง info) → ค้นใหม่ด้วย
 // ค้นด้วยชื่อเรียกสั้นแล้ว (v ≥ 2) · ยังไม่เคย → ค้นใหม่
 const ONLY = process.argv.includes("--only") ? process.argv[process.argv.indexOf("--only") + 1] : "";
-const rank = p => !entry(p.id) ? 0 : entry(p.id).posts?.length ? 1 : 2;
+const rank = p => entry(p.id)?.posts?.length && (entry(p.id).v || 0) < VER ? 0 : !entry(p.id) ? 1 : entry(p.id).posts?.length ? 2 : 3;
 const due = all.filter(p => (!ONLY || p.id === ONLY) && query(p) && names(p).length && (ONLY || !(entry(p.id) && entry(p.id).info && entry(p.id).v >= VER && days(entry(p.id).at) < REFRESH)))
-  // ลำดับ: ยังไม่เคยค้นเลย → มีรีวิวอยู่แล้ว (ค้นเพิ่มให้ครบ) → ที่เหลือ · แล้วเรียงตามความดัง
+  // ลำดับ: มีรีวิวที่ยังไม่ผ่านเกณฑ์ใหม่ (ค้นใหม่ทั้งหมด) → ยังไม่เคยค้น → มีรีวิวอยู่แล้ว → ที่เหลือ · แล้วเรียงตามความดัง
   .sort((a, b) => (rank(a) - rank(b)) || ((b.hot || 0) + (b.fame || 0) + (b.views || 0) / 50) - ((a.hot || 0) + (a.fame || 0) + (a.views || 0) / 50));
 console.log(`สถานที่ ${all.length} · มีรีวิว Lemon8 ในคลังแล้ว ${all.filter(p => entry(p.id)?.posts?.length).length} · รอค้น ${due.length}`);
 
@@ -87,8 +95,7 @@ for (const p of due) {
   // โพสต์ที่พูดถึงที่นี่จริง: ชื่อในหัวข้อ หรือชื่อเต็ม (≥ 6 ตัวอักษร) ในเนื้อหา/ข้อความบนรูป
   // + ที่เที่ยวธรรมชาติ/สถานที่สำคัญ: ไม่รับรีวิวร้าน/ที่พัก และชื่อต้องอยู่ในหัวโพสต์ (ชื่อในเนื้อหามักเป็น "ร้าน X ใกล้หาด Y")
   const venue = ["cafe", "animalcafe", "restaurant", "nightlife"].includes(p.kind);
-  const relevant = list => list.filter(x => x.title.length >= 4 && days(x.date) <= DAYS && !NOT_TREND.test(x.title) && postFits(x, p)
-    && (ns.some(n => x.title.toLowerCase().includes(n)) || (venue && ns.some(n => n.length >= 6 && x.body.includes(n)))));
+  const relevant = list => list.filter(x => x.title.length >= 4 && days(x.date) <= DAYS && !NOT_TREND.test(x.title) && postFits(x, p) && about(x, p));
   // ค้นทุกชื่อ (ชื่อไทย/อังกฤษ/ชื่อย่อ) รวมโพสต์ทั้งหมดที่เจอ — ให้แท็บกระแสมีรีวิวครบที่สุด
   let rel = [], ok = false;
   for (const q of queries(p)) {
@@ -99,8 +106,8 @@ for (const p of due) {
   }
   if (!ok) continue;
   searched++;
-  const old = entry(p.id)?.posts || [];
-  const posts = [...new Map([...rel.map(({ body, ...x }) => x), ...old].map(x => [x.link, x])).values()]
+  const old = entry(p.id)?.v >= VER ? entry(p.id).posts || [] : [];
+  const posts = [...new Map([...rel.map(({ body, cover, coverDesc, ...x }) => x), ...old].map(x => [x.link, x])).values()]
     .sort((a, b) => b.likes - a.likes).slice(0, KEEP);
   // เวลาเปิด-ปิด + ช่วงราคา ที่ผู้รีวิวเขียนไว้ในโพสต์ (อ่านจากข้อความ ไม่ใช้ AI)
   const info = infoFromPosts(rel.map(x => x.body), p.kind);
@@ -113,11 +120,11 @@ const allPosts = [...new Map(shards.flatMap(s => Object.values(s).flatMap(e => e
 const BEST = bestOwners(allPosts, all, names);
 let removed = 0;
 for (const p of all) {
-  const e = entry(p.id); if (!e?.posts?.length) continue;
-  const ns = names(p), before = e.posts.length;
-  e.posts = e.posts.filter(x => postAllowed(x) && postFits(x, p) && ownsPost(x, ns, BEST));
-  removed += before - e.posts.length;
-  if (p.posts?.length) { p.posts = p.posts.filter(x => postAllowed(x) && postFits(x, p) && ownsPost(x, ns, BEST)); if (!p.posts.length) delete p.posts; }
+  const e = entry(p.id), ns = names(p);
+  const ok = x => postAllowed(x) && !NOT_TREND.test(x.title || "") && postFits(x, p) && about(x, p) && ownsPost(x, ns, BEST);
+  if (e?.posts?.length) { const before = e.posts.length; e.posts = e.posts.filter(ok); removed += before - e.posts.length; }
+  // โพสต์บนการ์ด (places.json) ทุกสถานที่ — ยกเว้นที่มาจากหมุดสถานที่ใน Lemon8 (fromTrend: โพสต์ติดหมุดที่นี่อยู่แล้ว)
+  if (p.posts?.length) { p.posts = p.posts.filter(x => p.fromTrend ? postAllowed(x) && !NOT_TREND.test(x.title || "") : ok(x)); if (!p.posts.length) delete p.posts; }
 }
 console.log(`ตัดโพสต์ที่ไม่ใช่เรื่องของสถานที่นั้น ${removed} โพสต์`);
 // เวลาเปิด-ปิด/ช่วงราคาจากรีวิว → ใส่เมื่อยังไม่มี (หรือมีแค่ "ค่าทั่วไปตามประเภท")

@@ -218,3 +218,54 @@ export function postAllowed(x) {
   const author = (link.split("lemon8-app.com/@")[1] || "").split("/")[0].toLowerCase();
   return !removedCache.links.has(link) && !removedCache.authors.has(author);
 }
+
+// ---------- โพสต์นี้เป็นเรื่องของ "ที่นี่" จริงไหม (ใช้ร่วมทุกสคริปต์ที่ผูกโพสต์กับสถานที่) ----------
+// ปัญหาเดิม: "อุทยานแห่งชาติเขาใหญ่" ตัดคำนำหน้าเหลือ "เขาใหญ่" = ชื่ออำเภอ/ย่าน → โพสต์ Pandora, คาเฟ่, รีสอร์ทในเขาใหญ่หลุดมาเป็นรีวิวอุทยาน
+// กฎ: ชื่อเต็ม (ไทย/อังกฤษ) หรือชื่อเรียกสั้นที่ไม่ซ้ำใคร อยู่ในหัวโพสต์ หรือบนปก (ข้อความบนรูปแรก ≥ 6 ตัวอักษร)
+//     ชื่อที่ตัดคำนำหน้า ต้องมีคำบอกประเภทติดกัน ("อุทยานเขาใหญ่" "อช.เขาใหญ่" "น้ำตก เอราวัณ") และปกต้องไม่ใช่รูปร้าน/ที่พัก
+//     อุทยานแห่งชาติ: ชื่อเรียกสั้นจากชื่ออังกฤษ ("kaeng krachan") ต้องมีคำว่า อุทยาน/national park ด้วย
+// post: { title, cover?, coverDesc? } (cover = ข้อความบนรูปแรก + คำบรรยายรูป, ตัวเล็ก) · aliases = ชื่อเรียกสั้น (ตัวเล็ก) ถ้ามี
+const STRIP = /^(อุทยานแห่งชาติ|สวนสัตว์เปิด|สวนสัตว์|พิพิธภัณฑสถานแห่งชาติ|พิพิธภัณฑ์|สวนน้ำ|สวนสนุก|หอศิลป์|คาเฟ่|ร้าน|วัด|น้ำตก|หาด|ชายหาด)\s*/;
+const TYPE_WORD = [[/^อุทยาน/, "อุทยาน|อช\\."], [/^น้ำตก/, "น้ำตก"], [/^(ชาย)?หาด/, "หาด"], [/^วัด/, "วัด"], [/^สวนสัตว์/, "สวนสัตว์(?:เปิด)?"],
+  [/^พิพิธ/, "พิพิธภัณฑ์|พิพิธภัณฑ"], [/^สวนน้ำ/, "สวนน้ำ"], [/^สวนสนุก/, "สวนสนุก"], [/^หอศิลป์/, "หอศิลป์"]];
+const reEsc = s => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+const COVER_BIZ = /คาเฟ่|คาเฟ|ร้าน|บาร์|ผับ|โรงแรม|ที่พัก|รีสอร์ท|รีสอร์ต|โฮมสเตย์|แคมป์ปิ้ง|\bcafe\b|café|coffee|hotel|resort|restaurant/i;
+const KIND_WORD = {
+  park: /อุทยาน|อช\.|national park/,
+  zoo: /zoo|safari|aquarium|สวนสัตว์|อควาเรียม|ซาฟารี|สัตว์|animal|wildlife/,
+  themepark: /water ?park|สวนน้ำ|theme ?park|สวนสนุก|amusement|สวน|garden|world|land|ฟาร์ม|farm/,
+  museum: /museum|พิพิธ|gallery|หอศิลป์|\bart\b|exhibition|นิทรรศการ/,
+  other: /วัด|temple|หาด|beach|เกาะ|island|น้ำตก|waterfall|ตลาด|market|พระราชวัง|palace|ปราสาท|อุทยาน|สวน|park|ดอย|ภู|เขา|ถ้ำ|cave|จุดชมวิว|viewpoint/
+};
+// ชื่อเรียกสั้นซ้ำกับที่ในต่างประเทศ ("harvest moon" ที่แอฟริกาใต้)
+const ABROAD = /ต่างประเทศ|แอฟริกา|ญี่ปุ่น|เกาหลี|ไต้หวัน|ฮ่องกง|จีน|ยุโรป|อเมริกา|ออสเตรเลีย|นิวซีแลนด์|สวิส|อังกฤษ|ฝรั่งเศส|อิตาลี|เวียดนาม|ลาว|กัมพูชา|มาเลเซีย|สิงคโปร์|บาหลี|อินโดนีเซีย|ดูไบ|japan|korea|taiwan|hong kong|china|europe|africa|australia|singapore|bali|vietnam/i;
+const aboutCache = new Map();
+function aboutParts(place, aliases = []) {
+  const key = place.id + "|" + aliases.join(",");
+  if (aboutCache.has(key)) return aboutCache.get(key);
+  const n = nameOf(place), th = String(n.th || "").trim(), lth = th.toLowerCase();
+  const cut = th.replace(STRIP, "").trim().toLowerCase();
+  const ctx = TYPE_WORD.find(([re]) => re.test(th))?.[1];
+  const weak = ctx && cut && cut !== lth ? cut : "";
+  const near = weak && new RegExp(`(?:${ctx})(?:ฯ|สถาน)?\\s*(?:แห่งชาติ|เเห่งชาติ)?\\s*(?:น้ำตก)?\\s*${reEsc(weak)}${ctx === "วัด" ? "" : `|${reEsc(weak)}\\s*(?:${ctx})`}`);
+  // ชื่อเรียกสั้นของที่ที่ไม่ใช่ร้าน ("harvest moon", "nong khai", "black mountain") มักเป็นคำทั่วไป/ชื่อเมืองด้วย
+  // → ต้องมีคำบอกประเภทของที่นี่ หรือชื่อจังหวัด ในหัวโพสต์/ปกด้วย
+  const venue = VENUE_KINDS.has(place.kind);
+  const prov = String(place.province || "").replace(/-/g, " ").toLowerCase();
+  const park = venue ? [] : aliases.filter(a => a !== prov);
+  const nameBiz = COVER_BIZ.test(`${th} ${n.en || ""}`);
+  const kindRe = KIND_WORD[place.kind] || KIND_WORD.other;
+  const strong = [...new Set([lth, String(n.en || "").toLowerCase().trim(), !ctx && cut !== lth ? cut : "", ...(venue ? aliases : [])])]
+    .filter(s => s && s.length >= 4 && s !== weak);
+  const r = { strong, weak, near, park, kindRe, prov, nameBiz };
+  aboutCache.set(key, r);
+  return r;
+}
+export function postAbout(post, place, aliases) {
+  const { strong, weak, near, park, kindRe, prov, nameBiz } = aboutParts(place, aliases || []);
+  const t = String(post.title || "").toLowerCase(), cover = post.cover || "";
+  if (strong.some(n => t.includes(n) || (n.length >= 6 && cover.includes(n)))) return true;
+  const both = `${t} ${cover}`;
+  if (park.some(n => t.includes(n) || cover.includes(n)) && !ABROAD.test(both) && (kindRe.test(both) || (place.kind !== "park" && prov && both.includes(prov))) && (nameBiz || !COVER_BIZ.test(`${t} ${post.coverDesc || ""}`))) return true;
+  return !!weak && (near.test(t) || near.test(cover)) && !COVER_BIZ.test(post.coverDesc || "");
+}
