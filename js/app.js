@@ -191,7 +191,7 @@
     const KIND_FIX = {
       "l8-42203861114024016": "cafe", "l8-42203860775297072": "cafe", "l8-22535797337218975": "cafe", "l8-42203861076315530": "cafe",
       "l8-22535865223462982": "cafe", "l8-22535797309026983": "cafe", "l8-34955879830612195": "cafe",
-      "l8-22535865208351531": "zoo", "osm-n4764269638": "zoo", "wd-Q6583260": "zoo", "osm-w429602627": "zoo", "osm-w962532652": "zoo", "osm-n9094881748": "zoo", "osm-n13909525592": "hide"
+      "l8-22535865208351531": "zoo", "osm-n4764269638": "zoo", "wd-Q6583260": "zoo", "osm-w429602627": "zoo", "osm-w962532652": "zoo", "osm-n9094881748": "zoo", "osm-n13909525592": "hide", "wd-Q2132910": "landmark", "osm-w91562454": "hide"
     };
     for (const p of state.places) {
       if (typeof p.website === "string" && p.website.includes(";")) p.website = p.website.split(";")[0].trim();
@@ -204,7 +204,7 @@
       else if ((p.kind === "nightlife" || p.kind === "restaurant") && /café|cafe|coffee|คาเฟ่|กาแฟ|คอฟฟี่|kafe/i.test(nm) && !/\bbar\b|บาร์|pub|ผับ|beer|เบียร์|restaurant|ร้านอาหาร|dining|kitchen|ครัว|eatery/i.test(nm)) p.kind = "cafe";
       else if ((p.kind === "nightlife" || p.kind === "cafe") && /restaurant|ร้านอาหาร|ramen|ราเมง|ก๋วยเตี๋ยว|noodle|ラーメン/i.test(nm) && !/\bbar\b|บาร์|pub|ผับ/i.test(nm)) p.kind = "restaurant";
       else if (p.kind === "landmark" && /^\s*(ถ้ำ|ถ้ํา|เขา|ดอย|น้ำตก)/.test(nm)) p.kind = "nature";
-      if (p.kind === "nature" && /หาด|ชายหาด|beach|เกาะ|island|อ่าว|\bbay\b|ทะเล(?!หมอก|สาบ|บัว)/i.test(nm)) p.kind = "beach";
+      if (p.kind === "nature" && /หาด|ชายหาด|beach|เกาะ|island|อ่าว|\bbay\b|ทะเล(?!หมอก|สาบ|บัว)/i.test(nm) && !/เกาะเกร็ด|เกาะรัตนโกสินทร์|เกาะเมือง/.test(nm)) p.kind = "beach";
       else if (p.kind === "landmark" && /^\s*(วัด|wat\b)|temple|พระธาตุ|พระมหาธาตุ|เจดีย์|วัด\S|สำนักสงฆ์|วรวิหาร/i.test(nm)) p.kind = "temple";
       // ข้อมูลจาก Gemini เติมเฉพาะช่องที่ยังว่าง (OpenStreetMap/รีวิว Lemon8/เจ้าของร้าน มาก่อน)
       const ai = state.ai[p.id];
@@ -1171,20 +1171,47 @@
   // ---------- แต่งตัวไปที่นี่: แนวการแต่งตัวตามหมวด/ชื่อสถานที่ + สินค้าลิงก์พันธมิตร (data/outfits.json) ----------
   function outfitStyle(p) {
     const nm = `${p.name?.th || ""} ${p.name?.en || ""}`;
-    if (p.kind === "temple" || (p.kind === "landmark" && /พระราชวัง|พระบรมมหาราชวัง|พระที่นั่ง|พระตำหนัก|\bpalace\b/i.test(nm))) return "modest";
-    if (p.kind === "beach") return "beach";
-    if (p.kind === "nature" || p.kind === "park") return /ดอย|ภู|ม่อน|ผา|เขา|จุดชมวิว|ทะเลหมอก|mountain|\bdoi\b|\bphu\b|view ?point/i.test(nm) ? "mountain" : "hiking";
-    if (p.kind === "themepark") return /สวนน้ำ|water ?park|water ?world|lagoon/i.test(nm) ? "waterpark" : "themepark";
-    if (p.kind === "zoo") return "farm";
-    if (p.kind === "nightlife") return "night";
-    if (["cafe", "animalcafe", "restaurant"].includes(p.kind)) return "cafe";
+    const k = p.kind;
+    // เกาะกลางเมือง/แม่น้ำ ไม่ใช่ทะเล
+    const cityIsland = /เกาะเกร็ด|เกาะรัตนโกสินทร์|เกาะเมือง|rattanakosin|koh kret/i.test(nm);
+    if (/พระราชวัง|พระบรมมหาราชวัง|พระที่นั่ง|พระตำหนัก|\bpalace\b|ธรรมกาย|ศาลเจ้า|มัสยิด|\bshrine\b|\bmosque\b/i.test(nm) || k === "temple") return "modest";
+    if (["nature", "park", "beach"].includes(k) && !cityIsland) {
+      if (/หาด|ชายหาด|\bbeach\b|ดำน้ำ|\bdiv(e|ing)\b|snorkel/i.test(nm)) return "beach";
+      if (/น้ำตก|waterfall|ถ้ำ|ถ้ํา|\bcave\b|เขื่อน|\bdam\b|แก่ง|rafting/i.test(nm)) return "hiking";
+      if (/ดอย|ภู|ม่อน|ผา|เขา|จุดชมวิว|ทะเลหมอก|mountain|\bdoi\b|\bphu\b|view ?point/i.test(nm) && !/หมู่เกาะ|เกาะ|อ่าว|ทะเล(?!หมอก|สาบ|บัว)|marine/i.test(nm)) return "mountain";
+      if (k === "beach" || /เกาะ|หมู่เกาะ|อ่าว|ทะเล(?!หมอก|สาบ|บัว)|island|\bbay\b|marine/i.test(nm)) return "beach";
+      return "hiking";
+    }
+    if (k === "themepark" || k === "zoo") {
+      // พิพิธภัณฑ์/สถานแสดงสัตว์น้ำ = ในร่ม เดินชมสบายๆ
+      if (/สัตว์น้ำ|พันธุ์ปลา|aquari|underwater|sea ?life|ocean ?world/i.test(nm)) return "city";
+      if (/สวนน้ำ|สระว่ายน้ำ|water|aqua|slide|splash|surf|wake|lagoon|slip ?n ?fly|andamanda|อันดามันดา/i.test(nm)) return "waterpark";
+      if (/ดำน้ำ|\bdiv(e|ing)\b/i.test(nm)) return "beach";
+      if (k === "zoo" || /ช้าง|elephant|monkey|ลิง|ฟาร์ม|farm|ผลไม้|fruit|garden|สวนดอกไม้|flower|pony/i.test(nm)) return "farm";
+      return "themepark";
+    }
+    if (k === "nightlife") return "night";
+    if (["cafe", "animalcafe", "restaurant"].includes(k)) return "cafe";
     return "city";
+  }
+  // คลังสินค้าแนวละ ~50 ชิ้น → สุ่มโชว์ 10 ชิ้นทุกครั้งที่เปิดหน้าสถานที่ (แต่ละที่/แต่ละครั้งไม่ซ้ำกัน)
+  // จำชุดที่สุ่มไว้ต่อสถานที่จนกว่าจะออกจากหน้า เพื่อไม่ให้สลับเองตอนหน้าวาดใหม่ (เช่น เปลี่ยนภาษา)
+  const outfitSeen = new Map();
+  function outfitPick(p, list, n = 10) {
+    const key = p.id + "|" + list.length;
+    if (outfitSeen.has(key)) return outfitSeen.get(key);
+    const shuffle = a => { a = [...a]; for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
+    const gear = shuffle(list.filter(x => x.gear)), wear = shuffle(list.filter(x => !x.gear));
+    const g = Math.min(gear.length, 3), out = [...wear.slice(0, n - g), ...gear.slice(0, g)];
+    const res = shuffle(out).slice(0, n);
+    outfitSeen.clear(); outfitSeen.set(key, res);
+    return res;
   }
   function outfitBlock(p) {
     const st = state.outfits?.styles?.[outfitStyle(p)];
     if (!st) return "";
     const m = new Date().getMonth(), cold = st.tipCold && (m >= 10 || m <= 1);
-    const items = (st.products || []).filter(x => /^https:\/\//.test(x?.url || ""));
+    const items = outfitPick(p, (st.products || []).filter(x => /^https:\/\//.test(x?.url || "")));
     return `<section class="panel outfit-box">
       <h2>👗 ${t("outfitTitle")}</h2>
       <p class="outfit-style">${st.icon || ""} ${esc(pick(st.name))}</p>
