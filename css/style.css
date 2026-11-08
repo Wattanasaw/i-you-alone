@@ -769,3 +769,18 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 }
 .filter-bar.stuck .chips, .filter-bar.stuck .filters { flex-wrap: nowrap; overflow-x: auto; }
 .filter-bar.stuck:not(.slim) .filters { max-height: 60px; }
+
+/* หมวดหมู่เป็นดรอปดาวน์ ("หมวดหมู่: ทั้งหมด") อยู่หน้าสุดของแถวตัวกรอง · เลือกหมวดแล้วเน้นสี */
+.cat-select { font-weight: 600; }
+.cat-select.on { background-color: color-mix(in srgb, var(--accent) 16%, var(--surface)); border-color: var(--accent); color: var(--text); }
+/* เลื่อนลง (ย่อ) / ติดด้านบน: ตัวกรองเหลือแถวเดียว เลื่อนข้างได้ (หมวดหมู่อยู่หน้าสุดเสมอ) */
+.filter-bar.slim .filters, .filter-bar.stuck .filters { flex-wrap: nowrap; overflow-x: auto; max-height: 48px; opacity: 1; pointer-events: auto; }
+
+/* ตัวกรองหลักเห็นตลอด (หมวดหมู่ · จังหวัด · ใกล้ฉัน) · ที่เหลือซ่อนใต้ปุ่ม "⚙️ ตัวกรอง (n)" ไม่ให้แถบสูงจนบังรายการ */
+.filter-bar:not(.open) .xf { display: none; }
+.more-btn.on { background: color-mix(in srgb, var(--accent) 16%, var(--surface)); color: var(--text); border-color: var(--accent); }
+/* ดรอปดาวน์จังหวัดในแถบตัวกรอง (หน้าแรก): เดิมตัวอักษรขาว (สไตล์บนพื้นไล่สี) มองไม่เห็นในโหมดสว่าง */
+.filters .province-select { color: var(--text); border-color: var(--border); backdrop-filter: none; }
+/* ปุ่มเล็กเกินนิ้วกด: ขยายพื้นที่กด */
+.save-btn { min-width: 40px; min-height: 40px; }
+.toggle { min-height: 40px; }

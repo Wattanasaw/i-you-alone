@@ -400,8 +400,8 @@
       .slice(0, 10 - pinned.length).map(([e]) => e);
     const featured = [...pinned, ...big].sort((a, b) => a.startDate.localeCompare(b.startDate));
     const forYou = recommendFor(upcoming, new Set(featured.map(e => e.id)));
-    const catChip = (id, icon, name, c1) =>
-      `<button class="chip ${f.cat === id ? "active" : ""}" data-cat="${id}" style="--c1:${c1}" aria-pressed="${f.cat === id}"><i>${icon}</i>${esc(name)}</button>`;
+    // ตัวกรองเพิ่มเติมที่ใช้อยู่ (แสดงจำนวนบนปุ่ม "ตัวกรอง")
+    const homeExtra = ["when", "price"].filter(k => f[k] !== "all").length + (f.sort !== "soon" ? 1 : 0) + (f.showEnded ? 1 : 0);
     app.innerHTML = `
       <section class="hero">
         <div class="blob"></div>
@@ -411,23 +411,24 @@
         <div class="searchbox"><input class="search" id="q" type="search" placeholder="${esc(t("searchPh"))}" value="${esc(f.q)}"></div>
       </section>
       <!-- หมวดหมู่ + ตัวกรอง อยู่ด้วยกัน และติดด้านบนจอตอนเลื่อนดูรายการ -->
-      <div class="filter-bar" id="filterBar">
-      <div class="chips" role="group" aria-label="${t("categories")}">
-        ${catChip("all", "🌈", t("catAll"), "#ff7a45")}
-        ${C.categories.filter(c => f.cat === c.id || state.events.some(e => e.category === c.id && status(e).key !== "ended")).map(c => catChip(c.id, c.icon, catName(c), c.color)).join("")}
-      </div>
+      <div class="filter-bar ${state.moreFilters ? "open" : ""}" id="filterBar">
       <div class="filters">
+        <select id="catSel" class="cat-select ${f.cat !== "all" ? "on" : ""}" aria-label="${t("categories")}">
+          <option value="all">${esc(t("categories"))}: ${esc(t("catAll"))}</option>
+          ${C.categories.filter(c => f.cat === c.id || state.events.some(e => e.category === c.id && status(e).key !== "ended")).map(c => `<option value="${c.id}" ${f.cat === c.id ? "selected" : ""}>${c.icon} ${esc(catName(c))}</option>`).join("")}
+        </select>
         ${provinceSelect()}
-        <select id="when" aria-label="${t("whenAll")}">
+        <button type="button" class="pill-btn more-btn ${homeExtra ? "on" : ""}" data-more aria-expanded="${!!state.moreFilters}">⚙️ ${t("moreFilters")}${homeExtra ? ` (${homeExtra})` : ""}</button>
+        <select id="when" class="xf" aria-label="${t("whenAll")}">
           ${opt("all", t("whenAll"), f.when)}${opt("today", t("whenToday"), f.when)}${opt("weekend", t("whenWeekend"), f.when)}${opt("week", t("whenWeek"), f.when)}${opt("month", t("whenMonth"), f.when)}
         </select>
-        <select id="price" aria-label="${t("priceAll")}">
+        <select id="price" class="xf" aria-label="${t("priceAll")}">
           ${opt("all", t("priceAll"), f.price)}${opt("free", t("priceFree"), f.price)}${opt("paid", t("pricePaid"), f.price)}
         </select>
-        <select id="sort" aria-label="${t("sortSoon")}">
+        <select id="sort" class="xf" aria-label="${t("sortSoon")}">
           ${opt("soon", t("sortSoon"), f.sort)}${opt("ending", t("sortEnding"), f.sort)}${opt("near", t("sortNear"), f.sort)}
         </select>
-        <label class="toggle"><input type="checkbox" id="ended" ${f.showEnded ? "checked" : ""}> ${t("showEnded")}</label>
+        <label class="toggle xf"><input type="checkbox" id="ended" ${f.showEnded ? "checked" : ""}> ${t("showEnded")}</label>
       </div>
       </div>
       ${hasSample ? `<p class="notice">${t("sampleNotice")}</p>` : ""}
@@ -458,13 +459,13 @@
     const q = document.getElementById("q");
     q.addEventListener("input", () => { f.q = q.value; renderResults(); });
     // กดหมวด → แสดงเฉพาะหมวดนั้น แล้วเลื่อนให้รายการงานเริ่มใต้แถบตัวกรองพอดี
-    app.querySelectorAll("[data-cat]").forEach(b => b.addEventListener("click", () => {
-      f.cat = f.cat === b.dataset.cat && f.cat !== "all" ? "all" : b.dataset.cat;
+    document.getElementById("catSel").addEventListener("change", e => {
+      f.cat = e.target.value;
       const y = window.scrollY;
       renderHome();
       window.scrollTo(0, y);
       document.getElementById("resultsHead").scrollIntoView({ behavior: "smooth", block: "start" });
-    }));
+    });
     ["when", "price"].forEach(id => document.getElementById(id).addEventListener("change", e => { f[id] = e.target.value; renderResults(); }));
     document.getElementById("ended").addEventListener("change", e => { f.showEnded = e.target.checked; renderResults(); });
     document.getElementById("sort").addEventListener("change", e => {
@@ -492,7 +493,13 @@
     const list = filtered(), every = C.ads.inlineEvery || 6;
     const el = document.getElementById("results");
     if (!el) return;
-    if (!list.length) { el.innerHTML = `<p class="empty">${t("noResults")}</p>`; return; }
+    if (!list.length) {
+      // ไม่พบ → ปุ่มล้างตัวกรอง (คำค้น หมวด ช่วงเวลา ราคา) ไม่ต้องไล่แก้ทีละช่อง
+      const fl = state.filters, any = fl.q || fl.cat !== "all" || fl.when !== "all" || fl.price !== "all";
+      el.innerHTML = `<p class="empty">${t("noResults")}</p>${any ? `<div class="actions" style="justify-content:center"><button type="button" class="btn primary" id="clearHome">✕ ${t("clearFilters")}</button></div>` : ""}`;
+      document.getElementById("clearHome")?.addEventListener("click", () => { Object.assign(fl, { q: "", cat: "all", when: "all", price: "all" }); renderHome(); });
+      return;
+    }
     // แสดงทีละ 24 งาน (เดิมวาดทุกงานพร้อมกัน หน้ายาว 50,000px ทำให้มือถือหน่วง) · เปลี่ยนตัวกรอง = เริ่มใหม่
     const fkey = JSON.stringify(state.filters);
     if (state.evKey !== fkey) { state.evKey = fkey; state.evShow = 24; }
@@ -1259,6 +1266,7 @@
     };
     list = [...list].sort(SORTS[near ? "near" : pf.sort === "near" ? "rec" : pf.sort] || SORTS.rec);
     const activeCount = ["open", "free", "hot"].filter(k => pf[k]).length + (near && pf.dist ? 1 : 0) + (pf.district ? 1 : 0);
+    const placeExtra = ["open", "free", "hot"].filter(k => pf[k]).length + (pf.district ? 1 : 0) + (pf.sort !== "rec" && pf.sort !== "near" ? 1 : 0);
     // แสดงทีละ 30 แห่ง กด "ดูเพิ่ม" ได้ (หลายร้อยแห่งพร้อมกันทำให้แอพหน่วง)
     const shown = list.slice(0, state.placeShow);
     // บอร์ดเทรนด์: เฉพาะโพสต์ยอดนิยม (ไลก์ ≥ 100 หรือครึ่งบนของหมวด) แล้วเรียงตามวันที่ใหม่สุดก่อน
@@ -1270,26 +1278,25 @@
     // โพสต์ที่มีรูปปกขึ้นก่อน (การ์ดไม่มีรูปดูเหมือนโหลดไม่เสร็จ) — ไม่มีรูปใช้เมื่อโพสต์มีรูปไม่พอ
     const fp = freshPopular(pool), withImg = fp.filter(n => String(n.image || "").startsWith("https://"));
     const board = (withImg.length >= 6 ? withImg : fp).slice(0, cat === "all" ? 14 : 10);
-    const chip = (id, icon, name, c1, n) =>
-      `<button class="chip ${cat === id ? "active" : ""}" data-pcat="${id}" style="--c1:${c1}" aria-pressed="${cat === id}"><i>${icon}</i>${esc(name)}${n != null ? ` <small>${n}</small>` : ""}</button>`;
     app.innerHTML = `<div class="page">
       <h1 class="page-title">🗺️ ${t("placesTitle")}</h1>
       <!-- จังหวัด + หมวด อยู่ด้วยกันในแถบตัวกรอง ติดด้านบนตอนเลื่อน -->
       <div class="searchbox place-search"><input class="search" id="pq" type="search" placeholder="${esc(t("placesSearch"))}" value="${esc(state.placeQ)}"></div>
-      <div class="filter-bar">
-        <div class="chips" role="group" aria-label="${t("categories")}">
-          ${chip("all", "🌈", t("catAll"), "#ff7a45")}
-          ${C.placeCategories.map(c => chip(c.id, c.icon, pick(c.name), c.color, counts[c.id] || 0)).join("")}
-        </div>
+      <div class="filter-bar ${state.moreFilters ? "open" : ""}">
         <div class="filters places-row">
+          <select id="pcatSel" class="cat-select ${cat !== "all" ? "on" : ""}" aria-label="${t("categories")}">
+            <option value="all">${esc(t("categories"))}: ${esc(t("catAll"))}</option>
+            ${C.placeCategories.map(c => `<option value="${c.id}" ${cat === c.id ? "selected" : ""}>${c.icon} ${esc(pick(c.name))} (${counts[c.id] || 0})</option>`).join("")}
+          </select>
           <button type="button" class="pill-btn ${pf.sort === "near" ? "on" : ""}" id="pfNear" aria-pressed="${pf.sort === "near"}">📍 ${near && state.pos?.label ? esc(t("nearPlace", { place: state.pos.label })) : t("nearMe")}</button>
           ${near ? `<select id="pfDist" aria-label="${t("distance")}">${[0, 2, 5, 10, 20, 50, 100].map(d => `<option value="${d}" ${pf.dist === d ? "selected" : ""}>${d ? t("withinKm", { n: d }) : t("anyDistance")}</option>`).join("")}</select>` : provinceSelect(state.places.reduce((m, p) => (m[p.province] = (m[p.province] || 0) + 1, m), {}))}
-          ${distOn && districts.length ? `<select id="pfDistrict" aria-label="${t("districtLabel")}"><option value="">🏘️ ${t(prov === "bangkok" ? "allDistrictsBkk" : "allDistricts")}</option>${districts.map(([d, n]) => `<option value="${esc(d)}" ${pf.district === d ? "selected" : ""}>${esc(d)} (${n})</option>`).join("")}</select>` : ""}
-          <select id="pfSort" aria-label="${t("sortBy")}">
+          <button type="button" class="pill-btn more-btn ${placeExtra ? "on" : ""}" data-more aria-expanded="${!!state.moreFilters}">⚙️ ${t("moreFilters")}${placeExtra ? ` (${placeExtra})` : ""}</button>
+          ${distOn && districts.length ? `<select id="pfDistrict" class="xf" aria-label="${t("districtLabel")}"><option value="">🏘️ ${t(prov === "bangkok" ? "allDistrictsBkk" : "allDistricts")}</option>${districts.map(([d, n]) => `<option value="${esc(d)}" ${pf.district === d ? "selected" : ""}>${esc(d)} (${n})</option>`).join("")}</select>` : ""}
+          <select id="pfSort" class="xf" aria-label="${t("sortBy")}">
             ${[["rec", t("sortRec")], ["popular", t("sortPopular")], ["reviews", t("sortReviews")]].map(([v, l]) => `<option value="${v}" ${(pf.sort === v || (pf.sort === "near" && v === "rec")) ? "selected" : ""}>${l}</option>`).join("")}
           </select>
-          ${[["open", "🟢", t("openNowFilter")], ["hot", "🔥", t("trending")], ["free", "🆓", t("feeNo")]].map(([k, i, l]) => `<button type="button" class="pill-btn ${pf[k] ? "on" : ""}" data-pf="${k}" aria-pressed="${!!pf[k]}">${i} ${esc(l)} <small>${would(k)}</small></button>`).join("")}
-          ${activeCount ? `<button type="button" class="pill-btn clear" id="pfClear">✕ ${t("clearFilters")}</button>` : ""}
+          ${[["open", "🟢", t("openNowFilter")], ["hot", "🔥", t("trending")], ["free", "🆓", t("feeNo")]].map(([k, i, l]) => `<button type="button" class="pill-btn xf ${pf[k] ? "on" : ""}" data-pf="${k}" aria-pressed="${!!pf[k]}">${i} ${esc(l)} <small>${would(k)}</small></button>`).join("")}
+          ${activeCount ? `<button type="button" class="pill-btn clear xf" id="pfClear">✕ ${t("clearFilters")}</button>` : ""}
         </div>
       </div>
       ${board.length ? `<section class="trend-board">
@@ -1315,13 +1322,13 @@
         const again = document.getElementById("pq"); again.focus(); again.setSelectionRange(pos, pos);
       }, 250);
     });
-    app.querySelectorAll("[data-pcat]").forEach(b => b.addEventListener("click", () => {
+    document.getElementById("pcatSel").addEventListener("change", e => {
       state.placeShow = 30;
-      state.placeCat = state.placeCat === b.dataset.pcat && b.dataset.pcat !== "all" ? "all" : b.dataset.pcat;
+      state.placeCat = e.target.value;
       const y = window.scrollY;
       renderPlaces();
       window.scrollTo(0, y);
-    }));
+    });
     document.getElementById("province")?.addEventListener("change", e => {
       state.filters.province = e.target.value;
       writeLS("province", state.filters.province);
@@ -1375,7 +1382,7 @@
 
   function renderPlace(id) {
     const p = state.places.find(x => x.id === id);
-    if (!p) { app.innerHTML = `<a class="back" href="#/places">${t("back")}</a><p class="empty">${t("notFound")}</p>`; return; }
+    if (!p) { app.innerHTML = `<a class="back" href="#/places">${t("back")}</a><p class="empty">${t("placeNotFound")}</p><div class="actions" style="justify-content:center"><a class="btn primary" href="#/places">${t("placesAll")}</a></div>`; return; }
     const c = PCAT[p.kind], v = placeVenue(p), saved = state.saved.has(placeKey(p));
     const name = placeName(p), rv = reviewOf(p), summary = placeSummary(p) || placeBlurb(p);
     const wiki = p.wiki?.[state.lang] || p.wiki?.th || p.wiki?.en;
@@ -1615,6 +1622,13 @@
   }, { passive: true });
 
   // ---------- router ----------
+  document.addEventListener("click", e => {
+    const b = e.target.closest?.("[data-more]");
+    if (!b) return;
+    state.moreFilters = !state.moreFilters;
+    b.closest(".filter-bar")?.classList.toggle("open", state.moreFilters);
+    b.setAttribute("aria-expanded", String(state.moreFilters));
+  });
   function route() {
     const h = location.hash.replace(/^#/, "") || "/";
     const [, page, arg] = h.split("/");
