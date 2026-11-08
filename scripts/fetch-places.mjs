@@ -8,6 +8,7 @@
 // รัน: node scripts/fetch-places.mjs [--dry]
 import { readFile, writeFile, rename } from "node:fs/promises";
 import { specificPlaces, postFits, bestOwners, ownsPost } from "./place-quality.mjs";
+import { osmProvincePlaces } from "./osm-provinces.mjs";
 
 const DRY = process.argv.includes("--dry");
 const UA = "IYouAloneBot/1.0 (+https://wattanasaw.github.io/i-you-alone/)";
@@ -227,8 +228,8 @@ async function provinceAt(lat, lng) {
 
 // คำอธิบายจาก Wikipedia (ตัดให้สั้น)
 // บทความถูก redirect ไปเรื่องอื่น (เช่น "บางกอก ซี ไลฟ์" → "สยามพารากอน") → คำอธิบายไม่ใช่ของที่นี่ ไม่ใช้
-const nameCore = s => String(s || "").replace(/(.*?)/g, "").replace(/[s_]+/g, "").replace(/^(อุทยานแห่งชาติ|พิพิธภัณฑสถานแห่งชาติ|พิพิธภัณฑ์|สวนสัตว์|วัด|น้ำตก|หาด|เกาะ|the)/i, "").slice(0, 4).toLowerCase();
-const aboutPlace = (text, ...names) => { const t = String(text || "").replace(/s+/g, "").toLowerCase(); return names.some(n => !n || t.includes(nameCore(n))); };
+const nameCore = s => String(s || "").replace(/\(.*?\)/g, "").replace(/[\s_]+/g, "").replace(/^(อุทยานแห่งชาติ|พิพิธภัณฑสถานแห่งชาติ|พิพิธภัณฑ์|สวนสัตว์|วัด|น้ำตก|หาด|เกาะ|the)/i, "").slice(0, 4).toLowerCase();
+const aboutPlace = (text, ...names) => { const t = String(text || "").replace(/\s+/g, "").toLowerCase(); return names.some(n => !n || t.includes(nameCore(n))); };
 async function wikiSummary(url, name) {
   if (!url) return undefined;
   const m = url.match(/^https:\/\/(\w+)\.wikipedia\.org\/wiki\/(.+)$/);
@@ -360,7 +361,20 @@ places.push(...animal.sort((a, b) => b.fame - a.fame).slice(0, OSM_LIMIT.animalc
 // เสริมจาก OpenStreetMap ทุกหมวด · ที่ซ้ำกับ Wikidata (ผูก wikidata เดียวกัน หรือชื่อ/ตำแหน่งเดียวกัน) ข้าม
 const km = (a, b) => { const r = x => x * Math.PI / 180, h = Math.sin(r(b.lat - a.lat) / 2) ** 2 + Math.cos(r(a.lat)) * Math.cos(r(b.lat)) * Math.sin(r(b.lng - a.lng) / 2) ** 2; return 12742 * Math.asin(Math.sqrt(h)); };
 const nm = s => String(s || "").toLowerCase().replace(/[^a-z0-9฀-๿]/g, "");
-for (const kind of Object.keys(OSM_QUERY)) {
+// ทุกหมวด (ยกเว้นอุทยานที่คร่อมหลายจังหวัด) ดึงทีละจังหวัด ให้ทุกจังหวัดมีครบทุกหมวด รวมร้านอาหาร (scripts/osm-provinces.mjs)
+const addOsm = (kind, found) => {
+  const qids = new Set(places.map(p => p.wikidata).filter(Boolean));
+  const added = found.filter(o => !(o.osmWikidata && qids.has(o.osmWikidata))
+    && !places.some(p => km(p, o) < 0.15 || (km(p, o) < 1.5 && (nm(p.name.th) === nm(o.name.th) || nm(p.name.en) && nm(p.name.en) === nm(o.name.en)))));
+  console.log(`${kind}: OSM ${found.length} → เพิ่มใหม่ ${added.length}`);
+  places.push(...added);
+};
+{
+  let byProv = await osmProvincePlaces({ overpass, provinceByEn, perRun: 20, minutes: 15 });
+  if (!byProv.length) { byProv = (prev.places || []).filter(p => p.id.startsWith("osm-") && p.kind !== "park"); console.warn(`OSM รายจังหวัดไม่ตอบ ใช้ชุดเดิม ${byProv.length}`); }
+  for (const kind of ["zoo", "themepark", "museum", "nature", "landmark", "nightlife", "cafe", "animalcafe", "restaurant"]) addOsm(kind, byProv.filter(p => p.kind === kind));
+}
+for (const kind of ["park"]) {
   await sleep(2000);
   let found = await osmKind(kind);
   // เซิร์ฟเวอร์ยุ่ง → พักแล้วลองใหม่อีกรอบ

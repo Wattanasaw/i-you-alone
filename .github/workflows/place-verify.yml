@@ -45,6 +45,13 @@ jobs:
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: ชื่อสถานที่ที่ชื่อจริงเป็นภาษาอังกฤษ (แอพใช้ชื่ออังกฤษเป็นชื่อหลัก)
+        run: node scripts/name-origin.mjs --ai 10
+        timeout-minutes: 10
+        continue-on-error: true
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: ใส่ข้อมูลที่ผ่านการตรวจลงสถานที่
         run: node scripts/place-info.mjs --ai 0
         timeout-minutes: 15
@@ -54,7 +61,7 @@ jobs:
         run: |
           git config user.name "news-bot"
           git config user.email "news-bot@users.noreply.github.com"
-          for f in data/places.json data/trend-places.json data/place-reviews.json data/place-info.json data/place-posts data/link-check.json; do
+          for f in data/places.json data/trend-places.json data/place-reviews.json data/place-info.json data/place-posts data/link-check.json data/name-origin.json data/osm-provinces.json; do
             if [ -e "$f" ]; then git add "$f"; fi
           done
           git diff --cached --quiet || (git commit -m "ตรวจข้อมูลสถานที่ (หลายแหล่ง)" && git pull --rebase -X theirs && git push)

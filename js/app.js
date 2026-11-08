@@ -58,6 +58,8 @@
   const pick = obj => typeof obj === "string" ? obj : (obj?.[state.lang] || obj?.th || "");
   // เนื้อหางาน/สถานที่: ใช้คำแปลใน i18n.<lang> ถ้ามี ไม่งั้นใช้ภาษาไทยต้นฉบับ
   const tr = (item, field) => item?.i18n?.[state.lang]?.[field] ?? item?.[field];
+  const isLatinName = s => /[a-z]/i.test(s || "") && !/[฀-๿]/.test(s || "");
+  const evTitle = ev => isLatinName(ev?.title) ? (isLatinName(ev.i18n?.en?.title) ? ev.i18n.en.title : ev.title) : tr(ev, "title");
   const isTranslated = (item, field) => state.lang === "th" || item?.i18n?.[state.lang]?.[field] != null || item?.[field] == null;
   const catName = c => pick(c?.name);
   const provName = id => PROV[id] ? (PROV[id][state.lang] || PROV[id].en) : "";
@@ -309,7 +311,7 @@
             </div>
           </div>
           <div class="card-body">
-            <h3>${esc(tr(ev, "title"))}</h3>
+            <h3>${esc(evTitle(ev))}</h3>
             <div class="meta">📅 <span>${esc(dateRange(ev))}${time ? ` · ${esc(time)}` : ""}</span></div>
             <div class="meta">📍 <span>${esc(place)}</span></div>
             ${ev.people?.length ? `<div class="meta people-line">⭐ <span>${esc(ev.people.slice(0, 3).map(p => p.name).join(", "))}${ev.people.length > 3 ? ` +${ev.people.length - 3}` : ""}</span></div>` : ""}
@@ -353,7 +355,7 @@
   const BIG_VENUE = /impact|thunder ?dome|arena|stadium|สนามกีฬา|ราชมังคลา|rajamangala|bitec|ไบเทค|qsncc|ศูนย์การประชุม|ศูนย์ประชุม|convention|exhibition|เมืองทอง|central ?world|เซ็นทรัลเวิลด์|paragon|พารากอน|iconsiam|ไอคอนสยาม|lumpini|ลุมพินี|เบญจกิติ|ท้องสนามหลวง|beach|ชายหาด/i;
   const BIG_WORD = /festival|fest\b|เฟส|เทศกาล|มหกรรม|expo|เอ็กซ์โป|fair|แฟร์|world tour|tour\b|in bangkok|countdown|เคาท์ดาวน์|ลอยกระทง|สงกรานต์|carnival|คาร์นิวัล|motor show|มอเตอร์|งานหนังสือ|book fair|concert|คอนเสิร์ต|marathon|มาราธอน|music|ดนตรี/i;
   function bigScore(ev) {
-    const v = venueOf(ev), text = `${ev.title} ${tr(ev, "title")}`;
+    const v = venueOf(ev), text = `${ev.title} ${evTitle(ev)}`;
     let s = BIG_CAT[ev.category] ?? 0;
     if (ev.venueId && ev.venueId !== "online" || BIG_VENUE.test(v?.name || "")) s += 3;
     if (BIG_WORD.test(text)) s += 2;
@@ -864,7 +866,7 @@
   // ---------- calendar ----------
   function gcalLink(ev, v) {
     const s = parseDate(ev.startDate), e = new Date(+parseDate(ev.endDate || ev.startDate) + DAY);
-    const p = new URLSearchParams({ action: "TEMPLATE", text: tr(ev, "title"), dates: `${ymd(s)}/${ymd(e)}`, location: venueName(v), details: `${tr(ev, "summary") || ""}\n${publicUrl()}` });
+    const p = new URLSearchParams({ action: "TEMPLATE", text: evTitle(ev), dates: `${ymd(s)}/${ymd(e)}`, location: venueName(v), details: `${tr(ev, "summary") || ""}\n${publicUrl()}` });
     return `https://calendar.google.com/calendar/render?${p}`;
   }
   function downloadIcs(ev, v) {
@@ -873,7 +875,7 @@
     const ics = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//IYouAlone//TH", "BEGIN:VEVENT",
       `UID:${ev.id}@iyoualone`, `DTSTAMP:${new Date().toISOString().replace(/[-:]/g, "").split(".")[0]}Z`,
       `DTSTART;VALUE=DATE:${ymd(s)}`, `DTEND;VALUE=DATE:${ymd(e)}`,
-      `SUMMARY:${clean(tr(ev, "title"))}`, `LOCATION:${clean(venueName(v))}`, `DESCRIPTION:${clean(tr(ev, "summary"))}`,
+      `SUMMARY:${clean(evTitle(ev))}`, `LOCATION:${clean(venueName(v))}`, `DESCRIPTION:${clean(tr(ev, "summary"))}`,
       "END:VEVENT", "END:VCALENDAR"].join("\r\n");
     const a = document.createElement("a");
     a.href = URL.createObjectURL(new Blob([ics], { type: "text/calendar" }));
@@ -887,7 +889,7 @@
     if (!ev) { app.innerHTML = `<a class="back" href="#/">${t("back")}</a><p class="empty">${t("notFound")}</p>`; return; }
     const v = venueOf(ev), st = status(ev), pr = priceLabel(ev.price), cat = CAT[ev.category];
     const saved = state.saved.has(ev.id);
-    const title = tr(ev, "title"), details = tr(ev, "details") || tr(ev, "summary"), highlights = tr(ev, "highlights");
+    const title = evTitle(ev), details = tr(ev, "details") || tr(ev, "summary"), highlights = tr(ev, "highlights");
     const priceNote = ev.i18n?.[state.lang]?.priceNote ?? ev.price?.note;
     // แท็กเป็นคำค้นภาษาไทย: ภาษาอื่นแสดงเฉพาะเมื่อมีแท็กที่แปลไว้
     const tags = state.lang === "th" ? ev.tags : ev.i18n?.[state.lang]?.tags;
@@ -990,7 +992,10 @@
   // ---------- ที่เที่ยว ----------
   const PCAT = Object.fromEntries((C.placeCategories || []).map(c => [c.id, c]));
   const placeKey = p => "place:" + p.id;
-  const placeName = p => p.name?.[state.lang] || p.name?.th || p.name?.en || "";
+  // ชื่อจริงเป็นภาษาอังกฤษ (แบรนด์/ร้านชื่ออังกฤษ ตัดสินโดย scripts/name-origin.mjs) → ใช้ชื่ออังกฤษเป็นชื่อหลักทุกภาษา (จีนมีชื่อจีนทางการใช้ชื่อจีน)
+  const placeName = p => p.nameEn && p.name?.en ? (state.lang === "zh" && p.name.zh || p.name.en) : p.name?.[state.lang] || p.name?.th || p.name?.en || "";
+  // ชื่อรอง: ชื่อไทยเมื่อชื่อหลักเป็นอังกฤษ · ไม่งั้นชื่ออังกฤษ
+  const placeSubName = p => { const n = placeName(p), alt = p.nameEn ? p.name?.th : p.name?.en; return alt && alt !== n ? alt : ""; };
   // คำอธิบาย: ภาษาที่เลือก → ไทย → อังกฤษ
   const placeSummary = p => p.summary?.[state.lang] || p.summary?.th || p.summary?.en || "";
   const placeVenue = p => ({ name: placeName(p), address: p.address, province: p.province, lat: p.lat, lng: p.lng, approx: p.approx });
@@ -1482,7 +1487,7 @@
           <div class="pd-hero-text">
             <div class="pd-tags">${c ? `<span>${c.icon} ${esc(pick(c.name))}</span>` : ""}${c?.adult ? `<span class="adult">🔞 ${t("age20")}</span>` : ""}${p.business ? `<span>✅ ${t("verifiedShop")}</span>` : ""}${p.trend ? `<span class="hot">🔥 ${t("trending")}</span>` : p.rising ? `<span class="hot">📈 ${t("searchUp", { n: p.rising })}</span>` : ""}</div>
             <h1>${esc(name)}</h1>
-            ${p.name?.en && p.name.en !== name ? `<p class="pd-sub">${esc(p.name.en)}</p>` : ""}
+            ${placeSubName(p) ? `<p class="pd-sub">${esc(placeSubName(p))}</p>` : ""}
           </div>
           <div class="pd-icons">
             <button class="icon-btn" id="saveBtn" aria-label="${saved ? t("unsaveAria") : t("saveAria")}">${saved ? "❤️" : "🤍"}</button>

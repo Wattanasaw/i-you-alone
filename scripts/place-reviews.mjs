@@ -290,8 +290,9 @@ const prompt = group => `You are building an accurate travel guide for places in
  - "hours": {"value": OpenStreetMap opening_hours e.g. "Mo-Su 10:00-20:00", "Tu-Su 09:00-17:00; Mo off", "24/7", "src": ["W","L2"]} or null
  - "entry": admission fee. List EVERY ticket type the sources give (adult, child, Thai citizen, foreigner, senior, online/early-bird, walk-in, combo/package…) as separate tiers:
    {"free": true/false/null, "freeSrc": [ids], "tiers": [{"who": {"th","en","zh"} e.g. {"th":"ผู้ใหญ่ (ซื้อออนไลน์)","en":"Adult (online)","zh":"成人（网上购票）"}, "price": number in baht exactly as written, "note": {"th","en","zh"} or null (e.g. height limit, weekday only, includes X), "src": [ids]}]}
+   Thai attractions often have several prices: Thai vs foreigner, adult vs child (by age or height, e.g. "เด็กสูง 90-120 ซม."), student, senior (60+), free for small children/monks/disabled — give each as its own tier, and put age/height limits in "note". Read every source (website, reviews, comments, on-image text): different sources often list different ticket types.
    Use the price exactly as written in a source. Do NOT include parking, food, souvenirs, temporary discount codes or promotions that have ended. null if no source states a price.
- - "menu": for cafes/restaurants/bars ONLY: menu items with prices that the sources state, from as many different sources as possible (drinks, desserts, main dishes, set menus):
+ - "menu": for cafes/restaurants/bars ONLY: menu items with prices that the sources state, from as many different sources and reviewers as possible (drinks, desserts, main dishes, set menus, buffet per person) — read menu photos' on-image text too:
    {"items": [{"name": {"th","en"}, "price": number in baht exactly as written, "src": [ids]}]} (up to 12 items) or null
 Return JSON {"results":[{"id","skip"?,
  "summary": {"th": 1-2 sentences (≤ 140 chars), "en", "zh"},
