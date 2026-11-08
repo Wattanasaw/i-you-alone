@@ -312,7 +312,7 @@
               ${ev.featured ? `<span class="badge hot">${t("featured")}</span>` : ""}
               ${reg?.soon ? `<span class="badge hot">${t("registerSoon")}</span>` : ""}
               ${cat ? `<span class="badge">${esc(catName(cat))}</span>` : ""}
-              ${isAdult(ev) ? `<span class="badge adult">🔞 ${t("age20")}</span>` : ""}
+              
               ${ev.sponsor ? `<span class="badge sponsor">🎁 ${t("sponsor")}</span>` : ""}
             </div>
           </div>
@@ -913,11 +913,11 @@
           ${cat ? `<span class="tag">${cat.icon} ${esc(catName(cat))}</span>` : ""}
           <span class="price ${pr.cls}">${pr.text}</span>
           <span class="status ${st.key}">${st.text}</span>
-          ${isAdult(ev) ? `<span class="tag adult">🔞 ${t("age20")}</span>` : ""}
+          
           ${ev.sponsor ? `<span class="tag sponsor">🎁 ${esc(t("sponsorBy", { name: ev.sponsor }))}</span>` : ""}
           ${ev.aiChecked ? `<span class="tag ai">🤖 ${t("aiChecked")}</span>` : ""}
         </div>
-        ${isAdult(ev) ? `<p class="adult-note">🔞 ${t("age20Note")}</p>` : ""}
+        ${isAdult(ev) ? `<p class="adult-note">${t("age20Note")}</p>` : ""}
         <div class="actions">
           ${ev.ticketUrl ? `<a class="btn primary" ${inAppLink(withAffiliate(ev.ticketUrl))}>${ev.sourceName ? t("buyAt", { site: esc(ev.sourceName) }) : isFree(ev) ? t("register") : t("buyTicket")}</a>` : ""}
           <button class="btn" id="saveBtn">${saved ? t("saved") : t("save")}</button>
@@ -1124,14 +1124,14 @@
     const where = [p.district && `${p.province === "bangkok" ? t("districtBkk") : t("districtShort")}${p.district}`, provName(p.province), state.pos && p.lat ? `${distanceKm(state.pos, p).toFixed(1)} ${t("km")}` : ""].filter(Boolean).join(" · ");
     const rv = reviewOf(p), summary = placeBlurb(p);
     const open = placeOpen(p);
-    const price = [MENU_KINDS.has(p.kind) && menuText(p) !== "-" ? `🍽️ ${approx(p.menuPrice?.src)}${esc(menuText(p))}` : "", (!MENU_KINDS.has(p.kind) || p.kind === "animalcafe") && feeText(p) !== "-" ? `🎟️ ${esc(feeText(p))}` : ""].filter(Boolean).join(" · ");
+    const price = [MENU_KINDS.has(p.kind) && menuText(p) !== "-" ? `🍽️ ${approx(p.menuPrice?.src)}${esc(menuText(p))}` : "", (!MENU_KINDS.has(p.kind) || p.kind === "animalcafe") && feeText(p) !== "-" ? `🎟️ ${approx(p.entry?.src)}${esc(feeText(p))}` : ""].filter(Boolean).join(" · ");
     return `
       <article class="card place-row" style="--c1:${c.color};--c2:${c.color2 || c.color}">
         <button class="save-btn" data-save="${esc(placeKey(p))}" aria-label="${saved ? t("unsaveAria") : t("saveAria")}">${saved ? "❤️" : "🤍"}</button>
         <a href="#/place/${encodeURIComponent(p.id)}">
           <div class="pr-body">
             <h3>${esc(placeName(p))}</h3>
-            <div class="pr-tags">${c.name ? `<span class="cat">${c.icon} ${esc(pick(c.name))}</span>` : ""}${c.adult ? `<span class="adult">🔞 ${t("age20")}</span>` : ""}${p.trend ? `<span class="hot">🔥 ${t("trending")}</span>` : p.rising ? `<span class="hot">📈 ${t("searchRising")}</span>` : ""}${p.business ? `<span class="ok">✅ ${t("verifiedShop")}</span>` : ""}</div>
+            <div class="pr-tags">${c.name ? `<span class="cat">${c.icon} ${esc(pick(c.name))}</span>` : ""}${p.trend ? `<span class="hot">🔥 ${t("trending")}</span>` : p.rising ? `<span class="hot">📈 ${t("searchRising")}</span>` : ""}${p.business ? `<span class="ok">✅ ${t("verifiedShop")}</span>` : ""}</div>
             <div class="meta">📍 <span>${esc(where)}</span></div>
             ${p.hours || price ? `<div class="meta">${p.hours ? `🕒 <span>${open === true ? `<b class="open-now">${t("openNowShort")}</b> · ` : open === false ? `<b class="closed-now">${t("closedNow")}</b> · ` : ""}${approx(p.hoursSrc)}${esc(fmtHours(p.hours))}</span>` : ""}${p.hours && price ? " · " : ""}${price}</div>` : ""}
             ${summary ? `<p class="place-sum">${esc(summary.slice(0, 120))}${summary.length > 120 ? "…" : ""}</p>` : ""}
@@ -1498,7 +1498,7 @@
         <div class="pd-hero ${coverOf(p) ? "" : "noimg"}">
           ${placeCover(p, "cover pd-cover")}</div>
           <div class="pd-hero-text">
-            <div class="pd-tags">${c ? `<span>${c.icon} ${esc(pick(c.name))}</span>` : ""}${c?.adult ? `<span class="adult">🔞 ${t("age20")}</span>` : ""}${p.business ? `<span>✅ ${t("verifiedShop")}</span>` : ""}${p.trend ? `<span class="hot">🔥 ${t("trending")}</span>` : p.rising ? `<span class="hot">📈 ${t("searchUp", { n: p.rising })}</span>` : ""}</div>
+            <div class="pd-tags">${c ? `<span>${c.icon} ${esc(pick(c.name))}</span>` : ""}${p.business ? `<span>✅ ${t("verifiedShop")}</span>` : ""}${p.trend ? `<span class="hot">🔥 ${t("trending")}</span>` : p.rising ? `<span class="hot">📈 ${t("searchUp", { n: p.rising })}</span>` : ""}</div>
             <h1>${esc(name)}</h1>
             ${placeSubName(p) ? `<p class="pd-sub">${esc(placeSubName(p))}</p>` : ""}
           </div>
@@ -1516,7 +1516,7 @@
         <section class="pd-panel" data-panel="overview" ${state.placeTab === "overview" ? "" : "hidden"}>
           ${summary ? `<p class="pd-summary" id="pdSum">${esc(summary)}</p>${summary.length > 180 ? `<button class="link-btn" id="pdMore">${t("readMore")}</button>` : ""}` : ""}
           ${facts}
-          ${c?.adult ? `<p class="adult-note">🔞 ${t("age20Place")}</p>` : ""}
+          ${c?.adult ? `<p class="adult-note">${t("age20Place")}</p>` : ""}
           ${p.maybeClosed ? `<p class="adult-note">⚠️ ${t("aiClosed")}</p>` : ""}
           ${posts.length ? `<section class="panel pd-buzz">
             <div class="pd-buzz-head"><h2>🔥 ${t("placeTrends")}</h2>${posts.length > 2 ? `<button class="link-btn" data-ptab="trends">${t("seeAll")} ${posts.length} ›</button>` : ""}</div>

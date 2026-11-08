@@ -45,9 +45,10 @@ const FEE_KINDS = new Set(["zoo", "themepark", "museum", "park", "animalcafe"]);
 const SOCIAL = /facebook|fb\.com|fb\.me|instagram|line\.me|lin\.ee|tiktok|twitter|x\.com|youtube|google\.|goo\.gl|wongnai|tripadvisor|agoda|booking\.com|klook|linktr/i;
 const site = p => [p.website].flat().find(u => /^https?:\/\//.test(u || "") && !SOCIAL.test(u));
 const hasSource = p => postsOf(p).length || site(p) || p.wiki;
-// MENU_V: เกณฑ์ราคาเมนูเปลี่ยน (รับเมนูจากรีวิวเดียวได้ ถ้าราคาอยู่ในโพสต์จริง ≥ 2 เมนู) → ร้านที่ยังไม่มีราคาเมนูตรวจใหม่
-const MENU_V = 1;
-const due = p => { const c = cache[p.id]; return !c || (c.v || 0) < VERSION || (MENU_KINDS.has(p.kind) && !c.facts?.menu && (c.mv || 0) < MENU_V && postsOf(p).length > 0) || days(c.at) > REFRESH_DAYS || (c.sig !== sig(p) && days(c.at) > 7); };
+// FACT_V 2: รับข้อมูลจากแหล่งเดียวได้ (ตัวเลข/เวลาต้องอยู่ในข้อความแหล่งนั้นจริง) แสดงเป็น ≈ → ที่ที่ยังขาดเวลา/ราคา ตรวจใหม่
+const FACT_V = 2;
+const lacks = (p, c) => !c.facts?.hours || (MENU_KINDS.has(p.kind) ? !c.facts?.menu : !c.facts?.entry);
+const due = p => { const c = cache[p.id]; return !c || (c.v || 0) < VERSION || (!c.skip && (c.fv || 0) < FACT_V && lacks(p, c)) || days(c.at) > REFRESH_DAYS || (c.sig !== sig(p) && days(c.at) > 7); };
 const prio = p => (FEE_KINDS.has(p.kind) || MENU_KINDS.has(p.kind) && postsOf(p).length ? 20 : 0) + (p.wikidata ? 10 : 0) + (p.fame || 0) + Math.min(p.hot || 0, 30) + (site(p) ? 5 : 0) + Math.min(postsOf(p).length, 6);
 const todo = all.filter(p => (!ONLY || p.id === ONLY) && hasSource(p) && (ONLY || due(p))).sort((a, b) => prio(b) - prio(a));
 console.log(`สถานที่ ${all.length} · มีแหล่งข้อมูล ${all.filter(hasSource).length} · สรุปแบบหลายแหล่งแล้ว ${Object.values(cache).filter(c => c.v >= VERSION).length} · รอสรุป ${todo.length} · AI: ${aiName()}`);
@@ -227,6 +228,7 @@ const RULE = new RegExp(`^(?:${DAY}(?:\\s*-\\s*${DAY})?(?:\\s*,\\s*${DAY}(?:\\s*
 const hoursOk = h => { const s = String(h || "").trim(); return s && s.length <= 160 && (s === "24/7" || s.split(/\s*;\s*/).filter(Boolean).every(r => RULE.test(r))) ? s.replace(/\s*;\s*/g, "; ") : null; };
 const L3 = (o, max = 60) => { const r = {}; for (const l of ["th", "en", "zh"]) if (typeof o?.[l] === "string" && o[l].trim()) r[l] = o[l].trim().slice(0, max); return r.th || r.en ? r : null; };
 
+const NOT_ENTRY = /รถ|เต็นท์|เตนท์|กางเต็นท์|เช่า|กล้อง|ที่จอด|จอดรถ|ไกด์|ล่องแพ|โซน|ให้อาหาร|car|vehicle|motorbike|tent|rent|parking|guide|camping/i;
 function checkFacts(r, srcs, kind) {
   const facts = {}, log = [];
   // เวลาเปิด-ปิด: ทุกเวลาในค่าต้องพบในแหล่ง
@@ -235,6 +237,7 @@ function checkFacts(r, srcs, kind) {
     const times = h === "24/7" ? [] : [...h.matchAll(/\d{1,2}:\d{2}/g)].map(m => m[0]);
     const sup = supportOf(srcs, r.hours.src, t => h === "24/7" ? is24(t) : times.every(x => timeIn(t, x)));
     if (verified(sup)) facts.hours = { value: h, src: srcTag(sup), n: indep(sup), ids: sup.map(s => s.id) };
+    else if (sup.length) facts.hours = { value: h, src: "review1", n: 1, ids: sup.map(s => s.id) };
     else log.push(`เวลา ${h} (พบใน ${sup.map(s => s.id).join(",") || "ไม่มีแหล่ง"})`);
   }
   // ค่าเข้า: ตรวจทีละราคา · มีราคาจากเว็บไซต์ทางการ → ใช้เฉพาะชุดทางการ
@@ -246,6 +249,8 @@ function checkFacts(r, srcs, kind) {
       if (!(price > 0 && price <= 20000) || !who) continue;
       const sup = supportOf(srcs, x.src, t => priceIn(t, price));
       if (verified(sup)) tiers.push({ who, note: L3(x.note, 70) || undefined, price, web: sup.some(s => s.type === "web"), n: indep(sup), ids: sup.map(s => s.id) });
+      // แหล่งเดียว: เฉพาะค่าเข้าคน (ไม่เอาค่ารถ เต็นท์ เช่าของ โซนเสริม)
+      else if (sup.length && !NOT_ENTRY.test(`${who.th || ""} ${who.en || ""} ${x.note?.th || ""}`)) tiers.push({ who, note: L3(x.note, 70) || undefined, price, web: false, one: true, n: 1, ids: sup.map(s => s.id) });
       else log.push(`ค่าเข้า ${who.th || who.en} ${price} (พบใน ${sup.map(s => s.id).join(",") || "ไม่มีแหล่ง"})`);
     }
     // ราคาทางการก่อน + ราคาจากรีวิว (ยืนยัน ≥ 2 แหล่ง) ที่ไม่ซ้ำราคาทางการ (เว็บมักบอกแค่ "เริ่มต้น")
@@ -253,10 +258,11 @@ function checkFacts(r, srcs, kind) {
     const use = [...official, ...tiers.filter(x => !x.web && !official.some(o => o.price === x.price)).map(x => ({ ...x, rv: true }))].slice(0, 8);
     // ไม่เอาราคาซ้ำ (ประเภทเดียวกัน ราคาเดียวกัน)
     const uniq = [...new Map(use.map(x => [`${x.who.th || x.who.en}|${x.price}`, x])).values()].sort((a, b) => (a.rv ? 1 : 0) - (b.rv ? 1 : 0) || a.price - b.price);
-    if (uniq.length) facts.entry = { tiers: uniq.map(({ web, ...x }) => x), src: official.length ? "web" : "reviews" };
+    if (uniq.length) facts.entry = { tiers: uniq.map(({ web, one, ...x }) => x), src: official.length ? "web" : uniq.every(x => x.one) ? "review1" : "reviews" };
     else if (r.entry?.free === true) {
       const sup = supportOf(srcs, r.entry.freeSrc, t => /ฟรี|ไม่เสียค่า|ไม่มีค่าเข้า|free (?:entry|admission|of charge)|no (?:entry|admission) fee|admission(?: is)? free/i.test(t));
       if (verified(sup)) facts.entry = { free: true, src: srcTag(sup), n: indep(sup), ids: sup.map(s => s.id) };
+      else if (sup.length) facts.entry = { free: true, src: "review1", n: 1, ids: sup.map(s => s.id) };
       else log.push("เข้าฟรี (ยืนยันไม่ได้)");
     }
   }
@@ -330,7 +336,7 @@ while (i < todo.length && (SHOW || (aiAvailable() && asked < AI_MAX && fails < 3
     for (const g of group) {
       const r = (out?.results || []).find(x => x.id === g.p.id);
       const sources = g.srcs.map(s => ({ id: s.id, type: s.type, source: s.label, link: s.link, ...(s.likes ? { likes: s.likes } : {}) }));
-      const base = { v: VERSION, mv: MENU_V, sig: sig(g.p), at: new Date().toISOString(), n: g.srcs.length, src: sources };
+      const base = { v: VERSION, fv: FACT_V, sig: sig(g.p), at: new Date().toISOString(), n: g.srcs.length, src: sources };
       if (!r || r.skip) { cache[g.p.id] = { ...base, skip: true }; continue; }
       const { facts, log } = checkFacts(r, g.srcs, g.p.kind);
       for (const k of Object.keys(facts)) factN[k]++;
