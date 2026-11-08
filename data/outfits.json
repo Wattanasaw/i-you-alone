@@ -70,39 +70,12 @@
         },
         {
           "title": {
-            "th": "ชุดเซ็ตทวีต Maison Lady",
-            "en": "Tweed set"
-          },
-          "price": 799,
-          "image": "https://down-zl-th.img.susercontent.com/th-11134207-81ztm-mpubnwl0ytxc30.webp",
-          "url": "https://s.shopee.co.th/8AXV6gbblR"
-        },
-        {
-          "title": {
             "th": "ชุดเซ็ตแขนยาว Airport Look",
             "en": "Airport look set"
           },
           "price": 869,
           "image": "https://down-zl-th.img.susercontent.com/th-11134207-81zto-mi1wsycidwjlab.webp",
           "url": "https://s.shopee.co.th/8pnBtueV7s"
-        },
-        {
-          "title": {
-            "th": "ชุดเซ็ตลินินสลาฟ แขนยาวขายาว",
-            "en": "Slub linen set"
-          },
-          "price": 489,
-          "image": "https://down-zl-th.img.susercontent.com/sg-11134201-822xu-mi1z3h0frqwz2b.webp",
-          "url": "https://s.shopee.co.th/6L5qvKwHCp"
-        },
-        {
-          "title": {
-            "th": "เสื้อเชิ้ตลินินแขนยาว",
-            "en": "Long-sleeve linen shirt"
-          },
-          "price": 178,
-          "image": "https://down-zl-th.img.susercontent.com/sg-11134201-7repv-m2jd29jootrw45.webp",
-          "url": "https://s.shopee.co.th/BVDa0SYGu"
         },
         {
           "title": {
@@ -124,24 +97,6 @@
         },
         {
           "title": {
-            "th": "ชุดราตรีเดรสยาว ใส่ออก",
-            "en": "Long-sleeve maxi dress"
-          },
-          "price": 349,
-          "image": "https://down-zl-th.img.susercontent.com/th-11134207-81ztn-mgc82hqswlc817.webp",
-          "url": "https://s.shopee.co.th/4LKmYy5PDf"
-        },
-        {
-          "title": {
-            "th": "ชุดทํางานสีดํา ทรงบาน เสื้อคอจ",
-            "en": "Long-sleeve maxi dress"
-          },
-          "price": 453,
-          "image": "https://down-zl-th.img.susercontent.com/th-11134207-7r98p-llaylslzsuym31.webp",
-          "url": "https://s.shopee.co.th/6fihLG2dp2"
-        },
-        {
-          "title": {
             "th": "ชุดเดรสยาว ดีเทลแขนเสื้อพอง ดี",
             "en": "Long-sleeve maxi dress"
           },
@@ -157,24 +112,6 @@
           "price": 199,
           "image": "https://down-zl-th.img.susercontent.com/th-11134207-7rasc-m6mo7i541zg501.webp",
           "url": "https://s.shopee.co.th/AKbzhzwnL4"
-        },
-        {
-          "title": {
-            "th": "ชุดเซ็ท2ชิ้น เสื้อแขนสั้น+กางเกงขา",
-            "en": "Long-sleeve two-piece set"
-          },
-          "price": 158,
-          "image": "https://down-zl-th.img.susercontent.com/th-11134207-7ra0o-md6wopxx7ucee1.webp",
-          "url": "https://s.shopee.co.th/20wrmh9Pro"
-        },
-        {
-          "title": {
-            "th": "ชุดเซ็ต ชิ้น แฟชั่นผู้หญิง",
-            "en": "Long-sleeve two-piece set"
-          },
-          "price": 98,
-          "image": "https://down-zl-th.img.susercontent.com/0df4776c291ed902c7e6afee86e534ce.webp",
-          "url": "https://s.shopee.co.th/4LKmYz9Kh8"
         },
         {
           "title": {
@@ -223,15 +160,6 @@
         },
         {
           "title": {
-            "th": "เสื้อเชิ้ตแขนยาว ผ้าซาติน ทรงหลวม",
-            "en": "Long-sleeve shirt"
-          },
-          "price": 97,
-          "image": "https://down-zl-th.img.susercontent.com/cn-11134207-7r98o-ltvrciodr5r183.webp",
-          "url": "https://s.shopee.co.th/4VeClKhE3N"
-        },
-        {
-          "title": {
             "th": "เสื้อคอปกแขนยาวผ้าร่อง",
             "en": "Long-sleeve shirt"
           },
@@ -241,48 +169,12 @@
         },
         {
           "title": {
-            "th": "ชุดเดรสยาว คลุมเข่าทรงเอ ดีไซ",
-            "en": "Below-knee dress"
-          },
-          "price": 299,
-          "image": "https://down-zl-th.img.susercontent.com/th-11134207-81zte-mpkhdu2687whd7.webp",
-          "url": "https://s.shopee.co.th/qkuOc4gCn"
-        },
-        {
-          "title": {
-            "th": "เติมสต๊อกแล้ว ชุดเดรสยาวคลุมเข่าทร",
-            "en": "Below-knee dress"
-          },
-          "price": 299,
-          "image": "https://down-zl-th.img.susercontent.com/th-11134207-81ztl-mmbouodtwwzsdc.webp",
-          "url": "https://s.shopee.co.th/3qOVy7xeuF"
-        },
-        {
-          "title": {
             "th": "กระโปรงเสื้อยืดคลุมเข่า",
             "en": "Below-knee dress"
           },
           "price": 69,
           "image": "https://down-zl-th.img.susercontent.com/e68ab0d2ebe068392f37342f650818aa.webp",
           "url": "https://s.shopee.co.th/8AXV85onES"
-        },
-        {
-          "title": {
-            "th": "Yolanda เดรสยาว คอวี แขนไหล่ตก",
-            "en": "Below-knee dress"
-          },
-          "price": 313,
-          "image": "https://down-zl-th.img.susercontent.com/th-11134207-81ztc-mdybq8y2thjaa3.webp",
-          "url": "https://s.shopee.co.th/114KavZShv"
-        },
-        {
-          "title": {
-            "th": "ชุดเซ็ตเสื้อกางเกง เสื้อตัวยาวคลุม",
-            "en": "Below-knee dress"
-          },
-          "price": 276,
-          "image": "https://down-zl-th.img.susercontent.com/sg-11134201-8260a-mkauux0kcg07b9.webp",
-          "url": "https://s.shopee.co.th/5LDJktMg4f"
         },
         {
           "title": {
@@ -340,33 +232,6 @@
         },
         {
           "title": {
-            "th": "เสื้อเชิ้ตลินินแขนยาวลินิน100%เกรด",
-            "en": "Long-sleeve linen top"
-          },
-          "price": 649,
-          "image": "https://down-zl-th.img.susercontent.com/th-11134207-7qul6-lhbho5ohkjjo1d.webp",
-          "url": "https://s.shopee.co.th/8KqvKRsNUK"
-        },
-        {
-          "title": {
-            "th": "ชุดเซท ชิ้น แขนยาว ขายาว",
-            "en": "Long-sleeve linen top"
-          },
-          "price": 439,
-          "image": "https://down-zl-th.img.susercontent.com/sg-11134201-822wm-mi0ofqvfwtfp53.webp",
-          "url": "https://s.shopee.co.th/4VeClPEjs9"
-        },
-        {
-          "title": {
-            "th": "ms.cloudycotton - Emily Blazer",
-            "en": "Long-sleeve linen top"
-          },
-          "price": 570,
-          "image": "https://down-zl-th.img.susercontent.com/th-11134207-7rasb-m9d55qxvlr7t2b.webp",
-          "url": "https://s.shopee.co.th/8pnBvN7BBR"
-        },
-        {
-          "title": {
             "th": "กระโปรงพลีทผ้าชีฟองสีพื้นเอวสูงใส่",
             "en": "Long pleated skirt"
           },
@@ -391,60 +256,6 @@
           "price": 327,
           "image": "https://down-zl-th.img.susercontent.com/sg-11134201-7rd6k-m7yirrqy3lwie1.webp",
           "url": "https://s.shopee.co.th/9KjSXq5xND"
-        },
-        {
-          "title": {
-            "th": "ชุดเดรสคอกลมแขนยาวผ้าลินินลายริ้ว",
-            "en": "Long-sleeve linen maxi dress"
-          },
-          "price": 659,
-          "image": "https://down-zl-th.img.susercontent.com/th-11134207-81ztd-mk9ml8dfn5s795.webp",
-          "url": "https://s.shopee.co.th/4VeCmxStUq"
-        },
-        {
-          "title": {
-            "th": "Casual Maxi Dress Plus",
-            "en": "Long-sleeve linen maxi dress"
-          },
-          "price": 564,
-          "image": "https://down-zl-th.img.susercontent.com/sg-11134201-7qvd8-lj2c8rm8h4hy68.webp",
-          "url": "https://s.shopee.co.th/5q9aNPXVm4"
-        },
-        {
-          "title": {
-            "th": "Mirrorsister 00714.5",
-            "en": "Long-sleeve linen maxi dress"
-          },
-          "price": 800,
-          "image": "https://down-zl-th.img.susercontent.com/f1d9de1e43288627bb2d459192e462ed.webp",
-          "url": "https://s.shopee.co.th/5fqAB6lPhg"
-        },
-        {
-          "title": {
-            "th": "ชุดเดรสพลัสไซส์สวมใส่ได้ กก.",
-            "en": "Long-sleeve linen maxi dress"
-          },
-          "price": 542,
-          "image": "https://down-zl-th.img.susercontent.com/41529750c581ee1002f0af0e539aa35a.webp",
-          "url": "https://s.shopee.co.th/8VALYJk78q"
-        },
-        {
-          "title": {
-            "th": "ชุดเดรสผ้าลินินผสมฝ้าย คอจีน",
-            "en": "Long-sleeve linen maxi dress"
-          },
-          "price": 499,
-          "image": "https://down-zl-th.img.susercontent.com/th-11134207-7ra0o-mcr5rjxvhgqo94.webp",
-          "url": "https://s.shopee.co.th/906c9EmXeP"
-        },
-        {
-          "title": {
-            "th": "ชุดเดรส คอปก",
-            "en": "Long-sleeve linen maxi dress"
-          },
-          "price": 235,
-          "image": "https://down-zl-th.img.susercontent.com/th-11134207-81ztk-mgx8hcajrmz1f5.webp",
-          "url": "https://s.shopee.co.th/LodpJV9Y8"
         },
         {
           "title": {
@@ -544,24 +355,6 @@
         },
         {
           "title": {
-            "th": "ชุดว่ายน้ําวันพีซแบบเดรส",
-            "en": "Skirted one-piece swimsuit"
-          },
-          "price": 159,
-          "image": "https://down-zl-th.img.susercontent.com/th-11134207-7qul6-lf558c9f9wx936.webp",
-          "url": "https://s.shopee.co.th/5q9aKSsV1s"
-        },
-        {
-          "title": {
-            "th": "ชุดว่ายน้ําวันพีซ",
-            "en": "One-piece swimsuit"
-          },
-          "price": 189,
-          "image": "https://down-zl-th.img.susercontent.com/th-11134207-7ra0j-mb7t3bz55mr59e.webp",
-          "url": "https://s.shopee.co.th/40hw9645Jq"
-        },
-        {
-          "title": {
             "th": "ชุดว่ายน้ําวันพีซผ้าถัก",
             "en": "Knit one-piece swimsuit"
           },
@@ -595,15 +388,6 @@
           "price": 168,
           "image": "https://down-zl-th.img.susercontent.com/cn-11134207-820l4-mjxt4dv01wqq87.webp",
           "url": "https://s.shopee.co.th/5AttYhBTlU"
-        },
-        {
-          "title": {
-            "th": "ชุดไปทะเล ชุดไปงาน ชุดไปงานแต่ง",
-            "en": "Beach dress"
-          },
-          "price": 900,
-          "image": "https://down-zl-th.img.susercontent.com/th-11134207-81ztj-mond3yq1uoen4e.webp",
-          "url": "https://s.shopee.co.th/7puejc9n7J"
         },
         {
           "title": {
@@ -649,24 +433,6 @@
           "price": 227,
           "image": "https://down-zl-th.img.susercontent.com/th-11134207-81ztk-mnjek8zcsu82d8.webp",
           "url": "https://s.shopee.co.th/7KyO8hq7Lq"
-        },
-        {
-          "title": {
-            "th": "prom summer dress ออกงาน สีฟ้า",
-            "en": "Beach dress"
-          },
-          "price": 189,
-          "image": "https://down-zl-th.img.susercontent.com/th-11134207-7ra0m-mbp4i6dd7ww0f4.webp",
-          "url": "https://s.shopee.co.th/3B8pB3E9zB"
-        },
-        {
-          "title": {
-            "th": "เดรสยาวสีดํา แขนกระดิ่ง คอวี",
-            "en": "Beach dress"
-          },
-          "price": 159,
-          "image": "https://down-zl-th.img.susercontent.com/sg-11134201-7rbmj-m5e9z6fa2tpa29.webp",
-          "url": "https://s.shopee.co.th/3qOVyHNn2e"
         },
         {
           "title": {
@@ -805,15 +571,6 @@
         },
         {
           "title": {
-            "th": "เดรสสายเดี่ยว เสื้อผ้าแฟชั่นผู้หญิ",
-            "en": "Strappy beach dress"
-          },
-          "price": 99,
-          "image": "https://down-zl-th.img.susercontent.com/th-11134207-7ra0i-mdodjk7xksmm9f.webp",
-          "url": "https://s.shopee.co.th/4LKmZGuV2q"
-        },
-        {
-          "title": {
             "th": "แม็กซี่เดรสสีเขียว สายเดี่ยว",
             "en": "Strappy beach dress"
           },
@@ -832,24 +589,6 @@
         },
         {
           "title": {
-            "th": "blue dress ทํางาน เดรสสายเดี่ยวรัด",
-            "en": "Strappy beach dress"
-          },
-          "price": 79,
-          "image": "https://down-zl-th.img.susercontent.com/th-11134207-7r98s-lu53zauycob526.webp",
-          "url": "https://s.shopee.co.th/5fqA9jXHds"
-        },
-        {
-          "title": {
-            "th": "เสื้อเชิ้ตแขนสั้น ปกฮาวาย",
-            "en": "Hawaiian shirt"
-          },
-          "price": 105,
-          "image": "https://down-zl-th.img.susercontent.com/th-11134207-7ra0j-mbnzl8fo97bn03.webp",
-          "url": "https://s.shopee.co.th/5VWjxROmcy"
-        },
-        {
-          "title": {
             "th": "เสื้อเชิ้ตครอปผู้หญิงแขนสั้น",
             "en": "Hawaiian shirt"
           },
@@ -859,39 +598,12 @@
         },
         {
           "title": {
-            "th": "เสื้อเชิ้ตฮาวาย",
-            "en": "Hawaiian shirt"
-          },
-          "price": 98,
-          "image": "https://down-zl-th.img.susercontent.com/5d16ef045e1df49f2284e693a092c381.webp",
-          "url": "https://s.shopee.co.th/1BnPL99oP"
-        },
-        {
-          "title": {
-            "th": "เสื้อเชิ้ตผู้หญิงแขนเบิ้ล Hawaii",
-            "en": "Hawaiian shirt"
-          },
-          "price": 88,
-          "image": "https://down-zl-th.img.susercontent.com/sg-11134201-7rd4o-m6v46tlw2yp590.webp",
-          "url": "https://s.shopee.co.th/1gK1OP70QV"
-        },
-        {
-          "title": {
             "th": "Shirt Hawaii มีมากกว่า สี เชิ้ต",
             "en": "Hawaiian shirt"
           },
           "price": 99,
           "image": "https://down-zl-th.img.susercontent.com/af16c8b43dd849d0bf600c5ff47f263d.webp",
           "url": "https://s.shopee.co.th/5VWjxRyfVp"
-        },
-        {
-          "title": {
-            "th": "dressyp - Slub Batwing Shirt",
-            "en": "Hawaiian shirt"
-          },
-          "price": 238,
-          "image": "https://down-zl-th.img.susercontent.com/th-11134207-81ztj-mur6rsnvk1kz5e.webp",
-          "url": "https://s.shopee.co.th/7AexwVurqE"
         },
         {
           "title": {
@@ -937,15 +649,6 @@
       "products": [
         {
           "title": {
-            "th": "เดรสยาวปานกลาง EVIOVIO",
-            "en": "Midi dress"
-          },
-          "price": 267,
-          "image": "https://down-zl-th.img.susercontent.com/th-11134207-81ztk-mro7inlptds450.webp",
-          "url": "https://s.shopee.co.th/8VALVPvEFA"
-        },
-        {
-          "title": {
             "th": "เดรสทรงเอ แขนตุ๊กตา",
             "en": "Puff-sleeve A-line dress"
           },
@@ -961,24 +664,6 @@
           "price": 218,
           "image": "https://down-zl-th.img.susercontent.com/th-11134207-81ztd-mp7qm1as6971a4.webp",
           "url": "https://s.shopee.co.th/114KZdUiwm"
-        },
-        {
-          "title": {
-            "th": "แม็กซี่เดรสมินิมอล",
-            "en": "Minimal maxi dress"
-          },
-          "price": 91,
-          "image": "https://down-zl-th.img.susercontent.com/sg-11134201-7rd5x-lv4eozxs03t557.webp",
-          "url": "https://s.shopee.co.th/5fqA8DJ94v"
-        },
-        {
-          "title": {
-            "th": "เดรสมิดิ สไตล์เกาหลี",
-            "en": "Korean midi dress"
-          },
-          "price": 284,
-          "image": "https://down-zl-th.img.susercontent.com/sg-11134201-8258p-mrwrd27cq5tuae.webp",
-          "url": "https://s.shopee.co.th/4VeCk4RR8C"
         },
         {
           "title": {
@@ -1009,15 +694,6 @@
         },
         {
           "title": {
-            "th": "เดรสคอกลม แขนสั้น",
-            "en": "Short-sleeve dress"
-          },
-          "price": 269,
-          "image": "https://down-zl-th.img.susercontent.com/th-11134207-81ztd-monvq3mvggshd3.webp",
-          "url": "https://s.shopee.co.th/1BNklx0ftx"
-        },
-        {
-          "title": {
             "th": "เดรสยาวลายสก็อต",
             "en": "Plaid maxi dress"
           },
@@ -1042,33 +718,6 @@
           "price": 329,
           "image": "https://down-zl-th.img.susercontent.com/sg-11134201-825aj-ms2m15nnilfo5b.webp",
           "url": "https://s.shopee.co.th/5fqA9mr2UC"
-        },
-        {
-          "title": {
-            "th": "แม็กซี่เดรสทรงเอ คอกลมแขนกุด",
-            "en": "Minimal dress"
-          },
-          "price": 160,
-          "image": "https://down-zl-th.img.susercontent.com/th-11134207-7rasb-m1qyb4sgz4zba6.webp",
-          "url": "https://s.shopee.co.th/30pOytJoyj"
-        },
-        {
-          "title": {
-            "th": "เดรสโบฮีเมียน สไตล์มินิมอล",
-            "en": "Minimal dress"
-          },
-          "price": 126,
-          "image": "https://down-zl-th.img.susercontent.com/a12d6b3e7b963af637d792ba6b28652c.webp",
-          "url": "https://s.shopee.co.th/2LZiBfV9tJ"
-        },
-        {
-          "title": {
-            "th": "ชุดมินิเดรสน่ารัก แหวก3ทาง แขนพอง",
-            "en": "Minimal dress"
-          },
-          "price": 340,
-          "image": "https://down-zl-th.img.susercontent.com/th-11134207-7r98z-m077dttcxgbc7a.webp",
-          "url": "https://s.shopee.co.th/2qVymabMoI"
         },
         {
           "title": {
@@ -1132,15 +781,6 @@
           "price": 135,
           "image": "https://down-zl-th.img.susercontent.com/sg-11134201-7rblc-lnwzce64cbsge2.webp",
           "url": "https://s.shopee.co.th/1BNknYpQby"
-        },
-        {
-          "title": {
-            "th": "Swana.ss - Faye blazer crop t",
-            "en": "Crop top"
-          },
-          "price": 655,
-          "image": "https://down-zl-th.img.susercontent.com/th-11134207-81zte-mtak9jo5jq4l39.webp",
-          "url": "https://s.shopee.co.th/9zz9Jo5EEC"
         },
         {
           "title": {
@@ -1216,30 +856,12 @@
         },
         {
           "title": {
-            "th": "กระโปรงพลีทมีกระเป๋า จีบเล็ก",
-            "en": "Pleated skirt"
-          },
-          "price": 169,
-          "image": "https://down-zl-th.img.susercontent.com/th-11134207-81ztg-mi9omf7b083qee.webp",
-          "url": "https://s.shopee.co.th/8AXV8TXT2B"
-        },
-        {
-          "title": {
             "th": "ชุดเซทเสื้อแขนสั้นคอปก+กางเกงขาสั",
             "en": "Minimal outfit set"
           },
           "price": 169,
           "image": "https://down-zl-th.img.susercontent.com/th-11134207-7r992-luc0b19glkpd6c.webp",
           "url": "https://s.shopee.co.th/BVDbn1JRF"
-        },
-        {
-          "title": {
-            "th": "ชุดสองชิ้นสําหรับผู้หญิง",
-            "en": "Minimal outfit set"
-          },
-          "price": 430,
-          "image": "https://down-zl-th.img.susercontent.com/sg-11134201-8260a-mlcxhhqsvjepfd.webp",
-          "url": "https://s.shopee.co.th/1BnPU7Aht"
         },
         {
           "title": {
@@ -1324,15 +946,6 @@
         },
         {
           "title": {
-            "th": "haas เสื้อยืดแฟชั่น ผ้าลิป แขนยาว",
-            "en": "Knit top"
-          },
-          "price": 285,
-          "image": "https://down-zl-th.img.susercontent.com/th-11134207-81ztm-mv19cr1ymxa88e.webp",
-          "url": "https://s.shopee.co.th/9zz9JtChCF"
-        },
-        {
-          "title": {
             "th": "เดรสแขนตุ๊กตาลายดอก",
             "en": "Floral dress"
           },
@@ -1342,30 +955,12 @@
         },
         {
           "title": {
-            "th": "เดรสยาวสาวอวบ เดรสผ้าฝ้ายผสมลินิน",
-            "en": "Floral dress"
-          },
-          "price": 109,
-          "image": "https://down-zl-th.img.susercontent.com/546bb866e5e39b88f863c8c2ee4fbc41.webp",
-          "url": "https://s.shopee.co.th/5fqA9wSig4"
-        },
-        {
-          "title": {
             "th": "Veewink เดรสเกาะอกลายดอกไม้สีฟ้า",
             "en": "Floral dress"
           },
           "price": 219,
           "image": "https://down-zl-th.img.susercontent.com/sg-11134201-8261d-mlczr7dqwjdb9f.webp",
           "url": "https://s.shopee.co.th/3LSFNefB3b"
-        },
-        {
-          "title": {
-            "th": "เดรสยาวสีเขียว ลายดอกไม้ คอกลม",
-            "en": "Floral dress"
-          },
-          "price": 79,
-          "image": "https://down-zl-th.img.susercontent.com/sg-11134201-23020-1yhaiktf7zmv69.webp",
-          "url": "https://s.shopee.co.th/AKbziWNOgm"
         },
         {
           "title": {
@@ -1480,15 +1075,6 @@
           "price": 194,
           "image": "https://down-zl-th.img.susercontent.com/th-11134207-7ra0s-mdb5zkueffqe4e.webp",
           "url": "https://s.shopee.co.th/1gK1MvvVPs"
-        },
-        {
-          "title": {
-            "th": "เสื้อยืดแขนยาวผู้หญิงสไตล์เกาหลี",
-            "en": "Oversized tee"
-          },
-          "price": 109,
-          "image": "https://down-zl-th.img.susercontent.com/th-11134207-7r98v-lyz04mu6vstl57.webp",
-          "url": "https://s.shopee.co.th/30pOz5OWs6"
         },
         {
           "title": {
@@ -1609,33 +1195,6 @@
         },
         {
           "title": {
-            "th": "เสื้อไหมพรมถักคอวีแขนสั้น",
-            "en": "Oversized shirt"
-          },
-          "price": 89,
-          "image": "https://down-zl-th.img.susercontent.com/th-11134207-7rasl-m1hz6uvsbgq1a5.webp",
-          "url": "https://s.shopee.co.th/8AXV8dBYPR"
-        },
-        {
-          "title": {
-            "th": "เสื้อเชิ้ตแขนยาวทรงโอเวอร์ไซส์",
-            "en": "Oversized shirt"
-          },
-          "price": 129,
-          "image": "https://down-zl-th.img.susercontent.com/sg-11134201-824ja-mpknr7sxmn7y9a.webp",
-          "url": "https://s.shopee.co.th/8VALXFJDp4"
-        },
-        {
-          "title": {
-            "th": "เสื้อเชิ้ตแขนจั้ม ผ้าคอตตอน",
-            "en": "Oversized shirt"
-          },
-          "price": 99,
-          "image": "https://down-zl-th.img.susercontent.com/th-11134207-7r98t-lpg9z88erujt27.webp",
-          "url": "https://s.shopee.co.th/8KqvKwRlJm"
-        },
-        {
-          "title": {
             "th": "กางเกงขายาวผ้าร่ม",
             "en": "Cargo pants"
           },
@@ -1714,15 +1273,6 @@
           "price": 85,
           "image": "https://down-zl-th.img.susercontent.com/th-11134207-7r98q-lneplqysf2uoaa.webp",
           "url": "https://s.shopee.co.th/LodoHvtp6"
-        },
-        {
-          "title": {
-            "th": "haas Item Polo Slim fit",
-            "en": "Polo shirt"
-          },
-          "price": 298,
-          "image": "https://down-zl-th.img.susercontent.com/th-11134207-81ztq-mv5gar5t3dhk34.webp",
-          "url": "https://s.shopee.co.th/3Vlfa7NViV"
         },
         {
           "title": {
@@ -2077,24 +1627,6 @@
         },
         {
           "title": {
-            "th": "Deezyy เสื้อยืดคอกลมแขนยาวไซส์2",
-            "en": "Long-sleeve tee"
-          },
-          "price": 179,
-          "image": "https://down-zl-th.img.susercontent.com/th-11134207-81ztg-mndw9h9gi3uo09.webp",
-          "url": "https://s.shopee.co.th/8fTlkzvQol"
-        },
-        {
-          "title": {
-            "th": "เสื้อยืดคอกลมแขนยาว",
-            "en": "Long-sleeve tee"
-          },
-          "price": 227,
-          "image": "https://down-zl-th.img.susercontent.com/th-11134207-81zti-mnduwe013jsw02.webp",
-          "url": "https://s.shopee.co.th/2Vt8PfRhsm"
-        },
-        {
-          "title": {
             "th": "Moses Queen/Queen of Mercy",
             "en": "Long-sleeve tee"
           },
@@ -2122,48 +1654,12 @@
         },
         {
           "title": {
-            "th": "กางเกงพาราชูททรงหลวม วินเทจ",
-            "en": "Parachute pants"
-          },
-          "price": 99,
-          "image": "https://down-zl-th.img.susercontent.com/sg-11134201-81zuw-mio6n7ojzuh3ed.webp",
-          "url": "https://s.shopee.co.th/20wrolS6ef"
-        },
-        {
-          "title": {
             "th": "กางเกงขากว้างเย็นฉ่ํา",
             "en": "Parachute pants"
           },
           "price": 193,
           "image": "https://down-zl-th.img.susercontent.com/sg-11134202-7reor-m8hg16fvh8yvcc.webp",
           "url": "https://s.shopee.co.th/2LZiDNWPDe"
-        },
-        {
-          "title": {
-            "th": "กางเกงลําลองทรงตรง สีเขียววินเทจ",
-            "en": "Parachute pants"
-          },
-          "price": 149,
-          "image": "https://down-zl-th.img.susercontent.com/sg-11134201-81zte-mio6mqr1l1j84b.webp",
-          "url": "https://s.shopee.co.th/7AexyGIKwZ"
-        },
-        {
-          "title": {
-            "th": "กางเกงพาราชูทเอวยางรูด วินเทจ",
-            "en": "Parachute pants"
-          },
-          "price": 99,
-          "image": "https://down-zl-th.img.susercontent.com/sg-11134201-81zuk-mio6mqhyexohe6.webp",
-          "url": "https://s.shopee.co.th/1BnR5mzK9"
-        },
-        {
-          "title": {
-            "th": "กางเกงพาราชูทผ้าทิ้งตัว สีเขียว",
-            "en": "Parachute pants"
-          },
-          "price": 149,
-          "image": "https://down-zl-th.img.susercontent.com/sg-11134201-81zvy-mio6mzrldtky3b.webp",
-          "url": "https://s.shopee.co.th/3B8pCufTCk"
         },
         {
           "title": {
@@ -2368,30 +1864,12 @@
         },
         {
           "title": {
-            "th": "เสื้อแจ็คเก็ตผู้หญิงมีกระเป๋าและหม",
-            "en": "Winter jacket"
-          },
-          "price": 149,
-          "image": "https://down-zl-th.img.susercontent.com/th-11134207-7rask-mat1s83yh57472.webp",
-          "url": "https://s.shopee.co.th/W841T8a53"
-        },
-        {
-          "title": {
             "th": "Gakki เสื้อคลุมคาร์ดิแกนถักนิตติ้ง",
             "en": "Warm knit sweater"
           },
           "price": 183,
           "image": "https://down-zl-th.img.susercontent.com/sg-11134201-7ra0u-m4vipjzmy5cn7a.webp",
           "url": "https://s.shopee.co.th/3g55nIeWSy"
-        },
-        {
-          "title": {
-            "th": "เสื้อคาร์ดิแกนไหมพรมผู้หญิง",
-            "en": "Warm knit sweater"
-          },
-          "price": 181,
-          "image": "https://down-zl-th.img.susercontent.com/th-11134207-81ztm-mu1vp5wl58nb2e.webp",
-          "url": "https://s.shopee.co.th/2BGI0Xs8g7"
         },
         {
           "title": {
@@ -2503,15 +1981,6 @@
         },
         {
           "title": {
-            "th": "เสื้อขนเป็ดเบาแท้ Ultra light",
-            "en": "Down jacket"
-          },
-          "price": 712,
-          "image": "https://down-zl-th.img.susercontent.com/th-11134207-7rasm-m1efe8g8t41b32.webp",
-          "url": "https://s.shopee.co.th/4fxczCM6hX"
-        },
-        {
-          "title": {
             "th": "Withit basic zipped hoodie",
             "en": "Hoodie"
           },
@@ -2528,15 +1997,6 @@
           "image": "https://down-zl-th.img.susercontent.com/sg-11134201-8257t-mu829uagu41u9a.webp",
           "url": "https://s.shopee.co.th/9KjSXpJYlU",
           "gear": true
-        },
-        {
-          "title": {
-            "th": "Hotgirl เสื้อแจ็คเก็ตแขนยาวทรงหลวม",
-            "en": "Long coat"
-          },
-          "price": 129,
-          "image": "https://down-zl-th.img.susercontent.com/sg-11134201-821dh-mghej99u04cv13.webp",
-          "url": "https://s.shopee.co.th/7fbEZDl6vo"
         },
         {
           "title": {
@@ -2654,15 +2114,6 @@
         },
         {
           "title": {
-            "th": "ชุดเซ็ตเสื้อยืด+กางเกงขาสั้น ทรงหลวม",
-            "en": "Loose tee and shorts set"
-          },
-          "price": 123,
-          "image": "https://down-zl-th.img.susercontent.com/sg-11134201-7rbld-lontolleohkn27.webp",
-          "url": "https://s.shopee.co.th/5fqA8JAwmY"
-        },
-        {
-          "title": {
             "th": "กางเกงยีนส์ขาสั้น 5 ส่วน",
             "en": "Denim bermuda shorts"
           },
@@ -2741,15 +2192,6 @@
           "price": 490,
           "image": "https://down-zl-th.img.susercontent.com/th-11134207-81zto-mv1f8ehh7saxad.webp",
           "url": "https://s.shopee.co.th/40hwB8I5Dt"
-        },
-        {
-          "title": {
-            "th": "Boxy crop tee เสื้อยืดคอกลมทรงบ๊อก",
-            "en": "T-shirt"
-          },
-          "price": 187,
-          "image": "https://down-zl-th.img.susercontent.com/th-11134207-81ztk-muopnxza93i9eb.webp",
-          "url": "https://s.shopee.co.th/5VWjxtiGrF"
         },
         {
           "title": {
@@ -3056,15 +2498,6 @@
       "products": [
         {
           "title": {
-            "th": "ชุดว่ายน้ําสาวอวบ แขนสั้น",
-            "en": "Short-sleeve swimsuit (plus size)"
-          },
-          "price": 179,
-          "image": "https://down-zl-th.img.susercontent.com/cn-11134207-7ras8-mc4p48l73pzf1e.webp",
-          "url": "https://s.shopee.co.th/1BNkltNSqd"
-        },
-        {
-          "title": {
             "th": "ชุดว่ายน้ําปิดพุง แขนสั้น",
             "en": "Short-sleeve slimming swimsuit"
           },
@@ -3080,24 +2513,6 @@
           "price": 163,
           "image": "https://down-zl-th.img.susercontent.com/th-11134207-7r98o-lkt9bu6706ou26.webp",
           "url": "https://s.shopee.co.th/9fMItW9b9b"
-        },
-        {
-          "title": {
-            "th": "ชุดว่ายน้ําแขนยาว ลายกราฟิก",
-            "en": "Long-sleeve printed swimsuit"
-          },
-          "price": 324,
-          "image": "https://down-zl-th.img.susercontent.com/th-11134207-7r98r-ltgiy7lrlz0fca.webp",
-          "url": "https://s.shopee.co.th/3g55kUZwgk"
-        },
-        {
-          "title": {
-            "th": "ชุดว่ายน้ําแขนยาว+กางเกงขายาว",
-            "en": "Long-sleeve swim set with leggings"
-          },
-          "price": 378,
-          "image": "https://down-zl-th.img.susercontent.com/th-11134207-7ra0n-md2tnuis601x71.webp",
-          "url": "https://s.shopee.co.th/60T0Wnd26v"
         },
         {
           "title": {
@@ -3125,15 +2540,6 @@
           "price": 203,
           "image": "https://down-zl-th.img.susercontent.com/th-11134207-7rask-m98ko4v1wq5c05.webp",
           "url": "https://s.shopee.co.th/AUvPvCehA8"
-        },
-        {
-          "title": {
-            "th": "ชุุดว่ายน้ําผู้หญิงเสื้อแขนยาว-กางเ",
-            "en": "Long-sleeve swimsuit"
-          },
-          "price": 339,
-          "image": "https://down-zl-th.img.susercontent.com/sg-11134201-8261l-mm16lo3quww3b1.webp",
-          "url": "https://s.shopee.co.th/60T0Yw7AXo"
         },
         {
           "title": {
@@ -3197,15 +2603,6 @@
           "price": 227,
           "image": "https://down-zl-th.img.susercontent.com/th-11134207-81zto-mft5yacppxqjf8.webp",
           "url": "https://s.shopee.co.th/7VHoLkEPO7"
-        },
-        {
-          "title": {
-            "th": "ชุดว่ายน้ํา เซ็ต ชิ้น",
-            "en": "Swimsuit with shorts"
-          },
-          "price": 219,
-          "image": "https://down-zl-th.img.susercontent.com/th-11134207-7r98r-ltf8umrui7nse7.webp",
-          "url": "https://s.shopee.co.th/7puekMPReC"
         },
         {
           "title": {
@@ -3398,15 +2795,6 @@
         },
         {
           "title": {
-            "th": "ชุดว่ายน้ํา สาวอวบ/สาวอ้วน",
-            "en": "Swim dress"
-          },
-          "price": 229,
-          "image": "https://down-zl-th.img.susercontent.com/th-11134207-7rasa-mab1tqttppvu38.webp",
-          "url": "https://s.shopee.co.th/W841q34U0"
-        },
-        {
-          "title": {
             "th": "ซีรีส์ Lachesis ชุดเดรสเข้ารูปสีสั",
             "en": "Swim dress"
           },
@@ -3503,15 +2891,6 @@
         },
         {
           "title": {
-            "th": "จั๊มสูทขายาว Katie",
-            "en": "Katie jumpsuit"
-          },
-          "price": 850,
-          "image": "https://down-zl-th.img.susercontent.com/th-11134207-81ztc-mqel3f7cbocr7c.webp",
-          "url": "https://s.shopee.co.th/BVDaEw1dz"
-        },
-        {
-          "title": {
             "th": "เสื้อเชิ้ตลายสก็อต สีน้ําเงิน",
             "en": "Blue plaid shirt"
           },
@@ -3602,15 +2981,6 @@
         },
         {
           "title": {
-            "th": "เดรสผู้หญิง ออกงาน แขนกุด น่ารัก",
-            "en": "Vintage dress"
-          },
-          "price": 259,
-          "image": "https://down-zl-th.img.susercontent.com/sg-11134201-8257x-mgeysjcwi9e24c.webp",
-          "url": "https://s.shopee.co.th/2LZiCPuR7S"
-        },
-        {
-          "title": {
             "th": "cherie dress ชุดเดรสลายดอกไม้",
             "en": "Vintage dress"
           },
@@ -3629,24 +2999,6 @@
         },
         {
           "title": {
-            "th": "ชุดเซตเดรสยาว+เสื้อคลุมเบลเซอร์",
-            "en": "Vintage dress"
-          },
-          "price": 376,
-          "image": "https://down-zl-th.img.susercontent.com/th-11134207-7rash-m96udp9kxhqh65.webp",
-          "url": "https://s.shopee.co.th/4B1MNn0elM"
-        },
-        {
-          "title": {
-            "th": "เสื้อผ้าสตรีไซส์ใหญ่ ชุดเซตทํางาน",
-            "en": "Vintage dress"
-          },
-          "price": 339,
-          "image": "https://down-zl-th.img.susercontent.com/th-11134207-81ztc-mpa9rurxhb7ldb.webp",
-          "url": "https://s.shopee.co.th/20wrnoECKr"
-        },
-        {
-          "title": {
             "th": "l Downtown jean jacket",
             "en": "Denim shirt"
           },
@@ -3656,30 +3008,12 @@
         },
         {
           "title": {
-            "th": "เสื้อเชิ้ตยีนส์แขนสั้น แต่งกร",
-            "en": "Denim shirt"
-          },
-          "price": 365,
-          "image": "https://down-zl-th.img.susercontent.com/th-11134207-7ra0r-mca6aml0c8fzf7.webp",
-          "url": "https://s.shopee.co.th/1qdRbX3RCU"
-        },
-        {
-          "title": {
             "th": "Wild Printed Jeans",
             "en": "Denim shirt"
           },
           "price": 902,
           "image": "https://down-zl-th.img.susercontent.com/th-11134207-81ztd-momsl7csmjgge6.webp",
           "url": "https://s.shopee.co.th/8AXV9AktaY"
-        },
-        {
-          "title": {
-            "th": "Chambray Shirt with Leather",
-            "en": "Denim shirt"
-          },
-          "price": 742,
-          "image": "https://down-zl-th.img.susercontent.com/th-11134207-7ra0i-mdn0oivejys38d.webp",
-          "url": "https://s.shopee.co.th/1W0bCvIrtT"
         },
         {
           "title": {
@@ -3827,66 +3161,12 @@
         },
         {
           "title": {
-            "th": "ชุดจั๊มผ้าไหมอิตาลีขาสั้นแต่ง",
-            "en": "Pinafore dress"
-          },
-          "price": 289,
-          "image": "https://down-zl-th.img.susercontent.com/th-11134207-81ztl-mez5fktwtwy214.webp",
-          "url": "https://s.shopee.co.th/6fihNCgEMr"
-        },
-        {
-          "title": {
             "th": "Alice Dress ชุดเดรสยาวทรงคอร์เซ็ท",
             "en": "Floral cotton dress"
           },
           "price": 479,
           "image": "https://down-zl-th.img.susercontent.com/th-11134207-7r98t-lokuqflo015rcf.webp",
           "url": "https://s.shopee.co.th/2gCYbrppVc"
-        },
-        {
-          "title": {
-            "th": "เดรสยาวแขนพอง เนื้อคอตตอลเนื้อนิ่ม",
-            "en": "Floral cotton dress"
-          },
-          "price": 553,
-          "image": "https://down-zl-th.img.susercontent.com/th-11134207-7ra0t-mdo7gwmephim06.webp",
-          "url": "https://s.shopee.co.th/4B1MOcoWFN"
-        },
-        {
-          "title": {
-            "th": "ชุดเดรสแขนสั้น ผ้าคอตตอลญี่ปุ่น %",
-            "en": "Floral cotton dress"
-          },
-          "price": 659,
-          "image": "https://down-zl-th.img.susercontent.com/th-11134201-81ztl-mv4ep9em65mvb9.webp",
-          "url": "https://s.shopee.co.th/7KyOARh4OL"
-        },
-        {
-          "title": {
-            "th": "เดรสกระโปรงบาน เอวสม็อค",
-            "en": "Floral cotton dress"
-          },
-          "price": 199,
-          "image": "https://down-zl-th.img.susercontent.com/th-11134207-7r98z-lmpi2au9nw1z39.webp",
-          "url": "https://s.shopee.co.th/4VeCnEvysC"
-        },
-        {
-          "title": {
-            "th": "เดรสคอระบายผ้าคอตตอน ชุดย้อนยุค",
-            "en": "Floral cotton dress"
-          },
-          "price": 790,
-          "image": "https://down-zl-th.img.susercontent.com/th-11134207-81zti-mu7dg85mu58l80.webp",
-          "url": "https://s.shopee.co.th/5fqABNw94i"
-        },
-        {
-          "title": {
-            "th": "Sydney Blazer",
-            "en": "Oversized plaid shirt"
-          },
-          "price": 688,
-          "image": "https://down-zl-th.img.susercontent.com/th-11134207-7rash-m9dhbimp648e9e.webp",
-          "url": "https://s.shopee.co.th/7Aexy9Z3DR"
         }
       ]
     },
@@ -3905,111 +3185,12 @@
       "products": [
         {
           "title": {
-            "th": "เดรสยาว Mira",
-            "en": "Mira long dress"
-          },
-          "price": 1290,
-          "image": "https://down-zl-th.img.susercontent.com/th-11134207-81ztl-ml9lht7alcebee.webp",
-          "url": "https://s.shopee.co.th/3B8p9nS05z"
-        },
-        {
-          "title": {
-            "th": "แม็กซี่เดรส Love Hwa",
-            "en": "Love Hwa maxi dress"
-          },
-          "price": 1199,
-          "image": "https://down-zl-th.img.susercontent.com/th-11134207-81ztl-mf6yogil5zil4a.webp",
-          "url": "https://s.shopee.co.th/8fTlhuC54u"
-        },
-        {
-          "title": {
-            "th": "เดรสออกงานผ้าซาติน",
-            "en": "Satin evening dress"
-          },
-          "price": 331,
-          "image": "https://down-zl-th.img.susercontent.com/th-11134207-81ztl-mnfxcdopqux28f.webp",
-          "url": "https://s.shopee.co.th/LodmakPwU"
-        },
-        {
-          "title": {
-            "th": "เดรสไปงาน Maya",
-            "en": "Maya party dress"
-          },
-          "price": 719,
-          "image": "https://down-zl-th.img.susercontent.com/th-11134207-81ztg-mpx4p1x3xa1b2e.webp",
-          "url": "https://s.shopee.co.th/906c6WI1wx"
-        },
-        {
-          "title": {
-            "th": "เดรสออกงาน สายเดี่ยว",
-            "en": "Strappy party dress"
-          },
-          "price": 179,
-          "image": "https://down-zl-th.img.susercontent.com/th-11134207-81zto-mv7cbwvxotfm65.webp",
-          "url": "https://s.shopee.co.th/7fbEW4SGIM"
-        },
-        {
-          "title": {
-            "th": "เดรสสีขาวออกงาน",
-            "en": "White party dress"
-          },
-          "price": 265,
-          "image": "https://down-zl-th.img.susercontent.com/th-11134207-81ztc-mrwfzc4xy0hxb9.webp",
-          "url": "https://s.shopee.co.th/20wrlewlsX"
-        },
-        {
-          "title": {
-            "th": "เดรสออกงานรุ่นเจ้าหญิง",
-            "en": "Princess evening dress"
-          },
-          "price": 349,
-          "image": "https://down-zl-th.img.susercontent.com/th-11134207-81zto-mngzn56e62h4f2.webp",
-          "url": "https://s.shopee.co.th/9KjSV8ZOIy"
-        },
-        {
-          "title": {
-            "th": "เดรสยาวราตรี ผ้าเงา",
-            "en": "Satin gown"
-          },
-          "price": 319,
-          "image": "https://down-zl-th.img.susercontent.com/th-11134207-81zte-mnfxcdoa0s1te2.webp",
-          "url": "https://s.shopee.co.th/9zz9IMb7DE"
-        },
-        {
-          "title": {
-            "th": "เดรสออกงานทรงเมอร์เมด",
-            "en": "Mermaid evening dress"
-          },
-          "price": 590,
-          "image": "https://down-zl-th.img.susercontent.com/th-11134207-81ztm-mdx0we9sjbba0c.webp",
-          "url": "https://s.shopee.co.th/1BNkm8D0OU"
-        },
-        {
-          "title": {
             "th": "เดรสออกงานสายเดี่ยว แบบยาว",
             "en": "Long slip dress"
           },
           "price": 102,
           "image": "https://down-zl-th.img.susercontent.com/th-11134207-7r98p-llswdiw3pmry3e.webp",
           "url": "https://s.shopee.co.th/3VlfYQ9Pqn"
-        },
-        {
-          "title": {
-            "th": "ชุดเพื่อนเจ้าสาว เข้าเพิ่ม27ค่า",
-            "en": "Party dress"
-          },
-          "price": 810,
-          "image": "https://down-zl-th.img.susercontent.com/th-11134207-81zte-mpwmavwkyfpqc5.webp",
-          "url": "https://s.shopee.co.th/qkuPjFEhm"
-        },
-        {
-          "title": {
-            "th": "ชุดราตรีเดรสยาวใส่ออกงาน",
-            "en": "Party dress"
-          },
-          "price": 349,
-          "image": "https://down-zl-th.img.susercontent.com/th-11134207-81ztl-mftu36e6o2dl20.webp",
-          "url": "https://s.shopee.co.th/3B8pC1CTK1"
         },
         {
           "title": {
@@ -4022,39 +3203,12 @@
         },
         {
           "title": {
-            "th": "เดรสออกงาน ชุดทํางานคุมไหล่ดีเทลแต่",
-            "en": "Party dress"
-          },
-          "price": 389,
-          "image": "https://down-zl-th.img.susercontent.com/th-11134207-81ztj-mpnf0cu9acr041.webp",
-          "url": "https://s.shopee.co.th/2LZiCUNggI"
-        },
-        {
-          "title": {
             "th": "เดรสชุดราตรีเดรสขาว",
             "en": "Short evening dress"
           },
           "price": 262,
           "image": "https://down-zl-th.img.susercontent.com/th-11134207-7rasb-m9h1xaqero8053.webp",
           "url": "https://s.shopee.co.th/4LKmaAshza"
-        },
-        {
-          "title": {
-            "th": "ชุดเดรส ชุดออกงาน ชุดราตรี",
-            "en": "Short evening dress"
-          },
-          "price": 890,
-          "image": "https://down-zl-th.img.susercontent.com/th-11134201-81zti-mtqeqdjpm6m84a.webp",
-          "url": "https://s.shopee.co.th/AKbzjCc3Pz"
-        },
-        {
-          "title": {
-            "th": "ชุดเดรส ชุดออกงาน ชุดราตรี",
-            "en": "Short evening dress"
-          },
-          "price": 890,
-          "image": "https://down-zl-th.img.susercontent.com/th-11134207-7rasb-m9v1ets648vibb.webp",
-          "url": "https://s.shopee.co.th/70LXl4sJok"
         },
         {
           "title": {
@@ -4067,30 +3221,12 @@
         },
         {
           "title": {
-            "th": "เดรสยาว ชุดราตรี Dress",
-            "en": "Short evening dress"
-          },
-          "price": 1050,
-          "image": "https://down-zl-th.img.susercontent.com/sg-11134201-7ra0n-mbjju2e37t2tcd.webp",
-          "url": "https://s.shopee.co.th/2Vt8OoHDa3"
-        },
-        {
-          "title": {
             "th": "เดรสชุดราตรีเดรสขาว ชุดไปคาเฟ่",
             "en": "Short evening dress"
           },
           "price": 236,
           "image": "https://down-zl-th.img.susercontent.com/th-11134207-7rasc-m15knkg0yrsk9c.webp",
           "url": "https://s.shopee.co.th/4B1MNsKdRR"
-        },
-        {
-          "title": {
-            "th": "ชุดเดรส ชุดออกงาน ชุดราตรี",
-            "en": "Short evening dress"
-          },
-          "price": 890,
-          "image": "https://down-zl-th.img.susercontent.com/th-11134207-7ra0i-mbjdxsvfoxaz63.webp",
-          "url": "https://s.shopee.co.th/9V2sjg3uFY"
         },
         {
           "title": {
@@ -4148,15 +3284,6 @@
         },
         {
           "title": {
-            "th": "Pirunya - Long Dress เดรสยาว",
-            "en": "Strapless dress"
-          },
-          "price": 1390,
-          "image": "https://down-zl-th.img.susercontent.com/th-11134207-81ztm-mgs5grnabor1b0.webp",
-          "url": "https://s.shopee.co.th/5VWjyLrvb0"
-        },
-        {
-          "title": {
             "th": "Winny dress เดรสเกาะอกผ",
             "en": "Strapless dress"
           },
@@ -4211,15 +3338,6 @@
         },
         {
           "title": {
-            "th": "Mogwany ครีมS,L,ดํา,น้ําตาล / พรี",
-            "en": "Going-out set"
-          },
-          "price": 689,
-          "image": "https://down-zl-th.img.susercontent.com/th-11134207-7r991-lusz29mn1y5qa1.webp",
-          "url": "https://s.shopee.co.th/2gCYbAKnq3"
-        },
-        {
-          "title": {
             "th": "Ballet Set ชุดเซ็ท ชิ้นกระโปรงยาวผ",
             "en": "Going-out set"
           },
@@ -4244,15 +3362,6 @@
           "price": 451,
           "image": "https://down-zl-th.img.susercontent.com/th-11134207-7ra0k-mdl5lp1todbm9f.webp",
           "url": "https://s.shopee.co.th/1LhB0ihXvG"
-        },
-        {
-          "title": {
-            "th": "แม็กซี่เดรส แขนกุด ปาดไหล่ คอถ่วง",
-            "en": "Off-shoulder dress"
-          },
-          "price": 161,
-          "image": "https://down-zl-th.img.susercontent.com/th-11134207-7rase-m9nvjdebrihs4f.webp",
-          "url": "https://s.shopee.co.th/7puekfzlch"
         },
         {
           "title": {
@@ -4292,66 +3401,12 @@
         },
         {
           "title": {
-            "th": "เดรสสั้นออกงานปาดไหล่",
-            "en": "Off-shoulder dress"
-          },
-          "price": 320,
-          "image": "https://down-zl-th.img.susercontent.com/th-11134207-81zto-mnkzf704y682a8.webp",
-          "url": "https://s.shopee.co.th/3B8pC6edCc"
-        },
-        {
-          "title": {
-            "th": "ชุดออกงาน เดรสยาวปาดไหล่",
-            "en": "Off-shoulder dress"
-          },
-          "price": 590,
-          "image": "https://down-zl-th.img.susercontent.com/th-11134207-81ztc-mkktjszcddzab6.webp",
-          "url": "https://s.shopee.co.th/5q9aN0Ysb9"
-        },
-        {
-          "title": {
-            "th": "MAYU เดรสยาวปาดไหล่เรียบหรูดูไ",
-            "en": "Off-shoulder dress"
-          },
-          "price": 690,
-          "image": "https://down-zl-th.img.susercontent.com/th-11134207-7rasm-m9fgmv8gyag071.webp",
-          "url": "https://s.shopee.co.th/gRUDVx16P"
-        },
-        {
-          "title": {
-            "th": "All Ladies เดรสผ้าไหมแต่งดอกไม้คลุ",
-            "en": "Sequin dress"
-          },
-          "price": 890,
-          "image": "https://down-zl-th.img.susercontent.com/th-11134207-81ztc-moxerezpr20yca.webp",
-          "url": "https://s.shopee.co.th/5fqAAiD6yB"
-        },
-        {
-          "title": {
-            "th": "All Ladies เดรสผ้าไหมคลุมไหล่ลูกไม",
-            "en": "Sequin dress"
-          },
-          "price": 1390,
-          "image": "https://down-zl-th.img.susercontent.com/th-11134207-81zth-mskwft36kr2caa.webp",
-          "url": "https://s.shopee.co.th/50aTNUWDVD"
-        },
-        {
-          "title": {
             "th": "ชุดเดรส,เดรสสายเดี่ยวเลื่อมทอง",
             "en": "Sequin dress"
           },
           "price": 235,
           "image": "https://down-zl-th.img.susercontent.com/sg-11134201-7rdyo-lxqjqf2cavvt23.webp",
           "url": "https://s.shopee.co.th/60T0ZKc2BV"
-        },
-        {
-          "title": {
-            "th": "ALL เดรสยาวชิฟฟ่อนคลุมลูกไม้เลื่อม",
-            "en": "Sequin dress"
-          },
-          "price": 1490,
-          "image": "https://down-zl-th.img.susercontent.com/th-11134207-81zto-mtdh9lretyx260.webp",
-          "url": "https://s.shopee.co.th/2BGI0HybNg"
         }
       ]
     }
