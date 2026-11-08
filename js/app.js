@@ -1023,15 +1023,16 @@
     zh: { Mo: "周一", Tu: "周二", We: "周三", Th: "周四", Fr: "周五", Sa: "周六", Su: "周日", PH: "公共假日", off: "休息" } };
   const fmtHours = h => {
     if (!h) return "";
-    if (h.trim() === "24/7") return "24/7";
+    if (/^\s*(24\/7|Mo-Su 00:00-(24:00|23:59))\s*$/.test(h)) return t("open24");
     const d = DAYS[state.lang] || DAYS.th;
-    return h.replace(/\b(Mo|Tu|We|Th|Fr|Sa|Su|PH)\b/g, m => d[m]).replace(/\boff\b/g, d.off).replace(/;\s*/g, " · ");
+    return h.replace(/\b00:00-(24:00|23:59)\b/g, t("open24")).replace(/\b(Mo|Tu|We|Th|Fr|Sa|Su|PH)\b/g, m => d[m]).replace(/\boff\b/g, d.off).replace(/;\s*/g, " · ");
   };
   // ค่าเข้า: ฟรี / "40 บาท (ต่างชาติ 200)" / "เสียค่าเข้า" (รู้ว่าเสียแต่ไม่รู้ราคา) / "-" (ไม่มีข้อมูล)
   const fmtBaht = n => `${Number(n).toLocaleString(locale())} ${t("baht")}`;
   function feeText(p) {
     const e = p.entry;
     if (e?.free || p.fee === "no") return t("feeNo");
+    if (e?.min && e?.max) return `${Number(e.min).toLocaleString(locale())}–${fmtBaht(e.max)}`;
     if (e?.thai || e?.foreign) return [e.thai && fmtBaht(e.thai), e.foreign && e.foreign !== e.thai && `${t("foreigner")} ${fmtBaht(e.foreign)}`].filter(Boolean).join(" · ");
     if (p.fee === "yes") return t("feeYes");
     return "-";

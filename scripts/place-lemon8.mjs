@@ -4,7 +4,7 @@
 // หมุนเวียน: สถานที่ที่ยังไม่มีโพสต์ก่อน · อ่านซ้ำทุก 14 วัน · หยุดเมื่อครบเวลา (ที่เหลือรอบหน้า)
 // รัน หลัง scripts/trend-places.mjs · node scripts/place-lemon8.mjs [--minutes 20]
 import { readFile, writeFile, rename, mkdir } from "node:fs/promises";
-import { postFits, bestOwners, ownsPost, infoFromPosts } from "./place-quality.mjs";
+import { postFits, bestOwners, ownsPost, infoFromPosts, aliasMap } from "./place-quality.mjs";
 
 const UA = "IYouAloneBot/1.0 (+https://wattanasaw.github.io/i-you-alone/)";
 const arg = (n, d) => { const i = process.argv.indexOf(n); return i > 0 ? +process.argv[i + 1] : d; };
@@ -30,9 +30,12 @@ const days = d => (Date.now() - new Date(d)) / 864e5;
 // ชื่อที่ใช้ค้นและใช้ตรวจว่าโพสต์พูดถึงที่นี่จริง
 const GENERIC = /^(อุทยานแห่งชาติ|สวนสัตว์เปิด|สวนสัตว์|พิพิธภัณฑสถานแห่งชาติ|พิพิธภัณฑ์|สวนน้ำ|สวนสนุก|หอศิลป์|คาเฟ่|ร้าน|วัด|น้ำตก|หาด|ชายหาด)\s*/;
 const nameOf = p => typeof p.name === "string" ? { th: p.name } : (p.name || {});
-const names = p => { const n = nameOf(p); return [...new Set([n.th, n.en, n.th?.replace(GENERIC, "")].filter(s => s && s.trim().length >= 4).map(s => s.toLowerCase().trim()))]; };
+const ALIAS = aliasMap(all);
+const names0 = p => { const n = nameOf(p); return [...new Set([n.th, n.en, n.th?.replace(GENERIC, "")].filter(s => s && s.trim().length >= 4).map(s => s.toLowerCase().trim()))]; };
 // คำค้น: ชื่อไทย → ชื่ออังกฤษ → ชื่อไทยตัดคำนำหน้า (ชื่อทางการยาวๆ อย่าง "วัดพระศรีรัตนศาสดาราม" คนไม่ค่อยใช้ค้น)
-const queries = p => { const n = nameOf(p); return [...new Set([n.th, n.en, n.th?.replace(GENERIC, "")].filter(s => s && s.trim().length >= 4).map(s => s.trim()))]; };
+// + ชื่อเรียกสั้น (ลองหลังชื่อเต็ม สูงสุด 3 ชื่อ)
+const names = p => [...new Set([...names0(p), ...(ALIAS.get(p.id) || [])])];
+const queries = p => { const n = nameOf(p); return [...new Set([n.th, n.en, n.th?.replace(GENERIC, ""), ...(ALIAS.get(p.id) || []).slice(0, 3)].filter(s => s && s.trim().length >= 4).map(s => s.trim()))]; };
 const query = p => queries(p)[0] || "";
 const NOT_TREND = /เสียชีวิต|อุบัติเหตุ|ไฟไหม้|น้ำท่วม|จับกุม|ดราม่า|ร้องเรียน|ปิดถาวร|ปิดกิจการ/;
 
@@ -66,7 +69,9 @@ async function search(q) {
 
 // คิว: ไม่เคยค้น/ครบรอบอ่านซ้ำ · ที่ยังไม่มีโพสต์เลยก่อน แล้วที่ดัง/มีกระแส
 // ยังไม่เคยอ่านเวลาเปิด-ปิด/ราคาจากโพสต์ (ไม่มีช่อง info) → ค้นใหม่ด้วย
-const due = all.filter(p => query(p) && names(p).length && !(entry(p.id) && entry(p.id).info && days(entry(p.id).at) < REFRESH))
+// ค้นด้วยชื่อเรียกสั้นแล้ว (v ≥ 2) · ยังไม่เคย → ค้นใหม่
+const ONLY = process.argv.includes("--only") ? process.argv[process.argv.indexOf("--only") + 1] : "";
+const due = all.filter(p => (!ONLY || p.id === ONLY) && query(p) && names(p).length && (ONLY || !(entry(p.id) && entry(p.id).info && entry(p.id).v >= 2 && days(entry(p.id).at) < REFRESH)))
   .sort((a, b) => ((a.posts?.length ? 1 : 0) - (b.posts?.length ? 1 : 0)) || ((b.hot || 0) + (b.fame || 0) + (b.views || 0) / 50) - ((a.hot || 0) + (a.fame || 0) + (a.views || 0) / 50));
 console.log(`สถานที่ ${all.length} · มีรีวิว Lemon8 ในคลังแล้ว ${all.filter(p => entry(p.id)?.posts?.length).length} · รอค้น ${due.length}`);
 
@@ -98,7 +103,7 @@ for (const p of due) {
     .sort((a, b) => b.likes - a.likes).slice(0, KEEP);
   // เวลาเปิด-ปิด + ช่วงราคา ที่ผู้รีวิวเขียนไว้ในโพสต์ (อ่านจากข้อความ ไม่ใช้ AI)
   const info = infoFromPosts(rel.map(x => x.body), p.kind);
-  shards[shardOf(p.id)][p.id] = { at: today, posts, info };
+  shards[shardOf(p.id)][p.id] = { at: today, v: 2, posts, info };
   if (posts.length > old.length) gained++;
 }
 
@@ -120,6 +125,7 @@ for (const p of all) {
   const i = entry(p.id)?.info; if (!i) continue;
   if (i.hours && (!p.hours || p.hoursSrc === "typical")) { p.hours = i.hours; p.hoursSrc = "review"; addHours++; }
   if (i.price && !p.menuPrice) { p.menuPrice = { min: i.price.min, max: i.price.max, src: "review" }; addPrice++; }
+  if (i.entry && (!p.entry || p.entry.src === "review") && p.fee !== "no") { p.entry = { ...i.entry, src: "review" }; addPrice++; }
 }
 console.log(`จากรีวิว: เวลาเปิด-ปิด +${addHours} · ช่วงราคา +${addPrice}`);
 // 6 โพสต์ยอดนิยมเข้า places.json (รวมกับที่มีอยู่) · ลบรายการของสถานที่ที่ไม่มีแล้ว

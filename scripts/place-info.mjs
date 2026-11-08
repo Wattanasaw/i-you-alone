@@ -25,6 +25,9 @@ if (!data?.places) { console.error("ไม่มี data/places.json"); process.
 const trendPl = await readJSON("data/trend-places.json", []);
 const reviews = await readJSON("data/place-reviews.json", {});
 const cache = await readJSON("data/place-info.json", {});
+// เวลาเปิด-ปิด/ค่าเข้า/ช่วงราคาที่ผู้รีวิวเขียนไว้ในโพสต์ Lemon8 (place-lemon8.mjs อ่านจากข้อความ เก็บใน data/place-posts/NN.json → info)
+const l8info = {};
+for (let i = 0; i < 32; i++) for (const [id, e] of Object.entries(await readJSON(`data/place-posts/${String(i).padStart(2, "0")}.json`, {}))) if (e?.info) l8info[id] = e.info;
 const all = [...data.places, ...trendPl];
 const win = {}; new Function("window", await readFile(new URL("js/i18n.js", root), "utf8"))(win);
 const provTh = id => win.PROVINCES.find(p => p.id === id)?.th || id;
@@ -34,7 +37,7 @@ const DAY = "(?:Mo|Tu|We|Th|Fr|Sa|Su|PH)";
 const RULE = new RegExp(`^(?:${DAY}(?:\\s*-\\s*${DAY})?(?:\\s*,\\s*${DAY}(?:\\s*-\\s*${DAY})?)*\\s+)?(?:off|closed|\\d{1,2}:\\d{2}\\s*-\\s*\\d{1,2}:\\d{2}(?:\\s*,\\s*\\d{1,2}:\\d{2}\\s*-\\s*\\d{1,2}:\\d{2})*)$`);
 export const hoursOk = h => { const s = String(h || "").trim(); return s && s.length <= 160 && (s === "24/7" || s.split(/\s*;\s*/).filter(Boolean).every(r => RULE.test(r))) ? s.replace(/\s*;\s*/g, "; ") : null; };
 const baht = n => Number.isFinite(+n) && +n >= 10 && +n <= 20000 ? Math.round(+n) : undefined;
-const entryOk = e => e?.free === true ? { free: true } : (baht(e?.thai) || baht(e?.foreign)) ? JSON.parse(JSON.stringify({ thai: baht(e?.thai), foreign: baht(e?.foreign) })) : null;
+const entryOk = e => e?.free === true ? { free: true } : baht(e?.min) && baht(e?.max) && e.min < e.max ? { min: baht(e.min), max: baht(e.max) } : (baht(e?.thai) || baht(e?.foreign)) ? JSON.parse(JSON.stringify({ thai: baht(e?.thai), foreign: baht(e?.foreign) })) : null;
 const menuOk = m => { let a = baht(m?.min), b = baht(m?.max); a ??= b; b ??= a; if (!a) return null; if (a > b) [a, b] = [b, a]; return b <= 5000 ? { min: a, max: b } : null; };
 
 // ---------- 2) เว็บไซต์ทางการ ----------
@@ -161,7 +164,8 @@ for (const p of all) {
   if (["web", "review", "ai", "typical"].includes(p.menuPrice?.src)) delete p.menuPrice;
   const rv = reviews[p.id] || {};
   const c = cache[p.id] || {};
-  const srcs = [["web", c.web], ["review", { hours: hoursOk(rv.hours), entry: entryOk(rv.entry), menu: menuOk(rv.menu) }], ["ai", c.ai], ["typical", typical(p)]];
+  const li = l8info[p.id] || {};
+  const srcs = [["web", c.web], ["review", { hours: hoursOk(rv.hours) || hoursOk(li.hours), entry: entryOk(rv.entry) || entryOk(li.entry), menu: menuOk(rv.menu) || menuOk(li.price) }], ["ai", c.ai], ["typical", typical(p)]];
   const n = need(p);
   for (const [src, v] of srcs) {
     if (!v) continue;

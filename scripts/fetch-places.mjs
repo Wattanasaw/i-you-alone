@@ -226,14 +226,18 @@ async function provinceAt(lat, lng) {
 }
 
 // คำอธิบายจาก Wikipedia (ตัดให้สั้น)
-async function wikiSummary(url) {
+// บทความถูก redirect ไปเรื่องอื่น (เช่น "บางกอก ซี ไลฟ์" → "สยามพารากอน") → คำอธิบายไม่ใช่ของที่นี่ ไม่ใช้
+const nameCore = s => String(s || "").replace(/(.*?)/g, "").replace(/[s_]+/g, "").replace(/^(อุทยานแห่งชาติ|พิพิธภัณฑสถานแห่งชาติ|พิพิธภัณฑ์|สวนสัตว์|วัด|น้ำตก|หาด|เกาะ|the)/i, "").slice(0, 4).toLowerCase();
+const aboutPlace = (text, ...names) => { const t = String(text || "").replace(/s+/g, "").toLowerCase(); return names.some(n => !n || t.includes(nameCore(n))); };
+async function wikiSummary(url, name) {
   if (!url) return undefined;
   const m = url.match(/^https:\/\/(\w+)\.wikipedia\.org\/wiki\/(.+)$/);
   if (!m) return undefined;
   await sleep(250);
   const r = await get(`https://${m[1]}.wikipedia.org/api/rest_v1/page/summary/${m[2]}`, {}, 1);
-  const x = r ? (await r.json()).extract : "";
+  const j = r ? await r.json() : {}, x = j.extract || "";
   if (!x) return undefined;
+  if (j.title && j.title.replace(/ /g, "_") !== decodeURIComponent(m[2]) && !aboutPlace(x, name)) return undefined;
   return x.length > 420 ? x.slice(0, 420).replace(/[^.。!?]*$/, "") || x.slice(0, 420) + "…" : x;
 }
 
@@ -392,10 +396,12 @@ for (const p of places) {
   p.province ||= provinceByEn(p.provinceHint) || old?.province || await provinceAt(p.lat, p.lng);
   delete p.provinceHint;
   if (fresh(old)) {
-    p.summary = old.summary; p.image = old.image; p.imagePage = old.imagePage; p.imageCredit = old.imageCredit; p.fetchedAt = old.fetchedAt;
+    p.summary = old.summary;
+    if (p.summary?.th && p.wiki?.th && !aboutPlace(p.summary.th, p.name?.th, decodeURIComponent(p.wiki.th.split("/wiki/")[1] || ""))) delete p.summary.th;
+    p.image = old.image; p.imagePage = old.imagePage; p.imageCredit = old.imageCredit; p.fetchedAt = old.fetchedAt;
   } else {
     p.summary = {};
-    for (const l of ["th", "en", "zh"]) { const s = await wikiSummary(p.wiki?.[l]); if (s) p.summary[l] = s; }
+    for (const l of ["th", "en", "zh"]) { const s = await wikiSummary(p.wiki?.[l], l === "th" ? p.name?.th : null); if (s) p.summary[l] = s; }
     // สถานที่จาก OSM ไม่มีบทความ Wikipedia → ใช้คำอธิบายใน OSM (ถ้ามี)
     if (!Object.keys(p.summary).length && p.osmDescription) p.summary.th = p.osmDescription.slice(0, 300);
     const im = p.imageFile && imgs[p.imageFile.replace(/ /g, "_")];

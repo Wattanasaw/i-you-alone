@@ -92,7 +92,7 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: เวลาเปิด-ปิด + ค่าเข้า + ราคาเมนู ให้ครบ (เว็บไซต์ทางการ · รีวิว · AI · ค่าทั่วไปตามประเภท)
-        run: node scripts/place-info.mjs
+        run: node scripts/place-info.mjs --ai 60
         timeout-minutes: 20   # เพดานเวลา (กันทั้งรอบเกิน 6 ชม. แล้วโดนตัดก่อนบันทึก)
         continue-on-error: true
         env:
