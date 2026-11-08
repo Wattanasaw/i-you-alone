@@ -10,6 +10,7 @@ on:
 
 permissions:
   contents: write
+  actions: write    # สั่งรันรอบต่อไปเองเมื่อยังตรวจไม่ครบ
   models: read      # ใช้ GitHub Models (AI ฟรี) สำรองเมื่อ Gemini โควต้าหมด
 
 # ไม่ให้รันพร้อมรอบใหญ่ (แก้ไฟล์เดียวกัน)
@@ -37,8 +38,9 @@ jobs:
         timeout-minutes: 12
         continue-on-error: true
       - name: สรุปรีวิวจากหลายแหล่ง + ตรวจเวลาเปิด/ค่าเข้า/ราคาเมนู
-        run: node scripts/place-reviews.mjs --ai 50 --minutes 60
-        timeout-minutes: 70
+        id: reviews
+        run: node scripts/place-reviews.mjs --ai 60 --minutes 70
+        timeout-minutes: 80
         continue-on-error: true
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
@@ -56,3 +58,17 @@ jobs:
             if [ -e "$f" ]; then git add "$f"; fi
           done
           git diff --cached --quiet || (git commit -m "ตรวจข้อมูลสถานที่ (หลายแหล่ง)" && git pull --rebase -X theirs && git push)
+      # ยังเหลือสถานที่ + AI ยังมีโควต้า → รันรอบต่อไปทันที (ไม่ต้องรอรอบตามเวลา)
+      # ไม่สั่งหลัง 20:30 UTC (03:30 น.) กันไปทับคิวรอบใหญ่ตอน 06:00 น.
+      - name: รันรอบต่อไปเลยถ้ายังตรวจไม่ครบ
+        if: ${{ always() && steps.reviews.outputs.more == 'true' }}
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          now=$(date -u +%H%M)
+          if [ "$now" -lt 2030 ] || [ "$now" -ge 2330 ]; then
+            echo "เหลือ ${{ steps.reviews.outputs.left }} แห่ง → สั่งรอบต่อไป"
+            gh workflow run place-verify.yml --ref ${{ github.ref_name }}
+          else
+            echo "ใกล้เวลารอบใหญ่ รอรอบตามเวลา"
+          fi

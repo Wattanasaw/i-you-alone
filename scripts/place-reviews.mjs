@@ -19,7 +19,7 @@ const BROWSER = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (K
 const argv = process.argv;
 const arg = (n, d) => { const i = argv.indexOf(n); return i > 0 ? argv[i + 1] : d; };
 const AI_MAX = +arg("--ai", 40), MINUTES = +arg("--minutes", 35), T0 = Date.now(), ONLY = arg("--only", ""), SHOW = argv.includes("--sources");
-const PER_ASK = 2, POSTS_PER = 6, REFRESH_DAYS = 60, VERSION = 3;
+const POSTS_PER = 6, REFRESH_DAYS = 60, VERSION = 3;
 export const GOOD_FOR = ["photo", "work", "kids", "pets", "date", "group", "view", "nature", "chill", "budget", "night", "food"];
 const root = new URL("../", import.meta.url);
 const sleep = ms => new Promise(r => setTimeout(r, ms));
@@ -306,10 +306,15 @@ Places: ${JSON.stringify(group.map(({ p, srcs }) => ({ id: p.id, name: nameOf(p)
 
 const L = (v, n, max) => { const r = {}; for (const l of ["th", "en", "zh"]) r[l] = [].concat(v?.[l] || []).filter(s => typeof s === "string" && s.trim()).map(s => s.trim().slice(0, max)).slice(0, n); return r; };
 let asked = 0, fails = 0, done = 0, factN = { hours: 0, entry: 0, menu: 0 }, rejected = 0;
-for (let i = 0; i < todo.length && (SHOW || (aiAvailable() && asked < AI_MAX && fails < 3 && Date.now() - T0 < MINUTES * 60000)); i += PER_ASK) {
+// Gemini อ่านได้ยาว → ถามทีละ 4 สถานที่ (ประหยัดโควต้า) · GitHub Models (อ่านได้สั้น) ทีละ 1
+// รวบรวมแหล่งของทั้งกลุ่มพร้อมกัน (เร็วขึ้น ~4 เท่า)
+let i = 0;
+while (i < todo.length && (SHOW || (aiAvailable() && asked < AI_MAX && fails < 3 && Date.now() - T0 < MINUTES * 60000))) {
+  const size = SHOW ? 1 : aiName() === "Gemini" ? 4 : 1;
+  const batch = todo.slice(i, i + size); i += size;
+  const gathered = await Promise.all(batch.map(async p => ({ p, srcs: await gather(p) })));
   const group = [];
-  for (const p of todo.slice(i, i + PER_ASK)) {
-    const srcs = await gather(p);
+  for (const { p, srcs } of gathered) {
     if (SHOW) { console.log(`\n=== ${nameOf(p).th} (${p.id}) · ${srcs.length} แหล่ง`); for (const s of srcs) console.log(`--- ${s.id} ${s.label} ${s.link}\n${s.text.slice(0, 900)}`); continue; }
     if (srcs.length) group.push({ p, srcs });
     else cache[p.id] = { v: VERSION, sig: sig(p), at: new Date().toISOString(), skip: true, n: 0 };
@@ -340,6 +345,12 @@ for (let i = 0; i < todo.length && (SHOW || (aiAvailable() && asked < AI_MAX && 
   } catch (e) { fails++; console.warn("AI สรุปรีวิวไม่ได้:", e.message.slice(0, 160)); }
 }
 if (SHOW) process.exit(0);
+// ยังเหลือสถานที่ที่ต้องตรวจ และ AI ยังใช้ได้ → บอก GitHub Actions ให้รันรอบต่อไปเลย
+const left = todo.length - i;
+console.log(`เหลือรอตรวจ ${left} แห่ง`);
+if (process.env.GITHUB_OUTPUT) await writeFile(process.env.GITHUB_OUTPUT, `more=${left > 0 && aiAvailable() && fails < 3 ? "true" : "false"}
+left=${left}
+`, { flag: "a" });
 
 const live = new Set(all.map(p => p.id));
 for (const id of Object.keys(cache)) if (!live.has(id)) delete cache[id];

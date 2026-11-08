@@ -794,8 +794,11 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 /* กด "ตัวกรอง" ตอนเลื่อนลง (แถบย่อ/ติดบน) → แสดงครบทุกตัวเลือก ไม่ต้องเลื่อนข้าง */
 .filter-bar.open .filters, .filter-bar.open.slim .filters, .filter-bar.open.stuck .filters { flex-wrap: wrap; overflow: visible; max-height: none; opacity: 1; pointer-events: auto; }
 /* การ์ดเทรนด์อยู่กลางจอ: เว้นขอบซ้าย-ขวาเท่ากัน ปัดแล้วการ์ดหยุดตรงกลางพอดี (การ์ดข้างๆ โผล่ให้รู้ว่าปัดได้) */
-.trend-board .news-list { margin-left: -16px; margin-right: -16px; padding-left: calc(50% - 75px); padding-right: calc(50% - 75px); scroll-padding: 0 calc(50% - 75px); scroll-snap-type: x mandatory; }
+/* การ์ดแรกชิดซ้าย (ไม่มีช่องว่างตอนเปิด) · ปัดแล้วการ์ดกลางๆ หยุดตรงกลางจอ · การ์ดสุดท้ายชิดขวา */
+.trend-board .news-list { margin-left: -16px; margin-right: -16px; padding-left: 16px; padding-right: 16px; scroll-padding: 0 16px; scroll-snap-type: x mandatory; }
 .trend-board .news-item { scroll-snap-align: center; }
+.trend-board .news-item:first-child { scroll-snap-align: start; }
+.trend-board .news-item:last-child { scroll-snap-align: end; }
 
 /* ค่าเข้าแต่ละประเภทบัตร */
 .fee-tiers { list-style: none; margin: 6px 0 0; padding: 0; display: grid; gap: 4px; }
