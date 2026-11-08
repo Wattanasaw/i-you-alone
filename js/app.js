@@ -158,7 +158,7 @@
     } catch { return fallback; }
   }
   async function load() {
-    const [events, venues, ads, news, auto, places, biz, trendPl, reviews, aiInfo] = await Promise.all([
+    const [events, venues, ads, news, auto, places, biz, trendPl, reviews, aiInfo, removed] = await Promise.all([
       getJSON("data/events.json", []),
       getJSON("data/venues.json", []),
       getJSON("data/ads.json", []),
@@ -168,8 +168,12 @@
       getJSON("data/business-places.json", []),  // ร้านที่สมาชิกธุรกิจเพิ่ม (AI ตรวจผ่านแล้ว)
       getJSON("data/trend-places.json", []),     // สถานที่จากโพสต์เทรนด์ (หมุดสถานที่ใน Lemon8 + พิกัด OSM)
       getJSON("data/place-reviews.json", {}),    // AI สรุปรีวิวจากโพสต์จริง (จุดเด่น ต้องลอง เคล็ดลับ เหมาะกับ)
-      getJSON("data/place-ai.json", {})          // ข้อมูลที่เจ้าของแอพรวบรวมด้วย Gemini (scripts/import-gemini.mjs) — ใช้เสริมเมื่อไม่มีข้อมูลจากแหล่งอื่น
+      getJSON("data/place-ai.json", {}),         // ข้อมูลที่เจ้าของแอพรวบรวมด้วย Gemini (scripts/import-gemini.mjs) — ใช้เสริมเมื่อไม่มีข้อมูลจากแหล่งอื่น
+      getJSON("data/removed.json", {})           // เนื้อหาที่เจ้าของขอให้ลบ (ลิงก์โพสต์ / ผู้โพสต์) → ไม่แสดงในแอพ
     ]);
+    // เจ้าของโพสต์ขอลบ: ตัดตามลิงก์โพสต์ หรือทุกโพสต์ของผู้โพสต์ (@ชื่อ)
+    const rmLinks = new Set([].concat(removed?.links || [])), rmAuthors = new Set([].concat(removed?.authors || []).map(a => String(a).replace(/^@/, "").toLowerCase()));
+    state.postOk = x => !rmLinks.has(x?.link) && !rmAuthors.has((String(x?.link || "").split("lemon8-app.com/@")[1] || "").split("/")[0].toLowerCase());
     state.reviews = reviews && typeof reviews === "object" ? reviews : {};
     state.ai = aiInfo && typeof aiInfo === "object" ? aiInfo : {};
     const bizList = Array.isArray(biz) ? biz : [], replaced = new Set(bizList.map(b => b.replaces).filter(Boolean));
@@ -187,11 +191,13 @@
       else if (p.kind === "landmark" && /^\s*(วัด|wat\b)|temple|พระธาตุ|พระมหาธาตุ|เจดีย์/i.test(nm)) p.kind = "temple";
       // ข้อมูลจาก Gemini เติมเฉพาะช่องที่ยังว่าง (OpenStreetMap/รีวิว Lemon8/เจ้าของร้าน มาก่อน)
       const ai = state.ai[p.id];
-      if (ai?.hours && !p.hours) { p.hours = ai.hours; p.hoursSrc = "ai"; }
-      if (ai?.price && !p.menuPrice && ["cafe", "animalcafe", "restaurant", "nightlife"].includes(p.kind)) p.menuPrice = { ...ai.price, src: "ai" };
+      // เวลาเปิด/ราคาจาก AI ความรู้ทั่วไป ไม่ใช้ (ยังไม่ผ่านการตรวจกับเว็บไซต์ทางการ/หลายแหล่ง)
       if (ai?.closed) p.maybeClosed = true;
     }
-    state.trends = places.trends || {};
+    state.trends = Object.fromEntries(Object.entries(places.trends || {}).map(([k, v]) => [k, (v || []).filter(state.postOk)]));
+    // ข้อมูลล่อ (hidden) ใช้ตรวจว่าใครคัดลอกไฟล์ข้อมูลไปทั้งชุด — ไม่แสดงในแอพ
+    state.places = state.places.filter(p => !p.hidden && !p.ck);
+    for (const p of state.places) if (p.posts) p.posts = p.posts.filter(state.postOk);
     // งานที่ดึงอัตโนมัติ + งานที่ใส่เอง: งานใส่เองที่ id ตรงกันจะทับงานอัตโนมัติ, hidden: true = ซ่อน
     const manualIds = new Set(events.map(e => e.id));
     // ร้าน/สถานที่ที่เปิดประจำทุกวัน และงานออนไลน์ ไม่นับเป็นงานอีเว้นท์ (คาเฟ่/ที่เที่ยวอยู่หน้า "ที่เที่ยว")
@@ -1202,7 +1208,7 @@
     if (!shardLoads.has(n)) shardLoads.set(n, getJSON(`data/place-posts/${String(n).padStart(2, "0")}.json`, {}));
     return shardLoads.get(n).then(s => {
       const extra = s?.[p.id]?.posts;
-      if (extra?.length && !p.allPostsLoaded) { p.allPosts = extra.map(x => ({ ...x, tag: 1 })); postCache.delete(p); }
+      if (extra?.length && !p.allPostsLoaded) { p.allPosts = extra.filter(state.postOk).map(x => ({ ...x, tag: 1 })); postCache.delete(p); }
       p.allPostsLoaded = true;
       return !!extra?.length;
     });

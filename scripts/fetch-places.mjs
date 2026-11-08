@@ -7,7 +7,7 @@
 //   สถานที่ที่เป็นกระแส/คนค้นหาเพิ่มขึ้น ขึ้นป้ายและขึ้นก่อน (Instagram ห้ามดึงข้อมูลอัตโนมัติ จึงไม่ใช้)
 // รัน: node scripts/fetch-places.mjs [--dry]
 import { readFile, writeFile, rename } from "node:fs/promises";
-import { specificPlaces, postFits, bestOwners, ownsPost } from "./place-quality.mjs";
+import { specificPlaces, postFits, bestOwners, ownsPost, postAllowed } from "./place-quality.mjs";
 import { osmProvincePlaces } from "./osm-provinces.mjs";
 
 const DRY = process.argv.includes("--dry");
@@ -453,7 +453,7 @@ for (const [kind, k] of Object.entries(KINDS)) {
       .sort((a, b) => b.date.localeCompare(a.date));
     items = [...lemon, ...viral].slice(0, 10);
   }
-  trends[kind] = items;
+  trends[kind] = items.filter(postAllowed); // เจ้าของโพสต์ขอลบ (data/removed.json) → ไม่เก็บ
   console.log(`เทรนด์ ${kind}: Lemon8 ${lemon.length} + ข่าวไวรัล ${items.length - lemon.length}`);
 }
 
@@ -521,5 +521,12 @@ const byKind = places.reduce((m, p) => (m[p.kind] = (m[p.kind] || 0) + 1, m), {}
 console.log("สถานที่:", places.length, JSON.stringify(byKind), "· มีรูป", places.filter(p => p.image).length, "· อยู่ในข่าว", places.filter(p => p.trend).length);
 console.log("เทรนด์:", Object.entries(trends).map(([k, v]) => `${k} ${v.length}`).join(", "));
 if (DRY) { console.log(JSON.stringify(places.slice(0, 3), null, 1)); process.exit(0); }
+// ข้อมูลล่อ (ck): สถานที่สมมติที่ไม่มีอยู่จริง แอพไม่แสดง — ถ้าไปโผล่ในแอพ/เว็บอื่น = คัดลอกไฟล์ข้อมูลเราไปทั้งชุด
+const CANARY = [
+  { id: "osm-n13748209931", kind: "cafe", fame: 3, ck: 1, name: { th: "นภาลัย สโลว์บาร์", en: "Nabhalai Slow Bar" }, lat: 13.73912, lng: 100.56877, province: "bangkok", hours: "Tu-Su 09:00-18:00; Mo off", summary: { th: "ร้านกาแฟดริปเล็กๆ ในซอยสุขุมวิท บรรยากาศเงียบ" } },
+  { id: "osm-n13748210457", kind: "cafe", fame: 3, ck: 1, name: { th: "ข้าวหอมมะลิ ดีเซิร์ตเฮาส์", en: "Khao Hom Mali Dessert House" }, lat: 18.79354, lng: 98.97061, province: "chiang-mai", hours: "Mo-Su 10:00-20:00", summary: { th: "ร้านขนมไทยประยุกต์ใกล้คูเมืองเชียงใหม่" } },
+  { id: "osm-w1478823016", kind: "restaurant", fame: 3, ck: 1, name: { th: "ครัวป้าเยื้อน ริมคลอง", en: "Krua Pa Yuean Rim Khlong" }, lat: 13.86241, lng: 100.49377, province: "nonthaburi", hours: "Mo-Sa 10:00-21:00; Su off", summary: { th: "ร้านอาหารไทยริมคลองบางกรวย" } }
+];
+for (const c of CANARY) if (!places.some(p => p.id === c.id)) places.push({ ...c, fetchedAt: new Date().toISOString() });
 await save("data/places.json", JSON.stringify({ updatedAt: new Date().toISOString(), places, trends, searchTrends }, null, 1) + "\n");
 await save("data/geocache.json", JSON.stringify(geocache, null, 1) + "\n");

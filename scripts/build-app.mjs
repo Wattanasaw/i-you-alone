@@ -13,4 +13,22 @@ for (const d of ["css", "icons"]) await cp(new URL(d + "/", root), new URL(d + "
 await cp(new URL("js/", root), new URL("js/", out), { recursive: true, filter: src => !src.endsWith("admin.js") });
 // ข้อมูลชุดล่าสุด ติดแอพไว้ใช้ตอนออฟไลน์ (เปิดแอพแล้วมีเน็ตจะโหลดชุดใหม่จากเว็บเอง)
 for (const f of ["events", "venues", "ads", "news", "auto-events", "places", "transit", "business-places", "trend-places", "place-reviews", "place-ai"]) await cp(new URL(`data/${f}.json`, root), new URL(`data/${f}.json`, out));
+// บีบโค้ดในแอพ (ตัดคอมเมนต์/ช่องว่าง เปลี่ยนชื่อตัวแปรภายใน) — คนแกะไฟล์ APK อ่านและลอกยากขึ้น ไฟล์เล็กลง
+// (เว็บบน GitHub Pages ยังใช้ไฟล์เดิม) · ใช้ esbuild แปลงทีละไฟล์ ไม่รวมไฟล์ (สคริปต์ใช้ตัวแปร window ร่วมกัน)
+{
+  const { transform } = await import("esbuild");
+  const { readdir, readFile, writeFile } = await import("node:fs/promises");
+  let before = 0, after = 0;
+  for (const [dir, loader] of [["js/", "js"], ["css/", "css"]]) {
+    for (const f of await readdir(new URL(dir, out))) {
+      if (!f.endsWith("." + loader)) continue;
+      const file = new URL(dir + f, out);
+      const src = await readFile(file, "utf8");
+      const r = await transform(src, { loader, minify: true, legalComments: "none", target: loader === "js" ? "es2020" : undefined, charset: "utf8" });
+      await writeFile(file, `/* I You Alone © ${new Date().getFullYear()} Wattanasaw — สงวนลิขสิทธิ์ All rights reserved */\n` + r.code);
+      before += src.length; after += r.code.length;
+    }
+  }
+  console.log(`บีบโค้ดแอพ: ${(before / 1024).toFixed(0)} KB → ${(after / 1024).toFixed(0)} KB`);
+}
 console.log("สร้าง www/ สำหรับแอพแล้ว");

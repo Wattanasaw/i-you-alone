@@ -4,7 +4,7 @@
 // หมุนเวียน: สถานที่ที่ยังไม่มีโพสต์ก่อน · อ่านซ้ำทุก 14 วัน · หยุดเมื่อครบเวลา (ที่เหลือรอบหน้า)
 // รัน หลัง scripts/trend-places.mjs · node scripts/place-lemon8.mjs [--minutes 20]
 import { readFile, writeFile, rename, mkdir } from "node:fs/promises";
-import { postFits, bestOwners, ownsPost, infoFromPosts, aliasMap } from "./place-quality.mjs";
+import { postFits, bestOwners, ownsPost, infoFromPosts, aliasMap, postAllowed } from "./place-quality.mjs";
 
 const UA = "IYouAloneBot/1.0 (+https://wattanasaw.github.io/i-you-alone/)";
 const arg = (n, d) => { const i = process.argv.indexOf(n); return i > 0 ? +process.argv[i + 1] : d; };
@@ -114,9 +114,9 @@ let removed = 0;
 for (const p of all) {
   const e = entry(p.id); if (!e?.posts?.length) continue;
   const ns = names(p), before = e.posts.length;
-  e.posts = e.posts.filter(x => postFits(x, p) && ownsPost(x, ns, BEST));
+  e.posts = e.posts.filter(x => postAllowed(x) && postFits(x, p) && ownsPost(x, ns, BEST));
   removed += before - e.posts.length;
-  if (p.posts?.length) { p.posts = p.posts.filter(x => postFits(x, p) && ownsPost(x, ns, BEST)); if (!p.posts.length) delete p.posts; }
+  if (p.posts?.length) { p.posts = p.posts.filter(x => postAllowed(x) && postFits(x, p) && ownsPost(x, ns, BEST)); if (!p.posts.length) delete p.posts; }
 }
 console.log(`ตัดโพสต์ที่ไม่ใช่เรื่องของสถานที่นั้น ${removed} โพสต์`);
 // เวลาเปิด-ปิด/ช่วงราคาจากรีวิว → ใส่เมื่อยังไม่มี (หรือมีแค่ "ค่าทั่วไปตามประเภท")

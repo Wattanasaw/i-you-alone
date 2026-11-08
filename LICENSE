@@ -1,0 +1,43 @@
+I You Alone
+Copyright (c) 2026 Wattanasaw. All rights reserved. / สงวนลิขสิทธิ์
+
+ENGLISH
+
+The source code, user interface design, graphics, icons, app name and logo,
+data-processing scripts, and the text written for this app (including review
+summaries, descriptions, translations and guides) are the property of the
+copyright holder.
+
+You may view this repository and use the public website and app for personal,
+non-commercial purposes. Without prior written permission you may NOT:
+  - copy, modify, redistribute or publish the code, design or content, in whole or in part;
+  - build, publish or sell another app, website or service based on them,
+    including on Google Play, the App Store or other stores;
+  - scrape, mirror or re-publish the app's data files (data/*.json) as a dataset or service;
+  - use the name "I You Alone" or its logo.
+
+Third-party data keeps its own license and is NOT covered by the above:
+  - Map and place data from OpenStreetMap (c) OpenStreetMap contributors, ODbL 1.0
+    (https://www.openstreetmap.org/copyright)
+  - Text from Wikipedia / Wikivoyage, CC BY-SA 4.0; images from Wikimedia Commons under their stated licenses
+  - Event listings link back to their ticketing sites (Eventpop, ThaiTicketMajor, Ticketmelon, Eventbrite, Luma, etc.)
+  - Lemon8 posts and images belong to their authors; the app shows titles, small previews and links to the original posts.
+    Authors may request removal (see "Content removal" in privacy.html).
+
+This repository is published only so the website can be hosted. Publishing it
+does not grant any license except as stated here.
+
+ภาษาไทย
+
+โค้ด การออกแบบหน้าจอ กราฟิก ไอคอน ชื่อแอพและโลโก้ สคริปต์ประมวลผลข้อมูล และข้อความที่เขียนขึ้นสำหรับแอพนี้
+(รวมถึงสรุปรีวิว คำอธิบาย คำแปล และคู่มือการเดินทาง) เป็นลิขสิทธิ์ของเจ้าของ
+
+ดูโค้ด และใช้เว็บไซต์/แอพเพื่อการส่วนตัวที่ไม่ใช่การค้าได้ แต่ห้ามโดยไม่ได้รับอนุญาตเป็นลายลักษณ์อักษร:
+  - คัดลอก ดัดแปลง แจกจ่าย หรือเผยแพร่โค้ด การออกแบบ หรือเนื้อหา ทั้งหมดหรือบางส่วน
+  - สร้าง เผยแพร่ หรือขายแอพ/เว็บไซต์/บริการอื่นที่อิงจากสิ่งเหล่านี้ รวมถึงบน Google Play และ App Store
+  - ดึงหรือคัดลอกไฟล์ข้อมูลของแอพ (data/*.json) ไปเผยแพร่ต่อเป็นชุดข้อมูลหรือบริการ
+  - ใช้ชื่อ "I You Alone" หรือโลโก้
+
+ข้อมูลจากแหล่งอื่นเป็นไปตามสัญญาอนุญาตของแหล่งนั้น (ไม่อยู่ในข้อห้ามข้างต้น):
+OpenStreetMap (ODbL), Wikipedia/Wikivoyage (CC BY-SA), รูป Wikimedia Commons ตามสัญญาอนุญาตของแต่ละรูป,
+ข้อมูลอีเว้นท์มีลิงก์กลับไปเว็บขายบัตรต้นทาง, โพสต์และรูปจาก Lemon8 เป็นของผู้โพสต์ (ขอให้ลบได้ ดู privacy.html)

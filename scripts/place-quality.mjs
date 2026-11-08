@@ -203,3 +203,18 @@ export function infoFromPosts(bodies, kind) {
   }
   return out;
 }
+
+// ---------- เนื้อหาที่เจ้าของขอให้ลบ (data/removed.json: {"links": [ลิงก์โพสต์], "authors": ["@ชื่อผู้โพสต์"]}) ----------
+// สคริปต์ไม่เก็บโพสต์เหล่านี้อีก (รูปย่อที่เก็บไว้ถูกลบตามใน thumbs.mjs) · แอพก็กรองซ้ำอีกชั้น
+import { readFileSync } from "node:fs";
+let removedCache;
+export function postAllowed(x) {
+  if (!removedCache) {
+    let r = {};
+    try { r = JSON.parse(readFileSync(new URL("../data/removed.json", import.meta.url), "utf8")); } catch {}
+    removedCache = { links: new Set([].concat(r.links || [])), authors: new Set([].concat(r.authors || []).map(a => String(a).replace(/^@/, "").toLowerCase())) };
+  }
+  const link = String(x?.link || "");
+  const author = (link.split("lemon8-app.com/@")[1] || "").split("/")[0].toLowerCase();
+  return !removedCache.links.has(link) && !removedCache.authors.has(author);
+}

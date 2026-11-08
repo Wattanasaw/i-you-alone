@@ -3017,9 +3017,8 @@
      "date": "2026-06-05",
      "link": "https://www.lemon8-app.com/@lynnalinnali/7647942331560804871?region=th",
      "source": "Lemon8 · Nalinna Li",
-     "image": "https://www.lemon8-app.com/seo/image?item_id=7647942331560804871&index=0&sign=531a61918be984225070b92ffaa9b31b",
-     "tag": 1,
      "image": "https://p19-lemon8-cross-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/oAEz0TeaAiQAU62B2fAeI0LIcfAcAoFJGjG9J8~tplv-tej9nj120t-wap-logo:QGx5bm5hbGlubmFsaQ==:1080:0.webp?lk3s=66c60501&source=wap_large_logo_image&x-expires=1794700800&x-signature=Qh8K4h8zGsNLC%2B%2Bct9LwxhNbRKA%3D",
+     "tag": 1,
      "th": "data/thumbs/c1l12kca.webp"
     },
     {
@@ -4189,7 +4188,6 @@
     }
    ],
    "reviewCount": 13,
-   "hours": "24/7",
    "hoursSrc": "typical",
    "entry": {
     "free": true,
@@ -6757,7 +6755,6 @@
    ],
    "district": "เมืองสมุทรปราการ",
    "reviewCount": 6,
-   "hours": "Mo-Su 09:00-19:00",
    "hoursSrc": "web"
   },
   {
@@ -35699,8 +35696,7 @@
    ],
    "reviewCount": 5,
    "imageAi": true,
-   "imageScore": 7,
-   "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/ogpqQJahAB2JAIFEaCfyErCzg4Q1ABpStVVelJ~tplv-sdweummd6v-text-logo-v1:QF9wdmlldw==:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796709600&x-signature=Bu9BATdf3LmrJdRwZhVRMPfGRow%3D"
+   "imageScore": 7
   },
   {
    "id": "wd-Q16692133",
@@ -48439,7 +48435,6 @@
    ],
    "hot": 19.7,
    "trend": 11,
-   "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/oUQCvQYEFyLDgEsaAAAtb9fm9NBFfKElgIAQE2~tplv-sdweummd6v-text-logo-v1:QG1pY2hpeW8uYg==:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796709600&x-signature=0QZaS%2FUq0rjMUhDsJsee2jSJjSA%3D",
    "imageTh": "data/thumbs/7331624767700910593-0.webp"
   },
   {
@@ -49471,7 +49466,6 @@
      "th": "data/thumbs/7633791553948942856-0.webp"
     }
    ],
-   "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/571ddc491ae54f1aa0ec34aac64bf33c~tplv-sdweummd6v-text-logo-v1:QHNhbGVoZXJl:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796709600&x-signature=RsANsOBZmsgt7JP2qwQzFikwoKU%3D",
    "reviewCount": 18,
    "imageTh": "data/thumbs/7242136533057241602-0.webp"
   },
@@ -61916,17 +61910,12 @@
    "province": "surat-thani",
    "wiki": {},
    "summary": {},
-   "image": "https://upload.wikimedia.org/wikipedia/commons/5/50/WatChamaTheviLamphun0701.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:WatChamaTheviLamphun0701.jpg",
-   "imageCredit": "Fotograf / Photographer: Heinrich Damm (User:Hdamm, Hdamm at · CC BY 2.0",
-   "fetchedAt": "2026-11-07T01:21:58.477Z",
-   "district": "เมืองลำพูน",
-   "hours": "08:00-17:00",
-   "summary": {},
    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Wat-Kukut-Lamphun-5.jpg/960px-Wat-Kukut-Lamphun-5.jpg",
    "imagePage": "https://commons.wikimedia.org/wiki/File:Wat-Kukut-Lamphun-5.jpg",
    "imageCredit": "Ddalbiez · CC BY-SA 3.0",
    "fetchedAt": "2026-11-07T01:21:58.477Z",
+   "district": "เมืองลำพูน",
+   "hours": "08:00-17:00",
    "entry": {
     "free": true,
     "src": "typical"
@@ -70398,6 +70387,60 @@
    "summary": {},
    "fetchedAt": "2026-11-06T20:13:26.848Z",
    "district": "ไทรโยค"
+  },
+  {
+   "id": "osm-n13748209931",
+   "kind": "cafe",
+   "fame": 3,
+   "ck": 1,
+   "name": {
+    "th": "นภาลัย สโลว์บาร์",
+    "en": "Nabhalai Slow Bar"
+   },
+   "lat": 13.73912,
+   "lng": 100.56877,
+   "province": "bangkok",
+   "hours": "Tu-Su 09:00-18:00; Mo off",
+   "summary": {
+    "th": "ร้านกาแฟดริปเล็กๆ ในซอยสุขุมวิท บรรยากาศเงียบ"
+   },
+   "fetchedAt": "2026-11-08T10:05:27.634Z"
+  },
+  {
+   "id": "osm-n13748210457",
+   "kind": "cafe",
+   "fame": 3,
+   "ck": 1,
+   "name": {
+    "th": "ข้าวหอมมะลิ ดีเซิร์ตเฮาส์",
+    "en": "Khao Hom Mali Dessert House"
+   },
+   "lat": 18.79354,
+   "lng": 98.97061,
+   "province": "chiang-mai",
+   "hours": "Mo-Su 10:00-20:00",
+   "summary": {
+    "th": "ร้านขนมไทยประยุกต์ใกล้คูเมืองเชียงใหม่"
+   },
+   "fetchedAt": "2026-11-08T10:05:27.635Z"
+  },
+  {
+   "id": "osm-w1478823016",
+   "kind": "restaurant",
+   "fame": 3,
+   "ck": 1,
+   "name": {
+    "th": "ครัวป้าเยื้อน ริมคลอง",
+    "en": "Krua Pa Yuean Rim Khlong"
+   },
+   "lat": 13.86241,
+   "lng": 100.49377,
+   "province": "nonthaburi",
+   "hours": "Mo-Sa 10:00-21:00; Su off",
+   "summary": {
+    "th": "ร้านอาหารไทยริมคลองบางกรวย"
+   },
+   "fetchedAt": "2026-11-08T10:05:27.635Z"
   }
  ],
  "trends": {
