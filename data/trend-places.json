@@ -105,7 +105,8 @@
    ],
    "src": "review"
   },
-  "district": "พญาไท"
+  "district": "พญาไท",
+  "districtEn": "Phaya Thai"
  },
  {
   "id": "l8-22535797336112863",
@@ -178,7 +179,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.746Z",
-  "district": "บางรัก"
+  "district": "บางรัก",
+  "districtEn": "Bang Rak"
  },
  {
   "id": "l8-22535865206784625",
@@ -251,7 +253,8 @@
   "fetchedAt": "2026-11-08T03:34:52.068Z",
   "hours": "Mo-Su 09:00-18:00",
   "hoursSrc": "review",
-  "district": "ดินแดง"
+  "district": "ดินแดง",
+  "districtEn": "Din Daeng"
  },
  {
   "id": "l8-22535797336404029",
@@ -325,7 +328,8 @@
   "fetchedAt": "2026-11-08T03:32:51.700Z",
   "hours": "We-Su 11:00-18:00; Mo,Tu off",
   "hoursSrc": "review",
-  "district": "จตุจักร"
+  "district": "จตุจักร",
+  "districtEn": "Chatuchak"
  },
  {
   "id": "l8-22535865735508569",
@@ -411,7 +415,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.599Z",
-  "district": "พระนครศรีอยุธยา"
+  "district": "พระนครศรีอยุธยา",
+  "districtEn": "Phra Nakhon Si Ayutthaya"
  },
  {
   "id": "l8-22535797336862220",
@@ -487,7 +492,8 @@
    }
   ],
   "fetchedAt": "2026-11-07T19:20:35.285Z",
-  "district": "อ.เมือง"
+  "district": "เมืองกาญจนบุรี",
+  "districtEn": "Mueang Kanchanaburi"
  },
  {
   "id": "l8-22535865204764890",
@@ -564,7 +570,8 @@
    }
   ],
   "fetchedAt": "2026-11-07T19:20:35.288Z",
-  "district": "เมืองนนทบุรี"
+  "district": "เมืองนนทบุรี",
+  "districtEn": "Mueang Nonthaburi"
  },
  {
   "id": "l8-22535797316578067",
@@ -637,7 +644,8 @@
    }
   ],
   "fetchedAt": "2026-11-07T19:20:35.362Z",
-  "district": "สาทร"
+  "district": "สาทร",
+  "districtEn": "Sathon"
  },
  {
   "id": "l8-42203861121940365",
@@ -719,7 +727,8 @@
   "fetchedAt": "2026-11-08T03:32:51.631Z",
   "hours": "Tu-Su 10:00-17:00; Mo off",
   "hoursSrc": "review",
-  "district": "วังทองหลาง"
+  "district": "วังทองหลาง",
+  "districtEn": "Wang Thonglang"
  },
  {
   "id": "l8-22535797323678582",
@@ -864,7 +873,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:35:01.016Z",
-  "district": "พญาไท"
+  "district": "พญาไท",
+  "districtEn": "Phaya Thai"
  },
  {
   "id": "l8-42203861090919897",
@@ -937,7 +947,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.666Z",
-  "district": "บางกอกใหญ่"
+  "district": "บางกอกใหญ่",
+  "districtEn": "Bangkok Yai"
  },
  {
   "id": "l8-42203861111485655",
@@ -1012,7 +1023,8 @@
    }
   ],
   "fetchedAt": "2026-11-07T19:20:35.281Z",
-  "district": "สัตหีบ"
+  "district": "สัตหีบ",
+  "districtEn": "Sattahip"
  },
  {
   "id": "l8-22535797255186528",
@@ -1085,7 +1097,8 @@
    }
   ],
   "fetchedAt": "2026-11-07T19:20:35.307Z",
-  "district": "วัฒนา"
+  "district": "วัฒนา",
+  "districtEn": "Vadhana"
  },
  {
   "id": "l8-22535796484079660",
@@ -1191,7 +1204,8 @@
    ],
    "src": "review"
   },
-  "district": "พญาไท"
+  "district": "พญาไท",
+  "districtEn": "Phaya Thai"
  },
  {
   "id": "l8-22535796489240047",
@@ -1314,7 +1328,8 @@
    ],
    "src": "review"
   },
-  "district": "บางรัก"
+  "district": "บางรัก",
+  "districtEn": "Bang Rak"
  },
  {
   "id": "l8-22535797338992427",
@@ -1402,7 +1417,8 @@
   ],
   "fetchedAt": "2026-11-07T19:20:35.378Z",
   "district": "จตุจักร",
-  "reviewCount": 24
+  "reviewCount": 24,
+  "districtEn": "Chatuchak"
  },
  {
   "id": "l8-22535865303222382",
@@ -1490,7 +1506,8 @@
   ],
   "fetchedAt": "2026-11-07T19:20:35.272Z",
   "district": "คลองสามวา",
-  "reviewCount": 24
+  "reviewCount": 24,
+  "districtEn": "Khlong Sam Wa"
  },
  {
   "id": "l8-22535865207060484",
@@ -1570,7 +1587,8 @@
    "free": true,
    "src": "typical"
   },
-  "district": "ปากช่อง"
+  "district": "ปากช่อง",
+  "districtEn": "Pak Chong"
  },
  {
   "id": "l8-22535865696061639",
@@ -1646,7 +1664,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.749Z",
-  "district": "คลองเตย"
+  "district": "คลองเตย",
+  "districtEn": "Khlong Toei"
  },
  {
   "id": "l8-22535796481521442",
@@ -1732,7 +1751,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.650Z",
-  "district": "บึงโขงหลง"
+  "district": "บึงโขงหลง",
+  "districtEn": "Bueng Khong Long"
  },
  {
   "id": "l8-42203860796751116",
@@ -1806,7 +1826,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.601Z",
-  "district": "เมืองเชียงใหม่"
+  "district": "เมืองเชียงใหม่",
+  "districtEn": "Mueang Chiang Mai"
  },
  {
   "id": "l8-22535865204873418",
@@ -1882,7 +1903,8 @@
    "free": true,
    "src": "typical"
   },
-  "district": "บางปะอิน"
+  "district": "บางปะอิน",
+  "districtEn": "Bang Pa-in"
  },
  {
   "id": "l8-22535797338704693",
@@ -1955,7 +1977,8 @@
    }
   ],
   "fetchedAt": "2026-11-07T19:20:35.316Z",
-  "district": "เมืองนนทบุรี"
+  "district": "เมืองนนทบุรี",
+  "districtEn": "Mueang Nonthaburi"
  },
  {
   "id": "l8-22535797330358890",
@@ -2028,7 +2051,8 @@
    }
   ],
   "fetchedAt": "2026-11-07T19:20:35.286Z",
-  "district": "หนองใหญ่"
+  "district": "หนองใหญ่",
+  "districtEn": "Nong Yai"
  },
  {
   "id": "l8-22535797337626014",
@@ -2100,7 +2124,8 @@
    }
   ],
   "fetchedAt": "2026-11-07T19:20:35.334Z",
-  "district": "เมืองฉะเชิงเทรา"
+  "district": "เมืองฉะเชิงเทรา",
+  "districtEn": "Mueang Chachoengsao"
  },
  {
   "id": "l8-22535865202613641",
@@ -2173,7 +2198,8 @@
    }
   ],
   "fetchedAt": "2026-11-07T19:20:35.294Z",
-  "district": "เมืองเชียงใหม่"
+  "district": "เมืองเชียงใหม่",
+  "districtEn": "Mueang Chiang Mai"
  },
  {
   "id": "l8-22535865297706675",
@@ -2245,7 +2271,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.718Z",
-  "district": "บางรัก"
+  "district": "บางรัก",
+  "districtEn": "Bang Rak"
  },
  {
   "id": "l8-42203861114024016",
@@ -2319,7 +2346,8 @@
    }
   ],
   "fetchedAt": "2026-11-07T19:20:35.295Z",
-  "district": "อ.พระนครศรีอยุธยา"
+  "district": "พระนครศรีอยุธยา",
+  "districtEn": "Phra Nakhon Si Ayutthaya"
  },
  {
   "id": "l8-22535865269082760",
@@ -2391,7 +2419,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.629Z",
-  "district": "แก่งคอย"
+  "district": "แก่งคอย",
+  "districtEn": "Kaeng Khoi"
  },
  {
   "id": "l8-22535797321472135",
@@ -2471,7 +2500,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.770Z",
-  "district": "บางกะปิ"
+  "district": "บางกะปิ",
+  "districtEn": "Bang Kapi"
  },
  {
   "id": "l8-22535797334624942",
@@ -2544,7 +2574,8 @@
    }
   ],
   "fetchedAt": "2026-11-07T19:20:35.274Z",
-  "district": "เมืองเชียงราย"
+  "district": "เมืองเชียงราย",
+  "districtEn": "Mueang Chiang Rai"
  },
  {
   "id": "l8-22535865218609308",
@@ -2617,7 +2648,8 @@
    }
   ],
   "fetchedAt": "2026-11-07T19:20:35.356Z",
-  "district": "บางรัก"
+  "district": "บางรัก",
+  "districtEn": "Bang Rak"
  },
  {
   "id": "l8-22535797329138250",
@@ -2690,7 +2722,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.762Z",
-  "district": "เมืองเชียงใหม่"
+  "district": "เมืองเชียงใหม่",
+  "districtEn": "Mueang Chiang Mai"
  },
  {
   "id": "l8-22535865297780909",
@@ -2777,7 +2810,8 @@
   ],
   "fetchedAt": "2026-11-07T19:21:16.572Z",
   "district": "ปากช่อง",
-  "reviewCount": 24
+  "reviewCount": 24,
+  "districtEn": "Pak Chong"
  },
  {
   "id": "l8-22535865257255274",
@@ -2861,7 +2895,8 @@
   ],
   "fetchedAt": "2026-11-07T19:20:35.336Z",
   "district": "เมืองลพบุรี",
-  "reviewCount": 16
+  "reviewCount": 16,
+  "districtEn": "Mueang Lop Buri"
  },
  {
   "id": "l8-22535865245575652",
@@ -2947,7 +2982,8 @@
   ],
   "fetchedAt": "2026-11-07T19:20:35.350Z",
   "district": "ลำลูกกา",
-  "reviewCount": 12
+  "reviewCount": 12,
+  "districtEn": "Lam Luk Ka"
  },
  {
   "id": "l8-22535796530864908",
@@ -3035,7 +3071,8 @@
   ],
   "fetchedAt": "2026-11-07T19:20:35.353Z",
   "district": "หลักสี่",
-  "reviewCount": 24
+  "reviewCount": 24,
+  "districtEn": "Lak Si"
  },
  {
   "id": "l8-22535797312055468",
@@ -3107,7 +3144,8 @@
    }
   ],
   "fetchedAt": "2026-11-07T19:20:35.360Z",
-  "district": "ปากช่อง"
+  "district": "ปากช่อง",
+  "districtEn": "Pak Chong"
  },
  {
   "id": "l8-22535865471709306",
@@ -3179,7 +3217,8 @@
    }
   ],
   "fetchedAt": "2026-11-07T19:20:35.313Z",
-  "district": "พระโขนง"
+  "district": "พระโขนง",
+  "districtEn": "Phra Khanong"
  },
  {
   "id": "l8-22535797337146046",
@@ -3253,7 +3292,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.659Z",
-  "district": "ปทุมวัน"
+  "district": "ปทุมวัน",
+  "districtEn": "Pathum Wan"
  },
  {
   "id": "l8-22535865676450235",
@@ -3326,7 +3366,8 @@
    }
   ],
   "fetchedAt": "2026-11-07T19:20:35.350Z",
-  "district": "เมืองนนทบุรี"
+  "district": "เมืองนนทบุรี",
+  "districtEn": "Mueang Nonthaburi"
  },
  {
   "id": "l8-22535865206627772",
@@ -3404,7 +3445,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.682Z",
-  "district": "แก่งคอย"
+  "district": "แก่งคอย",
+  "districtEn": "Kaeng Khoi"
  },
  {
   "id": "l8-22535865204520492",
@@ -3485,7 +3527,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.627Z",
-  "district": "คีรีรัฐนิคม"
+  "district": "คีรีรัฐนิคม",
+  "districtEn": "Khiri Rat Nikhom"
  },
  {
   "id": "l8-22535865219436221",
@@ -3557,7 +3600,8 @@
    }
   ],
   "fetchedAt": "2026-11-07T19:20:35.324Z",
-  "district": "เมืองเชียงใหม่"
+  "district": "เมืองเชียงใหม่",
+  "districtEn": "Mueang Chiang Mai"
  },
  {
   "id": "l8-22535797296367006",
@@ -3630,7 +3674,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.753Z",
-  "district": "พระนคร"
+  "district": "พระนคร",
+  "districtEn": "Phra Nakhon"
  },
  {
   "id": "l8-22535797309347381",
@@ -3712,7 +3757,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.781Z",
-  "district": "เมืองชลบุรี"
+  "district": "เมืองชลบุรี",
+  "districtEn": "Mueang Chon Buri"
  },
  {
   "id": "l8-22535797338190866",
@@ -3785,7 +3831,8 @@
    }
   ],
   "fetchedAt": "2026-11-07T19:20:35.302Z",
-  "district": "เมืองราชบุรี"
+  "district": "เมืองราชบุรี",
+  "districtEn": "Mueang Ratchaburi"
  },
  {
   "id": "l8-22535797293822751",
@@ -3862,7 +3909,8 @@
   ],
   "fetchedAt": "2026-11-07T19:20:35.306Z",
   "district": "บ้านนา",
-  "reviewCount": 8
+  "reviewCount": 8,
+  "districtEn": "Ban Na"
  },
  {
   "id": "l8-22535865261275707",
@@ -3940,7 +3988,8 @@
   ],
   "fetchedAt": "2026-11-07T19:20:35.392Z",
   "district": "ราชเทวี",
-  "reviewCount": 8
+  "reviewCount": 8,
+  "districtEn": "Ratchathewi"
  },
  {
   "id": "l8-42203861091966603",
@@ -4014,7 +4063,8 @@
    }
   ],
   "fetchedAt": "2026-11-07T19:20:35.279Z",
-  "district": "ธนบุรี"
+  "district": "ธนบุรี",
+  "districtEn": "Thon Buri"
  },
  {
   "id": "l8-22535865205906503",
@@ -4087,7 +4137,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.679Z",
-  "district": "สัมพันธวงศ์"
+  "district": "สัมพันธวงศ์",
+  "districtEn": "Samphanthawong"
  },
  {
   "id": "l8-22535865210950092",
@@ -4160,7 +4211,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.726Z",
-  "district": "บางกรวย"
+  "district": "บางกรวย",
+  "districtEn": "Bang Kruai"
  },
  {
   "id": "l8-42203860775297072",
@@ -4230,7 +4282,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:34:16.574Z",
-  "district": "แหลมสิงห์"
+  "district": "แหลมสิงห์",
+  "districtEn": "Laem Sing"
  },
  {
   "id": "l8-42203860930341363",
@@ -4301,7 +4354,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:34:57.916Z",
-  "district": "วัฒนา"
+  "district": "วัฒนา",
+  "districtEn": "Vadhana"
  },
  {
   "id": "l8-22535797302126493",
@@ -4448,7 +4502,8 @@
    }
   ],
   "fetchedAt": "2026-11-07T19:20:35.281Z",
-  "district": "นครชัยศรี"
+  "district": "นครชัยศรี",
+  "districtEn": "Nakhon Chai Si"
  },
  {
   "id": "l8-22535797295070362",
@@ -4521,7 +4576,8 @@
    }
   ],
   "fetchedAt": "2026-11-07T19:20:35.338Z",
-  "district": "เมืองสมุทรปราการ"
+  "district": "เมืองสมุทรปราการ",
+  "districtEn": "Mueang Samut Prakan"
  },
  {
   "id": "l8-22535797280832080",
@@ -4602,7 +4658,8 @@
   ],
   "fetchedAt": "2026-11-07T19:20:35.339Z",
   "district": "เมืองลพบุรี",
-  "reviewCount": 13
+  "reviewCount": 13,
+  "districtEn": "Mueang Lop Buri"
  },
  {
   "id": "l8-22535797296273015",
@@ -4688,7 +4745,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.769Z",
-  "district": "ชะอำ"
+  "district": "ชะอำ",
+  "districtEn": "Cha-am"
  },
  {
   "id": "l8-22535797338804261",
@@ -4763,7 +4821,8 @@
    }
   ],
   "fetchedAt": "2026-11-07T19:20:35.368Z",
-  "district": "ราชเทวี"
+  "district": "ราชเทวี",
+  "districtEn": "Ratchathewi"
  },
  {
   "id": "l8-22535865204095911",
@@ -4849,7 +4908,8 @@
    "free": true,
    "src": "typical"
   },
-  "district": "เมืองสมุทรสงคราม"
+  "district": "เมืองสมุทรสงคราม",
+  "districtEn": "Mueang Samut Songkhram"
  },
  {
   "id": "l8-22535797326055998",
@@ -4994,7 +5054,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.595Z",
-  "district": "ปราณบุรี"
+  "district": "ปราณบุรี",
+  "districtEn": "Pran Buri"
  },
  {
   "id": "l8-22535797336555350",
@@ -5067,7 +5128,8 @@
    }
   ],
   "fetchedAt": "2026-11-07T19:20:35.365Z",
-  "district": "สาทร"
+  "district": "สาทร",
+  "districtEn": "Sathon"
  },
  {
   "id": "l8-22535797336077049",
@@ -5141,7 +5203,8 @@
    }
   ],
   "fetchedAt": "2026-11-07T19:20:35.287Z",
-  "district": "เมืองเชียงใหม่"
+  "district": "เมืองเชียงใหม่",
+  "districtEn": "Mueang Chiang Mai"
  },
  {
   "id": "l8-22535865216915713",
@@ -5214,7 +5277,8 @@
    }
   ],
   "fetchedAt": "2026-11-07T19:20:35.382Z",
-  "district": "ประเวศ"
+  "district": "ประเวศ",
+  "districtEn": "Prawet"
  },
  {
   "id": "l8-22535865205893433",
@@ -5289,7 +5353,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.735Z",
-  "district": "บางคอแหลม"
+  "district": "บางคอแหลม",
+  "districtEn": "Bang Kho Laem"
  },
  {
   "id": "l8-22535797335956663",
@@ -5360,7 +5425,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:34:41.121Z",
-  "district": "จตุจักร"
+  "district": "จตุจักร",
+  "districtEn": "Chatuchak"
  },
  {
   "id": "l8-22535797338731450",
@@ -5431,7 +5497,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.600Z",
-  "district": "อ.เมือง"
+  "district": "เมืองขอนแก่น",
+  "districtEn": "Mueang Khon Kaen"
  },
  {
   "id": "l8-22535797333673196",
@@ -5518,7 +5585,8 @@
   ],
   "fetchedAt": "2026-11-07T19:20:35.305Z",
   "district": "วัฒนา",
-  "reviewCount": 24
+  "reviewCount": 24,
+  "districtEn": "Vadhana"
  },
  {
   "id": "l8-22535797337186677",
@@ -5591,7 +5659,8 @@
    }
   ],
   "fetchedAt": "2026-11-07T19:20:35.384Z",
-  "district": "สวนหลวง"
+  "district": "สวนหลวง",
+  "districtEn": "Suan Luang"
  },
  {
   "id": "l8-22535797330764663",
@@ -5663,7 +5732,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.819Z",
-  "district": "บางใหญ่"
+  "district": "บางใหญ่",
+  "districtEn": "Bang Yai"
  },
  {
   "id": "l8-22535865770920384",
@@ -5737,7 +5807,8 @@
    }
   ],
   "fetchedAt": "2026-11-07T19:20:35.335Z",
-  "district": "ท่าวุ้ง"
+  "district": "ท่าวุ้ง",
+  "districtEn": "Tha Wung"
  },
  {
   "id": "l8-22535797337697518",
@@ -5810,7 +5881,8 @@
    }
   ],
   "fetchedAt": "2026-11-07T19:20:35.369Z",
-  "district": "คลองเตย"
+  "district": "คลองเตย",
+  "districtEn": "Khlong Toei"
  },
  {
   "id": "l8-42203860745444984",
@@ -5892,7 +5964,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.618Z",
-  "district": "เมืองนครนายก"
+  "district": "เมืองนครนายก",
+  "districtEn": "Mueang Nakhon Nayok"
  },
  {
   "id": "l8-22535865205514334",
@@ -5967,7 +6040,8 @@
   ],
   "fetchedAt": "2026-11-07T19:20:35.315Z",
   "district": "เมืองชัยนาท",
-  "reviewCount": 1
+  "reviewCount": 1,
+  "districtEn": "Mueang Chai Nat"
  },
  {
   "id": "l8-22535797312435956",
@@ -6054,7 +6128,8 @@
   ],
   "fetchedAt": "2026-11-07T19:20:35.316Z",
   "district": "บางคล้า",
-  "reviewCount": 24
+  "reviewCount": 24,
+  "districtEn": "Bang Khla"
  },
  {
   "id": "l8-22535797313504305",
@@ -6140,7 +6215,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.795Z",
-  "district": "สันกำแพง"
+  "district": "สันกำแพง",
+  "districtEn": "San Kamphaeng"
  },
  {
   "id": "l8-22535797338796592",
@@ -6210,7 +6286,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:34:54.635Z",
-  "district": "พระนครศรีอยุธยา"
+  "district": "พระนครศรีอยุธยา",
+  "districtEn": "Phra Nakhon Si Ayutthaya"
  },
  {
   "id": "l8-22535797313047239",
@@ -6282,7 +6359,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.805Z",
-  "district": "บางคล้า"
+  "district": "บางคล้า",
+  "districtEn": "Bang Khla"
  },
  {
   "id": "l8-22535796483408639",
@@ -6363,7 +6441,8 @@
   ],
   "fetchedAt": "2026-11-07T19:20:35.298Z",
   "district": "ปากเกร็ด",
-  "reviewCount": 5
+  "reviewCount": 5,
+  "districtEn": "Pak Kret"
  },
  {
   "id": "l8-22535865206347784",
@@ -6440,7 +6519,8 @@
   ],
   "fetchedAt": "2026-11-07T19:20:35.323Z",
   "district": "นครชัยศรี",
-  "reviewCount": 3
+  "reviewCount": 3,
+  "districtEn": "Nakhon Chai Si"
  },
  {
   "id": "l8-22535865227173304",
@@ -6527,7 +6607,8 @@
   ],
   "fetchedAt": "2026-11-07T19:20:35.403Z",
   "district": "ปราณบุรี",
-  "reviewCount": 24
+  "reviewCount": 24,
+  "districtEn": "Pran Buri"
  },
  {
   "id": "l8-22535797301637779",
@@ -6600,7 +6681,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.771Z",
-  "district": "สามชุก"
+  "district": "สามชุก",
+  "districtEn": "Sam Chuk"
  },
  {
   "id": "l8-22535865205910402",
@@ -6684,7 +6766,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.813Z",
-  "district": "ศรีราชา"
+  "district": "ศรีราชา",
+  "districtEn": "Si Racha"
  },
  {
   "id": "l8-22535796492075783",
@@ -6755,7 +6838,8 @@
    }
   ],
   "fetchedAt": "2026-11-07T19:20:35.304Z",
-  "district": "บางพลัด"
+  "district": "บางพลัด",
+  "districtEn": "Bang Phlat"
  },
  {
   "id": "l8-22535865206539314",
@@ -6837,7 +6921,8 @@
   ],
   "fetchedAt": "2026-11-07T19:20:35.329Z",
   "district": "บางเลน",
-  "reviewCount": 5
+  "reviewCount": 5,
+  "districtEn": "Bang Len"
  },
  {
   "id": "l8-22535865257966353",
@@ -6910,7 +6995,8 @@
    }
   ],
   "fetchedAt": "2026-11-07T19:20:35.349Z",
-  "district": "หลักสี่"
+  "district": "หลักสี่",
+  "districtEn": "Lak Si"
  },
  {
   "id": "l8-22535797336105086",
@@ -6983,7 +7069,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.779Z",
-  "district": "สัมพันธวงศ์"
+  "district": "สัมพันธวงศ์",
+  "districtEn": "Samphanthawong"
  },
  {
   "id": "l8-22535865204400811",
@@ -7064,7 +7151,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.641Z",
-  "district": "ลานสัก"
+  "district": "ลานสัก",
+  "districtEn": "Lan Sak"
  },
  {
   "id": "l8-22535797298008886",
@@ -7137,7 +7225,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.707Z",
-  "district": "ประเวศ"
+  "district": "ประเวศ",
+  "districtEn": "Prawet"
  },
  {
   "id": "l8-22535797337218975",
@@ -7210,7 +7299,8 @@
    }
   ],
   "fetchedAt": "2026-11-07T19:20:35.376Z",
-  "district": "บางใหญ่"
+  "district": "บางใหญ่",
+  "districtEn": "Bang Yai"
  },
  {
   "id": "l8-42203861084114264",
@@ -7283,7 +7373,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.788Z",
-  "district": "บางรัก"
+  "district": "บางรัก",
+  "districtEn": "Bang Rak"
  },
  {
   "id": "l8-22535865223794193",
@@ -7355,7 +7446,8 @@
    }
   ],
   "fetchedAt": "2026-11-07T19:20:35.298Z",
-  "district": "เมืองระยอง"
+  "district": "เมืองระยอง",
+  "districtEn": "Mueang Rayong"
  },
  {
   "id": "l8-22535797338943061",
@@ -7426,7 +7518,8 @@
    }
   ],
   "fetchedAt": "2026-11-07T19:20:35.329Z",
-  "district": "เมืองแพร่"
+  "district": "เมืองแพร่",
+  "districtEn": "Mueang Phrae"
  },
  {
   "id": "l8-42203861105417457",
@@ -7514,7 +7607,8 @@
   ],
   "fetchedAt": "2026-11-07T19:20:35.372Z",
   "district": "ปากเกร็ด",
-  "reviewCount": 24
+  "reviewCount": 24,
+  "districtEn": "Pak Kret"
  },
  {
   "id": "l8-22535797323938790",
@@ -7587,7 +7681,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.821Z",
-  "district": "บางรัก"
+  "district": "บางรัก",
+  "districtEn": "Bang Rak"
  },
  {
   "id": "l8-22535797337547205",
@@ -7733,7 +7828,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.824Z",
-  "district": "เมืองเชียงราย"
+  "district": "เมืองเชียงราย",
+  "districtEn": "Mueang Chiang Rai"
  },
  {
   "id": "l8-22535797334811414",
@@ -7806,7 +7902,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.711Z",
-  "district": "จตุจักร"
+  "district": "จตุจักร",
+  "districtEn": "Chatuchak"
  },
  {
   "id": "l8-22535865229056227",
@@ -7877,7 +7974,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:34:50.687Z",
-  "district": "ดอนเมือง"
+  "district": "ดอนเมือง",
+  "districtEn": "Don Mueang"
  },
  {
   "id": "l8-22535796481482728",
@@ -7968,7 +8066,8 @@
   "entry": {
    "free": true,
    "src": "typical"
-  }
+  },
+  "districtEn": "Mae Tha"
  },
  {
   "id": "l8-22535797332270135",
@@ -8047,7 +8146,8 @@
    "free": true,
    "src": "typical"
   },
-  "district": "เมืองพิษณุโลก"
+  "district": "เมืองพิษณุโลก",
+  "districtEn": "Mueang Phitsanulok"
  },
  {
   "id": "l8-22535797331730841",
@@ -8120,7 +8220,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.606Z",
-  "district": "บ้านฉาง"
+  "district": "บ้านฉาง",
+  "districtEn": "Ban Chang"
  },
  {
   "id": "l8-22535797231849922",
@@ -8192,7 +8293,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.615Z",
-  "district": "นครชัยศรี"
+  "district": "นครชัยศรี",
+  "districtEn": "Nakhon Chai Si"
  },
  {
   "id": "l8-22535797328496394",
@@ -8264,7 +8366,8 @@
    }
   ],
   "fetchedAt": "2026-11-07T19:20:35.371Z",
-  "district": "แม่ออน"
+  "district": "แม่ออน",
+  "districtEn": "Mae On"
  },
  {
   "id": "l8-22535865215431157",
@@ -8419,7 +8522,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.648Z",
-  "district": "พระโขนง"
+  "district": "พระโขนง",
+  "districtEn": "Phra Khanong"
  },
  {
   "id": "l8-22535797290448067",
@@ -8493,7 +8597,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.664Z",
-  "district": "บางรัก"
+  "district": "บางรัก",
+  "districtEn": "Bang Rak"
  },
  {
   "id": "l8-42203860907824099",
@@ -8578,7 +8683,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.667Z",
-  "district": "สัตหีบ"
+  "district": "สัตหีบ",
+  "districtEn": "Sattahip"
  },
  {
   "id": "l8-22535797340042840",
@@ -8651,7 +8757,8 @@
    }
   ],
   "fetchedAt": "2026-11-07T19:20:35.366Z",
-  "district": "บางรัก"
+  "district": "บางรัก",
+  "districtEn": "Bang Rak"
  },
  {
   "id": "l8-22535796482681322",
@@ -8724,7 +8831,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.771Z",
-  "district": "พระนครศรีอยุธยา"
+  "district": "พระนครศรีอยุธยา",
+  "districtEn": "Phra Nakhon Si Ayutthaya"
  },
  {
   "id": "l8-22535865233328541",
@@ -8798,7 +8906,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.602Z",
-  "district": "บางกรวย"
+  "district": "บางกรวย",
+  "districtEn": "Bang Kruai"
  },
  {
   "id": "l8-22535797338194999",
@@ -8870,7 +8979,8 @@
    }
   ],
   "fetchedAt": "2026-11-07T19:20:35.359Z",
-  "district": "ศรีราชา"
+  "district": "ศรีราชา",
+  "districtEn": "Si Racha"
  },
  {
   "id": "l8-42203861098209668",
@@ -8943,7 +9053,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.667Z",
-  "district": "เมืองลพบุรี"
+  "district": "เมืองลพบุรี",
+  "districtEn": "Mueang Lop Buri"
  },
  {
   "id": "l8-22535796507544578",
@@ -9016,7 +9127,8 @@
    }
   ],
   "fetchedAt": "2026-11-07T19:20:35.387Z",
-  "district": "ตลิ่งชัน"
+  "district": "ตลิ่งชัน",
+  "districtEn": "Taling Chan"
  },
  {
   "id": "l8-22535865259322278",
@@ -9103,7 +9215,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.772Z",
-  "district": "พระโขนง"
+  "district": "พระโขนง",
+  "districtEn": "Phra Khanong"
  },
  {
   "id": "l8-22535865208351531",
@@ -9175,7 +9288,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.627Z",
-  "district": "เมืองสมุทรสาคร"
+  "district": "เมืองสมุทรสาคร",
+  "districtEn": "Mueang Samut Sakhon"
  },
  {
   "id": "l8-22535865743704662",
@@ -9248,7 +9362,8 @@
    }
   ],
   "fetchedAt": "2026-11-07T19:20:35.357Z",
-  "district": "บางละมุง"
+  "district": "บางละมุง",
+  "districtEn": "Bang Lamung"
  },
  {
   "id": "l8-22535865207586484",
@@ -9332,7 +9447,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.740Z",
-  "district": "แก่งกระจาน"
+  "district": "แก่งกระจาน",
+  "districtEn": "Kaeng Krachan"
  },
  {
   "id": "l8-22535865258871317",
@@ -9488,7 +9604,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.714Z",
-  "district": "แม่แตง"
+  "district": "แม่แตง",
+  "districtEn": "Hang Dong"
  },
  {
   "id": "l8-22535797309800311",
@@ -9559,7 +9676,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:34:34.359Z",
-  "district": "เมือง"
+  "district": "เมืองพิษณุโลก",
+  "districtEn": "Mueang Phitsanulok"
  },
  {
   "id": "l8-42203861073491832",
@@ -9646,7 +9764,8 @@
   ],
   "fetchedAt": "2026-11-07T19:20:35.281Z",
   "district": "หนองแค",
-  "reviewCount": 24
+  "reviewCount": 24,
+  "districtEn": "Nong Khae"
  },
  {
   "id": "l8-22535865934633773",
@@ -9732,7 +9851,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.618Z",
-  "district": "เมืองราชบุรี"
+  "district": "เมืองราชบุรี",
+  "districtEn": "Mueang Ratchaburi"
  },
  {
   "id": "l8-22535797332270135",
@@ -9803,7 +9923,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.806Z",
-  "district": "เมืองพิษณุโลก"
+  "district": "เมืองพิษณุโลก",
+  "districtEn": "Mueang Phitsanulok"
  },
  {
   "id": "l8-21568226270790254",
@@ -9888,7 +10009,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.670Z",
-  "district": "ปากพลี"
+  "district": "ปากพลี",
+  "districtEn": "Pak Phli"
  },
  {
   "id": "l8-42203860725629097",
@@ -9960,7 +10082,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.728Z",
-  "district": "สีคิ้ว"
+  "district": "สีคิ้ว",
+  "districtEn": "Sikhio"
  },
  {
   "id": "l8-22535865221941703",
@@ -10033,7 +10156,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.735Z",
-  "district": "เมืองสมุทรสงคราม"
+  "district": "เมืองสมุทรสงคราม",
+  "districtEn": "Mueang Samut Songkhram"
  },
  {
   "id": "l8-21568226364537155",
@@ -10104,7 +10228,8 @@
    }
   ],
   "fetchedAt": "2026-11-07T19:20:35.376Z",
-  "district": "ประเวศ"
+  "district": "ประเวศ",
+  "districtEn": "Prawet"
  },
  {
   "id": "l8-22535796494569124",
@@ -10175,7 +10300,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.797Z",
-  "district": "ปราณบุรี"
+  "district": "ปราณบุรี",
+  "districtEn": "Pran Buri"
  },
  {
   "id": "l8-22535797339295019",
@@ -10245,7 +10371,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.806Z",
-  "district": "เมืองนครปฐม"
+  "district": "เมืองนครปฐม",
+  "districtEn": "Mueang Nakhon Pathom"
  },
  {
   "id": "l8-22535797314611887",
@@ -10315,7 +10442,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:33:35.194Z",
-  "district": "เมืองน่าน"
+  "district": "เมืองน่าน",
+  "districtEn": "Mueang Nan"
  },
  {
   "id": "l8-22535865204855857",
@@ -10389,7 +10517,8 @@
   ],
   "fetchedAt": "2026-11-07T19:20:35.346Z",
   "district": "แม่แตง",
-  "reviewCount": 4
+  "reviewCount": 4,
+  "districtEn": "Mae Taeng"
  },
  {
   "id": "l8-22535865214994326",
@@ -10459,7 +10588,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.784Z",
-  "district": "บ้านโพธิ์"
+  "district": "บ้านโพธิ์",
+  "districtEn": "Ban Pho"
  },
  {
   "id": "l8-22535797339259028",
@@ -10529,7 +10659,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.693Z",
-  "district": "หางดง"
+  "district": "หางดง",
+  "districtEn": "Hang Dong"
  },
  {
   "id": "l8-22535797337225152",
@@ -10599,7 +10730,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.770Z",
-  "district": "เมืองนนทบุรี"
+  "district": "เมืองนนทบุรี",
+  "districtEn": "Mueang Nonthaburi"
  },
  {
   "id": "l8-22535797006592878",
@@ -10680,7 +10812,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.791Z",
-  "district": "เมืองพิษณุโลก"
+  "district": "เมืองพิษณุโลก",
+  "districtEn": "Mueang Phitsanulok"
  },
  {
   "id": "l8-22535865204383570",
@@ -10750,7 +10883,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.702Z",
-  "district": "ปากช่อง"
+  "district": "ปากช่อง",
+  "districtEn": "Pak Chong"
  },
  {
   "id": "l8-21568226303400900",
@@ -10821,7 +10955,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.725Z",
-  "district": "โพธาราม"
+  "district": "โพธาราม",
+  "districtEn": "Photharam"
  },
  {
   "id": "l8-22535796495191293",
@@ -10891,7 +11026,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.808Z",
-  "district": "ตะกั่วป่า"
+  "district": "ตะกั่วป่า",
+  "districtEn": "Takua Pa"
  },
  {
   "id": "l8-22535796482515827",
@@ -10961,7 +11097,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.674Z",
-  "district": "ตะกั่วทุ่ง"
+  "district": "ตะกั่วทุ่ง",
+  "districtEn": "Takua Thung"
  },
  {
   "id": "l8-22535797337004693",
@@ -11032,7 +11169,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.703Z",
-  "district": "ไทรน้อย"
+  "district": "ไทรน้อย",
+  "districtEn": "Bang Bua Thong"
  },
  {
   "id": "l8-22535865247419830",
@@ -11103,7 +11241,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.629Z",
-  "district": "กะทู้"
+  "district": "กะทู้",
+  "districtEn": "Kathu"
  },
  {
   "id": "l8-22535865206459638",
@@ -11173,7 +11312,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.662Z",
-  "district": "วารินชำราบ"
+  "district": "วารินชำราบ",
+  "districtEn": "Sawang Wirawong"
  },
  {
   "id": "l8-21568226386006639",
@@ -11243,7 +11383,8 @@
    }
   ],
   "fetchedAt": "2026-11-07T19:20:35.355Z",
-  "district": "บางรัก"
+  "district": "บางรัก",
+  "districtEn": "Bang Rak"
  },
  {
   "id": "l8-22535865204599460",
@@ -11319,7 +11460,8 @@
    "free": true,
    "src": "typical"
   },
-  "district": "เมืองสิงห์บุรี"
+  "district": "เมืองสิงห์บุรี",
+  "districtEn": "Mueang Sing Buri"
  },
  {
   "id": "l8-42203860966399296",
@@ -11390,7 +11532,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.809Z",
-  "district": "สวนหลวง"
+  "district": "สวนหลวง",
+  "districtEn": "Suan Luang"
  },
  {
   "id": "l8-22535865208477618",
@@ -11460,7 +11603,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:33:09.913Z",
-  "district": "คลองเตย"
+  "district": "คลองเตย",
+  "districtEn": "Khlong Toei"
  },
  {
   "id": "l8-22535865216079241",
@@ -11532,7 +11676,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.760Z",
-  "district": "คลองเตย"
+  "district": "คลองเตย",
+  "districtEn": "Khlong Toei"
  },
  {
   "id": "l8-22535797265829515",
@@ -11602,7 +11747,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.624Z",
-  "district": "เมืองระยอง"
+  "district": "เมืองระยอง",
+  "districtEn": "Klaeng"
  },
  {
   "id": "l8-42203860728776864",
@@ -11665,7 +11811,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.796Z",
-  "district": "ปทุมวัน"
+  "district": "ปทุมวัน",
+  "districtEn": "Pathum Wan"
  },
  {
   "id": "l8-42203860763517905",
@@ -11736,7 +11883,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:35:03.665Z",
-  "district": "พญาไท"
+  "district": "พญาไท",
+  "districtEn": "Phaya Thai"
  },
  {
   "id": "l8-22535797329631507",
@@ -11807,7 +11955,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:33:30.892Z",
-  "district": "เมืองนครศรีธรรมราช"
+  "district": "เมืองนครศรีธรรมราช",
+  "districtEn": "Mueang Nakhon Si Thammarat"
  },
  {
   "id": "l8-22535797339436976",
@@ -11877,7 +12026,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.669Z",
-  "district": "ปากเกร็ด"
+  "district": "ปากเกร็ด",
+  "districtEn": "Pak Kret"
  },
  {
   "id": "l8-22535865206177353",
@@ -11947,7 +12097,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.670Z",
-  "district": "เมืองลำปาง"
+  "district": "เมืองลำปาง",
+  "districtEn": "Mueang Lampang"
  },
  {
   "id": "l8-42203861091643347",
@@ -12018,7 +12169,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.673Z",
-  "district": "วัฒนา"
+  "district": "วัฒนา",
+  "districtEn": "Vadhana"
  },
  {
   "id": "l8-22535865246013081",
@@ -12163,7 +12315,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.657Z",
-  "district": "ปากเกร็ด"
+  "district": "ปากเกร็ด",
+  "districtEn": "Pak Kret"
  },
  {
   "id": "l8-22535865226725552",
@@ -12225,7 +12378,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.637Z",
-  "district": "พระโขนง"
+  "district": "พระโขนง",
+  "districtEn": "Phra Khanong"
  },
  {
   "id": "l8-22535865286030198",
@@ -12300,7 +12454,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.815Z",
-  "district": "บ้านแหลม"
+  "district": "บ้านแหลม",
+  "districtEn": "Ban Lat"
  },
  {
   "id": "l8-22535797336034486",
@@ -12371,7 +12526,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.820Z",
-  "district": "คลองเตย"
+  "district": "คลองเตย",
+  "districtEn": "Khlong Toei"
  },
  {
   "id": "l8-22535797332658440",
@@ -12442,7 +12598,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.767Z",
-  "district": "เมืองชลบุรี"
+  "district": "เมืองชลบุรี",
+  "districtEn": "Mueang Chon Buri"
  },
  {
   "id": "l8-22535797323133983",
@@ -12512,7 +12669,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:34:08.963Z",
-  "district": "บางซื่อ"
+  "district": "บางซื่อ",
+  "districtEn": "Bang Sue"
  },
  {
   "id": "l8-22535865208459299",
@@ -12574,7 +12732,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.694Z",
-  "district": "บางกอกน้อย"
+  "district": "บางกอกน้อย",
+  "districtEn": "Bangkok Noi"
  },
  {
   "id": "l8-22535797323145692",
@@ -12637,7 +12796,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.803Z",
-  "district": "บางละมุง"
+  "district": "บางละมุง",
+  "districtEn": "Bang Lamung"
  },
  {
   "id": "l8-22535797333307996",
@@ -12708,7 +12868,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.616Z",
-  "district": "เมืองอุดรธานี"
+  "district": "เมืองอุดรธานี",
+  "districtEn": "Mueang Udon Thani"
  },
  {
   "id": "l8-22535797304979049",
@@ -12787,7 +12948,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.823Z",
-  "district": "เมืองเชียงใหม่"
+  "district": "เมืองเชียงใหม่",
+  "districtEn": "Mueang Chiang Mai"
  },
  {
   "id": "l8-22535865208978186",
@@ -12841,7 +13003,8 @@
    }
   ],
   "fetchedAt": "2026-11-07T19:20:35.285Z",
-  "district": "ประจันตคาม"
+  "district": "ประจันตคาม",
+  "districtEn": "Prachantakham"
  },
  {
   "id": "l8-22535797274118893",
@@ -12903,7 +13066,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.675Z",
-  "district": "แกลง"
+  "district": "แกลง",
+  "districtEn": "Klaeng"
  },
  {
   "id": "l8-42203861076315530",
@@ -12966,7 +13130,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.657Z",
-  "district": "เมืองเชียงใหม่"
+  "district": "เมืองเชียงใหม่",
+  "districtEn": "Mueang Chiang Mai"
  },
  {
   "id": "l8-22535797307015007",
@@ -13028,7 +13193,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.782Z",
-  "district": "ชะอำ"
+  "district": "ชะอำ",
+  "districtEn": "Cha-am"
  },
  {
   "id": "l8-23661696392380915",
@@ -13115,7 +13281,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.738Z",
-  "district": "บางละมุง"
+  "district": "บางละมุง",
+  "districtEn": "Bang Lamung"
  },
  {
   "id": "l8-42203860794031127",
@@ -13178,7 +13345,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.790Z",
-  "district": "ลำลูกกา"
+  "district": "ลำลูกกา",
+  "districtEn": "Lam Luk Ka"
  },
  {
   "id": "l8-22535796495336099",
@@ -13240,7 +13408,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.628Z",
-  "district": "แกลง"
+  "district": "แกลง",
+  "districtEn": "Klaeng"
  },
  {
   "id": "l8-21568226362897883",
@@ -13302,7 +13471,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.660Z",
-  "district": "เมืองสมุทรปราการ"
+  "district": "เมืองสมุทรปราการ",
+  "districtEn": "Mueang Samut Prakan"
  },
  {
   "id": "l8-22535865214957211",
@@ -13364,7 +13534,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.752Z",
-  "district": "บางกอกน้อย"
+  "district": "บางกอกน้อย",
+  "districtEn": "Bangkok Noi"
  },
  {
   "id": "l8-23661696388770039",
@@ -13426,7 +13597,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.716Z",
-  "district": "คลองสาน"
+  "district": "คลองสาน",
+  "districtEn": "Khlong San"
  },
  {
   "id": "l8-21568226299714895",
@@ -13479,7 +13651,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.622Z",
-  "district": "เมืองราชบุรี"
+  "district": "เมืองราชบุรี",
+  "districtEn": "Mueang Ratchaburi"
  },
  {
   "id": "l8-22535797332087009",
@@ -13541,7 +13714,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.791Z",
-  "district": "เมืองระยอง"
+  "district": "เมืองระยอง",
+  "districtEn": "Mueang Rayong"
  },
  {
   "id": "l8-42203860932219144",
@@ -13626,7 +13800,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.697Z",
-  "district": "บางนา"
+  "district": "บางนา",
+  "districtEn": "Bang Na"
  },
  {
   "id": "l8-42203861091224168",
@@ -13681,7 +13856,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.759Z",
-  "district": "พญาไท"
+  "district": "พญาไท",
+  "districtEn": "Phaya Thai"
  },
  {
   "id": "l8-22535865206866886",
@@ -13734,7 +13910,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.773Z",
-  "district": "สวนผึ้ง"
+  "district": "สวนผึ้ง",
+  "districtEn": "Suan Phueng"
  },
  {
   "id": "l8-42203860546730583",
@@ -13797,7 +13974,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.793Z",
-  "district": "เมืองระยอง"
+  "district": "เมืองระยอง",
+  "districtEn": "Mueang Rayong"
  },
  {
   "id": "l8-22535797338616151",
@@ -13859,7 +14037,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.653Z",
-  "district": "ทองแสนขัน"
+  "district": "ทองแสนขัน",
+  "districtEn": "Tron"
  },
  {
   "id": "l8-42203861107510416",
@@ -13922,7 +14101,8 @@
    }
   ],
   "fetchedAt": "2026-11-07T19:22:10.542Z",
-  "district": "เมืองจันทบุรี"
+  "district": "เมืองจันทบุรี",
+  "districtEn": "Mueang Chanthaburi"
  },
  {
   "id": "l8-21568226366483080",
@@ -13977,7 +14157,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.722Z",
-  "district": "เมืองนนทบุรี"
+  "district": "เมืองนนทบุรี",
+  "districtEn": "Mueang Nonthaburi"
  },
  {
   "id": "l8-22535797337976077",
@@ -14031,7 +14212,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.666Z",
-  "district": "เมืองกาญจนบุรี"
+  "district": "เมืองกาญจนบุรี",
+  "districtEn": "Mueang Kanchanaburi"
  },
  {
   "id": "l8-22535865218292870",
@@ -14085,7 +14267,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.812Z",
-  "district": "วังทองหลาง"
+  "district": "วังทองหลาง",
+  "districtEn": "Wang Thonglang"
  },
  {
   "id": "l8-22535797254192383",
@@ -14140,7 +14323,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.619Z",
-  "district": "เมืองตาก"
+  "district": "เมืองตาก",
+  "districtEn": "Mueang Tak"
  },
  {
   "id": "l8-22535865212170357",
@@ -14248,7 +14432,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:33:23.118Z",
-  "district": "เมืองกระบี่"
+  "district": "เมืองกระบี่",
+  "districtEn": "Mueang Krabi"
  },
  {
   "id": "l8-22535865213314842",
@@ -14331,7 +14516,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.802Z",
-  "district": "เมืองระยอง"
+  "district": "เมืองระยอง",
+  "districtEn": "Mueang Rayong"
  },
  {
   "id": "l8-22535865348301434",
@@ -14393,7 +14579,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.812Z",
-  "district": "เมืองฉะเชิงเทรา"
+  "district": "เมืองฉะเชิงเทรา",
+  "districtEn": "Mueang Chachoengsao"
  },
  {
   "id": "l8-22535797275781308",
@@ -14474,7 +14661,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.826Z",
-  "district": "เมืองนครพนม"
+  "district": "เมืองนครพนม",
+  "districtEn": "Mueang Nakhon Phanom"
  },
  {
   "id": "l8-42203860726465047",
@@ -14555,7 +14743,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.709Z",
-  "district": "สาทร"
+  "district": "สาทร",
+  "districtEn": "Sathon"
  },
  {
   "id": "l8-22535865204865279",
@@ -14617,7 +14806,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:33:00.334Z",
-  "district": "เมืองแพร่"
+  "district": "เมืองแพร่",
+  "districtEn": "Mueang Phrae"
  },
  {
   "id": "l8-22535797336531994",
@@ -14664,7 +14854,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.616Z",
-  "district": "เมืองเชียงใหม่"
+  "district": "เมืองเชียงใหม่",
+  "districtEn": "Mueang Chiang Mai"
  },
  {
   "id": "l8-42203860646035112",
@@ -14719,7 +14910,8 @@
    }
   ],
   "fetchedAt": "2026-11-07T19:20:35.401Z",
-  "district": "เมืองกาญจนบุรี"
+  "district": "เมืองกาญจนบุรี",
+  "districtEn": "Mueang Kanchanaburi"
  },
  {
   "id": "l8-42203860624339027",
@@ -14798,7 +14990,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.774Z",
-  "district": "เมืองเชียงราย"
+  "district": "เมืองเชียงราย",
+  "districtEn": "Mueang Chiang Rai"
  },
  {
   "id": "l8-22535796483567228",
@@ -14853,7 +15046,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.763Z",
-  "district": "คลองเตย"
+  "district": "คลองเตย",
+  "districtEn": "Khlong Toei"
  },
  {
   "id": "l8-22535796487969479",
@@ -14935,7 +15129,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.798Z",
-  "district": "แม่ริม"
+  "district": "แม่ริม",
+  "districtEn": "Mae Rim"
  },
  {
   "id": "l8-22535865258899075",
@@ -14989,7 +15184,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.804Z",
-  "district": "เมืองหนองคาย"
+  "district": "เมืองหนองคาย",
+  "districtEn": "Mueang Nong Khai"
  },
  {
   "id": "l8-22535797284527152",
@@ -15044,7 +15240,8 @@
    }
   ],
   "fetchedAt": "2026-11-07T19:20:35.425Z",
-  "district": "วัฒนา"
+  "district": "วัฒนา",
+  "districtEn": "Vadhana"
  },
  {
   "id": "l8-42203860748223174",
@@ -15091,7 +15288,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.639Z",
-  "district": "ไทรน้อย"
+  "district": "ไทรน้อย",
+  "districtEn": "Sai Noi"
  },
  {
   "id": "l8-42203861090687025",
@@ -15192,7 +15390,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.756Z",
-  "district": "จตุจักร"
+  "district": "จตุจักร",
+  "districtEn": "Chatuchak"
  },
  {
   "id": "l8-22535796494773488",
@@ -15268,7 +15467,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.817Z",
-  "district": "เมืองลำปาง"
+  "district": "เมืองลำปาง",
+  "districtEn": "Mueang Lampang"
  },
  {
   "id": "l8-34955879850629584",
@@ -15320,7 +15520,8 @@
   "entry": {
    "free": true,
    "src": "typical"
-  }
+  },
+  "districtEn": "Si Chomphu"
  },
  {
   "id": "l8-22535865208251734",
@@ -15404,7 +15605,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.687Z",
-  "district": "บางบัวทอง"
+  "district": "บางบัวทอง",
+  "districtEn": "Bang Bua Thong"
  },
  {
   "id": "l8-42203861107552154",
@@ -15451,7 +15653,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.804Z",
-  "district": "เมืองกาฬสินธุ์"
+  "district": "เมืองกาฬสินธุ์",
+  "districtEn": "Mueang Kalasin"
  },
  {
   "id": "l8-22535796484081635",
@@ -15534,7 +15737,8 @@
   ],
   "fetchedAt": "2026-11-07T19:20:35.315Z",
   "district": "เมืองนครนายก",
-  "reviewCount": 6
+  "reviewCount": 6,
+  "districtEn": "Mueang Nakhon Nayok"
  },
  {
   "id": "l8-22535865223462982",
@@ -15580,7 +15784,8 @@
    }
   ],
   "fetchedAt": "2026-11-07T19:20:35.365Z",
-  "district": "หาดใหญ่"
+  "district": "หาดใหญ่",
+  "districtEn": "Hat Yai"
  },
  {
   "id": "l8-22535934601703205",
@@ -15626,7 +15831,8 @@
    }
   ],
   "fetchedAt": "2026-11-07T19:20:35.318Z",
-  "district": "แก่งคอย"
+  "district": "แก่งคอย",
+  "districtEn": "Kaeng Khoi"
  },
  {
   "id": "l8-22535796492882669",
@@ -15673,7 +15879,8 @@
    }
   ],
   "fetchedAt": "2026-11-07T19:20:35.435Z",
-  "district": "เมืองเชียงใหม่"
+  "district": "เมืองเชียงใหม่",
+  "districtEn": "Mueang Chiang Mai"
  },
  {
   "id": "l8-22535797310360251",
@@ -15712,7 +15919,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.766Z",
-  "district": "สวนหลวง"
+  "district": "สวนหลวง",
+  "districtEn": "Suan Luang"
  },
  {
   "id": "l8-22535865205801548",
@@ -15758,7 +15966,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.812Z",
-  "district": "เมืองฉะเชิงเทรา"
+  "district": "เมืองฉะเชิงเทรา",
+  "districtEn": "Mueang Chachoengsao"
  },
  {
   "id": "l8-21568226306551839",
@@ -15805,7 +16014,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.799Z",
-  "district": "เมืองเชียงใหม่"
+  "district": "เมืองเชียงใหม่",
+  "districtEn": "Mueang Chiang Mai"
  },
  {
   "id": "l8-22535797302000005",
@@ -15852,7 +16062,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.827Z",
-  "district": "เมืองน่าน"
+  "district": "เมืองน่าน",
+  "districtEn": "Mueang Nan"
  },
  {
   "id": "l8-21568226385925071",
@@ -15934,7 +16145,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.823Z",
-  "district": "ปากเกร็ด"
+  "district": "ปากเกร็ด",
+  "districtEn": "Mueang Nonthaburi"
  },
  {
   "id": "l8-42203860961123246",
@@ -15979,7 +16191,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.825Z",
-  "district": "อ.เมือง"
+  "district": "เมืองลำพูน",
+  "districtEn": "Mueang Lamphun"
  },
  {
   "id": "l8-22535865203054444",
@@ -16027,7 +16240,8 @@
   "entry": {
    "free": true,
    "src": "typical"
-  }
+  },
+  "districtEn": "Sai Noi"
  },
  {
   "id": "l8-22535797309026983",
@@ -16072,7 +16286,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.729Z",
-  "district": "เมืองลพบุรี"
+  "district": "เมืองลพบุรี",
+  "districtEn": "Mueang Lop Buri"
  },
  {
   "id": "l8-22535797318600046",
@@ -16117,7 +16332,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.810Z",
-  "district": "ฝาง"
+  "district": "ฝาง",
+  "districtEn": "Fang"
  },
  {
   "id": "l8-21568226270903168",
@@ -16153,7 +16369,8 @@
    }
   ],
   "fetchedAt": "2026-11-07T19:20:35.287Z",
-  "district": "เมืองสุโขทัย"
+  "district": "เมืองสุโขทัย",
+  "districtEn": "Mueang Sukhothai"
  },
  {
   "id": "l8-22535797336330181",
@@ -16240,7 +16457,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.755Z",
-  "district": "ปทุมวัน"
+  "district": "ปทุมวัน",
+  "districtEn": "Pathum Wan"
  },
  {
   "id": "l8-22535865213743576",
@@ -16285,7 +16503,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.814Z",
-  "district": "หลังสวน"
+  "district": "หลังสวน",
+  "districtEn": "Lang Suan"
  },
  {
   "id": "l8-21568226255637355",
@@ -16333,7 +16552,8 @@
    "free": true,
    "src": "typical"
   },
-  "district": "เมืองฉะเชิงเทรา"
+  "district": "เมืองฉะเชิงเทรา",
+  "districtEn": "Mueang Chachoengsao"
  },
  {
   "id": "l8-42203861116497603",
@@ -16369,7 +16589,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.649Z",
-  "district": "เมืองนครปฐม"
+  "district": "เมืองนครปฐม",
+  "districtEn": "Mueang Nakhon Pathom"
  },
  {
   "id": "l8-22535796495400418",
@@ -16406,7 +16627,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.656Z",
-  "district": "หาดใหญ่"
+  "district": "หาดใหญ่",
+  "districtEn": "Hat Yai"
  },
  {
   "id": "l8-42203860796297618",
@@ -16496,7 +16718,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:34:18.228Z",
-  "district": "อ.เมือง"
+  "district": "เมืองนราธิวาส",
+  "districtEn": "Mueang Narathiwat"
  },
  {
   "id": "l8-22535865257566340",
@@ -16541,7 +16764,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.785Z",
-  "district": "สูงเม่น"
+  "district": "สูงเม่น",
+  "districtEn": "Sung Men"
  },
  {
   "id": "l8-22535796492979581",
@@ -16625,7 +16849,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.709Z",
-  "district": "เมืองนนทบุรี"
+  "district": "เมืองนนทบุรี",
+  "districtEn": "Mueang Nonthaburi"
  },
  {
   "id": "l8-22535797334219324",
@@ -16661,7 +16886,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.740Z",
-  "district": "เมืองลำพูน"
+  "district": "เมืองลำพูน",
+  "districtEn": "Mueang Lamphun"
  },
  {
   "id": "l8-22535865712556497",
@@ -16698,7 +16924,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.782Z",
-  "district": "เมืองนราธิวาส"
+  "district": "เมืองนราธิวาส",
+  "districtEn": "Mueang Narathiwat"
  },
  {
   "id": "l8-42203861083680436",
@@ -16735,7 +16962,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.720Z",
-  "district": "ภาษีเจริญ"
+  "district": "ภาษีเจริญ",
+  "districtEn": "Phasi Charoen"
  },
  {
   "id": "l8-21568226261642598",
@@ -16772,7 +17000,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.733Z",
-  "district": "บางรัก"
+  "district": "บางรัก",
+  "districtEn": "Bang Rak"
  },
  {
   "id": "l8-22535796495542596",
@@ -16809,7 +17038,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.794Z",
-  "district": "คลองเตย"
+  "district": "คลองเตย",
+  "districtEn": "Khlong Toei"
  },
  {
   "id": "l8-22535865204500327",
@@ -16893,7 +17123,8 @@
   ],
   "fetchedAt": "2026-11-07T19:20:35.347Z",
   "district": "เขาชะเมา",
-  "reviewCount": 23
+  "reviewCount": 23,
+  "districtEn": "Khao Chamao"
  },
  {
   "id": "l8-22535797229030953",
@@ -16930,7 +17161,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.801Z",
-  "district": "ตลิ่งชัน"
+  "district": "ตลิ่งชัน",
+  "districtEn": "Taling Chan"
  },
  {
   "id": "l8-21568226259924574",
@@ -16967,7 +17199,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.816Z",
-  "district": "ราชเทวี"
+  "district": "ราชเทวี",
+  "districtEn": "Ratchathewi"
  },
  {
   "id": "l8-22535865207439420",
@@ -16996,7 +17229,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:34:45.677Z",
-  "district": "บางรัก"
+  "district": "บางรัก",
+  "districtEn": "Bang Rak"
  },
  {
   "id": "l8-22535865823638246",
@@ -17033,7 +17267,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.731Z",
-  "district": "เมืองสิงห์บุรี"
+  "district": "เมืองสิงห์บุรี",
+  "districtEn": "Mueang Sing Buri"
  },
  {
   "id": "l8-42203861107283107",
@@ -17117,7 +17352,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.739Z",
-  "district": "คลองเตย"
+  "district": "คลองเตย",
+  "districtEn": "Khlong Toei"
  },
  {
   "id": "l8-22535865205777527",
@@ -17146,7 +17382,8 @@
    }
   ],
   "fetchedAt": "2026-11-07T19:20:35.406Z",
-  "district": "ปทุมวัน"
+  "district": "ปทุมวัน",
+  "districtEn": "Pathum Wan"
  },
  {
   "id": "l8-22535865216433226",
@@ -17182,7 +17419,8 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:32:51.792Z",
-  "district": "เมืองอุดรธานี"
+  "district": "เมืองอุดรธานี",
+  "districtEn": "Mueang Udon Thani"
  },
  {
   "id": "l8-22535797261476523",
@@ -17210,7 +17448,8 @@
    }
   ],
   "fetchedAt": "2026-11-07T19:20:35.412Z",
-  "district": "พญาไท"
+  "district": "พญาไท",
+  "districtEn": "Phaya Thai"
  },
  {
   "id": "l8-22535797263048627",
@@ -17247,7 +17486,8 @@
    }
   ],
   "fetchedAt": "2026-11-07T19:20:35.456Z",
-  "district": "เมืองนครปฐม"
+  "district": "เมืองนครปฐม",
+  "districtEn": "Mueang Nakhon Pathom"
  },
  {
   "id": "l8-42203861092310677",
@@ -17275,7 +17515,8 @@
    }
   ],
   "fetchedAt": "2026-11-07T19:20:35.412Z",
-  "district": "เมืองนนทบุรี"
+  "district": "เมืองนนทบุรี",
+  "districtEn": "Mueang Nonthaburi"
  },
  {
   "id": "l8-22535797331956399",
@@ -17311,7 +17552,8 @@
    }
   ],
   "fetchedAt": "2026-11-07T19:20:35.443Z",
-  "district": "เมืองตาก"
+  "district": "เมืองตาก",
+  "districtEn": "Mueang Tak"
  },
  {
   "id": "l8-23661696391632192",
@@ -17348,7 +17590,8 @@
    }
   ],
   "fetchedAt": "2026-11-07T19:20:39.939Z",
-  "district": "บางกรวย"
+  "district": "บางกรวย",
+  "districtEn": "Bang Kruai"
  },
  {
   "id": "l8-34955879829086566",
@@ -17376,7 +17619,8 @@
    }
   ],
   "fetchedAt": "2026-11-07T19:20:35.299Z",
-  "district": "พระนคร"
+  "district": "พระนคร",
+  "districtEn": "Phra Nakhon"
  },
  {
   "id": "l8-22535865208593155",
@@ -17412,7 +17656,8 @@
    }
   ],
   "fetchedAt": "2026-11-07T19:22:43.145Z",
-  "district": "บางละมุง"
+  "district": "บางละมุง",
+  "districtEn": "Bang Lamung"
  },
  {
   "id": "l8-42203860888306035",
@@ -17440,7 +17685,8 @@
    }
   ],
   "fetchedAt": "2026-11-07T19:20:35.306Z",
-  "district": "เขาค้อ"
+  "district": "เขาค้อ",
+  "districtEn": "Khao Kho"
  },
  {
   "id": "l8-34955879830612195",
@@ -17506,7 +17752,8 @@
   ],
   "fetchedAt": "2026-11-07T19:20:35.310Z",
   "district": "พญาไท",
-  "reviewCount": 4
+  "reviewCount": 4,
+  "districtEn": "Phaya Thai"
  },
  {
   "id": "l8-42203861124377722",
@@ -17535,7 +17782,8 @@
    }
   ],
   "fetchedAt": "2026-11-07T19:20:35.321Z",
-  "district": "จตุจักร"
+  "district": "จตุจักร",
+  "districtEn": "Chatuchak"
  },
  {
   "id": "l8-42203860746704211",
@@ -17564,7 +17812,8 @@
    }
   ],
   "fetchedAt": "2026-11-07T19:20:35.406Z",
-  "district": "เมืองเชียงใหม่"
+  "district": "เมืองเชียงใหม่",
+  "districtEn": "Mueang Chiang Mai"
  },
  {
   "id": "l8-22535865207454458",
@@ -17654,7 +17903,8 @@
   "entry": {
    "free": true,
    "src": "typical"
-  }
+  },
+  "districtEn": "Mueang Nong Bua Lam Phu"
  },
  {
   "id": "l8-22535865344790836",
@@ -17682,7 +17932,8 @@
    }
   ],
   "fetchedAt": "2026-11-07T19:20:35.370Z",
-  "district": "หาดใหญ่"
+  "district": "หาดใหญ่",
+  "districtEn": "Hat Yai"
  },
  {
   "id": "l8-21568226300773202",
@@ -17711,7 +17962,8 @@
    }
   ],
   "fetchedAt": "2026-11-07T19:20:35.418Z",
-  "district": "พระโขนง"
+  "district": "พระโขนง",
+  "districtEn": "Phra Khanong"
  },
  {
   "id": "l8-21568226366281277",
@@ -17739,7 +17991,8 @@
    }
   ],
   "fetchedAt": "2026-11-07T19:20:35.422Z",
-  "district": "สัมพันธวงศ์"
+  "district": "สัมพันธวงศ์",
+  "districtEn": "Samphanthawong"
  },
  {
   "id": "l8-21568226271686313",
@@ -17767,7 +18020,8 @@
    }
   ],
   "fetchedAt": "2026-11-07T19:20:35.337Z",
-  "district": "บางคนที"
+  "district": "บางคนที",
+  "districtEn": "Bang Khonthi"
  },
  {
   "id": "l8-22535796493474963",
@@ -17796,7 +18050,8 @@
    }
   ],
   "fetchedAt": "2026-11-07T19:20:35.341Z",
-  "district": "เมืองแพร่"
+  "district": "เมืองแพร่",
+  "districtEn": "Mueang Phrae"
  },
  {
   "id": "l8-21568226265172754",
@@ -17824,7 +18079,8 @@
    }
   ],
   "fetchedAt": "2026-11-07T19:20:35.393Z",
-  "district": "เมือง"
+  "district": "เมืองนนทบุรี",
+  "districtEn": "Mueang Nonthaburi"
  },
  {
   "id": "l8-42203860527658297",
@@ -17853,7 +18109,8 @@
    }
   ],
   "fetchedAt": "2026-11-07T19:20:35.393Z",
-  "district": "เมืองแพร่"
+  "district": "เมืองแพร่",
+  "districtEn": "Mueang Phrae"
  },
  {
   "id": "l8-42203860881910298",
@@ -17882,7 +18139,8 @@
    }
   ],
   "fetchedAt": "2026-11-07T19:20:35.399Z",
-  "district": "สาทร"
+  "district": "สาทร",
+  "districtEn": "Sathon"
  },
  {
   "id": "l8-22535796483274605",
@@ -17911,7 +18169,8 @@
    }
   ],
   "fetchedAt": "2026-11-07T19:20:35.428Z",
-  "district": "เมืองปัตตานี"
+  "district": "เมืองปัตตานี",
+  "districtEn": "Mueang Pattani"
  },
  {
   "id": "l8-22535797281606106",
@@ -17939,7 +18198,8 @@
    }
   ],
   "fetchedAt": "2026-11-07T19:20:35.436Z",
-  "district": "กระทุ่มแบน"
+  "district": "กระทุ่มแบน",
+  "districtEn": "Krathum Baen"
  },
  {
   "id": "l8-22535797279920255",
@@ -17968,7 +18228,8 @@
    }
   ],
   "fetchedAt": "2026-11-07T19:20:35.440Z",
-  "district": "วัฒนา"
+  "district": "วัฒนา",
+  "districtEn": "Vadhana"
  },
  {
   "id": "l8-21568226258750228",
@@ -17997,7 +18258,8 @@
    }
   ],
   "fetchedAt": "2026-11-07T19:20:35.448Z",
-  "district": "แม่ทะ"
+  "district": "แม่ทะ",
+  "districtEn": "Mae Tha"
  },
  {
   "id": "l8-22535797309732966",
@@ -18025,7 +18287,8 @@
    }
   ],
   "fetchedAt": "2026-11-07T19:20:35.448Z",
-  "district": "เมืองสตูล"
+  "district": "เมืองสตูล",
+  "districtEn": "Mueang Satun"
  },
  {
   "id": "l8-21568226385671684",
@@ -18054,7 +18317,8 @@
    }
   ],
   "fetchedAt": "2026-11-07T19:20:35.457Z",
-  "district": "เมืองขอนแก่น"
+  "district": "เมืองขอนแก่น",
+  "districtEn": "Mueang Khon Kaen"
  },
  {
   "id": "l8-21568226289939466",
@@ -18082,7 +18346,8 @@
    }
   ],
   "fetchedAt": "2026-11-07T19:20:35.460Z",
-  "district": "แก่งคอย"
+  "district": "แก่งคอย",
+  "districtEn": "Kaeng Khoi"
  },
  {
   "id": "l8-42203861020099863",
@@ -18111,7 +18376,8 @@
    }
   ],
   "fetchedAt": "2026-11-07T19:21:12.096Z",
-  "district": "นครชัยศรี"
+  "district": "นครชัยศรี",
+  "districtEn": "Nakhon Chai Si"
  },
  {
   "id": "l8-22535865213402998",
@@ -18139,7 +18405,8 @@
    }
   ],
   "fetchedAt": "2026-11-07T19:22:24.083Z",
-  "district": "เมืองนครพนม"
+  "district": "เมืองนครพนม",
+  "districtEn": "Mueang Nakhon Phanom"
  },
  {
   "id": "l8-42203860764442113",
@@ -18167,7 +18434,8 @@
    }
   ],
   "fetchedAt": "2026-11-07T19:22:26.783Z",
-  "district": "เมืองหนองคาย"
+  "district": "เมืองหนองคาย",
+  "districtEn": "Mueang Nong Khai"
  },
  {
   "id": "l8-42203861097648755",
@@ -18195,7 +18463,8 @@
    }
   ],
   "fetchedAt": "2026-11-07T19:22:15.182Z",
-  "district": "เมืองจันทบุรี"
+  "district": "เมืองจันทบุรี",
+  "districtEn": "Mueang Chanthaburi"
  },
  {
   "id": "l8-22535865217950626",
@@ -18258,6 +18527,7 @@
   ],
   "fetchedAt": "2026-11-07T19:23:12.951Z",
   "district": "เมืองนครศรีธรรมราช",
-  "reviewCount": 3
+  "reviewCount": 3,
+  "districtEn": "Mueang Nakhon Si Thammarat"
  }
 ]
