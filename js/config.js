@@ -37,7 +37,8 @@ window.APP_CONFIG = {
     { id: "exhibition", icon: "🎨", color: "#be185d", color2: "#f59e0b", name: { th: "นิทรรศการ/ป๊อปอัพ", en: "Exhibitions & pop-ups", zh: "展览/快闪店" } },
     // งานแสดงสินค้า/เอ็กซ์โปในศูนย์ประชุม (B2B + คนทั่วไป)
     { id: "expo", icon: "🏢", color: "#475569", color2: "#0ea5e9", name: { th: "งานแสดงสินค้า", en: "Expos", zh: "展会" } },
-    { id: "motor", icon: "🏎️", color: "#0ea47a", color2: "#1e3a8a", name: { th: "มอเตอร์โชว์", en: "Motor shows", zh: "车展" } },
+    // งานแสดงรถ/มอเตอร์โชว์ + งานแข่งรถ/มอเตอร์สปอร์ต (MotoGP F1 Super GT ดริฟท์ แดร็ก โกคาร์ท)
+    { id: "motor", icon: "🏎️", color: "#0ea47a", color2: "#1e3a8a", name: { th: "ยานยนต์/แข่งรถ", en: "Motor shows & racing", zh: "车展/赛车" } },
     // คนโสด/หาคู่/หาเพื่อนใหม่: speed dating, ปาร์ตี้คนโสด, ชมรม/มีตอัพหาเพื่อน
     { id: "social", icon: "💘", color: "#e11d48", color2: "#fb7185", name: { th: "หาเพื่อน/คู่", en: "Meet people", zh: "交友" } }
   ],

@@ -21,7 +21,9 @@
     show: /\b(the musical|musical|theatre|theater|stage play|ballet|opera|circus|cirque|magic show|stand-?up|comedy|on ice|world live|puppet)\b|มิวสิคัล|ละครเวที|บัลเล่ต์|บัลเลต์|โอเปร่า|ละครสัตว์|มายากล|เดี่ยวไมโครโฟน|ทอล์คโชว์/i,
     notShow: /\bin concert\b|orchestra|piano|recital/i,
     run: /\b(run|runs|running|runner|marathon|half ?marathon|trail|ultra|ekiden|cross ?country|walk ?(&|and)? ?run|10k|21k|42k)\b|วิ่ง|มาราธอน|เทรล|ฮาล์ฟ|รัน(\s|$)/i,
-    motor: /\b(driving experience|motor ?show|car show|auto salon)\b|ยานยนต์|มอเตอร์โชว์/i
+    motor: /\b(driving experience|motor ?show|motor ?expo|car show|auto salon|auto show|bike week|big ?bike)\b|ยานยนต์|มอเตอร์โชว์|มอเตอร์ เอ็กซ์โป|งานแสดงรถ|บิ๊กไบค์/i,
+    // งานแข่งรถ/มอเตอร์สปอร์ต (MotoGP F1 Super GT ดริฟท์ แดร็ก โกคาร์ท)
+    race: /\b(moto ?gp|motogp|f1|formula ?(1|one|e|4)|grand ?prix|gp\b|super ?gt|superbike|wsbk|touring car|tcr|endurance|drag ?race|drag ?racing|drift(ing)?|rally|karting|go-?kart|motocross|supercross|enduro|time attack|track ?day|racing|race ?week|speed ?fest|circuit|bangsaen grand prix|super ?series|porsche carrera cup|gt3|nascar)\b|แข่งรถ|ดริฟท์|ดริฟต์|โมโตจีพี|ซูเปอร์ไบค์|แรลลี่|โกคาร์ท|โมโตครอส|สนามแข่ง|เซอร์กิต|ช้าง อินเตอร์เนชั่นแนล เซอร์กิต|บุรีรัมย์ เซอร์กิต/i
   };
   const is = (re, t) => re.test(t);
   function fixCategory(ev) {
@@ -59,6 +61,8 @@
     if (["expo", "concert", "learning"].includes(c) && is(R.seminar, t) && !is(R.learning, t)) return "seminar";
     if (["expo", "concert"].includes(c) && is(R.exhibition, t)) return "exhibition";
     if (["expo", "learning", "seminar"].includes(c) && is(R.motor, t)) return "motor";
+    // งานแข่งรถ → ยานยนต์/แข่งรถ (ไม่ใช่ปาร์ตี้ธีมแข่งรถ / งานวิ่งในสนามแข่ง)
+    if (c !== "motor" && ["outdoor", "run", "expo", "concert", "festival", "exhibition"].includes(c) && is(R.race, t) && !is(R.party, t) && !is(R.run, t) && !/\b(movie|rally games|treasure rally|photo rally|walk rally)\b/i.test(t)) return "motor";
     // หมวดเดิม "สัมมนา/เรียนรู้": ไม่ใช่การเรียนลงมือทำ = สัมมนา/ทอล์ก
     if (c === "learning" && !is(R.learning, t)) return "seminar";
     return c;

@@ -517,9 +517,10 @@ const CATEGORY_RULES = [
   ["kpop", /\b(k-?pop|kpop)\b|[\uAC00-\uD7A3]{2}|เคป็อป/i],
   ["fanmeet", /\b(fan ?meet(ing)?|fan ?con|fancon|fan ?sign|fansign|fan ?screening|fan-?meeting)\b|แฟนมีต|แฟนคอน|แฟนไซน์/i],
   ["show", /\b(the musical|musical|theatre|theater|ballet|opera|circus|comedy|stand ?up|magic show)\b|มิวสิคัล|ละครเวที|บัลเลต์|ละครสัตว์|มายากล|เดี่ยวไมโครโฟน/i],
+  // ยานยนต์/แข่งรถ ก่อนกีฬา (MotoGP มีหมวด sport)
+  ["motor", /\bmotor|car show|auto ?salon|\b(moto ?gp|formula ?(1|one)|f1|super ?gt|superbike|drift|drag ?race|racing|grand ?prix|rally|karting)\b|รถยนต์|ยานยนต์|มอเตอร์|บิ๊กไบค์|รถจักรยานยนต์|แข่งรถ|ดริฟท์|ดริฟต์|โมโตจีพี/i],
   ["outdoor", /\b(run|running|marathon|trail|hyrox|triathlon|fun ?run|cycling|bike|yoga|fitness|sport|workout|crossfit)\b|วิ่ง|มาราธอน|ปั่นจักรยาน|ไตรกีฬา|โยคะ|ฟิตเนส|กีฬา/i],
   ["book", /\bbook|หนังสือ/i],
-  ["motor", /\bmotor|car show|auto ?salon|รถยนต์|ยานยนต์|มอเตอร์|บิ๊กไบค์|รถจักรยานยนต์/i],
   ["cafe", /\bcoffee|caf[eé]|กาแฟ|คาเฟ่/i],
   ["food", /\bfood|drink|beer|wine|whisky|cocktail|gastro|dining|festival of taste|อาหาร|เครื่องดื่ม|เบียร์|ไวน์/i],
   ["sale", /\bsale\b|flash ?sale|super weekend|ลดราคา|ลดกระหน่ำ|เซล|outlet|มหกรรมลด/i],
