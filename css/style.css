@@ -751,3 +751,7 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 .trend-board .trend-item h3 { font-size: 13px; line-height: 18px; max-height: 36px; flex: none; }
 .trend-board .trend-item .meta { font-size: 11px; line-height: 15px; flex: none; }
 .trend-board .trend-place { font-size: 11px; line-height: 15px; flex: none; }
+
+/* รูปปกจากโพสต์ Lemon8 (รูปแนวตั้ง) ในกรอบแนวนอน: เห็นทั้งรูป อยู่กึ่งกลาง · ขอบว่างเติมด้วยรูปเดียวกันแบบเบลอ */
+.cover .img-bg, .trend-hero .th-img img.img-bg { position: absolute; inset: -12%; width: 124%; height: 124%; object-fit: cover; filter: blur(16px) brightness(.7); transform: none; max-width: none; }
+.cover .cover-img.img-fit, .trend-hero .th-img img.img-fit { object-fit: contain; object-position: center; }

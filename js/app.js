@@ -1013,7 +1013,7 @@
     const c = PCAT[p.kind] || { icon: "📍", color: "#888" };
     const cv = coverOf(p);
     const img = cv
-      ? `<img class="cover-img" ${imgSrc(cv.src, cv.thumb, cls.includes("pd-cover") ? 800 : 480, cls.includes("pd-cover") ? 600 : 360)} alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="${IMG_RETRY}var c=this.nextElementSibling;if(c&&c.classList.contains('credit'))c.remove();this.remove()"><span class="credit">📷 ${esc(cv.credit)}</span>`
+      ? `${cv.post ? fitBg(cv.src, cv.thumb) : ""}<img class="cover-img${cv.post ? " img-fit" : ""}" ${cv.post ? imgSrc(cv.src, cv.thumb, 800, 0) : imgSrc(cv.src, cv.thumb, cls.includes("pd-cover") ? 800 : 480, cls.includes("pd-cover") ? 600 : 360)} alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="${IMG_RETRY}var c=this.nextElementSibling;if(c&&c.classList.contains('credit'))c.remove();this.remove()"><span class="credit">📷 ${esc(cv.credit)}</span>`
       : "";
     return `<div class="${cls}" style="background:linear-gradient(135deg, ${c.color}, ${c.color2 || c.color})"><span class="emoji">${c.icon}</span>${img}`;
   }
@@ -1191,10 +1191,11 @@
   function imgSrc(u, thumb, w, h) {
     const base = imgOk(thumb) ? thumb : CDN.test(u || "") && imgOk(u) ? u : "";
     if (!base) return `src="${esc(u)}"`;
-    const small = `https://wsrv.nl/?url=${encodeURIComponent(base)}&w=${w}&h=${h}&fit=cover&a=attention&output=webp&q=72`;
+    const small = `https://wsrv.nl/?url=${encodeURIComponent(base)}&w=${w}${h ? `&h=${h}&fit=cover` : ""}&output=webp&q=72`;
     return `src="${esc(small)}" data-o="${esc(imgOk(u) ? u : base)}"`;
   }
   const IMG_RETRY = "if(this.dataset.o){this.src=this.dataset.o;this.dataset.o='';return}";
+  const fitBg = (u, thumb) => `<img class="img-bg" ${imgSrc(u, thumb, 120, 0)} alt="" aria-hidden="true" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">`;
   function trendThumb(n) {
     const title = String(n.title || "").toLowerCase();
     // รูปปกของโพสต์ (พรีวิวจาก Lemon8 มีลายน้ำผู้โพสต์) → ไม่มีใช้รูปสถานที่ที่ชื่ออยู่ในโพสต์ → ไอคอนหมวด
@@ -1380,7 +1381,7 @@
     const top = [...posts].sort((a, b) => (b.likes || 0) - (a.likes || 0))[0];
     const topCv = top && (imgOk(top.image) ? { src: top.image, thumb: top.thumb } : imgOk(coverOf(p)?.src) ? coverOf(p) : null), topImg = topCv?.src;
     const topHtml = top ? `<a class="trend-hero" ${inAppLink(top.link)}>
-        <span class="th-img" style="background:linear-gradient(135deg, ${c?.color || "#ff7a45"}, ${c?.color2 || c?.color || "#ff2d78"})">${c?.icon || "🔥"}${topImg ? `<img ${imgSrc(topImg, topCv.thumb, 800, 600)} alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="${IMG_RETRY}this.remove()">` : ""}</span>
+        <span class="th-img" style="background:linear-gradient(135deg, ${c?.color || "#ff7a45"}, ${c?.color2 || c?.color || "#ff2d78"})">${c?.icon || "🔥"}${topImg ? `${fitBg(topImg, topCv.thumb)}<img class="img-fit" ${imgSrc(topImg, topCv.thumb, 800, 0)} alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="${IMG_RETRY}this.remove()">` : ""}</span>
         <span class="th-badge">👑 ${t("topPost")}${top.likes ? ` · ❤️ ${fmtLikes(top.likes)}` : ""}</span>
         <span class="th-txt"><b>${esc(top.title)}</b><small>${esc(String(top.source || "Lemon8").replace(/^Lemon8 · /, "@"))}${top.date ? ` · ${relDate(top.date)}` : ""}</small></span>
       </a>` : "";
