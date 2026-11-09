@@ -3,7 +3,6 @@
     "id": "trip-sb21013841",
     "active": true,
     "partner": "Trip.com",
-    "name": "Trip.com แอปเดียว จองได้ครบ",
     "iframe": "https://th.trip.com/partners/ad/SB21013841?Allianceid=11305162&SID=335604865&trip_sub1=app-ad",
     "w": 728,
     "h": 90,
@@ -14,13 +13,13 @@
       "detail",
       "news"
     ],
-    "url": "https://th.trip.com/?Allianceid=11305162&SID=335604865&trip_sub1=app-ad&trip_sub3=SB21013841"
+    "url": "https://th.trip.com/?Allianceid=11305162&SID=335604865&trip_sub1=app-ad&trip_sub3=SB21013841",
+    "title": "Trip.com แอปเดียว จองได้ครบ"
   },
   {
     "id": "trip-sb21013855",
     "active": true,
     "partner": "Trip.com",
-    "name": "ดีลโรงแรม 1.4 ล้านแห่งทั่วโลก",
     "iframe": "https://th.trip.com/partners/ad/SB21013855?Allianceid=11305162&SID=335604865&trip_sub1=app-ad",
     "w": 728,
     "h": 90,
@@ -31,13 +30,13 @@
       "detail",
       "news"
     ],
-    "url": "https://th.trip.com/hotels/w/home?Allianceid=11305162&SID=335604865&trip_sub1=app-ad&trip_sub3=SB21013855"
+    "url": "https://th.trip.com/hotels/w/home?Allianceid=11305162&SID=335604865&trip_sub1=app-ad&trip_sub3=SB21013855",
+    "title": "ดีลโรงแรม 1.4 ล้านแห่งทั่วโลก"
   },
   {
     "id": "trip-sb21013862",
     "active": true,
     "partner": "Trip.com",
-    "name": "เที่ยวบินครอบคลุมทุกเส้นทาง",
     "iframe": "https://th.trip.com/partners/ad/SB21013862?Allianceid=11305162&SID=335604865&trip_sub1=app-ad",
     "w": 728,
     "h": 90,
@@ -48,13 +47,13 @@
       "detail",
       "news"
     ],
-    "url": "https://th.trip.com/flights/welcome/?to=home&Allianceid=11305162&SID=335604865&trip_sub1=app-ad&trip_sub3=SB21013862"
+    "url": "https://th.trip.com/flights/welcome/?to=home&Allianceid=11305162&SID=335604865&trip_sub1=app-ad&trip_sub3=SB21013862",
+    "title": "เที่ยวบินครอบคลุมทุกเส้นทาง"
   },
   {
     "id": "trip-sb21013869",
     "active": true,
     "partner": "Trip.com",
-    "name": "เที่ยวบิน กรุงเทพ–โตเกียว",
     "iframe": "https://th.trip.com/partners/ad/SB21013869?Allianceid=11305162&SID=335604865&trip_sub1=app-ad",
     "w": 728,
     "h": 90,
@@ -65,6 +64,7 @@
       "detail",
       "news"
     ],
-    "url": "https://th.trip.com/flights/Bangkok-to-Tokyo/tickets-BKK-TYO?flighttype=S&dcity=BKK&acity=TYO&Allianceid=11305162&SID=335604865&trip_sub1=app-ad&trip_sub3=SB21013869"
+    "url": "https://th.trip.com/flights/Bangkok-to-Tokyo/tickets-BKK-TYO?flighttype=S&dcity=BKK&acity=TYO&Allianceid=11305162&SID=335604865&trip_sub1=app-ad&trip_sub3=SB21013869",
+    "title": "เที่ยวบิน กรุงเทพ–โตเกียว"
   }
 ]

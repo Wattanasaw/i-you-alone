@@ -263,8 +263,8 @@
       // แบนเนอร์ยาว (Static Banner ของ Trip.com 728×90): กรอบคงที่ตามสัดส่วน ย่อ/ขยายทั้งแบนเนอร์ให้พอดีความกว้าง ไม่มีข้อความประกอบ
       // ทับด้วยลิงก์โปร่งใส (ปลายทางเดียวกับที่แบนเนอร์เปิด) → ในแอพมือถือกดแล้วเปิดแอพ Trip.com/เบราว์เซอร์ ไม่พาหน้าแอพหาย
       if (a.iframe) return `<div class="ad ad-banner" style="aspect-ratio:${+a.w || 728}/${+a.h || 90};--bw:${+a.w || 728}px;--bh:${+a.h || 90}px">
-          <iframe src="${safeUrl(a.iframe)}" width="${+a.w || 728}" height="${+a.h || 90}" scrolling="no" frameborder="0" loading="lazy" title="${esc(a.name || a.partner || "")}" tabindex="-1"></iframe>
-          ${a.url ? `<a class="ad-banner-link" href="${safeUrl(a.url)}" target="_blank" rel="sponsored nofollow noopener" data-ext-app aria-label="${esc(a.name || a.partner || "")}"></a>` : ""}
+          <iframe src="${safeUrl(a.iframe)}" width="${+a.w || 728}" height="${+a.h || 90}" scrolling="no" frameborder="0" loading="lazy" title="${esc(a.title || a.partner || "")}" tabindex="-1"></iframe>
+          ${a.url ? `<a class="ad-banner-link" href="${safeUrl(a.url)}" target="_blank" rel="sponsored nofollow noopener" data-ext-app aria-label="${esc(a.title || a.partner || "")}"></a>` : ""}
         </div>`;
       const title = tr(a, "title"), sub = tr(a, "sub");
       // ดีลพันธมิตร (Trip.com): การ์ดรูป/ธงชาติ + ชื่อดีล + ปุ่ม · เปิดแอพ Trip.com ในมือถือถ้ามี
