@@ -172,7 +172,7 @@
       getJSON("data/places.json", { places: [], trends: {} }),
       getJSON("data/business-places.json", []),  // ร้านที่สมาชิกธุรกิจเพิ่ม (AI ตรวจผ่านแล้ว)
       getJSON("data/trend-places.json", []),     // สถานที่จากโพสต์เทรนด์ (หมุดสถานที่ใน Lemon8 + พิกัด OSM)
-      getJSON("data/place-reviews.json", {}),    // AI สรุปรีวิวจากโพสต์จริง (จุดเด่น ต้องลอง เคล็ดลับ เหมาะกับ)
+      getJSON("data/place-reviews-lite.json", {}), // AI สรุปรีวิวจากโพสต์จริง: แค่สรุปสั้น + เหมาะกับ (รีวิวเต็มโหลดตอนเปิดหน้าสถานที่)
       getJSON("data/place-ai.json", {}),         // ข้อมูลที่เจ้าของแอพรวบรวมด้วย Gemini (scripts/import-gemini.mjs) — ใช้เสริมเมื่อไม่มีข้อมูลจากแหล่งอื่น
       getJSON("data/removed.json", {}),         // เนื้อหาที่เจ้าของขอให้ลบ (ลิงก์โพสต์ / ผู้โพสต์) → ไม่แสดงในแอพ
       getJSON("data/outfits.json", {})          // แนวการแต่งตัว + สินค้าลิงก์พันธมิตร (Shopee) ต่อแนว
@@ -182,6 +182,7 @@
     state.outfits = outfits || {};
     state.postOk = x => !rmLinks.has(x?.link) && !rmAuthors.has((String(x?.link || "").split("lemon8-app.com/@")[1] || "").split("/")[0].toLowerCase());
     state.reviews = reviews && typeof reviews === "object" ? reviews : {};
+    state.reviewFull ??= {};
     state.ai = aiInfo && typeof aiInfo === "object" ? aiInfo : {};
     const bizList = Array.isArray(biz) ? biz : [], replaced = new Set(bizList.map(b => b.replaces).filter(Boolean));
     const base = [...(places.places || []).filter(p => !replaced.has(p.id)), ...bizList];
@@ -1129,8 +1130,19 @@
   // สรุปรีวิว (AI จากโพสต์จริง) ของสถานที่ · ภาษาที่เลือก ไม่มีใช้ไทย
   const GOOD_ICON = { photo: "📸", work: "💻", kids: "👶", pets: "🐾", date: "💑", group: "👯", view: "🌄", nature: "🌿", chill: "☕", budget: "💸", night: "🌙", food: "😋" };
   // สรุปรีวิว: จากโพสต์ Lemon8 จริงก่อน · ไม่มี → ข้อมูลที่รวบรวมด้วย Gemini (แสดงป้าย "AI อาจคลาดเคลื่อน")
+  // หน้าแรกโหลดแค่สรุปสั้น (place-reviews-lite.json) · รีวิวเต็มแบ่ง 32 ไฟล์ โหลดเมื่อเปิดหน้าสถานที่ (แบ่งด้วย placeShard เหมือน place-posts)
+  const reviewShards = new Map();
+  function loadFullReview(p) {
+    const n = placeShard(p.id);
+    if (!reviewShards.has(n)) reviewShards.set(n, getJSON(`data/place-reviews/${String(n).padStart(2, "0")}.json`, {}));
+    return reviewShards.get(n).then(s => {
+      const full = s?.[p.id];
+      state.reviewFull[p.id] = full || null;
+      return !!full;
+    });
+  }
   const reviewOf = p => {
-    const r = state.reviews?.[p.id];
+    const r = state.reviewFull?.[p.id] || state.reviews?.[p.id];
     if (r && r.summary && !r.skip) return r;
     const a = state.ai?.[p.id];
     return a?.summary?.th || a?.highlights?.th?.length ? { ...a, ai: true } : null;
@@ -1711,6 +1723,13 @@
     activateAdsense();
     // โหลดรีวิว Lemon8 เต็มของที่นี่ แล้ววาดใหม่ (ยังอยู่หน้าเดิม · คงตำแหน่งเลื่อน)
     if (!p.allPostsLoaded) loadPlaceReviews(p).then(had => {
+      if (!had || location.hash !== `#/place/${encodeURIComponent(id)}`) return;
+      const y = window.scrollY;
+      renderPlace(id); hydrateGuides();
+      window.scrollTo(0, y);
+    });
+    // สรุปรีวิวเต็ม (จุดเด่น ต้องลอง เคล็ดลับ ที่จอดรถ แหล่งอ้างอิง) โหลดเฉพาะตอนเปิดหน้านี้
+    if (state.reviews[p.id] && !(p.id in state.reviewFull)) loadFullReview(p).then(had => {
       if (!had || location.hash !== `#/place/${encodeURIComponent(id)}`) return;
       const y = window.scrollY;
       renderPlace(id); hydrateGuides();

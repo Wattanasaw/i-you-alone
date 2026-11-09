@@ -61,7 +61,7 @@ jobs:
         run: |
           git config user.name "news-bot"
           git config user.email "news-bot@users.noreply.github.com"
-          for f in data/places.json data/trend-places.json data/place-reviews.json data/place-info.json data/place-posts data/link-check.json data/name-origin.json data/osm-provinces.json; do
+          for f in data/places.json data/trend-places.json data/place-reviews.json data/place-reviews-lite.json data/place-reviews data/place-info.json data/place-posts data/link-check.json data/name-origin.json data/osm-provinces.json; do
             if [ -e "$f" ]; then git add "$f"; fi
           done
           git diff --cached --quiet || (git commit -m "ตรวจข้อมูลสถานที่ (หลายแหล่ง)" && git pull --rebase -X theirs && git push)

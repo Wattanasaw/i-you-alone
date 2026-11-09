@@ -13,6 +13,7 @@
 // node scripts/place-reviews.mjs [--ai 40] [--only <id>] [--sources]  (--sources = แสดงแหล่งที่รวบรวมได้ ไม่ถาม AI)
 import { readFile, writeFile, rename } from "node:fs/promises";
 import { aiJSON, aiAvailable, aiName } from "./gemini.mjs";
+import { splitReviews } from "./split-reviews.mjs";
 
 const BOT = "IYouAloneBot/1.0 (+https://wattanasaw.github.io/i-you-alone/)";
 const BROWSER = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130 Safari/537.36";
@@ -365,4 +366,5 @@ left=${left}
 const live = new Set(all.map(p => p.id));
 for (const id of Object.keys(cache)) if (!live.has(id)) delete cache[id];
 await save("data/place-reviews.json", JSON.stringify(cache) + "\n");
+await splitReviews(cache); // ไฟล์เบาสำหรับแอพ (place-reviews-lite.json + place-reviews/NN.json)
 console.log(`ถาม AI ${asked} ครั้ง · สรุปใหม่ ${done} แห่ง · ข้อมูลที่ผ่านการตรวจ: เวลาเปิด ${factN.hours} · ค่าเข้า ${factN.entry} · เมนู ${factN.menu} · ไม่ผ่าน (ไม่ใช้) ${rejected} ค่า · มีสรุปทั้งหมด ${Object.values(cache).filter(c => c.summary?.th).length} แห่ง`);
