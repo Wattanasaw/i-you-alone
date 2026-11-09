@@ -117,6 +117,8 @@ export async function osmProvincePlaces({ overpass, provinceByEn, perRun = 20, m
     }
     cache[prov] = { at: new Date().toISOString(), items };
     done++;
+    // บันทึกทุกจังหวัด (ถูกหยุดกลางทาง/หมดเวลา จังหวัดที่ดึงแล้วไม่หาย)
+    await save("data/osm-provinces.json", JSON.stringify(cache) + "\n");
     log(`  OSM ${prov}: ${Object.entries(byKind).map(([k, l]) => `${k} ${Math.min(l.length, k === "animalcafe" ? 20 : capOf(k, prov))}/${l.length}`).join(" · ")}`);
   }
   await save("data/osm-provinces.json", JSON.stringify(cache) + "\n");

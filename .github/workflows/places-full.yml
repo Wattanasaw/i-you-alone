@@ -1,0 +1,54 @@
+name: ดึงสถานที่เที่ยวให้ครบทุกจังหวัด (OpenStreetMap รายจังหวัด + สร้างรายการใหม่)
+
+# สั่งรันเองเมื่อต้องการเติมจังหวัดที่ยังไม่มีข้อมูล (เครื่องผู้ดูแลเรียกเซิร์ฟเวอร์ Overpass ไม่ได้/ช้า)
+# ดึงทีละจังหวัด (จังหวัดที่ยังไม่มีข้อมูลก่อน) → สร้าง data/places.json ใหม่ · ยังไม่ครบ 77 จังหวัด → สั่งรอบต่อไปเอง
+on:
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: data-update
+  cancel-in-progress: false
+
+jobs:
+  places:
+    runs-on: ubuntu-latest
+    timeout-minutes: 210
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: ${{ github.ref_name }}
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+      - name: นับจังหวัดที่มีข้อมูลก่อนเริ่ม
+        run: echo "N0=$(node -e 'const j=JSON.parse(require("fs").readFileSync("data/osm-provinces.json"));console.log(Object.keys(j).filter(k=>k!=="_areas"&&j[k].items).length)')" >> $GITHUB_ENV
+      - name: OpenStreetMap รายจังหวัด (ทุกจังหวัด สูงสุด 120 นาที)
+        run: node scripts/osm-provinces.mjs --all
+        timeout-minutes: 125
+        continue-on-error: true
+      - name: สร้างรายการสถานที่ใหม่
+        run: node scripts/fetch-places.mjs
+        timeout-minutes: 60
+        continue-on-error: true
+      - name: บันทึกการเปลี่ยนแปลง
+        if: ${{ always() }}
+        run: |
+          git config user.name "news-bot"
+          git config user.email "news-bot@users.noreply.github.com"
+          for f in data/places.json data/trend-places.json data/osm-provinces.json data/geocache.json data/place-images.json; do
+            if [ -e "$f" ]; then git add "$f"; fi
+          done
+          git diff --cached --quiet || (git commit -m "สถานที่เที่ยว: ดึงเพิ่มทุกจังหวัด (OpenStreetMap)" && git pull --rebase -X theirs && git push)
+      # รันต่อเฉพาะเมื่อรอบนี้ได้จังหวัดเพิ่ม (เซิร์ฟเวอร์ล่มทั้งรอบ → หยุด ไม่วนไม่รู้จบ)
+      - name: ยังไม่ครบ 77 จังหวัด → รันรอบต่อไป
+        if: ${{ always() }}
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          n=$(node -e 'const j=JSON.parse(require("fs").readFileSync("data/osm-provinces.json"));console.log(Object.keys(j).filter(k=>k!=="_areas"&&j[k].items).length)')
+          echo "มีข้อมูล $n/77 จังหวัด (ก่อนเริ่ม $N0)"
+          if [ "$n" -lt 77 ] && [ "$n" -gt "$N0" ]; then gh workflow run places-full.yml --ref ${{ github.ref_name }}; fi
