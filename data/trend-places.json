@@ -2042,12 +2042,12 @@
   "fetchedAt": "2026-11-08T03:32:51.643Z",
   "district": "บางปะอิน",
   "districtEn": "Bang Pa-in",
-  "hours": "Th-Su 09:00-16:00",
-  "hoursSrc": "review1",
   "entry": {
    "free": true,
    "src": "review1"
-  }
+  },
+  "hours": "Th-Su 09:00-16:00",
+  "hoursSrc": "review1"
  },
  {
   "id": "l8-22535797338704693",
@@ -5417,9 +5417,11 @@
   "district": "เมืองสมุทรสงคราม",
   "districtEn": "Mueang Samut Songkhram",
   "reviewCount": 63,
+  "hours": "Mo-Su 06:00-19:00",
+  "hoursSrc": "review1",
   "entry": {
    "free": true,
-   "src": "typical"
+   "src": "review1"
   }
  },
  {
@@ -7880,7 +7882,33 @@
   "fetchedAt": "2026-11-08T03:32:51.641Z",
   "district": "ลานสัก",
   "districtEn": "Lan Sak",
-  "reviewCount": 41
+  "reviewCount": 41,
+  "entry": {
+   "tiers": [
+    {
+     "who": {
+      "th": "คนไทย / บุคคลทั่วไป",
+      "en": "Thai citizen / General visitor",
+      "zh": "泰国公民 / 普通游客"
+     },
+     "note": {
+      "th": "บางแหล่งระบุ 20-30 บาท",
+      "en": "Some sources mention 20-30 baht",
+      "zh": "部分来源提及20-30泰铢"
+     },
+     "price": 20,
+     "n": 2,
+     "ids": [
+      "L3",
+      "L4"
+     ],
+     "rv": true
+    }
+   ],
+   "src": "review"
+  },
+  "hours": "Mo-Su 08:30-16:00",
+  "hoursSrc": "review1"
  },
  {
   "id": "l8-22535797298008886",
@@ -9030,7 +9058,7 @@
   "district": "แม่ทะ",
   "reviewCount": 48,
   "districtEn": "Mae Tha",
-  "hours": "Mo-Su 06:00-17:00; We off",
+  "hours": "Mo,Tu,Th-Su 06:00-16:30",
   "hoursSrc": "review",
   "entry": {
    "free": true,
@@ -18238,7 +18266,44 @@
   ],
   "fetchedAt": "2026-11-08T03:32:51.766Z",
   "district": "สวนหลวง",
-  "districtEn": "Suan Luang"
+  "districtEn": "Suan Luang",
+  "hours": "Tu-Su 17:00-02:00; Mo off",
+  "hoursSrc": "review",
+  "menuPrice": {
+   "min": 290,
+   "max": 590,
+   "items": [
+    {
+     "name": {
+      "th": "ยำเย็นตาโฟทะเล",
+      "en": "Yum Yen Ta Fo Talay"
+     },
+     "price": 290
+    },
+    {
+     "name": {
+      "th": "หอยแมลงภู่อบชีส",
+      "en": "Baked Mussels with Cheese"
+     },
+     "price": 390
+    },
+    {
+     "name": {
+      "th": "ไส้กรอกซูริค",
+      "en": "Zurich Sausage"
+     },
+     "price": 390
+    },
+    {
+     "name": {
+      "th": "ไก่แสงอาทิตย์",
+      "en": "Sun-dried Chicken"
+     },
+     "price": 590
+    }
+   ],
+   "src": "review1"
+  }
  },
  {
   "id": "l8-22535865205801548",
@@ -19143,7 +19208,30 @@
    }
   ],
   "fetchedAt": "2026-11-08T03:33:41.765Z",
-  "district": "คลองหลวง"
+  "district": "คลองหลวง",
+  "hours": "Mo-Su 07:00-18:00",
+  "hoursSrc": "review",
+  "menuPrice": {
+   "min": 65,
+   "max": 90,
+   "items": [
+    {
+     "name": {
+      "th": "Americano",
+      "en": "Americano"
+     },
+     "price": 65
+    },
+    {
+     "name": {
+      "th": "Matcha Latte",
+      "en": "Matcha Latte"
+     },
+     "price": 90
+    }
+   ],
+   "src": "review1"
+  }
  },
  {
   "id": "l8-22535797290143078",
@@ -19189,7 +19277,9 @@
   ],
   "fetchedAt": "2026-11-08T03:34:18.228Z",
   "district": "เมืองนราธิวาส",
-  "districtEn": "Mueang Narathiwat"
+  "districtEn": "Mueang Narathiwat",
+  "hours": "Mo-Su 10:30-20:00",
+  "hoursSrc": "review1"
  },
  {
   "id": "l8-22535865257566340",
@@ -19235,7 +19325,9 @@
   ],
   "fetchedAt": "2026-11-08T03:32:51.785Z",
   "district": "สูงเม่น",
-  "districtEn": "Sung Men"
+  "districtEn": "Sung Men",
+  "hours": "Mo, Th-Fr 10:30-16:00; Sa-Su 10:00-16:00; Tu-We off",
+  "hoursSrc": "review1"
  },
  {
   "id": "l8-22535796492979581",
@@ -19803,8 +19895,6 @@
   "fetchedAt": "2026-11-08T03:32:51.816Z",
   "district": "ราชเทวี",
   "districtEn": "Ratchathewi",
-  "hours": "Tu-Su 12:00-20:00; Sa-Su 11:00-20:00; Mo off",
-  "hoursSrc": "review1",
   "entry": {
    "tiers": [
     {
@@ -19827,7 +19917,9 @@
     }
    ],
    "src": "review1"
-  }
+  },
+  "hours": "Tu-Su 12:00-20:00; Sa-Su 11:00-20:00; Mo off",
+  "hoursSrc": "review1"
  },
  {
   "id": "l8-22535865207439420",
@@ -20053,8 +20145,6 @@
   "district": "คลองเตย",
   "districtEn": "Khlong Toei",
   "reviewCount": 16,
-  "hours": "Mo-Su 10:00-21:00",
-  "hoursSrc": "review1",
   "entry": {
    "tiers": [
     {
@@ -20077,7 +20167,9 @@
     }
    ],
    "src": "review1"
-  }
+  },
+  "hours": "Mo-Su 10:00-21:00",
+  "hoursSrc": "review1"
  },
  {
   "id": "l8-22535865205777527",
@@ -20693,7 +20785,11 @@
   ],
   "fetchedAt": "2026-11-07T19:20:35.418Z",
   "district": "พระโขนง",
-  "districtEn": "Phra Khanong"
+  "districtEn": "Phra Khanong",
+  "entry": {
+   "free": true,
+   "src": "review1"
+  }
  },
  {
   "id": "l8-21568226366281277",
@@ -20751,7 +20847,42 @@
   ],
   "fetchedAt": "2026-11-07T19:20:35.337Z",
   "district": "บางคนที",
-  "districtEn": "Bang Khonthi"
+  "districtEn": "Bang Khonthi",
+  "menuPrice": {
+   "min": 60,
+   "max": 299,
+   "items": [
+    {
+     "name": {
+      "th": "น้ำผลไม้ปั่น",
+      "en": "Fruit smoothie"
+     },
+     "price": 60
+    },
+    {
+     "name": {
+      "th": "ข้าวยำไก่แซ่บ",
+      "en": "Spicy chicken salad with rice"
+     },
+     "price": 70
+    },
+    {
+     "name": {
+      "th": "ยำส้มโอ",
+      "en": "Pomelo spicy salad"
+     },
+     "price": 150
+    },
+    {
+     "name": {
+      "th": "เซ็ตสเต็ก",
+      "en": "Steak set"
+     },
+     "price": 299
+    }
+   ],
+   "src": "review1"
+  }
  },
  {
   "id": "l8-22535796493474963",
@@ -21018,7 +21149,9 @@
   ],
   "fetchedAt": "2026-11-07T19:20:35.448Z",
   "district": "เมืองสตูล",
-  "districtEn": "Mueang Satun"
+  "districtEn": "Mueang Satun",
+  "hours": "Mo-Su 09:00-18:00",
+  "hoursSrc": "review1"
  },
  {
   "id": "l8-21568226385671684",
@@ -21048,7 +21181,44 @@
   ],
   "fetchedAt": "2026-11-07T19:20:35.457Z",
   "district": "เมืองขอนแก่น",
-  "districtEn": "Mueang Khon Kaen"
+  "districtEn": "Mueang Khon Kaen",
+  "hours": "Mo-Su 18:00-01:30",
+  "hoursSrc": "review1",
+  "menuPrice": {
+   "min": 126,
+   "max": 169,
+   "items": [
+    {
+     "name": {
+      "th": "เอ็นไก่ทอด",
+      "en": "Fried chicken tendons"
+     },
+     "price": 126
+    },
+    {
+     "name": {
+      "th": "กุ้งฝอยคั่วพริกเกลือ",
+      "en": "Crispy tiny shrimp with chili and salt"
+     },
+     "price": 149
+    },
+    {
+     "name": {
+      "th": "ข้าวผัดเนื้อสับรวนเค็ม",
+      "en": "Fried rice with salted minced beef"
+     },
+     "price": 149
+    },
+    {
+     "name": {
+      "th": "สปาเกตตี้ซีฟู้ดพิโรธ",
+      "en": "Spicy seafood spaghetti"
+     },
+     "price": 169
+    }
+   ],
+   "src": "review1"
+  }
  },
  {
   "id": "l8-21568226289939466",
@@ -21077,7 +21247,51 @@
   ],
   "fetchedAt": "2026-11-07T19:20:35.460Z",
   "district": "แก่งคอย",
-  "districtEn": "Kaeng Khoi"
+  "districtEn": "Kaeng Khoi",
+  "hours": "Mo-Sa 10:00-19:00",
+  "hoursSrc": "review1",
+  "menuPrice": {
+   "min": 90,
+   "max": 200,
+   "items": [
+    {
+     "name": {
+      "th": "ปีกไก่ทอดเกลือ",
+      "en": "Salted Fried Chicken Wings"
+     },
+     "price": 90
+    },
+    {
+     "name": {
+      "th": "วุ้นเส้นผัดแหนม",
+      "en": "Glass Noodles Stir-fried with Sour Pork"
+     },
+     "price": 120
+    },
+    {
+     "name": {
+      "th": "หมูสามชั้นทอดน้ำปลา",
+      "en": "Fried Pork Belly with Fish Sauce"
+     },
+     "price": 150
+    },
+    {
+     "name": {
+      "th": "ตับทอดกระเทียม",
+      "en": "Garlic Fried Liver"
+     },
+     "price": 150
+    },
+    {
+     "name": {
+      "th": "ซุปเนื้อ",
+      "en": "Beef Soup"
+     },
+     "price": 200
+    }
+   ],
+   "src": "review1"
+  }
  },
  {
   "id": "l8-42203861020099863",
@@ -21107,7 +21321,44 @@
   ],
   "fetchedAt": "2026-11-07T19:21:12.096Z",
   "district": "นครชัยศรี",
-  "districtEn": "Nakhon Chai Si"
+  "districtEn": "Nakhon Chai Si",
+  "hours": "Mo,Th-Fr 09:00-18:00; Sa-Su 08:00-18:00; Tu-We off",
+  "hoursSrc": "review1",
+  "menuPrice": {
+   "min": 60,
+   "max": 95,
+   "items": [
+    {
+     "name": {
+      "th": "ชามะลิน้ำผึ้งมะนาว",
+      "en": "Honey Lemon Jasmine Tea"
+     },
+     "price": 60
+    },
+    {
+     "name": {
+      "th": "พิ๊งค์เลดี้",
+      "en": "Pink Lady"
+     },
+     "price": 65
+    },
+    {
+     "name": {
+      "th": "ม้าฮ่อ",
+      "en": "Ma Hor"
+     },
+     "price": 79
+    },
+    {
+     "name": {
+      "th": "แตงโมปลาแห้ง",
+      "en": "Watermelon with Dried Fish"
+     },
+     "price": 95
+    }
+   ],
+   "src": "review1"
+  }
  },
  {
   "id": "l8-22535865213402998",
@@ -21136,7 +21387,58 @@
   ],
   "fetchedAt": "2026-11-07T19:22:24.083Z",
   "district": "เมืองนครพนม",
-  "districtEn": "Mueang Nakhon Phanom"
+  "districtEn": "Mueang Nakhon Phanom",
+  "hours": "Mo-Su 18:00-00:00",
+  "hoursSrc": "review1",
+  "menuPrice": {
+   "min": 220,
+   "max": 280,
+   "items": [
+    {
+     "name": {
+      "th": "Cider Cocktail",
+      "en": "Cider Cocktail"
+     },
+     "price": 130
+    },
+    {
+     "name": {
+      "th": "Cali Me Papa",
+      "en": "Cali Me Papa"
+     },
+     "price": 220
+    },
+    {
+     "name": {
+      "th": "Rosse Paulstrener",
+      "en": "Rosse Paulstrener"
+     },
+     "price": 240
+    },
+    {
+     "name": {
+      "th": "Carlsberg",
+      "en": "Carlsberg"
+     },
+     "price": 259
+    },
+    {
+     "name": {
+      "th": "Milk Stout",
+      "en": "Milk Stout"
+     },
+     "price": 280
+    },
+    {
+     "name": {
+      "th": "Erdinger",
+      "en": "Erdinger"
+     },
+     "price": 280
+    }
+   ],
+   "src": "review1"
+  }
  },
  {
   "id": "l8-42203860764442113",
@@ -21165,7 +21467,28 @@
   ],
   "fetchedAt": "2026-11-07T19:22:26.783Z",
   "district": "เมืองหนองคาย",
-  "districtEn": "Mueang Nong Khai"
+  "districtEn": "Mueang Nong Khai",
+  "menuPrice": {
+   "min": 79,
+   "max": 79,
+   "items": [
+    {
+     "name": {
+      "th": "ข้าวซอยไก่",
+      "en": "Khao Soi Gai"
+     },
+     "price": 79
+    },
+    {
+     "name": {
+      "th": "ขนมจีนน้ำเงี้ยว",
+      "en": "Khanom Jeen Nam Ngiao"
+     },
+     "price": 79
+    }
+   ],
+   "src": "review1"
+  }
  },
  {
   "id": "l8-42203861097648755",

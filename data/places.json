@@ -3629,11 +3629,25 @@
    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/e06d8f81ebaf439491f1445c65f5f397~tplv-sdweummd6v-text-logo-v1:QGFubmFfZ2Vueg==:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796709600&x-signature=i4nf41Uga5%2BLOO1eCciLUELycwE%3D",
    "districtEn": "Ko Samui",
    "reviewCount": 71,
-   "hours": "Mo-Su 07:00-19:00",
-   "hoursSrc": "review",
+   "hours": "Mo-Su 08:00-17:00",
+   "hoursSrc": "review1",
    "entry": {
-    "free": true,
-    "src": "typical"
+    "tiers": [
+     {
+      "who": {
+       "th": "ชาวต่างชาติ",
+       "en": "Foreigner",
+       "zh": "外国人"
+      },
+      "price": 20,
+      "n": 1,
+      "ids": [
+       "L4"
+      ],
+      "rv": true
+     }
+    ],
+    "src": "review1"
    }
   },
   {
@@ -5122,8 +5136,8 @@
    "hot": 9,
    "trend": 6,
    "districtEn": "Phra Nakhon",
-   "hours": "Mo-Su 13:00-17:00",
-   "hoursSrc": "review",
+   "hours": "Mo-Su 06:00-18:00",
+   "hoursSrc": "review1",
    "entry": {
     "free": true,
     "src": "typical"
@@ -6283,8 +6297,8 @@
    "trend": 5,
    "districtEn": "Lat Krabang",
    "reviewCount": 20,
-   "hours": "08:00-17:00",
-   "hoursSrc": "typical",
+   "hours": "07:30-18:00",
+   "hoursSrc": "review1",
    "entry": {
     "free": true,
     "src": "typical"
@@ -9833,8 +9847,22 @@
    "reviewCount": 48,
    "districtEn": "Sam Phran",
    "entry": {
-    "free": true,
-    "src": "typical"
+    "tiers": [
+     {
+      "who": {
+       "th": "ค่าลิฟต์",
+       "en": "Elevator fee",
+       "zh": "电梯费"
+      },
+      "price": 20,
+      "n": 1,
+      "ids": [
+       "L4"
+      ],
+      "rv": true
+     }
+    ],
+    "src": "review1"
    }
   },
   {
@@ -15414,11 +15442,73 @@
     "at": "2026-11-07",
     "posts": []
    },
-   "reviewCount": 11,
+   "reviewCount": 15,
    "imageAi": true,
    "imageScore": 8,
    "district": "เมืองเชียงใหม่",
    "districtEn": "Mueang Chiang Mai",
+   "posts": [
+    {
+     "title": "อุทยานแห่งชาติ มีอะไรให้น่าไปเที่ยว? ล่าตราปั๊มอุทยาน 🌳⛰️",
+     "likes": 244,
+     "date": "2024-11-10",
+     "link": "https://www.lemon8-app.com/@bbeamthicha/7435457206662840849?region=th",
+     "source": "Lemon8 · Beamthicha",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7435457206662840849&index=0&sign=270ae8d617a07d7c6e9c155409f195ca",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "ค่ำคืน!! ลานกางเต็นท์ดอยปุย ⛺️💫🌌 อช.ดอยสุเทพ-ปุย เชียงใหม่",
+     "likes": 98,
+     "date": "2024-11-11",
+     "link": "https://www.lemon8-app.com/@hrpatiew/7435889047224205832?region=th",
+     "source": "Lemon8 · HRพาเที่ยว",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7435889047224205832&index=0&sign=58bc5b6f1227c72b21c6bb0b6f47cd16",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "One day trip",
+     "likes": 29,
+     "date": "2025-07-17",
+     "link": "https://www.lemon8-app.com/@khaoohom/7528049778459247111?region=th",
+     "source": "Lemon8 · Khaoohom",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7528049778459247111&index=0&sign=a369628623839c8675b29b06b01289b4",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "นอนเต็นท์ดอยปุยชมวิวในเมือง ⛺️🏙️🌳⛰️☁️",
+     "likes": 21,
+     "date": "2024-10-17",
+     "link": "https://www.lemon8-app.com/@jobjobjobbb/7426755247831286273?region=th",
+     "source": "Lemon8 · Jobbbbbbbbbbbbb",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7426755247831286273&index=0&sign=c59169b49d4c4b9a78bce1882b607479",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "1 Day Trip ดอยหัวหมู - ดอยปุย",
+     "likes": 19,
+     "date": "2026-05-05",
+     "link": "https://www.lemon8-app.com/@yangnueagrill/7636450851002860050?region=th",
+     "source": "Lemon8 · FonTology",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7636450851002860050&index=0&sign=04f35ba63e3b8ce807d1413173ea4718",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "เสพติดธรรมชาติ 🌳🌿",
+     "likes": 12,
+     "date": "2025-06-11",
+     "link": "https://www.lemon8-app.com/@mik_966/7514585502461411856?region=th",
+     "source": "Lemon8 · มิกค์ 🌳",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7514585502461411856&index=0&sign=7d27f43d55fb3d2df678cf2434831810",
+     "ck": 1,
+     "tag": 1
+    }
+   ],
    "entry": {
     "thai": 40,
     "foreign": 200,
@@ -15649,73 +15739,67 @@
    "district": "ปทุมวัน",
    "posts": [
     {
-     "title": "หอศิลปวัฒนธรรมแห่งกรุงเทพมหานคร BACC เสพงานศิลป์ ได้ถ่ายรูปสวยๆ ฟินน ที่สำคัญเข้าชมฟรี 😆 #พิกัดถ่ายรูป #หอศิลป์ #BACC #ที่เที่ยวกรุงเทพ",
-     "likes": 41,
-     "date": "2026-07-02",
-     "link": "https://www.lemon8-app.com/@peeruchsangchotr6/7657878578016666120?region=th",
-     "source": "Lemon8 · Om.mmm",
-     "image": "https://www.lemon8-app.com/seo/image?item_id=7657878578016666120&index=0&sign=b2c95a1e8c9cfa6730fa0e00143be5ce",
-     "tag": 1,
-     "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/o8GMAoCnQEdjoIICmebg7ZlDtJfmIAhhAeJALU~tplv-sdweummd6v-text-logo-v1:QHBlZXJ1Y2hzYW5nY2hvdHI2:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796709600&x-signature=OqAmRQUUN07Us1CaTrAroY0vdNE%3D",
-     "th": "data/thumbs/7657878578016666120-0.webp"
+     "title": "BACC หอศิลปวัฒนธรรมแห่งกรุงเทพมหานคร 🎥",
+     "likes": 1756,
+     "date": "2024-07-11",
+     "link": "https://www.lemon8-app.com/@nnrmsh/7390395542779658753?region=th",
+     "source": "Lemon8 · 𝙉𝙖𝙢𝙤𝙣 ˚♡ ⋆⁺",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7390395542779658753&index=0&sign=2b5baa2502d5f6b760be4811d12ffa1c",
+     "ck": 1,
+     "tag": 1
     },
     {
-     "title": "เดินปล่อยใจที่ Bangkok Art and Culture Center",
-     "likes": 14,
-     "date": "2026-03-20",
-     "link": "https://www.lemon8-app.com/@pharakoz/7619317472999309844?region=th",
-     "source": "Lemon8 · อัยเขียนอย่างงี้",
-     "image": "https://www.lemon8-app.com/seo/image?item_id=7619317472999309844&index=0&sign=6bc76a98a15a0c1fba5b741ee4eb386c",
-     "tag": 1,
-     "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/ogc93QAeeTEsuXC2AG2mbvJeOIGQL2AifnAIKD~tplv-sdweummd6v-text-logo-v1:QHBoYXJha296:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=m9Qu7jGxramHEmZ31pNek%2BztPNw%3D",
-     "th": "data/thumbs/7619317472999309844-0.webp"
+     "title": "มุมถ่ายรูปยอดฮิตหอศิลป์กรุงเทพ📸⛅️",
+     "likes": 914,
+     "date": "2023-09-16",
+     "link": "https://www.lemon8-app.com/@kkamonnnnn/7279472355120939522?region=th",
+     "source": "Lemon8 · OUI🐰",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7279472355120939522&index=0&sign=af62f94dd039b5ff7bacec3618aa5c8a",
+     "ck": 1,
+     "tag": 1
     },
     {
-     "title": "หอศิลปวัฒนธรรมแห่งกรุงเทพมหานคร",
-     "likes": 10,
-     "date": "2026-04-22",
-     "link": "https://www.lemon8-app.com/@fatimah_pnr/7631552460452921863?region=th",
-     "source": "Lemon8 · Fatimah Pnr",
-     "image": "https://www.lemon8-app.com/seo/image?item_id=7631552460452921863&index=0&sign=65b25182426f94cc6e209aac23dbdce5",
-     "tag": 1,
-     "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/o4RokQg6fEESqhDRADtphGCKuEBQF9Ap2LAIlf~tplv-sdweummd6v-text-logo-v1:QGZhdGltYWhfcG5y:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=7zJ6yV3fO6VyF4AJ38pt7EWT%2BAo%3D",
-     "th": "data/thumbs/7631552460452921863-0.webp"
+     "title": "งาน Nurture Gaia จัดที่หอศิลปวัฒนธรรมแห่งกรุงเทพมหานคร",
+     "likes": 573,
+     "date": "2024-10-26",
+     "link": "https://www.lemon8-app.com/@nitnipa_ko/7429929761855586833?region=th",
+     "source": "Lemon8 · Nitnipa Rawsauy",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7429929761855586833&index=0&sign=10f3299c84cda6972d9c04da27a4f5c6",
+     "ck": 1,
+     "tag": 1
     },
     {
-     "title": "ชมงานศิลปะ หอศิลปวัฒนธรรมแห่งกรุงเทพมหานคร",
-     "likes": 4,
-     "date": "2026-07-30",
-     "link": "https://www.lemon8-app.com/@darink28/7668308201344500244?region=th",
-     "source": "Lemon8 · DARINK",
-     "image": "https://www.lemon8-app.com/seo/image?item_id=7668308201344500244&index=0&sign=0d11f6c3e8ad0fff5155fcbe9e8ef672",
-     "tag": 1,
-     "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/okB0EUiBAUfBhylAW1areuEIkAiD62ENwkC1kg~tplv-sdweummd6v-text-logo-v1:QGRhcmluazI4:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=PKaqJKIwYLjxNSyA%2FzkJr%2FIuLqo%3D",
-     "th": "data/thumbs/7668308201344500244-0.webp"
+     "title": "✨ Update นิทรรศการที่หอศิลป์ Bacc 🎞️🌌",
+     "likes": 399,
+     "date": "2023-09-21",
+     "link": "https://www.lemon8-app.com/@nouguseyon/7281267319215571457?region=th",
+     "source": "Lemon8 · 1995",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7281267319215571457&index=0&sign=8a7d6b0130f25134cd6bf84a13a0b6d6",
+     "ck": 1,
+     "tag": 1
     },
     {
-     "title": "รวม 5 นิทรรศการกรุงเทพที่เราไปดูมาแล้วชอบ 🎨✨ ที่ BACC หอศิลปวัฒนธรรมแห่งกรุงเทพมหานคร",
-     "likes": 4,
-     "date": "2026-07-08",
-     "link": "https://www.lemon8-app.com/@tonfern.sunflower/7660094076447998484?region=th",
-     "source": "Lemon8 · ต้นเฟิร์น กมลรัตน์",
-     "image": "https://www.lemon8-app.com/seo/image?item_id=7660094076447998484&index=0&sign=f7c1cc05ea302c2747c1c04de8b7cdef",
-     "tag": 1,
-     "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/owEaOkLAiPzi4ABIB99wAbPBtY8AAY0S4W3Al~tplv-sdweummd6v-text-logo-v1:QHRvbmZlcm4uc3VuZmxvd2Vy:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=sxIEt2NLEALswyHCnOVnU6FKDjE%3D",
-     "th": "data/thumbs/7660094076447998484-0.webp"
+     "title": "เที่ยวหอศิลป์ฯ เดินทางง่ายๆ ด้วย BTS",
+     "likes": 310,
+     "date": "2024-05-15",
+     "link": "https://www.lemon8-app.com/@monkey.minky/7369216646235324929?region=th",
+     "source": "Lemon8 · จิปาถะสไตล์",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7369216646235324929&index=0&sign=0818342538fca8d8bcfe738ad6653f66",
+     "ck": 1,
+     "tag": 1
     },
     {
-     "title": "หอศิลปวัฒนธรรมแห่งกรุงเทพมหานคร",
-     "likes": 2,
-     "date": "2026-04-08",
-     "link": "https://www.lemon8-app.com/@alalal357/7626459620667605512?region=th",
-     "source": "Lemon8 · Calis",
-     "image": "https://www.lemon8-app.com/seo/image?item_id=7626459620667605512&index=0&sign=25190ecf358a70411555b747c96ccce2",
-     "tag": 1,
-     "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/o4WUkMreQJ4tMyA7eDRQ3fVAwIGbAAXXTtEjM8~tplv-sdweummd6v-text-logo-v1:QGFsYWxhbDM1Nw==:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=SeuRXSVN1VxImaVP2Uw45eHVoVw%3D",
-     "th": "data/thumbs/7626459620667605512-0.webp"
+     "title": "ครั้งแรกที่ BACC หอศิลป์กทม | พาเสพย์งาน 💫🏫",
+     "likes": 253,
+     "date": "2023-06-25",
+     "link": "https://www.lemon8-app.com/@inookkers/7248570489931678210?region=th",
+     "source": "Lemon8 · iNOOKKERS",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7248570489931678210&index=0&sign=a51624d2a6c21ec59c7c85a1b8a65d7f",
+     "ck": 1,
+     "tag": 1
     }
    ],
-   "reviewCount": 9,
+   "reviewCount": 47,
    "districtEn": "Pathum Wan"
   },
   {
@@ -18592,7 +18676,27 @@
    "reviewCount": 39,
    "imageAi": true,
    "imageScore": 8,
-   "districtEn": "Kantang"
+   "districtEn": "Kantang",
+   "hours": "08:00-17:00",
+   "hoursSrc": "review1",
+   "entry": {
+    "tiers": [
+     {
+      "who": {
+       "th": "บุคคลทั่วไป (จุดชมวิวดูพะยูน)",
+       "en": "General visitor (Dugong viewpoint)",
+       "zh": "普通游客（儒艮观景台）"
+      },
+      "price": 30,
+      "n": 1,
+      "ids": [
+       "L3"
+      ],
+      "rv": true
+     }
+    ],
+    "src": "review1"
+   }
   },
   {
    "id": "wd-Q17189240",
@@ -18679,7 +18783,9 @@
    "reviewCount": 22,
    "imageAi": true,
    "imageScore": 8,
-   "districtEn": "Mueang Songkhla"
+   "districtEn": "Mueang Songkhla",
+   "hours": "Mo off; Tu-Su 15:00-00:00",
+   "hoursSrc": "review1"
   },
   {
    "id": "wd-Q4855203",
@@ -21436,7 +21542,38 @@
     "posts": []
    },
    "district": "เมืองกระบี่",
-   "districtEn": "Mueang Krabi"
+   "districtEn": "Mueang Krabi",
+   "entry": {
+    "tiers": [
+     {
+      "who": {
+       "th": "เด็ก (ชาวต่างชาติ)",
+       "en": "Child (Foreigner)",
+       "zh": "儿童（外籍游客）"
+      },
+      "price": 200,
+      "n": 1,
+      "ids": [
+       "WP1"
+      ],
+      "rv": true
+     },
+     {
+      "who": {
+       "th": "ผู้ใหญ่ (ชาวต่างชาติ)",
+       "en": "Adult (Foreigner)",
+       "zh": "成人（外籍游客）"
+      },
+      "price": 400,
+      "n": 1,
+      "ids": [
+       "WP1"
+      ],
+      "rv": true
+     }
+    ],
+    "src": "review1"
+   }
   },
   {
    "id": "wd-Q4922606",
@@ -23923,7 +24060,7 @@
    "districtEn": "Phra Nakhon",
    "entry": {
     "free": true,
-    "src": "typical"
+    "src": "review"
    }
   },
   {
@@ -27804,8 +27941,8 @@
    ],
    "reviewCount": 20,
    "districtEn": "Lat Krabang",
-   "hours": "08:00-17:00",
-   "hoursSrc": "typical",
+   "hours": "07:30-18:00",
+   "hoursSrc": "review1",
    "entry": {
     "free": true,
     "src": "typical"
@@ -32538,10 +32675,10 @@
    "trend": 2,
    "reviewCount": 13,
    "hours": "08:00-17:00",
-   "hoursSrc": "typical",
+   "hoursSrc": "review1",
    "entry": {
     "free": true,
-    "src": "typical"
+    "src": "review1"
    }
   },
   {
@@ -65197,7 +65334,74 @@
    "reviewCount": 20,
    "districtEn": "Mueang Chon Buri",
    "hours": "Mo-Su 09:00-16:00",
-   "hoursSrc": "review"
+   "hoursSrc": "review",
+   "entry": {
+    "tiers": [
+     {
+      "who": {
+       "th": "เด็ก (ชาวไทย)",
+       "en": "Child (Thai)",
+       "zh": "儿童（泰国人）"
+      },
+      "price": 40,
+      "n": 5,
+      "ids": [
+       "L1",
+       "L2",
+       "L3",
+       "L4",
+       "L5"
+      ],
+      "rv": true
+     },
+     {
+      "who": {
+       "th": "ผู้ใหญ่ (ชาวไทย)",
+       "en": "Adult (Thai)",
+       "zh": "成人（泰国人）"
+      },
+      "price": 80,
+      "n": 7,
+      "ids": [
+       "L1",
+       "L2",
+       "L3",
+       "L4",
+       "L5",
+       "L6",
+       "L7"
+      ],
+      "rv": true
+     },
+     {
+      "who": {
+       "th": "เด็ก (ชาวต่างชาติ)",
+       "en": "Child (Foreigner)",
+       "zh": "儿童（外国人）"
+      },
+      "price": 120,
+      "n": 1,
+      "ids": [
+       "L4"
+      ],
+      "rv": true
+     },
+     {
+      "who": {
+       "th": "ผู้ใหญ่ (ชาวต่างชาติ)",
+       "en": "Adult (Foreigner)",
+       "zh": "成人（外国人）"
+      },
+      "price": 220,
+      "n": 1,
+      "ids": [
+       "L4"
+      ],
+      "rv": true
+     }
+    ],
+    "src": "review"
+   }
   },
   {
    "id": "osm-n12475477701",
@@ -65669,7 +65873,13 @@
    "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/oc1kuqAAfECqAXD79HSVhkIgWFtsbFwAeQEEBZ~tplv-sdweummd6v-text-logo-v1:QHRhZWFuZHR3b2tpZHM=:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796709600&x-signature=KVEuYGj%2B%2B3B5zMvOx2eZBBwWkAE%3D",
    "district": "บางไทร",
    "imageTh": "data/thumbs/7644217474812002834-0.webp",
-   "districtEn": "Bang Sai"
+   "districtEn": "Bang Sai",
+   "hours": "We-Su 09:00-16:00",
+   "hoursSrc": "review1",
+   "entry": {
+    "free": true,
+    "src": "review1"
+   }
   },
   {
    "id": "osm-w236162747",
@@ -72919,8 +73129,6 @@
    "fetchedAt": "2026-11-06T18:16:29.901Z",
    "district": "เมืองภูเก็ต",
    "districtEn": "Mueang Phuket",
-   "hours": "Mo-Su 08:30-16:30",
-   "hoursSrc": "review1",
    "entry": {
     "tiers": [
      {
@@ -72977,7 +73185,9 @@
      }
     ],
     "src": "review1"
-   }
+   },
+   "hours": "Mo-Su 08:30-16:30",
+   "hoursSrc": "review1"
   },
   {
    "id": "wd-Q123162540",
@@ -73032,8 +73242,6 @@
     }
    ],
    "reviewCount": 3,
-   "hours": "Mo-Su 09:00-18:00",
-   "hoursSrc": "review1",
    "entry": {
     "tiers": [
      {
@@ -73103,7 +73311,9 @@
      }
     ],
     "src": "review1"
-   }
+   },
+   "hours": "Mo-Su 09:00-18:00",
+   "hoursSrc": "review1"
   },
   {
    "id": "wd-Q55429944",
@@ -73435,13 +73645,14 @@
      "link": "https://www.lemon8-app.com/@marigo.casha/7648310896158114322?region=th",
      "source": "Lemon8 · Ggina Casha",
      "image": "https://www.lemon8-app.com/seo/image?item_id=7648310896158114322&index=0&sign=a9f6efa40129b8d9846ec2469cc42ea7",
-     "tag": 1,
-     "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/oAYBiAaQB5B6DUk0i3l7bAiIPVdPSpWEARASA~tplv-sdweummd6v-text-logo-v1:QG1hcmlnby5jYXNoYQ==:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=Qib1tLtNFe5OLVN%2FGg7mc2kMsbA%3D",
-     "th": "data/thumbs/7648310896158114322-0.webp"
+     "ck": 1,
+     "tag": 1
     }
    ],
    "reviewCount": 1,
-   "districtEn": "Bang Lamung"
+   "districtEn": "Bang Lamung",
+   "hours": "Mo-Su 09:00-21:00",
+   "hoursSrc": "review1"
   },
   {
    "id": "osm-w961802247",
@@ -74052,73 +74263,67 @@
    "district": "บางละมุง",
    "posts": [
     {
+     "title": "Elephant world,Surin🐘",
+     "likes": 154,
+     "date": "2024-03-01",
+     "link": "https://www.lemon8-app.com/@ll.uck/7341414991159394817?region=th",
+     "source": "Lemon8 · รีวิวไปเรื่อย",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7341414991159394817&index=0&sign=730d7060b07355acd8c7402dc6426f97",
+     "ck": 1,
+     "tag": 1
+    },
+    {
      "title": "บ้านช้าง หมู่บ้านช้าง",
-     "likes": 88,
+     "likes": 93,
      "date": "2026-09-02",
      "link": "https://www.lemon8-app.com/@eatwithmuay/7680931007800017428?region=th",
      "source": "Lemon8 · Nongleelee",
      "image": "https://www.lemon8-app.com/seo/image?item_id=7680931007800017428&index=0&sign=964864bdb2ac4c96ba53f107e145d2ed",
-     "tag": 1,
-     "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/osJAwFikfMt8DTBAbfFEEh7jA4EeDEAQDV5oIC~tplv-sdweummd6v-text-logo-v1:QGVhdHdpdGhtdWF5:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=WaNDTcJdSP%2B2whmcBtl4JwoKXtQ%3D",
-     "th": "data/thumbs/7680931007800017428-0.webp"
+     "ck": 1,
+     "tag": 1
     },
     {
-     "title": "🐘 หมู่บ้านช้าง #บ้านหนองบัว #สุรินทร์",
-     "likes": 5,
-     "date": "2026-08-27",
-     "link": "https://www.lemon8-app.com/@lullatravel/7678588713236087314?region=th",
-     "source": "Lemon8 · ลั้ลลาพาเที่ยว - Lulla Travel",
-     "image": "https://www.lemon8-app.com/seo/image?item_id=7678588713236087314&index=0&sign=99d365e280d7a8b8b604cbfa316b33f0",
-     "tag": 1,
-     "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/o4SFEpCqBgAIzCt4AESlfAREPcKDjF2Z9Qe1I9~tplv-sdweummd6v-text-logo-v1:QGx1bGxhdHJhdmVs:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=%2BDhuI43iXmejrNsRz0KDti4l5Jw%3D",
-     "th": "data/thumbs/7678588713236087314-0.webp"
+     "title": "มาอาบน้ำให้น้องช้างกัน🐘👀",
+     "likes": 34,
+     "date": "2023-02-27",
+     "link": "https://www.lemon8-app.com/@punchpnch/7204896417687536129?region=th",
+     "source": "Lemon8 · Punchpnch",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7204896417687536129&index=0&sign=9d32dfee75d12348b427850c96b039c6",
+     "ck": 1,
+     "tag": 1
     },
     {
-     "title": "หมู่บ้านช้างหัวหิน",
-     "likes": 5,
-     "date": "2026-04-07",
-     "link": "https://www.lemon8-app.com/@ann.phalintharakul/7626035862141878792?region=th",
-     "source": "Lemon8 · Ann.Phalintharakul",
-     "image": "https://www.lemon8-app.com/seo/image?item_id=7626035862141878792&index=0&sign=2949b84e0b123df3c342abfd0f912fd7",
-     "tag": 1,
-     "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/owUO63k27EpFeHlBi0ogN8Bwi8fAECnADIUVAE~tplv-sdweummd6v-text-logo-v1:QGFubi5waGFsaW50aGFyYWt1bA==:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=BZ5lnPt%2BRi2ahOLSF%2FXe0lTHxHY%3D",
-     "th": "data/thumbs/7626035862141878792-0.webp"
+     "title": "หมู่บ้านช้าง สุรินทร์",
+     "likes": 24,
+     "date": "2022-03-12",
+     "link": "https://www.lemon8-app.com/@chompunuchfinly/7074234362040189442?region=th",
+     "source": "Lemon8 · Mindfinlay",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7074234362040189442&index=0&sign=0440252f3b540d3d098c6af1eb574596",
+     "ck": 1,
+     "tag": 1
     },
     {
-     "title": "หมู่บ้านช้าง",
-     "likes": 3,
-     "date": "2026-01-31",
-     "link": "https://www.lemon8-app.com/@chutyty04/7601506588846834194?region=th",
-     "source": "Lemon8 · Yo-Yo",
-     "image": "https://www.lemon8-app.com/seo/image?item_id=7601506588846834194&index=0&sign=749c6cd27d938c71ec6c7af8dfe08563",
-     "tag": 1,
-     "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/oQA1AfSKDGDlFAh2c7E9fWILeJQQEQSA5l2fpT~tplv-sdweummd6v-text-logo-v1:QGNodXR5dHkwNA==:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=2OeoY%2FoZh98AzEWYPLBLKfJyHQI%3D",
-     "th": "data/thumbs/7601506588846834194-0.webp"
+     "title": "แนะนำ หมู่บ้านช้าง จ. สุรินทร์",
+     "likes": 18,
+     "date": "2024-12-30",
+     "link": "https://www.lemon8-app.com/@saiparnbehappy/7454214682287850001?region=th",
+     "source": "Lemon8 · สายป่าน คนสวย",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7454214682287850001&index=0&sign=10433ff20096874ccbd3c9b40ca24806",
+     "ck": 1,
+     "tag": 1
     },
     {
-     "title": "หมู่บ้านช้าง จ.สุรินทร์",
-     "likes": 2,
-     "date": "2026-10-13",
-     "link": "https://www.lemon8-app.com/@gifarine1126/7696151243676189204?region=th",
-     "source": "Lemon8 · ผอมได้ ประหยัดด้วย",
-     "image": "https://www.lemon8-app.com/seo/image?item_id=7696151243676189204&index=0&sign=90a24e9a2b2b03ab83f67049f3121c2f",
-     "tag": 1,
-     "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/okDEeAMYiiEhGZAgI2lBUYzJxXOA191OwB8fCr~tplv-sdweummd6v-text-logo-v1:QGdpZmFyaW5lMTEyNg==:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=IRWV8%2FQi9VAlpydT2xY9Zk8DeGE%3D",
-     "th": "data/thumbs/7696151243676189204-0.webp"
-    },
-    {
-     "title": "#หมู่บ้านช้างหัวหิน",
-     "likes": 1,
-     "date": "2026-08-01",
-     "link": "https://www.lemon8-app.com/@cream.kamonmas/7669093099490132481?region=th",
-     "source": "Lemon8 · ครีม",
-     "image": "https://www.lemon8-app.com/seo/image?item_id=7669093099490132481&index=0&sign=5d86ac07ecfba231c0af343ea21ad948",
-     "tag": 1,
-     "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/ogAkNGUWGQDe8cPfTILAQW2LfJe8pAGIIaAz2u~tplv-sdweummd6v-text-logo-v1:QGNyZWFtLmthbW9ubWFz:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=4%2FiCgCDBHby4OVTTs6Zm58iAFog%3D",
-     "th": "data/thumbs/7669093099490132481-0.webp"
+     "title": "ดูช้าง ให้ดูที่เพนียดหลวง | พิกัดลับหมู่บ้านช้างในอยุธยา",
+     "likes": 12,
+     "date": "2024-08-08",
+     "link": "https://www.lemon8-app.com/@alittlestory.me/7400766665954230801?region=th",
+     "source": "Lemon8 · A Little Story Me",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7400766665954230801&index=0&sign=e7fa098268fa0503345a658b1adcbb4c",
+     "ck": 1,
+     "tag": 1
     }
    ],
-   "reviewCount": 11,
+   "reviewCount": 22,
    "imageTh": "data/thumbs/7074234362040189442-0.webp",
    "districtEn": "Bang Lamung"
   },
@@ -74323,8 +74528,71 @@
    "imageCredit": "Nick Kenrick.. · BY-NC-SA 2.0",
    "fetchedAt": "2026-11-06T20:12:01.761Z",
    "district": "เมืองลำปาง",
-   "reviewCount": 4,
-   "districtEn": "Mueang Lampang"
+   "reviewCount": 2,
+   "districtEn": "Mueang Lampang",
+   "posts": [
+    {
+     "title": "ไปเก็บผักแบบ Harvest Moon ที่เขาใหญ่กันเถอะ 🥕🥬🥦🍅🍋",
+     "likes": 296,
+     "date": "2023-12-13",
+     "link": "https://www.lemon8-app.com/@norchor.croffle/7312014466730902017?region=th",
+     "source": "Lemon8 · ณอชอรีวิว",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7312014466730902017&index=0&sign=49e6c300cb3c9e96f23c553a22fb5f7e",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "Harvest Town",
+     "likes": 47,
+     "date": "2024-02-03",
+     "link": "https://www.lemon8-app.com/@chocherry8/7331264507219804674?region=th",
+     "source": "Lemon8 · King Yo °~°",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7331264507219804674&index=0&sign=f8faf19e96772e51c4cbf4252f3c1dfd",
+     "ck": 1,
+     "tag": 1
+    }
+   ],
+   "entry": {
+    "tiers": [
+     {
+      "who": {
+       "th": "ต่อตะกร้า",
+       "en": "Per basket",
+       "zh": "每篮"
+      },
+      "note": {
+       "th": "เก็บผักเต็มตะกร้า",
+       "en": "Fill the basket with harvested vegetables",
+       "zh": "装满一篮蔬菜"
+      },
+      "price": 150,
+      "n": 1,
+      "ids": [
+       "L1"
+      ],
+      "rv": true
+     },
+     {
+      "who": {
+       "th": "แพ็กเกจ 4 กิจกรรม",
+       "en": "4-activity package",
+       "zh": "四个活动套餐"
+      },
+      "note": {
+       "th": "ซื้อ 4 กิจกรรม แถม 1 กิจกรรม",
+       "en": "Buy 4 activities get 1 free",
+       "zh": "买四个活动送一个活动"
+      },
+      "price": 600,
+      "n": 1,
+      "ids": [
+       "L1"
+      ],
+      "rv": true
+     }
+    ],
+    "src": "review1"
+   }
   },
   {
    "id": "osm-n5419692555",
@@ -74406,7 +74674,51 @@
    "summary": {},
    "fetchedAt": "2026-11-06T20:12:13.334Z",
    "district": "เมืองสมุทรปราการ",
-   "districtEn": "Mueang Samut Prakan"
+   "districtEn": "Mueang Samut Prakan",
+   "posts": [
+    {
+     "title": "\" Im Park \" อิมพิเรียลสำโรง ชั้น 7 ✨🫧",
+     "likes": 18,
+     "date": "2025-01-09",
+     "link": "https://www.lemon8-app.com/@kitchen_mybear/7457934538283418129?region=th",
+     "source": "Lemon8 · Thida",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7457934538283418129&index=0&sign=9cff69d7d5dc352d9f05cf25ee208eff",
+     "ck": 1,
+     "tag": 1
+    }
+   ],
+   "reviewCount": 1,
+   "entry": {
+    "tiers": [
+     {
+      "who": {
+       "th": "เด็ก",
+       "en": "Child",
+       "zh": "儿童"
+      },
+      "price": 60,
+      "n": 1,
+      "ids": [
+       "L1"
+      ],
+      "rv": true
+     },
+     {
+      "who": {
+       "th": "ผู้ใหญ่",
+       "en": "Adult",
+       "zh": "成人"
+      },
+      "price": 90,
+      "n": 1,
+      "ids": [
+       "L1"
+      ],
+      "rv": true
+     }
+    ],
+    "src": "review1"
+   }
   },
   {
    "id": "osm-n12071746793",
@@ -74655,18 +74967,47 @@
    "district": "หางดง",
    "posts": [
     {
+     "title": "พื้นที่กิจกรรมสายลุยแห่งหางดง สนุกมากจนเสียงหาย !! 🫨😱",
+     "likes": 263,
+     "date": "2024-02-19",
+     "link": "https://www.lemon8-app.com/@saharu.hoshi/7337254927124857346?region=th",
+     "source": "Lemon8 · Saharu Hoshi",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7337254927124857346&index=0&sign=fbc7afaf419fedf3ed70bbb658a2172d",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "EUA’s journey - Jungle Adventure Park",
+     "likes": 53,
+     "date": "2025-05-14",
+     "link": "https://www.lemon8-app.com/@orachatraing/7504282847847793160?region=th",
+     "source": "Lemon8 · EUA’s journey",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7504282847847793160&index=0&sign=e6cc7993b6b6f2cc1928d9d177c2c038",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "Jungle Adventure Park Chiang Mai",
+     "likes": 12,
+     "date": "2023-03-14",
+     "link": "https://www.lemon8-app.com/@thepassorn/7210249971562447361?region=th",
+     "source": "Lemon8 · ต๊อกแต๊กรีวิว",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7210249971562447361&index=0&sign=e0ea62d7ec7774ed35347aad796ea497",
+     "ck": 1,
+     "tag": 1
+    },
+    {
      "title": "Jungle adventure park เชียงใหม่",
      "likes": 3,
      "date": "2026-03-10",
      "link": "https://www.lemon8-app.com/@iyarinpp/7615574961440358920?region=th",
      "source": "Lemon8 · Iyarin",
      "image": "https://www.lemon8-app.com/seo/image?item_id=7615574961440358920&index=0&sign=de28faf82a1ca4441bfc022328794b59",
-     "tag": 1,
-     "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/oI1f2egkmQQA2AGe6JvXeKqQg5MAMZTT3A8BrX~tplv-sdweummd6v-text-logo-v1:QGl5YXJpbnBw:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=HSFeDsvAKQzMhflIvPo0sEA%2Ffe8%3D",
-     "th": "data/thumbs/7615574961440358920-0.webp"
+     "ck": 1,
+     "tag": 1
     }
    ],
-   "reviewCount": 1,
+   "reviewCount": 4,
    "imageTh": "data/thumbs/7504282847847793160-0.webp",
    "districtEn": "Hang Dong"
   },
