@@ -134,7 +134,8 @@
       : `<div class="datechip"><b>${s.getDate()}</b><span>${fmtDate(s, { month: "short" })}</span></div>`;
     // รูปจริงจากต้นทาง ถ้าโหลดไม่ได้จะเหลือพื้นสีไล่เฉด + ไอคอนหมวดแทน
     const img = /^https:\/\//.test(ev.image || "")
-      ? `<img class="cover-img" src="${esc(ev.image)}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var c=this.nextElementSibling;if(c&&c.classList.contains('credit'))c.remove();this.remove()">${ev.sourceName ? `<span class="credit">📷 ${esc(ev.sourceName)}</span>` : ""}`
+      // โลโก้งานขนาดเล็ก (ตารางงานคอสเพลย์ Props&Ops) แสดงทั้งรูปไม่ตัดขอบ
+      ? `<img class="cover-img${/propsops\.net\/event\/logo/.test(ev.image) ? " cover-logo" : ""}" src="${esc(ev.image)}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var c=this.nextElementSibling;if(c&&c.classList.contains('credit'))c.remove();this.remove()">${ev.sourceName ? `<span class="credit">📷 ${esc(ev.sourceName)}</span>` : ""}`
       : "";
     return `<div class="${cls}" style="${bg}"><span class="emoji">${cat.icon}</span>${img}${chip}`;
   }
@@ -187,7 +188,9 @@
     const bizList = Array.isArray(biz) ? biz : [], replaced = new Set(bizList.map(b => b.replaces).filter(Boolean));
     const base = [...(places.places || []).filter(p => !replaced.has(p.id)), ...bizList];
     const ids = new Set(base.map(p => p.id.replace(/^(osm|l8)-/, "")));
-    state.places = [...base, ...(Array.isArray(trendPl) ? trendPl : []).filter(p => !ids.has(p.id.replace(/^(osm|l8)-/, "")))];
+    // กันสถานที่ id ซ้ำ (แสดงสองการ์ดเหมือนกัน) — เก็บอันแรก
+    const seenIds = new Set();
+    state.places = [...base, ...(Array.isArray(trendPl) ? trendPl : []).filter(p => !ids.has(p.id.replace(/^(osm|l8)-/, "")))].filter(p => !seenIds.has(p.id) && seenIds.add(p.id));
     // ค่าจาก OpenStreetMap ที่มีหลายค่าคั่นด้วย ";" (เว็บไซต์ 2 ลิงก์, เบอร์ 2 เบอร์, ที่อยู่) → ใช้ค่าแรก / คั่นด้วย ", "
     // แก้หมวดที่ผิดรายที่ (ตรวจด้วยคนแล้ว) · "hide" = ไม่ใช่ที่เที่ยว (เช่น โรงแรม)
     const KIND_FIX = {
@@ -283,6 +286,11 @@
     }
     return true;
   }
+  // ค้นหา: ไม่สนตัวพิมพ์/วรรณยุกต์ละติน ("pokemon" เจอ "Pokémon") — ตัดเฉพาะเครื่องหมายละติน (U+0300–036F) ไม่แตะสระ/วรรณยุกต์ไทย
+  const fold = s => String(s || "").normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
+  // คำที่คนไทยพิมพ์ทับศัพท์ → ชื่อภาษาอังกฤษในชื่องาน
+  const Q_ALIAS = { "โปเกมอน": "pokemon", "โปเกม่อน": "pokemon", "วันพีซ": "one piece", "วันพีช": "one piece", "กันดั้ม": "gundam", "นารูโตะ": "naruto", "เคป๊อป": "k-pop", "เคป็อป": "k-pop", "คอส": "cos", "มาราธอน": "marathon", "ญี่ปุ่น": "japan" };
+  const qAlts = q => { const f = fold(q), alts = [f]; for (const [th, en] of Object.entries(Q_ALIAS)) if (f.includes(th)) alts.push(f.replace(th, en)); return alts; };
   function filtered() {
     const f = state.filters, q = f.q.trim().toLowerCase();
     let list = state.events.filter(ev => {
@@ -298,8 +306,9 @@
         const tx = Object.values(ev.i18n || {}).flatMap(x => [x.title, x.summary]);
         const vx = Object.values(v?.i18n || {}).map(x => x.name);
         const prov = PROV[provinceOf(ev)] || {};
-        const hay = [ev.title, ev.summary, v?.name, prov.th, prov.en, prov.zh, ...tx, ...vx, ...(ev.tags || [])].join(" ").toLowerCase();
-        if (!hay.includes(q)) return false;
+        const cat = (C.categories || []).find(c => c.id === ev.category)?.name || {};
+        const hay = fold([ev.title, ev.summary, v?.name, prov.th, prov.en, prov.zh, cat.th, cat.en, cat.zh, ...tx, ...vx, ...(ev.tags || [])].join(" "));
+        if (!qAlts(q).some(a => hay.includes(a))) return false;
       }
       return true;
     });
@@ -954,7 +963,7 @@
         </div>
         ${isAdult(ev) ? `<p class="adult-note">${t("age20Note")}</p>` : ""}
         <div class="actions">
-          ${ev.ticketUrl ? `<a class="btn primary" ${inAppLink(withAffiliate(ev.ticketUrl))}>${ev.sourceName ? t("buyAt", { site: esc(ev.sourceName) }) : isFree(ev) ? t("register") : t("buyTicket")}</a>` : ""}
+          ${ev.ticketUrl ? `<a class="btn primary" ${inAppLink(withAffiliate(ev.ticketUrl))}>${ev.sourceName ? t("buyAt", { site: esc(/facebook\.com|fb\.me/i.test(ev.ticketUrl) ? "Facebook" : ev.sourceName) }) : isFree(ev) ? t("register") : t("buyTicket")}</a>` : ""}
           <button class="btn" id="saveBtn">${saved ? t("saved") : t("save")}</button>
           ${ev.ongoing ? "" : `<a class="btn" href="${gcalLink(ev, v)}" target="_blank" rel="noopener">${t("gcal")}</a>
           <button class="btn" id="icsBtn">${t("ics")}</button>`}
@@ -1470,7 +1479,8 @@
     state.places.filter(inPlaceProvince).forEach(p => { counts[p.kind] = (counts[p.kind] || 0) + 1; });
     // ค้นหาจากชื่อ (ไทย/อังกฤษ/จีน) ที่อยู่ และชื่อจังหวัด
     const q = state.placeQ.trim().toLowerCase();
-    const match = p => !q || [p.name?.th, p.name?.en, p.name?.zh, p.address, provName(p.province), PROV[p.province]?.th].some(s => String(s || "").toLowerCase().includes(q));
+    const alts = qAlts(q);
+    const match = p => !q || [p.name?.th, p.name?.en, p.name?.zh, p.address, provName(p.province), PROV[p.province]?.th].some(s => { const h = fold(s); return alts.some(a => h.includes(a)); });
     const pf = state.pf, near = pf.sort === "near" && state.pos;
     // ใกล้ฉัน: ไม่จำกัดจังหวัด (ดูรอบตัวจริงๆ)
     // เขต/อำเภอ: เลือกได้เมื่อเลือกจังหวัดแล้ว (เปลี่ยนจังหวัด = ล้างเขต)
@@ -1494,6 +1504,18 @@
       reviews: (a, b) => (reviewOf(b) ? 1 : 0) - (reviewOf(a) ? 1 : 0) || placeRank(b) - placeRank(a)
     };
     list = [...list].sort(SORTS[near ? "near" : pf.sort === "near" ? "rec" : pf.sort] || SORTS.rec);
+    // พิมพ์ค้นหา: ชื่อตรงคำค้นมาก่อน ("เขาใหญ่" → อุทยานแห่งชาติเขาใหญ่ ก่อนคาเฟ่ที่ชื่อมีคำว่าเขาใหญ่) แล้วตามด้วยที่ดัง
+    if (q && !near) {
+      const PREFIX = /^(อุทยานแห่งชาติ|อช\.?|วนอุทยาน|วัด|พิพิธภัณฑ์|ตลาด|น้ำตก|ถ้ำ|เกาะ|หาด|ดอย|ภู|เขื่อน|สวน|national park|wat|temple|museum)\s*/i;
+      const score = p => {
+        const names = [p.name?.th, p.name?.en, p.name?.zh].filter(Boolean).map(fold);
+        if (names.some(n => alts.includes(n) || alts.includes(n.replace(PREFIX, "").trim()))) return 3;
+        if (names.some(n => alts.some(a => n.startsWith(a)))) return 2;
+        return names.some(n => alts.some(a => n.includes(a))) ? 1 : 0;
+      };
+      const sc = new Map(list.map(p => [p, score(p) * 1000 + (score(p) >= 3 ? Math.min(p.fame || 0, 50) * 10 : 0)]));
+      list.sort((a, b) => sc.get(b) - sc.get(a)); // sort คงลำดับเดิมเมื่อคะแนนเท่ากัน
+    }
     const activeCount = ["open", "free", "hot"].filter(k => pf[k]).length + (near && pf.dist ? 1 : 0) + (pf.district ? 1 : 0);
     const placeExtra = ["open", "free", "hot"].filter(k => pf[k]).length + (pf.district ? 1 : 0) + (pf.sort !== "rec" && pf.sort !== "near" ? 1 : 0);
     // แสดงทีละ 30 แห่ง กด "ดูเพิ่ม" ได้ (หลายร้อยแห่งพร้อมกันทำให้แอพหน่วง)

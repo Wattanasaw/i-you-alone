@@ -832,3 +832,6 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 .trend-hero .th-img { aspect-ratio: 4 / 5; max-height: 62vh; }
 .trend-hero .th-img img.img-bg { display: none; }
 .trend-hero .th-img img.img-fit { object-fit: cover; object-position: center; }
+
+/* โลโก้งานเล็ก (Props&Ops): แสดงทั้งรูป ไม่ขยายจนขอบหาย */
+.cover-img.cover-logo { object-fit: contain; padding: 8px; }

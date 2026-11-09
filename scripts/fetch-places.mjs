@@ -519,6 +519,13 @@ for (const p of places) {
 }
 console.log(`[${mins()} นาที] เสร็จทั้งหมด`);
 console.log(`คลังโพสต์ Lemon8 ${pool.size} โพสต์ · ค้นชื่อสถานที่ ${due.length} แห่ง · มีกระแส ${places.filter(p => p.hot).length} แห่ง`);
+// กันสถานที่ซ้ำ (id เดียวกันเข้ามาจากหลายทาง เช่น Wikidata หลายหมวด) → เก็บอันที่ข้อมูลครบกว่า
+{
+  const best = new Map();
+  for (const p of places) { const o = best.get(p.id); if (!o || Object.keys(p).length > Object.keys(o).length) best.set(p.id, o ? { ...p, ...Object.fromEntries(Object.entries(o).filter(([k]) => !(k in p))) } : p); }
+  if (best.size !== places.length) console.log(`ตัดสถานที่ซ้ำ ${places.length - best.size} รายการ`);
+  places.splice(0, places.length, ...best.values());
+}
 // เรียง: คะแนนกระแส → คนค้นหาเพิ่มขึ้น → คนค้นหาเยอะ → ความดัง
 places.sort((a, b) => (b.hot || 0) - (a.hot || 0) || (b.rising ? 1 : 0) - (a.rising ? 1 : 0) || (b.views || 0) - (a.views || 0) || b.fame - a.fame);
 console.log("มาแรง 10 อันดับ:", places.filter(p => p.hot).slice(0, 10).map(p => `${p.name.th || p.name.en} (${p.hot})`).join(", "));

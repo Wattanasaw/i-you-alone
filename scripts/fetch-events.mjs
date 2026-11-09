@@ -557,7 +557,7 @@ const SOURCES = {
         refs.push({
           id, url: link || "https://propsops.com/event",
           parsed: {
-            title, category: "anime", image: logo && (logo.startsWith("//") ? "https:" + logo : logo),
+            title, category: "anime", sourceUrl: "https://propsops.com/event", image: logo && (logo.startsWith("//") ? "https:" + logo : logo),
             summary: /contest/.test(tags) ? "งานคอสเพลย์ มีประกวดคอสเพลย์" : /onlyevent/.test(tags) ? "Only Event งานรวมแฟนการ์ตูน/เกมเรื่องเดียว แต่งคอสเพลย์มาได้" : "งานอนิเมะ/การ์ตูน แต่งคอสเพลย์มาได้",
             dates, venueText: venue, provinceText: cls,
             catText: "cosplay anime " + tags, prices: prices([...priceTxt.matchAll(/([\d,]{2,})/g)].map(m => m[1])), free: /^free$|ฟรี/i.test(priceTxt),
@@ -744,7 +744,7 @@ async function build(src, ref, p) {
     price: p.free ? { type: "free" } : p.prices.length ? { type: "paid", min: p.prices[0], max: p.prices[p.prices.length - 1], ...(p.fx ? { approx: true } : {}) } : { type: "unknown" },
     summary: cleanSummary(p.summary, p.title),
     image: /^https:\/\//.test(p.image || "") ? p.image.trim().replace(/ /g, "%20") : undefined,
-    ticketUrl: ref.url, sourceUrl: ref.url, sourceName: src.name,
+    ticketUrl: ref.url, sourceUrl: p.sourceUrl || ref.url, sourceName: src.name,
     fetchedAt: new Date().toISOString()
   };
   // คอนเสิร์ตที่จัดในผับ/บาร์/คลับ → หมวดไนท์ไลฟ์
