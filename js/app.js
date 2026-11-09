@@ -888,10 +888,11 @@
     const out = new Date(checkin + "T00:00:00Z"); out.setUTCDate(out.getUTCDate() + 1);
     const name = String(v.i18n?.[state.lang]?.name || v.name || "").slice(0, 80);
     const u = new URL(state.lang === "th" ? "https://th.trip.com/hotels/list" : "https://www.trip.com/hotels/list");
-    const p = { searchType: "LM", searchWord: name, destName: name, optionId: 0, searchValue: `13|0*13*${v.lat}|${v.lng}|${name}|0|1`,
+    // cityId ต้องมี (ไม่มีบางครั้งได้ 0 ผลลัพธ์) · ค่ากรุงเทพ (359) ใช้ได้ทั่วไทย เพราะค้นตามพิกัดใน searchValue (ทดสอบแล้วกับเชียงใหม่)
+    const p = { cityId: 359, searchType: "LM", searchWord: name, destName: name, optionId: 0, searchValue: `13|0*13*${v.lat}|${v.lng}|${name}|0|1`,
       checkin, checkout: out.toISOString().slice(0, 10), crn: 1, adult: 2, curr: "THB", ...(state.lang === "en" ? { locale: "en-US" } : {}) };
     const aff = C.tripAffiliate || {};
-    if (aff.allianceId && aff.sid) Object.assign(p, { Allianceid: aff.allianceId, SID: aff.sid, trip_sub1: "event", trip_sub3: String(ev.id || "").slice(0, 40) });
+    if (aff.allianceId && aff.sid) Object.assign(p, { Allianceid: aff.allianceId, SID: aff.sid, trip_sub1: String(ev.id || "event").slice(0, 40), trip_sub3: aff.sub3 || "" }); // sub1 = รหัสงาน (ดูในรายงาน Trip.com ว่าจองจากงานไหน)
     Object.entries(p).forEach(([k, x]) => u.searchParams.set(k, x));
     return u.href;
   }
