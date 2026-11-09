@@ -908,13 +908,8 @@
       for (const q of state.places) if ((q.kind === "cafe" || q.kind === "restaurant") && q.lat && Math.abs(q.lat - p.lat) < 0.4 && Math.abs(q.lng - p.lng) < 0.4) { const d = distanceKm(p, q); if (d < bd) { bd = d; best = q; } }
       if (best) at = { lat: best.lat, lng: best.lng };
     }
-    return `
-      <section class="panel hotels" style="margin-top:14px">
-        <h2>${t("hotelsNearTitle")}</h2>
-        <p class="muted" style="margin:0 0 10px">${t("hotelsNearDesc", { place: esc(name) })}</p>
-        <a class="btn primary block" href="${esc(hotelLink({ startDate: sat.toISOString().slice(0, 10), id: p.id }, { name, ...at }))}" target="_blank" rel="sponsored nofollow noopener" data-ext-app>🏨 ${t("hotelsNearBtn")}</a>
-        ${C.tripAffiliate?.allianceId ? `<p class="disclosure">${esc(pick(C.affiliateDisclosure))}</p>` : ""}
-      </section>`;
+    // ปุ่มเต็มแถวใต้ปุ่มนำทาง/แผนที่ (อยู่ใน .pd-actions)
+    return `<a class="btn pd-hotel" href="${esc(hotelLink({ startDate: sat.toISOString().slice(0, 10), id: p.id }, { name, ...at }))}" target="_blank" rel="sponsored nofollow noopener" data-ext-app title="${esc(t("hotelsNearDesc", { place: name }))}">🏨 ${t("hotelsNearBtn")}</a>`;
   }
   // จุดกึ่งกลางของสถานที่ในจังหวัด (ใช้เมื่อสถานที่จัดงานไม่มีพิกัด)
   const provCenters = {};
@@ -1751,7 +1746,9 @@
         <div class="pd-actions">
           <a class="btn primary" ${mapsLink(v, "driving")}>🧭 ${t("navigate")}</a>
           ${p.website ? `<a class="btn" ${inAppLink(p.website)}>🌐 ${t("website")}</a>` : `<a class="btn" ${mapsLink(v, null)}>🗺️ ${t("openMapsShort")}</a>`}
+          ${placeHotelBlock(p)}
         </div>
+        ${p.lat && C.tripAffiliate?.allianceId ? `<p class="disclosure pd-aff">${esc(pick(C.affiliateDisclosure))}</p>` : ""}
         <div class="pd-tabs" role="tablist">${tabs.map(([k, l]) => `<button role="tab" class="${state.placeTab === k ? "active" : ""}" data-ptab="${k}" aria-selected="${state.placeTab === k}">${l}</button>`).join("")}</div>
         <section class="pd-panel" data-panel="overview" ${state.placeTab === "overview" ? "" : "hidden"}>
           ${summary ? `<p class="pd-summary" id="pdSum">${esc(summary)}</p>${summary.length > 180 ? `<button class="link-btn" id="pdMore">${t("readMore")}</button>` : ""}` : ""}
@@ -1760,7 +1757,6 @@
           ${p.maybeClosed ? `<p class="adult-note">⚠️ ${t("aiClosed")}</p>` : ""}
           ${rv ? reviewBlock(rv) : ""}
           ${outfitBlock(p)}
-          ${placeHotelBlock(p)}
           ${window.IYA_GOOGLE?.block(p) || ""}
           <p class="pd-links">${p.fromTrend ? `<span>🔥 ${t("fromTrendNote")}</span>` : ""}${wiki ? `<a ${inAppLink(wiki)}>📖 ${t("wikipedia")}</a>` : ""}${p.imagePage ? `<span>${t("photo")}: <a ${inAppLink(p.imagePage)}>${esc(p.imageCredit || "Wikimedia Commons")}</a></span>` : ""}</p>
           ${MEMBERS && !p.business ? `<a class="claim-link" href="#/account/new-shop?ref=${encodeURIComponent(p.id)}">🏪 ${t(p.image ? "claimPlace" : "claimPlaceNoPhoto")}</a>` : ""}

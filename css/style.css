@@ -835,3 +835,7 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 
 /* โลโก้งานเล็ก (Props&Ops): แสดงทั้งรูป ไม่ขยายจนขอบหาย */
 .cover-img.cover-logo { object-fit: contain; padding: 8px; }
+
+/* ปุ่มที่พักใกล้ที่นี่: เต็มแถวใต้ปุ่มนำทาง/แผนที่ */
+.pd-actions .pd-hotel { grid-column: 1 / -1; }
+.pd-aff { margin: 6px 0 0; font-size: .72rem; }
