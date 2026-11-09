@@ -4,7 +4,7 @@
 (function (root) {
   const R = {
     hide: /\b(420|cannabis|weed|marijuana|kush)\b|กัญชา/i,
-    social: /\b(speed ?dating|singles?|dating|matchmaking|blind ?date|cupid|new friends|make friends|meet new people|social club|book club|reading club|language exchange|board ?game night|no strangers|introverts?|tinder)\b|คนโสด|หาคู่|หาแฟน|จับคู่|หาเพื่อนใหม่|เพื่อนใหม่|ชมรมหนังสือ|ชมรมอ่าน|บอร์ดเกม/i,
+    social: /\b(speed ?dating|singles?|dating|matchmaking|blind ?date|cupid|new friends|make friends|meet new people|social club|book club|reading club|language exchange|board ?game night|no strangers|introverts?|tinder|solo travell?ers?|hangout)\b|คนโสด|หาคู่|หาแฟน|จับคู่|หาเพื่อนใหม่|เพื่อนใหม่|ชมรมหนังสือ|ชมรมอ่าน|บอร์ดเกม/i,
     festival: /\b(loy ?krathong|songkran|yi ?peng|yeepeng|lanterns? festival|sky lanterns?|countdown|fireworks|chinese new year|vegetarian festival)\b|ลอยกระทง|สงกรานต์|งานวัด|งานประจำปี|ประเพณี|ยี่เป็ง|เคาท์ดาวน์|เคานต์ดาวน์|เทศกาลโคม|พลุ|ตรุษจีน|กินเจ/i,
     notFestival: /music festival|concert|คอนเสิร์ต|fansign|fan ?meet|fancon|showcase|dinner|ดินเนอร์|buffet|บุฟเฟ่ต์|pool party|run\b|วิ่ง/i,
     party: /\b(full ?moon|half ?moon|waterfall festival|hii festival|jungle party|pool party|boat party|yacht party|t-?dance|rave|white party|party|parties|cocktails?|bar crawl|pub crawl)\b|ปาร์ตี้/i,
@@ -15,10 +15,10 @@
     // ป๊อปอัพสโตร์/ร้านขายของที่ระลึก/คาเฟ่ธีมศิลปิน = ไปดู/ซื้อของ ไม่ใช่การแสดง → นิทรรศการ/ป๊อปอัพ (ไม่เข้า K-POP/แฟนมีต)
     popup: /\b(pop-?up( store| shop| cafe)?|popup|merch(andise)? (store|shop)|collab cafe|theme cafe|birthday cafe)\b|ป๊อปอัพ|ป็อปอัพ/i,
     kpop: /\b(k-?pop|kpop|k-?drama|korean|babymonster|big ?bang|qwer|bambam|jay ?b|got7|stray ?kids|suho|exo|enhypen|blackpink|jennie|jisoo|rosé|twice|seventeen|nct( ?127| ?dream| ?wish)?|wayv|aespa|le ?sserafim|newjeans|itzy|tomorrow ?x ?together|ateez|bts|jimin|jungkook|j-?hope|red ?velvet|mamamoo|\(?g\)?i-?dle|i-?dle|kiss ?of ?life|illit|boynextdoor|riize|zerobaseone|zb1|plave|nmixx|kep1er|fromis_?9|taeyeon|sunmi|chung ?ha|hwasa|akmu|day6|n\.ssign|xikers|cravity|monsta ?x|shinee|taemin|super ?junior|2pm|ikon|dreamcatcher|viviz|p1harmony|so ?ji ?sub|lee ?min ?ho|park ?bo ?gum|cha ?eun ?woo|btob|oh ?my ?girl|apink|g-?dragon|taeyang|daesung|zico|jay ?park|ph-?1|dynamic ?duo|epik ?high|10cm|hyolyn|baekhyun|xiumin|doyoung|taeil|mark ?tuan|jackson ?wang|yugyeom|youngjae|jinyoung|evnne|tempest|8turn|ampers&one|nexz|kickflip|hearts2hearts|izna|meovv|close ?your ?eyes|wave ?to ?earth|allday ?project)\b|[\uAC00-\uD7A3]{2}|เคป็อป|เกาหลี/i,
-    anime: /\b(cosplay(er)?s?|anime|anisong|manga|comic ?-?con|comiket|otaku|vtubers?|isekai|japan expo|game ?show|e-?sports?|gaming (festival|expo|con)|tcg|trading card|card (expo|show|game)|pok[eé]mon|gundam|hololive|wonder ?festival|doujin)\b|คอสเพลย์|คอสเพล|อนิเมะ|การ์ตูนญี่ปุ่น|มังงะ|เกมโชว์|อีสปอร์ต|การ์ดเกม/i,
+    anime: /\b(cosplay(er)?s?|anime|anisong|manga|comic ?-?con|comiket|otaku|vtubers?|isekai|japan expo|game ?show|e-?sports?|gaming (festival|expo|con)|tcg|trading card|card (expo|show|game)|pok[eé]mon|gundam|hololive|wonder ?festival|doujin|card exhibition|animonium|one piece|naruto|dragon ?ball|demon slayer|kimetsu|jujutsu|chainsaw man|spy ?x ?family|evangelion|ghibli|doraemon|detective conan|sailor moon|hatsune miku|vocaloid)\b|คอสเพลย์|คอสเพล|อนิเมะ|การ์ตูนญี่ปุ่น|มังงะ|เกมโชว์|อีสปอร์ต|การ์ดเกม/i,
     // ดนตรีจากเกม/อนิเมะเล่นสด = คอนเสิร์ต (อยู่หมวดคอนเสิร์ต)
     animeConcert: /\b(concert|orchestra|symphon(y|ic)|live in|tour|recital)\b|คอนเสิร์ต/i,
-    film: /\b(screenings?|cinema|movie night|film (lab|festival|fest|club|night|series)|rooftop (cinema|movie)|outdoor (cinema|movie)|sunday cinema)\b|ฉายหนัง|ฉายภาพยนตร์|เทศกาลหนัง|เทศกาลภาพยนตร์|ดูหนังกลางแปลง|หนังกลางแปลง/i,
+    film: /\b(screenings?|cinema|movie night|film (lab|festival|fest|club|night|series)|rooftop (cinema|movie)|outdoor (cinema|movie)|sunday cinema|skyline film|skyline cinema)\b|ดูหนังบนดาดฟ้า|ดูหนัง|ฉายหนัง|ฉายภาพยนตร์|เทศกาลหนัง|เทศกาลภาพยนตร์|ดูหนังกลางแปลง|หนังกลางแปลง/i,
     notFilm: /\bin concert\b|film concert|live concert|fan ?screening|final episode/i,
     market: /\b(markets?|bazaars?|flea|craft fair|vintage fair|art ?toy fair|christmas fair|ploenchit fair|otop|marché)\b|ตลาดนัด|ตลาด|มาร์เก็ต|มาร์เก็ท|ถนนคนเดิน|งานกาชาด|สินค้าชุมชน|โอทอป|ของดี.{0,12}(จังหวัด|ชุมชน|เมือง)/i,
     notMarket: /market(ing| research| insights?|place conference)|stock market|money market|capital market|crypto|traders?/i,
@@ -47,7 +47,8 @@
     if (["learning", "expo", "concert", "seminar"].includes(c) && /\b(conference|congress|summit|symposium|convention)\b/i.test(t) && !/\b(expo|masterclass|workshop|camp)\b/i.test(t)) return "seminar";
     // ---- กรณีเฉพาะที่ตรวจเจอจากรายการจริง (ใช้ชื่องาน + สรุปงาน) ----
     const s = `${t} ${ev?.summary || ""}`;
-    if (/\bwonderfruit\b/i.test(t)) return "concert";                                   // เทศกาลดนตรี/ศิลปะ (หน้าขายบัตร "The November Sale")
+    if (/\bwonderfruit\b/i.test(t)) return "concert";
+    if (/the wall song/i.test(t)) return "concert";                                     // คอนเสิร์ตรายการร้องข้ามกำแพง                                   // เทศกาลดนตรี/ศิลปะ (หน้าขายบัตร "The November Sale")
     if (/\b(furry|furbidden|bangkok ?beasts)\b/i.test(t)) return "expo";                // งานรวมตัวแฟนเฟอร์รี่ (คอนเวนชัน)
     if (/\brally games\b|movie rally/i.test(t)) return "expo";                          // เกมแรลลี่ธีมภาพยนตร์ ไม่ใช่งานแข่งรถ/เทศกาล
     if (/temples? to heaven|ไหว้พระ\s?9\s?วัด/i.test(t)) return "festival";             // ทัวร์ไหว้พระ

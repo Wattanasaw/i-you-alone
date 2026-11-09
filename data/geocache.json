@@ -2140,5 +2140,16 @@
  "rev|7.883,98.267": "phuket",
  "rev|6.417,99.083": "satun",
  "rev|13.757,100.499": "bangkok",
- "rev|18.814,98.982": "chiang-mai"
+ "rev|18.814,98.982": "chiang-mai",
+ "สยามพิฆฮอลล์ ชั้น 7 อาคารสยามสแคว์วัน|bangkok": null,
+ "ten six hundred chao phraya bangkok by preference|bangkok": {
+  "lat": 13.73362,
+  "lng": 100.49845,
+  "state": "Bangkok"
+ },
+ "hilton bangkok grande asoke|bangkok": {
+  "lat": 13.739,
+  "lng": 100.56209,
+  "state": "Bangkok"
+ }
 }
