@@ -205,7 +205,9 @@
       else if ((p.kind === "nightlife" || p.kind === "restaurant") && /café|cafe|coffee|คาเฟ่|กาแฟ|คอฟฟี่|kafe/i.test(nm) && !/\bbar\b|บาร์|pub|ผับ|beer|เบียร์|restaurant|ร้านอาหาร|dining|kitchen|ครัว|eatery/i.test(nm)) p.kind = "cafe";
       else if ((p.kind === "nightlife" || p.kind === "cafe") && /restaurant|ร้านอาหาร|ramen|ราเมง|ก๋วยเตี๋ยว|noodle|ラーメン/i.test(nm) && !/\bbar\b|บาร์|pub|ผับ/i.test(nm)) p.kind = "restaurant";
       else if (p.kind === "landmark" && /^\s*(ถ้ำ|ถ้ํา|เขา|ดอย|น้ำตก)/.test(nm)) p.kind = "nature";
-      if (p.kind === "nature" && /หาด|ชายหาด|beach|เกาะ|island|อ่าว|\bbay\b|ทะเล(?!หมอก|สาบ|บัว)/i.test(nm) && !/เกาะเกร็ด|เกาะรัตนโกสินทร์|เกาะเมือง/.test(nm)) p.kind = "beach";
+      if (p.kind === "nature" && /หาด|ชายหาด|beach|เกาะ|island|อ่าว|\bbay\b|ทะเล(?!หมอก|สาบ|บัว)/i.test(nm) && !/เกาะเกร็ด|เกาะรัตนโกสินทร์|เกาะเมือง/.test(nm)
+        // น้ำตก/ถ้ำ/ดอย/จุดชมวิวที่ชื่อมีคำว่า "หาด" ("น้ำตกแม่หาด") ไม่ใช่ทะเล
+        && !/^\s*(น้ำตก|ถ้ำ|ดอย|ภู|จุดชมวิว|อ่างเก็บน้ำ|เขื่อน)|waterfall|\bcave\b|view ?point|reservoir|\bdam\b/i.test(nm)) p.kind = "beach";
       else if (p.kind === "landmark" && /^\s*(วัด|wat\b)|temple|พระธาตุ|พระมหาธาตุ|เจดีย์|วัด\S|สำนักสงฆ์|วรวิหาร/i.test(nm)) p.kind = "temple";
       // ข้อมูลจาก Gemini เติมเฉพาะช่องที่ยังว่าง (OpenStreetMap/รีวิว Lemon8/เจ้าของร้าน มาก่อน)
       const ai = state.ai[p.id];

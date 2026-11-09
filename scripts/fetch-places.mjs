@@ -7,7 +7,7 @@
 //   สถานที่ที่เป็นกระแส/คนค้นหาเพิ่มขึ้น ขึ้นป้ายและขึ้นก่อน (Instagram ห้ามดึงข้อมูลอัตโนมัติ จึงไม่ใช้)
 // รัน: node scripts/fetch-places.mjs [--dry]
 import { readFile, writeFile, rename } from "node:fs/promises";
-import { specificPlaces, postFits, bestOwners, ownsPost, postAllowed, postAbout } from "./place-quality.mjs";
+import { specificPlaces, postFits, bestOwners, ownsPost, postAllowed, postAbout, fixKind } from "./place-quality.mjs";
 import { osmProvincePlaces } from "./osm-provinces.mjs";
 
 const DRY = process.argv.includes("--dry");
@@ -396,6 +396,8 @@ const GENERIC_NAME = /^(น้ำตก|ชายหาด|หาด|จุด�
 for (let i = places.length - 1; i >= 0; i--) if (GENERIC_NAME.test((places[i].name.th || places[i].name.en || "").trim())) places.splice(i, 1);
 // ชื่อกว้างเกินไป ("บางแสน" → "หาดบางแสน") / ไม่ใช่สถานที่ / ซ้ำกับที่ใกล้ๆ
 places = specificPlaces(places);
+// หมวดที่หลงจากชื่อ (คาเฟ่ที่ติดป้ายร้านอาหาร ถ้ำ/หาดที่เป็นแลนด์มาร์ก ฯลฯ) · ไม่ใช่ที่เที่ยว (ตลาดสดเทศบาล สำนักงาน) ตัดออก
+places = places.filter(p => { const k = fixKind(p); if (!k) return false; p.kind = k; return true; });
 
 // สถานที่เดียวกันอาจอยู่หลายหมวด (เช่น สวนสัตว์ที่เป็นพิพิธภัณฑ์ด้วย) → เก็บหมวดแรก
 const seen = new Set();

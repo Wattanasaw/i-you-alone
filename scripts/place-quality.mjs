@@ -269,3 +269,20 @@ export function postAbout(post, place, aliases) {
   if (park.some(n => t.includes(n) || cover.includes(n)) && !ABROAD.test(both) && (kindRe.test(both) || (place.kind !== "park" && prov && both.includes(prov))) && (nameBiz || !COVER_BIZ.test(`${t} ${post.coverDesc || ""}`))) return true;
   return !!weak && (near.test(t) || near.test(cover)) && !COVER_BIZ.test(post.coverDesc || "");
 }
+
+// ---------- แก้หมวดสถานที่ที่หลง (จากชื่อ) · null = ไม่ใช่ที่เที่ยว ตัดออก ----------
+// ประเภทจาก OSM/Wikidata บางทีไม่ตรง: คาเฟ่ติดป้ายร้านอาหาร, ถ้ำ/หาดเป็นแลนด์มาร์ก, วัดเป็นธรรมชาติ, ตลาดสดเทศบาลเป็นแลนด์มาร์ก
+const NOT_ATTRACTION = /ตลาดสด|fresh ?market|food market|ตลาดเทศบาล|municipal(ity)? (food |fresh )?market|tour office|travel agency|สำนักงาน|protection unit|หน่วยพิทักษ์|ด่านตรวจ|ranger station|^tiger temple$|โรงพยาบาล(?!ช้าง)|โรงแรม|hotel|hostel|guest ?house|หอพัก|คอนโด|apartment/i;
+export function fixKind(p) {
+  const n = nameOf(p), name = `${n.th || ""} | ${n.en || ""}`, k = p.kind;
+  // ร้าน (คาเฟ่/ร้านอาหาร/บาร์) ในโรงแรมยังเป็นร้านที่ไปได้ → ไม่ตัด
+  if (!["museum", "cafe", "animalcafe", "restaurant", "nightlife"].includes(k) && NOT_ATTRACTION.test(name)) return null;
+  if (k === "restaurant" && /คาเฟ่|\bcaf[eé]\b|coffee|กาแฟ/i.test(name)) return "cafe";
+  if (k === "nature" && /^วัด|\bwat\b|temple/i.test(name)) return "landmark";
+  if (["landmark", "zoo"].includes(k) && /^อุทยานแห่งชาติ|national park/i.test(name)) return "park";
+  if (k === "landmark" && /^(ถ้ำ|หาด|ชายหาด|น้ำตก|เกาะ|จุดชมวิว)|\b(cave|beach|waterfall|island|viewpoint)\b/i.test(name) && !/^วัด|\bwat\b|temple/i.test(name)) return "nature";
+  if (k === "landmark" && /อควาเรียม|\baquarium\b|สวนสัตว์|\bzoo\b/i.test(name)) return "zoo";
+  if (k === "landmark" && /สวนน้ำ|water ?park|สวนสนุก|theme ?park/i.test(name)) return "themepark";
+  if (k === "landmark" && /พิพิธภัณฑ์|\bmuseum\b|หอศิลป์|art (center|gallery)/i.test(name)) return "museum";
+  return k;
+}

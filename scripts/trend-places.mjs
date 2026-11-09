@@ -10,7 +10,7 @@
 // node scripts/trend-places.mjs [--posts 160] [--ai 8]
 import { readFile, writeFile, rename } from "node:fs/promises";
 import { aiJSON, aiAvailable, aiName } from "./gemini.mjs";
-import { postAbout } from "./place-quality.mjs";
+import { postAbout, fixKind } from "./place-quality.mjs";
 
 const UA = "IYouAloneBot/1.0 (+https://wattanasaw.github.io/i-you-alone/)";
 const arg = (n, d) => { const i = process.argv.indexOf(n); return i > 0 ? +process.argv[i + 1] : d; };
@@ -250,6 +250,8 @@ for (const [k, v] of Object.entries(cache.geo)) if (days(v.at) > 120) delete cac
 const live = new Set(Object.values(cache.posts).map(e => e.poi).filter(Boolean));
 for (const k of Object.keys(cache.pois)) if (!live.has(k)) delete cache.pois[k];
 await save("data/trend-extract.json", JSON.stringify(cache) + "\n");
+// หมวดที่หลงจากชื่อ (เช่น ร้านที่ชื่อบอกว่าเป็นคาเฟ่) — ที่นี่ไม่ตัดทิ้ง (มาจากหมุดสถานที่จริง)
+for (const p of list) { const k = fixKind(p); if (k) p.kind = k; }
 await save("data/trend-places.json", JSON.stringify(list, null, 1) + "\n");
 await save("data/places.json", JSON.stringify(data, null, 1) + "\n");
 console.log(`สถานที่ที่ถูกแท็ก ${poiIds.length} → ตรงกับสถานที่เดิม ${toOld} · เพิ่มใหม่ ${list.length} (พิกัดจริง ${list.filter(p => !p.approx).length} / ประมาณจากที่อยู่ ${list.filter(p => p.approx).length}) · ข้าม (ที่พัก/ห้าง/ไม่รู้จังหวัด) ${skipped} · หาพิกัดไม่ได้ ${noGeo} · AI จัดหมวด ${asked} ครั้ง (${aiName()})`);

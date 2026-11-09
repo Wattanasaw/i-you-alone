@@ -29,6 +29,26 @@
   function fixCategory(ev) {
     const t = String(ev?.title || ""), c = ev?.category;
     if (is(R.hide, t)) return null;
+    // งานที่ประกาศยกเลิก (ชื่องานเหลือแค่ "ยกเลิก"/"Cancelled") → ไม่แสดง
+    if (/^\s*(ยกเลิก|cancell?ed)(\s|$|[:\-–|])/i.test(t)) return null;
+    // ประชุมวิชาการ/สัมมนาใหญ่ (ชื่อบอกชัด) → สัมมนา ก่อนกฎอื่น ("Veterinary Conference" เคยไปเวิร์กช็อปเพราะมีคำว่า Theme/Development)
+    if (["learning", "expo", "concert", "seminar"].includes(c) && /\b(conference|congress|summit|symposium|convention)\b/i.test(t) && !/\b(expo|masterclass|workshop|camp)\b/i.test(t)) return "seminar";
+    // ---- กรณีเฉพาะที่ตรวจเจอจากรายการจริง (ใช้ชื่องาน + สรุปงาน) ----
+    const s = `${t} ${ev?.summary || ""}`;
+    if (/\bwonderfruit\b/i.test(t)) return "concert";                                   // เทศกาลดนตรี/ศิลปะ (หน้าขายบัตร "The November Sale")
+    if (/\b(furry|furbidden|bangkok ?beasts)\b/i.test(t)) return "expo";                // งานรวมตัวแฟนเฟอร์รี่ (คอนเวนชัน)
+    if (/\brally games\b|movie rally/i.test(t)) return "expo";                          // เกมแรลลี่ธีมภาพยนตร์ ไม่ใช่งานแข่งรถ/เทศกาล
+    if (/temples? to heaven|ไหว้พระ\s?9\s?วัด/i.test(t)) return "festival";             // ทัวร์ไหว้พระ
+    if (/คริสตจักร|church/i.test(s) && /คริสต์มาส|christmas/i.test(s)) return "festival";
+    if (c === "motor" && is(R.party, t)) return "nightlife";                            // ปาร์ตี้ดูแข่งรถ (Watch party)
+    if (["concert", "nightlife"].includes(c) && /\b(improv|twoprov)\b|ด้นสด|sihnsart show|ละครเวที|มิวสิคัล/i.test(s) && !/คอนเสิร์ต|concert/i.test(t)) return "show";
+    if (c === "concert" && /\b(premiere|starlympics)\b|^road to the /i.test(t)) return "fanmeet";       // งานเปิดตัวซีรีส์/กีฬาสีนักแสดง
+    if (c === "nightlife" && /\bconcert\b|คอนเสิร์ต/i.test(t) && !is(R.party, t)) return "concert";
+    if (c === "social" && !is(R.social, t) && /\b(dinner|buffet|brunch|thanksgiving)\b/i.test(t)) return "food";
+    if (["seminar", "learning"].includes(c) && /\b(yoga|yogini|pilates)\b|โยคะ|พิลาทิส/i.test(s)) return "outdoor";
+    if (c === "seminar" && /\b(paint|pottery|weav(e|ing)|craft|terracotta|clay)\b|ปั้น|ระบายสี|ทอผ้า/i.test(t)) return "learning";
+    if (c === "outdoor" && /\bdj\b|tomorrowland|\bparty\b/i.test(s) && !is(R.run, t)) return "nightlife";
+    if (c === "outdoor" && /\b\d+\s?km\b|วิ่ง|\brunning\b/i.test(s) && !/\b(muay|fight|lumpinee|football|ฟุตบอล)\b/i.test(t)) return "run";
     // ป๊อปอัพสโตร์ (ก่อน K-POP/แฟนมีต)
     if (c !== "exhibition" && is(R.popup, t) && !is(R.fanmeet, t) && !/\b(concert|tour|live)\b|คอนเสิร์ต/i.test(t)) return "exhibition";
     // K-POP: เฉพาะการแสดง/พบปะศิลปินเกาหลี — คอนเสิร์ต แฟนคอน แฟนมีต แฟนไซน์ โชว์เคส

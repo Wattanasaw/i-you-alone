@@ -21095,7 +21095,7 @@
   },
   {
    "id": "osm-w204411864",
-   "kind": "restaurant",
+   "kind": "cafe",
    "fame": 8,
    "province": "bangkok",
    "name": {
@@ -22661,7 +22661,7 @@
   },
   {
    "id": "osm-n4772856321",
-   "kind": "restaurant",
+   "kind": "cafe",
    "fame": 7,
    "province": "bangkok",
    "name": {
@@ -23165,7 +23165,7 @@
   },
   {
    "id": "osm-w1232445839",
-   "kind": "restaurant",
+   "kind": "cafe",
    "fame": 7,
    "province": "kamphaeng-phet",
    "name": {
@@ -23186,7 +23186,7 @@
   },
   {
    "id": "osm-w1308571318",
-   "kind": "restaurant",
+   "kind": "cafe",
    "fame": 7,
    "province": "kamphaeng-phet",
    "name": {
@@ -23448,7 +23448,7 @@
   },
   {
    "id": "osm-n5850216719",
-   "kind": "restaurant",
+   "kind": "cafe",
    "fame": 7,
    "province": "khon-kaen",
    "name": {
@@ -23467,7 +23467,7 @@
   },
   {
    "id": "osm-n5907810957",
-   "kind": "restaurant",
+   "kind": "cafe",
    "fame": 7,
    "province": "khon-kaen",
    "name": {
@@ -26790,7 +26790,7 @@
   },
   {
    "id": "osm-n12246405334",
-   "kind": "restaurant",
+   "kind": "cafe",
    "fame": 6,
    "province": "bangkok",
    "name": {
@@ -27144,7 +27144,7 @@
   },
   {
    "id": "osm-w1213759192",
-   "kind": "restaurant",
+   "kind": "cafe",
    "fame": 6,
    "province": "bangkok",
    "name": {
@@ -27514,7 +27514,7 @@
   },
   {
    "id": "osm-n5992335680",
-   "kind": "restaurant",
+   "kind": "cafe",
    "fame": 6,
    "province": "chiang-mai",
    "name": {
@@ -27832,7 +27832,7 @@
   },
   {
    "id": "osm-n6507664673",
-   "kind": "restaurant",
+   "kind": "cafe",
    "fame": 6,
    "province": "chonburi",
    "name": {
@@ -28039,7 +28039,7 @@
   },
   {
    "id": "osm-n4185075491",
-   "kind": "restaurant",
+   "kind": "cafe",
    "fame": 6,
    "province": "khon-kaen",
    "name": {
@@ -28552,7 +28552,7 @@
   },
   {
    "id": "osm-n5323230321",
-   "kind": "restaurant",
+   "kind": "cafe",
    "fame": 6,
    "province": "phang-nga",
    "name": {
@@ -28570,7 +28570,7 @@
   },
   {
    "id": "osm-n5344389824",
-   "kind": "restaurant",
+   "kind": "cafe",
    "fame": 6,
    "province": "phang-nga",
    "name": {
@@ -29710,7 +29710,7 @@
   },
   {
    "id": "osm-n3203070545",
-   "kind": "landmark",
+   "kind": "nature",
    "fame": 5,
    "province": "krabi",
    "name": {
@@ -29724,7 +29724,7 @@
   },
   {
    "id": "osm-n4467179689",
-   "kind": "landmark",
+   "kind": "nature",
    "fame": 5,
    "province": "krabi",
    "name": {
@@ -29738,7 +29738,7 @@
   },
   {
    "id": "osm-n7161046614",
-   "kind": "landmark",
+   "kind": "nature",
    "fame": 5,
    "province": "krabi",
    "name": {
@@ -34583,7 +34583,7 @@
   },
   {
    "id": "osm-n3392579956",
-   "kind": "restaurant",
+   "kind": "cafe",
    "fame": 5,
    "province": "bangkok",
    "name": {
@@ -35009,7 +35009,7 @@
   },
   {
    "id": "osm-n2294308420",
-   "kind": "restaurant",
+   "kind": "cafe",
    "fame": 5,
    "province": "chiang-rai",
    "name": {
@@ -35294,7 +35294,7 @@
   },
   {
    "id": "osm-n5030438123",
-   "kind": "restaurant",
+   "kind": "cafe",
    "fame": 5,
    "province": "chonburi",
    "name": {
@@ -35311,7 +35311,7 @@
   },
   {
    "id": "osm-n5283725521",
-   "kind": "restaurant",
+   "kind": "cafe",
    "fame": 5,
    "province": "chonburi",
    "name": {
@@ -35640,7 +35640,7 @@
   },
   {
    "id": "osm-n12479841559",
-   "kind": "restaurant",
+   "kind": "cafe",
    "fame": 5,
    "province": "kalasin",
    "name": {
@@ -35695,7 +35695,7 @@
   },
   {
    "id": "osm-w1311694551",
-   "kind": "restaurant",
+   "kind": "cafe",
    "fame": 5,
    "province": "kamphaeng-phet",
    "name": {
@@ -36233,7 +36233,7 @@
   },
   {
    "id": "osm-n8932239448",
-   "kind": "restaurant",
+   "kind": "cafe",
    "fame": 5,
    "province": "nakhon-ratchasima",
    "name": {
@@ -36538,7 +36538,7 @@
   },
   {
    "id": "osm-n5894230285",
-   "kind": "restaurant",
+   "kind": "cafe",
    "fame": 5,
    "province": "nonthaburi",
    "name": {
@@ -36646,7 +36646,7 @@
   },
   {
    "id": "osm-w1420659005",
-   "kind": "restaurant",
+   "kind": "cafe",
    "fame": 5,
    "province": "nonthaburi",
    "name": {
@@ -36898,7 +36898,7 @@
   },
   {
    "id": "osm-n5367517521",
-   "kind": "restaurant",
+   "kind": "cafe",
    "fame": 5,
    "province": "phetchabun",
    "name": {
@@ -37805,7 +37805,7 @@
   },
   {
    "id": "osm-n7161046616",
-   "kind": "landmark",
+   "kind": "nature",
    "fame": 4,
    "province": "krabi",
    "name": {
@@ -37857,22 +37857,6 @@
    },
    "lat": 18.34452,
    "lng": 98.79612,
-   "summary": {},
-   "fetchedAt": "2026-11-08T21:02:33.435Z"
-  },
-  {
-   "id": "osm-n4658692590",
-   "kind": "landmark",
-   "fame": 4,
-   "province": "mae-hong-son",
-   "name": {
-    "th": "ปายเทรคทัวร์",
-    "en": "Pai Trek tour office"
-   },
-   "lat": 19.418,
-   "lng": 98.40844,
-   "website": "https://m.facebook.com/ThailandJungleTrek/",
-   "phone": "+66885333341",
    "summary": {},
    "fetchedAt": "2026-11-08T21:02:33.435Z"
   },
@@ -41353,7 +41337,7 @@
   },
   {
    "id": "osm-n13997649551",
-   "kind": "restaurant",
+   "kind": "cafe",
    "fame": 4,
    "province": "chaiyaphum",
    "name": {
@@ -41899,7 +41883,7 @@
   },
   {
    "id": "osm-w1319871038",
-   "kind": "restaurant",
+   "kind": "cafe",
    "fame": 4,
    "province": "kamphaeng-phet",
    "name": {
@@ -42522,7 +42506,7 @@
   },
   {
    "id": "osm-n5746976421",
-   "kind": "restaurant",
+   "kind": "cafe",
    "fame": 4,
    "province": "nakhon-ratchasima",
    "name": {
@@ -42539,7 +42523,7 @@
   },
   {
    "id": "osm-n5974052397",
-   "kind": "restaurant",
+   "kind": "cafe",
    "fame": 4,
    "province": "nakhon-ratchasima",
    "name": {
@@ -42799,7 +42783,7 @@
   },
   {
    "id": "osm-n8808188231",
-   "kind": "restaurant",
+   "kind": "cafe",
    "fame": 4,
    "province": "lopburi",
    "name": {
@@ -43260,7 +43244,7 @@
   },
   {
    "id": "osm-n11049117368",
-   "kind": "restaurant",
+   "kind": "cafe",
    "fame": 4,
    "province": "nonthaburi",
    "name": {
@@ -43714,7 +43698,7 @@
   },
   {
    "id": "osm-n6430064928",
-   "kind": "restaurant",
+   "kind": "cafe",
    "fame": 4,
    "province": "phichit",
    "name": {
@@ -44094,7 +44078,7 @@
   },
   {
    "id": "osm-n5746976421",
-   "kind": "restaurant",
+   "kind": "cafe",
    "fame": 4,
    "province": "nakhon-ratchasima",
    "name": {
@@ -44111,7 +44095,7 @@
   },
   {
    "id": "osm-n5974052397",
-   "kind": "restaurant",
+   "kind": "cafe",
    "fame": 4,
    "province": "nakhon-ratchasima",
    "name": {
@@ -44388,9 +44372,7 @@
      }
     ],
     "src": "review"
-   },
-   "hours": "08:00-18:00",
-   "hoursSrc": "typical"
+   }
   },
   {
    "id": "osm-r3283184",
@@ -44590,9 +44572,7 @@
      }
     ],
     "src": "review"
-   },
-   "hours": "08:00-18:00",
-   "hoursSrc": "typical"
+   }
   },
   {
    "id": "osm-r5944551",
@@ -44917,9 +44897,7 @@
      }
     ],
     "src": "review"
-   },
-   "hours": "08:00-18:00",
-   "hoursSrc": "typical"
+   }
   },
   {
    "id": "osm-r6004034",
@@ -47400,7 +47378,7 @@
   },
   {
    "id": "osm-w792053809",
-   "kind": "landmark",
+   "kind": "themepark",
    "fame": 3,
    "province": "kanchanaburi",
    "name": {
@@ -47430,7 +47408,7 @@
   },
   {
    "id": "osm-n2086873633",
-   "kind": "landmark",
+   "kind": "nature",
    "fame": 3,
    "province": "krabi",
    "name": {
@@ -50196,7 +50174,7 @@
   },
   {
    "id": "osm-n6439945541",
-   "kind": "restaurant",
+   "kind": "cafe",
    "fame": 3,
    "province": "buriram",
    "name": {
@@ -50521,7 +50499,7 @@
   },
   {
    "id": "osm-w1570650501",
-   "kind": "restaurant",
+   "kind": "cafe",
    "fame": 3,
    "province": "kanchanaburi",
    "name": {
@@ -50635,7 +50613,7 @@
   },
   {
    "id": "osm-n820323647",
-   "kind": "restaurant",
+   "kind": "cafe",
    "fame": 3,
    "province": "mae-hong-son",
    "name": {
@@ -51024,7 +51002,7 @@
   },
   {
    "id": "osm-n8614138025",
-   "kind": "restaurant",
+   "kind": "cafe",
    "fame": 3,
    "province": "lopburi",
    "name": {
@@ -51121,7 +51099,7 @@
   },
   {
    "id": "osm-n10168652014",
-   "kind": "restaurant",
+   "kind": "cafe",
    "fame": 3,
    "province": "narathiwat",
    "name": {
@@ -58694,7 +58672,7 @@
   },
   {
    "id": "osm-n5898749285",
-   "kind": "landmark",
+   "kind": "zoo",
    "fame": 2,
    "province": "chonburi",
    "name": {
@@ -58767,7 +58745,7 @@
   },
   {
    "id": "osm-n7296879985",
-   "kind": "landmark",
+   "kind": "nature",
    "fame": 2,
    "province": "chumphon",
    "name": {
@@ -59005,7 +58983,7 @@
   },
   {
    "id": "osm-n5672992721",
-   "kind": "landmark",
+   "kind": "nature",
    "fame": 2,
    "province": "kanchanaburi",
    "name": {
@@ -59034,7 +59012,7 @@
   },
   {
    "id": "osm-n11212239948",
-   "kind": "landmark",
+   "kind": "nature",
    "fame": 2,
    "province": "kanchanaburi",
    "name": {
@@ -59105,7 +59083,7 @@
   },
   {
    "id": "osm-n13110340643",
-   "kind": "landmark",
+   "kind": "nature",
    "fame": 2,
    "province": "khon-kaen",
    "name": {
@@ -59250,7 +59228,7 @@
   },
   {
    "id": "osm-w161484680",
-   "kind": "landmark",
+   "kind": "nature",
    "fame": 2,
    "province": "krabi",
    "name": {
@@ -59748,20 +59726,6 @@
    "fetchedAt": "2026-11-08T21:02:33.437Z"
   },
   {
-   "id": "osm-n8079023322",
-   "kind": "landmark",
-   "fame": 2,
-   "province": "maha-sarakham",
-   "name": {
-    "th": "ตลาดสด เทศบาล 1",
-    "en": "Thetsaban 1 Freshmarket"
-   },
-   "lat": 16.40965,
-   "lng": 103.0957,
-   "summary": {},
-   "fetchedAt": "2026-11-08T21:02:33.437Z"
-  },
-  {
    "id": "osm-w314108910",
    "kind": "landmark",
    "fame": 2,
@@ -59772,35 +59736,6 @@
    },
    "lat": 16.2575,
    "lng": 103.06782,
-   "summary": {},
-   "fetchedAt": "2026-11-08T21:02:33.437Z"
-  },
-  {
-   "id": "osm-w656956203",
-   "kind": "landmark",
-   "fame": 2,
-   "province": "maha-sarakham",
-   "name": {
-    "th": "ตลาดสดเทศบาลเมืองมหาสารคาม",
-    "en": "Maha Sarakham Municipality Market"
-   },
-   "lat": 16.18465,
-   "lng": 103.30412,
-   "address": "35 Worrabut",
-   "summary": {},
-   "fetchedAt": "2026-11-08T21:02:33.437Z"
-  },
-  {
-   "id": "osm-w1208732432",
-   "kind": "landmark",
-   "fame": 2,
-   "province": "maha-sarakham",
-   "name": {
-    "th": "ตลาดสดเทศบาลตำบลโกสุมพิสัย",
-    "en": "Kosumphisai Local Market"
-   },
-   "lat": 16.25045,
-   "lng": 103.06293,
    "summary": {},
    "fetchedAt": "2026-11-08T21:02:33.437Z"
   },
@@ -59935,7 +59870,7 @@
   },
   {
    "id": "osm-n4829765113",
-   "kind": "landmark",
+   "kind": "nature",
    "fame": 2,
    "province": "nan",
    "name": {
@@ -59992,34 +59927,6 @@
    "fetchedAt": "2026-11-08T21:02:33.437Z"
   },
   {
-   "id": "osm-n6935532356",
-   "kind": "landmark",
-   "fame": 2,
-   "province": "nan",
-   "name": {
-    "th": "ตลาดสดราชพัสดุ",
-    "en": "State Property Food Market"
-   },
-   "lat": 18.77762,
-   "lng": 100.77581,
-   "summary": {},
-   "fetchedAt": "2026-11-08T21:02:33.437Z"
-  },
-  {
-   "id": "osm-n6937697184",
-   "kind": "landmark",
-   "fame": 2,
-   "province": "nan",
-   "name": {
-    "th": "ตลาดสดบ้านหนองรัง",
-    "en": "Ban Nong Rang Fresh Market"
-   },
-   "lat": 18.74248,
-   "lng": 100.77439,
-   "summary": {},
-   "fetchedAt": "2026-11-08T21:02:33.437Z"
-  },
-  {
    "id": "osm-n6937697411",
    "kind": "landmark",
    "fame": 2,
@@ -60064,20 +59971,6 @@
    "fetchedAt": "2026-11-08T21:02:33.437Z"
   },
   {
-   "id": "osm-w1464965270",
-   "kind": "landmark",
-   "fame": 2,
-   "province": "nan",
-   "name": {
-    "th": "ตลาดวัดพระเนตร",
-    "en": "Phra Net Food Market"
-   },
-   "lat": 18.7911,
-   "lng": 100.78896,
-   "summary": {},
-   "fetchedAt": "2026-11-08T21:02:33.437Z"
-  },
-  {
    "id": "osm-w1489361609",
    "kind": "landmark",
    "fame": 2,
@@ -60089,20 +59982,6 @@
    "lat": 19.59702,
    "lng": 101.08426,
    "hours": "Fr 05:00 - 18:00, Sa 08:00-10:00",
-   "summary": {},
-   "fetchedAt": "2026-11-08T21:02:33.437Z"
-  },
-  {
-   "id": "osm-n2927455262",
-   "kind": "landmark",
-   "fame": 2,
-   "province": "narathiwat",
-   "name": {
-    "th": "ตลาดสด"
-   },
-   "lat": 6.39232,
-   "lng": 101.51771,
-   "hours": "08:00-18:00",
    "summary": {},
    "fetchedAt": "2026-11-08T21:02:33.437Z"
   },
@@ -60294,7 +60173,7 @@
   },
   {
    "id": "osm-n6217979988",
-   "kind": "landmark",
+   "kind": "nature",
    "fame": 2,
    "province": "phang-nga",
    "name": {
@@ -60318,36 +60197,6 @@
    },
    "lat": 8.82949,
    "lng": 98.36483,
-   "summary": {},
-   "fetchedAt": "2026-11-08T21:02:33.439Z"
-  },
-  {
-   "id": "osm-w816145865",
-   "kind": "landmark",
-   "fame": 2,
-   "province": "phang-nga",
-   "name": {
-    "th": "ตลาดสดตะกั่วป่า",
-    "en": "Takua Pa Food Market"
-   },
-   "lat": 8.87157,
-   "lng": 98.35091,
-   "hours": "Mo-Su 06:00-17:00",
-   "summary": {},
-   "fetchedAt": "2026-11-08T21:02:33.439Z"
-  },
-  {
-   "id": "osm-w1266027634",
-   "kind": "landmark",
-   "fame": 2,
-   "province": "phang-nga",
-   "name": {
-    "th": "ตลาดลานโล่ง",
-    "en": "Larn Long food Market"
-   },
-   "lat": 8.86775,
-   "lng": 98.34199,
-   "address": "ตะกั่วป่า ตะกั่วป่า",
    "summary": {},
    "fetchedAt": "2026-11-08T21:02:33.439Z"
   },
@@ -60395,34 +60244,6 @@
    "hours": "Fr-Sa 15:00-23:00",
    "summary": {},
    "fetchedAt": "2026-11-08T21:02:33.439Z"
-  },
-  {
-   "id": "osm-n1721526864",
-   "kind": "landmark",
-   "fame": 2,
-   "province": "phetchabun",
-   "name": {
-    "th": "ตลาดสดเกษม",
-    "en": "Kasem Freshmarket"
-   },
-   "lat": 15.78351,
-   "lng": 101.00555,
-   "summary": {},
-   "fetchedAt": "2026-11-08T21:02:33.440Z"
-  },
-  {
-   "id": "osm-n1721526865",
-   "kind": "landmark",
-   "fame": 2,
-   "province": "phetchabun",
-   "name": {
-    "th": "ตลาดสดศิริวัฒนา",
-    "en": "Siri Watthana Freshmarket"
-   },
-   "lat": 15.78074,
-   "lng": 101.00739,
-   "summary": {},
-   "fetchedAt": "2026-11-08T21:02:33.440Z"
   },
   {
    "id": "osm-n2439189994",
@@ -60477,20 +60298,6 @@
    },
    "lat": 15.48685,
    "lng": 101.14436,
-   "summary": {},
-   "fetchedAt": "2026-11-08T21:02:33.440Z"
-  },
-  {
-   "id": "osm-w1465656705",
-   "kind": "landmark",
-   "fame": 2,
-   "province": "phetchabun",
-   "name": {
-    "th": "ตลาดเทศบาลหล่มเก่า",
-    "en": "Lom Kao Municipal Market"
-   },
-   "lat": 16.88697,
-   "lng": 101.22582,
    "summary": {},
    "fetchedAt": "2026-11-08T21:02:33.440Z"
   },
@@ -62150,7 +61957,7 @@
   },
   {
    "id": "osm-n6439953395",
-   "kind": "restaurant",
+   "kind": "cafe",
    "fame": 2,
    "province": "buriram",
    "name": {
@@ -62429,7 +62236,7 @@
   },
   {
    "id": "osm-w483649118",
-   "kind": "restaurant",
+   "kind": "cafe",
    "fame": 2,
    "province": "lamphun",
    "name": {
@@ -62836,7 +62643,7 @@
   },
   {
    "id": "osm-n6743323593",
-   "kind": "restaurant",
+   "kind": "cafe",
    "fame": 2,
    "province": "nonthaburi",
    "name": {
@@ -62959,7 +62766,7 @@
   },
   {
    "id": "osm-n8651168699",
-   "kind": "restaurant",
+   "kind": "cafe",
    "fame": 2,
    "province": "pathum-thani",
    "name": {
@@ -63446,7 +63253,7 @@
   },
   {
    "id": "osm-n6271588037",
-   "kind": "restaurant",
+   "kind": "cafe",
    "fame": 2,
    "province": "phayao",
    "name": {
@@ -74590,7 +74397,7 @@
   {
    "id": "wd-Q49646977",
    "wikidata": "Q49646977",
-   "kind": "nature",
+   "kind": "landmark",
    "fame": 1,
    "name": {
     "th": "วัดเกาะลอย",
@@ -80882,25 +80689,6 @@
    "fetchedAt": "2026-11-07T01:21:58.477Z"
   },
   {
-   "id": "wd-Q98931844",
-   "wikidata": "Q98931844",
-   "kind": "landmark",
-   "fame": 1,
-   "name": {
-    "th": "ตลาดสดเทศบาลนครสุราษฎร์ธานี",
-    "en": "Surat Thani City Fresh Market"
-   },
-   "lat": 9.14165,
-   "lng": 99.3234,
-   "province": "surat-thani",
-   "wiki": {},
-   "summary": {},
-   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/Surat_Thani_Market_Hall_Ahoerstemeier_4.jpg/960px-Surat_Thani_Market_Hall_Ahoerstemeier_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Surat_Thani_Market_Hall_Ahoerstemeier_4.jpg",
-   "imageCredit": "User:Ahoerstemeier · CC BY 4.0",
-   "fetchedAt": "2026-11-08T21:02:30.017Z"
-  },
-  {
    "id": "wd-Q108824512",
    "wikidata": "Q108824512",
    "kind": "landmark",
@@ -82076,7 +81864,7 @@
   },
   {
    "id": "osm-n6232721188",
-   "kind": "nature",
+   "kind": "landmark",
    "fame": 1,
    "province": "bangkok",
    "name": {
@@ -82145,7 +81933,7 @@
   },
   {
    "id": "osm-n5255553947",
-   "kind": "nature",
+   "kind": "landmark",
    "fame": 1,
    "province": "chaiyaphum",
    "name": {
@@ -84131,7 +83919,7 @@
   },
   {
    "id": "osm-n14191561123",
-   "kind": "nature",
+   "kind": "landmark",
    "fame": 1,
    "province": "lopburi",
    "name": {
@@ -84963,7 +84751,7 @@
   },
   {
    "id": "osm-n1583925185",
-   "kind": "nature",
+   "kind": "landmark",
    "fame": 1,
    "province": "phatthalung",
    "name": {
@@ -85651,20 +85439,6 @@
    "fetchedAt": "2026-11-08T21:02:33.433Z"
   },
   {
-   "id": "osm-n13105462181",
-   "kind": "landmark",
-   "fame": 1,
-   "province": "chaiyaphum",
-   "name": {
-    "th": "สำนักงานคณะกรรมการศาลเจ้าพ่อพญาแล",
-    "en": "San Chao Pho Phaya Lae"
-   },
-   "lat": 15.79794,
-   "lng": 102.01074,
-   "summary": {},
-   "fetchedAt": "2026-11-08T21:02:33.433Z"
-  },
-  {
    "id": "osm-n13105980734",
    "kind": "landmark",
    "fame": 1,
@@ -85793,7 +85567,7 @@
   },
   {
    "id": "osm-n5547405322",
-   "kind": "landmark",
+   "kind": "nature",
    "fame": 1,
    "province": "chanthaburi",
    "name": {
@@ -85807,7 +85581,7 @@
   },
   {
    "id": "osm-n12563258942",
-   "kind": "landmark",
+   "kind": "nature",
    "fame": 1,
    "province": "chanthaburi",
    "name": {
@@ -85990,7 +85764,7 @@
   },
   {
    "id": "osm-n13979922141",
-   "kind": "landmark",
+   "kind": "nature",
    "fame": 1,
    "province": "kalasin",
    "name": {
@@ -86018,7 +85792,7 @@
   },
   {
    "id": "osm-n13979922147",
-   "kind": "landmark",
+   "kind": "nature",
    "fame": 1,
    "province": "kalasin",
    "name": {
@@ -86233,7 +86007,7 @@
   },
   {
    "id": "osm-n11212240092",
-   "kind": "landmark",
+   "kind": "nature",
    "fame": 1,
    "province": "khon-kaen",
    "name": {
@@ -86350,7 +86124,7 @@
   },
   {
    "id": "osm-n14201145057",
-   "kind": "landmark",
+   "kind": "nature",
    "fame": 1,
    "province": "nakhon-nayok",
    "name": {
@@ -86364,7 +86138,7 @@
   },
   {
    "id": "osm-n14205636076",
-   "kind": "landmark",
+   "kind": "nature",
    "fame": 1,
    "province": "nakhon-nayok",
    "name": {
@@ -86392,7 +86166,7 @@
   },
   {
    "id": "osm-n9368651627",
-   "kind": "landmark",
+   "kind": "nature",
    "fame": 1,
    "province": "nakhon-phanom",
    "name": {
@@ -86448,7 +86222,7 @@
   },
   {
    "id": "osm-n12194473260",
-   "kind": "landmark",
+   "kind": "nature",
    "fame": 1,
    "province": "nakhon-sawan",
    "name": {
@@ -86836,7 +86610,7 @@
   },
   {
    "id": "osm-n14318266939",
-   "kind": "landmark",
+   "kind": "nature",
    "fame": 1,
    "province": "lopburi",
    "name": {
@@ -86845,20 +86619,6 @@
    },
    "lat": 15.32169,
    "lng": 100.93648,
-   "summary": {},
-   "fetchedAt": "2026-11-08T21:02:33.437Z"
-  },
-  {
-   "id": "osm-w1241796365",
-   "kind": "landmark",
-   "fame": 1,
-   "province": "lopburi",
-   "name": {
-    "th": "ตลาดสดเทศบาล 1",
-    "en": "Municipal 1 Food Market"
-   },
-   "lat": 14.80147,
-   "lng": 100.61125,
    "summary": {},
    "fetchedAt": "2026-11-08T21:02:33.437Z"
   },
@@ -86873,21 +86633,6 @@
    },
    "lat": 14.79522,
    "lng": 100.6144,
-   "summary": {},
-   "fetchedAt": "2026-11-08T21:02:33.437Z"
-  },
-  {
-   "id": "osm-n1802406227",
-   "kind": "landmark",
-   "fame": 1,
-   "province": "maha-sarakham",
-   "name": {
-    "th": "ตลาดเทศบาล ตำบลโคกพระ",
-    "en": "Khok Phra Municipality Market"
-   },
-   "lat": 16.32357,
-   "lng": 103.29815,
-   "address": "โคกพระ กันทรวิชัย",
    "summary": {},
    "fetchedAt": "2026-11-08T21:02:33.437Z"
   },
@@ -86990,7 +86735,7 @@
   },
   {
    "id": "osm-n6220165785",
-   "kind": "landmark",
+   "kind": "park",
    "fame": 1,
    "province": "nakhon-si-thammarat",
    "name": {
@@ -87032,7 +86777,7 @@
   },
   {
    "id": "osm-n12833148309",
-   "kind": "landmark",
+   "kind": "nature",
    "fame": 1,
    "province": "nakhon-si-thammarat",
    "name": {
@@ -87045,22 +86790,8 @@
    "fetchedAt": "2026-11-08T21:02:33.437Z"
   },
   {
-   "id": "osm-n13251970092",
-   "kind": "landmark",
-   "fame": 1,
-   "province": "nakhon-si-thammarat",
-   "name": {
-    "th": "ตลาดสดศาลามีชัย",
-    "en": "Salameechai Fresh Market"
-   },
-   "lat": 8.38118,
-   "lng": 99.97365,
-   "summary": {},
-   "fetchedAt": "2026-11-08T21:02:33.437Z"
-  },
-  {
    "id": "osm-n14349207407",
-   "kind": "landmark",
+   "kind": "nature",
    "fame": 1,
    "province": "nakhon-si-thammarat",
    "name": {
@@ -87098,20 +86829,6 @@
    },
    "lat": 8.54501,
    "lng": 99.83726,
-   "summary": {},
-   "fetchedAt": "2026-11-08T21:02:33.437Z"
-  },
-  {
-   "id": "osm-n14353699510",
-   "kind": "landmark",
-   "fame": 1,
-   "province": "nakhon-si-thammarat",
-   "name": {
-    "th": "ตลาดเย็นเทศบาลเมืองปากพนัง",
-    "en": "Thetsaban Mueang Pak Phanang Fresh Market"
-   },
-   "lat": 8.34764,
-   "lng": 100.19947,
    "summary": {},
    "fetchedAt": "2026-11-08T21:02:33.437Z"
   },
@@ -87215,7 +86932,7 @@
   },
   {
    "id": "osm-n2481055286",
-   "kind": "landmark",
+   "kind": "park",
    "fame": 1,
    "province": "nan",
    "name": {
@@ -87252,20 +86969,6 @@
    },
    "lat": 19.57187,
    "lng": 101.07398,
-   "summary": {},
-   "fetchedAt": "2026-11-08T21:02:33.437Z"
-  },
-  {
-   "id": "osm-w442607307",
-   "kind": "landmark",
-   "fame": 1,
-   "province": "nan",
-   "name": {
-    "th": "ตลาดสดปัว (เช้า)",
-    "en": "Pua Market"
-   },
-   "lat": 19.17803,
-   "lng": 100.9161,
    "summary": {},
    "fetchedAt": "2026-11-08T21:02:33.437Z"
   },
@@ -87434,20 +87137,6 @@
    },
    "lat": 13.95441,
    "lng": 100.86366,
-   "summary": {},
-   "fetchedAt": "2026-11-08T21:02:33.438Z"
-  },
-  {
-   "id": "osm-w455981220",
-   "kind": "landmark",
-   "fame": 1,
-   "province": "pathum-thani",
-   "name": {
-    "th": "ตลาดสดรังสิต",
-    "en": "Rangsit Market"
-   },
-   "lat": 13.98593,
-   "lng": 100.61357,
    "summary": {},
    "fetchedAt": "2026-11-08T21:02:33.438Z"
   },
@@ -87763,21 +87452,6 @@
    "fetchedAt": "2026-11-08T21:02:33.439Z"
   },
   {
-   "id": "osm-w981954603",
-   "kind": "landmark",
-   "fame": 1,
-   "province": "phang-nga",
-   "name": {
-    "th": "Takua Pa Fresh Market",
-    "en": "Takua Pa Fresh Market"
-   },
-   "lat": 8.86737,
-   "lng": 98.34673,
-   "hours": "Mo-Su 04:00-07:00",
-   "summary": {},
-   "fetchedAt": "2026-11-08T21:02:33.439Z"
-  },
-  {
    "id": "osm-w1312209213",
    "kind": "landmark",
    "fame": 1,
@@ -87821,7 +87495,7 @@
   },
   {
    "id": "osm-n11212240044",
-   "kind": "landmark",
+   "kind": "nature",
    "fame": 1,
    "province": "phatthalung",
    "name": {
@@ -88207,7 +87881,7 @@
   },
   {
    "id": "osm-n13352767414",
-   "kind": "landmark",
+   "kind": "nature",
    "fame": 1,
    "province": "phetchabun",
    "name": {
@@ -88476,7 +88150,7 @@
   },
   {
    "id": "osm-n13288769812",
-   "kind": "landmark",
+   "kind": "nature",
    "fame": 1,
    "province": "nong-khai",
    "name": {
@@ -89852,7 +89526,7 @@
   },
   {
    "id": "osm-n11507419369",
-   "kind": "restaurant",
+   "kind": "cafe",
    "fame": 1,
    "province": "nakhon-si-thammarat",
    "name": {
@@ -89955,7 +89629,7 @@
   },
   {
    "id": "osm-w1095810901",
-   "kind": "restaurant",
+   "kind": "cafe",
    "fame": 1,
    "province": "pathum-thani",
    "name": {
@@ -90070,7 +89744,7 @@
   },
   {
    "id": "osm-n10200992399",
-   "kind": "restaurant",
+   "kind": "cafe",
    "fame": 1,
    "province": "nong-khai",
    "name": {
@@ -90135,7 +89809,7 @@
   },
   {
    "id": "osm-n11212240092",
-   "kind": "landmark",
+   "kind": "nature",
    "fame": 1,
    "province": "khon-kaen",
    "name": {
@@ -90252,7 +89926,7 @@
   },
   {
    "id": "osm-n14201145057",
-   "kind": "landmark",
+   "kind": "nature",
    "fame": 1,
    "province": "nakhon-nayok",
    "name": {
@@ -90266,7 +89940,7 @@
   },
   {
    "id": "osm-n14205636076",
-   "kind": "landmark",
+   "kind": "nature",
    "fame": 1,
    "province": "nakhon-nayok",
    "name": {
@@ -90294,7 +89968,7 @@
   },
   {
    "id": "osm-n9368651627",
-   "kind": "landmark",
+   "kind": "nature",
    "fame": 1,
    "province": "nakhon-phanom",
    "name": {
@@ -90447,7 +90121,7 @@
   },
   {
    "id": "osm-n12194473260",
-   "kind": "landmark",
+   "kind": "nature",
    "fame": 1,
    "province": "nakhon-sawan",
    "name": {
@@ -92478,20 +92152,6 @@
    "fetchedAt": "2026-11-06T20:09:57.301Z"
   },
   {
-   "id": "osm-n11116434092",
-   "kind": "zoo",
-   "fame": 0,
-   "province": "phayao",
-   "name": {
-    "th": "Phu Sang National Park Protection Unit",
-    "en": "Phu Sang National Park Protection Unit"
-   },
-   "lat": 19.71483,
-   "lng": 100.42244,
-   "summary": {},
-   "fetchedAt": "2026-11-06T20:09:41.574Z"
-  },
-  {
    "id": "osm-n9958928550",
    "kind": "themepark",
    "fame": 0,
@@ -93676,7 +93336,7 @@
   },
   {
    "id": "osm-n14337428401",
-   "kind": "nature",
+   "kind": "landmark",
    "fame": 0,
    "province": "phetchabun",
    "name": {
@@ -94185,7 +93845,7 @@
   },
   {
    "id": "osm-n11207897400",
-   "kind": "landmark",
+   "kind": "nature",
    "fame": 0,
    "province": "nan",
    "name": {
@@ -94496,7 +94156,7 @@
   },
   {
    "id": "osm-n255570911",
-   "kind": "landmark",
+   "kind": "nature",
    "fame": 0,
    "province": "phang-nga",
    "name": {
@@ -94636,7 +94296,7 @@
   },
   {
    "id": "osm-n4183739589",
-   "kind": "landmark",
+   "kind": "nature",
    "fame": 0,
    "province": "phang-nga",
    "name": {
@@ -94805,7 +94465,7 @@
   },
   {
    "id": "osm-n12998051247",
-   "kind": "landmark",
+   "kind": "nature",
    "fame": 0,
    "province": "phang-nga",
    "name": {
@@ -95007,7 +94667,7 @@
   },
   {
    "id": "osm-n5348099451",
-   "kind": "landmark",
+   "kind": "nature",
    "fame": 0,
    "province": "phayao",
    "name": {
@@ -95091,7 +94751,7 @@
   },
   {
    "id": "osm-n9891505460",
-   "kind": "landmark",
+   "kind": "zoo",
    "fame": 0,
    "province": "phayao",
    "name": {
