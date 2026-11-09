@@ -15,6 +15,8 @@ const C = window.APP_CONFIG;
 const catIds = new Set(C.categories.map(c => c.id));
 new Function("window", await readFile(new URL("js/i18n.js", root), "utf8"))(window);
 const provIds = new Set(window.PROVINCES.map(p => p.id));
+// จัดหมวดแบบเดียวกับแอพ (js/categorize.js) — หมวดที่ยุบแล้ว (sale, cafe) ในข้อมูลดิบถูกแปลงเป็นหมวดใหม่ก่อนตรวจ
+new Function("window", await readFile(new URL("js/categorize.js", root), "utf8"))(window);
 if (provIds.size !== 77) errors.push(`js/i18n.js: รายชื่อจังหวัดควรมี 77 จังหวัด แต่มี ${provIds.size}`);
 for (const l of C.languages) if (!window.I18N[l]) errors.push(`js/i18n.js: ไม่มีพจนานุกรมภาษา "${l}"`);
 const thKeys = Object.keys(window.I18N.th);
@@ -63,7 +65,8 @@ for (const ev of events || []) {
   if (ids.has(ev.id)) errors.push(`${where}: id ซ้ำ`);
   ids.add(ev.id);
   if (!ev.title) errors.push(`${where}: ไม่มีชื่องาน`);
-  if (!catIds.has(ev.category)) errors.push(`${where}: หมวด "${ev.category}" ไม่มีใน config.js`);
+  const cat = window.IYA_fixCategory ? window.IYA_fixCategory(ev) ?? ev.category : ev.category;
+  if (!catIds.has(cat)) errors.push(`${where}: หมวด "${cat}" ไม่มีใน config.js`);
   if (!isDate(ev.startDate)) errors.push(`${where}: startDate ต้องเป็นรูปแบบ YYYY-MM-DD`);
   if (ev.endDate && !isDate(ev.endDate)) errors.push(`${where}: endDate ต้องเป็นรูปแบบ YYYY-MM-DD`);
   if (ev.endDate && ev.endDate < ev.startDate) errors.push(`${where}: วันสิ้นสุดอยู่ก่อนวันเริ่ม`);
