@@ -237,6 +237,7 @@
 
   // ---------- ads ----------
   let adsenseLoaded = false;
+  const adShown = [];
   function adSlot(placement) {
     const A = C.ads;
     // AdSense ห้ามใช้ในแอพ (ต้องใช้ AdMob) → ในแอพแสดงโฆษณาตรงจาก data/ads.json แทน
@@ -250,10 +251,21 @@
       }
       return `<div class="ad adsense"><ins class="adsbygoogle" style="display:block;width:100%" data-ad-client="${esc(A.adsenseClient)}" data-ad-slot="${esc(A.slots[placement])}" data-ad-format="auto" data-full-width-responsive="true"></ins></div>`;
     }
-    const pool = state.ads.filter(a => !a.placements || a.placements.includes(placement));
+    const today = new Date(Date.now() + 7 * 3600e3).toISOString().slice(0, 10);
+    const pool = state.ads.filter(a => (!a.placements || a.placements.includes(placement)) && (!a.ends || a.ends >= today));
     if (pool.length) {
-      const a = pool[Math.floor(Math.random() * pool.length)];
-      const title = tr(a, "title");
+      // สุ่มตามน้ำหนัก (weight) และไม่ซ้ำกับอันที่เพิ่งแสดง (หน้าเดียวกันมีหลายช่อง)
+      const fresh = pool.filter(a => !adShown.includes(a.id));
+      const from = fresh.length ? fresh : pool;
+      let r = Math.random() * from.reduce((s, a) => s + (a.weight || 1), 0), a = from[0];
+      for (const x of from) { r -= x.weight || 1; if (r <= 0) { a = x; break; } }
+      adShown.push(a.id); if (adShown.length > Math.max(2, pool.length - 2)) adShown.shift();
+      const title = tr(a, "title"), sub = tr(a, "sub");
+      // ดีลพันธมิตร (Trip.com): การ์ดรูป/ธงชาติ + ชื่อดีล + ปุ่ม · เปิดแอพ Trip.com ในมือถือถ้ามี
+      if (a.partner) return `<a class="ad ad-deal${a.image ? " ad-deal-img" : ""}" href="${safeUrl(a.url)}" target="_blank" rel="sponsored nofollow noopener" data-ext-app>
+          <span class="ad-media" ${a.image ? "" : `style="background:${esc(a.bg || "linear-gradient(135deg,#2563eb,#f43f5e)")}"`}>${a.image ? `<img src="${safeUrl(a.image)}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">` : `<span class="ad-flag">✈️<em>${esc(a.city || "")}</em></span>`}</span>
+          <span class="ad-txt"><b>${esc(title)}</b>${sub ? `<small>${esc(sub)}</small>` : ""}<span class="ad-cta">${t("adDealCta", { site: esc(a.partner) })} →</span></span>
+        </a>`;
       return `<a class="ad" href="${safeUrl(a.url)}" target="_blank" rel="sponsored noopener">${a.image ? `<img src="${safeUrl(a.image)}" alt="${esc(title)}">` : `<strong>${esc(title)}</strong>`}</a>`;
     }
     return `<a class="ad" href="#/about">${t("adEmpty")}</a>`;

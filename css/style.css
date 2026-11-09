@@ -839,3 +839,20 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 /* ปุ่มที่พักใกล้ที่นี่: เต็มแถวใต้ปุ่มนำทาง/แผนที่ */
 .pd-actions .pd-hotel { grid-column: 1 / -1; }
 .pd-aff { margin: 6px 0 0; font-size: .72rem; }
+
+/* ดีลพันธมิตร (Trip.com) ในช่องโฆษณา: รูป/ธงชาติ ซ้าย · ชื่อดีล + ปุ่ม ขวา (การ์ดแนวตั้งในมุมมองตาราง) */
+.ad.ad-deal { display: grid; grid-template-columns: minmax(120px, 42%) 1fr; place-items: stretch; text-align: left; padding: 0; gap: 0; border-style: solid; color: var(--text); min-height: 110px; }
+.ad-deal .ad-media { position: relative; display: grid; place-items: center; min-height: 110px; background: #111; }
+.ad-deal .ad-media img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; border-radius: 0; }
+.ad-deal .ad-flag { display: grid; place-items: center; gap: 2px; font-size: 2.2rem; color: #fff; text-align: center; filter: drop-shadow(0 4px 10px rgba(0,0,0,.35)); }
+.ad-deal .ad-flag em { font-style: normal; font-family: Prompt, sans-serif; font-weight: 800; font-size: 1.05rem; letter-spacing: .08em; }
+.ad-deal .ad-txt { display: flex; flex-direction: column; justify-content: center; gap: 4px; padding: 14px 14px 12px; min-width: 0; }
+.ad-deal .ad-txt b { font-family: Prompt, sans-serif; font-size: .98rem; line-height: 1.3; }
+.ad-deal .ad-txt small { color: var(--muted); font-size: .8rem; line-height: 1.35; }
+.ad-deal .ad-cta { align-self: flex-start; margin-top: 4px; padding: 6px 12px; border-radius: 999px; font-size: .8rem; font-weight: 600; color: #fff; background: linear-gradient(135deg, var(--accent), var(--accent-2)); }
+.ad-deal::before { z-index: 1; color: #fff; text-shadow: 0 1px 3px rgba(0,0,0,.6); right: auto; left: 10px; }
+.grid .ad.ad-deal { grid-template-columns: 1fr; grid-template-rows: 130px 1fr; }
+/* ดีลที่มีรูปแบนเนอร์ (มีข้อความในรูป): รูปเต็ม 2:1 ด้านบน ไม่ครอป · ข้อความด้านล่าง */
+.ad.ad-deal.ad-deal-img { grid-template-columns: 1fr; grid-template-rows: auto auto; }
+.ad-deal-img .ad-media { aspect-ratio: 2 / 1; min-height: 0; }
+.grid .ad.ad-deal.ad-deal-img { grid-template-rows: auto 1fr; }
