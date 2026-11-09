@@ -39,6 +39,12 @@
 
     <!-- Android 11+: ให้แอพมองเห็นแอพที่เปิดลิงก์เว็บได้ (Google Maps, เบราว์เซอร์) -->
     <queries>
+        <!-- แอพร้านค้า/โซเชียลที่เปิดลิงก์ Affiliate ตรงเข้าแอพ (StoreLinkPlugin) -->
+        <package android:name="com.shopee.th" />
+        <package android:name="com.lazada.android" />
+        <package android:name="com.ss.android.ugc.trill" />
+        <package android:name="com.zhiliaoapp.musically" />
+        <package android:name="com.bd.nproject" />
         <intent>
             <action android:name="android.intent.action.VIEW" />
             <data android:scheme="https" />

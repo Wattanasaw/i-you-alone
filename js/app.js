@@ -606,13 +606,24 @@
     document.addEventListener("visibilitychange", onHide, { once: true });
     setTimeout(() => { document.removeEventListener("visibilitychange", onHide); if (!left && !document.hidden) location.href = web; }, 1500);
   });
-  // แอพมือถือ: แผนที่ → เปิดแอพ Google Maps, ลิงก์เว็บอื่น → เบราว์เซอร์ในแอพ (กดปิดแล้วกลับมาที่แอพ)
+  // แอพมือถือ: ปุ่มย้อนกลับของเครื่อง (Android) → กลับหน้าก่อนหน้าในแอพ (เดิมเด้งออกจากแอพทันที ต้องกดปุ่ม "← กลับ" บนหน้าจออย่างเดียว)
+  // ย้อนได้ → ย้อน · ไม่มีประวัติแต่อยู่หน้าอื่น → กลับหน้าแรก · อยู่หน้าแรกแล้ว → ออกจากแอพ
+  if (NATIVE) window.Capacitor?.Plugins?.App?.addListener?.("backButton", ({ canGoBack }) => {
+    const home = !location.hash || location.hash === "#/" || location.hash === "#";
+    if (canGoBack) history.back();
+    else if (!home) location.replace("#/");
+    else window.Capacitor.Plugins.App.exitApp();
+  });
+  // แอพมือถือ: แผนที่ → เปิดแอพ Google Maps · ลิงก์ร้านค้า/Affiliate (Shopee, Lazada ฯลฯ) → เปิดแอพร้านค้านั้น (data-ext-app)
+  // ลิงก์เว็บอื่น → เบราว์เซอร์ในแอพ (กดปิดแล้วกลับมาที่แอพ)
   if (NATIVE) document.addEventListener("click", e => {
     const a = e.target.closest("a[href^='http']");
     if (!a || a.download) return;
     e.preventDefault();
-    const { Browser, AppLauncher } = window.Capacitor?.Plugins || {};
-    if ((a.hasAttribute("data-native-maps") || a.hasAttribute("data-ext-app")) && AppLauncher) AppLauncher.openUrl({ url: a.href }).catch(() => Browser?.open({ url: a.href }));
+    const { Browser, AppLauncher, StoreLink } = window.Capacitor?.Plugins || {};
+    // ลิงก์ร้านค้า/Affiliate → แอพร้านค้าโดยตรง (ปลั๊กอินในแอพ StoreLink) · เปิดไม่ได้ → เบราว์เซอร์ในแอพ
+    if (a.hasAttribute("data-ext-app") && StoreLink) StoreLink.open({ url: a.href }).then(r => { if (r?.opened === "none") Browser?.open({ url: a.href }); }).catch(() => Browser?.open({ url: a.href }));
+    else if ((a.hasAttribute("data-native-maps") || a.hasAttribute("data-ext-app")) && AppLauncher) AppLauncher.openUrl({ url: a.href }).catch(() => Browser?.open({ url: a.href }));
     else if (Browser) Browser.open({ url: a.href, presentationStyle: "popover" });
     else location.href = a.href;
   });
@@ -976,7 +987,7 @@
             <section class="panel affiliate">
               <h2>${t("deals")}</h2>
               <div class="aff-links">
-                ${ev.affiliateLinks.map((a, i) => `<a class="btn" href="${safeUrl(a.url)}" target="_blank" rel="sponsored nofollow noopener"><span>${esc(ev.i18n?.[state.lang]?.affiliateLabels?.[i] ?? a.label)}</span><span>${esc(a.platform || "")} →</span></a>`).join("")}
+                ${ev.affiliateLinks.map((a, i) => `<a class="btn" href="${safeUrl(a.url)}" target="_blank" rel="sponsored nofollow noopener" data-ext-app><span>${esc(ev.i18n?.[state.lang]?.affiliateLabels?.[i] ?? a.label)}</span><span>${esc(a.platform || "")} →</span></a>`).join("")}
               </div>
               <p class="disclosure">${esc(pick(C.affiliateDisclosure))}</p>
             </section>` : ""}
