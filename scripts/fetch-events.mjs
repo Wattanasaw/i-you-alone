@@ -8,7 +8,7 @@ import { existsSync } from "node:fs";
 const DRY = process.argv.includes("--dry");
 const UA = "Mozilla/5.0 (compatible; IYouAloneBot/1.0; +https://wattanasaw.github.io/i-you-alone/)";
 const DELAY_MS = 1500;          // หน่วงระหว่างคำขอ (สุภาพกับเว็บต้นทาง)
-const MAX_PAGES_PER_RUN = 220;  // จำนวนหน้างานสูงสุดที่เปิดต่อรอบ (รวมทุกแหล่ง)
+const MAX_PAGES_PER_RUN = 320;  // จำนวนหน้างานสูงสุดที่เปิดต่อรอบ (รวมทุกแหล่ง)
 const REFRESH_DAYS = 3;         // ข้อมูลเก่ากว่านี้ให้เปิดหน้าใหม่เพื่ออัปเดต
 const MAX_DAYS_AHEAD = 365;     // ไม่เก็บงานที่ไกลเกิน 1 ปี
 // ตัวกรองคำ: งานที่ชื่อมีคำเหล่านี้จะไม่ถูกเก็บ (แก้เพิ่มได้)
@@ -27,12 +27,15 @@ const PLACE_ALIASES = {
   bangkok: ["กรุงเทพ", "กทม", "bangkok", "krung thep", "mbk", "siam paragon", "siam square", "สยาม", "iconsiam", "ไอคอนสยาม", "emsphere", "emquartier", "emporium",
     "one bangkok", "uob live", "union mall", "terminal 21", "central ladprao", "ลาดพร้าว", "sukhumvit", "สุขุมวิท", "silom", "สีลม", "sathorn", "สาทร", "thonglor", "ทองหล่อ",
     "ekkamai", "เอกมัย", "ratchada", "รัชดา", "rama 9", "พระราม 9", "chatuchak", "จตุจักร", "asiatique", "เอเชียทีค", "jodd fairs", "chulalongkorn", "จุฬาลงกรณ์", "thammasat tha prachan",
-    "khao san", "ข้าวสาร", "yaowarat", "เยาวราช", "bangna", "bang na", "บางนา", "samyan", "สามย่าน", "lumpini", "ลุมพินี", "true icon hall", "glowfish", "the street ratchada", "pratunam", "ประตูน้ำ", "town in town", "ทาวน์อินทาวน์", "phaya thai", "พญาไท", "ari", "อารีย์", "huai khwang", "ห้วยขวาง"],
+    "khao san", "ข้าวสาร", "yaowarat", "เยาวราช", "bangna", "bang na", "บางนา", "samyan", "สามย่าน", "lumpini", "ลุมพินี", "true icon hall", "glowfish", "the street ratchada", "pratunam", "ประตูน้ำ", "town in town", "ทาวน์อินทาวน์", "phaya thai", "พญาไท", "ari", "อารีย์", "huai khwang", "ห้วยขวาง",
+    "ยูเนี่ยนมอลล์", "ยูเนี่ยน มอลล์", "centralworld", "central world", "เซ็นทรัลเวิลด์", "สยามพารากอน", "สามย่านมิตรทาวน์", "samyan mitrtown", "บางกะปิ", "bangkapi", "บางแค", "bang khae",
+    "fashion island", "แฟชั่นไอส์แลนด์", "ไบเทค", "bitec", "เซ็นทรัลพระราม 9", "เซ็นทรัลลาดพร้าว", "ธนภูมิ", "jasmine city", "mbk center", "เอ็มบีเค", "สถานีกลางกรุงเทพอภิวัฒน์", "บางซื่อ", "bang sue",
+    "สโมสรทหารอากาศ", "ดอนเมือง", "don mueang", "seacon square", "ซีคอนสแควร์", "สวนลุม", "ศูนย์ฯ สิริกิติ์", "สิริกิติ์", "qsncc", "หัวลำโพง", "ราชประสงค์", "ประตูน้ำ"],
   "samut-prakan": ["mega bangna", "เมกาบางนา", "bang phli", "บางพลี", "suvarnabhumi", "สุวรรณภูมิ", "samrong", "สำโรง"], "chiang-mai": ["chiangmai", "เชียงใหม่"], chonburi: ["pattaya", "พัทยา", "บางแสน", "bang saen", "si racha", "ศรีราชา"],
   "prachuap-khiri-khan": ["hua hin", "หัวหิน", "pranburi", "ปราณบุรี"], phetchabun: ["khao kho", "เขาค้อ"], "nakhon-ratchasima": ["korat", "โคราช", "khao yai", "เขาใหญ่"],
   ayutthaya: ["ayutthaya", "อยุธยา"], phuket: ["phuket", "ภูเก็ต"], "surat-thani": ["koh samui", "เกาะสมุย", "samui", "koh phangan", "koh pha ngan", "เกาะพะงัน", "koh tao", "เกาะเต่า"],
-  krabi: ["ao nang", "อ่าวนาง"], songkhla: ["hat yai", "หาดใหญ่"], nonthaburi: ["pak kret", "ปากเกร็ด"],
-  "pathum-thani": ["rangsit", "รังสิต", "future park"]
+  krabi: ["ao nang", "อ่าวนาง"], songkhla: ["hat yai", "หาดใหญ่"], nonthaburi: ["pak kret", "ปากเกร็ด", "อิมแพ็ค", "impact", "เมืองทองธานี", "muang thong", "เซ็นทรัลเวสต์เกต", "westgate"],
+  "pathum-thani": ["rangsit", "รังสิต", "future park", "ฟิวเจอร์พาร์ค", "ธรรมศาสตร์ รังสิต"]
 };
 const geocache = await readJSON("data/geocache.json", {});
 
@@ -502,6 +505,105 @@ const SOURCES = {
         prices: [], free: true, bodyText: L.slice(di, di + 30).join(" ")
       };
     }
+  },
+  // ---------- Props&Ops: ตารางงานคอสเพลย์/อนิเมะ/Only Event/การ์ดเกม ทั่วไทย (propsops.com/event) ----------
+  // งานสายนี้ส่วนมากประกาศแค่ในเพจเฟซบุ๊ก ไม่ได้ขายบัตรผ่านเว็บ → ใช้ตารางรวมงานที่คนในวงการอัปเดตทุกวัน
+  // ตารางเดียวมีชื่อ วัน สถานที่ ราคา สถานะ ครบ → ไม่ต้องเปิดหน้างานทีละหน้า
+  propsops: {
+    name: "Props&Ops",
+    async list() {
+      const raw = await getHtml("https://propsops.com/event");
+      if (!raw) return [];
+      const html = raw.replace(/<!--[\s\S]*?-->/g, " "); // แถวที่เว็บซ่อนไว้ (คอมเมนต์) ไม่เอา
+      const be = +(html.match(/ตารางงานคอสเพลย์ปี\s*พ\.ศ\.\s*(\d{4})/) || [])[1];
+      const year = be ? be - 543 : new Date().getFullYear();
+      const TM = { "ม.ค": 1, "ก.พ": 2, "มี.ค": 3, "เม.ย": 4, "พ.ค": 5, "มิ.ย": 6, "ก.ค": 7, "ส.ค": 8, "ก.ย": 9, "ต.ค": 10, "พ.ย": 11, "ธ.ค": 12 };
+      const text = h => lines(h).join(" ").replace(/\s+/g, " ").trim();
+      const refs = [];
+      let rowYear = year, lastM = 0;
+      for (const row of html.split(/<tr\s+class="/).slice(1)) {
+        const cls = row.slice(0, row.indexOf('"'));
+        const status = (row.match(/status_([a-z]+)\.gif/) || [])[1];
+        const nameHtml = (row.match(/<div class="eventnamee?"[^>]*>([\s\S]*?)<\/div>/) || [])[1];
+        const dateHtml = (row.match(/class="date_eventt?"[^>]*>([\s\S]*?)<\/td>/) || [])[1];
+        if (!nameHtml || !dateHtml) continue;
+        // ยกเลิก/เลื่อน (ชื่อถูกขีดฆ่า) → ข้าม
+        if (/canceled|cancelled|postponed/.test(status || "") || /<s>/i.test(nameHtml)) continue;
+        const [main, ...sub] = lines(nameHtml.replace(/<img[^>]*>/g, "")).map(l => l.replace(/^\.:\s*|\s*:\.$/g, "").trim()).filter(Boolean);
+        if (!main) continue;
+        const title = [main, ...sub].join(sub[0] && /^ใน(งาน)?/.test(sub[0]) ? " " : " – ");
+        // วันที่ "14-15 พ.ย" / "5 ธ.ค" / "31 ธ.ค - 1 ม.ค" (ปีตามหัวตาราง)
+        const toks = [...text(dateHtml).matchAll(/(\d{1,2})\s*(ม\.ค|ก\.พ|มี\.ค|เม\.ย|พ\.ค|มิ\.ย|ก\.ค|ส\.ค|ก\.ย|ต\.ค|พ\.ย|ธ\.ค)?\.?/g)].map(m => ({ d: +m[1], m: TM[m[2]] }));
+        for (let k = toks.length - 2; k >= 0; k--) if (!toks[k].m) toks[k].m = toks[k + 1].m;
+        const ds = toks.filter(t => t.m && t.d <= 31);
+        if (!ds.length) continue;
+        // ตารางเรียงตามวัน: เดือนย้อนกลับ (ธ.ค. → ก.พ.) = ขึ้นปีใหม่ · ชื่องานมีปี (Japan Expo 2027) ใช้ปีนั้น
+        if (ds[0].m < lastM) rowYear++;
+        lastM = ds[0].m;
+        const named = +((title.match(/(?<!\d)(20[2-9]\d)(?!\d)/) || [])[1] || 0);
+        let y = named === rowYear + 1 ? named : rowYear, prevM = ds[0].m;
+        const dates = ds.map(t => { if (t.m < prevM) y++; prevM = t.m; return `${y}-${String(t.m).padStart(2, "0")}-${String(t.d).padStart(2, "0")}`; });
+        // สถานที่: บรรทัดก่อนไอคอนรถไฟฟ้า/เส้นคั่น · ราคาในวงเล็บ [ 180 บาท ]
+        const locHtml = (row.match(/<div class="location"[^>]*>([\s\S]*?)<hr/) || [])[1] || "";
+        const venue = text(locHtml.split(/<img/)[0].replace(/<\/?s>/g, ""));
+        const priceTxt = ((row.match(/ticket\.gif[^>]*>([^\]]*)\]/) || [])[1] || "").trim();
+        const link = (row.match(/class="detail"[\s\S]*?<a href="(https?:\/\/[^"]+)"/) || [])[1];
+        const logo = (row.match(/<img src="((?:https?:)?\/\/propsops\.net\/event\/logo\/[^"]+)"/) || [])[1];
+        const tags = [...row.matchAll(/data-tooltip="icon([a-z]+)"/g)].map(m => m[1]).join(" ");
+        // id ต้องเป็นอักษรอังกฤษ/ตัวเลข: ตัดคำไทยออก ชื่อไทยล้วนใช้เลขแฮชของชื่อแทน
+        const slug = norm(main).replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "").slice(0, 50)
+          || [...main].reduce((h, ch) => (h * 31 + ch.codePointAt(0)) >>> 0, 7).toString(36);
+        const id = "po-" + slug + "-" + dates[0];
+        refs.push({
+          id, url: link || "https://propsops.com/event",
+          parsed: {
+            title, category: "anime", image: logo && (logo.startsWith("//") ? "https:" + logo : logo),
+            summary: /contest/.test(tags) ? "งานคอสเพลย์ มีประกวดคอสเพลย์" : /onlyevent/.test(tags) ? "Only Event งานรวมแฟนการ์ตูน/เกมเรื่องเดียว แต่งคอสเพลย์มาได้" : "งานอนิเมะ/การ์ตูน แต่งคอสเพลย์มาได้",
+            dates, venueText: venue, provinceText: cls,
+            catText: "cosplay anime " + tags, prices: prices([...priceTxt.matchAll(/([\d,]{2,})/g)].map(m => m[1])), free: /^free$|ฟรี/i.test(priceTxt),
+            bodyText: cls
+          }
+        });
+      }
+      return refs;
+    }
+  },
+  // ---------- ThailandExhibition.com: ไทยอีเวนต์ทั่วประเทศ (งานประจำปีจังหวัด เทศกาล คอนเสิร์ต) + งานแสดงสินค้าที่คนทั่วไปเข้าได้ ----------
+  // อ่านจาก sitemap (100 หน้าล่าสุดต่อหมวด) เปิดเลขโพสต์ใหม่ก่อน
+  thaiexhibition: {
+    name: "ThailandExhibition", quota: 80,
+    async list() {
+      const sm = await getHtml("https://www.thailandexhibition.com/__sitemap__/posts.xml");
+      return [...(sm || "").matchAll(/<loc>(https:\/\/www\.thailandexhibition\.com\/(thai-event-details|thai-trade-show-details)\/[^<\/]+\/(\d+))<\/loc>/g)]
+        .map(m => ({ id: "tex-" + m[3], url: m[1], n: +m[3] })).sort((a, b) => b.n - a.n);
+    },
+    parse(html, url) {
+      const L = lines(html);
+      const di = L.indexOf("วันที่");
+      if (di < 1) return null;
+      // บรรทัดก่อน "วันที่" บางหน้าเป็นป้ายสถานะ ("กำลังจัดแสดง") → ใช้บรรทัดก่อนหน้านั้น
+      const STATUS = /^(กำลังจัด|เร็ว ?ๆ ?นี้|ใกล้จะถึง|สิ้นสุด|จบแล้ว|ยกเลิก|เลื่อน)/;
+      const title = STATUS.test(L[di - 1]) ? L[di - 2] : L[di - 1];
+      if (!title || STATUS.test(title)) return null;
+      const ti = L.indexOf("ประเภท", di), types = [];
+      for (let k = ti + 1; ti > 0 && k < ti + 8 && L[k] !== title && !/^ผู้จัด|^สนใจ/.test(L[k]); k++) types.push(L[k]);
+      const when = L.find(l => /^วันที่จัดงาน\s*:/.test(l)) || L.slice(di + 1, di + 4).join(" ");
+      const pi = L.findIndex(l => /^สถานที่\s*:/.test(l)), end = L.findIndex(l => /^วันที่โพส/.test(l));
+      const place = pi > 0 ? L[pi].replace(/^สถานที่\s*:\s*/, "") : "";
+      const body = L.slice(pi > 0 ? pi + 1 : di + 10, end > pi ? end : undefined).slice(0, 40).join(" ");
+      const tm = (L.find(l => /^เวลา\s*:/.test(l)) || "").match(/(\d{1,2}[.:]\d{2})\s*[-–]\s*(\d{1,2}[.:]\d{2})/);
+      const trade = /thai-trade-show-details/.test(url);
+      // งานแสดงสินค้าอุตสาหกรรม/เฉพาะผู้ประกอบการ ไม่เอา (คนทั่วไปเข้าไม่ได้)
+      const INDUSTRY = /เครื่องจักร|อุตสาหกรรม|พลังงาน|การแพทย์|บรรจุภัณฑ์|ก่อสร้าง|วัสดุ|โลจิสติกส์|อิเล็กทรอนิกส์|เคมี|พลาสติก|โลหะ|ไอที|เทคโนโลยี|ความปลอดภัย|สิ่งพิมพ์|ธุรกิจ|เกษตร|ปศุสัตว์|ประมง|โรงแรม|ค้าปลีก|เครื่องสำอาง|ความงาม/;
+      return {
+        title, image: meta(html, "og:image"), summary: body.slice(0, 200),
+        dates: rangeDates(when.replace(/^วันที่จัดงาน\s*:\s*/, "")), time: tm ? `${tm[1].replace(".", ":")}–${tm[2].replace(".", ":")}` : undefined,
+        venueText: place, provinceText: "",
+        catText: `${types.join(" ")} ${title}`, prices: [], free: /เข้าชมฟรี|เข้างานฟรี|ฟรีตลอดงาน|ฟรีค่าเข้า|ไม่มีค่าใช้จ่าย|free admission|free entry/i.test(body),
+        trade: TRADE.test(`${title} ${body}`) || (trade && INDUSTRY.test(types.join(" ")) && !/เกม|ของเล่น|อาหาร|ท่องเที่ยว|บ้าน|สัตว์เลี้ยง|หนังสือ|แม่และเด็ก|รถยนต์|แฟชั่น|ศิลปะ/.test(types.join(" "))),
+        bodyText: body
+      };
+    }
   }
 };
 
@@ -522,7 +624,7 @@ const CATEGORY_RULES = [
   ["motor", /\bmotor|car show|auto ?salon|\b(moto ?gp|formula ?(1|one)|f1|super ?gt|superbike|drift|drag ?race|racing|grand ?prix|rally|karting)\b|รถยนต์|ยานยนต์|มอเตอร์|บิ๊กไบค์|รถจักรยานยนต์|แข่งรถ|ดริฟท์|ดริฟต์|โมโตจีพี/i],
   ["outdoor", /\b(run|running|marathon|trail|hyrox|triathlon|fun ?run|cycling|bike|yoga|fitness|sport|workout|crossfit)\b|วิ่ง|มาราธอน|ปั่นจักรยาน|ไตรกีฬา|โยคะ|ฟิตเนส|กีฬา/i],
   ["book", /\bbook|หนังสือ/i],
-  ["anime", /\b(cosplay|anime|anisong|manga|comic ?con|otaku|vtuber|isekai|japan expo|game ?show|e-?sports?|tcg|trading card)\b|คอสเพลย์|อนิเมะ|มังงะ|เกมโชว์|อีสปอร์ต/i],
+  ["anime", /\b(cosplay|anime|anisong|manga|comic ?con|otaku|vtuber|isekai|japan expo|game ?show|e-?sports?|tcg|trading card|only ?event|comic square|doujin(shi)?|pok[eé]mon|one piece|gundam|yu-?gi-?oh|digimon|gamescom|toy expo)\b|คอสเพลย์|อนิเมะ|มังงะ|เกมโชว์|อีสปอร์ต|โดจิน|โปเกมอน|วันพีซ|กันดั้ม/i],
   ["food", /\bcoffee|caf[eé]|กาแฟ|คาเฟ่/i],
   ["food", /\bfood|drink|beer|wine|whisky|cocktail|gastro|dining|festival of taste|อาหาร|เครื่องดื่ม|เบียร์|ไวน์/i],
   ["market", /\bsale\b|flash ?sale|super weekend|ลดราคา|ลดกระหน่ำ|เซล|outlet|มหกรรมลด/i],
@@ -567,6 +669,8 @@ const hasWord = (t, w) => {
 };
 function provinceFrom(text, { strict = false } = {}) {
   const t = norm(text);
+  // เขียน "จ.เชียงใหม่"/"จังหวัด..." ไว้ชัดเจน → ใช้อันนั้นก่อน (กัน "สมาคมนิสิตเก่าจุฬาฯ ภาคเหนือ จ.เชียงใหม่" กลายเป็นกรุงเทพ)
+  for (const p of PROVINCES) if (new RegExp(`(^|\\s)(จังหวัด|จ)\\s*${norm(p.th)}`).test(t)) return p.id;
   // ชื่อยาว/เจาะจงก่อน ("mega bangna" ก่อน "bangna")
   const pairs = Object.entries(PLACE_ALIASES).flatMap(([id, ws]) => ws.map(w => [id, w])).sort((a, b) => b[1].length - a[1].length);
   for (const [id, w] of pairs) if ((!strict || w.length >= 5) && hasWord(t, w)) return id;
@@ -635,7 +739,7 @@ async function build(src, ref, p) {
   if (p.trade) return reject("งานเฉพาะธุรกิจ (B2B)", item);
 
   const ev = {
-    id: ref.id, auto: true, title: p.title.slice(0, 160), category: categorize(p.title, p.catText),
+    id: ref.id, auto: true, title: p.title.slice(0, 160), category: p.category || categorize(p.title, p.catText),
     startDate: start, endDate: end, time: p.time,
     price: p.free ? { type: "free" } : p.prices.length ? { type: "paid", min: p.prices[0], max: p.prices[p.prices.length - 1], ...(p.fx ? { approx: true } : {}) } : { type: "unknown" },
     summary: cleanSummary(p.summary, p.title),
@@ -691,7 +795,9 @@ const dropped = new Set(); // เปิดหน้าแล้วไม่ผ�
 const PERMANENT = new Set(["งานเฉพาะธุรกิจ (B2B)", "จบแล้ว", "อยู่นอกประเทศไทย", "คำต้องห้าม", "เปิดประจำ ไม่ใช่อีเว้นท์", "งานออนไลน์"]);
 const out = [], stats = {};
 let opened = 0;
+const ONLY = process.argv.includes("--only") ? process.argv[process.argv.indexOf("--only") + 1] : null;
 for (const [key, src] of Object.entries(SOURCES)) {
+  if (ONLY && key !== ONLY) continue;
   let refs = [];
   try { refs = await src.list(); } catch (e) { console.warn(`${src.name}: อ่านรายการไม่ได้`, e.message); }
   stats[src.name] = { found: refs.length, kept: 0, opened: 0 };
@@ -742,7 +848,9 @@ const placeKey = e => e.venueId || norm(e.venue?.name);
 const similar = (a, b) => {
   if (a.startDate !== b.startDate || placeKey(a) !== placeKey(b)) return false;
   const A = words(a.title), B = words(b.title), common = [...A].filter(w => B.has(w)).length;
-  return common > 0 && common >= Math.min(A.size, B.size) / 2;
+  // ชื่อสั้นคำเดียวตรงกัน = ซ้ำ · ชื่อยาวต้องมีคำร่วมอย่างน้อย 2 คำ (กัน "Maruya #47 : DUEL" กับ "MINI CONCERT at MARUYA #47" ที่เป็นคนละงานในวันเดียวกัน)
+  const small = Math.min(A.size, B.size);
+  return common > 0 && common >= (small <= 1 ? 1 : Math.max(2, small / 2));
 };
 for (const e of out) {
   const k = norm(e.title).replace(/\s/g, "").slice(0, 40) + e.startDate;
@@ -754,7 +862,7 @@ events.sort((a, b) => a.startDate.localeCompare(b.startDate));
 const byCat = events.reduce((m, e) => (m[e.category] = (m[e.category] || 0) + 1, m), {});
 console.log(`คำขอทั้งหมด ${requests} · เก็บ ${events.length} งาน`, JSON.stringify(stats), "\nหมวด:", JSON.stringify(byCat));
 for (const [why, list] of Object.entries(rejects)) console.log(`กรองออก (${why}): ${list.length}`, list.slice(0, 4).join(" | "));
-if (DRY) { console.log(JSON.stringify(events.slice(0, 6), null, 1)); process.exit(0); }
+if (DRY) { const show = ONLY ? events.filter(e => e.sourceName === SOURCES[ONLY].name) : events.slice(0, 6); console.log(show.map(e => [e.category, e.startDate, e.endDate, e.title, e.venueId || e.venue?.name, e.venue?.province, e.price?.type + (e.price?.min ? " " + e.price.min : ""), e.ticketUrl].join(" | ")).join("\n")); process.exit(0); }
 // เขียนไฟล์ชั่วคราวก่อนแล้วค่อยสลับ → ถ้าโดนหยุดกลางทาง ไฟล์เดิมยังอยู่ครบ
 const save = async (p, text) => { const u = new URL(p, root), tmp = new URL(p + ".tmp", root); await writeFile(tmp, text); await rename(tmp, u); };
 await save("data/auto-events.json", JSON.stringify({ updatedAt: new Date().toISOString(), stats, events, skip: [...skip].slice(-3000) }, null, 2) + "\n");
