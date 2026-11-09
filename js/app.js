@@ -260,6 +260,12 @@
       let r = Math.random() * from.reduce((s, a) => s + (a.weight || 1), 0), a = from[0];
       for (const x of from) { r -= x.weight || 1; if (r <= 0) { a = x; break; } }
       adShown.push(a.id); if (adShown.length > Math.max(2, pool.length - 2)) adShown.shift();
+      // แบนเนอร์ยาว (Static Banner ของ Trip.com 728×90): กรอบคงที่ตามสัดส่วน ย่อ/ขยายทั้งแบนเนอร์ให้พอดีความกว้าง ไม่มีข้อความประกอบ
+      // ทับด้วยลิงก์โปร่งใส (ปลายทางเดียวกับที่แบนเนอร์เปิด) → ในแอพมือถือกดแล้วเปิดแอพ Trip.com/เบราว์เซอร์ ไม่พาหน้าแอพหาย
+      if (a.iframe) return `<div class="ad ad-banner" style="aspect-ratio:${+a.w || 728}/${+a.h || 90};--bw:${+a.w || 728}px;--bh:${+a.h || 90}px">
+          <iframe src="${safeUrl(a.iframe)}" width="${+a.w || 728}" height="${+a.h || 90}" scrolling="no" frameborder="0" loading="lazy" title="${esc(a.name || a.partner || "")}" tabindex="-1"></iframe>
+          ${a.url ? `<a class="ad-banner-link" href="${safeUrl(a.url)}" target="_blank" rel="sponsored nofollow noopener" data-ext-app aria-label="${esc(a.name || a.partner || "")}"></a>` : ""}
+        </div>`;
       const title = tr(a, "title"), sub = tr(a, "sub");
       // ดีลพันธมิตร (Trip.com): การ์ดรูป/ธงชาติ + ชื่อดีล + ปุ่ม · เปิดแอพ Trip.com ในมือถือถ้ามี
       if (a.partner) return `<a class="ad ad-deal${a.image ? " ad-deal-img" : ""}" href="${safeUrl(a.url)}" target="_blank" rel="sponsored nofollow noopener" data-ext-app>
@@ -270,6 +276,13 @@
     }
     return `<a class="ad" href="#/about">${t("adEmpty")}</a>`;
   }
+  // ย่อแบนเนอร์ 728×90 ให้พอดีกรอบ (กรอบสัดส่วนคงที่ กว้างตามจอ) — จับแบนเนอร์ที่เพิ่มเข้ามาเองทุกครั้งที่วาดหน้าใหม่
+  const bannerRO = "ResizeObserver" in window ? new ResizeObserver(es => es.forEach(e => {
+    const el = e.target, w = parseFloat(getComputedStyle(el).getPropertyValue("--bw")) || 728;
+    el.style.setProperty("--s", String(el.clientWidth / w));
+  })) : null;
+  if (bannerRO) new MutationObserver(() => document.querySelectorAll(".ad-banner:not([data-fit])").forEach(el => { el.dataset.fit = "1"; bannerRO.observe(el); }))
+    .observe(document.body, { childList: true, subtree: true });
   function activateAdsense() {
     if (!adsenseLoaded) return;
     document.querySelectorAll("ins.adsbygoogle:not([data-adsbygoogle-status])").forEach(() => {

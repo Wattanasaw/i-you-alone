@@ -1,272 +1,70 @@
 [
   {
+    "id": "trip-sb21013841",
     "active": true,
     "partner": "Trip.com",
-    "placements": [
-      "home_top",
-      "list_inline",
-      "detail",
-      "news"
-    ],
-    "id": "trip-gojapan",
-    "title": "Go Japan 🇯🇵 เที่ยวญี่ปุ่นฤดูใบไม้เปลี่ยนสี",
-    "sub": "จองเที่ยวบิน + ที่พักคู่กัน ลด ฿1,500",
-    "i18n": {
-      "en": {
-        "title": "Go Japan 🇯🇵 Autumn leaves season",
-        "sub": "Book flight + hotel together, ฿1,500 off"
-      },
-      "zh": {
-        "title": "Go Japan 🇯🇵 赏枫季日本游",
-        "sub": "机票+酒店一起订立减 ฿1,500"
-      }
-    },
-    "image": "https://dimg04.tripcdn.com/images/1zp1412000todtpcv4712.png",
-    "url": "https://th.trip.com/sale/w/37676/gojapan.html?locale=th-TH&Allianceid=11305162&SID=335604865&trip_sub1=app-ad&trip_sub3=P21013771&transparentBar=1&wkp=1",
-    "ends": "2027-01-31",
-    "weight": 3
-  },
-  {
-    "active": true,
-    "partner": "Trip.com",
-    "placements": [
-      "home_top",
-      "list_inline",
-      "detail",
-      "news"
-    ],
-    "id": "trip-hotels80",
-    "title": "โรงแรมลดสูงสุด 80%",
-    "sub": "ดีลที่พักวันหยุดทั่วโลก ทั้งไทยและต่างประเทศ",
-    "i18n": {
-      "en": {
-        "title": "Hotels up to 80% off",
-        "sub": "Holiday hotel deals worldwide"
-      },
-      "zh": {
-        "title": "酒店低至2折",
-        "sub": "全球假期酒店优惠"
-      }
-    },
-    "image": "https://dimg04.tripcdn.com/images/1zp2t12000tvxe9gh531A.png",
-    "url": "https://th.trip.com/sale/w/27435/holidaydeals2025.html?locale=th-TH&Allianceid=11305162&SID=335604865&trip_sub1=app-ad&trip_sub3=P21013757&transparentBar=1&wkp=1",
-    "ends": "2026-12-31",
-    "weight": 3
-  },
-  {
-    "active": true,
-    "partner": "Trip.com",
-    "placements": [
-      "home_top",
-      "list_inline",
-      "detail",
-      "news"
-    ],
-    "id": "trip-family",
-    "title": "ดีลเที่ยวครอบครัว ลดสูงสุด 50%",
-    "sub": "ตั๋วฮ่องกงดิสนีย์แลนด์ · USJ โอซาก้า · เที่ยวบิน · โรงแรม",
-    "i18n": {
-      "en": {
-        "title": "Family travel deals — up to 50% off",
-        "sub": "Hong Kong Disneyland · USJ · flights · hotels"
-      },
-      "zh": {
-        "title": "亲子游优惠 低至5折",
-        "sub": "香港迪士尼 · 日本环球影城 · 机票 · 酒店"
-      }
-    },
-    "image": "https://dimg04.tripcdn.com/images/1zp6m12000sfzujt50145.png",
-    "url": "https://th.trip.com/sale/w/27386/familytraveldeals.html?locale=th-TH&Allianceid=11305162&SID=335604865&trip_sub1=app-ad&trip_sub3=P21013778&transparentBar=1&wkp=1",
-    "ends": "2028-12-31",
-    "weight": 2
-  },
-  {
-    "active": true,
-    "partner": "Trip.com",
-    "placements": [
-      "home_top",
-      "list_inline",
-      "detail",
-      "news"
-    ],
-    "id": "trip-sichuan",
-    "title": "ใบไม้เปลี่ยนสีที่เสฉวน 🇨🇳",
-    "sub": "ป่าไม้สีสันและแพนด้ายักษ์",
-    "i18n": {
-      "en": {
-        "title": "Autumn colours in Sichuan 🇨🇳",
-        "sub": "Colourful forests and giant pandas"
-      },
-      "zh": {
-        "title": "四川秋色 🇨🇳",
-        "sub": "彩林与大熊猫"
-      }
-    },
-    "image": "https://dimg04.tripcdn.com/images/1zp5k12000udcmin58480.png",
-    "url": "https://th.trip.com/sale/w/xnj69bv6cpnz2si3/autumnsichuan.html?locale=th-TH&Allianceid=11305162&SID=335604865&trip_sub1=app-ad&trip_sub3=P21013785&transparentBar=1&wkp=1",
-    "ends": "2026-11-30",
-    "weight": 1
-  },
-  {
-    "active": true,
-    "partner": "Trip.com",
-    "placements": [
-      "home_top",
-      "list_inline",
-      "detail",
-      "news"
-    ],
-    "id": "trip-fly-seoul",
-    "bg": "linear-gradient(135deg,#1d4ed8,#e11d48)",
-    "title": "บินไปโซล เกาหลี",
-    "sub": "ตั๋วเครื่องบินกรุงเทพ–โซล ราคาถูก ดูวันที่ถูกที่สุด",
-    "i18n": {
-      "en": {
-        "title": "Fly to Seoul, Korea",
-        "sub": "Cheap Bangkok–Seoul flights, see the cheapest dates"
-      },
-      "zh": {
-        "title": "飞往首尔",
-        "sub": "曼谷–首尔特价机票"
-      }
-    },
-    "url": "https://th.trip.com/flights/bangkok-to-seoul/airfares-bkk-sel/?Allianceid=11305162&SID=335604865&trip_sub1=app-ad&trip_sub3=D21013463",
+    "name": "Trip.com แอปเดียว จองได้ครบ",
+    "iframe": "https://th.trip.com/partners/ad/SB21013841?Allianceid=11305162&SID=335604865&trip_sub1=app-ad",
+    "w": 728,
+    "h": 90,
     "weight": 2,
-    "city": "SEOUL"
-  },
-  {
-    "active": true,
-    "partner": "Trip.com",
     "placements": [
       "home_top",
       "list_inline",
       "detail",
       "news"
     ],
-    "id": "trip-fly-tokyo",
-    "bg": "linear-gradient(135deg,#be123c,#f97316)",
-    "title": "บินไปโตเกียว ญี่ปุ่น",
-    "sub": "ตั๋วเครื่องบินกรุงเทพ–โตเกียว ราคาถูก",
-    "i18n": {
-      "en": {
-        "title": "Fly to Tokyo, Japan",
-        "sub": "Cheap Bangkok–Tokyo flights"
-      },
-      "zh": {
-        "title": "飞往东京",
-        "sub": "曼谷–东京特价机票"
-      }
-    },
-    "url": "https://th.trip.com/flights/bangkok-to-tokyo/airfares-bkk-tyo/?Allianceid=11305162&SID=335604865&trip_sub1=app-ad&trip_sub3=D21013463",
+    "url": "https://th.trip.com/?Allianceid=11305162&SID=335604865&trip_sub1=app-ad&trip_sub3=SB21013841"
+  },
+  {
+    "id": "trip-sb21013855",
+    "active": true,
+    "partner": "Trip.com",
+    "name": "ดีลโรงแรม 1.4 ล้านแห่งทั่วโลก",
+    "iframe": "https://th.trip.com/partners/ad/SB21013855?Allianceid=11305162&SID=335604865&trip_sub1=app-ad",
+    "w": 728,
+    "h": 90,
+    "weight": 3,
+    "placements": [
+      "home_top",
+      "list_inline",
+      "detail",
+      "news"
+    ],
+    "url": "https://th.trip.com/hotels/w/home?Allianceid=11305162&SID=335604865&trip_sub1=app-ad&trip_sub3=SB21013855"
+  },
+  {
+    "id": "trip-sb21013862",
+    "active": true,
+    "partner": "Trip.com",
+    "name": "เที่ยวบินครอบคลุมทุกเส้นทาง",
+    "iframe": "https://th.trip.com/partners/ad/SB21013862?Allianceid=11305162&SID=335604865&trip_sub1=app-ad",
+    "w": 728,
+    "h": 90,
     "weight": 2,
-    "city": "TOKYO"
-  },
-  {
-    "active": true,
-    "partner": "Trip.com",
     "placements": [
       "home_top",
       "list_inline",
       "detail",
       "news"
     ],
-    "id": "trip-fly-taipei",
-    "bg": "linear-gradient(135deg,#0f766e,#22c55e)",
-    "title": "บินไปไทเป ไต้หวัน",
-    "sub": "ตั๋วเครื่องบินกรุงเทพ–ไทเป ราคาถูก",
-    "i18n": {
-      "en": {
-        "title": "Fly to Taipei, Taiwan",
-        "sub": "Cheap Bangkok–Taipei flights"
-      },
-      "zh": {
-        "title": "飞往台北",
-        "sub": "曼谷–台北特价机票"
-      }
-    },
-    "url": "https://th.trip.com/flights/bangkok-to-taipei/airfares-bkk-tpe/?Allianceid=11305162&SID=335604865&trip_sub1=app-ad&trip_sub3=D21013463",
-    "weight": 1,
-    "city": "TAIPEI"
+    "url": "https://th.trip.com/flights/welcome/?to=home&Allianceid=11305162&SID=335604865&trip_sub1=app-ad&trip_sub3=SB21013862"
   },
   {
+    "id": "trip-sb21013869",
     "active": true,
     "partner": "Trip.com",
+    "name": "เที่ยวบิน กรุงเทพ–โตเกียว",
+    "iframe": "https://th.trip.com/partners/ad/SB21013869?Allianceid=11305162&SID=335604865&trip_sub1=app-ad",
+    "w": 728,
+    "h": 90,
+    "weight": 2,
     "placements": [
       "home_top",
       "list_inline",
       "detail",
       "news"
     ],
-    "id": "trip-fly-hongkong",
-    "bg": "linear-gradient(135deg,#9f1239,#7c3aed)",
-    "title": "บินไปฮ่องกง",
-    "sub": "ตั๋วเครื่องบินกรุงเทพ–ฮ่องกง ราคาถูก",
-    "i18n": {
-      "en": {
-        "title": "Fly to Hong Kong",
-        "sub": "Cheap Bangkok–Hong Kong flights"
-      },
-      "zh": {
-        "title": "飞往香港",
-        "sub": "曼谷–香港特价机票"
-      }
-    },
-    "url": "https://th.trip.com/flights/bangkok-to-hong-kong/airfares-bkk-hkg/?Allianceid=11305162&SID=335604865&trip_sub1=app-ad&trip_sub3=D21013463",
-    "weight": 1,
-    "city": "HONG KONG"
-  },
-  {
-    "active": true,
-    "partner": "Trip.com",
-    "placements": [
-      "home_top",
-      "list_inline",
-      "detail",
-      "news"
-    ],
-    "id": "trip-fly-hcmc",
-    "bg": "linear-gradient(135deg,#b91c1c,#eab308)",
-    "title": "บินไปโฮจิมินห์ เวียดนาม",
-    "sub": "ตั๋วเครื่องบินกรุงเทพ–โฮจิมินห์ ราคาถูก",
-    "i18n": {
-      "en": {
-        "title": "Fly to Ho Chi Minh City, Vietnam",
-        "sub": "Cheap Bangkok–HCMC flights"
-      },
-      "zh": {
-        "title": "飞往胡志明市",
-        "sub": "曼谷–胡志明市特价机票"
-      }
-    },
-    "url": "https://th.trip.com/flights/bangkok-to-ho-chi-minh-city/airfares-bkk-sgn/?Allianceid=11305162&SID=335604865&trip_sub1=app-ad&trip_sub3=D21013463",
-    "weight": 1,
-    "city": "HO CHI MINH"
-  },
-  {
-    "active": true,
-    "partner": "Trip.com",
-    "placements": [
-      "home_top",
-      "list_inline",
-      "detail",
-      "news"
-    ],
-    "id": "trip-fly-singapore",
-    "bg": "linear-gradient(135deg,#dc2626,#0ea5e9)",
-    "title": "บินไปสิงคโปร์",
-    "sub": "ตั๋วเครื่องบินกรุงเทพ–สิงคโปร์ ราคาถูก",
-    "i18n": {
-      "en": {
-        "title": "Fly to Singapore",
-        "sub": "Cheap Bangkok–Singapore flights"
-      },
-      "zh": {
-        "title": "飞往新加坡",
-        "sub": "曼谷–新加坡特价机票"
-      }
-    },
-    "url": "https://th.trip.com/flights/bangkok-to-singapore/airfares-bkk-sin/?Allianceid=11305162&SID=335604865&trip_sub1=app-ad&trip_sub3=D21013463",
-    "weight": 1,
-    "city": "SINGAPORE"
+    "url": "https://th.trip.com/flights/Bangkok-to-Tokyo/tickets-BKK-TYO?flighttype=S&dcity=BKK&acity=TYO&Allianceid=11305162&SID=335604865&trip_sub1=app-ad&trip_sub3=SB21013869"
   }
 ]

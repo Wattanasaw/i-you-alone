@@ -856,3 +856,9 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 .ad.ad-deal.ad-deal-img { grid-template-columns: 1fr; grid-template-rows: auto auto; }
 .ad-deal-img .ad-media { aspect-ratio: 2 / 1; min-height: 0; }
 .grid .ad.ad-deal.ad-deal-img { grid-template-rows: auto 1fr; }
+/* แบนเนอร์ยาว (Trip.com 728×90): กรอบคงที่ตามสัดส่วน กว้างสุด 728px · แบนเนอร์ถูกย่อด้วย --s (ตั้งจาก JS) */
+.ad.ad-banner { display: block; position: relative; width: 100%; max-width: 728px; min-height: 0; height: auto; margin: 14px auto; padding: 0; border: 0; border-radius: 10px; background: transparent; overflow: hidden; }
+.ad.ad-banner::before { content: none; }
+.ad-banner iframe { position: absolute; left: 0; top: 0; width: var(--bw, 728px); height: var(--bh, 90px); border: 0; transform-origin: 0 0; transform: scale(var(--s, 1)); pointer-events: none; }
+.ad-banner-link { position: absolute; inset: 0; z-index: 1; }
+.grid .ad.ad-banner { grid-column: 1 / -1; min-height: 0; margin: 0 auto; }
