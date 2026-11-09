@@ -928,7 +928,7 @@
         <h2>${t("hotelsTitle")}</h2>
         <p class="muted" style="margin:0 0 10px">${c ? t("hotelsDescProv", { prov: esc(provName(prov)) }) : t("hotelsDesc", { venue: esc(v.name || "") })}</p>
         <a class="btn primary block" href="${esc(hotelLink(ev, loc))}" target="_blank" rel="sponsored nofollow noopener" data-ext-app>🏨 ${t("hotelsBtn")}</a>
-        ${C.tripAffiliate?.allianceId ? `<p class="disclosure">${esc(pick(C.affiliateDisclosure))}</p>` : ""}
+        ${C.tripAffiliate?.allianceId && C.showAffiliateNote ? `<p class="disclosure">${esc(pick(C.affiliateDisclosure))}</p>` : ""}
       </section>`;
   }
   function travelPanel(ev, v) {
@@ -1052,7 +1052,7 @@
               <div class="aff-links">
                 ${ev.affiliateLinks.map((a, i) => `<a class="btn" href="${safeUrl(a.url)}" target="_blank" rel="sponsored nofollow noopener" data-ext-app><span>${esc(ev.i18n?.[state.lang]?.affiliateLabels?.[i] ?? a.label)}</span><span>${esc(a.platform || "")} →</span></a>`).join("")}
               </div>
-              <p class="disclosure">${esc(pick(C.affiliateDisclosure))}</p>
+              ${C.showAffiliateNote ? `<p class="disclosure">${esc(pick(C.affiliateDisclosure))}</p>` : ""}
             </section>` : ""}
           </div>
           <div>
@@ -1307,7 +1307,7 @@
       ${items.length ? `<div class="outfit-rail">${items.map(x => `<a class="outfit-item" href="${safeUrl(x.url)}" target="_blank" rel="sponsored nofollow noopener" data-ext-app>
           ${x.image ? `<img src="${safeUrl(x.image)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">` : ""}
           <span>${esc(pick(x.title) || x.title || "")}</span>${x.price ? `<b>${fmtBaht(x.price)}</b>` : ""}</a>`).join("")}</div>
-        <small class="outfit-note">${t("outfitAffiliate")}</small>` : ""}
+        ${C.showAffiliateNote ? `<small class="outfit-note">${t("outfitAffiliate")}</small>` : ""}` : ""}
     </section>`;
   }
   function placeBlurb(p) {
@@ -1748,7 +1748,7 @@
           ${p.website ? `<a class="btn" ${inAppLink(p.website)}>🌐 ${t("website")}</a>` : `<a class="btn" ${mapsLink(v, null)}>🗺️ ${t("openMapsShort")}</a>`}
           ${placeHotelBlock(p)}
         </div>
-        ${p.lat && C.tripAffiliate?.allianceId ? `<p class="disclosure pd-aff">${esc(pick(C.affiliateDisclosure))}</p>` : ""}
+        ${p.lat && C.tripAffiliate?.allianceId && C.showAffiliateNote ? `<p class="disclosure pd-aff">${esc(pick(C.affiliateDisclosure))}</p>` : ""}
         <div class="pd-tabs" role="tablist">${tabs.map(([k, l]) => `<button role="tab" class="${state.placeTab === k ? "active" : ""}" data-ptab="${k}" aria-selected="${state.placeTab === k}">${l}</button>`).join("")}</div>
         <section class="pd-panel" data-panel="overview" ${state.placeTab === "overview" ? "" : "hidden"}>
           ${summary ? `<p class="pd-summary" id="pdSum">${esc(summary)}</p>${summary.length > 180 ? `<button class="link-btn" id="pdMore">${t("readMore")}</button>` : ""}` : ""}
@@ -1864,7 +1864,7 @@
       <section class="panel prose">
         <p>${t("about1", { site })}</p>
         <p>${t("about2")}</p>
-        <p class="disclosure">${esc(pick(C.affiliateDisclosure))}</p>
+        ${C.showAffiliateNote ? `<p class="disclosure">${esc(pick(C.affiliateDisclosure))}</p>` : ""}
       </section>
       <section class="panel prose">
         <h2>${t("adsTitle")}</h2>

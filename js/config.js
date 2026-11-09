@@ -105,6 +105,8 @@ window.APP_CONFIG = {
   webUrl: "https://wattanasaw.github.io/i-you-alone/",
   apkUrl: "https://github.com/Wattanasaw/i-you-alone/releases/download/android-latest/i-you-alone.apk",
 
+  // แสดงข้อความ "ลิงก์พันธมิตร/อาจได้ค่าคอมมิชชัน" ใต้ลิงก์ Affiliate (Shopee, Trip.com, ดีลในหน้างาน) — false = ไม่แสดง
+  showAffiliateNote: false,
   affiliateDisclosure: {
     th: "ลิงก์บางส่วนเป็นลิงก์พันธมิตร (Affiliate) เราอาจได้รับค่าคอมมิชชันเมื่อคุณซื้อผ่านลิงก์ โดยคุณไม่ต้องจ่ายเพิ่ม",
     en: "Some links are affiliate links. We may earn a commission when you buy through them, at no extra cost to you.",
