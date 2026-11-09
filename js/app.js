@@ -1056,8 +1056,8 @@
             </section>` : ""}
           </div>
           <div>
-            ${travelPanel(ev, v)}
             ${hotelPanel(ev, v)}
+            ${travelPanel(ev, v)}
             <div style="margin-top:14px">${adSlot("detail")}</div>
           </div>
         </div>
