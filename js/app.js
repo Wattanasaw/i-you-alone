@@ -880,6 +880,41 @@
     box.querySelectorAll(".car-cfg input, .car-cfg select").forEach(i => i.addEventListener("change", save));
   }
 
+  // ที่พักใกล้งาน (Trip.com): ค้นรอบพิกัดสถานที่จัดงาน เช็คอินวันงาน 1 คืน · ต่อรหัส Affiliate จาก config.js
+  // (รูปแบบลิงก์เดียวกับที่ Trip.com สร้างเมื่อค้นจากสถานที่สำคัญ: searchType=LM + พิกัดใน searchValue)
+  function hotelLink(ev, v) {
+    const day = d => new Date(Date.now() + 7 * 3600e3 + d * 864e5).toISOString().slice(0, 10);
+    const checkin = ev.startDate < day(0) ? day(0) : ev.startDate;
+    const out = new Date(checkin + "T00:00:00Z"); out.setUTCDate(out.getUTCDate() + 1);
+    const name = String(v.i18n?.[state.lang]?.name || v.name || "").slice(0, 80);
+    const u = new URL(state.lang === "th" ? "https://th.trip.com/hotels/list" : "https://www.trip.com/hotels/list");
+    const p = { searchType: "LM", searchWord: name, destName: name, optionId: 0, searchValue: `13|0*13*${v.lat}|${v.lng}|${name}|0|1`,
+      checkin, checkout: out.toISOString().slice(0, 10), crn: 1, adult: 2, curr: "THB", ...(state.lang === "en" ? { locale: "en-US" } : {}) };
+    const aff = C.tripAffiliate || {};
+    if (aff.allianceId && aff.sid) Object.assign(p, { Allianceid: aff.allianceId, SID: aff.sid, trip_sub1: "event", trip_sub3: String(ev.id || "").slice(0, 40) });
+    Object.entries(p).forEach(([k, x]) => u.searchParams.set(k, x));
+    return u.href;
+  }
+  // จุดกึ่งกลางของสถานที่ในจังหวัด (ใช้เมื่อสถานที่จัดงานไม่มีพิกัด)
+  const provCenters = {};
+  const provCenter = id => provCenters[id] ??= (() => {
+    const ps = state.places.filter(p => p.lat && p.province === id);
+    return ps.length ? { lat: +(ps.reduce((s, p) => s + +p.lat, 0) / ps.length).toFixed(5), lng: +(ps.reduce((s, p) => s + +p.lng, 0) / ps.length).toFixed(5) } : null;
+  })();
+  function hotelPanel(ev, v) {
+    if (!v || v.online) return "";
+    // มีพิกัดสถานที่จัดงาน = ที่พักรอบงาน · ไม่มี = ที่พักในจังหวัด (จุดกึ่งกลาง)
+    const prov = provinceOf(ev), c = v.lat && v.lng ? null : prov && provCenter(prov);
+    if (!(v.lat && v.lng) && !c) return "";
+    const loc = c ? { ...v, ...c, name: provName(prov), i18n: undefined } : v;
+    return `
+      <section class="panel hotels">
+        <h2>${t("hotelsTitle")}</h2>
+        <p class="muted" style="margin:0 0 10px">${c ? t("hotelsDescProv", { prov: esc(provName(prov)) }) : t("hotelsDesc", { venue: esc(v.name || "") })}</p>
+        <a class="btn primary block" href="${esc(hotelLink(ev, loc))}" target="_blank" rel="sponsored nofollow noopener" data-ext-app>🏨 ${t("hotelsBtn")}</a>
+        ${C.tripAffiliate?.allianceId ? `<p class="disclosure">${esc(pick(C.affiliateDisclosure))}</p>` : ""}
+      </section>`;
+  }
   function travelPanel(ev, v) {
     if (!v || v.online) return `<section class="panel"><h2>${t("onlineTitle")}</h2><p>${t("onlineDesc")}</p></section>`;
     const tips = [
@@ -1006,6 +1041,7 @@
           </div>
           <div>
             ${travelPanel(ev, v)}
+            ${hotelPanel(ev, v)}
             <div style="margin-top:14px">${adSlot("detail")}</div>
           </div>
         </div>

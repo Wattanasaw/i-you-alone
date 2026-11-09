@@ -55,6 +55,7 @@ public class StoreLinkPlugin extends Plugin {
         if (host.endsWith("lazada.co.th") || host.endsWith("lzd.co")) return new String[] { "com.lazada.android" };
         if (host.endsWith("tiktok.com")) return new String[] { "com.ss.android.ugc.trill", "com.zhiliaoapp.musically" };
         if (host.endsWith("lemon8-app.com")) return new String[] { "com.bd.nproject" };
+        if (host.endsWith("trip.com")) return new String[] { "ctrip.english" };
         return new String[0];
     }
 

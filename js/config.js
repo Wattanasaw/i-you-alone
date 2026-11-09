@@ -94,6 +94,11 @@ window.APP_CONFIG = {
   // แอพจะต่อเข้ากับปุ่ม "ซื้อบัตร" ของงานที่ดึงมาจากเว็บนั้นให้อัตโนมัติ
   ticketAffiliate: { "eventpop.me": "", "zipeventapp.com": "" },
 
+  // ===== Trip.com Affiliate: ปุ่ม "ที่พักใกล้งาน" ในหน้าอีเว้นท์ =====
+  // หาค่าได้ที่ Trip.com Affiliate → Link Builder: สร้างลิงก์อะไรก็ได้ ลิงก์ที่ได้จะมี "Allianceid=xxxx&SID=yyyy"
+  // ใส่ตัวเลขสองตัวนั้นด้านล่าง (ว่างไว้ = ปุ่มยังใช้ได้ แต่ไม่นับค่าคอมมิชชัน)
+  tripAffiliate: { allianceId: "", sid: "" },
+
   // ===== แอพมือถือ (Android/iOS) =====
   // แอพมีข้อมูลชุดหนึ่งติดเครื่องไว้ใช้ตอนออฟไลน์ แต่จะโหลดข้อมูลล่าสุดจากเว็บนี้ทุกครั้งที่เปิด
   webUrl: "https://wattanasaw.github.io/i-you-alone/",
