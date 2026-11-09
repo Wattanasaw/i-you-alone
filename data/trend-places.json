@@ -11623,12 +11623,12 @@
   "reviewCount": 29,
   "districtEn": "Kaeng Krachan",
   "district": "แก่งกระจาน",
-  "hours": "06:00-18:00",
-  "hoursSrc": "review1",
   "entry": {
    "free": true,
    "src": "review1"
-  }
+  },
+  "hours": "06:00-18:00",
+  "hoursSrc": "review1"
  },
  {
   "id": "l8-22535865258871317",
@@ -12227,12 +12227,12 @@
   "reviewCount": 45,
   "districtEn": "Phasi Charoen",
   "district": "ภาษีเจริญ",
-  "hours": "Mo-Su 08:00-18:00",
-  "hoursSrc": "review1",
   "entry": {
    "free": true,
    "src": "review1"
-  }
+  },
+  "hours": "Mo-Su 08:00-18:00",
+  "hoursSrc": "review1"
  },
  {
   "id": "l8-22535797332270135",
