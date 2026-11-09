@@ -15,6 +15,11 @@
     // ป๊อปอัพสโตร์/ร้านขายของที่ระลึก/คาเฟ่ธีมศิลปิน = ไปดู/ซื้อของ ไม่ใช่การแสดง → นิทรรศการ/ป๊อปอัพ (ไม่เข้า K-POP/แฟนมีต)
     popup: /\b(pop-?up( store| shop| cafe)?|popup|merch(andise)? (store|shop)|collab cafe|theme cafe|birthday cafe)\b|ป๊อปอัพ|ป็อปอัพ/i,
     kpop: /\b(k-?pop|kpop|k-?drama|korean|babymonster|big ?bang|qwer|bambam|jay ?b|got7|stray ?kids|suho|exo|enhypen|blackpink|jennie|jisoo|rosé|twice|seventeen|nct( ?127| ?dream| ?wish)?|wayv|aespa|le ?sserafim|newjeans|itzy|tomorrow ?x ?together|ateez|bts|jimin|jungkook|j-?hope|red ?velvet|mamamoo|\(?g\)?i-?dle|i-?dle|kiss ?of ?life|illit|boynextdoor|riize|zerobaseone|zb1|plave|nmixx|kep1er|fromis_?9|taeyeon|sunmi|chung ?ha|hwasa|akmu|day6|n\.ssign|xikers|cravity|monsta ?x|shinee|taemin|super ?junior|2pm|ikon|dreamcatcher|viviz|p1harmony|so ?ji ?sub|lee ?min ?ho|park ?bo ?gum|cha ?eun ?woo|btob|oh ?my ?girl|apink|g-?dragon|taeyang|daesung|zico|jay ?park|ph-?1|dynamic ?duo|epik ?high|10cm|hyolyn|baekhyun|xiumin|doyoung|taeil|mark ?tuan|jackson ?wang|yugyeom|youngjae|jinyoung|evnne|tempest|8turn|ampers&one|nexz|kickflip|hearts2hearts|izna|meovv|close ?your ?eyes|wave ?to ?earth|allday ?project)\b|[\uAC00-\uD7A3]{2}|เคป็อป|เกาหลี/i,
+    anime: /\b(cosplay(er)?s?|anime|anisong|manga|comic ?-?con|comiket|otaku|vtubers?|isekai|japan expo|game ?show|e-?sports?|gaming (festival|expo|con)|tcg|trading card|card (expo|show|game)|pok[eé]mon|gundam|hololive|wonder ?festival|doujin)\b|คอสเพลย์|คอสเพล|อนิเมะ|การ์ตูนญี่ปุ่น|มังงะ|เกมโชว์|อีสปอร์ต|การ์ดเกม/i,
+    // ดนตรีจากเกม/อนิเมะเล่นสด = คอนเสิร์ต (อยู่หมวดคอนเสิร์ต)
+    animeConcert: /\b(concert|orchestra|symphon(y|ic)|live in|tour|recital)\b|คอนเสิร์ต/i,
+    film: /\b(screenings?|cinema|movie night|film (lab|festival|fest|club|night|series)|rooftop (cinema|movie)|outdoor (cinema|movie)|sunday cinema)\b|ฉายหนัง|ฉายภาพยนตร์|เทศกาลหนัง|เทศกาลภาพยนตร์|ดูหนังกลางแปลง|หนังกลางแปลง/i,
+    notFilm: /\bin concert\b|film concert|live concert|fan ?screening|final episode/i,
     market: /\b(markets?|bazaars?|flea|craft fair|vintage fair|art ?toy fair|christmas fair|ploenchit fair|otop|marché)\b|ตลาดนัด|ตลาด|มาร์เก็ต|มาร์เก็ท|ถนนคนเดิน|งานกาชาด|สินค้าชุมชน|โอทอป|ของดี.{0,12}(จังหวัด|ชุมชน|เมือง)/i,
     notMarket: /market(ing| research| insights?|place conference)|stock market|money market|capital market|crypto|traders?/i,
     fanmeet: /\b(fan ?meet(ing)?s?|fan-?con|fancon|fan ?sign|fansign|fan ?screening|fan ?party|meet ?(&|and) ?greet|hi-?touch|final episode)\b|แฟนมีต|แฟนคอน|แฟนไซน์/i,
@@ -29,6 +34,13 @@
   function fixCategory(ev) {
     const t = String(ev?.title || ""), c = ev?.category;
     if (is(R.hide, t)) return null;
+    // หมวดที่ยุบแล้ว: คาเฟ่ → อาหาร/คาเฟ่ · แฟลชเซล → ตลาดนัด/ช้อปปิ้ง
+    if (c === "cafe") return fixCategory({ ...ev, category: "food" });
+    if (c === "sale") return fixCategory({ ...ev, category: "market" });
+    // อนิเมะ/เกม/คอสเพลย์ (ไม่ใช่คอนเสิร์ตเพลงเกม/อนิเมะ · ไม่ใช่ทอล์ก)
+    if (c !== "anime" && c !== "seminar" && is(R.anime, t) && !(c === "concert" && is(R.animeConcert, t))) return "anime";
+    // ฉายหนัง
+    if (!["film", "fanmeet", "kpop"].includes(c) && is(R.film, t) && !is(R.notFilm, t)) return "film";
     // งานที่ประกาศยกเลิก (ชื่องานเหลือแค่ "ยกเลิก"/"Cancelled") → ไม่แสดง
     if (/^\s*(ยกเลิก|cancell?ed)(\s|$|[:\-–|])/i.test(t)) return null;
     // ประชุมวิชาการ/สัมมนาใหญ่ (ชื่อบอกชัด) → สัมมนา ก่อนกฎอื่น ("Veterinary Conference" เคยไปเวิร์กช็อปเพราะมีคำว่า Theme/Development)

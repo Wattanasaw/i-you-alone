@@ -15,17 +15,21 @@ window.APP_CONFIG = {
     { id: "kpop", icon: "💜", color: "#7c3aed", color2: "#ec4899", name: { th: "K-POP", en: "K-pop", zh: "韩流 K-POP" } },
     // แฟนมีต แฟนคอน แฟนไซน์ ฉายตอนจบซีรีส์ (ศิลปิน/นักแสดงที่ไม่ใช่เกาหลี)
     { id: "fanmeet", icon: "💖", color: "#ec4899", color2: "#a855f7", name: { th: "แฟนมีต", en: "Fan meetings", zh: "粉丝见面会" } },
+    // อนิเมะ/เกม/คอสเพลย์: งานคอสเพลย์ คอมิกคอน งานญี่ปุ่น/อนิเมะ เกมโชว์ อีสปอร์ต การ์ดเกม (TCG)
+    { id: "anime", icon: "🎮", color: "#6366f1", color2: "#ec4899", name: { th: "อนิเมะ/เกม/คอสเพลย์", en: "Anime, games & cosplay", zh: "动漫/游戏/Cosplay" } },
     // ละครเวที มิวสิคัล โชว์ บัลเลต์ คอมเมดี้ ละครสัตว์
     { id: "show", icon: "🎭", color: "#7c3aed", color2: "#f43f5e", name: { th: "ละครเวที/โชว์", en: "Shows & musicals", zh: "演出/音乐剧" } },
+    // ฉายหนัง: โรงหนังกลางแจ้ง/รูฟท็อป เทศกาลหนัง ฉายหนังอิสระ (ฉายพร้อมวงออเคสตรา = คอนเสิร์ต · ฉายตอนจบซีรีส์ = แฟนมีต)
+    { id: "film", icon: "🎬", color: "#0f172a", color2: "#e11d48", name: { th: "ฉายหนัง", en: "Film screenings", zh: "电影放映" } },
     // ศิลปินเล่นตามผับบาร์ ปาร์ตี้ ดีเจ (แสดงป้าย 20+ อัตโนมัติ)
     { id: "nightlife", icon: "🌙", color: "#4c1d95", color2: "#db2777", adult: true, name: { th: "ปาร์ตี้/ผับ", en: "Nightlife", zh: "夜生活" } },
     // งานประเพณี/เทศกาล (ลอยกระทง สงกรานต์ งานวัด เคาท์ดาวน์ ยี่เป็ง คริสต์มาส)
     { id: "festival", icon: "🏮", color: "#dc2626", color2: "#facc15", name: { th: "เทศกาล", en: "Festivals", zh: "节庆" } },
     // ตลาดนัด/มาร์เก็ตขนาดใหญ่: อาร์ตทอย วินเทจ คราฟต์ คริสต์มาสมาร์เก็ต แฟร์ขายของ งานกาชาด OTOP
-    { id: "market", icon: "🧺", color: "#ea580c", color2: "#16a34a", name: { th: "ตลาดนัด/มาร์เก็ต", en: "Markets", zh: "市集" } },
-    { id: "sale", icon: "🛍️", color: "#ff7a45", color2: "#ff2d55", name: { th: "แฟลชเซล", en: "Flash sales", zh: "限时特卖" } },
-    { id: "food", icon: "🍜", color: "#f59e0b", color2: "#ef4444", name: { th: "อาหาร", en: "Food", zh: "美食" } },
-    { id: "cafe", icon: "☕", color: "#b45309", color2: "#f9a8d4", name: { th: "คาเฟ่", en: "Cafés", zh: "咖啡馆" } },
+    // (รวมแฟลชเซลเดิม — งานลดราคาในห้างมีน้อย)
+    { id: "market", icon: "🧺", color: "#ea580c", color2: "#16a34a", name: { th: "ตลาดนัด/ช้อปปิ้ง", en: "Markets & sales", zh: "市集/特卖" } },
+    // (รวมคาเฟ่เดิม — งานของคาเฟ่มีน้อยมาก)
+    { id: "food", icon: "🍜", color: "#f59e0b", color2: "#ef4444", name: { th: "อาหาร/คาเฟ่", en: "Food & cafés", zh: "美食/咖啡" } },
     // งานวิ่ง (มาราธอน มินิ ฮาล์ฟ เทรล) — แยกจากกีฬา เพราะมีเยอะที่สุด
     { id: "run", icon: "🏃", color: "#16a34a", color2: "#06b6d4", name: { th: "งานวิ่ง", en: "Running", zh: "跑步" } },
     // กีฬาอื่น: มวย ชกต่อย แข่งขัน ปั่นจักรยาน ไตรกีฬา ฟิตเนส โยคะ

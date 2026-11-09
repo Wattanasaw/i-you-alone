@@ -310,7 +310,7 @@ const SOURCES = {
   },
   // ---------- Ticketmelon: เทศกาลดนตรี แฟนมีต คอนเสิร์ตอินดี้ เวิร์กช็อป (robots อนุญาต · มี sitemap) ----------
   ticketmelon: {
-    name: "Ticketmelon", quota: 45,
+    name: "Ticketmelon", quota: 80,
     async list() {
       const idx = await getHtml("https://www.ticketmelon.com/sitemap.xml");
       const maps = [...(idx || "").matchAll(/<loc>([^<]+sitemap-event\d+\.xml)<\/loc>/g)].map(m => m[1]);
@@ -326,7 +326,8 @@ const SOURCES = {
         }
       }
       // ตลาด/แฟร์ (งานฟรีที่ไม่ค่อยขึ้นเว็บขายบัตร) เปิดก่อน ให้ทันโควตา
-      const fair = r => /market|fair|bazaar|flea|craft|vintage/i.test(r.url) ? 0 : 1;
+      // งานที่เว็บขายบัตรอื่นไม่ค่อยมี (ตลาด/แฟร์ คอสเพลย์ อนิเมะ เกม การ์ด ฉายหนัง) เปิดก่อน ให้ทันโควตา
+      const fair = r => /market|fair|bazaar|flea|craft|vintage|cosplay|anime|comic|otaku|isekai|game|esport|card|tcg|toy|cinema|film|screening|movie/i.test(r.url) ? 0 : 1;
       return refs.sort((a, b) => fair(a) - fair(b) || b.mod.localeCompare(a.mod));
     },
     parse(html) {
@@ -521,9 +522,10 @@ const CATEGORY_RULES = [
   ["motor", /\bmotor|car show|auto ?salon|\b(moto ?gp|formula ?(1|one)|f1|super ?gt|superbike|drift|drag ?race|racing|grand ?prix|rally|karting)\b|รถยนต์|ยานยนต์|มอเตอร์|บิ๊กไบค์|รถจักรยานยนต์|แข่งรถ|ดริฟท์|ดริฟต์|โมโตจีพี/i],
   ["outdoor", /\b(run|running|marathon|trail|hyrox|triathlon|fun ?run|cycling|bike|yoga|fitness|sport|workout|crossfit)\b|วิ่ง|มาราธอน|ปั่นจักรยาน|ไตรกีฬา|โยคะ|ฟิตเนส|กีฬา/i],
   ["book", /\bbook|หนังสือ/i],
-  ["cafe", /\bcoffee|caf[eé]|กาแฟ|คาเฟ่/i],
+  ["anime", /\b(cosplay|anime|anisong|manga|comic ?con|otaku|vtuber|isekai|japan expo|game ?show|e-?sports?|tcg|trading card)\b|คอสเพลย์|อนิเมะ|มังงะ|เกมโชว์|อีสปอร์ต/i],
+  ["food", /\bcoffee|caf[eé]|กาแฟ|คาเฟ่/i],
   ["food", /\bfood|drink|beer|wine|whisky|cocktail|gastro|dining|festival of taste|อาหาร|เครื่องดื่ม|เบียร์|ไวน์/i],
-  ["sale", /\bsale\b|flash ?sale|super weekend|ลดราคา|ลดกระหน่ำ|เซล|outlet|มหกรรมลด/i],
+  ["market", /\bsale\b|flash ?sale|super weekend|ลดราคา|ลดกระหน่ำ|เซล|outlet|มหกรรมลด/i],
   // เรียนลงมือทำ (เวิร์กช็อป คอร์ส คลาส อบรม) ก่อน สัมมนา/ทอล์ก (ฟังบรรยาย)
   ["learning", /\b(workshop|course|class|classes|training|bootcamp|masterclass|lesson|hands-?on|diy)\b|อบรม|เวิร์กช็อป|เวิร์คช็อป|เวิร์คชอป|คอร์ส|คลาส|เรียนทำ|ฝึกทำ|สอนทำ|ลงมือทำ/i],
   ["seminar", /\b(education|business|seminar|summit|conference|forum|symposium|talk|talks|webinar|meetup|keynote|panel|lecture|ted ?x)\b|สัมมนา|ประชุม|ฟอรั่ม|ทอล์ก|บรรยาย|เสวนา|ปาฐกถา|เรียน/i],
