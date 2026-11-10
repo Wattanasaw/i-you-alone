@@ -2141,5 +2141,68 @@
  "rev|6.417,99.083": "satun",
  "rev|13.757,100.499": "bangkok",
  "rev|18.814,98.982": "chiang-mai",
- "rev|6.783,99.633": "satun"
+ "rev|6.783,99.633": "satun",
+ "yoonique house|bangkok": null,
+ "bru cafe|bangkok": {
+  "lat": 13.72911,
+  "lng": 100.56405,
+  "state": "Bangkok"
+ },
+ "bourbon street restaurant oyster bar boutique hotel|bangkok": {
+  "lat": 13.7606,
+  "lng": 100.4937,
+  "state": "Bangkok"
+ },
+ "ลานหน้า mcdonald central chonburi จ ชลบุรี|chonburi": null,
+ "ลาน cen space ชั้น 1 central korat จ นครราชสีมา|nakhon-ratchasima": null,
+ "อาคารฉลองราชย์ โรงเรียนสาธิต พิบูลบำเพ็ญ มหาวิทยาลัยบูรพา จ ชลบุรี|chonburi": null,
+ "สมาคมนิสิตเก่า จุฬาลงกรณ์มหาวิทยาลัย ภาคเหนือ จ เชียงใหม่|chiang-mai": null,
+ "หอประชุมกานตรัตน์ สโมสรทหารอากาศ|bangkok": null,
+ "mcc hall the mall บางกะปิ|bangkok": null,
+ "ubon hall central ubon จ อุบลราชธานี|ubon-ratchathani": null,
+ "ร้าน nekoemon cafe จ เชียงใหม่|chiang-mai": null,
+ "mcc hall the mall บางแค|bangkok": null,
+ "ชั้น 8 อาคารธนภูมิ|bangkok": {
+  "lat": 13.74917,
+  "lng": 100.55681,
+  "state": "Bangkok"
+ },
+ "เวที panda stage 69 บริเวณหลังสถานีรถไฟ จ สุรินทร์|surin": null,
+ "ห้องพุคยาภรณ์ มหาวิทยาลัยศรีปทุม วิทยาเขตขอนแก่น จ ขอนแก่น|khon-kaen": null,
+ "สถานีกลางกรุงเทพอภิวัฒน์|bangkok": {
+  "lat": 13.80398,
+  "lng": 100.54186,
+  "state": "Bangkok"
+ },
+ "ไอส์แลนด์ ฮอลล์ ชั้น 3 fashion island|bangkok": null,
+ "siamscape|bangkok": {
+  "lat": 13.74453,
+  "lng": 100.53121,
+  "state": "Bangkok"
+ },
+ "สวนช้างเผือก จ เชียงใหม่|chiang-mai": null,
+ "to be announced รอประกาศ|bangkok": null,
+ "เรือนไทยคุณแม่ดร ประภา ภักดิ์โพธิ์ จ ขอนแก่น|khon-kaen": null,
+ "ศูนย์กีฬาในร่ม อาคาร 9 ชั้น 12 มหาวิทยาลัยศรีปทุม|bangkok": null,
+ "central ลาดพร้าว|bangkok": {
+  "lat": 13.80376,
+  "lng": 100.61416,
+  "state": "Bangkok"
+ },
+ "rcb galleria 5 ชั้น 3 ริเวอร์ ซิตี้ แบงค็อก|": null,
+ "ยูเนี่ยน ฮอลล์ 1 และ 2 ชั้น f6 ศูนย์การค้ายูเนี่ยนมอลล์|bangkok": null,
+ "cloud 11 bangkok|bangkok": {
+  "lat": 13.68342,
+  "lng": 100.60829,
+  "state": "Bangkok"
+ },
+ "siam square|bangkok": {
+  "lat": 13.7446,
+  "lng": 100.5331,
+  "state": "Bangkok"
+ },
+ "สัทธา อุทยานไทย อ บางแพ จ ราชบุรี|ratchaburi": null,
+ "บริเวณสะพานข้ามแม่น้ำแคว และลานข้างองค์การบริหารส่วนจังหวัดกาญจนบุรี อ เมือง จ กาญจนบุรี|kanchanaburi": null,
+ "ศูนย์การค้าเทอร์มินอล21 พระราม 3|": null,
+ "dragonray prak บ้านสะเงียว ต กวนวัน อ เมืองฯ จ หนองคาย|nong-khai": null
 }

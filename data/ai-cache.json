@@ -125,27 +125,6 @@
    "summary": "11月期间，暹罗百丽宫（Siam Paragon）将为您带来精彩的现场表演。"
   }
  },
- "ttm-dew-tee-secret-area-fancon": {
-  "sig": "acff82216f1a",
-  "at": "2026-11-07",
-  "ok": true,
-  "reason": null,
-  "category": "concert",
-  "sponsor": null,
-  "age20": false,
-  "th": {
-   "title": "DEW TEE SECRET AREA FANCON",
-   "summary": "งานแฟนคอนเสิร์ต DEW TEE SECRET AREA จัดแสดงผ่านระบบ Live Streaming ทาง TTM LIVE ระหว่างวันที่ 7-27 พฤศจิกายน 2569 บัตรราคา 1,200 ถึง 6,900 บาท"
-  },
-  "en": {
-   "title": "DEW TEE SECRET AREA FANCON",
-   "summary": "DEW TEE SECRET AREA fan concert streamed live via TTM LIVE from November 7-27, 2026. Tickets priced from 1,200 to 6,900 THB."
-  },
-  "zh": {
-   "title": "DEW TEE SECRET AREA FANCON",
-   "summary": "DEW TEE SECRET AREA 粉丝见面会于2026年11月7日至27日通过TTM LIVE直播，票价从1,200至6,900泰铢。"
-  }
- },
  "ep-172847": {
   "sig": "419231d8b3a8",
   "at": "2026-11-07",
@@ -482,27 +461,6 @@
    "summary": "ONE Lumpinee 178 泰拳比赛，在拉因陀罗路的仑披尼拳击馆举行。"
   }
  },
- "ep-180121": {
-  "sig": "6001ec0876af",
-  "at": "2026-11-07",
-  "ok": true,
-  "reason": null,
-  "category": "nightlife",
-  "sponsor": null,
-  "age20": false,
-  "th": {
-   "title": "Queer On Deck",
-   "summary": "ปาร์ตี้เฉลิมฉลองเปิดกว้าง จัดขึ้นที่ Bangkok Island กรุงเทพฯ"
-  },
-  "en": {
-   "title": "Queer On Deck",
-   "summary": "An open-minded nightlife party hosted on Bangkok Island in Bangkok."
-  },
-  "zh": {
-   "title": "Queer On Deck",
-   "summary": "在曼谷 Bangkok Island 举办的包容性夜生活派对。"
-  }
- },
  "eb-1994931622184": {
   "sig": "90ab9bad55cd",
   "at": "2026-11-07",
@@ -567,24 +525,24 @@
   }
  },
  "ttm-namtan-film-glamorous-fancon": {
-  "sig": "f87530850b3f",
-  "at": "2026-11-07",
-  "ok": true,
-  "reason": null,
-  "category": "concert",
+  "sig": "c933fa09e9c9",
+  "at": "2026-11-10",
+  "ok": false,
+  "reason": "เป็นงานไลฟ์สตรีมมิ่งเท่านั้น",
+  "category": "fanmeet",
   "sponsor": null,
   "age20": false,
   "th": {
    "title": "NAMTAN FILM GLAMOROUS FANCON",
-   "summary": "งานแฟนคอนเสิร์ต NAMTAN FILM GLAMOROUS FANCON จัดแสดงรูปแบบ Live Streaming ผ่าน TTM LIVE ตั้งแต่วันที่ 14 พฤศจิกายน ถึง 4 ธันวาคม 2569"
+   "summary": "งานแฟนคอนของน้ำตาลและฟิล์ม รับชมผ่านระบบไลฟ์สตรีมมิ่งโดย TTM LIVE"
   },
   "en": {
    "title": "NAMTAN FILM GLAMOROUS FANCON",
-   "summary": "NAMTAN FILM GLAMOROUS FANCON live streaming via TTM LIVE from November 14 to December 4, 2026."
+   "summary": "A fancon event featuring Namtan and Film, available via live streaming on TTM LIVE."
   },
   "zh": {
    "title": "NAMTAN FILM GLAMOROUS FANCON",
-   "summary": "NAMTAN FILM GLAMOROUS FANCON 粉丝演唱会于 2026 年 11 月 14 日至 12 月 4 日通过 TTM LIVE 进行线上直播。"
+   "summary": "Namtan 和 Film 的粉丝见面会，通过 TTM LIVE 在线直播。"
   }
  },
  "ttm-qwer-2nd-tour-rockation-rocket-launch-in-bangkok": {
@@ -672,24 +630,24 @@
   }
  },
  "ep-181216": {
-  "sig": "301c9db681c2",
-  "at": "2026-11-07",
+  "sig": "3b0c3cb3b55f",
+  "at": "2026-11-10",
   "ok": true,
   "reason": null,
   "category": "concert",
   "sponsor": null,
   "age20": false,
   "th": {
-   "title": "🌍🔥 GAIA MAMA 🔥🌍",
-   "summary": "งานเทศกาลดนตรี GAIA MAMA จัดขึ้นในวันที่ 14 พฤศจิกายน 2569 ณ จังหวัดนครศรีธรรมราช"
+   "title": "GAIA MAMA",
+   "summary": "งานดนตรี GAIA MAMA จ.นครศรีธรรมราช วันที่ 14 พฤศจิกายน 2026"
   },
   "en": {
-   "title": "🌍🔥 GAIA MAMA 🔥🌍",
-   "summary": "GAIA MAMA music festival event on November 14, 2026, in Nakhon Si Thammarat."
+   "title": "GAIA MAMA",
+   "summary": "GAIA MAMA music event in Nakhon Si Thammarat on November 14, 2026."
   },
   "zh": {
-   "title": "🌍🔥 GAIA MAMA 🔥🌍",
-   "summary": "GAIA MAMA 音乐节于 2026 年 11 月 14 日在洛坤府举行。"
+   "title": "GAIA MAMA",
+   "summary": "GAIA MAMA音乐活动，于2026年11月14日在洛坤府举行。"
   }
  },
  "ep-179690": {
@@ -1679,27 +1637,6 @@
    "summary": "雅诗兰黛集团旗下 7 大知名品牌的盛大特卖会，最高享 75% 折扣。"
   }
  },
- "ep-181150": {
-  "sig": "25d0d4c96132",
-  "at": "2026-11-07",
-  "ok": true,
-  "reason": null,
-  "category": "nightlife",
-  "sponsor": null,
-  "age20": true,
-  "th": {
-   "title": "พูลปาร์ตี้ ที่ โฮเต็ล โคลเวอร์ ป่าตอง ภูเก็ต",
-   "summary": "ปูลปาร์ตี้สุดมันส์ในค่ำคืนวันศุกร์ ณ โฮเต็ล โคลเวอร์ ป่าตอง ภูเก็ต พร้อมบรรยากาศริมสระและเครื่องดื่ม"
-  },
-  "en": {
-   "title": "Pool Party at Hotel Clover Patong Phuket",
-   "summary": "Dive into the ultimate Friday night pool party at Hotel Clover Patong Phuket with tropical vibes and drinks."
-  },
-  "zh": {
-   "title": "普吉岛巴东三叶草酒店泳池派对",
-   "summary": "在普吉岛巴东三叶草酒店享受终极周五泳池派对，体验热带风情与清爽饮品。"
-  }
- },
  "ep-179956": {
   "sig": "7cf8fece6a17",
   "at": "2026-11-07",
@@ -1719,27 +1656,6 @@
   "zh": {
    "title": "TALKS ON TAP X White Cloud Ari",
    "summary": "在阿里白云举办的建筑与灾后重建主题讲座，包含一杯免费饮品。"
-  }
- },
- "ep-179459": {
-  "sig": "750cd4b29d98",
-  "at": "2026-11-07",
-  "ok": true,
-  "reason": null,
-  "category": "exhibition",
-  "sponsor": null,
-  "age20": false,
-  "th": {
-   "title": "Art Island",
-   "summary": "งาน Art Island & Gallery Night 2026 จัดโดยวันเลิฟ กรุงเทพฯ ที่ Bangkok Island"
-  },
-  "en": {
-   "title": "Art Island",
-   "summary": "Art Island & Gallery Night 2026 presented by One Love Bangkok at Bangkok Island."
-  },
-  "zh": {
-   "title": "艺术岛",
-   "summary": "由曼谷 One Love 在 Bangkok Island 呈现的 2026 年艺术岛与画廊之夜活动。"
   }
  },
  "ep-160560": {
@@ -1950,27 +1866,6 @@
   "zh": {
    "title": "Reading in the Park EP5",
    "summary": "Reading in the Park EP5读书活动于2026年11月21日在曼谷中央露天剧场举行，免费参加。"
-  }
- },
- "ep-179525": {
-  "sig": "ec388e7a83d6",
-  "at": "2026-11-07",
-  "ok": true,
-  "reason": null,
-  "category": "nightlife",
-  "sponsor": "Bangkok Rooftops",
-  "age20": true,
-  "th": {
-   "title": "Bangkok Rooftops Loy Krathong Pool Party at Centara Grand",
-   "summary": "ปาร์ตี้ริมสระน้ำวันลอยกระทงชั้น 26 โรงแรมเซ็นทาราแกรนด์ เซ็นทรัลเวิลด์ จัดโดย Bangkok Rooftops วันที่ 21 พฤศจิกายน 2569"
-  },
-  "en": {
-   "title": "Bangkok Rooftops Loy Krathong Pool Party at Centara Grand",
-   "summary": "Bangkok Rooftops Loy Krathong pool party on the 26th floor pool deck of Centara Grand at CentralWorld on November 21, 2026."
-  },
-  "zh": {
-   "title": "Bangkok Rooftops Loy Krathong Pool Party at Centara Grand",
-   "summary": "曼谷屋顶派对水灯节泳池派对将于2026年11月21日在CentralwOrld盛泰澜酒店26层泳池甲板举行。"
   }
  },
  "run-JtpJlkvn": {
@@ -2475,27 +2370,6 @@
   "zh": {
    "title": "Life Expo 2025: 健康与福祉博览会",
    "summary": "健康与福祉博览会将于2026年11月27日至29日在 UOB LIVE 举行。"
-  }
- },
- "eb-1989192540436": {
-  "sig": "972649865ae7",
-  "at": "2026-11-08",
-  "ok": true,
-  "reason": null,
-  "category": "seminar",
-  "sponsor": null,
-  "age20": false,
-  "th": {
-   "title": "AI สำหรับผู้หญิง: สร้างสรรค์ เรียนรู้ และเชื่อมต่อ - มีทอัพ AI Goddesses เชียงใหม่",
-   "summary": "มีทอัพสำหรับผู้หญิงระดับเริ่มต้นที่ 4Seas Nimman เพื่อสำรวจวิธีใช้งาน AI ง่ายๆ ด้วยมือถือ"
-  },
-  "en": {
-   "title": "AI for Women: Create, Learn & Connect - AI Goddesses Meetup Chiang Mai",
-   "summary": "A beginner-friendly weekly meetup at 4Seas Nimman for women to explore simple ways to use AI with a phone."
-  },
-  "zh": {
-   "title": "女性人工智能：创作、学习与连接 - 清迈人工智能女神聚会",
-   "summary": "在4Seas Nimman举办适合初学者的每周聚会，女性可在此探索使用手机体验AI的简单方法。"
   }
  },
  "ep-181715": {
@@ -4073,27 +3947,6 @@
    "summary": "BUU Chan Run 2026长跑活动将于2026年12月12日在东方大学尖竹汶分校举行。"
   }
  },
- "ep-179526": {
-  "sig": "449ca924ad7c",
-  "at": "2026-11-08",
-  "ok": true,
-  "reason": null,
-  "category": "nightlife",
-  "sponsor": null,
-  "age20": true,
-  "th": {
-   "title": "Bangkok Rooftops Christmas Pool Party at Centara Grand",
-   "summary": "ปาร์ตี้ริมสระน้ำบนชั้น 26 โรงแรมเซ็นทารา แกรนด์ เซ็นทรัลเวิลด์ จัดขึ้นในธีมคริสต์มาส วันที่ 12 ธันวาคม 2026"
-  },
-  "en": {
-   "title": "Bangkok Rooftops Christmas Pool Party at Centara Grand",
-   "summary": "A Christmas edition rooftop pool party on the 26th floor of Centara Grand at CentralWorld on December 12, 2026."
-  },
-  "zh": {
-   "title": "Bangkok Rooftops Christmas Pool Party at Centara Grand",
-   "summary": "2026年12月12日，曼谷Centara Grand酒店26楼泳池露台将举办圣诞主题屋顶泳池派对。"
-  }
- },
  "tm-belclub22-sundaysocialtinderedition": {
   "sig": "75c0ec900872",
   "at": "2026-11-09",
@@ -4449,48 +4302,6 @@
   "zh": {
    "title": "IDOL LEAGUE 巡演：依善地区",
    "summary": "由 MyMateNate 及知名网络红人带来的精彩11人制足球赛，于2026年11月27日至29日在黎逸、乌隆和孔敬举行。"
-  }
- },
- "luma-2ugtprfg": {
-  "sig": "6ebbfa949420",
-  "at": "2026-11-09",
-  "ok": true,
-  "reason": null,
-  "category": "social",
-  "sponsor": null,
-  "age20": false,
-  "th": {
-   "title": "Thanksgiving Dinner",
-   "summary": "งานเลี้ยงอาหารค่ำวันขอบคุณพระเจ้า จัดโดย The Knights Out ที่ Bourbon Street Restaurant & Oyster Bar เอกมัย วันที่ 27 พฤศจิกายน 2026 เวลา 16:00 - 18:00 น."
-  },
-  "en": {
-   "title": "Thanksgiving Dinner",
-   "summary": "Thanksgiving Buffet hosted by The Knights Out at Bourbon Street Restaurant & Oyster Bar in Ekkamai on November 27, 2026, from 16:00 to 18:00."
-  },
-  "zh": {
-   "title": "感恩节晚餐",
-   "summary": "由 The Knights Out 于2026年11月27日 16:00 至 18:00 在曼谷亿甲迈 Bourbon Street 餐厅举办的感恩节自助餐。"
-  }
- },
- "tm-kliff-coffeeparty": {
-  "sig": "e4edb7c73156",
-  "at": "2026-11-09",
-  "ok": true,
-  "reason": null,
-  "category": "nightlife",
-  "sponsor": null,
-  "age20": false,
-  "th": {
-   "title": "Coffee Party",
-   "summary": "ปาร์ตี้กาแฟธีม White Party ชวนคุณมาแต่งชุดขาวรับวันหยุดที่ Kliff Beach Bistro & Bar วันที่ 28 พฤศจิกายน 2026"
-  },
-  "en": {
-   "title": "Coffee Party",
-   "summary": "A White Party themed coffee event encouraging guests to wear white at Kliff Beach Bistro & Bar on November 28, 2026."
-  },
-  "zh": {
-   "title": "咖啡派对",
-   "summary": "以白色派对为主题的咖啡活动，邀请宾客于2026年11月28日在 Kliff Beach Bistro & Bar 身着白衣参与。"
   }
  },
  "tm-goethe-institut-siang": {
@@ -5751,6 +5562,1644 @@
   "zh": {
    "title": "瀑布节 (2026年12月26日)",
    "summary": "瀑布节派对于2026年12月26日在素叻他尼举行，正值满月派对后两天。"
+  }
+ },
+ "tex-33777": {
+  "sig": "a21a7bfce0f6",
+  "at": "2026-11-10",
+  "ok": true,
+  "reason": null,
+  "category": "market",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "FOOD TRUCK BEACH FOOD FEST",
+   "summary": "เทศกาลอาหารฟู้ดทรัคริมหาดที่เซ็นทรัล พัทยา รวมเมนูคาวหวานและของกินเล่นหลากหลายสไตล์สำหรับสายกิน"
+  },
+  "en": {
+   "title": "FOOD TRUCK BEACH FOOD FEST",
+   "summary": "A food truck festival at Central Pattaya featuring a variety of savory dishes, snacks, and popular menus for foodies."
+  },
+  "zh": {
+   "title": "FOOD TRUCK BEACH FOOD FEST",
+   "summary": "芭堤雅中央购物中心举办的海滩美食车节，汇集了各种风格的咸甜美食和人气小吃。"
+  }
+ },
+ "tm-oneforthegirls-thaicookingclass2": {
+  "sig": "ead8c55f90b1",
+  "at": "2026-11-10",
+  "ok": true,
+  "reason": null,
+  "category": "learning",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "OFTG The Social Kitchen - Thai Cooking Class",
+   "summary": "คลาสเรียนทำอาหารไทยที่เน้นการทำอาหาร ทานอาหารร่วมกัน และพบปะเพื่อนใหม่ในบรรยากาศผ่อนคลาย"
+  },
+  "en": {
+   "title": "OFTG The Social Kitchen - Thai Cooking Class",
+   "summary": "A Thai cooking class designed to bring girls together through cooking, dining, and socializing in a relaxed setting."
+  },
+  "zh": {
+   "title": "OFTG 社交厨房 - 泰式烹饪课",
+   "summary": "在轻松的社交氛围中学习泰式烹饪，通过美食、用餐和交流结识新朋友。"
+  }
+ },
+ "tm-stoonscope-stoondionewyearparty": {
+  "sig": "2ad81c8c8d77",
+  "at": "2026-11-10",
+  "ok": true,
+  "reason": null,
+  "category": "nightlife",
+  "sponsor": null,
+  "age20": true,
+  "th": {
+   "title": "Stoondio: New Year Party",
+   "summary": "คอนเสิร์ตปาร์ตี้ส่งท้ายปี 2026 ของวง Stoondio ที่ Blueprint Livehouse พร้อมกิจกรรมพูดคุยและแจกรางวัล"
+  },
+  "en": {
+   "title": "Stoondio: New Year Party",
+   "summary": "A year-end concert and party for Stoondio fans at Blueprint Livehouse, featuring live music, chats, and prizes."
+  },
+  "zh": {
+   "title": "Stoondio：新年派对",
+   "summary": "Stoondio 乐队在 Blueprint Livehouse 举办的 2026 年终演唱会派对，包含音乐表演和抽奖。"
+  }
+ },
+ "tm-frieren-beyondjourneysendexhibition": {
+  "sig": "c575436f74ab",
+  "at": "2026-11-10",
+  "ok": true,
+  "reason": null,
+  "category": "anime",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "FRIEREN : BEYOND JOURNEY’S END EXHIBITION",
+   "summary": "นิทรรศการการเดินทางของฟรีเรนครั้งแรกในไทย ณ MBK Center ชั้น 4 โซน A สัมผัสเรื่องราวการเดินทางบทใหม่"
+  },
+  "en": {
+   "title": "FRIEREN : BEYOND JOURNEY’S END EXHIBITION",
+   "summary": "The first Frieren exhibition in Thailand at MBK Center, showcasing the journey's end and new tales."
+  },
+  "zh": {
+   "title": "葬送的芙莉莲：旅程终点展览",
+   "summary": "《葬送的芙莉莲》泰国首展，在 MBK Center 4 楼 A 区展示芙莉莲的冒险旅程。"
+  }
+ },
+ "tm-meltlivehouse-membershipnovember2026": {
+  "sig": "d8c99dbd050f",
+  "at": "2026-11-10",
+  "ok": false,
+  "reason": "เป็นหน้าจำหน่ายสมาชิก ไม่ใช่กิจกรรม",
+  "category": "concert",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "Membership: November 2026",
+   "summary": "หน้าจำหน่ายสมาชิกรายเดือนสำหรับ Melt Livehouse ประจำเดือนพฤศจิกายน 2026"
+  },
+  "en": {
+   "title": "Membership: November 2026",
+   "summary": "Monthly membership sales for Melt Livehouse for November 2026."
+  },
+  "zh": {
+   "title": "Membership: November 2026",
+   "summary": "Melt Livehouse 2026 年 11 月的月度会员销售页面。"
+  }
+ },
+ "eb-2002774213586": {
+  "sig": "f7da5d789abe",
+  "at": "2026-11-10",
+  "ok": true,
+  "reason": null,
+  "category": "expo",
+  "sponsor": "QS",
+  "age20": false,
+  "th": {
+   "title": "QS Discover Master's Fair in Bangkok งานเรียนต่อปริญญาโทต่างประเทศ",
+   "summary": "งานแนะแนวการศึกษาต่อปริญญาโทต่างประเทศ พบตัวแทนมหาวิทยาลัยจากสหรัฐอเมริกา แคนาดา สหราชอาณาจักร ยุโรป และเอเชีย"
+  },
+  "en": {
+   "title": "QS Discover Master's Fair in Bangkok",
+   "summary": "Meet university representatives from the US, Canada, UK, Europe, Asia, and more to discuss postgraduate studies."
+  },
+  "zh": {
+   "title": "QS Discover 曼谷海外硕士留学展",
+   "summary": "曼谷海外硕士留学展，与来自美国、英国、欧洲和亚洲的大学代表面对面交流。"
+  }
+ },
+ "tm-meltlivehouse-minglefestival": {
+  "sig": "b0543c7ac6c8",
+  "at": "2026-11-10",
+  "ok": true,
+  "reason": null,
+  "category": "concert",
+  "sponsor": "Waiting Room",
+  "age20": false,
+  "th": {
+   "title": "Melt Livehouse Idea Live : Mingle Festival",
+   "summary": "เทศกาลดนตรี Mingle Festival โดย Waiting Room ณ Idea Live ในวันที่ 11 พฤศจิกายน 2026"
+  },
+  "en": {
+   "title": "Melt Livehouse Idea Live : Mingle Festival",
+   "summary": "Waiting Room presents Mingle Festival at Idea Live on November 11, 2026."
+  },
+  "zh": {
+   "title": "Melt Livehouse Idea Live：Mingle 音乐节",
+   "summary": "由 Waiting Room 主办的 Mingle Festival 音乐节，将于 2026 年 11 月 11 日在 Idea Live 举行。"
+  }
+ },
+ "tm-meltlivehouse-slur": {
+  "sig": "e67dbae7ed8f",
+  "at": "2026-11-10",
+  "ok": true,
+  "reason": null,
+  "category": "concert",
+  "sponsor": "Waiting Room",
+  "age20": false,
+  "th": {
+   "title": "Melt Livehouse Cloud 11 Theater: Slur",
+   "summary": "คอนเสิร์ตวง Slur โดย Waiting Room ณ Melt Livehouse Cloud 11 ในวันที่ 12 พฤศจิกายน 2026"
+  },
+  "en": {
+   "title": "Melt Livehouse Cloud 11 Theater: Slur",
+   "summary": "Waiting Room presents a live performance by Slur at Melt Livehouse Cloud 11 on November 12, 2026."
+  },
+  "zh": {
+   "title": "Melt Livehouse Cloud 11 Theater：Slur 演唱会",
+   "summary": "Waiting Room 在 Melt Livehouse Cloud 11 举办 Slur 乐队演唱会，日期为 2026 年 11 月 12 日。"
+  }
+ },
+ "tm-huhbkk-underground": {
+  "sig": "4108a56972b7",
+  "at": "2026-11-10",
+  "ok": true,
+  "reason": null,
+  "category": "nightlife",
+  "sponsor": null,
+  "age20": true,
+  "th": {
+   "title": "HUH? Underground",
+   "summary": "HUH? พาทุกคนลงไปที่ชั้นใต้ดินของ DUAL พบกับตำนานดีพเฮาส์ DREAM 2 SCIENCE (LIVE) กับเสียงดนตรีที่เหนือกาลเวลา"
+  },
+  "en": {
+   "title": "HUH? Underground",
+   "summary": "HUH? heads to the basement of DUAL featuring deep house legend DREAM 2 SCIENCE (LIVE) and his timeless sound."
+  },
+  "zh": {
+   "title": "HUH? Underground",
+   "summary": "HUH? 走进 DUAL 的地下室，邀请深层浩室传奇人物 DREAM 2 SCIENCE (LIVE) 带来永恒的音乐体验。"
+  }
+ },
+ "tm-swu-katakorn-swuktrfinalselectiongen4": {
+  "sig": "81c31d8057e2",
+  "at": "2026-11-10",
+  "ok": true,
+  "reason": null,
+  "category": "show",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "THE FINAL SELECTION OF SWU KATAKORN 4th GENERATION",
+   "summary": "การคัดเลือกรอบสุดท้ายของ SWU KATAKORN รุ่นที่ 4 ณ หอดนตรีและการแสดงอโศกมนตรี มหาวิทยาลัยศรีนครินทรวิโรฒ"
+  },
+  "en": {
+   "title": "THE FINAL SELECTION OF SWU KATAKORN 4th GENERATION",
+   "summary": "The final selection round for the 4th generation of SWU KATAKORN at Asok Montri Music and Performing Arts Hall."
+  },
+  "zh": {
+   "title": "THE FINAL SELECTION OF SWU KATAKORN 4th GENERATION",
+   "summary": "SWU KATAKORN 第 4 代最终选拔赛将在诗纳卡宁威洛大学 Asok Montri 音乐与表演艺术厅举行。"
+  }
+ },
+ "tm-highnotecnx-echoesfrompoland": {
+  "sig": "577779e046f9",
+  "at": "2026-11-10",
+  "ok": true,
+  "reason": null,
+  "category": "concert",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "Echoes from Poland - Piano Recital - Zofia Lalak",
+   "summary": "การแสดงเปียโนคลาสสิกโดยนักเปียโนชาวโปแลนด์ Zofia Lalak ในค่ำคืนสุดพิเศษที่ High Note เชียงใหม่"
+  },
+  "en": {
+   "title": "Echoes from Poland - Piano Recital - Zofia Lalak",
+   "summary": "A special evening of classical piano with Polish concert pianist Zofia Lalak at High Note, Chiang Mai."
+  },
+  "zh": {
+   "title": "Echoes from Poland - Piano Recital - Zofia Lalak",
+   "summary": "波兰钢琴家 Zofia Lalak 在清迈 High Note 带来的古典钢琴独奏之夜。"
+  }
+ },
+ "ttm-one-lumpinee-2026": {
+  "sig": "852fe3a33c05",
+  "at": "2026-11-10",
+  "ok": true,
+  "reason": null,
+  "category": "outdoor",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "ONE ลุมพินี & The Inner Circle",
+   "summary": "การแข่งขันมวยไทยระดับโลก ONE ลุมพินี ณ สนามมวยเวทีลุมพินี ถนนรามอินทรา"
+  },
+  "en": {
+   "title": "ONE ลุมพินี & The Inner Circle",
+   "summary": "World-class Muay Thai action at ONE Lumpinee, held at the Lumpinee Boxing Stadium on Ram Intra Road."
+  },
+  "zh": {
+   "title": "ONE ลุมพินี & The Inner Circle",
+   "summary": "在 Ram Intra 路的 Lumpinee 拳击场举行的世界级 ONE Lumpinee 泰拳比赛。"
+  }
+ },
+ "tm-bangkokisland-queerondeck13nov": {
+  "sig": "a293d474cd1e",
+  "at": "2026-11-10",
+  "ok": true,
+  "reason": null,
+  "category": "nightlife",
+  "sponsor": null,
+  "age20": true,
+  "th": {
+   "title": "Queer On Deck",
+   "summary": "ค่ำคืนแห่งการเฉลิมฉลองวัฒนธรรมเควียร์และดนตรีเฮาส์บนเรือ Bangkok Island"
+  },
+  "en": {
+   "title": "Queer On Deck",
+   "summary": "A night celebrating queer culture and house music on the Bangkok Island boat."
+  },
+  "zh": {
+   "title": "Queer On Deck",
+   "summary": "在 Bangkok Island 游船上庆祝酷儿文化和浩室音乐的夜晚。"
+  }
+ },
+ "tm-kiseki-youskyscreeninginbkk": {
+  "sig": "258539df8d56",
+  "at": "2026-11-10",
+  "ok": true,
+  "reason": null,
+  "category": "fanmeet",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "Your Sky Hare nochi Koi - Special Screening Event in Bangkok",
+   "summary": "งานฉายรอบพิเศษ Your Sky Hare nochi Koi พบกับนักแสดง Fukuda Ayuta จาก DXTEEN ณ Lido Connect"
+  },
+  "en": {
+   "title": "Your Sky Hare nochi Koi - Special Screening Event in Bangkok",
+   "summary": "Special screening event for Your Sky Hare nochi Koi featuring actor Fukuda Ayuta from DXTEEN at Lido Connect."
+  },
+  "zh": {
+   "title": "Your Sky Hare nochi Koi - Special Screening Event in Bangkok",
+   "summary": "《Your Sky Hare nochi Koi》曼谷特别放映会，DXTEEN 的福田步汰将现身 Lido Connect。"
+  }
+ },
+ "tm-skylinefilmbkk-nov26": {
+  "sig": "90d23d3a6993",
+  "at": "2026-11-10",
+  "ok": true,
+  "reason": null,
+  "category": "film",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "Skyline Film Bangkok ดูหนังบนดาดฟ้า [NOV 2026]",
+   "summary": "ประสบการณ์การชมภาพยนตร์บนดาดฟ้าที่ River City Bangkok ให้คุณได้สร้างช่วงเวลาแห่งความสุขผ่านหนังเรื่องโปรด"
+  },
+  "en": {
+   "title": "Skyline Film Bangkok ดูหนังบนดาดฟ้า [NOV 2026]",
+   "summary": "A rooftop cinema experience at River City Bangkok, inviting you to create happy moments through your favorite movies."
+  },
+  "zh": {
+   "title": "Skyline Film Bangkok ดูหนังบนดาดฟ้า [NOV 2026]",
+   "summary": "曼谷河城 (River City Bangkok) 的屋顶电影院体验，邀您在电影中创造快乐时光。"
+  }
+ },
+ "tm-taogun-fest-2026": {
+  "sig": "91c5e069fc51",
+  "at": "2026-11-10",
+  "ok": true,
+  "reason": null,
+  "category": "festival",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "เท่ากันเฟส Taogun Fest 2026",
+   "summary": "เทศกาลที่รวมดนตรี ศิลปะ ของกิน เวิร์กช็อป และผู้คนหลากหลายไว้ในที่เดียว ณ สถานีรถไฟหัวลำโพง"
+  },
+  "en": {
+   "title": "Taogun Fest 2026",
+   "summary": "A festival combining music, art, food, workshops, and diversity at Hua Lamphong Train Station."
+  },
+  "zh": {
+   "title": "Taogun Fest 2026",
+   "summary": "在华南蓬火车站举办的集音乐、艺术、美食和工作坊于一体的多元化节日。"
+  }
+ },
+ "tm-teknocnx-nimman-rave-15": {
+  "sig": "4e1174628bc5",
+  "at": "2026-11-10",
+  "ok": true,
+  "reason": null,
+  "category": "nightlife",
+  "sponsor": "Tekno.CNX",
+  "age20": true,
+  "th": {
+   "title": "// NIMMAN TECHNO RAVE @ Warmup Café [LOUNGE]",
+   "summary": "Tekno.CNX นำเสนอคืนแห่งดนตรี Techno ที่ Warmup Café เชียงใหม่ พร้อมจังหวะ Hard Groovy และ Deep Hypnotic"
+  },
+  "en": {
+   "title": "// NIMMAN TECHNO RAVE @ Warmup Café [LOUNGE]",
+   "summary": "Tekno.CNX presents a night of Techno music at Warmup Café, Chiang Mai, featuring Hard Groovy and Deep Hypnotic frequencies."
+  },
+  "zh": {
+   "title": "// NIMMAN TECHNO RAVE @ Warmup Café [LOUNGE]",
+   "summary": "Tekno.CNX 在清迈 Warmup Café 举办 Techno 之夜，带来硬核律动和深度催眠频率。"
+  }
+ },
+ "tm-bangkokisland-uselessandpathetic": {
+  "sig": "eed8748b1cf2",
+  "at": "2026-11-10",
+  "ok": true,
+  "reason": null,
+  "category": "nightlife",
+  "sponsor": null,
+  "age20": true,
+  "th": {
+   "title": "USELESS AND PATHETIC",
+   "summary": "หลีกหนีความวุ่นวายในกรุงเทพฯ มาสนุกกับกิจกรรมบนเรือ Bangkok Island ในคืนวันศุกร์ที่ 13 พฤศจิกายน"
+  },
+  "en": {
+   "title": "USELESS AND PATHETIC",
+   "summary": "Break the loop of city life and bring your energy to the river at Bangkok Island on Friday, 13 November."
+  },
+  "zh": {
+   "title": "USELESS AND PATHETIC",
+   "summary": "11月13日星期五，在曼谷岛（Bangkok Island）的游船上感受河畔活力，逃离城市喧嚣。"
+  }
+ },
+ "tm-commartsacsp2-raklaekphop": {
+  "sig": "59a6ef1625b7",
+  "at": "2026-11-10",
+  "ok": true,
+  "reason": null,
+  "category": "show",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "นิเทศกาลครั้งที่ 5 ละครเวที รักแลกภพ(ห์) : LOVE, FATE & PHOP",
+   "summary": "ละครเวทีแนวโรแมนติกคอมเมดี้ แฟนตาซี และผี เรื่องราวของ 'ภพ' วิญญาณเร่ร่อนกับภารกิจความรัก ณ โรงเรียนอัสสัมชัญสมุทรปราการ"
+  },
+  "en": {
+   "title": "LOVE, FATE & PHOP: ACSP Original Stage Play",
+   "summary": "A romantic comedy, fantasy, and ghost stage play about 'Phop', a wandering spirit on a mission, at Assumption College Samutprakarn."
+  },
+  "zh": {
+   "title": "LOVE, FATE & PHOP：ACSP 原创舞台剧",
+   "summary": "在圣母升天学院北榄府分校上演的浪漫喜剧、奇幻鬼怪舞台剧，讲述游魂“Phop”的任务故事。"
+  }
+ },
+ "tm-meltlivehouse-thebottomblues": {
+  "sig": "7a6f2664d382",
+  "at": "2026-11-10",
+  "ok": true,
+  "reason": null,
+  "category": "concert",
+  "sponsor": "Waiting Room",
+  "age20": false,
+  "th": {
+   "title": "Melt Livehouse Cloud 11 Theater: The Bottom Blues",
+   "summary": "Waiting Room ภูมิใจเสนอคอนเสิร์ต The Bottom Blues ณ Melt Livehouse Cloud 11 Theater"
+  },
+  "en": {
+   "title": "Melt Livehouse Cloud 11 Theater: The Bottom Blues",
+   "summary": "Waiting Room presents The Bottom Blues live at Melt Livehouse Cloud 11 Theater."
+  },
+  "zh": {
+   "title": "Melt Livehouse Cloud 11 Theater: The Bottom Blues",
+   "summary": "Waiting Room 在 Melt Livehouse Cloud 11 Theater 呈现 The Bottom Blues 演唱会。"
+  }
+ },
+ "tm-everclear-murrphanthropol": {
+  "sig": "6cd1bb0dc51f",
+  "at": "2026-11-10",
+  "ok": true,
+  "reason": null,
+  "category": "concert",
+  "sponsor": "Now What Can You Do",
+  "age20": false,
+  "th": {
+   "title": "everclear: murrph. & ANTHROPOL",
+   "summary": "Now What Can You Do นำเสนอ murrph. & ANTHROPOL ที่ everclear งานนี้ไม่จำกัดอายุ"
+  },
+  "en": {
+   "title": "everclear: murrph. & ANTHROPOL",
+   "summary": "Now What Can You Do presents murrph. & ANTHROPOL at everclear. This event has no age limit."
+  },
+  "zh": {
+   "title": "everclear: murrph. & ANTHROPOL",
+   "summary": "Now What Can You Do 在 everclear 呈现 murrph. & ANTHROPOL，活动不设年龄限制。"
+  }
+ },
+ "eb-2003451384021": {
+  "sig": "9b1a629cd0ac",
+  "at": "2026-11-10",
+  "ok": true,
+  "reason": null,
+  "category": "learning",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "เวิร์กช็อป AI สำหรับมือใหม่",
+   "summary": "เวิร์กช็อปสอนการใช้ AI เบื้องต้นสำหรับผู้เริ่มต้นและคนทำงานประจำ ณ Yaru @ Grande Centre Point Lumphini"
+  },
+  "en": {
+   "title": "AI Workshop for Beginners",
+   "summary": "An introductory AI workshop specifically designed for beginners and full-time employees at Yaru @ Grande Centre Point Lumphini."
+  },
+  "zh": {
+   "title": "面向初学者的 AI 工作坊",
+   "summary": "在 Yaru @ Grande Centre Point Lumphini 举办的 AI 入门工作坊，专为初学者和上班族设计。"
+  }
+ },
+ "tm-activeroots-chasethelastlight": {
+  "sig": "fd817b527a19",
+  "at": "2026-11-10",
+  "ok": true,
+  "reason": null,
+  "category": "outdoor",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "Chase the Last Light",
+   "summary": "กิจกรรมเดินป่าชมพระอาทิตย์ตกที่แหลมกระทิง จังหวัดภูเก็ต เพื่อสัมผัสธรรมชาติและออกกำลังกาย"
+  },
+  "en": {
+   "title": "Chase the Last Light",
+   "summary": "A sunset hiking activity at Laem Krating, Phuket, to experience nature and get active."
+  },
+  "zh": {
+   "title": "Chase the Last Light",
+   "summary": "在普吉岛 Laem Krating 举行的落日徒步活动，带您亲近自然，尽情运动。"
+  }
+ },
+ "tm-oneforthegirls-brunchandswap": {
+  "sig": "1cf2d9750d83",
+  "at": "2026-11-10",
+  "ok": true,
+  "reason": null,
+  "category": "market",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "OFTG Brunch and Swap",
+   "summary": "งานแลกเปลี่ยนเสื้อผ้าและรับประทานบรันช์ร่วมกันเพื่ออัปไซเคิลแฟชั่นและพบปะเพื่อนใหม่"
+  },
+  "en": {
+   "title": "OFTG Brunch and Swap",
+   "summary": "A wardrobe refresh and clothes swap event featuring brunch and upcycling activities."
+  },
+  "zh": {
+   "title": "OFTG Brunch and Swap",
+   "summary": "衣服交换与早午餐活动，旨在更新衣橱、进行旧衣改造并结识新朋友。"
+  }
+ },
+ "tm-br-beloved-child-moviethechosen601": {
+  "sig": "9d40fd8d9e37",
+  "at": "2026-11-10",
+  "ok": true,
+  "reason": null,
+  "category": "film",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "Movie & Worship Night with THE CHOSEN",
+   "summary": "งานฉายซีรีส์ The Chosen SS6 EP.1 รอบพิเศษก่อนใคร พร้อมกิจกรรมนมัสการโดยกลุ่ม BR ลูกรักพระเยซู"
+  },
+  "en": {
+   "title": "Movie & Worship Night with THE CHOSEN",
+   "summary": "An exclusive screening of The Chosen SS6 EP.1 followed by a worship session."
+  },
+  "zh": {
+   "title": "Movie & Worship Night with THE CHOSEN",
+   "summary": "《拣选》第六季第一集独家放映会及敬拜之夜。"
+  }
+ },
+ "tm-cardaddicted-tce2nd": {
+  "sig": "529a5d93a2b8",
+  "at": "2026-11-10",
+  "ok": true,
+  "reason": null,
+  "category": "anime",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "Thailand Card Exhibition ครั้งที่ 2",
+   "summary": "งานรวมการ์ดสะสมใจกลางกรุงเทพฯ ทั้งซื้อ ขาย และแลกเปลี่ยน จากร้านค้ากว่า 100 ร้าน"
+  },
+  "en": {
+   "title": "Thailand Card Exhibition 2nd",
+   "summary": "A major trading card event in Bangkok featuring over 100 shops for buying, selling, and trading."
+  },
+  "zh": {
+   "title": "第二届泰国卡牌展",
+   "summary": "曼谷市中心的卡牌盛会，汇集超过100家店铺，涵盖宝可梦、海贼王等各类收藏卡牌。"
+  }
+ },
+ "tm-poyfestival-2026": {
+  "sig": "803d2ea589e7",
+  "at": "2026-11-10",
+  "ok": true,
+  "reason": null,
+  "category": "concert",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "Poy Festival 2026",
+   "summary": "เทศกาลดนตรีที่เชียงใหม่ พบกับศิลปินมากมาย เช่น อาภาพร นครสวรรค์, Flure, และ Srirajah Rockers"
+  },
+  "en": {
+   "title": "Poy Festival 2026",
+   "summary": "A music festival in Chiang Mai featuring artists like Aphaphorn Nakhonsawan, Flure, and Srirajah Rockers."
+  },
+  "zh": {
+   "title": "2026 Poy 音乐节",
+   "summary": "清迈音乐节，演出阵容包括 Aphaphorn Nakhonsawan、Flure 和 Srirajah Rockers 等。"
+  }
+ },
+ "tm-wastedartcollective-pots-of-colors": {
+  "sig": "ef186fe95612",
+  "at": "2026-11-10",
+  "ok": true,
+  "reason": null,
+  "category": "learning",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "Paint & Connect: Pots of Colors",
+   "summary": "เวิร์กช็อปเพ้นท์กระถางเซรามิกในบรรยากาศผ่อนคลายเพื่อสร้างสรรค์ผลงานและพบปะเพื่อนใหม่"
+  },
+  "en": {
+   "title": "Paint & Connect: Pots of Colors",
+   "summary": "A creative pottery painting workshop designed for relaxation and making new connections."
+  },
+  "zh": {
+   "title": "Paint & Connect: Pots of Colors",
+   "summary": "创意陶器绘画工作坊，在轻松的氛围中创作并结识新朋友。"
+  }
+ },
+ "tm-tyoynewmusic-making-room": {
+  "sig": "e6e4c80f2741",
+  "at": "2026-11-10",
+  "ok": true,
+  "reason": null,
+  "category": "concert",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "Making room - Film | Sound | Visual",
+   "summary": "งานฉายภาพยนตร์สั้นประกอบการแสดงดนตรีสดและวิชวลอาร์ตโดย TYOY และ PEETI FILM"
+  },
+  "en": {
+   "title": "Making room - Film | Sound | Visual",
+   "summary": "A short film screening featuring live music and visual performances hosted by TYOY and PEETI FILM."
+  },
+  "zh": {
+   "title": "Making room - 电影 | 声音 | 视觉",
+   "summary": "由 TYOY 和 PEETI FILM 主办的短片放映会，伴有现场音乐和视觉表演。"
+  }
+ },
+ "tm-dual-1411": {
+  "sig": "070f7951b6f6",
+  "at": "2026-11-10",
+  "ok": true,
+  "reason": null,
+  "category": "nightlife",
+  "sponsor": null,
+  "age20": true,
+  "th": {
+   "title": "Dual 14.11",
+   "summary": "คืนแห่งดนตรีอิเล็กทรอนิกส์กับดีเจใน 2 ห้อง 2 สไตล์ ณ DUAL กรุงเทพฯ"
+  },
+  "en": {
+   "title": "Dual 14.11",
+   "summary": "A night of electronic music featuring DJs across two rooms with different energies at DUAL Bangkok."
+  },
+  "zh": {
+   "title": "Dual 14.11",
+   "summary": "曼谷 DUAL 俱乐部的电子音乐之夜，两个房间呈现不同风格的 DJ 表演。"
+  }
+ },
+ "tm-aoklit-concert-aoklit-bside": {
+  "sig": "1db34ba166f4",
+  "at": "2026-11-10",
+  "ok": true,
+  "reason": null,
+  "category": "concert",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "Aoklit B-Side Concert",
+   "summary": "คอนเสิร์ต Story On Air ที่เปลี่ยนห้องส่งเป็นเวทีถ่ายทอดเรื่องราวผ่านบทเพลงของเหล่าศิลปิน"
+  },
+  "en": {
+   "title": "Aoklit B-Side Concert",
+   "summary": "A \"Story On Air\" concert transforming a studio into a stage to tell artists' stories through music."
+  },
+  "zh": {
+   "title": "Aoklit B-Side 演唱会",
+   "summary": "“Story On Air”主题演唱会，将直播间化为舞台，通过音乐讲述艺术家的故事。"
+  }
+ },
+ "tm-morerice-maitrichitproject6": {
+  "sig": "9718d68b7349",
+  "at": "2026-11-10",
+  "ok": true,
+  "reason": null,
+  "category": "nightlife",
+  "sponsor": null,
+  "age20": true,
+  "th": {
+   "title": "Maitri Chit Project w/ Tornado Wallace & Hidden Sphures",
+   "summary": "Maitri Chit Project ณ Bar Temp. พบกับ Tornado Wallace และ Hidden Sphures วันที่ 14-15 พ.ย. 2026"
+  },
+  "en": {
+   "title": "Maitri Chit Project w/ Tornado Wallace & Hidden Spheres",
+   "summary": "Maitri Chit Project at Bar Temp. features Tornado Wallace and Hidden Spheres on Nov 14-15, 2026."
+  },
+  "zh": {
+   "title": "Maitri Chit Project w/ Tornado Wallace & Hidden Spheres",
+   "summary": "Maitri Chit Project 在 Bar Temp. 举办，由 Tornado Wallace 和 Hidden Spheres 带来演出，时间为2026年11月14日至15日。"
+  }
+ },
+ "tm-everclear-sokandvavava": {
+  "sig": "490666ca33d1",
+  "at": "2026-11-10",
+  "ok": true,
+  "reason": null,
+  "category": "nightlife",
+  "sponsor": "Now What Can You Do",
+  "age20": false,
+  "th": {
+   "title": "everclear: SOK & VAVAVA",
+   "summary": "Now What Can You Do เสนอ SOK & VAVAVA ณ everclear วันที่ 14 พ.ย. 2026 บัตรราคา 150 บาท"
+  },
+  "en": {
+   "title": "everclear: SOK & VAVAVA",
+   "summary": "Now What Can You Do presents SOK & VAVAVA at everclear on Nov 14, 2026. Tickets cost 150 THB."
+  },
+  "zh": {
+   "title": "everclear: SOK & VAVAVA",
+   "summary": "Now What Can You Do 在 everclear 呈现 SOK & VAVAVA 演出，日期为2026年11月14日，票价150泰铢。"
+  }
+ },
+ "tm-baanfahlemarche-sueathanapol": {
+  "sig": "e3ab82d11b15",
+  "at": "2026-11-10",
+  "ok": true,
+  "reason": null,
+  "category": "concert",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "BFM Music : เสือ ธนพล",
+   "summary": "คอนเสิร์ต เสือ ธนพล ณ ตลาดบ้านฟ้า เลอ มาร์เช่ จังหวัดปทุมธานี วันที่ 14 พ.ย. 2026"
+  },
+  "en": {
+   "title": "BFM Music : Suea Thanapol",
+   "summary": "Concert by Suea Thanapol at Talad Baan Fah Le Marche, Pathum Thani on Nov 14, 2026."
+  },
+  "zh": {
+   "title": "BFM Music : Suea Thanapol",
+   "summary": "Suea Thanapol 演唱会于2026年11月14日在巴吞他尼府 Talad Baan Fah Le Marche 举行。"
+  }
+ },
+ "luma-fiq0cthk": {
+  "sig": "4b1ed50dd070",
+  "at": "2026-11-10",
+  "ok": true,
+  "reason": null,
+  "category": "social",
+  "sponsor": "Logitech",
+  "age20": false,
+  "th": {
+   "title": "Sabai x Logitech: Ready Player, Run",
+   "summary": "กิจกรรม Sabai x Logitech: Ready Player, Run ณ Yoonique House กรุงเทพฯ วันที่ 14 พ.ย. 2026 เข้าชมฟรี"
+  },
+  "en": {
+   "title": "Sabai x Logitech: Ready Player, Run",
+   "summary": "Sabai x Logitech: Ready Player, Run event at Yoonique House, Bangkok on Nov 14, 2026. Free admission."
+  },
+  "zh": {
+   "title": "Sabai x Logitech: Ready Player, Run",
+   "summary": "Sabai x Logitech: Ready Player, Run 活动于2026年11月14日在曼谷 Yoonique House 举行，免费入场。"
+  }
+ },
+ "luma-47e5zzne": {
+  "sig": "1105504211e9",
+  "at": "2026-11-10",
+  "ok": true,
+  "reason": null,
+  "category": "social",
+  "sponsor": "ARK",
+  "age20": false,
+  "th": {
+   "title": "Cat Spotting In The Park",
+   "summary": "กิจกรรมเดินเล่นส่องแมวและตามหาแก๊งแมวนั่งบาร์ที่สวนลุมพินี วันที่ 14 พ.ย. 2026 เข้าชมฟรี"
+  },
+  "en": {
+   "title": "Cat Spotting In The Park",
+   "summary": "Cat spotting and walking event at Lumpini Park on Nov 14, 2026. Free admission."
+  },
+  "zh": {
+   "title": "Cat Spotting In The Park",
+   "summary": "2026年11月14日在伦披尼公园举行猫咪漫步与寻猫活动，免费入场。"
+  }
+ },
+ "luma-nzu9abdi": {
+  "sig": "b52187b95077",
+  "at": "2026-11-10",
+  "ok": true,
+  "reason": null,
+  "category": "run",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "NIGHT RUN BY RUNLAR.CLUB",
+   "summary": "กิจกรรมวิ่งยามเย็น 4 กิโลเมตร สำรวจย่านเมืองเก่ากรุงเทพฯ เริ่มต้นที่มิวเซียมสยาม วันที่ 14 พ.ย. 2026 เข้าชมฟรี"
+  },
+  "en": {
+   "title": "NIGHT RUN BY RUNLAR.CLUB",
+   "summary": "4K evening running event exploring Bangkok's old town starting from Museum Siam on Nov 14, 2026. Free admission."
+  },
+  "zh": {
+   "title": "NIGHT RUN BY RUNLAR.CLUB",
+   "summary": "2026年11月14日举行4公里曼谷老城区夜跑活动，起点为暹罗博物馆，免费入场。"
+  }
+ },
+ "po-bp-x-bpip-exhibition-2026-cosplay-cover-dance-cont-2026-11-14": {
+  "sig": "04aeff88321a",
+  "at": "2026-11-10",
+  "ok": true,
+  "reason": null,
+  "category": "anime",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "BP x BPIP EXHIBITION 2026 Cosplay & Cover Dance Contest",
+   "summary": "งานประกวดคอสเพลย์และCover Dance ณ ลานหน้า McDonald Central Chonburi จ.ชลบุรี วันที่ 14 พ.ย. 2026"
+  },
+  "en": {
+   "title": "BP x BPIP EXHIBITION 2026 Cosplay & Cover Dance Contest",
+   "summary": "Cosplay and cover dance contest in front of McDonald's at Central Chonburi on Nov 14, 2026."
+  },
+  "zh": {
+   "title": "BP x BPIP EXHIBITION 2026 Cosplay & Cover Dance Contest",
+   "summary": "春武里府 Central 麦当劳门前广场于2026年11月14日举办角色扮演与翻跳舞蹈大赛。"
+  }
+ },
+ "po-central-korat-camping-cosplay-cover-dance-contest--2026-11-14": {
+  "sig": "be0f1ef0c3ac",
+  "at": "2026-11-10",
+  "ok": true,
+  "reason": null,
+  "category": "anime",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "Central Korat Camping Cosplay & Cover Dance Contest 2026",
+   "summary": "งานประกวดคอสเพลย์ ณ ลาน Cen Space ชั้น 1 Central Korat จ.นครราชสีมา วันที่ 14-15 พ.ย. 2026"
+  },
+  "en": {
+   "title": "Central Korat Camping Cosplay & Cover Dance Contest 2026",
+   "summary": "Cosplay contest at Cen Space, 1st Floor, Central Korat, Nakhon Ratchasima on Nov 14-15, 2026."
+  },
+  "zh": {
+   "title": "Central Korat Camping Cosplay & Cover Dance Contest 2026",
+   "summary": "呵叻 Central 商场 1楼 Cen Space 于2026年11月14日至15日举办角色扮演大赛。"
+  }
+ },
+ "tex-33531": {
+  "sig": "539498b0f439",
+  "at": "2026-11-10",
+  "ok": true,
+  "reason": null,
+  "category": "festival",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "SELF LOVE Festival",
+   "summary": "เทศกาลเพื่อการฮีลใจและรักตัวเอง จัดขึ้นที่ CLOUD 11 กรุงเทพฯ วันที่ 14-15 พฤศจิกายน 2026"
+  },
+  "en": {
+   "title": "SELF LOVE Festival",
+   "summary": "A self-love and healing festival taking place at CLOUD 11, Bangkok on November 14-15, 2026."
+  },
+  "zh": {
+   "title": "SELF LOVE Festival",
+   "summary": "自我关爱与心灵治愈音乐节，于2026年11月14日至15日在曼谷CLOUD 11举行。"
+  }
+ },
+ "tex-33405": {
+  "sig": "cb4ca36c126d",
+  "at": "2026-11-10",
+  "ok": true,
+  "reason": null,
+  "category": "concert",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "Nongkhai Music Festival 2026",
+   "summary": "เทศกาลดนตรีริมโขงพบกับ 8 ศิลปินระดับประเทศ ณ Dragonray Prak จ.หนองคาย วันที่ 14 พฤศจิกายน 2026"
+  },
+  "en": {
+   "title": "Nongkhai Music Festival 2026",
+   "summary": "Mekong riverside music festival featuring 8 national artists at Dragonray Prak, Nong Khai on November 14, 2026."
+  },
+  "zh": {
+   "title": "Nongkhai Music Festival 2026",
+   "summary": "湄公河畔音乐节，汇聚8位泰国知名艺人，于2026年11月14日在廊开府Dragonray Prak举行。"
+  }
+ },
+ "ep-174077": {
+  "sig": "2428432ac658",
+  "at": "2026-11-10",
+  "ok": true,
+  "reason": null,
+  "category": "concert",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "BNK48 & CGM48 Senbatsu General Election 2026: Final Results",
+   "summary": "งานประกาศผลการเลือกตั้งเซ็มบัตสึ BNK48 และ CGM48 ณ MCC Hall เดอะมอลล์ไลฟ์สโตร์ บางกะปิ วันที่ 14 พฤศจิกายน 2026"
+  },
+  "en": {
+   "title": "BNK48 & CGM48 Senbatsu General Election 2026: Final Results",
+   "summary": "BNK48 & CGM48 Senbatsu General Election 2026 final results announcement at MCC Hall, The Mall Lifestore Bangkapi on November 14, 2026."
+  },
+  "zh": {
+   "title": "BNK48 & CGM48 Senbatsu General Election 2026: Final Results",
+   "summary": "BNK48与CGM48选拔总选举2026最终结果发布会，于2026年11月14日在曼谷邦卡皮The Mall商场MCC Hall举行。"
+  }
+ },
+ "ttmx-ticketmaster-co-th-activity-detail-26th-sojisub": {
+  "sig": "3bbf7a333a13",
+  "at": "2026-11-10",
+  "ok": true,
+  "reason": null,
+  "category": "kpop",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "2026 SO JI SUB ASIA FANMEETING TOUR [Soulmate The Timeless] IN BANGKOK",
+   "summary": "งานแฟนมีตติ้งของ โซ จีซบ ณ ยูโอบี ไลฟ์ เอ็มสเฟียร์ วันที่ 15 พฤศจิกายน 2026"
+  },
+  "en": {
+   "title": "2026 SO JI SUB ASIA FANMEETING TOUR [Soulmate The Timeless] IN BANGKOK",
+   "summary": "So Ji Sub Asia Fanmeeting Tour at UOB LIVE, EmSphere on November 15, 2026."
+  },
+  "zh": {
+   "title": "2026 SO JI SUB ASIA FANMEETING TOUR [Soulmate The Timeless] IN BANGKOK",
+   "summary": "苏志燮亚洲粉丝见面会曼谷站，于2026年11月15日在曼谷UOB LIVE (EmSphere)举行。"
+  }
+ },
+ "tm-grandstarconnext-namneung-chapter30": {
+  "sig": "65f61b3f0bbd",
+  "at": "2026-11-10",
+  "ok": true,
+  "reason": null,
+  "category": "fanmeet",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "Namneung Fan Meeting THE FEELING OF US: Written With You, Chapter 30",
+   "summary": "งานแฟนมีตติ้ง น้ำหนึ่ง ณ NT AUDITORIUM สำนักงานใหญ่ แจ้งวัฒนะ วันที่ 15 พฤศจิกายน 2026"
+  },
+  "en": {
+   "title": "Namneung Fan Meeting THE FEELING OF US: Written With You, Chapter 30",
+   "summary": "Namneung fan meeting at NT Auditorium, Chaeng Watthana on November 15, 2026."
+  },
+  "zh": {
+   "title": "Namneung Fan Meeting THE FEELING OF US: Written With You, Chapter 30",
+   "summary": "Namneung粉丝见面会，于2026年11月15日在曼谷Chaeng Watthana的NT礼堂举行。"
+  }
+ },
+ "tm-activeroots-sawadikadance": {
+  "sig": "93e70d3c9c19",
+  "at": "2026-11-10",
+  "ok": true,
+  "reason": null,
+  "category": "learning",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "Dance Studio Social",
+   "summary": "คลาสเต้นโซเชียลที่ไม่ต้องมีพื้นฐาน ที่ South Timez Dance Academy ภูเก็ต วันที่ 15 พฤศจิกายน 2026"
+  },
+  "en": {
+   "title": "Dance Studio Social",
+   "summary": "Beginner-friendly dance class at South Timez Dance Academy, Phuket on November 15, 2026."
+  },
+  "zh": {
+   "title": "Dance Studio Social",
+   "summary": "适合新手的社交舞蹈课，于2026年11月15日在普吉岛South Timez Dance Academy举行。"
+  }
+ },
+ "tm-activeroots-muaythaitogether": {
+  "sig": "fdb2f43bec8a",
+  "at": "2026-11-10",
+  "ok": true,
+  "reason": null,
+  "category": "outdoor",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "Muay Thai Together",
+   "summary": "คลาสฝึกมวยไทยและออกกำลังกาย ณ Kangaroo Muay Thai ภูเก็ต วันที่ 15 พฤศจิกายน 2026"
+  },
+  "en": {
+   "title": "Muay Thai Together",
+   "summary": "Muay Thai training and fitness class at Kangaroo Muay Thai, Phuket on November 15, 2026."
+  },
+  "zh": {
+   "title": "Muay Thai Together",
+   "summary": "泰拳训练与健身课程，于2026年11月15日在普吉岛Kangaroo Muay Thai举行。"
+  }
+ },
+ "tm-tailai-bossbirthday": {
+  "sig": "6ea627a23022",
+  "at": "2026-11-10",
+  "ok": true,
+  "reason": null,
+  "category": "fanmeet",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "BOSS BIRTHDAY FAN MEETING: FEELING LUCKY",
+   "summary": "ร่วมฉลองวันเกิดปีที่ 27 ของบอสในงาน BOSS BIRTHDAY FAN MEETING: FEELING LUCKY ที่ Vela Studio รามอินทรา วันที่ 15 พฤศจิกายน 2569"
+  },
+  "en": {
+   "title": "BOSS BIRTHDAY FAN MEETING: FEELING LUCKY",
+   "summary": "Celebrate Boss's 27th birthday at the BOSS BIRTHDAY FAN MEETING: FEELING LUCKY at Vela Studio, Ram Intra on November 15, 2026."
+  },
+  "zh": {
+   "title": "BOSS BIRTHDAY FAN MEETING: FEELING LUCKY",
+   "summary": "参与BOSS 27岁生日粉丝见面会，于2026年11月15日在曼谷Ram Intra的Vela Studio举行。"
+  }
+ },
+ "tm-workpoint-the-wall-song-celebrate-6yrs": {
+  "sig": "7a18c2e04516",
+  "at": "2026-11-10",
+  "ok": true,
+  "reason": null,
+  "category": "show",
+  "sponsor": "RS",
+  "age20": false,
+  "th": {
+   "title": "THE WALL SONG CELEBRATE 6 YEARS",
+   "summary": "ฉลอง 6 ปี ร้องข้ามกำแพง กับเทปพิเศษและเหล่าซุปตาร์ตัวท็อป ที่ BIG HALL WORKPOINT วันที่ 15 พฤศจิกายน 2569"
+  },
+  "en": {
+   "title": "THE WALL SONG CELEBRATE 6 YEARS",
+   "summary": "Celebrate 6 years of The Wall Song with a special tape and top superstars at BIG HALL WORKPOINT on November 15, 2026."
+  },
+  "zh": {
+   "title": "THE WALL SONG CELEBRATE 6 YEARS",
+   "summary": "庆祝《The Wall Song》开播6周年特别录制，顶级明星齐聚BIG HALL WORKPOINT，时间为2026年11月15日。"
+  }
+ },
+ "luma-t9lhwuh3": {
+  "sig": "02619afc3fda",
+  "at": "2026-11-10",
+  "ok": true,
+  "reason": null,
+  "category": "run",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "MORNING BRU CAFE SOURDOUGH PARTY",
+   "summary": "กิจกรรมวิ่งและสังสรรค์ยามเช้าที่ Bru Cafe สุขุมวิท 20 วันที่ 15 พฤศจิกายน 2569"
+  },
+  "en": {
+   "title": "MORNING BRU CAFE SOURDOUGH PARTY",
+   "summary": "A morning running and mingling party at Bru Cafe Sukhumvit 20 on November 15, 2026."
+  },
+  "zh": {
+   "title": "MORNING BRU CAFE SOURDOUGH PARTY",
+   "summary": "于2026年11月15日在素坤逸20巷Bru Cafe举办的早晨跑步与社交派对。"
+  }
+ },
+ "tex-33751": {
+  "sig": "70a1eb8d9b69",
+  "at": "2026-11-10",
+  "ok": true,
+  "reason": null,
+  "category": "festival",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "ประเพณีลอยกระทง เผาเทียนเล่นไฟ จังหวัดสุโขทัย ประจำปี 2569",
+   "summary": "งานประเพณีลอยกระทง เผาเทียนเล่นไฟ สุโขทัย จัดขึ้นที่วัดชนะสงคราม อุทยานประวัติศาสตร์สุโขทัย ระหว่างวันที่ 15-24 พฤศจิกายน 2569"
+  },
+  "en": {
+   "title": "Sukhothai Loi Krathong and Candle Festival 2026",
+   "summary": "The Sukhothai Loi Krathong and Candle Festival at Wat Chana Songkhram, Sukhothai Historical Park, from November 15-24, 2026."
+  },
+  "zh": {
+   "title": "2026年素可泰水灯节",
+   "summary": "素可泰水灯节于2026年11月15日至24日在素可泰历史公园Wat Chana Songkhram举行。"
+  }
+ },
+ "eb-1857764927909": {
+  "sig": "493af891acec",
+  "at": "2026-11-10",
+  "ok": true,
+  "reason": null,
+  "category": "social",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "Solo travellers: casual hangout in Chiang Mai (4pm)",
+   "summary": "กิจกรรมพบปะสังสรรค์สำหรับนักเดินทางคนเดียว ที่อนุสาวรีย์สามกษัตริย์ เชียงใหม่ วันที่ 15 พฤศจิกายน 2569"
+  },
+  "en": {
+   "title": "Solo travellers: casual hangout in Chiang Mai (4pm)",
+   "summary": "A casual meetup for solo travelers at the Three Kings Monument in Chiang Mai on November 15, 2026."
+  },
+  "zh": {
+   "title": "Solo travellers: casual hangout in Chiang Mai (4pm)",
+   "summary": "2026年11月15日在清迈三王纪念碑举行的单人旅行者休闲聚会。"
+  }
+ },
+ "tm-339-chrismelling": {
+  "sig": "728e1262f471",
+  "at": "2026-11-10",
+  "ok": true,
+  "reason": null,
+  "category": "nightlife",
+  "sponsor": "J FLOW",
+  "age20": true,
+  "th": {
+   "title": "Chris 'The Magician' Melling",
+   "summary": "ค่ำคืนพิเศษกับ Chris Melling ที่ The Sportsman Sports Bar and Restaurant กรุงเทพฯ วันที่ 16 พฤศจิกายน 2569"
+  },
+  "en": {
+   "title": "Chris 'The Magician' Melling",
+   "summary": "An evening with Chris Melling at The Sportsman Sports Bar and Restaurant in Bangkok on November 16, 2026."
+  },
+  "zh": {
+   "title": "Chris 'The Magician' Melling",
+   "summary": "2026年11月16日在曼谷The Sportsman运动酒吧与Chris Melling度过特别之夜。"
+  }
+ },
+ "eb-1989192541439": {
+  "sig": "b93c693775de",
+  "at": "2026-11-10",
+  "ok": true,
+  "reason": null,
+  "category": "seminar",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "AI for Women: Create, Learn & Connect - AI Goddesses Meetup Chiang Mai",
+   "summary": "งานพบปะพูดคุยสำหรับผู้หญิงที่สนใจเรื่อง AI จัดขึ้นที่ 4Seas Nimman เชียงใหม่ วันที่ 16 พฤศจิกายน 2569"
+  },
+  "en": {
+   "title": "AI for Women: Create, Learn & Connect - AI Goddesses Meetup Chiang Mai",
+   "summary": "A beginner-friendly weekly meetup for women exploring AI at 4Seas Nimman in Chiang Mai on November 16, 2026."
+  },
+  "zh": {
+   "title": "AI for Women: Create, Learn & Connect - AI Goddesses Meetup Chiang Mai",
+   "summary": "2026年11月16日在清迈4Seas Nimman举办的女性AI初学者交流聚会。"
+  }
+ },
+ "tm-bangkokisland-openmiccypher": {
+  "sig": "83b5a8880ab0",
+  "at": "2026-11-10",
+  "ok": true,
+  "reason": null,
+  "category": "nightlife",
+  "sponsor": null,
+  "age20": true,
+  "th": {
+   "title": "Playground Open Mic Cypher",
+   "summary": "งาน Open Mic สำหรับศิลปิน ที่ Bangkok Island กรุงเทพฯ ระหว่างวันที่ 18-19 พฤศจิกายน 2569"
+  },
+  "en": {
+   "title": "Playground Open Mic Cypher",
+   "summary": "An Open Mic event for artists at Bangkok Island, Bangkok from November 18-19, 2026."
+  },
+  "zh": {
+   "title": "Playground Open Mic Cypher",
+   "summary": "2026年11月18日至19日在曼谷Bangkok Island举办的艺术家开放麦活动。"
+  }
+ },
+ "tm-meltlivehouse-saucebkk": {
+  "sig": "fc972fb5ef2a",
+  "at": "2026-11-10",
+  "ok": true,
+  "reason": null,
+  "category": "concert",
+  "sponsor": "Waiting Room",
+  "age20": false,
+  "th": {
+   "title": "Melt Livehouse Cloud 11 Theater: SAUCE BKK",
+   "summary": "พบกับงาน SAUCE BKK ที่ Melt Livehouse Cloud 11 ในวันที่ 19 พฤศจิกายน 2026 บัตรราคาเริ่มต้น 350 ถึง 700 บาท"
+  },
+  "en": {
+   "title": "Melt Livehouse Cloud 11 Theater: SAUCE BKK",
+   "summary": "Join SAUCE BKK presented by Waiting Room at Melt Livehouse Cloud 11 on November 19, 2026. Tickets range from 350 to 700 THB."
+  },
+  "zh": {
+   "title": "Melt Livehouse Cloud 11 Theater: SAUCE BKK",
+   "summary": "Waiting Room呈献的SAUCE BKK将于2026年11月19日在Melt Livehouse Cloud 11举行，票价350至700泰铢。"
+  }
+ },
+ "tm-darkoraclerecords-darkoracleliveiii": {
+  "sig": "9c40e968fdac",
+  "at": "2026-11-10",
+  "ok": true,
+  "reason": null,
+  "category": "concert",
+  "sponsor": "Dark Oracle Records",
+  "age20": false,
+  "th": {
+   "title": "Dark Oracle Live III",
+   "summary": "งานดนตรีเมทัลใต้ดิน Dark Oracle Live III จัดโดย Speakerbox ร่วมกับ Dark Oracle Records ในวันที่ 19 พฤศจิกายน 2026 ที่ Speakerbox Livehouse"
+  },
+  "en": {
+   "title": "Dark Oracle Live III",
+   "summary": "Speakerbox x Dark Oracle Records present DARK ORACLE LIVE III featuring underground metal music on November 19, 2026, at Speakerbox Livehouse."
+  },
+  "zh": {
+   "title": "Dark Oracle Live III",
+   "summary": "Speakerbox与Dark Oracle Records联合呈献的DARK ORACLE LIVE III地下金属音乐之夜将于2026年11月19日在Speakerbox Livehouse举行。"
+  }
+ },
+ "tm-hotelcloverpatong-20112026": {
+  "sig": "3ca40ae7bc4d",
+  "at": "2026-11-10",
+  "ok": true,
+  "reason": null,
+  "category": "nightlife",
+  "sponsor": null,
+  "age20": true,
+  "th": {
+   "title": "Pool Party at Hotel Clover Patong Phuket 20 Nov, 2026",
+   "summary": "ปาร์ตี้ริมสระน้ำที่ Hotel Clover Patong Phuket ในวันที่ 20 พฤศจิกายน 2026 เพลิดเพลินกับบรรยากาศเขตร้อน ดีเจสด และบาร์บีคิว"
+  },
+  "en": {
+   "title": "Pool Party at Hotel Clover Patong Phuket 20 Nov, 2026",
+   "summary": "Enjoy a pool party with tropical vibes, live DJs, and BBQ at Hotel Clover Patong Phuket on November 20, 2026."
+  },
+  "zh": {
+   "title": "Pool Party at Hotel Clover Patong Phuket 20 Nov, 2026",
+   "summary": "2026年11月20日在普吉岛巴东三叶草酒店泳池派对享受热带氛围、现场DJ和烧烤美食。"
+  }
+ },
+ "tm-bangkokcommunitytheatre-legallyblonde": {
+  "sig": "6b99a8a366ad",
+  "at": "2026-11-10",
+  "ok": true,
+  "reason": null,
+  "category": "show",
+  "sponsor": "Bangkok Community Theatre",
+  "age20": false,
+  "th": {
+   "title": "Legally Blonde The Musical",
+   "summary": "การแสดงละครเพลง Legally Blonde โดย Bangkok Community Theatre จัดขึ้นระหว่างวันที่ 20-22 พฤศจิกายน 2026 ที่ Bangkok Prep International School"
+  },
+  "en": {
+   "title": "Legally Blonde The Musical",
+   "summary": "Bangkok Community Theatre presents Legally Blonde The Musical from November 20-22, 2026, at Bangkok Prep International School."
+  },
+  "zh": {
+   "title": "Legally Blonde The Musical",
+   "summary": "曼谷社区剧院于2026年11月20日至22日在曼谷Prep国际学校呈献音乐剧《律政俏佳人》。"
+  }
+ },
+ "tm-bangkokisland-artislands": {
+  "sig": "c8e004c47f18",
+  "at": "2026-11-10",
+  "ok": true,
+  "reason": null,
+  "category": "exhibition",
+  "sponsor": "Onelove Bangkok",
+  "age20": false,
+  "th": {
+   "title": "ART ISLANDS 20-22 November 2026",
+   "summary": "งานนิทรรศการและแกลเลอรีไนท์ Art Island จัดโดย Onelove Bangkok ระหว่างวันที่ 20-22 พฤศจิกายน 2026 ที่เรือ Bangkok Island"
+  },
+  "en": {
+   "title": "ART ISLANDS 20-22 November 2026",
+   "summary": "Onelove Bangkok presents Art Island & Gallery Night from November 20-22, 2026, hosted aboard Bangkok Island."
+  },
+  "zh": {
+   "title": "ART ISLANDS 20-22 November 2026",
+   "summary": "Onelove Bangkok于2026年11月20日至22日在Bangkok Island举办Art Island艺术岛与画廊之夜活动。"
+  }
+ },
+ "tm-hornbkk-badmanfetishhorn": {
+  "sig": "398a2a837806",
+  "at": "2026-11-10",
+  "ok": true,
+  "reason": null,
+  "category": "nightlife",
+  "sponsor": null,
+  "age20": true,
+  "th": {
+   "title": "𝐁𝐀𝐃𝐌𝐀𝐍: 𝐅𝐄𝐓𝐈𝐒𝐇",
+   "summary": "ปาร์ตี้ BADMAN: FETISH ณ HORN วันที่ 20-21 พฤศจิกายน 2026 ห้ามถ่ายภาพหรือวิดีโอภายในงาน"
+  },
+  "en": {
+   "title": "𝐁𝐀𝐃𝐌𝐀𝐍: 𝐅𝐄𝐓𝐈𝐒𝐇",
+   "summary": "BADMAN: FETISH party at HORN on November 20-21, 2026. Photography and video are strictly prohibited."
+  },
+  "zh": {
+   "title": "𝐁𝐀𝐃𝐌𝐀𝐍: 𝐅𝐄𝐓𝐈𝐒𝐇",
+   "summary": "2026年11月20日至21日在HORN举办BADMAN: FETISH派对，活动现场严禁拍照及录像。"
+  }
+ },
+ "tex-33509": {
+  "sig": "0ecad427dff2",
+  "at": "2026-11-10",
+  "ok": true,
+  "reason": null,
+  "category": "exhibition",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "Nasatta Light Festival 2027",
+   "summary": "งานเทศกาลประดับไฟ ณ Satta Thai Park ราชบุรี จัดขึ้นเป็นปีที่ 9 ภายใต้ธีม The Elemental ระหว่าง 20 พฤศจิกายน 2026 ถึง 28 กุมภาพันธ์ 2027"
+  },
+  "en": {
+   "title": "Nasatta Light Festival 2027",
+   "summary": "The 9th Nasatta Light Festival under the theme 'The Elemental' runs from November 20, 2026, to February 28, 2027, at Satta Thai Park, Ratchaburi."
+  },
+  "zh": {
+   "title": "Nasatta Light Festival 2027",
+   "summary": "第九届纳萨塔灯光节以“The Elemental”为主题，于2026年11月20日至2027年2月28日在叻武里府Satta Thai Park举行。"
+  }
+ },
+ "tm-bangkok-rooftops-centara-pool-party-21-november-2026": {
+  "sig": "c2fa417fa76c",
+  "at": "2026-11-10",
+  "ok": true,
+  "reason": null,
+  "category": "nightlife",
+  "sponsor": "Bangkok Rooftops",
+  "age20": true,
+  "th": {
+   "title": "CENTARA POOL PARTY | Loy Krathong Edition | 21 NOVEMBER",
+   "summary": "ปาร์ตี้ริมสระน้ำธีมลอยกระทงจัดโดย Bangkok Rooftops ที่ centralworld วันที่ 21 พฤศจิกายน 2026"
+  },
+  "en": {
+   "title": "CENTARA POOL PARTY | Loy Krathong Edition | 21 NOVEMBER",
+   "summary": "Bangkok Rooftops presents the Loy Krathong edition pool party at centralworld on November 21, 2026."
+  },
+  "zh": {
+   "title": "CENTARA POOL PARTY | Loy Krathong Edition | 21 NOVEMBER",
+   "summary": "Bangkok Rooftops于2026年11月21日在centralworld举办水灯节主题泳池派对。"
+  }
+ },
+ "tm-operasiam-daiku2026": {
+  "sig": "0981a873db3a",
+  "at": "2026-11-10",
+  "ok": true,
+  "reason": null,
+  "category": "concert",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "[第九] Daiku: Beethoven's Symphony No. 9",
+   "summary": "พบกับการแสดงคอนเสิร์ตซิมโฟหมายเลข 9 ของบีโธเฟน บรรเลงโดยวง Siam Sinfonietta ณ หอประชุมจุฬาลงกรณ์มหาวิทยาลัย ในวันที่ 21 พฤศจิกายน 2026"
+  },
+  "en": {
+   "title": "[第九] Daiku: Beethoven's Symphony No. 9",
+   "summary": "Experience Beethoven's Symphony No. 9 performed by the Siam Sinfonietta at Chulalongkorn University Auditorium on November 21, 2026."
+  },
+  "zh": {
+   "title": "[第九] Daiku: Beethoven's Symphony No. 9",
+   "summary": "体验由暹罗交响乐团于2026年11月21日在朱拉隆功大学礼堂带来的贝多芬第九交响曲音乐会。"
+  }
+ },
+ "tm-thethriveclub-rhythmandreset": {
+  "sig": "9ed4905ce23f",
+  "at": "2026-11-10",
+  "ok": true,
+  "reason": null,
+  "category": "outdoor",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "RHYTHM & RESET",
+   "summary": "กิจกรรมโซเชียลเวลเนส RHYTHM & RESET 2026 รวม 4 ประสบการณ์ไว้ในบัตรเดียว ณ The Olympic Club กรุงเทพฯ วันที่ 21 พฤศจิกายน 2026"
+  },
+  "en": {
+   "title": "RHYTHM & RESET",
+   "summary": "A social wellness experience featuring four experiences in one ticket at The Olympic Club, Bangkok on November 21, 2026."
+  },
+  "zh": {
+   "title": "RHYTHM & RESET",
+   "summary": "于2026年11月21日在曼谷The Olympic Club举办的社交健康体验活动，一张门票即可享受四种体验。"
+  }
+ },
+ "tm-maruya-lunaharuna": {
+  "sig": "a050f4896ede",
+  "at": "2026-11-10",
+  "ok": true,
+  "reason": null,
+  "category": "anime",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "LUNA HARUNA : ETERNAL STARDUST — MINI CONCERT at MARUYA #47",
+   "summary": "มินิคอนเสิร์ตสุดพิเศษจาก LUNA HARUNA ในงาน MARUYA #47: DUEL จัดขึ้นที่ย่านสามย่าน ในวันที่ 21 พฤศจิกายน 2026"
+  },
+  "en": {
+   "title": "LUNA HARUNA : ETERNAL STARDUST — MINI CONCERT at MARUYA #47",
+   "summary": "A special mini concert by Luna Haruna at MARUYA #47: DUEL in Samyan on November 21, 2026."
+  },
+  "zh": {
+   "title": "LUNA HARUNA : ETERNAL STARDUST — MINI CONCERT at MARUYA #47",
+   "summary": "春奈露娜将于2026年11月21日在三养举办的MARUYA #47: DUEL上带来特别迷你演唱会。"
+  }
+ },
+ "tm-munnaicc-manymanshow": {
+  "sig": "e029c1d81961",
+  "at": "2026-11-10",
+  "ok": true,
+  "reason": null,
+  "category": "nightlife",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "พูด-สิ คอมเมดี้ \"คอมเมดี้โดยคนมีโชว์\"",
+   "summary": "โชว์สแตนด์อัพคอมเมดี้เรียกเสียงฮาจาก Comedy Crew ณ เดอะรอยัลโอ๊ค กรุงเทพฯ ในวันที่ 21 พฤศจิกายน 2026"
+  },
+  "en": {
+   "title": "พูด-สิ คอมเมดี้ \"คอมเมดี้โดยคนมีโชว์\"",
+   "summary": "A stand-up comedy show presented by the Comedy Crew at The Royal Oak, Bangkok on November 21, 2026."
+  },
+  "zh": {
+   "title": "พูด-สิ คอมเมดี้ \"คอมเมดี้โดยคนมีโชว์\"",
+   "summary": "由Comedy Crew于2026年11月21日在曼谷The Royal Oak呈现的单口喜剧秀。"
+  }
+ },
+ "tm-lido-livehouse-llh26t38y": {
+  "sig": "edd091a87048",
+  "at": "2026-11-10",
+  "ok": true,
+  "reason": null,
+  "category": "nightlife",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "LIDO LIVEHOUSE Nostalgia Replay Presents \"The 38 years ago\"",
+   "summary": "คอนเสิร์ตเดี่ยวครั้งแรกที่จะพาคุณย้อนเวลากลับไปฟังเพลงโปรด ที่ลิโด้ คอนเน็คท์ ฮอลล์ 2 วันที่ 21 พฤศจิกายน 2026"
+  },
+  "en": {
+   "title": "LIDO LIVEHOUSE Nostalgia Replay Presents \"The 38 years ago\"",
+   "summary": "A nostalgic first solo concert at Lido Connect Hall 2 on November 21, 2026."
+  },
+  "zh": {
+   "title": "LIDO LIVEHOUSE Nostalgia Replay Presents \"The 38 years ago\"",
+   "summary": "于2026年11月21日在Lido Connect Hall 2举办的怀旧首场个人演唱会。"
+  }
+ },
+ "tm-sumidastudio-osos": {
+  "sig": "b6aa7af3f8fd",
+  "at": "2026-11-10",
+  "ok": true,
+  "reason": null,
+  "category": "concert",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "Once in Song, Once in Sound",
+   "summary": "คอนเสิร์ตเสียงร้องและเปียโนสำรวจบทเพลงยุคโรแมนติก ณ อาคารคณะมนุษยศาสตร์ 4 มหาวิทยาลัยเกษตรศาสตร์ วันที่ 21 พฤศจิกายน 2026"
+  },
+  "en": {
+   "title": "Once in Song, Once in Sound",
+   "summary": "A voice and piano concert exploring the Romantic era at the Faculty of Humanities Building 4 on November 21, 2026."
+  },
+  "zh": {
+   "title": "Once in Song, Once in Sound",
+   "summary": "一场探索浪漫主义时期的声乐与钢琴音乐会，于2026年11月21日在人文学院4号楼举行。"
+  }
+ },
+ "tm-breezythailand-breezyswing": {
+  "sig": "608d1ae13d5e",
+  "at": "2026-11-10",
+  "ok": true,
+  "reason": null,
+  "category": "outdoor",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "Breezy Swing",
+   "summary": "อีเวนต์เต้นสวิงริมชายหาดผสมผสานการเรียนรู้เชิงลึก ณ Siambeach Resort จังหวัดเพชรบุรี วันที่ 21-29 พฤศจิกายน 2026"
+  },
+  "en": {
+   "title": "Breezy Swing",
+   "summary": "A unique beachside swing dance experience and learning camp at Siambeach Resort, Phetchaburi, November 21–29, 2026."
+  },
+  "zh": {
+   "title": "Breezy Swing",
+   "summary": "于2026年11月21日至29日在碧武里府Siambeach度假村举办的海滩摇摆舞体验与学习营。"
+  }
+ },
+ "tm-kesa-pool-party-bangkok-sept2026": {
+  "sig": "0ecfe8464f92",
+  "at": "2026-11-10",
+  "ok": true,
+  "reason": null,
+  "category": "nightlife",
+  "sponsor": null,
+  "age20": true,
+  "th": {
+   "title": "KÉSA Pool Party",
+   "summary": "ปาร์ตี้ริมสระน้ำตั้งแต่ช่วงบ่ายถึงพระอาทิตย์ตกดิน ณ โรงแรมเรดิสัน สวีท กรุงเทพ สุขุมวิท วันที่ 21 พฤศจิกายน 2026"
+  },
+  "en": {
+   "title": "KÉSA Pool Party",
+   "summary": "An afternoon-to-sunset pool party at Radisson Suites Bangkok Sukhumvit on November 21, 2026."
+  },
+  "zh": {
+   "title": "KÉSA Pool Party",
+   "summary": "于2026年11月21日在曼谷素坤逸丽笙套房酒店举办的下午至日落泳池派对。"
+  }
+ },
+ "tm-thailandpianofestival-tipf2026": {
+  "sig": "3052398db0b6",
+  "at": "2026-11-10",
+  "ok": true,
+  "reason": null,
+  "category": "concert",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "Thailand International Piano Festival 2026",
+   "summary": "เทศกาลเปียโนนานาชาติประเทศไทย ครั้งที่ 4 จัดขึ้นที่สถาบันดนตรีกัลยาณิวัฒนา ระหว่างวันที่ 21 พฤศจิกายน - 13 ธันวาคม 2569"
+  },
+  "en": {
+   "title": "Thailand International Piano Festival 2026",
+   "summary": "The 4th Thailand International Piano Festival takes place at Princess Galyani Vadhana Institute of Music from Nov 21 to Dec 13, 2026."
+  },
+  "zh": {
+   "title": "Thailand International Piano Festival 2026",
+   "summary": "第四届泰国国际钢琴节于2026年11月21日至12月13日在甘拉亚尼瓦塔娜音乐学院举行。"
+  }
+ },
+ "tm-thailandpianofestival-tipf2026-1": {
+  "sig": "bc652526d287",
+  "at": "2026-11-10",
+  "ok": true,
+  "reason": null,
+  "category": "concert",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "Concert 1: Vitaly Pisarenko",
+   "summary": "คอนเสิร์ตเปิดงานเทศกาลเปียโนนานาชาติประเทศไทย ครั้งที่ 4 พบกับการแสดงเปียโนโดย Vitaly Pisarenko ในวันที่ 21 พฤศจิกายน 2569"
+  },
+  "en": {
+   "title": "Concert 1: Vitaly Pisarenko",
+   "summary": "Grand opening concert of the 4th Thailand International Piano Festival featuring pianist Vitaly Pisarenko on November 21, 2026."
+  },
+  "zh": {
+   "title": "Concert 1: Vitaly Pisarenko",
+   "summary": "第四届泰国国际钢琴节盛大开幕音乐会，由维塔利·皮萨连科于2026年11月21日带来精彩演出。"
+  }
+ },
+ "tm-pruxus-understand2026": {
+  "sig": "3d0aaa22c0ec",
+  "at": "2026-11-10",
+  "ok": true,
+  "reason": "เวิร์กช็อปพัฒนาตนเอง",
+  "category": "learning",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "Understand your info workshop 2026 - AI Edition",
+   "summary": "เวิร์กช็อปส่งท้ายปี 2026 กับ Understand Your Info Rerun คลาสเสริมความเข้าใจและการจัดการข้อมูล ที่ S64 Co Working Space วันที่ 21 พฤศจิกายน 2569"
+  },
+  "en": {
+   "title": "Understand your info workshop 2026 - AI Edition",
+   "summary": "End-of-year data management workshop at S64 Co Working Space on November 21, 2026."
+  },
+  "zh": {
+   "title": "Understand your info workshop 2026 - AI Edition",
+   "summary": "2026年终数据管理工作坊于11月21日在S64 Co Working Space举行。"
+  }
+ },
+ "tm-toscanavalley-lafesta2026": {
+  "sig": "b0f9b161bb08",
+  "at": "2026-11-10",
+  "ok": true,
+  "reason": null,
+  "category": "concert",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "Toscana La Festa Concert 2026",
+   "summary": "คอนเสิร์ต TOSCANA LA FESTA 2026 ธีม DANCETOPIA ยกทัพศิลปินมาสร้างความบันเทิงที่ Toscana Valley เขาใหญ่ วันที่ 21 พฤศจิกายน 2569"
+  },
+  "en": {
+   "title": "Toscana La Festa Concert 2026",
+   "summary": "TOSCANA LA FESTA 2026 concert featuring top artists at Town Square Suites by Toscana Valley on November 21, 2026."
+  },
+  "zh": {
+   "title": "Toscana La Festa Concert 2026",
+   "summary": "2026年Toscana La Festa演唱会于11月21日在考艾Toscana Valley举行。"
+  }
+ },
+ "po-maruya-47-duel-2026-11-21": {
+  "sig": "978e3b9f3be6",
+  "at": "2026-11-10",
+  "ok": true,
+  "reason": null,
+  "category": "anime",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "Maruya #47 : DUEL",
+   "summary": "งานอนิเมะและการแต่งคอสเพลย์ Maruya ครั้งที่ 47 จัดที่ย่านสามย่าน วันที่ 21-22 พฤศจิกายน 2569"
+  },
+  "en": {
+   "title": "Maruya #47 : DUEL",
+   "summary": "Anime and cosplay event Maruya #47 held in Samyan area on November 21-22, 2026."
+  },
+  "zh": {
+   "title": "Maruya #47 : DUEL",
+   "summary": "动漫与角色扮演活动Maruya #47于2026年11月21日至22日在三养地区举行。"
+  }
+ },
+ "tm-thailandpianofestival-tipf2026-3": {
+  "sig": "bf2f5d0d526c",
+  "at": "2026-11-10",
+  "ok": true,
+  "reason": null,
+  "category": "concert",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "Concert 3: The Soul of Russia Part II",
+   "summary": "คอนเสิร์ตลำดับที่ 3 ในเทศกาลเปียโนนานาชาติประเทศไทย ครั้งที่ 4 วันที่ 22 พฤศจิกายน 2569 ณ สถาบันดนตรีกัลยาณิวัฒนา"
+  },
+  "en": {
+   "title": "Concert 3: The Soul of Russia Part II",
+   "summary": "The 3rd concert of the 4th Thailand International Piano Festival on November 22, 2026 at Princess Galyani Vadhana Institute of Music."
+  },
+  "zh": {
+   "title": "Concert 3: The Soul of Russia Part II",
+   "summary": "第四届泰国国际钢琴节第三场音乐会于2026年11月22日在甘拉亚尼瓦塔娜音乐学院举行。"
+  }
+ },
+ "tm-sss-dept-homecomings": {
+  "sig": "c296491bf43c",
+  "at": "2026-11-10",
+  "ok": true,
+  "reason": null,
+  "category": "concert",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "KrosSphere : Dept x Homecomings",
+   "summary": "คอนเสิร์ตจากวง Dept (ไทย) และ Homecomings (ญี่ปุ่น) จัดขึ้นที่ Volume Livehouse ชั้น B วันที่ 22 พฤศจิกายน 2569"
+  },
+  "en": {
+   "title": "KrosSphere : Dept x Homecomings",
+   "summary": "Concert featuring Dept (TH) and Homecomings (JP) at Volume Livehouse - B Floor on November 22, 2026."
+  },
+  "zh": {
+   "title": "KrosSphere : Dept x Homecomings",
+   "summary": "由Dept（泰国）和Homecomings（日本）联合演出的音乐会于2026年11月22日在Volume Livehouse B层举行。"
+  }
+ },
+ "tm-rbscracing-22november2026": {
+  "sig": "b1d8b134a122",
+  "at": "2026-11-10",
+  "ok": true,
+  "reason": null,
+  "category": "expo",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "BANGKOK RACE DAY - 22 November 2026",
+   "summary": "งาน BANGKOK RACE DAY ณ ราชกรีฑาสโมสร ในวันที่ 22 พฤศจิกายน 2569 เด็กอายุต่ำกว่า 12 ปีเข้าชมฟรี"
+  },
+  "en": {
+   "title": "BANGKOK RACE DAY - 22 November 2026",
+   "summary": "BANGKOK RACE DAY event at Royal Bangkok Sport Club on November 22, 2026. Children under 12 enter free."
+  },
+  "zh": {
+   "title": "BANGKOK RACE DAY - 22 November 2026",
+   "summary": "2026年11月22日在皇家曼谷体育俱乐部举办的曼谷赛马日活动，12岁以下儿童免费入场。"
   }
  }
 }

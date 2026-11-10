@@ -6,11 +6,25 @@
     "startDate": "2026-12-01",
     "endDate": "2026-12-10",
     "time": "10:00–22:00",
-    "price": { "type": "free" },
+    "price": {
+      "type": "free"
+    },
     "summary": "เปิดร้าน Pokémon Center ใหญ่ที่สุดนอกญี่ปุ่น มีโซนการ์ด Pokémon TCG และอีเว้นท์ Pokémon GO ฉลองเปิดร้าน (ร้านอาจจำกัดจำนวนคนเข้าช่วงแรก)",
     "ticketUrl": "https://pokemongohub.net/post/event/pokemon-center-bangkok-opens-pokemon-go-thailand-event/",
     "sourceUrl": "https://pokemongohub.net/post/event/pokemon-center-bangkok-opens-pokemon-go-thailand-event/",
     "sourceName": "Pokémon GO Hub",
-    "venueId": "centralworld"
+    "venueId": "centralworld",
+    "i18n": {
+      "en": {
+        "title": "Pokémon Center BANGKOK Opens First Branch in Thailand (6th Floor, CentralWorld)",
+        "summary": "The largest Pokémon Center outside Japan opens, featuring a Pokémon TCG card zone and Pokémon GO grand opening events. (Visitor entry may be limited during the initial launch period.)",
+        "time": "10:00–22:00"
+      },
+      "zh": {
+        "title": "Pokémon Center BANGKOK 泰国首店开业（CentralwOrld 6楼）",
+        "summary": "日本境外最大的 Pokémon Center 开业，设有 Pokémon TCG 卡牌专区及 Pokémon GO 开业庆祝活动（开业初期店家可能会限制入场人数）",
+        "time": "10:00–22:00"
+      }
+    }
   }
 ]
