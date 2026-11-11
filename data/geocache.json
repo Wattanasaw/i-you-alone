@@ -2204,5 +2204,24 @@
  "สัทธา อุทยานไทย อ บางแพ จ ราชบุรี|ratchaburi": null,
  "บริเวณสะพานข้ามแม่น้ำแคว และลานข้างองค์การบริหารส่วนจังหวัดกาญจนบุรี อ เมือง จ กาญจนบุรี|kanchanaburi": null,
  "ศูนย์การค้าเทอร์มินอล21 พระราม 3|": null,
- "dragonray prak บ้านสะเงียว ต กวนวัน อ เมืองฯ จ หนองคาย|nong-khai": null
+ "dragonray prak บ้านสะเงียว ต กวนวัน อ เมืองฯ จ หนองคาย|nong-khai": null,
+ "โรงแรม s31 สุขุมวิท s31 sukhumvit hotel|bangkok": {
+  "lat": 13.73362,
+  "lng": 100.56585,
+  "state": "Bangkok"
+ },
+ "วัดพระธาตุหริภุญชัย วรมหาวิหาร จ ลำพูน|lamphun": null,
+ "สวนเฉลิมพระเกียรติ 80 พรรษา จ เชียงใหม่|chiang-mai": null,
+ "royal train garden resort บ้านสวนรถไฟรีสอร์ท อำเภอหางดง จังหวัดเชียงใหม่|chiang-mai": {
+  "lat": 18.7358,
+  "lng": 98.88805,
+  "state": ""
+ },
+ "ทองสมบูรณ์ คลับ เขาใหญ่ อำเภอปากช่อง จังหวัดนครราชสีมา|nakhon-ratchasima": null,
+ "triple tree beach resort ชะอำ เพชรบุรี|phetchaburi": {
+  "lat": 12.81416,
+  "lng": 99.99412,
+  "state": ""
+ },
+ "river park ชั้น g ศูนย์การค้า iconsiam|bangkok": null
 }
