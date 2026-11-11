@@ -260,8 +260,11 @@
       let r = Math.random() * from.reduce((s, a) => s + (a.weight || 1), 0), a = from[0];
       for (const x of from) { r -= x.weight || 1; if (r <= 0) { a = x; break; } }
       adShown.push(a.id); if (adShown.length > Math.max(2, pool.length - 2)) adShown.shift();
-      // แบนเนอร์ยาว (Static Banner ของ Trip.com 728×90): กรอบคงที่ตามสัดส่วน ย่อ/ขยายทั้งแบนเนอร์ให้พอดีความกว้าง ไม่มีข้อความประกอบ
-      // ทับด้วยลิงก์โปร่งใส (ปลายทางเดียวกับที่แบนเนอร์เปิด) → ในแอพมือถือกดแล้วเปิดแอพ Trip.com/เบราว์เซอร์ ไม่พาหน้าแอพหาย
+      // แบนเนอร์ยาว (รูปจาก Static Banner ของ Trip.com 728×90 เก็บไว้ในแอพ icons/ads/): กรอบคงที่ตามสัดส่วน รูปเต็มกรอบ ไม่มีข้อความประกอบ
+      // ใช้รูปแทน iframe → แสดงได้แน่นอนทั้งเว็บและแอพ Android (WebView บางเครื่องไม่แสดง iframe ของ trip.com) · กดแล้วเปิดแอพ Trip.com/เบราว์เซอร์
+      if (a.image && a.w && a.h) return `<a class="ad ad-banner" href="${safeUrl(a.url)}" target="_blank" rel="sponsored nofollow noopener" data-ext-app style="aspect-ratio:${+a.w}/${+a.h}" aria-label="${esc(tr(a, "title") || a.partner || "")}">
+          <img src="${/^icons\/[\w/.-]+$/.test(a.image) ? esc(a.image) : safeUrl(a.image)}" alt="${esc(tr(a, "title") || "")}" width="${+a.w}" height="${+a.h}" decoding="async">
+        </a>`;
       if (a.iframe) return `<div class="ad ad-banner" style="aspect-ratio:${+a.w || 728}/${+a.h || 90};--bw:${+a.w || 728}px;--bh:${+a.h || 90}px">
           <iframe src="${safeUrl(a.iframe)}" width="${+a.w || 728}" height="${+a.h || 90}" scrolling="no" frameborder="0" loading="lazy" title="${esc(a.title || a.partner || "")}" tabindex="-1"></iframe>
           ${a.url ? `<a class="ad-banner-link" href="${safeUrl(a.url)}" target="_blank" rel="sponsored nofollow noopener" data-ext-app aria-label="${esc(a.title || a.partner || "")}"></a>` : ""}
@@ -1901,7 +1904,10 @@
         <p>${t("installDesc")}</p>
         ${C.apkUrl && !NATIVE && PLATFORM !== "ios" ? `<div class="actions"><a class="btn primary" href="${safeUrl(C.apkUrl)}" download>📲 ${t("getApp")}</a></div><p class="disclosure">${t("getAppDesc")}</p>` : ""}
       </section>`}
-      <p class="disclosure"><a href="privacy.html" ${NATIVE ? "" : `target="_blank" rel="noopener"`}>${t("privacy")}</a></p></div>`;
+      <p class="disclosure"><a href="privacy.html" ${NATIVE ? "" : `target="_blank" rel="noopener"`}>${t("privacy")}</a></p>
+      <p class="disclosure" id="appVer"></p></div>`;
+    // เวอร์ชันแอพ (เช็กว่าติดตั้งตัวล่าสุดหรือยัง)
+    if (NATIVE) window.Capacitor?.Plugins?.App?.getInfo?.().then(i => { const el = document.getElementById("appVer"); if (el) el.textContent = `App ${i.version} (${i.build})`; }).catch(() => {});
   }
 
   // ---------- ตัวเลือกภาษา + ข้อความคงที่ใน index.html ----------

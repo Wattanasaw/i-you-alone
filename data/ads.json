@@ -3,7 +3,6 @@
     "id": "trip-sb21013841",
     "active": true,
     "partner": "Trip.com",
-    "iframe": "https://th.trip.com/partners/ad/SB21013841?Allianceid=11305162&SID=335604865&trip_sub1=app-ad",
     "w": 728,
     "h": 90,
     "weight": 2,
@@ -14,13 +13,13 @@
       "news"
     ],
     "url": "https://th.trip.com/?Allianceid=11305162&SID=335604865&trip_sub1=app-ad&trip_sub3=SB21013841",
-    "title": "Trip.com แอปเดียว จองได้ครบ"
+    "title": "Trip.com แอปเดียว จองได้ครบ",
+    "image": "icons/ads/SB21013841.webp"
   },
   {
     "id": "trip-sb21013855",
     "active": true,
     "partner": "Trip.com",
-    "iframe": "https://th.trip.com/partners/ad/SB21013855?Allianceid=11305162&SID=335604865&trip_sub1=app-ad",
     "w": 728,
     "h": 90,
     "weight": 3,
@@ -31,13 +30,13 @@
       "news"
     ],
     "url": "https://th.trip.com/hotels/w/home?Allianceid=11305162&SID=335604865&trip_sub1=app-ad&trip_sub3=SB21013855",
-    "title": "ดีลโรงแรม 1.4 ล้านแห่งทั่วโลก"
+    "title": "ดีลโรงแรม 1.4 ล้านแห่งทั่วโลก",
+    "image": "icons/ads/SB21013855.webp"
   },
   {
     "id": "trip-sb21013862",
     "active": true,
     "partner": "Trip.com",
-    "iframe": "https://th.trip.com/partners/ad/SB21013862?Allianceid=11305162&SID=335604865&trip_sub1=app-ad",
     "w": 728,
     "h": 90,
     "weight": 2,
@@ -48,13 +47,13 @@
       "news"
     ],
     "url": "https://th.trip.com/flights/welcome/?to=home&Allianceid=11305162&SID=335604865&trip_sub1=app-ad&trip_sub3=SB21013862",
-    "title": "เที่ยวบินครอบคลุมทุกเส้นทาง"
+    "title": "เที่ยวบินครอบคลุมทุกเส้นทาง",
+    "image": "icons/ads/SB21013862.webp"
   },
   {
     "id": "trip-sb21013869",
     "active": true,
     "partner": "Trip.com",
-    "iframe": "https://th.trip.com/partners/ad/SB21013869?Allianceid=11305162&SID=335604865&trip_sub1=app-ad",
     "w": 728,
     "h": 90,
     "weight": 2,
@@ -65,6 +64,7 @@
       "news"
     ],
     "url": "https://th.trip.com/flights/Bangkok-to-Tokyo/tickets-BKK-TYO?flighttype=S&dcity=BKK&acity=TYO&Allianceid=11305162&SID=335604865&trip_sub1=app-ad&trip_sub3=SB21013869",
-    "title": "เที่ยวบิน กรุงเทพ–โตเกียว"
+    "title": "เที่ยวบิน กรุงเทพ–โตเกียว",
+    "image": "icons/ads/SB21013862.webp"
   }
 ]

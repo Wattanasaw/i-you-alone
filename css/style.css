@@ -862,3 +862,5 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 .ad-banner iframe { position: absolute; left: 0; top: 0; width: var(--bw, 728px); height: var(--bh, 90px); border: 0; transform-origin: 0 0; transform: scale(var(--s, 1)); pointer-events: none; }
 .ad-banner-link { position: absolute; inset: 0; z-index: 1; }
 .grid .ad.ad-banner { grid-column: 1 / -1; min-height: 0; margin: 0 auto; }
+/* แบนเนอร์รูป: รูปเต็มกรอบ (กรอบคงที่ตามสัดส่วนรูป) */
+.ad.ad-banner > img { display: block; position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; border-radius: 10px; }
