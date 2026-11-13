@@ -146,90 +146,6 @@
    "summary": "使用 Next.js、Supabase 和 Vibe Coding 构建生产就绪应用程序，地点在 KMITL 终身学习中心。"
   }
  },
- "ep-179095": {
-  "sig": "087b90edf966",
-  "at": "2026-11-07",
-  "ok": true,
-  "reason": null,
-  "category": "concert",
-  "sponsor": null,
-  "age20": false,
-  "th": {
-   "title": "NOVEMBER 11TH, 2026 Extra Waterfall Festival Koh Phangan (Sp",
-   "summary": "เทศกาลดนตรี Waterfall Festival เกาะพะงัน จ.สุราษฎร์ธานี วันที่ 11-12 พฤศจิกายน 2569"
-  },
-  "en": {
-   "title": "NOVEMBER 11TH, 2026 Extra Waterfall Festival Koh Phangan (Sp",
-   "summary": "Waterfall Festival special edition in Koh Phangan, Surat Thani from November 11-12, 2026."
-  },
-  "zh": {
-   "title": "NOVEMBER 11TH, 2026 Extra Waterfall Festival Koh Phangan (Sp",
-   "summary": "2026年11月11日至12日在素叻他尼府帕岸岛举办的瀑布音乐节特别版。"
-  }
- },
- "eb-2003331932739": {
-  "sig": "7f8e42290e5c",
-  "at": "2026-11-07",
-  "ok": true,
-  "reason": null,
-  "category": "learning",
-  "sponsor": null,
-  "age20": false,
-  "th": {
-   "title": "International Conference on Advanced Research in Artificial Intelligence",
-   "summary": "การประชุมวิชาการนานาชาติด้านการวิจัยขั้นสูงในปัญญาประดิษฐ์ จัดที่ Let's Relax Spa - Movenpick Siam Hotel Na Jomtien Pattaya"
-  },
-  "en": {
-   "title": "International Conference on Advanced Research in Artificial Intelligence",
-   "summary": "An international conference on advanced AI research held at Movenpick Siam Hotel Na Jomtien Pattaya."
-  },
-  "zh": {
-   "title": "International Conference on Advanced Research in Artificial Intelligence",
-   "summary": "人工智能高级研究国际会议，在芭堤雅纳中天瑞享酒店举行。"
-  }
- },
- "ttm-wave-to-earth-the-pieces-tour": {
-  "sig": "051f80f53d3c",
-  "at": "2026-11-07",
-  "ok": true,
-  "reason": null,
-  "category": "concert",
-  "sponsor": null,
-  "age20": false,
-  "th": {
-   "title": "wave to earth - the pieces tour",
-   "summary": "คอนเสิร์ต wave to earth - the pieces tour จัดขึ้นที่ ยูโอบี ไลฟ์, เอ็มสเฟียร์"
-  },
-  "en": {
-   "title": "wave to earth - the pieces tour",
-   "summary": "The wave to earth - the pieces tour concert at UOB LIVE, Emsphere."
-  },
-  "zh": {
-   "title": "wave to earth - the pieces tour",
-   "summary": "wave to earth “the pieces tour” 演唱会将在曼谷 UOB LIVE, Emsphere 举行。"
-  }
- },
- "ep-181082": {
-  "sig": "5e54c2048390",
-  "at": "2026-11-07",
-  "ok": true,
-  "reason": null,
-  "category": "concert",
-  "sponsor": null,
-  "age20": false,
-  "th": {
-   "title": "สยามานุสสติ ๒๕๖๙ \"๑๐๑ ปี มหาธีรราชานุสรณ์ สืบสานพระราชปณิธาน",
-   "summary": "งานสยามานุสสติและระลึกถึงพระมหาธีรราชานุสรณ์ จัดโดยจุฬาลงกรณ์มหาวิทยาลัย ณ หอประชุมจุฬาลงกรณ์มหาวิทยาลัย"
-  },
-  "en": {
-   "title": "Sayamahusati 2026",
-   "summary": "An annual tribute event hosted by Chulalongkorn University at the CU Auditorium."
-  },
-  "zh": {
-   "title": "Sayamahusati 2026",
-   "summary": "朱拉隆功大学在朱大礼堂举办的年度纪念活动。"
-  }
- },
  "ep-180649": {
   "sig": "df6b44e6c76f",
   "at": "2026-11-07",
@@ -249,48 +165,6 @@
   "zh": {
    "title": "Foundation of Software Testing Unlocking the Secrets",
    "summary": "旨在提前发现软件漏洞的测试基础培训课程，在 IMC Institute 举行。"
-  }
- },
- "ep-177172": {
-  "sig": "84995b721c6d",
-  "at": "2026-11-07",
-  "ok": true,
-  "reason": null,
-  "category": "learning",
-  "sponsor": "Bangkok Startup Association",
-  "age20": false,
-  "th": {
-   "title": "DON'T THAI TO ME",
-   "summary": "งานเสวนาจัดโดย Bangkok Startup Association ณ Industrious Gaysorn Tower"
-  },
-  "en": {
-   "title": "DON'T THAI TO ME",
-   "summary": "Presented by Bangkok Startup Association and hosted at Industrious Gaysorn Tower."
-  },
-  "zh": {
-   "title": "DON'T THAI TO ME",
-   "summary": "由曼谷创业协会主办，在 Industrious Gaysorn Tower 举行。"
-  }
- },
- "eb-1998344763983": {
-  "sig": "61d423b5b075",
-  "at": "2026-11-07",
-  "ok": true,
-  "reason": null,
-  "category": "learning",
-  "sponsor": null,
-  "age20": false,
-  "th": {
-   "title": "School Middle Leaders: Wellbeing and Psychological Safety | Bangkok",
-   "summary": "งานอบรมสำหรับผู้นำระดับกลางของโรงเรียน จัดขึ้นที่ Bangkok Central"
-  },
-  "en": {
-   "title": "School Middle Leaders: Wellbeing and Psychological Safety | Bangkok",
-   "summary": "A professional event focusing on school middle leaders' wellbeing and psychological safety at Bangkok Central."
-  },
-  "zh": {
-   "title": "School Middle Leaders: Wellbeing and Psychological Safety | Bangkok",
-   "summary": "关于学校中层领导者福祉与心理安全的活动，在曼谷中央举行。"
   }
  },
  "ttm-big-ass-big-concert": {
@@ -4514,27 +4388,6 @@
    "summary": "MAHIRU 2026-2027年亚洲巡回演唱会曼谷站《Auralisia》将于2026年12月12日在丽都连结剧院3号厅举行。"
   }
  },
- "ep-175142": {
-  "sig": "c411cc1a0359",
-  "at": "2026-11-09",
-  "ok": true,
-  "reason": null,
-  "category": "market",
-  "sponsor": null,
-  "age20": false,
-  "th": {
-   "title": "High Season 420 Fest 12-13 Dec",
-   "summary": "งาน High Season 420 Fest วันที่ 12-13 ธันวาคม 2569 ณ ท่าเรือบางกอกไอส์แลนด์ พบกับดนตรี ศิลปะ ตลาดสีเขียว การประกวดดอกกัญชา และวัฒนธรรมริมแม่น้ำ"
-  },
-  "en": {
-   "title": "High Season 420 Fest 12-13 Dec",
-   "summary": "High Season 420 Fest runs December 12–13, 2026 at Bangkok Island Pier, featuring music, art, a green market, cannabis flower competition, and riverside culture."
-  },
-  "zh": {
-   "title": "High Season 420 Fest 12-13 Dec",
-   "summary": "High Season 420节于2026年12月12日至13日在曼谷岛码头举行，包含音乐、艺术、绿色集市、大麻花卉比赛及河畔文化。"
-  }
- },
  "ep-174744": {
   "sig": "e8b5f0081526",
   "at": "2026-11-09",
@@ -5459,27 +5312,6 @@
    "summary": "《葬送的芙莉莲》泰国首展，在 MBK Center 4 楼 A 区展示芙莉莲的冒险旅程。"
   }
  },
- "tm-meltlivehouse-slur": {
-  "sig": "e67dbae7ed8f",
-  "at": "2026-11-10",
-  "ok": true,
-  "reason": null,
-  "category": "concert",
-  "sponsor": "Waiting Room",
-  "age20": false,
-  "th": {
-   "title": "Melt Livehouse Cloud 11 Theater: Slur",
-   "summary": "คอนเสิร์ตวง Slur โดย Waiting Room ณ Melt Livehouse Cloud 11 ในวันที่ 12 พฤศจิกายน 2026"
-  },
-  "en": {
-   "title": "Melt Livehouse Cloud 11 Theater: Slur",
-   "summary": "Waiting Room presents a live performance by Slur at Melt Livehouse Cloud 11 on November 12, 2026."
-  },
-  "zh": {
-   "title": "Melt Livehouse Cloud 11 Theater：Slur 演唱会",
-   "summary": "Waiting Room 在 Melt Livehouse Cloud 11 举办 Slur 乐队演唱会，日期为 2026 年 11 月 12 日。"
-  }
- },
  "tm-huhbkk-underground": {
   "sig": "4108a56972b7",
   "at": "2026-11-10",
@@ -5499,48 +5331,6 @@
   "zh": {
    "title": "HUH? Underground",
    "summary": "HUH? 走进 DUAL 的地下室，邀请深层浩室传奇人物 DREAM 2 SCIENCE (LIVE) 带来永恒的音乐体验。"
-  }
- },
- "tm-swu-katakorn-swuktrfinalselectiongen4": {
-  "sig": "81c31d8057e2",
-  "at": "2026-11-10",
-  "ok": true,
-  "reason": null,
-  "category": "show",
-  "sponsor": null,
-  "age20": false,
-  "th": {
-   "title": "THE FINAL SELECTION OF SWU KATAKORN 4th GENERATION",
-   "summary": "การคัดเลือกรอบสุดท้ายของ SWU KATAKORN รุ่นที่ 4 ณ หอดนตรีและการแสดงอโศกมนตรี มหาวิทยาลัยศรีนครินทรวิโรฒ"
-  },
-  "en": {
-   "title": "THE FINAL SELECTION OF SWU KATAKORN 4th GENERATION",
-   "summary": "The final selection round for the 4th generation of SWU KATAKORN at Asok Montri Music and Performing Arts Hall."
-  },
-  "zh": {
-   "title": "THE FINAL SELECTION OF SWU KATAKORN 4th GENERATION",
-   "summary": "SWU KATAKORN 第 4 代最终选拔赛将在诗纳卡宁威洛大学 Asok Montri 音乐与表演艺术厅举行。"
-  }
- },
- "tm-highnotecnx-echoesfrompoland": {
-  "sig": "577779e046f9",
-  "at": "2026-11-10",
-  "ok": true,
-  "reason": null,
-  "category": "concert",
-  "sponsor": null,
-  "age20": false,
-  "th": {
-   "title": "Echoes from Poland - Piano Recital - Zofia Lalak",
-   "summary": "การแสดงเปียโนคลาสสิกโดยนักเปียโนชาวโปแลนด์ Zofia Lalak ในค่ำคืนสุดพิเศษที่ High Note เชียงใหม่"
-  },
-  "en": {
-   "title": "Echoes from Poland - Piano Recital - Zofia Lalak",
-   "summary": "A special evening of classical piano with Polish concert pianist Zofia Lalak at High Note, Chiang Mai."
-  },
-  "zh": {
-   "title": "Echoes from Poland - Piano Recital - Zofia Lalak",
-   "summary": "波兰钢琴家 Zofia Lalak 在清迈 High Note 带来的古典钢琴独奏之夜。"
   }
  },
  "ttm-one-lumpinee-2026": {
@@ -8756,27 +8546,6 @@
    "summary": "在三养举办的动漫、游戏、Cosplay及同人手作市集活动。"
   }
  },
- "tm-thailandpianofestival-tipf2026-3": {
-  "sig": "bf2f5d0d526c",
-  "at": "2026-11-12",
-  "ok": true,
-  "reason": null,
-  "category": "concert",
-  "sponsor": null,
-  "age20": false,
-  "th": {
-   "title": "Concert 3: The Soul of Russia Part II",
-   "summary": "คอนเสิร์ตจากเทศกาลเปียนานาชาติแห่งประเทศไทย ครั้งที่ 4 ณ สถาบันดนตรีกัลยาณิวัฒนา"
-  },
-  "en": {
-   "title": "Concert 3: The Soul of Russia Part II",
-   "summary": "A piano concert part of the 4th Thailand International Piano Festival at Princess Galyani Vadhana Institute of Music."
-  },
-  "zh": {
-   "title": "Concert 3: The Soul of Russia Part II",
-   "summary": "第四届泰国国际钢琴节音乐会，在甘拉亚尼瓦塔纳音乐学院举行。"
-  }
- },
  "luma-tzojz20w": {
   "sig": "a0e3d60812a1",
   "at": "2026-11-12",
@@ -8924,27 +8693,6 @@
    "summary": "全球知名DJ Laidback Luke将于2026年11月27日在曼谷Levels俱乐部震撼登场。"
   }
  },
- "tm-togetherfestival-togetherfestival2026": {
-  "sig": "3a912e37bc18",
-  "at": "2026-11-12",
-  "ok": true,
-  "reason": null,
-  "category": "concert",
-  "sponsor": null,
-  "age20": false,
-  "th": {
-   "title": "Together Festival 2026",
-   "summary": "เทศกาลดนตรีสุดยิ่งใหญ่กลับมาอีกครั้ง พร้อมไลน์อัพศิลปินระดับโลก ณ ไบเทค"
-  },
-  "en": {
-   "title": "Together Festival 2026",
-   "summary": "Together Festival returns with massive international headliners at BITEC."
-  },
-  "zh": {
-   "title": "2026 Together音乐节",
-   "summary": "Together音乐节携豪华艺人阵容重返BITEC，为您带来震撼的现场体验。"
-  }
- },
  "tm-reallive-coshunie": {
   "sig": "e815fb8e9203",
   "at": "2026-11-12",
@@ -9027,27 +8775,6 @@
   "zh": {
    "title": "AP presents PYMK The Concert: Melody In The Garden",
    "summary": "2026年11月28日至29日在朱拉隆功大学百年纪念公园举办的花园迷你音乐会。"
-  }
- },
- "tm-kliffbeachbistroandbarcoffeeparty-coffeeparty": {
-  "sig": "fddba3fdc2fe",
-  "at": "2026-11-12",
-  "ok": true,
-  "reason": null,
-  "category": "nightlife",
-  "sponsor": null,
-  "age20": false,
-  "th": {
-   "title": "Coffee Party @Kliff Beach",
-   "summary": "ปาร์ตี้ในธีม White Party ที่ Kliff Beach Bistro & Bar จังหวัดชลบุรี วันที่ 28 พฤศจิกายน 2026"
-  },
-  "en": {
-   "title": "Coffee Party @Kliff Beach",
-   "summary": "A White Party themed event at Kliff Beach Bistro & Bar, Chonburi on November 28, 2026."
-  },
-  "zh": {
-   "title": "Coffee Party @Kliff Beach",
-   "summary": "2026年11月28日在春武里Kliff Beach Bistro & Bar举办的白色派对主题活动。"
   }
  },
  "tm-munnaicc-unpredictable": {
@@ -10014,6 +9741,1686 @@
   "zh": {
    "title": "Christmas Concert: Carols and Kings",
    "summary": "由 Opera Siam 在曼谷悦榕庄酒店举办的圣诞音乐会。"
+  }
+ },
+ "tm-starhunterent-khom-khlang-busking": {
+  "sig": "86e4a89e13f5",
+  "at": "2026-11-13",
+  "ok": true,
+  "reason": null,
+  "category": "expo",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "KHOM KHLANG BUSKING",
+   "summary": "งาน KHOM KHLANG BUSKING จัดขึ้นในวันที่ 16 พฤศจิกายน 2569 ณ MCC HALL, THE MALL LIFESTORE BANGKAPI"
+  },
+  "en": {
+   "title": "KHOM KHLANG BUSKING",
+   "summary": "KHOM KHLANG BUSKING takes place on 16 November 2026 at MCC HALL, THE MALL LIFESTORE BANGKAPI."
+  },
+  "zh": {
+   "title": "KHOM KHLANG BUSKING",
+   "summary": "KHOM KHLANG BUSKING将于2026年11月16日在MCC HALL, THE MALL LIFESTORE BANGKAPI举行。"
+  }
+ },
+ "tm-bangkokisland-djcommunity18nov": {
+  "sig": "5da4e6365961",
+  "at": "2026-11-13",
+  "ok": true,
+  "reason": null,
+  "category": "nightlife",
+  "sponsor": null,
+  "age20": true,
+  "th": {
+   "title": "DJ Community 18 NOV",
+   "summary": "งาน DJ Community จัดขึ้นวันที่ 18 พฤศจิกายน ที่ Bangkok Island"
+  },
+  "en": {
+   "title": "DJ Community 18 NOV",
+   "summary": "DJ Community event takes place on 18 November at Bangkok Island."
+  },
+  "zh": {
+   "title": "DJ Community 18 NOV",
+   "summary": "DJ Community活动于11月18日在Bangkok Island举行。"
+  }
+ },
+ "tm-slammanbookingasia-sw1": {
+  "sig": "83836237c0bc",
+  "at": "2026-11-13",
+  "ok": true,
+  "reason": null,
+  "category": "concert",
+  "sponsor": "Slamman Booking Asia",
+  "age20": false,
+  "th": {
+   "title": "Spectral Wound Live in Bangkok 2026",
+   "summary": "คอนเสิร์ต Spectral Wound วงแบล็กเมทัลจากทัวร์เอเชีย จัดที่ Mr.FOX Live House วันที่ 18-19 พฤศจิกายน 2569"
+  },
+  "en": {
+   "title": "Spectral Wound Live in Bangkok 2026",
+   "summary": "Spectral Wound performs live in Bangkok on 18-19 November 2026 at Mr.FOX Live House."
+  },
+  "zh": {
+   "title": "Spectral Wound Live in Bangkok 2026",
+   "summary": "Spectral Wound将于2026年11月18日至19日在Mr.FOX Live House举行曼谷演唱会。"
+  }
+ },
+ "tm-bangkoknightradar-afrosplash1": {
+  "sig": "8925ac0a1631",
+  "at": "2026-11-13",
+  "ok": true,
+  "reason": null,
+  "category": "nightlife",
+  "sponsor": "Bangkok Night Radar",
+  "age20": true,
+  "th": {
+   "title": "AFROSPLASH",
+   "summary": "ปาร์ตี้ริมสระน้ำสไตล์ Afrobeat จัดโดย Bangkok Night Radar ที่ Saxsi Rooftop Restaurant & Bar วันที่ 21-22 พฤศจิกายน 2569"
+  },
+  "en": {
+   "title": "AFROSPLASH",
+   "summary": "An Afrobeat mini pool party by Bangkok Night Radar held at Saxsi Rooftop Restaurant & Bar on 21-22 November 2026."
+  },
+  "zh": {
+   "title": "AFROSPLASH",
+   "summary": "由Bangkok Night Radar举办的Afrobeat迷你泳池派对，于2026年11月21日至22日在Saxsi Rooftop Restaurant & Bar举行。"
+  }
+ },
+ "tm-outlanders-outlanders": {
+  "sig": "2356e155f1fc",
+  "at": "2026-11-13",
+  "ok": true,
+  "reason": null,
+  "category": "concert",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "Outlanders",
+   "summary": "การแสดงดนตรี Outlanders จัดขึ้นวันที่ 21 พฤศจิกายน 2569 ที่ Mr.FOX Live House กรุงเทพฯ"
+  },
+  "en": {
+   "title": "Outlanders",
+   "summary": "Outlanders concert takes place on 21 November 2026 at Mr.FOX Live House in Bangkok."
+  },
+  "zh": {
+   "title": "Outlanders",
+   "summary": "Outlanders音乐会将于2026年11月21日在曼谷Mr.FOX Live House举行。"
+  }
+ },
+ "tm-ramadrama-19th-rama-drama": {
+  "sig": "0c009df62624",
+  "at": "2026-11-13",
+  "ok": true,
+  "reason": null,
+  "category": "show",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "ละครเวทีการกุศล Rama D’RAMA 19th “เวท(ย์)ศัตรา” เดอะมิวสิคัล",
+   "summary": "ละครเวทีการกุศล Rama D’RAMA ครั้งที่ 19 จัดแสดงวันที่ 21-22 พฤศจิกายน 2569 ณ หอประชุมอารี วัลยะเสวี คณะแพทยศาสตร์โรงพยาบาลรามาธิบดี"
+  },
+  "en": {
+   "title": "Rama D’RAMA 19th Charity Musical",
+   "summary": "The 19th Rama D’RAMA charity musical takes place on 21-22 November 2026 at Aree Valyasevi Auditorium, Faculty of Medicine Ramathibodi Hospital."
+  },
+  "zh": {
+   "title": "第19届Rama D’RAMA慈善音乐剧",
+   "summary": "第19届Rama D’RAMA慈善音乐剧于2026年11月21日至22日在拉玛铁菩提医学院Aree Valyasevi礼堂举行。"
+  }
+ },
+ "tm-carnivalcookout-carnivalcookout": {
+  "sig": "0759875bb588",
+  "at": "2026-11-13",
+  "ok": true,
+  "reason": null,
+  "category": "concert",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "Carnival Cookout Opening Season",
+   "summary": "งานเปิดซีซั่น Carnival Cookout และตลาดนัดสุดสัปดาห์ จัดขึ้นวันที่ 21 พฤศจิกายน ที่ Royal Phuket Marina ภูเก็ต"
+  },
+  "en": {
+   "title": "Carnival Cookout Opening Season",
+   "summary": "Carnival Cookout season opening and weekend market on 21 November at Royal Phuket Marina, Phuket."
+  },
+  "zh": {
+   "title": "Carnival Cookout Opening Season",
+   "summary": "Carnival Cookout新赛季开幕及周末市集于11月21日在普吉岛Royal Phuket Marina举行。"
+  }
+ },
+ "tm-meltlivehouse-meltfestival": {
+  "sig": "e9428cfc4fe8",
+  "at": "2026-11-13",
+  "ok": true,
+  "reason": null,
+  "category": "concert",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "MELT FESTIVAL",
+   "summary": "เทศกาลดนตรี MELT FESTIVAL จัดวันที่ 21 พฤศจิกายน 2569 ที่ Cloud 11 พร้อมศิลปินอาทิ ADOY, Reality Club และ No Buses"
+  },
+  "en": {
+   "title": "MELT FESTIVAL",
+   "summary": "MELT FESTIVAL takes place on 21 November 2026 at Cloud 11, featuring artists such as ADOY, Reality Club, and No Buses."
+  },
+  "zh": {
+   "title": "MELT FESTIVAL",
+   "summary": "MELT FESTIVAL于2026年11月21日在Cloud 11举行，汇聚ADOY、Reality Club和No Buses等艺人。"
+  }
+ },
+ "tm-thailandpianofestival-tipf2026-2": {
+  "sig": "2d8963c05d10",
+  "at": "2026-11-13",
+  "ok": true,
+  "reason": null,
+  "category": "concert",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "Concert 2: The Soul of Russia Part I",
+   "summary": "คอนเสิร์ตเดี่ยวเปียโนจากเทศกาล The 4th Thailand International Piano Festival ณ สถาบันดนตรีกัลยาณิวัฒนา ในวันที่ 22 พฤศจิกายน 2569"
+  },
+  "en": {
+   "title": "Concert 2: The Soul of Russia Part I",
+   "summary": "Piano concert part of the 4th Thailand International Piano Festival at Princess Galyani Vadhana Institute of Music on November 22, 2026."
+  },
+  "zh": {
+   "title": "Concert 2: The Soul of Russia Part I",
+   "summary": "第四届泰国国际钢琴节钢琴音乐会，于2026年11月22日在加拉亚瓦塔纳公主音乐学院举行。"
+  }
+ },
+ "tm-4amwork-2026-bae-jinyoung-foreveryoung-fan-meeting-in-thaila": {
+  "sig": "53c4559ee725",
+  "at": "2026-11-13",
+  "ok": true,
+  "reason": null,
+  "category": "kpop",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "Bae Jin-young <Forever Young> Thailand Fan Meeting 2026 in Bangkok",
+   "summary": "งานแฟนมีตติ้งของ Bae Jin-young จัดขึ้นที่ Phenix Grand Ballroom ชั้น 5 พันธุ์ทิพย์ ประตูน้ำ ในวันที่ 22 พฤศจิกายน 2569"
+  },
+  "en": {
+   "title": "Bae Jin-young <Forever Young> Thailand Fan Meeting 2026 in Bangkok",
+   "summary": "Fan meeting featuring Bae Jin-young at Phenix Grand Ballroom (5th Floor), Phenix Pratunam on November 22, 2026."
+  },
+  "zh": {
+   "title": "Bae Jin-young <Forever Young> Thailand Fan Meeting 2026 in Bangkok",
+   "summary": "裴珍映泰国粉丝见面会将于2026年11月22日在水门Phenix大宴会厅（5楼）举行。"
+  }
+ },
+ "tm-thezentric-thezentricoflannalegacy-24nov26": {
+  "sig": "eff52df3def9",
+  "at": "2026-11-13",
+  "ok": true,
+  "reason": null,
+  "category": "festival",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "The Zentric of Lanna Legacy ยี่เป็ง มรดกแสงแห่งล้านนา",
+   "summary": "งานเทศกาลยี่เป็งสืบสานอารยธรรมประเพณีล้านนา จัดขึ้นที่ The Zentric Lanna Chiangmai (สวนดอกแม่ออน) ในวันที่ 24 พฤศจิกายน 2569"
+  },
+  "en": {
+   "title": "The Zentric of Lanna Legacy - Yi Peng",
+   "summary": "Yi Peng festival celebrating Lanna traditions at The Zentric Lanna Chiangmai (Suan Dok Mae On) on November 24, 2026."
+  },
+  "zh": {
+   "title": "The Zentric of Lanna Legacy 兰纳之光水灯节",
+   "summary": "传承兰纳传统的水灯节活动，将于2026年11月24日在清迈The Zentric Lanna举行。"
+  }
+ },
+ "tm-thezentric-thezentricoflannalegacy-25nov26": {
+  "sig": "d8f3d3599f3a",
+  "at": "2026-11-13",
+  "ok": true,
+  "reason": null,
+  "category": "festival",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "The Zentric of Lanna Legacy ยี่เป็ง มรดกแสงแห่งล้านนา",
+   "summary": "งานเทศกาลยี่เป็งสืบสานอารยธรรมประเพณีล้านนา จัดขึ้นที่ The Zentric Lanna Chiangmai (สวนดอกแม่ออน) ในวันที่ 25 พฤศจิกายน 2569"
+  },
+  "en": {
+   "title": "The Zentric of Lanna Legacy - Yi Peng",
+   "summary": "Yi Peng festival celebrating Lanna traditions at The Zentric Lanna Chiangmai (Suan Dok Mae On) on November 25, 2026."
+  },
+  "zh": {
+   "title": "The Zentric of Lanna Legacy 兰纳之光水灯节",
+   "summary": "传承兰纳传统的水灯节活动，将于2026年11月25日在清迈The Zentric Lanna举行。"
+  }
+ },
+ "tm-siwilaisoundclub-112026": {
+  "sig": "04c9220d0707",
+  "at": "2026-11-13",
+  "ok": true,
+  "reason": null,
+  "category": "nightlife",
+  "sponsor": null,
+  "age20": true,
+  "th": {
+   "title": "Winter Jazz Festival : A Century Of Jazz",
+   "summary": "เทศกาลดนตรีแจ๊สเฉลิมฉลองหนึ่งศตวรรษแห่งดนตรีแจ๊ส ตั้งแต่ Cool Jazz จนถึง Fusion ณ SIWILAI Sound Club ระหว่างวันที่ 27-29 พฤศจิกายน 2569"
+  },
+  "en": {
+   "title": "Winter Jazz Festival : A Century Of Jazz",
+   "summary": "A jazz music festival celebrating a century of jazz evolution at SIWILAI Sound Club from November 27-29, 2026."
+  },
+  "zh": {
+   "title": "Winter Jazz Festival : A Century Of Jazz",
+   "summary": "冬季爵士音乐节，庆祝爵士乐一个世纪的发展，于2026年11月27日至29日在SIWILAI Sound Club举行。"
+  }
+ },
+ "tm-togetherfestival-togetherfestival2026-vviptable": {
+  "sig": "9957a3cf2904",
+  "at": "2026-11-13",
+  "ok": true,
+  "reason": null,
+  "category": "concert",
+  "sponsor": null,
+  "age20": true,
+  "th": {
+   "title": "Together Festival 2026 - VVIP PACKAGE",
+   "summary": "มหกรรมดนตรีอิเล็กทรอนิกส์ Together Festival 2026 พร้อมไลน์อัพศิลปินระดับโลก ณ BITEC ระหว่างวันที่ 27-28 พฤศจิกายน 2569"
+  },
+  "en": {
+   "title": "Together Festival 2026 - VVIP PACKAGE",
+   "summary": "Electronic dance music festival featuring international artists at BITEC on November 27-28, 2026."
+  },
+  "zh": {
+   "title": "Together Festival 2026 - VVIP PACKAGE",
+   "summary": "电子音乐节Together Festival 2026汇聚国际知名艺人，于2026年11月27日至28日在曼谷国际贸易展览中心（BITEC）举行。"
+  }
+ },
+ "tm-deepfieldvoid-deepfield": {
+  "sig": "8b3daebcc579",
+  "at": "2026-11-13",
+  "ok": true,
+  "reason": null,
+  "category": "outdoor",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "Deep Field : Back to human",
+   "summary": "งานแคมป์ปิ้ง Unplugged และดนตรีแนว Electronic Soundscape ณ Bamboo base camping จังหวัดนครนายก ระหว่างวันที่ 27-28 พฤศจิกายน 2569"
+  },
+  "en": {
+   "title": "Deep Field : Back to human",
+   "summary": "An unplugged camping and electronic soundscape meetup at Bamboo base camping, Nakhon Nayok, on November 27-28, 2026."
+  },
+  "zh": {
+   "title": "Deep Field : Back to human",
+   "summary": "不插电露营与电子声景聚会，于2026年11月27日至28日在那空育舍（Nakhon Nayok）Bamboo base camping举行。"
+  }
+ },
+ "tm-kliff-coffeeparty": {
+  "sig": "e4edb7c73156",
+  "at": "2026-11-13",
+  "ok": true,
+  "reason": null,
+  "category": "social",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "Coffee Party (White Party)",
+   "summary": "ปาร์ตี้กาแฟธีม White Party ชวนแต่งชุดสีขาว ณ Kliff Beach Bistro & Bar จังหวัดชลบุรี ในวันที่ 28 พฤศจิกายน 2569"
+  },
+  "en": {
+   "title": "Coffee Party (White Party)",
+   "summary": "A White Party-themed coffee gathering at Kliff Beach Bistro & Bar, Chonburi on November 28, 2026."
+  },
+  "zh": {
+   "title": "Coffee Party (White Party)",
+   "summary": "白色派对主题咖啡聚会，于2026年11月28日在春武里府Kliff Beach Bistro & Bar举行。"
+  }
+ },
+ "tm-art-battle-bangkok-28nov26": {
+  "sig": "5434ef8ad90f",
+  "at": "2026-11-13",
+  "ok": true,
+  "reason": null,
+  "category": "exhibition",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "Art Battle Bangkok",
+   "summary": "ชมการสร้างสรรค์ผลงานศิลปะสดๆ และร่วมโหวตผู้ชนะในศึกการวาดภาพ 3 รอบ ที่ The Fig Lobby Bangkok วันที่ 28 พฤศจิกายน 2026"
+  },
+  "en": {
+   "title": "Art Battle Bangkok",
+   "summary": "Watch live art creation and vote for the winner in a fast-paced painting battle at The Fig Lobby Bangkok on November 28, 2026."
+  },
+  "zh": {
+   "title": "Art Battle Bangkok",
+   "summary": "2026年11月28日在曼谷The Fig Lobby观看现场艺术创作并投票选出绘画比赛胜者。"
+  }
+ },
+ "tm-raj-petchyindee-dec26": {
+  "sig": "ca314ab87fa9",
+  "at": "2026-11-13",
+  "ok": true,
+  "reason": null,
+  "category": "outdoor",
+  "sponsor": "Petchyindee",
+  "age20": false,
+  "th": {
+   "title": "Petchyindee Muay Thai Event - ธันวาคม",
+   "summary": "ชมการแข่งขันมวยไทยคุณภาพจากโปรโมชั่นเพชรยินดีตลอดเดือนธันวาคม 2026 ที่สนามมวยเวทีราชดำเนิน"
+  },
+  "en": {
+   "title": "Petchyindee Muay Thai Event - December",
+   "summary": "Catch quality Muay Thai fights presented by Petchyindee throughout December 2026 at Rajadamnern Stadium."
+  },
+  "zh": {
+   "title": "Petchyindee 泰拳赛事 - 12月",
+   "summary": "2026年12月整月在叻喃隆拳场观看 Petchyindee 的高品质泰拳比赛。"
+  }
+ },
+ "tm-hyhbkk-karateboogaloo": {
+  "sig": "5c7434d0b6cb",
+  "at": "2026-11-13",
+  "ok": true,
+  "reason": null,
+  "category": "concert",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "Maho Rasop Series: Karate Boogaloo",
+   "summary": "ชมการแสดงจาก Karate Boogaloo และ murrph ในงาน Maho Rasop Series 2026 ที่ Speakerbox Livehouse วันที่ 4 ธันวาคม 2026"
+  },
+  "en": {
+   "title": "Maho Rasop Series: Karate Boogaloo by HAVE YOU HEARD?",
+   "summary": "Catch Karate Boogaloo and murrph at the Maho Rasop Series 2026 intimate show at Speakerbox Livehouse on December 4, 2026."
+  },
+  "zh": {
+   "title": "Maho Rasop Series: Karate Boogaloo",
+   "summary": "2026年12月4日在 Speakerbox Livehouse 举办的 Maho Rasop Series 2026 小型演出，嘉宾包括 Karate Boogaloo 和 murrph。"
+  }
+ },
+ "tm-lamoonmusicfestival-lamoonmusicfestival": {
+  "sig": "44b788a01c1a",
+  "at": "2026-11-13",
+  "ok": true,
+  "reason": null,
+  "category": "concert",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "ละมุน - La Moon Music Festival",
+   "summary": "สัมผัสเสียงเพลงและความทรงจำอันอบอุ่นใต้แสงจันทร์ที่งาน La Moon Music Festival ณ บ้านไร่เขียวขจี ภาสกรฟาร์ม จ.ตราด วันที่ 9 ธันวาคม 2026"
+  },
+  "en": {
+   "title": "La Moon Music Festival",
+   "summary": "Experience music and warm memories under the moon at La Moon Music Festival on December 9, 2026, at Baan Rai Khieo Khachi, Trat."
+  },
+  "zh": {
+   "title": "La Moon 音乐节",
+   "summary": "2026年12月9日在达府 La Moon 音乐节享受月光下的音乐与美好回忆。"
+  }
+ },
+ "tm-fccthai-christmas-dinner": {
+  "sig": "8109b17ccf7f",
+  "at": "2026-11-13",
+  "ok": true,
+  "reason": null,
+  "category": "nightlife",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "Christmas dinner at the FCCT 2026",
+   "summary": "ร่วมงานเลี้ยงฉลองเทศกาลคริสต์มาสประจำปีของสโมสร ณ Foreign Correspondents' Club of Thailand วันที่ 11 ธันวาคม 2026"
+  },
+  "en": {
+   "title": "Christmas dinner at the FCCT 2026",
+   "summary": "Join the annual festive Christmas dinner at the Foreign Correspondents' Club of Thailand on December 11, 2026."
+  },
+  "zh": {
+   "title": "2026年 FCCT 圣诞晚宴",
+   "summary": "2026年12月11日在泰国外国记者俱乐部参加年度节日圣诞晚宴。"
+  }
+ },
+ "tm-nowtoniceentertainment-makoto-robin-fan-meeting-fan-sign-in-": {
+  "sig": "29ef30e47bd7",
+  "at": "2026-11-13",
+  "ok": true,
+  "reason": null,
+  "category": "fanmeet",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "MAKOTO & ROBIN FanMeeting and FanSign in Bangkok",
+   "summary": "พบกับมาโคโตะและโรบินในงานแฟนมีตติ้งและแฟนไซน์ที่ Union Mall วันที่ 12 ธันวาคม 2026"
+  },
+  "en": {
+   "title": "MAKOTO & ROBIN FanMeeting and FanSign in Bangkok",
+   "summary": "Meet Makoto and Robin at their fan meeting and fan sign event in Bangkok on December 12, 2026, at Union Mall."
+  },
+  "zh": {
+   "title": "MAKOTO & ROBIN 曼谷粉丝见面会暨签售会",
+   "summary": "2026年12月12日在曼谷 Union Mall 参加 Makoto 和 Robin 的粉丝见面会与签售会。"
+  }
+ },
+ "tm-bangkokisland-highseason420fest": {
+  "sig": "b7190bfbb342",
+  "at": "2026-11-13",
+  "ok": true,
+  "reason": null,
+  "category": "festival",
+  "sponsor": null,
+  "age20": true,
+  "th": {
+   "title": "High Season 420 Fest",
+   "summary": "งานเทศกาลดนตรี ศิลปะ ตลาดสีเขียว และการประกวดกัญชา ริมแม่น้ำ ณ ท่าเรือ Bangkok Island วันที่ 12-13 ธันวาคม 2026"
+  },
+  "en": {
+   "title": "High Season 420 Fest",
+   "summary": "A riverside festival featuring music, art, a green market, and a cannabis flower competition at Bangkok Island on December 12–13, 2026."
+  },
+  "zh": {
+   "title": "High Season 420 节",
+   "summary": "2026年12月12日至13日在曼谷游船码头举办的融合音乐、艺术、绿色市集与大麻花卉比赛的河畔节日。"
+  }
+ },
+ "tm-acgevent-onepieceemotionth": {
+  "sig": "1c4a62307659",
+  "at": "2026-11-13",
+  "ok": true,
+  "reason": null,
+  "category": "exhibition",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "ONE PIECE EMOTION Exhibition – กรุงเทพฯ ประเทศไทย",
+   "summary": "นิทรรศการฉลองครบรอบ 25 ปี ONE PIECE จัดขึ้นครั้งแรกในประเทศไทย ที่ ACG Hub ชั้น 3 Cloud11 ตั้งแต่วันที่ 12 ธันวาคม 2026 ถึง 14 มีนาคม 2027"
+  },
+  "en": {
+   "title": "ONE PIECE EMOTION Exhibition – Bangkok, Thailand",
+   "summary": "The first ONE PIECE 25th anniversary anime exhibition in Thailand, held at ACG Hub, 3rd Floor, Cloud11 from December 12, 2026 to March 14, 2027."
+  },
+  "zh": {
+   "title": "ONE PIECE EMOTION 展览 - 泰国曼谷",
+   "summary": "《ONE PIECE》动画25周年纪念展首次登陆泰国，于2026年12月12日至2027年3月14日在 Cloud11 3层 ACG Hub 举行。"
+  }
+ },
+ "tm-1020spectrumstudio-scb-cafe-bkk": {
+  "sig": "39ed77d88bf0",
+  "at": "2026-11-13",
+  "ok": true,
+  "reason": null,
+  "category": "exhibition",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "1020 Spectrum Studio",
+   "summary": "งานอีเวนต์ที่ One Fine Day Café วันที่ 12-13 ธ.ค. 2026 บัตรราคา 255 บาท พร้อมเครื่องดื่มและขนม"
+  },
+  "en": {
+   "title": "1020 Spectrum Studio",
+   "summary": "Event at One Fine Day Café on Dec 12-13, 2026. Tickets cost 255 THB including a drink and a snack."
+  },
+  "zh": {
+   "title": "1020 Spectrum Studio",
+   "summary": "于2026年12月12日至13日在One Fine Day Café举办的活动，门票255泰铢含饮品和点心。"
+  }
+ },
+ "tm-holdingonrecords-discontentbkk": {
+  "sig": "604ee6976fc8",
+  "at": "2026-11-13",
+  "ok": true,
+  "reason": null,
+  "category": "concert",
+  "sponsor": "Streets of Hate",
+  "age20": false,
+  "th": {
+   "title": "DISCONTENT Live in Bangkok 2026",
+   "summary": "คอนเสิร์ตส่งท้ายปี 2026 จัดโดย Streets of Hate ที่ Blueprint Livehouse วันที่ 12 ธ.ค. 2026"
+  },
+  "en": {
+   "title": "DISCONTENT Live in Bangkok 2026",
+   "summary": "End-of-year concert presented by Streets of Hate at Blueprint Livehouse on December 12, 2026."
+  },
+  "zh": {
+   "title": "DISCONTENT Live in Bangkok 2026",
+   "summary": "由Streets of Hate呈现的年终演唱会，于2026年12月12日在Blueprint Livehouse举行。"
+  }
+ },
+ "tm-bangkok-rooftops-centara-pool-party-12-december-2026": {
+  "sig": "2e63e2730297",
+  "at": "2026-11-13",
+  "ok": true,
+  "reason": null,
+  "category": "nightlife",
+  "sponsor": "Bangkok Rooftops",
+  "age20": true,
+  "th": {
+   "title": "CENTARA POOL PARTY | Christmas Edition | 12 DECEMBER",
+   "summary": "ปาร์ตี้ริมสระน้ำธีมคริสต์มาสจัดโดย Bangkok Rooftops ที่ centralworld วันที่ 12 ธ.ค. 2026"
+  },
+  "en": {
+   "title": "CENTARA POOL PARTY | Christmas Edition | 12 DECEMBER",
+   "summary": "Christmas edition pool party by Bangkok Rooftops at centralworld on December 12, 2026."
+  },
+  "zh": {
+   "title": "CENTARA POOL PARTY | Christmas Edition | 12 DECEMBER",
+   "summary": "由Bangkok Rooftops于2026年12月12日在centralworld举办的圣诞主题泳池派对。"
+  }
+ },
+ "tm-meltlivehouse-laolom": {
+  "sig": "08dbe6551a19",
+  "at": "2026-11-13",
+  "ok": true,
+  "reason": null,
+  "category": "show",
+  "sponsor": "Waiting Room",
+  "age20": false,
+  "th": {
+   "title": "Melt Livehouse Cloud 11 Theater: Laolom",
+   "summary": "การแสดงจาก Waiting Room ที่ Melt Livehouse Cloud 11 วันที่ 12 ธ.ค. 2026 บัตรราคา 350-1,400 บาท"
+  },
+  "en": {
+   "title": "Melt Livehouse Cloud 11 Theater: Laolom",
+   "summary": "Show presented by Waiting Room at Melt Livehouse Cloud 11 on Dec 12, 2026. Tickets 350-1,400 THB."
+  },
+  "zh": {
+   "title": "Melt Livehouse Cloud 11 Theater: Laolom",
+   "summary": "由Waiting Room于2026年12月12日在Melt Livehouse Cloud 11呈现的演出，票价350-1400泰铢。"
+  }
+ },
+ "tm-bangkokclassiccar-amata-spring-classic-d-elegance2026": {
+  "sig": "566ab04f9b4c",
+  "at": "2026-11-13",
+  "ok": true,
+  "reason": null,
+  "category": "expo",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "AMATA SPRING Classic d’ Elegance 2026",
+   "summary": "งานจัดแสดงที่สนามกอล์ฟอมตะ สปริง คันทรีคลับ จังหวัดชลบุรี วันที่ 12 ธ.ค. 2026"
+  },
+  "en": {
+   "title": "AMATA SPRING Classic d’ Elegance 2026",
+   "summary": "Event held at Amata Spring Country Club in Chonburi on December 12, 2026."
+  },
+  "zh": {
+   "title": "AMATA SPRING Classic d’ Elegance 2026",
+   "summary": "于2026年12月12日在春武里府Amata Spring乡村俱乐部举办的展会活动。"
+  }
+ },
+ "tm-tarpypofficial-tarpypbirthday2026": {
+  "sig": "b7247a864a04",
+  "at": "2026-11-13",
+  "ok": true,
+  "reason": null,
+  "category": "fanmeet",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "TAR PYP BIRTHDAY FAN MEETING 2026",
+   "summary": "งานแฟนมีตติ้งวันเกิด TAR PYP ที่ Aboutwork - Cafe & Rental Space วันที่ 12 ธ.ค. 2026 บัตรราคา 429 บาท"
+  },
+  "en": {
+   "title": "TAR PYP BIRTHDAY FAN MEETING 2026",
+   "summary": "TAR PYP birthday fan meeting at Aboutwork - Cafe & Rental Space on Dec 12, 2026. Tickets 429 THB."
+  },
+  "zh": {
+   "title": "TAR PYP BIRTHDAY FAN MEETING 2026",
+   "summary": "TAR PYP生日粉丝见面会，于2026年12月12日在Aboutwork - Cafe & Rental Space举行，票价429泰铢。"
+  }
+ },
+ "tm-primenine-skyy9christmasgroove2026": {
+  "sig": "ab680a66ce12",
+  "at": "2026-11-13",
+  "ok": true,
+  "reason": null,
+  "category": "nightlife",
+  "sponsor": null,
+  "age20": true,
+  "th": {
+   "title": "Skyy9 Christmas Groove",
+   "summary": "งานดนตรีเฉลิมฉลองคริสต์มาส 3 วัน ที่ Skyy9 Rooftop วันที่ 23-25 ธ.ค. 2026 บัตรราคา 200-3,000 บาท"
+  },
+  "en": {
+   "title": "Skyy9 Christmas Groove",
+   "summary": "3-day Christmas music event at Skyy9 Rooftop from Dec 23-25, 2026. Tickets 200-3,000 THB."
+  },
+  "zh": {
+   "title": "Skyy9 Christmas Groove",
+   "summary": "于2026年12月23日至25日在Skyy9 Rooftop举办为期3天的圣诞音乐活动，票价200-3000泰铢。"
+  }
+ },
+ "po-cosnatsu-xmas-2026-12-25": {
+  "sig": "7cfa5b38f3e2",
+  "at": "2026-11-13",
+  "ok": true,
+  "reason": null,
+  "category": "anime",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "CosNatsu Xmas",
+   "summary": "งานอนิเมะและการแต่งคอสเพลย์ จัดที่ Siamscape วันที่ 25-27 ธ.ค. 2026"
+  },
+  "en": {
+   "title": "CosNatsu Xmas",
+   "summary": "Anime and cosplay event held at Siamscape from December 25-27, 2026."
+  },
+  "zh": {
+   "title": "CosNatsu Xmas",
+   "summary": "动漫与角色扮演活动，于2026年12月25日至27日在Siamscape举行。"
+  }
+ },
+ "tm-tidfc2026-tidfc2026": {
+  "sig": "185dbcce8138",
+  "at": "2026-11-13",
+  "ok": true,
+  "reason": null,
+  "category": "concert",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "TIDFC2026 - Thailand International Drum Festivals & Competition",
+   "summary": "ศึกการแข่งขันกลองชุดครั้งยิ่งใหญ่ส่งท้ายปี 2026 ณ วิทยาลัยดุริยางคศิลป์ มหาวิทยาลัยมหิดล"
+  },
+  "en": {
+   "title": "TIDFC2026 - Thailand International Drum Festivals & Competition",
+   "summary": "The grand year-end drum competition and festival held at the College of Music, Mahidol University in 2026."
+  },
+  "zh": {
+   "title": "TIDFC2026 - 泰国国际鼓节暨比赛",
+   "summary": "2026年底大型架子鼓比赛与音乐节，在玛希敦大学音乐学院举办。"
+  }
+ },
+ "tm-gspot-ent-overtherainbowrooftoptdancess2xmasspecial": {
+  "sig": "216cd89bd89a",
+  "at": "2026-11-13",
+  "ok": true,
+  "reason": null,
+  "category": "nightlife",
+  "sponsor": "G-Spot Entertainment",
+  "age20": true,
+  "th": {
+   "title": "Over the Rainbow Rooftop T-Dance SS2 X-mas special with Sexy Santa @ Mimi's Bangkok",
+   "summary": "ปาร์ตี้ฉลองคริสต์มาสบนดาดฟ้าสุดพิเศษกับ Sexy Santa และผองเพื่อนที่ Mimi's Bangkok วันที่ 26 ธันวาคม 2026"
+  },
+  "en": {
+   "title": "Over the Rainbow Rooftop T-Dance SS2 X-mas special with Sexy Santa @ Mimi's Bangkok",
+   "summary": "A festive rooftop Christmas celebration with Sexy Santa brought by G-Spot Entertainment at Mimi's Bangkok on Dec 26, 2026."
+  },
+  "zh": {
+   "title": "Over the Rainbow Rooftop T-Dance SS2 圣诞特别派对 @ Mimi's Bangkok",
+   "summary": "G-Spot Entertainment于2026年12月26日在Mimi's Bangkok举办的圣诞屋顶派对。"
+  }
+ },
+ "run-cJpNaeNM": {
+  "sig": "09e31a8d3293",
+  "at": "2026-11-13",
+  "ok": true,
+  "reason": null,
+  "category": "run",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "วิ่งมินิมาราธอนโรงเรียนบ้านศาลา 2026",
+   "summary": "งานวิ่งมินิมาราธอนจัดขึ้นในวันที่ 26 ธันวาคม 2569 ณ สวนเฉลิมพระเกียรติ 80 พรรษา จังหวัดเชียงใหม่"
+  },
+  "en": {
+   "title": "Baansala School Minimarathon 2026",
+   "summary": "A minimarathon event held on December 26, 2026, at the 80th Birthday Anniversary Chalermprakiat Park in Chiang Mai."
+  },
+  "zh": {
+   "title": "2026年班萨拉学校迷你马拉松",
+   "summary": "2026年12月26日在清迈80周年纪念公园举办的迷你马拉松比赛。"
+  }
+ },
+ "po-lysandra-medieval-winter-festival-2026-12-26": {
+  "sig": "5d565611144b",
+  "at": "2026-11-13",
+  "ok": true,
+  "reason": null,
+  "category": "anime",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "Lysandra Medieval Winter Festival",
+   "summary": "งานอีเวนต์แนวอนิเมะและแฟนตาซีที่เปิดให้ผู้เข้าร่วมแต่งคอสเพลย์ได้ ณ สวนช้างเผือก จังหวัดเชียงใหม่"
+  },
+  "en": {
+   "title": "Lysandra Medieval Winter Festival",
+   "summary": "A medieval fantasy and anime-themed event welcoming cosplayers at Chang Phueak Park, Chiang Mai."
+  },
+  "zh": {
+   "title": "Lysandra 中世纪冬季节",
+   "summary": "在清迈象帕府公园举办的中世纪奇幻与动漫主题活动，欢迎Coser参与。"
+  }
+ },
+ "ep-177902": {
+  "sig": "20c0cbb38d02",
+  "at": "2026-11-13",
+  "ok": true,
+  "reason": null,
+  "category": "fanmeet",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "The 1st Fansign Baby Butterbear's First Christmas",
+   "summary": "งานแจกลายเซ็นแรกของน้องเนย Butterbear และผองเพื่อนในเทศกาลคริสต์มาส ที่ EMSPHERE"
+  },
+  "en": {
+   "title": "The 1st Fansign Baby Butterbear's First Christmas",
+   "summary": "Baby Butterbear's first-ever Christmas fansign event with friends at EMSPHERE."
+  },
+  "zh": {
+   "title": "Baby Butterbear 首次圣诞粉丝签名会",
+   "summary": "Baby Butterbear与其朋友们在EMSPHERE举办的首次圣诞主题粉丝签名会。"
+  }
+ },
+ "ep-174010": {
+  "sig": "8a116c488e3d",
+  "at": "2026-11-13",
+  "ok": true,
+  "reason": null,
+  "category": "fanmeet",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "Boss & Noeul 2nd Fansign : Our Golden Moment",
+   "summary": "งานแฟนไซน์ครั้งที่ 2 ของ Boss และ Noeul ในวันที่ 26 ธันวาคม 2569 ณ ICONSIAM Hall ชั้น 7"
+  },
+  "en": {
+   "title": "Boss & Noeul 2nd Fansign : Our Golden Moment",
+   "summary": "Boss and Noeul's 2nd fansign event held on December 26, 2026, at ICONSIAM Hall, 7th Floor."
+  },
+  "zh": {
+   "title": "Boss & Noeul 第二场粉丝签名会：我们的黄金时刻",
+   "summary": "Boss与Noeul于2026年12月26日在ICONSIAM 7楼会展大厅举办的第二场粉丝签名会。"
+  }
+ },
+ "tm-razorriff-yuji": {
+  "sig": "19c2deb2354f",
+  "at": "2026-11-13",
+  "ok": true,
+  "reason": null,
+  "category": "concert",
+  "sponsor": "ICON PROMOTIONS & RAZOR RIFF",
+  "age20": false,
+  "th": {
+   "title": "yuji Live in Bangkok",
+   "summary": "คอนเสิร์ตจากศิลปินเจ้าของเพลง Old Love พร้อมแขกรับเชิญพิเศษ ที่ Speakerbox Livehouse วันที่ 27 ธันวาคม 2026"
+  },
+  "en": {
+   "title": "yuji Live in Bangkok",
+   "summary": "Live concert by yuji with special guest Haneri, presented by Icon Promotions and Razor Riff at Speakerbox Livehouse."
+  },
+  "zh": {
+   "title": "yuji 曼谷演唱会",
+   "summary": "由 Icon Promotions 与 Razor Riff 主办，yuji 于2026年12月27日在 Speakerbox Livehouse 的曼谷演唱会。"
+  }
+ },
+ "tm-lightofthelampchurch-lightofthelampchurch": {
+  "sig": "7b6613f6f7dd",
+  "at": "2026-11-13",
+  "ok": true,
+  "reason": null,
+  "category": "festival",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "งานคริสต์มาสคริสตจักรแสงประทีป 2026",
+   "summary": "เฉลิมฉลองเทศกาลคริสต์มาสพร้อมตลาดอาหารและเครื่องดื่ม ณ คริสตจักรแสงประทีป จังหวัดเชียงราย"
+  },
+  "en": {
+   "title": "Light of the Lamp Church Christmas Event 2026",
+   "summary": "A Christmas celebration featuring a food and drink market at Light of the Lamp Church in Chiang Rai."
+  },
+  "zh": {
+   "title": "2026年光明灯教会圣诞活动",
+   "summary": "在清莱光明灯教会举办的圣诞庆祝活动，内设圣诞美食与饮品市集。"
+  }
+ },
+ "tm-kpspringent-suhofanconinbkk": {
+  "sig": "83e9e0b6af01",
+  "at": "2026-11-13",
+  "ok": true,
+  "reason": null,
+  "category": "kpop",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "2026 K-POP Chronicle Live: SUHO Fan-Con in BANGKOK",
+   "summary": "ร่วมส่งท้ายปี 2026 ไปกับ SUHO ในงานแฟนคอนเสิร์ตสุดพิเศษ ณ Island Hall, Fashion Island วันที่ 27 ธันวาคม 2569"
+  },
+  "en": {
+   "title": "2026 K-POP Chronicle Live: SUHO Fan-Con in BANGKOK",
+   "summary": "Celebrate the year-end with SUHO at his fan-con in Bangkok on December 27, 2026, at Island Hall, Fashion Island."
+  },
+  "zh": {
+   "title": "2026 K-POP Chronicle Live: SUHO Fan-Con in BANGKOK",
+   "summary": "于2026年12月27日在曼谷Fashion Island的Island Hall与SUHO一起欢度年末粉丝见面会。"
+  }
+ },
+ "run-vjbmljhe": {
+  "sig": "ed5063f46bce",
+  "at": "2026-11-13",
+  "ok": true,
+  "reason": null,
+  "category": "run",
+  "sponsor": "Gatorade",
+  "age20": false,
+  "th": {
+   "title": "Gatorade BKK RUN 2026",
+   "summary": "งานวิ่ง Gatorade BKK RUN 2026 จัดขึ้นในวันที่ 27 ธันวาคม 2569 ณ ลานไทยสมายล์บัส สำนักงานใหญ่ เจริญนคร กรุงเทพมหานคร"
+  },
+  "en": {
+   "title": "Gatorade BKK RUN 2026",
+   "summary": "Gatorade BKK RUN 2026 takes place on December 27, 2026, at the Thai Smile Bus Headquarters plaza in Charoen Nakhon, Bangkok."
+  },
+  "zh": {
+   "title": "Gatorade BKK RUN 2026",
+   "summary": "Gatorade BKK RUN 2026于2026年12月27日在曼谷Charoen Nakhon的Thai Smile Bus总部广场举行。"
+  }
+ },
+ "run-DkDUFGvZ": {
+  "sig": "4eaf18a5534a",
+  "at": "2026-11-13",
+  "ok": true,
+  "reason": null,
+  "category": "run",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "วิ่งวัดควนอุโบสถ",
+   "summary": "งานวิ่งวัดควนอุโบสถ จัดขึ้นในวันที่ 27 ธันวาคม 2569 ณ วัดควนอุโบสถ ต.ปริก อ.ทุ่งใหญ่ จ.นครศรีธรรมราช"
+  },
+  "en": {
+   "title": "วิ่งวัดควนอุโบสถ",
+   "summary": "The Wat Khuan Ubosot Run is held on December 27, 2026, at Wat Khuan Ubosot, Prik Subdistrict, Thung Yai District, Nakhon Si Thammarat."
+  },
+  "zh": {
+   "title": "วิ่งวัดควนอุโบสถ",
+   "summary": "Wat Khuan Ubosot跑步活动于2026年12月27日在洛坤府Thung Yai县Prik镇的Wat Khuan Ubosot举行。"
+  }
+ },
+ "run-bpLvBuhO": {
+  "sig": "bf2bbbb3eb75",
+  "at": "2026-11-13",
+  "ok": true,
+  "reason": null,
+  "category": "run",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "หนองอียอ10ไมล์ Run For Life 2026",
+   "summary": "งานวิ่งหนองอียอ10ไมล์ Run For Life 2026 วันที่ 27 ธันวาคม 2569 ณ รพ.สต.บ้านหนองอียอ อ.สนม จ.สุรินทร์"
+  },
+  "en": {
+   "title": "หนองอียอ10ไมล์ Run For Life 2026",
+   "summary": "Nong E-Yo 10 Miles Run For Life 2026 is held on December 27, 2026, at Ban Nong E-Yo Health Promoting Hospital, Sanom District, Surin."
+  },
+  "zh": {
+   "title": "หนองอียอ10ไมล์ Run For Life 2026",
+   "summary": "Nong E-Yo 10英里生命奔跑2026于2026年12月27日在素林府Sanom县Ban Nong E-Yo卫生促进医院举行。"
+  }
+ },
+ "run-ruYlnwfk": {
+  "sig": "8d766dba53af",
+  "at": "2026-11-13",
+  "ok": true,
+  "reason": null,
+  "category": "run",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "NAMREE NAN ECO TRAIL 2026",
+   "summary": "งานวิ่ง NAMREE NAN ECO TRAIL 2026 จัดขึ้นวันที่ 27 ธันวาคม 2569 ณ โรงเรียนบ้านน้ำรี อ.เฉลิมพระเกียรติ จ.น่าน"
+  },
+  "en": {
+   "title": "NAMREE NAN ECO TRAIL 2026",
+   "summary": "NAMREE NAN ECO TRAIL 2026 takes place on December 27, 2026, at Ban Nam Ri School, Chaloem Phra Kiat District, Nan."
+  },
+  "zh": {
+   "title": "NAMREE NAN ECO TRAIL 2026",
+   "summary": "NAMREE NAN ECO TRAIL 2026于2026年12月27日在难府Chaloem Phra Kiat县Ban Nam Ri学校举行。"
+  }
+ },
+ "ep-177073": {
+  "sig": "a8ca54b0aaa1",
+  "at": "2026-11-13",
+  "ok": true,
+  "reason": null,
+  "category": "concert",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "BOSSNOEUL CROSSOVER CONCERT [ THE FINAL CHAPTER ]",
+   "summary": "คอนเสิร์ต BOSSNOEUL CROSSOVER CONCERT [ THE FINAL CHAPTER ] จัดขึ้นวันที่ 27 ธันวาคม 2569 ณ ICONSIAM Hall ชั้น 7"
+  },
+  "en": {
+   "title": "BOSSNOEUL CROSSOVER CONCERT [ THE FINAL CHAPTER ]",
+   "summary": "BOSSNOEUL CROSSOVER CONCERT [ THE FINAL CHAPTER ] is held on December 27, 2026, at ICONSIAM Hall, 7th Floor."
+  },
+  "zh": {
+   "title": "BOSSNOEUL CROSSOVER CONCERT [ THE FINAL CHAPTER ]",
+   "summary": "BOSSNOEUL CROSSOVER CONCERT [ THE FINAL CHAPTER ]于2026年12月27日在曼谷ICONSIAM 7楼大厅举行。"
+  }
+ },
+ "ep-174611": {
+  "sig": "6c9dc80fba75",
+  "at": "2026-11-13",
+  "ok": true,
+  "reason": null,
+  "category": "nightlife",
+  "sponsor": null,
+  "age20": true,
+  "th": {
+   "title": "DECEMBER 27TH, 2026 Hii Festival Koh Tao",
+   "summary": "งาน Hii Festival Koh Tao จัดขึ้นในวันที่ 27 ธันวาคม 2569 ณ เกาะเต่า จังหวัดสุราษฎร์ธานี"
+  },
+  "en": {
+   "title": "DECEMBER 27TH, 2026 Hii Festival Koh Tao",
+   "summary": "Hii Festival Koh Tao takes place on December 27, 2026, on Koh Tao, Surat Thani."
+  },
+  "zh": {
+   "title": "DECEMBER 27TH, 2026 Hii Festival Koh Tao",
+   "summary": "Hii Festival Koh Tao音乐节于2026年12月27日在素叻他尼府涛岛举行。"
+  }
+ },
+ "tm-g-spot-party-carnival-the-rhythm-of-mystery-new-year-party": {
+  "sig": "e6c33b4c3f6e",
+  "at": "2026-11-13",
+  "ok": true,
+  "reason": null,
+  "category": "nightlife",
+  "sponsor": null,
+  "age20": true,
+  "th": {
+   "title": "G-SPOT CARNIVAL : THE RHYTHM OF MYSTERY",
+   "summary": "ปาร์ตี้ G-SPOT Carnival : The Rhythm of Mystery จัดขึ้นวันที่ 28-29 ธันวาคม 2569 ณ Mustache Bangkok"
+  },
+  "en": {
+   "title": "G-SPOT CARNIVAL : THE RHYTHM OF MYSTERY",
+   "summary": "G-SPOT Carnival: The Rhythm of Mystery party takes place on December 28-29, 2026, at Mustache Bangkok."
+  },
+  "zh": {
+   "title": "G-SPOT CARNIVAL : THE RHYTHM OF MYSTERY",
+   "summary": "G-SPOT Carnival: The Rhythm of Mystery派对将于2026年12月28日至29日在曼谷Mustache Bangkok举行。"
+  }
+ },
+ "ep-181648": {
+  "sig": "8ae80f7c3e01",
+  "at": "2026-11-13",
+  "ok": true,
+  "reason": null,
+  "category": "nightlife",
+  "sponsor": null,
+  "age20": true,
+  "th": {
+   "title": "DECEMBER 29TH, 2026 Waterfall Festival 2 DAYS BEFORE NEW YEA",
+   "summary": "งาน Waterfall Festival เกาะพะงัน จัดขึ้นวันที่ 29-30 ธันวาคม 2026 ส่งท้ายปีเก่า"
+  },
+  "en": {
+   "title": "DECEMBER 29TH, 2026 Waterfall Festival 2 DAYS BEFORE NEW YEA",
+   "summary": "Waterfall Festival Koh Phangan takes place on December 29-30, 2026, featuring the last dance before the new year."
+  },
+  "zh": {
+   "title": "DECEMBER 29TH, 2026 Waterfall Festival 2 DAYS BEFORE NEW YEA",
+   "summary": "帕岸岛瀑布音乐节将于2026年12月29日至30日举行，带来跨年前的最后狂欢。"
+  }
+ },
+ "ep-159292": {
+  "sig": "1caafd57d2e4",
+  "at": "2026-11-13",
+  "ok": true,
+  "reason": null,
+  "category": "nightlife",
+  "sponsor": null,
+  "age20": true,
+  "th": {
+   "title": "WHITE PARTY BANGKOK",
+   "summary": "เทศกาลปาร์ตี้ White Party Bangkok กลับมาอีกครั้ง พร้อมงานปาร์ตี้ใหญ่ 6 งานตั้งแต่วันที่ 27 ธันวาคม 2025 ถึง 3 มกราคม 2027"
+  },
+  "en": {
+   "title": "WHITE PARTY BANGKOK",
+   "summary": "Thailand's largest gay dance festival returns with 6 massive parties from Dec 27, 2025, to Jan 3, 2027."
+  },
+  "zh": {
+   "title": "WHITE PARTY BANGKOK",
+   "summary": "泰国最大的同性恋舞蹈节回归，于2025年12月27日至2027年1月3日举办6场盛大派对。"
+  }
+ },
+ "zip-material-submission-showcase-from-local-to-global-2473dd17": {
+  "sig": "f180f089dff9",
+  "at": "2026-11-13",
+  "ok": true,
+  "reason": null,
+  "category": "exhibition",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "Material Submission Showcase - FROM LOCAL TO GLOBAL",
+   "summary": "งานนิทรรศการ Material Submission Showcase - FROM LOCAL TO GLOBAL จัดขึ้นที่ TCDC กรุงเทพฯ วันที่ 30 ธันวาคม 2026"
+  },
+  "en": {
+   "title": "Material Submission Showcase - FROM LOCAL TO GLOBAL",
+   "summary": "Material Submission Showcase - FROM LOCAL TO GLOBAL takes place at TCDC Bangkok on December 30, 2026."
+  },
+  "zh": {
+   "title": "Material Submission Showcase - FROM LOCAL TO GLOBAL",
+   "summary": "Material Submission Showcase - FROM LOCAL TO GLOBAL展会将于2026年12月30日在曼谷TCDC举行。"
+  }
+ },
+ "tm-elephantbeachclub-newyearsevedinner": {
+  "sig": "cddafe37af6e",
+  "at": "2026-11-13",
+  "ok": true,
+  "reason": null,
+  "category": "nightlife",
+  "sponsor": null,
+  "age20": true,
+  "th": {
+   "title": "New Years Eve Dinner 2026",
+   "summary": "งานดินเนอร์ส่งท้ายปีเก่าต้อนรับปีใหม่ ณ Elephant Beach Club หาดเฉวง สุราษฎร์ธานี วันที่ 31 ธันวาคม 2026"
+  },
+  "en": {
+   "title": "New Years Eve Dinner 2026",
+   "summary": "New Year's Eve dinner celebration at Elephant Beach Club on Chaweng Beach, Surat Thani, on December 31, 2026."
+  },
+  "zh": {
+   "title": "New Years Eve Dinner 2026",
+   "summary": "2026年12月31日，苏梅岛查汶海滩Elephant Beach Club举办跨年晚宴。"
+  }
+ },
+ "tm-pullman-bangkok-pullman-countdown-2026": {
+  "sig": "a7595e8acf7e",
+  "at": "2026-11-13",
+  "ok": true,
+  "reason": null,
+  "category": "nightlife",
+  "sponsor": null,
+  "age20": true,
+  "th": {
+   "title": "PULLMAN BANGKOK COUNTDOWN",
+   "summary": "งานเคาท์ดาวน์บนชั้น 38 ของโรงแรมพูลแมน กรุงเทพฯ จี ชมวิวกรุงเทพฯ และพลุต้อนรับปีใหม่ 2027"
+  },
+  "en": {
+   "title": "PULLMAN BANGKOK COUNTDOWN",
+   "summary": "Welcome 2027 from the 38th floor of Pullman Bangkok Hotel G with skyline views and fireworks on December 31, 2026."
+  },
+  "zh": {
+   "title": "PULLMAN BANGKOK COUNTDOWN",
+   "summary": "2026年12月31日，在曼谷铂尔曼G酒店38层享受天际线美景与烟花，迎接2027年。"
+  }
+ },
+ "tm-redsquare-midnight-luminance": {
+  "sig": "decbd4df31d6",
+  "at": "2026-11-13",
+  "ok": true,
+  "reason": null,
+  "category": "nightlife",
+  "sponsor": null,
+  "age20": true,
+  "th": {
+   "title": "Midnight Luminance New Year’s Eve Party 2027",
+   "summary": "ปาร์ตี้ส่งท้ายปีเก่าต้อนรับปีใหม่ ณ RedSquare Rooftop Bar เริ่ม 31 ธันวาคม 2026 เวลา 20:00 น."
+  },
+  "en": {
+   "title": "Midnight Luminance New Year’s Eve Party 2027",
+   "summary": "New Year's Eve celebration at RedSquare Rooftop Bar starting at 8:00 PM on December 31, 2026."
+  },
+  "zh": {
+   "title": "Midnight Luminance New Year’s Eve Party 2027",
+   "summary": "2026年12月31日晚上8点起，在RedSquare Rooftop Bar举办跨年派对。"
+  }
+ },
+ "tm-fvture-nye-martenhorger": {
+  "sig": "be0b7e765c7e",
+  "at": "2026-11-13",
+  "ok": true,
+  "reason": null,
+  "category": "festival",
+  "sponsor": null,
+  "age20": true,
+  "th": {
+   "title": "FVTURE New Year’s Eve Countdown with Marten Hørger",
+   "summary": "งานเคาท์ดาวน์ปีใหม่ที่ FVTURE กรุงเทพฯ ร่วมด้วยศิลปิน Marten Hørger วันที่ 31 ธันวาคม 2026"
+  },
+  "en": {
+   "title": "FVTURE New Year’s Eve Countdown with Marten Hørger",
+   "summary": "Count down to the new year with Marten Hørger at FVTURE Bangkok on December 31, 2026."
+  },
+  "zh": {
+   "title": "FVTURE New Year’s Eve Countdown with Marten Hørger",
+   "summary": "2026年12月31日，曼谷FVTURE携手Marten Hørger举办跨年倒计时活动。"
+  }
+ },
+ "tm-bangkokisland-nye": {
+  "sig": "ec888bbad408",
+  "at": "2026-11-13",
+  "ok": true,
+  "reason": null,
+  "category": "nightlife",
+  "sponsor": null,
+  "age20": true,
+  "th": {
+   "title": "NYE Boat Party",
+   "summary": "ปาร์ตี้ล่องเรือส่งท้ายปีเก่าต้อนรับปีใหม่ 2027 บนแม่น้ำเจ้าพระยา จัดโดย Bangkok Island วันที่ 31 ธันวาคม 2026"
+  },
+  "en": {
+   "title": "NYE Boat Party",
+   "summary": "New Year's Eve boat party on the Chao Phraya River hosted by Bangkok Island on December 31, 2026."
+  },
+  "zh": {
+   "title": "NYE Boat Party",
+   "summary": "曼谷岛屿（Bangkok Island）于2026年12月31日在湄南河上举办跨年游船派对。"
+  }
+ },
+ "tm-hotelcloverpatong-enchantednightnewyeargaladinner2027": {
+  "sig": "31291b01cd09",
+  "at": "2026-11-13",
+  "ok": true,
+  "reason": null,
+  "category": "nightlife",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "Enchanted Night New Year Gala Dinner 2027 ณ Hotel Clover Patong Phuket",
+   "summary": "ร่วมฉลองต้อนรับปี 2027 กับงานกาล่าดินเนอร์และค่ำคืนแห่งแสงสีบนดาดฟ้าของ Hotel Clover Patong Phuket วันที่ 31 ธ.ค. 2026 - 1 ม.ค. 2027"
+  },
+  "en": {
+   "title": "Enchanted Night New Year Gala Dinner 2027 at Hotel Clover Patong Phuket",
+   "summary": "Celebrate the arrival of 2027 with an enchanting New Year's Eve rooftop gala dinner experience at Hotel Clover Patong Phuket on Dec 31, 2026 - Jan 1, 2027."
+  },
+  "zh": {
+   "title": "2027 迷人除夕晚宴 @ Hotel Clover Patong Phuket",
+   "summary": "于2026年12月31日至2027年1月1日在普吉岛芭东三叶草酒店屋顶欢庆2027年新年到来。"
+  }
+ },
+ "tm-tannterrace-tann-nye-2026": {
+  "sig": "fa8c79b09728",
+  "at": "2026-11-13",
+  "ok": true,
+  "reason": null,
+  "category": "nightlife",
+  "sponsor": null,
+  "age20": true,
+  "th": {
+   "title": "THE LAST SUNSET — NYE 2026 ที่ Tann Beach Club",
+   "summary": "ร่วมเคาท์ดาวน์ส่งท้ายปี 2026 ต้อนรับปี 2027 ในวันที่ 31 ธันวาคม 2026 ที่ Tann Beach Club หาดกะรน ภูเก็ต"
+  },
+  "en": {
+   "title": "THE LAST SUNSET — NYE 2026 | Tann Beach Club",
+   "summary": "Countdown to 2027 with an unforgettable New Year's Eve celebration at Tann Beach Club, Karon Beach, Phuket on 31 December 2026."
+  },
+  "zh": {
+   "title": "2026 跨年夜：最后日落 @ Tann Beach Club",
+   "summary": "2026年12月31日在普吉岛卡伦海滩的Tann Beach Club参加难忘的新年倒计时庆祝活动。"
+  }
+ },
+ "ep-181116": {
+  "sig": "dbfcb82412c4",
+  "at": "2026-11-13",
+  "ok": true,
+  "reason": null,
+  "category": "nightlife",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "Carnival NYE Fiesta 2026",
+   "summary": "ร่วมเฉลิมฉลองค่ำคืนส่งท้ายปีต้อนรับปี 2027 กับงานปาร์ตี้สไตล์คาร์นิวัลที่เต็มไปด้วยความสนุกสนาน ณ Crazy Gringo's Tex Mex 31 ธ.ค. 2026"
+  },
+  "en": {
+   "title": "Carnival NYE Fiesta 2026",
+   "summary": "Enjoy a vibrant Carnival Fiesta and welcome 2027 with a family-friendly night of dining and singing at Crazy Gringo's Tex Mex on Dec 31, 2026."
+  },
+  "zh": {
+   "title": "2026 狂欢跨年派对",
+   "summary": "2026年12月31日在 Crazy Gringo's Tex Mex 享受充满活力且适合全家的狂欢派对，共同迎接2027年。"
+  }
+ },
+ "ep-176675": {
+  "sig": "4b262032bf7c",
+  "at": "2026-11-13",
+  "ok": true,
+  "reason": null,
+  "category": "nightlife",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "New Year’s Eve Celebration 2026 Masquerade Gala Experience",
+   "summary": "สัมผัสประสบการณ์กาล่าดินเนอร์สไตล์หน้ากากสุดอลังการในคืนส่งท้ายปี 31 ธันวาคม 2026 ตั้งแต่ 19:00 น. เป็นต้นไป ณ Mövenpick Myth Hotel Patong Phuket"
+  },
+  "en": {
+   "title": "New Year’s Eve Celebration 2026 Masquerade Gala Experience",
+   "summary": "Step into an enchanting New Year’s Eve masquerade gala experience with exquisite flavors at Mövenpick Myth Hotel Patong Phuket on Dec 31, 2026."
+  },
+  "zh": {
+   "title": "2026 新年夜化妆舞会晚宴体验",
+   "summary": "2026年12月31日晚7点起在普吉岛芭东瑞享神话酒店享受迷人的化装舞会晚宴跨年体验。"
+  }
+ },
+ "tm-raj-petchyindee-jan27": {
+  "sig": "59ac5867d983",
+  "at": "2026-11-13",
+  "ok": true,
+  "reason": null,
+  "category": "outdoor",
+  "sponsor": "Suek Petchyindee",
+  "age20": false,
+  "th": {
+   "title": "ศึกมวยเพชรยินดี - มกราคม",
+   "summary": "ชมการแข่งขันชกมวยไทยคุณภาพจากโปรโมชั่นเพชรยินดี ณ สนามมวยราชดำเนิน ตลอดเดือนมกราคม 2027"
+  },
+  "en": {
+   "title": "Petchyindee Muay Thai Event - January",
+   "summary": "Catch quality Muay Thai fights presented by Suek Petchyindee at Rajadamnern Stadium throughout January 2027."
+  },
+  "zh": {
+   "title": "Petchyindee 泰拳赛事 - 1月",
+   "summary": "2027年1月全月在拉查丹农体育场观看由 Petchyindee 带来的高品质泰拳比赛。"
+  }
+ },
+ "ep-177471": {
+  "sig": "40bf2f353946",
+  "at": "2026-11-13",
+  "ok": true,
+  "reason": null,
+  "category": "concert",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "МУМИЙ ТРОЛЛЬ ที่ภูเก็ต",
+   "summary": "คอนเสิร์ตวงร็อค Mumiy Troll ที่ Lotus Arena จังหวัดภูเก็ต วันที่ 4 มกราคม 2027"
+  },
+  "en": {
+   "title": "Mumiy Troll Live in Phuket",
+   "summary": "Catch Mumiy Troll live in concert at Lotus Arena, Phuket on January 4, 2027."
+  },
+  "zh": {
+   "title": "Mumiy Troll 普吉岛演唱会",
+   "summary": "2027年1月4日在普吉岛 Lotus Arena 举办 Mumiy Troll 乐队演唱会。"
+  }
+ },
+ "tm-spiritgustfestival-tickets": {
+  "sig": "01646d74b7c0",
+  "at": "2026-11-13",
+  "ok": true,
+  "reason": null,
+  "category": "nightlife",
+  "sponsor": null,
+  "age20": true,
+  "th": {
+   "title": "SpiritGust Festival 2027 - นครศรีธรรมราช",
+   "summary": "เทศกาลดนตรีไซคีเดลิก 4 วันเต็ม พร้อมศิลปะและคอมมูนิตี้ระดับโลก ณ Moana Beach Club จ.นครศรีธรรมราช วันที่ 6-9 มกราคม 2027"
+  },
+  "en": {
+   "title": "SpiritGust Festival - 2027 - Nakhon si Thammarat Thailand",
+   "summary": "Join Spiritgust Festival Thailand 2027 from January 6–9 for four days of Psychedelic Trance and art at Moana Beach Club."
+  },
+  "zh": {
+   "title": "2027 泰国洛坤府 SpiritGust 音乐节",
+   "summary": "2027年1月6日至9日在洛坤府 Moana Beach Club 举办为期四天的迷幻电子音乐节与艺术活动。"
+  }
+ },
+ "eb-1740977784419": {
+  "sig": "0e0370dbd0b1",
+  "at": "2026-11-13",
+  "ok": true,
+  "reason": null,
+  "category": "expo",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "Serene Phuket 2027",
+   "summary": "งานอีเวนต์ Serene Phuket 2027 จัดขึ้นที่จังหวัดภูเก็ต วันที่ 6 มกราคม 2027"
+  },
+  "en": {
+   "title": "Serene Phuket 2027",
+   "summary": "Attend Serene Phuket 2027 taking place in Phuket on January 6, 2027."
+  },
+  "zh": {
+   "title": "2027 普吉岛宁静展",
+   "summary": "2027年1月6日在普吉岛举办 Serene Phuket 2027 活动。"
+  }
+ },
+ "tm-bangkokisland-chantdownbabylon9oct": {
+  "sig": "cab794a31e4a",
+  "at": "2026-11-13",
+  "ok": true,
+  "reason": null,
+  "category": "nightlife",
+  "sponsor": null,
+  "age20": true,
+  "th": {
+   "title": "CHANT DOWN BABYLON",
+   "summary": "ปาร์ตี้ริมน้ำสุดพิเศษบนเรือ Bangkok Island จัดขึ้นในวันที่ 8 มกราคม 2570 พร้อมบรรยากาศความสนุกจัดเต็มริมแม่น้ำ"
+  },
+  "en": {
+   "title": "CHANT DOWN BABYLON",
+   "summary": "A special waterfront party aboard Bangkok Island on January 8, 2027, bringing vibrant energy straight to the river."
+  },
+  "zh": {
+   "title": "CHANT DOWN BABYLON",
+   "summary": "2027年1月8日在曼谷岛（Bangkok Island）举行的特别水上派对，将充满活力的派对氛围带到河畔。"
+  }
+ },
+ "tm-slammanbookingasia-ar1": {
+  "sig": "22fefc6e8064",
+  "at": "2026-11-13",
+  "ok": true,
+  "reason": null,
+  "category": "concert",
+  "sponsor": "Slamman Booking Asia & SWD Japan",
+  "age20": false,
+  "th": {
+   "title": "Archsprie Live in Bangkok 2027",
+   "summary": "คอนเสิร์ตวง Technical Death Metal ระดับโลกจากแคนาดา ARCHSPIRE ร่วมด้วย WARSIDE จัดขึ้นวันที่ 8-9 มกราคม 2570 ที่ Mr.FOX Live House"
+  },
+  "en": {
+   "title": "Archsprie Live in Bangkok 2027",
+   "summary": "Catch world-renowned technical death metal band Archspire from Canada live with Warside on January 8-9, 2027 at Mr.FOX Live House."
+  },
+  "zh": {
+   "title": "Archsprie Live in Bangkok 2027",
+   "summary": "来自加拿大的世界级技术死金乐队Archspire将于2027年1月8日至9日在Mr.FOX Live House震撼开唱，同台嘉宾还有Warside。"
+  }
+ },
+ "run-JARpQZAV": {
+  "sig": "ffef4ec307f3",
+  "at": "2026-11-13",
+  "ok": true,
+  "reason": null,
+  "category": "run",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "UTCM Ultra Trail Chiang Mai 2027",
+   "summary": "การแข่งขันวิ่งเทรล UTCM Ultra Trail Chiang Mai 2027 จัดขึ้นวันที่ 8-10 มกราคม 2570 ณ องค์การบริหารส่วนตำบลเมืองคอง อ.เชียงดาว จ.เชียงใหม่"
+  },
+  "en": {
+   "title": "UTCM Ultra Trail Chiang Mai 2027",
+   "summary": "The UTCM Ultra Trail Chiang Mai 2027 takes place from January 8-10, 2027, at Mueang Kong Subdistrict Administrative Organization, Chiang Dao, Chiang Mai."
+  },
+  "zh": {
+   "title": "UTCM Ultra Trail Chiang Mai 2027",
+   "summary": "2027年清迈超级越野赛（UTCM）于2027年1月8日至10日在清迈府清道县Mueang Kong行政机构举行。"
+  }
+ },
+ "tm-bangkok-rooftops-centara-pool-party-9-january-2027": {
+  "sig": "7627b6a621f3",
+  "at": "2026-11-13",
+  "ok": true,
+  "reason": null,
+  "category": "nightlife",
+  "sponsor": "Bangkok Rooftops",
+  "age20": true,
+  "th": {
+   "title": "CENTARA POOL PARTY | 9 JANUARY",
+   "summary": "ปาร์ตี้ริมสระน้ำสุดยิ่งใหญ่ในกรุงเทพฯ จัดโดย Bangkok Rooftops ในวันที่ 9 มกราคม 2570"
+  },
+  "en": {
+   "title": "CENTARA POOL PARTY | 9 JANUARY",
+   "summary": "The largest pool party experience in Bangkok by Bangkok Rooftops, taking place on January 9, 2027."
+  },
+  "zh": {
+   "title": "CENTARA POOL PARTY | 9 JANUARY",
+   "summary": "曼谷最大规模的泳池派对体验，由Bangkok Rooftops于2027年1月9日举办。"
+  }
+ },
+ "tm-glomglom-lunaluna": {
+  "sig": "642d7539634f",
+  "at": "2026-11-13",
+  "ok": true,
+  "reason": null,
+  "category": "festival",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "Glom Glom Children’s Day 2027! Luna Luna",
+   "summary": "งานเทศกาลวันเด็ก Glom Glom ครั้งที่ 5 ธีม LUNA LUNA จัดขึ้นในวันที่ 9 มกราคม 2570 ณ VP City Park จ.เชียงใหม่"
+  },
+  "en": {
+   "title": "Glom Glom Children’s Day 2027! Luna Luna",
+   "summary": "The 5th annual Glom Glom Children's Day Festival 'Luna Luna' on January 9, 2027, at VP City Park, Chiang Mai."
+  },
+  "zh": {
+   "title": "Glom Glom Children’s Day 2027! Luna Luna",
+   "summary": "第五届Glom Glom儿童节“Luna Luna”于2027年1月9日在清迈VP City Park举行。"
+  }
+ },
+ "run-JsMmrdpf": {
+  "sig": "598fc48e964c",
+  "at": "2026-11-13",
+  "ok": true,
+  "reason": null,
+  "category": "run",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "กรุงเทพมาราธอน ครั้งที่ 37",
+   "summary": "การแข่งขันวิ่งกรุงเทพมาราธอน ครั้งที่ 37 จัดขึ้นในวันที่ 10 มกราคม 2570 ณ ถนนสนามไชย เขตพระนคร กรุงเทพมหานคร"
+  },
+  "en": {
+   "title": "Bangkok Marathon 37th",
+   "summary": "The 37th Bangkok Marathon takes place on January 10, 2027, at Sanam Chai Road, Phra Nakhon, Bangkok."
+  },
+  "zh": {
+   "title": "第37届曼谷马拉松",
+   "summary": "第37届曼谷马拉松于2027年1月10日在曼谷拍那空县Sanam Chai路举行。"
+  }
+ },
+ "run-iqYqvCHc": {
+  "sig": "be00a5034466",
+  "at": "2026-11-13",
+  "ok": true,
+  "reason": null,
+  "category": "run",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "Run for Wheels#6 วิ่งเพื่อให้หมาได้วิ่ง ครั้งที่ 6",
+   "summary": "งานวิ่งการกุศล Run for Wheels ครั้งที่ 6 จัดขึ้นในวันที่ 10 มกราคม 2570 ณ หอประชุมใหญ่ มหาวิทยาลัยเกษตรศาสตร์ บางเขน กรุงเทพมหานคร"
+  },
+  "en": {
+   "title": "Run for Wheels #6",
+   "summary": "The 6th Run for Wheels charity run takes place on January 10, 2027, at the Main Auditorium, Kasetsart University, Bang Khen, Bangkok."
+  },
+  "zh": {
+   "title": "第6届Run for Wheels慈善跑",
+   "summary": "第6届Run for Wheels慈善跑于2027年1月10日在曼谷邦肯区农业大学大礼堂举行。"
+  }
+ },
+ "run-HhPomnbv": {
+  "sig": "36bf61c15592",
+  "at": "2026-11-13",
+  "ok": true,
+  "reason": null,
+  "category": "run",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "Joseph Mini Marathon",
+   "summary": "การแข่งขันวิ่ง Joseph Mini Marathon จัดขึ้นในวันที่ 10 มกราคม 2570 ณ โรงเรียนยอแซฟอุปถัมภ์ อ.สามพราน จ.นครปฐม"
+  },
+  "en": {
+   "title": "Joseph Mini Marathon",
+   "summary": "The Joseph Mini Marathon takes place on January 10, 2027, at Saint Joseph Upatham School, Sam Phran, Nakhon Pathom."
+  },
+  "zh": {
+   "title": "约瑟夫迷你马拉松",
+   "summary": "约瑟夫迷你马拉松于2027年1月10日在佛统府三帕兰县圣约瑟夫乌帕坦学校举行。"
+  }
+ },
+ "tm-loudlypreferth-27lp-freethrow": {
+  "sig": "70976b56887f",
+  "at": "2026-11-13",
+  "ok": true,
+  "reason": null,
+  "category": "nightlife",
+  "sponsor": "Loudly Prefer",
+  "age20": true,
+  "th": {
+   "title": "FREE THROW live in Bangkok 2027",
+   "summary": "คอนเสิร์ต FREE THROW แสดงสดที่ Mr.FOX Live House ในวันที่ 17 มกราคม 2027 จัดโดย LOUDLY PREFER"
+  },
+  "en": {
+   "title": "FREE THROW live in Bangkok 2027",
+   "summary": "FREE THROW performs live at Mr.FOX Live House on January 17, 2027, presented by LOUDLY PREFER."
+  },
+  "zh": {
+   "title": "FREE THROW live in Bangkok 2027",
+   "summary": "FREE THROW 将于 2027 年 1 月 17 日在 Mr.FOX Live House 进行现场演出，由 LOUDLY PREFER 呈现。"
+  }
+ },
+ "tm-rbscracing-17january2027": {
+  "sig": "b36b0691bac2",
+  "at": "2026-11-13",
+  "ok": true,
+  "reason": null,
+  "category": "motor",
+  "sponsor": "KING'S CUP",
+  "age20": false,
+  "th": {
+   "title": "BANGKOK RACE DAY - 17 January 2027 - KING'S CUP EVENT",
+   "summary": "งานแข่งขันรถยนต์ BANGKOK RACE DAY จัดขึ้นในวันที่ 17 มกราคม 2027 ณ สมาคมราชกรีฑาสโมสร (Royal Bangkok Sport Club)"
+  },
+  "en": {
+   "title": "BANGKOK RACE DAY - 17 January 2027 - KING'S CUP EVENT",
+   "summary": "BANGKOK RACE DAY takes place on January 17, 2027, at the Royal Bangkok Sport Club."
+  },
+  "zh": {
+   "title": "BANGKOK RACE DAY - 17 January 2027 - KING'S CUP EVENT",
+   "summary": "曼谷赛车日活动将于 2027 年 1 月 17 日在皇家曼谷体育俱乐部举行。"
+  }
+ },
+ "tm-sandwishmedia-sandwishtrackday2027": {
+  "sig": "31c948d8218c",
+  "at": "2026-11-13",
+  "ok": true,
+  "reason": null,
+  "category": "motor",
+  "sponsor": "Sandwish Media & HYB",
+  "age20": false,
+  "th": {
+   "title": "Sandwish x HYB Track Day",
+   "summary": "กิจกรรม Track Day พาคุณเปิดประสบการณ์ขับรถยนต์ในสนามแข่งจริง ณ พีระเซอร์กิต จังหวัดชลบุรี จัดโดย Sandwish Media ร่วมกับ HYB"
+  },
+  "en": {
+   "title": "Sandwish x HYB Track Day",
+   "summary": "Sandwish x HYB Track Day offers a real racetrack driving experience at Bira Circuit, Chonburi, presented by Sandwish Media and HYB."
+  },
+  "zh": {
+   "title": "Sandwish x HYB Track Day",
+   "summary": "Sandwish x HYB 赛道日活动将在春武里府的比拉赛车场举行，由 Sandwish Media 和 HYB 联合呈现。"
+  }
+ },
+ "run-RxsxlBNc": {
+  "sig": "205ce7777fd1",
+  "at": "2026-11-13",
+  "ok": true,
+  "reason": null,
+  "category": "run",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "40 ปี จอมบึงมาราธอน",
+   "summary": "งานวิ่ง 40 ปี จอมบึงมาราธอน จัดขึ้นในวันที่ 17 มกราคม 2570 ณ มหาวิทยาลัยราชภัฏหมู่บ้านจอมบึง จ.ราชบุรี"
+  },
+  "en": {
+   "title": "40 ปี จอมบึงมาราธอน",
+   "summary": "The 40th Chom Bueng Marathon takes place on January 17, 2027, at Muban Chom Bueng Rajabhat University, Ratchaburi."
+  },
+  "zh": {
+   "title": "40 ปี จอมบึงมาราธอน",
+   "summary": "第40届宗汶马拉松赛将于2027年1月17日在叻武里府班宗汶皇家大学举行。"
+  }
+ },
+ "run-piWbANjx": {
+  "sig": "b4e277f04abd",
+  "at": "2026-11-13",
+  "ok": true,
+  "reason": null,
+  "category": "run",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "บ่อสร้าง อัมเบรลล่า รัน 2027",
+   "summary": "งานวิ่ง บ่อสร้าง อัมเบรลล่า รัน 2027 จัดขึ้นในวันที่ 17 มกราคม 2570 ณ สี่แยกบ่อสร้าง จ.เชียงใหม่"
+  },
+  "en": {
+   "title": "บ่อสร้าง อัมเบรลล่า รัน 2027",
+   "summary": "The Bo Sang Umbrella Run 2027 is held on January 17, 2027, at Bo Sang Intersection, Chiang Mai."
+  },
+  "zh": {
+   "title": "บ่อสร้าง อัมเบรลล่า รัน 2027",
+   "summary": "2027年博桑伞跑将于2027年1月17日在清迈博桑十字路口举行。"
+  }
+ },
+ "run-YNvznLZH": {
+  "sig": "4d8826eaf352",
+  "at": "2026-11-13",
+  "ok": true,
+  "reason": null,
+  "category": "run",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "Run to Share Run to Give 2027",
+   "summary": "งานวิ่ง Run to Share Run to Give 2027 จัดขึ้นในวันที่ 17 มกราคม 2570 ณ มหาวิทยาลัยธุรกิจบัณฑิตย์ กรุงเทพฯ"
+  },
+  "en": {
+   "title": "Run to Share Run to Give 2027",
+   "summary": "Run to Share Run to Give 2027 takes place on January 17, 2027, at Dhurakij Pundit University, Bangkok."
+  },
+  "zh": {
+   "title": "Run to Share Run to Give 2027",
+   "summary": "2027年分享与奉献慈善跑将于2027年1月17日在曼谷博仁大学举行。"
+  }
+ },
+ "run-EJjSnpIH": {
+  "sig": "1415947fce73",
+  "at": "2026-11-13",
+  "ok": true,
+  "reason": null,
+  "category": "run",
+  "sponsor": null,
+  "age20": false,
+  "th": {
+   "title": "3rd SATIT CHIANG MAI CMUDS MINI MARATHON 2027",
+   "summary": "งานวิ่งมินิมาราธอน 3rd SATIT CHIANG MAI CMUDS MINI MARATHON 2027 จัดวันที่ 17 มกราคม 2570 ณ โรงเรียนสาธิตมหาวิทยาลัยเชียงใหม่"
+  },
+  "en": {
+   "title": "3rd SATIT CHIANG MAI CMUDS MINI MARATHON 2027",
+   "summary": "The 3rd Satit Chiang Mai CMUDS Mini Marathon 2027 is held on January 17, 2027, at Chiang Mai University Demonstration School."
+  },
+  "zh": {
+   "title": "3rd SATIT CHIANG MAI CMUDS MINI MARATHON 2027",
+   "summary": "第三届清迈大学附中迷你马拉松2027将于2027年1月17日在清迈大学附属学校举行。"
+  }
+ },
+ "tm-pkentertainment-lalala-bangkok-2027": {
+  "sig": "5388f13cec41",
+  "at": "2026-11-13",
+  "ok": true,
+  "reason": null,
+  "category": "concert",
+  "sponsor": "LaLaLa",
+  "age20": false,
+  "th": {
+   "title": "LaLaLa Presents Bangkok 2027",
+   "summary": "วันที่ 20 มกราคม 2027 LaLaLa พา Olivia Dean มาแสดงที่ IMPACT Challenger Hall 3 จัดโดย LaLaLa"
+  },
+  "en": {
+   "title": "LaLaLa Presents Bangkok 2027",
+   "summary": "On January 20, 2027, LaLaLa brings Olivia Dean to IMPACT Challenger Hall 3, presented by LaLaLa."
+  },
+  "zh": {
+   "title": "LaLaLa Presents Bangkok 2027",
+   "summary": "2027年1月20日，LaLaLa将携手 Olivia Dean 在 IMPACT Challenger Hall 3 带来精彩演出。"
   }
  }
 }
