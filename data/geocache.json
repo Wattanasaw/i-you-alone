@@ -2248,5 +2248,34 @@
  "วัดชนะสงคราม อุทยานประวัติศาสตร์สุโขทัย|sukhothai": null,
  "มหาวิทยาลัยเกษตรศาสตร์ วิทยาเขตเฉลิมพระเกียรติ จังหวัดสกลนคร|sakon-nakhon": null,
  "rev|20.270,100.096": null,
- "rev|12.534,101.941": "chanthaburi"
+ "rev|12.534,101.941": "chanthaburi",
+ "vinyl wine bangkok|bangkok": null,
+ "อาคารพหลโยธิน เพลส ชั้น 35|bangkok": null,
+ "lost in songwat|": null,
+ "warwick institute|": null,
+ "business|": null,
+ "kasetsart university alumni association|bangkok": null,
+ "ราชวงศ์|bangkok": {
+  "lat": 13.73847,
+  "lng": 100.50436,
+  "state": "Bangkok"
+ },
+ "warwick institute|bangkok": null,
+ "amphitheater one bangkok park|bangkok": {
+  "lat": 13.72706,
+  "lng": 100.54729,
+  "state": "Bangkok"
+ },
+ "มนตรี สตูดิโอ 7|": null,
+ "เขื่อนกระเสียว จ สุพรรณบุรี|suphanburi": null,
+ "โรงเรียนทุ่งโพธิ์วิทยา ต โคกกลอย อ ตะกั่วทุ่ง จ พังงา|phang-nga": null,
+ "วิทยาลัยเกษตรและเทคโนโลยี อ ควนกาหลง จ สตูล|satun": null,
+ "bangkok phra nakhon|bangkok": {
+  "lat": 13.76862,
+  "lng": 100.50045,
+  "state": "Bangkok"
+ },
+ "balance co studio|bangkok": null,
+ "anu livity chakra center|chonburi": null,
+ "byblos beach club hotel|chonburi": null
 }
