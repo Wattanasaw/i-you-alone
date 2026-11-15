@@ -2281,5 +2281,170 @@
  "ยูเนี่ยน ฮอลล์ ศูนย์การค้ายูเนี่ยน มอลล์|bangkok": null,
  "rev|7.500,100.267": "songkhla",
  "rev|7.133,100.533": "songkhla",
- "rev|6.600,99.900": "satun"
+ "rev|6.600,99.900": "satun",
+ "katanyu tonight|bangkok": null,
+ "srinakharinwirot university|bangkok": {
+  "lat": 13.74486,
+  "lng": 100.56475,
+  "state": "Bangkok"
+ },
+ "สยามพิฆฮอลล์ ชั้น 7 อาคารสยามสแคว์วัน|bangkok": null,
+ "volume livehouse b floor the street ratchada|bangkok": {
+  "lat": 13.77014,
+  "lng": 100.5721,
+  "state": "Bangkok"
+ },
+ "revolution cocktail bangkok|bangkok": {
+  "lat": 13.72294,
+  "lng": 100.51937,
+  "state": "Bangkok"
+ },
+ "nong bon lake park|bangkok": null,
+ "ramada plaza by wyndham chao fah|phuket": null,
+ "อาคาร k|bangkok": {
+  "lat": 13.74068,
+  "lng": 100.52473,
+  "state": "Bangkok"
+ },
+ "quartier parc mf emquartier|bangkok": {
+  "lat": 13.73196,
+  "lng": 100.56964,
+  "state": "Bangkok"
+ },
+ "วัน แบงค็อก|": {
+  "lat": 13.7271,
+  "lng": 100.54677,
+  "state": "Bangkok"
+ },
+ "one bangkok park|bangkok": {
+  "lat": 13.72706,
+  "lng": 100.54729,
+  "state": "Bangkok"
+ },
+ "วัดปรมัยยิกาวาส วรวิหาร เกาะเกร็ด จังหวัดนนทบุรี|nonthaburi": null,
+ "สวนหลังร้าน grains society และ co painting space จังหวัดพิษณุโลก|phitsanulok": null,
+ "หมู่บ้านญี่ปุ่น จ พระนครศรีอยุธยา|ayutthaya": null,
+ "ลานหน้าศาลเจ้าพ่อเสือ สามย่านซอยแมว powered by hype district|bangkok": null,
+ "อุทยาน 100 ปี จุฬาลงกรณ์มหาวิทยาลัย|bangkok": {
+  "lat": 13.73944,
+  "lng": 100.52381,
+  "state": "Bangkok"
+ },
+ "ริเวอร์ พาร์ค iconsiam|bangkok": {
+  "lat": 13.72682,
+  "lng": 100.51029,
+  "state": "Bangkok"
+ },
+ "บริเวณริมเขื่อนวัดสุทธิวาตวราราม วัดช่องลม ตำบลท่าฉลอม อำเภอเมืองสมุทรสาคร จังหวัดสมุทรสาคร|samut-sakhon": {
+  "lat": 13.53064,
+  "lng": 100.26407,
+  "state": ""
+ },
+ "ริมเขื่อนหน้าศาลเจ้าพ่อหลักเมืองสมุทรสาคร อ เมืองฯ จ สมุทรสาคร|samut-sakhon": null,
+ "คิง เพาเวอร์ รางน้ำ|": {
+  "lat": 13.75991,
+  "lng": 100.53795,
+  "state": "Bangkok"
+ },
+ "ลานอเนกประสงค์ บริษัท แปลน ฟอร์ คิดส์ จำกัด|": null,
+ "grand hall ชั้น 1 ศูนย์การค้า อิมพีเรียล เวิลด์ สำโรง|samut-prakan": null,
+ "ศูนย์การค้าโรบินสัน ชลบุรี ดอนหัวฬ่ออมตะนคร|chonburi": null,
+ "again pattaya|chonburi": {
+  "lat": 12.95166,
+  "lng": 100.88879,
+  "state": "Pattaya City"
+ },
+ "siampic hall|": null,
+ "tcdc กรุงเทพฯ creative space ชั้น 5 และห้อง gallery ชั้น 1|bangkok": null,
+ "promotion area fl 1 indoor zone เซ็นทรัล อีสต์วิลล์|": null,
+ "มหาวิทยาลัยเกษตรศาสตร์ วิทยาเขตกำแพงแสน จ นครปฐม|nakhon-pathom": null,
+ "วัดภูเขาทอง อยุธยา|ayutthaya": {
+  "lat": 14.36842,
+  "lng": 100.53952,
+  "state": "Phukhao Thong Subdistrict"
+ },
+ "กรุงเทพมหานคร|bangkok": {
+  "lat": 13.79578,
+  "lng": 100.45834,
+  "state": "Bangkok"
+ },
+ "ย่านอารีย์ กรุงเทพฯ|bangkok": {
+  "lat": 13.77859,
+  "lng": 100.53546,
+  "state": "Bangkok"
+ },
+ "gallery ver|": null,
+ "trendy gallery 2nd floor cloud 11|": {
+  "lat": 13.68342,
+  "lng": 100.60829,
+  "state": "Bangkok"
+ },
+ "ถนนทรงวาด เขตสัมพันธวงศ์ กรุงเทพฯ|bangkok": {
+  "lat": 13.7389,
+  "lng": 100.50604,
+  "state": "Bangkok"
+ },
+ "number 1 gallery|": {
+  "lat": 13.72107,
+  "lng": 100.51861,
+  "state": "Bangkok"
+ },
+ "maison je bangkok|bangkok": null,
+ "บริเวณแลนด์มาร์กสำคัญรอบแม่น้ำสะแกกรัง อ เมือง จ อุทัยธานี|uthai-thani": null,
+ "วัดจอมสวรรค์ อำเภอเมือง จังหวัดแพร่|phrae": {
+  "lat": 18.15059,
+  "lng": 100.15089,
+  "state": ""
+ },
+ "ชายหาดหัวดอน เขาตะเกียบ อ หัวหิน จ ประจวบคีรีขันธ์|prachuap-khiri-khan": null,
+ "wisdom valley pattaya|chonburi": {
+  "lat": 12.93669,
+  "lng": 100.8865,
+  "state": "Pattaya City"
+ },
+ "เทอร์มินอล21 พระราม3|": null,
+ "ลานโปรโมชั่น ชั้น 1 หน้าร้าน bar b q plaza ศูนย์การค้าโรบินสัน สกลนคร|sakon-nakhon": null,
+ "ชั้น 2 มันมัน ศรีนครินทร์ ซีคอนสแควร์|bangkok": {
+  "lat": 13.69413,
+  "lng": 100.64816,
+  "state": "Bangkok"
+ },
+ "ชั้น 1 มันมัน ศรีนครินทร์ ห้างสรรพศิลป์คราฟท์|": null,
+ "xspace|": null,
+ "mini xspace ชั้น 1|": null,
+ "mini xspace ชั้น 2|": null,
+ "atta warehouse 30|": null,
+ "ศูนย์การค้า เค วิลเลจ สุขุมวิท 26|bangkok": null,
+ "ลาน thai smile bus เจริญนคร ติดสะพานกรุงเทพฯ|bangkok": {
+  "lat": 13.75845,
+  "lng": 100.69129,
+  "state": "Bangkok"
+ },
+ "ถนนหลังหอเฉลิมพระเกียรติ อ่างเก็บน้ำดอกกราย จ ระยอง|rayong": null,
+ "อุดร ฮอลล์ ชั้น 4 ศูนย์การค้าเซ็นทรัล อุดร|": null,
+ "ลานกิจกรรม รอยัล พาร์ค พลาซ่า ชั้น 1 พาราไดซ์พาร์ค|": null,
+ "เมืองศรีสะเกษ|sisaket": {
+  "lat": 15.0994,
+  "lng": 104.37348,
+  "state": ""
+ },
+ "ถนนคนเดินบรรทัดทอง จุฬาฯ ซอย 5|": null,
+ "art4c art center สามย่าน|bangkok": null,
+ "สนามหญ้ามิวเซียมสยาม|bangkok": null,
+ "โซน beauty health ชั้น 3 ศูนย์การค้าพาราไดซ์ พาร์ค|": null,
+ "สวนสุขภาพเทศบาลเมืองศรีราชา sriracha health park|chonburi": {
+  "lat": 13.17113,
+  "lng": 100.92556,
+  "state": ""
+ },
+ "อุทยานหลวงราชพฤกษ์ จังหวัดเชียงใหม่|chiang-mai": null,
+ "เขื่อนกระเสียว ด่านช้าง สุพรรณบุรี|suphanburi": {
+  "lat": 14.83259,
+  "lng": 99.65238,
+  "state": ""
+ },
+ "อุทยานสวรรค์ หนองสมบุญ จ นครสวรรค์|nakhon-sawan": null,
+ "พีเพิลส์แกลเลอรี ห้อง p3 ชั้น 2 หอศิลปวัฒนธรรมแห่งกรุงเทพมหานคร|bangkok": null,
+ "bacc shop ชั้น 5 หอศิลปวัฒนธรรมแห่งกรุงเทพมหานคร|bangkok": null,
+ "พีเพิลส์แกลเลอรี ห้อง p1 p2 ชั้น 2 หอศิลปวัฒนธรรมแห่งกรุงเทพมหานคร|bangkok": null
 }
