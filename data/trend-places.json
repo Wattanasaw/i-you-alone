@@ -14962,56 +14962,7 @@
   "districtEn": "Mueang Phitsanulok",
   "district": "เมืองพิษณุโลก",
   "hours": "Mo-Su 08:00-17:00",
-  "hoursSrc": "review",
-  "menuPrice": {
-   "min": 85,
-   "max": 150,
-   "items": [
-    {
-     "name": {
-      "th": "เลมอน",
-      "en": "Lemon"
-     },
-     "price": 75
-    },
-    {
-     "name": {
-      "th": "ช็อกโกแลตชิป",
-      "en": "Choc Chips"
-     },
-     "price": 85
-    },
-    {
-     "name": {
-      "th": "ดับเบิลช็อกโกแลตคุกกี้",
-      "en": "Double Choc Cookie"
-     },
-     "price": 85
-    },
-    {
-     "name": {
-      "th": "นูเทลล่าพิสตาชิโอรอล",
-      "en": "Nutella Pistachio Bun"
-     },
-     "price": 95
-    },
-    {
-     "name": {
-      "th": "ขนมปังมัลติเกรนบาแก็ต",
-      "en": "Multi-grain Baguette"
-     },
-     "price": 110
-    },
-    {
-     "name": {
-      "th": "ซุปเห็ด",
-      "en": "Mushroom Soup"
-     },
-     "price": 150
-    }
-   ],
-   "src": "review"
-  }
+  "hoursSrc": "review"
  },
  {
   "id": "l8-42203860728776864",
@@ -15667,7 +15618,7 @@
    "free": true,
    "src": "review1"
   },
-  "hours": "Mo-Fr 11:30-21:00; Sa-Su 10:30-22:30",
+  "hours": "Mo-Fr 11:30-21:00; Sa-Su 10:30-22:00",
   "hoursSrc": "review"
  },
  {
@@ -18730,8 +18681,8 @@
   "reviewCount": 3,
   "districtEn": "Sathon",
   "district": "สาทร",
-  "hours": "Mo-Su 09:00-23:00",
-  "hoursSrc": "review"
+  "hours": "Mo-Su 08:00-23:00",
+  "hoursSrc": "review1"
  },
  {
   "id": "l8-22535797338616151",

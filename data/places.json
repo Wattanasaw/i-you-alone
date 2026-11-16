@@ -8013,8 +8013,64 @@
    "districtEn": "Mueang Krabi",
    "district": "เมืองกระบี่",
    "entry": {
-    "free": true,
-    "src": "typical"
+    "tiers": [
+     {
+      "who": {
+       "th": "ตั๋วเรือหางยาว ขาเดียว (อ่าวนาง)",
+       "en": "Longtail Boat Ticket One-way (Ao Nang)",
+       "zh": "单程长尾船票（奥南）"
+      },
+      "note": {
+       "th": "ขึ้นเรือที่ท่าเรืออ่าวนาง",
+       "en": "Departing from Ao Nang pier",
+       "zh": "从奥南码头出发"
+      },
+      "price": 100,
+      "n": 2,
+      "ids": [
+       "L2",
+       "L5"
+      ],
+      "rv": true
+     },
+     {
+      "who": {
+       "th": "ตั๋วเรือหางยาว ไป-กลับ (อ่าวน้ำเมา)",
+       "en": "Longtail Boat Ticket Round-trip (Ao Nam Mao)",
+       "zh": "往返长尾船票（奥南茂）"
+      },
+      "note": {
+       "th": "ขึ้นเรือที่ท่าเรืออ่าวน้ำเมา",
+       "en": "Departing from Ao Nam Mao pier",
+       "zh": "从奥南茂码头出发"
+      },
+      "price": 200,
+      "n": 1,
+      "ids": [
+       "L2"
+      ],
+      "rv": true
+     },
+     {
+      "who": {
+       "th": "ตั๋วเรือหางยาว ไป-กลับ (อ่าวนาง)",
+       "en": "Longtail Boat Ticket Round-trip (Ao Nang)",
+       "zh": "往返长尾船票（奥南）"
+      },
+      "note": {
+       "th": "ขึ้นเรือที่ท่าเรืออ่าวนาง",
+       "en": "Departing from Ao Nang pier",
+       "zh": "从奥南码头出发"
+      },
+      "price": 300,
+      "n": 1,
+      "ids": [
+       "L2"
+      ],
+      "rv": true
+     }
+    ],
+    "src": "review"
    }
   },
   {
@@ -16025,9 +16081,9 @@
     "tiers": [
      {
       "who": {
-       "th": "เด็ก",
-       "en": "Child",
-       "zh": "儿童"
+       "th": "เด็ก (คนไทย)",
+       "en": "Child (Thai)",
+       "zh": "儿童（泰国人）"
       },
       "price": 10,
       "n": 2,
@@ -16039,9 +16095,9 @@
      },
      {
       "who": {
-       "th": "ผู้ใหญ่",
-       "en": "Adult",
-       "zh": "成人"
+       "th": "ผู้ใหญ่ (คนไทย)",
+       "en": "Adult (Thai)",
+       "zh": "成人（泰国人）"
       },
       "price": 20,
       "n": 3,
@@ -16049,49 +16105,6 @@
        "L1",
        "L6",
        "L8"
-      ],
-      "rv": true
-     },
-     {
-      "who": {
-       "th": "รถจักรยานยนต์",
-       "en": "Motorcycle",
-       "zh": "摩托车"
-      },
-      "price": 20,
-      "n": 3,
-      "ids": [
-       "L1",
-       "L6",
-       "L8"
-      ],
-      "rv": true
-     },
-     {
-      "who": {
-       "th": "รถยนต์",
-       "en": "Car",
-       "zh": "汽车"
-      },
-      "price": 30,
-      "n": 2,
-      "ids": [
-       "L1",
-       "L6"
-      ],
-      "rv": true
-     },
-     {
-      "who": {
-       "th": "สถานที่กางเต็นท์",
-       "en": "Camping fee",
-       "zh": "露营费"
-      },
-      "price": 30,
-      "n": 2,
-      "ids": [
-       "L6",
-       "L1"
       ],
       "rv": true
      }
@@ -21211,13 +21224,27 @@
      "tag": 1
     }
    ],
-   "hours": "08:00-18:00",
-   "hoursSrc": "typical",
    "entry": {
-    "thai": 40,
-    "foreign": 200,
-    "src": "typical"
-   }
+    "tiers": [
+     {
+      "who": {
+       "th": "ผู้ใหญ่",
+       "en": "Adult",
+       "zh": "成人"
+      },
+      "price": 20,
+      "n": 2,
+      "ids": [
+       "L1",
+       "L5"
+      ],
+      "rv": true
+     }
+    ],
+    "src": "review"
+   },
+   "hours": "08:00-18:00",
+   "hoursSrc": "typical"
   },
   {
    "id": "wd-Q49322259",
@@ -25545,8 +25572,8 @@
      "tag": 1
     }
    ],
-   "hours": "08:00-18:00",
-   "hoursSrc": "typical",
+   "hours": "Mo-Su 06:00-18:00",
+   "hoursSrc": "review1",
    "entry": {
     "thai": 40,
     "foreign": 200,
@@ -34999,8 +35026,6 @@
    "reviewCount": 18,
    "districtEn": "Phra Nakhon Si Ayutthaya",
    "district": "พระนครศรีอยุธยา",
-   "hours": "Fr-Su 16:30-21:00",
-   "hoursSrc": "review",
    "entry": {
     "tiers": [
      {
@@ -35031,7 +35056,9 @@
      }
     ],
     "src": "review1"
-   }
+   },
+   "hours": "Fr-Su 16:30-21:00",
+   "hoursSrc": "review"
   },
   {
    "id": "wd-Q134376264",
@@ -36132,9 +36159,38 @@
    "districtEn": "Nam Nao",
    "district": "น้ำหนาว",
    "entry": {
-    "thai": 40,
-    "foreign": 200,
-    "src": "typical"
+    "tiers": [
+     {
+      "who": {
+       "th": "เด็ก (ชาวไทย)",
+       "en": "Child (Thai)",
+       "zh": "儿童（泰国人）"
+      },
+      "price": 20,
+      "n": 3,
+      "ids": [
+       "L3",
+       "L5",
+       "L4"
+      ],
+      "rv": true
+     },
+     {
+      "who": {
+       "th": "ผู้ใหญ่ (ชาวไทย)",
+       "en": "Adult (Thai)",
+       "zh": "成人（泰国人）"
+      },
+      "price": 40,
+      "n": 2,
+      "ids": [
+       "L3",
+       "L5"
+      ],
+      "rv": true
+     }
+    ],
+    "src": "review"
    }
   },
   {
@@ -36696,9 +36752,22 @@
    "districtEn": "Mae Taeng",
    "district": "แม่แตง",
    "entry": {
-    "thai": 40,
-    "foreign": 200,
-    "src": "typical"
+    "tiers": [
+     {
+      "who": {
+       "th": "ผู้ใหญ่ (ชาวไทย)",
+       "en": "Adult (Thai)",
+       "zh": "成人（泰国人）"
+      },
+      "price": 50,
+      "n": 1,
+      "ids": [
+       "L2"
+      ],
+      "rv": true
+     }
+    ],
+    "src": "review1"
    }
   },
   {
@@ -105775,7 +105844,6 @@
    },
    "lat": 13.24079,
    "lng": 100.93073,
-   "website": "http://beachwalk.lnwshop.com/",
    "hours": "Mo-Su 08:00-22:00",
    "phone": "0948935222",
    "cuisine": "cafe;bakery",
@@ -105783,7 +105851,8 @@
    "summary": {},
    "fetchedAt": "2026-11-08T21:02:33.443Z",
    "districtEn": "Mueang Chon Buri",
-   "district": "เมืองชลบุรี"
+   "district": "เมืองชลบุรี",
+   "websiteDead": "http://beachwalk.lnwshop.com/"
   },
   {
    "id": "osm-n8922970223",
@@ -120001,7 +120070,7 @@
     "src": "review1"
    },
    "nameEn": true,
-   "websiteDead": "https://www.scenicalworld.com/"
+   "website": "https://www.scenicalworld.com/"
   },
   {
    "id": "osm-n4885467483",
@@ -143646,13 +143715,26 @@
      "tag": 1
     }
    ],
-   "hours": "08:00-18:00",
-   "hoursSrc": "typical",
    "entry": {
-    "thai": 40,
-    "foreign": 200,
-    "src": "typical"
-   }
+    "tiers": [
+     {
+      "who": {
+       "th": "บุคคลทั่วไป",
+       "en": "General visitor",
+       "zh": "普通游客"
+      },
+      "price": 30,
+      "n": 1,
+      "ids": [
+       "L6"
+      ],
+      "rv": true
+     }
+    ],
+    "src": "review1"
+   },
+   "hours": "08:00-18:00",
+   "hoursSrc": "typical"
   },
   {
    "id": "osm-r12719043",
@@ -212205,7 +212287,50 @@
    "province": "phuket",
    "wiki": {},
    "summary": {},
-   "fetchedAt": "2026-11-08T21:01:05.885Z"
+   "fetchedAt": "2026-11-08T21:01:05.885Z",
+   "posts": [
+    {
+     "title": "เอาบรรยากาศน้ำตกบางแป น้ำเย็น สบายๆมาฝากกันให้ชมค่ะ #น้ําตกบางแปภูเก็ต #น้ําตก #ภูเก็ต #fyp",
+     "likes": 4,
+     "date": "2025-07-04",
+     "link": "https://www.lemon8-app.com/@dadee2542_/7523135121822892564?region=th",
+     "source": "Lemon8 · DADEE",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7523135121822892564&index=0&sign=79a146020de4387ff71806445a79c54e",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "น้ำตกบางแป ภูเก็ต",
+     "likes": 2,
+     "date": "2024-07-19",
+     "link": "https://www.lemon8-app.com/@lipy53/7393399351487431185?region=th",
+     "source": "Lemon8 · เด็กขี้เบื่อ",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7393399351487431185&index=0&sign=fb2973d339ed326c80710785c17d9b21",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "น้ำตกบางแป ป่าคลอก ภูเก็ต",
+     "likes": 2,
+     "date": "2024-10-25",
+     "link": "https://www.lemon8-app.com/@d.naaa0606/7429748032167707144?region=th",
+     "source": "Lemon8 · N.awsda",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7429748032167707144&index=0&sign=28abf76d346a43ae54297eeb6eaaba3a",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "น้ำตกบางแป",
+     "likes": 1,
+     "date": "2024-08-07",
+     "link": "https://www.lemon8-app.com/@iftah1993/7400213389311590929?region=th",
+     "source": "Lemon8 · เที่ยวเรื่อยๆ",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7400213389311590929&index=0&sign=857091fc06381782add96fa44227371d",
+     "ck": 1,
+     "tag": 1
+    }
+   ],
+   "reviewCount": 4
   },
   {
    "id": "wd-Q34845747",
@@ -212237,7 +212362,60 @@
    "province": "ranong",
    "wiki": {},
    "summary": {},
-   "fetchedAt": "2026-11-08T21:01:05.885Z"
+   "fetchedAt": "2026-11-08T21:01:05.885Z",
+   "posts": [
+    {
+     "title": "อีกหนึ่งน้ำตก คลายร้อนของจ.ระนอง",
+     "likes": 17,
+     "date": "2024-04-08",
+     "link": "https://www.lemon8-app.com/@fieldtrip.withfews/7355326054434734609?region=th",
+     "source": "Lemon8 · เที่ยวตามฟิวส์",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7355326054434734609&index=0&sign=828264f8dc3c9104830f043953a5889e",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "เย็นสะบาย น้ำตกบกกราย กระบุรี ระนอง",
+     "likes": 4,
+     "date": "2025-02-17",
+     "link": "https://www.lemon8-app.com/@maygraphic/7472350234815873552?region=th",
+     "source": "Lemon8 · 3MO GRAPHIC 2019 Co.,Ltd.",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7472350234815873552&index=0&sign=f2c0e52e54b79f5d17bf8ea29c3a841c",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "น้ำตกบกกราย อ.กระบุรี จ.ระนอง",
+     "likes": 2,
+     "date": "2025-07-28",
+     "link": "https://www.lemon8-app.com/@anyapich519/7532142965767209480?region=th",
+     "source": "Lemon8 · อีฟ2419",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7532142965767209480&index=0&sign=958e471e42505d86cf85ef031e2708a4",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "📍น้ำตกบกกราย จ.ระนอง อ.กระบุรี",
+     "likes": 1,
+     "date": "2025-02-17",
+     "link": "https://www.lemon8-app.com/@gmmshop9/7472323062973989394?region=th",
+     "source": "Lemon8 · GMMshop",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7472323062973989394&index=0&sign=db935147a7683f49129cde2f2dfbb3ec",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "น้ำตกบกกราย น้ำตกที่หลายคนมองข้าม",
+     "likes": 0,
+     "date": "2025-01-01",
+     "link": "https://www.lemon8-app.com/@m_m_m048/7454902630444220936?region=th",
+     "source": "Lemon8 · Am Phawinee",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7454902630444220936&index=0&sign=886eaa6ec0be1ce970cddebf0d0ba597",
+     "ck": 1,
+     "tag": 1
+    }
+   ],
+   "reviewCount": 5
   },
   {
    "id": "wd-Q34845779",
@@ -212253,7 +212431,70 @@
    "province": "songkhla",
    "wiki": {},
    "summary": {},
-   "fetchedAt": "2026-11-08T21:01:05.885Z"
+   "fetchedAt": "2026-11-08T21:01:05.885Z",
+   "posts": [
+    {
+     "title": "\"น้ำตกบริพัตร\" เขตรักษาพันธุ์สัตว์ป่าโตนงาช้าง",
+     "likes": 7,
+     "date": "2025-10-16",
+     "link": "https://www.lemon8-app.com/@pr.dnp/7561683323987296776?region=th",
+     "source": "Lemon8 · DNP Official",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7561683323987296776&index=0&sign=981765f4e9668a312df58c6c754754b2",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "11.7.68..เย็นกาย",
+     "likes": 5,
+     "date": "2025-07-12",
+     "link": "https://www.lemon8-app.com/@januaryjan26/7526200585591308816?region=th",
+     "source": "Lemon8 · Worranun Suwann",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7526200585591308816&index=0&sign=2164a84f72f8846854237875cdf081eb",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "น้ำตกบริพัตร รัตภูมิ สงขลา",
+     "likes": 2,
+     "date": "2024-11-17",
+     "link": "https://www.lemon8-app.com/@p.chend/7438269349179458065?region=th",
+     "source": "Lemon8 · 🅿_🅲🅷🅴🅽🅳",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7438269349179458065&index=0&sign=c22fa0da2bcb9f54ccac09175aa31563",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "น้ำตกบริพัตร์",
+     "likes": 2,
+     "date": "2025-03-15",
+     "link": "https://www.lemon8-app.com/@baorote_mc/7482041259528339986?region=th",
+     "source": "Lemon8 · Baorote Mc",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7482041259528339986&index=0&sign=0c87eae75a9f56c21bdc20c0fc4631eb",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "น้ำตกบริพัตร",
+     "likes": 1,
+     "date": "2025-11-03",
+     "link": "https://www.lemon8-app.com/@nytt.buji/7568330370718990868?region=th",
+     "source": "Lemon8 · Wara Bj",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7568330370718990868&index=0&sign=decfdde6abe8597ee5b5d90d2362b4de",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "น้ำตกบริพัตรสงขลา",
+     "likes": 1,
+     "date": "2026-03-02",
+     "link": "https://www.lemon8-app.com/@user6276952324978/7612561811317178888?region=th",
+     "source": "Lemon8 · เกียรติศักดิ์ มณีโชติ หนุน",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7612561811317178888&index=0&sign=008367270b3dccc84ea95406565fc617",
+     "ck": 1,
+     "tag": 1
+    }
+   ],
+   "reviewCount": 7
   },
   {
    "id": "wd-Q34845794",
@@ -212285,7 +212526,72 @@
    "province": "lampang",
    "wiki": {},
    "summary": {},
-   "fetchedAt": "2026-11-08T21:01:05.885Z"
+   "fetchedAt": "2026-11-08T21:01:05.885Z",
+   "posts": [
+    {
+     "title": "How to กินไข่ลวกที่น้ำตกแจ้ซ้อน",
+     "likes": 124,
+     "date": "2024-05-11",
+     "link": "https://www.lemon8-app.com/@suneaterplants/7367757820910928401?region=th",
+     "source": "Lemon8 · Faiijil",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7367757820910928401&index=0&sign=47da02ea1a7f703841d518db0fd6537f",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "เที่ยวลำปาง บ้านป่าเหมี้ยง 3 วัน 2 คืน แบบไม่มีรถส่วนตัว",
+     "likes": 120,
+     "date": "2025-11-20",
+     "link": "https://www.lemon8-app.com/@aoffya.channel/7574736187592622593?region=th",
+     "source": "Lemon8 · 🌈Aoffy A.☀️",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7574736187592622593&index=0&sign=d1f7df78cc416db3827c20373c2467a6",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "สถานที่คลายร้อนเมืองเหนือ น้ำตกแจ้ซ้อน ,ลำปาง",
+     "likes": 14,
+     "date": "2024-04-30",
+     "link": "https://www.lemon8-app.com/@iammchoithelocal/7363556687040479760?region=th",
+     "source": "Lemon8 · ไอ้จ้อย วันนี้เที่ยวไหน",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7363556687040479760&index=0&sign=3bcf97ef1010800f2055293488bdb63a",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "• ระหว่างทางไปยังน้ำตกแจ้ซ้อน •",
+     "likes": 10,
+     "date": "2024-03-03",
+     "link": "https://www.lemon8-app.com/@nampuanu/7342156891201749505?region=th",
+     "source": "Lemon8 · แอ่วแหมแล้ว🛵⛺️",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7342156891201749505&index=0&sign=bdecc71a023ee66d23af46c8bb91c55e",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "น้ำตกแจ้ซ้อน 💦",
+     "likes": 9,
+     "date": "2025-02-06",
+     "link": "https://www.lemon8-app.com/@nun_naruemon39/7468272698867679745?region=th",
+     "source": "Lemon8 · ปุยนุ่น 🫶🏻",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7468272698867679745&index=0&sign=00ecf5024c82b0d726d0135c81d31707",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "พิกัดที่เที่ยวธรรมชาติ น้ำตกแจ้ซ้อน-ป่าเหมี้ยง📌 ฮีลใจสุดๆ",
+     "likes": 8,
+     "date": "2026-07-18",
+     "link": "https://www.lemon8-app.com/@himillionjam/7663853494688645640?region=th",
+     "source": "Lemon8 · lamun.list ᙏ̤̫ ☘︎",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7663853494688645640&index=0&sign=7b5422f8334e259298f47e563e38aa8d",
+     "ck": 1,
+     "tag": 1
+    }
+   ],
+   "reviewCount": 31,
+   "hours": "Mo-Su 06:00-18:00",
+   "hoursSrc": "review"
   },
   {
    "id": "wd-Q34845824",
@@ -212301,7 +212607,50 @@
    "province": "phayao",
    "wiki": {},
    "summary": {},
-   "fetchedAt": "2026-11-08T21:01:05.885Z"
+   "fetchedAt": "2026-11-08T21:01:05.885Z",
+   "posts": [
+    {
+     "title": "CHAM PA THONG WATERFALL",
+     "likes": 5,
+     "date": "2025-01-20",
+     "link": "https://www.lemon8-app.com/@usernames_p04/7461919721470951953?region=th",
+     "source": "Lemon8 · Pakbung🥣",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7461919721470951953&index=0&sign=c872282570bcdecb7a698431ad400526",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "📍น้ำตกจำปาทอง",
+     "likes": 2,
+     "date": "2026-04-27",
+     "link": "https://www.lemon8-app.com/@noo_net/7633449006969995783?region=th",
+     "source": "Lemon8 · นอตอ รีวิวไปเรื่อย",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7633449006969995783&index=0&sign=8fa1bd6f3204ea039dba1e2a2b93d7ed",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "น้ำตกจำปาทอง ⛰️✨น้ำตกในอำเภอเมืองพะเยา",
+     "likes": 1,
+     "date": "2025-10-13",
+     "link": "https://www.lemon8-app.com/@luckhdiary/7560713418370597394?region=th",
+     "source": "Lemon8 · luckhdiary",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7560713418370597394&index=0&sign=7163c8c410cd69dbed2b11b0de93e57d",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "รู้งี้ไปนานแล้ว",
+     "likes": 0,
+     "date": "2025-11-02",
+     "link": "https://www.lemon8-app.com/@nokpiyachut/7568122758530368018?region=th",
+     "source": "Lemon8 · nokpiyachut",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7568122758530368018&index=0&sign=6ef1c9f71e7d7953357e926beb565723",
+     "ck": 1,
+     "tag": 1
+    }
+   ],
+   "reviewCount": 4
   },
   {
    "id": "wd-Q34845848",
@@ -212365,7 +212714,70 @@
    "province": "kanchanaburi",
    "wiki": {},
    "summary": {},
-   "fetchedAt": "2026-11-08T21:01:05.885Z"
+   "fetchedAt": "2026-11-08T21:01:05.885Z",
+   "posts": [
+    {
+     "title": "📍 น้ำตกไดช่องถ่อง ที่เที่ยวหน้าฝน #สังขละบุรี #กาญจนบุรี",
+     "likes": 115,
+     "date": "2025-08-03",
+     "link": "https://www.lemon8-app.com/@lullatravel/7534264897270891016?region=th",
+     "source": "Lemon8 · ลั้ลลาพาเที่ยว - Lulla Travel",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7534264897270891016&index=0&sign=0b9cfdda21a07268bb893328dbdc82f5",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "อำเภอสังขละบุรี น้ำตกไดช่องถ่อง ที่เที่ยวกาญจนบุรี กลางป่าธรรมชาติ ยิ่ง(ฝน)ตก ยิ่งสวย",
+     "likes": 82,
+     "date": "2024-09-20",
+     "link": "https://www.lemon8-app.com/@thiwa1989/7416736839832355329?region=th",
+     "source": "Lemon8 · ThungThing Tiwa",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7416736839832355329&index=0&sign=076e1730d2f49a6f42f8935df49e0e09",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "น้ำตกไดช่องถ่อง น้ำตกที่สวยมากๆอีกแห่งใน จ.กาญจนบุรี",
+     "likes": 75,
+     "date": "2025-08-16",
+     "link": "https://www.lemon8-app.com/@storyofgrub/7538974432485032455?region=th",
+     "source": "Lemon8 · เรื่องของกรุบ",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7538974432485032455&index=0&sign=b8c9ecd6a6f90c20974d4cd5f18f7340",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "ราชินีแห่งฤดูฝนกลับมาแล้ว “น้ำตกไดช่องถ่อง” กาญจนบุรี #กันแกงแจกพิกัด #กาญจนบุรี #travel #tiktokพาเที่ยว #น้ําตกไดช่องถ่อง",
+     "likes": 32,
+     "date": "2025-07-01",
+     "link": "https://www.lemon8-app.com/@chakepikad/7521975024279126544?region=th",
+     "source": "Lemon8 · แจกพิกัด",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7521975024279126544&index=0&sign=a8576813791582e7943a4b9f6b67d867",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "🌳ที่สุด อลังการ น้ำตกไดช่องถ่อง🌿",
+     "likes": 25,
+     "date": "2025-08-16",
+     "link": "https://www.lemon8-app.com/@kimyungji3/7539058093649527304?region=th",
+     "source": "Lemon8 · ดิน น้ำ ลม ไฟ",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7539058093649527304&index=0&sign=a2519d3cc6f2c9849ce5add42a8c53f0",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "น้ำตกไดช่องถ่อง อ.สังขละ กาญจนบุรี",
+     "likes": 17,
+     "date": "2024-12-05",
+     "link": "https://www.lemon8-app.com/@ti_photharam/7444726587725005328?region=th",
+     "source": "Lemon8 · tiphotharam",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7444726587725005328&index=0&sign=afaaf12c1865b824eb6bd5924b36ea9a",
+     "ck": 1,
+     "tag": 1
+    }
+   ],
+   "reviewCount": 30
   },
   {
    "id": "wd-Q34845954",
@@ -212406,7 +212818,60 @@
     "likes": 0,
     "at": "2026-11-15",
     "posts": []
-   }
+   },
+   "posts": [
+    {
+     "title": "#น้ำตกเหวโหลม",
+     "likes": 45,
+     "date": "2026-06-28",
+     "link": "https://www.lemon8-app.com/@momay11_17/7656400728444895752?region=th",
+     "source": "Lemon8 · โมเมย์ สุทธิตา",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7656400728444895752&index=0&sign=f3b687b2c18e4e862de618668a732f21",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "น้ำตกเหวโหลม อ.พ๊ะโต๊ะ จ.ชุมพร",
+     "likes": 24,
+     "date": "2022-07-26",
+     "link": "https://www.lemon8-app.com/@tinepainai/7124591457218101761?region=th",
+     "source": "Lemon8 · ไทน์ไปไหน",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7124591457218101761&index=0&sign=6f789de14ce9ea1a4ea054444e690cad",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "เที่ยวคนเดียวได้ดี #น้ำตกเหวโหลม พะโต๊ะ-ชุมพร น้ำตกเหวโหลม",
+     "likes": 11,
+     "date": "2025-02-18",
+     "link": "https://www.lemon8-app.com/@guitar.barista/7472740548567892498?region=th",
+     "source": "Lemon8 · 🎸กีต้าร์ Barista ผมสั้น☕️🎭",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7472740548567892498&index=0&sign=8bbe47eb710889e811e27069c39feaea",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "ชุมพรมีน้ำตกแบบนี้ด้วย💦🌊❤️",
+     "likes": 1,
+     "date": "2025-02-08",
+     "link": "https://www.lemon8-app.com/@bee.juntima/7469029253833671185?region=th",
+     "source": "Lemon8 · BEE 42♾",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7469029253833671185&index=0&sign=02dbf2113dd9b462554ce65e7d6b2769",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "Pround to present น้ำตกเหวโหลม",
+     "likes": 0,
+     "date": "2026-01-03",
+     "link": "https://www.lemon8-app.com/@myc_by_bye/7590989572483203592?region=th",
+     "source": "Lemon8 · Xinsin_",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7590989572483203592&index=0&sign=763d70e98dce52ca1dd8ef71adafecfa",
+     "ck": 1,
+     "tag": 1
+    }
+   ],
+   "reviewCount": 5
   },
   {
    "id": "wd-Q34846014",
@@ -212422,7 +212887,70 @@
    "province": "phang-nga",
    "wiki": {},
    "summary": {},
-   "fetchedAt": "2026-11-08T21:01:05.885Z"
+   "fetchedAt": "2026-11-08T21:01:05.885Z",
+   "posts": [
+    {
+     "title": "สมุย น้ำตกก็มีนะ ล่องมาเที่ยวกันหรอยัง สวยด้วยนะ",
+     "likes": 15,
+     "date": "2026-01-20",
+     "link": "https://www.lemon8-app.com/@nirandonanangrasa/7597248029028008456?region=th",
+     "source": "Lemon8 · เฟี๊ยต สุดติ่งกระดิ่งแมว",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7597248029028008456&index=0&sign=842f9b5ab0f8938df7add04b4e6db9f4",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "อากาศร้อนๆแบบนี้ น้ำตกคือสิ่งที่คู่ควรค่ะ 🦋🫶🏻⛰️🥰💝",
+     "likes": 9,
+     "date": "2025-03-18",
+     "link": "https://www.lemon8-app.com/@iipalalink/7483100661736391175?region=th",
+     "source": "Lemon8 · Pumpkin",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7483100661736391175&index=0&sign=8b36b59f6b6148dda1cae3655483a0b2",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "น้ำตกหินลาดพังงา",
+     "likes": 5,
+     "date": "2025-01-19",
+     "link": "https://www.lemon8-app.com/@panuwat124/7461434577018552850?region=th",
+     "source": "Lemon8 · สามเจริญยนต์ 🔧(ภูเก็ต)",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7461434577018552850&index=0&sign=5fede426263d3a91bb614b63a46665db",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "\"นํ้าตกหินลาด\"",
+     "likes": 3,
+     "date": "2025-03-02",
+     "link": "https://www.lemon8-app.com/@gusaer1/7477105713186112017?region=th",
+     "source": "Lemon8 · G",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7477105713186112017&index=0&sign=4ef343662bdce2bb5e0381cf17260865",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "น้ำตกหินลาด เกาะสมุย🏝",
+     "likes": 2,
+     "date": "2025-02-08",
+     "link": "https://www.lemon8-app.com/@mamii_nut/7468953022568727058?region=th",
+     "source": "Lemon8 · โดนัท สมุย",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7468953022568727058&index=0&sign=9ce0031cc8646fb30ce1ceb135e5ada8",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "น้ำตกหินลาดสมุย",
+     "likes": 2,
+     "date": "2025-08-13",
+     "link": "https://www.lemon8-app.com/@tikjantiya/7537930831592063506?region=th",
+     "source": "Lemon8 · พี่ติ๊กสมุย(2)3น.คนน่ารัก💗",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7537930831592063506&index=0&sign=a5f0e426a289ed663d40982a2a5a1824",
+     "ck": 1,
+     "tag": 1
+    }
+   ],
+   "reviewCount": 8
   },
   {
    "id": "wd-Q34846030",
@@ -212449,7 +212977,70 @@
     "posts": []
    },
    "districtEn": "Ko Samui",
-   "district": "เกาะสมุย"
+   "district": "เกาะสมุย",
+   "posts": [
+    {
+     "title": "สมุย น้ำตกก็มีนะ ล่องมาเที่ยวกันหรอยัง สวยด้วยนะ",
+     "likes": 15,
+     "date": "2026-01-20",
+     "link": "https://www.lemon8-app.com/@nirandonanangrasa/7597248029028008456?region=th",
+     "source": "Lemon8 · เฟี๊ยต สุดติ่งกระดิ่งแมว",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7597248029028008456&index=0&sign=842f9b5ab0f8938df7add04b4e6db9f4",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "อากาศร้อนๆแบบนี้ น้ำตกคือสิ่งที่คู่ควรค่ะ 🦋🫶🏻⛰️🥰💝",
+     "likes": 9,
+     "date": "2025-03-18",
+     "link": "https://www.lemon8-app.com/@iipalalink/7483100661736391175?region=th",
+     "source": "Lemon8 · Pumpkin",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7483100661736391175&index=0&sign=8b36b59f6b6148dda1cae3655483a0b2",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "น้ำตกหินลาดพังงา",
+     "likes": 5,
+     "date": "2025-01-19",
+     "link": "https://www.lemon8-app.com/@panuwat124/7461434577018552850?region=th",
+     "source": "Lemon8 · สามเจริญยนต์ 🔧(ภูเก็ต)",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7461434577018552850&index=0&sign=5fede426263d3a91bb614b63a46665db",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "\"นํ้าตกหินลาด\"",
+     "likes": 3,
+     "date": "2025-03-02",
+     "link": "https://www.lemon8-app.com/@gusaer1/7477105713186112017?region=th",
+     "source": "Lemon8 · G",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7477105713186112017&index=0&sign=4ef343662bdce2bb5e0381cf17260865",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "น้ำตกหินลาด เกาะสมุย🏝",
+     "likes": 2,
+     "date": "2025-02-08",
+     "link": "https://www.lemon8-app.com/@mamii_nut/7468953022568727058?region=th",
+     "source": "Lemon8 · โดนัท สมุย",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7468953022568727058&index=0&sign=9ce0031cc8646fb30ce1ceb135e5ada8",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "น้ำตกหินลาดสมุย",
+     "likes": 2,
+     "date": "2025-08-13",
+     "link": "https://www.lemon8-app.com/@tikjantiya/7537930831592063506?region=th",
+     "source": "Lemon8 · พี่ติ๊กสมุย(2)3น.คนน่ารัก💗",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7537930831592063506&index=0&sign=a5f0e426a289ed663d40982a2a5a1824",
+     "ck": 1,
+     "tag": 1
+    }
+   ],
+   "reviewCount": 8
   },
   {
    "id": "wd-Q34846046",
@@ -212513,7 +213104,72 @@
    "province": "chiang-mai",
    "wiki": {},
    "summary": {},
-   "fetchedAt": "2026-11-08T21:01:07.619Z"
+   "fetchedAt": "2026-11-08T21:01:07.619Z",
+   "posts": [
+    {
+     "title": "เชียงใหม่ก็อาบแดดได้!!",
+     "likes": 390,
+     "date": "2022-07-13",
+     "link": "https://www.lemon8-app.com/@phxrada.p/7119742113247429122?region=th",
+     "source": "Lemon8 · รฎารีวิว✨",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7119742113247429122&index=0&sign=b506a53d82bbbcd276f7c6d27c91ccf9",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "60+ ไม่สะดวกแก่….เที่ยวน้ำตกห้วยแก้วเย็นอกเย็นใจ เชียงใหม่เจ้…",
+     "likes": 254,
+     "date": "2025-03-18",
+     "link": "https://www.lemon8-app.com/@jamsri2505/7483157552495428114?region=th",
+     "source": "Lemon8 · แจมศรแสงสวรรณ",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7483157552495428114&index=0&sign=b22768d8c7ab28f63239a946b62cdad6",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "เพิ่งรู้ว่ามีน้ำตกใกล้เมืองเชียงใหม่ขนาดนี้!! 🍃",
+     "likes": 244,
+     "date": "2024-07-26",
+     "link": "https://www.lemon8-app.com/@merrytoonnylucky/7395887414906274305?region=th",
+     "source": "Lemon8 · Merrytoonny🌻",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7395887414906274305&index=0&sign=91a973e187e3b571446ca8a3d19ff158",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "น้ำตกห้วยแก้ว เชียงใหม่📍",
+     "likes": 177,
+     "date": "2025-07-30",
+     "link": "https://www.lemon8-app.com/@frrnfernnnnn/7532974926916256277?region=th",
+     "source": "Lemon8 · น้องบอฟอ",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7532974926916256277&index=0&sign=dd832689b497697be7b5b85f0d58c06e",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "⛰️🍃🌿🤍 #น้ำตกห้วยแก้ว #เชียงราย #ที่เที่ยวเชียงราย #fyp #ฟีดดดシ",
+     "likes": 170,
+     "date": "2026-07-31",
+     "link": "https://www.lemon8-app.com/@noeypassorn/7668561483488526869?region=th",
+     "source": "Lemon8 · Passorn Ukamnerd",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7668561483488526869&index=0&sign=f59f87d320ed676c76d8fb0273125847",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "น้ำตกเชียงใหม่ใกล้ตัวเมือง (น้ำตกห้วยแก้ว)",
+     "likes": 47,
+     "date": "2024-06-03",
+     "link": "https://www.lemon8-app.com/@annatapop/7376398758755435025?region=th",
+     "source": "Lemon8 · Annatapop",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7376398758755435025&index=0&sign=e0ba91773ede8c17212785dfe9d5fcc6",
+     "ck": 1,
+     "tag": 1
+    }
+   ],
+   "reviewCount": 42,
+   "hours": "Mo-Su 08:00-17:00",
+   "hoursSrc": "review"
   },
   {
    "id": "wd-Q34846105",
@@ -212529,7 +213185,70 @@
    "province": "ubon-ratchathani",
    "wiki": {},
    "summary": {},
-   "fetchedAt": "2026-11-08T21:01:07.619Z"
+   "fetchedAt": "2026-11-08T21:01:07.619Z",
+   "posts": [
+    {
+     "title": "น้ำตกห้วยหลวง จ.อุบลราชธานี",
+     "likes": 1422,
+     "date": "2023-11-17",
+     "link": "https://www.lemon8-app.com/@exye.y/7302275620359111169?region=th",
+     "source": "Lemon8 · exye.y",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7302275620359111169&index=0&sign=089e7de7fe501a6eecd327036213b2a1",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "น้ำตกห้วยหลวง อุบล",
+     "likes": 1267,
+     "date": "2024-11-16",
+     "link": "https://www.lemon8-app.com/@ninathichaa/7437690111883592200?region=th",
+     "source": "Lemon8 · Nina",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7437690111883592200&index=0&sign=97ef6981d8408553674946a54efcb8f5",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "น้ำตกห้วยหลวง | อุบลราชธานี 🌱",
+     "likes": 445,
+     "date": "2025-02-19",
+     "link": "https://www.lemon8-app.com/@phakanthew_tt/7473126825473835528?region=th",
+     "source": "Lemon8 · พากันเที่ยว",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7473126825473835528&index=0&sign=fe3f78088cc8a2e1fbbb0fc5d8e9f298",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "แมทชุดเที่ยวน้ำตก⛰️",
+     "likes": 79,
+     "date": "2024-09-22",
+     "link": "https://www.lemon8-app.com/@thippppppp_p/7417428416334397969?region=th",
+     "source": "Lemon8 · Thipfyyyyyyyy🧸",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7417428416334397969&index=0&sign=324f73bc6f4004e801b5fdb5fdeb4747",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "น้ำตกห้วยหลวง อ. นาจะหลวย จ.อุบลราชธานี .",
+     "likes": 39,
+     "date": "2024-10-13",
+     "link": "https://www.lemon8-app.com/@pinyourvacations/7425084127705137665?region=th",
+     "source": "Lemon8 · ปักหมุดท่องเที่ยว",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7425084127705137665&index=0&sign=986068f4211c446179431be361cd4b33",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "📍น้ำตกห้วยหลวง อุบลฯ🌳💦",
+     "likes": 15,
+     "date": "2024-10-02",
+     "link": "https://www.lemon8-app.com/@panvpun/7421224988432597520?region=th",
+     "source": "Lemon8 · saac",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7421224988432597520&index=0&sign=0b4db3b4bf9a27d78da4b085967b3e6e",
+     "ck": 1,
+     "tag": 1
+    }
+   ],
+   "reviewCount": 56
   },
   {
    "id": "wd-Q34846133",
@@ -212641,7 +213360,70 @@
    "province": "chiang-mai",
    "wiki": {},
    "summary": {},
-   "fetchedAt": "2026-11-08T21:01:07.619Z"
+   "fetchedAt": "2026-11-08T21:01:07.619Z",
+   "posts": [
+    {
+     "title": "น้ำตกวชิรธาร VS น้ำตกห้วยทรายเหลือง | ไปไหนดีนะ?🌿💦",
+     "likes": 25,
+     "date": "2023-01-06",
+     "link": "https://www.lemon8-app.com/@isfaai/7185422593015529986?region=th",
+     "source": "Lemon8 · isfaai",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7185422593015529986&index=0&sign=93e7e80cc5d6389ced0f1ebb35a43c4b",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "น้ำตกห้วยทรายเหลือง จังหวัดเชียงใหม่",
+     "likes": 7,
+     "date": "2024-09-08",
+     "link": "https://www.lemon8-app.com/@mookmik1321/7412289881986187793?region=th",
+     "source": "Lemon8 · Not lonely📍",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7412289881986187793&index=0&sign=09f27e5d0f9efadfbd23268636dde8ec",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "น้ำตกห้วยทรายเหลืองก่อนถึงบ้านป่าป่งเปียง",
+     "likes": 6,
+     "date": "2024-08-11",
+     "link": "https://www.lemon8-app.com/@nutam2580/7401873482998530561?region=th",
+     "source": "Lemon8 · NUT",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7401873482998530561&index=0&sign=43b79aaa5e3476bbbda84ba347156abb",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "น้ำตกห้วยทรายเหลือง ดอยอินทนนท์ เชียงใหม่",
+     "likes": 5,
+     "date": "2023-10-17",
+     "link": "https://www.lemon8-app.com/@aomlongkaeng2301/7290868566738420225?region=th",
+     "source": "Lemon8 · Aom Anisa",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7290868566738420225&index=0&sign=44d1cff69170f5821ce2566298be093c",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "น้ำตกห้วยทรายเหลือง",
+     "likes": 4,
+     "date": "2023-09-16",
+     "link": "https://www.lemon8-app.com/@_kongkwan_1996/7279405955383984641?region=th",
+     "source": "Lemon8 · Kong Kwan",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7279405955383984641&index=0&sign=f5ccee8bb5ff8e4240c0fc0abdd4a616",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "น้ำตกห้วยทรายเหลือง",
+     "likes": 2,
+     "date": "2025-09-11",
+     "link": "https://www.lemon8-app.com/@tabinawguin/7548804297590063623?region=th",
+     "source": "Lemon8 · tabi nawguin 🍋🐧",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7548804297590063623&index=0&sign=3fe47266d3898c97c691f8cea263d944",
+     "ck": 1,
+     "tag": 1
+    }
+   ],
+   "reviewCount": 9
   },
   {
    "id": "wd-Q34846237",
@@ -212721,7 +213503,70 @@
    "province": "prachuap-khiri-khan",
    "wiki": {},
    "summary": {},
-   "fetchedAt": "2026-11-08T21:01:07.619Z"
+   "fetchedAt": "2026-11-08T21:01:07.619Z",
+   "posts": [
+    {
+     "title": "ทำไม !? ไปทับสะแกทุกไตรมาส 😆",
+     "likes": 50,
+     "date": "2024-02-18",
+     "link": "https://www.lemon8-app.com/@minnapuck/7336819521598210562?region=th",
+     "source": "Lemon8 · Peppermint Tea",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7336819521598210562&index=0&sign=b4ee8f78c3a38a7ebcdf09e139ca36c0",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "How to post⛰️🌳",
+     "likes": 28,
+     "date": "2023-10-18",
+     "link": "https://www.lemon8-app.com/@huoling_lingling/7291132537148080641?region=th",
+     "source": "Lemon8 · Jennyh_jjr",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7291132537148080641&index=0&sign=6436a7403e165f3278b5c85e3485a42e",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "อุทยานเเห่งชาติน้ำตกห้วยยาง🏞💖",
+     "likes": 21,
+     "date": "2025-06-15",
+     "link": "https://www.lemon8-app.com/@duangkaew.som/7516126788604477960?region=th",
+     "source": "Lemon8 · สส.ที่เเปลว่าส้มสวยอ่า🫢",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7516126788604477960&index=0&sign=4cb0a111ce905170c4a232ff0b78f4d1",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "1 Day Trip",
+     "likes": 10,
+     "date": "2025-10-16",
+     "link": "https://www.lemon8-app.com/@hongyaakpai/7561734752781222417?region=th",
+     "source": "Lemon8 · 🍀",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7561734752781222417&index=0&sign=f4476f4cbcdef17e4ec2f3ba7b5b7926",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "อช.น้ำตกห้วยยาง ⛰️",
+     "likes": 9,
+     "date": "2025-06-16",
+     "link": "https://www.lemon8-app.com/@ssesepp/7516419588888838674?region=th",
+     "source": "Lemon8 · ssesepp",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7516419588888838674&index=0&sign=df2486d37f3361ac472c6e57707d3b75",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "เส้นทางสู่ธรรมชาติ",
+     "likes": 3,
+     "date": "2024-08-11",
+     "link": "https://www.lemon8-app.com/@hallnamonapat/7401793738579640848?region=th",
+     "source": "Lemon8 · Hall",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7401793738579640848&index=0&sign=8a248b6e46a275457e4640d7f9909aae",
+     "ck": 1,
+     "tag": 1
+    }
+   ],
+   "reviewCount": 8
   },
   {
    "id": "wd-Q34846312",
@@ -212838,16 +213683,67 @@
    },
    "posts": [
     {
+     "title": "น้ำตกกะทู้ ภูเก็ต",
+     "likes": 9,
+     "date": "2025-07-27",
+     "link": "https://www.lemon8-app.com/@aomgoodvibe/7531574949757092353?region=th",
+     "source": "Lemon8 · 🥑อะโวคาโด",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7531574949757092353&index=0&sign=cec20f17d4e4ed1a31bba97d89294aef",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "เส้นทางเดินเทรล น้ำตกกะทู้ - น้ำตกบางหวาน",
+     "likes": 6,
+     "date": "2024-06-08",
+     "link": "https://www.lemon8-app.com/@kunayo30/7378003489743553041?region=th",
+     "source": "Lemon8 · KunaYo",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7378003489743553041&index=0&sign=1fc72b7dd7b921f7db714e3eec1b0ab6",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "ครัวไพริน น้ำตกกะทู้ภูเก็ต รสชาติหรอยเเรง😱",
+     "likes": 3,
+     "date": "2024-06-30",
+     "link": "https://www.lemon8-app.com/@carlynna_/7386353741441810961?region=th",
+     "source": "Lemon8 · Pinpuk",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7386353741441810961&index=0&sign=3bfc76ae23b8ab6a43f8a3ab2bf49718",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "น้ำตกกะทู้🏞️",
+     "likes": 2,
+     "date": "2025-10-26",
+     "link": "https://www.lemon8-app.com/@th_22nd/7565429818016186897?region=th",
+     "source": "Lemon8 · ไปเรื่อยๆ:)",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7565429818016186897&index=0&sign=2147d7cc7ac043b4c3a3f8af71421874",
+     "ck": 1,
+     "tag": 1
+    },
+    {
      "title": "น้ำตกกะทู้มีอะไรดี #บรรยากาศดีมาก #เงียบสงบ",
      "likes": 0,
      "date": "2026-10-06",
      "link": "https://www.lemon8-app.com/@mosupapornnoonak.23/7693539691191878152?region=th",
      "source": "Lemon8 · Supaporn Noonak",
      "image": "https://www.lemon8-app.com/seo/image?item_id=7693539691191878152&index=0&sign=7a181fcca91bf103283c53ad997e8947",
-     "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/ok8FDmlBYTbPTBA5DA0NaIi6kaiJEqsAE9TAP~tplv-sdweummd6v-text-logo-v1:QG1vc3VwYXBvcm5ub29uYWsuMjM=:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1797336000&x-signature=TmPqazs6w%2FdgEOfOKUrWm0uFmBU%3D",
-     "th": "data/thumbs/7693539691191878152-0.webp"
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "น้ำตกในปี 2026 กับหน้าฝนที่ภูเก็ต⛰️ #น้ำตก #น้ำตกกะทู้ #phuket #กะทู้ #Kathu",
+     "likes": 0,
+     "date": "2026-06-08",
+     "link": "https://www.lemon8-app.com/@viewvipawee24/7649007304469692936?region=th",
+     "source": "Lemon8 · View Vipawee",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7649007304469692936&index=0&sign=a66e6330d4f7af55c0d6bd0f29483f0c",
+     "ck": 1,
+     "tag": 1
     }
-   ]
+   ],
+   "reviewCount": 7
   },
   {
    "id": "wd-Q34846407",
@@ -212863,7 +213759,70 @@
    "province": "sakon-nakhon",
    "wiki": {},
    "summary": {},
-   "fetchedAt": "2026-11-08T21:01:07.619Z"
+   "fetchedAt": "2026-11-08T21:01:07.619Z",
+   "posts": [
+    {
+     "title": "ชวนเที่ยว \"น้ำตกคำหอม\" น้ำตกสุดสวยแห่งดินแดนธรรมะ",
+     "likes": 31,
+     "date": "2025-08-22",
+     "link": "https://www.lemon8-app.com/@pr.dnp/7541330173199647250?region=th",
+     "source": "Lemon8 · DNP Official",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7541330173199647250&index=0&sign=f9b147224f11b99cac394f70c83b467c",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "เที่ยวน้ำตกกับเพื่อน",
+     "likes": 30,
+     "date": "2024-08-20",
+     "link": "https://www.lemon8-app.com/@preawmini88/7405223839791366672?region=th",
+     "source": "Lemon8 · ❣️Preawmini88✨",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7405223839791366672&index=0&sign=d04a02547b9329309e4f2303babb7853",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "น้ำตกคำหอม จ.หวัดสกลนคร",
+     "likes": 9,
+     "date": "2022-10-06",
+     "link": "https://www.lemon8-app.com/@k11604/7151395125522924033?region=th",
+     "source": "Lemon8 · K",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7151395125522924033&index=0&sign=94ebe141af999e7df7ea90801ec3d358",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "น้ำตกคำหอม (สกลนคร) 🚗💨",
+     "likes": 7,
+     "date": "2024-08-15",
+     "link": "https://www.lemon8-app.com/@jeljtr/7403229180546269713?region=th",
+     "source": "Lemon8 · ♥ jel",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7403229180546269713&index=0&sign=914f33cc5c528e7cd239c3b7e124ffcc",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "น้ำตกคำหอม สกลนคร",
+     "likes": 5,
+     "date": "2024-09-08",
+     "link": "https://www.lemon8-app.com/@bombom21044/7412310720920076817?region=th",
+     "source": "Lemon8 · Koom Bowbx",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7412310720920076817&index=0&sign=9d210562857884b31481f5ec2681fb00",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "บรรยากาศน้ำตก",
+     "likes": 5,
+     "date": "2024-08-04",
+     "link": "https://www.lemon8-app.com/@fon_1516/7399296963939729936?region=th",
+     "source": "Lemon8 · เรนนี่ฮีลใจ",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7399296963939729936&index=0&sign=9e372cfd5cb4c28b22e7bc5f79c0319c",
+     "ck": 1,
+     "tag": 1
+    }
+   ],
+   "reviewCount": 15
   },
   {
    "id": "wd-Q34846423",
@@ -212879,7 +213838,50 @@
    "province": "phang-nga",
    "wiki": {},
    "summary": {},
-   "fetchedAt": "2026-11-08T21:01:07.619Z"
+   "fetchedAt": "2026-11-08T21:01:07.619Z",
+   "posts": [
+    {
+     "title": "น้ำตกขนิม-พังงา",
+     "likes": 24,
+     "date": "2026-08-06",
+     "link": "https://www.lemon8-app.com/@porpla.7/7670929972973814288?region=th",
+     "source": "Lemon8 · ปลาเค็มแดดเดียว🐳",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7670929972973814288&index=0&sign=846e633d11742c0ea5554bba4a77c630",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "น้ำตกที่ใกล้ที่สุด เท่าที่เคยไปมา 🌿🌈 น้ำตกขนิม พังงา #พังงา #เที่ยวพังงา #พังงาเมืองสวยในหุบเขา🏞🍃 #ฟีดดดシ",
+     "likes": 1,
+     "date": "2026-07-14",
+     "link": "https://www.lemon8-app.com/@toonn_story/7662383292138570248?region=th",
+     "source": "Lemon8 · ตูน จะ เที่ยว",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7662383292138570248&index=0&sign=b3c8da606ec74cbc6617d715d82bbc9a",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "#น้ำตกขนิม พังงา🌲🌳",
+     "likes": 1,
+     "date": "2025-09-17",
+     "link": "https://www.lemon8-app.com/@jamesonkhaolak/7551062303526486535?region=th",
+     "source": "Lemon8 · Jameson Khao Lak",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7551062303526486535&index=0&sign=ee63435432afd06af38624da49b493d9",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "น้ำตกขนิม🤍",
+     "likes": 0,
+     "date": "2025-12-05",
+     "link": "https://www.lemon8-app.com/@pp.mxxm/7580388885906145809?region=th",
+     "source": "Lemon8 · Kaimook🤍",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7580388885906145809&index=0&sign=79f847ef72440746f86db440c398d5c7",
+     "ck": 1,
+     "tag": 1
+    }
+   ],
+   "reviewCount": 4
   },
   {
    "id": "wd-Q34846440",
@@ -212895,7 +213897,72 @@
    "province": "rayong",
    "wiki": {},
    "summary": {},
-   "fetchedAt": "2026-11-08T21:01:07.619Z"
+   "fetchedAt": "2026-11-08T21:01:07.619Z",
+   "posts": [
+    {
+     "title": "ระยองก็มีน้ำตกนะ ~น้ำตกเขาชะเมา~",
+     "likes": 508,
+     "date": "2023-11-22",
+     "link": "https://www.lemon8-app.com/@papopnatcha/7304337950823744002?region=th",
+     "source": "Lemon8 · P.Natcha",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7304337950823744002&index=0&sign=0fcefafa7f06b3c67577d2a72f70eadc",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "น้ำตกเขาชะเมา ระยอง🍃🫧",
+     "likes": 354,
+     "date": "2025-07-30",
+     "link": "https://www.lemon8-app.com/@ppppppp.k1/7532680692464042497?region=th",
+     "source": "Lemon8 · Pasal ♡",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7532680692464042497&index=0&sign=f30b7d7e1a8b460c0593c4918e599c3d",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "น้ำตกเขาชะเมา one day trip 🏞️",
+     "likes": 250,
+     "date": "2026-08-09",
+     "link": "https://www.lemon8-app.com/@ritayurita/7672036409468895762?region=th",
+     "source": "Lemon8 · มาริต้ามาบอกต่อ",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7672036409468895762&index=0&sign=15bb66aabc1343c11bc81674f1e40025",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "Idea ถ่ายรูป น้ำตกเขาชะเมา จ.ระยอง ให้ฟีลต่างประเทศมาก 🍃🌳",
+     "likes": 161,
+     "date": "2026-07-15",
+     "link": "https://www.lemon8-app.com/@chpond.z/7662609988765958674?region=th",
+     "source": "Lemon8 · Chpond nik",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7662609988765958674&index=0&sign=fee8911c2e208d50d889df70758e831b",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "เที่ยวน้ำตกเขาชะเมากันน 🍃",
+     "likes": 61,
+     "date": "2024-10-14",
+     "link": "https://www.lemon8-app.com/@kannika.fierce/7425585903877456385?region=th",
+     "source": "Lemon8 · Kannika 🐳",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7425585903877456385&index=0&sign=7898206f726844afa374767ebd3b796c",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "น้ำตกเขาชะเมา⛰️",
+     "likes": 38,
+     "date": "2023-12-19",
+     "link": "https://www.lemon8-app.com/@thirasak_tan/7314337894608339458?region=th",
+     "source": "Lemon8 · Tan_trssn",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7314337894608339458&index=0&sign=18ca4d094d43a459f42c9a03c5bd6f0a",
+     "ck": 1,
+     "tag": 1
+    }
+   ],
+   "reviewCount": 38,
+   "hours": "Mo-Su 08:00-16:00",
+   "hoursSrc": "review"
   },
   {
    "id": "wd-Q34846455",
@@ -212975,7 +214042,40 @@
    "province": "phang-nga",
    "wiki": {},
    "summary": {},
-   "fetchedAt": "2026-11-08T21:01:07.619Z"
+   "fetchedAt": "2026-11-08T21:01:07.619Z",
+   "posts": [
+    {
+     "title": "น้ำตกเหวนรก ✨🌿",
+     "likes": 67,
+     "date": "2024-07-05",
+     "link": "https://www.lemon8-app.com/@premchobtiew/7388033878486958609?region=th",
+     "source": "Lemon8 · เปรมชอบเที่ยว",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7388033878486958609&index=0&sign=118abab7e8b1ffb3759dd3a5f23915f9",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "น้ำตกเขาใหญ่ต้องไป🌳⛰️",
+     "likes": 1,
+     "date": "2025-10-06",
+     "link": "https://www.lemon8-app.com/@wee5467/7558057948589720065?region=th",
+     "source": "Lemon8 · Pee’wee💫🌷",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7558057948589720065&index=0&sign=ead9efd9f42763d46140df5f4065b5af",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "น้ำตกKhao Yai💗 Waterfallฉ่ำๆ✨🇹🇭",
+     "likes": 1,
+     "date": "2026-04-01",
+     "link": "https://www.lemon8-app.com/@nanthi_haha/7623735065860555282?region=th",
+     "source": "Lemon8 · Nanthiii",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7623735065860555282&index=0&sign=c20c2b7bdc4d5b0ea3504e1b37e9a5bf",
+     "ck": 1,
+     "tag": 1
+    }
+   ],
+   "reviewCount": 3
   },
   {
    "id": "wd-Q34846545",
@@ -212991,7 +214091,30 @@
    "province": "trat",
    "wiki": {},
    "summary": {},
-   "fetchedAt": "2026-11-08T21:01:07.619Z"
+   "fetchedAt": "2026-11-08T21:01:07.619Z",
+   "posts": [
+    {
+     "title": "เกาะช้างเลี้ยวซ้าย",
+     "likes": 4,
+     "date": "2024-06-03",
+     "link": "https://www.lemon8-app.com/@aephotographh/7376255181329072641?region=th",
+     "source": "Lemon8 · Aephotograph",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7376255181329072641&index=0&sign=08ac782213b1dfc1b3cd8d74ad6c918a",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "เกาะช้างที่ไม่ได้สวยแค่ทะเล",
+     "likes": 2,
+     "date": "2022-11-22",
+     "link": "https://www.lemon8-app.com/@__what_the_duck/7168833225266184705?region=th",
+     "source": "Lemon8 · 🌺`Wazabii",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7168833225266184705&index=0&sign=c3b5aa9f54e8b99e1d601b93789a803c",
+     "ck": 1,
+     "tag": 1
+    }
+   ],
+   "reviewCount": 2
   },
   {
    "id": "wd-Q34846559",
@@ -213007,7 +214130,60 @@
    "province": "nakhon-si-thammarat",
    "wiki": {},
    "summary": {},
-   "fetchedAt": "2026-11-08T21:01:07.619Z"
+   "fetchedAt": "2026-11-08T21:01:07.619Z",
+   "posts": [
+    {
+     "title": "💚🥰",
+     "likes": 22,
+     "date": "2025-03-18",
+     "link": "https://www.lemon8-app.com/@domon42/7483061061545935368?region=th",
+     "source": "Lemon8 · Domon Story",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7483061061545935368&index=0&sign=b2d0f793e8232c901b6b5ca45fb719a0",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "น้ำตกคลองจัง",
+     "likes": 4,
+     "date": "2025-04-08",
+     "link": "https://www.lemon8-app.com/@samthungyai/7490953894038897170?region=th",
+     "source": "Lemon8 · สาม ทุ่งใหญ่",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7490953894038897170&index=0&sign=0087b02f0588819fb07f88f69837102d",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "น้ำตกธรรมชาติ",
+     "likes": 2,
+     "date": "2025-01-29",
+     "link": "https://www.lemon8-app.com/@nay2_00_1/7465311781867586055?region=th",
+     "source": "Lemon8 · nine2001",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7465311781867586055&index=0&sign=a02a383711f70a85057a2de7b16afded",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "น้ำตกคลองจัง",
+     "likes": 1,
+     "date": "2026-01-11",
+     "link": "https://www.lemon8-app.com/@boyattaphonkaewwi/7594072829872570898?region=th",
+     "source": "Lemon8 · boyattaphonkaewwi",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7594072829872570898&index=0&sign=ee902ab12d555573b29ff8d94fc3ddff",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "#อุทยานแห่งชาติน้ําตกโยง #น้ำตกคลองจัง",
+     "likes": 0,
+     "date": "2026-03-30",
+     "link": "https://www.lemon8-app.com/@jeermath/7623075048199553554?region=th",
+     "source": "Lemon8 · JEERWAT33",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7623075048199553554&index=0&sign=768f08ad6b84bbfc7d35510219f51585",
+     "ck": 1,
+     "tag": 1
+    }
+   ],
+   "reviewCount": 5
   },
   {
    "id": "wd-Q34846575",
@@ -213023,7 +214199,70 @@
    "province": "trat",
    "wiki": {},
    "summary": {},
-   "fetchedAt": "2026-11-08T21:01:07.619Z"
+   "fetchedAt": "2026-11-08T21:01:07.619Z",
+   "posts": [
+    {
+     "title": "น้ำตกคลองเจ้า 📍เกากูดด",
+     "likes": 140,
+     "date": "2026-06-03",
+     "link": "https://www.lemon8-app.com/@kadewoonwine/7647203441516773895?region=th",
+     "source": "Lemon8 · Kadewoonwine",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7647203441516773895&index=0&sign=fbfb02f403b2017001226895dfc91897",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "เกาะกูดก็มีน้ำตกนะ‼️ ลองไปดู EP : 7",
+     "likes": 64,
+     "date": "2024-06-08",
+     "link": "https://www.lemon8-app.com/@bai_baebae/7378174106757448193?region=th",
+     "source": "Lemon8 · ใบไม้ไง🍃",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7378174106757448193&index=0&sign=14fd642aef2c199d08017d2eb6c1caef",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "เกาะกูดก็มีน้ำตกด้วยนะรู้ยัง? | ไปนั่งแช่น้ำเย็นๆกลางป่ากันน🌳",
+     "likes": 61,
+     "date": "2023-06-27",
+     "link": "https://www.lemon8-app.com/@nnaersn/7249284064639975938?region=th",
+     "source": "Lemon8 · nnaersn",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7249284064639975938&index=0&sign=fbd8be16e301b23b662b7480a71a3fe9",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "waterfall",
+     "likes": 59,
+     "date": "2024-12-24",
+     "link": "https://www.lemon8-app.com/@nichabookk/7451841817844187664?region=th",
+     "source": "Lemon8 · เภสัชฯบุ๊ค 🩷✨",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7451841817844187664&index=0&sign=3a419ef8888bb14f133fb4d16bdd82bb",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "Koh Kood 🏝✨ 4 Day 3 night | EP. 3 น้ำตกคลองเจ้า🪾🦋",
+     "likes": 43,
+     "date": "2025-09-20",
+     "link": "https://www.lemon8-app.com/@bbtxng_/7552146600194294289?region=th",
+     "source": "Lemon8 · bbtxng",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7552146600194294289&index=0&sign=ec30e967111a6c848432be368e92b55c",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "ไอเดีย โพสท่ากับธรรมชาติให้ดูเพรียว🔥",
+     "likes": 43,
+     "date": "2024-06-30",
+     "link": "https://www.lemon8-app.com/@bimbap_frenchie/7386290560778322433?region=th",
+     "source": "Lemon8 · Koyyda ·͜·",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7386290560778322433&index=0&sign=c1e3140c8c8c596734305bc277ee4ea8",
+     "ck": 1,
+     "tag": 1
+    }
+   ],
+   "reviewCount": 40
   },
   {
    "id": "wd-Q34846590",
@@ -213058,16 +214297,67 @@
    "fetchedAt": "2026-11-08T21:01:07.619Z",
    "posts": [
     {
-     "title": "น้ำตกคลองลาน สวยจัง 🥹⛰️",
-     "likes": 35,
-     "date": "2026-05-31",
-     "link": "https://www.lemon8-app.com/@premchobtiew/7646059943544881671?region=th",
-     "source": "Lemon8 · เปรมชอบเที่ยว",
-     "image": "https://www.lemon8-app.com/seo/image?item_id=7646059943544881671&index=0&sign=3fbc32ebff6b9cf6bb9d6c59870c6020",
-     "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/o45BkYAAIRhiE9EPgswibF6PyBQAgLxACac8A~tplv-sdweummd6v-text-logo-v1:QHByZW1jaG9idGlldw==:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1797076800&x-signature=3eFtlWqg2J8k9PFrlpmNipuIL4U%3D",
-     "th": "data/thumbs/7646059943544881671-0.webp"
+     "title": "น้ำตกคลองลาน จ.กำแพงเพชร",
+     "likes": 2350,
+     "date": "2023-11-14",
+     "link": "https://www.lemon8-app.com/@exye.y/7301373619265962498?region=th",
+     "source": "Lemon8 · exye.y",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7301373619265962498&index=0&sign=d8011ff727a3c8c7ea5a481e915abefb",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "น้ำตกคลองลาน จ.กำแพงเพชร",
+     "likes": 2227,
+     "date": "2024-09-21",
+     "link": "https://www.lemon8-app.com/@eveqt_/7417112356578148880?region=th",
+     "source": "Lemon8 · eveqt_",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7417112356578148880&index=0&sign=a7b920f32449488c7e8f8ea046fff0e4",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "One day trip เที่ยวน้ำตกคลองลาน กำแพงเพชร",
+     "likes": 1809,
+     "date": "2025-06-08",
+     "link": "https://www.lemon8-app.com/@pancche9/7513462122467246593?region=th",
+     "source": "Lemon8 · IG:ccherry_p",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7513462122467246593&index=0&sign=41104142196446e1183b3e2af2fc5791",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "ไปถ่ายรูปที่น้ำตกกั๊น",
+     "likes": 1362,
+     "date": "2024-11-03",
+     "link": "https://www.lemon8-app.com/@eyepntfs/7433041192922694151?region=th",
+     "source": "Lemon8 · เอยอาย",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7433041192922694151&index=0&sign=a2a39f64784ca680e63fdef75159500f",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "OOTD น้ำตกคลองลาน ✨",
+     "likes": 1275,
+     "date": "2024-08-19",
+     "link": "https://www.lemon8-app.com/@ggyosi/7404879657956295169?region=th",
+     "source": "Lemon8 · Yosi",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7404879657956295169&index=0&sign=250de1250b60cfbfbe8181db7450de26",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "💧สัมผัสพลังแห่งธรรมชาติที่ “น้ำตกคลองลาน”🌿",
+     "likes": 935,
+     "date": "2025-06-14",
+     "link": "https://www.lemon8-app.com/@mmay_tnp/7515833995519640065?region=th",
+     "source": "Lemon8 · 𝗠",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7515833995519640065&index=0&sign=a518a2e327d0c552b36d0c0a5e63d296",
+     "ck": 1,
+     "tag": 1
     }
-   ]
+   ],
+   "reviewCount": 56
   },
   {
    "id": "wd-Q34846623",
@@ -213083,7 +214373,72 @@
    "province": "kamphaeng-phet",
    "wiki": {},
    "summary": {},
-   "fetchedAt": "2026-11-08T21:01:07.619Z"
+   "fetchedAt": "2026-11-08T21:01:07.619Z",
+   "posts": [
+    {
+     "title": "จุดกางเต็นท์ \"น้ำตกคลองน้ำไหล\"💦 จ.กำแพงเพชร",
+     "likes": 192,
+     "date": "2023-01-11",
+     "link": "https://www.lemon8-app.com/@beambaaa/7187416560636576257?region=th",
+     "source": "Lemon8 · Beams.",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7187416560636576257&index=0&sign=b30810c4614f67c17d243457330ce79d",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "ลานกางเต็นท์ ติดน้ำตก กำแพงเพชร 🏕",
+     "likes": 37,
+     "date": "2023-06-21",
+     "link": "https://www.lemon8-app.com/@whalenotpla/7247054374147555842?region=th",
+     "source": "Lemon8 · วาฬไม่ใช่ปลา",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7247054374147555842&index=0&sign=6187533a44e3c12deb3a4cb55d2ee4de",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "น้ำตกคลองน้ำไหล",
+     "likes": 13,
+     "date": "2024-10-29",
+     "link": "https://www.lemon8-app.com/@nook_thiii/7431207457302725127?region=th",
+     "source": "Lemon8 · nook ◡̈",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7431207457302725127&index=0&sign=c263515ead7c4ff1ede4dc89d814997c",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "💦น้ำตกคลองน้ำไหล 📍กำแพงเพชร",
+     "likes": 11,
+     "date": "2024-08-03",
+     "link": "https://www.lemon8-app.com/@phakanthew_tt/7398888013188612609?region=th",
+     "source": "Lemon8 · พากันเที่ยว",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7398888013188612609&index=0&sign=d1bfa0f219bcd8881594346a56842dfb",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "กางเต็นท์ ที่คลองน้ำไหล จ.กำแพงเพชร ✨",
+     "likes": 10,
+     "date": "2024-07-22",
+     "link": "https://www.lemon8-app.com/@bb.moji13/7394477272587076113?region=th",
+     "source": "Lemon8 · bb.moji13🎉",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7394477272587076113&index=0&sign=7bdf49c9ecc403e53ada99cc46758373",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "น้ำตกคลองน้ำไหล อช.คลองลาน จ.กำแพงเพชร",
+     "likes": 9,
+     "date": "2024-11-27",
+     "link": "https://www.lemon8-app.com/@benchawan_19/7441923886226129424?region=th",
+     "source": "Lemon8 · เบญชอบเที่ยว",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7441923886226129424&index=0&sign=bf556d351b3953abd10a22033663bca6",
+     "ck": 1,
+     "tag": 1
+    }
+   ],
+   "reviewCount": 27,
+   "hours": "Mo-Su 08:00-18:00",
+   "hoursSrc": "review"
   },
   {
    "id": "wd-Q34846638",
@@ -213099,7 +214454,70 @@
    "province": "chanthaburi",
    "wiki": {},
    "summary": {},
-   "fetchedAt": "2026-11-08T21:01:07.619Z"
+   "fetchedAt": "2026-11-08T21:01:07.619Z",
+   "posts": [
+    {
+     "title": "🌳ไอเดียถ่ายรูปกับน้ำตก",
+     "likes": 26,
+     "date": "2025-01-15",
+     "link": "https://www.lemon8-app.com/@.uusagiiii/7460147473043505671?region=th",
+     "source": "Lemon8 · Usagi🐇",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7460147473043505671&index=0&sign=01430164a794da864f108c9fbd97ff1b",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "ไปเที่ยว \"น้ำตกคลองนารายณ์\" จ.จันทบุรี กันค่ะ พาตัวไปให้ธรรมชาติ \"ฮีลใจ\" มันดีที่สุดเลย #น้ําตก #จันทบุรี #tiktokพาเที่ยว #nature #ธรรมชาติ",
+     "likes": 8,
+     "date": "2025-10-30",
+     "link": "https://www.lemon8-app.com/@jubajube_winwan/7566990022701548039?region=th",
+     "source": "Lemon8 · จุ๊บๆหนีเที่ยว",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7566990022701548039&index=0&sign=ca348b4a44aedac5ce7cf73bf41ed1c8",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "น้ำตกคลองนารายณ์จันทบุรี",
+     "likes": 8,
+     "date": "2026-08-30",
+     "link": "https://www.lemon8-app.com/@natjewel/7679746810595770896?region=th",
+     "source": "Lemon8 · NatChill",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7679746810595770896&index=0&sign=bd5e9977e1f2471364d2412c868ce261",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "น้ำตกคลองนารายณ์",
+     "likes": 5,
+     "date": "2024-10-07",
+     "link": "https://www.lemon8-app.com/@arareemm/7422981679993618945?region=th",
+     "source": "Lemon8 · Siriwan Chumhat",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7422981679993618945&index=0&sign=fc17bbac1f9a4d7dcdf9165c2e3848d2",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "น้ำตก เย็นสบาย คนไม่เยอะ",
+     "likes": 2,
+     "date": "2024-12-02",
+     "link": "https://www.lemon8-app.com/@lychangmali/7443809340970123794?region=th",
+     "source": "Lemon8 · Ly Chang Kati",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7443809340970123794&index=0&sign=6b4cf313363f8d15e12f4aed91a4b905",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "น้ำตกคลองนารายณ์",
+     "likes": 2,
+     "date": "2025-02-13",
+     "link": "https://www.lemon8-app.com/@arareemm/7470748384442188289?region=th",
+     "source": "Lemon8 · Siriwan Chumhat",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7470748384442188289&index=0&sign=8761a8d56fcd0a10433d52d596355274",
+     "ck": 1,
+     "tag": 1
+    }
+   ],
+   "reviewCount": 10
   },
   {
    "id": "wd-Q34846652",
@@ -213131,7 +214549,70 @@
    "province": "trat",
    "wiki": {},
    "summary": {},
-   "fetchedAt": "2026-11-08T21:01:07.620Z"
+   "fetchedAt": "2026-11-08T21:01:07.620Z",
+   "posts": [
+    {
+     "title": "น้ำตกคลองพลู จ.ตราด",
+     "likes": 910,
+     "date": "2023-11-27",
+     "link": "https://www.lemon8-app.com/@mayvachra/7306064918778757634?region=th",
+     "source": "Lemon8 · Mayvachara",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7306064918778757634&index=0&sign=194fab05316290788a48b7feb114e332",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "เที่ยวน้ำตกให้ได้ฟิวต่างประเทศ🌺🐠🦦⛰️",
+     "likes": 393,
+     "date": "2024-12-23",
+     "link": "https://www.lemon8-app.com/@tarnkugi/7451536307098223121?region=th",
+     "source": "Lemon8 · Tarnkugii",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7451536307098223121&index=0&sign=6be3ca6bc7497912bd7c298bc24b6d75",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "🪵“น้ำตกคลองพลู” เกาะช้างเลี้ยวขวา 🪨",
+     "likes": 102,
+     "date": "2026-01-21",
+     "link": "https://www.lemon8-app.com/@itm.nn/7597842688322421256?region=th",
+     "source": "Lemon8 · itm.nn",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7597842688322421256&index=0&sign=60510ccbe227ddd6ab5c434f249a8caa",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "เที่ยวน้ำตกวันหยุด🏝️น้ำตกคลองพลู💦เกาะช้าง🐘",
+     "likes": 52,
+     "date": "2023-11-15",
+     "link": "https://www.lemon8-app.com/@foofeeloverrr/7301623341495026177?region=th",
+     "source": "Lemon8 · Carrotcake",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7301623341495026177&index=0&sign=eeb43c64a5bbee38e84612b7bcfb98f8",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "น้ำตกคลองพลู KOH CHANG",
+     "likes": 43,
+     "date": "2024-06-26",
+     "link": "https://www.lemon8-app.com/@hu_yi_hui/7384746010519552529?region=th",
+     "source": "Lemon8 · YIHUI",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7384746010519552529&index=0&sign=ec2c59c224443de4de696cee22a9a19e",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "พาไปแช่น้ำตกที่เกาะ🐘",
+     "likes": 33,
+     "date": "2025-07-26",
+     "link": "https://www.lemon8-app.com/@softgalsummer/7531251591542833671?region=th",
+     "source": "Lemon8 · อิงเนวี่🌺",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7531251591542833671&index=0&sign=0f5bc341279a9b314beecc71c2c856e3",
+     "ck": 1,
+     "tag": 1
+    }
+   ],
+   "reviewCount": 31
   },
   {
    "id": "wd-Q34846683",
@@ -213284,7 +214765,20 @@
     "likes": 0,
     "at": "2026-11-15",
     "posts": []
-   }
+   },
+   "posts": [
+    {
+     "title": "น้ำตกผากล้วยไม้",
+     "likes": 3,
+     "date": "2025-08-11",
+     "link": "https://www.lemon8-app.com/@1991a01t31/7537320859933999617?region=th",
+     "source": "Lemon8 · januari thirty-one",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7537320859933999617&index=0&sign=aa46e4970522af6545728c19b8bd2c5a",
+     "ck": 1,
+     "tag": 1
+    }
+   ],
+   "reviewCount": 1
   },
   {
    "id": "wd-Q34846819",
@@ -213332,7 +214826,60 @@
    "province": "phatthalung",
    "wiki": {},
    "summary": {},
-   "fetchedAt": "2026-11-08T21:01:07.620Z"
+   "fetchedAt": "2026-11-08T21:01:07.620Z",
+   "posts": [
+    {
+     "title": "น้ำตกไพรวัลย์พัทลุง",
+     "likes": 5,
+     "date": "2025-03-15",
+     "link": "https://www.lemon8-app.com/@forfernwannako/7481978376492745224?region=th",
+     "source": "Lemon8 · ForStyle",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7481978376492745224&index=0&sign=e3f807da49984209eec6fd9a8c51c7fe",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "น้ำตกไพรวัลย์ พัทลุงงง",
+     "likes": 4,
+     "date": "2024-01-30",
+     "link": "https://www.lemon8-app.com/@u059494/7329922429814587905?region=th",
+     "source": "Lemon8 · NF",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7329922429814587905&index=0&sign=fb555748d2f856385c0cbe4d2f1c3030",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "น้ำตกไพรวัลย์ 🛵⛰️🌊",
+     "likes": 4,
+     "date": "2025-04-18",
+     "link": "https://www.lemon8-app.com/@tomato.eiei06/7494506068156989969?region=th",
+     "source": "Lemon8 · MATA*🪼🔆",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7494506068156989969&index=0&sign=a38417b4cfc4e87504fd4a401d8a0f8f",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "น้ำตกไพรวัลย์",
+     "likes": 3,
+     "date": "2024-07-03",
+     "link": "https://www.lemon8-app.com/@apple_austin/7387350064844374545?region=th",
+     "source": "Lemon8 · Apple PAT",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7387350064844374545&index=0&sign=4840a1e957d4401f34d74f8c9e2ba37c",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "น้ำตกไพรวัลย์ จ.พัทลุง",
+     "likes": 0,
+     "date": "2025-05-27",
+     "link": "https://www.lemon8-app.com/@puimik1/7508998478471873032?region=th",
+     "source": "Lemon8 · ศิริญญา สมหวัง",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7508998478471873032&index=0&sign=6f746f29f7980db9cf56083ec8435129",
+     "ck": 1,
+     "tag": 1
+    }
+   ],
+   "reviewCount": 5
   },
   {
    "id": "wd-Q34846916",
@@ -213364,7 +214911,72 @@
    "province": "nakhon-nayok",
    "wiki": {},
    "summary": {},
-   "fetchedAt": "2026-11-08T21:01:07.620Z"
+   "fetchedAt": "2026-11-08T21:01:07.620Z",
+   "posts": [
+    {
+     "title": "ไม่คิดว่าน้ำตกนครนายกจะสวยขนาดนี้! 🍃✨",
+     "likes": 1580,
+     "date": "2025-08-24",
+     "link": "https://www.lemon8-app.com/@khwanji_wsw/7542177547866423809?region=th",
+     "source": "Lemon8 · Khwanji",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7542177547866423809&index=0&sign=d82b1face171d9d2ee30f680ea3e38a8",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "น้ำตกวังตะไคร้",
+     "likes": 1196,
+     "date": "2025-05-06",
+     "link": "https://www.lemon8-app.com/@mixz_taiyang/7501306854866731527?region=th",
+     "source": "Lemon8 · mixzkyii",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7501306854866731527&index=0&sign=767002cd76f0256bb5b69168f9687f75",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "Wang TaKrai ✨🫶 | อุทยานน้ำตกวังตะไคร้ 🌼🐞",
+     "likes": 1005,
+     "date": "2024-07-02",
+     "link": "https://www.lemon8-app.com/@mayommm27/7386949321268331009?region=th",
+     "source": "Lemon8 · ชานิ :)",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7386949321268331009&index=0&sign=499944d45bd7b63c0b2e88b3233859f6",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "นำตกนครนายก💦🫧",
+     "likes": 518,
+     "date": "2025-02-02",
+     "link": "https://www.lemon8-app.com/@20.07.45/7466681788262334977?region=th",
+     "source": "Lemon8 · Mimi🌷",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7466681788262334977&index=0&sign=c9819247441a2a4f110219fb2cab13ab",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "น้ำตกวังตะไคร้🤎",
+     "likes": 229,
+     "date": "2025-07-14",
+     "link": "https://www.lemon8-app.com/@.jxmmsch/7526900348553019920?region=th",
+     "source": "Lemon8 · จอมอ",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7526900348553019920&index=0&sign=11f9ae83ba7c1df50d675cfb4e108013",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "น้ำตกใกล้กรุงเทพ ( น้ำตกวังตะไคร้ ) นครนายก ⛰️ สถานที่ยอดฮิต ใกล้กรุงเทพ สำหรับคนที่หยุดแค่เสาร์-อาทิตย์ก็มาได้ อยู่แค่นครนายกนี่เอง น้ำตกวั",
+     "likes": 186,
+     "date": "2023-03-06",
+     "link": "https://www.lemon8-app.com/@lookple.review/7207331455473615361?region=th",
+     "source": "Lemon8 · 𐙚 ʟᴏᴏᴋᴘʟx",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7207331455473615361&index=0&sign=17351a8f5dcbea259b993163861fbc37",
+     "ck": 1,
+     "tag": 1
+    }
+   ],
+   "reviewCount": 49,
+   "hours": "Mo-Su 08:00-17:00",
+   "hoursSrc": "review"
   },
   {
    "id": "wd-Q34847008",
@@ -213428,7 +215040,70 @@
    "province": "udon-thani",
    "wiki": {},
    "summary": {},
-   "fetchedAt": "2026-11-08T21:01:07.620Z"
+   "fetchedAt": "2026-11-08T21:01:07.620Z",
+   "posts": [
+    {
+     "title": "น้ำตกยูงทอง อุดรธานี",
+     "likes": 40,
+     "date": "2025-05-29",
+     "link": "https://www.lemon8-app.com/@earn.earn1973/7509774390612034055?region=th",
+     "source": "Lemon8 · หญิง. เอิร์น",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7509774390612034055&index=0&sign=de9fe6ec37b03951c177bfa54b83f990",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "แต่งตัวเที่ยวน้ำตกสุดชิลล์",
+     "likes": 39,
+     "date": "2024-09-02",
+     "link": "https://www.lemon8-app.com/@m2nloft/7410041779103318544?region=th",
+     "source": "Lemon8 · Chali.26",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7410041779103318544&index=0&sign=a5951965567ae9a54bae6b376c288087",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "ช่วงนี้น้ำกำลังเยอะค่ะน้ำตกยูงทองสวยมากมากๆค่ะ #อุทยานแห่งชาตินายูง-น้ำโสม",
+     "likes": 13,
+     "date": "2025-07-13",
+     "link": "https://www.lemon8-app.com/@panadda07779/7526356184555717140?region=th",
+     "source": "Lemon8 · พี่ปุ๊ ปนัดดา",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7526356184555717140&index=0&sign=15fb6afa914977782ff4ba8d0a19edd6",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "น้ำตกยูงทอง ที่อุทยานแห่งชาตินายูง-น้ำโสม (เตรียมการ) @อุดรธานี",
+     "likes": 9,
+     "date": "2024-10-07",
+     "link": "https://www.lemon8-app.com/@pr.dnp/7422918952411595281?region=th",
+     "source": "Lemon8 · DNP Official",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7422918952411595281&index=0&sign=404d5d57ab43cb40bc9511c918d2d266",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "อุทยานแห่งชาตินายูง-น้ำโสม💚💦",
+     "likes": 7,
+     "date": "2025-06-09",
+     "link": "https://www.lemon8-app.com/@ttbsrt/7513915938245362197?region=th",
+     "source": "Lemon8 · ❥ tatarbsrt",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7513915938245362197&index=0&sign=206eef0f415efc8d61c612475240140b",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "#แต่งรูปสไตล์Lemon8 #แต่งรูปgenz #น้ำตกยูงทอง 📍พิกัด:น้ำตกยูงทอง สวย ใกล้สถานที่ท่องเที่ยวมากมาย",
+     "likes": 7,
+     "date": "2025-08-01",
+     "link": "https://www.lemon8-app.com/@papawan_n/7533509754845495809?region=th",
+     "source": "Lemon8 · Chompoo",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7533509754845495809&index=0&sign=bbbde23e6513cecce04d29776da73739",
+     "ck": 1,
+     "tag": 1
+    }
+   ],
+   "reviewCount": 33
   },
   {
    "id": "wd-Q34849260",
@@ -213889,6 +215564,69 @@
    "hours": "24/7",
    "summary": {},
    "fetchedAt": "2026-11-08T21:01:09.001Z",
+   "posts": [
+    {
+     "title": "หาดบางเก่าเกาะสมุย",
+     "likes": 18,
+     "date": "2025-01-19",
+     "link": "https://www.lemon8-app.com/@kwanmee0/7461567059693175297?region=th",
+     "source": "Lemon8 · ขวัญ  มี  Kwan Samui 🌴🐠",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7461567059693175297&index=0&sign=fff316902958e8f657b7ab24083e872c",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "หาดบางเก่าเกาะสมุย",
+     "likes": 7,
+     "date": "2025-01-20",
+     "link": "https://www.lemon8-app.com/@kwanmee0/7461875561535848961?region=th",
+     "source": "Lemon8 · ขวัญ  มี  Kwan Samui 🌴🐠",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7461875561535848961&index=0&sign=74153aef0319c8745d061ab1e9884ec2",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "แสงจริง18.00 หาดบางเก่าชะอำ",
+     "likes": 2,
+     "date": "2026-02-01",
+     "link": "https://www.lemon8-app.com/@panoozooza/7601891701863399956?region=th",
+     "source": "Lemon8 · Panoozooza",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7601891701863399956&index=0&sign=306e5c7ceda2bd090fa0f959f8e2d8dc",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "หาดบางเก่า",
+     "likes": 1,
+     "date": "2025-10-01",
+     "link": "https://www.lemon8-app.com/@tikjantiya/7556198294918873618?region=th",
+     "source": "Lemon8 · พี่ติ๊กสมุย(2)3น.คนน่ารัก💗",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7556198294918873618&index=0&sign=b5ce19c990eb560b7ee866c89af1ca35",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "หาดบางเก่า",
+     "likes": 1,
+     "date": "2026-01-31",
+     "link": "https://www.lemon8-app.com/@tikjantiya/7601352383498666504?region=th",
+     "source": "Lemon8 · พี่ติ๊กสมุย(2)3น.คนน่ารัก💗",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7601352383498666504&index=0&sign=0a9d49e94826f570dd293479219f45ab",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "ชายหาดบางเก่า เพชรบุรี วันนี้เราจะพาเพื่อนๆไปเที่ยวทะเลส่งท้ายปีเก่าต้อนรับปีใหม่ ที่ทะเลเพชรบุรีกัน วันนี้เราอยู่ที่ชายหาดบางเก่า ชายหาดที่",
+     "likes": 1,
+     "date": "2026-01-06",
+     "link": "https://www.lemon8-app.com/@i_am_benky/7592201923492921876?region=th",
+     "source": "Lemon8 · อ้ายเบนเบนกี้",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7592201923492921876&index=0&sign=9e11a86cee8ceac7901eb6655016ce0d",
+     "ck": 1,
+     "tag": 1
+    }
+   ],
+   "reviewCount": 6,
    "entry": {
     "free": true,
     "src": "typical"
@@ -213952,6 +215690,39 @@
    "hours": "24/7",
    "summary": {},
    "fetchedAt": "2026-11-08T21:01:09.001Z",
+   "posts": [
+    {
+     "title": "หาดอรุโณทัย",
+     "likes": 0,
+     "date": "2026-06-09",
+     "link": "https://www.lemon8-app.com/@au_scout/7649264448187744775?region=th",
+     "source": "Lemon8 · Au_Pongsakorn😽",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7649264448187744775&index=0&sign=2b0ddc1120189c18d3ab01fcd48ae5b1",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "หาดอรุโณทัย",
+     "likes": 0,
+     "date": "2026-09-20",
+     "link": "https://www.lemon8-app.com/@au_scout/7687422190509244949?region=th",
+     "source": "Lemon8 · Au_Pongsakorn😽",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7687422190509244949&index=0&sign=fbe801e1235f5fb91be6b8894e48c081",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "#เทรนด์วันนี้tiktok #สตอรี่ครอบครัว #สตอรี่ความรู้สึก #หาดอรุโณทัยปากน้ําตะโก #ชุมพรหวานมาก🥳",
+     "likes": 0,
+     "date": "2026-11-02",
+     "link": "https://www.lemon8-app.com/@maxkubo/7703596354639839762?region=th",
+     "source": "Lemon8 · Mcดอร์นอล🇹🇭🛠️",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7703596354639839762&index=0&sign=88b617dc0a8290c737310ac6c70fc306",
+     "ck": 1,
+     "tag": 1
+    }
+   ],
+   "reviewCount": 3,
    "entry": {
     "free": true,
     "src": "typical"
@@ -213973,6 +215744,69 @@
    "hours": "24/7",
    "summary": {},
    "fetchedAt": "2026-11-08T21:01:09.001Z",
+   "posts": [
+    {
+     "title": "กำลังใจในยามเย็น ไปดูพระอาทิตย์ตกน้ำ",
+     "likes": 64,
+     "date": "2025-02-03",
+     "link": "https://www.lemon8-app.com/@ruwaida4961/7467048564598800912?region=th",
+     "source": "Lemon8 · มามี๊ ดาร่า",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7467048564598800912&index=0&sign=1030c87c680e6ff2c1b86187fee5da89",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "อยากเห็นพระอาทิตย์ตกแบบนี้ทุกวัน",
+     "likes": 24,
+     "date": "2025-08-13",
+     "link": "https://www.lemon8-app.com/@ruwaida4961/7537945180679340552?region=th",
+     "source": "Lemon8 · มามี๊ ดาร่า",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7537945180679340552&index=0&sign=7aad347d8b05e1f79c323ed2dcad6a85",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "อ่าวเคย บ้านบางเบน จังหวัดระนอง",
+     "likes": 4,
+     "date": "2025-10-07",
+     "link": "https://www.lemon8-app.com/@nidnoi.z/7558294534443205138?region=th",
+     "source": "Lemon8 · บันทึกของหมี🧸🌈",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7558294534443205138&index=0&sign=86f207779ab873580d3458ca7eadb99d",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "หาดอ่าวเคย🏝",
+     "likes": 4,
+     "date": "2025-04-27",
+     "link": "https://www.lemon8-app.com/@zomvtg2499/7497997858906309138?region=th",
+     "source": "Lemon8 · สาวผิวสีหนีงาน",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7497997858906309138&index=0&sign=cba326ec277766516f0a19d67a1ea709",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "ที่หาดอ่าวเคย จ.พังงา",
+     "likes": 3,
+     "date": "2024-07-22",
+     "link": "https://www.lemon8-app.com/@pchet.tt/7394354710221718033?region=th",
+     "source": "Lemon8 · P'chet",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7394354710221718033&index=0&sign=b212f0f17b6ea309799dcc4c2fd7c058",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "บ้านพฤกรักษา หาดอ่าวเคย จ.ระนอง",
+     "likes": 0,
+     "date": "2026-01-03",
+     "link": "https://www.lemon8-app.com/@sedphamae/7591102040571511312?region=th",
+     "source": "Lemon8 · ☆sumit.tar☆",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7591102040571511312&index=0&sign=30a0c8c87cf61e37eb3dd000a9bf8331",
+     "ck": 1,
+     "tag": 1
+    }
+   ],
+   "reviewCount": 6,
    "entry": {
     "free": true,
     "src": "typical"
@@ -213994,6 +215828,69 @@
    "hours": "24/7",
    "summary": {},
    "fetchedAt": "2026-11-08T21:01:09.001Z",
+   "posts": [
+    {
+     "title": "พาไปเที่ยวอ่าวนาง กระบี่ 🛻💭",
+     "likes": 110,
+     "date": "2023-06-26",
+     "link": "https://www.lemon8-app.com/@porplae/7248915273296675329?region=th",
+     "source": "Lemon8 · porplae",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7248915273296675329&index=0&sign=fa87244eb4c4d1b5c6203a10b3561616",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "มุมลับอ่าวนาง กระบี่🏝📍",
+     "likes": 87,
+     "date": "2024-06-01",
+     "link": "https://www.lemon8-app.com/@nantineetaskan997/7375512968903082513?region=th",
+     "source": "Lemon8 · A-Travel Tales",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7375512968903082513&index=0&sign=6db2051741bfd9cd1429059413a01384",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "Krabi #Ao Nang BEACH",
+     "likes": 79,
+     "date": "2024-01-10",
+     "link": "https://www.lemon8-app.com/@pla11112534/7322496466361188865?region=th",
+     "source": "Lemon8 · Plathong_ch",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7322496466361188865&index=0&sign=3639dcdc1a47afc11e824c3b4232cc76",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "มุมถ่ายรูปKrabi แบบไม่ลงเกาะ 🚤🌴",
+     "likes": 29,
+     "date": "2025-10-29",
+     "link": "https://www.lemon8-app.com/@bypongpong/7566485518460944913?region=th",
+     "source": "Lemon8 · p.annarai",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7566485518460944913&index=0&sign=f1041f6f4c409a7d920decfd5cf7c5a1",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "พิกัดมุมถ่ายรูป Ao Nang ถ่ายสวยไม่ติดคน",
+     "likes": 19,
+     "date": "2025-05-22",
+     "link": "https://www.lemon8-app.com/@mingjupimpisa/7507250647642391048?region=th",
+     "source": "Lemon8 · Mingju",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7507250647642391048&index=0&sign=10790b002eb1a901d458df7ad879961d",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "หาดอ่าวนาง จ.กระบี่",
+     "likes": 15,
+     "date": "2025-04-27",
+     "link": "https://www.lemon8-app.com/@baii.fern/7497993581769032208?region=th",
+     "source": "Lemon8 · nirafernn",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7497993581769032208&index=0&sign=38532405bf1acb53a6dc2d369b993f22",
+     "ck": 1,
+     "tag": 1
+    }
+   ],
+   "reviewCount": 24,
    "entry": {
     "free": true,
     "src": "typical"
@@ -214057,6 +215954,19 @@
    "hours": "24/7",
    "summary": {},
    "fetchedAt": "2026-11-08T21:01:09.001Z",
+   "posts": [
+    {
+     "title": "บางปอเริ่มคึกคักแล้วนะ โซนอื่นเป๋นยังไงบ้าง?? คอมเม้นท์มาคุยกันแหน่จ้า #สมุยมีนัท #เกาะสมุย #หาดบางปอสมุย😊😊 @🥊 Tae samui 🥊 @นัทชามาบอกพิ",
+     "likes": 0,
+     "date": "2026-06-30",
+     "link": "https://www.lemon8-app.com/@mamii_nut/7657073471680053767?region=th",
+     "source": "Lemon8 · โดนัท สมุย",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7657073471680053767&index=0&sign=55a4ef8e34970844b856949c9b8cc9d3",
+     "ck": 1,
+     "tag": 1
+    }
+   ],
+   "reviewCount": 1,
    "entry": {
     "free": true,
     "src": "typical"
@@ -214078,6 +215988,69 @@
    "hours": "24/7",
    "summary": {},
    "fetchedAt": "2026-11-08T21:01:09.001Z",
+   "posts": [
+    {
+     "title": "Weekend Getaway! พิกัดลับสายชิล 🏕️ หาดบางสัก จ.พังงา",
+     "likes": 7,
+     "date": "2025-07-20",
+     "link": "https://www.lemon8-app.com/@koyyyy_/7529170068136804871?region=th",
+     "source": "Lemon8 · KOY Kittiya",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7529170068136804871&index=0&sign=0476adb359e5a42e874a107b4f3b2644",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "จุดชมพระอาทิตย์ตก ณ ชายหาดบางสัก เขาหลัก จ.พังงา",
+     "likes": 7,
+     "date": "2025-06-11",
+     "link": "https://www.lemon8-app.com/@suptartraveller/7514706038676226567?region=th",
+     "source": "Lemon8 · ซุปตาร์พาเที่ยว",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7514706038676226567&index=0&sign=bc9c8f0e2c496f5391e1faa101a072a1",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "หาดบางสัก อ.ตะกั่วป่า จ.พังงา",
+     "likes": 6,
+     "date": "2024-03-24",
+     "link": "https://www.lemon8-app.com/@memorystory.k/7349852456089666049?region=th",
+     "source": "Lemon8 · ไปเที่ยวกันหวา",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7349852456089666049&index=0&sign=03a3de7dcd09a3b7f14a0f0a5ddc82fa",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "หาดบางสัก 🌊🩵",
+     "likes": 6,
+     "date": "2023-04-02",
+     "link": "https://www.lemon8-app.com/@salinya_aum/7217289951090754050?region=th",
+     "source": "Lemon8 · Ying.aum",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7217289951090754050&index=0&sign=8b280a645f24dcf69a757ca848adaab2",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "หาดบางสัก",
+     "likes": 6,
+     "date": "2025-04-22",
+     "link": "https://www.lemon8-app.com/@kanoklak345/7495935596951929351?region=th",
+     "source": "Lemon8 · kanoklak",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7495935596951929351&index=0&sign=e233aa0530ca40b78ba9d0533154643e",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "ตะวันกำลังตกดินหาดบางสักอำเภอตะกั่วป่าจังหวัดพังงา",
+     "likes": 6,
+     "date": "2025-08-05",
+     "link": "https://www.lemon8-app.com/@sarawanngowsakul/7535244365426639377?region=th",
+     "source": "Lemon8 · Sarawan Ngowsak",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7535244365426639377&index=0&sign=3237304cd2ca7ab31cf250553d58360d",
+     "ck": 1,
+     "tag": 1
+    }
+   ],
+   "reviewCount": 16,
    "entry": {
     "free": true,
     "src": "typical"
@@ -214120,6 +216093,19 @@
    "hours": "24/7",
    "summary": {},
    "fetchedAt": "2026-11-08T21:01:09.001Z",
+   "posts": [
+    {
+     "title": "หาดบางเสร่ ชมพระอาทิตย์ตกสุดโรแมนติก 🥰",
+     "likes": 2,
+     "date": "2024-10-06",
+     "link": "https://www.lemon8-app.com/@noiakame_246/7422658350506099201?region=th",
+     "source": "Lemon8 · noiAkame246",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7422658350506099201&index=0&sign=83ef530e856b662c931d7b1c67518718",
+     "ck": 1,
+     "tag": 1
+    }
+   ],
+   "reviewCount": 1,
    "entry": {
     "free": true,
     "src": "typical"
@@ -214183,6 +216169,29 @@
    "hours": "24/7",
    "summary": {},
    "fetchedAt": "2026-11-08T21:01:09.001Z",
+   "posts": [
+    {
+     "title": "หาดชาญดำริ ระนอง",
+     "likes": 3,
+     "date": "2023-06-21",
+     "link": "https://www.lemon8-app.com/@user21efr1x6ua/7247117284936827393?region=th",
+     "source": "Lemon8 · bombam",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7247117284936827393&index=0&sign=837c85a1cf90c6b4bf626cde42809ad8",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "หาดชาญดำริ",
+     "likes": 0,
+     "date": "2023-01-15",
+     "link": "https://www.lemon8-app.com/@sinesandxx/7188748511716901378?region=th",
+     "source": "Lemon8 · sine🫧",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7188748511716901378&index=0&sign=60b808211ceb73d1b55637100852bb68",
+     "ck": 1,
+     "tag": 1
+    }
+   ],
+   "reviewCount": 2,
    "entry": {
     "free": true,
     "src": "typical"
@@ -214246,6 +216255,69 @@
    "hours": "24/7",
    "summary": {},
    "fetchedAt": "2026-11-08T21:01:09.001Z",
+   "posts": [
+    {
+     "title": "เล่นน้ำทะเลกับช้าง ที่หาดไก่แบ้ เกาะช้าง",
+     "likes": 24,
+     "date": "2025-07-04",
+     "link": "https://www.lemon8-app.com/@chaneenoifamily/7523220399094579728?region=th",
+     "source": "Lemon8 · Chaneenoi",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7523220399094579728&index=0&sign=cb63a461dc1e5ab96c8c52667e65c912",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "หาดไก่แบ้",
+     "likes": 9,
+     "date": "2024-08-09",
+     "link": "https://www.lemon8-app.com/@lemon2196915841/7401155151676948993?region=th",
+     "source": "Lemon8 · Luk tan",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7401155151676948993&index=0&sign=bdae6305add11a07ff5ef6516b7c1e57",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "เกาะช้างที่ต้องมาเล่นน้ำกับน้องช้าง🏝",
+     "likes": 6,
+     "date": "2023-10-31",
+     "link": "https://www.lemon8-app.com/@arunothai.p/7296049672148517377?region=th",
+     "source": "Lemon8 · Jane.arunothai",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7296049672148517377&index=0&sign=24553543b2d796620b03de45143891aa",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "Koh Chang 🏝️🐘 (3วัน2คืน)",
+     "likes": 6,
+     "date": "2026-04-20",
+     "link": "https://www.lemon8-app.com/@nookker_9/7630681733528142337?region=th",
+     "source": "Lemon8 · เกลียดบ้านช่อง",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7630681733528142337&index=0&sign=02d3f228843983d84018e4484031582e",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "หาดไก่แบ้ @เกาะช้าง",
+     "likes": 2,
+     "date": "2026-04-28",
+     "link": "https://www.lemon8-app.com/@ploilypolly/7633651192945443345?region=th",
+     "source": "Lemon8 · Out of office ᯓ  ✈︎",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7633651192945443345&index=0&sign=9d2453ae213aaf283ae9874489c61344",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "พร บังกะโล หาดไก่แบ้ จ.ตราด",
+     "likes": 2,
+     "date": "2025-01-13",
+     "link": "https://www.lemon8-app.com/@nurina_111/7459246717343580690?region=th",
+     "source": "Lemon8 · Nu",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7459246717343580690&index=0&sign=cd4dd34a8eadbe30ac0ddc2e60ee27fd",
+     "ck": 1,
+     "tag": 1
+    }
+   ],
+   "reviewCount": 12,
    "entry": {
     "free": true,
     "src": "typical"
@@ -214267,6 +216339,69 @@
    "hours": "24/7",
    "summary": {},
    "fetchedAt": "2026-11-08T21:01:09.001Z",
+   "posts": [
+    {
+     "title": "หาดคลองเจ้า เกาะกูด ep 1",
+     "likes": 208,
+     "date": "2025-02-23",
+     "link": "https://www.lemon8-app.com/@bytanchonthicha/7474607866658308624?region=th",
+     "source": "Lemon8 · ศรีแทน",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7474607866658308624&index=0&sign=9572493540ee1e47120c01c145ff64d0",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "Koh kood ไปหาดไหนดี...",
+     "likes": 150,
+     "date": "2024-02-18",
+     "link": "https://www.lemon8-app.com/@peanicxz/7336960051586220545?region=th",
+     "source": "Lemon8 · NICK",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7336960051586220545&index=0&sign=f2725bf36d248f0ee878688c5281878f",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "หาดคลองเจ้า เกาะกูด 🏝",
+     "likes": 134,
+     "date": "2025-09-21",
+     "link": "https://www.lemon8-app.com/@tripwithkik/7552558935736140306?region=th",
+     "source": "Lemon8 · kikkok🌷",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7552558935736140306&index=0&sign=276a58c15942577e746d327f776b7f8c",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "พระอาทิตย์ตกที่หาดคลองเจ้า เกาะกูด🌤️🧡",
+     "likes": 101,
+     "date": "2025-04-21",
+     "link": "https://www.lemon8-app.com/@bbammai/7495754342810206738?region=th",
+     "source": "Lemon8 · แบมใหม่",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7495754342810206738&index=0&sign=dfe833ef442cbeac33976ec0ba08f241",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "หาดคลองเจ้า แนะนำมาช่วง มกราคม- เมษายน รับรองน้ำสวยแน่นอนค่ะ",
+     "likes": 27,
+     "date": "2025-02-03",
+     "link": "https://www.lemon8-app.com/@m.ktp_p/7467225933037109777?region=th",
+     "source": "Lemon8 · Mister Potato",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7467225933037109777&index=0&sign=f4ba1e90c8f9eda028308591f0206280",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "เกาะกูดมันกู๊ดมาก",
+     "likes": 18,
+     "date": "2024-12-14",
+     "link": "https://www.lemon8-app.com/@alis_n2/7448104931996926471?region=th",
+     "source": "Lemon8 · Sareenar",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7448104931996926471&index=0&sign=7c09fa6862e50db8a255374ef3434f46",
+     "ck": 1,
+     "tag": 1
+    }
+   ],
+   "reviewCount": 23,
    "entry": {
     "free": true,
     "src": "typical"
@@ -214288,6 +216423,69 @@
    "hours": "24/7",
    "summary": {},
    "fetchedAt": "2026-11-08T21:01:09.001Z",
+   "posts": [
+    {
+     "title": "จันทบุรีเมืองแห่งการพักผ่อนฝั่งทะเลภาคตะวันออก",
+     "likes": 1008,
+     "date": "2024-05-10",
+     "link": "https://www.lemon8-app.com/@p.kraben/7367188276618297872?region=th",
+     "source": "Lemon8 · Denny",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7367188276618297872&index=0&sign=17b6f0259c00058d4770dc8284387ae6",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "มุมถ่ายรูป | หาดคุ้งวิมาน จันทบุรี",
+     "likes": 253,
+     "date": "2024-03-03",
+     "link": "https://www.lemon8-app.com/@gbmoreunique/7342033684394131970?region=th",
+     "source": "Lemon8 · แหม่ แม่ก็…",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7342033684394131970&index=0&sign=d4f6e02d63de85152f5407817e169ee0",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "พระอาทิตย์ตกฮีลหัวใจ ⛅️🌊",
+     "likes": 227,
+     "date": "2023-03-07",
+     "link": "https://www.lemon8-app.com/@solmintonfell/7207824633876333058?region=th",
+     "source": "Lemon8 · Phinanan S.",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7207824633876333058&index=0&sign=7c5b94a76ba1686efaa266f5dde58784",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "หาดไม่ลับ แต่ไม่ค่อยมีคน ✨😍",
+     "likes": 59,
+     "date": "2024-04-07",
+     "link": "https://www.lemon8-app.com/@earndowww/7355142004734673409?region=th",
+     "source": "Lemon8 · Earndow 🧚🏼‍♀️",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7355142004734673409&index=0&sign=9c29ad4c9b384591fce83ab7352c9b4c",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "แคมป์ปิ้งริมหาดคุ้งวิมาน🏖️จันทบุรี⛱️",
+     "likes": 43,
+     "date": "2023-03-16",
+     "link": "https://www.lemon8-app.com/@mintyshop65/7211055596198560257?region=th",
+     "source": "Lemon8 · M O C H A☕️",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7211055596198560257&index=0&sign=4f182c29102930b2a66a9d752ce9deb8",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "แจกจุดเช็คอินใกล้หาดคุ้งวิมาน ⛅️",
+     "likes": 22,
+     "date": "2023-12-08",
+     "link": "https://www.lemon8-app.com/@krataipah/7310213812064535041?region=th",
+     "source": "Lemon8 · กระต่ายป่า 🐰🌳",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7310213812064535041&index=0&sign=2838b98a97cf76d01eadc22fdbf76553",
+     "ck": 1,
+     "tag": 1
+    }
+   ],
+   "reviewCount": 31,
    "entry": {
     "free": true,
     "src": "typical"
@@ -214330,6 +216528,69 @@
    "hours": "24/7",
    "summary": {},
    "fetchedAt": "2026-11-08T21:01:09.001Z",
+   "posts": [
+    {
+     "title": "ช่วงตอนเย็นที่หาดละไม🏝✨😍",
+     "likes": 16,
+     "date": "2025-07-11",
+     "link": "https://www.lemon8-app.com/@kaisornboonkerd/7525736432137355797?region=th",
+     "source": "Lemon8 · Sornisamui",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7525736432137355797&index=0&sign=8f72ef05191d9d94798fae5143702a84",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "หินตา หินยาย แลนด์มาร์คสำคัญ และตำนานของเกาะสมุย 🌊",
+     "likes": 9,
+     "date": "2025-02-27",
+     "link": "https://www.lemon8-app.com/@samuistorybyjinitsri/7475974823685014023?region=th",
+     "source": "Lemon8 · Samui Story 🌴",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7475974823685014023&index=0&sign=6be012f4618f07a01d7eb79f676fe635",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "มาเที่ยวสมุยแวะมาเช็คอินที่หาดละไมนะ",
+     "likes": 9,
+     "date": "2025-07-16",
+     "link": "https://www.lemon8-app.com/@kaisornboonkerd/7527622898719162901?region=th",
+     "source": "Lemon8 · Sornisamui",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7527622898719162901&index=0&sign=8755ffe4879002039748192e3e647535",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "เที่ยวสมุยต้องมาเช็คอินหาดละไม",
+     "likes": 7,
+     "date": "2025-07-22",
+     "link": "https://www.lemon8-app.com/@kaisornboonkerd/7529820812669485589?region=th",
+     "source": "Lemon8 · Sornisamui",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7529820812669485589&index=0&sign=0596ddabbe86c69a3fe42bcda65498ca",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "หินตาหินยาย | SAMUI 🩶",
+     "likes": 3,
+     "date": "2024-07-25",
+     "link": "https://www.lemon8-app.com/@janua.ny/7395427639604806161?region=th",
+     "source": "Lemon8 · JANUANY🐻‍❄️",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7395427639604806161&index=0&sign=2ce5071a41d2a89dc2c8721505d51f2f",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "หาดละไมแวะมาเช็คอินนะค่ะ",
+     "likes": 3,
+     "date": "2025-07-16",
+     "link": "https://www.lemon8-app.com/@kaisornboonkerd/7527617574096781845?region=th",
+     "source": "Lemon8 · Sornisamui",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7527617574096781845&index=0&sign=32d7a622189630dba3cb654bcbb423c5",
+     "ck": 1,
+     "tag": 1
+    }
+   ],
+   "reviewCount": 10,
    "entry": {
     "free": true,
     "src": "typical"
@@ -214372,6 +216633,69 @@
    "hours": "24/7",
    "summary": {},
    "fetchedAt": "2026-11-08T21:01:09.001Z",
+   "posts": [
+    {
+     "title": "หาดแม่รำพึง | ระยอง",
+     "likes": 1268,
+     "date": "2024-05-11",
+     "link": "https://www.lemon8-app.com/@punprocosmeticabysom/7367738273281819137?region=th",
+     "source": "Lemon8 · Som",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7367738273281819137&index=0&sign=7b6872fa2ed921db921609bd462f9847",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "✨พาไปเที่ยวจังหวัดระยอง แถวหาดแม่ลำพึงกับที่นี่ ลานหินขาว🌅 ⛱บรรยากาศดีมากๆ เป็นชาดหาดที่จะมีโขดหินและก้อนหินเรียงรายกันอย่างสวยงาม บางอันก็",
+     "likes": 704,
+     "date": "2024-12-14",
+     "link": "https://www.lemon8-app.com/@review_everything.b/7448187878003196417?region=th",
+     "source": "Lemon8 · สะดวกจะรีวิว",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7448187878003196417&index=0&sign=96b1d93496e7c9437e254302856e2acc",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "ลานหินขาว หาดแม่รำพึง ระยอง ถ่ายรูปสวยทุกมุมเลย",
+     "likes": 392,
+     "date": "2025-04-26",
+     "link": "https://www.lemon8-app.com/@raochobpapthai/7497640843852038657?region=th",
+     "source": "Lemon8 · Raochobpapthai",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7497640843852038657&index=0&sign=fa84d2fbf06c933d9b3a3843a6245a9d",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "ทะเลฟิล์ม",
+     "likes": 236,
+     "date": "2025-07-17",
+     "link": "https://www.lemon8-app.com/@theeasternweddingstudio/7528056537009373712?region=th",
+     "source": "Lemon8 · The Eastern Wedding",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7528056537009373712&index=0&sign=89328f417b3ce39f41e398454d0963d7",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "จุดชมพระอาทิตย์ตกที่ระยอง 🌅โรแมนติกมาก 🫶🏻",
+     "likes": 146,
+     "date": "2025-03-14",
+     "link": "https://www.lemon8-app.com/@triptamjai/7481583078000280082?region=th",
+     "source": "Lemon8 · TripTamJai",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7481583078000280082&index=0&sign=bc96f0196b4b5582697f1ad44d1d296c",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "ลานหินขาว หาดแม่รำพึง",
+     "likes": 118,
+     "date": "2024-11-06",
+     "link": "https://www.lemon8-app.com/@eyepntfs/7434032334825030152?region=th",
+     "source": "Lemon8 · เอยอาย",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7434032334825030152&index=0&sign=f30e37505684a5746a941ac2d68c9611",
+     "ck": 1,
+     "tag": 1
+    }
+   ],
+   "reviewCount": 36,
    "entry": {
     "free": true,
     "src": "typical"
@@ -214393,6 +216717,49 @@
    "hours": "24/7",
    "summary": {},
    "fetchedAt": "2026-11-08T21:01:09.001Z",
+   "posts": [
+    {
+     "title": "พิกัดหาดลับที่ตราด แบบไม่ข้ามไปเกาะ 🏝️👙",
+     "likes": 91,
+     "date": "2025-03-11",
+     "link": "https://www.lemon8-app.com/@jannnuary23/7480580545878049297?region=th",
+     "source": "Lemon8 · แจนยัวรี่ที่เกิดมกรา",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7480580545878049297&index=0&sign=5b137bd7548913737806c80e67eb9b64",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "Tart Thailand* เที่ยวหาดลับที่ตราดไม่ต้องข้ามเกาะ",
+     "likes": 66,
+     "date": "2025-03-04",
+     "link": "https://www.lemon8-app.com/@katin.ham/7477885945514197511?region=th",
+     "source": "Lemon8 · KT",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7477885945514197511&index=0&sign=8c5d16b0ee4861824be773c4a34be275",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "เที่ยวทะเลตราดไม่ข้ามเกาะ 🩵หาดไม้รูด จ.ตราด🩵",
+     "likes": 47,
+     "date": "2023-04-22",
+     "link": "https://www.lemon8-app.com/@tequilapika/7224687381960507906?region=th",
+     "source": "Lemon8 · Tequilapika' 🌻",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7224687381960507906&index=0&sign=8e6d384d5d8a07ca80ff00fbb4718c1a",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "หาดไม้รูด จังหวัดตราด 🌴🌺🌟",
+     "likes": 31,
+     "date": "2026-04-29",
+     "link": "https://www.lemon8-app.com/@p.poppy__06/7634184765565911559?region=th",
+     "source": "Lemon8 · poppy__06",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7634184765565911559&index=0&sign=1b8c728e425457757cb4e169e366115d",
+     "ck": 1,
+     "tag": 1
+    }
+   ],
+   "reviewCount": 4,
    "entry": {
     "free": true,
     "src": "typical"
@@ -214414,6 +216781,69 @@
    "hours": "24/7",
    "summary": {},
    "fetchedAt": "2026-11-08T21:01:09.001Z",
+   "posts": [
+    {
+     "title": "ที่นี่ที่ไหน? มีใครเคยเห็นแบบนี้มั้ย @_@",
+     "likes": 2040,
+     "date": "2022-06-01",
+     "link": "https://www.lemon8-app.com/@gowith_earng/7104298905512247810?region=th",
+     "source": "Lemon8 · ᴱᴬᴿᴺᴳ",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7104298905512247810&index=0&sign=e53cce3206b3a77a117b13d5507f6202",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "ทะเลสีดำ ไม่นานก็เช้า เอ้ยไม่ช่ายยย~ 🤣",
+     "likes": 1792,
+     "date": "2023-04-25",
+     "link": "https://www.lemon8-app.com/@earthko/7225980792235819522?region=th",
+     "source": "Lemon8 · เอิร์ธโกะ ลองให้ก่อน",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7225980792235819522&index=0&sign=234d2d2ad979409fe60336666cbe9225",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "🏖️ พิกัดหาดนางทอง ทรายสีดำ พังงา 😲",
+     "likes": 349,
+     "date": "2023-06-18",
+     "link": "https://www.lemon8-app.com/@pathiewtee/7246075162825851393?region=th",
+     "source": "Lemon8 · พาเที่ยวที",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7246075162825851393&index=0&sign=4e82effff618d3137dcca0812b1f6d37",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "🖤หาดทรายดำ อันซีนพังงา📸 🌑🌧หาดนางทอง เขาหลัก🤍",
+     "likes": 48,
+     "date": "2023-09-08",
+     "link": "https://www.lemon8-app.com/@lapakteaw_family/7276310896916382210?region=th",
+     "source": "Lemon8 · ลาพักเที่ยว",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7276310896916382210&index=0&sign=3fde48be0e4daf85ae5ccecbcd11f21c",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "🏝หาดทรายดำ 1 ใน 3 ของประเทศไทย 🖤",
+     "likes": 46,
+     "date": "2022-07-24",
+     "link": "https://www.lemon8-app.com/@ben_mas.s/7123784815639691778?region=th",
+     "source": "Lemon8 · Benmas.s",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7123784815639691778&index=0&sign=217368b7e89da7a999c96e7d91ca2996",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "หาดนางทอง หรือหาดทรายสีดำ อันซีนพังงา",
+     "likes": 40,
+     "date": "2022-02-25",
+     "link": "https://www.lemon8-app.com/@golfpy07/7068470728345010690?region=th",
+     "source": "Lemon8 · sskessakorn",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7068470728345010690&index=0&sign=9864b7ed7ed21edd2e5c1042c9ffec89",
+     "ck": 1,
+     "tag": 1
+    }
+   ],
+   "reviewCount": 34,
    "entry": {
     "free": true,
     "src": "typical"
@@ -214549,6 +216979,69 @@
    "hours": "24/7",
    "summary": {},
    "fetchedAt": "2026-11-08T21:01:09.001Z",
+   "posts": [
+    {
+     "title": "หาดราชการุณย์จ.ตราด",
+     "likes": 3,
+     "date": "2025-10-09",
+     "link": "https://www.lemon8-app.com/@near_592/7559211738210583058?region=th",
+     "source": "Lemon8 · เนียร์",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7559211738210583058&index=0&sign=349f0f8aff56da2bde97cecb4e9b8ce2",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "ทะเลเขาล้าน(หาดราชการุณย์) จ.ตราด สวยมาก",
+     "likes": 3,
+     "date": "2025-01-13",
+     "link": "https://www.lemon8-app.com/@chinapa1999/7459361695652135431?region=th",
+     "source": "Lemon8 · Kaew",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7459361695652135431&index=0&sign=844aedadd66c96d9dbd160a77ae20c40",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "Pre wedding day👰🏽‍♀️🤵🏽‍♂️💐",
+     "likes": 3,
+     "date": "2025-10-14",
+     "link": "https://www.lemon8-app.com/@sabuu_209/7560966502422200833?region=th",
+     "source": "Lemon8 · SaBuu",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7560966502422200833&index=0&sign=413ae8fac3e3b31dbbd7cca36508bff5",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "หาด (ไม่) ลับตราด #หาดราชการุณย์",
+     "likes": 2,
+     "date": "2024-05-05",
+     "link": "https://www.lemon8-app.com/@kate180888/7365503363187737089?region=th",
+     "source": "Lemon8 · Siriluv",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7365503363187737089&index=0&sign=c3c9f179db841c16a25809d259584443",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "หาดราชการุณย์ หาดสวยเงียบสงบ",
+     "likes": 2,
+     "date": "2026-03-13",
+     "link": "https://www.lemon8-app.com/@mydeday.y/7616695900953395728?region=th",
+     "source": "Lemon8 · MydeDay",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7616695900953395728&index=0&sign=f28778cee0dee41f31511f032d04b014",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "ทะเลตราดสวยมาก หาดสวย น้ำใส✨",
+     "likes": 1,
+     "date": "2024-02-27",
+     "link": "https://www.lemon8-app.com/@niiznunuy/7340298710233989634?region=th",
+     "source": "Lemon8 · อารย่าเองค่ะ",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7340298710233989634&index=0&sign=a76fa079bd06310cf6ed1cb8f42dee59",
+     "ck": 1,
+     "tag": 1
+    }
+   ],
+   "reviewCount": 7,
    "entry": {
     "free": true,
     "src": "typical"
@@ -214612,6 +217105,69 @@
    "hours": "24/7",
    "summary": {},
    "fetchedAt": "2026-11-08T21:01:09.001Z",
+   "posts": [
+    {
+     "title": "มุมถ่ายรูปที่ หาดทรายแก้ว🩵✨🌊",
+     "likes": 982,
+     "date": "2024-12-05",
+     "link": "https://www.lemon8-app.com/@cookienathwara/7444817471783272976?region=th",
+     "source": "Lemon8 · Cookie🍪",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7444817471783272976&index=0&sign=f546bfc636cea33b4ce1d023e0971858",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "หาดทรายแก้วจึ้ง",
+     "likes": 371,
+     "date": "2026-04-08",
+     "link": "https://www.lemon8-app.com/@rrocket.s/7626325045530395144?region=th",
+     "source": "Lemon8 · รุ่งทิวา",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7626325045530395144&index=0&sign=ee73be0c62edacad92d451d595b08907",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "ทะเลแบบฉบับไม่โป๊",
+     "likes": 321,
+     "date": "2025-07-15",
+     "link": "https://www.lemon8-app.com/@pinmook1703/7527213369980469776?region=th",
+     "source": "Lemon8 · ป่านฉะนี้",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7527213369980469776&index=0&sign=9c8305d9739eb8c1371e0c6b41d554bb",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "หาดทรายแก้วแบบจึ้ง! ต่างชาติแน่น งานดีทุกคน 🔥🏖️🌊",
+     "likes": 242,
+     "date": "2024-12-13",
+     "link": "https://www.lemon8-app.com/@chommviewx.cp/7447900587854758401?region=th",
+     "source": "Lemon8 · 𝗰𝗵𝗼𝗺.𝘀 𐙚",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7447900587854758401&index=0&sign=69def10dbb4a41b9e227bbfe58fb4681",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "ทริปหาดทรายแก้ว เกาะเสม็ด ระยอง🏝️",
+     "likes": 201,
+     "date": "2023-10-18",
+     "link": "https://www.lemon8-app.com/@korkunggg_/7291135410728681985?region=th",
+     "source": "Lemon8 · Korkungg_",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7291135410728681985&index=0&sign=5c2a4a06439189fb0bbb922ec9d94c6d",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "หาดทรายแก้ว สัตหีบ",
+     "likes": 178,
+     "date": "2024-06-04",
+     "link": "https://www.lemon8-app.com/@momay_240/7376600360518943233?region=th",
+     "source": "Lemon8 · โมเมชอบเที่ยว",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7376600360518943233&index=0&sign=5c0bae6ea234fc9df4c06b944853bccb",
+     "ck": 1,
+     "tag": 1
+    }
+   ],
+   "reviewCount": 54,
    "entry": {
     "free": true,
     "src": "typical"
@@ -214633,6 +217189,39 @@
    "hours": "24/7",
    "summary": {},
    "fetchedAt": "2026-11-08T21:01:09.001Z",
+   "posts": [
+    {
+     "title": "☀️ Sun tan กู้ผิวฉ่ำ✨ ผิวแทนสุขภาพดี หอมกลิ่นมะพร้าวอ่อนๆ 🏝️🥥",
+     "likes": 230,
+     "date": "2024-04-24",
+     "link": "https://www.lemon8-app.com/@panustudio/7361278086693929489?region=th",
+     "source": "Lemon8 · P A  N U",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7361278086693929489&index=0&sign=4afd3f652778b7cb0620a9d777a20626",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "Koh Tao Surat Thani",
+     "likes": 4,
+     "date": "2025-04-16",
+     "link": "https://www.lemon8-app.com/@pui_kawintra/7493858161544610312?region=th",
+     "source": "Lemon8 · Pui🍯🐝",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7493858161544610312&index=0&sign=868c197b61c4d19cbb9441d16791c29a",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "เป็นวัดที่สวยมาก ที่นี้วัดหาดทรายแดง อำเภอคลองใหญ่ จังหวัดตราด #วัดหาดทรายแดงตราด #วัดหาดทรายแดง #วัดสวยจังหวัดตราด #ที่เที่ยวตราด #ตราด #อ้",
+     "likes": 0,
+     "date": "2025-09-23",
+     "link": "https://www.lemon8-app.com/@aor_talon_travel/7553292931621257748?region=th",
+     "source": "Lemon8 · อ้อ ตะลอนเที่ยว🍀🌿💚",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7553292931621257748&index=0&sign=85edf7be00be687928e5b8f2a1dcf195",
+     "ck": 1,
+     "tag": 1
+    }
+   ],
+   "reviewCount": 3,
    "entry": {
     "free": true,
     "src": "typical"
@@ -214654,6 +217243,69 @@
    "hours": "24/7",
    "summary": {},
    "fetchedAt": "2026-11-08T21:01:09.001Z",
+   "posts": [
+    {
+     "title": "มุมถ่ายรูปที่ หาดทรายแก้ว🩵✨🌊",
+     "likes": 982,
+     "date": "2024-12-05",
+     "link": "https://www.lemon8-app.com/@cookienathwara/7444817471783272976?region=th",
+     "source": "Lemon8 · Cookie🍪",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7444817471783272976&index=0&sign=f546bfc636cea33b4ce1d023e0971858",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "หาดทรายแก้วจึ้ง",
+     "likes": 371,
+     "date": "2026-04-08",
+     "link": "https://www.lemon8-app.com/@rrocket.s/7626325045530395144?region=th",
+     "source": "Lemon8 · รุ่งทิวา",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7626325045530395144&index=0&sign=ee73be0c62edacad92d451d595b08907",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "ทะเลแบบฉบับไม่โป๊",
+     "likes": 321,
+     "date": "2025-07-15",
+     "link": "https://www.lemon8-app.com/@pinmook1703/7527213369980469776?region=th",
+     "source": "Lemon8 · ป่านฉะนี้",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7527213369980469776&index=0&sign=9c8305d9739eb8c1371e0c6b41d554bb",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "หาดทรายแก้วแบบจึ้ง! ต่างชาติแน่น งานดีทุกคน 🔥🏖️🌊",
+     "likes": 242,
+     "date": "2024-12-13",
+     "link": "https://www.lemon8-app.com/@chommviewx.cp/7447900587854758401?region=th",
+     "source": "Lemon8 · 𝗰𝗵𝗼𝗺.𝘀 𐙚",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7447900587854758401&index=0&sign=69def10dbb4a41b9e227bbfe58fb4681",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "ทริปหาดทรายแก้ว เกาะเสม็ด ระยอง🏝️",
+     "likes": 201,
+     "date": "2023-10-18",
+     "link": "https://www.lemon8-app.com/@korkunggg_/7291135410728681985?region=th",
+     "source": "Lemon8 · Korkungg_",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7291135410728681985&index=0&sign=5c2a4a06439189fb0bbb922ec9d94c6d",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "หาดทรายแก้ว สัตหีบ",
+     "likes": 180,
+     "date": "2024-06-04",
+     "link": "https://www.lemon8-app.com/@momay_240/7376600360518943233?region=th",
+     "source": "Lemon8 · โมเมชอบเที่ยว",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7376600360518943233&index=0&sign=5c0bae6ea234fc9df4c06b944853bccb",
+     "ck": 1,
+     "tag": 1
+    }
+   ],
+   "reviewCount": 49,
    "entry": {
     "free": true,
     "src": "typical"
@@ -214675,6 +217327,69 @@
    "hours": "24/7",
    "summary": {},
    "fetchedAt": "2026-11-08T21:01:09.001Z",
+   "posts": [
+    {
+     "title": "ทะเลนครปฐม #สยามชัยหาดทรายขาว #นครชัยศรี #ที่เที่ยวนครปฐม",
+     "likes": 1788,
+     "date": "2024-04-10",
+     "link": "https://www.lemon8-app.com/@lullatravel/7356247175715914241?region=th",
+     "source": "Lemon8 · ลั้ลลาพาเที่ยว - Lulla Travel",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7356247175715914241&index=0&sign=6f34de017445fb8c84132eb21231ee11",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "🏝 เกาะกูด 3 วัน 2 คืน งบ 4500.- ✨",
+     "likes": 1711,
+     "date": "2024-11-21",
+     "link": "https://www.lemon8-app.com/@chubbygirllllllllllllll/7439614237812720145?region=th",
+     "source": "Lemon8 · Thekids nn",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7439614237812720145&index=0&sign=2c98206c246a8dc885478ca16c710afa",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "ขับรถแค่ 3 ชั่วโมงได้ทะเลที่สวยจึ้ง 🩵",
+     "likes": 711,
+     "date": "2024-09-06",
+     "link": "https://www.lemon8-app.com/@pnxxtiffy/7411551393775010321?region=th",
+     "source": "Lemon8 · Pnxxtiffy",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7411551393775010321&index=0&sign=08b28dc17cc7b714402eb92f4c2436e7",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "🌺 MAYA BAY | อ่าวมาหยา หมู่เกาะพีพี ชายหาดที่สวยติดอันดับโลก",
+     "likes": 329,
+     "date": "2024-11-25",
+     "link": "https://www.lemon8-app.com/@loveandaman_8844/7441127281604723217?region=th",
+     "source": "Lemon8 · Love Andaman",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7441127281604723217&index=0&sign=d76b928463b2365704a604b2a8f17787",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "นครปฐมมีทะเลด้วยนะ ทะเลเทียมที่ใหญ่สุดในนครปฐม",
+     "likes": 311,
+     "date": "2023-05-05",
+     "link": "https://www.lemon8-app.com/@musthaveitz/7229646423493624321?region=th",
+     "source": "Lemon8 · กินกับฉันเที่ยวกับเธอ",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7229646423493624321&index=0&sign=cbec0ce7f7058f2f81afa079fff9310e",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "เที่ยวหาดน้ำใส 1 Day Tripp (ทรายขาว น้ำใส)",
+     "likes": 216,
+     "date": "2024-03-31",
+     "link": "https://www.lemon8-app.com/@piyachat_sj/7352392120697029121?region=th",
+     "source": "Lemon8 · Sj",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7352392120697029121&index=0&sign=01e34d8bbf91ed56d5c866cccbe91be4",
+     "ck": 1,
+     "tag": 1
+    }
+   ],
+   "reviewCount": 32,
    "entry": {
     "free": true,
     "src": "typical"
@@ -214696,6 +217411,69 @@
    "hours": "24/7",
    "summary": {},
    "fetchedAt": "2026-11-08T21:01:09.001Z",
+   "posts": [
+    {
+     "title": "ทะเลนครปฐม #สยามชัยหาดทรายขาว #นครชัยศรี #ที่เที่ยวนครปฐม",
+     "likes": 1788,
+     "date": "2024-04-10",
+     "link": "https://www.lemon8-app.com/@lullatravel/7356247175715914241?region=th",
+     "source": "Lemon8 · ลั้ลลาพาเที่ยว - Lulla Travel",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7356247175715914241&index=0&sign=6f34de017445fb8c84132eb21231ee11",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "🏝 เกาะกูด 3 วัน 2 คืน งบ 4500.- ✨",
+     "likes": 1711,
+     "date": "2024-11-21",
+     "link": "https://www.lemon8-app.com/@chubbygirllllllllllllll/7439614237812720145?region=th",
+     "source": "Lemon8 · Thekids nn",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7439614237812720145&index=0&sign=2c98206c246a8dc885478ca16c710afa",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "ขับรถแค่ 3 ชั่วโมงได้ทะเลที่สวยจึ้ง 🩵",
+     "likes": 711,
+     "date": "2024-09-06",
+     "link": "https://www.lemon8-app.com/@pnxxtiffy/7411551393775010321?region=th",
+     "source": "Lemon8 · Pnxxtiffy",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7411551393775010321&index=0&sign=08b28dc17cc7b714402eb92f4c2436e7",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "🌺 MAYA BAY | อ่าวมาหยา หมู่เกาะพีพี ชายหาดที่สวยติดอันดับโลก",
+     "likes": 329,
+     "date": "2024-11-25",
+     "link": "https://www.lemon8-app.com/@loveandaman_8844/7441127281604723217?region=th",
+     "source": "Lemon8 · Love Andaman",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7441127281604723217&index=0&sign=d76b928463b2365704a604b2a8f17787",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "นครปฐมมีทะเลด้วยนะ ทะเลเทียมที่ใหญ่สุดในนครปฐม",
+     "likes": 311,
+     "date": "2023-05-05",
+     "link": "https://www.lemon8-app.com/@musthaveitz/7229646423493624321?region=th",
+     "source": "Lemon8 · กินกับฉันเที่ยวกับเธอ",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7229646423493624321&index=0&sign=cbec0ce7f7058f2f81afa079fff9310e",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "เที่ยวหาดน้ำใส 1 Day Tripp (ทรายขาว น้ำใส)",
+     "likes": 216,
+     "date": "2024-03-31",
+     "link": "https://www.lemon8-app.com/@piyachat_sj/7352392120697029121?region=th",
+     "source": "Lemon8 · Sj",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7352392120697029121&index=0&sign=01e34d8bbf91ed56d5c866cccbe91be4",
+     "ck": 1,
+     "tag": 1
+    }
+   ],
+   "reviewCount": 32,
    "entry": {
     "free": true,
     "src": "typical"
@@ -214719,6 +217497,69 @@
    "fetchedAt": "2026-11-08T21:01:09.001Z",
    "districtEn": "Sam Roi Yot",
    "district": "วังก์พง",
+   "posts": [
+    {
+     "title": "หาดสามพระยา",
+     "likes": 4,
+     "date": "2025-07-19",
+     "link": "https://www.lemon8-app.com/@ms.wewy426/7528809092245242385?region=th",
+     "source": "Lemon8 · Mewwy.natha",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7528809092245242385&index=0&sign=103eb2bb827b39b5fea71d98de9c46cb",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "หาดสามพระยา ลานกางเต็นท์หาดสามพระยา อ.กุยบุรี จ.ประจวบฯ",
+     "likes": 3,
+     "date": "2024-12-21",
+     "link": "https://www.lemon8-app.com/@adesiretotravelth/7450888962656354832?region=th",
+     "source": "Lemon8 · A Desire to Travel TH",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7450888962656354832&index=0&sign=a567c3cf06a463251f3c02926950b43e",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "หาดสามพระยา @สามร้อยยอด",
+     "likes": 3,
+     "date": "2025-04-24",
+     "link": "https://www.lemon8-app.com/@wanlamood/7496898563273277960?region=th",
+     "source": "Lemon8 · เที่ยวตามใจ Tiew Tam Jai",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7496898563273277960&index=0&sign=f92602b9ed0999bec511f2a95fa1df5d",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "..รีวิวหาดสามพระยา..",
+     "likes": 2,
+     "date": "2024-07-22",
+     "link": "https://www.lemon8-app.com/@nuchjung702/7394337332729561616?region=th",
+     "source": "Lemon8 · nuchjung",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7394337332729561616&index=0&sign=852889de2eec8322c88f7f8afd686a77",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "เที่ยวหาดสามพระยา😍🏝💗",
+     "likes": 2,
+     "date": "2025-08-21",
+     "link": "https://www.lemon8-app.com/@warin_bs/7540999065006342677?region=th",
+     "source": "Lemon8 · warin.sb",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7540999065006342677&index=0&sign=3fa7d9e33c7e25d57fa30ac8ca5f42e5",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "หาดสามพระยา",
+     "likes": 1,
+     "date": "2024-05-29",
+     "link": "https://www.lemon8-app.com/@jhaaaa_j/7374263900994404880?region=th",
+     "source": "Lemon8 · Ja Mewika",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7374263900994404880&index=0&sign=1e6bfeafe6c1093e63d6e0baa5ad8bab",
+     "ck": 1,
+     "tag": 1
+    }
+   ],
+   "reviewCount": 11,
    "entry": {
     "free": true,
     "src": "typical"
@@ -214740,6 +217581,69 @@
    "hours": "24/7",
    "summary": {},
    "fetchedAt": "2026-11-08T21:01:09.001Z",
+   "posts": [
+    {
+     "title": "หาดสังวาลย์ เกาะล้าน🐚",
+     "likes": 91,
+     "date": "2026-07-07",
+     "link": "https://www.lemon8-app.com/@muxyy__/7659685740481118741?region=th",
+     "source": "Lemon8 · muay🪸",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7659685740481118741&index=0&sign=86e5efad92e0d545bfb8c13736f867a4",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "หาดสังวาลย์ เกาะล้าน 🏝️",
+     "likes": 57,
+     "date": "2026-04-13",
+     "link": "https://www.lemon8-app.com/@palmii25/7628043500898026001?region=th",
+     "source": "Lemon8 · ปาล์มมี่มีแมวชื่อเชรดดดเตอร์🐈",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7628043500898026001&index=0&sign=b774fedda2c80c649cdd34f09ae0d07f",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "🏝️เกาะล้านในเดือนที่น้ำใสที่สุด‼️",
+     "likes": 54,
+     "date": "2024-12-22",
+     "link": "https://www.lemon8-app.com/@supapetchh/7451263378376475152?region=th",
+     "source": "Lemon8 · 𝐏𝐞𝐭𝐜𝐡 𝐒𝐂",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7451263378376475152&index=0&sign=5d46df4ae64bb5736c84ed6efe129c45",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "หาดสังวาลย์",
+     "likes": 38,
+     "date": "2025-06-19",
+     "link": "https://www.lemon8-app.com/@_xindxxr/7517515131325809170?region=th",
+     "source": "Lemon8 · Xin Dear✨",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7517515131325809170&index=0&sign=5917cb57bd3e329d8d06902e8fe07289",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "ที่เที่ยวเกาะล้าน หาดสังวาลย์",
+     "likes": 22,
+     "date": "2025-02-07",
+     "link": "https://www.lemon8-app.com/@kaewkkww/7468641004669731344?region=th",
+     "source": "Lemon8 · K'Kaewww",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7468641004669731344&index=0&sign=22a881aa849aba9777b4c3657467da8b",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "สะพานไม้ หาดสังวาลย์",
+     "likes": 19,
+     "date": "2023-06-10",
+     "link": "https://www.lemon8-app.com/@nunokyungthong17/7242891224913478145?region=th",
+     "source": "Lemon8 · Nunu❤️",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7242891224913478145&index=0&sign=e10000e69e2261b7ba060fed926e7ad6",
+     "ck": 1,
+     "tag": 1
+    }
+   ],
+   "reviewCount": 36,
    "entry": {
     "free": true,
     "src": "typical"
@@ -214840,6 +217744,39 @@
    "hours": "24/7",
    "summary": {},
    "fetchedAt": "2026-11-08T21:01:09.001Z",
+   "posts": [
+    {
+     "title": "หาดตะเภา เกาะกูด",
+     "likes": 5,
+     "date": "2025-05-17",
+     "link": "https://www.lemon8-app.com/@moonbow_loverain/7505204119422943745?region=th",
+     "source": "Lemon8 · Pinky Cat😻",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7505204119422943745&index=0&sign=c05bfa8a6b683d68dfe99a25c23c092d",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "ชมพระอาทิตย์ตก หาดตะเภา เกาะกูด🌴",
+     "likes": 4,
+     "date": "2025-09-25",
+     "link": "https://www.lemon8-app.com/@lek_rchn/7554036074700390919?region=th",
+     "source": "Lemon8 · Rothchana Lek💗",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7554036074700390919&index=0&sign=628a485020f7bf808988ca489f832267",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "Sunset @หาดตะเภา เกาะกูด",
+     "likes": 2,
+     "date": "2024-05-13",
+     "link": "https://www.lemon8-app.com/@mommy.plin/7368270434615296528?region=th",
+     "source": "Lemon8 · NAM 🦫",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7368270434615296528&index=0&sign=35b1ba2624a56f1cc634fad2c9bf2c52",
+     "ck": 1,
+     "tag": 1
+    }
+   ],
+   "reviewCount": 3,
    "entry": {
     "free": true,
     "src": "typical"
@@ -215029,6 +217966,69 @@
    "hours": "24/7",
    "summary": {},
    "fetchedAt": "2026-11-08T21:01:09.001Z",
+   "posts": [
+    {
+     "title": "กางเต๊นท์ 2in1 ได้ทั้งป่า ทั้งทะเล I หาดวนกร จ.ประจวบคีรีขันธ์",
+     "likes": 48,
+     "date": "2022-11-21",
+     "link": "https://www.lemon8-app.com/@tritrong83/7168428676948836866?region=th",
+     "source": "Lemon8 · ไก่ดอนชอบรีวิว",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7168428676948836866&index=0&sign=a64d7820af32543a34c4ac55dcfb5cd3",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "กางเต็นท์ริมทะเลชิลๆ 🏖️ หาดวนกร ประจวบคีรีขันธ์",
+     "likes": 48,
+     "date": "2023-07-19",
+     "link": "https://www.lemon8-app.com/@.ppalm/7257453244492907010?region=th",
+     "source": "Lemon8 · papapaplam",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7257453244492907010&index=0&sign=9ba00586883b2bd31571bbd1804191f1",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "ดำน้ำเกาะจาน เกาะท้ายทรีย์ หาดวนกร ประจวบฯ นั่งเรือ 15 นาที",
+     "likes": 39,
+     "date": "2025-03-11",
+     "link": "https://www.lemon8-app.com/@khayantiew/7480703293560652296?region=th",
+     "source": "Lemon8 · นายขยันเที่ยว",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7480703293560652296&index=0&sign=24d7db983113405f1b2c40c606829c12",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "Camping หาดวนกร ⛺️🌲🌛",
+     "likes": 23,
+     "date": "2023-03-16",
+     "link": "https://www.lemon8-app.com/@babababananaaaaluv/7211060334944125441?region=th",
+     "source": "Lemon8 · Aiiqoy",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7211060334944125441&index=0&sign=f6fae591fa4c29c83bd1ce7bdb330cf5",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "มือใหม่หัดกางเตนท์ที่ หาดวนกร ประจวบคีรีขันธ์",
+     "likes": 7,
+     "date": "2024-02-28",
+     "link": "https://www.lemon8-app.com/@panda32x/7340541664148177410?region=th",
+     "source": "Lemon8 · แพนด้าแพนดู้🌱",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7340541664148177410&index=0&sign=904bcc83f10a7347eea9881d20e12882",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "เกาะจาน หาดวนกร",
+     "likes": 6,
+     "date": "2024-04-23",
+     "link": "https://www.lemon8-app.com/@pilai.pp/7361062699293344257?region=th",
+     "source": "Lemon8 · Praew Pilai",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7361062699293344257&index=0&sign=39d2f010551d30dd82fa580d5afe68f6",
+     "ck": 1,
+     "tag": 1
+    }
+   ],
+   "reviewCount": 7,
    "entry": {
     "free": true,
     "src": "typical"
@@ -215050,6 +218050,69 @@
    "hours": "24/7",
    "summary": {},
    "fetchedAt": "2026-11-08T21:01:09.001Z",
+   "posts": [
+    {
+     "title": "หาดยาว จ.ตรัง",
+     "likes": 387,
+     "date": "2025-03-26",
+     "link": "https://www.lemon8-app.com/@preemmpitt/7486140976621830663?region=th",
+     "source": "Lemon8 · พรีมพิช",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7486140976621830663&index=0&sign=8d2eaceccd1ed383163883f28191267f",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "มุมถ่ายรูปที่ทะเลหาดยาว จ.ตรัง🏝🫶",
+     "likes": 214,
+     "date": "2023-10-23",
+     "link": "https://www.lemon8-app.com/@premiily789/7293072222950900226?region=th",
+     "source": "Lemon8 · Premmmmmie👀🫶🏻",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7293072222950900226&index=0&sign=3a6a26a494dda4f3a7c346bd322626f3",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "เคยมาเที่ยวชุมพรนานมากแล้ว แต่ไม่เคยมาหาดนี้เลย สวยมาก นักท่องเที่ยวไม่เยอะมาก มีทั้งคนไทยและต่างชาติ หาดยาว สงบ ทรายนุ่มเท้าขาวสะอาด น้ำใส ",
+     "likes": 105,
+     "date": "2026-03-27",
+     "link": "https://www.lemon8-app.com/@goffiimataru/7621938026877583893?region=th",
+     "source": "Lemon8 · กอฟฟี่ชอบเที่ยว Local",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7621938026877583893&index=0&sign=f7ed2b7b724e7296e32849cb1aaf7b9f",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "หาดยาว กันตรัง จ.ตรัง",
+     "likes": 90,
+     "date": "2025-03-23",
+     "link": "https://www.lemon8-app.com/@snooker148/7485034896772514322?region=th",
+     "source": "Lemon8 · SNOOKER generalเบ๊💼",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7485034896772514322&index=0&sign=896d52acde10063485b6e7d40fdd3800",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "แวะไปชิลที่หาดยาว จังหวัดตรัง กันค่า⛰️🏝️",
+     "likes": 65,
+     "date": "2024-07-29",
+     "link": "https://www.lemon8-app.com/@darat_1998/7397058119404143120?region=th",
+     "source": "Lemon8 · จินดารัตน์ ",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7397058119404143120&index=0&sign=b1094eb5ecace14e31c4a2de8ff70642",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "จังกาบ ริมเล 📍Yao beach 🏖️ ✨",
+     "likes": 34,
+     "date": "2026-04-17",
+     "link": "https://www.lemon8-app.com/@ryanchao1/7629587073179189768?region=th",
+     "source": "Lemon8 · Ryan🌴🦞",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7629587073179189768&index=0&sign=de404502ecabbc513f1f8d84524cc51b",
+     "ck": 1,
+     "tag": 1
+    }
+   ],
+   "reviewCount": 43,
    "entry": {
     "free": true,
     "src": "typical"
@@ -215142,16 +218205,67 @@
    "fetchedAt": "2026-11-08T21:01:09.001Z",
    "posts": [
     {
-     "title": "บ้านคุณตา @ หาดทรายรีชุมพร🌊",
-     "likes": 5,
-     "date": "2026-08-19",
-     "link": "https://www.lemon8-app.com/@tansirii/7675726380818924040?region=th",
-     "source": "Lemon8 · tontantamarlai",
-     "image": "https://www.lemon8-app.com/seo/image?item_id=7675726380818924040&index=0&sign=f3b346ad2451a3ea7b2b4be30bb12d28",
-     "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/oIvFqpagrdA4bYlAyWCkvOqPYiABoBXiIE8AN~tplv-sdweummd6v-text-logo-v1:QHRhbnNpcmlp:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796709600&x-signature=Wr1iXFzeXggQS9Xt5m0oSJzS%2B70%3D",
-     "th": "data/thumbs/7675726380818924040-0.webp"
+     "title": "ไปนั่งดูพระอาทิตย์ตก ฮีลใจ เงียบสงบที่เกาะเต่า 🧺~🌿🌥️",
+     "likes": 39,
+     "date": "2023-07-28",
+     "link": "https://www.lemon8-app.com/@khunpimp_/7260785841776148994?region=th",
+     "source": "Lemon8 · เจษ.🐇",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7260785841776148994&index=0&sign=4c030e26417b3604201d6d16bcc3cf0f",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "✨พาไปถ่ายรูปเล่น Sunset หาดที่สวยที่สุดในเกาะเต่า 🏝🚣🏻",
+     "likes": 37,
+     "date": "2024-04-28",
+     "link": "https://www.lemon8-app.com/@panustudio/7362790813421535761?region=th",
+     "source": "Lemon8 · P A  N U",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7362790813421535761&index=0&sign=b4f065fec5b03803a77b271e3dc9bf85",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "หาดทรายรี ชุมพร",
+     "likes": 24,
+     "date": "2024-08-25",
+     "link": "https://www.lemon8-app.com/@salengtravel/7407081459674038801?region=th",
+     "source": "Lemon8 · ซาเล้งเที่ยว",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7407081459674038801&index=0&sign=e6237fd4c792c4c8d47ffd10844e82f5",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "หาดทรายรี เกาะเต่า, สุราษฎร์ธานี",
+     "likes": 15,
+     "date": "2024-06-25",
+     "link": "https://www.lemon8-app.com/@yaktiao/7384279689411527185?region=th",
+     "source": "Lemon8 · FB : Yaktiao",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7384279689411527185&index=0&sign=78e638ed218cd5164f13f47e2e14b017",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "หาดทรายรี",
+     "likes": 14,
+     "date": "2025-03-11",
+     "link": "https://www.lemon8-app.com/@thiawnailarao0686/7480546388212728327?region=th",
+     "source": "Lemon8 · เที่ยวไหนล่ะเรา ThiawNaiLaRao",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7480546388212728327&index=0&sign=e492dedf674f7d0cb1109494cc17f86f",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "ขอพรเสด็จเตี่ย การงานปัง ค้าขายรุ่ง ⚓️🌹",
+     "likes": 13,
+     "date": "2024-07-10",
+     "link": "https://www.lemon8-app.com/@ninewratha/7389992247552606737?region=th",
+     "source": "Lemon8 · นินิวพาใจเที่ยว✈️🤍",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7389992247552606737&index=0&sign=ff3edeeb8b3bf53b1f6e63e8e9fc282b",
+     "ck": 1,
+     "tag": 1
     }
    ],
+   "reviewCount": 27,
    "entry": {
     "free": true,
     "src": "typical"
