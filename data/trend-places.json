@@ -7671,7 +7671,13 @@
    }
   ],
   "fetchedAt": "2026-11-16T04:05:50.744Z",
-  "district": "นครชัยศรี"
+  "district": "นครชัยศรี",
+  "entry": {
+   "free": true,
+   "src": "review"
+  },
+  "hours": "Mo-Su 08:00-18:00",
+  "hoursSrc": "review1"
  },
  {
   "id": "l8-22535797340049777",
@@ -24964,7 +24970,7 @@
   "reviewCount": 31,
   "districtEn": "Khao Kho",
   "district": "เขาค้อ",
-  "hours": "Mo-Su 09:00-18:00",
+  "hours": "Mo-Su 08:30-17:00",
   "hoursSrc": "review"
  },
  {
