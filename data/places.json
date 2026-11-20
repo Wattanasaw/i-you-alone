@@ -74540,8 +74540,8 @@
    },
    "districtEn": "Doem Bang Nang Buat",
    "district": "เดิมบางนางบวช",
-   "websiteDead": "https://coffeefarmcafe.business.site/",
-   "nameEn": true
+   "nameEn": true,
+   "websiteDead": "https://coffeefarmcafe.business.site/"
   },
   {
    "id": "osm-n13162425250",
@@ -76627,8 +76627,8 @@
    },
    "districtEn": "Mueang Udon Thani",
    "district": "เมืองอุดรธานี",
-   "websiteDead": "https://primanis-indian-restaurant.business.site/",
-   "nameEn": true
+   "nameEn": true,
+   "websiteDead": "https://primanis-indian-restaurant.business.site/"
   },
   {
    "id": "osm-n13373337895",
@@ -80848,8 +80848,8 @@
    },
    "districtEn": "Bang Rak",
    "district": "บางรัก",
-   "websiteDead": "https://mewinesshop.com/",
-   "nameEn": true
+   "nameEn": true,
+   "websiteDead": "https://mewinesshop.com/"
   },
   {
    "id": "osm-n12640866389",
@@ -80931,8 +80931,8 @@
    },
    "districtEn": "Ko Lanta",
    "district": "เกาะลันตา",
-   "websiteDead": "http://lantaparklife.com/",
-   "nameEn": true
+   "nameEn": true,
+   "websiteDead": "http://lantaparklife.com/"
   },
   {
    "id": "osm-n2769486127",
@@ -82168,8 +82168,8 @@
    },
    "districtEn": "Mueang Chiang Mai",
    "district": "เมืองเชียงใหม่",
-   "websiteDead": "http://iberryhomemade.com/",
-   "nameEn": true
+   "nameEn": true,
+   "websiteDead": "http://iberryhomemade.com/"
   },
   {
    "id": "osm-n8987752967",
@@ -85270,8 +85270,8 @@
    "reviewCount": 4,
    "districtEn": "Phra Nakhon",
    "district": "พระนคร",
-   "websiteDead": "http://www.hkn.co.th/",
    "nameEn": true,
+   "websiteDead": "http://www.hkn.co.th/",
    "menuPrice": {
     "min": 60,
     "max": 90,
@@ -103638,8 +103638,8 @@
    "fetchedAt": "2026-11-08T21:02:33.442Z",
    "districtEn": "Vadhana",
    "district": "วัฒนา",
-   "websiteDead": "https://pranaafood.com/en",
-   "nameEn": true
+   "nameEn": true,
+   "websiteDead": "https://pranaafood.com/en"
   },
   {
    "id": "osm-n10705709305",
@@ -106024,8 +106024,8 @@
    "fetchedAt": "2026-11-07T02:09:05.849Z",
    "districtEn": "Phanat Nikhom",
    "district": "พนัสนิคม",
-   "websiteDead": "http://www.kamolchanokcoffee.com/",
-   "nameEn": true
+   "nameEn": true,
+   "websiteDead": "http://www.kamolchanokcoffee.com/"
   },
   {
    "id": "osm-n1597614807",
@@ -119850,8 +119850,8 @@
    "fetchedAt": "2026-11-16T03:01:34.574Z",
    "districtEn": "Mae Wang",
    "district": "แม่วาง",
-   "websiteDead": "http://www.elephant-pride.com/",
-   "nameEn": true
+   "nameEn": true,
+   "websiteDead": "http://www.elephant-pride.com/"
   },
   {
    "id": "osm-n5794234254",
@@ -121862,8 +121862,8 @@
    "fetchedAt": "2026-11-08T21:02:33.437Z",
    "districtEn": "Pua",
    "district": "ปัว",
-   "websiteDead": "http://www.xn--12c7bnk1c3cc1a5o.com/",
-   "nameEn": true
+   "nameEn": true,
+   "websiteDead": "http://www.xn--12c7bnk1c3cc1a5o.com/"
   },
   {
    "id": "osm-n2118588464",
@@ -152737,8 +152737,8 @@
    "reviewCount": 25,
    "districtEn": "Cha-am",
    "district": "ชะอำ",
-   "websiteDead": "http://www.camel-republic.com/",
-   "nameEn": true
+   "nameEn": true,
+   "websiteDead": "http://www.camel-republic.com/"
   },
   {
    "id": "osm-n4104293689",
