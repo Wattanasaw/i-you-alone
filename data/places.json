@@ -473,10 +473,25 @@
        "zh": "泰国公民"
       },
       "price": 10,
+      "n": 3,
+      "ids": [
+       "L1",
+       "L3",
+       "L4"
+      ],
+      "rv": true
+     },
+     {
+      "who": {
+       "th": "ชาวต่างชาติ",
+       "en": "Foreigner",
+       "zh": "外国人"
+      },
+      "price": 50,
       "n": 2,
       "ids": [
        "L3",
-       "L5"
+       "L1"
       ],
       "rv": true
      }
@@ -543,6 +558,16 @@
    "trend": 14,
    "posts": [
     {
+     "title": "แจกพิกัด one day trip อยุธยา กินเที่ยวครบในวันเดียว ✨👀🛺",
+     "likes": 1586,
+     "date": "2026-07-20",
+     "link": "https://www.lemon8-app.com/@mayyerp/7664665976479875602?region=th",
+     "source": "Lemon8 · KM✨",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7664665976479875602&index=0&sign=cdf4bc646179f4c269a8009520bd12cf",
+     "ck": 1,
+     "tag": 1
+    },
+    {
      "title": "วัดเก่าแก่ที่สุดในประเทศไทย",
      "likes": 1100,
      "date": "2024-12-29",
@@ -562,6 +587,16 @@
      "image": "https://www.lemon8-app.com/seo/image?item_id=7208476804544365058&index=0&sign=3966859371b3aa8a852197589b35ee7c",
      "ck": 1,
      "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/8a384938c90d43b5bdf067f4d2b7edbc~tplv-sdweummd6v-text-logo-v1:QHlha2NoYXNoYXJl:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796990400&x-signature=XUF6gWQWYZef%2FLAWIF%2FPO84B0Do%3D",
+     "tag": 1
+    },
+    {
+     "title": "เที่ยวอยุธยาแบบ One Day Trip 🚘💨 หยุดวันเดียวก็เที่ยวได้‼️👀",
+     "likes": 371,
+     "date": "2025-08-23",
+     "link": "https://www.lemon8-app.com/@tonggmii/7541697338008551957?region=th",
+     "source": "Lemon8 · Tonggmimii👀🧚🏻‍♂️",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7541697338008551957&index=0&sign=e11ad6a2b90ae4230c0d0b81f03313f3",
+     "ck": 1,
      "tag": 1
     },
     {
@@ -585,31 +620,9 @@
      "ck": 1,
      "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/oQATAfExDDBMFAf7HIEbNyE4kEgIoXIAidbleJ~tplv-sdweummd6v-text-logo-v1:QGF5dXR0aGF5YV9zdGF0aW9u:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796709600&x-signature=trwxs%2BVrA0uH92DpLCOl6RFjWyc%3D",
      "tag": 1
-    },
-    {
-     "title": "วัดมหาธาตุ #อยุธยา 🙏วัดที่มีเศียรพระพุทธรูปหินทราย ในรากต้นไม้",
-     "likes": 56,
-     "date": "2023-05-29",
-     "link": "https://www.lemon8-app.com/@travelbymee/7238565891170992641?region=th",
-     "source": "Lemon8 · เที่ยวตามหมี 🐻",
-     "image": "https://www.lemon8-app.com/seo/image?item_id=7238565891170992641&index=0&sign=dafb8bf5806fcb69bcf226c862fd4444",
-     "ck": 1,
-     "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/20451af4e99948babff7ff93fb05fb20~tplv-sdweummd6v-text-logo-v1:QHRyYXZlbGJ5bWVl:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796817600&x-signature=Z%2FcIDtd0TrQlHOTivEyDWLDgU7c%3D",
-     "tag": 1
-    },
-    {
-     "title": "วัดมหาธาตุ อยุธยา | วัดดัง ตามรอย Lisa 📌🙏",
-     "likes": 52,
-     "date": "2024-04-21",
-     "link": "https://www.lemon8-app.com/@waeykoonasiamwej/7360248535134061057?region=th",
-     "source": "Lemon8 · Jewelryjang",
-     "image": "https://www.lemon8-app.com/seo/image?item_id=7360248535134061057&index=0&sign=3d85223f3a406a18433d937ddfce63a7",
-     "ck": 1,
-     "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/ogkIgUJEDjA2Bjm13FNv9rEAkD1yf9EftACsAQ~tplv-sdweummd6v-text-logo-v1:QHdhZXlrb29uYXNpYW13ZWo=:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796817600&x-signature=g%2F%2FER9r0v50rB5Y3hVhW1nG0VEU%3D",
-     "tag": 1
     }
    ],
-   "reviewCount": 92,
+   "reviewCount": 101,
    "districtEn": "Phra Nakhon Si Ayutthaya",
    "district": "พระนครศรีอยุธยา"
   },
@@ -2377,7 +2390,7 @@
      "tag": 1
     }
    ],
-   "reviewCount": 65,
+   "reviewCount": 71,
    "districtEn": "Mueang Sukhothai",
    "district": "เมืองสุโขทัย"
   },
@@ -2972,7 +2985,7 @@
      "tag": 1
     }
    ],
-   "reviewCount": 50,
+   "reviewCount": 53,
    "districtEn": "Amphawa",
    "district": "อัมพวา",
    "entry": {
@@ -3105,7 +3118,7 @@
      "tag": 1
     }
    ],
-   "reviewCount": 74,
+   "reviewCount": 91,
    "district": "องค์การบริหารส่วนตำบลภูเขาทอง",
    "entry": {
     "tiers": [
@@ -4099,7 +4112,7 @@
      "tag": 1
     }
    ],
-   "reviewCount": 47,
+   "reviewCount": 56,
    "districtEn": "Si Thep",
    "district": "ศรีเทพ",
    "entry": {
@@ -4511,7 +4524,27 @@
    ],
    "reviewCount": 68,
    "districtEn": "Mueang Ranong",
-   "district": "เมืองระนอง"
+   "district": "เมืองระนอง",
+   "entry": {
+    "tiers": [
+     {
+      "who": {
+       "th": "ค่าเข้าอุทยาน",
+       "en": "National park entry fee",
+       "zh": "国家公园门票"
+      },
+      "price": 40,
+      "n": 3,
+      "ids": [
+       "L2",
+       "L4",
+       "L1"
+      ],
+      "rv": true
+     }
+    ],
+    "src": "review"
+   }
   },
   {
    "id": "osm-n3431041461",
@@ -4682,6 +4715,16 @@
      "tag": 1
     },
     {
+     "title": "3 วัน 2 คืน เที่ยวเกาะช้าง แบบ slow life 💙",
+     "likes": 1790,
+     "date": "2025-11-04",
+     "link": "https://www.lemon8-app.com/@tiewmaipae/7568711141883527687?region=th",
+     "source": "Lemon8 · เที่ยวไหมพี่",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7568711141883527687&index=0&sign=c2a9bfc1bad650039423572260b99a4f",
+     "ck": 1,
+     "tag": 1
+    },
+    {
      "title": "🏝เที่ยวเกาะช้างช่วงHigh Season แบบไม่มีรถส่วนตัว 🌊",
      "likes": 1284,
      "date": "2025-01-21",
@@ -4713,20 +4756,9 @@
      "ck": 1,
      "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/oICdTmK9EPjsEFfG6AQIAgBiChAzC0D59Qcft9~tplv-sdweummd6v-text-logo-v1:QGJlZXRrcDIy:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796817600&x-signature=pwK50DwTNAaZbwe%2BEv%2BLqzrjYqg%3D",
      "tag": 1
-    },
-    {
-     "title": "เที่ยวเกาะช้าง 3 วัน “ไม่มีรถส่วนตัว” “ คชจ.ประหยัด“",
-     "likes": 759,
-     "date": "2025-06-01",
-     "link": "https://www.lemon8-app.com/@iiiris984324/7510859562103259665?region=th",
-     "source": "Lemon8 · IICHAイチャ",
-     "image": "https://www.lemon8-app.com/seo/image?item_id=7510859562103259665&index=0&sign=1329154f9bccd6e347627d6374bdeaf3",
-     "ck": 1,
-     "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/o4vbli7vivbY6ADIEAAo5l6APtaBB03pWE7pA~tplv-sdweummd6v-text-logo-v1:QGlpaXJpczk4NDMyNA==:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796817600&x-signature=P4JzUsjFsKAoPZ2amwAAPqCkLs8%3D",
-     "tag": 1
     }
    ],
-   "reviewCount": 49,
+   "reviewCount": 65,
    "districtEn": "Ko Chang",
    "district": "เกาะช้าง"
   },
@@ -4952,6 +4984,16 @@
      "tag": 1
     },
     {
+     "title": "ขนมถ้วยแบบนี้ไม่เคยเห็น ตลาดน้ำคลองลัดมะยม กรุงเทพ",
+     "likes": 1221,
+     "date": "2025-10-09",
+     "link": "https://www.lemon8-app.com/@kingstreetfood5/7559204259024093703?region=th",
+     "source": "Lemon8 · KiNGStreetFood",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7559204259024093703&index=0&sign=bdb4b6682d83ae4b1eec34a6eb3a0cb1",
+     "ck": 1,
+     "tag": 1
+    },
+    {
      "title": "#1DayTripBKK ตะลอนกินเที่ยวชมวิว ตลาดน้ำคลองลัดมะยม 🍃🚤☀️",
      "likes": 595,
      "date": "2022-12-19",
@@ -4994,25 +5036,14 @@
      "ck": 1,
      "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/o0YnP79IAXKiBNaybjZdGAagiAtomlBQBE0AP~tplv-sdweummd6v-text-logo-v1:QG1hcnlyb2Fyd29ybGQ=:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796904000&x-signature=8HgrxP6TxNnpnraJwHgNZbkucTk%3D",
      "tag": 1
-    },
-    {
-     "title": "พาเที่ยว 1 Day Trip “ตลาดน้ำคลองลัดมะยม”⛱️",
-     "likes": 193,
-     "date": "2025-03-21",
-     "link": "https://www.lemon8-app.com/@salehere/7484215302335955474?region=th",
-     "source": "Lemon8 · Sale Here",
-     "image": "https://www.lemon8-app.com/seo/image?item_id=7484215302335955474&index=0&sign=0a297821b483fb06e75a27efa29cc6e2",
-     "ck": 1,
-     "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/o8a3Dfiq9E5UIqR9eAngFCzdE0tUEAPEDBoA3b~tplv-sdweummd6v-text-logo-v1:QHNhbGVoZXJl:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796904000&x-signature=hE6FhwM8qVPw0XB5vBTfVUH7QlI%3D",
-     "tag": 1
     }
    ],
-   "reviewCount": 46,
+   "reviewCount": 58,
    "districtEn": "Taling Chan",
    "district": "ตลิ่งชัน",
    "entry": {
     "free": true,
-    "src": "typical"
+    "src": "review"
    }
   },
   {
@@ -5139,7 +5170,7 @@
      "tag": 1
     }
    ],
-   "reviewCount": 69,
+   "reviewCount": 73,
    "districtEn": "Pathum Wan",
    "district": "ปทุมวัน",
    "entry": {
@@ -5672,70 +5703,7 @@
    ],
    "reviewCount": 59,
    "districtEn": "Sam Roi Yot",
-   "district": "สามร้อยยอด",
-   "entry": {
-    "tiers": [
-     {
-      "who": {
-       "th": "เด็กชาวไทย",
-       "en": "Thai Child",
-       "zh": "泰国儿童"
-      },
-      "price": 20,
-      "n": 2,
-      "ids": [
-       "L1",
-       "L2"
-      ],
-      "rv": true
-     },
-     {
-      "who": {
-       "th": "ผู้ใหญ่ชาวไทย",
-       "en": "Thai Adult",
-       "zh": "泰国成人"
-      },
-      "price": 40,
-      "n": 4,
-      "ids": [
-       "L1",
-       "L2",
-       "L5",
-       "L6"
-      ],
-      "rv": true
-     },
-     {
-      "who": {
-       "th": "เด็กชาวต่างชาติ",
-       "en": "Foreign Child",
-       "zh": "外国儿童"
-      },
-      "price": 100,
-      "n": 1,
-      "ids": [
-       "L2"
-      ],
-      "rv": true
-     },
-     {
-      "who": {
-       "th": "ผู้ใหญ่ชาวต่างชาติ",
-       "en": "Foreign Adult",
-       "zh": "外国成人"
-      },
-      "price": 200,
-      "n": 3,
-      "ids": [
-       "L1",
-       "L2",
-       "L6"
-      ],
-      "rv": true
-     }
-    ],
-    "src": "review"
-   }
+   "district": "สามร้อยยอด"
   },
   {
    "id": "wd-Q16434263",
@@ -5796,6 +5764,16 @@
      "tag": 1
     },
     {
+     "title": "เกาะคอเทียน เกาะที่ไม่ต้องนั่งเรือไป 🫧✨ | หาดทรายรี ชุมพร",
+     "likes": 23,
+     "date": "2024-06-02",
+     "link": "https://www.lemon8-app.com/@iamjaiijijiji/7375802412298273297?region=th",
+     "source": "Lemon8 · JAIIJI",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7375802412298273297&index=0&sign=9916e5589f6a1e01ac8f97182e3724c4",
+     "ck": 1,
+     "tag": 1
+    },
+    {
      "title": "หาดทรายรี เกาะเต่า, สุราษฎร์ธานี",
      "likes": 15,
      "date": "2024-06-25",
@@ -5816,20 +5794,9 @@
      "ck": 1,
      "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/o8DB6VBPiAGp6PQvA2XMEC4ep0rEIUAfgzBaSi~tplv-sdweummd6v-text-logo-v1:QHRoaWF3bmFpbGFyYW8wNjg2:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796904000&x-signature=52VFkDSnUPc5vUhD7vFSCbxGPqY%3D",
      "tag": 1
-    },
-    {
-     "title": "ขอพรเสด็จเตี่ย การงานปัง ค้าขายรุ่ง ⚓️🌹",
-     "likes": 13,
-     "date": "2024-07-10",
-     "link": "https://www.lemon8-app.com/@ninewratha/7389992247552606737?region=th",
-     "source": "Lemon8 · นินิวพาใจเที่ยว✈️🤍",
-     "image": "https://www.lemon8-app.com/seo/image?item_id=7389992247552606737&index=0&sign=ff3edeeb8b3bf53b1f6e63e8e9fc282b",
-     "ck": 1,
-     "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/os6OJfAIIZGJHgzLQ3EmCNgYSAQDb7AAE2weeC~tplv-sdweummd6v-text-logo-v1:QG5pbmV3cmF0aGE=:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796904000&x-signature=iyM0yaK3TZfFn1omuJ8ywOBJQ64%3D",
-     "tag": 1
     }
    ],
-   "reviewCount": 30,
+   "reviewCount": 32,
    "districtEn": "Mueang Chumphon",
    "district": "เมืองชุมพร",
    "l8": {
@@ -6020,9 +5987,9 @@
     "tiers": [
      {
       "who": {
-       "th": "เด็ก",
-       "en": "Child",
-       "zh": "儿童"
+       "th": "เด็ก (ชาวไทย)",
+       "en": "Child (Thai)",
+       "zh": "儿童（泰国人）"
       },
       "price": 20,
       "n": 1,
@@ -6033,9 +6000,9 @@
      },
      {
       "who": {
-       "th": "ผู้ใหญ่",
-       "en": "Adult",
-       "zh": "成人"
+       "th": "ผู้ใหญ่ (ชาวไทย)",
+       "en": "Adult (Thai)",
+       "zh": "成人（泰国人）"
       },
       "price": 40,
       "n": 3,
@@ -6493,7 +6460,7 @@
    "imageCredit": "carbon60 · CC BY-SA 3.0",
    "fetchedAt": "2026-11-23T04:04:55.169Z",
    "views": 1,
-   "reviewCount": 52,
+   "reviewCount": 65,
    "districtEn": "Sattahip",
    "district": "สัตหีบ",
    "entry": {
@@ -6549,6 +6516,16 @@
      "tag": 1
     },
     {
+     "title": "เกาะขาม จ.ตราด",
+     "likes": 1637,
+     "date": "2023-03-27",
+     "link": "https://www.lemon8-app.com/@beautixix/7215234534349128194?region=th",
+     "source": "Lemon8 · Beaut 3eaut🩵",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7215234534349128194&index=0&sign=c4ca87a8f55e3c52f5694c9a7c0772cd",
+     "ck": 1,
+     "tag": 1
+    },
+    {
      "title": "ONE DAY TRIP KOH KHAM 🤿",
      "likes": 1375,
      "date": "2024-03-28",
@@ -6568,17 +6545,6 @@
      "image": "https://www.lemon8-app.com/seo/image?item_id=7462410799185707537&index=0&sign=daff5218c6f26c7b83e348bcf8cde3f9",
      "ck": 1,
      "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/o0Pz022CeEBxQPXiC0iQQEAEBGA7IgCxfRAQzE~tplv-sdweummd6v-text-logo-v1:QGNocG9uZC56:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796817600&x-signature=Jwl4JpyjAhqGYFMJM%2BxRJDjO2tM%3D",
-     "tag": 1
-    },
-    {
-     "title": "เกาะขาม ทะเลยอดฮิต 2026",
-     "likes": 1120,
-     "date": "2026-04-18",
-     "link": "https://www.lemon8-app.com/@namkul1997/7629953243522679317?region=th",
-     "source": "Lemon8 · Namkul",
-     "image": "https://www.lemon8-app.com/seo/image?item_id=7629953243522679317&index=0&sign=a8c82350b26a1dfc75e827baa56d4e1c",
-     "ck": 1,
-     "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/oE7FAAQDpCE2p7eFEAAxWEEl9BPjf49g8tIUDP~tplv-sdweummd6v-text-logo-v1:QG5hbWt1bDE5OTc=:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=nY85qniHFtzoRjBB9Ll6buBC97Y%3D",
      "tag": 1
     }
    ],
@@ -6996,6 +6962,19 @@
        "en": "Adult",
        "zh": "成人"
       },
+      "price": 20,
+      "n": 1,
+      "ids": [
+       "L5"
+      ],
+      "rv": true
+     },
+     {
+      "who": {
+       "th": "ผู้ใหญ่",
+       "en": "Adult",
+       "zh": "成人"
+      },
       "price": 30,
       "n": 2,
       "ids": [
@@ -7026,7 +7005,7 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:KoSichang72.png",
    "imageCredit": "Xufanc · Public domain",
    "fetchedAt": "2026-11-23T04:05:26.055Z",
-   "reviewCount": 50,
+   "reviewCount": 59,
    "districtEn": "Ko Si Chang",
    "district": "เกาะสีชัง",
    "posts": [
@@ -7376,6 +7355,16 @@
      "tag": 1
     },
     {
+     "title": "ไอเดียอาหารคลีน EP.7 แหล่งโปรตีนที่หลากหลาย ✨💪❤️",
+     "likes": 8154,
+     "date": "2025-01-15",
+     "link": "https://www.lemon8-app.com/@ueelicious/7460087367500612112?region=th",
+     "source": "Lemon8 · Ueelicious",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7460087367500612112&index=0&sign=fc1b2b536e8f0d537105f34df70a70b6",
+     "ck": 1,
+     "tag": 1
+    },
+    {
      "title": "5 อาหารเย็น กินแล้วผอม นอนแล้วหลับสนิท ✨",
      "likes": 7734,
      "date": "2024-06-29",
@@ -7396,20 +7385,9 @@
      "ck": 1,
      "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/og2ASBFOENAI4AQyiVQfh6uiECNtQAtSkgzveX~tplv-sdweummd6v-text-logo-v1:QF9oeW5nYXJleW9uZw==:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796817600&x-signature=KF7ONlpda1%2Fvr21g3fGF0XNlTds%3D",
      "tag": 1
-    },
-    {
-     "title": "ผู้ชายก็ทำอาหารได้‼️ สอนทำอาหารง่ายง่าย",
-     "likes": 7186,
-     "date": "2022-09-17",
-     "link": "https://www.lemon8-app.com/@food01a/7144386951225950721?region=th",
-     "source": "Lemon8 · AroiTISood",
-     "image": "https://www.lemon8-app.com/seo/image?item_id=7144386951225950721&index=0&sign=d085f2ba07f770873e0ebbaa7e8544fe",
-     "ck": 1,
-     "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-i-0000/b00dbe3afd854b93860a385db3248d8e~tplv-sdweummd6v-text-logo-v1:QGZvb2QwMWE=:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796817600&x-signature=dqeFrIvGDwlqNghUcAPjfO54M%2BU%3D",
-     "tag": 1
     }
    ],
-   "reviewCount": 77,
+   "reviewCount": 103,
    "districtEn": "Ban Khok",
    "district": "บ้านโคก",
    "thumb": "https://p19-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/oQmodjwQA8biAg3Q3EXOJfCMAUobADfB8HV7eQ~tplv-sdweummd6v-text-logo-v1:QGdpbjEwMGI=:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796904000&x-signature=xiD942d86fmC02lYO4uhEJC1YOQ%3D",
@@ -7536,7 +7514,7 @@
      "tag": 1
     }
    ],
-   "reviewCount": 45,
+   "reviewCount": 48,
    "districtEn": "Sai Noi",
    "district": "ไทรน้อย",
    "entry": {
@@ -7848,27 +7826,7 @@
    ],
    "reviewCount": 44,
    "districtEn": "Ko Pha-ngan",
-   "district": "เกาะพะงัน",
-   "entry": {
-    "tiers": [
-     {
-      "who": {
-       "th": "บุคคลทั่วไป",
-       "en": "General visitor",
-       "zh": "普通游客"
-      },
-      "price": 50,
-      "n": 3,
-      "ids": [
-       "L2",
-       "L5",
-       "L6"
-      ],
-      "rv": true
-     }
-    ],
-    "src": "review"
-   }
+   "district": "เกาะพะงัน"
   },
   {
    "id": "wd-Q49321047",
@@ -8465,9 +8423,9 @@
     "tiers": [
      {
       "who": {
-       "th": "เด็ก",
-       "en": "Child",
-       "zh": "儿童"
+       "th": "เด็ก (ชาวไทย)",
+       "en": "Thai Child",
+       "zh": "泰国儿童"
       },
       "price": 10,
       "n": 1,
@@ -8478,9 +8436,23 @@
      },
      {
       "who": {
-       "th": "ผู้ใหญ่",
-       "en": "Adult",
-       "zh": "成人"
+       "th": "ผู้ใหญ่ (ชาวไทย)",
+       "en": "Thai Adult",
+       "zh": "泰国成人"
+      },
+      "price": 20,
+      "n": 2,
+      "ids": [
+       "L3",
+       "L8"
+      ],
+      "rv": true
+     },
+     {
+      "who": {
+       "th": "รถจักรยานยนต์",
+       "en": "Motorcycle",
+       "zh": "摩托车"
       },
       "price": 20,
       "n": 2,
@@ -8747,7 +8719,7 @@
      "tag": 1
     }
    ],
-   "reviewCount": 50,
+   "reviewCount": 60,
    "districtEn": "Si Sawat",
    "district": "ศรีสวัสดิ์",
    "entry": {
@@ -9085,7 +9057,7 @@
      "tag": 1
     }
    ],
-   "reviewCount": 74,
+   "reviewCount": 85,
    "districtEn": "Chatuchak",
    "district": "จตุจักร",
    "entry": {
@@ -10146,6 +10118,16 @@
      "tag": 1
     },
     {
+     "title": "ปู่พญายมราช",
+     "likes": 60,
+     "date": "2024-03-12",
+     "link": "https://www.lemon8-app.com/@zena.water9/7345450872626741762?region=th",
+     "source": "Lemon8 · TawanLetgo",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7345450872626741762&index=0&sign=debdbaee6db8ba62cb883237460cad92",
+     "ck": 1,
+     "tag": 1
+    },
+    {
      "title": "✨วัดท่าไม้ สมุทรสาคร✨",
      "likes": 42,
      "date": "2025-01-07",
@@ -10177,20 +10159,9 @@
      "ck": 1,
      "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/ogZkPiRkbc32YgAEwAPAJC99EiLBxiABA0kId~tplv-sdweummd6v-text-logo-v1:QHlvdWthbHVuZw==:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796990400&x-signature=ks6SOf6ec%2B4u5wv8aBmxpgZzM7c%3D",
      "tag": 1
-    },
-    {
-     "title": "วัดท่าไม้",
-     "likes": 26,
-     "date": "2024-08-20",
-     "link": "https://www.lemon8-app.com/@white9823/7405254228089831937?region=th",
-     "source": "Lemon8 · White",
-     "image": "https://www.lemon8-app.com/seo/image?item_id=7405254228089831937&index=0&sign=97d84b49fd04d2b1c7f599e9aedfb328",
-     "ck": 1,
-     "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/oEUnBoAaIILfa0ADYgN7JGGEiQezg4AeAJrLGb~tplv-sdweummd6v-text-logo-v1:QHdoaXRlOTgyMw==:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796990400&x-signature=Yy9EMAV7sXodLbBYbmiMxCtq4yM%3D",
-     "tag": 1
     }
    ],
-   "reviewCount": 67,
+   "reviewCount": 75,
    "districtEn": "Krathum Baen",
    "district": "กระทุ่มแบน",
    "entry": {
@@ -10369,16 +10340,6 @@
    "trend": 3,
    "posts": [
     {
-     "title": "✨ วัดไทรน้อย จังหวัดนนทบุรี ✨",
-     "likes": 70,
-     "date": "2026-08-21",
-     "link": "https://www.lemon8-app.com/@starontheroad.official/7676423322736837140?region=th",
-     "source": "Lemon8 · STAR ON THE ROAD",
-     "image": "https://www.lemon8-app.com/seo/image?item_id=7676423322736837140&index=0&sign=4463110d569ba12c7e136392b2c999d4",
-     "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/oIqAcsQ4nCxICEFt1BzQw0fAAi9ggNfE6ORDEQ~tplv-sdweummd6v-text-logo-v1:QHN0YXJvbnRoZXJvYWQub2ZmaWNpYWw=:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1797076800&x-signature=AqMPYKCasOMmGTSVWthUMGPTiY0%3D",
-     "th": "data/thumbs/7676423322736837140-0.webp"
-    },
-    {
      "title": "Unseen สิงห์บุรี วัดไทร วัดเก่าใต้ต้นไทรสมัยโบราณ",
      "likes": 54,
      "date": "2024-06-08",
@@ -10432,9 +10393,20 @@
      "ck": 1,
      "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/owTAG2WaAgvAA2Hg18t4JvLLIYgfLSQfWffDWA~tplv-sdweummd6v-text-logo-v1:QGF1cHBhdGFtMQ==:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796904000&x-signature=U9toAMpQwhHDX0tX9TQPNWU9G4M%3D",
      "tag": 1
+    },
+    {
+     "title": "วัดลิ่วหรงซื่อ (วัดไทรหกต้น)",
+     "likes": 10,
+     "date": "2025-11-20",
+     "link": "https://www.lemon8-app.com/@rit.harit/7574838230508388865?region=th",
+     "source": "Lemon8 · Rit_Harit",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7574838230508388865&index=0&sign=ce60f73dbd3bf6cca306e4ec01a977e1",
+     "ck": 1,
+     "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/oAfOftbEBACEAcg8ziD0QpQJHIAypPtrzFA9AZ~tplv-sdweummd6v-text-logo-v1:QHJpdC5oYXJpdA==:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796904000&x-signature=0AyL4x34TH1yTnmpvL7Oe9eJOiM%3D",
+     "tag": 1
     }
    ],
-   "reviewCount": 35,
+   "reviewCount": 36,
    "districtEn": "Bang Kruai",
    "district": "บางกรวย",
    "entry": {
@@ -10570,7 +10542,56 @@
    ],
    "reviewCount": 73,
    "districtEn": "Mueang Chiang Mai",
-   "district": "เมืองเชียงใหม่"
+   "district": "เมืองเชียงใหม่",
+   "menuPrice": {
+    "min": 75,
+    "max": 200,
+    "items": [
+     {
+      "name": {
+       "th": "ขนมจีนน้ำเงี้ยว",
+       "en": "Khanom Jeen Nam Ngiew"
+      },
+      "price": 60
+     },
+     {
+      "name": {
+       "th": "ข้าวซอยไก่",
+       "en": "Kao Soy Gai (Chicken Khao Soi)"
+      },
+      "price": 75
+     },
+     {
+      "name": {
+       "th": "อ่องปูนา",
+       "en": "Poo Ong (Crab Paste)"
+      },
+      "price": 95
+     },
+     {
+      "name": {
+       "th": "ข้าวซอยเนื้อ",
+       "en": "Kao Soy Neua (Beef Khao Soi)"
+      },
+      "price": 95
+     },
+     {
+      "name": {
+       "th": "จิ้นส้มหมก",
+       "en": "Jin Som Mok (Grilled Fermented Pork)"
+      },
+      "price": 95
+     },
+     {
+      "name": {
+       "th": "ลาบหมูคั่ว",
+       "en": "Spiced Minced Pork Salad"
+      },
+      "price": 100
+     }
+    ],
+    "src": "review"
+   }
   },
   {
    "id": "osm-r5944648",
@@ -10705,29 +10726,41 @@
     "tiers": [
      {
       "who": {
-       "th": "เด็ก (คนไทย)",
-       "en": "Child (Thai)",
-       "zh": "儿童（泰国人）"
+       "th": "เด็ก",
+       "en": "Child",
+       "zh": "儿童"
       },
       "price": 10,
-      "n": 2,
+      "n": 1,
       "ids": [
-       "L1",
-       "L6"
+       "L3"
       ],
       "rv": true
      },
      {
       "who": {
-       "th": "ผู้ใหญ่ (คนไทย)",
-       "en": "Adult (Thai)",
-       "zh": "成人（泰国人）"
+       "th": "ผู้ใหญ่",
+       "en": "Adult",
+       "zh": "成人"
       },
       "price": 20,
-      "n": 3,
+      "n": 2,
       "ids": [
-       "L1",
-       "L6",
+       "L3",
+       "L8"
+      ],
+      "rv": true
+     },
+     {
+      "who": {
+       "th": "รถจักรยานยนต์",
+       "en": "Motorcycle",
+       "zh": "摩托车"
+      },
+      "price": 20,
+      "n": 2,
+      "ids": [
+       "L3",
        "L8"
       ],
       "rv": true
@@ -11447,27 +11480,13 @@
    "districtEn": "Mueang Khon Kaen",
    "district": "เมืองขอนแก่น",
    "menuPrice": {
-    "min": 20,
+    "min": 30,
     "max": 55,
     "items": [
      {
       "name": {
-       "th": "ข้าวเหนียว",
-       "en": "Sticky Rice"
-      },
-      "price": 10
-     },
-     {
-      "name": {
-       "th": "ไข่ป่าม",
-       "en": "Grilled Eggs in Banana Leaf"
-      },
-      "price": 20
-     },
-     {
-      "name": {
        "th": "แอ๊บหมู",
-       "en": "Grilled Pork in Banana Leaf"
+       "en": "Grilled Northern Pork in Banana Leaf"
       },
       "price": 25
      },
@@ -11480,17 +11499,31 @@
      },
      {
       "name": {
-       "th": "น้ำพริกอ่อง",
-       "en": "Pork and Tomato Dip"
+       "th": "ลาบหมูสุก",
+       "en": "Cooked Minced Pork Larb"
       },
-      "price": 30
+      "price": 35
      },
      {
       "name": {
-       "th": "ลาบหมูสุก",
-       "en": "Cooked Pork Laab"
+       "th": "จอผักกาด",
+       "en": "Northern Style Chinese Cabbage Soup"
       },
       "price": 35
+     },
+     {
+      "name": {
+       "th": "แกงขนุน",
+       "en": "Jackfruit Curry with Pork"
+      },
+      "price": 35
+     },
+     {
+      "name": {
+       "th": "แกงอ่อมเนื้อ",
+       "en": "Northern Beef Curry"
+      },
+      "price": 45
      }
     ],
     "src": "review"
@@ -12135,64 +12168,8 @@
    "districtEn": "Mueang Krabi",
    "district": "เมืองกระบี่",
    "entry": {
-    "tiers": [
-     {
-      "who": {
-       "th": "ตั๋วเรือหางยาว ขาเดียว (อ่าวนาง)",
-       "en": "Longtail Boat Ticket One-way (Ao Nang)",
-       "zh": "单程长尾船票（奥南）"
-      },
-      "note": {
-       "th": "ขึ้นเรือที่ท่าเรืออ่าวนาง",
-       "en": "Departing from Ao Nang pier",
-       "zh": "从奥南码头出发"
-      },
-      "price": 100,
-      "n": 2,
-      "ids": [
-       "L2",
-       "L5"
-      ],
-      "rv": true
-     },
-     {
-      "who": {
-       "th": "ตั๋วเรือหางยาว ไป-กลับ (อ่าวน้ำเมา)",
-       "en": "Longtail Boat Ticket Round-trip (Ao Nam Mao)",
-       "zh": "往返长尾船票（奥南茂）"
-      },
-      "note": {
-       "th": "ขึ้นเรือที่ท่าเรืออ่าวน้ำเมา",
-       "en": "Departing from Ao Nam Mao pier",
-       "zh": "从奥南茂码头出发"
-      },
-      "price": 200,
-      "n": 1,
-      "ids": [
-       "L2"
-      ],
-      "rv": true
-     },
-     {
-      "who": {
-       "th": "ตั๋วเรือหางยาว ไป-กลับ (อ่าวนาง)",
-       "en": "Longtail Boat Ticket Round-trip (Ao Nang)",
-       "zh": "往返长尾船票（奥南）"
-      },
-      "note": {
-       "th": "ขึ้นเรือที่ท่าเรืออ่าวนาง",
-       "en": "Departing from Ao Nang pier",
-       "zh": "从奥南码头出发"
-      },
-      "price": 300,
-      "n": 1,
-      "ids": [
-       "L2"
-      ],
-      "rv": true
-     }
-    ],
-    "src": "review"
+    "free": true,
+    "src": "review1"
    }
   },
   {
@@ -12646,7 +12623,7 @@
      "tag": 1
     }
    ],
-   "reviewCount": 44,
+   "reviewCount": 53,
    "districtEn": "Hua Hin",
    "district": "หัวหิน",
    "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/o8PAmiWIPABdiR9j30bvBZYVT0AlERAkFBc1J~tplv-sdweummd6v-text-logo-v1:QGlhbWlyb25q:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796817600&x-signature=DVVqt3Du%2B%2FaH7WMWAKw5NxXO4Qk%3D",
@@ -12657,8 +12634,8 @@
     "items": [
      {
       "name": {
-       "th": "น้ำส้มสด",
-       "en": "Fresh Orange Juice"
+       "th": "น้ำส้ม",
+       "en": "Orange Juice"
       },
       "price": 120
      },
@@ -12668,6 +12645,13 @@
        "en": "Passionfruit"
       },
       "price": 120
+     },
+     {
+      "name": {
+       "th": "น้ำส้มสด",
+       "en": "Fresh Orange"
+      },
+      "price": 130
      },
      {
       "name": {
@@ -12685,17 +12669,10 @@
      },
      {
       "name": {
-       "th": "วอดก้าเลมอนเนด",
-       "en": "Vodka Lemonade"
+       "th": "เลมอนเจลลี่เลมอนเนด",
+       "en": "Lemon Jelly Lemonade"
       },
-      "price": 180
-     },
-     {
-      "name": {
-       "th": "ยินเลมอนเนด",
-       "en": "Gin Lemonade"
-      },
-      "price": 180
+      "price": 140
      }
     ],
     "src": "review"
@@ -14805,6 +14782,16 @@
      "tag": 1
     },
     {
+     "title": "ภูเก็ตเมืองไร้สายไฟ มุมถ่ายรูปเพียบ! 💒🏘",
+     "likes": 336,
+     "date": "2022-10-17",
+     "link": "https://www.lemon8-app.com/@aaumssm/7155629236026409474?region=th",
+     "source": "Lemon8 · aaumssm",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7155629236026409474&index=0&sign=af7ff7d30469d4958dc421d89c3153f7",
+     "ck": 1,
+     "tag": 1
+    },
+    {
      "title": "เดินเที่ยว ถ่ายรูปเล่น ย่านเมืองเก่าภูเก็ต 🥥🌺🍸",
      "likes": 332,
      "date": "2025-01-04",
@@ -14814,20 +14801,9 @@
      "ck": 1,
      "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/oAgj8fTbPEnb7KeDIOlA9dGYLJeAJE6ABIW5AK~tplv-sdweummd6v-text-logo-v1:QGhhYW1vbmljYWE=:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796990400&x-signature=vMaw7Fv%2FsqHJFMWMFZRaXEiDSto%3D",
      "tag": 1
-    },
-    {
-     "title": "มุมถ่ายรูป Old town ภูเก็ต",
-     "likes": 314,
-     "date": "2025-02-19",
-     "link": "https://www.lemon8-app.com/@saly_ly1/7473085279188877840?region=th",
-     "source": "Lemon8 · ᴍɪ ᴅɪᴀʀɪᴏ 🌺",
-     "image": "https://www.lemon8-app.com/seo/image?item_id=7473085279188877840&index=0&sign=862ec6aaea9a8240ee908cd20d7b05b3",
-     "ck": 1,
-     "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/ochnEoRPPGJOLXAdAlLfDbQAA7NAeE5TIPeJnI~tplv-sdweummd6v-text-logo-v1:QHNhbHlfbHkx:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796990400&x-signature=MwlJfGCg0NtZWst30tTfNx16NHg%3D",
-     "tag": 1
     }
    ],
-   "reviewCount": 69,
+   "reviewCount": 82,
    "districtEn": "Mueang Phuket",
    "district": "เมืองภูเก็ต"
   },
@@ -15231,54 +15207,47 @@
     "tiers": [
      {
       "who": {
-       "th": "เด็ก",
-       "en": "Child",
-       "zh": "儿童"
-      },
-      "note": {
-       "th": "คนไทย",
-       "en": "Thai citizen",
-       "zh": "泰国公民"
-      },
-      "price": 10,
-      "n": 1,
-      "ids": [
-       "L5"
-      ],
-      "rv": true
-     },
-     {
-      "who": {
        "th": "ผู้ใหญ่",
        "en": "Adult",
        "zh": "成人"
       },
-      "note": {
-       "th": "คนไทย",
-       "en": "Thai citizen",
-       "zh": "泰国公民"
-      },
-      "price": 30,
-      "n": 3,
+      "price": 20,
+      "n": 2,
       "ids": [
-       "L1",
        "L2",
-       "L5"
+       "L4"
       ],
       "rv": true
      },
      {
       "who": {
-       "th": "มอเตอร์ไซค์",
-       "en": "Motorcycle",
-       "zh": "摩托车"
+       "th": "ผู้ใหญ่ (บางช่วงข้อมูล)",
+       "en": "Adult (alternative source)",
+       "zh": "成人（其他来源）"
       },
       "price": 30,
-      "n": 3,
+      "n": 4,
       "ids": [
-       "L5",
        "L1",
+       "L3",
+       "L5",
        "L2"
+      ],
+      "rv": true
+     },
+     {
+      "who": {
+       "th": "รถยนต์ส่วนตัว",
+       "en": "Private car",
+       "zh": "私家车"
+      },
+      "price": 30,
+      "n": 4,
+      "ids": [
+       "L2",
+       "L1",
+       "L3",
+       "L5"
       ],
       "rv": true
      }
@@ -15596,15 +15565,28 @@
     "tiers": [
      {
       "who": {
-       "th": "ผู้ใหญ่",
-       "en": "Adult",
-       "zh": "成人"
+       "th": "ค่าเข้าอุทยาน",
+       "en": "Park entry",
+       "zh": "公园门票"
       },
       "price": 20,
+      "n": 1,
+      "ids": [
+       "L1"
+      ],
+      "rv": true
+     },
+     {
+      "who": {
+       "th": "ผู้เข้าชม",
+       "en": "Visitor",
+       "zh": "游客"
+      },
+      "price": 30,
       "n": 2,
       "ids": [
-       "L1",
-       "L5"
+       "L6",
+       "L1"
       ],
       "rv": true
      }
@@ -16346,7 +16328,7 @@
      "tag": 1
     }
    ],
-   "reviewCount": 54,
+   "reviewCount": 60,
    "districtEn": "Mueang Nonthaburi",
    "district": "เมืองนนทบุรี",
    "entry": {
@@ -17211,7 +17193,7 @@
      "tag": 1
     }
    ],
-   "reviewCount": 37,
+   "reviewCount": 39,
    "districtEn": "Hua Hin",
    "district": "หัวหิน",
    "nameEn": true
@@ -17455,7 +17437,7 @@
      "tag": 1
     }
    ],
-   "reviewCount": 60,
+   "reviewCount": 63,
    "districtEn": "Phra Nakhon Si Ayutthaya",
    "district": "พระนครศรีอยุธยา",
    "entry": {
@@ -17829,6 +17811,16 @@
      "tag": 1
     },
     {
+     "title": "💰มูการเงินให้ปังที่อยุธยา 3ขั้นตอน🙏🏻",
+     "likes": 51,
+     "date": "2022-02-19",
+     "link": "https://www.lemon8-app.com/@witchwishes/7066307286079193602?region=th",
+     "source": "Lemon8 · Witchwish54🦋",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7066307286079193602&index=0&sign=3ba256c3a321d550acd8fc3b7e50e18b",
+     "ck": 1,
+     "tag": 1
+    },
+    {
      "title": "วัดสไตล์โกธิค @อยุธยา",
      "likes": 40,
      "date": "2023-10-09",
@@ -17838,20 +17830,9 @@
      "ck": 1,
      "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/okJPJMAsIDJJfNAB7Zl9HnJCIQxYQqAbgEWeBt~tplv-sdweummd6v-text-logo-v1:QGlhbWNob21wdXU=:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796990400&x-signature=WmOiaRY2dud3FrkO%2BupA0WoKLvs%3D",
      "tag": 1
-    },
-    {
-     "title": "วัดสวยในอยุธยา",
-     "likes": 17,
-     "date": "2024-10-24",
-     "link": "https://www.lemon8-app.com/@jitlada.tongta/7429177359728787985?region=th",
-     "source": "Lemon8 · 👑✨J.lada✨👑",
-     "image": "https://www.lemon8-app.com/seo/image?item_id=7429177359728787985&index=0&sign=fdb9dc5ceca27e6ced429e7c2cb4f144",
-     "ck": 1,
-     "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/oMAAmI3pODAe9cH4JGEeBOYMLAqQggebQ7i5m0~tplv-sdweummd6v-text-logo-v1:QGppdGxhZGEudG9uZ3Rh:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796990400&x-signature=FT2y0aOLxl1n%2FHSVhU%2Bx%2FKcX6tE%3D",
-     "tag": 1
     }
    ],
-   "reviewCount": 40,
+   "reviewCount": 52,
    "districtEn": "Bang Pa-in",
    "district": "บางปะอิน",
    "entry": {
@@ -18713,15 +18694,28 @@
     "tiers": [
      {
       "who": {
-       "th": "ค่าเข้าอุทยาน",
-       "en": "Park entry fee",
-       "zh": "公园门票"
+       "th": "ผู้ใหญ่ (ชาวไทย)",
+       "en": "Thai Adult",
+       "zh": "泰国成人"
       },
       "price": 20,
+      "n": 1,
+      "ids": [
+       "L1"
+      ],
+      "rv": true
+     },
+     {
+      "who": {
+       "th": "ค่าเข้าชมต่อคน",
+       "en": "Admission per person",
+       "zh": "每人门票"
+      },
+      "price": 30,
       "n": 2,
       "ids": [
-       "L1",
-       "L6"
+       "L6",
+       "L1"
       ],
       "rv": true
      }
@@ -18899,7 +18893,7 @@
      "tag": 1
     }
    ],
-   "reviewCount": 18,
+   "reviewCount": 20,
    "districtEn": "Si Satchanalai",
    "district": "ศรีสัชนาลัย",
    "entry": {
@@ -19058,7 +19052,7 @@
      "tag": 1
     }
    ],
-   "reviewCount": 60,
+   "reviewCount": 64,
    "districtEn": "Ban Phaeo",
    "district": "บ้านแพ้ว",
    "entry": {
@@ -19397,13 +19391,31 @@
      "tag": 1
     }
    ],
-   "hours": "Mo-Su 06:00-18:00",
-   "hoursSrc": "review1",
    "entry": {
-    "thai": 40,
-    "foreign": 200,
-    "src": "typical"
-   }
+    "tiers": [
+     {
+      "who": {
+       "th": "บุคคลทั่วไป",
+       "en": "General visitor",
+       "zh": "普通游客"
+      },
+      "note": {
+       "th": "ค่าธรรมเนียมเข้าอุทยาน",
+       "en": "National park admission fee",
+       "zh": "国家公园门票费"
+      },
+      "price": 30,
+      "n": 1,
+      "ids": [
+       "L4"
+      ],
+      "rv": true
+     }
+    ],
+    "src": "review1"
+   },
+   "hours": "08:00-18:00",
+   "hoursSrc": "typical"
   },
   {
    "id": "osm-r12095604",
@@ -20737,6 +20749,16 @@
      "tag": 1
     },
     {
+     "title": "ทะเลตรัง หาดปากเมง",
+     "likes": 20,
+     "date": "2025-11-10",
+     "link": "https://www.lemon8-app.com/@maitongnatan60/7571007072045679122?region=th",
+     "source": "Lemon8 · Maitong",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7571007072045679122&index=0&sign=732be67c8fccd7aa9c6ecd9d52a60f82",
+     "ck": 1,
+     "tag": 1
+    },
+    {
      "title": "ถ่ายรูปหาดไม่ลับที่จังหวัดตรัง หาดปากเมง #ไอ้จ้อยTravel #Tiktokพาเที่ยว #รีวิวตรัง #ทะเล #Amazingthailand #Influinthefield #WonderfulThailan",
      "likes": 18,
      "date": "2025-03-12",
@@ -20768,20 +20790,9 @@
      "ck": 1,
      "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/osXHRAATqCBCXTFsCeFEg0Da9rEtOqAIEmf7UB~tplv-sdweummd6v-text-logo-v1:QHBwLnNob3Bpbmc=:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796904000&x-signature=cgDSDEf4hFzApBTPfDD7Ew6iFEU%3D",
      "tag": 1
-    },
-    {
-     "title": "กินอาหารที่หาดปากเมง",
-     "likes": 11,
-     "date": "2025-05-30",
-     "link": "https://www.lemon8-app.com/@user48104354/7510300494988837392?region=th",
-     "source": "Lemon8 · userผู้ใหญ่ เพี้ยน",
-     "image": "https://www.lemon8-app.com/seo/image?item_id=7510300494988837392&index=0&sign=77392c553705fbd740d6e5f1329eb437",
-     "ck": 1,
-     "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/o88QyOjOAJAqAbYuAIF4ceoDcfVsONfED7EBzQ~tplv-sdweummd6v-text-logo-v1:QHVzZXI0ODEwNDM1NA==:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796990400&x-signature=nNykAWT%2Bzdw%2Fz9FVlusOU6yMgZE%3D",
-     "tag": 1
     }
    ],
-   "reviewCount": 43,
+   "reviewCount": 46,
    "districtEn": "Sikao",
    "district": "สิเกา",
    "l8": {
@@ -21592,9 +21603,9 @@
        "zh": "普通游客"
       },
       "note": {
-       "th": "สามารถนำไปแลกไอศกรีม ป๊อปคอร์น เครื่องดื่ม หรือเป็นส่วนลดอาหาร",
-       "en": "Can be exchanged for ice cream, popcorn, drinks, or food discount",
-       "zh": "可兑换冰淇淋、爆米花、饮料或抵扣餐费"
+       "th": "สามารถนำไปแลกเครื่องดื่ม ไอศกรีม ป๊อปคอร์น หรือเป็นส่วนลดค่าอาหารได้",
+       "en": "Can be redeemed for drinks, ice cream, popcorn, or food discount",
+       "zh": "可用于兑换饮品、冰淇淋、爆米花或抵扣餐费"
       },
       "price": 100,
       "n": 4,
@@ -21845,7 +21856,28 @@
    ],
    "reviewCount": 17,
    "districtEn": "Phra Nakhon",
-   "district": "พระนคร"
+   "district": "พระนคร",
+   "menuPrice": {
+    "min": 160,
+    "max": 180,
+    "items": [
+     {
+      "name": {
+       "th": "เค้ก",
+       "en": "Cake"
+      },
+      "price": 160
+     },
+     {
+      "name": {
+       "th": "ช็อกโกแลตราสเบอร์รี่โรส",
+       "en": "Chocolate Raspberry Rose"
+      },
+      "price": 180
+     }
+    ],
+    "src": "review"
+   }
   },
   {
    "id": "osm-r6009658",
@@ -21952,13 +21984,26 @@
     }
    ],
    "imageTh": "data/thumbs/7696532854632661510-0.webp",
-   "hours": "08:00-18:00",
-   "hoursSrc": "typical",
    "entry": {
-    "thai": 40,
-    "foreign": 200,
-    "src": "typical"
-   }
+    "tiers": [
+     {
+      "who": {
+       "th": "ค่าเข้าอุทยาน",
+       "en": "Park admission",
+       "zh": "公园门票"
+      },
+      "price": 40,
+      "n": 1,
+      "ids": [
+       "L3"
+      ],
+      "rv": true
+     }
+    ],
+    "src": "review1"
+   },
+   "hours": "08:00-18:00",
+   "hoursSrc": "typical"
   },
   {
    "id": "wd-Q1968804",
@@ -23614,7 +23659,7 @@
      "tag": 1
     }
    ],
-   "reviewCount": 45,
+   "reviewCount": 49,
    "districtEn": "Bang Bua Thong",
    "district": "บางบัวทอง",
    "entry": {
@@ -24015,7 +24060,30 @@
     }
    ],
    "districtEn": "Mueang Chiang Rai",
-   "district": "เมืองเชียงราย"
+   "district": "เมืองเชียงราย",
+   "entry": {
+    "tiers": [
+     {
+      "who": {
+       "th": "บุคคลทั่วไป",
+       "en": "General admission",
+       "zh": "普通票"
+      },
+      "note": {
+       "th": "ได้รับบัตรเข้าชมและแผนที่",
+       "en": "Includes entry ticket and map",
+       "zh": "含门票及地图"
+      },
+      "price": 100,
+      "n": 1,
+      "ids": [
+       "L1"
+      ],
+      "rv": true
+     }
+    ],
+    "src": "review1"
+   }
   },
   {
    "id": "osm-n13255366644",
@@ -24358,6 +24426,16 @@
     },
     {
      "title": "ไปปั่นเรือเป็ดฟรีกันนนน 🦆🍃 @สวนเบญจกิติ",
+     "likes": 1796,
+     "date": "2023-11-27",
+     "link": "https://www.lemon8-app.com/@kimjian1224/7306083741334848001?region=th",
+     "source": "Lemon8 · hello_butter 🇹🇭🇰🇷",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7306083741334848001&index=0&sign=25ae8410cdb7aa8694438546ae24f27b",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "ไปปั่นเรือเป็ดฟรีกันนนน 🦆🍃 @สวนเบญจกิติ",
      "likes": 1795,
      "date": "2023-11-27",
      "link": "https://www.lemon8-app.com/@kimandme9/7306083741334848001?region=th",
@@ -24368,29 +24446,17 @@
      "tag": 1
     },
     {
-     "title": "🏸รีวิวตีแบดฟรีที่สวนเบญจกิติ",
-     "likes": 1590,
-     "date": "2024-07-25",
-     "link": "https://www.lemon8-app.com/@paifuipf/7395536887718461968?region=th",
-     "source": "Lemon8 · paifuiii",
-     "image": "https://www.lemon8-app.com/seo/image?item_id=7395536887718461968&index=0&sign=56b8d716a79c3a38a6950bb90484d60d",
+     "title": "ถ่ายรูปที่สวนเบญจกิติ",
+     "likes": 1596,
+     "date": "2024-02-24",
+     "link": "https://www.lemon8-app.com/@altimapan_/7339176132203594242?region=th",
+     "source": "Lemon8 · ข้าวป่าน 🍭",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7339176132203594242&index=0&sign=6f673e13a95075cc35240d0ee07f17a1",
      "ck": 1,
-     "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/oYCAMI8zIEbBIPmyXYZiPiBkgBitAAqrAANB2~tplv-sdweummd6v-text-logo-v1:QHBhaWZ1aXBm:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796904000&x-signature=%2Fql%2FtiLDKOSCeqJpL3rmKpbPomA%3D",
-     "tag": 1
-    },
-    {
-     "title": "ถ่ายรูปสวนเบญจกิติ💐🍃",
-     "likes": 1562,
-     "date": "2024-04-04",
-     "link": "https://www.lemon8-app.com/@pray_ntt/7353856136996454928?region=th",
-     "source": "Lemon8 · PRAY’S FAVORITES 🎀",
-     "image": "https://www.lemon8-app.com/seo/image?item_id=7353856136996454928&index=0&sign=a09d24a6be9b79b11128f6c113517d90",
-     "ck": 1,
-     "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/oUbIABHEHlAKDtMSeLFd7uIAOGfKe7JWbAEFAg~tplv-sdweummd6v-text-logo-v1:QHByYXlfbnR0:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796904000&x-signature=u7wZrZpREIDJjF%2Fmxp9gAhUc3OQ%3D",
      "tag": 1
     }
    ],
-   "reviewCount": 45,
+   "reviewCount": 66,
    "districtEn": "Khlong Toei",
    "district": "คลองเตย",
    "entry": {
@@ -24510,7 +24576,42 @@
    ],
    "reviewCount": 24,
    "districtEn": "Mueang Chiang Mai",
-   "district": "เมืองเชียงใหม่"
+   "district": "เมืองเชียงใหม่",
+   "menuPrice": {
+    "min": 80,
+    "max": 399,
+    "items": [
+     {
+      "name": {
+       "th": "ปูอ่อง",
+       "en": "Poo Ong"
+      },
+      "price": 80
+     },
+     {
+      "name": {
+       "th": "หมูทอดเฮือนเพ็ญ",
+       "en": "Huen Phen Fried Pork"
+      },
+      "price": 125
+     },
+     {
+      "name": {
+       "th": "ข้าวผัดปูอ่อง",
+       "en": "Fried rice with Poo Ong"
+      },
+      "price": 350
+     },
+     {
+      "name": {
+       "th": "ขันโตกล้านนาน",
+       "en": "Lanna Kantoke"
+      },
+      "price": 399
+     }
+    ],
+    "src": "review"
+   }
   },
   {
    "id": "wd-Q34676896",
@@ -24807,6 +24908,16 @@
      "tag": 1
     },
     {
+     "title": "หาดกะตะน้อย ภูเก็ต #Sunset #phuketthailand #katabeach",
+     "likes": 21,
+     "date": "2023-05-04",
+     "link": "https://www.lemon8-app.com/@lemon10128296177/7229390186755686914?region=th",
+     "source": "Lemon8 · Yah 🫶🏻",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7229390186755686914&index=0&sign=28f41695bd62ab57e9cca2484fe5e08a",
+     "ck": 1,
+     "tag": 1
+    },
+    {
      "title": "มุม (เกือบลับ) หาดกะตะน้อย ภูเก็ต",
      "likes": 15,
      "date": "2024-02-28",
@@ -24827,20 +24938,9 @@
      "ck": 1,
      "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/ogqKwEeiEQAWMEInAMFfBCgX2QHAC8EVtADn9l~tplv-sdweummd6v-text-logo-v1:QGNvbWV3aXRobWVlZWVlZWU=:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796990400&x-signature=%2FgQf6MoVDQ9nTPm3jZxyOIG29e4%3D",
      "tag": 1
-    },
-    {
-     "title": "กะตะน้อย กะตะใจ ♥️♥️ สถานที่📍:หาดกะตะน้อย ภูเก็ต",
-     "likes": 9,
-     "date": "2024-10-23",
-     "link": "https://www.lemon8-app.com/@pampam.naka/7429017135831122433?region=th",
-     "source": "Lemon8 · Pampam",
-     "image": "https://www.lemon8-app.com/seo/image?item_id=7429017135831122433&index=0&sign=cfafb652bb55fb34e17e582b400b07be",
-     "ck": 1,
-     "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/oQwZMS6EAJtSAIzEPCFnELADgwQnABTofSG9se~tplv-sdweummd6v-text-logo-v1:QHBhbXBhbS5uYWth:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796990400&x-signature=ExIQB2Y7NmWrZOMrxMXI%2Fb9W8sA%3D",
-     "tag": 1
     }
    ],
-   "reviewCount": 11,
+   "reviewCount": 15,
    "districtEn": "Mueang Phuket",
    "district": "เมืองภูเก็ต",
    "l8": {
@@ -28119,7 +28219,25 @@
    ],
    "reviewCount": 40,
    "districtEn": "Mueang Nong Khai",
-   "district": "เมืองหนองคาย"
+   "district": "เมืองหนองคาย",
+   "entry": {
+    "tiers": [
+     {
+      "who": {
+       "th": "ค่าเข้าชม",
+       "en": "Entrance fee",
+       "zh": "门票"
+      },
+      "price": 20,
+      "n": 1,
+      "ids": [
+       "L8"
+      ],
+      "rv": true
+     }
+    ],
+    "src": "review1"
+   }
   },
   {
    "id": "wd-Q6652787",
@@ -28770,8 +28888,8 @@
       "price": 20,
       "n": 2,
       "ids": [
-       "L4",
-       "L5"
+       "L5",
+       "L6"
       ],
       "rv": true
      },
@@ -28785,8 +28903,8 @@
       "n": 3,
       "ids": [
        "L1",
-       "L4",
-       "L5"
+       "L5",
+       "L6"
       ],
       "rv": true
      },
@@ -28800,8 +28918,8 @@
       "n": 3,
       "ids": [
        "L1",
-       "L4",
-       "L5"
+       "L5",
+       "L6"
       ],
       "rv": true
      }
@@ -29229,26 +29347,56 @@
     "tiers": [
      {
       "who": {
-       "th": "ค่าเข้าอุทยานฯ (บุคคลทั่วไป)",
-       "en": "Park Entrance (General)",
-       "zh": "公园门票（普通）"
+       "th": "ค่าเข้าอุทยาน (ต่อคน)",
+       "en": "Park entry fee (per person)",
+       "zh": "国家公园门票（每人）"
       },
       "price": 20,
-      "n": 1,
+      "n": 2,
       "ids": [
+       "L6",
        "L4"
       ],
       "rv": true
      },
      {
       "who": {
-       "th": "ค่าบริการลานกางเต็นท์ (ต่อคน)",
-       "en": "Campsite Fee (per person)",
-       "zh": "露营费（每人）"
+       "th": "รถจักรยานยนต์",
+       "en": "Motorcycle",
+       "zh": "摩托车"
       },
-      "price": 30,
+      "price": 20,
       "n": 2,
       "ids": [
+       "L6",
+       "L4"
+      ],
+      "rv": true
+     },
+     {
+      "who": {
+       "th": "ค่าเช่าแผ่นรองนอน",
+       "en": "Sleeping mat rental",
+       "zh": "防潮垫租赁"
+      },
+      "price": 20,
+      "n": 2,
+      "ids": [
+       "L4",
+       "L6"
+      ],
+      "rv": true
+     },
+     {
+      "who": {
+       "th": "รถยนต์",
+       "en": "Car",
+       "zh": "汽车"
+      },
+      "price": 30,
+      "n": 3,
+      "ids": [
+       "L6",
        "L2",
        "L4"
       ],
@@ -29256,15 +29404,45 @@
      },
      {
       "who": {
-       "th": "ค่ายานพาหนะ (รถยนต์)",
-       "en": "Vehicle Fee (Car)",
-       "zh": "车辆费（汽车）"
+       "th": "ค่าบริการกางเต็นท์ (นำเต็นท์มาเอง)",
+       "en": "Camping fee (own tent)",
+       "zh": "露营费（自带帐篷）"
       },
       "price": 30,
-      "n": 2,
+      "n": 3,
+      "ids": [
+       "L2",
+       "L4",
+       "L6"
+      ],
+      "rv": true
+     },
+     {
+      "who": {
+       "th": "ค่าเช่าถุงนอน",
+       "en": "Sleeping bag rental",
+       "zh": "睡袋租赁"
+      },
+      "price": 30,
+      "n": 3,
       "ids": [
        "L4",
-       "L2"
+       "L2",
+       "L6"
+      ],
+      "rv": true
+     },
+     {
+      "who": {
+       "th": "ค่าเช่าเต็นท์",
+       "en": "Tent rental",
+       "zh": "帐篷租赁"
+      },
+      "price": 225,
+      "n": 2,
+      "ids": [
+       "L2",
+       "L4"
       ],
       "rv": true
      }
@@ -31219,56 +31397,60 @@
     "tiers": [
      {
       "who": {
-       "th": "เด็ก",
-       "en": "Child"
-      },
-      "price": 10,
-      "n": 1,
-      "ids": [
-       "L3"
-      ],
-      "rv": true
-     },
-     {
-      "who": {
-       "th": "ผู้ใหญ่",
-       "en": "Adult"
+       "th": "บุคคล (ผู้ใหญ่)",
+       "en": "Adult",
+       "zh": "成人"
       },
       "price": 20,
       "n": 3,
       "ids": [
        "L1",
        "L3",
-       "L6"
+       "L4"
       ],
       "rv": true
      },
      {
       "who": {
        "th": "รถจักรยานยนต์",
-       "en": "Motorcycle"
+       "en": "Motorcycle",
+       "zh": "摩托车"
       },
       "price": 20,
       "n": 3,
       "ids": [
        "L1",
        "L3",
-       "L6"
+       "L4"
       ],
       "rv": true
      },
      {
       "who": {
        "th": "รถยนต์",
-       "en": "Car"
+       "en": "Car",
+       "zh": "汽车"
       },
       "price": 30,
       "n": 4,
       "ids": [
        "L3",
-       "L6",
+       "L4",
        "L1",
-       "L2"
+       "L5"
+      ],
+      "rv": true
+     },
+     {
+      "who": {
+       "th": "บุคคล (ผู้ใหญ่)",
+       "en": "Adult",
+       "zh": "成人"
+      },
+      "price": 70,
+      "n": 1,
+      "ids": [
+       "L6"
       ],
       "rv": true
      }
@@ -31393,14 +31575,23 @@
     "tiers": [
      {
       "who": {
+       "th": "ชาวไทย",
+       "en": "Thai citizen",
+       "zh": "泰国公民"
+      },
+      "price": 20,
+      "n": 2,
+      "ids": [
+       "L6",
+       "L4"
+      ],
+      "rv": true
+     },
+     {
+      "who": {
        "th": "รถจักรยานยนต์",
        "en": "Motorcycle",
        "zh": "摩托车"
-      },
-      "note": {
-       "th": "ค่าธรรมเนียมรถจักรยานยนต์ต่อคัน",
-       "en": "Motorcycle fee per vehicle",
-       "zh": "每辆摩托车费用"
       },
       "price": 20,
       "n": 2,
@@ -31412,15 +31603,25 @@
      },
      {
       "who": {
+       "th": "ค่านำเต็นท์มาเอง (ต่อคน/คืน)",
+       "en": "Camping fee (per person/night)",
+       "zh": "自带帐篷露营费（每人/晚）"
+      },
+      "price": 30,
+      "n": 3,
+      "ids": [
+       "L3",
+       "L4",
+       "L6"
+      ],
+      "rv": true
+     },
+     {
+      "who": {
        "th": "รถยนต์ 4 ล้อ",
        "en": "4-wheel car",
        "zh": "四轮汽车"
       },
-      "note": {
-       "th": "ค่าธรรมเนียมรถยนต์ต่อคัน",
-       "en": "Car fee per vehicle",
-       "zh": "每辆车费用"
-      },
       "price": 30,
       "n": 3,
       "ids": [
@@ -31432,34 +31633,9 @@
      },
      {
       "who": {
-       "th": "ผู้กางเต็นท์",
-       "en": "Camper",
-       "zh": "露营者"
-      },
-      "note": {
-       "th": "ค่ากางเต็นท์ต่อคนต่อคืน",
-       "en": "Camping fee per person per night",
-       "zh": "每人每晚露营费"
-      },
-      "price": 30,
-      "n": 3,
-      "ids": [
-       "L3",
-       "L4",
-       "L6"
-      ],
-      "rv": true
-     },
-     {
-      "who": {
-       "th": "ผู้เข้าชม",
-       "en": "Visitor",
-       "zh": "访客"
-      },
-      "note": {
-       "th": "ค่าเข้าอุทยานต่อคน",
-       "en": "Park entrance fee per person",
-       "zh": "每人公园门票"
+       "th": "ผู้ใหญ่ (ชาวไทย)",
+       "en": "Thai Adult",
+       "zh": "泰国成人"
       },
       "price": 40,
       "n": 2,
@@ -32090,9 +32266,9 @@
     "tiers": [
      {
       "who": {
-       "th": "เด็ก",
-       "en": "Child",
-       "zh": "儿童"
+       "th": "เด็ก (ชาวไทย)",
+       "en": "Child (Thai)",
+       "zh": "儿童（泰国籍）"
       },
       "price": 20,
       "n": 1,
@@ -32103,18 +32279,17 @@
      },
      {
       "who": {
-       "th": "ผู้ใหญ่",
-       "en": "Adult",
-       "zh": "成人"
+       "th": "ผู้ใหญ่ (ชาวไทย)",
+       "en": "Adult (Thai)",
+       "zh": "成人（泰国籍）"
       },
       "price": 40,
-      "n": 5,
+      "n": 4,
       "ids": [
        "L1",
        "L2",
        "L3",
-       "L4",
-       "L6"
+       "L4"
       ],
       "rv": true
      }
@@ -33409,52 +33584,74 @@
     "tiers": [
      {
       "who": {
-       "th": "เด็กชาวไทย",
-       "en": "Thai child",
-       "zh": "泰国儿童"
+       "th": "เด็ก (ชาวไทย)",
+       "en": "Child (Thai)",
+       "zh": "儿童（泰国公民）"
       },
       "price": 10,
-      "n": 3,
+      "n": 4,
       "ids": [
        "L1",
        "L3",
-       "L5"
+       "L5",
+       "L6"
       ],
       "rv": true
      },
      {
       "who": {
-       "th": "ผู้ใหญ่ชาวไทย",
-       "en": "Thai adult",
-       "zh": "泰国成年人"
+       "th": "ผู้ใหญ่ (ชาวไทย)",
+       "en": "Adult (Thai)",
+       "zh": "成人（泰国公民）"
       },
       "price": 20,
-      "n": 3,
+      "n": 4,
       "ids": [
        "L1",
        "L3",
-       "L5"
+       "L5",
+       "L6"
       ],
       "rv": true
      },
      {
       "who": {
-       "th": "เด็กชาวต่างชาติ",
-       "en": "Foreigner child",
-       "zh": "外国儿童"
+       "th": "เด็ก (ชาวต่างชาติ)",
+       "en": "Child (Foreigner)",
+       "zh": "儿童（外籍）"
       },
       "price": 50,
-      "n": 1,
+      "n": 2,
       "ids": [
+       "L5",
+       "L6"
+      ],
+      "rv": true
+     },
+     {
+      "who": {
+       "th": "ค่าเช่าพื้นที่พักกางเต็นท์ (ปางอุ๋ง)",
+       "en": "Camping Fee (Pang Oung)",
+       "zh": "露营费（庞翁）"
+      },
+      "note": {
+       "th": "ต่อคน",
+       "en": "Per person",
+       "zh": "每人"
+      },
+      "price": 50,
+      "n": 2,
+      "ids": [
+       "L6",
        "L5"
       ],
       "rv": true
      },
      {
       "who": {
-       "th": "ผู้ใหญ่ชาวต่างชาติ",
-       "en": "Foreigner adult",
-       "zh": "外国成年人"
+       "th": "ผู้ใหญ่ (ชาวต่างชาติ)",
+       "en": "Adult (Foreigner)",
+       "zh": "成人（外籍）"
       },
       "price": 100,
       "n": 1,
@@ -34353,7 +34550,7 @@
      "tag": 1
     }
    ],
-   "reviewCount": 38,
+   "reviewCount": 44,
    "districtEn": "Phasi Charoen",
    "district": "ภาษีเจริญ",
    "entry": {
@@ -35809,29 +36006,53 @@
     "tiers": [
      {
       "who": {
-       "th": "เด็ก (คนไทย)",
-       "en": "Child (Thai)",
-       "zh": "儿童（泰国人）"
+       "th": "ค่าประกันอุบัติเหตุ (ต่อคน)",
+       "en": "Accident insurance (per person)",
+       "zh": "意外保险（每人）"
       },
-      "price": 20,
-      "n": 2,
+      "price": 10,
+      "n": 1,
       "ids": [
-       "L2",
-       "L3"
+       "L2"
       ],
       "rv": true
      },
      {
       "who": {
-       "th": "ผู้ใหญ่ (คนไทย)",
+       "th": "เด็ก (ชาวไทย)",
+       "en": "Child (Thai)",
+       "zh": "儿童（泰国人）"
+      },
+      "price": 20,
+      "n": 1,
+      "ids": [
+       "L2"
+      ],
+      "rv": true
+     },
+     {
+      "who": {
+       "th": "ค่าบริการลูกหาบ (ต่อ กก.)",
+       "en": "Porter fee (per kg)",
+       "zh": "挑夫费用（每公斤）"
+      },
+      "price": 25,
+      "n": 1,
+      "ids": [
+       "L2"
+      ],
+      "rv": true
+     },
+     {
+      "who": {
+       "th": "ผู้ใหญ่ (ชาวไทย)",
        "en": "Adult (Thai)",
        "zh": "成人（泰国人）"
       },
       "price": 40,
-      "n": 2,
+      "n": 1,
       "ids": [
-       "L2",
-       "L3"
+       "L2"
       ],
       "rv": true
      },
@@ -35839,13 +36060,25 @@
       "who": {
        "th": "เด็ก (ชาวต่างชาติ)",
        "en": "Child (Foreigner)",
-       "zh": "儿童（外国人）"
+       "zh": "儿童（外籍）"
       },
       "price": 100,
-      "n": 2,
+      "n": 1,
       "ids": [
-       "L2",
-       "L3"
+       "L2"
+      ],
+      "rv": true
+     },
+     {
+      "who": {
+       "th": "ค่ามัดจำขยะ (ต่อกลุ่ม)",
+       "en": "Trash deposit (per group)",
+       "zh": "垃圾押金（每组）"
+      },
+      "price": 100,
+      "n": 1,
+      "ids": [
+       "L2"
       ],
       "rv": true
      },
@@ -35853,7 +36086,7 @@
       "who": {
        "th": "ผู้ใหญ่ (ชาวต่างชาติ)",
        "en": "Adult (Foreigner)",
-       "zh": "成人（外国人）"
+       "zh": "成人（外籍）"
       },
       "price": 200,
       "n": 1,
@@ -35863,7 +36096,7 @@
       "rv": true
      }
     ],
-    "src": "review"
+    "src": "review1"
    }
   },
   {
@@ -36215,9 +36448,9 @@
     "tiers": [
      {
       "who": {
-       "th": "เด็กชาวไทย",
-       "en": "Thai Child",
-       "zh": "泰国儿童"
+       "th": "เด็ก (ชาวไทย)",
+       "en": "Child (Thai)",
+       "zh": "儿童（泰国公民）"
       },
       "price": 10,
       "n": 2,
@@ -36229,9 +36462,9 @@
      },
      {
       "who": {
-       "th": "ผู้ใหญ่ชาวไทย",
-       "en": "Thai Adult",
-       "zh": "泰国成人"
+       "th": "ผู้ใหญ่ (ชาวไทย)",
+       "en": "Adult (Thai)",
+       "zh": "成人（泰国公民）"
       },
       "price": 20,
       "n": 2,
@@ -36257,9 +36490,14 @@
      },
      {
       "who": {
-       "th": "ค่าพื้นที่กางเต็นท์",
-       "en": "Campsite fee per person",
-       "zh": "露营地每人费用"
+       "th": "ค่าบริการพื้นที่กางเต็นท์",
+       "en": "Tent Pitch Fee",
+       "zh": "露营场地费"
+      },
+      "note": {
+       "th": "ต่อคน / คืน",
+       "en": "Per person / night",
+       "zh": "每人/晚"
       },
       "price": 30,
       "n": 2,
@@ -36271,9 +36509,9 @@
      },
      {
       "who": {
-       "th": "ชาวต่างชาติ เด็ก",
-       "en": "Foreign Child",
-       "zh": "外国儿童"
+       "th": "เด็ก (ชาวต่างชาติ)",
+       "en": "Child (Foreigner)",
+       "zh": "儿童（外籍）"
       },
       "price": 50,
       "n": 1,
@@ -36284,9 +36522,9 @@
      },
      {
       "who": {
-       "th": "ชาวต่างชาติ ผู้ใหญ่",
-       "en": "Foreign Adult",
-       "zh": "外国成人"
+       "th": "ผู้ใหญ่ (ชาวต่างชาติ)",
+       "en": "Adult (Foreigner)",
+       "zh": "成人（外籍）"
       },
       "price": 100,
       "n": 1,
@@ -36405,76 +36643,58 @@
     "tiers": [
      {
       "who": {
-       "th": "เด็กชาวไทย",
-       "en": "Thai child",
-       "zh": "泰国儿童"
+       "th": "เด็ก (ชาวไทย)",
+       "en": "Child (Thai)",
+       "zh": "儿童（泰国人）"
       },
       "price": 20,
-      "n": 2,
+      "n": 1,
       "ids": [
-       "L3",
-       "L6"
-      ],
-      "rv": true
-     },
-     {
-      "who": {
-       "th": "ผู้ใหญ่ชาวไทย",
-       "en": "Thai adult",
-       "zh": "泰国成年人"
-      },
-      "price": 40,
-      "n": 2,
-      "ids": [
-       "L3",
-       "L6"
-      ],
-      "rv": true
-     },
-     {
-      "who": {
-       "th": "รถยนต์",
-       "en": "Car",
-       "zh": "汽车"
-      },
-      "price": 40,
-      "n": 2,
-      "ids": [
-       "L6",
        "L3"
       ],
       "rv": true
      },
      {
       "who": {
-       "th": "เด็กชาวต่างชาติ",
-       "en": "Foreigner child",
-       "zh": "外国儿童"
+       "th": "ผู้ใหญ่ (ชาวไทย)",
+       "en": "Adult (Thai)",
+       "zh": "成人（泰国人）"
       },
-      "price": 100,
-      "n": 2,
+      "price": 40,
+      "n": 1,
       "ids": [
-       "L3",
-       "L6"
+       "L3"
       ],
       "rv": true
      },
      {
       "who": {
-       "th": "ผู้ใหญ่ชาวต่างชาติ",
-       "en": "Foreigner adult",
-       "zh": "外国成年人"
+       "th": "เด็ก (ชาวต่างชาติ)",
+       "en": "Child (Foreigner)",
+       "zh": "儿童（外籍）"
+      },
+      "price": 100,
+      "n": 1,
+      "ids": [
+       "L3"
+      ],
+      "rv": true
+     },
+     {
+      "who": {
+       "th": "ผู้ใหญ่ (ชาวต่างชาติ)",
+       "en": "Adult (Foreigner)",
+       "zh": "成人（外籍）"
       },
       "price": 200,
-      "n": 2,
+      "n": 1,
       "ids": [
-       "L3",
-       "L6"
+       "L3"
       ],
       "rv": true
      }
     ],
-    "src": "review"
+    "src": "review1"
    }
   },
   {
@@ -36603,7 +36823,7 @@
       "who": {
        "th": "เด็ก (ชาวไทย)",
        "en": "Child (Thai)",
-       "zh": "儿童（泰国公民）"
+       "zh": "儿童（泰国人）"
       },
       "price": 20,
       "n": 4,
@@ -36612,43 +36832,6 @@
        "L5",
        "L6",
        "L8"
-      ],
-      "rv": true
-     },
-     {
-      "who": {
-       "th": "ค่าจอดรถ",
-       "en": "Parking fee",
-       "zh": "停车费"
-      },
-      "price": 20,
-      "n": 4,
-      "ids": [
-       "L6",
-       "L3",
-       "L5",
-       "L8"
-      ],
-      "rv": true
-     },
-     {
-      "who": {
-       "th": "รถบริการขึ้นยอดภูเรือ",
-       "en": "Shuttle to peak",
-       "zh": "登顶接驳车"
-      },
-      "note": {
-       "th": "ต่อคน",
-       "en": "per person",
-       "zh": "每人"
-      },
-      "price": 20,
-      "n": 4,
-      "ids": [
-       "L8",
-       "L3",
-       "L5",
-       "L6"
       ],
       "rv": true
      },
@@ -36656,28 +36839,13 @@
       "who": {
        "th": "ผู้ใหญ่ (ชาวไทย)",
        "en": "Adult (Thai)",
-       "zh": "成人（泰国公民）"
+       "zh": "成人（泰国人）"
       },
       "price": 40,
       "n": 3,
       "ids": [
        "L3",
        "L5",
-       "L6"
-      ],
-      "rv": true
-     },
-     {
-      "who": {
-       "th": "ยานพาหนะ",
-       "en": "Vehicle",
-       "zh": "车辆"
-      },
-      "price": 40,
-      "n": 3,
-      "ids": [
-       "L5",
-       "L3",
        "L6"
       ],
       "rv": true
@@ -40200,9 +40368,22 @@
    "districtEn": "Mueang Tak",
    "district": "เมืองตาก",
    "entry": {
-    "thai": 40,
-    "foreign": 200,
-    "src": "typical"
+    "tiers": [
+     {
+      "who": {
+       "th": "บุคคล (ผู้ใหญ่)",
+       "en": "Adult",
+       "zh": "成人"
+      },
+      "price": 40,
+      "n": 1,
+      "ids": [
+       "L1"
+      ],
+      "rv": true
+     }
+    ],
+    "src": "review1"
    }
   },
   {
@@ -42272,7 +42453,7 @@
     "tiers": [
      {
       "who": {
-       "th": "เด็ก (คนไทย)",
+       "th": "เด็ก (ชาวไทย)",
        "en": "Child (Thai)",
        "zh": "儿童（泰国人）"
       },
@@ -42285,7 +42466,7 @@
      },
      {
       "who": {
-       "th": "ผู้ใหญ่ (คนไทย)",
+       "th": "ผู้ใหญ่ (ชาวไทย)",
        "en": "Adult (Thai)",
        "zh": "成人（泰国人）"
       },
@@ -42300,37 +42481,7 @@
      },
      {
       "who": {
-       "th": "รถจักรยานยนต์",
-       "en": "Motorcycle",
-       "zh": "摩托车"
-      },
-      "price": 20,
-      "n": 3,
-      "ids": [
-       "L3",
-       "L1",
-       "L4"
-      ],
-      "rv": true
-     },
-     {
-      "who": {
-       "th": "รถยนต์",
-       "en": "Car",
-       "zh": "汽车"
-      },
-      "price": 30,
-      "n": 3,
-      "ids": [
-       "L1",
-       "L3",
-       "L4"
-      ],
-      "rv": true
-     },
-     {
-      "who": {
-       "th": "เด็ก (ชาวต่างชาติ)",
+       "th": "เด็ก (ต่างชาติ)",
        "en": "Child (Foreigner)",
        "zh": "儿童（外国人）"
       },
@@ -42343,7 +42494,7 @@
      },
      {
       "who": {
-       "th": "ผู้ใหญ่ (ชาวต่างชาติ)",
+       "th": "ผู้ใหญ่ (ต่างชาติ)",
        "en": "Adult (Foreigner)",
        "zh": "成人（外国人）"
       },
@@ -42525,7 +42676,7 @@
      {
       "who": {
        "th": "เด็ก (ชาวไทย)",
-       "en": "Thai child",
+       "en": "Thai Child",
        "zh": "泰国儿童"
       },
       "price": 10,
@@ -42540,7 +42691,7 @@
      {
       "who": {
        "th": "ผู้ใหญ่ (ชาวไทย)",
-       "en": "Thai adult",
+       "en": "Thai Adult",
        "zh": "泰国成人"
       },
       "price": 20,
@@ -42555,7 +42706,7 @@
      {
       "who": {
        "th": "เด็ก (ชาวต่างชาติ)",
-       "en": "Foreign child",
+       "en": "Foreigner Child",
        "zh": "外籍儿童"
       },
       "price": 50,
@@ -42568,7 +42719,7 @@
      {
       "who": {
        "th": "ผู้ใหญ่ (ชาวต่างชาติ)",
-       "en": "Foreign adult",
+       "en": "Foreigner Adult",
        "zh": "外籍成人"
       },
       "price": 100,
@@ -42727,8 +42878,8 @@
      {
       "who": {
        "th": "เด็ก (ชาวไทย)",
-       "en": "Thai child",
-       "zh": "泰国儿童"
+       "en": "Thai Child",
+       "zh": "Thai Child"
       },
       "price": 10,
       "n": 1,
@@ -42739,25 +42890,25 @@
      {
       "who": {
        "th": "ผู้ใหญ่ (ชาวไทย)",
-       "en": "Thai adult",
+       "en": "Thai Adult",
        "zh": "泰国成人"
       },
       "price": 20,
       "n": 2,
       "ids": [
        "W",
-       "L2"
+       "L3"
       ]
      },
      {
       "who": {
        "th": "เด็ก (ชาวต่างชาติ)",
-       "en": "Foreign child",
+       "en": "Foreigner Child",
        "zh": "外籍儿童"
       },
       "note": {
        "th": "อายุ 3-14 ปี",
-       "en": "Age 3-14",
+       "en": "Ages 3-14",
        "zh": "3-14岁"
       },
       "price": 50,
@@ -42769,7 +42920,7 @@
      {
       "who": {
        "th": "ผู้ใหญ่ (ชาวต่างชาติ)",
-       "en": "Foreign adult",
+       "en": "Foreigner Adult",
        "zh": "外籍成人"
       },
       "price": 100,
@@ -45667,7 +45818,7 @@
    "views": 2,
    "districtEn": "Samphanthawong",
    "district": "สัมพันธวงศ์",
-   "hours": "Tu-Fr 08:30-16:30; Sa,Su 10:00-18:00; Mo off",
+   "hours": "Tu-Fr 08:30-16:30; Sa-Su 10:00-18:00; Mo off",
    "hoursSrc": "web",
    "entry": {
     "free": true,
@@ -46708,10 +46859,9 @@
        "zh": "儿童"
       },
       "price": 10,
-      "n": 2,
+      "n": 1,
       "ids": [
-       "L3",
-       "L6"
+       "L4"
       ],
       "rv": true
      },
@@ -46722,25 +46872,10 @@
        "zh": "成人"
       },
       "price": 20,
-      "n": 3,
-      "ids": [
-       "L1",
-       "L3",
-       "L6"
-      ],
-      "rv": true
-     },
-     {
-      "who": {
-       "th": "ค่าจอดรถยนต์",
-       "en": "Car parking fee",
-       "zh": "停车费"
-      },
-      "price": 30,
       "n": 2,
       "ids": [
        "L1",
-       "L3"
+       "L4"
       ],
       "rv": true
      }
@@ -47133,9 +47268,9 @@
     "tiers": [
      {
       "who": {
-       "th": "เด็ก",
-       "en": "Child",
-       "zh": "儿童"
+       "th": "เด็ก (ชาวไทย)",
+       "en": "Thai Child",
+       "zh": "泰国儿童"
       },
       "price": 10,
       "n": 1,
@@ -47146,9 +47281,9 @@
      },
      {
       "who": {
-       "th": "ผู้ใหญ่",
-       "en": "Adult",
-       "zh": "成人"
+       "th": "ผู้ใหญ่ (ชาวไทย)",
+       "en": "Thai Adult",
+       "zh": "泰国成人"
       },
       "price": 20,
       "n": 4,
@@ -47162,9 +47297,9 @@
      },
      {
       "who": {
-       "th": "ผู้ใหญ่",
-       "en": "Adult",
-       "zh": "成人"
+       "th": "ค่าเข้าอุทยาน",
+       "en": "Park entry fee",
+       "zh": "入园费"
       },
       "price": 30,
       "n": 2,
@@ -47176,9 +47311,23 @@
      },
      {
       "who": {
-       "th": "รถยนต์",
-       "en": "Car",
-       "zh": "汽车"
+       "th": "ค่านำเต็นท์มาเอง (ต่อคน/คืน)",
+       "en": "Camping fee (per person/night)",
+       "zh": "自带帐篷露营费（每人/晚）"
+      },
+      "price": 30,
+      "n": 2,
+      "ids": [
+       "L5",
+       "L4"
+      ],
+      "rv": true
+     },
+     {
+      "who": {
+       "th": "รถยนต์ 4 ล้อ",
+       "en": "4-wheel car",
+       "zh": "四轮汽车"
       },
       "price": 30,
       "n": 2,
@@ -47190,33 +47339,23 @@
      },
      {
       "who": {
-       "th": "ค่ากางเต็นท์",
-       "en": "Tent camping fee",
-       "zh": "露营费"
+       "th": "ค่าเช่าจักรยาน (ต่อชั่วโมง)",
+       "en": "Bicycle rental (per hour)",
+       "zh": "自行车租用（每小时）"
       },
-      "note": {
-       "th": "ต่อคนต่อคืน",
-       "en": "per person per night",
-       "zh": "每人每晚"
-      },
-      "price": 30,
+      "price": 50,
       "n": 2,
       "ids": [
-       "L5",
-       "L4"
+       "L1",
+       "L3"
       ],
       "rv": true
      },
      {
       "who": {
-       "th": "ทริปดำน้ำเกาะจาน (เด็ก)",
-       "en": "Ko Chan Snorkeling Tour (Child)",
-       "zh": "詹岛潜水行程（儿童）"
-      },
-      "note": {
-       "th": "เรือสปีดโบ๊ท ขั้นต่ำ 15 คน",
-       "en": "Speedboat, min 15 people",
-       "zh": "快艇，最少15人"
+       "th": "แพ็กเกจดำน้ำเกาะจาน (เด็ก ชาวไทย)",
+       "en": "Ko Chan diving package (Thai child)",
+       "zh": "詹岛潜水套餐（泰国儿童）"
       },
       "price": 500,
       "n": 1,
@@ -47227,14 +47366,9 @@
      },
      {
       "who": {
-       "th": "ทริปดำน้ำเกาะจาน (ผู้ใหญ่)",
-       "en": "Ko Chan Snorkeling Tour (Adult)",
-       "zh": "詹岛潜水行程（成人）"
-      },
-      "note": {
-       "th": "เรือสปีดโบ๊ท ขั้นต่ำ 15 คน",
-       "en": "Speedboat, min 15 people",
-       "zh": "快艇，最少15人"
+       "th": "แพ็กเกจดำน้ำเกาะจาน (ผู้ใหญ่ ชาวไทย)",
+       "en": "Ko Chan diving package (Thai adult)",
+       "zh": "詹岛潜水套餐（泰国成人）"
       },
       "price": 600,
       "n": 1,
@@ -47363,9 +47497,9 @@
     "tiers": [
      {
       "who": {
-       "th": "เด็ก (ชาวไทย)",
-       "en": "Child (Thai)",
-       "zh": "儿童（泰国人）"
+       "th": "ชาวไทย (เด็ก)",
+       "en": "Thai Child",
+       "zh": "泰国儿童"
       },
       "price": 20,
       "n": 2,
@@ -47377,9 +47511,9 @@
      },
      {
       "who": {
-       "th": "ผู้ใหญ่ (ชาวไทย)",
-       "en": "Adult (Thai)",
-       "zh": "成人（泰国人）"
+       "th": "ชาวไทย (ผู้ใหญ่)",
+       "en": "Thai Adult",
+       "zh": "泰国成人"
       },
       "price": 40,
       "n": 2,
@@ -47391,9 +47525,9 @@
      },
      {
       "who": {
-       "th": "เด็ก (ชาวต่างชาติ)",
-       "en": "Child (Foreigner)",
-       "zh": "儿童（外国人）"
+       "th": "ชาวต่างชาติ (เด็ก)",
+       "en": "Foreigner Child",
+       "zh": "外籍儿童"
       },
       "price": 100,
       "n": 2,
@@ -47405,9 +47539,9 @@
      },
      {
       "who": {
-       "th": "ผู้ใหญ่ (ชาวต่างชาติ)",
-       "en": "Adult (Foreigner)",
-       "zh": "成人（外国人）"
+       "th": "ชาวต่างชาติ (ผู้ใหญ่)",
+       "en": "Foreigner Adult",
+       "zh": "外籍成人"
       },
       "price": 200,
       "n": 2,
@@ -47773,9 +47907,22 @@
    "districtEn": "Tha Song Yang",
    "district": "ท่าสองยาง",
    "entry": {
-    "thai": 40,
-    "foreign": 200,
-    "src": "typical"
+    "tiers": [
+     {
+      "who": {
+       "th": "ค่าเข้าอุทยานฯ",
+       "en": "Park Entry Fee",
+       "zh": "公园门票"
+      },
+      "price": 40,
+      "n": 1,
+      "ids": [
+       "L1"
+      ],
+      "rv": true
+     }
+    ],
+    "src": "review1"
    }
   },
   {
@@ -47882,9 +48029,22 @@
    "districtEn": "Khura Buri",
    "district": "คุระบุรี",
    "entry": {
-    "thai": 40,
-    "foreign": 200,
-    "src": "typical"
+    "tiers": [
+     {
+      "who": {
+       "th": "ผู้ใหญ่",
+       "en": "Adult",
+       "zh": "成人"
+      },
+      "price": 40,
+      "n": 1,
+      "ids": [
+       "L5"
+      ],
+      "rv": true
+     }
+    ],
+    "src": "review1"
    }
   },
   {
@@ -51876,25 +52036,26 @@
       "price": 20,
       "n": 3,
       "ids": [
-       "L3",
        "L4",
-       "L5"
+       "L5",
+       "L6"
       ],
       "rv": true
      },
      {
       "who": {
        "th": "ผู้ใหญ่ / บุคคลทั่วไป",
-       "en": "Adult",
-       "zh": "成人"
+       "en": "Adult / General Public",
+       "zh": "成人 / 普通游客"
       },
       "price": 30,
-      "n": 4,
+      "n": 5,
       "ids": [
        "L1",
-       "L3",
+       "L2",
        "L4",
-       "L5"
+       "L5",
+       "L6"
       ],
       "rv": true
      }
@@ -55514,6 +55675,16 @@
      "tag": 1
     },
     {
+     "title": "One day with me 📍สวนรถไฟ(Wachirabenjathat)🌸🌟🚲",
+     "likes": 1429,
+     "date": "2023-11-05",
+     "link": "https://www.lemon8-app.com/@lookkwdd/7297902457538019841?region=th",
+     "source": "Lemon8 · Lorrrkorrrdiary",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7297902457538019841&index=0&sign=0b24612181aee3f6b6e286df2238bd59",
+     "ck": 1,
+     "tag": 1
+    },
+    {
      "title": "สวนรถไฟฟีลญี่ปุ่น ชมพูพันธุ์ทิพย์บานสะพรั่ง 🌸🍃☁️",
      "likes": 1394,
      "date": "2023-02-27",
@@ -55556,20 +55727,9 @@
      "ck": 1,
      "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/ocetWEuVfQY43eAnfsAA4Cg8yrgvscJMAAfwhS~tplv-sdweummd6v-text-logo-v1:QGZhcmlubm5ubm5ubm5ubm4=:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796904000&x-signature=Ynb4QY4UN5ytX2ZIZnTe7C3ji1Y%3D",
      "tag": 1
-    },
-    {
-     "title": "ถ่ายรูปที่สวนวชิรเบญจทัศก๊าานน 🌳✨",
-     "likes": 270,
-     "date": "2025-05-02",
-     "link": "https://www.lemon8-app.com/@ooatpong/7499808151852565000?region=th",
-     "source": "Lemon8 · OATPONG",
-     "image": "https://www.lemon8-app.com/seo/image?item_id=7499808151852565000&index=0&sign=4ec9a34d341340e1305218f9e5f57574",
-     "ck": 1,
-     "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/o4GB5AMitYNkaPOADhAWSIDAEAxrUIbsBBPir~tplv-sdweummd6v-text-logo-v1:QG9vYXRwb25n:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796904000&x-signature=5xwwio2n%2F%2BfSVGZLM6YWdyLTvwY%3D",
-     "tag": 1
     }
    ],
-   "reviewCount": 54,
+   "reviewCount": 57,
    "districtEn": "Chatuchak",
    "district": "จตุจักร",
    "entry": {
@@ -56412,6 +56572,26 @@
      "tag": 1
     },
     {
+     "title": "ดอกแววมยุรา @สวนเสรีไทย",
+     "likes": 3,
+     "date": "2025-10-02",
+     "link": "https://www.lemon8-app.com/@thanaphol_iceshop/7556613018176537105?region=th",
+     "source": "Lemon8 · Thanaphol - ICE",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7556613018176537105&index=0&sign=bac54dc26113ce0256878234b849d5cf",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "รวมภาพดอกไม้สวยๆยามเช้า @สวนเสรีไทย",
+     "likes": 2,
+     "date": "2026-01-21",
+     "link": "https://www.lemon8-app.com/@thanaphol_iceshop/7597728803405840913?region=th",
+     "source": "Lemon8 · Thanaphol - ICE",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7597728803405840913&index=0&sign=090b8dc728ae8aba88ca6648642da00f",
+     "ck": 1,
+     "tag": 1
+    },
+    {
      "title": "ที่นี่สวนเสรีไทย🌳🍃🛶 #สวนในกรุงเทพ #สวนสาธารณะ #เทรนด์วันนี้ #เปิดการมองเห็น",
      "likes": 1,
      "date": "2026-01-25",
@@ -56421,31 +56601,9 @@
      "ck": 1,
      "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/ok1N2FCtQDpBdS9s2gAZEFxPEfeaprBEpCIAdA~tplv-sdweummd6v-text-logo-v1:QG5hZGF6YWEyNg==:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796904000&x-signature=ajIPnaosffQBgeY8o%2FNNwTkfgzE%3D",
      "tag": 1
-    },
-    {
-     "title": "คลาสฟรี เบสิค แมท พิลาทิส ครั้งที่ 4",
-     "likes": 1,
-     "date": "2026-02-14",
-     "link": "https://www.lemon8-app.com/@pai.pilates/7606568781061554704?region=th",
-     "source": "Lemon8 · ไผ่ ฟิต",
-     "image": "https://www.lemon8-app.com/seo/image?item_id=7606568781061554704&index=0&sign=2b8a44b64aae2ff392fbd97d9ce1dc61",
-     "ck": 1,
-     "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/oE72DIXP6QMpniATq0AA8BQqmfga2eeGQAqe6J~tplv-sdweummd6v-text-logo-v1:QHBhaS5waWxhdGVz:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796904000&x-signature=wWyXNusndDIqquo3Krl8gyz45vw%3D",
-     "tag": 1
-    },
-    {
-     "title": "ไปเดิน หรือ ไปวิ่ง",
-     "likes": 1,
-     "date": "2025-12-31",
-     "link": "https://www.lemon8-app.com/@missnanannn/7590051597976338951?region=th",
-     "source": "Lemon8 · ดุจอัปสร",
-     "image": "https://www.lemon8-app.com/seo/image?item_id=7590051597976338951&index=0&sign=02752e11e0f89c90fd39d11c9d49723a",
-     "ck": 1,
-     "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/owCPvJewgqQAMkbC7FA0IfLIeXAwASqIGZDpE1~tplv-sdweummd6v-text-logo-v1:QG1pc3NuYW5hbm5u:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796904000&x-signature=k1WaxWpcm9xvpGUYVBnjzUomREc%3D",
-     "tag": 1
     }
    ],
-   "reviewCount": 12,
+   "reviewCount": 14,
    "districtEn": "Bueng Kum",
    "district": "บึงกุ่ม"
   },
@@ -56576,7 +56734,7 @@
      "tag": 1
     }
    ],
-   "reviewCount": 34,
+   "reviewCount": 35,
    "districtEn": "Bang Kho Laem",
    "district": "บางคอแหลม",
    "entry": {
@@ -57491,18 +57649,17 @@
      "tag": 1
     },
     {
-     "title": "สวนเบญจกิติ (Benchakitti Forest Park)🌳",
-     "likes": 253,
-     "date": "2024-07-05",
-     "link": "https://www.lemon8-app.com/@jngctm/7388178003211338241?region=th",
-     "source": "Lemon8 · Jung♡˚◞",
-     "image": "https://www.lemon8-app.com/seo/image?item_id=7388178003211338241&index=0&sign=5bea35a74d22e9a81754e4df8ab72e89",
+     "title": "มุมสุดเกร๋ที่สวนป่าเบญจกิติ🌳📸✨",
+     "likes": 290,
+     "date": "2022-06-04",
+     "link": "https://www.lemon8-app.com/@charminemine/7105401404570731010?region=th",
+     "source": "Lemon8 · Charmine",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7105401404570731010&index=0&sign=0ab813ff97879e814d8384f919277a20",
      "ck": 1,
-     "thumb": "https://p19-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/oEY7seCgHARbGmAgAOEIJDEgVDELQff1N4rpAI~tplv-sdweummd6v-text-logo-v1:QGpuZ2N0bQ==:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796904000&x-signature=1ANSm0%2B%2BbCENw3kzL%2BNTLgOuts8%3D",
      "tag": 1
     }
    ],
-   "reviewCount": 15,
+   "reviewCount": 19,
    "districtEn": "Khlong Toei",
    "district": "คลองเตย"
   },
@@ -57742,7 +57899,7 @@
      "tag": 1
     }
    ],
-   "reviewCount": 53,
+   "reviewCount": 60,
    "districtEn": "Bangkok Noi",
    "district": "บางกอกน้อย",
    "entry": {
@@ -57822,8 +57979,8 @@
      "link": "https://www.lemon8-app.com/@kanapitchball/7684198588498412053?region=th",
      "source": "Lemon8 · kanapitch.ball",
      "image": "https://www.lemon8-app.com/seo/image?item_id=7684198588498412053&index=0&sign=fb3da96ea1828c6d623019282ee60aed",
-     "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/oILREQPCDDEExwAOA8F0BtqAC9tgICYoIffyjE~tplv-sdweummd6v-text-logo-v1:QGthbmFwaXRjaGJhbGw=:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1797940800&x-signature=ST9QE5Ia1M36i2DA%2B3lgj6SgBgw%3D",
-     "th": "data/thumbs/7684198588498412053-0.webp"
+     "ck": 1,
+     "tag": 1
     },
     {
      "title": "วัดพระเชตุพนวิมลมังคลารามราชวรมหาวิหาร",
@@ -57848,7 +58005,7 @@
      "tag": 1
     }
    ],
-   "reviewCount": 6,
+   "reviewCount": 7,
    "districtEn": "Phra Nakhon",
    "district": "พระนคร",
    "entry": {
@@ -58221,7 +58378,7 @@
      "tag": 1
     }
    ],
-   "reviewCount": 25,
+   "reviewCount": 28,
    "district": "คลองหลวง",
    "entry": {
     "free": true,
@@ -58885,7 +59042,7 @@
      "tag": 1
     }
    ],
-   "reviewCount": 44,
+   "reviewCount": 45,
    "districtEn": "Khlong Sam Wa",
    "district": "คลองสามวา",
    "entry": {
@@ -59105,7 +59262,7 @@
      "tag": 1
     }
    ],
-   "reviewCount": 45,
+   "reviewCount": 51,
    "districtEn": "Phra Nakhon",
    "district": "พระนคร"
   },
@@ -59264,7 +59421,7 @@
      "tag": 1
     }
    ],
-   "reviewCount": 53,
+   "reviewCount": 56,
    "districtEn": "Bang Khen",
    "district": "บางเขน",
    "entry": {
@@ -59775,7 +59932,7 @@
      "tag": 1
     }
    ],
-   "reviewCount": 35,
+   "reviewCount": 36,
    "districtEn": "Chom Thong",
    "district": "จอมทอง",
    "entry": {
@@ -59907,7 +60064,7 @@
      "tag": 1
     }
    ],
-   "reviewCount": 74,
+   "reviewCount": 84,
    "districtEn": "Pom Prap Sattru Phai",
    "district": "ป้อมปราบศัตรูพ่าย",
    "entry": {
@@ -60018,7 +60175,7 @@
      "tag": 1
     }
    ],
-   "reviewCount": 16,
+   "reviewCount": 19,
    "districtEn": "Sai Mai",
    "district": "สายไหม",
    "entry": {
@@ -60198,7 +60355,7 @@
      "tag": 1
     }
    ],
-   "reviewCount": 21,
+   "reviewCount": 27,
    "districtEn": "Lat Krabang",
    "district": "ลาดกระบัง",
    "entry": {
@@ -60330,7 +60487,7 @@
      "tag": 1
     }
    ],
-   "reviewCount": 9,
+   "reviewCount": 10,
    "districtEn": "Sathon",
    "district": "สาทร",
    "entry": {
@@ -60652,7 +60809,7 @@
      "tag": 1
     }
    ],
-   "reviewCount": 64,
+   "reviewCount": 71,
    "districtEn": "Khlong San",
    "district": "คลองสาน",
    "entry": {
@@ -61219,7 +61376,7 @@
      "tag": 1
     }
    ],
-   "reviewCount": 48,
+   "reviewCount": 53,
    "districtEn": "Bang Phlat",
    "district": "บางพลัด",
    "entry": {
@@ -61533,7 +61690,7 @@
      "tag": 1
     }
    ],
-   "reviewCount": 51,
+   "reviewCount": 54,
    "districtEn": "Bangkok Yai",
    "district": "บางกอกใหญ่",
    "entry": {
@@ -62040,7 +62197,7 @@
      "tag": 1
     }
    ],
-   "reviewCount": 28,
+   "reviewCount": 30,
    "districtEn": "Bangkok Yai",
    "district": "บางกอกใหญ่",
    "entry": {
@@ -62885,6 +63042,16 @@
      "tag": 1
     },
     {
+     "title": "พิกัดเที่ยวน่าน (ในอำเภอเมือง)",
+     "likes": 211,
+     "date": "2023-06-27",
+     "link": "https://www.lemon8-app.com/@babygirlofworld/7249396192248234498?region=th",
+     "source": "Lemon8 · nch",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7249396192248234498&index=0&sign=0eed47540269e05fe5266bbe7481a16d",
+     "ck": 1,
+     "tag": 1
+    },
+    {
      "title": "กระซิบรัก ณ น่านนคร #น่าน",
      "likes": 190,
      "date": "2022-09-20",
@@ -62927,20 +63094,9 @@
      "ck": 1,
      "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/oE1zAxFEVYEIsAVpE5AItUeFGfCURi9UBDbCgL~tplv-sdweummd6v-text-logo-v1:QHVzZXI5NjUzMjU0ODc3NDEz:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796904000&x-signature=7%2FHNS%2Fwx7LZsiKr6bIz8B10ijCQ%3D",
      "tag": 1
-    },
-    {
-     "title": "👩‍❤️‍👨🤍 ตำนานกระซิบรักบันลือโลก จ.น่าน 💐🛕",
-     "likes": 38,
-     "date": "2023-08-28",
-     "link": "https://www.lemon8-app.com/@kidsana4289/7272269833910239745?region=th",
-     "source": "Lemon8 · Kidsna evee",
-     "image": "https://www.lemon8-app.com/seo/image?item_id=7272269833910239745&index=0&sign=d474f4be628410456ced507b2a08b563",
-     "ck": 1,
-     "thumb": "https://p19-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/oUvVNEzdATDBAf2Ayc5DYAQegECsCBbIAABihz~tplv-sdweummd6v-text-logo-v1:QGtpZHNhbmE0Mjg5:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796904000&x-signature=yDLMpNVKXXFl9Ue6a8k3XHT9Wm0%3D",
-     "tag": 1
     }
    ],
-   "reviewCount": 67,
+   "reviewCount": 74,
    "districtEn": "Mueang Nan",
    "district": "เมืองน่าน",
    "entry": {
@@ -63003,6 +63159,16 @@
      "tag": 1
     },
     {
+     "title": "วัดมหาธาตุวรวิหาร",
+     "likes": 2,
+     "date": "2023-08-12",
+     "link": "https://www.lemon8-app.com/@ink1568/7266542169207489025?region=th",
+     "source": "Lemon8 · kru.ink",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7266542169207489025&index=0&sign=bfb4eb1003ba6960fd13200d86fbb103",
+     "ck": 1,
+     "tag": 1
+    },
+    {
      "title": "วัดโพธิ์เผือก",
      "likes": 1,
      "date": "2024-03-10",
@@ -63023,20 +63189,9 @@
      "ck": 1,
      "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/oM87VfI0lAqbDHAIActEJKEgRD6FErhYLefFAD~tplv-sdweummd6v-text-logo-v1:QHNvbmcuc2lscGE=:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796904000&x-signature=jsOaPMwAObuZ0ZKHxKKnqh%2FaAgU%3D",
      "tag": 1
-    },
-    {
-     "title": "วันมาฆบูชา @วัดโพธิ์เผือก",
-     "likes": 1,
-     "date": "2024-02-24",
-     "link": "https://www.lemon8-app.com/@ink1568/7339034572409029122?region=th",
-     "source": "Lemon8 · kru.ink",
-     "image": "https://www.lemon8-app.com/seo/image?item_id=7339034572409029122&index=0&sign=5c7017cac4bf60469f9ad1c04f1f778f",
-     "ck": 1,
-     "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/oYwkyJKOvgAQYIQLGsLeDEASefYAyWIkbAGj7J~tplv-sdweummd6v-text-logo-v1:QGluazE1Njg=:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796904000&x-signature=aHqCQvsxSb0NBvas1%2FhH0gvLcyg%3D",
-     "tag": 1
     }
    ],
-   "reviewCount": 9,
+   "reviewCount": 12,
    "districtEn": "Bang Kruai",
    "district": "บางกรวย",
    "entry": {
@@ -63212,7 +63367,7 @@
      "tag": 1
     }
    ],
-   "reviewCount": 37,
+   "reviewCount": 40,
    "districtEn": "Bang Yai",
    "district": "บางใหญ่",
    "entry": {
@@ -63542,7 +63697,7 @@
      "tag": 1
     }
    ],
-   "reviewCount": 15,
+   "reviewCount": 37,
    "district": "บางเสาธง",
    "entry": {
     "free": true,
@@ -63680,6 +63835,16 @@
      "tag": 1
     },
     {
+     "title": "วัดกลางคลองวัฒนาราม",
+     "likes": 97,
+     "date": "2025-09-16",
+     "link": "https://www.lemon8-app.com/@liveinayutthaya/7550686782405231121?region=th",
+     "source": "Lemon8 · อยู่อยุธยา",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7550686782405231121&index=0&sign=76024f427841d8cee3e950b25bc36cfc",
+     "ck": 1,
+     "tag": 1
+    },
+    {
      "title": "หลวงพ่อสมหวัง จ.นครปฐม",
      "likes": 66,
      "date": "2023-05-30",
@@ -63691,29 +63856,17 @@
      "tag": 1
     },
     {
-     "title": "วัดกลาง อ.นครหลวง จ.อยุธยา",
-     "likes": 27,
-     "date": "2024-01-12",
-     "link": "https://www.lemon8-app.com/@ayutthaya_station/7323207809523515906?region=th",
-     "source": "Lemon8 · อยุธยาสเตชั่น",
-     "image": "https://www.lemon8-app.com/seo/image?item_id=7323207809523515906&index=0&sign=1be3613100367dab7b3ed5ff03e90823",
+     "title": "วัดกลางหุบเขา✨",
+     "likes": 54,
+     "date": "2025-02-19",
+     "link": "https://www.lemon8-app.com/@go.with.duke/7473127085297828359?region=th",
+     "source": "Lemon8 · ดุ๊กพาไป",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7473127085297828359&index=0&sign=de42a1bf89f977574ae9379a93d9600d",
      "ck": 1,
-     "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/oAEtqGIh1CNHApDWCgfeFaEQAOEH4AWFBUolQ9~tplv-sdweummd6v-text-logo-v1:QGF5dXR0aGF5YV9zdGF0aW9u:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796904000&x-signature=yzdTsO47u5%2Bp3Uu5nbRUlfu5vN4%3D",
-     "tag": 1
-    },
-    {
-     "title": "หลวงพ่อสมหวัง วัดกลางบางพระ นครปฐม",
-     "likes": 20,
-     "date": "2024-10-09",
-     "link": "https://www.lemon8-app.com/@maliwan.noey/7423763797715763728?region=th",
-     "source": "Lemon8 · Mali.Manli 🍀",
-     "image": "https://www.lemon8-app.com/seo/image?item_id=7423763797715763728&index=0&sign=de0cc50ea921c99420da89ea8f11ee80",
-     "ck": 1,
-     "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/oMOAgNMMtEsIPJLb1DZQf7ZAAD7tAteAU9fGIM~tplv-sdweummd6v-text-logo-v1:QG1hbGl3YW4ubm9leQ==:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796904000&x-signature=%2FF0goN%2FFUC2Sr0xtIgNg%2BPIE21I%3D",
      "tag": 1
     }
    ],
-   "reviewCount": 26,
+   "reviewCount": 35,
    "districtEn": "Phra Pradaeng",
    "district": "พระประแดง",
    "entry": {
@@ -64033,6 +64186,16 @@
    "fetchedAt": "2026-11-09T18:57:10.369Z",
    "posts": [
     {
+     "title": "#วัดหัวคู้ อ.บางเสาธง จ.สมุทรปราการ",
+     "likes": 25,
+     "date": "2026-03-18",
+     "link": "https://www.lemon8-app.com/@max_nummmm/7618578626384003592?region=th",
+     "source": "Lemon8 · MAX NUMMMM",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7618578626384003592&index=0&sign=8154986083f6dbc49fd3c3ca49ac03f1",
+     "ck": 1,
+     "tag": 1
+    },
+    {
      "title": "วัดหัวคู้ จ.สมุทรปราการ😇🙏",
      "likes": 21,
      "date": "2025-05-20",
@@ -64041,6 +64204,26 @@
      "image": "https://www.lemon8-app.com/seo/image?item_id=7506482766964457992&index=0&sign=e6c2d3649cdb6ae54528b3ee16f4395e",
      "ck": 1,
      "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/ocEAsoA9QCGA5gtTw8IEAFEBMYD7eLA3YfqtyQ~tplv-sdweummd6v-text-logo-v1:QHBhaWthYmthZXc=:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796990400&x-signature=YK2fslox0143CYqUvZ9XnM8Mhnk%3D",
+     "tag": 1
+    },
+    {
+     "title": "EP.1 #วัดหัวคู้ อ.บางเสาธง จ.สมุทรปราการ",
+     "likes": 17,
+     "date": "2026-03-22",
+     "link": "https://www.lemon8-app.com/@max_nummmm/7620050007219110418?region=th",
+     "source": "Lemon8 · MAX NUMMMM",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7620050007219110418&index=0&sign=5579af259623d9613be854386125b5a4",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "#วัดหัวคู้ อ.บางเสาธง จ.สมุทรปราการ",
+     "likes": 14,
+     "date": "2026-03-21",
+     "link": "https://www.lemon8-app.com/@max_nummmm/7619690477226295826?region=th",
+     "source": "Lemon8 · MAX NUMMMM",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7619690477226295826&index=0&sign=f7c3d3afa98cdd914c3e6ede49a54508",
+     "ck": 1,
      "tag": 1
     },
     {
@@ -64064,42 +64247,9 @@
      "ck": 1,
      "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/o8kcCYWBanjEKLkjAAbBADLkbMtSiPPEBAwiI~tplv-sdweummd6v-text-logo-v1:QG1heF9udW1tbW0=:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796990400&x-signature=CYEyOuP%2FNE0pVrYU0amTZWASqE4%3D",
      "tag": 1
-    },
-    {
-     "title": "#วัดหัวคู้ อ.บางเสาธง จ.สมุทรปราการ",
-     "likes": 8,
-     "date": "2026-03-23",
-     "link": "https://www.lemon8-app.com/@max_nummmm/7620429830031262216?region=th",
-     "source": "Lemon8 · MAX NUMMMM",
-     "image": "https://www.lemon8-app.com/seo/image?item_id=7620429830031262216&index=0&sign=2f965ad4105d120325b3aee999760a31",
-     "ck": 1,
-     "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/oIvJnYmakPND7NQBAQb1EBAol9EDRcAiAIABi~tplv-sdweummd6v-text-logo-v1:QG1heF9udW1tbW0=:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796990400&x-signature=Nx9pVPRjZ0BGPh4S9aeRDcvss1s%3D",
-     "tag": 1
-    },
-    {
-     "title": "วัดที่ 112 วัดหัวคู้ จ.สมุทรปราการ",
-     "likes": 7,
-     "date": "2026-09-30",
-     "link": "https://www.lemon8-app.com/@dararat.uamsan/7691254400047759890?region=th",
-     "source": "Lemon8 · ยุ้ย ชวนทำบุญ",
-     "image": "https://www.lemon8-app.com/seo/image?item_id=7691254400047759890&index=0&sign=b30de0f08bde0379a25734191946b61f",
-     "ck": 1,
-     "thumb": "https://p19-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/oQQJenfTCaBGAfxTAAA2X5er2gGL81IqAEkIHw~tplv-sdweummd6v-text-logo-v1:QGRhcmFyYXQudWFtc2Fu:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796904000&x-signature=mz%2F4FpvmBEV%2Flk1PmF%2BKkQjqrPM%3D",
-     "tag": 1
-    },
-    {
-     "title": "#วัดหัวคู้ อ.บางเสาธง จ.สมุทรปราการ",
-     "likes": 3,
-     "date": "2026-06-18",
-     "link": "https://www.lemon8-app.com/@max_nummmm/7652708640742294023?region=th",
-     "source": "Lemon8 · MAX NUMMMM",
-     "image": "https://www.lemon8-app.com/seo/image?item_id=7652708640742294023&index=0&sign=d539fb00beef4125d8c95b38882490ec",
-     "ck": 1,
-     "thumb": "https://p19-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/o0L1flD3IFJKQGEZiAEoAx7ADledfbJnU2WBAc~tplv-sdweummd6v-text-logo-v1:QG1heF9udW1tbW0=:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796990400&x-signature=e6nUhEuyeIY1oQeWl4t34mNHydg%3D",
-     "tag": 1
     }
    ],
-   "reviewCount": 9,
+   "reviewCount": 12,
    "district": "องค์การบริหารส่วนตำบลศีรษะจรเข้น้อย",
    "entry": {
     "free": true,
@@ -64449,7 +64599,7 @@
      "tag": 1
     }
    ],
-   "reviewCount": 9,
+   "reviewCount": 10,
    "districtEn": "Mueang Samut Prakan",
    "district": "เมืองสมุทรปราการ",
    "entry": {
@@ -64563,6 +64713,16 @@
    "fetchedAt": "2026-11-09T18:57:10.369Z",
    "posts": [
     {
+     "title": "#วัดหนามแดง อ.เมือง จ.ฉะเชิงเทรา",
+     "likes": 10,
+     "date": "2025-01-11",
+     "link": "https://www.lemon8-app.com/@max_nummmm/7458676462255243783?region=th",
+     "source": "Lemon8 · MAX NUMMMM",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7458676462255243783&index=0&sign=3d7ac603816e924e10df6cc9a6981663",
+     "ck": 1,
+     "tag": 1
+    },
+    {
      "title": "📍วัดหนามแดง จ.สมุทรปราการ",
      "likes": 6,
      "date": "2025-05-08",
@@ -64572,9 +64732,19 @@
      "ck": 1,
      "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/oEcALwBNiATAwYzBBYBPaGEiEAZP8ppqPlIAb~tplv-sdweummd6v-text-logo-v1:QG5lcy53a3Q=:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796990400&x-signature=Kpj2J0tK5GxmTCfw5NiafHD9hn0%3D",
      "tag": 1
+    },
+    {
+     "title": "วัดหนามแดง สมุทรปราการ",
+     "likes": 2,
+     "date": "2025-10-27",
+     "link": "https://www.lemon8-app.com/@.fan7860/7565699973203902983?region=th",
+     "source": "Lemon8 · ชิวล์ ชิวล์",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7565699973203902983&index=0&sign=98a2bbabef0942ca44debb9beac01b25",
+     "ck": 1,
+     "tag": 1
     }
    ],
-   "reviewCount": 1,
+   "reviewCount": 3,
    "districtEn": "Bang Phli",
    "district": "บางพลี",
    "entry": {
@@ -64664,7 +64834,7 @@
      "tag": 1
     }
    ],
-   "reviewCount": 50,
+   "reviewCount": 55,
    "district": "องค์การบริหารส่วนตำบลนาเกลือ",
    "entry": {
     "free": true,
@@ -64741,6 +64911,16 @@
      "tag": 1
     },
     {
+     "title": "วัดบางพลีใหญ่กลาง🙏😇",
+     "likes": 14,
+     "date": "2025-05-20",
+     "link": "https://www.lemon8-app.com/@paikabkaew/7506484238922039816?region=th",
+     "source": "Lemon8 · เก็บวันลา",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7506484238922039816&index=0&sign=ef2656572ccf867c551ed5eab96275e3",
+     "ck": 1,
+     "tag": 1
+    },
+    {
      "title": "เข้าวัดทำบุญ ขอพรพระให้ชีวิตพบเจอเเเต่สิ่งดีๆ🙏🙏🙏",
      "likes": 13,
      "date": "2025-08-13",
@@ -64761,20 +64941,9 @@
      "ck": 1,
      "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/oEIHQADAbq9xJKGTeLHBe8272hy7DIAAgG6EEf~tplv-sdweummd6v-text-logo-v1:QHBhbi5sYWxpc2E=:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796990400&x-signature=4IhvHFGgW5PVCrxCwseEErus3ww%3D",
      "tag": 1
-    },
-    {
-     "title": "ปิดทองหัวใจองค์พระนอนที่ใหญ่ที่สุดในประเทศไทย",
-     "likes": 9,
-     "date": "2023-02-25",
-     "link": "https://www.lemon8-app.com/@hippiesmell/7204059706594296322?region=th",
-     "source": "Lemon8 · Hippie Smell",
-     "image": "https://www.lemon8-app.com/seo/image?item_id=7204059706594296322&index=0&sign=3810ffa01a903a92b71c4edc63827496",
-     "ck": 1,
-     "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/6ae6371f758a433385950a20572b9d0b~tplv-sdweummd6v-text-logo-v1:QGhpcHBpZXNtZWxs:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796990400&x-signature=wfNB7WOoDzYN5yhu1PavKu9A6K0%3D",
-     "tag": 1
     }
    ],
-   "reviewCount": 41,
+   "reviewCount": 44,
    "district": "องค์การบริหารส่วนตำบลบางพลีใหญ่",
    "entry": {
     "free": true,
@@ -65129,7 +65298,7 @@
      "tag": 1
     }
    ],
-   "reviewCount": 59,
+   "reviewCount": 70,
    "districtEn": "Phra Nakhon Si Ayutthaya",
    "district": "พระนครศรีอยุธยา",
    "entry": {
@@ -65352,7 +65521,7 @@
      "tag": 1
     }
    ],
-   "reviewCount": 74,
+   "reviewCount": 91,
    "districtEn": "Ko Samui",
    "district": "เกาะสมุย",
    "entry": {
@@ -65974,7 +66143,7 @@
      "tag": 1
     }
    ],
-   "reviewCount": 44,
+   "reviewCount": 51,
    "districtEn": "Amphawa",
    "district": "อัมพวา",
    "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/o8vggAhtEzOe01Qz2nHCBW7X1iI2EAimADAcfB~tplv-sdweummd6v-text-logo-v1:QHJvc2FseXplcl9yb3M=:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796904000&x-signature=bhQVikKSAkuMr23PstjhreGzLl4%3D",
@@ -67867,7 +68036,7 @@
      "tag": 1
     }
    ],
-   "reviewCount": 22,
+   "reviewCount": 28,
    "districtEn": "Phu Phiang",
    "district": "ภูเพียง",
    "entry": {
@@ -68194,7 +68363,7 @@
      "tag": 1
     }
    ],
-   "reviewCount": 71,
+   "reviewCount": 82,
    "districtEn": "Khao Kho",
    "district": "เขาค้อ",
    "entry": {
@@ -68910,6 +69079,16 @@
      "tag": 1
     },
     {
+     "title": "ขนมจีนเจ้าเก่าปากซอยวัดด่านสำโรงตรงข้ามห้างอิมพีเรียลสำโรง",
+     "likes": 6,
+     "date": "2026-10-18",
+     "link": "https://www.lemon8-app.com/@chairat_sangaunpong/7697810027322556946?region=th",
+     "source": "Lemon8 · user8424029207974",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7697810027322556946&index=0&sign=ec900bd0515a256ea8001743b5c537da",
+     "ck": 1,
+     "tag": 1
+    },
+    {
      "title": "ทะเลดองย่านวัดด่านสำโรง 🏠",
      "likes": 5,
      "date": "2025-10-17",
@@ -68932,29 +69111,17 @@
      "tag": 1
     },
     {
-     "title": "จบมา.6แล้วค้าบ รร.วัดด่านสำโรง #แต่งหน้าออกงาน #แต่งหน้ารับปริญา #แต่งหน้าสมุทรปราการ #แต่งหน้าเจ้าสาว #แต่งหน้าเพื่อนเจ้าสาว",
-     "likes": 3,
-     "date": "2026-04-10",
-     "link": "https://www.lemon8-app.com/@jaopoppy.4265/7627145068801344021?region=th",
-     "source": "Lemon8 · jaopoppymakeup",
-     "image": "https://www.lemon8-app.com/seo/image?item_id=7627145068801344021&index=0&sign=4b56152eff7d698ad1fe2ed50bffe24e",
+     "title": "ของอร่อย100บาท",
+     "likes": 4,
+     "date": "2026-06-09",
+     "link": "https://www.lemon8-app.com/@w.n_21/7649388606158602760?region=th",
+     "source": "Lemon8 · ninnee",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7649388606158602760&index=0&sign=c7cf4fc04833c5d7d20895cbc02e090c",
      "ck": 1,
-     "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/ogDZAQDgICw2hEEASftF9AyBHUqURgeOAyEAFp~tplv-sdweummd6v-text-logo-v1:QGphb3BvcHB5LjQyNjU=:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796990400&x-signature=WGU1xCgWTsho1ZuBNguVC%2Bt635I%3D",
-     "tag": 1
-    },
-    {
-     "title": "CEO ทะเลดองวัดด่านสำโรง",
-     "likes": 3,
-     "date": "2025-10-17",
-     "link": "https://www.lemon8-app.com/@baantalaydong/7562291103702843922?region=th",
-     "source": "Lemon8 · บาร์บี้บิวขายอะไร",
-     "image": "https://www.lemon8-app.com/seo/image?item_id=7562291103702843922&index=0&sign=3982405ee4ae27d68f260049ae5b9195",
-     "ck": 1,
-     "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/oMYZDBE3yPtayt0anAIlNBirKvAbEAm4QiAoP~tplv-sdweummd6v-text-logo-v1:QGJhYW50YWxheWRvbmc=:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796990400&x-signature=k6Np9o6VuTLt8oH9UMKjimAOyIs%3D",
      "tag": 1
     }
    ],
-   "reviewCount": 13,
+   "reviewCount": 15,
    "districtEn": "Mueang Samut Prakan",
    "district": "เมืองสมุทรปราการ",
    "entry": {
@@ -69243,6 +69410,26 @@
      "tag": 1
     },
     {
+     "title": "วัดสว่างอารมณ์ หลวงพ่อเเป๊ะ",
+     "likes": 17,
+     "date": "2025-10-12",
+     "link": "https://www.lemon8-app.com/@klungklung.com/7560248052024459796?region=th",
+     "source": "Lemon8 · ของขลัง online ออนไลน์",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7560248052024459796&index=0&sign=2973e6c4288ba86ae0d14c4364d2eca6",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "ลุยกัน6โมงเช้าถึงเที่ยงคืน จัดไปยาวๆ #วัดสว่างอารมณ์ #นครปฐม",
+     "likes": 17,
+     "date": "2025-01-27",
+     "link": "https://www.lemon8-app.com/@nakhonpathom.area/7464621220467786258?region=th",
+     "source": "Lemon8 · แถวนครปฐม",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7464621220467786258&index=0&sign=58c75adac085afe133b243508557ab38",
+     "ck": 1,
+     "tag": 1
+    },
+    {
      "title": "พิกัดสายมูอย่าได้พลาด!! วัดนี้เขาว่าสมหวังกันมาแล้วนับไม่ถ้วน🙏🏻 วัดสว่างอารมณ์ (แคแถว) หลวงพ่อแป๊ะ 📍 ที่อยู่ : 111 หมู่ที่ 4 ถนนเพชรเกษม ",
      "likes": 15,
      "date": "2026-02-10",
@@ -69252,31 +69439,9 @@
      "ck": 1,
      "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/o0qvdEiAhIYIAAlCy7A4AB4iBY9saPOIihpbL~tplv-sdweummd6v-text-logo-v1:QG91dGluZ2xlbnM=:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796990400&x-signature=979xlrNb%2Fdu0YLX%2FVkg9L9FeLfw%3D",
      "tag": 1
-    },
-    {
-     "title": "วัดสว่างอารมณ์เสริมดวงชะตาสุดปังขลังขลัง💰🙏✨",
-     "likes": 15,
-     "date": "2025-01-13",
-     "link": "https://www.lemon8-app.com/@klungklung.com/7459375442437489170?region=th",
-     "source": "Lemon8 · ของขลัง online ออนไลน์",
-     "image": "https://www.lemon8-app.com/seo/image?item_id=7459375442437489170&index=0&sign=db157ac4a1bb3d052f54a5e7d3c50d79",
-     "ck": 1,
-     "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/o0iUvefjQe3BnXaILAgQAAMGYfAFS8M3tgf8s1~tplv-sdweummd6v-text-logo-v1:QGtsdW5na2x1bmcuY29t:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796990400&x-signature=Vy0rCmKzivJJoSAaLCQsB1I1ZzI%3D",
-     "tag": 1
-    },
-    {
-     "title": "โรงเรียนวัดสว่างอารมณ์",
-     "likes": 15,
-     "date": "2025-08-05",
-     "link": "https://www.lemon8-app.com/@susmile25/7535008474812842497?region=th",
-     "source": "Lemon8 · Aisari  Smile",
-     "image": "https://www.lemon8-app.com/seo/image?item_id=7535008474812842497&index=0&sign=591378b59632e224881ded1b04bcd63e",
-     "ck": 1,
-     "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/o83Yuza4ARuLCiivl7MAJz1B5AkcbpEMAIPBG~tplv-sdweummd6v-text-logo-v1:QHN1c21pbGUyNQ==:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796990400&x-signature=npd8UdXcblBAh3m5BZYgiASd3AM%3D",
-     "tag": 1
     }
    ],
-   "reviewCount": 36,
+   "reviewCount": 40,
    "district": "องค์การบริหารส่วนตำบลคลองด่าน",
    "entry": {
     "free": true,
@@ -69906,6 +70071,16 @@
      "tag": 1
     },
     {
+     "title": "เตี๋ยวไก่ชามยักษ์ชาวบางบ่อ😱",
+     "likes": 2,
+     "date": "2024-10-30",
+     "link": "https://www.lemon8-app.com/@eatbuem/7431399675095433746?region=th",
+     "source": "Lemon8 · เบ๋เบิ๋มอีทบึ้ม",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7431399675095433746&index=0&sign=60d30fa97d4edb83c005b41e266a7155",
+     "ck": 1,
+     "tag": 1
+    },
+    {
      "title": "พ่อท่านเชื่องวัดบางบ่อ รัตนาราม #น้อยคนที่เคยเห็น",
      "likes": 1,
      "date": "2025-12-03",
@@ -69939,7 +70114,7 @@
      "tag": 1
     }
    ],
-   "reviewCount": 4,
+   "reviewCount": 5,
    "district": "องค์การบริหารส่วนตำบลบางบ่อ",
    "entry": {
     "free": true,
@@ -70026,6 +70201,16 @@
      "tag": 1
     },
     {
+     "title": "วัดเกาะแก้ว",
+     "likes": 7,
+     "date": "2025-07-04",
+     "link": "https://www.lemon8-app.com/@rungnapapronrungna/7523246955229987336?region=th",
+     "source": "Lemon8 · Rungna639",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7523246955229987336&index=0&sign=0b7b589b429a40106957b1a9fd74dee6",
+     "ck": 1,
+     "tag": 1
+    },
+    {
      "title": "วัดเกาะแก้ว อยุธยา",
      "likes": 3,
      "date": "2025-06-24",
@@ -70035,20 +70220,9 @@
      "ck": 1,
      "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/oAYnvCYIA13iBXpybVXVFAaNiAAnaiBZBEwAP~tplv-sdweummd6v-text-logo-v1:QHRhaXBhdGFp:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796990400&x-signature=DnK6C2vJkfbxoRpSwrbyB%2Fh8Q1A%3D",
      "tag": 1
-    },
-    {
-     "title": "วัดเกาะแก้ว",
-     "likes": 3,
-     "date": "2024-08-22",
-     "link": "https://www.lemon8-app.com/@momydiy/7405901698356675088?region=th",
-     "source": "Lemon8 · แม่ฟูลไทม์",
-     "image": "https://www.lemon8-app.com/seo/image?item_id=7405901698356675088&index=0&sign=4665eb6e1739abe65149f22cf52348a7",
-     "ck": 1,
-     "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/okAfwFtvE0ctZDw7INCBGpAeDVE9xmZQgACHEs~tplv-sdweummd6v-text-logo-v1:QG1vbXlkaXk=:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796990400&x-signature=%2F38Q87vd7H61sIBlDc5sNiADOc0%3D",
-     "tag": 1
     }
    ],
-   "reviewCount": 11,
+   "reviewCount": 12,
    "districtEn": "Bang Bo",
    "district": "บางบ่อ",
    "entry": {
@@ -70128,6 +70302,16 @@
      "tag": 1
     },
     {
+     "title": "ไหว้ขอพรพญาวานรแห่งวัดบางพลีน้อย",
+     "likes": 7,
+     "date": "2024-12-23",
+     "link": "https://www.lemon8-app.com/@aodaod1989/7451635551813517825?region=th",
+     "source": "Lemon8 · มีกัน ตลอดไป",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7451635551813517825&index=0&sign=5bbb2a4149fe20b09edfae83f4a200ca",
+     "ck": 1,
+     "tag": 1
+    },
+    {
      "title": "วัดบางพลีน้อย",
      "likes": 6,
      "date": "2026-04-12",
@@ -70139,7 +70323,7 @@
      "tag": 1
     }
    ],
-   "reviewCount": 4,
+   "reviewCount": 5,
    "districtEn": "Bang Bo",
    "district": "บางบ่อ",
    "entry": {
@@ -70867,9 +71051,19 @@
      "ck": 1,
      "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/ooBzAzaC72pieXi284IA4XEQYVgfty97ACXEOB~tplv-sdweummd6v-text-logo-v1:QGNob21wb282Ng==:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796990400&x-signature=wgPGCzAm5dQU0MBaynbcQpQ%2BVFc%3D",
      "tag": 1
+    },
+    {
+     "title": "เที่ยววัดไหว้พระทำบุญ",
+     "likes": 3,
+     "date": "2024-08-17",
+     "link": "https://www.lemon8-app.com/@kaningjisar/7404054362311623169?region=th",
+     "source": "Lemon8 · Jisar Kn",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7404054362311623169&index=0&sign=96611575fb6c52d5351119248d0df524",
+     "ck": 1,
+     "tag": 1
     }
    ],
-   "reviewCount": 2,
+   "reviewCount": 3,
    "districtEn": "Mueang Samut Sakhon",
    "district": "เมืองสมุทรสาคร",
    "entry": {
@@ -71342,7 +71536,7 @@
      "tag": 1
     }
    ],
-   "reviewCount": 9,
+   "reviewCount": 10,
    "districtEn": "Mueang Phrae",
    "district": "เมืองแพร่",
    "entry": {
@@ -71495,7 +71689,7 @@
      "tag": 1
     }
    ],
-   "reviewCount": 10,
+   "reviewCount": 12,
    "districtEn": "Amphawa",
    "district": "อัมพวา",
    "entry": {
@@ -71647,7 +71841,7 @@
      "tag": 1
     }
    ],
-   "reviewCount": 39,
+   "reviewCount": 47,
    "districtEn": "U Thong",
    "district": "อู่ทอง",
    "entry": {
@@ -71828,6 +72022,16 @@
      "tag": 1
     },
     {
+     "title": "ปราสาทสด๊กก๊อกธม",
+     "likes": 37,
+     "date": "2024-07-21",
+     "link": "https://www.lemon8-app.com/@kruammy/7394098435441312272?region=th",
+     "source": "Lemon8 · Mali’s Journey",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7394098435441312272&index=0&sign=a7e724b1e6bec8e533a0bc4a01c90f7e",
+     "ck": 1,
+     "tag": 1
+    },
+    {
      "title": "ปราสาทสด๊กก๊อกธม สระแก้ว 🌞 #ผีบ้ากับขาจร #ปราสาทสด๊กก๊อกธม #เที่ยวสระแก้ว #ปีใหม่2025",
      "likes": 35,
      "date": "2025-01-01",
@@ -71870,20 +72074,9 @@
      "ck": 1,
      "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/okUXQfzs2eBLOIABnqhExtCElAhgoEA9lyNZDA~tplv-sdweummd6v-text-logo-v1:QG5hdHRha2FuX25pbmc=:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796990400&x-signature=iRf9TQPi82kauZKSSN1Poe%2BiPZw%3D",
      "tag": 1
-    },
-    {
-     "title": "ปราสาทสด๊กก๊อกธม [ស្តុកកក់ធំ ]",
-     "likes": 15,
-     "date": "2025-02-04",
-     "link": "https://www.lemon8-app.com/@ratree.y01/7467521175745200656?region=th",
-     "source": "Lemon8 · levi's",
-     "image": "https://www.lemon8-app.com/seo/image?item_id=7467521175745200656&index=0&sign=6a563cedff3713216944c5bc79436cec",
-     "ck": 1,
-     "thumb": "https://p19-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/oApDseQeeIAAtAMY6ShLQFsIQCGAainf5AekzQ~tplv-sdweummd6v-text-logo-v1:QHJhdHJlZS55MDE=:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796990400&x-signature=D5IQ8lGllMTDfCoiW%2BXlZSTCXBM%3D",
-     "tag": 1
     }
    ],
-   "reviewCount": 24,
+   "reviewCount": 28,
    "districtEn": "Khok Sung",
    "district": "โคกสูง",
    "entry": {
@@ -72478,56 +72671,7 @@
    "reviewCount": 69,
    "districtEn": "Si Racha",
    "district": "ศรีราชา",
-   "nameEn": true,
-   "menuPrice": {
-    "min": 48,
-    "max": 348,
-    "items": [
-     {
-      "name": {
-       "th": "ท๊อฟฟี่เค้ก 2 ชิ้น",
-       "en": "Toffee Cake 2 pcs"
-      },
-      "price": 32
-     },
-     {
-      "name": {
-       "th": "ท๊อฟฟี่เค้ก 3 ชิ้น",
-       "en": "Toffee Cake 3 pcs"
-      },
-      "price": 48
-     },
-     {
-      "name": {
-       "th": "ท๊อฟฟี่เค้ก 4 ชิ้น",
-       "en": "Toffee Cake 4 pcs"
-      },
-      "price": 64
-     },
-     {
-      "name": {
-       "th": "ท๊อฟฟี่เค้ก 6 ชิ้น",
-       "en": "Toffee Cake 6 pcs"
-      },
-      "price": 90
-     },
-     {
-      "name": {
-       "th": "ท๊อฟฟี่เค้ก 15 ชิ้น",
-       "en": "Toffee Cake 15 pcs"
-      },
-      "price": 220
-     },
-     {
-      "name": {
-       "th": "ท๊อฟฟี่เค้ก 24 ชิ้น",
-       "en": "Toffee Cake 24 pcs"
-      },
-      "price": 348
-     }
-    ],
-    "src": "review"
-   }
+   "nameEn": true
   },
   {
    "id": "osm-n13098251133",
@@ -72714,7 +72858,42 @@
    ],
    "reviewCount": 12,
    "districtEn": "Bang Lamung",
-   "district": "สัตหีบ"
+   "district": "สัตหีบ",
+   "menuPrice": {
+    "min": 135,
+    "max": 140,
+    "items": [
+     {
+      "name": {
+       "th": "เค้กมะยงชิด",
+       "en": "Marian Plum Cake"
+      },
+      "price": 135
+     },
+     {
+      "name": {
+       "th": "ครัวซองต์อัลมอนด์",
+       "en": "Almond Croissant"
+      },
+      "price": 135
+     },
+     {
+      "name": {
+       "th": "คาปูชิโน่",
+       "en": "Cappuccino Coffee"
+      },
+      "price": 140
+     },
+     {
+      "name": {
+       "th": "อัลติเมท คอฟฟี่",
+       "en": "Ultimate Coffee"
+      },
+      "price": 140
+     }
+    ],
+    "src": "review"
+   }
   },
   {
    "id": "osm-n11610904259",
@@ -73162,7 +73341,7 @@
      "tag": 1
     }
    ],
-   "reviewCount": 54,
+   "reviewCount": 61,
    "districtEn": "Khao Kho",
    "district": "เขาค้อ",
    "nameEn": true
@@ -73266,6 +73445,16 @@
      "tag": 1
     },
     {
+     "title": "🍵🧋🍰 คาเฟ่ที่เค้กและเครื่องดื่มอร่อยมาก",
+     "likes": 9,
+     "date": "2025-01-26",
+     "link": "https://www.lemon8-app.com/@krumiw_wadee/7464366836004667922?region=th",
+     "source": "Lemon8 · Mmiw",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7464366836004667922&index=0&sign=aaa51f24e3a478685a5737e198edbf29",
+     "ck": 1,
+     "tag": 1
+    },
+    {
      "title": "The Roof by sangthai",
      "likes": 7,
      "date": "2025-02-10",
@@ -73275,20 +73464,9 @@
      "ck": 1,
      "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/oUWbdipPimhYhC6IlAACFkgAPnZBBW2SiElGA~tplv-sdweummd6v-text-logo-v1:QHNhaWZhaGgwMg==:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796990400&x-signature=I%2F1e1B29oHOx2FoLs2nGM1Qwe%2BY%3D",
      "tag": 1
-    },
-    {
-     "title": "The Roof by Sangthai",
-     "likes": 5,
-     "date": "2024-11-27",
-     "link": "https://www.lemon8-app.com/@phavikaa/7441859242891493889?region=th",
-     "source": "Lemon8 · ฟางที่ชอบไปคาเฟ่",
-     "image": "https://www.lemon8-app.com/seo/image?item_id=7441859242891493889&index=0&sign=c2ae2459b1bbf47fa3641587f12ab9df",
-     "ck": 1,
-     "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/oUIxBefDQEkitNn9Izm0BR4sGCHEEExAFAAyIg~tplv-sdweummd6v-text-logo-v1:QHBoYXZpa2Fh:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796990400&x-signature=SzVyCiO1isNIHfRyKrrsS9bSJL0%3D",
-     "tag": 1
     }
    ],
-   "reviewCount": 10,
+   "reviewCount": 11,
    "districtEn": "Thawat Buri",
    "district": "ธวัชบุรี",
    "thumb": "https://p19-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/2cc6d1c121ca4aeb9d55642fa5106e63~tplv-sdweummd6v-text-logo-v1:QGpubWF5eQ==:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796904000&x-signature=W8QYYgu4vjS8JsZQb448zT2abWQ%3D",
@@ -73357,8 +73535,8 @@
    },
    "districtEn": "Doem Bang Nang Buat",
    "district": "เดิมบางนางบวช",
-   "websiteDead": "https://coffeefarmcafe.business.site/",
-   "nameEn": true
+   "nameEn": true,
+   "websiteDead": "https://coffeefarmcafe.business.site/"
   },
   {
    "id": "osm-n13162425250",
@@ -73950,7 +74128,35 @@
    ],
    "reviewCount": 65,
    "districtEn": "Pathum Wan",
-   "district": "ปทุมวัน"
+   "district": "ปทุมวัน",
+   "menuPrice": {
+    "min": 100,
+    "max": 300,
+    "items": [
+     {
+      "name": {
+       "th": "หมูกรอบจานเล็ก",
+       "en": "Crispy Pork Belly (Small)"
+      },
+      "price": 100
+     },
+     {
+      "name": {
+       "th": "ยำกุนเชียง",
+       "en": "Chinese Sausage Salad"
+      },
+      "price": 100
+     },
+     {
+      "name": {
+       "th": "มาม่าโอ้โหหน้ารวม",
+       "en": "Mama Oho Mixed"
+      },
+      "price": 300
+     }
+    ],
+    "src": "review1"
+   }
   },
   {
    "id": "osm-w889455340",
@@ -75088,18 +75294,17 @@
      "tag": 1
     },
     {
-     "title": "กินกับข้าวสวยร้อนๆอร่อยมาก💗🌶️🥩",
-     "likes": 334,
-     "date": "2024-03-26",
-     "link": "https://www.lemon8-app.com/@wimwipha251934/7350666271802999297?region=th",
-     "source": "Lemon8 · วันนี้กินอะไรดี",
-     "image": "https://www.lemon8-app.com/seo/image?item_id=7350666271802999297&index=0&sign=af619e2e83226f5653a9dec422e15382",
+     "title": "รวม 10 เมนูกินคู่ข้าวต้ม🍚✨",
+     "likes": 394,
+     "date": "2024-09-15",
+     "link": "https://www.lemon8-app.com/@eathere.th/7414781751022633489?region=th",
+     "source": "Lemon8 · Eat Here",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7414781751022633489&index=0&sign=12690f2598181fdc0add7c3580648f4a",
      "ck": 1,
-     "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/osQDik0AiAAIUACAYbBB9KZjLPI4v0XqrEKQg~tplv-sdweummd6v-text-logo-v1:QHdpbXdpcGhhMjUxOTM0:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796990400&x-signature=hFsNttQTf11uHa6gvmx7KGu3YXY%3D",
      "tag": 1
     }
    ],
-   "reviewCount": 9,
+   "reviewCount": 11,
    "districtEn": "Mueang Nonthaburi",
    "district": "เมืองนนทบุรี",
    "nameEn": true
@@ -75388,8 +75593,8 @@
    },
    "districtEn": "Mueang Udon Thani",
    "district": "เมืองอุดรธานี",
-   "websiteDead": "https://primanis-indian-restaurant.business.site/",
-   "nameEn": true
+   "nameEn": true,
+   "websiteDead": "https://primanis-indian-restaurant.business.site/"
   },
   {
    "id": "osm-n13373337895",
@@ -75459,7 +75664,7 @@
    },
    "lat": 7.90218,
    "lng": 98.30085,
-   "website": "http://dada-yura.com/",
+   "website": "http://www.dada-yura.com/",
    "hours": "15:00-00:00 open; 23:00-00:00 \"No kitchen\"",
    "phone": "+66814152030",
    "cuisine": "russian;european;thai",
@@ -76146,9 +76351,9 @@
     "tiers": [
      {
       "who": {
-       "th": "บัตรเข้าชม (ไม่ทำกิจกรรม)",
-       "en": "Sightseeing Ticket (no activities)",
-       "zh": "观光票（不含活动）"
+       "th": "บัตรเข้าชม (ไม่สามารถทำกิจกรรมได้)",
+       "en": "Waterpark Admission Ticket (No activities)",
+       "zh": "门票（不可参与活动）"
       },
       "price": 400,
       "n": 1,
@@ -76159,8 +76364,8 @@
      {
       "who": {
        "th": "บัตรเฉพาะโซนสวนน้ำเด็ก",
-       "en": "Kids Zone Only Ticket",
-       "zh": "仅限儿童水上区门票"
+       "en": "Kids Water Park Zone Ticket",
+       "zh": "儿童水上乐园专区门票"
       },
       "price": 600,
       "n": 1,
@@ -76170,9 +76375,14 @@
      },
      {
       "who": {
-       "th": "เด็ก (ส่วนสูง 91-120 ซม.)",
-       "en": "Child (Height 91-120 cm)",
-       "zh": "儿童（身高 91-120 厘米）"
+       "th": "บัตรเครื่องเล่นสวนน้ำ",
+       "en": "Water Park Ticket",
+       "zh": "水上乐园门票"
+      },
+      "note": {
+       "th": "รวมฟรีซิปไลน์ 1 รอบ ไม่รวมเวคบอร์ด",
+       "en": "Includes 1 free zipline ride, excludes wakeboard",
+       "zh": "包含免费滑索1次，不含滑水"
       },
       "price": 1000,
       "n": 1,
@@ -76182,11 +76392,16 @@
      },
      {
       "who": {
-       "th": "บัตรสวนน้ำ (ฟรีซิปไลน์ 1 รอบ)",
-       "en": "Waterpark Ticket (Free 1 round zipline)",
-       "zh": "水上乐园门票（含1次滑索）"
+       "th": "บัตรสวนน้ำสำหรับเด็ก",
+       "en": "Water Park Ticket for Children",
+       "zh": "儿童水上乐园门票"
       },
-      "price": 1200,
+      "note": {
+       "th": "เด็กส่วนสูง 91-120 เซนติเมตร",
+       "en": "For children 91-120 cm in height",
+       "zh": "适用于身高 91-120 厘米的儿童"
+      },
+      "price": 1000,
       "n": 1,
       "ids": [
        "W"
@@ -76194,9 +76409,9 @@
      },
      {
       "who": {
-       "th": "บัตรสวนน้ำ + รถรับส่ง",
-       "en": "Waterpark Ticket + Transportation",
-       "zh": "水上乐园门票 + 接送"
+       "th": "บัตรสวนน้ำ (รวมบริการรับส่ง)",
+       "en": "Water Park Ticket with Transportation",
+       "zh": "水上乐园门票含接送"
       },
       "price": 1300,
       "n": 1,
@@ -76206,16 +76421,28 @@
      },
      {
       "who": {
-       "th": "บัตรสวนน้ำ + เวคบอร์ด 1 ชม.",
-       "en": "Waterpark + 1 hr Wakeboard",
-       "zh": "水上乐园 + 1小时滑水"
+       "th": "บัตรสวนน้ำ + เวคบอร์ด",
+       "en": "Water Park Ticket + Wake Board",
+       "zh": "水上乐园门票 + 滑水"
       },
       "note": {
-       "th": "รวมซิปไลน์ 1 รอบ",
-       "en": "Includes 1 round zipline",
-       "zh": "包含1次滑索"
+       "th": "รวมฟรีซิปไลน์ 1 รอบ + เวคบอร์ด 1 ชั่วโมง",
+       "en": "Includes 1 free zipline ride + 1 hour wakeboard",
+       "zh": "包含免费滑索1次 + 1小时滑水"
       },
       "price": 1650,
+      "n": 1,
+      "ids": [
+       "W"
+      ]
+     },
+     {
+      "who": {
+       "th": "บัตรสวนน้ำ + เวคบอร์ด (รวมบริการรับส่งรถแดง)",
+       "en": "Water Park Ticket + Wake Board with Transportation",
+       "zh": "水上乐园门票 + 滑水含双条车接送"
+      },
+      "price": 1950,
       "n": 1,
       "ids": [
        "W"
@@ -76510,7 +76737,7 @@
      "tag": 1
     }
    ],
-   "reviewCount": 19,
+   "reviewCount": 20,
    "entry": {
     "free": true,
     "src": "typical"
@@ -79153,18 +79380,17 @@
      "tag": 1
     },
     {
-     "title": "1 Day Trip🌿 : เมืองมรดกโลก (อุทยานประวัติศาสตร์สุโขทัย)",
-     "likes": 30,
-     "date": "2024-07-24",
-     "link": "https://www.lemon8-app.com/@nook29nc/7395130887102398993?region=th",
-     "source": "Lemon8 · Nook29nc",
-     "image": "https://www.lemon8-app.com/seo/image?item_id=7395130887102398993&index=0&sign=7888b9ec214ce1c2b8fec7171437513c",
+     "title": "📌 อุทยานประวัติศาสตร์สุโขทัย",
+     "likes": 37,
+     "date": "2026-10-12",
+     "link": "https://www.lemon8-app.com/@cholladavor/7695728388028940801?region=th",
+     "source": "Lemon8 · ⭐️Chollada🌙",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7695728388028940801&index=0&sign=422cfa0cee16a7625221a6a0a797a2cb",
      "ck": 1,
-     "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/ooBdAzGCxaSieyi2WVIAdmEQKygf8EygACUEQB~tplv-sdweummd6v-text-logo-v1:QG5vb2syOW5j:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796990400&x-signature=fXVEb7ply%2BxJj%2FipyPZtaVP86jE%3D",
      "tag": 1
     }
    ],
-   "reviewCount": 38,
+   "reviewCount": 49,
    "districtEn": "Mueang Sukhothai",
    "district": "เมืองสุโขทัย"
   },
@@ -79638,8 +79864,8 @@
    },
    "districtEn": "Bang Rak",
    "district": "บางรัก",
-   "websiteDead": "https://mewinesshop.com/",
-   "nameEn": true
+   "nameEn": true,
+   "websiteDead": "https://mewinesshop.com/"
   },
   {
    "id": "osm-n12640866389",
@@ -79718,8 +79944,8 @@
    },
    "districtEn": "Ko Lanta",
    "district": "เกาะลันตา",
-   "websiteDead": "http://lantaparklife.com/",
-   "nameEn": true
+   "nameEn": true,
+   "websiteDead": "http://lantaparklife.com/"
   },
   {
    "id": "osm-n2769486127",
@@ -80058,56 +80284,7 @@
    ],
    "reviewCount": 63,
    "districtEn": "Bang Sue",
-   "district": "บางซื่อ",
-   "menuPrice": {
-    "min": 89,
-    "max": 190,
-    "items": [
-     {
-      "name": {
-       "th": "ไข่ต้ม",
-       "en": "Boiled Egg"
-      },
-      "price": 25
-     },
-     {
-      "name": {
-       "th": "หมูตุ๋น (Kakuni)",
-       "en": "Kakuni Braised Pork"
-      },
-      "price": 89
-     },
-     {
-      "name": {
-       "th": "หมึกทาโกะวาซาบิ",
-       "en": "Tako Wasabi"
-      },
-      "price": 120
-     },
-     {
-      "name": {
-       "th": "Tan Tan Ramen",
-       "en": "Tan Tan Ramen"
-      },
-      "price": 160
-     },
-     {
-      "name": {
-       "th": "Black Garlic Ramen",
-       "en": "Black Garlic Ramen"
-      },
-      "price": 180
-     },
-     {
-      "name": {
-       "th": "Miso Ramen",
-       "en": "Miso Ramen"
-      },
-      "price": 190
-     }
-    ],
-    "src": "review"
-   }
+   "district": "บางซื่อ"
   },
   {
    "id": "osm-n10767862718",
@@ -80938,8 +81115,8 @@
    },
    "districtEn": "Mueang Chiang Mai",
    "district": "เมืองเชียงใหม่",
-   "websiteDead": "http://iberryhomemade.com/",
-   "nameEn": true
+   "nameEn": true,
+   "websiteDead": "http://iberryhomemade.com/"
   },
   {
    "id": "osm-n8987752967",
@@ -81448,56 +81625,7 @@
    ],
    "reviewCount": 19,
    "districtEn": "Mueang Chon Buri",
-   "district": "เมืองชลบุรี",
-   "menuPrice": {
-    "min": 48,
-    "max": 220,
-    "items": [
-     {
-      "name": {
-       "th": "ท๊อฟฟี่เค้ก 2 ชิ้น",
-       "en": "Toffee Cake 2 pcs"
-      },
-      "price": 32
-     },
-     {
-      "name": {
-       "th": "ท๊อฟฟี่เค้ก 3 ชิ้น",
-       "en": "Toffee Cake 3 pcs"
-      },
-      "price": 48
-     },
-     {
-      "name": {
-       "th": "ท๊อฟฟี่เค้ก 4 ชิ้น",
-       "en": "Toffee Cake 4 pcs"
-      },
-      "price": 64
-     },
-     {
-      "name": {
-       "th": "เค้กกล้วยหอม",
-       "en": "Banana Cake"
-      },
-      "price": 78
-     },
-     {
-      "name": {
-       "th": "พายสับปะรด",
-       "en": "Pineapple Pie"
-      },
-      "price": 108
-     },
-     {
-      "name": {
-       "th": "ท๊อฟฟี่เค้ก 15 ชิ้น",
-       "en": "Toffee Cake 15 pcs"
-      },
-      "price": 220
-     }
-    ],
-    "src": "review"
-   }
+   "district": "เมืองชลบุรี"
   },
   {
    "id": "osm-n13016511957",
@@ -81989,6 +82117,26 @@
      "tag": 1
     },
     {
+     "title": "ยมบาลใกล้ฉัน จัดไปวันละ 34 เม็ดไปเลย 💊🥴",
+     "likes": 1141,
+     "date": "2025-05-28",
+     "link": "https://www.lemon8-app.com/@rightnownownownow/7509474302568170001?region=th",
+     "source": "Lemon8 · rightnow🙃",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7509474302568170001&index=0&sign=f4185af31f65c23546f5d807c8ae2f31",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "ร้านทำเล็บเจลใกล้ฉัน✨💅🏼",
+     "likes": 973,
+     "date": "2025-05-15",
+     "link": "https://www.lemon8-app.com/@ahcarinxx/7504612940452987399?region=th",
+     "source": "Lemon8 · ◡̈ ナーラシ",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7504612940452987399&index=0&sign=1229056192fd3dcfb27896fab3cc5fe7",
+     "ck": 1,
+     "tag": 1
+    },
+    {
      "title": "ปอดใหม่ใกล้ฉัน🤣",
      "likes": 836,
      "date": "2025-02-21",
@@ -82009,31 +82157,9 @@
      "ck": 1,
      "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/oIjrfEDxC3DBhFten8HQ4AU9gEuGCzCIAAwtEU~tplv-sdweummd6v-text-logo-v1:QHNpc2hlcmUudGg=:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796990400&x-signature=jH%2BTyx5mj%2BCk7ZmBbPEji2MVX1Q%3D",
      "tag": 1
-    },
-    {
-     "title": "“ ทะเลสวยใกล้ฉัน 𓇼 ⋆.° 𓆉 𓆝 𓆡⋆.° 𓇼𓇼 ⋆｡˚",
-     "likes": 443,
-     "date": "2025-03-06",
-     "link": "https://www.lemon8-app.com/@ideersucha/7478675209395143176?region=th",
-     "source": "Lemon8 · Ideer Sucha",
-     "image": "https://www.lemon8-app.com/seo/image?item_id=7478675209395143176&index=0&sign=cbe21ee4bbcabd89d2f8b2d301ae9787",
-     "ck": 1,
-     "thumb": "https://p19-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/oEBYDqAHUu82lEYqPVIbZJiABmAXNoaliivAC~tplv-sdweummd6v-text-logo-v1:QGlkZWVyc3VjaGE=:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796990400&x-signature=9hAaV%2BP3VKgYUEzQHd6TJVyEH%2FI%3D",
-     "tag": 1
-    },
-    {
-     "title": "กับข้าวใกล้ฉัน",
-     "likes": 396,
-     "date": "2025-09-18",
-     "link": "https://www.lemon8-app.com/@pinrus.maysaluk/7551335216032252433?region=th",
-     "source": "Lemon8 · Thung.ngein18",
-     "image": "https://www.lemon8-app.com/seo/image?item_id=7551335216032252433&index=0&sign=e4191c588529bcf2f7fd054115b8b936",
-     "ck": 1,
-     "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/o0VTuqAJEEetOKAB7uo9LD5CyIM0Q0AfgEwFDt~tplv-sdweummd6v-text-logo-v1:QHBpbnJ1cy5tYXlzYWx1aw==:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796990400&x-signature=aD9APqPYAcB2TxGwTO9hUYoZqlE%3D",
-     "tag": 1
     }
    ],
-   "reviewCount": 48,
+   "reviewCount": 68,
    "districtEn": "Lam Luk Ka",
    "district": "ลำลูกกา"
   },
@@ -83428,28 +83554,28 @@
      {
       "name": {
        "th": "พุดดิ้งมะพร้าวนมสด",
-       "en": "Coconut Milk Pudding"
+       "en": "Fresh coconut milk pudding"
       },
       "price": 45
      },
      {
       "name": {
        "th": "หอยแครงลวก",
-       "en": "Scalded Cockles"
+       "en": "Blanched blood cockles"
       },
       "price": 200
      },
      {
       "name": {
        "th": "น้ำพริกไข่ปู",
-       "en": "Crab Egg Chili Paste"
+       "en": "Crab roe chili paste"
       },
       "price": 250
      },
      {
       "name": {
        "th": "ปลาหมึกผัดไข่เค็ม",
-       "en": "Stir-fried Squid with Salted Egg"
+       "en": "Stir-fried squid with salted egg"
       },
       "price": 280
      },
@@ -83463,7 +83589,7 @@
      {
       "name": {
        "th": "ปูไข่นึ่ง",
-       "en": "Steamed Egg Crab"
+       "en": "Steamed crab with roe"
       },
       "price": 1200
      }
@@ -83648,49 +83774,7 @@
    "reviewCount": 24,
    "districtEn": "Vadhana",
    "district": "วัฒนา",
-   "nameEn": true,
-   "menuPrice": {
-    "min": 180,
-    "max": 350,
-    "items": [
-     {
-      "name": {
-       "th": "ผัดข้าวปุ้นกากหมูใส่ไข่",
-       "en": "Stir-fried Rice Noodles with Pork Crackl"
-      },
-      "price": 180
-     },
-     {
-      "name": {
-       "th": "ตำฮ้อน",
-       "en": "Tam Hon"
-      },
-      "price": 250
-     },
-     {
-      "name": {
-       "th": "หมูสามชั้นแจ่วข้าวคั่ว",
-       "en": "Crispy Pork Belly with Roasted Rice Jaew"
-      },
-      "price": 280
-     },
-     {
-      "name": {
-       "th": "อ่อมเนื้อลาย",
-       "en": "Spicy Beef Shank Soup"
-      },
-      "price": 350
-     },
-     {
-      "name": {
-       "th": "ปลายอนย่าง",
-       "en": "Grilled Catfish"
-      },
-      "price": 350
-     }
-    ],
-    "src": "review"
-   }
+   "nameEn": true
   },
   {
    "id": "osm-n12645466745",
@@ -83974,8 +84058,8 @@
    "reviewCount": 4,
    "districtEn": "Phra Nakhon",
    "district": "พระนคร",
-   "websiteDead": "http://www.hkn.co.th/",
    "nameEn": true,
+   "websiteDead": "http://www.hkn.co.th/",
    "menuPrice": {
     "min": 60,
     "max": 90,
@@ -84116,49 +84200,7 @@
    "reviewCount": 48,
    "districtEn": "Vadhana",
    "district": "วัฒนา",
-   "websiteDead": "https://gold-curry-sukhumvit.business.site/",
-   "menuPrice": {
-    "min": 200,
-    "max": 300,
-    "items": [
-     {
-      "name": {
-       "th": "ข้าวแกงกะหรี่หมูทอด ไซส์ S",
-       "en": "Katsu Curry Rice (Size S)"
-      },
-      "price": 200
-     },
-     {
-      "name": {
-       "th": "แกงกะหรี่แฮมเบิร์กเนื้อ ไซส์ S",
-       "en": "Beef Hamburger Steak Curry (Size S)"
-      },
-      "price": 200
-     },
-     {
-      "name": {
-       "th": "Steak Kurobuta Curry Pork ไซส์ S",
-       "en": "Steak Kurobuta Curry Pork (Size S)"
-      },
-      "price": 240
-     },
-     {
-      "name": {
-       "th": "Kurobuta Katsu Curry Rice ไซส์ M",
-       "en": "Kurobuta Katsu Curry Rice (Size M)"
-      },
-      "price": 260
-     },
-     {
-      "name": {
-       "th": "Omelette Beef Steak Curry ไซส์ M",
-       "en": "Omelette Beef Steak Curry (Size M)"
-      },
-      "price": 300
-     }
-    ],
-    "src": "review"
-   }
+   "websiteDead": "https://gold-curry-sukhumvit.business.site/"
   },
   {
    "id": "osm-w1211921477",
@@ -84667,7 +84709,7 @@
     "items": [
      {
       "name": {
-       "th": "Mandarin Espresso",
+       "th": "แมนดาริน เอสเพรสโซ่",
        "en": "Mandarin Espresso"
       },
       "price": 168
@@ -84681,7 +84723,7 @@
      },
      {
       "name": {
-       "th": "Coconut Smoothie",
+       "th": "สมูทตี้มะพร้าว",
        "en": "Coconut Smoothie"
       },
       "price": 188
@@ -84814,7 +84856,7 @@
      {
       "name": {
        "th": "ทอดมันปลากราย",
-       "en": "Fried fish paste cakes"
+       "en": "Fried fish-paste patties"
       },
       "price": 150
      },
@@ -84828,7 +84870,7 @@
      {
       "name": {
        "th": "ต้มยำรวมมิตร",
-       "en": "Mixed seafood Tom Yum soup"
+       "en": "Tom Yum mixed seafood soup"
       },
       "price": 280
      },
@@ -85098,7 +85140,56 @@
    ],
    "reviewCount": 32,
    "districtEn": "Mueang Chiang Mai",
-   "district": "เมืองเชียงใหม่"
+   "district": "เมืองเชียงใหม่",
+   "menuPrice": {
+    "min": 195,
+    "max": 385,
+    "items": [
+     {
+      "name": {
+       "th": "ฟิชแอนด์ชิพส์",
+       "en": "Fish and Chips"
+      },
+      "price": 195
+     },
+     {
+      "name": {
+       "th": "ปอเปี๊ยะสดครีมชีสปู",
+       "en": "Fresh Spring Rolls with Crab Cream Chees"
+      },
+      "price": 195
+     },
+     {
+      "name": {
+       "th": "ปาร์ตี้จูสแจร์ - ฝรั่งและขึ้นฉ่าย",
+       "en": "Party Juice Jar - Guava & Celery"
+      },
+      "price": 235
+     },
+     {
+      "name": {
+       "th": "สเต็กไก่โอ้กะจู๋",
+       "en": "Ohkajhu's Chicken Steak"
+      },
+      "price": 295
+     },
+     {
+      "name": {
+       "th": "สเต็กไก่เสิร์ฟคู่ครีมซอสทรัฟเฟิล",
+       "en": "Grilled Baby Chicken Steak with Truffle "
+      },
+      "price": 325
+     },
+     {
+      "name": {
+       "th": "สปาเก็ตตี้ต้มยำปูกุ้ง",
+       "en": "Tom Yum Spaghetti with Shrimp and Crab"
+      },
+      "price": 325
+     }
+    ],
+    "src": "review"
+   }
   },
   {
    "id": "osm-n3251606161",
@@ -97470,6 +97561,16 @@
      "tag": 1
     },
     {
+     "title": "เดินทางไปตลาดร่มหุบ",
+     "likes": 129,
+     "date": "2023-08-14",
+     "link": "https://www.lemon8-app.com/@e.paeeap/7267185720882676225?region=th",
+     "source": "Lemon8 · I am Pupae 🦀",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7267185720882676225&index=0&sign=e3148f8ba85a194cbdb71dedd0e17130",
+     "ck": 1,
+     "tag": 1
+    },
+    {
      "title": "อยากเที่ยว ตลาดร่มหุบ (แม่กลอง) สมุทรสงคราม",
      "likes": 79,
      "date": "2024-01-02",
@@ -97501,27 +97602,18 @@
      "ck": 1,
      "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/ooHBAMoQdW2DCCRZgPQhrfEyF9EtGAzkeawLAI~tplv-sdweummd6v-text-logo-v1:QHRoZXBvcHNkdQ==:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796817600&x-signature=76YlAuPXIXdplZ1bsIxHRhr4ni0%3D",
      "tag": 1
-    },
-    {
-     "title": "ตลาดร่มหุบ📌",
-     "likes": 52,
-     "date": "2026-08-17",
-     "link": "https://www.lemon8-app.com/@somqn__/7674827088822551047?region=th",
-     "source": "Lemon8 · somyuzu🍊",
-     "image": "https://www.lemon8-app.com/seo/image?item_id=7674827088822551047&index=0&sign=01e77c0d212513db160706c1406a1d3e",
-     "ck": 1,
-     "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/oIcgDf8a9EJcQj7mTAqgFCMEIztnEAOcEBWAof~tplv-sdweummd6v-text-logo-v1:QHNvbXFuX18=:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=pIViVmbnJhcu5KOYmh%2BvvaNi%2Fbk%3D",
-     "tag": 1
     }
    ],
    "hot": 17.7,
    "trend": 10,
-   "reviewCount": 68,
+   "reviewCount": 74,
    "districtEn": "Mueang Samut Songkhram",
    "district": "เมืองสมุทรสงคราม",
+   "hours": "Mo-Su 06:00-19:00",
+   "hoursSrc": "review1",
    "entry": {
     "free": true,
-    "src": "typical"
+    "src": "review1"
    }
   },
   {
@@ -100830,28 +100922,7 @@
    "reviewCount": 11,
    "districtEn": "Bang Rak",
    "district": "บางรัก",
-   "nameEn": true,
-   "menuPrice": {
-    "min": 190,
-    "max": 450,
-    "items": [
-     {
-      "name": {
-       "th": "Espresso Tonic Cooler",
-       "en": "Espresso Tonic Cooler"
-      },
-      "price": 190
-     },
-     {
-      "name": {
-       "th": "Rhubarb & Cream",
-       "en": "Rhubarb & Cream"
-      },
-      "price": 450
-     }
-    ],
-    "src": "review"
-   }
+   "nameEn": true
   },
   {
    "id": "osm-n12640894703",
@@ -102208,8 +102279,8 @@
    "fetchedAt": "2026-11-23T04:06:15.574Z",
    "districtEn": "Vadhana",
    "district": "วัฒนา",
-   "websiteDead": "https://pranaafood.com/en",
-   "nameEn": true
+   "nameEn": true,
+   "websiteDead": "https://pranaafood.com/en"
   },
   {
    "id": "osm-n10705709305",
@@ -102700,7 +102771,35 @@
    ],
    "reviewCount": 36,
    "districtEn": "Sathon",
-   "district": "สาทร"
+   "district": "สาทร",
+   "menuPrice": {
+    "min": 100,
+    "max": 250,
+    "items": [
+     {
+      "name": {
+       "th": "Hot Americano",
+       "en": "Hot Americano"
+      },
+      "price": 100
+     },
+     {
+      "name": {
+       "th": "Iced Caffe Latte",
+       "en": "Iced Caffe Latte"
+      },
+      "price": 118
+     },
+     {
+      "name": {
+       "th": "เกร็ดหิมะ บัวลอยเผือกไข่เค็ม",
+       "en": "Bingsu Bua Loy"
+      },
+      "price": 250
+     }
+    ],
+    "src": "review1"
+   }
   },
   {
    "id": "osm-n13513865131",
@@ -103546,7 +103645,35 @@
    "reviewCount": 21,
    "districtEn": "Mae Taeng",
    "district": "แม่แตง",
-   "nameEn": true
+   "nameEn": true,
+   "menuPrice": {
+    "min": 60,
+    "max": 90,
+    "items": [
+     {
+      "name": {
+       "th": "Hot Coffee / Tea",
+       "en": "Hot Coffee / Tea"
+      },
+      "price": 60
+     },
+     {
+      "name": {
+       "th": "Iced Coffee / Tea",
+       "en": "Iced Coffee / Tea"
+      },
+      "price": 70
+     },
+     {
+      "name": {
+       "th": "Blended Drinks",
+       "en": "Blended Drinks"
+      },
+      "price": 90
+     }
+    ],
+    "src": "review1"
+   }
   },
   {
    "id": "osm-n7221644985",
@@ -103639,21 +103766,28 @@
     "items": [
      {
       "name": {
-       "th": "เอสเพรสโซ่",
+       "th": "Espresso",
        "en": "Espresso"
       },
       "price": 50
      },
      {
       "name": {
-       "th": "ชาไทย",
+       "th": "Americano",
+       "en": "Americano"
+      },
+      "price": 60
+     },
+     {
+      "name": {
+       "th": "Thai Tea",
        "en": "Thai Tea"
       },
       "price": 60
      },
      {
       "name": {
-       "th": "ชาเขียว",
+       "th": "Green Tea",
        "en": "Green Tea"
       },
       "price": 65
@@ -103823,28 +103957,7 @@
    ],
    "reviewCount": 5,
    "districtEn": "Mae Rim",
-   "district": "แม่ริม",
-   "menuPrice": {
-    "min": 80,
-    "max": 90,
-    "items": [
-     {
-      "name": {
-       "th": "ชานมไทย / โกโก้",
-       "en": "Thai Milk Tea / Cocoa"
-      },
-      "price": 80
-     },
-     {
-      "name": {
-       "th": "มัทฉะกรีนชา",
-       "en": "Matcha Green Tea"
-      },
-      "price": 90
-     }
-    ],
-    "src": "review1"
-   }
+   "district": "แม่ริม"
   },
   {
    "id": "osm-n9404139417",
@@ -104549,8 +104662,8 @@
    "fetchedAt": "2026-11-21T04:19:46.068Z",
    "districtEn": "Phanat Nikhom",
    "district": "พนัสนิคม",
-   "websiteDead": "http://www.kamolchanokcoffee.com/",
-   "nameEn": true
+   "nameEn": true,
+   "websiteDead": "http://www.kamolchanokcoffee.com/"
   },
   {
    "id": "osm-n1597614807",
@@ -105369,56 +105482,7 @@
    ],
    "reviewCount": 4,
    "districtEn": "Plai Phraya",
-   "district": "ปลายพระยา",
-   "menuPrice": {
-    "min": 65,
-    "max": 155,
-    "items": [
-     {
-      "name": {
-       "th": "น้ำดื่ม",
-       "en": "Drinking Water"
-      },
-      "price": 25
-     },
-     {
-      "name": {
-       "th": "บราวนี่",
-       "en": "Brownies"
-      },
-      "price": 65
-     },
-     {
-      "name": {
-       "th": "มิกซ์เบอร์รี่ครัมเบิ้ลเค้ก",
-       "en": "Mixed Berry Crumble Cake"
-      },
-      "price": 79
-     },
-     {
-      "name": {
-       "th": "สโนว์โรส",
-       "en": "Snowy Rose"
-      },
-      "price": 80
-     },
-     {
-      "name": {
-       "th": "เรดเวลเวทเค้ก",
-       "en": "Red Velvet Cake"
-      },
-      "price": 155
-     },
-     {
-      "name": {
-       "th": "มอคค่าอัลมอนด์",
-       "en": "Mocha Almond"
-      },
-      "price": 155
-     }
-    ],
-    "src": "review1"
-   }
+   "district": "ปลายพระยา"
   },
   {
    "id": "osm-n9387654817",
@@ -117186,14 +117250,14 @@
     "tiers": [
      {
       "who": {
-       "th": "เด็ก (ชาวต่างชาติ)",
-       "en": "Child (Foreigner)",
-       "zh": "儿童（外国游客）"
+       "th": "เด็ก",
+       "en": "Child",
+       "zh": "儿童"
       },
       "note": {
-       "th": "ส่วนสูงระหว่าง 91-130 ซม.",
-       "en": "Height between 91-130 cm",
-       "zh": "身高在91-130厘米之间"
+       "th": "ส่วนสูง 91 - 130 ซม.",
+       "en": "Height between 91 - 130 cm",
+       "zh": "身高91 - 130厘米"
       },
       "price": 320,
       "n": 1,
@@ -117203,14 +117267,14 @@
      },
      {
       "who": {
-       "th": "ผู้ใหญ่ (ชาวต่างชาติ)",
-       "en": "Adult (Foreigner)",
-       "zh": "成人（外国游客）"
+       "th": "ผู้ใหญ่",
+       "en": "Adult",
+       "zh": "成人"
       },
       "note": {
-       "th": "สำหรับผู้ที่มีส่วนสูงเกิน 131 ซม.",
-       "en": "For visitors over 131 cm tall",
-       "zh": "适用于身高131厘米以上者"
+       "th": "ส่วนสูงมากกว่า 131 ซม.",
+       "en": "Height over 131 cm",
+       "zh": "身高超过131厘米"
       },
       "price": 550,
       "n": 1,
@@ -117220,14 +117284,14 @@
      },
      {
       "who": {
-       "th": "เด็ก (ชาวไทย)",
-       "en": "Child (Thai)",
-       "zh": "儿童（泰国人）"
+       "th": "เด็ก (ราคาคนไทย)",
+       "en": "Child (Thai rate)",
+       "zh": "儿童（泰国人价）"
       },
       "note": {
-       "th": "ส่วนสูง 90-130 ซม.",
-       "en": "Height 90-130 cm",
-       "zh": "身高90-130厘米"
+       "th": "ส่วนสูง 90 - 130 ซม.",
+       "en": "Height 90 - 130 cm",
+       "zh": "身高90 - 130厘米"
       },
       "price": 150,
       "n": 2,
@@ -117239,19 +117303,19 @@
      },
      {
       "who": {
-       "th": "ผู้ใหญ่ (ชาวไทย)",
-       "en": "Adult (Thai)",
-       "zh": "成人（泰国人）"
+       "th": "ผู้ใหญ่ (ราคาคนไทย)",
+       "en": "Adult (Thai rate)",
+       "zh": "成人（泰国人价）"
       },
       "price": 250,
       "n": 6,
       "ids": [
        "L1",
        "L2",
+       "L3",
        "L4",
        "L5",
-       "L6",
-       "L3"
+       "L6"
       ],
       "rv": true
      }
@@ -119070,8 +119134,8 @@
    "fetchedAt": "2026-11-16T03:01:34.574Z",
    "districtEn": "Mae Wang",
    "district": "แม่วาง",
-   "websiteDead": "http://www.elephant-pride.com/",
-   "nameEn": true
+   "nameEn": true,
+   "websiteDead": "http://www.elephant-pride.com/"
   },
   {
    "id": "osm-n5794234254",
@@ -121089,8 +121153,8 @@
    "fetchedAt": "2026-11-23T04:06:15.567Z",
    "districtEn": "Pua",
    "district": "ปัว",
-   "websiteDead": "http://www.xn--12c7bnk1c3cc1a5o.com/",
-   "nameEn": true
+   "nameEn": true,
+   "websiteDead": "http://www.xn--12c7bnk1c3cc1a5o.com/"
   },
   {
    "id": "osm-n2118588464",
@@ -130453,42 +130517,7 @@
    ],
    "reviewCount": 56,
    "districtEn": "Sam Phran",
-   "district": "สามพราน",
-   "menuPrice": {
-    "min": 120,
-    "max": 150,
-    "items": [
-     {
-      "name": {
-       "th": "ช็อกโกแลตเย็น",
-       "en": "Iced chocolate"
-      },
-      "price": 120
-     },
-     {
-      "name": {
-       "th": "พายแอปเปิ้ล",
-       "en": "Apple pie"
-      },
-      "price": 135
-     },
-     {
-      "name": {
-       "th": "กาแฟ dirty",
-       "en": "Dirty coffee"
-      },
-      "price": 150
-     },
-     {
-      "name": {
-       "th": "บราวนี่",
-       "en": "Brownie"
-      },
-      "price": 150
-     }
-    ],
-    "src": "review"
-   }
+   "district": "สามพราน"
   },
   {
    "id": "osm-n8490837278",
@@ -141763,41 +141792,13 @@
      "tag": 1
     }
    ],
-   "entry": {
-    "tiers": [
-     {
-      "who": {
-       "th": "เด็ก (ชาวไทย)",
-       "en": "Child (Thai)",
-       "zh": "儿童（泰国人）"
-      },
-      "price": 10,
-      "n": 2,
-      "ids": [
-       "L1",
-       "L3"
-      ],
-      "rv": true
-     },
-     {
-      "who": {
-       "th": "ผู้ใหญ่ (ชาวไทย)",
-       "en": "Adult (Thai)",
-       "zh": "成人（泰国人）"
-      },
-      "price": 20,
-      "n": 2,
-      "ids": [
-       "L1",
-       "L3"
-      ],
-      "rv": true
-     }
-    ],
-    "src": "review"
-   },
    "hours": "08:00-18:00",
-   "hoursSrc": "typical"
+   "hoursSrc": "typical",
+   "entry": {
+    "thai": 40,
+    "foreign": 200,
+    "src": "typical"
+   }
   },
   {
    "id": "osm-r3283184",
@@ -142088,8 +142089,8 @@
     ],
     "src": "review1"
    },
-   "hours": "08:00-18:00",
-   "hoursSrc": "typical"
+   "hours": "Mo-Su 08:30-16:30",
+   "hoursSrc": "review1"
   },
   {
    "id": "osm-r3790891",
@@ -142442,27 +142443,13 @@
      "tag": 1
     }
    ],
-   "entry": {
-    "tiers": [
-     {
-      "who": {
-       "th": "ค่าเข้าอุทยานฯ",
-       "en": "Park Entrance Fee",
-       "zh": "国家公园门票"
-      },
-      "price": 60,
-      "n": 2,
-      "ids": [
-       "L6",
-       "L1"
-      ],
-      "rv": true
-     }
-    ],
-    "src": "review"
-   },
    "hours": "08:00-18:00",
-   "hoursSrc": "typical"
+   "hoursSrc": "typical",
+   "entry": {
+    "thai": 40,
+    "foreign": 200,
+    "src": "typical"
+   }
   },
   {
    "id": "osm-r5944551",
@@ -142837,71 +142824,64 @@
     "tiers": [
      {
       "who": {
-       "th": "ผู้ใหญ่ (ข้อมูลจากบางแหล่ง)",
-       "en": "Adult (alt source)",
-       "zh": "成人（部分来源）"
+       "th": "รถจักรยานยนต์",
+       "en": "Motorcycle",
+       "zh": "摩托车"
       },
       "price": 20,
       "n": 2,
       "ids": [
        "L4",
-       "L5"
-      ],
-      "rv": true
-     },
-     {
-      "who": {
-       "th": "เด็ก",
-       "en": "Child",
-       "zh": "儿童"
-      },
-      "price": 20,
-      "n": 2,
-      "ids": [
-       "L5",
-       "L4"
+       "L6"
       ],
       "rv": true
      },
      {
       "who": {
        "th": "รถยนต์ 4 ล้อ",
-       "en": "4-wheel vehicle",
+       "en": "4-wheel car",
        "zh": "四轮汽车"
       },
       "price": 30,
-      "n": 2,
+      "n": 3,
       "ids": [
        "L3",
-       "L4"
+       "L4",
+       "L6"
       ],
       "rv": true
      },
      {
       "who": {
-       "th": "ค่ากางเต็นท์ (ต่อคน/ต่อคืน)",
-       "en": "Camping fee (per person/night)",
-       "zh": "露营费（每人毎晚）"
+       "th": "ค่ากางเต็นท์",
+       "en": "Camping fee per person",
+       "zh": "每人露营费"
+      },
+      "note": {
+       "th": "ต่อคน/คืน",
+       "en": "per person/night",
+       "zh": "每人每晚"
       },
       "price": 30,
-      "n": 2,
+      "n": 3,
       "ids": [
        "L3",
-       "L4"
+       "L4",
+       "L6"
       ],
       "rv": true
      },
      {
       "who": {
-       "th": "ผู้ใหญ่",
-       "en": "Adult",
-       "zh": "成人"
+       "th": "ผู้เข้าชมทั่วไป",
+       "en": "Visitor",
+       "zh": "游客"
       },
       "price": 40,
       "n": 2,
       "ids": [
        "L3",
-       "L5"
+       "L4"
       ],
       "rv": true
      }
@@ -143034,8 +143014,8 @@
      "tag": 1
     }
    ],
-   "hours": "08:00-18:00",
-   "hoursSrc": "typical"
+   "hours": "08:30-16:30",
+   "hoursSrc": "review1"
   },
   {
    "id": "osm-r5964088",
@@ -143141,63 +143121,63 @@
     "tiers": [
      {
       "who": {
-       "th": "เด็ก (ชาวไทย)",
-       "en": "Child (Thai)",
-       "zh": "儿童（泰国人）"
+       "th": "เด็กชาวไทย",
+       "en": "Thai Child",
+       "zh": "泰国儿童"
       },
       "price": 10,
-      "n": 1,
+      "n": 2,
       "ids": [
-       "L5"
+       "L1",
+       "L6"
       ],
       "rv": true
      },
      {
       "who": {
-       "th": "ผู้ใหญ่ (ชาวไทย)",
-       "en": "Adult (Thai)",
-       "zh": "成人（泰国人）"
+       "th": "ผู้ใหญ่ชาวไทย",
+       "en": "Thai Adult",
+       "zh": "泰国成年人"
       },
       "price": 20,
+      "n": 2,
+      "ids": [
+       "L1",
+       "L6"
+      ],
+      "rv": true
+     },
+     {
+      "who": {
+       "th": "เด็กชาวต่างชาติ",
+       "en": "Foreign Child",
+       "zh": "外国儿童"
+      },
+      "price": 50,
       "n": 1,
       "ids": [
-       "L5"
+       "L1"
       ],
       "rv": true
      },
      {
       "who": {
-       "th": "ค่าเข้าอุทยาน",
-       "en": "Entry Fee",
-       "zh": "门票"
+       "th": "ผู้ใหญ่ชาวต่างชาติ",
+       "en": "Foreign Adult",
+       "zh": "外国成年人"
       },
-      "price": 30,
-      "n": 2,
+      "price": 100,
+      "n": 1,
       "ids": [
-       "L4",
-       "L5"
-      ],
-      "rv": true
-     },
-     {
-      "who": {
-       "th": "รถยนต์",
-       "en": "Car",
-       "zh": "汽车"
-      },
-      "price": 30,
-      "n": 2,
-      "ids": [
-       "L5",
-       "L4"
+       "L1"
       ],
       "rv": true
      }
     ],
     "src": "review"
    },
-   "hours": "08:00-18:00",
-   "hoursSrc": "typical"
+   "hours": "08:00-17:00",
+   "hoursSrc": "review1"
   },
   {
    "id": "osm-r6004034",
@@ -143325,13 +143305,12 @@
      "tag": 1
     }
    ],
-   "hours": "08:00-18:00",
-   "hoursSrc": "typical",
    "entry": {
-    "thai": 40,
-    "foreign": 200,
-    "src": "typical"
-   }
+    "free": true,
+    "src": "review1"
+   },
+   "hours": "08:00-18:00",
+   "hoursSrc": "typical"
   },
   {
    "id": "osm-r6009655",
@@ -143628,13 +143607,26 @@
      "tag": 1
     }
    ],
-   "hours": "08:00-18:00",
-   "hoursSrc": "typical",
    "entry": {
-    "thai": 40,
-    "foreign": 200,
-    "src": "typical"
-   }
+    "tiers": [
+     {
+      "who": {
+       "th": "บุคคลทั่วไป",
+       "en": "General visitor",
+       "zh": "普通游客"
+      },
+      "price": 80,
+      "n": 1,
+      "ids": [
+       "L3"
+      ],
+      "rv": true
+     }
+    ],
+    "src": "review1"
+   },
+   "hours": "08:00-18:00",
+   "hoursSrc": "typical"
   },
   {
    "id": "osm-r6011588",
@@ -144025,13 +144017,26 @@
      "tag": 1
     }
    ],
-   "hours": "08:00-18:00",
-   "hoursSrc": "typical",
    "entry": {
-    "thai": 40,
-    "foreign": 200,
-    "src": "typical"
-   }
+    "tiers": [
+     {
+      "who": {
+       "th": "บุคคลทั่วไป",
+       "en": "General visitor",
+       "zh": "普通游客"
+      },
+      "price": 40,
+      "n": 1,
+      "ids": [
+       "L4"
+      ],
+      "rv": true
+     }
+    ],
+    "src": "review1"
+   },
+   "hours": "08:00-18:00",
+   "hoursSrc": "typical"
   },
   {
    "id": "osm-r12088747",
@@ -144299,8 +144304,8 @@
      "tag": 1
     }
    ],
-   "hours": "Mo-Su 08:30-16:30",
-   "hoursSrc": "review1",
+   "hours": "08:00-18:00",
+   "hoursSrc": "typical",
    "entry": {
     "thai": 40,
     "foreign": 200,
@@ -144766,29 +144771,16 @@
     "tiers": [
      {
       "who": {
-       "th": "เด็ก (ชาวไทย)",
-       "en": "Child (Thai)",
-       "zh": "儿童（泰国籍）"
-      },
-      "price": 10,
-      "n": 1,
-      "ids": [
-       "L3"
-      ],
-      "rv": true
-     },
-     {
-      "who": {
-       "th": "ผู้ใหญ่ (ชาวไทย)",
-       "en": "Adult (Thai)",
-       "zh": "成人（泰国籍）"
+       "th": "ผู้ใหญ่",
+       "en": "Adult",
+       "zh": "成人"
       },
       "price": 20,
       "n": 3,
       "ids": [
        "L1",
        "L3",
-       "L6"
+       "L4"
       ],
       "rv": true
      },
@@ -144803,22 +144795,37 @@
       "ids": [
        "L1",
        "L3",
-       "L6"
+       "L4"
       ],
       "rv": true
      },
      {
       "who": {
-       "th": "เช่าเบาะนอน",
-       "en": "Sleeping mat rental",
-       "zh": "睡垫租赁"
+       "th": "หมอน",
+       "en": "Pillow",
+       "zh": "枕头"
       },
       "price": 20,
       "n": 3,
       "ids": [
+       "L4",
        "L1",
-       "L3",
-       "L6"
+       "L3"
+      ],
+      "rv": true
+     },
+     {
+      "who": {
+       "th": "ที่รองนอน",
+       "en": "Sleeping pad",
+       "zh": "睡垫"
+      },
+      "price": 20,
+      "n": 3,
+      "ids": [
+       "L4",
+       "L1",
+       "L3"
       ],
       "rv": true
      },
@@ -144826,36 +144833,44 @@
       "who": {
        "th": "รถยนต์",
        "en": "Car",
-       "zh": "小汽车"
+       "zh": "汽车"
       },
       "price": 30,
       "n": 4,
       "ids": [
        "L3",
-       "L6",
+       "L4",
        "L1",
-       "L2"
+       "L5"
       ],
       "rv": true
      },
      {
       "who": {
-       "th": "ค่ากางเต็นท์ (ต่อคน/คืน)",
-       "en": "Camping fee (per person/night)",
-       "zh": "露营费（每人/每晚）"
-      },
-      "note": {
-       "th": "กรณีนำเต็นท์มาเอง",
-       "en": "If bringing own tent",
-       "zh": "自带帐篷"
+       "th": "ค่ากางเต็นท์ (นำเต็นท์มาเอง)",
+       "en": "Camping ground fee (bring own tent)",
+       "zh": "露营地费（自带帐篷）"
       },
       "price": 30,
       "n": 4,
       "ids": [
        "L1",
        "L3",
-       "L2",
-       "L6"
+       "L4",
+       "L5"
+      ],
+      "rv": true
+     },
+     {
+      "who": {
+       "th": "ถ่าน",
+       "en": "Charcoal",
+       "zh": "木炭"
+      },
+      "price": 40,
+      "n": 1,
+      "ids": [
+       "L4"
       ],
       "rv": true
      }
@@ -144957,7 +144972,52 @@
       "ids": [
        "L2",
        "L3",
-       "L5"
+       "L4"
+      ],
+      "rv": true
+     },
+     {
+      "who": {
+       "th": "รถจักรยานยนต์",
+       "en": "Motorcycle",
+       "zh": "摩托车"
+      },
+      "price": 20,
+      "n": 3,
+      "ids": [
+       "L2",
+       "L3",
+       "L4"
+      ],
+      "rv": true
+     },
+     {
+      "who": {
+       "th": "รถยนต์",
+       "en": "Car",
+       "zh": "汽车"
+      },
+      "price": 30,
+      "n": 3,
+      "ids": [
+       "L2",
+       "L3",
+       "L4"
+      ],
+      "rv": true
+     },
+     {
+      "who": {
+       "th": "ค่ากางเต็นท์",
+       "en": "Camping ground fee",
+       "zh": "露营地费"
+      },
+      "price": 30,
+      "n": 3,
+      "ids": [
+       "L2",
+       "L3",
+       "L4"
       ],
       "rv": true
      }
@@ -146758,7 +146818,40 @@
    "reviewCount": 13,
    "districtEn": "Khao Suan Kwang",
    "district": "เขาสวนกวาง",
-   "websiteDead": "http://www.khaosuankwangzoo.com/"
+   "websiteDead": "http://www.khaosuankwangzoo.com/",
+   "entry": {
+    "tiers": [
+     {
+      "who": {
+       "th": "ผู้ใหญ่",
+       "en": "Adult",
+       "zh": "成人"
+      },
+      "price": 130,
+      "n": 3,
+      "ids": [
+       "L1",
+       "L2",
+       "L4"
+      ],
+      "rv": true
+     },
+     {
+      "who": {
+       "th": "ชาวต่างชาติ",
+       "en": "Foreigner",
+       "zh": "外国人"
+      },
+      "price": 350,
+      "n": 1,
+      "ids": [
+       "L4"
+      ],
+      "rv": true
+     }
+    ],
+    "src": "review"
+   }
   },
   {
    "id": "osm-n4397896153",
@@ -147695,6 +147788,16 @@
      "tag": 1
     },
     {
+     "title": "🐑🚜 ฟาร์มกึ่งสวนสนุก เพลินเดินไปครึ่งวัน ✨🪵 The scenery farm",
+     "likes": 813,
+     "date": "2023-07-03",
+     "link": "https://www.lemon8-app.com/@__nuynui__/7251635470860354050?region=th",
+     "source": "Lemon8 · 누 나 nuuuui",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7251635470860354050&index=0&sign=53eb66d3ee7125bc97026367da3afb3d",
+     "ck": 1,
+     "tag": 1
+    },
+    {
      "title": "📣 ซินเนอรี่ไม่ได้มีดีแค่🐑 มีโชว์ให้ดู มีกิจกรรมให้ทำและมุมถ่ายรูป📸",
      "likes": 771,
      "date": "2024-12-28",
@@ -147737,22 +147840,11 @@
      "ck": 1,
      "thumb": "https://p19-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/owJ5wAAdpABpyEEzCxiigOBG9MEt80AIEwf5Uf~tplv-sdweummd6v-text-logo-v1:QG5ubmlsYXdlaw==:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796904000&x-signature=%2BrPn5ku53Oi2cmu0g%2BiQzP1jhHg%3D",
      "tag": 1
-    },
-    {
-     "title": "The Scenery Vintage Farm🐑🌿",
-     "likes": 308,
-     "date": "2026-09-01",
-     "link": "https://www.lemon8-app.com/@princessnorfo/7680575496127513108?region=th",
-     "source": "Lemon8 · Khunfah🌻",
-     "image": "https://www.lemon8-app.com/seo/image?item_id=7680575496127513108&index=0&sign=428b70f706b8a08be9346e4b9cb30a99",
-     "ck": 1,
-     "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/oUEIyxdfIT12wOWJftcGeGY2fvTLAA4AAAHqQp~tplv-sdweummd6v-text-logo-v1:QHByaW5jZXNzbm9yZm8=:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796904000&x-signature=2%2FXBc4xY9x06yfFe8OH%2FwNNGaL4%3D",
-     "tag": 1
     }
    ],
    "hot": 11.3,
    "trend": 8,
-   "reviewCount": 50,
+   "reviewCount": 63,
    "districtEn": "Suan Phueng",
    "district": "สวนผึ้ง",
    "nameEn": true,
@@ -147767,54 +147859,86 @@
       "price": 50,
       "n": 1,
       "ids": [
-       "L5"
+       "L6"
       ],
       "rv": true
      },
      {
       "who": {
-       "th": "แพ็คเกจ M",
-       "en": "Package M",
-       "zh": "M套餐"
+       "th": "บัตรผ่านประตูเริ่มต้น",
+       "en": "General Admission (from)",
+       "zh": "基础门票（起）"
       },
-      "price": 150,
-      "n": 4,
-      "ids": [
-       "L1",
-       "L2",
-       "L3",
-       "L5"
-      ],
-      "rv": true
-     },
-     {
-      "who": {
-       "th": "แพ็คเกจ L",
-       "en": "Package L",
-       "zh": "L套餐"
-      },
-      "price": 200,
+      "price": 100,
       "n": 3,
       "ids": [
        "L2",
-       "L5",
+       "L3",
        "L4"
       ],
       "rv": true
      },
      {
       "who": {
-       "th": "แพ็คเกจ XL",
+       "th": "แพ็กเกจ M",
+       "en": "Package M",
+       "zh": "M套餐"
+      },
+      "note": {
+       "th": "รวมหญ้าป้อนแกะ เล่นเกม 2 ซุ้ม และส่วนลดเครื่องดื่ม",
+       "en": "Includes sheep grass, 2 booth games, drink discount",
+       "zh": "含喂羊草料、2项游戏及饮料折扣"
+      },
+      "price": 150,
+      "n": 5,
+      "ids": [
+       "L1",
+       "L3",
+       "L4",
+       "L6",
+       "L2"
+      ],
+      "rv": true
+     },
+     {
+      "who": {
+       "th": "แพ็กเกจ L",
+       "en": "Package L",
+       "zh": "L套餐"
+      },
+      "note": {
+       "th": "รวมหญ้าป้อนแกะ ชมโชว์ เล่นเกม 3 ซุ้ม และของทานเล่น",
+       "en": "Includes sheep grass, shows, 3 booth games, 1 snack",
+       "zh": "含喂羊草料、看表演、3项游戏及小吃"
+      },
+      "price": 200,
+      "n": 4,
+      "ids": [
+       "L3",
+       "L5",
+       "L6",
+       "L2"
+      ],
+      "rv": true
+     },
+     {
+      "who": {
+       "th": "แพ็กเกจ XL",
        "en": "Package XL",
        "zh": "XL套餐"
+      },
+      "note": {
+       "th": "รวมกิจกรรม นั่งม้าหมุนฟรี และชมโชว์",
+       "en": "Includes activities, free carousel ride, shows",
+       "zh": "含全套活动、免费旋转木马及看表演"
       },
       "price": 250,
       "n": 4,
       "ids": [
        "L1",
-       "L2",
        "L3",
-       "L5"
+       "L4",
+       "L6"
       ],
       "rv": true
      }
@@ -152273,8 +152397,8 @@
    "reviewCount": 25,
    "districtEn": "Cha-am",
    "district": "ชะอำ",
-   "websiteDead": "http://www.camel-republic.com/",
-   "nameEn": true
+   "nameEn": true,
+   "websiteDead": "http://www.camel-republic.com/"
   },
   {
    "id": "osm-n4104293689",
@@ -152887,9 +153011,13 @@
    ],
    "hot": 19.9,
    "trend": 10,
-   "reviewCount": 33,
+   "reviewCount": 34,
    "districtEn": "Sam Roi Yot",
-   "district": "สามร้อยยอด"
+   "district": "สามร้อยยอด",
+   "entry": {
+    "free": true,
+    "src": "review1"
+   }
   },
   {
    "id": "osm-n5334904426",
@@ -161450,7 +161578,7 @@
    ],
    "hot": 3.4,
    "trend": 2,
-   "reviewCount": 63,
+   "reviewCount": 73,
    "districtEn": "Aranyaprathet",
    "district": "อรัญประเทศ",
    "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/oYAY4AQBzCD6iP3iiAAo6EE4eBSVfi9gW2ICAX~tplv-sdweummd6v-text-logo-v1:QGxvdWtrYWV3LnZsb2c=:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796904000&x-signature=4qEf7PPJbDu8TN37ytfgmOPwulI%3D",
@@ -202471,7 +202599,7 @@
      "tag": 1
     }
    ],
-   "reviewCount": 35,
+   "reviewCount": 38,
    "districtEn": "Bo Kluea",
    "district": "บ่อเกลือ"
   },
@@ -212641,6 +212769,16 @@
      "tag": 1
     },
     {
+     "title": "ต่อเติมหลังบ้านให้เหมือนมี Cafe ส่วนตัว",
+     "likes": 1243,
+     "date": "2023-12-06",
+     "link": "https://www.lemon8-app.com/@krishnapongchanvi/7309476693104771585?region=th",
+     "source": "Lemon8 · Bauhaus",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7309476693104771585&index=0&sign=cb5f6eed12009f234a487bc5ae7fdcc5",
+     "ck": 1,
+     "tag": 1
+    },
+    {
      "title": "Home Cafe🐰🎀💘",
      "likes": 939,
      "date": "2025-09-13",
@@ -212672,22 +212810,11 @@
      "ck": 1,
      "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/oYvCxEP2K5AAAR8BBYAIHik5JrPH9ZEbJcUBi~tplv-sdweummd6v-text-logo-v1:QG1hbWVhdzczMQ==:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796904000&x-signature=n9q%2Be5U3%2BTzg%2B2KEbnF3AfVlxvE%3D",
      "tag": 1
-    },
-    {
-     "title": "✨แต่งบ้านให้เป็น Home Cafe โฮมคาเฟ่🥨🪑🪟🧸🧋🪞🚪",
-     "likes": 785,
-     "date": "2022-09-08",
-     "link": "https://www.lemon8-app.com/@narawansingharana/7140927498841358850?region=th",
-     "source": "Lemon8 · ✿Muwhan✿",
-     "image": "https://www.lemon8-app.com/seo/image?item_id=7140927498841358850&index=0&sign=7992ed656eba528f6407f5b2ae436630",
-     "ck": 1,
-     "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/fe196a22a66a4801aa3892af1aa40f00~tplv-sdweummd6v-text-logo-v1:QG5hcmF3YW5zaW5naGFyYW5h:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796904000&x-signature=FwS0WIZj1qRrUwRc69AC46oyEDU%3D",
-     "tag": 1
     }
    ],
    "hot": 8.2,
    "trend": 4,
-   "reviewCount": 52,
+   "reviewCount": 69,
    "districtEn": "Wang Saphung",
    "district": "วังสะพุง"
   },
@@ -213264,7 +213391,7 @@
    ],
    "hot": 92.8,
    "trend": 38,
-   "reviewCount": 48,
+   "reviewCount": 58,
    "districtEn": "Mueang Pattani",
    "district": "เมืองปัตตานี"
   },
@@ -214538,49 +214665,7 @@
    "hot": 3.9,
    "trend": 3,
    "districtEn": "Ban Tak",
-   "district": "บ้านตาก",
-   "menuPrice": {
-    "min": 50,
-    "max": 79,
-    "items": [
-     {
-      "name": {
-       "th": "นมสดคาราเมล",
-       "en": "Caramel fresh milk"
-      },
-      "price": 50
-     },
-     {
-      "name": {
-       "th": "อิตาเลアンโซดา / โซดา",
-       "en": "Soda"
-      },
-      "price": 50
-     },
-     {
-      "name": {
-       "th": "โกโก้สตรอเบอร์รี่",
-       "en": "Strawberry cocoa"
-      },
-      "price": 60
-     },
-     {
-      "name": {
-       "th": "ช็อกโกแลตปั่น",
-       "en": "Cocoa frappe"
-      },
-      "price": 79
-     },
-     {
-      "name": {
-       "th": "โกโก้บานาน่าปั่น",
-       "en": "Cocoa banana frappe"
-      },
-      "price": 79
-     }
-    ],
-    "src": "review1"
-   }
+   "district": "บ้านตาก"
   },
   {
    "id": "osm-w759799775",
@@ -296038,7 +296123,7 @@
    ],
    "hot": 6.3,
    "trend": 4,
-   "reviewCount": 41
+   "reviewCount": 47
   },
   {
    "id": "osm-n13966070972",
@@ -300011,6 +300096,16 @@
      "tag": 1
     },
     {
+     "title": "คาเฟ่นครศรีฯ ✅😍",
+     "likes": 123,
+     "date": "2025-07-03",
+     "link": "https://www.lemon8-app.com/@sutasineeii/7522914339142484488?region=th",
+     "source": "Lemon8 · BABABOOM🪞",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7522914339142484488&index=0&sign=bb8f2690f9213c4747886fb910c36c42",
+     "ck": 1,
+     "tag": 1
+    },
+    {
      "title": "คาเฟ่เปิดใหม่นครศรีฯ : Once Day🍃",
      "likes": 96,
      "date": "2024-07-29",
@@ -300020,22 +300115,11 @@
      "ck": 1,
      "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/ocB0ZPYAIiqPAYCDtcy9AnPkBAKbEsPjuVE4i~tplv-sdweummd6v-text-logo-v1:QGdhbXNyaW1vb2s=:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796904000&x-signature=INBCk5bsDlSoWNTKj%2BIaLU4wyUU%3D",
      "tag": 1
-    },
-    {
-     "title": "เที่ยวนครศรี! ไม่มาไม่ได้จริงๆ",
-     "likes": 87,
-     "date": "2024-08-20",
-     "link": "https://www.lemon8-app.com/@todays_activity/7405267805093921296?region=th",
-     "source": "Lemon8 · Today’sActivity",
-     "image": "https://www.lemon8-app.com/seo/image?item_id=7405267805093921296&index=0&sign=20aac9d52dba9cba8b48c7d9307cac6d",
-     "ck": 1,
-     "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/okmDEEL9EDEmFgAAvyjCfFomqBQiJIDftMxTmA~tplv-sdweummd6v-text-logo-v1:QHRvZGF5c19hY3Rpdml0eQ==:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796904000&x-signature=MI93moS7Ql8hO6gOFdFf0%2FMIxec%3D",
-     "tag": 1
     }
    ],
    "hot": 23.4,
    "trend": 13,
-   "reviewCount": 16
+   "reviewCount": 22
   },
   {
    "id": "osm-n2334076127",
