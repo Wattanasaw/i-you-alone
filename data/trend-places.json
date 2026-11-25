@@ -4054,93 +4054,96 @@
      "price": 10,
      "n": 1,
      "ids": [
-      "L1"
+      "L2"
      ],
      "rv": true
     },
     {
      "who": {
-      "th": "ค่าจอดรถ",
-      "en": "Parking fee",
-      "zh": "停车费"
+      "th": "เด็ก (คนไทย)",
+      "en": "Child (Thai)",
+      "zh": "儿童（泰国人）"
      },
-     "price": 20,
-     "n": 2,
-     "ids": [
-      "L1",
-      "L6"
-     ],
-     "rv": true
-    },
-    {
-     "who": {
-      "th": "เด็ก (เล่นน้ำ + ห้องน้ำ)",
-      "en": "Child (Swimming + Restroom)",
-      "zh": "儿童（戏水+洗手间）"
+     "note": {
+      "th": "ค่าเข้าเล่นน้ำและค่าห้องน้ำ",
+      "en": "Entry for swimming and toilet fee",
+      "zh": "包含游泳和洗手间费用"
      },
      "price": 30,
      "n": 2,
      "ids": [
-      "L1",
-      "L6"
+      "L2",
+      "L1"
      ],
      "rv": true
     },
     {
      "who": {
-      "th": "ผู้ใหญ่ (เล่นน้ำ + ห้องน้ำ)",
-      "en": "Adult (Swimming + Restroom)",
-      "zh": "成人（戏水+洗手间）"
+      "th": "ผู้ใหญ่ (คนไทย)",
+      "en": "Adult (Thai)",
+      "zh": "成人（泰国人）"
+     },
+     "note": {
+      "th": "ค่าเข้าเล่นน้ำและค่าห้องน้ำ",
+      "en": "Entry for swimming and toilet fee",
+      "zh": "包含游泳和洗手间费用"
      },
      "price": 50,
-     "n": 3,
+     "n": 2,
      "ids": [
-      "L1",
-      "L4",
-      "L6"
+      "L2",
+      "L5"
      ],
      "rv": true
     },
     {
      "who": {
-      "th": "เด็ก (เล่นน้ำ + พายเรือ + ห้องน้ำ)",
-      "en": "Child (Swimming + Kayaking + Restroom)",
-      "zh": "儿童（戏水+划船+洗手间）"
+      "th": "แพ็กเกจเด็ก (เข้าชม+พายเรือ)",
+      "en": "Child Package (Entry+Paddling)",
+      "zh": "儿童套餐（入场+划船）"
+     },
+     "note": {
+      "th": "รวมค่าห้องน้ำแล้ว",
+      "en": "Toilet fee included",
+      "zh": "包含洗手间费用"
      },
      "price": 50,
-     "n": 3,
+     "n": 2,
      "ids": [
-      "L1",
-      "L4",
-      "L6"
+      "L2",
+      "L5"
      ],
      "rv": true
     },
     {
      "who": {
-      "th": "จ้างคนพายเรือเพิ่ม",
-      "en": "Hire boat rower",
-      "zh": "雇佣划船人员"
+      "th": "ค่าจ้างคนพายเรือเพิ่ม",
+      "en": "Additional rowing service",
+      "zh": "额外代划船服务"
      },
      "price": 50,
-     "n": 3,
+     "n": 2,
      "ids": [
-      "L1",
-      "L4",
-      "L6"
+      "L2",
+      "L5"
      ],
      "rv": true
     },
     {
      "who": {
-      "th": "ผู้ใหญ่ (เล่นน้ำ + พายเรือ + ห้องน้ำ)",
-      "en": "Adult (Swimming + Kayaking + Restroom)",
-      "zh": "成人（戏水+划船+洗手间）"
+      "th": "แพ็กเกจผู้ใหญ่ (เข้าชม+พายเรือ)",
+      "en": "Adult Package (Entry+Paddling)",
+      "zh": "成人套餐（入场+划船）"
+     },
+     "note": {
+      "th": "รวมค่าห้องน้ำแล้ว",
+      "en": "Toilet fee included",
+      "zh": "包含洗手间费用"
      },
      "price": 70,
      "n": 1,
      "ids": [
-      "L1"
+      "L2"
      ],
      "rv": true
     },
@@ -4150,10 +4153,15 @@
       "en": "Foreigner",
       "zh": "外国人"
      },
+     "note": {
+      "th": "ราคาเดียวสำหรับทุกวัย",
+      "en": "Flat rate for all ages",
+      "zh": "全年龄统一票价"
+     },
      "price": 150,
      "n": 1,
      "ids": [
-      "L1"
+      "L2"
      ],
      "rv": true
     }
@@ -13320,12 +13328,12 @@
   "fetchedAt": "2026-11-24T08:23:54.542Z",
   "reviewCount": 59,
   "district": "ลำลูกกา",
-  "hours": "08:00-17:00",
-  "hoursSrc": "typical",
   "entry": {
    "free": true,
-   "src": "typical"
-  }
+   "src": "review1"
+  },
+  "hours": "08:00-17:00",
+  "hoursSrc": "typical"
  },
  {
   "id": "l8-22535797291380764",
@@ -14050,8 +14058,12 @@
   "reviewCount": 46,
   "districtEn": "Si Racha",
   "district": "ศรีราชา",
-  "hours": "Mo-Su 06:00-09:00; Sa off",
-  "hoursSrc": "review"
+  "hours": "Mo-Fr 06:00-09:00, 16:00-19:00; Sa-Su 06:00-19:00",
+  "hoursSrc": "review",
+  "entry": {
+   "free": true,
+   "src": "review"
+  }
  },
  {
   "id": "l8-22535797340049777",
@@ -14559,8 +14571,8 @@
   "reviewCount": 65,
   "districtEn": "Mae Tha",
   "district": "แม่ทะ",
-  "hours": "Mo,Tu,Th-Su 06:00-16:30",
-  "hoursSrc": "review",
+  "hours": "Mo,Tu,Th-Su 06:00-16:30; We off",
+  "hoursSrc": "review1",
   "entry": {
    "free": true,
    "src": "typical"
@@ -18099,7 +18111,13 @@
   "fetchedAt": "2026-11-24T08:23:52.077Z",
   "reviewCount": 61,
   "districtEn": "Mueang Nakhon Nayok",
-  "district": "เมืองนครนายก"
+  "district": "เมืองนครนายก",
+  "hours": "Mo-Su 07:00-17:00",
+  "hoursSrc": "review",
+  "entry": {
+   "free": true,
+   "src": "review1"
+  }
  },
  {
   "id": "l8-22535865226725552",
@@ -27010,7 +27028,7 @@
     {
      "name": {
       "th": "ขนมจีนน้ำเงี้ยว",
-      "en": "Khanom Jeen Nam Ngiao"
+      "en": "Khanom Chin Nam Ngiao"
      },
      "price": 79
     }
