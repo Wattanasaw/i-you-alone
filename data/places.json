@@ -20593,7 +20593,7 @@
      "tag": 1
     }
    ],
-   "reviewCount": 80,
+   "reviewCount": 91,
    "districtEn": "Mueang Sing Buri",
    "district": "เมืองสิงห์บุรี"
   },
@@ -74717,8 +74717,8 @@
    },
    "districtEn": "Doem Bang Nang Buat",
    "district": "เดิมบางนางบวช",
-   "websiteDead": "https://coffeefarmcafe.business.site/",
-   "nameEn": true
+   "nameEn": true,
+   "websiteDead": "https://coffeefarmcafe.business.site/"
   },
   {
    "id": "osm-n13162425250",
@@ -76569,8 +76569,8 @@
    "fetchedAt": "2026-11-24T07:13:33.190Z",
    "districtEn": "Mueang Udon Thani",
    "district": "เมืองอุดรธานี",
-   "websiteDead": "https://primanis-indian-restaurant.business.site/",
-   "nameEn": true
+   "nameEn": true,
+   "websiteDead": "https://primanis-indian-restaurant.business.site/"
   },
   {
    "id": "osm-n13373337895",
@@ -80633,8 +80633,8 @@
    "fetchedAt": "2026-11-22T03:26:05.886Z",
    "districtEn": "Bang Rak",
    "district": "บางรัก",
-   "websiteDead": "https://mewinesshop.com/",
-   "nameEn": true
+   "nameEn": true,
+   "websiteDead": "https://mewinesshop.com/"
   },
   {
    "id": "osm-n12640866389",
@@ -80701,8 +80701,8 @@
    "fetchedAt": "2026-11-22T03:26:05.887Z",
    "districtEn": "Ko Lanta",
    "district": "เกาะลันตา",
-   "websiteDead": "http://lantaparklife.com/",
-   "nameEn": true
+   "nameEn": true,
+   "websiteDead": "http://lantaparklife.com/"
   },
   {
    "id": "osm-n2769486127",
@@ -81728,8 +81728,8 @@
    "fetchedAt": "2026-11-21T04:19:46.067Z",
    "districtEn": "Mueang Chiang Mai",
    "district": "เมืองเชียงใหม่",
-   "websiteDead": "http://iberryhomemade.com/",
-   "nameEn": true
+   "nameEn": true,
+   "websiteDead": "http://iberryhomemade.com/"
   },
   {
    "id": "osm-n8987752967",
@@ -84643,8 +84643,8 @@
    "reviewCount": 4,
    "districtEn": "Phra Nakhon",
    "district": "พระนคร",
-   "websiteDead": "http://www.hkn.co.th/",
    "nameEn": true,
+   "websiteDead": "http://www.hkn.co.th/",
    "menuPrice": {
     "min": 60,
     "max": 90,
@@ -102754,8 +102754,8 @@
    "fetchedAt": "2026-11-23T04:06:15.574Z",
    "districtEn": "Vadhana",
    "district": "วัฒนา",
-   "websiteDead": "https://pranaafood.com/en",
-   "nameEn": true
+   "nameEn": true,
+   "websiteDead": "https://pranaafood.com/en"
   },
   {
    "id": "osm-n10705709305",
@@ -105171,8 +105171,8 @@
    "fetchedAt": "2026-11-21T04:19:46.068Z",
    "districtEn": "Phanat Nikhom",
    "district": "พนัสนิคม",
-   "websiteDead": "http://www.kamolchanokcoffee.com/",
-   "nameEn": true
+   "nameEn": true,
+   "websiteDead": "http://www.kamolchanokcoffee.com/"
   },
   {
    "id": "osm-n1597614807",
@@ -119451,8 +119451,8 @@
    "fetchedAt": "2026-11-16T03:01:34.574Z",
    "districtEn": "Mae Wang",
    "district": "แม่วาง",
-   "websiteDead": "http://www.elephant-pride.com/",
-   "nameEn": true
+   "nameEn": true,
+   "websiteDead": "http://www.elephant-pride.com/"
   },
   {
    "id": "osm-n5794234254",
@@ -121492,8 +121492,8 @@
    "fetchedAt": "2026-11-23T04:06:15.567Z",
    "districtEn": "Pua",
    "district": "ปัว",
-   "websiteDead": "http://www.xn--12c7bnk1c3cc1a5o.com/",
-   "nameEn": true
+   "nameEn": true,
+   "websiteDead": "http://www.xn--12c7bnk1c3cc1a5o.com/"
   },
   {
    "id": "osm-n2118588464",
@@ -152811,8 +152811,8 @@
    "reviewCount": 29,
    "districtEn": "Cha-am",
    "district": "ชะอำ",
-   "websiteDead": "http://www.camel-republic.com/",
    "nameEn": true,
+   "websiteDead": "http://www.camel-republic.com/",
    "entry": {
     "tiers": [
      {
@@ -178012,7 +178012,7 @@
      "tag": 1
     }
    ],
-   "reviewCount": 28,
+   "reviewCount": 30,
    "districtEn": "Khlong Toei",
    "district": "คลองเตย"
   },
@@ -178120,7 +178120,7 @@
      "tag": 1
     }
    ],
-   "reviewCount": 46,
+   "reviewCount": 58,
    "districtEn": "Sanam Chai Khet",
    "district": "สนามชัยเขต"
   },
@@ -178293,6 +178293,16 @@
      "tag": 1
     },
     {
+     "title": "เนินนางพญา จุดชมพระอาทิตย์ตกที่สวยที่สุดในจันทบุรี",
+     "likes": 50,
+     "date": "2022-04-12",
+     "link": "https://www.lemon8-app.com/@raochobpapthai/7085670911189205505?region=th",
+     "source": "Lemon8 · Raochobpapthai",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7085670911189205505&index=0&sign=72848e1cdc5528adbb2e19803c6cdf13",
+     "ck": 1,
+     "tag": 1
+    },
+    {
      "title": "จุดชมวิวเนินนางพญา จ.จันทบุรี",
      "likes": 33,
      "date": "2023-12-05",
@@ -178302,20 +178312,9 @@
      "ck": 1,
      "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/oQ3JxEEa4mDAbTAQePAhFvuDfrgABKI71eELdr~tplv-sdweummd6v-text-logo-v1:QG14d3psbA==:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1797249600&x-signature=EkaO5htdP91k%2FXICWx2Q%2FJ3Qp%2B4%3D",
      "tag": 1
-    },
-    {
-     "title": "ไปจันทบุรีทั้งที ไม่แวะจุดชมวิวเนินนางพญาได้ยังไง‼️",
-     "likes": 22,
-     "date": "2023-07-18",
-     "link": "https://www.lemon8-app.com/@dancesdayoff/7257087191480877569?region=th",
-     "source": "Lemon8 · Dance’s Day off",
-     "image": "https://www.lemon8-app.com/seo/image?item_id=7257087191480877569&index=0&sign=c2e9a07b43e8ec830f1677a0b059bd15",
-     "ck": 1,
-     "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/oQtCueBpAeKbCdtM4kaXEGQ2MAE9IANWnlWsDg~tplv-sdweummd6v-text-logo-v1:QGRhbmNlc2RheW9mZg==:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1797249600&x-signature=WOCVost0VXQcUSV2%2BjZhw23AwHA%3D",
-     "tag": 1
     }
    ],
-   "reviewCount": 45,
+   "reviewCount": 50,
    "districtEn": "Na Yai Am",
    "district": "นายายอาม",
    "entry": {
@@ -178347,6 +178346,16 @@
      "image": "https://www.lemon8-app.com/seo/image?item_id=7113085361395417602&index=0&sign=f3f6ba4b2324938adbf600b39e473046",
      "ck": 1,
      "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/d4c219c251f245a98b7acc5252c475aa~tplv-sdweummd6v-text-logo-v1:QGRla2NoYWlwZWVt:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1797249600&x-signature=ZQHIUr65EMXsJTgHSgn3gCrjuBI%3D",
+     "tag": 1
+    },
+    {
+     "title": "ปราสาทเก่าแก่อายุกว่าพันปี หินสีชมพูสวยมาก",
+     "likes": 43,
+     "date": "2023-02-10",
+     "link": "https://www.lemon8-app.com/@eatoutgoround9/7198591516082766337?region=th",
+     "source": "Lemon8 · Eatoutgoround",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7198591516082766337&index=0&sign=4bb7b7dd1b8d923d5e454ee806f021ae",
+     "ck": 1,
      "tag": 1
     },
     {
@@ -178392,62 +178401,37 @@
      "ck": 1,
      "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/oYNlEQNeznEXOXAOATeEBtkAD90gKCz8IpbhxD~tplv-sdweummd6v-text-logo-v1:QG5pY2hhbmFueQ==:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1797249600&x-signature=MiyeHmhJshln%2FKnEB2ycFEx5gUs%3D",
      "tag": 1
-    },
-    {
-     "title": "หินวันศุกร์",
-     "likes": 11,
-     "date": "2025-09-11",
-     "link": "https://www.lemon8-app.com/@mamu_jewelry/7548661154348925456?region=th",
-     "source": "Lemon8 · Mamu jewelry",
-     "image": "https://www.lemon8-app.com/seo/image?item_id=7548661154348925456&index=0&sign=112242f9d9b4743f6951343ecf92a000",
-     "ck": 1,
-     "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/oEFR9SlNAJAeAbs4AEFRhPgDff4DlLHED7EDCI~tplv-sdweummd6v-text-logo-v1:QG1hbXVfamV3ZWxyeQ==:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1797249600&x-signature=8UYlGEURwxKqS0zRESENaBFw%2FVk%3D",
-     "tag": 1
     }
    ],
-   "reviewCount": 17,
+   "reviewCount": 21,
    "districtEn": "Tha Mai",
    "district": "ท่าใหม่",
    "entry": {
     "tiers": [
      {
       "who": {
-       "th": "บุคคล (ราคาเดิม)",
-       "en": "Person (Old rate)",
-       "zh": "个人（旧价格）"
+       "th": "ค่าเข้า",
+       "en": "Admission",
+       "zh": "门票"
       },
       "price": 20,
       "n": 2,
       "ids": [
        "L1",
-       "L4"
+       "L5"
       ],
       "rv": true
      },
      {
       "who": {
-       "th": "บุคคล",
-       "en": "Person",
-       "zh": "个人"
+       "th": "ค่าเข้าอุทยาน",
+       "en": "Park admission",
+       "zh": "园区门票"
       },
       "price": 40,
       "n": 1,
       "ids": [
-       "L2"
-      ],
-      "rv": true
-     },
-     {
-      "who": {
-       "th": "รถยนต์ (ราคาเดิม)",
-       "en": "Car (Old rate)",
-       "zh": "小汽车（旧价格）"
-      },
-      "price": 60,
-      "n": 2,
-      "ids": [
-       "L1",
-       "L4"
+       "L3"
       ],
       "rv": true
      }
@@ -178609,6 +178593,16 @@
      "tag": 1
     },
     {
+     "title": "หาดลับ จันทบุรี ไม่ค่อยมีคน ไม่มีที่นั่ง ไม่มีของขาย แต่น้ำใสแจ๋ว 🌊 #อ่าวกระทิง #ทะเล #จันทบุรี #jazzติดเที่ยว #ที่เที่ยวจันทบุรี",
+     "likes": 273,
+     "date": "2025-10-23",
+     "link": "https://www.lemon8-app.com/@jazz_takeatrip/7564356984034247189?region=th",
+     "source": "Lemon8 · Jazz ติดเที่ยว",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7564356984034247189&index=0&sign=9eb10abbaf728166c79844180d72644a",
+     "ck": 1,
+     "tag": 1
+    },
+    {
      "title": "อ่าวกระทิง จันทบุรี",
      "likes": 247,
      "date": "2024-10-22",
@@ -178651,20 +178645,9 @@
      "ck": 1,
      "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/o8BIQQeygEptBCGBteb5nlnCQAJEWD9xkATEAM~tplv-sdweummd6v-text-logo-v1:QHR3b3R3b29fXw==:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1797249600&x-signature=ZhniSn8%2F2v9jkwoCLV8D2y6OfCc%3D",
      "tag": 1
-    },
-    {
-     "title": "จันทบุรี-แหลมสิงห์",
-     "likes": 37,
-     "date": "2024-05-03",
-     "link": "https://www.lemon8-app.com/@rujiratsppn/7364707126272475664?region=th",
-     "source": "Lemon8 · Baimon246",
-     "image": "https://www.lemon8-app.com/seo/image?item_id=7364707126272475664&index=0&sign=a033cd3d381f1345d1c4610765a84fc8",
-     "ck": 1,
-     "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/ooPYArAoApiYEt9ASb2kOLihI70vjZABBJBYv~tplv-sdweummd6v-text-logo-v1:QHJ1amlyYXRzcHBu:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1797249600&x-signature=MtEs74ubssxBTKLksJRpuk4SK4M%3D",
-     "tag": 1
     }
    ],
-   "reviewCount": 39,
+   "reviewCount": 46,
    "districtEn": "Mueang Chanthaburi",
    "district": "เมืองจันทบุรี",
    "entry": {
@@ -179380,18 +179363,17 @@
      "tag": 1
     },
     {
-     "title": "จุดชมวิวดอยกิ่วลม",
-     "likes": 1,
-     "date": "2024-11-28",
-     "link": "https://www.lemon8-app.com/@janie88cat/7442141593424986625?region=th",
-     "source": "Lemon8 · เจนี่และแมวเหมียว",
-     "image": "https://www.lemon8-app.com/seo/image?item_id=7442141593424986625&index=0&sign=a6b69f963b3262e85e273ed91fee23ab",
+     "title": "จุดชมวิวดอยกิ่วลม ปาย แม่ฮ่องสอน",
+     "likes": 2,
+     "date": "2026-01-19",
+     "link": "https://www.lemon8-app.com/@tiger_con98/7597036048039854608?region=th",
+     "source": "Lemon8 · Slot camping",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7597036048039854608&index=0&sign=bb4d096ec1909e313595c537fdd6fbdd",
      "ck": 1,
-     "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/oIckmnACfECfAwDr9VEPyIQgEFta8R4AJQEIBQ~tplv-sdweummd6v-text-logo-v1:QGphbmllODhjYXQ=:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1797249600&x-signature=eQUEc25r3tcs64CG4US4Dof4NpE%3D",
      "tag": 1
     }
    ],
-   "reviewCount": 9,
+   "reviewCount": 11,
    "districtEn": "Mae Taeng",
    "district": "แม่แตง",
    "entry": {
@@ -179499,9 +179481,19 @@
      "ck": 1,
      "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/oEdZUiBR2eBmsIA0hTiEZsCEtAcgm1ASa0fjuD~tplv-sdweummd6v-text-logo-v1:QHJha2luZ2dv:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1797249600&x-signature=sSRCxXFyygXrXyC5ZJ5FnF1fj%2Bg%3D",
      "tag": 1
+    },
+    {
+     "title": "น้ำตกไทรลอดบ่วง หมู่บ้าน🏡แม่แมะ ดอยเชียงดาว...น่าน...งัยยย❤️ #น่านไง #น่าน ..งัยนยยยย #น้ำตกไทรลอดบ่วง #ฮักน่านงัยย #ฮักน่านงัย",
+     "likes": 0,
+     "date": "2025-12-26",
+     "link": "https://www.lemon8-app.com/@wanvipawongrod/7587977543174210066?region=th",
+     "source": "Lemon8 · @Vipa♥️",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7587977543174210066&index=0&sign=83cc93ab966b40474027c948d4b5cc92",
+     "ck": 1,
+     "tag": 1
     }
    ],
-   "reviewCount": 5,
+   "reviewCount": 6,
    "districtEn": "Chiang Dao",
    "district": "เชียงดาว"
   },
@@ -179980,9 +179972,13 @@
      "tag": 1
     }
    ],
-   "reviewCount": 42,
+   "reviewCount": 44,
    "districtEn": "Mueang Chiang Rai",
-   "district": "เมืองเชียงราย"
+   "district": "เมืองเชียงราย",
+   "entry": {
+    "free": true,
+    "src": "review"
+   }
   },
   {
    "id": "osm-n3836602399",
@@ -180160,6 +180156,16 @@
      "tag": 1
     },
     {
+     "title": "🌅Sunset | sea 📍หาดวอนนภา - บางแสน ✨",
+     "likes": 484,
+     "date": "2023-12-16",
+     "link": "https://www.lemon8-app.com/@phitcc/7313272822942466562?region=th",
+     "source": "Lemon8 · phitcc ꕤ",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7313272822942466562&index=0&sign=047e2d3089e54e80b99d78be823402bc",
+     "ck": 1,
+     "tag": 1
+    },
+    {
      "title": "BANGSAEN @WONNAPHA BEACH🌅",
      "likes": 403,
      "date": "2025-03-22",
@@ -180202,20 +180208,9 @@
      "ck": 1,
      "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/ocKDIfT7JDEIzAAAQBwEfFykcDgliQiIbwfSwA~tplv-sdweummd6v-text-logo-v1:QG51cnNla253:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1797249600&x-signature=8ZcfqCALPjSgCUhf7dlutdJW5yI%3D",
      "tag": 1
-    },
-    {
-     "title": "หาดวอน บางแสน",
-     "likes": 160,
-     "date": "2024-12-19",
-     "link": "https://www.lemon8-app.com/@ferrr.nref/7450045015763583506?region=th",
-     "source": "Lemon8 · ferrr",
-     "image": "https://www.lemon8-app.com/seo/image?item_id=7450045015763583506&index=0&sign=f8756bf03f2ed8588a0d54fff5ff33b8",
-     "ck": 1,
-     "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/oUgA5iehnBAa3SlzEBCWBYbYiAfEUIvt59yQjj~tplv-sdweummd6v-text-logo-v1:QGZlcnJyLm5yZWY=:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1797249600&x-signature=Z%2FFDqCdRCqabFbr7BneFHcLO1wY%3D",
-     "tag": 1
     }
    ],
-   "reviewCount": 42,
+   "reviewCount": 51,
    "districtEn": "Mueang Chon Buri",
    "district": "เมืองชลบุรี",
    "entry": {
@@ -180247,9 +180242,19 @@
      "ck": 1,
      "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/o0btE9O2xOspCAgZfYCwIRdMgAe6BkETm6nQAD~tplv-sdweummd6v-text-logo-v1:QHdpbmR5emluemlu:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1797249600&x-signature=TPSqpBPe1%2FM2sfVZsk2gj8YWyiY%3D",
      "tag": 1
+    },
+    {
+     "title": "ถ่ายรูปจุดชมวิวพัทยา นึกว่าอยู่เกาหลี 📸",
+     "likes": 29,
+     "date": "2023-05-05",
+     "link": "https://www.lemon8-app.com/@gybpergifgif/7229525245378445825?region=th",
+     "source": "Lemon8 · Gybper",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7229525245378445825&index=0&sign=22d5801a254e453d9426008f99b71665",
+     "ck": 1,
+     "tag": 1
     }
    ],
-   "reviewCount": 1,
+   "reviewCount": 2,
    "districtEn": "Bang Lamung",
    "district": "บางละมุง",
    "entry": {
@@ -180962,7 +180967,7 @@
      "tag": 1
     }
    ],
-   "reviewCount": 58,
+   "reviewCount": 69,
    "districtEn": "Bang Lamung",
    "district": "บางละมุง",
    "entry": {
@@ -181052,7 +181057,7 @@
      "tag": 1
     }
    ],
-   "reviewCount": 19,
+   "reviewCount": 22,
    "districtEn": "Sattahip",
    "district": "สัตหีบ",
    "entry": {
@@ -181142,7 +181147,7 @@
      "tag": 1
     }
    ],
-   "reviewCount": 35,
+   "reviewCount": 45,
    "districtEn": "Bang Lamung",
    "district": "บางละมุง",
    "entry": {
@@ -181232,7 +181237,7 @@
      "tag": 1
     }
    ],
-   "reviewCount": 33,
+   "reviewCount": 36,
    "districtEn": "Bang Lamung",
    "district": "บางละมุง",
    "entry": {
@@ -181364,12 +181369,12 @@
      "tag": 1
     }
    ],
-   "reviewCount": 19,
+   "reviewCount": 27,
    "districtEn": "Sattahip",
    "district": "สัตหีบ",
    "entry": {
     "free": true,
-    "src": "review"
+    "src": "typical"
    }
   },
   {
@@ -181570,6 +181575,16 @@
      "tag": 1
     },
     {
+     "title": "เกาะสีชัง 🏝 หาดถ้ำพัง✨",
+     "likes": 270,
+     "date": "2025-03-15",
+     "link": "https://www.lemon8-app.com/@mimi_x49/7481881465572049409?region=th",
+     "source": "Lemon8 · Mini",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7481881465572049409&index=0&sign=05752c575dc46fad05e030660d75e579",
+     "ck": 1,
+     "tag": 1
+    },
+    {
      "title": "หาดถ้ำพัง เกาะสีชัง👙",
      "likes": 255,
      "date": "2025-03-04",
@@ -181590,20 +181605,9 @@
      "ck": 1,
      "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/oYsEkUHQDDOe1oM5P7FBApIEbJfAAUAf7AEOAT~tplv-sdweummd6v-text-logo-v1:QG5hdHRoYWEucms=:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1797249600&x-signature=dINMLau0T4pP6Pxr5XRjMgYVPfY%3D",
      "tag": 1
-    },
-    {
-     "title": "หาดถ้ำพัง 🏝มุมไฮไลท์ ห้ามพลาด ✨",
-     "likes": 234,
-     "date": "2025-07-28",
-     "link": "https://www.lemon8-app.com/@a.aomam66/7532103540744274450?region=th",
-     "source": "Lemon8 · แอ๋มแก้มป่อง",
-     "image": "https://www.lemon8-app.com/seo/image?item_id=7532103540744274450&index=0&sign=b80948fcf70099324b39e901f7e7651f",
-     "ck": 1,
-     "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/oEJOH8ghfEIe2IEpADtoLACKxEBUF9A1Y2AQWg~tplv-sdweummd6v-text-logo-v1:QGEuYW9tYW02Ng==:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1797249600&x-signature=Hj%2BvLdkE2kIlyne6ojP90p4tZhw%3D",
-     "tag": 1
     }
    ],
-   "reviewCount": 51,
+   "reviewCount": 58,
    "districtEn": "Si Racha",
    "district": "ศรีราชา",
    "entry": {
@@ -182453,6 +182457,16 @@
      "tag": 1
     },
     {
+     "title": "น้ำตกจ๊อกกระดิ่น",
+     "likes": 60,
+     "date": "2023-11-12",
+     "link": "https://www.lemon8-app.com/@fr.ranceee/7300538496052396546?region=th",
+     "source": "Lemon8 · fr.ranceee",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7300538496052396546&index=0&sign=562e510bbed06c86119d4990288cc237",
+     "ck": 1,
+     "tag": 1
+    },
+    {
      "title": "น้ำตกจ๊อกกระดิ่น ✨",
      "likes": 57,
      "date": "2026-07-24",
@@ -182473,50 +182487,24 @@
      "ck": 1,
      "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/dcbc76f2b686410280e62b56ab00d4ff~tplv-sdweummd6v-text-logo-v1:QG1lcnJ5cHJpbmc=:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1797249600&x-signature=zhawocOpBnXSyDrWPojYPZpjBxc%3D",
      "tag": 1
-    },
-    {
-     "title": "📍น้ำตกจ๊อกกระดิ่น อิต่อง-ปิล็อก กาญจนบุรี ไม่มาพลาด",
-     "likes": 37,
-     "date": "2023-11-03",
-     "link": "https://www.lemon8-app.com/@ppraewzx/7297225996196086274?region=th",
-     "source": "Lemon8 · Praew Supatsorn",
-     "image": "https://www.lemon8-app.com/seo/image?item_id=7297225996196086274&index=0&sign=c20b8524efae2bc28ddf3d87f5117439",
-     "ck": 1,
-     "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/oM6rNAQByC96pMniiAAn0EEUeBaEfomgX2IZBM~tplv-sdweummd6v-text-logo-v1:QHBwcmFld3p4:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1797249600&x-signature=oEIhTX1JR9TyxXXUxraQkTih%2Fyw%3D",
-     "tag": 1
     }
    ],
-   "reviewCount": 42,
+   "reviewCount": 56,
    "districtEn": "Thong Pha Phum",
    "district": "ทองผาภูมิ",
    "entry": {
     "tiers": [
      {
       "who": {
-       "th": "รถยนต์",
-       "en": "Car",
-       "zh": "汽车"
-      },
-      "price": 30,
-      "n": 2,
-      "ids": [
-       "L3",
-       "L6"
-      ],
-      "rv": true
-     },
-     {
-      "who": {
-       "th": "เข้าชม",
-       "en": "Visitor",
+       "th": "ผู้ใหญ่",
+       "en": "Adult",
        "zh": "成人"
       },
       "price": 40,
-      "n": 4,
+      "n": 3,
       "ids": [
        "L1",
        "L3",
-       "L5",
        "L6"
       ],
       "rv": true
@@ -184720,18 +184708,17 @@
      "tag": 1
     },
     {
-     "title": "เหนื่อยจริง แต่สวยมาก!! โครตคุ้ม น้ำตกสลัดได อ.บ้านนา จ.นครนายก ⛰️🌿 ระยะทางเดินป่า ไป-กลับรวมประมาณ 5 กิโลเมตร ทางขึ้น-ลงชันมากเหนื่อยสุดแต",
-     "likes": 50,
-     "date": "2025-09-16",
-     "link": "https://www.lemon8-app.com/@khwanji_wsw/7550740692106117653?region=th",
-     "source": "Lemon8 · Khwanji",
-     "image": "https://www.lemon8-app.com/seo/image?item_id=7550740692106117653&index=0&sign=e8a2e1e74f42d7238dcb0ff5346030f6",
+     "title": "one day trip ไม่มีรถส่วนตัวงบ500฿",
+     "likes": 85,
+     "date": "2024-10-13",
+     "link": "https://www.lemon8-app.com/@_wila.y/7425098785509966337?region=th",
+     "source": "Lemon8 · Wila.y",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7425098785509966337&index=0&sign=299c99c6c7bec562b07396f3224a3558",
      "ck": 1,
-     "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/oMaJvBA3rEYM5Bk05AijqiDAIbq3PvWAmL29A~tplv-sdweummd6v-text-logo-v1:QGtod2Fuamlfd3N3:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1797249600&x-signature=VSfto5drWbWyDaRzKDQaQQQMVSw%3D",
      "tag": 1
     }
    ],
-   "reviewCount": 67,
+   "reviewCount": 90,
    "districtEn": "Ban Na",
    "district": "บ้านนา",
    "entry": {
@@ -184821,7 +184808,7 @@
      "tag": 1
     }
    ],
-   "reviewCount": 34,
+   "reviewCount": 38,
    "districtEn": "Ban Na",
    "district": "บ้านนา",
    "entry": {
@@ -185201,16 +185188,16 @@
      "tag": 1
     }
    ],
-   "reviewCount": 10,
+   "reviewCount": 34,
    "districtEn": "Muak Lek",
    "district": "มวกเหล็ก",
    "entry": {
     "tiers": [
      {
       "who": {
-       "th": "ทั่วไป",
-       "en": "General",
-       "zh": "普通"
+       "th": "ค่าเข้าชม",
+       "en": "Admission fee",
+       "zh": "门票"
       },
       "price": 20,
       "n": 3,
@@ -185342,6 +185329,16 @@
      "tag": 1
     },
     {
+     "title": "ผาหมากดูก",
+     "likes": 1,
+     "date": "2024-12-06",
+     "link": "https://www.lemon8-app.com/@jongjet1117/7445171710929666576?region=th",
+     "source": "Lemon8 · Jongjet Moneygo 1117",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7445171710929666576&index=0&sign=8c4f839c2c8a23dbdc2a8661dba7c080",
+     "ck": 1,
+     "tag": 1
+    },
+    {
      "title": "วิวยามเย็น ผาหมากดูก ภูกระดึง",
      "likes": 0,
      "date": "2025-03-26",
@@ -185364,7 +185361,7 @@
      "tag": 1
     }
    ],
-   "reviewCount": 5,
+   "reviewCount": 6,
    "districtEn": "Phu Kradueng",
    "district": "ภูกระดึง"
   },
@@ -185568,6 +185565,16 @@
      "tag": 1
     },
     {
+     "title": "น้ำตกถ้ำใหญ่ ภูกระดึง",
+     "likes": 7,
+     "date": "2024-12-03",
+     "link": "https://www.lemon8-app.com/@arunsuppro/7443979071458968081?region=th",
+     "source": "Lemon8 · Avocado",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7443979071458968081&index=0&sign=a8d5000d4bf57fee7ed6213459064341",
+     "ck": 1,
+     "tag": 1
+    },
+    {
      "title": "น้ําตกถ้ําใหญ่ ภูกระดึง⛰️🌿",
      "likes": 6,
      "date": "2025-11-25",
@@ -185590,6 +185597,16 @@
      "tag": 1
     },
     {
+     "title": "ใบไม้สีแดงที่ #ภูกระดึง",
+     "likes": 2,
+     "date": "2025-02-19",
+     "link": "https://www.lemon8-app.com/@mind_8197/7473061500920300048?region=th",
+     "source": "Lemon8 · เที่ยวกันมั๊ย",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7473061500920300048&index=0&sign=909cace5cd8eef27659888eeeb4d0c9d",
+     "ck": 1,
+     "tag": 1
+    },
+    {
      "title": "น้ำตกถ้ำใหญ่ ภูกระดึง",
      "likes": 0,
      "date": "2025-11-26",
@@ -185601,7 +185618,7 @@
      "tag": 1
     }
    ],
-   "reviewCount": 4,
+   "reviewCount": 7,
    "districtEn": "Phu Kradueng",
    "district": "ภูกระดึง"
   },
@@ -185677,6 +185694,26 @@
    "fetchedAt": "2026-11-21T04:19:46.053Z",
    "posts": [
     {
+     "title": "จอมยุทธภูกระดึง",
+     "likes": 10,
+     "date": "2026-01-18",
+     "link": "https://www.lemon8-app.com/@studio.28_/7596526337196671496?region=th",
+     "source": "Lemon8 · เลื่อยเปื่อย_28",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7596526337196671496&index=0&sign=c8d4b17745a09f387a7400b8e15bb040",
+     "ck": 1,
+     "tag": 1
+    },
+    {
+     "title": "ผาหล่มสัก ภูกระดึง",
+     "likes": 8,
+     "date": "2025-02-07",
+     "link": "https://www.lemon8-app.com/@yap_singpeng/7468529488872161810?region=th",
+     "source": "Lemon8 · Yap_singpeng",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7468529488872161810&index=0&sign=7c6bba4ee52382b8d0540c9f5ee4b971",
+     "ck": 1,
+     "tag": 1
+    },
+    {
      "title": "Once in a lifetime ✨ | ภูกระดึง, เลย | ผาหล่มสัก คนหัวสั",
      "likes": 3,
      "date": "2026-03-22",
@@ -185699,6 +185736,16 @@
      "tag": 1
     },
     {
+     "title": "ภูมิใจในตัวเอง ฉันเดินขึ้นภูมาถึงผาหล่มสักในวันเดียว",
+     "likes": 2,
+     "date": "2026-03-02",
+     "link": "https://www.lemon8-app.com/@panjit23/7612668992796525063?region=th",
+     "source": "Lemon8 · ขวัญ",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7612668992796525063&index=0&sign=fc708f5abea9135eba00cf49d724bfad",
+     "ck": 1,
+     "tag": 1
+    },
+    {
      "title": "ภารกิจ สำเร็จ ไปกินเย็นตาโฟที่ภูกระดึง",
      "likes": 1,
      "date": "2024-03-09",
@@ -185708,42 +185755,9 @@
      "ck": 1,
      "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/owMsphREA6tIAImESCFlEZDDghQiAB2GfG79ue~tplv-sdweummd6v-text-logo-v1:QHRhay5waXRha2NoYWk=:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1797249600&x-signature=feaB0LeEG%2Fq1nm9GJqVqDiggVhg%3D",
      "tag": 1
-    },
-    {
-     "title": "#ผา หล่มสัก",
-     "likes": 1,
-     "date": "2025-12-03",
-     "link": "https://www.lemon8-app.com/@thana8thanawat/7579574628218077703?region=th",
-     "source": "Lemon8 · thana8thanawat",
-     "image": "https://www.lemon8-app.com/seo/image?item_id=7579574628218077703&index=0&sign=1cd530aa3664f9e3e23af56428e60599",
-     "ck": 1,
-     "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/o0SAIYaxriFmDAwlyAahPw2PATbAPiaEKcABB~tplv-sdweummd6v-text-logo-v1:QHRoYW5hOHRoYW5hd2F0:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1797249600&x-signature=eL9WaQutomQ%2BJ1vA9kvzpjDngTA%3D",
-     "tag": 1
-    },
-    {
-     "title": "ผาหล่มสัก",
-     "likes": 1,
-     "date": "2026-01-23",
-     "link": "https://www.lemon8-app.com/@jane.bimbup/7598500516944560648?region=th",
-     "source": "Lemon8 · หาทำไปทั่ว",
-     "image": "https://www.lemon8-app.com/seo/image?item_id=7598500516944560648&index=0&sign=0f107673f42d3e2ed276a9e1aab67507",
-     "ck": 1,
-     "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/oYeSSpRo5EDLeKzEAIlAjAJgKebA2SqoG7bzIB~tplv-sdweummd6v-text-logo-v1:QGphbmUuYmltYnVw:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1797249600&x-signature=D0VC8zahWJaHlwD5o0AOFJTzsHo%3D",
-     "tag": 1
-    },
-    {
-     "title": "ผาหล่มสัก",
-     "likes": 0,
-     "date": "2025-01-10",
-     "link": "https://www.lemon8-app.com/@khun_piim/7458169861605491218?region=th",
-     "source": "Lemon8 · Piimnawanit18",
-     "image": "https://www.lemon8-app.com/seo/image?item_id=7458169861605491218&index=0&sign=40b13ec858061353681bc06c43792e7f",
-     "ck": 1,
-     "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/ogAAFIAGA1zEkO0vjwiLCiwe2BoBTg9QZEfC3p~tplv-sdweummd6v-text-logo-v1:QGtodW5fcGlpbQ==:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1797249600&x-signature=xzqgk5WsSdaHQJVmq8kByWoooGU%3D",
-     "tag": 1
     }
    ],
-   "reviewCount": 7,
+   "reviewCount": 12,
    "districtEn": "Phu Kradueng",
    "district": "ภูกระดึง"
   },
@@ -185828,7 +185842,7 @@
      "tag": 1
     }
    ],
-   "reviewCount": 14,
+   "reviewCount": 18,
    "districtEn": "Phu Kradueng",
    "district": "ภูกระดึง"
   },
@@ -186016,29 +186030,21 @@
      "tag": 1
     }
    ],
-   "reviewCount": 32,
+   "reviewCount": 44,
    "districtEn": "Phu Luang",
    "district": "ภูหลวง",
    "entry": {
     "tiers": [
      {
       "who": {
-       "th": "เด็ก",
-       "en": "Child",
-       "zh": "儿童"
+       "th": "ผู้ใหญ่ (รถอีแต๊ก)",
+       "en": "Adult (E-Taek shuttle)",
+       "zh": "成人（E-Taek接驳车）"
       },
-      "price": 40,
-      "n": 1,
-      "ids": [
-       "L5"
-      ],
-      "rv": true
-     },
-     {
-      "who": {
-       "th": "ผู้ใหญ่",
-       "en": "Adult",
-       "zh": "成人"
+      "note": {
+       "th": "นั่งรถอีแต๊กไป-กลับ 4 จุดชมวิว",
+       "en": "Round-trip E-Taek shuttle to 4 viewpoints",
+       "zh": "往返E-Taek接驳车前往4个观景点"
       },
       "price": 60,
       "n": 3,
@@ -186184,6 +186190,16 @@
      "tag": 1
     },
     {
+     "title": "หาดขนอม ที่ใครๆต้องมาสักครั้ง🏝",
+     "likes": 12,
+     "date": "2025-06-14",
+     "link": "https://www.lemon8-app.com/@veerayachn/7515761284089037320?region=th",
+     "source": "Lemon8 · Veerayachn",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7515761284089037320&index=0&sign=8c327db8ccd8caa059d8e1590fdeee7b",
+     "ck": 1,
+     "tag": 1
+    },
+    {
      "title": "🌊🩵🦋🐟🎽🫐🌀🧵💎 หาดลับ หาดขนอม ทะเลใต้",
      "likes": 9,
      "date": "2024-09-02",
@@ -186217,7 +186233,7 @@
      "tag": 1
     }
    ],
-   "reviewCount": 4,
+   "reviewCount": 5,
    "districtEn": "Khanom",
    "district": "ขนอม",
    "entry": {
@@ -187321,7 +187337,7 @@
      "tag": 1
     }
    ],
-   "reviewCount": 15,
+   "reviewCount": 20,
    "districtEn": "Thai Mueang",
    "district": "ท้ายเหมือง",
    "entry": {
@@ -187727,6 +187743,16 @@
      "tag": 1
     },
     {
+     "title": "ชุดเวียดนาว อ่าวใหญ่ 🇻🇳🇻🇳",
+     "likes": 3,
+     "date": "2025-01-03",
+     "link": "https://www.lemon8-app.com/@microfarmers/7455606419929268752?region=th",
+     "source": "Lemon8 · MICROFarm789",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7455606419929268752&index=0&sign=8c61d82c400871f7561c2c2ffd2da19e",
+     "ck": 1,
+     "tag": 1
+    },
+    {
      "title": "📍อ่าวใหญ่ เกาะทะลุ ประจวบคีรีขันธ์",
      "likes": 2,
      "date": "2022-09-07",
@@ -187758,20 +187784,9 @@
      "ck": 1,
      "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/oYAJmJOTHIeYfwe4AAA2ab4t2eGvMRgnAIoQu0~tplv-sdweummd6v-text-logo-v1:QGtyYWlyaXQuNjY=:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1797249600&x-signature=YDvJgWMiDBEYp8aXmttmdN9A42E%3D",
      "tag": 1
-    },
-    {
-     "title": "Ban Ao Yai, Koh Kood, Trat 🇹🇭",
-     "likes": 1,
-     "date": "2026-06-02",
-     "link": "https://www.lemon8-app.com/@hongies/7646701863751959048?region=th",
-     "source": "Lemon8 · Hongies",
-     "image": "https://www.lemon8-app.com/seo/image?item_id=7646701863751959048&index=0&sign=7b28d8d0b19b2075db2867281c1a54df",
-     "ck": 1,
-     "thumb": "https://p19-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/oII9QADAbGfPJqMUhXAl8fipEgH7LQAAoYRAEe~tplv-sdweummd6v-text-logo-v1:QGhvbmdpZXM=:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1797249600&x-signature=X5n6agoAzBgjFiw0r10qkPvajl4%3D",
-     "tag": 1
     }
    ],
-   "reviewCount": 8
+   "reviewCount": 10
   },
   {
    "id": "osm-r18703621",
@@ -187895,7 +187910,7 @@
      "tag": 1
     }
    ],
-   "reviewCount": 34,
+   "reviewCount": 39,
    "districtEn": "Phu Sang",
    "district": "ภูซาง"
   },
@@ -187997,7 +188012,7 @@
      "tag": 1
     }
    ],
-   "reviewCount": 17,
+   "reviewCount": 19,
    "districtEn": "Nam Nao",
    "district": "น้ำหนาว"
   },
@@ -188049,6 +188064,16 @@
      "tag": 1
     },
     {
+     "title": "น้ำตกธารทองล่าสุดน้ำเยอะมากครัชทุกคน#น้ำตก",
+     "likes": 7,
+     "date": "2023-09-23",
+     "link": "https://www.lemon8-app.com/@douzou26/7281871491929670146?region=th",
+     "source": "Lemon8 · Esan Kinso",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7281871491929670146&index=0&sign=287fe3bc6b38165c93d31d2892e87270",
+     "ck": 1,
+     "tag": 1
+    },
+    {
      "title": "Nong Khai",
      "likes": 6,
      "date": "2024-08-06",
@@ -188069,20 +188094,9 @@
      "ck": 1,
      "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/oANAg7fLLESItJLbzDRQMWWAAP7iAteEXrbGIe~tplv-sdweummd6v-text-logo-v1:QHNpbmd6YWFhYWFh:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1797336000&x-signature=d1uS3grT9hy6YU7AaPWT8cQ2eAc%3D",
      "tag": 1
-    },
-    {
-     "title": "Unseenนครสวรรค์ น้ำตกธารทอง",
-     "likes": 4,
-     "date": "2025-10-23",
-     "link": "https://www.lemon8-app.com/@reviewnakhonsawan/7564351835163689490?region=th",
-     "source": "Lemon8 · รีวิวนครสวรรค์",
-     "image": "https://www.lemon8-app.com/seo/image?item_id=7564351835163689490&index=0&sign=837c89954c0181670e21231bd6165b22",
-     "ck": 1,
-     "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/o4fRXLbH7JD87zvExeFosIAiDYAuQAE4fjAgNJ~tplv-sdweummd6v-text-logo-v1:QHJldmlld25ha2hvbnNhd2Fu:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1797336000&x-signature=iARyZIdO6fseA7Ow1nXW8pMrXp8%3D",
-     "tag": 1
     }
    ],
-   "reviewCount": 19,
+   "reviewCount": 22,
    "districtEn": "Sangkhom",
    "district": "สังคม"
   },
@@ -188392,7 +188406,7 @@
      "tag": 1
     }
    ],
-   "reviewCount": 33,
+   "reviewCount": 36,
    "districtEn": "Khao Chamao",
    "district": "เขาชะเมา"
   },
@@ -188493,7 +188507,7 @@
      "tag": 1
     }
    ],
-   "reviewCount": 23,
+   "reviewCount": 24,
    "districtEn": "Mueang Rayong",
    "district": "เมืองระยอง"
   },
@@ -188535,6 +188549,16 @@
      "tag": 1
     },
     {
+     "title": "🌴✨นอนบ้านริมทะเล at หาดทรายแก้ว",
+     "likes": 362,
+     "date": "2024-07-22",
+     "link": "https://www.lemon8-app.com/@air.mosphere/7394447079260586513?region=th",
+     "source": "Lemon8 · คุณแอร์",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7394447079260586513&index=0&sign=baa82210e85b5a3479e8d5a475b610a2",
+     "ck": 1,
+     "tag": 1
+    },
+    {
      "title": "ทะเลแบบฉบับไม่โป๊",
      "likes": 321,
      "date": "2025-07-15",
@@ -188557,29 +188581,17 @@
      "tag": 1
     },
     {
-     "title": "ทริปหาดทรายแก้ว เกาะเสม็ด ระยอง🏝️",
-     "likes": 201,
-     "date": "2023-10-18",
-     "link": "https://www.lemon8-app.com/@korkunggg_/7291135410728681985?region=th",
-     "source": "Lemon8 · Korkungg_",
-     "image": "https://www.lemon8-app.com/seo/image?item_id=7291135410728681985&index=0&sign=5c2a4a06439189fb0bbb922ec9d94c6d",
+     "title": "ทะเลสวย สัตหีบ ชลบุรี 📌",
+     "likes": 217,
+     "date": "2023-05-13",
+     "link": "https://www.lemon8-app.com/@ttaeweat/7232619044464247297?region=th",
+     "source": "Lemon8 · Ttaew🔅",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7232619044464247297&index=0&sign=76c26d1d17ab14154dead432d0162f4c",
      "ck": 1,
-     "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/okAAdqhIEBgyFAlNhUfQvLA4BoldueEczC62AE~tplv-sdweummd6v-text-logo-v1:QGtvcmt1bmdnZ18=:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1797336000&x-signature=qmzqsubHgEIVmn4TSLf6wuQhgNQ%3D",
-     "tag": 1
-    },
-    {
-     "title": "หาดทรายแก้ว สัตหีบ",
-     "likes": 178,
-     "date": "2024-06-04",
-     "link": "https://www.lemon8-app.com/@momay_240/7376600360518943233?region=th",
-     "source": "Lemon8 · โมเมชอบเที่ยว",
-     "image": "https://www.lemon8-app.com/seo/image?item_id=7376600360518943233&index=0&sign=5c0bae6ea234fc9df4c06b944853bccb",
-     "ck": 1,
-     "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/oovmN6A4IE9W0eABv5m99DsCXQATQFAfgEmFCt~tplv-sdweummd6v-text-logo-v1:QG1vbWF5XzI0MA==:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1797336000&x-signature=Fkor7vGJZpT0Ti3iyo5UyDDmOU0%3D",
      "tag": 1
     }
    ],
-   "reviewCount": 54,
+   "reviewCount": 69,
    "districtEn": "Mueang Rayong",
    "district": "เมืองระยอง",
    "entry": {
@@ -188588,7 +188600,7 @@
       "who": {
        "th": "เด็ก",
        "en": "Child",
-       "zh": "Child"
+       "zh": "儿童"
       },
       "price": 20,
       "n": 2,
@@ -188600,14 +188612,29 @@
      },
      {
       "who": {
-       "th": "ผู้ใหญ่",
-       "en": "Adult",
-       "zh": "成人"
+       "th": "ผู้ใหญ่ (คนไทย)",
+       "en": "Adult (Thai)",
+       "zh": "成人（泰国公民）"
       },
       "price": 50,
+      "n": 3,
+      "ids": [
+       "L1",
+       "L3",
+       "L6"
+      ],
+      "rv": true
+     },
+     {
+      "who": {
+       "th": "ชาวต่างชาติ",
+       "en": "Foreigner",
+       "zh": "外籍游客"
+      },
+      "price": 100,
       "n": 1,
       "ids": [
-       "L1"
+       "L3"
       ],
       "rv": true
      }
@@ -188663,6 +188690,16 @@
      "tag": 1
     },
     {
+     "title": "เกาะขาม จ.ตราด",
+     "likes": 1638,
+     "date": "2023-03-27",
+     "link": "https://www.lemon8-app.com/@beautixix/7215234534349128194?region=th",
+     "source": "Lemon8 · Beaut 3eaut🩵",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7215234534349128194&index=0&sign=c4ca87a8f55e3c52f5694c9a7c0772cd",
+     "ck": 1,
+     "tag": 1
+    },
+    {
      "title": "ONE DAY TRIP KOH KHAM 🤿",
      "likes": 1375,
      "date": "2024-03-28",
@@ -188683,20 +188720,9 @@
      "ck": 1,
      "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/o0Pz022CeEBxQPXiC0iQQEAEBGA7IgCxfRAQzE~tplv-sdweummd6v-text-logo-v1:QGNocG9uZC56:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796817600&x-signature=Jwl4JpyjAhqGYFMJM%2BxRJDjO2tM%3D",
      "tag": 1
-    },
-    {
-     "title": "เกาะขาม ทะเลยอดฮิต 2026",
-     "likes": 1120,
-     "date": "2026-04-18",
-     "link": "https://www.lemon8-app.com/@namkul1997/7629953243522679317?region=th",
-     "source": "Lemon8 · Namkul",
-     "image": "https://www.lemon8-app.com/seo/image?item_id=7629953243522679317&index=0&sign=a8c82350b26a1dfc75e827baa56d4e1c",
-     "ck": 1,
-     "thumb": "https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/oE7FAAQDpCE2p7eFEAAxWEEl9BPjf49g8tIUDP~tplv-sdweummd6v-text-logo-v1:QG5hbWt1bDE5OTc=:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796731200&x-signature=nY85qniHFtzoRjBB9Ll6buBC97Y%3D",
-     "tag": 1
     }
    ],
-   "reviewCount": 51,
+   "reviewCount": 64,
    "district": "เมืองระยอง",
    "entry": {
     "tiers": [
@@ -188715,7 +188741,9 @@
      }
     ],
     "src": "review1"
-   }
+   },
+   "hours": "Mo-Fr 09:00-15:00; Sa-Su 09:00-16:00",
+   "hoursSrc": "review"
   },
   {
    "id": "osm-w190387804",
@@ -188878,7 +188906,7 @@
      "tag": 1
     }
    ],
-   "reviewCount": 19,
+   "reviewCount": 22,
    "districtEn": "Mueang Rayong",
    "district": "เมืองระยอง",
    "entry": {
@@ -189230,7 +189258,7 @@
      "tag": 1
     }
    ],
-   "reviewCount": 13,
+   "reviewCount": 14,
    "districtEn": "Cha-am",
    "district": "ชะอำ"
   },
@@ -189736,9 +189764,19 @@
      "ck": 1,
      "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/occ9afmiggPtDCAIAS2EEDCUYB4FEPEfnAHWAD~tplv-sdweummd6v-text-logo-v1:QHRhbnRvdGhhcm0=:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1797336000&x-signature=WKnbwJvD4kxM4AstG6%2BOmWqDty8%3D",
      "tag": 1
+    },
+    {
+     "title": "น้ำตกสกุโณทยาน",
+     "likes": 3,
+     "date": "2025-04-14",
+     "link": "https://www.lemon8-app.com/@11.7.50/7493010474662298120?region=th",
+     "source": "Lemon8 · Thanyarat Binja",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7493010474662298120&index=0&sign=c491471d8fff1cb55788a3ea30ad6ebd",
+     "ck": 1,
+     "tag": 1
     }
    ],
-   "reviewCount": 1,
+   "reviewCount": 2,
    "districtEn": "Wang Thong",
    "district": "วังทอง"
   },
@@ -189801,6 +189839,16 @@
      "tag": 1
     },
     {
+     "title": "#น้ำตกชาติตระการ",
+     "likes": 26,
+     "date": "2025-08-24",
+     "link": "https://www.lemon8-app.com/@tigeres78/7541972349294330376?region=th",
+     "source": "Lemon8 · Tiger ESS 🐯🇹🇭",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7541972349294330376&index=0&sign=8918d1cda93d4d3def3bc4a5902a3539",
+     "ck": 1,
+     "tag": 1
+    },
+    {
      "title": "น้ำตกชาติตระการ",
      "likes": 22,
      "date": "2026-03-08",
@@ -189810,20 +189858,9 @@
      "ck": 1,
      "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/osIDprAuin8Z9CPeKytB2nAEECU3tHAEsgfFtm~tplv-sdweummd6v-text-logo-v1:QG1hcmVlbmFfcA==:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1797336000&x-signature=MkNl3oXQ85Tjk%2Bgi3NkbnNr8SlE%3D",
      "tag": 1
-    },
-    {
-     "title": "ส่งความสดชื่น...จากน้ำตกชาติตระการ",
-     "likes": 13,
-     "date": "2025-10-07",
-     "link": "https://www.lemon8-app.com/@pr.dnp/7558310842517684743?region=th",
-     "source": "Lemon8 · DNP Official",
-     "image": "https://www.lemon8-app.com/seo/image?item_id=7558310842517684743&index=0&sign=205fef6ea226c44ce9bf4f460c1ced59",
-     "ck": 1,
-     "thumb": "https://p19-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/oEQC591EHIbDtx7CAAAtejfP9HBFJBEogIiQRO~tplv-sdweummd6v-text-logo-v1:QHByLmRucA==:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1797336000&x-signature=Fk8otFlgnRfkGes4FTgvDTpzxVE%3D",
-     "tag": 1
     }
    ],
-   "reviewCount": 34,
+   "reviewCount": 40,
    "districtEn": "Chat Trakan",
    "district": "ชาติตระการ",
    "entry": {
@@ -189929,6 +189966,16 @@
      "tag": 1
     },
     {
+     "title": "✮₊˚แจก Bucket List เกาะเต่า🐢. ตกหลุมรัก ♡ ตั้งแต่ครั้งแรกที่ไป~🌊",
+     "likes": 943,
+     "date": "2026-07-17",
+     "link": "https://www.lemon8-app.com/@a.antred/7663323455365956113?region=th",
+     "source": "Lemon8 · A.antred",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7663323455365956113&index=0&sign=beecbe40b79192068f949f647195276b",
+     "ck": 1,
+     "tag": 1
+    },
+    {
      "title": "Koh Tao Lover 🌴🐢🥥",
      "likes": 902,
      "date": "2025-08-06",
@@ -189949,22 +189996,35 @@
      "ck": 1,
      "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/oQlBARmIyQ3DhCvFgBQEhfE5F9EtAAM2GebdAE~tplv-sdweummd6v-text-logo-v1:QGtrZHlsbWVlZWU=:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796817600&x-signature=K2gw2BSmqcDaq5TAqB4eMcUPgEg%3D",
      "tag": 1
-    },
-    {
-     "title": "Koh tao 4 day 3 night 🏝✨🍋",
-     "likes": 785,
-     "date": "2024-07-04",
-     "link": "https://www.lemon8-app.com/@garaace/7387809312380453392?region=th",
-     "source": "Lemon8 · Gararaace",
-     "image": "https://www.lemon8-app.com/seo/image?item_id=7387809312380453392&index=0&sign=05252e1b41ce71e406598786bacd8b01",
-     "ck": 1,
-     "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/oMwBokbriY0oPjYAvACAiA0nkGKbBIqEAZBA4~tplv-sdweummd6v-text-logo-v1:QGdhcmFhY2U=:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1797336000&x-signature=wt73JtsVIBk2O2t7uiJX9WTlx4E%3D",
-     "tag": 1
     }
    ],
-   "reviewCount": 47,
+   "reviewCount": 59,
    "districtEn": "Kapoe",
-   "district": "กะเปอร์"
+   "district": "กะเปอร์",
+   "entry": {
+    "tiers": [
+     {
+      "who": {
+       "th": "ค่าเข้าชม Moon Dance Magic View",
+       "en": "Moon Dance Magic View Entrance",
+       "zh": "Moon Dance Magic View 门票"
+      },
+      "note": {
+       "th": "นำไปแลกเครื่องดื่มได้",
+       "en": "Redeemable for a drink",
+       "zh": "可兑换饮料"
+      },
+      "price": 50,
+      "n": 2,
+      "ids": [
+       "L5",
+       "L6"
+      ],
+      "rv": true
+     }
+    ],
+    "src": "review"
+   }
   },
   {
    "id": "osm-w164450750",
@@ -190269,6 +190329,16 @@
      "tag": 1
     },
     {
+     "title": "🌴✨นอนบ้านริมทะเล at หาดทรายแก้ว",
+     "likes": 362,
+     "date": "2024-07-22",
+     "link": "https://www.lemon8-app.com/@air.mosphere/7394447079260586513?region=th",
+     "source": "Lemon8 · คุณแอร์",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7394447079260586513&index=0&sign=baa82210e85b5a3479e8d5a475b610a2",
+     "ck": 1,
+     "tag": 1
+    },
+    {
      "title": "ทะเลแบบฉบับไม่โป๊",
      "likes": 321,
      "date": "2025-07-15",
@@ -190291,29 +190361,17 @@
      "tag": 1
     },
     {
-     "title": "ทริปหาดทรายแก้ว เกาะเสม็ด ระยอง🏝️",
-     "likes": 201,
-     "date": "2023-10-18",
-     "link": "https://www.lemon8-app.com/@korkunggg_/7291135410728681985?region=th",
-     "source": "Lemon8 · Korkungg_",
-     "image": "https://www.lemon8-app.com/seo/image?item_id=7291135410728681985&index=0&sign=5c2a4a06439189fb0bbb922ec9d94c6d",
+     "title": "ทะเลสวย สัตหีบ ชลบุรี 📌",
+     "likes": 217,
+     "date": "2023-05-13",
+     "link": "https://www.lemon8-app.com/@ttaeweat/7232619044464247297?region=th",
+     "source": "Lemon8 · Ttaew🔅",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7232619044464247297&index=0&sign=76c26d1d17ab14154dead432d0162f4c",
      "ck": 1,
-     "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/okAAdqhIEBgyFAlNhUfQvLA4BoldueEczC62AE~tplv-sdweummd6v-text-logo-v1:QGtvcmt1bmdnZ18=:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1797336000&x-signature=qmzqsubHgEIVmn4TSLf6wuQhgNQ%3D",
-     "tag": 1
-    },
-    {
-     "title": "หาดทรายแก้ว สัตหีบ",
-     "likes": 178,
-     "date": "2024-06-04",
-     "link": "https://www.lemon8-app.com/@momay_240/7376600360518943233?region=th",
-     "source": "Lemon8 · โมเมชอบเที่ยว",
-     "image": "https://www.lemon8-app.com/seo/image?item_id=7376600360518943233&index=0&sign=5c0bae6ea234fc9df4c06b944853bccb",
-     "ck": 1,
-     "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/oovmN6A4IE9W0eABv5m99DsCXQATQFAfgEmFCt~tplv-sdweummd6v-text-logo-v1:QG1vbWF5XzI0MA==:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1797336000&x-signature=Fkor7vGJZpT0Ti3iyo5UyDDmOU0%3D",
      "tag": 1
     }
    ],
-   "reviewCount": 54,
+   "reviewCount": 69,
    "districtEn": "Mueang Ranong",
    "district": "เมืองระนอง",
    "entry": {
@@ -190334,14 +190392,29 @@
      },
      {
       "who": {
-       "th": "ผู้ใหญ่",
-       "en": "Adult",
-       "zh": "成人"
+       "th": "ผู้ใหญ่ (คนไทย)",
+       "en": "Adult (Thai)",
+       "zh": "成人（泰国籍）"
       },
       "price": 50,
+      "n": 3,
+      "ids": [
+       "L1",
+       "L3",
+       "L6"
+      ],
+      "rv": true
+     },
+     {
+      "who": {
+       "th": "ชาวต่างชาติ",
+       "en": "Foreigner",
+       "zh": "外籍游客"
+      },
+      "price": 100,
       "n": 1,
       "ids": [
-       "L1"
+       "L3"
       ],
       "rv": true
      }
@@ -190453,9 +190526,19 @@
      "ck": 1,
      "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/3e39d24f2a3c4734a278c695659f2e57~tplv-sdweummd6v-text-logo-v1:QGt3YW5nbnV0dGhpeWE=:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796817600&x-signature=NFfNszPG20%2BXZhJ8NErFQCSem6g%3D",
      "tag": 1
+    },
+    {
+     "title": "เกาะทะลุเป็นเกาะส่วนตัวมีรีสรอทร์เดียวเท่านั้นมีหาดอ่าวใหญ่และอ่าวมุก...ทริปนี้คืออ่าวใหญ่น้ำใส่มากกกก #ลั้นลาคนชอบเที่ยว #66ปีของฉัน😊🌿 #ท",
+     "likes": 0,
+     "date": "2026-08-11",
+     "link": "https://www.lemon8-app.com/@kungkungkok/7672566479623356948?region=th",
+     "source": "Lemon8 · kung 😊🌿",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7672566479623356948&index=0&sign=1732fe1c813e542f64981b5ee46081fb",
+     "ck": 1,
+     "tag": 1
     }
    ],
-   "reviewCount": 1,
+   "reviewCount": 2,
    "districtEn": "Mueang Ranong",
    "district": "เมืองระนอง",
    "entry": {
@@ -190986,18 +191069,17 @@
      "tag": 1
     },
     {
-     "title": "🧗🏻‍♀️ปีนผาไร่เลย์ & ลุยถ้ำค้างคาว🦇",
-     "likes": 9,
-     "date": "2023-12-06",
-     "link": "https://www.lemon8-app.com/@superzoeyy/7309449628427043329?region=th",
-     "source": "Lemon8 · Krabi Wanderers",
-     "image": "https://www.lemon8-app.com/seo/image?item_id=7309449628427043329&index=0&sign=0eeabc0ed06aa1ba4a62cb704ec34eab",
+     "title": "ถ้ำค้างคาว",
+     "likes": 13,
+     "date": "2025-03-16",
+     "link": "https://www.lemon8-app.com/@nkkie30/7482248669057204754?region=th",
+     "source": "Lemon8 · Nkk",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7482248669057204754&index=0&sign=ae94270c387d24d41f50b5b27a9f7f5b",
      "ck": 1,
-     "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/oUkR1G4sIJgDqeA7oDiIjuSAGEBbAALHKwEfZe~tplv-sdweummd6v-text-logo-v1:QHN1cGVyem9leXk=:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1797336000&x-signature=WF8Yye3eVZFjMfA0EeB%2F0EbRBH0%3D",
      "tag": 1
     }
    ],
-   "reviewCount": 23,
+   "reviewCount": 34,
    "districtEn": "La-ngu",
    "district": "ละงู"
   },
@@ -191404,18 +191486,17 @@
      "tag": 1
     },
     {
-     "title": "เที่ยวหาดน้ำใส 1 Day Tripp (ทรายขาว น้ำใส)",
-     "likes": 216,
-     "date": "2024-03-31",
-     "link": "https://www.lemon8-app.com/@piyachat_sj/7352392120697029121?region=th",
-     "source": "Lemon8 · Sj",
-     "image": "https://www.lemon8-app.com/seo/image?item_id=7352392120697029121&index=0&sign=01e34d8bbf91ed56d5c866cccbe91be4",
+     "title": "เกาะขาม (สัตหีบ) ทะเลน้ำใสกริ๊งใกล้กรุงเทพ✨🌊",
+     "likes": 224,
+     "date": "2024-03-05",
+     "link": "https://www.lemon8-app.com/@newsjourney_/7342774958407991809?region=th",
+     "source": "Lemon8 · รีวิวสไตล์นิว🌝",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7342774958407991809&index=0&sign=20992a91a1b25544135f68109267d210",
      "ck": 1,
-     "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/o8Fz1hlLAEAwA2VBgEiRB8QBGfqQNoHiBeCAII~tplv-sdweummd6v-text-logo-v1:QHBpeWFjaGF0X3Nq:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1797336000&x-signature=MKGcQ719Lw0oheKE2NK5J6%2BMY8M%3D",
      "tag": 1
     }
    ],
-   "reviewCount": 32,
+   "reviewCount": 44,
    "districtEn": "Mueang Satun",
    "district": "เมืองสตูล",
    "entry": {
@@ -191518,7 +191599,7 @@
      "tag": 1
     }
    ],
-   "reviewCount": 27,
+   "reviewCount": 29,
    "districtEn": "Mueang Satun",
    "district": "เมืองสตูล"
   },
@@ -191741,7 +191822,7 @@
      "tag": 1
     }
    ],
-   "reviewCount": 39,
+   "reviewCount": 42,
    "districtEn": "La-ngu",
    "district": "ละงู"
   },
@@ -192187,6 +192268,16 @@
      "tag": 1
     },
     {
+     "title": "สามร้อยยอดไปทำอะไร?",
+     "likes": 6,
+     "date": "2025-10-23",
+     "link": "https://www.lemon8-app.com/@rypsx_/7564411560030962183?region=th",
+     "source": "Lemon8 · Rrinyaphas Apit",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7564411560030962183&index=0&sign=6f11baf98f160514886be472d879706a",
+     "ck": 1,
+     "tag": 1
+    },
+    {
      "title": "📍พิกัดเดินป่า | อุทยานเขาสามร้อย | จุดชมวิวเขาแดง | ถ้ำไทร | วัดเขาแดง",
      "likes": 5,
      "date": "2026-05-16",
@@ -192218,20 +192309,9 @@
      "ck": 1,
      "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/owAAbviIEBgzF1afuriQSNDLPodCleE7BCV2A4~tplv-sdweummd6v-text-logo-v1:QG51eXNyaTEy:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1797336000&x-signature=8gxEB0K5PEsNCNg5PgkVL9pC%2FbM%3D",
      "tag": 1
-    },
-    {
-     "title": "📍พิกัดเดินป่า | อุทยานเขาสามร้อย | จุดชมวิวเขาแดง | ถ้ำไทร | วัดเขาแดง",
-     "likes": 0,
-     "date": "2026-05-16",
-     "link": "https://www.lemon8-app.com/@gmt.2024/7640453602699526677?region=th",
-     "source": "Lemon8 · ✈️TimetoTravel~Workout🏋🏻‍♂️",
-     "image": "https://www.lemon8-app.com/seo/image?item_id=7640453602699526677&index=0&sign=f25a8770a338a1c38510d3135d33dc66",
-     "ck": 1,
-     "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/o0XZTAeUEJeOD6NAQZlMBbGEgLD8AevA7MwAhM~tplv-sdweummd6v-text-logo-v1:QGdtdC4yMDI0:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1797336000&x-signature=S0frQy%2F1Akp8DB9i1am5zALv%2FT0%3D",
-     "tag": 1
     }
    ],
-   "reviewCount": 9,
+   "reviewCount": 11,
    "districtEn": "Kui Buri",
    "district": "กุยบุรี",
    "entry": {
@@ -192242,11 +192322,17 @@
        "en": "Adult (Thai)",
        "zh": "成人（泰国人）"
       },
+      "note": {
+       "th": "บัตรผ่านอุทยานฯ ใช้เข้าชมได้ทุกจุดใน 1 วัน",
+       "en": "National park pass valid for all sites in 1 day",
+       "zh": "国家公园门票可在1天内通游所有景点"
+      },
       "price": 40,
-      "n": 2,
+      "n": 3,
       "ids": [
        "L3",
-       "L4"
+       "L4",
+       "L5"
       ],
       "rv": true
      },
@@ -192256,10 +192342,15 @@
        "en": "Adult (Foreigner)",
        "zh": "成人（外籍）"
       },
+      "note": {
+       "th": "บัตรผ่านอุทยานฯ ใช้เข้าชมได้ทุกจุดใน 1 วัน",
+       "en": "National park pass valid for all sites in 1 day",
+       "zh": "国家公园门票可在1天内通游所有景点"
+      },
       "price": 100,
       "n": 1,
       "ids": [
-       "L3"
+       "L4"
       ],
       "rv": true
      }
@@ -192417,7 +192508,7 @@
      "tag": 1
     }
    ],
-   "reviewCount": 8,
+   "reviewCount": 10,
    "districtEn": "Hua Hin",
    "district": "หัวหิน",
    "entry": {
@@ -192463,6 +192554,16 @@
      "tag": 1
     },
     {
+     "title": "เที่ยวทะเล One Day Trip งบ 120 บาท กับรถไฟนำเที่ยว",
+     "likes": 96,
+     "date": "2024-02-26",
+     "link": "https://www.lemon8-app.com/@tan.pizzazz/7339738058037903873?region=th",
+     "source": "Lemon8 · How i Go?",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7339738058037903873&index=0&sign=fc9ceb99c47f7f2ea7d36c41a7f36bea",
+     "ck": 1,
+     "tag": 1
+    },
+    {
      "title": "EP.3 นั่งรถไฟนำเที่ยวมาหาดสวนสนประดิพัทธ์มีอะไรน่าเที่ยวบ้าง 🍋🏝",
      "likes": 72,
      "date": "2023-08-22",
@@ -192494,20 +192595,9 @@
      "ck": 1,
      "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/o8pEtnA5oFzE9bs6BEQAswdfPZegQFIDAgUCqj~tplv-sdweummd6v-text-logo-v1:QG1hbGFfc2FlbmFnYW0=:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1797336000&x-signature=nQDd7iEq2h0PBXnQ97N2%2BRkP9sY%3D",
      "tag": 1
-    },
-    {
-     "title": "สวนสนโคตรจะ Mood D 🌊",
-     "likes": 22,
-     "date": "2025-03-25",
-     "link": "https://www.lemon8-app.com/@jadompainai/7485600946358157831?region=th",
-     "source": "Lemon8 · จะดอมไปไหน",
-     "image": "https://www.lemon8-app.com/seo/image?item_id=7485600946358157831&index=0&sign=5394a099d584b1584b575165e3f56f5d",
-     "ck": 1,
-     "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/owz7tHLx4IGfXCAJYeAAe3ICPEQYbsVDgAhGZE~tplv-sdweummd6v-text-logo-v1:QGphZG9tcGFpbmFp:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1797336000&x-signature=O%2F1gykVk56AqL%2BIte3XyAA%2BMjSc%3D",
-     "tag": 1
     }
    ],
-   "reviewCount": 24,
+   "reviewCount": 28,
    "districtEn": "Hua Hin",
    "district": "หัวหิน",
    "entry": {
@@ -192596,7 +192686,7 @@
      "tag": 1
     }
    ],
-   "reviewCount": 39,
+   "reviewCount": 47,
    "districtEn": "Bang Saphan",
    "district": "บางสะพาน"
   },
@@ -192682,7 +192772,7 @@
      "tag": 1
     }
    ],
-   "reviewCount": 19,
+   "reviewCount": 34,
    "districtEn": "Pran Buri",
    "district": "ปราณบุรี",
    "entry": {
@@ -192772,7 +192862,7 @@
      "tag": 1
     }
    ],
-   "reviewCount": 33,
+   "reviewCount": 40,
    "districtEn": "Pran Buri",
    "district": "ปราณบุรี",
    "entry": {
@@ -192840,6 +192930,16 @@
      "tag": 1
     },
     {
+     "title": "หาดเขาตะเกียบ (หัวหิน)",
+     "likes": 136,
+     "date": "2022-08-26",
+     "link": "https://www.lemon8-app.com/@kawkannit/7136081043072877057?region=th",
+     "source": "Lemon8 · Kawkannit",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7136081043072877057&index=0&sign=2a8269fde9a62405f0ba508a1eb48428",
+     "ck": 1,
+     "tag": 1
+    },
+    {
      "title": "หาดเขาตะเกียบ🌊อีกจุดเช็คอินหัวหิน พลาดไม่ได้",
      "likes": 102,
      "date": "2023-05-14",
@@ -192849,20 +192949,9 @@
      "ck": 1,
      "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/d81c4819771b495f8ec017f8da688921~tplv-sdweummd6v-text-logo-v1:QG1vbmdrb2x0aGVtZW93:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1797336000&x-signature=MXv8LpCnOKEob2BjHX%2FAcjvCkms%3D",
      "tag": 1
-    },
-    {
-     "title": "หาดเขาตะเกียบ🌊 ใครว่าถ่ายรูปไม่สวย ขอเถียง!",
-     "likes": 78,
-     "date": "2024-01-07",
-     "link": "https://www.lemon8-app.com/@prae.kwl/7321254764208095746?region=th",
-     "source": "Lemon8 · แพแพอยากไปเที่ยว",
-     "image": "https://www.lemon8-app.com/seo/image?item_id=7321254764208095746&index=0&sign=bc61bac9ff8913c005418c59c52fea8a",
-     "ck": 1,
-     "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/oECE9AzbEFERGmAgItpDQxj1lrUANflaZBFfC3~tplv-sdweummd6v-text-logo-v1:QHByYWUua3ds:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1797336000&x-signature=6OnF5HJRpTOVmOCy54mGL9vkWK0%3D",
-     "tag": 1
     }
    ],
-   "reviewCount": 28,
+   "reviewCount": 33,
    "districtEn": "Hua Hin",
    "district": "หัวหิน",
    "entry": {
@@ -193143,7 +193232,7 @@
      "tag": 1
     }
    ],
-   "reviewCount": 28,
+   "reviewCount": 29,
    "districtEn": "Phanom",
    "district": "พนม"
   },
@@ -193375,6 +193464,16 @@
      "tag": 1
     },
     {
+     "title": "🏝️พิกัดที่เที่ยว: เกาะสมุย , สุราษฎร์ธานี",
+     "likes": 8,
+     "date": "2024-10-26",
+     "link": "https://www.lemon8-app.com/@tiny_jaa9/7430157893837652498?region=th",
+     "source": "Lemon8 · Tiny_Jaa",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7430157893837652498&index=0&sign=ab68e254bdce494914616c659b7e594e",
+     "ck": 1,
+     "tag": 1
+    },
+    {
      "title": "เกาะมัสสุม",
      "likes": 5,
      "date": "2025-03-25",
@@ -193386,18 +193485,35 @@
      "tag": 1
     },
     {
-     "title": "Koh madsum 🌟🐷🏝️",
-     "likes": 2,
-     "date": "2024-05-28",
-     "link": "https://www.lemon8-app.com/@pipeplta/7373900732233220624?region=th",
-     "source": "Lemon8 · pipe",
-     "image": "https://www.lemon8-app.com/seo/image?item_id=7373900732233220624&index=0&sign=85e351629833d4357cd02676d60c9726",
+     "title": "เกาะมัสสุมหรือเกาะหมู 🐽 ．．．เกาะสวยที่ครั้งหนึ่งต้องไปเยือน🏝☀️",
+     "likes": 4,
+     "date": "2022-08-03",
+     "link": "https://www.lemon8-app.com/@nayne12/7127681970426888706?region=th",
+     "source": "Lemon8 · ネーン",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7127681970426888706&index=0&sign=75cb357c3e67e47b01ea99047a1ed56e",
      "ck": 1,
-     "thumb": "https://p19-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/oknVLagVfEEvUrBnADtmWsCTWEBQF9AoxVAIce~tplv-sdweummd6v-text-logo-v1:QHBpcGVwbHRh:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1797336000&x-signature=FtUfyjfG6QEUBhCsjnL9DzLnINI%3D",
      "tag": 1
     }
    ],
-   "reviewCount": 5
+   "reviewCount": 10,
+   "entry": {
+    "tiers": [
+     {
+      "who": {
+       "th": "ค่าเข้าเกาะ",
+       "en": "Island Entry Fee",
+       "zh": "上岛费"
+      },
+      "price": 30,
+      "n": 1,
+      "ids": [
+       "L6"
+      ],
+      "rv": true
+     }
+    ],
+    "src": "review1"
+   }
   },
   {
    "id": "osm-w104366857",
@@ -193832,6 +193948,16 @@
      "tag": 1
     },
     {
+     "title": "หาดบ้านใต้ เกาะสมุย🏝",
+     "likes": 12,
+     "date": "2025-08-27",
+     "link": "https://www.lemon8-app.com/@mamii_nut/7543320680796881426?region=th",
+     "source": "Lemon8 · โดนัท สมุย",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7543320680796881426&index=0&sign=0a0509f7ec3ca358566ab8217251546a",
+     "ck": 1,
+     "tag": 1
+    },
+    {
      "title": "หาดบ้านใต้ เกาะสมุย จังหวัดสุราษฎร์ธานี 🏝️🌤️✨👙🐳 #หาดบ้านใต้ #เกาะสมุย #kohsamui #สุราษฎร์ธานี #เพจไปไหนก็ไปดิ",
      "likes": 10,
      "date": "2025-04-26",
@@ -193840,6 +193966,16 @@
      "image": "https://www.lemon8-app.com/seo/image?item_id=7497648268903481876&index=0&sign=2dc680a54be6270b641335fa7f99b3d6",
      "ck": 1,
      "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-i-sdweummd6v-sg/f1ef6e2238a748f4b3ee7522384c45d0~tplv-sdweummd6v-text-logo-v1:QHBhaW5haWdvcnBhaWRp:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1797336000&x-signature=c0SViZlsJS9g%2BtJUmIGdeAlXrew%3D",
+     "tag": 1
+    },
+    {
+     "title": "หาดบ้านใต้ เกาะสมุย🏝",
+     "likes": 6,
+     "date": "2025-08-28",
+     "link": "https://www.lemon8-app.com/@mamii_nut/7543669148652962312?region=th",
+     "source": "Lemon8 · โดนัท สมุย",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7543669148652962312&index=0&sign=2016ba47dfb8199218c0bd7b643a9eee",
+     "ck": 1,
      "tag": 1
     },
     {
@@ -193852,31 +193988,9 @@
      "ck": 1,
      "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/ogkBYAZnBvPlLAzvAAiP16QME0ACDcdIbPi8s~tplv-sdweummd6v-text-logo-v1:QG1hbWlpX251dA==:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1797336000&x-signature=NZRQVWGDFHa%2Fo%2BkEJVDIckJTblk%3D",
      "tag": 1
-    },
-    {
-     "title": "หาดบ้านใต้ เกาะสมุย🏝",
-     "likes": 2,
-     "date": "2025-02-09",
-     "link": "https://www.lemon8-app.com/@mamii_nut/7469453779667075602?region=th",
-     "source": "Lemon8 · โดนัท สมุย",
-     "image": "https://www.lemon8-app.com/seo/image?item_id=7469453779667075602&index=0&sign=f5a7ec4b6f8de37a505e44c14bbd1e36",
-     "ck": 1,
-     "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/ogviZABYBjiAPjCoAsbEIKSCAkN31pUaK56k6~tplv-sdweummd6v-text-logo-v1:QG1hbWlpX251dA==:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1797336000&x-signature=XXYsHXY7loN08HQA5WqbZpWcIdM%3D",
-     "tag": 1
-    },
-    {
-     "title": "หาดบ้านใต้ เกาะสมุย✨",
-     "likes": 1,
-     "date": "2025-03-10",
-     "link": "https://www.lemon8-app.com/@mamii_nut/7480193344702775815?region=th",
-     "source": "Lemon8 · โดนัท สมุย",
-     "image": "https://www.lemon8-app.com/seo/image?item_id=7480193344702775815&index=0&sign=d0c441e3c43d86cbece46e8f846773dd",
-     "ck": 1,
-     "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/oQGvIQEDASfBi3GAenvd9qKQ8AFnrtEzRBCZsg~tplv-sdweummd6v-text-logo-v1:QG1hbWlpX251dA==:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1797336000&x-signature=ljidrPQZaU8Egl8cUgB5%2FD1zygw%3D",
-     "tag": 1
     }
    ],
-   "reviewCount": 8,
+   "reviewCount": 14,
    "districtEn": "Ko Samui",
    "district": "เกาะสมุย",
    "entry": {
@@ -194012,7 +194126,7 @@
      "tag": 1
     }
    ],
-   "reviewCount": 58,
+   "reviewCount": 69,
    "districtEn": "Ko Pha-ngan",
    "district": "เกาะพะงัน",
    "entry": {
@@ -194206,16 +194320,16 @@
      "tag": 1
     }
    ],
-   "reviewCount": 27,
+   "reviewCount": 33,
    "districtEn": "Suan Phueng",
    "district": "สวนผึ้ง",
    "entry": {
     "tiers": [
      {
       "who": {
-       "th": "ค่าเข้าชม (คนไทย)",
-       "en": "Admission fee (Thai citizen)",
-       "zh": "门票（泰国公民）"
+       "th": "คนไทย / บุคคลทั่วไป",
+       "en": "Thai citizen / General",
+       "zh": "泰国公民/游客"
       },
       "price": 20,
       "n": 3,
@@ -194469,6 +194583,16 @@
      "tag": 1
     },
     {
+     "title": "เกาะแมว .. #แมว",
+     "likes": 188,
+     "date": "2026-03-13",
+     "link": "https://www.lemon8-app.com/@wanlank/7616537776120398354?region=th",
+     "source": "Lemon8 · แมวมอม",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7616537776120398354&index=0&sign=10843cfb595a99d27c2dfd0f92c46f36",
+     "ck": 1,
+     "tag": 1
+    },
+    {
      "title": "เกาะแมว สวรรค์ของเหล่าทาส!",
      "likes": 176,
      "date": "2023-05-24",
@@ -194478,20 +194602,9 @@
      "ck": 1,
      "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/46527d73ee154b2baabc9ef7eff17ab8~tplv-sdweummd6v-text-logo-v1:QGxiemVybw==:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796990400&x-signature=%2BZoevI0gHUg3RVf%2BfvOtuR5YpaA%3D",
      "tag": 1
-    },
-    {
-     "title": "แมวอยู่ไหน ?? ของ Enoshima🇯🇵",
-     "likes": 130,
-     "date": "2024-08-27",
-     "link": "https://www.lemon8-app.com/@cphanichaa/7407706928823960065?region=th",
-     "source": "Lemon8 · Stamp ´ ꒳ `",
-     "image": "https://www.lemon8-app.com/seo/image?item_id=7407706928823960065&index=0&sign=86ab61ab371281434771bf1d442ed0f3",
-     "ck": 1,
-     "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/oQAik6TbA7PEsB2YiAdplZNsD2IY1mbvAB16F~tplv-sdweummd6v-text-logo-v1:QGNwaGFuaWNoYWE=:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1797336000&x-signature=d1eTQxllrizhmRMrVBRx2To%2BfDU%3D",
-     "tag": 1
     }
    ],
-   "reviewCount": 34,
+   "reviewCount": 42,
    "districtEn": "Singhanakhon",
    "district": "สิงหนคร"
   },
@@ -194743,7 +194856,7 @@
      "tag": 1
     }
    ],
-   "reviewCount": 32,
+   "reviewCount": 34,
    "districtEn": "Phop Phra",
    "district": "พบพระ"
   },
@@ -195007,7 +195120,7 @@
      "tag": 1
     }
    ],
-   "reviewCount": 17,
+   "reviewCount": 19,
    "districtEn": "Mae Sot",
    "district": "แม่สอด"
   },
@@ -195127,9 +195240,19 @@
      "ck": 1,
      "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/oQi9pmAEIeCWECQADkXKt9gABDIfbBFnQ0QJWq~tplv-sdweummd6v-text-logo-v1:QGxpZmVvZnlhbmlzYQ==:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1797336000&x-signature=2PuTunbtkDyRYzWNTLjy0ExywU8%3D",
      "tag": 1
+    },
+    {
+     "title": "Koh Mook 2 วัน 1 คืน",
+     "likes": 16,
+     "date": "2025-02-27",
+     "link": "https://www.lemon8-app.com/@pailaook.42/7476099603508576786?region=th",
+     "source": "Lemon8 · Seroisme",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7476099603508576786&index=0&sign=3220d3fc612db8aed38de9e108353e07",
+     "ck": 1,
+     "tag": 1
     }
    ],
-   "reviewCount": 1,
+   "reviewCount": 2,
    "districtEn": "Kantang",
    "district": "กันตัง",
    "entry": {
@@ -195207,18 +195330,17 @@
      "tag": 1
     },
     {
-     "title": "Koh kradarn✨เกาะกระดานจังหวัดตรัง",
-     "likes": 21,
-     "date": "2024-09-05",
-     "link": "https://www.lemon8-app.com/@queensaruu/7411052208860561936?region=th",
-     "source": "Lemon8 · QQ🌸",
-     "image": "https://www.lemon8-app.com/seo/image?item_id=7411052208860561936&index=0&sign=ef008314e462c7f2380fcb3d6f47e96c",
+     "title": "Koh kradan : เกาะกระดาน 🏝✨",
+     "likes": 23,
+     "date": "2024-01-30",
+     "link": "https://www.lemon8-app.com/@jorkor_alwayshappy/7329739063886807553?region=th",
+     "source": "Lemon8 · Jeckieeeeeee",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7329739063886807553&index=0&sign=daf739eac84030c48ee381e614289118",
      "ck": 1,
-     "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/ocJvhEYA1IYjAAkD0FAZFB8iBtNlZPWWiSVbZ~tplv-sdweummd6v-text-logo-v1:QHF1ZWVuc2FydXU=:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1796817600&x-signature=ZO4MIv4T0IMdNBbkbjxBkkH67yA%3D",
      "tag": 1
     }
    ],
-   "reviewCount": 14,
+   "reviewCount": 17,
    "districtEn": "Kantang",
    "district": "กันตัง"
   },
@@ -195420,6 +195542,16 @@
    "fetchedAt": "2026-11-24T07:13:33.164Z",
    "posts": [
     {
+     "title": "น้ำตกสะพานหิน จ.ตราด มาตราดห้ามพลาด⛰️🍃",
+     "likes": 117,
+     "date": "2026-06-02",
+     "link": "https://www.lemon8-app.com/@naphatsawan_cartoon/7646808879086535186?region=th",
+     "source": "Lemon8 · Cartoon",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7646808879086535186&index=0&sign=6d181d6724b5866c1e937d4e9bce52fd",
+     "ck": 1,
+     "tag": 1
+    },
+    {
      "title": "ที่นี่น้ำตกสะพานหิน",
      "likes": 6,
      "date": "2026-09-04",
@@ -195431,7 +195563,7 @@
      "tag": 1
     }
    ],
-   "reviewCount": 1,
+   "reviewCount": 2,
    "districtEn": "Mueang Trat",
    "district": "เมืองตราด",
    "entry": {
@@ -195701,9 +195833,19 @@
      "ck": 1,
      "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/oAtClFBeAjXfGh16qqicEsQsdAI9QANSDkkREg~tplv-sdweummd6v-text-logo-v1:QGFzYXBhcGFpbG9y:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1797336000&x-signature=HlJJvTvDdyDa9NxFG%2BPAvm8p6EM%3D",
      "tag": 1
+    },
+    {
+     "title": "🧡 พี่ชายจัด ใบเกาะยักษ์ ใส่กรอบด้วย โคตรเท่อย่างสวย ใครช้าหมดแน่นอน 😂",
+     "likes": 0,
+     "date": "2026-07-24",
+     "link": "https://www.lemon8-app.com/@chanindough_poster/7666082779369161237?region=th",
+     "source": "Lemon8 · chanindough_poster",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7666082779369161237&index=0&sign=cd222e645a533a4a268c6620614ea8f8",
+     "ck": 1,
+     "tag": 1
     }
    ],
-   "reviewCount": 4,
+   "reviewCount": 5,
    "district": "เกาะกูด"
   },
   {
@@ -195798,18 +195940,17 @@
      "tag": 1
     },
     {
-     "title": "LONG STAY เกาะช้างที่ใครได้กล่าวไว้",
-     "likes": 3,
-     "date": "2024-10-17",
-     "link": "https://www.lemon8-app.com/@need.to.take.a.break/7426636149684273680?region=th",
-     "source": "Lemon8 · Pumi Timsang",
-     "image": "https://www.lemon8-app.com/seo/image?item_id=7426636149684273680&index=0&sign=4f32aca7e414519a17541ff50d3f1508",
+     "title": "หาดคลองพร้าว",
+     "likes": 5,
+     "date": "2025-07-24",
+     "link": "https://www.lemon8-app.com/@khunphor/7530659044500308488?region=th",
+     "source": "Lemon8 · uncle phor",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7530659044500308488&index=0&sign=757c6838a498a2d7b5b1927051290b07",
      "ck": 1,
-     "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/o4PHADbEXAFLB5lf9g6QrQnutAt6EEy2EIfCAU~tplv-sdweummd6v-text-logo-v1:QG5lZWQudG8udGFrZS5hLmJyZWFr:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1797336000&x-signature=Re0Sq%2Fk%2FPaFwJZV%2F6tNyD%2FCgnA8%3D",
      "tag": 1
     }
    ],
-   "reviewCount": 8,
+   "reviewCount": 13,
    "districtEn": "Ko Chang",
    "district": "เกาะช้าง",
    "entry": {
@@ -196120,7 +196261,7 @@
      "tag": 1
     }
    ],
-   "reviewCount": 31,
+   "reviewCount": 40,
    "districtEn": "Khong Chiam",
    "district": "โขงเจียม",
    "entry": {
@@ -196154,7 +196295,7 @@
      {
       "who": {
        "th": "รถยนต์ 4 ล้อ",
-       "en": "4-wheel car",
+       "en": "4-Wheel Car",
        "zh": "四轮汽车"
       },
       "price": 30,
@@ -196167,8 +196308,8 @@
      },
      {
       "who": {
-       "th": "ค่ากางเต็นท์ (ต่อคน)",
-       "en": "Tent space fee (per person)",
+       "th": "ค่ากางเต้นท์ (ต่อคน)",
+       "en": "Camping Fee (per person)",
        "zh": "露营费（每人）"
       },
       "price": 30,
@@ -196299,21 +196440,21 @@
      "tag": 1
     }
    ],
-   "reviewCount": 20,
+   "reviewCount": 23,
    "districtEn": "Betong",
    "district": "เบตง",
    "entry": {
     "tiers": [
      {
       "who": {
-       "th": "ค่าถุงเท้าสวมรองเท้า",
-       "en": "Shoe cover fee",
-       "zh": "防刮鞋套费"
+       "th": "ถุงรองเท้ากันรอย",
+       "en": "Shoe covers",
+       "zh": "鞋套"
       },
       "note": {
-       "th": "สำหรับเดินบนสะพานกระจก",
-       "en": "For walking on the glass bridge",
-       "zh": "用于玻璃步道"
+       "th": "สำหรับเดินบนพื้นกระจก หรือฝากรองเท้าในล็อกเกอร์ฟรี",
+       "en": "For walking on glass walkway or use free lockers",
+       "zh": "用于玻璃栈道，亦可免费存放于柜中"
       },
       "price": 30,
       "n": 3,
@@ -196326,14 +196467,9 @@
      },
      {
       "who": {
-       "th": "วินมอเตอร์ไซค์ขึ้นจุดชมวิว",
-       "en": "Motorcycle taxi transfer",
-       "zh": "摩托出租车上山接驳"
-      },
-      "note": {
-       "th": "ต่อคน",
-       "en": "Per person",
-       "zh": "每人"
+       "th": "ค่าวินมอเตอร์ไซค์ขึ้นด้านบน",
+       "en": "Motorcycle taxi ride up",
+       "zh": "摩托出租上山费"
       },
       "price": 30,
       "n": 3,
@@ -196347,7 +196483,7 @@
      {
       "who": {
        "th": "คนไทย",
-       "en": "Thai citizen",
+       "en": "Thai Citizen",
        "zh": "泰国公民"
       },
       "price": 40,
@@ -196506,7 +196642,7 @@
      "tag": 1
     }
    ],
-   "reviewCount": 20,
+   "reviewCount": 23,
    "districtEn": "Wan Yai",
    "district": "หว้านใหญ่"
   },
@@ -196534,6 +196670,16 @@
      "image": "https://www.lemon8-app.com/seo/image?item_id=7386517149231170064&index=0&sign=5690251d148b82d162249d07e334b0dc",
      "ck": 1,
      "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/okmAQYCcGCeEiEFt0BYIiYYAAg9mgWfCh2LDEt~tplv-sdweummd6v-text-logo-v1:QG1hcmthbmRnbw==:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1797336000&x-signature=jVs5lQe9tf8ATFnPcn0CGloqynM%3D",
+     "tag": 1
+    },
+    {
+     "title": "จุดชมวิวเขาขาด",
+     "likes": 10,
+     "date": "2025-01-26",
+     "link": "https://www.lemon8-app.com/@_aon_2527/7464215857095672338?region=th",
+     "source": "Lemon8 · AON",
+     "image": "https://www.lemon8-app.com/seo/image?item_id=7464215857095672338&index=0&sign=967639c41d77686c511a8900c2e33bd8",
+     "ck": 1,
      "tag": 1
     },
     {
@@ -196579,20 +196725,9 @@
      "ck": 1,
      "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/okoMAyMZIAGVCrz9EeAwMBE9Atin1Uf61gkBZi~tplv-sdweummd6v-text-logo-v1:QGF1cm9yYXR1cnRsZQ==:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1797336000&x-signature=OB3wEm5AxQkNxWLLvd8ecCm%2BJoM%3D",
      "tag": 1
-    },
-    {
-     "title": "จุดชมวิวเขาขาด #ภูเก็ต",
-     "likes": 0,
-     "date": "2023-11-28",
-     "link": "https://www.lemon8-app.com/@patch_pim/7306350482203755009?region=th",
-     "source": "Lemon8 · Patch_pim",
-     "image": "https://www.lemon8-app.com/seo/image?item_id=7306350482203755009&index=0&sign=1ba0926513012d89299d0e9101984084",
-     "ck": 1,
-     "thumb": "https://p16-lemon8-sg-sign.tiktokcdn-us.com/tos-alisg-v-a3e477-sg/oYxlvVADfTJ4ACDe2fgKfcQAIF24XlqAbAEIG8~tplv-sdweummd6v-text-logo-v1:QHBhdGNoX3BpbQ==:q75.jpeg?lk3s=c7f08e79&source=lemon8_seo&x-expires=1797336000&x-signature=6ZqBavNWXp4nA5FUPEemz4ZEpvY%3D",
-     "tag": 1
     }
    ],
-   "reviewCount": 8,
+   "reviewCount": 9,
    "districtEn": "Mueang Phuket",
    "district": "เมืองภูเก็ต",
    "entry": {
@@ -196703,7 +196838,7 @@
      "tag": 1
     }
    ],
-   "reviewCount": 52,
+   "reviewCount": 61,
    "districtEn": "Mueang Phuket",
    "district": "เมืองภูเก็ต",
    "entry": {
@@ -196809,7 +196944,7 @@
      "tag": 1
     }
    ],
-   "reviewCount": 40,
+   "reviewCount": 45,
    "districtEn": "Thalang",
    "district": "ถลาง",
    "entry": {
@@ -196934,7 +197069,7 @@
    ],
    "hot": 3.6,
    "trend": 1,
-   "reviewCount": 33,
+   "reviewCount": 39,
    "districtEn": "Thalang",
    "district": "ถลาง",
    "entry": {
